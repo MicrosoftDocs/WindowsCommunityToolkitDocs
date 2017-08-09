@@ -60,7 +60,7 @@ Behavior animations can also be chained and awaited.
 
 ## Example Image
 
-![Blur Behavior animation](resources/images/Animations-Blur.gif "Blur Behavior")
+![Blur Behavior animation](../resources/images/Animations-Blur.gif "Blur Behavior")
 
 ## Requirements (Windows 10 Device Family)
 
