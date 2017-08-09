@@ -1,9 +1,8 @@
 # [UWP Community Toolkit Documentation](index.md)
-
 ## Setup
-### [Getting Started with the UWP Community Toolkit](UWPCommunityToolkit\Getting-Started.md)
-### [UWP Community Toolkit Nuget Packages](UWPCommunityToolkit\Nuget-Packages.md)
-### [Adding the UWP Community Toolkit to your Visual Studio Toolbox](UWPCommunityToolkit\Toolbox-Support.md)
+### [Getting Started with the UWP Community Toolkit](Getting-Started.md)
+### [UWP Community Toolkit Nuget Packages](Nuget-Packages.md)
+### [Adding the UWP Community Toolkit to your Visual Studio Toolbox](Toolbox-Support.md)
 
 ## Animations
 ### [Blur](animations/Blur.md)
