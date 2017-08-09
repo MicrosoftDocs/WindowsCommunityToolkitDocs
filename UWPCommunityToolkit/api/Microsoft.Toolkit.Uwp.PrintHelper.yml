@@ -1,0 +1,1049 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.PrintHelper
+  commentId: T:Microsoft.Toolkit.Uwp.PrintHelper
+  id: PrintHelper
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel)
+  - Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  - Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+  - Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+  - Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements
+  - Microsoft.Toolkit.Uwp.PrintHelper.Dispose
+  - Microsoft.Toolkit.Uwp.PrintHelper.OnPreviewPagesCreated
+  - Microsoft.Toolkit.Uwp.PrintHelper.OnPrintCanceled
+  - Microsoft.Toolkit.Uwp.PrintHelper.OnPrintFailed
+  - Microsoft.Toolkit.Uwp.PrintHelper.OnPrintSucceeded
+  - Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  - Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync(System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: PrintHelper
+  nameWithType: PrintHelper
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: PrintHelper
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nHelper class used to simplify document printing.\nBased on https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/Printing/cs/PrintHelper.cs />\nIt allows you to render a framework element per page.\n"
+  example: []
+  syntax:
+    content: 'public class PrintHelper : IDisposable'
+    content.vb: >-
+      Public Class PrintHelper
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintSucceeded
+  commentId: E:Microsoft.Toolkit.Uwp.PrintHelper.OnPrintSucceeded
+  id: OnPrintSucceeded
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: OnPrintSucceeded
+  nameWithType: PrintHelper.OnPrintSucceeded
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintSucceeded
+  type: Event
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OnPrintSucceeded
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 33
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nEvent raised when print was successful\n"
+  example: []
+  syntax:
+    content: public event Action OnPrintSucceeded
+    return:
+      type: System.Action
+    content.vb: Public Event OnPrintSucceeded As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintFailed
+  commentId: E:Microsoft.Toolkit.Uwp.PrintHelper.OnPrintFailed
+  id: OnPrintFailed
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: OnPrintFailed
+  nameWithType: PrintHelper.OnPrintFailed
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintFailed
+  type: Event
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OnPrintFailed
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 38
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nEvent raised when print failed\n"
+  example: []
+  syntax:
+    content: public event Action OnPrintFailed
+    return:
+      type: System.Action
+    content.vb: Public Event OnPrintFailed As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintCanceled
+  commentId: E:Microsoft.Toolkit.Uwp.PrintHelper.OnPrintCanceled
+  id: OnPrintCanceled
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: OnPrintCanceled
+  nameWithType: PrintHelper.OnPrintCanceled
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.OnPrintCanceled
+  type: Event
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OnPrintCanceled
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 43
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nEvent raised when print is cancelled by the user\n"
+  example: []
+  syntax:
+    content: public event Action OnPrintCanceled
+    return:
+      type: System.Action
+    content.vb: Public Event OnPrintCanceled As Action
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.OnPreviewPagesCreated
+  commentId: E:Microsoft.Toolkit.Uwp.PrintHelper.OnPreviewPagesCreated
+  id: OnPreviewPagesCreated
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: OnPreviewPagesCreated
+  nameWithType: PrintHelper.OnPreviewPagesCreated
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.OnPreviewPagesCreated
+  type: Event
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OnPreviewPagesCreated
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nEvent which is called after print preview pages are generated.\n"
+  remarks: "\nYou can use this event to tweak the final rendering by adding/moving controls in the page.\n"
+  example: []
+  syntax:
+    content: public event Action<List<FrameworkElement>> OnPreviewPagesCreated
+    return:
+      type: System.Action{System.Collections.Generic.List{Windows.UI.Xaml.FrameworkElement}}
+    content.vb: Public Event OnPreviewPagesCreated As Action(Of List(Of FrameworkElement))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+  commentId: P:Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+  id: ApplicationContentMarginLeft
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContentMarginLeft
+  nameWithType: PrintHelper.ApplicationContentMarginLeft
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ApplicationContentMarginLeft
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 56
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets or sets the percent of app&apos;s margin width\n"
+  example: []
+  syntax:
+    content: public double ApplicationContentMarginLeft { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ApplicationContentMarginLeft As Double
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+  commentId: P:Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+  id: ApplicationContentMarginTop
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: ApplicationContentMarginTop
+  nameWithType: PrintHelper.ApplicationContentMarginTop
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ApplicationContentMarginTop
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets or sets the percent of app&apos;s margin height\n"
+  example: []
+  syntax:
+    content: public double ApplicationContentMarginTop { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ApplicationContentMarginTop As Double
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel)
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel)
+  id: '#ctor(Windows.UI.Xaml.Controls.Panel)'
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: PrintHelper(Panel)
+  nameWithType: PrintHelper.PrintHelper(Panel)
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.PrintHelper(Windows.UI.Xaml.Controls.Panel)
+  type: Constructor
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: .ctor
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 98
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Toolkit.Uwp.PrintHelper\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public PrintHelper(Panel canvasContainer)
+    parameters:
+    - id: canvasContainer
+      type: Windows.UI.Xaml.Controls.Panel
+      description: XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance
+    content.vb: Public Sub New(canvasContainer As Panel)
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  id: AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: AddFrameworkElementToPrint(FrameworkElement)
+  nameWithType: PrintHelper.AddFrameworkElementToPrint(FrameworkElement)
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AddFrameworkElementToPrint
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 121
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nAdd an element to the list of printable elements.\n"
+  remarks: The element cannot have a parent. He must not be included in any visual tree.
+  example: []
+  syntax:
+    content: public void AddFrameworkElementToPrint(FrameworkElement element)
+    parameters:
+    - id: element
+      type: Windows.UI.Xaml.FrameworkElement
+      description: Framework element to print
+    content.vb: Public Sub AddFrameworkElementToPrint(element As FrameworkElement)
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  id: RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: RemoveFrameworkElementToPrint(FrameworkElement)
+  nameWithType: PrintHelper.RemoveFrameworkElementToPrint(FrameworkElement)
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: RemoveFrameworkElementToPrint
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nRemove an element from the list of printable elements\n"
+  example: []
+  syntax:
+    content: public void RemoveFrameworkElementToPrint(FrameworkElement element)
+    parameters:
+    - id: element
+      type: Windows.UI.Xaml.FrameworkElement
+      description: Framework element to remove
+    content.vb: Public Sub RemoveFrameworkElementToPrint(element As FrameworkElement)
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements
+  id: ClearListOfPrintableFrameworkElements
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: ClearListOfPrintableFrameworkElements()
+  nameWithType: PrintHelper.ClearListOfPrintableFrameworkElements()
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ClearListOfPrintableFrameworkElements
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 143
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nEmpties the list of printable elements\n"
+  example: []
+  syntax:
+    content: public void ClearListOfPrintableFrameworkElements()
+    content.vb: Public Sub ClearListOfPrintableFrameworkElements
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync(System.String,System.Boolean)
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync(System.String,System.Boolean)
+  id: ShowPrintUIAsync(System.String,System.Boolean)
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: ShowPrintUIAsync(String, Boolean)
+  nameWithType: PrintHelper.ShowPrintUIAsync(String, Boolean)
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync(System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ShowPrintUIAsync
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nStart the print task.\n"
+  example: []
+  syntax:
+    content: public Task ShowPrintUIAsync(string printTaskName, bool directPrint = false)
+    parameters:
+    - id: printTaskName
+      type: System.String
+      description: Name of the print task to use
+    - id: directPrint
+      type: System.Boolean
+      description: Directly print the content of the container instead of relying on list built with AddFrameworkElementToPrint method
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the asynchronous operation
+    content.vb: Public Function ShowPrintUIAsync(printTaskName As String, directPrint As Boolean = False) As Task
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.Dispose
+  commentId: M:Microsoft.Toolkit.Uwp.PrintHelper.Dispose
+  id: Dispose
+  parent: Microsoft.Toolkit.Uwp.PrintHelper
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PrintHelper.Dispose()
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/PrintHelper/PrintHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Dispose
+    path: Helpers/PrintHelper/PrintHelper.cs
+    startLine: 169
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nRelease associated resources\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Toolkit.Uwp.PrintHelper.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Action{System.Collections.Generic.List{Windows.UI.Xaml.FrameworkElement}}
+  commentId: T:System.Action{System.Collections.Generic.List{Windows.UI.Xaml.FrameworkElement}}
+  parent: System
+  definition: System.Action`1
+  name: Action<List<FrameworkElement>>
+  nameWithType: Action<List<FrameworkElement>>
+  fullName: System.Action<System.Collections.Generic.List<Windows.UI.Xaml.FrameworkElement>>
+  nameWithType.vb: Action(Of List(Of FrameworkElement))
+  fullName.vb: System.Action(Of System.Collections.Generic.List(Of Windows.UI.Xaml.FrameworkElement))
+  name.vb: Action(Of List(Of FrameworkElement))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Windows.UI.Xaml.FrameworkElement
+    name: FrameworkElement
+    nameWithType: FrameworkElement
+    fullName: Windows.UI.Xaml.FrameworkElement
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Windows.UI.Xaml.FrameworkElement
+    name: FrameworkElement
+    nameWithType: FrameworkElement
+    fullName: Windows.UI.Xaml.FrameworkElement
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    nameWithType: Action
+    fullName: System.Action
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+  isExternal: false
+  name: ApplicationContentMarginLeft
+  nameWithType: PrintHelper.ApplicationContentMarginLeft
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginLeft
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+  isExternal: false
+  name: ApplicationContentMarginTop
+  nameWithType: PrintHelper.ApplicationContentMarginTop
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ApplicationContentMarginTop
+- uid: Microsoft.Toolkit.Uwp.PrintHelper
+  commentId: T:Microsoft.Toolkit.Uwp.PrintHelper
+  isExternal: false
+  name: PrintHelper
+  nameWithType: PrintHelper
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.#ctor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.#ctor
+  isExternal: false
+  name: PrintHelper
+  nameWithType: PrintHelper.PrintHelper
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.PrintHelper
+- uid: Windows.UI.Xaml.Controls.Panel
+  commentId: T:Windows.UI.Xaml.Controls.Panel
+  parent: Windows.UI.Xaml.Controls
+  isExternal: true
+  name: Panel
+  nameWithType: Panel
+  fullName: Windows.UI.Xaml.Controls.Panel
+- uid: Windows.UI.Xaml.Controls
+  commentId: N:Windows.UI.Xaml.Controls
+  isExternal: false
+  name: Windows.UI.Xaml.Controls
+  nameWithType: Windows.UI.Xaml.Controls
+  fullName: Windows.UI.Xaml.Controls
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint
+  isExternal: false
+  name: AddFrameworkElementToPrint
+  nameWithType: PrintHelper.AddFrameworkElementToPrint
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.AddFrameworkElementToPrint
+- uid: Windows.UI.Xaml.FrameworkElement
+  commentId: T:Windows.UI.Xaml.FrameworkElement
+  parent: Windows.UI.Xaml
+  isExternal: true
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: Windows.UI.Xaml.FrameworkElement
+- uid: Windows.UI.Xaml
+  commentId: N:Windows.UI.Xaml
+  isExternal: false
+  name: Windows.UI.Xaml
+  nameWithType: Windows.UI.Xaml
+  fullName: Windows.UI.Xaml
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint
+  isExternal: false
+  name: RemoveFrameworkElementToPrint
+  nameWithType: PrintHelper.RemoveFrameworkElementToPrint
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.RemoveFrameworkElementToPrint
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements
+  isExternal: false
+  name: ClearListOfPrintableFrameworkElements
+  nameWithType: PrintHelper.ClearListOfPrintableFrameworkElements
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ClearListOfPrintableFrameworkElements
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync
+  isExternal: false
+  name: ShowPrintUIAsync
+  nameWithType: PrintHelper.ShowPrintUIAsync
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.ShowPrintUIAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.PrintHelper.Dispose*
+  commentId: Overload:Microsoft.Toolkit.Uwp.PrintHelper.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: PrintHelper.Dispose
+  fullName: Microsoft.Toolkit.Uwp.PrintHelper.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

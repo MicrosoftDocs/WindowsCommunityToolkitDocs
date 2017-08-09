@@ -1,0 +1,926 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  commentId: T:Microsoft.Toolkit.Uwp.HttpHelperResponse
+  id: HttpHelperResponse
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor(Windows.Web.Http.HttpResponseMessage)
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+  - Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+  langs:
+  - csharp
+  - vb
+  name: HttpHelperResponse
+  nameWithType: HttpHelperResponse
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: HttpHelperResponse
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 23
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nHttpHelperResponse instance to hold data from Http Response.\n"
+  example: []
+  syntax:
+    content: >-
+      [Obsolete]
+
+      public class HttpHelperResponse : IDisposable
+    content.vb: >-
+      <Obsolete>
+
+      Public Class HttpHelperResponse
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor(Windows.Web.Http.HttpResponseMessage)
+  commentId: M:Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor(Windows.Web.Http.HttpResponseMessage)
+  id: '#ctor(Windows.Web.Http.HttpResponseMessage)'
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: HttpHelperResponse(HttpResponseMessage)
+  nameWithType: HttpHelperResponse.HttpHelperResponse(HttpResponseMessage)
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.HttpHelperResponse(Windows.Web.Http.HttpResponseMessage)
+  type: Constructor
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: .ctor
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Toolkit.Uwp.HttpHelperResponse\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public HttpHelperResponse(HttpResponseMessage response)
+    parameters:
+    - id: response
+      type: Windows.Web.Http.HttpResponseMessage
+      description: Http Response <xref href="Windows.Web.Http.HttpResponseMessage" data-throw-if-not-resolved="false"></xref> being wrapped.
+    content.vb: Public Sub New(response As HttpResponseMessage)
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+  commentId: P:Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+  id: StatusCode
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: HttpHelperResponse.StatusCode
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: StatusCode
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 40
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets the HTTP response StatusCode.\n"
+  example: []
+  syntax:
+    content: public HttpStatusCode StatusCode { get; }
+    parameters: []
+    return:
+      type: Windows.Web.Http.HttpStatusCode
+    content.vb: Public ReadOnly Property StatusCode As HttpStatusCode
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+  commentId: P:Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+  id: Success
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: HttpHelperResponse.Success
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Success
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 51
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a value indicating whether the HTTP response was successful.\n"
+  example: []
+  syntax:
+    content: public bool Success { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Success As Boolean
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.Success*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+  commentId: P:Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+  id: Headers
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: Headers
+  nameWithType: HttpHelperResponse.Headers
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Headers
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 62
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets the HTTP response header collection.\n"
+  example: []
+  syntax:
+    content: public HttpResponseHeaderCollection Headers { get; }
+    parameters: []
+    return:
+      type: Windows.Web.Http.Headers.HttpResponseHeaderCollection
+    content.vb: Public ReadOnly Property Headers As HttpResponseHeaderCollection
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+  commentId: P:Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+  id: Content
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: HttpHelperResponse.Content
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Content
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets content from HTTP response.\n"
+  example: []
+  syntax:
+    content: public IHttpContent Content { get; }
+    parameters: []
+    return:
+      type: Windows.Web.Http.IHttpContent
+    content.vb: Public ReadOnly Property Content As IHttpContent
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.Content*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync
+  commentId: M:Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync
+  id: GetTextResultAsync
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: GetTextResultAsync()
+  nameWithType: HttpHelperResponse.GetTextResultAsync()
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetTextResultAsync
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 85
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReads the Content as string and returns it to the caller.\n"
+  example: []
+  syntax:
+    content: public Task<string> GetTextResultAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: string content
+    content.vb: Public Function GetTextResultAsync As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync
+  commentId: M:Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync
+  id: GetStreamResultAsync
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: GetStreamResultAsync()
+  nameWithType: HttpHelperResponse.GetStreamResultAsync()
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetStreamResultAsync
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 99
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReads the Content as stream and returns it to the caller.\n"
+  example: []
+  syntax:
+    content: public Task<IInputStream> GetStreamResultAsync()
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.Streams.IInputStream}
+      description: stream content
+    content.vb: Public Function GetStreamResultAsync As Task(Of IInputStream)
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose
+  commentId: M:Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose
+  id: Dispose
+  parent: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: HttpHelperResponse.Dispose()
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Dispose
+    path: Helpers/HttpHelper/HttpHelperResponse.cs
+    startLine: 112
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nDispose underlying content\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse
+  commentId: T:Microsoft.Toolkit.Uwp.HttpHelperResponse
+  isExternal: false
+  name: HttpHelperResponse
+  nameWithType: HttpHelperResponse
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse
+- uid: Windows.Web.Http.HttpResponseMessage
+  commentId: T:Windows.Web.Http.HttpResponseMessage
+  parent: Windows.Web.Http
+  isExternal: true
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: Windows.Web.Http.HttpResponseMessage
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.#ctor
+  isExternal: false
+  name: HttpHelperResponse
+  nameWithType: HttpHelperResponse.HttpHelperResponse
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.HttpHelperResponse
+- uid: Windows.Web.Http
+  commentId: N:Windows.Web.Http
+  isExternal: false
+  name: Windows.Web.Http
+  nameWithType: Windows.Web.Http
+  fullName: Windows.Web.Http
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+  isExternal: false
+  name: StatusCode
+  nameWithType: HttpHelperResponse.StatusCode
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.StatusCode
+- uid: Windows.Web.Http.HttpStatusCode
+  commentId: T:Windows.Web.Http.HttpStatusCode
+  parent: Windows.Web.Http
+  isExternal: true
+  name: HttpStatusCode
+  nameWithType: HttpStatusCode
+  fullName: Windows.Web.Http.HttpStatusCode
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Success*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+  isExternal: false
+  name: Success
+  nameWithType: HttpHelperResponse.Success
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Success
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+  isExternal: false
+  name: Headers
+  nameWithType: HttpHelperResponse.Headers
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Headers
+- uid: Windows.Web.Http.Headers.HttpResponseHeaderCollection
+  commentId: T:Windows.Web.Http.Headers.HttpResponseHeaderCollection
+  parent: Windows.Web.Http.Headers
+  isExternal: true
+  name: HttpResponseHeaderCollection
+  nameWithType: HttpResponseHeaderCollection
+  fullName: Windows.Web.Http.Headers.HttpResponseHeaderCollection
+- uid: Windows.Web.Http.Headers
+  commentId: N:Windows.Web.Http.Headers
+  isExternal: false
+  name: Windows.Web.Http.Headers
+  nameWithType: Windows.Web.Http.Headers
+  fullName: Windows.Web.Http.Headers
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Content*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+  isExternal: false
+  name: Content
+  nameWithType: HttpHelperResponse.Content
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Content
+- uid: Windows.Web.Http.IHttpContent
+  commentId: T:Windows.Web.Http.IHttpContent
+  parent: Windows.Web.Http
+  isExternal: true
+  name: IHttpContent
+  nameWithType: IHttpContent
+  fullName: Windows.Web.Http.IHttpContent
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync
+  isExternal: false
+  name: GetTextResultAsync
+  nameWithType: HttpHelperResponse.GetTextResultAsync
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetTextResultAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync
+  isExternal: false
+  name: GetStreamResultAsync
+  nameWithType: HttpHelperResponse.GetStreamResultAsync
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.GetStreamResultAsync
+- uid: System.Threading.Tasks.Task{Windows.Storage.Streams.IInputStream}
+  commentId: T:System.Threading.Tasks.Task{Windows.Storage.Streams.IInputStream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IInputStream>
+  nameWithType: Task<IInputStream>
+  fullName: System.Threading.Tasks.Task<Windows.Storage.Streams.IInputStream>
+  nameWithType.vb: Task(Of IInputStream)
+  fullName.vb: System.Threading.Tasks.Task(Of Windows.Storage.Streams.IInputStream)
+  name.vb: Task(Of IInputStream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Windows.Storage.Streams.IInputStream
+    name: IInputStream
+    nameWithType: IInputStream
+    fullName: Windows.Storage.Streams.IInputStream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Windows.Storage.Streams.IInputStream
+    name: IInputStream
+    nameWithType: IInputStream
+    fullName: Windows.Storage.Streams.IInputStream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose*
+  commentId: Overload:Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose
+  isExternal: false
+  name: Dispose
+  nameWithType: HttpHelperResponse.Dispose
+  fullName: Microsoft.Toolkit.Uwp.HttpHelperResponse.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,2244 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  commentId: T:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  id: BaseObjectStorageHelper
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync(System.String)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String,System.String)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,``0)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,System.String,``0)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  - Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+  langs:
+  - csharp
+  - vb
+  name: BaseObjectStorageHelper
+  nameWithType: BaseObjectStorageHelper
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: BaseObjectStorageHelper
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nShared implementation of ObjectStorageHelper\n"
+  example: []
+  syntax:
+    content: 'public abstract class BaseObjectStorageHelper : IObjectStorageHelper'
+    content.vb: >-
+      Public MustInherit Class BaseObjectStorageHelper
+          Implements IObjectStorageHelper
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Toolkit.Uwp.LocalObjectStorageHelper
+  - Microsoft.Toolkit.Uwp.RoamingObjectStorageHelper
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+  commentId: P:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+  id: Settings
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Settings
+  nameWithType: BaseObjectStorageHelper.Settings
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Settings
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets or sets settings container\n"
+  example: []
+  syntax:
+    content: protected ApplicationDataContainer Settings { get; set; }
+    parameters: []
+    return:
+      type: Windows.Storage.ApplicationDataContainer
+    content.vb: Protected Property Settings As ApplicationDataContainer
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+  commentId: P:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+  id: Folder
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: BaseObjectStorageHelper.Folder
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Folder
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets or sets storage folder\n"
+  example: []
+  syntax:
+    content: protected StorageFolder Folder { get; set; }
+    parameters: []
+    return:
+      type: Windows.Storage.StorageFolder
+    content.vb: Protected Property Folder As StorageFolder
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder*
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String)
+  id: KeyExists(System.String)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: KeyExists(String)
+  nameWithType: BaseObjectStorageHelper.KeyExists(String)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: KeyExists
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nDetect if a setting already exists\n"
+  example: []
+  syntax:
+    content: public bool KeyExists(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: Key of the setting (that contains object)
+    return:
+      type: System.Boolean
+      description: True if a value exists
+    content.vb: Public Function KeyExists(key As String) As Boolean
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String,System.String)
+  id: KeyExists(System.String,System.String)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: KeyExists(String, String)
+  nameWithType: BaseObjectStorageHelper.KeyExists(String, String)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: KeyExists
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 52
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nDetect if a setting already exists in composite.\n"
+  example: []
+  syntax:
+    content: public bool KeyExists(string compositeKey, string key)
+    parameters:
+    - id: compositeKey
+      type: System.String
+      description: Key of the composite (that contains settings)
+    - id: key
+      type: System.String
+      description: Key of the setting (that contains object)
+    return:
+      type: System.Boolean
+      description: True if a value exists
+    content.vb: Public Function KeyExists(compositeKey As String, key As String) As Boolean
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String,System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,``0)
+  id: Read``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Read<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.Read<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read<T>(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Read
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 73
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nRetrieve single item by its key.\n"
+  example: []
+  syntax:
+    content: public T Read<T>(string key, T default = null)
+    parameters:
+    - id: key
+      type: System.String
+      description: Key of the object
+    - id: default
+      type: '{T}'
+      description: Default value of the object
+    typeParameters:
+    - id: T
+      description: Type of object retrieved
+    return:
+      type: '{T}'
+      description: The T object
+    content.vb: Public Function Read(Of T)(key As String, default As T = Nothing) As T
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,{T})
+  nameWithType.vb: BaseObjectStorageHelper.Read(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read(Of T)(System.String, T)
+  name.vb: Read(Of T)(String, T)
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read``1(System.String,System.String,``0)
+  id: Read``1(System.String,System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Read<T>(String, String, T)
+  nameWithType: BaseObjectStorageHelper.Read<T>(String, String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read<T>(System.String, System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Read
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 92
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nRetrieve single item by its key in composite.\n"
+  example: []
+  syntax:
+    content: public T Read<T>(string compositeKey, string key, T default = null)
+    parameters:
+    - id: compositeKey
+      type: System.String
+      description: Key of the composite (that contains settings)
+    - id: key
+      type: System.String
+      description: Key of the object
+    - id: default
+      type: '{T}'
+      description: Default value of the object
+    typeParameters:
+    - id: T
+      description: Type of object retrieved
+    return:
+      type: '{T}'
+      description: The T object
+    content.vb: Public Function Read(Of T)(compositeKey As String, key As String, default As T = Nothing) As T
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,{T})
+  nameWithType.vb: BaseObjectStorageHelper.Read(Of T)(String, String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read(Of T)(System.String, System.String, T)
+  name.vb: Read(Of T)(String, String, T)
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+  id: Save``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Save<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.Save<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save<T>(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Save
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSave single item by its key.\nThis method should be considered for objects that do not exceed 8k bytes during the lifetime of the application\n(refers to <xref href=\"Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync%60%601(System.String%2c%60%600)\" data-throw-if-not-resolved=\"false\"></xref> for complex/large objects).\n"
+  example: []
+  syntax:
+    content: public void Save<T>(string key, T value)
+    parameters:
+    - id: key
+      type: System.String
+      description: Key of the value saved
+    - id: value
+      type: '{T}'
+      description: Object to save
+    typeParameters:
+    - id: T
+      description: Type of object saved
+    content.vb: Public Sub Save(Of T)(key As String, value As T)
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,{T})
+  nameWithType.vb: BaseObjectStorageHelper.Save(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save(Of T)(System.String, T)
+  name.vb: Save(Of T)(String, T)
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  id: Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: Save<T>(String, IDictionary<String, T>)
+  nameWithType: BaseObjectStorageHelper.Save<T>(String, IDictionary<String, T>)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save<T>(System.String, System.Collections.Generic.IDictionary<System.String, T>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Save
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 129
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSave a group of items by its key in a composite.\nThis method should be considered for objects that do not exceed 8k bytes during the lifetime of the application\n(refers to <xref href=\"Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync%60%601(System.String%2c%60%600)\" data-throw-if-not-resolved=\"false\"></xref> for complex/large objects) and for groups of settings which\nneed to be treated in an atomic way.\n"
+  example: []
+  syntax:
+    content: public void Save<T>(string compositeKey, IDictionary<string, T> values)
+    parameters:
+    - id: compositeKey
+      type: System.String
+      description: Key of the composite (that contains settings)
+    - id: values
+      type: System.Collections.Generic.IDictionary{System.String,{T}}
+      description: Objects to save
+    typeParameters:
+    - id: T
+      description: Type of object saved
+    content.vb: Public Sub Save(Of T)(compositeKey As String, values As IDictionary(Of String, T))
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,{T}})
+  nameWithType.vb: BaseObjectStorageHelper.Save(Of T)(String, IDictionary(Of String, T))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save(Of T)(System.String, System.Collections.Generic.IDictionary(Of System.String, T))
+  name.vb: Save(Of T)(String, IDictionary(Of String, T))
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync(System.String)
+  id: FileExistsAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: FileExistsAsync(String)
+  nameWithType: BaseObjectStorageHelper.FileExistsAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FileExistsAsync
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 164
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nDetect if a file already exists\n"
+  example: []
+  syntax:
+    content: public Task<bool> FileExistsAsync(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Key of the file (that contains object)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: True if a value exists
+    content.vb: Public Function FileExistsAsync(filePath As String) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  id: ReadFileAsync``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadFileAsync<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.ReadFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync<T>(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadFileAsync
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 176
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nRetrieve object from file.\n"
+  example: []
+  syntax:
+    content: public Task<T> ReadFileAsync<T>(string filePath, T default = null)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to the file that contains the object
+    - id: default
+      type: '{T}'
+      description: Default value of the object
+    typeParameters:
+    - id: T
+      description: Type of object retrieved
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Waiting task until completion with the object in the file
+    content.vb: Public Function ReadFileAsync(Of T)(filePath As String, default As T = Nothing) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,{T})
+  nameWithType.vb: BaseObjectStorageHelper.ReadFileAsync(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync(Of T)(System.String, T)
+  name.vb: ReadFileAsync(Of T)(String, T)
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  id: SaveFileAsync``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper
+  langs:
+  - csharp
+  - vb
+  name: SaveFileAsync<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.SaveFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync<T>(System.String, T)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SaveFileAsync
+    path: Helpers/ObjectStorage/BaseObjectStorageHelper.cs
+    startLine: 190
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSave object inside file.\nThere is no limitation to use this method (refers to <xref href=\"Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save%60%601(System.String%2c%60%600)\" data-throw-if-not-resolved=\"false\"></xref> method for simple objects).\n"
+  example: []
+  syntax:
+    content: public Task<StorageFile> SaveFileAsync<T>(string filePath, T value)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to the file that will contain the object
+    - id: value
+      type: '{T}'
+      description: Object to save
+    typeParameters:
+    - id: T
+      description: Type of object saved
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: When this method completes, it returns the <xref href="Windows.Storage.StorageFile" data-throw-if-not-resolved="false"></xref> where the object was saved
+    content.vb: Public Function SaveFileAsync(Of T)(filePath As String, value As T) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync*
+  implements:
+  - Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,{T})
+  nameWithType.vb: BaseObjectStorageHelper.SaveFileAsync(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync(Of T)(System.String, T)
+  name.vb: SaveFileAsync(Of T)(String, T)
+references:
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  commentId: T:Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  parent: Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: IObjectStorageHelper
+  nameWithType: IObjectStorageHelper
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+  isExternal: false
+  name: Settings
+  nameWithType: BaseObjectStorageHelper.Settings
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Settings
+- uid: Windows.Storage.ApplicationDataContainer
+  commentId: T:Windows.Storage.ApplicationDataContainer
+  parent: Windows.Storage
+  isExternal: true
+  name: ApplicationDataContainer
+  nameWithType: ApplicationDataContainer
+  fullName: Windows.Storage.ApplicationDataContainer
+- uid: Windows.Storage
+  commentId: N:Windows.Storage
+  isExternal: false
+  name: Windows.Storage
+  nameWithType: Windows.Storage
+  fullName: Windows.Storage
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+  isExternal: false
+  name: Folder
+  nameWithType: BaseObjectStorageHelper.Folder
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Folder
+- uid: Windows.Storage.StorageFolder
+  commentId: T:Windows.Storage.StorageFolder
+  parent: Windows.Storage
+  isExternal: true
+  name: StorageFolder
+  nameWithType: StorageFolder
+  fullName: Windows.Storage.StorageFolder
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists
+  isExternal: false
+  name: KeyExists
+  nameWithType: BaseObjectStorageHelper.KeyExists
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.KeyExists
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  isExternal: true
+  name: KeyExists(String)
+  nameWithType: IObjectStorageHelper.KeyExists(String)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+    name: KeyExists
+    nameWithType: IObjectStorageHelper.KeyExists
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String)
+    name: KeyExists
+    nameWithType: IObjectStorageHelper.KeyExists
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String,System.String)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  isExternal: true
+  name: KeyExists(String, String)
+  nameWithType: IObjectStorageHelper.KeyExists(String, String)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String, System.String)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String,System.String)
+    name: KeyExists
+    nameWithType: IObjectStorageHelper.KeyExists
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists(System.String,System.String)
+    name: KeyExists
+    nameWithType: IObjectStorageHelper.KeyExists
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.KeyExists
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read
+  isExternal: false
+  name: Read
+  nameWithType: BaseObjectStorageHelper.Read
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Read
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,{T})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+  name: Read<T>(String, T)
+  nameWithType: IObjectStorageHelper.Read<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Read(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)(System.String, T)
+  name.vb: Read(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+    name: Read<T>
+    nameWithType: IObjectStorageHelper.Read<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+    name: Read(Of T)
+    nameWithType: IObjectStorageHelper.Read(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+  isExternal: true
+  name: Read<T>(String, T)
+  nameWithType: IObjectStorageHelper.Read<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Read(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)(System.String, T)
+  name.vb: Read(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+    name: Read<T>
+    nameWithType: IObjectStorageHelper.Read<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,``0)
+    name: Read(Of T)
+    nameWithType: IObjectStorageHelper.Read(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,{T})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+  name: Read<T>(String, String, T)
+  nameWithType: IObjectStorageHelper.Read<T>(String, String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>(System.String, System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Read(Of T)(String, String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)(System.String, System.String, T)
+  name.vb: Read(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+    name: Read<T>
+    nameWithType: IObjectStorageHelper.Read<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+    name: Read(Of T)
+    nameWithType: IObjectStorageHelper.Read(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+  isExternal: true
+  name: Read<T>(String, String, T)
+  nameWithType: IObjectStorageHelper.Read<T>(String, String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>(System.String, System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Read(Of T)(String, String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)(System.String, System.String, T)
+  name.vb: Read(Of T)(String, String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+    name: Read<T>
+    nameWithType: IObjectStorageHelper.Read<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read``1(System.String,System.String,``0)
+    name: Read(Of T)
+    nameWithType: IObjectStorageHelper.Read(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Read(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  isExternal: true
+  name: SaveFileAsync<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.SaveFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync<T>(System.String, T)
+  nameWithType.vb: BaseObjectStorageHelper.SaveFileAsync(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync(Of T)(System.String, T)
+  name.vb: SaveFileAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync<T>
+    nameWithType: BaseObjectStorageHelper.SaveFileAsync<T>
+    fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync(Of T)
+    nameWithType: BaseObjectStorageHelper.SaveFileAsync(Of T)
+    fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save
+  isExternal: false
+  name: Save
+  nameWithType: BaseObjectStorageHelper.Save
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,{T})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+  name: Save<T>(String, T)
+  nameWithType: IObjectStorageHelper.Save<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Save(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)(System.String, T)
+  name.vb: Save(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+    name: Save<T>
+    nameWithType: IObjectStorageHelper.Save<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+    name: Save(Of T)
+    nameWithType: IObjectStorageHelper.Save(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+  isExternal: true
+  name: Save<T>(String, T)
+  nameWithType: IObjectStorageHelper.Save<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.Save(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)(System.String, T)
+  name.vb: Save(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+    name: Save<T>
+    nameWithType: IObjectStorageHelper.Save<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,``0)
+    name: Save(Of T)
+    nameWithType: IObjectStorageHelper.Save(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,{T}})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  name: Save<T>(String, IDictionary<String, T>)
+  nameWithType: IObjectStorageHelper.Save<T>(String, IDictionary<String, T>)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>(System.String, System.Collections.Generic.IDictionary<System.String, T>)
+  nameWithType.vb: IObjectStorageHelper.Save(Of T)(String, IDictionary(Of String, T))
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)(System.String, System.Collections.Generic.IDictionary(Of System.String, T))
+  name.vb: Save(Of T)(String, IDictionary(Of String, T))
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+    name: Save<T>
+    nameWithType: IObjectStorageHelper.Save<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+    name: Save(Of T)
+    nameWithType: IObjectStorageHelper.Save(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary{System.String,{T}}
+  commentId: T:System.Collections.Generic.IDictionary{System.String,``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  name: IDictionary<String, T>
+  nameWithType: IDictionary<String, T>
+  fullName: System.Collections.Generic.IDictionary<System.String, T>
+  nameWithType.vb: IDictionary(Of String, T)
+  fullName.vb: System.Collections.Generic.IDictionary(Of System.String, T)
+  name.vb: IDictionary(Of String, T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+  isExternal: true
+  name: Save<T>(String, IDictionary<String, T>)
+  nameWithType: IObjectStorageHelper.Save<T>(String, IDictionary<String, T>)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>(System.String, System.Collections.Generic.IDictionary<System.String, T>)
+  nameWithType.vb: IObjectStorageHelper.Save(Of T)(String, IDictionary(Of String, T))
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)(System.String, System.Collections.Generic.IDictionary(Of System.String, T))
+  name.vb: Save(Of T)(String, IDictionary(Of String, T))
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+    name: Save<T>
+    nameWithType: IObjectStorageHelper.Save<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})
+    name: Save(Of T)
+    nameWithType: IObjectStorageHelper.Save(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.Save(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    nameWithType: IDictionary
+    fullName: System.Collections.Generic.IDictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: false
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync
+  isExternal: false
+  name: FileExistsAsync
+  nameWithType: BaseObjectStorageHelper.FileExistsAsync
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.FileExistsAsync
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  isExternal: true
+  name: FileExistsAsync(String)
+  nameWithType: IObjectStorageHelper.FileExistsAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+    name: FileExistsAsync
+    nameWithType: IObjectStorageHelper.FileExistsAsync
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync(System.String)
+    name: FileExistsAsync
+    nameWithType: IObjectStorageHelper.FileExistsAsync
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.FileExistsAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync
+  isExternal: false
+  name: ReadFileAsync
+  nameWithType: BaseObjectStorageHelper.ReadFileAsync
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.ReadFileAsync
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,{T})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  name: ReadFileAsync<T>(String, T)
+  nameWithType: IObjectStorageHelper.ReadFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.ReadFileAsync(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync(Of T)(System.String, T)
+  name.vb: ReadFileAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+    name: ReadFileAsync<T>
+    nameWithType: IObjectStorageHelper.ReadFileAsync<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+    name: ReadFileAsync(Of T)
+    nameWithType: IObjectStorageHelper.ReadFileAsync(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+  isExternal: true
+  name: ReadFileAsync<T>(String, T)
+  nameWithType: IObjectStorageHelper.ReadFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.ReadFileAsync(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync(Of T)(System.String, T)
+  name.vb: ReadFileAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+    name: ReadFileAsync<T>
+    nameWithType: IObjectStorageHelper.ReadFileAsync<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync``1(System.String,``0)
+    name: ReadFileAsync(Of T)
+    nameWithType: IObjectStorageHelper.ReadFileAsync(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.ReadFileAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+  isExternal: true
+  name: Save<T>(String, T)
+  nameWithType: BaseObjectStorageHelper.Save<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save<T>(System.String, T)
+  nameWithType.vb: BaseObjectStorageHelper.Save(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save(Of T)(System.String, T)
+  name.vb: Save(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+    name: Save<T>
+    nameWithType: BaseObjectStorageHelper.Save<T>
+    fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save``1(System.String,``0)
+    name: Save(Of T)
+    nameWithType: BaseObjectStorageHelper.Save(Of T)
+    fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.Save(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.Storage.StorageFile
+  commentId: T:Windows.Storage.StorageFile
+  parent: Windows.Storage
+  isExternal: true
+  name: StorageFile
+  nameWithType: StorageFile
+  fullName: Windows.Storage.StorageFile
+- uid: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync
+  isExternal: false
+  name: SaveFileAsync
+  nameWithType: BaseObjectStorageHelper.SaveFileAsync
+  fullName: Microsoft.Toolkit.Uwp.BaseObjectStorageHelper.SaveFileAsync
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,{T})
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  parent: Microsoft.Toolkit.Uwp.IObjectStorageHelper
+  definition: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  name: SaveFileAsync<T>(String, T)
+  nameWithType: IObjectStorageHelper.SaveFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.SaveFileAsync(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync(Of T)(System.String, T)
+  name.vb: SaveFileAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync<T>
+    nameWithType: IObjectStorageHelper.SaveFileAsync<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync(Of T)
+    nameWithType: IObjectStorageHelper.SaveFileAsync(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+  commentId: T:System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StorageFile>
+  nameWithType: Task<StorageFile>
+  fullName: System.Threading.Tasks.Task<Windows.Storage.StorageFile>
+  nameWithType.vb: Task(Of StorageFile)
+  fullName.vb: System.Threading.Tasks.Task(Of Windows.Storage.StorageFile)
+  name.vb: Task(Of StorageFile)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Windows.Storage.StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: Windows.Storage.StorageFile
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Windows.Storage.StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: Windows.Storage.StorageFile
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  commentId: M:Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+  isExternal: true
+  name: SaveFileAsync<T>(String, T)
+  nameWithType: IObjectStorageHelper.SaveFileAsync<T>(String, T)
+  fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync<T>(System.String, T)
+  nameWithType.vb: IObjectStorageHelper.SaveFileAsync(Of T)(String, T)
+  fullName.vb: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync(Of T)(System.String, T)
+  name.vb: SaveFileAsync(Of T)(String, T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync<T>
+    nameWithType: IObjectStorageHelper.SaveFileAsync<T>
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync<T>
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)
+    name: SaveFileAsync(Of T)
+    nameWithType: IObjectStorageHelper.SaveFileAsync(Of T)
+    fullName: Microsoft.Toolkit.Uwp.IObjectStorageHelper.SaveFileAsync(Of T)
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )

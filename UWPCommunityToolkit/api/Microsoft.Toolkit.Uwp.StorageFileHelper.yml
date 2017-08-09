@@ -1,0 +1,1892 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper
+  commentId: T:Microsoft.Toolkit.Uwp.StorageFileHelper
+  id: StorageFileHelper
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync(Windows.Storage.StorageFolder,System.String,System.Boolean)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync(Windows.Storage.StorageFile)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync(System.String)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync(Windows.Storage.StorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  - Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  langs:
+  - csharp
+  - vb
+  name: StorageFileHelper
+  nameWithType: StorageFileHelper
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: StorageFileHelper
+    path: Helpers/StorageFileHelper.cs
+    startLine: 26
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nThis class provides static helper methods for <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static class StorageFileHelper
+    content.vb: Public Module StorageFileHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteTextToLocalFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteTextToLocalFileAsync(String, String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteTextToLocalFileAsync(String, String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync(System.String, System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteTextToLocalFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves a string value to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> in application local folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteTextToLocalFileAsync(string text, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: text
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the text.\n"
+    content.vb: Public Shared Function WriteTextToLocalFileAsync(text As String, fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteTextToLocalCacheFileAsync(System.String,System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteTextToLocalCacheFileAsync(String, String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteTextToLocalCacheFileAsync(String, String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync(System.String, System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteTextToLocalCacheFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves a string value to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> in application local cache folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteTextToLocalCacheFileAsync(string text, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: text
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the text.\n"
+    content.vb: Public Shared Function WriteTextToLocalCacheFileAsync(text As String, fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteTextToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteTextToKnownFolderFileAsync(KnownFolderId, String, String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteTextToKnownFolderFileAsync(KnownFolderId, String, String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync(Windows.Storage.KnownFolderId, System.String, System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteTextToKnownFolderFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 113
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves a string value to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> in well known folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteTextToKnownFolderFileAsync(KnownFolderId knownFolderId, string text, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: knownFolderId
+      type: Windows.Storage.KnownFolderId
+      description: "\nThe well known folder ID to use.\n"
+    - id: text
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the text.\n"
+    content.vb: Public Shared Function WriteTextToKnownFolderFileAsync(knownFolderId As KnownFolderId, text As String, fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync(Windows.Storage.StorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync(Windows.Storage.StorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteTextToFileAsync(Windows.Storage.StorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteTextToFileAsync(StorageFolder, String, String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteTextToFileAsync(StorageFolder, String, String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync(Windows.Storage.StorageFolder, System.String, System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteTextToFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 149
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves a string value to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> in the given <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteTextToFileAsync(this StorageFolder fileLocation, string text, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: fileLocation
+      type: Windows.Storage.StorageFolder
+      description: "\nThe <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref> to save the file in.\n"
+    - id: text
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the text.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WriteTextToFileAsync(fileLocation As StorageFolder, text As String, fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteBytesToLocalFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteBytesToLocalFileAsync(Byte[], String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteBytesToLocalFileAsync(Byte[], String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync(System.Byte[], System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteBytesToLocalFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 189
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves an array of bytes to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> to application local folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteBytesToLocalFileAsync(byte[] bytes, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: "\nThe <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the bytes.\n"
+    content.vb: Public Shared Function WriteBytesToLocalFileAsync(bytes As Byte(), fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  nameWithType.vb: StorageFileHelper.WriteBytesToLocalFileAsync(Byte(), String, CreationCollisionOption)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync(System.Byte(), System.String, Windows.Storage.CreationCollisionOption)
+  name.vb: WriteBytesToLocalFileAsync(Byte(), String, CreationCollisionOption)
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteBytesToLocalCacheFileAsync(System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteBytesToLocalCacheFileAsync(Byte[], String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteBytesToLocalCacheFileAsync(Byte[], String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync(System.Byte[], System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteBytesToLocalCacheFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 221
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves an array of bytes to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> to application local cache folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteBytesToLocalCacheFileAsync(byte[] bytes, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: "\nThe <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the bytes.\n"
+    content.vb: Public Shared Function WriteBytesToLocalCacheFileAsync(bytes As Byte(), fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  nameWithType.vb: StorageFileHelper.WriteBytesToLocalCacheFileAsync(Byte(), String, CreationCollisionOption)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync(System.Byte(), System.String, Windows.Storage.CreationCollisionOption)
+  name.vb: WriteBytesToLocalCacheFileAsync(Byte(), String, CreationCollisionOption)
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte[], String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte[], String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId, System.Byte[], System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteBytesToKnownFolderFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 256
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves an array of bytes to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> to well known folder/>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteBytesToKnownFolderFileAsync(KnownFolderId knownFolderId, byte[] bytes, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: knownFolderId
+      type: Windows.Storage.KnownFolderId
+      description: "\nThe well known folder ID to use.\n"
+    - id: bytes
+      type: System.Byte[]
+      description: "\nThe <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the bytes.\n"
+    content.vb: Public Shared Function WriteBytesToKnownFolderFileAsync(knownFolderId As KnownFolderId, bytes As Byte(), fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  nameWithType.vb: StorageFileHelper.WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte(), String, CreationCollisionOption)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync(Windows.Storage.KnownFolderId, System.Byte(), System.String, Windows.Storage.CreationCollisionOption)
+  name.vb: WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte(), String, CreationCollisionOption)
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  id: WriteBytesToFileAsync(Windows.Storage.StorageFolder,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: WriteBytesToFileAsync(StorageFolder, Byte[], String, CreationCollisionOption)
+  nameWithType: StorageFileHelper.WriteBytesToFileAsync(StorageFolder, Byte[], String, CreationCollisionOption)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder, System.Byte[], System.String, Windows.Storage.CreationCollisionOption)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: WriteBytesToFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 292
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nSaves an array of bytes to a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> in the given <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<StorageFile> WriteBytesToFileAsync(this StorageFolder fileLocation, byte[] bytes, string fileName, CreationCollisionOption options = CreationCollisionOption.ReplaceExisting)
+    parameters:
+    - id: fileLocation
+      type: Windows.Storage.StorageFolder
+      description: "\nThe <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref> to save the file in.\n"
+    - id: bytes
+      type: System.Byte[]
+      description: "\nThe <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array to save to the file.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> name for the file.\n"
+    - id: options
+      type: Windows.Storage.CreationCollisionOption
+      description: "\nThe creation collision options. Default is ReplaceExisting.\n"
+    return:
+      type: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+      description: "\nReturns the saved <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> containing the bytes.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function WriteBytesToFileAsync(fileLocation As StorageFolder, bytes As Byte(), fileName As String, options As CreationCollisionOption = CreationCollisionOption.ReplaceExisting) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the file location or file name are null or empty.\n"
+  nameWithType.vb: StorageFileHelper.WriteBytesToFileAsync(StorageFolder, Byte(), String, CreationCollisionOption)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder, System.Byte(), System.String, Windows.Storage.CreationCollisionOption)
+  name.vb: WriteBytesToFileAsync(StorageFolder, Byte(), String, CreationCollisionOption)
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync(System.String)
+  id: ReadTextFromPackagedFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFromPackagedFileAsync(String)
+  nameWithType: StorageFileHelper.ReadTextFromPackagedFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadTextFromPackagedFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 326
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a string value from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application installation folder.\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadTextFromPackagedFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\nReturns the stored <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+    content.vb: Public Shared Function ReadTextFromPackagedFileAsync(fileName As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync(System.String)
+  id: ReadTextFromLocalCacheFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFromLocalCacheFileAsync(String)
+  nameWithType: StorageFileHelper.ReadTextFromLocalCacheFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadTextFromLocalCacheFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 349
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a string value from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application local cache folder.\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadTextFromLocalCacheFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\nReturns the stored <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+    content.vb: Public Shared Function ReadTextFromLocalCacheFileAsync(fileName As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync(System.String)
+  id: ReadTextFromLocalFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFromLocalFileAsync(String)
+  nameWithType: StorageFileHelper.ReadTextFromLocalFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadTextFromLocalFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 372
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a string value from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application local folder.\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadTextFromLocalFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\nReturns the stored <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+    content.vb: Public Shared Function ReadTextFromLocalFileAsync(fileName As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  id: ReadTextFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFromKnownFoldersFileAsync(KnownFolderId, String)
+  nameWithType: StorageFileHelper.ReadTextFromKnownFoldersFileAsync(KnownFolderId, String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadTextFromKnownFoldersFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 398
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a string value from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in a well known folder.\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadTextFromKnownFoldersFileAsync(KnownFolderId knownFolderId, string fileName)
+    parameters:
+    - id: knownFolderId
+      type: Windows.Storage.KnownFolderId
+      description: "\nThe well known folder ID to use.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\nReturns the stored <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+    content.vb: Public Shared Function ReadTextFromKnownFoldersFileAsync(knownFolderId As KnownFolderId, fileName As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  id: ReadTextFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadTextFromFileAsync(StorageFolder, String)
+  nameWithType: StorageFileHelper.ReadTextFromFileAsync(StorageFolder, String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync(Windows.Storage.StorageFolder, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadTextFromFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 426
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a string value from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the given <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<string> ReadTextFromFileAsync(this StorageFolder fileLocation, string fileName)
+    parameters:
+    - id: fileLocation
+      type: Windows.Storage.StorageFolder
+      description: "\nThe <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref> to save the file in.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: "\nReturns the stored <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> value.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadTextFromFileAsync(fileLocation As StorageFolder, fileName As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync(System.String)
+  id: ReadBytesFromPackagedFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesFromPackagedFileAsync(String)
+  nameWithType: StorageFileHelper.ReadBytesFromPackagedFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesFromPackagedFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 451
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application installation folder.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesFromPackagedFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: Public Shared Function ReadBytesFromPackagedFileAsync(fileName As String) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync(System.String)
+  id: ReadBytesFromLocalCacheFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesFromLocalCacheFileAsync(String)
+  nameWithType: StorageFileHelper.ReadBytesFromLocalCacheFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesFromLocalCacheFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 474
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application local cache folder.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesFromLocalCacheFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: Public Shared Function ReadBytesFromLocalCacheFileAsync(fileName As String) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync(System.String)
+  id: ReadBytesFromLocalFileAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesFromLocalFileAsync(String)
+  nameWithType: StorageFileHelper.ReadBytesFromLocalFileAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesFromLocalFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 497
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the application local folder.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesFromLocalFileAsync(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: Public Shared Function ReadBytesFromLocalFileAsync(fileName As String) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  id: ReadBytesFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId,System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesFromKnownFoldersFileAsync(KnownFolderId, String)
+  nameWithType: StorageFileHelper.ReadBytesFromKnownFoldersFileAsync(KnownFolderId, String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync(Windows.Storage.KnownFolderId, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesFromKnownFoldersFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 523
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in a well known folder.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesFromKnownFoldersFileAsync(KnownFolderId knownFolderId, string fileName)
+    parameters:
+    - id: knownFolderId
+      type: Windows.Storage.KnownFolderId
+      description: "\nThe well known folder ID to use.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: Public Shared Function ReadBytesFromKnownFoldersFileAsync(knownFolderId As KnownFolderId, fileName As String) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  id: ReadBytesFromFileAsync(Windows.Storage.StorageFolder,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesFromFileAsync(StorageFolder, String)
+  nameWithType: StorageFileHelper.ReadBytesFromFileAsync(StorageFolder, String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync(Windows.Storage.StorageFolder, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesFromFileAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 551
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref> located in the given <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesFromFileAsync(this StorageFolder fileLocation, string fileName)
+    parameters:
+    - id: fileLocation
+      type: Windows.Storage.StorageFolder
+      description: "\nThe <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref> to save the file in.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe relative <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> file path.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadBytesFromFileAsync(fileLocation As StorageFolder, fileName As String) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\nException thrown if the <code data-dev-comment-type=\"paramref\">fileName</code> is null or empty.\n"
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync(Windows.Storage.StorageFile)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync(Windows.Storage.StorageFile)
+  id: ReadBytesAsync(Windows.Storage.StorageFile)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: ReadBytesAsync(StorageFile)
+  nameWithType: StorageFileHelper.ReadBytesAsync(StorageFile)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync(Windows.Storage.StorageFile)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ReadBytesAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 573
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets an array of bytes from a <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static Task<byte[]> ReadBytesAsync(this StorageFile file)
+    parameters:
+    - id: file
+      type: Windows.Storage.StorageFile
+      description: "\nThe <xref href=\"Windows.Storage.StorageFile\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+      description: "\nReturns the stored <xref href=\"System.Byte\" data-throw-if-not-resolved=\"false\"></xref> array.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadBytesAsync(file As StorageFile) As Task(Of Byte())
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync(Windows.Storage.StorageFolder,System.String,System.Boolean)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync(Windows.Storage.StorageFolder,System.String,System.Boolean)
+  id: FileExistsAsync(Windows.Storage.StorageFolder,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: FileExistsAsync(StorageFolder, String, Boolean)
+  nameWithType: StorageFileHelper.FileExistsAsync(StorageFolder, String, Boolean)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync(Windows.Storage.StorageFolder, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FileExistsAsync
+    path: Helpers/StorageFileHelper.cs
+    startLine: 607
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a value indicating whether a file exists in the current folder.\n"
+  example: []
+  syntax:
+    content: public static Task<bool> FileExistsAsync(this StorageFolder folder, string fileName, bool isRecursive = false)
+    parameters:
+    - id: folder
+      type: Windows.Storage.StorageFolder
+      description: "\nThe <xref href=\"Windows.Storage.StorageFolder\" data-throw-if-not-resolved=\"false\"></xref> to look for the file in.\n"
+    - id: fileName
+      type: System.String
+      description: "\nThe <xref href=\"System.String\" data-throw-if-not-resolved=\"false\"></xref> filename of the file to search for. Must include the file extension and is not case-sensitive.\n"
+    - id: isRecursive
+      type: System.Boolean
+      description: "\nThe <xref href=\"System.Boolean\" data-throw-if-not-resolved=\"false\"></xref>, indicating if the subfolders should also be searched through.\n"
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: "\nReturns true, if the file exists.\n"
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FileExistsAsync(folder As StorageFolder, fileName As String, isRecursive As Boolean = False) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid(System.String)
+  id: IsFileNameValid(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: IsFileNameValid(String)
+  nameWithType: StorageFileHelper.IsFileNameValid(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: IsFileNameValid
+    path: Helpers/StorageFileHelper.cs
+    startLine: 617
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a value indicating whether a filename is correct or not using the Storage feature.\n"
+  example: []
+  syntax:
+    content: public static bool IsFileNameValid(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The filename to test. Must include the file extension and is not case-sensitive.
+    return:
+      type: System.Boolean
+      description: Returns true if the filename is valid.
+    content.vb: Public Shared Function IsFileNameValid(fileName As String) As Boolean
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid(System.String)
+  id: IsFilePathValid(System.String)
+  parent: Microsoft.Toolkit.Uwp.StorageFileHelper
+  langs:
+  - csharp
+  - vb
+  name: IsFilePathValid(String)
+  nameWithType: StorageFileHelper.IsFilePathValid(String)
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: IsFilePathValid
+    path: Helpers/StorageFileHelper.cs
+    startLine: 628
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nGets a value indicating whether a file path is correct or not using the Storage feature.\n"
+  example: []
+  syntax:
+    content: public static bool IsFilePathValid(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: The file path to test. Must include the file extension and is not case-sensitive.
+    return:
+      type: System.Boolean
+      description: Returns true if the file path is valid.
+    content.vb: Public Shared Function IsFilePathValid(filePath As String) As Boolean
+  overload: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Windows.Storage.StorageFile
+  commentId: T:Windows.Storage.StorageFile
+  parent: Windows.Storage
+  isExternal: true
+  name: StorageFile
+  nameWithType: StorageFile
+  fullName: Windows.Storage.StorageFile
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.Storage
+  commentId: N:Windows.Storage
+  isExternal: false
+  name: Windows.Storage
+  nameWithType: Windows.Storage
+  fullName: Windows.Storage
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync
+  isExternal: false
+  name: WriteTextToLocalFileAsync
+  nameWithType: StorageFileHelper.WriteTextToLocalFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalFileAsync
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Windows.Storage.CreationCollisionOption
+  commentId: T:Windows.Storage.CreationCollisionOption
+  parent: Windows.Storage
+  isExternal: true
+  name: CreationCollisionOption
+  nameWithType: CreationCollisionOption
+  fullName: Windows.Storage.CreationCollisionOption
+- uid: System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+  commentId: T:System.Threading.Tasks.Task{Windows.Storage.StorageFile}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<StorageFile>
+  nameWithType: Task<StorageFile>
+  fullName: System.Threading.Tasks.Task<Windows.Storage.StorageFile>
+  nameWithType.vb: Task(Of StorageFile)
+  fullName.vb: System.Threading.Tasks.Task(Of Windows.Storage.StorageFile)
+  name.vb: Task(Of StorageFile)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Windows.Storage.StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: Windows.Storage.StorageFile
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Windows.Storage.StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: Windows.Storage.StorageFile
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync
+  isExternal: false
+  name: WriteTextToLocalCacheFileAsync
+  nameWithType: StorageFileHelper.WriteTextToLocalCacheFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToLocalCacheFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync
+  isExternal: false
+  name: WriteTextToKnownFolderFileAsync
+  nameWithType: StorageFileHelper.WriteTextToKnownFolderFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToKnownFolderFileAsync
+- uid: Windows.Storage.KnownFolderId
+  commentId: T:Windows.Storage.KnownFolderId
+  parent: Windows.Storage
+  isExternal: true
+  name: KnownFolderId
+  nameWithType: KnownFolderId
+  fullName: Windows.Storage.KnownFolderId
+- uid: Windows.Storage.StorageFolder
+  commentId: T:Windows.Storage.StorageFolder
+  parent: Windows.Storage
+  isExternal: true
+  name: StorageFolder
+  nameWithType: StorageFolder
+  fullName: Windows.Storage.StorageFolder
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync
+  isExternal: false
+  name: WriteTextToFileAsync
+  nameWithType: StorageFileHelper.WriteTextToFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteTextToFileAsync
+- uid: System.Byte
+  commentId: T:System.Byte
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync
+  isExternal: false
+  name: WriteBytesToLocalFileAsync
+  nameWithType: StorageFileHelper.WriteBytesToLocalFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalFileAsync
+- uid: System.Byte[]
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync
+  isExternal: false
+  name: WriteBytesToLocalCacheFileAsync
+  nameWithType: StorageFileHelper.WriteBytesToLocalCacheFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToLocalCacheFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync
+  isExternal: false
+  name: WriteBytesToKnownFolderFileAsync
+  nameWithType: StorageFileHelper.WriteBytesToKnownFolderFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToKnownFolderFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync
+  isExternal: false
+  name: WriteBytesToFileAsync
+  nameWithType: StorageFileHelper.WriteBytesToFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.WriteBytesToFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync
+  isExternal: false
+  name: ReadTextFromPackagedFileAsync
+  nameWithType: StorageFileHelper.ReadTextFromPackagedFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromPackagedFileAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync
+  isExternal: false
+  name: ReadTextFromLocalCacheFileAsync
+  nameWithType: StorageFileHelper.ReadTextFromLocalCacheFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalCacheFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync
+  isExternal: false
+  name: ReadTextFromLocalFileAsync
+  nameWithType: StorageFileHelper.ReadTextFromLocalFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromLocalFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync
+  isExternal: false
+  name: ReadTextFromKnownFoldersFileAsync
+  nameWithType: StorageFileHelper.ReadTextFromKnownFoldersFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromKnownFoldersFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync
+  isExternal: false
+  name: ReadTextFromFileAsync
+  nameWithType: StorageFileHelper.ReadTextFromFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadTextFromFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync
+  isExternal: false
+  name: ReadBytesFromPackagedFileAsync
+  nameWithType: StorageFileHelper.ReadBytesFromPackagedFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromPackagedFileAsync
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Byte[]>
+  nameWithType: Task<Byte[]>
+  fullName: System.Threading.Tasks.Task<System.Byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of System.Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync
+  isExternal: false
+  name: ReadBytesFromLocalCacheFileAsync
+  nameWithType: StorageFileHelper.ReadBytesFromLocalCacheFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalCacheFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync
+  isExternal: false
+  name: ReadBytesFromLocalFileAsync
+  nameWithType: StorageFileHelper.ReadBytesFromLocalFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromLocalFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync
+  isExternal: false
+  name: ReadBytesFromKnownFoldersFileAsync
+  nameWithType: StorageFileHelper.ReadBytesFromKnownFoldersFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromKnownFoldersFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync
+  isExternal: false
+  name: ReadBytesFromFileAsync
+  nameWithType: StorageFileHelper.ReadBytesFromFileAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesFromFileAsync
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync
+  isExternal: false
+  name: ReadBytesAsync
+  nameWithType: StorageFileHelper.ReadBytesAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.ReadBytesAsync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync
+  isExternal: false
+  name: FileExistsAsync
+  nameWithType: StorageFileHelper.FileExistsAsync
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.FileExistsAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid
+  isExternal: false
+  name: IsFileNameValid
+  nameWithType: StorageFileHelper.IsFileNameValid
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFileNameValid
+- uid: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid*
+  commentId: Overload:Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid
+  isExternal: false
+  name: IsFilePathValid
+  nameWithType: StorageFileHelper.IsFilePathValid
+  fullName: Microsoft.Toolkit.Uwp.StorageFileHelper.IsFilePathValid

@@ -1,0 +1,1316 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper
+  commentId: T:Microsoft.Toolkit.Uwp.DispatcherHelper
+  id: DispatcherHelper
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  - Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  langs:
+  - csharp
+  - vb
+  name: DispatcherHelper
+  nameWithType: DispatcherHelper
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: DispatcherHelper
+    path: Helpers/DispatcherHelper.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nThis class provides static methods helper for executing code in UI thread of the main window.\n"
+  example: []
+  syntax:
+    content: public static class DispatcherHelper
+    content.vb: Public Module DispatcherHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync<T>(Func<Task<T>>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync<T>(Func<Task<T>>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync<T>(System.Func<System.Threading.Tasks.Task<T>>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 31
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on UI thread of the main view\n"
+  example: []
+  syntax:
+    content: public static Task<T> ExecuteOnUIThreadAsync<T>(Func<Task<T>> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Awaitable Task with type <code data-dev-comment-type="typeparamref">T</code>
+    content.vb: Public Shared Function ExecuteOnUIThreadAsync(Of T)(function As Func(Of Task(Of T)), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Func(Of Task(Of T)), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(System.Func(Of System.Threading.Tasks.Task(Of T)), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(Of T)(Func(Of Task(Of T)), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync<T>(CoreApplicationView, Func<Task<T>>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync<T>(CoreApplicationView, Func<Task<T>>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync<T>(Windows.ApplicationModel.Core.CoreApplicationView, System.Func<System.Threading.Tasks.Task<T>>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 44
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task<T> ExecuteOnUIThreadAsync<T>(this CoreApplicationView viewToExecuteOn, Func<Task<T>> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: viewToExecuteOn
+      type: Windows.ApplicationModel.Core.CoreApplicationView
+      description: 'View for the <code data-dev-comment-type="paramref">function</code>  to be executed on '
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Awaitable Task with type <code data-dev-comment-type="typeparamref">T</code>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExecuteOnUIThreadAsync(Of T)(viewToExecuteOn As CoreApplicationView, function As Func(Of Task(Of T)), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(CoreApplicationView, Func(Of Task(Of T)), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Windows.ApplicationModel.Core.CoreApplicationView, System.Func(Of System.Threading.Tasks.Task(Of T)), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(Of T)(CoreApplicationView, Func(Of Task(Of T)), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView, System.Func<System.Threading.Tasks.Task>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 61
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task ExecuteOnUIThreadAsync(this CoreApplicationView viewToExecuteOn, Func<Task> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: viewToExecuteOn
+      type: Windows.ApplicationModel.Core.CoreApplicationView
+      description: 'View for the <code data-dev-comment-type="paramref">function</code>  to be executed on '
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task}
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExecuteOnUIThreadAsync(viewToExecuteOn As CoreApplicationView, function As Func(Of Task), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(CoreApplicationView, Func(Of Task), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView, System.Func(Of System.Threading.Tasks.Task), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(CoreApplicationView, Func(Of Task), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync(System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync(Func<Task>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync(Func<Task>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func<System.Threading.Tasks.Task>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on UI thread of the main view\n"
+  example: []
+  syntax:
+    content: public static Task ExecuteOnUIThreadAsync(Func<Task> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task}
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task
+    content.vb: Public Shared Function ExecuteOnUIThreadAsync(function As Func(Of Task), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(Func(Of Task), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func(Of System.Threading.Tasks.Task), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(Func(Of Task), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync(CoreApplicationView, Action, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync(CoreApplicationView, Action, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView, System.Action, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 89
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task ExecuteOnUIThreadAsync(this CoreApplicationView viewToExecuteOn, Action function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: viewToExecuteOn
+      type: Windows.ApplicationModel.Core.CoreApplicationView
+      description: 'View for the <code data-dev-comment-type="paramref">function</code>  to be executed on '
+    - id: function
+      type: System.Action
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task/>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExecuteOnUIThreadAsync(viewToExecuteOn As CoreApplicationView, function As Action, priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync(System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync(Action, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync(Action, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(System.Action, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 105
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task ExecuteOnUIThreadAsync(Action function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: function
+      type: System.Action
+      description: Asynchronous function to be executed asynchronously on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task/>
+    content.vb: Public Shared Function ExecuteOnUIThreadAsync(function As Action, priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync<T>(CoreApplicationView, Func<T>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync<T>(CoreApplicationView, Func<T>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync<T>(Windows.ApplicationModel.Core.CoreApplicationView, System.Func<T>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task<T> ExecuteOnUIThreadAsync<T>(this CoreApplicationView viewToExecuteOn, Func<T> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: viewToExecuteOn
+      type: Windows.ApplicationModel.Core.CoreApplicationView
+      description: 'View for the <code data-dev-comment-type="paramref">function</code>  to be executed on '
+    - id: function
+      type: System.Func{{T}}
+      description: Synchronous function with return type <code data-dev-comment-type="typeparamref">T</code> to be executed on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Awaitable Task with type <code data-dev-comment-type="typeparamref">T</code>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ExecuteOnUIThreadAsync(Of T)(viewToExecuteOn As CoreApplicationView, function As Func(Of T), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(CoreApplicationView, Func(Of T), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Windows.ApplicationModel.Core.CoreApplicationView, System.Func(Of T), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(Of T)(CoreApplicationView, Func(Of T), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  id: ExecuteOnUIThreadAsync``1(System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: ExecuteOnUIThreadAsync<T>(Func<T>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync<T>(Func<T>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync<T>(System.Func<T>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ExecuteOnUIThreadAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 135
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExecute the given function asynchronously on given view&apos;s UI thread. Default view is the main view.\n"
+  example: []
+  syntax:
+    content: public static Task<T> ExecuteOnUIThreadAsync<T>(Func<T> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: function
+      type: System.Func{{T}}
+      description: Synchronous function to be executed on UI thread
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: 'Awaitable Task '
+    content.vb: Public Shared Function ExecuteOnUIThreadAsync(Of T)(function As Func(Of T), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  nameWithType.vb: DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Func(Of T), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(System.Func(Of T), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: ExecuteOnUIThreadAsync(Of T)(Func(Of T), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  id: AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitableRunAsync<T>(CoreDispatcher, Func<Task<T>>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.AwaitableRunAsync<T>(CoreDispatcher, Func<Task<T>>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync<T>(Windows.UI.Core.CoreDispatcher, System.Func<System.Threading.Tasks.Task<T>>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AwaitableRunAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 148
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExtension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher\n"
+  example: []
+  syntax:
+    content: public static Task<T> AwaitableRunAsync<T>(this CoreDispatcher dispatcher, Func<Task<T>> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: dispatcher
+      type: Windows.UI.Core.CoreDispatcher
+      description: Dispatcher of a thread to run <code data-dev-comment-type="paramref">function</code>
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task{{T}}}
+      description: Asynchrounous function to be executed asynchrounously on the given dispatcher
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Awaitable Task with type <code data-dev-comment-type="typeparamref">T</code>
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AwaitableRunAsync(Of T)(dispatcher As CoreDispatcher, function As Func(Of Task(Of T)), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync*
+  nameWithType.vb: DispatcherHelper.AwaitableRunAsync(Of T)(CoreDispatcher, Func(Of Task(Of T)), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Of T)(Windows.UI.Core.CoreDispatcher, System.Func(Of System.Threading.Tasks.Task(Of T)), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: AwaitableRunAsync(Of T)(CoreDispatcher, Func(Of Task(Of T)), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  id: AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitableRunAsync(CoreDispatcher, Func<Task>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.AwaitableRunAsync(CoreDispatcher, Func<Task>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher, System.Func<System.Threading.Tasks.Task>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AwaitableRunAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 188
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExtension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher\n"
+  example: []
+  syntax:
+    content: public static Task AwaitableRunAsync(this CoreDispatcher dispatcher, Func<Task> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: dispatcher
+      type: Windows.UI.Core.CoreDispatcher
+      description: Dispatcher of a thread to run <code data-dev-comment-type="paramref">function</code>
+    - id: function
+      type: System.Func{System.Threading.Tasks.Task}
+      description: Asynchrounous function to be executed asynchrounously on the given dispatcher
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AwaitableRunAsync(dispatcher As CoreDispatcher, function As Func(Of Task), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync*
+  nameWithType.vb: DispatcherHelper.AwaitableRunAsync(CoreDispatcher, Func(Of Task), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher, System.Func(Of System.Threading.Tasks.Task), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: AwaitableRunAsync(CoreDispatcher, Func(Of Task), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  id: AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitableRunAsync<T>(CoreDispatcher, Func<T>, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.AwaitableRunAsync<T>(CoreDispatcher, Func<T>, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync<T>(Windows.UI.Core.CoreDispatcher, System.Func<T>, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AwaitableRunAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 229
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExtension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher\n"
+  example: []
+  syntax:
+    content: public static Task<T> AwaitableRunAsync<T>(this CoreDispatcher dispatcher, Func<T> function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: dispatcher
+      type: Windows.UI.Core.CoreDispatcher
+      description: Dispatcher of a thread to run <code data-dev-comment-type="paramref">function</code>
+    - id: function
+      type: System.Func{{T}}
+      description: Function to be executed asynchrounously on the given dispatcher
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    typeParameters:
+    - id: T
+      description: returned data type of the function
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Awaitable Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AwaitableRunAsync(Of T)(dispatcher As CoreDispatcher, function As Func(Of T), priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync*
+  nameWithType.vb: DispatcherHelper.AwaitableRunAsync(Of T)(CoreDispatcher, Func(Of T), CoreDispatcherPriority)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Of T)(Windows.UI.Core.CoreDispatcher, System.Func(Of T), Windows.UI.Core.CoreDispatcherPriority)
+  name.vb: AwaitableRunAsync(Of T)(CoreDispatcher, Func(Of T), CoreDispatcherPriority)
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  commentId: M:Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  id: AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.DispatcherHelper
+  langs:
+  - csharp
+  - vb
+  name: AwaitableRunAsync(CoreDispatcher, Action, CoreDispatcherPriority)
+  nameWithType: DispatcherHelper.AwaitableRunAsync(CoreDispatcher, Action, CoreDispatcherPriority)
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher, System.Action, Windows.UI.Core.CoreDispatcherPriority)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AwaitableRunAsync
+    path: Helpers/DispatcherHelper.cs
+    startLine: 260
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nExtension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher\n"
+  example: []
+  syntax:
+    content: public static Task AwaitableRunAsync(this CoreDispatcher dispatcher, Action function, CoreDispatcherPriority priority = CoreDispatcherPriority.Normal)
+    parameters:
+    - id: dispatcher
+      type: Windows.UI.Core.CoreDispatcher
+      description: Dispatcher of a thread to run <code data-dev-comment-type="paramref">function</code>
+    - id: function
+      type: System.Action
+      description: Function to be executed asynchrounously on the given dispatcher
+    - id: priority
+      type: Windows.UI.Core.CoreDispatcherPriority
+      description: Dispatcher execution priority, default is normal
+    return:
+      type: System.Threading.Tasks.Task
+      description: Awaitable Task
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function AwaitableRunAsync(dispatcher As CoreDispatcher, function As Action, priority As CoreDispatcherPriority = CoreDispatcherPriority.Normal) As Task
+  overload: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync
+  isExternal: false
+  name: ExecuteOnUIThreadAsync
+  nameWithType: DispatcherHelper.ExecuteOnUIThreadAsync
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.ExecuteOnUIThreadAsync
+- uid: System.Func{System.Threading.Tasks.Task{{T}}}
+  commentId: T:System.Func{System.Threading.Tasks.Task{``0}}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task<T>>
+  nameWithType: Func<Task<T>>
+  fullName: System.Func<System.Threading.Tasks.Task<T>>
+  nameWithType.vb: Func(Of Task(Of T))
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task(Of T))
+  name.vb: Func(Of Task(Of T))
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Core.CoreDispatcherPriority
+  commentId: T:Windows.UI.Core.CoreDispatcherPriority
+  parent: Windows.UI.Core
+  isExternal: true
+  name: CoreDispatcherPriority
+  nameWithType: CoreDispatcherPriority
+  fullName: Windows.UI.Core.CoreDispatcherPriority
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Windows.UI.Core
+  commentId: N:Windows.UI.Core
+  isExternal: false
+  name: Windows.UI.Core
+  nameWithType: Windows.UI.Core
+  fullName: Windows.UI.Core
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Windows.ApplicationModel.Core.CoreApplicationView
+  commentId: T:Windows.ApplicationModel.Core.CoreApplicationView
+  parent: Windows.ApplicationModel.Core
+  isExternal: true
+  name: CoreApplicationView
+  nameWithType: CoreApplicationView
+  fullName: Windows.ApplicationModel.Core.CoreApplicationView
+- uid: Windows.ApplicationModel.Core
+  commentId: N:Windows.ApplicationModel.Core
+  isExternal: false
+  name: Windows.ApplicationModel.Core
+  nameWithType: Windows.ApplicationModel.Core
+  fullName: Windows.ApplicationModel.Core
+- uid: System.Func{System.Threading.Tasks.Task}
+  commentId: T:System.Func{System.Threading.Tasks.Task}
+  parent: System
+  definition: System.Func`1
+  name: Func<Task>
+  nameWithType: Func<Task>
+  fullName: System.Func<System.Threading.Tasks.Task>
+  nameWithType.vb: Func(Of Task)
+  fullName.vb: System.Func(Of System.Threading.Tasks.Task)
+  name.vb: Func(Of Task)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Threading.Tasks.Task
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Func{{T}}
+  commentId: T:System.Func{``0}
+  parent: System
+  definition: System.Func`1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: System.Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: System.Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: System.Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync
+  isExternal: false
+  name: AwaitableRunAsync
+  nameWithType: DispatcherHelper.AwaitableRunAsync
+  fullName: Microsoft.Toolkit.Uwp.DispatcherHelper.AwaitableRunAsync
+- uid: Windows.UI.Core.CoreDispatcher
+  commentId: T:Windows.UI.Core.CoreDispatcher
+  parent: Windows.UI.Core
+  isExternal: true
+  name: CoreDispatcher
+  nameWithType: CoreDispatcher
+  fullName: Windows.UI.Core.CoreDispatcher

@@ -1,0 +1,768 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.ColorHelper
+  commentId: T:Microsoft.Toolkit.Uwp.ColorHelper
+  id: ColorHelper
+  parent: Microsoft.Toolkit.Uwp
+  children:
+  - Microsoft.Toolkit.Uwp.ColorHelper.FromHsl(System.Double,System.Double,System.Double,System.Double)
+  - Microsoft.Toolkit.Uwp.ColorHelper.FromHsv(System.Double,System.Double,System.Double,System.Double)
+  - Microsoft.Toolkit.Uwp.ColorHelper.ToColor(System.String)
+  - Microsoft.Toolkit.Uwp.ColorHelper.ToHex(Windows.UI.Color)
+  - Microsoft.Toolkit.Uwp.ColorHelper.ToHsl(Windows.UI.Color)
+  - Microsoft.Toolkit.Uwp.ColorHelper.ToHsv(Windows.UI.Color)
+  - Microsoft.Toolkit.Uwp.ColorHelper.ToInt(Windows.UI.Color)
+  langs:
+  - csharp
+  - vb
+  name: ColorHelper
+  nameWithType: ColorHelper
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ColorHelper
+    path: Helpers/ColorHelper.cs
+    startLine: 21
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nThis class provides static helper methods for colors.\n"
+  example: []
+  syntax:
+    content: public static class ColorHelper
+    content.vb: Public Module ColorHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToColor(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.ToColor(System.String)
+  id: ToColor(System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: ToColor(String)
+  nameWithType: ColorHelper.ToColor(String)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToColor(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ToColor
+    path: Helpers/ColorHelper.cs
+    startLine: 28
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReturns a color based on XAML color string.\n"
+  example: []
+  syntax:
+    content: public static Color ToColor(this string colorString)
+    parameters:
+    - id: colorString
+      type: System.String
+      description: The color string. Any format used in XAML should work.
+    return:
+      type: Windows.UI.Color
+      description: Parsed color
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToColor(colorString As String) As Color
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.ToColor*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHex(Windows.UI.Color)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.ToHex(Windows.UI.Color)
+  id: ToHex(Windows.UI.Color)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: ToHex(Color)
+  nameWithType: ColorHelper.ToHex(Color)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHex(Windows.UI.Color)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ToHex
+    path: Helpers/ColorHelper.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nConverts a Color value to a string representation of the value in hexadecimal.\n"
+  example: []
+  syntax:
+    content: public static string ToHex(this Color color)
+    parameters:
+    - id: color
+      type: Windows.UI.Color
+      description: The Color to convert.
+    return:
+      type: System.String
+      description: Returns a string representing the hex value.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHex(color As Color) As String
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.ToHex*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToInt(Windows.UI.Color)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.ToInt(Windows.UI.Color)
+  id: ToInt(Windows.UI.Color)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: ToInt(Color)
+  nameWithType: ColorHelper.ToInt(Color)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToInt(Windows.UI.Color)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ToInt
+    path: Helpers/ColorHelper.cs
+    startLine: 144
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReturns the color value as a premultiplied Int32 - 4 byte ARGB structure.\n"
+  example: []
+  syntax:
+    content: public static int ToInt(this Color color)
+    parameters:
+    - id: color
+      type: Windows.UI.Color
+      description: the Color to convert
+    return:
+      type: System.Int32
+      description: Returns a int representing the color.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToInt(color As Color) As Integer
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.ToInt*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHsl(Windows.UI.Color)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.ToHsl(Windows.UI.Color)
+  id: ToHsl(Windows.UI.Color)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: ToHsl(Color)
+  nameWithType: ColorHelper.ToHsl(Color)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHsl(Windows.UI.Color)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ToHsl
+    path: Helpers/ColorHelper.cs
+    startLine: 156
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nConverts an RGBA Color the HSL representation.\n"
+  example: []
+  syntax:
+    content: public static HslColor ToHsl(this Color color)
+    parameters:
+    - id: color
+      type: Windows.UI.Color
+      description: The Color to convert.
+    return:
+      type: Microsoft.Toolkit.Uwp.HslColor
+      description: HslColor.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHsl(color As Color) As HslColor
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.ToHsl*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHsv(Windows.UI.Color)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.ToHsv(Windows.UI.Color)
+  id: ToHsv(Windows.UI.Color)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: ToHsv(Color)
+  nameWithType: ColorHelper.ToHsv(Color)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHsv(Windows.UI.Color)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ToHsv
+    path: Helpers/ColorHelper.cs
+    startLine: 201
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nConverts an RGBA Color the HSV representation.\n"
+  example: []
+  syntax:
+    content: public static HsvColor ToHsv(this Color color)
+    parameters:
+    - id: color
+      type: Windows.UI.Color
+      description: Color to convert.
+    return:
+      type: Microsoft.Toolkit.Uwp.HsvColor
+      description: HsvColor
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ToHsv(color As Color) As HsvColor
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.ToHsv*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.FromHsl(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.FromHsl(System.Double,System.Double,System.Double,System.Double)
+  id: FromHsl(System.Double,System.Double,System.Double,System.Double)
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: FromHsl(Double, Double, Double, Double)
+  nameWithType: ColorHelper.FromHsl(Double, Double, Double, Double)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.FromHsl(System.Double, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FromHsl
+    path: Helpers/ColorHelper.cs
+    startLine: 248
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReturns a Color struct based on HSL model.\n"
+  example: []
+  syntax:
+    content: public static Color FromHsl(double hue, double saturation, double lightness, double alpha = 1)
+    parameters:
+    - id: hue
+      type: System.Double
+      description: 0..360 range hue
+    - id: saturation
+      type: System.Double
+      description: 0..1 range saturation
+    - id: lightness
+      type: System.Double
+      description: 0..1 range lightness
+    - id: alpha
+      type: System.Double
+      description: 0..1 alpha
+    return:
+      type: Windows.UI.Color
+      description: A Color object
+    content.vb: Public Shared Function FromHsl(hue As Double, saturation As Double, lightness As Double, alpha As Double = 1) As Color
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.FromHsl*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.FromHsv(System.Double,System.Double,System.Double,System.Double)
+  commentId: M:Microsoft.Toolkit.Uwp.ColorHelper.FromHsv(System.Double,System.Double,System.Double,System.Double)
+  id: FromHsv(System.Double,System.Double,System.Double,System.Double)
+  parent: Microsoft.Toolkit.Uwp.ColorHelper
+  langs:
+  - csharp
+  - vb
+  name: FromHsv(Double, Double, Double, Double)
+  nameWithType: ColorHelper.FromHsv(Double, Double, Double, Double)
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.FromHsv(System.Double, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs
+      branch: dev
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FromHsv
+    path: Helpers/ColorHelper.cs
+    startLine: 314
+  assemblies:
+  - Microsoft.Toolkit.Uwp
+  namespace: Microsoft.Toolkit.Uwp
+  summary: "\nReturns a Color struct based on HSV model.\n"
+  example: []
+  syntax:
+    content: public static Color FromHsv(double hue, double saturation, double value, double alpha = 1)
+    parameters:
+    - id: hue
+      type: System.Double
+      description: 0..360 range hue
+    - id: saturation
+      type: System.Double
+      description: 0..1 range saturation
+    - id: value
+      type: System.Double
+      description: 0..1 range value
+    - id: alpha
+      type: System.Double
+      description: 0..1 alpha
+    return:
+      type: Windows.UI.Color
+      description: A Color object
+    content.vb: Public Shared Function FromHsv(hue As Double, saturation As Double, value As Double, alpha As Double = 1) As Color
+  overload: Microsoft.Toolkit.Uwp.ColorHelper.FromHsv*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Toolkit.Uwp
+  commentId: N:Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp
+  nameWithType: Microsoft.Toolkit.Uwp
+  fullName: Microsoft.Toolkit.Uwp
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToColor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.ToColor
+  isExternal: false
+  name: ToColor
+  nameWithType: ColorHelper.ToColor
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToColor
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Windows.UI.Color
+  commentId: T:Windows.UI.Color
+  parent: Windows.UI
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: Windows.UI.Color
+- uid: Windows.UI
+  commentId: N:Windows.UI
+  isExternal: false
+  name: Windows.UI
+  nameWithType: Windows.UI
+  fullName: Windows.UI
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHex*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.ToHex
+  isExternal: false
+  name: ToHex
+  nameWithType: ColorHelper.ToHex
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHex
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToInt*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.ToInt
+  isExternal: false
+  name: ToInt
+  nameWithType: ColorHelper.ToInt
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToInt
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHsl*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.ToHsl
+  isExternal: false
+  name: ToHsl
+  nameWithType: ColorHelper.ToHsl
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHsl
+- uid: Microsoft.Toolkit.Uwp.HslColor
+  commentId: T:Microsoft.Toolkit.Uwp.HslColor
+  parent: Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: HslColor
+  nameWithType: HslColor
+  fullName: Microsoft.Toolkit.Uwp.HslColor
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.ToHsv*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.ToHsv
+  isExternal: false
+  name: ToHsv
+  nameWithType: ColorHelper.ToHsv
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.ToHsv
+- uid: Microsoft.Toolkit.Uwp.HsvColor
+  commentId: T:Microsoft.Toolkit.Uwp.HsvColor
+  parent: Microsoft.Toolkit.Uwp
+  isExternal: false
+  name: HsvColor
+  nameWithType: HsvColor
+  fullName: Microsoft.Toolkit.Uwp.HsvColor
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.FromHsl*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.FromHsl
+  isExternal: false
+  name: FromHsl
+  nameWithType: ColorHelper.FromHsl
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.FromHsl
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Toolkit.Uwp.ColorHelper.FromHsv*
+  commentId: Overload:Microsoft.Toolkit.Uwp.ColorHelper.FromHsv
+  isExternal: false
+  name: FromHsv
+  nameWithType: ColorHelper.FromHsv
+  fullName: Microsoft.Toolkit.Uwp.ColorHelper.FromHsv
