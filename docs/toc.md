@@ -1,6 +1,6 @@
 # [UWP Community Toolkit Documentation](index.md)
 
-# [API](Microsoft.Toolkit.Uwp.BackgroundTaskHelper.yml)
+# [API](api/Microsoft.Toolkit.Uwp.BackgroundTaskHelper.yml)
 
 # Setup
 ## [Getting Started with the UWP Community Toolkit](Getting-Started.md)
