@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  commentId: T:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  id: IAdvancedCollectionView
+  parent: Microsoft.Toolkit.Uwp.UI
+  children:
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+  - Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+  langs:
+  - csharp
+  - vb
+  name: IAdvancedCollectionView
+  nameWithType: IAdvancedCollectionView
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  type: Interface
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: IAdvancedCollectionView
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nExtended ICollectionView with filtering and sorting\n"
+  example: []
+  syntax:
+    content: 'public interface IAdvancedCollectionView : ICollectionView'
+    content.vb: >-
+      Public Interface IAdvancedCollectionView
+
+          Inherits ICollectionView
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+  commentId: P:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+  id: CanFilter
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: CanFilter
+  nameWithType: IAdvancedCollectionView.CanFilter
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: CanFilter
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets a value indicating whether this CollectionView can filter its items\n"
+  example: []
+  syntax:
+    content: bool CanFilter { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanFilter As Boolean
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+  commentId: P:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+  id: Filter
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: IAdvancedCollectionView.Filter
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Filter
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 32
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets or sets the predicate used to filter the visible items\n"
+  example: []
+  syntax:
+    content: Predicate<object> Filter { get; set; }
+    parameters: []
+    return:
+      type: Predicate{System.Object}
+    content.vb: Property Filter As Predicate(Of Object)
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+  commentId: P:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+  id: CanSort
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: CanSort
+  nameWithType: IAdvancedCollectionView.CanSort
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: CanSort
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets a value indicating whether this CollectionView can sort its items\n"
+  example: []
+  syntax:
+    content: bool CanSort { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanSort As Boolean
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+  commentId: P:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+  id: SortDescriptions
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: SortDescriptions
+  nameWithType: IAdvancedCollectionView.SortDescriptions
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SortDescriptions
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 42
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets SortDescriptions to sort the visible items\n"
+  example: []
+  syntax:
+    content: IList<SortDescription> SortDescriptions { get; }
+    parameters: []
+    return:
+      type: IList{Microsoft.Toolkit.Uwp.UI.SortDescription}
+    content.vb: ReadOnly Property SortDescriptions As IList(Of SortDescription)
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+  commentId: P:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+  id: SourceCollection
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: SourceCollection
+  nameWithType: IAdvancedCollectionView.SourceCollection
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SourceCollection
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets the source collection\n"
+  example: []
+  syntax:
+    content: IEnumerable SourceCollection { get; }
+    parameters: []
+    return:
+      type: IEnumerable
+    content.vb: ReadOnly Property SourceCollection As IEnumerable
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection*
+  modifiers.csharp:
+  - get
+  modifiers.vb:
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh
+  commentId: M:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh
+  id: DeferRefresh
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: DeferRefresh()
+  nameWithType: IAdvancedCollectionView.DeferRefresh()
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: DeferRefresh
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nStops refreshing until it is disposed\n"
+  example: []
+  syntax:
+    content: IDisposable DeferRefresh()
+    return:
+      type: IDisposable
+      description: An disposable object
+    content.vb: Function DeferRefresh As IDisposable
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh*
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh
+  commentId: M:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh
+  id: Refresh
+  parent: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: IAdvancedCollectionView.Refresh()
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Refresh
+    path: Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView/IAdvancedCollectionView.cs
+    startLine: 70
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nManually refreshes the view\n"
+  example: []
+  syntax:
+    content: void Refresh()
+    content.vb: Sub Refresh
+  overload: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh*
+references:
+- uid: Microsoft.Toolkit.Uwp.UI
+  commentId: N:Microsoft.Toolkit.Uwp.UI
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.UI
+  nameWithType: Microsoft.Toolkit.Uwp.UI
+  fullName: Microsoft.Toolkit.Uwp.UI
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+  isExternal: false
+  name: CanFilter
+  nameWithType: IAdvancedCollectionView.CanFilter
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+  isExternal: false
+  name: Filter
+  nameWithType: IAdvancedCollectionView.Filter
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Filter
+- uid: Predicate{System.Object}
+  commentId: '!:Predicate{System.Object}'
+  definition: Predicate`1
+  name: Predicate<Object>
+  nameWithType: Predicate<Object>
+  fullName: Predicate<System.Object>
+  nameWithType.vb: Predicate(Of Object)
+  fullName.vb: Predicate(Of System.Object)
+  name.vb: Predicate(Of Object)
+  spec.csharp:
+  - uid: Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Predicate`1
+  isExternal: true
+  name: Predicate<>
+  nameWithType: Predicate<>
+  fullName: Predicate<>
+  nameWithType.vb: Predicate(Of )
+  fullName.vb: Predicate(Of )
+  name.vb: Predicate(Of )
+  spec.csharp:
+  - uid: Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: Predicate
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Predicate`1
+    name: Predicate
+    nameWithType: Predicate
+    fullName: Predicate
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+  isExternal: false
+  name: CanSort
+  nameWithType: IAdvancedCollectionView.CanSort
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.CanSort
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+  isExternal: false
+  name: SortDescriptions
+  nameWithType: IAdvancedCollectionView.SortDescriptions
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SortDescriptions
+- uid: IList{Microsoft.Toolkit.Uwp.UI.SortDescription}
+  commentId: '!:IList{Microsoft.Toolkit.Uwp.UI.SortDescription}'
+  definition: IList`1
+  name: IList<SortDescription>
+  nameWithType: IList<SortDescription>
+  fullName: IList<Microsoft.Toolkit.Uwp.UI.SortDescription>
+  nameWithType.vb: IList(Of SortDescription)
+  fullName.vb: IList(Of Microsoft.Toolkit.Uwp.UI.SortDescription)
+  name.vb: IList(Of SortDescription)
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.UI.SortDescription
+    name: SortDescription
+    nameWithType: SortDescription
+    fullName: Microsoft.Toolkit.Uwp.UI.SortDescription
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.UI.SortDescription
+    name: SortDescription
+    nameWithType: SortDescription
+    fullName: Microsoft.Toolkit.Uwp.UI.SortDescription
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IList`1
+  isExternal: true
+  name: IList<>
+  nameWithType: IList<>
+  fullName: IList<>
+  nameWithType.vb: IList(Of )
+  fullName.vb: IList(Of )
+  name.vb: IList(Of )
+  spec.csharp:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IList`1
+    name: IList
+    nameWithType: IList
+    fullName: IList
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+  isExternal: false
+  name: SourceCollection
+  nameWithType: IAdvancedCollectionView.SourceCollection
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.SourceCollection
+- uid: IEnumerable
+  isExternal: true
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: IEnumerable
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh
+  isExternal: false
+  name: DeferRefresh
+  nameWithType: IAdvancedCollectionView.DeferRefresh
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.DeferRefresh
+- uid: IDisposable
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: IDisposable
+- uid: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh
+  isExternal: false
+  name: Refresh
+  nameWithType: IAdvancedCollectionView.Refresh
+  fullName: Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView.Refresh

@@ -1,0 +1,814 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1
+  commentId: T:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1
+  id: DataProviderBase`1
+  parent: Microsoft.Toolkit.Uwp.Services
+  children:
+  - Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  - Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  - Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig(`0)
+  langs:
+  - csharp
+  - vb
+  name: DataProviderBase<TConfig>
+  nameWithType: DataProviderBase<TConfig>
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: DataProviderBase
+    path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services
+  summary: "\nBase class for data providers in this library.\n"
+  example: []
+  syntax:
+    content: public abstract class DataProviderBase<TConfig>
+    typeParameters:
+    - id: TConfig
+      description: Query configuration type for given provider.
+    content.vb: Public MustInherit Class DataProviderBase(Of TConfig)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Toolkit.Uwp.Services.DataProviderBase`2
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  nameWithType.vb: DataProviderBase(Of TConfig)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig)
+  name.vb: DataProviderBase(Of TConfig)
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  commentId: M:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  id: LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  parent: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: LoadDataAsync<TSchema>(TConfig, Int32, Int32, IParser<TSchema>)
+  nameWithType: DataProviderBase<TConfig>.LoadDataAsync<TSchema>(TConfig, Int32, Int32, IParser<TSchema>)
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.LoadDataAsync<TSchema>(TConfig, System.Int32, System.Int32, Microsoft.Toolkit.Uwp.Services.IParser<TSchema>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: LoadDataAsync
+    path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services
+  summary: "\nLoad data from provider endpoint.\n"
+  example: []
+  syntax:
+    content: 'public Task<IEnumerable<TSchema>> LoadDataAsync<TSchema>(TConfig config, int maxRecords, int pageIndex, IParser<TSchema> parser)where TSchema : SchemaBase'
+    parameters:
+    - id: config
+      type: '{TConfig}'
+      description: Query configuration.
+    - id: maxRecords
+      type: System.Int32
+      description: Upper record limit.
+    - id: pageIndex
+      type: System.Int32
+      description: The zero-based index of the page that corresponds to the items to retrieve.
+    - id: parser
+      type: Microsoft.Toolkit.Uwp.Services.IParser{{TSchema}}
+      description: Parser to use for results.
+    typeParameters:
+    - id: TSchema
+      description: Strong typed object to parse the response items into.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TSchema}}}
+      description: Strong typed list of results.
+    content.vb: Public Function LoadDataAsync(Of TSchema As SchemaBase)(config As TConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))
+  overload: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync*
+  nameWithType.vb: DataProviderBase(Of TConfig).LoadDataAsync(Of TSchema)(TConfig, Int32, Int32, IParser(Of TSchema))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).LoadDataAsync(Of TSchema)(TConfig, System.Int32, System.Int32, Microsoft.Toolkit.Uwp.Services.IParser(Of TSchema))
+  name.vb: LoadDataAsync(Of TSchema)(TConfig, Int32, Int32, IParser(Of TSchema))
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  commentId: M:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  id: GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Uwp.Services.IParser{``0})
+  parent: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetDataAsync<TSchema>(TConfig, Int32, Int32, IParser<TSchema>)
+  nameWithType: DataProviderBase<TConfig>.GetDataAsync<TSchema>(TConfig, Int32, Int32, IParser<TSchema>)
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.GetDataAsync<TSchema>(TConfig, System.Int32, System.Int32, Microsoft.Toolkit.Uwp.Services.IParser<TSchema>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetDataAsync
+    path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+    startLine: 71
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services
+  summary: "\nDerived classes will have to implement this method to return provider data\n"
+  example: []
+  syntax:
+    content: 'protected abstract Task<IEnumerable<TSchema>> GetDataAsync<TSchema>(TConfig config, int maxRecords, int pageIndex, IParser<TSchema> parser)where TSchema : SchemaBase'
+    parameters:
+    - id: config
+      type: '{TConfig}'
+      description: Configuration to use
+    - id: maxRecords
+      type: System.Int32
+      description: Maximum number of records to return
+    - id: pageIndex
+      type: System.Int32
+      description: The zero-based index of the page that corresponds to the items to retrieve.
+    - id: parser
+      type: Microsoft.Toolkit.Uwp.Services.IParser{{TSchema}}
+      description: Parser to use
+    typeParameters:
+    - id: TSchema
+      description: Schema defining data returned
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TSchema}}}
+      description: List of data
+    content.vb: Protected MustOverride Function GetDataAsync(Of TSchema As SchemaBase)(config As TConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))
+  overload: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync*
+  nameWithType.vb: DataProviderBase(Of TConfig).GetDataAsync(Of TSchema)(TConfig, Int32, Int32, IParser(Of TSchema))
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).GetDataAsync(Of TSchema)(TConfig, System.Int32, System.Int32, Microsoft.Toolkit.Uwp.Services.IParser(Of TSchema))
+  name.vb: GetDataAsync(Of TSchema)(TConfig, Int32, Int32, IParser(Of TSchema))
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig(`0)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig(`0)
+  id: ValidateConfig(`0)
+  parent: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1
+  langs:
+  - csharp
+  - vb
+  name: ValidateConfig(TConfig)
+  nameWithType: DataProviderBase<TConfig>.ValidateConfig(TConfig)
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.ValidateConfig(TConfig)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ValidateConfig
+    path: Microsoft.Toolkit.Uwp.Services/Core/DataProviderBase.cs
+    startLine: 78
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services
+  summary: "\nMethod provided by derived class to validate specified configuration\n"
+  example: []
+  syntax:
+    content: protected abstract void ValidateConfig(TConfig config)
+    parameters:
+    - id: config
+      type: '{TConfig}'
+      description: Configuration to validate
+    content.vb: Protected MustOverride Sub ValidateConfig(config As TConfig)
+  overload: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig*
+  nameWithType.vb: DataProviderBase(Of TConfig).ValidateConfig(TConfig)
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).ValidateConfig(TConfig)
+references:
+- uid: Microsoft.Toolkit.Uwp.Services
+  commentId: N:Microsoft.Toolkit.Uwp.Services
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services
+  nameWithType: Microsoft.Toolkit.Uwp.Services
+  fullName: Microsoft.Toolkit.Uwp.Services
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.LoadDataAsync
+  isExternal: false
+  name: LoadDataAsync
+  nameWithType: DataProviderBase<TConfig>.LoadDataAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.LoadDataAsync
+  nameWithType.vb: DataProviderBase(Of TConfig).LoadDataAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).LoadDataAsync
+- uid: '{TConfig}'
+  commentId: '!:TConfig'
+  definition: TConfig
+  name: TConfig
+  nameWithType: TConfig
+  fullName: TConfig
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Toolkit.Uwp.Services.IParser{{TSchema}}
+  commentId: T:Microsoft.Toolkit.Uwp.Services.IParser{`1}
+  parent: Microsoft.Toolkit.Uwp.Services
+  definition: Microsoft.Toolkit.Uwp.Services.IParser`1
+  name: IParser<TSchema>
+  nameWithType: IParser<TSchema>
+  fullName: Microsoft.Toolkit.Uwp.Services.IParser<TSchema>
+  nameWithType.vb: IParser(Of TSchema)
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.IParser(Of TSchema)
+  name.vb: IParser(Of TSchema)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.IParser`1
+    name: IParser
+    nameWithType: IParser
+    fullName: Microsoft.Toolkit.Uwp.Services.IParser
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSchema
+    nameWithType: TSchema
+    fullName: TSchema
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.IParser`1
+    name: IParser
+    nameWithType: IParser
+    fullName: Microsoft.Toolkit.Uwp.Services.IParser
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSchema
+    nameWithType: TSchema
+    fullName: TSchema
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{TSchema}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<TSchema>>
+  nameWithType: Task<IEnumerable<TSchema>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<TSchema>>
+  nameWithType.vb: Task(Of IEnumerable(Of TSchema))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of TSchema))
+  name.vb: Task(Of IEnumerable(Of TSchema))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TSchema
+    nameWithType: TSchema
+    fullName: TSchema
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TSchema
+    nameWithType: TSchema
+    fullName: TSchema
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: TConfig
+  isExternal: false
+  name: TConfig
+  nameWithType: TConfig
+  fullName: TConfig
+- uid: Microsoft.Toolkit.Uwp.Services.IParser`1
+  commentId: T:Microsoft.Toolkit.Uwp.Services.IParser`1
+  isExternal: false
+  name: IParser<T>
+  nameWithType: IParser<T>
+  fullName: Microsoft.Toolkit.Uwp.Services.IParser<T>
+  nameWithType.vb: IParser(Of T)
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.IParser(Of T)
+  name.vb: IParser(Of T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.IParser`1
+    name: IParser
+    nameWithType: IParser
+    fullName: Microsoft.Toolkit.Uwp.Services.IParser
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.IParser`1
+    name: IParser
+    nameWithType: IParser
+    fullName: Microsoft.Toolkit.Uwp.Services.IParser
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.GetDataAsync
+  isExternal: false
+  name: GetDataAsync
+  nameWithType: DataProviderBase<TConfig>.GetDataAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.GetDataAsync
+  nameWithType.vb: DataProviderBase(Of TConfig).GetDataAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).GetDataAsync
+- uid: Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.DataProviderBase`1.ValidateConfig
+  isExternal: false
+  name: ValidateConfig
+  nameWithType: DataProviderBase<TConfig>.ValidateConfig
+  fullName: Microsoft.Toolkit.Uwp.Services.DataProviderBase<TConfig>.ValidateConfig
+  nameWithType.vb: DataProviderBase(Of TConfig).ValidateConfig
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.DataProviderBase(Of TConfig).ValidateConfig

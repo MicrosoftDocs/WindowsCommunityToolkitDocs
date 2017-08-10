@@ -1,0 +1,848 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  commentId: T:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  id: OneDriveItem
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive
+  children:
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson
+  langs:
+  - csharp
+  - vb
+  name: OneDriveItem
+  nameWithType: OneDriveItem
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OneDriveItem
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nThe type OneDriveItem.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [JsonConverter(typeof (DerivedTypeConverter))]
+
+      public class OneDriveItem
+    content.vb: >-
+      <DataContract>
+
+      <JsonConverter(GetType(DerivedTypeConverter))>
+
+      Public Class OneDriveItem
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: Newtonsoft.Json.JsonConverterAttribute
+    ctor: Newtonsoft.Json.JsonConverterAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: Microsoft.Graph.DerivedTypeConverter
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+  commentId: P:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+  id: Content
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: OneDriveItem.Content
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Content
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets or sets content.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "content", EmitDefaultValue = false, IsRequired = false)]
+
+      public Stream Content { get; set; }
+    parameters: []
+    return:
+      type: System.IO.Stream
+    content.vb: >-
+      <DataMember(Name:="content", EmitDefaultValue:=False, IsRequired:=False)>
+
+      Public Property Content As Stream
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: content
+    - name: EmitDefaultValue
+      type: System.Boolean
+      value: false
+    - name: IsRequired
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+  commentId: P:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+  id: Name
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: OneDriveItem.Name
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Name
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets or sets name.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "name", EmitDefaultValue = false, IsRequired = false)]
+
+      public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="name", EmitDefaultValue:=False, IsRequired:=False)>
+
+      Public Property Name As String
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: name
+    - name: EmitDefaultValue
+      type: System.Boolean
+      value: false
+    - name: IsRequired
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+  commentId: P:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+  id: Folder
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: OneDriveItem.Folder
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Folder
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 41
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets or sets folder.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "folder", EmitDefaultValue = false, IsRequired = false)]
+
+      public Folder Folder { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.OneDrive.Sdk.Folder
+    content.vb: >-
+      <DataMember(Name:="folder", EmitDefaultValue:=False, IsRequired:=False)>
+
+      Public Property Folder As Folder
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: folder
+    - name: EmitDefaultValue
+      type: System.Boolean
+      value: false
+    - name: IsRequired
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+  commentId: P:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+  id: File
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: OneDriveItem.File
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: File
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 47
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets or sets file.\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "file", EmitDefaultValue = false, IsRequired = false)]
+
+      public File File { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.OneDrive.Sdk.File
+    content.vb: >-
+      <DataMember(Name:="file", EmitDefaultValue:=False, IsRequired:=False)>
+
+      Public Property File As File
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: file
+    - name: EmitDefaultValue
+      type: System.Boolean
+      value: false
+    - name: IsRequired
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+  commentId: P:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+  id: ConflictBehavior
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: ConflictBehavior
+  nameWithType: OneDriveItem.ConflictBehavior
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ConflictBehavior
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 55
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets or sets ConflictBehavior\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "@name.conflictBehavior", EmitDefaultValue = false, IsRequired = false)]
+
+      public string ConflictBehavior { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="@name.conflictBehavior", EmitDefaultValue:=False, IsRequired:=False)>
+
+      Public Property ConflictBehavior As String
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: '@name.conflictBehavior'
+    - name: EmitDefaultValue
+      type: System.Boolean
+      value: false
+    - name: IsRequired
+      type: System.Boolean
+      value: false
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson
+  id: SerializeToJson
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem
+  langs:
+  - csharp
+  - vb
+  name: SerializeToJson()
+  nameWithType: OneDriveItem.SerializeToJson()
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SerializeToJson
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItem.cs
+    startLine: 66
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nSerialize the object in json format\n"
+  example: []
+  syntax:
+    content: public string SerializeToJson()
+    return:
+      type: System.String
+      description: json string containing the data
+    content.vb: Public Function SerializeToJson As String
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive
+  commentId: N:Microsoft.Toolkit.Uwp.Services.OneDrive
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.OneDrive
+  nameWithType: Microsoft.Toolkit.Uwp.Services.OneDrive
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+  isExternal: false
+  name: Content
+  nameWithType: OneDriveItem.Content
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Content
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: false
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+  isExternal: false
+  name: Name
+  nameWithType: OneDriveItem.Name
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+  isExternal: false
+  name: Folder
+  nameWithType: OneDriveItem.Folder
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.Folder
+- uid: Microsoft.OneDrive.Sdk.Folder
+  commentId: T:Microsoft.OneDrive.Sdk.Folder
+  parent: Microsoft.OneDrive.Sdk
+  isExternal: true
+  name: Folder
+  nameWithType: Folder
+  fullName: Microsoft.OneDrive.Sdk.Folder
+- uid: Microsoft.OneDrive.Sdk
+  commentId: N:Microsoft.OneDrive.Sdk
+  isExternal: false
+  name: Microsoft.OneDrive.Sdk
+  nameWithType: Microsoft.OneDrive.Sdk
+  fullName: Microsoft.OneDrive.Sdk
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+  isExternal: false
+  name: File
+  nameWithType: OneDriveItem.File
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.File
+- uid: Microsoft.OneDrive.Sdk.File
+  commentId: T:Microsoft.OneDrive.Sdk.File
+  parent: Microsoft.OneDrive.Sdk
+  isExternal: true
+  name: File
+  nameWithType: File
+  fullName: Microsoft.OneDrive.Sdk.File
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+  isExternal: false
+  name: ConflictBehavior
+  nameWithType: OneDriveItem.ConflictBehavior
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.ConflictBehavior
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson
+  isExternal: false
+  name: SerializeToJson
+  nameWithType: OneDriveItem.SerializeToJson
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItem.SerializeToJson

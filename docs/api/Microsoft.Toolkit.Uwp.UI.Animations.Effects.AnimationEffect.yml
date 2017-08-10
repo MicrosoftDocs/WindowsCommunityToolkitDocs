@@ -1,0 +1,794 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  commentId: T:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  id: AnimationEffect
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  children:
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+  langs:
+  - csharp
+  - vb
+  name: AnimationEffect
+  nameWithType: AnimationEffect
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: AnimationEffect
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 24
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nAn abstract class that provides the mechanism to create\nan effect using composition.\n"
+  example: []
+  syntax:
+    content: public abstract class AnimationEffect
+    content.vb: Public MustInherit Class AnimationEffect
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.Blur
+  - Microsoft.Toolkit.Uwp.UI.Animations.Effects.Saturation
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+  commentId: P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+  id: IsSupported
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: IsSupported
+  nameWithType: AnimationEffect.IsSupported
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: IsSupported
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nGets a value indicating whether this instance is supported.\n"
+  example: []
+  syntax:
+    content: public abstract bool IsSupported { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+      description: "\n<code>true</code> if this instance is supported; otherwise, <code>false</code>.\n"
+    content.vb: Public MustOverride ReadOnly Property IsSupported As Boolean
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+  commentId: P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+  id: EffectName
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: EffectName
+  nameWithType: AnimationEffect.EffectName
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: EffectName
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 42
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nGets the name of the effect.\n"
+  example: []
+  syntax:
+    content: public abstract string EffectName { get; }
+    parameters: []
+    return:
+      type: System.String
+      description: "\nThe name of the effect.\n"
+    content.vb: Public MustOverride ReadOnly Property EffectName As String
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName*
+  modifiers.csharp:
+  - public
+  - abstract
+  - get
+  modifiers.vb:
+  - Public
+  - MustOverride
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+  commentId: P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+  id: Compositor
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: Compositor
+  nameWithType: AnimationEffect.Compositor
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Compositor
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 50
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nGets or sets the compositor.\n"
+  example: []
+  syntax:
+    content: public Compositor Compositor { get; set; }
+    parameters: []
+    return:
+      type: Windows.UI.Composition.Compositor
+      description: "\nThe compositor.\n"
+    content.vb: Public Property Compositor As Compositor
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+  commentId: P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+  id: EffectBrush
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: EffectBrush
+  nameWithType: AnimationEffect.EffectBrush
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: EffectBrush
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nGets or sets the effect brush.\n"
+  example: []
+  syntax:
+    content: public CompositionEffectBrush EffectBrush { get; set; }
+    parameters: []
+    return:
+      type: Windows.UI.Composition.CompositionEffectBrush
+      description: "\nThe effect brush.\n"
+    content.vb: Public Property EffectBrush As CompositionEffectBrush
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect
+  commentId: M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect
+  id: ApplyEffect
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: ApplyEffect()
+  nameWithType: AnimationEffect.ApplyEffect()
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ApplyEffect
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 64
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nApplies the effect.\n"
+  example: []
+  syntax:
+    content: public abstract string[] ApplyEffect()
+    return:
+      type: System.String[]
+      description: An array of strings of the effect properties to change.
+    content.vb: Public MustOverride Function ApplyEffect As String()
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)
+  id: EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)
+  parent: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect
+  langs:
+  - csharp
+  - vb
+  name: EffectAnimation(AnimationSet, Double, Double, Double)
+  nameWithType: AnimationEffect.EffectAnimation(AnimationSet, Double, Double, Double)
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet, System.Double, System.Double, System.Double)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: EffectAnimation
+    path: Microsoft.Toolkit.Uwp.UI.Animations/Effects/AnimationEffect.cs
+    startLine: 74
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI.Animations
+  namespace: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  summary: "\nAn animation which will apply the derived effect.\n"
+  example: []
+  syntax:
+    content: public AnimationSet EffectAnimation(AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0)
+    parameters:
+    - id: animationSet
+      type: Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet
+      description: The animation set.
+    - id: value
+      type: System.Double
+      description: The value.
+    - id: duration
+      type: System.Double
+      description: The duration in milliseconds.
+    - id: delay
+      type: System.Double
+      description: The delay in milliseconds.
+    return:
+      type: Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet
+      description: An animation set with the effect added to it.
+    content.vb: Public Function EffectAnimation(animationSet As AnimationSet, value As Double = 0, duration As Double = 500, delay As Double = 0) As AnimationSet
+  overload: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  commentId: N:Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  nameWithType: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+  isExternal: false
+  name: IsSupported
+  nameWithType: AnimationEffect.IsSupported
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+  isExternal: false
+  name: EffectName
+  nameWithType: AnimationEffect.EffectName
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+  isExternal: false
+  name: Compositor
+  nameWithType: AnimationEffect.Compositor
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor
+- uid: Windows.UI.Composition.Compositor
+  commentId: T:Windows.UI.Composition.Compositor
+  parent: Windows.UI.Composition
+  isExternal: true
+  name: Compositor
+  nameWithType: Compositor
+  fullName: Windows.UI.Composition.Compositor
+- uid: Windows.UI.Composition
+  commentId: N:Windows.UI.Composition
+  isExternal: false
+  name: Windows.UI.Composition
+  nameWithType: Windows.UI.Composition
+  fullName: Windows.UI.Composition
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+  isExternal: false
+  name: EffectBrush
+  nameWithType: AnimationEffect.EffectBrush
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush
+- uid: Windows.UI.Composition.CompositionEffectBrush
+  commentId: T:Windows.UI.Composition.CompositionEffectBrush
+  parent: Windows.UI.Composition
+  isExternal: true
+  name: CompositionEffectBrush
+  nameWithType: CompositionEffectBrush
+  fullName: Windows.UI.Composition.CompositionEffectBrush
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect
+  isExternal: false
+  name: ApplyEffect
+  nameWithType: AnimationEffect.ApplyEffect
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect
+- uid: System.String[]
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation
+  isExternal: false
+  name: EffectAnimation
+  nameWithType: AnimationEffect.EffectAnimation
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation
+- uid: Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet
+  commentId: T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet
+  parent: Microsoft.Toolkit.Uwp.UI.Animations
+  isExternal: false
+  name: AnimationSet
+  nameWithType: AnimationSet
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  name: Double
+  nameWithType: Double
+  fullName: System.Double
+- uid: Microsoft.Toolkit.Uwp.UI.Animations
+  commentId: N:Microsoft.Toolkit.Uwp.UI.Animations
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.UI.Animations
+  nameWithType: Microsoft.Toolkit.Uwp.UI.Animations
+  fullName: Microsoft.Toolkit.Uwp.UI.Animations

@@ -1,0 +1,319 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  commentId: T:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  id: VisualTreeExtensions
+  parent: Microsoft.Toolkit.Uwp.UI
+  children:
+  - Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant``1(FrameworkElement)
+  - Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant``1(DependencyObject)
+  - Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName(FrameworkElement,System.String)
+  - Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant``1(FrameworkElement)
+  langs:
+  - csharp
+  - vb
+  name: VisualTreeExtensions
+  nameWithType: VisualTreeExtensions
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: VisualTreeExtensions
+    path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+    startLine: 21
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nDefines a collection of extensions methods for UI.\n"
+  example: []
+  syntax:
+    content: 'public static class VisualTreeExtensions : object'
+    content.vb: >-
+      Public Module VisualTreeExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName(FrameworkElement,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName(FrameworkElement,System.String)
+  id: FindDescendantByName(FrameworkElement,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindDescendantByName(FrameworkElement, String)
+  nameWithType: VisualTreeExtensions.FindDescendantByName(FrameworkElement, String)
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName(FrameworkElement, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FindDescendantByName
+    path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nFind descendant control using its name.\n"
+  example: []
+  syntax:
+    content: public static FrameworkElement FindDescendantByName(this FrameworkElement element, string name)
+    parameters:
+    - id: element
+      type: FrameworkElement
+      description: Parent element.
+    - id: name
+      type: System.String
+      description: Name of the control to find
+    return:
+      type: FrameworkElement
+      description: Descendant control or null if not found.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindDescendantByName(element As FrameworkElement, name As String) As FrameworkElement
+  overload: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant``1(DependencyObject)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant``1(DependencyObject)
+  id: FindDescendant``1(DependencyObject)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindDescendant<T>(DependencyObject)
+  nameWithType: VisualTreeExtensions.FindDescendant<T>(DependencyObject)
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant<T>(DependencyObject)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FindDescendant
+    path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+    startLine: 60
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nFind first descendant control of a specified type.\n"
+  example: []
+  syntax:
+    content: 'public static T FindDescendant<T>(this DependencyObject element)where T : DependencyObject'
+    parameters:
+    - id: element
+      type: DependencyObject
+      description: Parent element.
+    typeParameters:
+    - id: T
+      description: Type to search for.
+    return:
+      type: '{T}'
+      description: Descendant control or null if not found.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindDescendant(Of T As DependencyObject)(element As DependencyObject) As T
+  overload: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant*
+  nameWithType.vb: VisualTreeExtensions.FindDescendant(Of T)(DependencyObject)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant(Of T)(DependencyObject)
+  name.vb: FindDescendant(Of T)(DependencyObject)
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant``1(FrameworkElement)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant``1(FrameworkElement)
+  id: FindAscendant``1(FrameworkElement)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindAscendant<T>(FrameworkElement)
+  nameWithType: VisualTreeExtensions.FindAscendant<T>(FrameworkElement)
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant<T>(FrameworkElement)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FindAscendant
+    path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nFind first ascendant control of a specified type.\n"
+  example: []
+  syntax:
+    content: 'public static T FindAscendant<T>(this FrameworkElement element)where T : FrameworkElement'
+    parameters:
+    - id: element
+      type: FrameworkElement
+      description: Child element.
+    typeParameters:
+    - id: T
+      description: Type to search for.
+    return:
+      type: '{T}'
+      description: Ascendant control or null if not found.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindAscendant(Of T As FrameworkElement)(element As FrameworkElement) As T
+  overload: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant*
+  nameWithType.vb: VisualTreeExtensions.FindAscendant(Of T)(FrameworkElement)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant(Of T)(FrameworkElement)
+  name.vb: FindAscendant(Of T)(FrameworkElement)
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant``1(FrameworkElement)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant``1(FrameworkElement)
+  id: FindVisualAscendant``1(FrameworkElement)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions
+  langs:
+  - csharp
+  - vb
+  name: FindVisualAscendant<T>(FrameworkElement)
+  nameWithType: VisualTreeExtensions.FindVisualAscendant<T>(FrameworkElement)
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant<T>(FrameworkElement)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: FindVisualAscendant
+    path: Microsoft.Toolkit.Uwp.UI/Extensions/VisualTreeExtensions.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nFind first visual ascendant control of a specified type.\n"
+  example: []
+  syntax:
+    content: 'public static T FindVisualAscendant<T>(this FrameworkElement element)where T : FrameworkElement'
+    parameters:
+    - id: element
+      type: FrameworkElement
+      description: Child element.
+    typeParameters:
+    - id: T
+      description: Type to search for.
+    return:
+      type: '{T}'
+      description: Ascendant control or null if not found.
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function FindVisualAscendant(Of T As FrameworkElement)(element As FrameworkElement) As T
+  overload: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant*
+  nameWithType.vb: VisualTreeExtensions.FindVisualAscendant(Of T)(FrameworkElement)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant(Of T)(FrameworkElement)
+  name.vb: FindVisualAscendant(Of T)(FrameworkElement)
+references:
+- uid: Microsoft.Toolkit.Uwp.UI
+  commentId: N:Microsoft.Toolkit.Uwp.UI
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.UI
+  nameWithType: Microsoft.Toolkit.Uwp.UI
+  fullName: Microsoft.Toolkit.Uwp.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName
+  isExternal: false
+  name: FindDescendantByName
+  nameWithType: VisualTreeExtensions.FindDescendantByName
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendantByName
+- uid: FrameworkElement
+  isExternal: true
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: FrameworkElement
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant
+  isExternal: false
+  name: FindDescendant
+  nameWithType: VisualTreeExtensions.FindDescendant
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindDescendant
+- uid: DependencyObject
+  isExternal: true
+  name: DependencyObject
+  nameWithType: DependencyObject
+  fullName: DependencyObject
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant
+  isExternal: false
+  name: FindAscendant
+  nameWithType: VisualTreeExtensions.FindAscendant
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindAscendant
+- uid: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant
+  isExternal: false
+  name: FindVisualAscendant
+  nameWithType: VisualTreeExtensions.FindVisualAscendant
+  fullName: Microsoft.Toolkit.Uwp.UI.VisualTreeExtensions.FindVisualAscendant

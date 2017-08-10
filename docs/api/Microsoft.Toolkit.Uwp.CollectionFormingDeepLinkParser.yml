@@ -20,10 +20,10 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: CollectionFormingDeepLinkParser
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 41
   assemblies:
   - Microsoft.Toolkit.Uwp
@@ -35,7 +35,9 @@ items:
     content: 'public class CollectionFormingDeepLinkParser : DeepLinkParser, IDictionary<string, string>, ICollection<KeyValuePair<string, string>>, IReadOnlyDictionary<string, string>, IReadOnlyCollection<KeyValuePair<string, string>>, IEnumerable<KeyValuePair<string, string>>, IDictionary, ICollection, IEnumerable'
     content.vb: >-
       Public Class CollectionFormingDeepLinkParser
+
           Inherits DeepLinkParser
+
           Implements IDictionary(Of String, String), ICollection(Of KeyValuePair(Of String, String)), IReadOnlyDictionary(Of String, String), IReadOnlyCollection(Of KeyValuePair(Of String, String)), IEnumerable(Of KeyValuePair(Of String, String)), IDictionary, ICollection, IEnumerable
   inheritance:
   - System.Object
@@ -101,6 +103,8 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
   modifiers.csharp:
   - public
   - class
@@ -121,10 +125,10 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: .ctor
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 46
   assemblies:
   - Microsoft.Toolkit.Uwp
@@ -153,10 +157,10 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: .ctor
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 55
   assemblies:
   - Microsoft.Toolkit.Uwp
@@ -193,10 +197,10 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: .ctor
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 65
   assemblies:
   - Microsoft.Toolkit.Uwp
@@ -233,10 +237,10 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: .ctor
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 75
   assemblies:
   - Microsoft.Toolkit.Uwp
@@ -273,22 +277,20 @@ items:
   source:
     remote:
       path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
-      branch: dev
+      branch: docfx
       repo: https://github.com/Microsoft/UWPCommunityToolkit.git
     id: ParseUriString
-    path: Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
+    path: Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser/CollectionFormingDeepLinkParser.cs
     startLine: 81
   assemblies:
   - Microsoft.Toolkit.Uwp
   namespace: Microsoft.Toolkit.Uwp
-  summary: "\nParses the URI string in to components.\n"
   example: []
   syntax:
     content: protected override void ParseUriString(string uri)
     parameters:
     - id: uri
       type: System.String
-      description: The URI.
     content.vb: Protected Overrides Sub ParseUriString(uri As String)
   overridden: Microsoft.Toolkit.Uwp.DeepLinkParser.ParseUriString(System.String)
   overload: Microsoft.Toolkit.Uwp.CollectionFormingDeepLinkParser.ParseUriString*
@@ -2558,6 +2560,35 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: false
@@ -4056,6 +4087,57 @@ references:
   fullName: System.Collections.Generic.Dictionary<TKey, TValue>.Values
   nameWithType.vb: Dictionary(Of TKey, TValue).Values
   fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue).Values
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
 - uid: Microsoft.Toolkit.Uwp.CollectionFormingDeepLinkParser
   commentId: T:Microsoft.Toolkit.Uwp.CollectionFormingDeepLinkParser
   isExternal: false

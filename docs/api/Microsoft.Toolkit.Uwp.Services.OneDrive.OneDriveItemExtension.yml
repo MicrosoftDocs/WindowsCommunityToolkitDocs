@@ -1,0 +1,952 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  commentId: T:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  id: OneDriveItemExtension
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive
+  children:
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Int32,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy,System.String)
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,Microsoft.OneDrive.Sdk.IOneDriveClient,System.Threading.CancellationToken,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize)
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Threading.CancellationToken)
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)
+  - Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: OneDriveItemExtension
+  nameWithType: OneDriveItemExtension
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: OneDriveItemExtension
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 27
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nType OneDriveItemExtension\n"
+  example: []
+  syntax:
+    content: public static class OneDriveItemExtension
+    content.vb: Public Module OneDriveItemExtension
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Threading.CancellationToken)
+  id: GetThumbnailSetAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  langs:
+  - csharp
+  - vb
+  name: GetThumbnailSetAsync(IItemRequestBuilder, CancellationToken)
+  nameWithType: OneDriveItemExtension.GetThumbnailSetAsync(IItemRequestBuilder, CancellationToken)
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetThumbnailSetAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 35
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets a file&apos;s thumbnail set\n"
+  example: []
+  syntax:
+    content: public static Task<OneDriveThumbnailSet> GetThumbnailSetAsync(this IItemRequestBuilder builder, CancellationToken cancellationToken)
+    parameters:
+    - id: builder
+      type: Microsoft.OneDrive.Sdk.IItemRequestBuilder
+      description: Http request builder
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> for the request.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet}
+      description: When this method completes, return a thumbnail set, or null if no thumbnail are available
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetThumbnailSetAsync(builder As IItemRequestBuilder, cancellationToken As CancellationToken) As Task(Of OneDriveThumbnailSet)
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,Microsoft.OneDrive.Sdk.IOneDriveClient,System.Threading.CancellationToken,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,Microsoft.OneDrive.Sdk.IOneDriveClient,System.Threading.CancellationToken,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize)
+  id: GetThumbnailAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder,Microsoft.OneDrive.Sdk.IOneDriveClient,System.Threading.CancellationToken,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  langs:
+  - csharp
+  - vb
+  name: GetThumbnailAsync(IItemRequestBuilder, IOneDriveClient, CancellationToken, OneDriveEnums.ThumbnailSize)
+  nameWithType: OneDriveItemExtension.GetThumbnailAsync(IItemRequestBuilder, IOneDriveClient, CancellationToken, OneDriveEnums.ThumbnailSize)
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync(Microsoft.OneDrive.Sdk.IItemRequestBuilder, Microsoft.OneDrive.Sdk.IOneDriveClient, System.Threading.CancellationToken, Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetThumbnailAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 58
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nGets a file&apos;s thumbnail\n"
+  example: []
+  syntax:
+    content: public static Task<Stream> GetThumbnailAsync(this IItemRequestBuilder builder, IOneDriveClient provider, CancellationToken cancellationToken, OneDriveEnums.ThumbnailSize optionSize)
+    parameters:
+    - id: builder
+      type: Microsoft.OneDrive.Sdk.IItemRequestBuilder
+      description: Http request builder
+    - id: provider
+      type: Microsoft.OneDrive.Sdk.IOneDriveClient
+      description: Http provider to execute the request
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> for the request.
+    - id: optionSize
+      type: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize
+      description: A value from the enumeration that specifies the size of the image to retrieve. Small ,Medium, Large
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: When this method completes, return a stream containing the thumbnail, or null if no thumbnail are available
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function GetThumbnailAsync(builder As IItemRequestBuilder, provider As IOneDriveClient, cancellationToken As CancellationToken, optionSize As OneDriveEnums.ThumbnailSize) As Task(Of Stream)
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  id: SendAuthenticatedRequestAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  langs:
+  - csharp
+  - vb
+  name: SendAuthenticatedRequestAsync(IOneDriveClient, HttpRequestMessage, CancellationToken)
+  nameWithType: OneDriveItemExtension.SendAuthenticatedRequestAsync(IOneDriveClient, HttpRequestMessage, CancellationToken)
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.OneDrive.Sdk.IOneDriveClient, System.Net.Http.HttpRequestMessage, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SendAuthenticatedRequestAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 101
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nSend an httpRequest to get an Onedrive Item\n"
+  example: []
+  syntax:
+    content: public static Task<Item> SendAuthenticatedRequestAsync(this IOneDriveClient provider, HttpRequestMessage request, CancellationToken cancellationToken)
+    parameters:
+    - id: provider
+      type: Microsoft.OneDrive.Sdk.IOneDriveClient
+      description: OneDriveClient Provider
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: Http Request to execute
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> for the request.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.OneDrive.Sdk.Item}
+      description: a OneDrive item or null if the request fail
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function SendAuthenticatedRequestAsync(provider As IOneDriveClient, request As HttpRequestMessage, cancellationToken As CancellationToken) As Task(Of Item)
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)
+  id: MoveAsync(Microsoft.OneDrive.Sdk.IOneDriveClient,System.Net.Http.HttpRequestMessage,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  langs:
+  - csharp
+  - vb
+  name: MoveAsync(IOneDriveClient, HttpRequestMessage, OneDriveStorageFolder, String, CancellationToken)
+  nameWithType: OneDriveItemExtension.MoveAsync(IOneDriveClient, HttpRequestMessage, OneDriveStorageFolder, String, CancellationToken)
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync(Microsoft.OneDrive.Sdk.IOneDriveClient, System.Net.Http.HttpRequestMessage, Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder, System.String, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: MoveAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 124
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nSend an httpRequest to get an Onedrive Item\n"
+  example: []
+  syntax:
+    content: public static Task<bool> MoveAsync(this IOneDriveClient provider, HttpRequestMessage request, OneDriveStorageFolder destinationFolder, string desiredNewName, CancellationToken cancellationToken)
+    parameters:
+    - id: provider
+      type: Microsoft.OneDrive.Sdk.IOneDriveClient
+      description: OneDriveClient Provider
+    - id: request
+      type: System.Net.Http.HttpRequestMessage
+      description: Http Request to execute
+    - id: destinationFolder
+      type: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder
+      description: Destination folder
+    - id: desiredNewName
+      type: System.String
+      description: New name
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The <xref href="System.Threading.CancellationToken" data-throw-if-not-resolved="false"></xref> for the request.
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: a OneDrive item or null if the request fail
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function MoveAsync(provider As IOneDriveClient, request As HttpRequestMessage, destinationFolder As OneDriveStorageFolder, desiredNewName As String, cancellationToken As CancellationToken) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Int32,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Int32,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy,System.String)
+  id: CreateChildrenRequest(Microsoft.OneDrive.Sdk.IItemRequestBuilder,System.Int32,Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension
+  langs:
+  - csharp
+  - vb
+  name: CreateChildrenRequest(IItemRequestBuilder, Int32, OneDriveEnums.OrderBy, String)
+  nameWithType: OneDriveItemExtension.CreateChildrenRequest(IItemRequestBuilder, Int32, OneDriveEnums.OrderBy, String)
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest(Microsoft.OneDrive.Sdk.IItemRequestBuilder, System.Int32, Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: CreateChildrenRequest
+    path: Microsoft.Toolkit.Uwp.Services/Services/OneDrive/OneDriveItemExtension.cs
+    startLine: 154
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.OneDrive
+  summary: "\nCreate children http request with specific options\n"
+  example: []
+  syntax:
+    content: public static IItemChildrenCollectionRequest CreateChildrenRequest(this IItemRequestBuilder requestBuilder, int top, OneDriveEnums.OrderBy orderBy = OneDriveEnums.OrderBy.None, string filter = null)
+    parameters:
+    - id: requestBuilder
+      type: Microsoft.OneDrive.Sdk.IItemRequestBuilder
+      description: request builder
+    - id: top
+      type: System.Int32
+      description: The number of items to return in a result set.
+    - id: orderBy
+      type: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy
+      description: Sort the order of items in the response collection
+    - id: filter
+      type: System.String
+      description: Filters the response based on a set of criteria.
+    return:
+      type: Microsoft.OneDrive.Sdk.IItemChildrenCollectionRequest
+      description: Returns the http request
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function CreateChildrenRequest(requestBuilder As IItemRequestBuilder, top As Integer, orderBy As OneDriveEnums.OrderBy = OneDriveEnums.OrderBy.None, filter As String = Nothing) As IItemChildrenCollectionRequest
+  overload: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive
+  commentId: N:Microsoft.Toolkit.Uwp.Services.OneDrive
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.OneDrive
+  nameWithType: Microsoft.Toolkit.Uwp.Services.OneDrive
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync
+  isExternal: false
+  name: GetThumbnailSetAsync
+  nameWithType: OneDriveItemExtension.GetThumbnailSetAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync
+- uid: Microsoft.OneDrive.Sdk.IItemRequestBuilder
+  commentId: T:Microsoft.OneDrive.Sdk.IItemRequestBuilder
+  parent: Microsoft.OneDrive.Sdk
+  isExternal: true
+  name: IItemRequestBuilder
+  nameWithType: IItemRequestBuilder
+  fullName: Microsoft.OneDrive.Sdk.IItemRequestBuilder
+- uid: System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<OneDriveThumbnailSet>
+  nameWithType: Task<OneDriveThumbnailSet>
+  fullName: System.Threading.Tasks.Task<Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet>
+  nameWithType.vb: Task(Of OneDriveThumbnailSet)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet)
+  name.vb: Task(Of OneDriveThumbnailSet)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet
+    name: OneDriveThumbnailSet
+    nameWithType: OneDriveThumbnailSet
+    fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet
+    name: OneDriveThumbnailSet
+    nameWithType: OneDriveThumbnailSet
+    fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveThumbnailSet
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: false
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+- uid: Microsoft.OneDrive.Sdk
+  commentId: N:Microsoft.OneDrive.Sdk
+  isExternal: false
+  name: Microsoft.OneDrive.Sdk
+  nameWithType: Microsoft.OneDrive.Sdk
+  fullName: Microsoft.OneDrive.Sdk
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync
+  isExternal: false
+  name: GetThumbnailAsync
+  nameWithType: OneDriveItemExtension.GetThumbnailAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.GetThumbnailAsync
+- uid: Microsoft.OneDrive.Sdk.IOneDriveClient
+  commentId: T:Microsoft.OneDrive.Sdk.IOneDriveClient
+  parent: Microsoft.OneDrive.Sdk
+  isExternal: true
+  name: IOneDriveClient
+  nameWithType: IOneDriveClient
+  fullName: Microsoft.OneDrive.Sdk.IOneDriveClient
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize
+  commentId: T:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive
+  isExternal: false
+  name: OneDriveEnums.ThumbnailSize
+  nameWithType: OneDriveEnums.ThumbnailSize
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.ThumbnailSize
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.IO.Stream
+    name: Stream
+    nameWithType: Stream
+    fullName: System.IO.Stream
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync
+  isExternal: false
+  name: SendAuthenticatedRequestAsync
+  nameWithType: OneDriveItemExtension.SendAuthenticatedRequestAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Threading.Tasks.Task{Microsoft.OneDrive.Sdk.Item}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.OneDrive.Sdk.Item}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Item>
+  nameWithType: Task<Item>
+  fullName: System.Threading.Tasks.Task<Microsoft.OneDrive.Sdk.Item>
+  nameWithType.vb: Task(Of Item)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.OneDrive.Sdk.Item)
+  name.vb: Task(Of Item)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.OneDrive.Sdk.Item
+    name: Item
+    nameWithType: Item
+    fullName: Microsoft.OneDrive.Sdk.Item
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.OneDrive.Sdk.Item
+    name: Item
+    nameWithType: Item
+    fullName: Microsoft.OneDrive.Sdk.Item
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: false
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync
+  isExternal: false
+  name: MoveAsync
+  nameWithType: OneDriveItemExtension.MoveAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.MoveAsync
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder
+  commentId: T:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive
+  isExternal: false
+  name: OneDriveStorageFolder
+  nameWithType: OneDriveStorageFolder
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveStorageFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest
+  isExternal: false
+  name: CreateChildrenRequest
+  nameWithType: OneDriveItemExtension.CreateChildrenRequest
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveItemExtension.CreateChildrenRequest
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy
+  commentId: T:Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy
+  parent: Microsoft.Toolkit.Uwp.Services.OneDrive
+  isExternal: false
+  name: OneDriveEnums.OrderBy
+  nameWithType: OneDriveEnums.OrderBy
+  fullName: Microsoft.Toolkit.Uwp.Services.OneDrive.OneDriveEnums.OrderBy
+- uid: Microsoft.OneDrive.Sdk.IItemChildrenCollectionRequest
+  commentId: T:Microsoft.OneDrive.Sdk.IItemChildrenCollectionRequest
+  parent: Microsoft.OneDrive.Sdk
+  isExternal: true
+  name: IItemChildrenCollectionRequest
+  nameWithType: IItemChildrenCollectionRequest
+  fullName: Microsoft.OneDrive.Sdk.IItemChildrenCollectionRequest

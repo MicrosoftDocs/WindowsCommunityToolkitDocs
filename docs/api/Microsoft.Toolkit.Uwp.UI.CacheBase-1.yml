@@ -1,0 +1,1651 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  commentId: T:Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  id: CacheBase`1
+  parent: Microsoft.Toolkit.Uwp.UI
+  children:
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync(TimeSpan)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync(Uri)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync(Uri,System.Boolean,CancellationToken,List{KeyValuePair{System.String,System.Object}})
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache(Uri)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync(StorageFolder,System.String,HttpMessageHandler)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(IRandomAccessStream,List{KeyValuePair{System.String,System.Object}})
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(StorageFile,List{KeyValuePair{System.String,System.Object}})
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync(StorageFile,TimeSpan,System.Boolean)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync(Uri,System.Boolean,System.Boolean,CancellationToken)
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync(IEnumerable{Uri})
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync(System.Nullable{TimeSpan})
+  - Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount
+  langs:
+  - csharp
+  - vb
+  name: CacheBase<T>
+  nameWithType: CacheBase<T>
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: CacheBase
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 29
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nProvides methods and tools to cache files in a folder\n"
+  example: []
+  syntax:
+    content: 'public abstract class CacheBase<T> : object'
+    typeParameters:
+    - id: T
+      description: Generic type as supplied by consumer of the class
+    content.vb: >-
+      Public MustInherit Class CacheBase(Of T)
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.Toolkit.Uwp.UI.FileCache
+  - Microsoft.Toolkit.Uwp.UI.ImageCache
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  nameWithType.vb: CacheBase(Of T)
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T)
+  name.vb: CacheBase(Of T)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext
+  id: MaintainContext
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: MaintainContext
+  nameWithType: CacheBase<T>.MaintainContext
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.MaintainContext
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: MaintainContext
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 34
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets or sets a value indicating whether context should be maintained until type has been instantiated or not.\n"
+  example: []
+  syntax:
+    content: protected bool MaintainContext { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Property MaintainContext As Boolean
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext*
+  nameWithType.vb: CacheBase(Of T).MaintainContext
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).MaintainContext
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor
+  id: '#ctor'
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: CacheBase()
+  nameWithType: CacheBase<T>.CacheBase()
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.CacheBase()
+  type: Constructor
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: .ctor
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 57
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Toolkit.Uwp.UI.CacheBase%601\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: protected CacheBase()
+    content.vb: Protected Sub New
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor*
+  nameWithType.vb: CacheBase(Of T).CacheBase()
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).CacheBase()
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  id: CacheDuration
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: CacheDuration
+  nameWithType: CacheBase<T>.CacheDuration
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.CacheDuration
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: CacheDuration
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 67
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets or sets the life duration of every cache entry.\n"
+  example: []
+  syntax:
+    content: public TimeSpan CacheDuration { get; set; }
+    parameters: []
+    return:
+      type: TimeSpan
+    content.vb: Public Property CacheDuration As TimeSpan
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration*
+  nameWithType.vb: CacheBase(Of T).CacheDuration
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).CacheDuration
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount
+  id: RetryCount
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: RetryCount
+  nameWithType: CacheBase<T>.RetryCount
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RetryCount
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: RetryCount
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 72
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets or sets the number of retries trying to ensure the file is cached.\n"
+  example: []
+  syntax:
+    content: public uint RetryCount { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property RetryCount As UInteger
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount*
+  nameWithType.vb: CacheBase(Of T).RetryCount
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RetryCount
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount
+  id: MaxMemoryCacheCount
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: MaxMemoryCacheCount
+  nameWithType: CacheBase<T>.MaxMemoryCacheCount
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.MaxMemoryCacheCount
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: MaxMemoryCacheCount
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets or sets max in-memory item storage count\n"
+  example: []
+  syntax:
+    content: public int MaxMemoryCacheCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxMemoryCacheCount As Integer
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount*
+  nameWithType.vb: CacheBase(Of T).MaxMemoryCacheCount
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).MaxMemoryCacheCount
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  id: HttpClient
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: HttpClient
+  nameWithType: CacheBase<T>.HttpClient
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.HttpClient
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: HttpClient
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 93
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets instance of <xref href=\"Microsoft.Toolkit.Uwp.UI.CacheBase%601.HttpClient\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: protected HttpClient HttpClient { get; }
+    parameters: []
+    return:
+      type: HttpClient
+    content.vb: Protected ReadOnly Property HttpClient As HttpClient
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient*
+  nameWithType.vb: CacheBase(Of T).HttpClient
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).HttpClient
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync(StorageFolder,System.String,HttpMessageHandler)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync(StorageFolder,System.String,HttpMessageHandler)
+  id: InitializeAsync(StorageFolder,System.String,HttpMessageHandler)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync(StorageFolder, String, HttpMessageHandler)
+  nameWithType: CacheBase<T>.InitializeAsync(StorageFolder, String, HttpMessageHandler)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.InitializeAsync(StorageFolder, System.String, HttpMessageHandler)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: InitializeAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 115
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nInitializes FileCache and provides root folder and cache folder name\n"
+  example: []
+  syntax:
+    content: public virtual Task InitializeAsync(StorageFolder folder = null, string folderName = null, HttpMessageHandler httpMessageHandler = null)
+    parameters:
+    - id: folder
+      type: StorageFolder
+      description: Folder that is used as root for cache
+    - id: folderName
+      type: System.String
+      description: Cache folder name
+    - id: httpMessageHandler
+      type: HttpMessageHandler
+      description: instance of <see cref="!:HttpMessageHandler"></see>
+    return:
+      type: Task
+      description: awaitable task
+    content.vb: Public Overridable Function InitializeAsync(folder As StorageFolder = Nothing, folderName As String = Nothing, httpMessageHandler As HttpMessageHandler = Nothing) As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync*
+  nameWithType.vb: CacheBase(Of T).InitializeAsync(StorageFolder, String, HttpMessageHandler)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).InitializeAsync(StorageFolder, System.String, HttpMessageHandler)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync
+  id: ClearAsync
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: ClearAsync()
+  nameWithType: CacheBase<T>.ClearAsync()
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.ClearAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ClearAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 132
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nClears all files in the cache\n"
+  example: []
+  syntax:
+    content: public Task ClearAsync()
+    return:
+      type: Task
+      description: awaitable task
+    content.vb: Public Function ClearAsync As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync*
+  nameWithType.vb: CacheBase(Of T).ClearAsync()
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).ClearAsync()
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync(TimeSpan)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync(TimeSpan)
+  id: ClearAsync(TimeSpan)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: ClearAsync(TimeSpan)
+  nameWithType: CacheBase<T>.ClearAsync(TimeSpan)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.ClearAsync(TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ClearAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 147
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nClears file if it has expired\n"
+  example: []
+  syntax:
+    content: public Task ClearAsync(TimeSpan duration)
+    parameters:
+    - id: duration
+      type: TimeSpan
+      description: timespan to compute whether file has expired or not
+    return:
+      type: Task
+      description: awaitable task
+    content.vb: Public Function ClearAsync(duration As TimeSpan) As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync*
+  nameWithType.vb: CacheBase(Of T).ClearAsync(TimeSpan)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).ClearAsync(TimeSpan)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync(System.Nullable{TimeSpan})
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync(System.Nullable{TimeSpan})
+  id: RemoveExpiredAsync(System.Nullable{TimeSpan})
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveExpiredAsync(Nullable<TimeSpan>)
+  nameWithType: CacheBase<T>.RemoveExpiredAsync(Nullable<TimeSpan>)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RemoveExpiredAsync(System.Nullable<TimeSpan>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: RemoveExpiredAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 157
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nRemoves cached files that have expired\n"
+  example: []
+  syntax:
+    content: public Task RemoveExpiredAsync(TimeSpan? duration = null)
+    parameters:
+    - id: duration
+      type: System.Nullable{TimeSpan}
+      description: Optional timespan to compute whether file has expired or not. If no value is supplied, <xref href="Microsoft.Toolkit.Uwp.UI.CacheBase%601.CacheDuration" data-throw-if-not-resolved="false"></xref> is used.
+    return:
+      type: Task
+      description: awaitable task
+    content.vb: Public Function RemoveExpiredAsync(duration As TimeSpan? = Nothing) As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync*
+  nameWithType.vb: CacheBase(Of T).RemoveExpiredAsync(Nullable(Of TimeSpan))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RemoveExpiredAsync(System.Nullable(Of TimeSpan))
+  name.vb: RemoveExpiredAsync(Nullable(Of TimeSpan))
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync(IEnumerable{Uri})
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync(IEnumerable{Uri})
+  id: RemoveAsync(IEnumerable{Uri})
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: RemoveAsync(IEnumerable<Uri>)
+  nameWithType: CacheBase<T>.RemoveAsync(IEnumerable<Uri>)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RemoveAsync(IEnumerable<Uri>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: RemoveAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 189
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nRemoved items based on uri list passed\n"
+  example: []
+  syntax:
+    content: public Task RemoveAsync(IEnumerable<Uri> uriForCachedItems)
+    parameters:
+    - id: uriForCachedItems
+      type: IEnumerable{Uri}
+      description: Enumerable uri list
+    return:
+      type: Task
+      description: awaitable Task
+    content.vb: Public Function RemoveAsync(uriForCachedItems As IEnumerable(Of Uri)) As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync*
+  nameWithType.vb: CacheBase(Of T).RemoveAsync(IEnumerable(Of Uri))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RemoveAsync(IEnumerable(Of Uri))
+  name.vb: RemoveAsync(IEnumerable(Of Uri))
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync(Uri,System.Boolean,System.Boolean,CancellationToken)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync(Uri,System.Boolean,System.Boolean,CancellationToken)
+  id: PreCacheAsync(Uri,System.Boolean,System.Boolean,CancellationToken)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)
+  nameWithType: CacheBase<T>.PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.PreCacheAsync(Uri, System.Boolean, System.Boolean, CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: PreCacheAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 235
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nAssures that item represented by Uri is cached.\n"
+  example: []
+  syntax:
+    content: public Task PreCacheAsync(Uri uri, bool throwOnError = false, bool storeToMemoryCache = false, CancellationToken cancellationToken = null)
+    parameters:
+    - id: uri
+      type: Uri
+      description: Uri of the item
+    - id: throwOnError
+      type: System.Boolean
+      description: Indicates whether or not exception should be thrown if item cannot be cached
+    - id: storeToMemoryCache
+      type: System.Boolean
+      description: Indicates if item should be loaded into the in-memory storage
+    - id: cancellationToken
+      type: CancellationToken
+      description: instance of <see cref="!:CancellationToken"></see>
+    return:
+      type: Task
+      description: Awaitable Task
+    content.vb: Public Function PreCacheAsync(uri As Uri, throwOnError As Boolean = False, storeToMemoryCache As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync*
+  nameWithType.vb: CacheBase(Of T).PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).PreCacheAsync(Uri, System.Boolean, System.Boolean, CancellationToken)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync(Uri,System.Boolean,CancellationToken,List{KeyValuePair{System.String,System.Object}})
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync(Uri,System.Boolean,CancellationToken,List{KeyValuePair{System.String,System.Object}})
+  id: GetFromCacheAsync(Uri,System.Boolean,CancellationToken,List{KeyValuePair{System.String,System.Object}})
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<String, Object>>)
+  nameWithType: CacheBase<T>.GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<String, Object>>)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFromCacheAsync(Uri, System.Boolean, CancellationToken, List<KeyValuePair<System.String, System.Object>>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetFromCacheAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 248
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nRetrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller.\n"
+  example: []
+  syntax:
+    content: public Task<T> GetFromCacheAsync(Uri uri, bool throwOnError = false, CancellationToken cancellationToken = null, List<KeyValuePair<string, object>> initializerKeyValues = null)
+    parameters:
+    - id: uri
+      type: Uri
+      description: Uri of the item.
+    - id: throwOnError
+      type: System.Boolean
+      description: Indicates whether or not exception should be thrown if item cannot be found / downloaded.
+    - id: cancellationToken
+      type: CancellationToken
+      description: instance of <see cref="!:CancellationToken"></see>
+    - id: initializerKeyValues
+      type: List{KeyValuePair{System.String,System.Object}}
+      description: key value pairs used when initializing instance of generic type
+    return:
+      type: Task{{T}}
+      description: an instance of Generic type
+    content.vb: Public Function GetFromCacheAsync(uri As Uri, throwOnError As Boolean = False, cancellationToken As CancellationToken = Nothing, initializerKeyValues As List(Of KeyValuePair(Of String, Object)) = Nothing) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync*
+  nameWithType.vb: CacheBase(Of T).GetFromCacheAsync(Uri, Boolean, CancellationToken, List(Of KeyValuePair(Of String, Object)))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFromCacheAsync(Uri, System.Boolean, CancellationToken, List(Of KeyValuePair(Of System.String, System.Object)))
+  name.vb: GetFromCacheAsync(Uri, Boolean, CancellationToken, List(Of KeyValuePair(Of String, Object)))
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync(Uri)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync(Uri)
+  id: GetFileFromCacheAsync(Uri)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetFileFromCacheAsync(Uri)
+  nameWithType: CacheBase<T>.GetFileFromCacheAsync(Uri)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFileFromCacheAsync(Uri)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetFileFromCacheAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 258
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nGets the StorageFile containing cached item for given Uri\n"
+  example: []
+  syntax:
+    content: public Task<StorageFile> GetFileFromCacheAsync(Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+      description: Uri of the item.
+    return:
+      type: Task{StorageFile}
+      description: a StorageFile
+    content.vb: Public Function GetFileFromCacheAsync(uri As Uri) As Task(Of StorageFile)
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync*
+  nameWithType.vb: CacheBase(Of T).GetFileFromCacheAsync(Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFileFromCacheAsync(Uri)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache(Uri)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache(Uri)
+  id: GetFromMemoryCache(Uri)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: GetFromMemoryCache(Uri)
+  nameWithType: CacheBase<T>.GetFromMemoryCache(Uri)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFromMemoryCache(Uri)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetFromMemoryCache
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 274
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nRetrieves item represented by Uri from the in-memory cache if it exists and is not out of date. If item is not found or is out of date, default instance of the generic type is returned.\n"
+  example: []
+  syntax:
+    content: public T GetFromMemoryCache(Uri uri)
+    parameters:
+    - id: uri
+      type: Uri
+      description: Uri of the item.
+    return:
+      type: '{T}'
+      description: an instance of Generic type
+    content.vb: Public Function GetFromMemoryCache(uri As Uri) As T
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache*
+  nameWithType.vb: CacheBase(Of T).GetFromMemoryCache(Uri)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFromMemoryCache(Uri)
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(IRandomAccessStream,List{KeyValuePair{System.String,System.Object}})
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(IRandomAccessStream,List{KeyValuePair{System.String,System.Object}})
+  id: InitializeTypeAsync(IRandomAccessStream,List{KeyValuePair{System.String,System.Object}})
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeTypeAsync(IRandomAccessStream, List<KeyValuePair<String, Object>>)
+  nameWithType: CacheBase<T>.InitializeTypeAsync(IRandomAccessStream, List<KeyValuePair<String, Object>>)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.InitializeTypeAsync(IRandomAccessStream, List<KeyValuePair<System.String, System.Object>>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: InitializeTypeAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 298
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nCache specific hooks to process items from HTTP response\n"
+  example: []
+  syntax:
+    content: protected abstract Task<T> InitializeTypeAsync(IRandomAccessStream stream, List<KeyValuePair<string, object>> initializerKeyValues = null)
+    parameters:
+    - id: stream
+      type: IRandomAccessStream
+      description: input stream
+    - id: initializerKeyValues
+      type: List{KeyValuePair{System.String,System.Object}}
+      description: key value pairs used when initializing instance of generic type
+    return:
+      type: Task{{T}}
+      description: awaitable task
+    content.vb: Protected MustOverride Function InitializeTypeAsync(stream As IRandomAccessStream, initializerKeyValues As List(Of KeyValuePair(Of String, Object)) = Nothing) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync*
+  nameWithType.vb: CacheBase(Of T).InitializeTypeAsync(IRandomAccessStream, List(Of KeyValuePair(Of String, Object)))
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).InitializeTypeAsync(IRandomAccessStream, List(Of KeyValuePair(Of System.String, System.Object)))
+  name.vb: InitializeTypeAsync(IRandomAccessStream, List(Of KeyValuePair(Of String, Object)))
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(StorageFile,List{KeyValuePair{System.String,System.Object}})
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync(StorageFile,List{KeyValuePair{System.String,System.Object}})
+  id: InitializeTypeAsync(StorageFile,List{KeyValuePair{System.String,System.Object}})
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeTypeAsync(StorageFile, List<KeyValuePair<String, Object>>)
+  nameWithType: CacheBase<T>.InitializeTypeAsync(StorageFile, List<KeyValuePair<String, Object>>)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.InitializeTypeAsync(StorageFile, List<KeyValuePair<System.String, System.Object>>)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: InitializeTypeAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 306
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nCache specific hooks to process items from HTTP response\n"
+  example: []
+  syntax:
+    content: protected abstract Task<T> InitializeTypeAsync(StorageFile baseFile, List<KeyValuePair<string, object>> initializerKeyValues = null)
+    parameters:
+    - id: baseFile
+      type: StorageFile
+      description: storage file
+    - id: initializerKeyValues
+      type: List{KeyValuePair{System.String,System.Object}}
+      description: key value pairs used when initializing instance of generic type
+    return:
+      type: Task{{T}}
+      description: awaitable task
+    content.vb: Protected MustOverride Function InitializeTypeAsync(baseFile As StorageFile, initializerKeyValues As List(Of KeyValuePair(Of String, Object)) = Nothing) As Task(Of T)
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync*
+  nameWithType.vb: CacheBase(Of T).InitializeTypeAsync(StorageFile, List(Of KeyValuePair(Of String, Object)))
+  modifiers.csharp:
+  - protected
+  - abstract
+  modifiers.vb:
+  - Protected
+  - MustOverride
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).InitializeTypeAsync(StorageFile, List(Of KeyValuePair(Of System.String, System.Object)))
+  name.vb: InitializeTypeAsync(StorageFile, List(Of KeyValuePair(Of String, Object)))
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync(StorageFile,TimeSpan,System.Boolean)
+  commentId: M:Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync(StorageFile,TimeSpan,System.Boolean)
+  id: IsFileOutOfDateAsync(StorageFile,TimeSpan,System.Boolean)
+  parent: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  langs:
+  - csharp
+  - vb
+  name: IsFileOutOfDateAsync(StorageFile, TimeSpan, Boolean)
+  nameWithType: CacheBase<T>.IsFileOutOfDateAsync(StorageFile, TimeSpan, Boolean)
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.IsFileOutOfDateAsync(StorageFile, TimeSpan, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: IsFileOutOfDateAsync
+    path: Microsoft.Toolkit.Uwp.UI/Cache/CacheBase.cs
+    startLine: 315
+  assemblies:
+  - Microsoft.Toolkit.Uwp.UI
+  namespace: Microsoft.Toolkit.Uwp.UI
+  summary: "\nOverride-able method that checks whether file is valid or not.\n"
+  example: []
+  syntax:
+    content: protected virtual Task<bool> IsFileOutOfDateAsync(StorageFile file, TimeSpan duration, bool treatNullFileAsOutOfDate = true)
+    parameters:
+    - id: file
+      type: StorageFile
+      description: storage file
+    - id: duration
+      type: TimeSpan
+      description: cache duration
+    - id: treatNullFileAsOutOfDate
+      type: System.Boolean
+      description: option to mark uninitialized file as expired
+    return:
+      type: Task{System.Boolean}
+      description: bool indicate whether file has expired or not
+    content.vb: Protected Overridable Function IsFileOutOfDateAsync(file As StorageFile, duration As TimeSpan, treatNullFileAsOutOfDate As Boolean = True) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync*
+  nameWithType.vb: CacheBase(Of T).IsFileOutOfDateAsync(StorageFile, TimeSpan, Boolean)
+  modifiers.csharp:
+  - protected
+  - virtual
+  modifiers.vb:
+  - Protected
+  - Overridable
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).IsFileOutOfDateAsync(StorageFile, TimeSpan, System.Boolean)
+references:
+- uid: Microsoft.Toolkit.Uwp.UI
+  commentId: N:Microsoft.Toolkit.Uwp.UI
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.UI
+  nameWithType: Microsoft.Toolkit.Uwp.UI
+  fullName: Microsoft.Toolkit.Uwp.UI
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaintainContext
+  isExternal: false
+  name: MaintainContext
+  nameWithType: CacheBase<T>.MaintainContext
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.MaintainContext
+  nameWithType.vb: CacheBase(Of T).MaintainContext
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).MaintainContext
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  commentId: T:Microsoft.Toolkit.Uwp.UI.CacheBase`1
+  isExternal: false
+  name: CacheBase<T>
+  nameWithType: CacheBase<T>
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>
+  nameWithType.vb: CacheBase(Of T)
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T)
+  name.vb: CacheBase(Of T)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+    name: CacheBase
+    nameWithType: CacheBase
+    fullName: Microsoft.Toolkit.Uwp.UI.CacheBase
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1
+    name: CacheBase
+    nameWithType: CacheBase
+    fullName: Microsoft.Toolkit.Uwp.UI.CacheBase
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.#ctor
+  isExternal: false
+  name: CacheBase
+  nameWithType: CacheBase<T>.CacheBase
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.CacheBase
+  nameWithType.vb: CacheBase(Of T).CacheBase
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).CacheBase
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  isExternal: false
+  name: CacheDuration
+  nameWithType: CacheBase<T>.CacheDuration
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.CacheDuration
+  nameWithType.vb: CacheBase(Of T).CacheDuration
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).CacheDuration
+- uid: TimeSpan
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: TimeSpan
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RetryCount
+  isExternal: false
+  name: RetryCount
+  nameWithType: CacheBase<T>.RetryCount
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RetryCount
+  nameWithType.vb: CacheBase(Of T).RetryCount
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RetryCount
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.MaxMemoryCacheCount
+  isExternal: false
+  name: MaxMemoryCacheCount
+  nameWithType: CacheBase<T>.MaxMemoryCacheCount
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.MaxMemoryCacheCount
+  nameWithType.vb: CacheBase(Of T).MaxMemoryCacheCount
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).MaxMemoryCacheCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  isExternal: false
+  name: HttpClient
+  nameWithType: CacheBase<T>.HttpClient
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.HttpClient
+  nameWithType.vb: CacheBase(Of T).HttpClient
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).HttpClient
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient
+  isExternal: false
+  name: HttpClient
+  nameWithType: CacheBase<T>.HttpClient
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.HttpClient
+  nameWithType.vb: CacheBase(Of T).HttpClient
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).HttpClient
+- uid: HttpClient
+  commentId: '!:HttpClient'
+  isExternal: true
+  name: HttpClient
+  nameWithType: HttpClient
+  fullName: HttpClient
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeAsync
+  isExternal: false
+  name: InitializeAsync
+  nameWithType: CacheBase<T>.InitializeAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.InitializeAsync
+  nameWithType.vb: CacheBase(Of T).InitializeAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).InitializeAsync
+- uid: StorageFolder
+  commentId: '!:StorageFolder'
+  isExternal: true
+  name: StorageFolder
+  nameWithType: StorageFolder
+  fullName: StorageFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: HttpMessageHandler
+  commentId: '!:HttpMessageHandler'
+  isExternal: true
+  name: HttpMessageHandler
+  nameWithType: HttpMessageHandler
+  fullName: HttpMessageHandler
+- uid: Task
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: Task
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.ClearAsync
+  isExternal: false
+  name: ClearAsync
+  nameWithType: CacheBase<T>.ClearAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.ClearAsync
+  nameWithType.vb: CacheBase(Of T).ClearAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).ClearAsync
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  commentId: P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration
+  isExternal: false
+  name: CacheDuration
+  nameWithType: CacheBase<T>.CacheDuration
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.CacheDuration
+  nameWithType.vb: CacheBase(Of T).CacheDuration
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).CacheDuration
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveExpiredAsync
+  isExternal: false
+  name: RemoveExpiredAsync
+  nameWithType: CacheBase<T>.RemoveExpiredAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RemoveExpiredAsync
+  nameWithType.vb: CacheBase(Of T).RemoveExpiredAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RemoveExpiredAsync
+- uid: System.Nullable{TimeSpan}
+  commentId: '!:System.Nullable{TimeSpan}'
+  definition: System.Nullable`1
+  name: Nullable<TimeSpan>
+  nameWithType: Nullable<TimeSpan>
+  fullName: System.Nullable<TimeSpan>
+  nameWithType.vb: Nullable(Of TimeSpan)
+  fullName.vb: System.Nullable(Of TimeSpan)
+  name.vb: Nullable(Of TimeSpan)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: TimeSpan
+    name: TimeSpan
+    nameWithType: TimeSpan
+    fullName: TimeSpan
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    nameWithType: Nullable
+    fullName: System.Nullable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.RemoveAsync
+  isExternal: false
+  name: RemoveAsync
+  nameWithType: CacheBase<T>.RemoveAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.RemoveAsync
+  nameWithType.vb: CacheBase(Of T).RemoveAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).RemoveAsync
+- uid: IEnumerable{Uri}
+  commentId: '!:IEnumerable{Uri}'
+  definition: IEnumerable`1
+  name: IEnumerable<Uri>
+  nameWithType: IEnumerable<Uri>
+  fullName: IEnumerable<Uri>
+  nameWithType.vb: IEnumerable(Of Uri)
+  fullName.vb: IEnumerable(Of Uri)
+  name.vb: IEnumerable(Of Uri)
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Uri
+    name: Uri
+    nameWithType: Uri
+    fullName: Uri
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: IEnumerable`1
+  isExternal: true
+  name: IEnumerable<>
+  nameWithType: IEnumerable<>
+  fullName: IEnumerable<>
+  nameWithType.vb: IEnumerable(Of )
+  fullName.vb: IEnumerable(Of )
+  name.vb: IEnumerable(Of )
+  spec.csharp:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.PreCacheAsync
+  isExternal: false
+  name: PreCacheAsync
+  nameWithType: CacheBase<T>.PreCacheAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.PreCacheAsync
+  nameWithType.vb: CacheBase(Of T).PreCacheAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).PreCacheAsync
+- uid: Uri
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: Uri
+- uid: CancellationToken
+  isExternal: true
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: CancellationToken
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromCacheAsync
+  isExternal: false
+  name: GetFromCacheAsync
+  nameWithType: CacheBase<T>.GetFromCacheAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFromCacheAsync
+  nameWithType.vb: CacheBase(Of T).GetFromCacheAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFromCacheAsync
+- uid: List{KeyValuePair{System.String,System.Object}}
+  commentId: '!:List{KeyValuePair{System.String,System.Object}}'
+  definition: List`1
+  name: List<KeyValuePair<String, Object>>
+  nameWithType: List<KeyValuePair<String, Object>>
+  fullName: List<KeyValuePair<System.String, System.Object>>
+  nameWithType.vb: List(Of KeyValuePair(Of String, Object))
+  fullName.vb: List(Of KeyValuePair(Of System.String, System.Object))
+  name.vb: List(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: KeyValuePair`2
+    name: KeyValuePair
+    nameWithType: KeyValuePair
+    fullName: KeyValuePair
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task{{T}}
+  commentId: '!:Task{`0}'
+  definition: Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: List`1
+  isExternal: true
+  name: List<>
+  nameWithType: List<>
+  fullName: List<>
+  nameWithType.vb: List(Of )
+  fullName.vb: List(Of )
+  name.vb: List(Of )
+  spec.csharp:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: List`1
+    name: List
+    nameWithType: List
+    fullName: List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Task`1
+  isExternal: true
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFileFromCacheAsync
+  isExternal: false
+  name: GetFileFromCacheAsync
+  nameWithType: CacheBase<T>.GetFileFromCacheAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFileFromCacheAsync
+  nameWithType.vb: CacheBase(Of T).GetFileFromCacheAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFileFromCacheAsync
+- uid: Task{StorageFile}
+  commentId: '!:Task{StorageFile}'
+  definition: Task`1
+  name: Task<StorageFile>
+  nameWithType: Task<StorageFile>
+  fullName: Task<StorageFile>
+  nameWithType.vb: Task(Of StorageFile)
+  fullName.vb: Task(Of StorageFile)
+  name.vb: Task(Of StorageFile)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: StorageFile
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: StorageFile
+    name: StorageFile
+    nameWithType: StorageFile
+    fullName: StorageFile
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.GetFromMemoryCache
+  isExternal: false
+  name: GetFromMemoryCache
+  nameWithType: CacheBase<T>.GetFromMemoryCache
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.GetFromMemoryCache
+  nameWithType.vb: CacheBase(Of T).GetFromMemoryCache
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).GetFromMemoryCache
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  isExternal: false
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.InitializeTypeAsync
+  isExternal: false
+  name: InitializeTypeAsync
+  nameWithType: CacheBase<T>.InitializeTypeAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.InitializeTypeAsync
+  nameWithType.vb: CacheBase(Of T).InitializeTypeAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).InitializeTypeAsync
+- uid: IRandomAccessStream
+  isExternal: true
+  name: IRandomAccessStream
+  nameWithType: IRandomAccessStream
+  fullName: IRandomAccessStream
+- uid: StorageFile
+  isExternal: true
+  name: StorageFile
+  nameWithType: StorageFile
+  fullName: StorageFile
+- uid: Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.UI.CacheBase`1.IsFileOutOfDateAsync
+  isExternal: false
+  name: IsFileOutOfDateAsync
+  nameWithType: CacheBase<T>.IsFileOutOfDateAsync
+  fullName: Microsoft.Toolkit.Uwp.UI.CacheBase<T>.IsFileOutOfDateAsync
+  nameWithType.vb: CacheBase(Of T).IsFileOutOfDateAsync
+  fullName.vb: Microsoft.Toolkit.Uwp.UI.CacheBase(Of T).IsFileOutOfDateAsync
+- uid: Task{System.Boolean}
+  commentId: '!:Task{System.Boolean}'
+  definition: Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Task`1
+    name: Task
+    nameWithType: Task
+    fullName: Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

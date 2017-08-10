@@ -1,0 +1,865 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  id: ITranslatorService
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  children:
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync(System.String)
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String)
+  - Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITranslatorService
+  nameWithType: ITranslatorService
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  type: Interface
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: ITranslatorService
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 21
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nThe <strong>ITranslatorServiceClient</strong> interface specifies properties and methods to translate text in various supported languages.\n"
+  example: []
+  syntax:
+    content: public interface ITranslatorService
+    content.vb: Public Interface ITranslatorService
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  id: SubscriptionKey
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: SubscriptionKey
+  nameWithType: ITranslatorService.SubscriptionKey
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SubscriptionKey
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 30
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nGets or sets the Subscription key that is necessary to use <strong>Microsoft Translator Service</strong>.\n"
+  remarks: "\n<p>You must register Microsoft Translator on https://portal.azure.com/#create/Microsoft.CognitiveServices/apitype/TextTranslation to obtain the Subscription key needed to use the service.</p>\n"
+  example: []
+  syntax:
+    content: string SubscriptionKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The Subscription Key.
+    content.vb: Property SubscriptionKey As String
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey*
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  id: Language
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: ITranslatorService.Language
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Language
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 37
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nGets or sets the string representing the supported language code to translate the text in.\n"
+  example: []
+  syntax:
+    content: string Language { get; set; }
+    parameters: []
+    return:
+      type: System.String
+      description: The string representing the supported language code to translate the text in. The code must be present in the list of codes returned from the method <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Property Language As String
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language*
+  seealso:
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+    commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  modifiers.csharp:
+  - get
+  - set
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync
+  id: InitializeAsync
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: ITranslatorService.InitializeAsync()
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: InitializeAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 46
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nInitializes the <xref href=\"Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorService\" data-throw-if-not-resolved=\"false\"></xref> class by getting an access token for the service.\n"
+  remarks: Calling this method isn&apos;t mandatory, because the token is get/refreshed everytime is needed. However, it is called at startup, it can speed-up subsequest requests.
+  example: []
+  syntax:
+    content: Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that represents the initialize operation.
+    content.vb: Function InitializeAsync As Task
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> property hasn&apos;t been set.
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync(System.String)
+  id: DetectLanguageAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: DetectLanguageAsync(String)
+  nameWithType: ITranslatorService.DetectLanguageAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: DetectLanguageAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 65
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nDetects the language of a text.\n"
+  remarks: >-
+    <p>This method performs a non-blocking request for language detection.</p>
+
+    <p>For more information, go to https://docs.microsofttranslator.com/text-translate.html#!/default/get_Detect.
+
+    </p>
+  example: []
+  syntax:
+    content: Task<string> DetectLanguageAsync(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: A string represeting the text whose language must be detected.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A string containing a two-character Language code for the given text.
+    content.vb: Function DetectLanguageAsync(text As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<ul></ul>\n"
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+  seealso:
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+    commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+    commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  id: GetLanguagesAsync
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: GetLanguagesAsync()
+  nameWithType: ITranslatorService.GetLanguagesAsync()
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetLanguagesAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 77
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nRetrieves the languages available for translation.\n"
+  remarks: >
+    <p>This method performs a non-blocking request for language codes.</p>
+
+    <p>For more information, go to https://docs.microsofttranslator.com/text-translate.html#!/default/get_GetLanguagesForTranslate.
+
+    </p>
+  example: []
+  syntax:
+    content: Task<IEnumerable<string>> GetLanguagesAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+      description: A string array containing the language codes supported for translation by <strong>Microsoft Translator Service</strong>.
+    content.vb: Function GetLanguagesAsync As Task(Of IEnumerable(Of String))
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> property hasn&apos;t been set.
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)
+  id: GetLanguageNamesAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: GetLanguageNamesAsync(String)
+  nameWithType: ITranslatorService.GetLanguageNamesAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetLanguageNamesAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 91
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nRetrieves friendly names for the languages available for text translation.\n"
+  remarks: >
+    <p>This method performs a non-blocking request for language name.</p>
+
+    <p>For more information, go to https://docs.microsofttranslator.com/text-translate.html#!/default/post_GetLanguageNames.
+
+    </p>
+  example: []
+  syntax:
+    content: Task<IEnumerable<ServiceLanguage>> GetLanguageNamesAsync(string language = null)
+    parameters:
+    - id: language
+      type: System.String
+      description: The language used to localize the language names. If the parameter is set to <strong>null</strong>, the language specified in the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language" data-throw-if-not-resolved="false"></xref> property will be used.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage}}
+      description: An array of <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage" data-throw-if-not-resolved="false"></xref> containing the language codes and names supported for translation by <strong>Microsoft Translator Service</strong>.
+    content.vb: Function GetLanguageNamesAsync(language As String = Nothing) As Task(Of IEnumerable(Of ServiceLanguage))
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: The <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> property hasn&apos;t been set.
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+  see:
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+    commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String,System.String)
+  id: TranslateAsync(System.String,System.String,System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: TranslateAsync(String, String, String)
+  nameWithType: ITranslatorService.TranslateAsync(String, String, String)
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: TranslateAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 113
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nTranslates a text string into the specified language.\n"
+  remarks: >
+    <p>This method perform a non-blocking request for text translation.</p>
+
+    <p>For more information, go to https://docs.microsofttranslator.com/text-translate.html#!/default/get_Translate.
+
+    </p>
+  example: []
+  syntax:
+    content: Task<string> TranslateAsync(string text, string from, string to)
+    parameters:
+    - id: text
+      type: System.String
+      description: A string representing the text to translate.
+    - id: from
+      type: System.String
+      description: A string representing the language code of the original text. The code must be present in the list of codes returned from the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" data-throw-if-not-resolved="false"></xref> method. If the parameter is set to <strong>null</strong>, the language specified in the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language" data-throw-if-not-resolved="false"></xref> property will be used.
+    - id: to
+      type: System.String
+      description: A string representing the language code to translate the text into. The code must be present in the list of codes returned from the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" data-throw-if-not-resolved="false"></xref> method. If the parameter is set to <strong>null</strong>, the language specified in the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language" data-throw-if-not-resolved="false"></xref> property will be used.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A string representing the translated text.
+    content.vb: Function TranslateAsync(text As String, from As String, to As String) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<ul></ul>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The <code data-dev-comment-type="paramref">text</code> parameter is longer than 1000 characters.
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+  seealso:
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+    commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String)
+  id: TranslateAsync(System.String,System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  langs:
+  - csharp
+  - vb
+  name: TranslateAsync(String, String)
+  nameWithType: ITranslatorService.TranslateAsync(String, String)
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: TranslateAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator/ITranslatorService.cs
+    startLine: 134
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  summary: "\nTranslates a text string into the specified language.\n"
+  remarks: >
+    <p>This method perform a non-blocking request for text translation.</p>
+
+    <p>For more information, go to https://docs.microsofttranslator.com/text-translate.html#!/default/get_Translate.
+
+    </p>
+  example: []
+  syntax:
+    content: Task<string> TranslateAsync(string text, string to = null)
+    parameters:
+    - id: text
+      type: System.String
+      description: A string representing the text to translate.
+    - id: to
+      type: System.String
+      description: A string representing the language code to translate the text into. The code must be present in the list of codes returned from the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" data-throw-if-not-resolved="false"></xref> method. If the parameter is set to <strong>null</strong>, the language specified in the <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language" data-throw-if-not-resolved="false"></xref> property will be used.
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: A string representing the translated text.
+    content.vb: Function TranslateAsync(text As String, to As String = Nothing) As Task(Of String)
+  overload: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: "\n<ul></ul>\n"
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: The <code data-dev-comment-type="paramref">text</code> parameter is longer than 1000 characters.
+  - type: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+    description: The provided <xref href="Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" data-throw-if-not-resolved="false"></xref> isn&apos;t valid or has expired.
+  seealso:
+  - linkId: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+    commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+references:
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  commentId: N:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  nameWithType: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  isExternal: false
+  name: SubscriptionKey
+  nameWithType: ITranslatorService.SubscriptionKey
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  commentId: M:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  isExternal: false
+  name: GetLanguagesAsync()
+  nameWithType: ITranslatorService.GetLanguagesAsync()
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+    name: GetLanguagesAsync
+    nameWithType: ITranslatorService.GetLanguagesAsync
+    fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+    name: GetLanguagesAsync
+    nameWithType: ITranslatorService.GetLanguagesAsync
+    fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  isExternal: false
+  name: Language
+  nameWithType: ITranslatorService.Language
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  isExternal: false
+  name: ITranslatorService
+  nameWithType: ITranslatorService
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorService
+  commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorService
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
+  isExternal: false
+  name: TranslatorService
+  nameWithType: TranslatorService
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorService
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  isExternal: false
+  name: SubscriptionKey
+  nameWithType: ITranslatorService.SubscriptionKey
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync
+  isExternal: false
+  name: InitializeAsync
+  nameWithType: ITranslatorService.InitializeAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+  commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+  isExternal: false
+  name: TranslatorServiceException
+  nameWithType: TranslatorServiceException
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.TranslatorServiceException
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  commentId: P:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+  parent: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService
+  isExternal: false
+  name: Language
+  nameWithType: ITranslatorService.Language
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.Language
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync
+  isExternal: false
+  name: DetectLanguageAsync
+  nameWithType: ITranslatorService.DetectLanguageAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+  isExternal: false
+  name: GetLanguagesAsync
+  nameWithType: ITranslatorService.GetLanguagesAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{System.String}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<String>>
+  nameWithType: Task<IEnumerable<String>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<System.String>>
+  nameWithType.vb: Task(Of IEnumerable(Of String))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of System.String))
+  name.vb: Task(Of IEnumerable(Of String))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+  commentId: T:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+  isExternal: false
+  name: ServiceLanguage
+  nameWithType: ServiceLanguage
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync
+  isExternal: false
+  name: GetLanguageNamesAsync
+  nameWithType: ITranslatorService.GetLanguageNamesAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<ServiceLanguage>>
+  nameWithType: Task<IEnumerable<ServiceLanguage>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage>>
+  nameWithType.vb: Task(Of IEnumerable(Of ServiceLanguage))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage))
+  name.vb: Task(Of IEnumerable(Of ServiceLanguage))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+    name: ServiceLanguage
+    nameWithType: ServiceLanguage
+    fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+    name: ServiceLanguage
+    nameWithType: ServiceLanguage
+    fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ServiceLanguage
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync
+  isExternal: false
+  name: TranslateAsync
+  nameWithType: ITranslatorService.TranslateAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException

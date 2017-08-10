@@ -1,0 +1,1503 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  id: TwitterService
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  children:
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync(System.String)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync(System.String,System.Int32)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig,System.Int32)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync(System.String,System.Int32)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus,Windows.Storage.Streams.IRandomAccessStream[])
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(System.String,Windows.Storage.Streams.IRandomAccessStream[])
+  - Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+  langs:
+  - csharp
+  - vb
+  name: TwitterService
+  nameWithType: TwitterService
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  type: Class
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: TwitterService
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 22
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nClass for connecting to Twitter.\n"
+  example: []
+  syntax:
+    content: public class TwitterService
+    content.vb: Public Class TwitterService
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  extensionMethods:
+  - System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor
+  id: '#ctor'
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: TwitterService()
+  nameWithType: TwitterService.TwitterService()
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TwitterService()
+  type: Constructor
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: .ctor
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 42
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nInitializes a new instance of the <xref href=\"Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService\" data-throw-if-not-resolved=\"false\"></xref> class.\n"
+  example: []
+  syntax:
+    content: public TwitterService()
+    content.vb: Public Sub New
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+  commentId: P:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+  id: Instance
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: TwitterService.Instance
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Instance
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 54
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nGets public singleton property.\n"
+  example: []
+  syntax:
+    content: public static TwitterService Instance { get; }
+    parameters: []
+    return:
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+    content.vb: Public Shared ReadOnly Property Instance As TwitterService
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+  commentId: P:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+  id: UserScreenName
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: UserScreenName
+  nameWithType: TwitterService.UserScreenName
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: UserScreenName
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 59
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nGets the current logged in user screen name.\n"
+  example: []
+  syntax:
+    content: public string UserScreenName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property UserScreenName As String
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)
+  id: Initialize(System.String,System.String,System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: Initialize(String, String, String)
+  nameWithType: TwitterService.Initialize(String, String, String)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(System.String, System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Initialize
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 68
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nInitialize underlying provider with relevent token information.\n"
+  example: []
+  syntax:
+    content: public bool Initialize(string consumerKey, string consumerSecret, string callbackUri)
+    parameters:
+    - id: consumerKey
+      type: System.String
+      description: Consumer key.
+    - id: consumerSecret
+      type: System.String
+      description: Consumer secret.
+    - id: callbackUri
+      type: System.String
+      description: Callback URI. Has to match callback URI defined at apps.twitter.com (can be arbitrary).
+    return:
+      type: System.Boolean
+      description: Success or failure.
+    content.vb: Public Function Initialize(consumerKey As String, consumerSecret As String, callbackUri As String) As Boolean
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens)
+  id: Initialize(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: Initialize(TwitterOAuthTokens)
+  nameWithType: TwitterService.Initialize(TwitterOAuthTokens)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Initialize
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 100
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nInitialize underlying provider with relevent token information.\n"
+  example: []
+  syntax:
+    content: public bool Initialize(TwitterOAuthTokens oAuthTokens)
+    parameters:
+    - id: oAuthTokens
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens
+      description: Token instance.
+    return:
+      type: System.Boolean
+      description: Success or failure.
+    content.vb: Public Function Initialize(oAuthTokens As TwitterOAuthTokens) As Boolean
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+  commentId: P:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+  id: Provider
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: Provider
+  nameWithType: TwitterService.Provider
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+  type: Property
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Provider
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 118
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nGets a reference to an instance of the underlying data provider.\n"
+  example: []
+  syntax:
+    content: public TwitterDataProvider Provider { get; }
+    parameters: []
+    return:
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataProvider
+    content.vb: Public ReadOnly Property Provider As TwitterDataProvider
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync(System.String,System.Int32)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync(System.String,System.Int32)
+  id: SearchAsync(System.String,System.Int32)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: SearchAsync(String, Int32)
+  nameWithType: TwitterService.SearchAsync(String, Int32)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: SearchAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 137
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nSearch for specific hash tag.\n"
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Tweet>> SearchAsync(string hashTag, int maxRecords = 20)
+    parameters:
+    - id: hashTag
+      type: System.String
+      description: Hash tag.
+    - id: maxRecords
+      type: System.Int32
+      description: Upper record limit.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+      description: Returns strongly typed list of results.
+    content.vb: Public Function SearchAsync(hashTag As String, maxRecords As Integer = 20) As Task(Of IEnumerable(Of Tweet))
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync(System.String)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync(System.String)
+  id: GetUserAsync(System.String)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: GetUserAsync(String)
+  nameWithType: TwitterService.GetUserAsync(String)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetUserAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 158
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nRetrieve user data.\n"
+  example: []
+  syntax:
+    content: public Task<TwitterUser> GetUserAsync(string screenName = null)
+    parameters:
+    - id: screenName
+      type: System.String
+      description: User screen name or null for current logged user.
+    return:
+      type: System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser}
+      description: Returns user data.
+    content.vb: Public Function GetUserAsync(screenName As String = Nothing) As Task(Of TwitterUser)
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync(System.String,System.Int32)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync(System.String,System.Int32)
+  id: GetUserTimeLineAsync(System.String,System.Int32)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: GetUserTimeLineAsync(String, Int32)
+  nameWithType: TwitterService.GetUserTimeLineAsync(String, Int32)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync(System.String, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: GetUserTimeLineAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 180
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nRetrieve user timeline data.\n"
+  example: []
+  syntax:
+    content: public Task<IEnumerable<Tweet>> GetUserTimeLineAsync(string screenName, int maxRecords = 20)
+    parameters:
+    - id: screenName
+      type: System.String
+      description: User screen name.
+    - id: maxRecords
+      type: System.Int32
+      description: Upper record limit.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+      description: Returns strongly typed list of results.
+    content.vb: Public Function GetUserTimeLineAsync(screenName As String, maxRecords As Integer = 20) As Task(Of IEnumerable(Of Tweet))
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig,System.Int32)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig,System.Int32)
+  id: RequestAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig,System.Int32)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: RequestAsync(TwitterDataConfig, Int32)
+  nameWithType: TwitterService.RequestAsync(TwitterDataConfig, Int32)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: RequestAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 202
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nRequest list data from service provider based upon a given config / query.\n"
+  example: []
+  syntax:
+    content: public Task<List<Tweet>> RequestAsync(TwitterDataConfig config, int maxRecords = 20)
+    parameters:
+    - id: config
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig
+      description: TwitterDataConfig instance.
+    - id: maxRecords
+      type: System.Int32
+      description: Upper limit of records to return. Up to a maximum of 200 per distinct request.
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+      description: Strongly typed list of data returned from the service.
+    content.vb: Public Function RequestAsync(config As TwitterDataConfig, maxRecords As Integer = 20) As Task(Of List(Of Tweet))
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync
+  id: LoginAsync
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: LoginAsync()
+  nameWithType: TwitterService.LoginAsync()
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: LoginAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 231
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nLog user in to Twitter.\n"
+  example: []
+  syntax:
+    content: public Task<bool> LoginAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns success or failure of login attempt.
+    content.vb: Public Function LoginAsync As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout
+  id: Logout
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: Logout()
+  nameWithType: TwitterService.Logout()
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: Logout
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 239
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nLog user out of Twitter.\n"
+  example: []
+  syntax:
+    content: public void Logout()
+    content.vb: Public Sub Logout
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(System.String,Windows.Storage.Streams.IRandomAccessStream[])
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(System.String,Windows.Storage.Streams.IRandomAccessStream[])
+  id: TweetStatusAsync(System.String,Windows.Storage.Streams.IRandomAccessStream[])
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: TweetStatusAsync(String, IRandomAccessStream[])
+  nameWithType: TwitterService.TweetStatusAsync(String, IRandomAccessStream[])
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(System.String, Windows.Storage.Streams.IRandomAccessStream[])
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: TweetStatusAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 250
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nPost a Tweet with associated pictures.\n"
+  example: []
+  syntax:
+    content: public Task<bool> TweetStatusAsync(string message, params IRandomAccessStream[] pictures)
+    parameters:
+    - id: message
+      type: System.String
+      description: Tweet message.
+    - id: pictures
+      type: Windows.Storage.Streams.IRandomAccessStream[]
+      description: Pictures to attach to the tweet (up to 4).
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns success or failure of post request.
+    content.vb: Public Function TweetStatusAsync(message As String, ParamArray pictures As IRandomAccessStream()) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync*
+  nameWithType.vb: TwitterService.TweetStatusAsync(String, IRandomAccessStream())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(System.String, Windows.Storage.Streams.IRandomAccessStream())
+  name.vb: TweetStatusAsync(String, IRandomAccessStream())
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus,Windows.Storage.Streams.IRandomAccessStream[])
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus,Windows.Storage.Streams.IRandomAccessStream[])
+  id: TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus,Windows.Storage.Streams.IRandomAccessStream[])
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: TweetStatusAsync(TwitterStatus, IRandomAccessStream[])
+  nameWithType: TwitterService.TweetStatusAsync(TwitterStatus, IRandomAccessStream[])
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus, Windows.Storage.Streams.IRandomAccessStream[])
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: TweetStatusAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 261
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nPost a Tweet with associated pictures.\n"
+  example: []
+  syntax:
+    content: public Task<bool> TweetStatusAsync(TwitterStatus status, params IRandomAccessStream[] pictures)
+    parameters:
+    - id: status
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus
+      description: The tweet information.
+    - id: pictures
+      type: Windows.Storage.Streams.IRandomAccessStream[]
+      description: Pictures to attach to the tweet (up to 4).
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns success or failure of post request.
+    content.vb: Public Function TweetStatusAsync(status As TwitterStatus, ParamArray pictures As IRandomAccessStream()) As Task(Of Boolean)
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync*
+  nameWithType.vb: TwitterService.TweetStatusAsync(TwitterStatus, IRandomAccessStream())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus, Windows.Storage.Streams.IRandomAccessStream())
+  name.vb: TweetStatusAsync(TwitterStatus, IRandomAccessStream())
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)
+  id: StartUserStreamAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: StartUserStreamAsync(TwitterStreamCallbacks.TwitterStreamCallback)
+  nameWithType: TwitterService.StartUserStreamAsync(TwitterStreamCallbacks.TwitterStreamCallback)
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync(Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: StartUserStreamAsync
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 287
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nOpen a connection to user&apos;s stream service\n"
+  example: []
+  syntax:
+    content: public Task StartUserStreamAsync(TwitterStreamCallbacks.TwitterStreamCallback callback)
+    parameters:
+    - id: callback
+      type: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback
+      description: Method called each time a tweet arrives
+    return:
+      type: System.Threading.Tasks.Task
+      description: Task
+    content.vb: Public Function StartUserStreamAsync(callback As TwitterStreamCallbacks.TwitterStreamCallback) As Task
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream
+  id: StopUserStream
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  langs:
+  - csharp
+  - vb
+  name: StopUserStream()
+  nameWithType: TwitterService.StopUserStream()
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream()
+  type: Method
+  source:
+    remote:
+      path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+      branch: docfx
+      repo: https://github.com/Microsoft/UWPCommunityToolkit.git
+    id: StopUserStream
+    path: Microsoft.Toolkit.Uwp.Services/Services/Twitter/TwitterService.cs
+    startLine: 305
+  assemblies:
+  - Microsoft.Toolkit.Uwp.Services
+  namespace: Microsoft.Toolkit.Uwp.Services.Twitter
+  summary: "\nClose the connection to user&apos;s stream service\n"
+  example: []
+  syntax:
+    content: public void StopUserStream()
+    content.vb: Public Sub StopUserStream
+  overload: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Twitter
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Twitter
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  parent: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  definition: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  name: ToSafeString()
+  nameWithType: ExtensionMethods.ToSafeString()
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString()
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: false
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  commentId: M:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  isExternal: true
+  name: ToSafeString(Object)
+  nameWithType: ExtensionMethods.ToSafeString(Object)
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+  spec.csharp:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString(System.Object)
+    name: ToSafeString
+    nameWithType: ExtensionMethods.ToSafeString
+    fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods.ToSafeString
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+  parent: Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: ExtensionMethods
+  nameWithType: ExtensionMethods
+  fullName: Microsoft.Toolkit.Uwp.Services.Core.ExtensionMethods
+- uid: Microsoft.Toolkit.Uwp.Services.Core
+  commentId: N:Microsoft.Toolkit.Uwp.Services.Core
+  isExternal: false
+  name: Microsoft.Toolkit.Uwp.Services.Core
+  nameWithType: Microsoft.Toolkit.Uwp.Services.Core
+  fullName: Microsoft.Toolkit.Uwp.Services.Core
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterService
+  nameWithType: TwitterService
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.#ctor
+  isExternal: false
+  name: TwitterService
+  nameWithType: TwitterService.TwitterService
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TwitterService
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+  isExternal: false
+  name: Instance
+  nameWithType: TwitterService.Instance
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Instance
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+  isExternal: false
+  name: UserScreenName
+  nameWithType: TwitterService.UserScreenName
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.UserScreenName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize
+  isExternal: false
+  name: Initialize
+  nameWithType: TwitterService.Initialize
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Initialize
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterOAuthTokens
+  nameWithType: TwitterOAuthTokens
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterOAuthTokens
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+  isExternal: false
+  name: Provider
+  nameWithType: TwitterService.Provider
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Provider
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataProvider
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataProvider
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterDataProvider
+  nameWithType: TwitterDataProvider
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataProvider
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync
+  isExternal: false
+  name: SearchAsync
+  nameWithType: TwitterService.SearchAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.SearchAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IEnumerable<Tweet>>
+  nameWithType: Task<IEnumerable<Tweet>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Microsoft.Toolkit.Uwp.Services.Twitter.Tweet>>
+  nameWithType.vb: Task(Of IEnumerable(Of Tweet))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Microsoft.Toolkit.Uwp.Services.Twitter.Tweet))
+  name.vb: Task(Of IEnumerable(Of Tweet))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+    name: Tweet
+    nameWithType: Tweet
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    nameWithType: IEnumerable
+    fullName: System.Collections.Generic.IEnumerable
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+    name: Tweet
+    nameWithType: Tweet
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: false
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync
+  isExternal: false
+  name: GetUserAsync
+  nameWithType: TwitterService.GetUserAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserAsync
+- uid: System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser}
+  commentId: T:System.Threading.Tasks.Task{Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<TwitterUser>
+  nameWithType: Task<TwitterUser>
+  fullName: System.Threading.Tasks.Task<Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser>
+  nameWithType.vb: Task(Of TwitterUser)
+  fullName.vb: System.Threading.Tasks.Task(Of Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser)
+  name.vb: Task(Of TwitterUser)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser
+    name: TwitterUser
+    nameWithType: TwitterUser
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser
+    name: TwitterUser
+    nameWithType: TwitterUser
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterUser
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync
+  isExternal: false
+  name: GetUserTimeLineAsync
+  nameWithType: TwitterService.GetUserTimeLineAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.GetUserTimeLineAsync
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync
+  isExternal: false
+  name: RequestAsync
+  nameWithType: TwitterService.RequestAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.RequestAsync
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterDataConfig
+  nameWithType: TwitterDataConfig
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterDataConfig
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{Microsoft.Toolkit.Uwp.Services.Twitter.Tweet}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<List<Tweet>>
+  nameWithType: Task<List<Tweet>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<Microsoft.Toolkit.Uwp.Services.Twitter.Tweet>>
+  nameWithType.vb: Task(Of List(Of Tweet))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of Microsoft.Toolkit.Uwp.Services.Twitter.Tweet))
+  name.vb: Task(Of List(Of Tweet))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+    name: Tweet
+    nameWithType: Tweet
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+    name: Tweet
+    nameWithType: Tweet
+    fullName: Microsoft.Toolkit.Uwp.Services.Twitter.Tweet
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync
+  isExternal: false
+  name: LoginAsync
+  nameWithType: TwitterService.LoginAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.LoginAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout
+  isExternal: false
+  name: Logout
+  nameWithType: TwitterService.Logout
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.Logout
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync
+  isExternal: false
+  name: TweetStatusAsync
+  nameWithType: TwitterService.TweetStatusAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.TweetStatusAsync
+- uid: Windows.Storage.Streams.IRandomAccessStream[]
+  name: IRandomAccessStream[]
+  nameWithType: IRandomAccessStream[]
+  fullName: Windows.Storage.Streams.IRandomAccessStream[]
+  nameWithType.vb: IRandomAccessStream()
+  fullName.vb: Windows.Storage.Streams.IRandomAccessStream()
+  name.vb: IRandomAccessStream()
+  spec.csharp:
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    nameWithType: IRandomAccessStream
+    fullName: Windows.Storage.Streams.IRandomAccessStream
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: Windows.Storage.Streams.IRandomAccessStream
+    name: IRandomAccessStream
+    nameWithType: IRandomAccessStream
+    fullName: Windows.Storage.Streams.IRandomAccessStream
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterStatus
+  nameWithType: TwitterStatus
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStatus
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync
+  isExternal: false
+  name: StartUserStreamAsync
+  nameWithType: TwitterService.StartUserStreamAsync
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StartUserStreamAsync
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback
+  commentId: T:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback
+  parent: Microsoft.Toolkit.Uwp.Services.Twitter
+  isExternal: false
+  name: TwitterStreamCallbacks.TwitterStreamCallback
+  nameWithType: TwitterStreamCallbacks.TwitterStreamCallback
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream*
+  commentId: Overload:Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream
+  isExternal: false
+  name: StopUserStream
+  nameWithType: TwitterService.StopUserStream
+  fullName: Microsoft.Toolkit.Uwp.Services.Twitter.TwitterService.StopUserStream
