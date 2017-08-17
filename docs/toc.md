@@ -44,17 +44,17 @@
 ## [WrapPanel XAML Control](controls/WrapPanel.md)
 
 # Developer tools
-## [AlignmentGrid XAML Control](developertools/AlignmentGrid.md)
-## [FocusTracker XAML Control](developertools/FocusTracker.md)
+## [AlignmentGrid XAML Control](developer tools/AlignmentGrid.md)
+## [FocusTracker XAML Control](developer tools/FocusTracker.md)
 
 # Extensions
-## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
-## [ListViewBaseExtensions class](extensions/ListViewBaseExtensions.md)
+## [HyperlinkExtensions](extensions/Hyperlink.md)
+## [ListViewBaseExtensions class](extensions/ListViewBase.md)
 ## [SurfaceDialTextboxHelper Control](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBox Mask XAML Property](extensions/TextBoxMask.md)
 ## [TextBox Regex XAML Property](extensions/TextBoxRegex.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
-## [WebViewExtensions](extensions/WebViewExtensions.md)
+## [WebViewExtensions](extensions/WebView.md)
 
 # Helpers
 ## [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
