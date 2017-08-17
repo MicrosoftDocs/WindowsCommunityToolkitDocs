@@ -32,7 +32,7 @@
 ## [MarkdownTextBlock XAML Control](controls/MarkdownTextBlock.md)
 ## [MasterDetailsView XAML Control](controls/MasterDetailsView.md)
 ## [Menu Control](controls/Menu.md)
-## [OrbitView : ItemsControl](controls/OrbitView.md)
+## [OrbitView](controls/OrbitView.md)
 ## [PullToRefreshListView XAML Control](controls/PullToRefreshListview.md)
 ## [RadialGauge XAML Control](controls/RadialGauge.md)
 ## [RadialProgressBar XAML Control](controls/RadialProgressBar.md)
@@ -40,15 +40,21 @@
 ## [RotatorTile XAML Control](controls/RotatorTile.md)
 ## [ScrollHeader XAML Control](controls/ScrollHeader.md)
 ## [SlidableListItem XAML Control](controls/SlidableListItem.md)
-## [SurfaceDialTextboxHelper Control](controls/SurfaceDialTextboxHelper.md)
-## [TextBox Mask XAML Property](controls/TextBoxMask.md)
-## [TextBox Regex XAML Property](controls/TextBoxRegex.md)
 ## [TileControl XAML Control](controls/TileControl.md)
 ## [WrapPanel XAML Control](controls/WrapPanel.md)
 
 # Developer tools
 ## [AlignmentGrid XAML Control](developertools/AlignmentGrid.md)
 ## [FocusTracker XAML Control](developertools/FocusTracker.md)
+
+# Extensions
+## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
+## [ListViewBaseExtensions class](extensions/ListViewBaseExtensions.md)
+## [SurfaceDialTextboxHelper Control](extensions/SurfaceDialTextboxHelper.md)
+## [TextBox Mask XAML Property](extensions/TextBoxMask.md)
+## [TextBox Regex XAML Property](extensions/TextBoxRegex.md)
+## [ViewExtensions](extensions/ViewExtensions.md)
+## [WebViewExtensions](extensions/WebViewExtensions.md)
 
 # Helpers
 ## [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
@@ -62,20 +68,16 @@
 ## [HttpHelper](helpers/HttpHelper.md)
 ## [HttpHelperRequest](helpers/HttpHelperRequest.md)
 ## [HttpHelperResponse](helpers/HttpHelperResponse.md)
-## [HyperlinkExtensions](helpers/HyperlinkExtensions.md)
 ## [ImageCache](helpers/ImageCache.md)
 ## [Incremental Loading Collection Helpers](helpers/IncrementalLoadingCollection.md)
-## [ListViewBaseExtensions class](helpers/ListViewBaseExtensions.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [Object Storage](helpers/ObjectStorage.md)
 ## [Print Helper](helpers/PrintHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
 ## [Streams Helper](helpers/Streams.md)
 ## [SystemInformation](helpers/SystemInformation.md)
-## [ViewExtensions](helpers/ViewExtensions.md)
 ## [VisualTreeExtensions](helpers/VisualTreeExtensions.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
-## [WebViewExtensions](helpers/WebViewExtensions.md)
 
 # Notifications
 ## [Notifications Overview](notifications/NotificationsOverview.md)
@@ -88,5 +90,3 @@
 ## [Microsoft Translator Service](services/MicrosoftTranslator.md)
 ## [OneDrive Service](services/OneDrive.md)
 ## [Twitter Service](services/Twitter.md)
-
-# [API](api/toc.yml)
