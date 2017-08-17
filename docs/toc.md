@@ -44,8 +44,8 @@
 ## [WrapPanel XAML Control](controls/WrapPanel.md)
 
 # Developer tools
-## [AlignmentGrid XAML Control](developer tools/AlignmentGrid.md)
-## [FocusTracker XAML Control](developer tools/FocusTracker.md)
+## [AlignmentGrid XAML Control](developer%20tools/AlignmentGrid.md)
+## [FocusTracker XAML Control](developer%20tools/FocusTracker.md)
 
 # Extensions
 ## [HyperlinkExtensions](extensions/Hyperlink.md)
