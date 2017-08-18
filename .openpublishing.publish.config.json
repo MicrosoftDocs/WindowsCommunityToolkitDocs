@@ -4,12 +4,29 @@
   "docsets_to_publish": [
     {
       "docset_name": "UWPCommunityToolkitDocs",
-      "build_source_folder": "docs",
+      "build_source_folder": "UWPCommunityToolkit",
       "build_output_subfolder": "UWPCommunityToolkitDocs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
+    },
+    {
+      "docset_name": "uwp-toolkit-dotnet",
+      "build_source_folder": "dotnet",
+      "build_output_subfolder": "uwp-toolkit-dotnet",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -24,7 +41,7 @@
   "branches_to_filter": [],
   "git_repository_branch_open_to_public_contributors": "master",
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -39,5 +56,5 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true
+  "need_generate_pdf_url_template": false
 }
