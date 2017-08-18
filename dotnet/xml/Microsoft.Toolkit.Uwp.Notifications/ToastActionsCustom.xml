@@ -1,0 +1,99 @@
+﻿<Type Name="ToastActionsCustom" FullName="Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom">
+  <TypeSignature Language="C#" Value="public sealed class ToastActionsCustom : Microsoft.Toolkit.Uwp.Notifications.IToastActions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToastActionsCustom extends System.Object implements class Microsoft.Toolkit.Uwp.Notifications.IToastActions" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>1.5.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.Notifications.IToastActions</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Create your own custom actions, using controls like <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" />, <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastTextBox" />, and <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBox" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToastActionsCustom ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom.#ctor" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>1.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Buttons">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.IToastButton&gt; Buttons { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Toolkit.Uwp.Notifications.IToastButton&gt; Buttons" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom.Buttons" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>1.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.IToastButton&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Buttons are displayed after all the inputs (or adjacent to inputs if used as quick reply buttons). Only up to 5 buttons can be added (or fewer if you are also including context menu items). After that, an exception is thrown. You can add <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" />, <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButtonSnooze" />, or <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButtonDismiss" /></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContextMenuItems">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.ToastContextMenuItem&gt; ContextMenuItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Toolkit.Uwp.Notifications.ToastContextMenuItem&gt; ContextMenuItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom.ContextMenuItems" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>1.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.ToastContextMenuItem&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            New in Anniversary Update: Custom context menu items, providing additional actions when the user right clicks the Toast notification. You can only have up to 5 buttons and context menu items *combined*. Thus, if you have one context menu item, you can only have four buttons, etc.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inputs">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.IToastInput&gt; Inputs { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Toolkit.Uwp.Notifications.IToastInput&gt; Inputs" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom.Inputs" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>1.5.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.IToastInput&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Inputs like <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastTextBox" /> and <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBox" /> can be added to the Toast. Only up to 5 inputs can be added; after that, an exception is thrown.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

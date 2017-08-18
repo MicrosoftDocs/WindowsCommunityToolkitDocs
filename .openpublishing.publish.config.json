@@ -17,6 +17,36 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
+      "customized_template_paths": [
+        "_dependentPackages/memberpage.plugins/content"
+      ],
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
+          "_dependentPackages/splitToc/tools/run.ps1",
+          "_dependentPackages/ECMA2Yaml/tools/DiffFolder.ps1"
+        ],
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ]
+      },
+      "version": 0
+    },
+    {
+      "docset_name": "uwp-toolkit-dotnet",
+      "build_source_folder": "dotnet",
+      "build_output_subfolder": "uwp-toolkit-dotnet",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
       "version": 0
     },
     {
@@ -56,5 +86,38 @@
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "template_folder": "_themes",
+  "dependent_packages": [
+   {
+     "id": "Microsoft.DocAsCode.ECMA2Yaml",
+     "nuget_feed": "https://www.myget.org/F/op/api/v2",
+     "path_to_root": "_dependentPackages/ECMA2Yaml",
+     "target_framework": "net45",
+     "version": "latest"
+   },
+   {
+     "id": "memberpage.plugins",
+     "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
+     "path_to_root": "_dependentPackages/memberpage.plugins",
+     "target_framework": "net45",
+     "version": "latest"
+   },
+   {
+     "id": "SplitToc",
+     "nuget_feed": "https://www.myget.org/F/op/api/v2",
+     "path_to_root": "_dependentPackages/splitToc",
+     "target_framework": "net45",
+     "version": "latest"
+   }
+ ],
+ "ECMA2Yaml": {
+   "SourceXmlFolder": "dotnet/xml",
+   "OutputYamlFolder": "dotnet/api",
+   "Flatten": true
+ },
+ "DiffFolder": [
+   "dotnet/api"
+ ],
+ "toc_path_need_to_split": "dotnet/api/toc.yml"
 }

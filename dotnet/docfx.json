@@ -3,9 +3,12 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
+          "api/overwrites/**",
+          "**/toc.yml",
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -13,6 +16,13 @@
           "LICENSE-CODE",
           "ThirdPartyNotices"
         ]
+      },
+      {
+        "files": [
+          "**/toc.yml"
+        ],
+        "src": ".",
+        "dest": "uwp_toolkit_dotnet_toc"
       }
     ],
     "resource": [
@@ -27,11 +37,20 @@
         ]
       }
     ],
-    "overwrite": [],
+    "overwrite": {
+      "files": [
+        "api/overwrites/**/*.md"
+      ]
+    },
+    "xref": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "apiPlatform": "dotnet",
+      "author": ""
+    },
     "fileMetadata": {},
     "template": [],
-    "dest": "uwp-toolkit-dotnet"
+    "dest": "uwp-toolkit-dotnet-api",
+    "lruSize": 0
   }
 }
