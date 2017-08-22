@@ -1,4 +1,4 @@
-#Welcome to the UWP Community Toolkit Documentation
+# Welcome to the UWP Community Toolkit Documentation
 
 - [Staging review](https://review.docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/?branch=master)
 - [Live site](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit) (still in-progress)
