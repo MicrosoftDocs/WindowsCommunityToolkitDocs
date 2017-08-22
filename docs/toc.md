@@ -40,6 +40,7 @@
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
 ## [SlidableListItem](controls/SlidableListItem.md)
+## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
 ## [WrapPanel](controls/WrapPanel.md)
 
@@ -50,11 +51,12 @@
 # Extensions
 ## [Hyperlink](extensions/Hyperlink.md)
 ## [ListViewBase](extensions/ListViewBase.md)
+## [Logical Tree](extensions/LogicalTree.md)
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
-## [VisualTreeExtensions](helpers/VisualTreeExtensions.md)
+## [Visual Tree](helpers/VisualTree.md)
 ## [WebView](extensions/WebView.md)
 
 # Helpers
