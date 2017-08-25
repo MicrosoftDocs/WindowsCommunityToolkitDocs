@@ -85,7 +85,7 @@
 # Notifications
 ## [Notifications Overview](notifications/NotificationsOverview.md)
 
-# [Services](services/Bing.md)
+# Services
 ## [Bing Service](services/Bing.md)
 ## [Facebook Service](services/Facebook.md)
 ## [LinkedIn Service](services/Linkedin.md)
