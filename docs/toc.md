@@ -28,6 +28,7 @@
 ## [HamburgerMenu](controls/HamburgerMenu.md)
 ## [HeaderedTextBlock](controls/HeaderedTextBlock.md)
 ## [ImageEx](controls/ImageEx.md)
+## [InAppNotification](controls/InAppNotification.md)
 ## [Loading](controls/Loading.md)
 ## [MarkdownTextBlock](controls/MarkdownTextBlock.md)
 ## [MasterDetailsView](controls/MasterDetailsView.md)
@@ -40,21 +41,23 @@
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
 ## [SlidableListItem](controls/SlidableListItem.md)
+## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Developer tools
-## [AlignmentGrid](developer%20tools/AlignmentGrid.md)
-## [FocusTracker](developer%20tools/FocusTracker.md)
+## [AlignmentGrid](developer-tools/AlignmentGrid.md)
+## [FocusTracker](developer-tools/FocusTracker.md)
 
 # Extensions
 ## [Hyperlink](extensions/Hyperlink.md)
 ## [ListViewBase](extensions/ListViewBase.md)
+## [Logical Tree](extensions/LogicalTree.md)
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
-## [VisualTreeExtensions](helpers/VisualTreeExtensions.md)
+## [Visual Tree](extensions/VisualTree.md)
 ## [WebView](extensions/WebView.md)
 
 # Helpers
