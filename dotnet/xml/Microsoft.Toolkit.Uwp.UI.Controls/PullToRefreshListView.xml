@@ -37,7 +37,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Extension of ListView that allows "Pull To Refresh" on touch devices
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +54,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +73,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether PullToRefresh is enabled with a mouse
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,7 +93,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            IsPullToRefreshWithMouseEnabled Dependency Property
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -105,7 +113,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Invoked whenever application code or internal processes (such as a rebuilding
+            layout pass) call <see cref="M:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.OnApplyTemplate" />. In simplest terms, this means the method
+            is called just before a UI element displays in an application. Override this
+            method to influence the default post-template logic of a class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,7 +135,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Overscroll Limit. Value between 0 and 1 where 1 is the height of the control. Default is 0.3
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -140,7 +155,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.OverscrollLimit" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +174,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RefreshProgressEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when listview overscroll distance is changed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +193,9 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the PullThreshold in pixels for when Refresh should be Requested. Default is 100
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +213,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.PullThreshold" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -209,9 +232,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the content that will be shown when the user pulls down to refresh.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This content will only show up if <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIndicatorContent" /> is null
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="PullToRefreshContentProperty">
@@ -227,7 +254,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.PullToRefreshContent" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -244,7 +273,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the label that will be shown when the user pulls down to refresh.
+            Note: This label will only show up if <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIndicatorContent" /> is null
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -262,7 +294,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.PullToRefreshLabel" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +313,9 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Command that will be invoked when Refresh is requested
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +333,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshCommand" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -314,7 +352,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Content of the Refresh Indicator
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -332,7 +372,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIndicatorContent" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +391,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user has cancels an intent for the content to be refreshed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -366,7 +410,9 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Command that will be invoked when a refresh intent is cancled
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -384,7 +430,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIntentCanceledCommand" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -401,7 +449,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the user has requested content to be refreshed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -418,9 +468,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the content that will be shown when the user needs to release to refresh.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            This content will only show up if <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIndicatorContent" /> is null
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ReleaseToRefreshContentProperty">
@@ -436,7 +490,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.ReleaseToRefreshContent" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -453,7 +509,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the label that will be shown when the user needs to release to refresh.
+            Note: This label will only show up if <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.RefreshIndicatorContent" /> is null
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -471,7 +530,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.ReleaseToRefreshLabel" /> property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

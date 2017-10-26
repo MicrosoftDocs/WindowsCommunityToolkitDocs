@@ -15,7 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Base Toast element, which contains at least a visual element.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -47,7 +49,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.IToastActions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Optionally create custom actions with buttons and inputs (using <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastActionsCustom" />) or optionally use the system-default snooze/dismiss controls (with <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastActionsSnoozeAndDismiss" />).
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -65,7 +69,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastActivationOptions</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            New in Creators Update: Additional options relating to activation of the toast notification.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -83,7 +89,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastActivationType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specifies what activation type will be used when the user clicks the body of this Toast.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -101,7 +109,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastAudio</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specify custom audio options.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +129,9 @@
         <ReturnType>System.Nullable&lt;System.DateTimeOffset&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            New in Creators Update: An optional custom time to use for the notification's timestamp, visible within Action Center. If provided, this date/time will be used on the notification instead of the date/time that the notification was received.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -137,7 +149,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastDuration</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The amount of time the Toast should display. You typically should use the Scenario attribute instead, which impacts how long a Toast stays on screen.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -156,8 +170,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Retrieves the notification XML content as a string, so that it can be sent with a HTTP POST in a push notification.
+            </summary>
+        <returns>The notification XML content as a string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,8 +191,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Retrieves the notification XML content as a WinRT XmlDocument, so that it can be used with a local Toast notification's constructor on either <see cref="T:Windows.UI.Notifications.ToastNotification" /> or <see cref="T:Windows.UI.Notifications.ScheduledToastNotification" />.
+            </summary>
+        <returns>The notification XML content as a WinRT XmlDocument.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,7 +211,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastHeader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            New in Creators Update: Gets or sets an optional header for the toast notification.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -211,7 +231,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            A string that is passed to the application when it is activated by the Toast. The format and contents of this string are defined by the app for its own use. When the user taps or clicks the Toast to launch its associated app, the launch string provides the context to the app that allows it to show the user a view relevant to the Toast content, rather than launching in its default way.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -229,7 +251,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastScenario</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Specify the scenario, to make the Toast behave like an alarm, reminder, or more.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -247,7 +271,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastVisual</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The visual element is required.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

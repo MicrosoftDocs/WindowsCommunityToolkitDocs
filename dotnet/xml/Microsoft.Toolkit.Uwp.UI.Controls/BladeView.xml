@@ -11,7 +11,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A container that hosts <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem" /> controls in a horizontal scrolling list
+            Based on the Azure portal UI
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -26,7 +29,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.BladeView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -43,7 +48,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.Controls.BladeItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a collection of visible blades
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -61,7 +68,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.BladeView.ActiveBlades" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -78,9 +87,19 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating what the overflow amount should be to start auto collapsing blade items
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            We don't touch blade items that have no title bar
+            </remarks>
+        <example>
+            For example we put AutoCollapseCountThreshold = 2
+            This means that each time a blade is added to the bladeview collection,
+            we will validate the amount of added blades that have a title bar visible.
+            If this number get's bigger than AutoCollapseCountThreshold, we will collapse all blades but the last one
+            </example>
       </Docs>
     </Member>
     <Member MemberName="AutoCollapseCountThresholdProperty">
@@ -96,7 +115,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+             Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.BladeView.AutoCollapseCountThreshold" /> attached property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,7 +134,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.BladeItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Fires whenever a <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem" /> is closed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -130,7 +153,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.BladeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -148,7 +173,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.BladeView.BladeMode" /> attached property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,7 +192,9 @@
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.BladeItem&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Fires whenever a <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem" /> is opened
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -186,9 +215,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The container element.</param>
+        <param name="item">The item.</param>
+        <summary>
+            Undoes the effects of the PrepareContainerForItemOverride method.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +237,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Creates or identifies the element that is used to display the given item.
+            </summary>
+        <returns>
+            The element that is used to display the given item.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,7 +260,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Override default OnApplyTemplate to capture child controls
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -246,9 +283,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="element">The element that's used to display the specified item.</param>
+        <param name="item">The item to display.</param>
+        <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

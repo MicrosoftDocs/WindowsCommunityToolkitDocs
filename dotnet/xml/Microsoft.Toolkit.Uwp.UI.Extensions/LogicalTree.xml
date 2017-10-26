@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Defines a collection of extensions methods for UI.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -38,10 +40,12 @@
         <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type to search for.</typeparam>
+        <param name="element">Parent element.</param>
+        <summary>
+            Find first logical child control of a specified type.
+            </summary>
+        <returns>Child control or null if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,10 +66,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Parent element.</param>
+        <param name="name">Name of the control to find.</param>
+        <summary>
+            Find logical child control using its name.
+            </summary>
+        <returns>Child control or null if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,10 +103,12 @@
         <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type to search for.</typeparam>
+        <param name="element">Parent element.</param>
+        <summary>
+            Find all logical child controls of the specified type.
+            </summary>
+        <returns>Child controls or empty if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,10 +135,12 @@
         <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type to search for.</typeparam>
+        <param name="element">Child element.</param>
+        <summary>
+            Find first logical parent control of a specified type.
+            </summary>
+        <returns>Parent control or null if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -151,10 +161,12 @@
         <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <param name="name">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Child element.</param>
+        <param name="name">Name of the control to find.</param>
+        <summary>
+            Finds the logical parent element with the given name or returns null.
+            </summary>
+        <returns>Parent control or null if not found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,9 +186,11 @@
         <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="element">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="element">Parent element.</param>
+        <summary>
+            Retrieves the Content control of this element as defined by the ContentPropertyAttribute.
+            </summary>
+        <returns>Child Content control or null if not available.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

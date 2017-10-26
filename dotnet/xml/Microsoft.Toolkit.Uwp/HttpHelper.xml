@@ -16,7 +16,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class exposes functionality of HttpClient through a singleton to take advantage of built-in connection pooling.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.HttpHelper" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -49,9 +53,11 @@
         <Parameter Name="httpFilter" Type="Windows.Web.Http.Filters.IHttpFilter" />
       </Parameters>
       <Docs>
-        <param name="poolSize">To be added.</param>
-        <param name="httpFilter">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="poolSize">number of HttpClient instances allowed</param>
+        <param name="httpFilter">HttpFilter to use when instances of HttpClient are created</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.HttpHelper" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,10 +83,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">instance of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperRequest" /></param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Process Http Request using instance of HttpClient.
+            </summary>
+        <returns>Instane of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperResponse" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,7 +105,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.HttpHelper</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets public singleton property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -124,10 +134,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="request">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="request">instance of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperRequest" /></param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Process Http Request using instance of HttpClient.
+            </summary>
+        <returns>Instane of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperResponse" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

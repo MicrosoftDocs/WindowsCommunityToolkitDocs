@@ -67,9 +67,11 @@
         <Parameter Name="listChar" Type="System.Func&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="listChar">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="listChar">List character generating function</param>
+        <summary>
+            Determines if a reverse is requested, if the list characters are inside the Selection.
+            </summary>
+        <returns>Is it reversing?</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,10 +92,12 @@
         <Parameter Name="wrapNewLines" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="listChar">To be added.</param>
-        <param name="wrapNewLines">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="listChar">Function to generate the List Character</param>
+        <param name="wrapNewLines">Adds New Lines to Start and End of Selected Text</param>
+        <summary>
+            Determines whether a List already has the formatting applied.
+            </summary>
+        <returns>True if List formatting is reversing, otherwise false</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,10 +118,12 @@
         <Parameter Name="end" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="end">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">Formatting in front of Text</param>
+        <param name="end">Formatting at end of Text</param>
+        <summary>
+            Determines if formatting is to be reversed, when the formatting is located inside the Selectors.
+            </summary>
+        <returns>True if formatting is reversing, otherwise false</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,10 +144,12 @@
         <Parameter Name="end" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="end">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="start">Formatting in front of Text</param>
+        <param name="end">Formatting at end of Text</param>
+        <summary>
+            Determines if formatting is to be reversed
+            </summary>
+        <returns>True if formatting is reversing, otherwise false</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -200,7 +208,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the value of the Line Number Iterator. Use this for generating Numbered Lists.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -236,7 +246,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether gets whether it is the last line of the list.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -259,10 +271,12 @@
         <Parameter Name="wrapNewLines" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="listChar">To be added.</param>
-        <param name="button">To be added.</param>
-        <param name="wrapNewLines">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="listChar">A function for generating a List Character, use ListLineIterator to generate a Numbered Style List, or return a string Result, e.g. () =&gt; "- "</param>
+        <param name="button">Button that activated the Set List</param>
+        <param name="wrapNewLines">Adds New Lines to Start and End of Selected Text</param>
+        <summary>
+             This function will either add List Characters to lines of text, or Remove List Characters from Lines of Text, if already applied.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,11 +299,13 @@
         <Parameter Name="contents" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="start">To be added.</param>
-        <param name="end">To be added.</param>
-        <param name="reversible">To be added.</param>
-        <param name="contents">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="start">Formatting in front of Text</param>
+        <param name="end">Formatting at end of Text</param>
+        <param name="reversible">Is the Text reversible?</param>
+        <param name="contents">Text to insert between Start and End (Overwrites Current Text)</param>
+        <summary>
+            Applies formatting to Selected Text, or Removes formatting if already applied.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

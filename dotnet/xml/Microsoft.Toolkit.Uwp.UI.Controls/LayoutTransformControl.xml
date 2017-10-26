@@ -16,7 +16,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Control that implements support for transformations as if applied by LayoutTransform.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,7 +33,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.LayoutTransformControl" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -51,9 +55,12 @@
         <Parameter Name="finalSize" Type="Windows.Foundation.Size" />
       </Parameters>
       <Docs>
-        <param name="finalSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="finalSize">The final area within the parent that this
+            element should use to arrange itself and its children.</param>
+        <summary>
+            Provides the behavior for the "Arrange" pass of layout.
+            </summary>
+        <returns>The actual size used.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -70,9 +77,14 @@
         <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the single child of the LayoutTransformControl.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Corresponds to WPF's Decorator.Child
+            property.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ChildProperty">
@@ -88,7 +100,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the ChildProperty.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,9 +122,14 @@
         <Parameter Name="availableSize" Type="Windows.Foundation.Size" />
       </Parameters>
       <Docs>
-        <param name="availableSize">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="availableSize">The available size that this element can
+            give to child elements. Infinity can be specified as a value to
+            indicate that the element will size to whatever content is available.</param>
+        <summary>
+            Provides the behavior for the "Measure" pass of layout.
+            </summary>
+        <returns>The size that this element determines it needs during
+            layout, based on its calculations of child element sizes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,7 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Called whenever the control's template changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -145,9 +166,13 @@
         <ReturnType>Windows.UI.Xaml.Media.Transform</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the Transform of the LayoutTransformControl.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            Corresponds to UIElement.RenderTransform.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="TransformProperty">
@@ -163,7 +188,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the TransformProperty dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -181,8 +208,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+            Notifies the LayoutTransformControl that some aspect of its Transform property has changed.
+            </summary>
+        <remarks>
+            Call this to update the LayoutTransform in cases where
+            LayoutTransformControl wouldn't otherwise know to do so.
+            </remarks>
       </Docs>
     </Member>
   </Members>

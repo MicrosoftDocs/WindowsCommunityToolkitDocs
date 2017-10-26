@@ -14,8 +14,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
+    <typeparam name="T">Generic type as supplied by consumer of the class</typeparam>
+    <summary>
+            Provides methods and tools to cache files in a folder
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -30,7 +32,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.CacheBase`1" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -47,7 +51,9 @@
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the life duration of every cache entry.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -71,8 +77,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Clears all files in the cache
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,9 +100,11 @@
         <Parameter Name="duration" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">timespan to compute whether file has expired or not</param>
+        <summary>
+            Clears file if it has expired
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,9 +129,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri of the item.</param>
+        <summary>
+            Gets the StorageFile containing cached item for given Uri
+            </summary>
+        <returns>a StorageFile</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,12 +156,14 @@
         <Parameter Name="initializerKeyValues" Type="System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <param name="initializerKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri of the item.</param>
+        <param name="throwOnError">Indicates whether or not exception should be thrown if item cannot be found / downloaded.</param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <param name="initializerKeyValues">key value pairs used when initializing instance of generic type</param>
+        <summary>
+            Retrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller.
+            </summary>
+        <returns>an instance of Generic type</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,9 +183,11 @@
         <Parameter Name="uri" Type="System.Uri" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri of the item.</param>
+        <summary>
+            Retrieves item represented by Uri from the in-memory cache if it exists and is not out of date. If item is not found or is out of date, default instance of the generic type is returned.
+            </summary>
+        <returns>an instance of Generic type</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +204,8 @@
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets instance of <see cref="P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.HttpClient" /></summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -216,11 +233,13 @@
         <Parameter Name="httpMessageHandler" Type="System.Net.Http.HttpMessageHandler" />
       </Parameters>
       <Docs>
-        <param name="folder">To be added.</param>
-        <param name="folderName">To be added.</param>
-        <param name="httpMessageHandler">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="folder">Folder that is used as root for cache</param>
+        <param name="folderName">Cache folder name</param>
+        <param name="httpMessageHandler">instance of <see cref="T:System.Net.Http.HttpMessageHandler" /></param>
+        <summary>
+            Initializes FileCache and provides root folder and cache folder name
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -241,10 +260,12 @@
         <Parameter Name="initializerKeyValues" Type="System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="initializerKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">input stream</param>
+        <param name="initializerKeyValues">key value pairs used when initializing instance of generic type</param>
+        <summary>
+            Cache specific hooks to process items from HTTP response
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -265,10 +286,12 @@
         <Parameter Name="initializerKeyValues" Type="System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="baseFile">To be added.</param>
-        <param name="initializerKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseFile">storage file</param>
+        <param name="initializerKeyValues">key value pairs used when initializing instance of generic type</param>
+        <summary>
+            Cache specific hooks to process items from HTTP response
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -295,11 +318,13 @@
         <Parameter Name="treatNullFileAsOutOfDate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="treatNullFileAsOutOfDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="file">storage file</param>
+        <param name="duration">cache duration</param>
+        <param name="treatNullFileAsOutOfDate">option to mark uninitialized file as expired</param>
+        <summary>
+            Override-able method that checks whether file is valid or not.
+            </summary>
+        <returns>bool indicate whether file has expired or not</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +341,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether context should be maintained until type has been instantiated or not.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -334,7 +361,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets max in-memory item storage count
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -358,12 +387,14 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="throwOnError">To be added.</param>
-        <param name="storeToMemoryCache">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri of the item</param>
+        <param name="throwOnError">Indicates whether or not exception should be thrown if item cannot be cached</param>
+        <param name="storeToMemoryCache">Indicates if item should be loaded into the in-memory storage</param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Assures that item represented by Uri is cached.
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -388,9 +419,11 @@
         <Parameter Name="uriForCachedItems" Type="System.Collections.Generic.IEnumerable&lt;System.Uri&gt;" />
       </Parameters>
       <Docs>
-        <param name="uriForCachedItems">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uriForCachedItems">Enumerable uri list</param>
+        <summary>
+            Removed items based on uri list passed
+            </summary>
+        <returns>awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -415,9 +448,11 @@
         <Parameter Name="duration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
       </Parameters>
       <Docs>
-        <param name="duration">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="duration">Optional timespan to compute whether file has expired or not. If no value is supplied, <see cref="P:Microsoft.Toolkit.Uwp.UI.CacheBase`1.CacheDuration" /> is used.</param>
+        <summary>
+            Removes cached files that have expired
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -434,7 +469,9 @@
         <ReturnType>System.UInt32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the number of retries trying to ensure the file is cached.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

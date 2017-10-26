@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides static helper methods for <see cref="T:Windows.Storage.StorageFile" />.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,11 +35,21 @@
         <Parameter Name="isRecursive" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="folder">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="isRecursive">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="folder">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to look for the file in.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> filename of the file to search for. Must include the file extension and is not case-sensitive.
+            </param>
+        <param name="isRecursive">
+            The <see cref="T:System.Boolean" />, indicating if the subfolders should also be searched through.
+            </param>
+        <summary>
+            Gets a value indicating whether a file exists in the current folder.
+            </summary>
+        <returns>
+            Returns true, if the file exists.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -57,9 +69,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">The filename to test. Must include the file extension and is not case-sensitive.</param>
+        <summary>
+            Gets a value indicating whether a filename is correct or not using the Storage feature.
+            </summary>
+        <returns>Returns true if the filename is valid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +93,11 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="filePath">The file path to test. Must include the file extension and is not case-sensitive.</param>
+        <summary>
+            Gets a value indicating whether a file path is correct or not using the Storage feature.
+            </summary>
+        <returns>Returns true if the file path is valid.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,9 +122,15 @@
         <Parameter Name="file" Type="Windows.Storage.StorageFile" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="file">
+            The <see cref="T:Windows.Storage.StorageFile" />.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" />.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,11 +156,22 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileLocation">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytesFromKnownFoldersFileAsync">
@@ -158,11 +191,22 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">
+            The well known folder ID to use.
+            </param>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in a well known folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytesFromLocalCacheFileAsync">
@@ -181,10 +225,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in the application local cache folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytesFromLocalFileAsync">
@@ -203,10 +256,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in the application local folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadBytesFromPackagedFileAsync">
@@ -225,10 +287,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in the application installation folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.Byte" /> array.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTextFromFileAsync">
@@ -253,11 +324,22 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileLocation">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.String" /> value.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTextFromKnownFoldersFileAsync">
@@ -277,11 +359,22 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">
+            The well known folder ID to use.
+            </param>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in a well known folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.String" /> value.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTextFromLocalCacheFileAsync">
@@ -300,10 +393,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in the application local cache folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.String" /> value.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTextFromLocalFileAsync">
@@ -322,10 +424,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in the application local folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.String" /> value.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="ReadTextFromPackagedFileAsync">
@@ -344,10 +455,19 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+        <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in the application installation folder.
+            </summary>
+        <returns>
+            Returns the stored <see cref="T:System.String" /> value.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the <paramref name="fileName" /> is null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytesToFileAsync">
@@ -374,13 +494,28 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="fileLocation">To be added.</param>
-        <param name="bytes">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+        <param name="bytes">
+            The <see cref="T:System.Byte" /> array to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves an array of bytes to a <see cref="T:Windows.Storage.StorageFile" /> in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the bytes.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytesToKnownFolderFileAsync">
@@ -402,13 +537,28 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="bytes">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">
+            The well known folder ID to use.
+            </param>
+        <param name="bytes">
+            The <see cref="T:System.Byte" /> array to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves an array of bytes to a <see cref="T:Windows.Storage.StorageFile" /> to well known folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the bytes.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytesToLocalCacheFileAsync">
@@ -429,12 +579,25 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">
+            The <see cref="T:System.Byte" /> array to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves an array of bytes to a <see cref="T:Windows.Storage.StorageFile" /> to application local cache folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the bytes.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteBytesToLocalFileAsync">
@@ -455,12 +618,25 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="bytes">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="bytes">
+            The <see cref="T:System.Byte" /> array to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves an array of bytes to a <see cref="T:Windows.Storage.StorageFile" /> to application local folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the bytes.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTextToFileAsync">
@@ -487,13 +663,28 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="fileLocation">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+        <param name="text">
+            The <see cref="T:System.String" /> value to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves a string value to a <see cref="T:Windows.Storage.StorageFile" /> in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the text.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTextToKnownFolderFileAsync">
@@ -515,13 +706,28 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="text">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">
+            The well known folder ID to use.
+            </param>
+        <param name="text">
+            The <see cref="T:System.String" /> value to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves a string value to a <see cref="T:Windows.Storage.StorageFile" /> in well known folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the text.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTextToLocalCacheFileAsync">
@@ -542,12 +748,25 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">
+            The <see cref="T:System.String" /> value to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves a string value to a <see cref="T:Windows.Storage.StorageFile" /> in application local cache folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the text.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTextToLocalFileAsync">
@@ -568,12 +787,25 @@
         <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
       </Parameters>
       <Docs>
-        <param name="text">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="options">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="text">
+            The <see cref="T:System.String" /> value to save to the file.
+            </param>
+        <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+        <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+        <summary>
+            Saves a string value to a <see cref="T:Windows.Storage.StorageFile" /> in application local folder/&gt;.
+            </summary>
+        <returns>
+            Returns the saved <see cref="T:Windows.Storage.StorageFile" /> containing the text.
+            </returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+            Exception thrown if the file location or file name are null or empty.
+            </exception>
       </Docs>
     </Member>
   </Members>

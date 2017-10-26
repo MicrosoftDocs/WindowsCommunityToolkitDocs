@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides static helper methods for background task.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +33,11 @@
         <Parameter Name="backgroundTaskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskName">Name of the background task class</param>
+        <summary>
+            Get the registered background task of the given type.
+            </summary>
+        <returns>background task if there is such background task registered. Otherwise, null</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,9 +57,11 @@
         <Parameter Name="backgroundTaskType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskType">Type of the background task class. This class has to implement IBackgroundTask</param>
+        <summary>
+            Get the registered background task of the given type.
+            </summary>
+        <returns>Background task if there is such background task registered. Otherwise, null</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,9 +81,11 @@
         <Parameter Name="backgroundTaskName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <summary>
+            Check if a background task is registered.
+            </summary>
+        <returns>True/False indicating if a background task was registered or not</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,9 +105,11 @@
         <Parameter Name="backgroundTaskType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskType">The type of the background task. This class has to implement IBackgroundTask</param>
+        <summary>
+            Check if a background task is registered.
+            </summary>
+        <returns>True/False indicating if a background task was registered or not</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -129,13 +139,19 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="backgroundTaskName">To be added.</param>
-        <param name="trigger">To be added.</param>
-        <param name="forceRegister">To be added.</param>
-        <param name="enforceConditions">To be added.</param>
-        <param name="conditions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            This registers under the Single Process Model. WARNING: Single Process Model only works with Windows 10 Anniversary Update (14393) and later.
+            Register a background task with conditions.
+            If the task is already registered and has the same trigger, returns the existing registration if it has the same trigger.
+            If the task is already registered but has different trigger, return null by default.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -165,13 +181,18 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="backgroundTaskType">To be added.</param>
-        <param name="trigger">To be added.</param>
-        <param name="forceRegister">To be added.</param>
-        <param name="enforceConditions">To be added.</param>
-        <param name="conditions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskType">The type of the background task. This class has to implement IBackgroundTask</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            Register a background task with conditions.
+            If the task is already registered and has the same trigger, returns the existing registration if it has the same trigger.
+            If the task is already registered but has different trigger, return null by default.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,14 +223,18 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="backgroundTaskName">To be added.</param>
-        <param name="backgroundTaskEntryPoint">To be added.</param>
-        <param name="trigger">To be added.</param>
-        <param name="forceRegister">To be added.</param>
-        <param name="enforceConditions">To be added.</param>
-        <param name="conditions">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="backgroundTaskName">Name of the background task class</param>
+        <param name="backgroundTaskEntryPoint">Entry point of the background task.</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            Register a background task with conditions.
+            If the task is already registered, return null.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -230,9 +255,11 @@
         <Parameter Name="forceExit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskName">To be added.</param>
-        <param name="forceExit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,9 +280,11 @@
         <Parameter Name="forceExit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="backgroundTaskType">To be added.</param>
-        <param name="forceExit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="backgroundTaskType">The type of the background task</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,9 +305,11 @@
         <Parameter Name="forceExit" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="backgroundTask">To be added.</param>
-        <param name="forceExit">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="backgroundTask">A background task that was previously registered with the system</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
