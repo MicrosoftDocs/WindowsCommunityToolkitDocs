@@ -11,8 +11,16 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            The AdaptiveGridView control allows to present information within a Grid View perfectly adjusting the
+            total display available space. It reacts to changes in the layout as well as the content so it can adapt
+            to different form factors automatically.
+            </summary>
+    <remarks>
+            The number and the width of items are calculated based on the
+            screen resolution in order to fully leverage the available screen space. The property ItemsHeight define
+            the items fixed height and the property DesiredWidth sets the minimum width for the elements to add a
+            new column.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,7 +34,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -46,9 +56,11 @@
         <Parameter Name="containerWidth" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="containerWidth">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="containerWidth">The width of the container control.</param>
+        <summary>
+            Calculates the width of the grid items.
+            </summary>
+        <returns>The calculated item width.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,8 +77,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the desired width of each item
+            </summary>
+        <value>The width of the desired.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,7 +97,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,8 +116,10 @@
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the command to execute when an item is clicked and the IsItemClickEnabled property is true.
+            </summary>
+        <value>The item click command.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,7 +136,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -135,8 +155,10 @@
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets the height of each item in the grid.
+            </summary>
+        <value>The height of the item.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,7 +175,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -170,9 +194,17 @@
         <ReturnType>Windows.UI.Xaml.Controls.ItemsPanelTemplate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets the template that defines the panel that controls the layout of items.
+            </summary>
+        <value>
+            An ItemsPanelTemplate that defines the panel to use for the layout of the items.
+            The default value for the ItemsControl is an ItemsPanelTemplate that specifies
+            a StackPanel.
+            </value>
+        <remarks>
+            This property overrides the base ItemsPanel to prevent changing it.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnApplyTemplate">
@@ -189,7 +221,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Invoked whenever application code or internal processes (such as a rebuilding layout pass) call
+            ApplyTemplate. In simplest terms, this means the method is called just before a UI element displays
+            in your app. Override this method to influence the default post-template logic of a class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -206,8 +242,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets or sets a value indicating whether only one row should be displayed.
+            </summary>
+        <value>
+          <c>true</c> if only one row is displayed; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,7 +263,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -245,9 +286,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="obj">The element that's used to display the specified item.</param>
+        <param name="item">The item to display.</param>
+        <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -264,9 +307,14 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>
+            Gets or sets a value indicating whether the control should stretch the content to fill at least one row.
+            </summary>
+        <value>A value indicating whether the control should stretch the content to fill at least one row.</value>
+        <remarks>
+            If set to <c>true</c> (default) and there is only one row of items, the items will be stretched to fill the complete row.
+            If set to <c>false</c>, items will have their normal size, which means a gap can exist at the end of the row.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="StretchContentForSingleRowProperty">
@@ -282,7 +330,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow" /> dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

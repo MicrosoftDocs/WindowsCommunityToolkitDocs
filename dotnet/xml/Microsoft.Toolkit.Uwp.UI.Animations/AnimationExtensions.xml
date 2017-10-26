@@ -11,7 +11,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            These extension methods perform animation on UIElements
+            </summary>
+    <summary>
+            Provides an extension which allows lighting.
+            </summary>
+    <summary>
+            A partial for the AnimationExtension which includes saturation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,9 +39,12 @@
         <Parameter Name="storyboard" Type="Windows.UI.Xaml.Media.Animation.Storyboard" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="storyboard">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="storyboard">The storyoard to be started</param>
+        <summary>
+            Begins a Storyboard animation and returns a task that completes when the
+            animaton is complete
+            </summary>
+        <returns>Task that completes when the animation is complete</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,13 +67,18 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="value">The blur amount.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay. (ignored if duration == 0)</param>
+        <summary>
+            Animates the gaussian blur of the the UIElement.
+            </summary>
+        <returns>
+            An Animation Set.
+            </returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.IsBlurSupported" />
       </Docs>
     </Member>
     <Member MemberName="Blur">
@@ -84,13 +100,18 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The associated object.</param>
+        <param name="value">The blur amount.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay. (ignored if duration == 0)</param>
+        <summary>
+            Animates the gaussian blur of the the UIElement.
+            </summary>
+        <returns>
+            An Animation Set.
+            </returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.IsBlurSupported" />
       </Docs>
     </Member>
     <Member MemberName="BlurEffect">
@@ -106,8 +127,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.Effects.Blur</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the blur effect.
+            </summary>
+        <value>
+            The blur effect.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -124,7 +149,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.EasingType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the default EasingType used for storyboard animations
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,13 +176,17 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="value">The fade value, between 0 and 1.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the opacity of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -179,13 +210,17 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The UI Element to change the opacity of.</param>
+        <param name="value">The fade value, between 0 and 1.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the opacity of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,9 +240,11 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="easingType">The EasingType used to determine the EasingFunction</param>
+        <summary>
+            Gets the EasingFunction from EasingType
+            </summary>
+        <returns>Return the appropriate EasingFuntion or null if the EasingType is Linear</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -224,9 +261,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the platform supports blur.
+            </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+            A check should always be made to IsBlurSupported prior to calling Blur,
+            since older operating systems will not support blurs.
+            </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double)" />
       </Docs>
     </Member>
     <Member MemberName="IsLightingSupported">
@@ -242,8 +285,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets a value indicating whether this instance is lighting supported.
+            </summary>
+        <value>
+          <c>true</c> if this instance is lighting supported; otherwise, <c>false</c>.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -266,13 +313,18 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="distance">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="distance">The distance of the light.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay. (ignored if duration == 0)</param>
+        <summary>
+            Animates a point light and it's distance.
+            </summary>
+        <returns>
+            An Animation Set.
+            </returns>
         <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.IsLightingSupported" />
       </Docs>
     </Member>
     <Member MemberName="Light">
@@ -294,12 +346,14 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="distance">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The associated object.</param>
+        <param name="distance">The value.</param>
+        <param name="duration">The duration.</param>
+        <param name="delay">The delay.</param>
+        <summary>
+            Animates a point light and it's distance.
+            </summary>
+        <returns>An animation set.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -324,14 +378,18 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="offsetX">The offset on the x axis.</param>
+        <param name="offsetY">The offset on the y axis.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the offset of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -356,14 +414,18 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="offsetX">To be added.</param>
-        <param name="offsetY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The specified UI Element.</param>
+        <param name="offsetX">The offset on the x axis.</param>
+        <param name="offsetY">The offset on the y axis.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the offset of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -389,15 +451,19 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="value">The value in degrees to rotate.</param>
+        <param name="centerX">The center x in pixels.</param>
+        <param name="centerY">The center y in pixels.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the rotation in degrees of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -423,15 +489,19 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The UI Element to rotate.</param>
+        <param name="value">The value in degrees to rotate.</param>
+        <param name="centerX">The center x in pixels.</param>
+        <param name="centerY">The center y in pixels.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the rotation in degrees of the the UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -454,12 +524,14 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animation set.</param>
+        <param name="value">The value. 0 is desaturated, 1 is saturated.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds.</param>
+        <summary>
+            Saturates the visual within the animation set.
+            </summary>
+        <returns>An animation set with saturation effects incorporated.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -482,12 +554,14 @@
         <Parameter Name="delay" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The associated object.</param>
+        <param name="value">The value, between 0 and 1. 0 is desaturated, 1 is saturated.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds.</param>
+        <summary>
+            Saturates the FrameworkElement.
+            </summary>
+        <returns>An animation set with saturation effects incorporated.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -504,8 +578,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.Effects.Saturation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>
+            Gets the saturation effect.
+            </summary>
+        <value>
+            The saturation effect.
+            </value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -532,16 +610,20 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="animationSet">To be added.</param>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="animationSet">The animationSet object.</param>
+        <param name="scaleX">The scale on the x axis.</param>
+        <param name="scaleY">The scale on the y axis.</param>
+        <param name="centerX">The center x in pixels.</param>
+        <param name="centerY">The center y in pixels.</param>
+        <param name="duration">The duration in milliseconds.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the scale of the the specified UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -568,16 +650,20 @@
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
-        <param name="associatedObject">To be added.</param>
-        <param name="scaleX">To be added.</param>
-        <param name="scaleY">To be added.</param>
-        <param name="centerX">To be added.</param>
-        <param name="centerY">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="delay">To be added.</param>
-        <param name="easingType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="associatedObject">The associated UIElement.</param>
+        <param name="scaleX">The scale on the x axis.</param>
+        <param name="scaleY">The scale on the y axis.</param>
+        <param name="centerX">The center x in pixels.</param>
+        <param name="centerY">The center y in pixels.</param>
+        <param name="duration">The duration in millisecond.</param>
+        <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+        <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <summary>
+            Animates the scale of the the specified UIElement.
+            </summary>
+        <returns>
+            An AnimationSet.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

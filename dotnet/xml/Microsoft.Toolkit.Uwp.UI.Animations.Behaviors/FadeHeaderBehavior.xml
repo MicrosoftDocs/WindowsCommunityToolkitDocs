@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Performs an fade animation on a ListView or GridView Header using composition.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -46,9 +48,18 @@
         <ReturnType>Windows.UI.Xaml.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+             Gets or sets the target element for the Fading behavior.
+             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+             Set this using the header of a ListView or GridView. You can use the entire root of the header or an element within the header.
+            
+             Using this example Header:
+             <ListView.Header><Grid Name="MyHeader" /></ListView.Header>
+            
+             The behavior would be implemented like this
+             <FadeHeaderBehavior HeaderElement="{Binding ElementName=HeaderPanel}" /></remarks>
       </Docs>
     </Member>
     <Member MemberName="HeaderElementProperty">
@@ -64,7 +75,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            The UIElement that will be faded.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,8 +95,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Attaches the behavior to the associated object.
+            </summary>
+        <returns>
+          <c>true</c> if attaching succeeded; otherwise <c>false</c>.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -101,8 +118,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Detaches the behavior from the associated object.
+            </summary>
+        <returns>
+          <c>true</c> if detaching succeeded; otherwise <c>false</c>.
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

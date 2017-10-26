@@ -11,8 +11,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>
+            TextBoxRegex allows text validation using a regular expression.
+            </summary>
+    <remarks>
+            If <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode"> is set to Normal then IsValid will be set according to whether the regex is valid.</see>
+            If <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode"> is set to Forced and the input is not valid the TextBox text will be cleared.</see></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,9 +50,11 @@
         <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="textBox">TextBox to be validated.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.IsValid XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox regular expression validation result</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -68,9 +74,11 @@
         <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="textBox">TextBox to get Regex property from.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.Regex XAML attached property from the specified TextBox.
+            </summary>
+        <returns>The regular expression assigned to the TextBox</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,9 +98,11 @@
         <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="textBox">TextBox to get the <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode" /> from</param>
+        <summary>
+            Gets the value of the TextBoxRegex.ValidationMode XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode" /> value</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -112,9 +122,11 @@
         <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="textBox">TextBox to get <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType" /> from.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.ValidationType XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType" /> Value</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,7 +143,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the IsValid attached dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,7 +162,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the Regex attached dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,9 +185,11 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="textBox">TextBox to be assigned the property</param>
+        <param name="value">A value indicating if the Text is valid according to the Regex property.</param>
+        <summary>
+            Sets the value of the TextBoxRegex.IsValid XAML attached property for a target TextBox.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -192,9 +210,11 @@
         <Parameter Name="value" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="textBox">The TextBox to set the regular expression on</param>
+        <param name="value">Regex value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.Regex XAML attached property for a target TextBox.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -215,9 +235,11 @@
         <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex+ValidationMode" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="textBox">TextBox to set the <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode" /> on.</param>
+        <param name="value">TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode" /> value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.ValidationMode XAML attached property for a target TextBox.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -238,9 +260,11 @@
         <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex+ValidationType" />
       </Parameters>
       <Docs>
-        <param name="textBox">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="textBox">TextBox to set the <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType" /> on.</param>
+        <param name="value">TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType" /> value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.ValidationType XAML attached property for a target TextBox.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -257,7 +281,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the ValidationMode attached dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -274,7 +300,9 @@
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Identifies the ValidationType attached dependency property.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

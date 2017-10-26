@@ -39,7 +39,12 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A collection view implementation that supports filtering, sorting and incremental loading
+            </summary>
+    <summary>
+            A collection view implementation that supports filtering, grouping, sorting and incremental loading
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -54,7 +59,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,8 +78,10 @@
         <Parameter Name="source" Type="System.Collections.IEnumerable" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="source">source IEnumerable</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -95,6 +104,7 @@
         <param name="item">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CanFilter">
@@ -110,7 +120,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether this CollectionView can filter its items
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -128,7 +140,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether this CollectionView can sort its items
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,6 +163,7 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CollectionGroups">
@@ -164,7 +179,9 @@
         <ReturnType>Windows.Foundation.Collections.IObservableVector&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the groups in collection
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -189,6 +206,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -212,6 +230,7 @@
         <param name="arrayIndex">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -230,6 +249,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CurrentChanged">
@@ -245,7 +265,9 @@
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Current item changed event handler
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -262,7 +284,9 @@
         <ReturnType>Windows.UI.Xaml.Data.CurrentChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Current item changing event handler
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -279,7 +303,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the current item
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -297,7 +323,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the position of current item
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -316,8 +344,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Stops refreshing until it is disposed
+            </summary>
+        <returns>An disposable object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,7 +364,9 @@
         <ReturnType>System.Predicate&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the predicate used to filter the visisble items
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -356,6 +388,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="HasMoreItems">
@@ -371,7 +404,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the source has more items
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -396,6 +431,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -419,6 +455,7 @@
         <param name="item">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsCurrentAfterLast">
@@ -434,7 +471,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the current item is after the last visible item
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -452,7 +491,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets a value indicating whether the current item is before the first visible item
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -473,6 +514,7 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -491,10 +533,17 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The zero-based index of the element to get or set.</param>
+        <summary>
+            Gets or sets the element at the specified index.
+            </summary>
+        <value>
+            The element at the specified index.
+            </value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.Generic.IList`1" />.</exception>
+        <exception cref="T:System.NotSupportedException">The property is set and the <see cref="T:System.Collections.Generic.IList`1" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="LoadMoreItemsAsync">
@@ -513,10 +562,13 @@
         <Parameter Name="count" Type="System.UInt32" />
       </Parameters>
       <Docs>
-        <param name="count">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="count">number of items to load</param>
+        <summary>
+            Load more items from the source
+            </summary>
+        <returns>Async operation of LoadMoreItemsResult</returns>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotImplementedException">Not implemented yet...</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveCurrentTo">
@@ -535,9 +587,11 @@
         <Parameter Name="item" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">item</param>
+        <summary>
+            Move current index to item
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -555,8 +609,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Move current item to first item
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -574,8 +630,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Move current item to last item
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -593,8 +651,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Move current item to next item
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -614,9 +674,11 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="index">index</param>
+        <summary>
+            Moves selected item to position
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -634,8 +696,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Move current item to previous item
+            </summary>
+        <returns>success of operation</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,8 +725,10 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="propertyName">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="propertyName">name of the property that changed</param>
+        <summary>
+            Property changed event invoker
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,7 +745,9 @@
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when a property value changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -697,7 +765,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Manually refresh the view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,6 +791,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -739,9 +810,14 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="index">The zero-based index of the item to remove.</param>
+        <summary>
+            Removes the <see cref="T:System.Collections.Generic.IList`1" /> item at the specified index.
+            </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is not a valid index in the <see cref="T:System.Collections.Generic.IList`1" />.</exception>
+        <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.Generic.IList`1" /> is read-only.</exception>
       </Docs>
     </Member>
     <Member MemberName="SortDescriptions">
@@ -757,7 +833,9 @@
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.SortDescription&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets SortDescriptions to sort the visible items
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -775,7 +853,9 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the source
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -793,7 +873,9 @@
         <ReturnType>System.Collections.IEnumerable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets the source collection
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -815,10 +897,12 @@
         <Parameter Name="y" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="x">To be added.</param>
-        <param name="y">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="x">Object A</param>
+        <param name="y">Object B</param>
+        <summary>
+            IComparer implementation
+            </summary>
+        <returns>Comparison value</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -839,6 +923,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="VectorChanged">
@@ -854,7 +939,9 @@
         <ReturnType>Windows.Foundation.Collections.VectorChangedEventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Occurs when the vector changes.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
