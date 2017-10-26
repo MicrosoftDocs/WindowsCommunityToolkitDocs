@@ -644,8 +644,10 @@
           <Parameter Name="colorString" Type="System.String" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="colorString">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="colorString">The color string. Any format used in XAML should work.</param>
+          <summary>
+            Returns a color based on XAML color string.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.ColorHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.ColorHelper.ToColor(System.String)" />
       </Member>
@@ -666,8 +668,10 @@
           <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="color">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="color">The Color to convert.</param>
+          <summary>
+            Converts a Color value to a string representation of the value in hexadecimal.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.ColorHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.ColorHelper.ToHex(Windows.UI.Color)" />
       </Member>
@@ -688,8 +692,10 @@
           <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="color">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="color">The Color to convert.</param>
+          <summary>
+            Converts an RGBA Color the HSL representation.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.ColorHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.ColorHelper.ToHsl(Windows.UI.Color)" />
       </Member>
@@ -710,8 +716,10 @@
           <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="color">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="color">Color to convert.</param>
+          <summary>
+            Converts an RGBA Color the HSV representation.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.ColorHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.ColorHelper.ToHsv(Windows.UI.Color)" />
       </Member>
@@ -732,8 +740,10 @@
           <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="color">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="color">the Color to convert</param>
+          <summary>
+            Returns the color value as a premultiplied Int32 - 4 byte ARGB structure.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.ColorHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.ColorHelper.ToInt(Windows.UI.Color)" />
       </Member>
@@ -756,10 +766,12 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <param name="dispatcher">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+          <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -782,10 +794,12 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <param name="dispatcher">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+          <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -811,11 +825,13 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="dispatcher">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">returned data type of the function</typeparam>
+          <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+          <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -841,11 +857,13 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="dispatcher">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">returned data type of the function</typeparam>
+          <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+          <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -868,10 +886,12 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <param name="viewToExecuteOn">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+          <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -894,10 +914,12 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <param name="viewToExecuteOn">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+          <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -923,11 +945,13 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="viewToExecuteOn">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">returned data type of the function</typeparam>
+          <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+          <param name="function">Synchronous function with return type <typeparamref name="T" /> to be executed on UI thread</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -953,11 +977,13 @@
           <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="viewToExecuteOn">To be added.</param>
-          <param name="function">To be added.</param>
-          <param name="priority">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">returned data type of the function</typeparam>
+          <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+          <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+          <param name="priority">Dispatcher execution priority, default is normal</param>
+          <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)" />
       </Member>
@@ -980,10 +1006,18 @@
           <Parameter Name="isRecursive" Type="System.Boolean" />
         </Parameters>
         <Docs>
-          <param name="folder">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <param name="isRecursive">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="folder">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to look for the file in.
+            </param>
+          <param name="fileName">
+            The <see cref="T:System.String" /> filename of the file to search for. Must include the file extension and is not case-sensitive.
+            </param>
+          <param name="isRecursive">
+            The <see cref="T:System.Boolean" />, indicating if the subfolders should also be searched through.
+            </param>
+          <summary>
+            Gets a value indicating whether a file exists in the current folder.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.FileExistsAsync(Windows.Storage.StorageFolder,System.String,System.Boolean)" />
       </Member>
@@ -1004,8 +1038,12 @@
           <Parameter Name="file" Type="Windows.Storage.StorageFile" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="file">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="file">
+            The <see cref="T:Windows.Storage.StorageFile" />.
+            </param>
+          <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.ReadBytesAsync(Windows.Storage.StorageFile)" />
       </Member>
@@ -1027,9 +1065,15 @@
           <Parameter Name="fileName" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="fileLocation">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+          <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+          <summary>
+            Gets an array of bytes from a <see cref="T:Windows.Storage.StorageFile" /> located in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.ReadBytesFromFileAsync(Windows.Storage.StorageFolder,System.String)" />
       </Member>
@@ -1051,9 +1095,15 @@
           <Parameter Name="fileName" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="fileLocation">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+          <param name="fileName">
+            The relative <see cref="T:System.String" /> file path.
+            </param>
+          <summary>
+            Gets a string value from a <see cref="T:Windows.Storage.StorageFile" /> located in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.ReadTextFromFileAsync(Windows.Storage.StorageFolder,System.String)" />
       </Member>
@@ -1077,11 +1127,21 @@
           <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
         </Parameters>
         <Docs>
-          <param name="fileLocation">To be added.</param>
-          <param name="bytes">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <param name="options">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+          <param name="bytes">
+            The <see cref="T:System.Byte" /> array to save to the file.
+            </param>
+          <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+          <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+          <summary>
+            Saves an array of bytes to a <see cref="T:Windows.Storage.StorageFile" /> in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.WriteBytesToFileAsync(Windows.Storage.StorageFolder,System.Byte[],System.String,Windows.Storage.CreationCollisionOption)" />
       </Member>
@@ -1105,11 +1165,21 @@
           <Parameter Name="options" Type="Windows.Storage.CreationCollisionOption" />
         </Parameters>
         <Docs>
-          <param name="fileLocation">To be added.</param>
-          <param name="text">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <param name="options">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="fileLocation">
+            The <see cref="T:Windows.Storage.StorageFolder" /> to save the file in.
+            </param>
+          <param name="text">
+            The <see cref="T:System.String" /> value to save to the file.
+            </param>
+          <param name="fileName">
+            The <see cref="T:System.String" /> name for the file.
+            </param>
+          <param name="options">
+            The creation collision options. Default is ReplaceExisting.
+            </param>
+          <summary>
+            Saves a string value to a <see cref="T:Windows.Storage.StorageFile" /> in the given <see cref="T:Windows.Storage.StorageFolder" />.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StorageFileHelper.WriteTextToFileAsync(Windows.Storage.StorageFolder,System.String,System.String,Windows.Storage.CreationCollisionOption)" />
       </Member>
@@ -1131,9 +1201,11 @@
           <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
         </Parameters>
         <Docs>
-          <param name="uri">To be added.</param>
-          <param name="cancellationToken">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="uri">Uri to request.</param>
+          <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+          <summary>
+            Get the response stream returned by a HTTP get request.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StreamHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.GetHttpStreamAsync(System.Uri,System.Threading.CancellationToken)" />
       </Member>
@@ -1155,9 +1227,11 @@
           <Parameter Name="targetFile" Type="Windows.Storage.StorageFile" />
         </Parameters>
         <Docs>
-          <param name="uri">To be added.</param>
-          <param name="targetFile">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="uri">Uri to request.</param>
+          <param name="targetFile">StorageFile to save the stream to.</param>
+          <summary>
+            Get the response stream returned by a HTTP get request and save it to a local file.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StreamHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.GetHttpStreamToStorageFileAsync(System.Uri,Windows.Storage.StorageFile)" />
       </Member>
@@ -1179,9 +1253,11 @@
           <Parameter Name="fileName" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="workingFolder">To be added.</param>
-          <param name="fileName">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="workingFolder">Folder to use.</param>
+          <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+          <summary>
+            Test if a file exists in the application local folder.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StreamHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsFileExistsAsync(Windows.Storage.StorageFolder,System.String)" />
       </Member>
@@ -1203,9 +1279,11 @@
           <Parameter Name="encoding" Type="System.Text.Encoding" />
         </Parameters>
         <Docs>
-          <param name="stream">To be added.</param>
-          <param name="encoding">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="stream">Stream to read from.</param>
+          <param name="encoding">Encoding to use. Can be set to null (ASCII will be used in this case).</param>
+          <summary>
+            Read stream content as a string.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.Helpers.StreamHelper" Member="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.ReadTextAsync(Windows.Storage.Streams.IRandomAccessStream,System.Text.Encoding)" />
       </Member>
@@ -1226,8 +1304,11 @@
           <Parameter Name="storyboard" Type="Windows.UI.Xaml.Media.Animation.Storyboard" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="storyboard">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="storyboard">The storyoard to be started</param>
+          <summary>
+            Begins a Storyboard animation and returns a task that completes when the
+            animaton is complete
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.BeginAsync(Windows.UI.Xaml.Media.Animation.Storyboard)" />
       </Member>
@@ -1251,11 +1332,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="value">The blur amount.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay. (ignored if duration == 0)</param>
+          <summary>
+            Animates the gaussian blur of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1279,11 +1362,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The associated object.</param>
+          <param name="value">The blur amount.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay. (ignored if duration == 0)</param>
+          <summary>
+            Animates the gaussian blur of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1308,12 +1393,14 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="value">The fade value, between 0 and 1.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the opacity of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1338,12 +1425,14 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The UI Element to change the opacity of.</param>
+          <param name="value">The fade value, between 0 and 1.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the opacity of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Windows.UI.Xaml.UIElement,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1367,11 +1456,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="distance">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="distance">The distance of the light.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay. (ignored if duration == 0)</param>
+          <summary>
+            Animates a point light and it's distance.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1395,11 +1486,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="distance">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The associated object.</param>
+          <param name="distance">The value.</param>
+          <param name="duration">The duration.</param>
+          <param name="delay">The delay.</param>
+          <summary>
+            Animates a point light and it's distance.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1425,13 +1518,15 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="offsetX">To be added.</param>
-          <param name="offsetY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="offsetX">The offset on the x axis.</param>
+          <param name="offsetY">The offset on the y axis.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the offset of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1457,13 +1552,15 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="offsetX">To be added.</param>
-          <param name="offsetY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The specified UI Element.</param>
+          <param name="offsetX">The offset on the x axis.</param>
+          <param name="offsetY">The offset on the y axis.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the offset of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1490,14 +1587,16 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="centerX">To be added.</param>
-          <param name="centerY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="value">The value in degrees to rotate.</param>
+          <param name="centerX">The center x in pixels.</param>
+          <param name="centerY">The center y in pixels.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the rotation in degrees of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1524,14 +1623,16 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="centerX">To be added.</param>
-          <param name="centerY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The UI Element to rotate.</param>
+          <param name="value">The value in degrees to rotate.</param>
+          <param name="centerX">The center x in pixels.</param>
+          <param name="centerY">The center y in pixels.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the rotation in degrees of the the UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1555,11 +1656,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animation set.</param>
+          <param name="value">The value. 0 is desaturated, 1 is saturated.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds.</param>
+          <summary>
+            Saturates the visual within the animation set.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1583,11 +1686,13 @@
           <Parameter Name="delay" Type="System.Double" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="value">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The associated object.</param>
+          <param name="value">The value, between 0 and 1. 0 is desaturated, 1 is saturated.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds.</param>
+          <summary>
+            Saturates the FrameworkElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double)" />
       </Member>
@@ -1615,15 +1720,17 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="animationSet">To be added.</param>
-          <param name="scaleX">To be added.</param>
-          <param name="scaleY">To be added.</param>
-          <param name="centerX">To be added.</param>
-          <param name="centerY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="animationSet">The animationSet object.</param>
+          <param name="scaleX">The scale on the x axis.</param>
+          <param name="scaleY">The scale on the y axis.</param>
+          <param name="centerX">The center x in pixels.</param>
+          <param name="centerY">The center y in pixels.</param>
+          <param name="duration">The duration in milliseconds.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the scale of the the specified UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1651,15 +1758,17 @@
           <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         </Parameters>
         <Docs>
-          <param name="associatedObject">To be added.</param>
-          <param name="scaleX">To be added.</param>
-          <param name="scaleY">To be added.</param>
-          <param name="centerX">To be added.</param>
-          <param name="centerY">To be added.</param>
-          <param name="duration">To be added.</param>
-          <param name="delay">To be added.</param>
-          <param name="easingType">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="associatedObject">The associated UIElement.</param>
+          <param name="scaleX">The scale on the x axis.</param>
+          <param name="scaleY">The scale on the y axis.</param>
+          <param name="centerX">The center x in pixels.</param>
+          <param name="centerY">The center y in pixels.</param>
+          <param name="duration">The duration in millisecond.</param>
+          <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
+          <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+          <summary>
+            Animates the scale of the the specified UIElement.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
       </Member>
@@ -1680,8 +1789,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.AmbientLight" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.AmbientLight)" />
       </Member>
@@ -1702,8 +1813,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.CompositionColorBrush" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.CompositionColorBrush)" />
       </Member>
@@ -1724,8 +1837,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.CompositionNineGridBrush" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.CompositionNineGridBrush)" />
       </Member>
@@ -1746,8 +1861,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.CompositionPropertySet" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.CompositionPropertySet)" />
       </Member>
@@ -1768,8 +1885,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.CompositionSurfaceBrush" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.CompositionSurfaceBrush)" />
       </Member>
@@ -1790,8 +1909,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.DistantLight" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.DistantLight)" />
       </Member>
@@ -1812,8 +1933,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.DropShadow" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.DropShadow)" />
       </Member>
@@ -1834,8 +1957,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.InsetClip" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.InsetClip)" />
       </Member>
@@ -1856,8 +1981,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.Interactions.InteractionTracker" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.Interactions.InteractionTracker)" />
       </Member>
@@ -1878,8 +2005,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.PointLight" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.PointLight)" />
       </Member>
@@ -1900,8 +2029,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.SpotLight" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.SpotLight)" />
       </Member>
@@ -1922,8 +2053,10 @@
           <Parameter Name="compObj" Type="Windows.UI.Composition.Visual" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="compObj">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObj">The comp object.</param>
+          <summary>
+            Create an ExpressionNode reference to this CompositionObject.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetReference(Windows.UI.Composition.Visual)" />
       </Member>
@@ -1951,9 +2084,11 @@
           <Parameter Name="ps" Type="Windows.UI.Composition.CompositionPropertySet" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="ps">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">A class that derives from PropertySetReferenceNode.</typeparam>
+          <param name="ps">The ps.</param>
+          <summary>
+            Create an ExpressionNode reference to this specialized PropertySet.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.GetSpecializedReference``1(Windows.UI.Composition.CompositionPropertySet)" />
       </Member>
@@ -1977,11 +2112,13 @@
           <Parameter Name="easing" Type="Windows.UI.Composition.CompositionEasingFunction" />
         </Parameters>
         <Docs>
-          <param name="keyframeAnimation">To be added.</param>
-          <param name="normalizedProgressKey">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <param name="easing">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="keyframeAnimation">The keyframe animation.</param>
+          <param name="normalizedProgressKey">The time the key frame should occur at, expressed as a percentage of the animation Duration. Allowed value is from 0.0 to 1.0.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <param name="easing">The easing function to use when interpolating between frames.</param>
+          <summary>
+            Inserts a KeyFrame whose value is calculated using the specified ExpressionNode.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.InsertExpressionKeyFrame(Windows.UI.Composition.KeyFrameAnimation,System.Single,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode,Windows.UI.Composition.CompositionEasingFunction)" />
       </Member>
@@ -2003,9 +2140,11 @@
           <Parameter Name="expressionNode" Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
         </Parameters>
         <Docs>
-          <param name="modifier">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="modifier">The modifier.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <summary>
+            Use the value of specified ExpressionNode to determine if this inertia modifier should be chosen.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.SetCondition(Windows.UI.Composition.Interactions.InteractionTrackerInertiaMotion,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" />
       </Member>
@@ -2027,9 +2166,11 @@
           <Parameter Name="expressionNode" Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
         </Parameters>
         <Docs>
-          <param name="modifier">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="modifier">The modifier.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <summary>
+            Use the value of specified ExpressionNode to determine if this inertia modifier should be chosen.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.SetCondition(Windows.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" />
       </Member>
@@ -2051,9 +2192,11 @@
           <Parameter Name="expressionNode" Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
         </Parameters>
         <Docs>
-          <param name="modifier">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="modifier">The modifier.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <summary>
+            Use the value of specified ExpressionNode to dictate the motion for this inertia modifier.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.SetMotion(Windows.UI.Composition.Interactions.InteractionTrackerInertiaMotion,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" />
       </Member>
@@ -2075,9 +2218,11 @@
           <Parameter Name="expressionNode" Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
         </Parameters>
         <Docs>
-          <param name="modifier">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="modifier">The modifier.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <summary>
+            Use the value of specified ExpressionNode as the resting value for this inertia modifier.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.SetRestingValue(Windows.UI.Composition.Interactions.InteractionTrackerInertiaRestingValue,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" />
       </Member>
@@ -2100,10 +2245,12 @@
           <Parameter Name="expressionNode" Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
         </Parameters>
         <Docs>
-          <param name="compObject">To be added.</param>
-          <param name="propertyName">To be added.</param>
-          <param name="expressionNode">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="compObject">The comp object.</param>
+          <param name="propertyName">The name of the property that the expression will target.</param>
+          <param name="expressionNode">The root ExpressionNode that represents the ExpressionAnimation.</param>
+          <summary>
+            Connects the specified ExpressionNode with the specified property of the object.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions" Member="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.CompositionExtensions.StartAnimation(Windows.UI.Composition.CompositionObject,System.String,Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" />
       </Member>
@@ -2131,9 +2278,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Parent element.</param>
+          <summary>
+            Find first logical child control of a specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindChild``1(Windows.UI.Xaml.FrameworkElement)" />
       </Member>
@@ -2155,9 +2304,11 @@
           <Parameter Name="name" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="element">To be added.</param>
-          <param name="name">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="element">Parent element.</param>
+          <param name="name">Name of the control to find.</param>
+          <summary>
+            Find logical child control using its name.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindChildByName(Windows.UI.Xaml.FrameworkElement,System.String)" />
       </Member>
@@ -2185,9 +2336,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Parent element.</param>
+          <summary>
+            Find all logical child controls of the specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindChildren``1(Windows.UI.Xaml.FrameworkElement)" />
       </Member>
@@ -2215,9 +2368,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Child element.</param>
+          <summary>
+            Find first logical parent control of a specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindParent``1(Windows.UI.Xaml.FrameworkElement)" />
       </Member>
@@ -2239,9 +2394,11 @@
           <Parameter Name="name" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="element">To be added.</param>
-          <param name="name">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="element">Child element.</param>
+          <param name="name">Name of the control to find.</param>
+          <summary>
+            Finds the logical parent element with the given name or returns null.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindParentByName(Windows.UI.Xaml.FrameworkElement,System.String)" />
       </Member>
@@ -2262,8 +2419,10 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
         </Parameters>
         <Docs>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="element">Parent element.</param>
+          <summary>
+            Retrieves the Content control of this element as defined by the ContentPropertyAttribute.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.GetContentControl(Windows.UI.Xaml.FrameworkElement)" />
       </Member>
@@ -2291,9 +2450,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Child element.</param>
+          <summary>
+            Find first visual ascendant control of a specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendant``1(Windows.UI.Xaml.DependencyObject)" />
       </Member>
@@ -2315,9 +2476,11 @@
           <Parameter Name="name" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="element">To be added.</param>
-          <param name="name">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="element">Parent element.</param>
+          <param name="name">Name of the control to find</param>
+          <summary>
+            Find visual ascendant <see cref="T:Windows.UI.Xaml.FrameworkElement" /> control using its name.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendantByName(Windows.UI.Xaml.DependencyObject,System.String)" />
       </Member>
@@ -2345,9 +2508,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Parent element.</param>
+          <summary>
+            Find first descendant control of a specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendant``1(Windows.UI.Xaml.DependencyObject)" />
       </Member>
@@ -2369,9 +2534,11 @@
           <Parameter Name="name" Type="System.String" />
         </Parameters>
         <Docs>
-          <param name="element">To be added.</param>
-          <param name="name">To be added.</param>
-          <summary>To be added.</summary>
+          <param name="element">Parent element.</param>
+          <param name="name">Name of the control to find</param>
+          <summary>
+            Find descendant <see cref="T:Windows.UI.Xaml.FrameworkElement" /> control using its name.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendantByName(Windows.UI.Xaml.DependencyObject,System.String)" />
       </Member>
@@ -2399,9 +2566,11 @@
           <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
         </Parameters>
         <Docs>
-          <typeparam name="T">To be added.</typeparam>
-          <param name="element">To be added.</param>
-          <summary>To be added.</summary>
+          <typeparam name="T">Type to search for.</typeparam>
+          <param name="element">Parent element.</param>
+          <summary>
+            Find all descendant controls of the specified type.
+            </summary>
         </Docs>
         <Link Type="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Member="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendants``1(Windows.UI.Xaml.DependencyObject)" />
       </Member>

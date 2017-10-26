@@ -15,7 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Shared implementation of ObjectStorageHelper
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -50,9 +52,11 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePath">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="filePath">Key of the file (that contains object)</param>
+        <summary>
+            Detect if a file already exists
+            </summary>
+        <returns>True if a value exists</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -69,7 +73,9 @@
         <ReturnType>Windows.Storage.StorageFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets storage folder
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -90,9 +96,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="key">Key of the setting (that contains object)</param>
+        <summary>
+            Detect if a setting already exists
+            </summary>
+        <returns>True if a value exists</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -113,10 +121,12 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="compositeKey">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="compositeKey">Key of the composite (that contains settings)</param>
+        <param name="key">Key of the setting (that contains object)</param>
+        <summary>
+            Detect if a setting already exists in composite.
+            </summary>
+        <returns>True if a value exists</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,11 +150,13 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="key">To be added.</param>
-        <param name="default">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of object retrieved</typeparam>
+        <param name="key">Key of the object</param>
+        <param name="default">Default value of the object</param>
+        <summary>
+            Retrieve single item by its key.
+            </summary>
+        <returns>The T object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,12 +181,14 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="compositeKey">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="default">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of object retrieved</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings)</param>
+        <param name="key">Key of the object</param>
+        <param name="default">Default value of the object</param>
+        <summary>
+            Retrieve single item by its key in composite.
+            </summary>
+        <returns>The T object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -203,11 +217,13 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="filePath">To be added.</param>
-        <param name="default">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of object retrieved</typeparam>
+        <param name="filePath">Path to the file that contains the object</param>
+        <param name="default">Default value of the object</param>
+        <summary>
+            Retrieve object from file.
+            </summary>
+        <returns>Waiting task until completion with the object in the file</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -231,10 +247,15 @@
         <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="compositeKey">To be added.</param>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">Type of object saved</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings)</param>
+        <param name="values">Objects to save</param>
+        <summary>
+            Save a group of items by its key in a composite.
+            This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
+            (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" /> for complex/large objects) and for groups of settings which
+            need to be treated in an atomic way.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -258,10 +279,14 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
+        <typeparam name="T">Type of object saved</typeparam>
+        <param name="key">Key of the value saved</param>
+        <param name="value">Object to save</param>
+        <summary>
+            Save single item by its key.
+            This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
+            (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" /> for complex/large objects).
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -285,11 +310,14 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="filePath">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">Type of object saved</typeparam>
+        <param name="filePath">Path to the file that will contain the object</param>
+        <param name="value">Object to save</param>
+        <summary>
+            Save object inside file.
+            There is no limitation to use this method (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,``0)" /> method for simple objects).
+            </summary>
+        <returns>When this method completes, it returns the <see cref="T:Windows.Storage.StorageFile" /> where the object was saved</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -306,7 +334,9 @@
         <ReturnType>Windows.Storage.ApplicationDataContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets settings container
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

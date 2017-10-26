@@ -15,7 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Value converter that look up for the source string in the App Resources strings and returns its value, if found.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,12 +55,15 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="language">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The source string being passed to the target.</param>
+        <param name="targetType">The type of the target property, as a type reference.</param>
+        <param name="parameter">Optional parameter. Not used.</param>
+        <param name="language">The language of the conversion.</param>
+        <summary>
+            Take the source string as a resource name that will be looked up in the App Resources.
+            If the resource exists, the value is returned, otherwise.
+            </summary>
+        <returns>The string corresponding to the resource name.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,12 +86,14 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="language">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The source string being passed to the target.</param>
+        <param name="targetType">The type of the target property, as a type reference.</param>
+        <param name="parameter">Optional parameter. Not used.</param>
+        <param name="language">The language of the conversion.</param>
+        <summary>
+            Not implemented.
+            </summary>
+        <returns>The value to be passed to the target dependency property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

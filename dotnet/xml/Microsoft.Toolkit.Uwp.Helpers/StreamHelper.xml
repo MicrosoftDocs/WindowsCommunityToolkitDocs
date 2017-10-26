@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides static helper methods for streams.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -37,10 +39,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri to request.</param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Get the response stream returned by a HTTP get request.
+            </summary>
+        <returns>Response stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -66,10 +70,12 @@
         <Parameter Name="targetFile" Type="Windows.Storage.StorageFile" />
       </Parameters>
       <Docs>
-        <param name="uri">To be added.</param>
-        <param name="targetFile">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="uri">Uri to request.</param>
+        <param name="targetFile">StorageFile to save the stream to.</param>
+        <summary>
+            Get the response stream returned by a HTTP get request and save it to a local file.
+            </summary>
+        <returns>True if success.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,11 +97,13 @@
         <Parameter Name="accessMode" Type="Windows.Storage.FileAccessMode" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <param name="accessMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">The well known folder ID to use</param>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <param name="accessMode">File access mode. Default is read.</param>
+        <summary>
+            Return a stream to a specified file from the application local cache folder.
+            </summary>
+        <returns>File stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -116,10 +124,12 @@
         <Parameter Name="accessMode" Type="Windows.Storage.FileAccessMode" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="accessMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <param name="accessMode">File access mode. Default is read.</param>
+        <summary>
+            Return a stream to a specified file from the application local cache folder.
+            </summary>
+        <returns>File stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -140,10 +150,12 @@
         <Parameter Name="accessMode" Type="Windows.Storage.FileAccessMode" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="accessMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <param name="accessMode">File access mode. Default is read.</param>
+        <summary>
+            Return a stream to a specified file from the application local folder.
+            </summary>
+        <returns>File stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,10 +176,12 @@
         <Parameter Name="accessMode" Type="Windows.Storage.FileAccessMode" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <param name="accessMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <param name="accessMode">File access mode. Default is read.</param>
+        <summary>
+            Return a stream to a specified file from the installation folder.
+            </summary>
+        <returns>File stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -196,10 +210,12 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="workingFolder">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="workingFolder">Folder to use.</param>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <summary>
+            Test if a file exists in the application local folder.
+            </summary>
+        <returns>True if file exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,10 +241,12 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="knownFolderId">To be added.</param>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="knownFolderId">The well known folder ID to use</param>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <summary>
+            Test if a file exists in the application local cache folder.
+            </summary>
+        <returns>True if file exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -253,9 +271,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <summary>
+            Test if a file exists in the application local cache folder.
+            </summary>
+        <returns>True if file exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -280,9 +300,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <summary>
+            Test if a file exists in the application local folder.
+            </summary>
+        <returns>True if file exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,9 +329,11 @@
         <Parameter Name="fileName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="fileName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <summary>
+            Test if a file exists in the application installation folder.
+            </summary>
+        <returns>True if file exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,10 +359,12 @@
         <Parameter Name="encoding" Type="System.Text.Encoding" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="encoding">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">Stream to read from.</param>
+        <param name="encoding">Encoding to use. Can be set to null (ASCII will be used in this case).</param>
+        <summary>
+            Read stream content as a string.
+            </summary>
+        <returns>Stream content.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

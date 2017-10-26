@@ -15,7 +15,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides a binding converter to display formatted strings
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -53,12 +55,14 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="language">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">Object to transform to string.</param>
+        <param name="targetType">The type of the target property, as a type reference</param>
+        <param name="parameter">An optional parameter to be used in the string.Format method.</param>
+        <param name="language">The language of the conversion (not used).</param>
+        <summary>
+            Return the formatted string version of the source object.
+            </summary>
+        <returns>Formatted string.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,12 +85,14 @@
         <Parameter Name="language" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="targetType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <param name="language">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The target data being passed to the source.</param>
+        <param name="targetType">The type of the target property, as a type reference (System.Type for Microsoft .NET, a TypeName helper struct for Visual C++ component extensions (C++/CX)).</param>
+        <param name="parameter">An optional parameter to be used in the converter logic.</param>
+        <param name="language">The language of the conversion.</param>
+        <summary>
+            Not implemented.
+            </summary>
+        <returns>The value to be passed to the source object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

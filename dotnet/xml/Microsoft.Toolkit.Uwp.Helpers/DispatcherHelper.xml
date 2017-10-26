@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides static methods helper for executing code in UI thread of the main window.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -33,11 +35,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,11 +63,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,12 +94,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="dispatcher">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -118,12 +126,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="dispatcher">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -144,10 +154,12 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task/&gt;</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -168,10 +180,12 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on UI thread of the main view
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,11 +207,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="viewToExecuteOn">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task/&gt;</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -219,11 +235,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="viewToExecuteOn">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -247,11 +265,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on UI thread of the main view
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -275,11 +295,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="function">Synchronous function to be executed on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -304,12 +326,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="viewToExecuteOn">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -334,12 +358,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="viewToExecuteOn">To be added.</param>
-        <param name="function">To be added.</param>
-        <param name="priority">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Synchronous function with return type <typeparamref name="T" /> to be executed on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

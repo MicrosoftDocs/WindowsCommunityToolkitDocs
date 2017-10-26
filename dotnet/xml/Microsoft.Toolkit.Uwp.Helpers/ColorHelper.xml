@@ -11,7 +11,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            This class provides static helper methods for colors.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -34,12 +36,14 @@
         <Parameter Name="alpha" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="hue">To be added.</param>
-        <param name="saturation">To be added.</param>
-        <param name="lightness">To be added.</param>
-        <param name="alpha">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hue">0..360 range hue</param>
+        <param name="saturation">0..1 range saturation</param>
+        <param name="lightness">0..1 range lightness</param>
+        <param name="alpha">0..1 alpha</param>
+        <summary>
+            Returns a Color struct based on HSL model.
+            </summary>
+        <returns>A Color object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,12 +66,14 @@
         <Parameter Name="alpha" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="hue">To be added.</param>
-        <param name="saturation">To be added.</param>
-        <param name="value">To be added.</param>
-        <param name="alpha">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="hue">0..360 range hue</param>
+        <param name="saturation">0..1 range saturation</param>
+        <param name="value">0..1 range value</param>
+        <param name="alpha">0..1 alpha</param>
+        <summary>
+            Returns a Color struct based on HSV model.
+            </summary>
+        <returns>A Color object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -87,9 +93,11 @@
         <Parameter Name="colorString" Type="System.String" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="colorString">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="colorString">The color string. Any format used in XAML should work.</param>
+        <summary>
+            Returns a color based on XAML color string.
+            </summary>
+        <returns>Parsed color</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -109,9 +117,11 @@
         <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">The Color to convert.</param>
+        <summary>
+            Converts a Color value to a string representation of the value in hexadecimal.
+            </summary>
+        <returns>Returns a string representing the hex value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +141,11 @@
         <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">The Color to convert.</param>
+        <summary>
+            Converts an RGBA Color the HSL representation.
+            </summary>
+        <returns>HslColor.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -153,9 +165,11 @@
         <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">Color to convert.</param>
+        <summary>
+            Converts an RGBA Color the HSV representation.
+            </summary>
+        <returns>HsvColor</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,9 +189,11 @@
         <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="color">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="color">the Color to convert</param>
+        <summary>
+            Returns the color value as a premultiplied Int32 - 4 byte ARGB structure.
+            </summary>
+        <returns>Returns a int representing the color.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

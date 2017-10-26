@@ -14,7 +14,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Provides methods and tools to cache files in a folder
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -29,7 +31,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.ImageCache" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,10 +59,12 @@
         <Parameter Name="initializerKeyValues" Type="System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="stream">To be added.</param>
-        <param name="initializerKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="stream">input stream</param>
+        <param name="initializerKeyValues">key value pairs used when initializing instance of generic type</param>
+        <summary>
+            Cache specific hooks to process items from HTTP response
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,10 +90,12 @@
         <Parameter Name="initializerKeyValues" Type="System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
       </Parameters>
       <Docs>
-        <param name="baseFile">To be added.</param>
-        <param name="initializerKeyValues">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="baseFile">storage file</param>
+        <param name="initializerKeyValues">key value pairs used when initializing instance of generic type</param>
+        <summary>
+            Cache specific hooks to process items from HTTP response
+            </summary>
+        <returns>awaitable task</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +112,9 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.ImageCache</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets public singleton property.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -132,11 +142,13 @@
         <Parameter Name="treatNullFileAsOutOfDate" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="file">To be added.</param>
-        <param name="duration">To be added.</param>
-        <param name="treatNullFileAsOutOfDate">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="file">storage file</param>
+        <param name="duration">cache duration</param>
+        <param name="treatNullFileAsOutOfDate">option to mark uninitialized file as expired</param>
+        <summary>
+            Override-able method that checks whether file is valid or not.
+            </summary>
+        <returns>bool indicate whether file has expired or not</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
