@@ -57,6 +57,7 @@
 ## [FocusTracker](developer-tools/FocusTracker.md)
 
 # Extensions
+## [Composition Visual Attached Properties](extensions/VisualEx.md)
 ## [Hyperlink](extensions/Hyperlink.md)
 ## [ListViewBase](extensions/ListViewBase.md)
 ## [Logical Tree](extensions/LogicalTree.md)
@@ -65,7 +66,6 @@
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
-## [Visual Layer Extensions](extensions/VisualEx.md)
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebView](extensions/WebView.md)
 
