@@ -1,0 +1,406 @@
+﻿<Type Name="AdaptiveGridView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView">
+  <TypeSignature Language="C#" Value="public class AdaptiveGridView : Windows.UI.Xaml.Controls.GridView" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdaptiveGridView extends Windows.UI.Xaml.Controls.GridView" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdaptiveGridView&#xA;Inherits GridView" />
+  <TypeSignature Language="F#" Value="type AdaptiveGridView = class&#xA;    inherit GridView" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdaptiveGridView : Windows::UI::Xaml::Controls::GridView" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AdaptiveGridView : winrt::Windows::UI::Xaml::Controls::GridView" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.GridView</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The AdaptiveGridView control allows to present information within a Grid View perfectly adjusting the
+            total display available space. It reacts to changes in the layout as well as the content so it can adapt
+            to different form factors automatically.
+            </summary>
+    <remarks>
+            The number and the width of items are calculated based on the
+            screen resolution in order to fully leverage the available screen space. The property ItemsHeight define
+            the items fixed height and the property DesiredWidth sets the minimum width for the elements to add a
+            new column.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdaptiveGridView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AdaptiveGridView();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; AdaptiveGridView();" />
+      <MemberSignature Language="C++ WINRT" Value=" AdaptiveGridView();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CalculateItemWidth">
+      <MemberSignature Language="C#" Value="protected virtual double CalculateItemWidth (double containerWidth);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance float64 CalculateItemWidth(float64 containerWidth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.CalculateItemWidth(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateItemWidth (containerWidth As Double) As Double" />
+      <MemberSignature Language="F#" Value="abstract member CalculateItemWidth : double -&gt; double&#xA;override this.CalculateItemWidth : double -&gt; double" Usage="adaptiveGridView.CalculateItemWidth containerWidth" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual double CalculateItemWidth(double containerWidth);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual double CalculateItemWidth(double containerWidth);" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual double CalculateItemWidth(double containerWidth);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="containerWidth" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="containerWidth">The width of the container control.</param>
+        <summary>
+            Calculates the width of the grid items.
+            </summary>
+        <returns>The calculated item width.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredWidth">
+      <MemberSignature Language="C#" Value="public double DesiredWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesiredWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.DesiredWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double DesiredWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the desired width of each item
+            </summary>
+        <value>The width of the desired.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DesiredWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DesiredWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DesiredWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DesiredWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DesiredWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ DesiredWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty DesiredWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.DesiredWidth" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemClickCommand">
+      <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand ItemClickCommand { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand ItemClickCommand" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemClickCommand As ICommand" />
+      <MemberSignature Language="F#" Value="member this.ItemClickCommand : System.Windows.Input.ICommand with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ ItemClickCommand { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Input.ICommand</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the command to execute when an item is clicked and the IsItemClickEnabled property is true.
+            </summary>
+        <value>The item click command.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemClickCommandProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ItemClickCommandProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ItemClickCommandProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommandProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemClickCommandProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemClickCommandProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommandProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ItemClickCommandProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ItemClickCommandProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemClickCommand" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeight">
+      <MemberSignature Language="C#" Value="public double ItemHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ItemHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ItemHeight { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ItemHeight { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the height of each item in the grid.
+            </summary>
+        <value>The height of the item.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemHeightProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ItemHeightProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ItemHeightProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemHeightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemHeightProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeightProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ItemHeightProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ItemHeightProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemHeight" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsPanel">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.ItemsPanelTemplate ItemsPanel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.ItemsPanelTemplate ItemsPanel" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemsPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemsPanel As ItemsPanelTemplate" />
+      <MemberSignature Language="F#" Value="member this.ItemsPanel : Windows.UI.Xaml.Controls.ItemsPanelTemplate" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.ItemsPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Controls::ItemsPanelTemplate ^ ItemsPanel { Windows::UI::Xaml::Controls::ItemsPanelTemplate ^ get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Controls::ItemsPanelTemplate ^ ItemsPanel { Windows::UI::Xaml::Controls::ItemsPanelTemplate ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.ItemsPanelTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the template that defines the panel that controls the layout of items.
+            </summary>
+        <value>
+            An ItemsPanelTemplate that defines the panel to use for the layout of the items.
+            The default value for the ItemsControl is an ItemsPanelTemplate that specifies
+            a StackPanel.
+            </value>
+        <remarks>
+            This property overrides the base ItemsPanel to prevent changing it.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="adaptiveGridView.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ WINRT" Value=" override void OnApplyTemplate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Invoked whenever application code or internal processes (such as a rebuilding layout pass) call
+            ApplyTemplate. In simplest terms, this means the method is called just before a UI element displays
+            in your app. Override this method to influence the default post-template logic of a class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OneRowModeEnabled">
+      <MemberSignature Language="C#" Value="public bool OneRowModeEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OneRowModeEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property OneRowModeEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OneRowModeEnabled : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OneRowModeEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool OneRowModeEnabled { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether only one row should be displayed.
+            </summary>
+        <value>
+          <c>true</c> if only one row is displayed; otherwise, <c>false</c>.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OneRowModeEnabledProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty OneRowModeEnabledProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty OneRowModeEnabledProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OneRowModeEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OneRowModeEnabledProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ OneRowModeEnabledProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty OneRowModeEnabledProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.OneRowModeEnabled" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (Windows.UI.Xaml.DependencyObject obj, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class Windows.UI.Xaml.DependencyObject obj, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (obj As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : Windows.UI.Xaml.DependencyObject * obj -&gt; unit" Usage="adaptiveGridView.PrepareContainerForItemOverride (obj, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(Windows::UI::Xaml::DependencyObject ^ obj, System::Object ^ item);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void PrepareContainerForItemOverride(Windows::UI::Xaml::DependencyObject ^ obj, Platform::Object ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value=" override void PrepareContainerForItemOverride(winrt::Windows::UI::Xaml::DependencyObject const &amp; obj, winrt::Windows::Foundation::IInspectable const &amp; item);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The element that's used to display the specified item.</param>
+        <param name="item">The item to display.</param>
+        <summary>
+            Prepares the specified element to display the specified item.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StretchContentForSingleRow">
+      <MemberSignature Language="C#" Value="public bool StretchContentForSingleRow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool StretchContentForSingleRow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow" />
+      <MemberSignature Language="VB.NET" Value="Public Property StretchContentForSingleRow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.StretchContentForSingleRow : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StretchContentForSingleRow { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool StretchContentForSingleRow { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the control should stretch the content to fill at least one row.
+            </summary>
+        <value>A value indicating whether the control should stretch the content to fill at least one row.</value>
+        <remarks>
+            If set to <c>true</c> (default) and there is only one row of items, the items will be stretched to fill the complete row.
+            If set to <c>false</c>, items will have their normal size, which means a gap can exist at the end of the row.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StretchContentForSingleRowProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty StretchContentForSingleRowProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty StretchContentForSingleRowProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRowProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchContentForSingleRowProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchContentForSingleRowProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRowProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ StretchContentForSingleRowProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty StretchContentForSingleRowProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.AdaptiveGridView.StretchContentForSingleRow" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

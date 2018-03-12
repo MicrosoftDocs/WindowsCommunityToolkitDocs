@@ -1,0 +1,354 @@
+﻿<Type Name="BackgroundTaskHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper">
+  <TypeSignature Language="C#" Value="public static class BackgroundTaskHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BackgroundTaskHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackgroundTaskHelper" />
+  <TypeSignature Language="F#" Value="type BackgroundTaskHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BackgroundTaskHelper abstract sealed" />
+  <TypeSignature Language="C++ CX" Value="public ref class BackgroundTaskHelper abstract sealed" />
+  <TypeSignature Language="C++ WINRT" Value="class BackgroundTaskHelper abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This class provides static helper methods for background task.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetBackgroundTask">
+      <MemberSignature Language="C#" Value="public static Windows.ApplicationModel.Background.IBackgroundTaskRegistration GetBackgroundTask (string backgroundTaskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.ApplicationModel.Background.IBackgroundTaskRegistration GetBackgroundTask(string backgroundTaskName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.GetBackgroundTask(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBackgroundTask (backgroundTaskName As String) As IBackgroundTaskRegistration" />
+      <MemberSignature Language="F#" Value="static member GetBackgroundTask : string -&gt; Windows.ApplicationModel.Background.IBackgroundTaskRegistration" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.GetBackgroundTask backgroundTaskName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::ApplicationModel::Background::IBackgroundTaskRegistration ^ GetBackgroundTask(System::String ^ backgroundTaskName);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static Windows::ApplicationModel::Background::IBackgroundTaskRegistration ^ GetBackgroundTask(Platform::String ^ backgroundTaskName);" />
+      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::ApplicationModel::Background::IBackgroundTaskRegistration GetBackgroundTask(std::wstring const &amp; backgroundTaskName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.Background.IBackgroundTaskRegistration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskName">Name of the background task class</param>
+        <summary>
+            Get the registered background task of the given type.
+            </summary>
+        <returns>background task if there is such background task registered. Otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBackgroundTask">
+      <MemberSignature Language="C#" Value="public static Windows.ApplicationModel.Background.IBackgroundTaskRegistration GetBackgroundTask (Type backgroundTaskType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.ApplicationModel.Background.IBackgroundTaskRegistration GetBackgroundTask(class System.Type backgroundTaskType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.GetBackgroundTask(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBackgroundTask (backgroundTaskType As Type) As IBackgroundTaskRegistration" />
+      <MemberSignature Language="F#" Value="static member GetBackgroundTask : Type -&gt; Windows.ApplicationModel.Background.IBackgroundTaskRegistration" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.GetBackgroundTask backgroundTaskType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::ApplicationModel::Background::IBackgroundTaskRegistration ^ GetBackgroundTask(Type ^ backgroundTaskType);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static Windows::ApplicationModel::Background::IBackgroundTaskRegistration ^ GetBackgroundTask(Platform::Type ^ backgroundTaskType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.Background.IBackgroundTaskRegistration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskType">Type of the background task class. This class has to implement IBackgroundTask</param>
+        <summary>
+            Get the registered background task of the given type.
+            </summary>
+        <returns>Background task if there is such background task registered. Otherwise, null</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBackgroundTaskRegistered">
+      <MemberSignature Language="C#" Value="public static bool IsBackgroundTaskRegistered (string backgroundTaskName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBackgroundTaskRegistered(string backgroundTaskName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.IsBackgroundTaskRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsBackgroundTaskRegistered (backgroundTaskName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsBackgroundTaskRegistered : string -&gt; bool" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.IsBackgroundTaskRegistered backgroundTaskName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBackgroundTaskRegistered(System::String ^ backgroundTaskName);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static bool IsBackgroundTaskRegistered(Platform::String ^ backgroundTaskName);" />
+      <MemberSignature Language="C++ WINRT" Value=" static bool IsBackgroundTaskRegistered(std::wstring const &amp; backgroundTaskName);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <summary>
+            Check if a background task is registered.
+            </summary>
+        <returns>True/False indicating if a background task was registered or not</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsBackgroundTaskRegistered">
+      <MemberSignature Language="C#" Value="public static bool IsBackgroundTaskRegistered (Type backgroundTaskType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBackgroundTaskRegistered(class System.Type backgroundTaskType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.IsBackgroundTaskRegistered(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsBackgroundTaskRegistered (backgroundTaskType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsBackgroundTaskRegistered : Type -&gt; bool" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.IsBackgroundTaskRegistered backgroundTaskType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBackgroundTaskRegistered(Type ^ backgroundTaskType);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static bool IsBackgroundTaskRegistered(Platform::Type ^ backgroundTaskType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskType">The type of the background task. This class has to implement IBackgroundTask</param>
+        <summary>
+            Check if a background task is registered.
+            </summary>
+        <returns>True/False indicating if a background task was registered or not</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static Windows.ApplicationModel.Background.BackgroundTaskRegistration Register (string backgroundTaskName, Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister = false, bool enforceConditions = true, params Windows.ApplicationModel.Background.IBackgroundCondition[] conditions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.ApplicationModel.Background.BackgroundTaskRegistration Register(string backgroundTaskName, class Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister, bool enforceConditions, class Windows.ApplicationModel.Background.IBackgroundCondition[] conditions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register(System.String,Windows.ApplicationModel.Background.IBackgroundTrigger,System.Boolean,System.Boolean,Windows.ApplicationModel.Background.IBackgroundCondition[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (backgroundTaskName As String, trigger As IBackgroundTrigger, Optional forceRegister As Boolean = false, Optional enforceConditions As Boolean = true, ParamArray conditions As IBackgroundCondition()) As BackgroundTaskRegistration" />
+      <MemberSignature Language="F#" Value="static member Register : string * Windows.ApplicationModel.Background.IBackgroundTrigger * bool * bool * Windows.ApplicationModel.Background.IBackgroundCondition[] -&gt; Windows.ApplicationModel.Background.BackgroundTaskRegistration" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register (backgroundTaskName, trigger, forceRegister, enforceConditions, conditions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.Background.BackgroundTaskRegistration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskName" Type="System.String" />
+        <Parameter Name="trigger" Type="Windows.ApplicationModel.Background.IBackgroundTrigger" />
+        <Parameter Name="forceRegister" Type="System.Boolean" />
+        <Parameter Name="enforceConditions" Type="System.Boolean" />
+        <Parameter Name="conditions" Type="Windows.ApplicationModel.Background.IBackgroundCondition[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            This registers under the Single Process Model. WARNING: Single Process Model only works with Windows 10 Anniversary Update (14393) and later.
+            Register a background task with conditions.
+            If the task is already registered and has the same trigger, returns the existing registration if it has the same trigger.
+            If the task is already registered but has different trigger, return null by default.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static Windows.ApplicationModel.Background.BackgroundTaskRegistration Register (Type backgroundTaskType, Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister = false, bool enforceConditions = true, params Windows.ApplicationModel.Background.IBackgroundCondition[] conditions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.ApplicationModel.Background.BackgroundTaskRegistration Register(class System.Type backgroundTaskType, class Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister, bool enforceConditions, class Windows.ApplicationModel.Background.IBackgroundCondition[] conditions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register(System.Type,Windows.ApplicationModel.Background.IBackgroundTrigger,System.Boolean,System.Boolean,Windows.ApplicationModel.Background.IBackgroundCondition[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (backgroundTaskType As Type, trigger As IBackgroundTrigger, Optional forceRegister As Boolean = false, Optional enforceConditions As Boolean = true, ParamArray conditions As IBackgroundCondition()) As BackgroundTaskRegistration" />
+      <MemberSignature Language="F#" Value="static member Register : Type * Windows.ApplicationModel.Background.IBackgroundTrigger * bool * bool * Windows.ApplicationModel.Background.IBackgroundCondition[] -&gt; Windows.ApplicationModel.Background.BackgroundTaskRegistration" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register (backgroundTaskType, trigger, forceRegister, enforceConditions, conditions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.Background.BackgroundTaskRegistration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskType" Type="System.Type" />
+        <Parameter Name="trigger" Type="Windows.ApplicationModel.Background.IBackgroundTrigger" />
+        <Parameter Name="forceRegister" Type="System.Boolean" />
+        <Parameter Name="enforceConditions" Type="System.Boolean" />
+        <Parameter Name="conditions" Type="Windows.ApplicationModel.Background.IBackgroundCondition[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskType">The type of the background task. This class has to implement IBackgroundTask</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            Register a background task with conditions.
+            If the task is already registered and has the same trigger, returns the existing registration if it has the same trigger.
+            If the task is already registered but has different trigger, return null by default.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register">
+      <MemberSignature Language="C#" Value="public static Windows.ApplicationModel.Background.BackgroundTaskRegistration Register (string backgroundTaskName, string backgroundTaskEntryPoint, Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister = false, bool enforceConditions = true, params Windows.ApplicationModel.Background.IBackgroundCondition[] conditions);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.ApplicationModel.Background.BackgroundTaskRegistration Register(string backgroundTaskName, string backgroundTaskEntryPoint, class Windows.ApplicationModel.Background.IBackgroundTrigger trigger, bool forceRegister, bool enforceConditions, class Windows.ApplicationModel.Background.IBackgroundCondition[] conditions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register(System.String,System.String,Windows.ApplicationModel.Background.IBackgroundTrigger,System.Boolean,System.Boolean,Windows.ApplicationModel.Background.IBackgroundCondition[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Register (backgroundTaskName As String, backgroundTaskEntryPoint As String, trigger As IBackgroundTrigger, Optional forceRegister As Boolean = false, Optional enforceConditions As Boolean = true, ParamArray conditions As IBackgroundCondition()) As BackgroundTaskRegistration" />
+      <MemberSignature Language="F#" Value="static member Register : string * string * Windows.ApplicationModel.Background.IBackgroundTrigger * bool * bool * Windows.ApplicationModel.Background.IBackgroundCondition[] -&gt; Windows.ApplicationModel.Background.BackgroundTaskRegistration" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Register (backgroundTaskName, backgroundTaskEntryPoint, trigger, forceRegister, enforceConditions, conditions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.Background.BackgroundTaskRegistration</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskName" Type="System.String" />
+        <Parameter Name="backgroundTaskEntryPoint" Type="System.String" />
+        <Parameter Name="trigger" Type="Windows.ApplicationModel.Background.IBackgroundTrigger" />
+        <Parameter Name="forceRegister" Type="System.Boolean" />
+        <Parameter Name="enforceConditions" Type="System.Boolean" />
+        <Parameter Name="conditions" Type="Windows.ApplicationModel.Background.IBackgroundCondition[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskName">Name of the background task class</param>
+        <param name="backgroundTaskEntryPoint">Entry point of the background task.</param>
+        <param name="trigger">Trigger that indicate when the background task should be invoked</param>
+        <param name="forceRegister">Indicate if the background task will be force installed in the case of being already registered</param>
+        <param name="enforceConditions">Indicate if the background task should quit if condition is no longer valid</param>
+        <param name="conditions">Optional conditions for the background task to run with</param>
+        <summary>
+            Register a background task with conditions.
+            If the task is already registered, return null.
+            Or set <paramref name="forceRegister" /> to true to un-register the old one and then re-register.
+            </summary>
+        <returns>Background Task that was registered with the system</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (string backgroundTaskName, bool forceExit = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(string backgroundTaskName, bool forceExit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (backgroundTaskName As String, Optional forceExit As Boolean = true)" />
+      <MemberSignature Language="F#" Value="static member Unregister : string * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister (backgroundTaskName, forceExit)" />
+      <MemberSignature Language="C++ WINRT" Value=" static void Unregister(std::wstring const &amp; backgroundTaskName, bool forceExit = true);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskName" Type="System.String" />
+        <Parameter Name="forceExit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskName">The name of the background task class</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (Type backgroundTaskType, bool forceExit = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(class System.Type backgroundTaskType, bool forceExit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (backgroundTaskType As Type, Optional forceExit As Boolean = true)" />
+      <MemberSignature Language="F#" Value="static member Unregister : Type * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister (backgroundTaskType, forceExit)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTaskType" Type="System.Type" />
+        <Parameter Name="forceExit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTaskType">The type of the background task</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister">
+      <MemberSignature Language="C#" Value="public static void Unregister (Windows.ApplicationModel.Background.IBackgroundTaskRegistration backgroundTask, bool forceExit = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(class Windows.ApplicationModel.Background.IBackgroundTaskRegistration backgroundTask, bool forceExit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister(Windows.ApplicationModel.Background.IBackgroundTaskRegistration,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (backgroundTask As IBackgroundTaskRegistration, Optional forceExit As Boolean = true)" />
+      <MemberSignature Language="F#" Value="static member Unregister : Windows.ApplicationModel.Background.IBackgroundTaskRegistration * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.Unregister (backgroundTask, forceExit)" />
+      <MemberSignature Language="C++ WINRT" Value=" static void Unregister(winrt::Windows::ApplicationModel::Background::IBackgroundTaskRegistration const &amp; backgroundTask, bool forceExit = true);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundTask" Type="Windows.ApplicationModel.Background.IBackgroundTaskRegistration" />
+        <Parameter Name="forceExit" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundTask">A background task that was previously registered with the system</param>
+        <param name="forceExit">Force the background task to quit if it is currently running (at the time of unregistering). Default value is true.</param>
+        <summary>
+            Unregister a background task
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
