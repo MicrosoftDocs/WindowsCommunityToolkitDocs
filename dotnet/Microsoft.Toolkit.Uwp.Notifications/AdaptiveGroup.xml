@@ -1,0 +1,81 @@
+<Type Name="AdaptiveGroup" FullName="Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup">
+  <TypeSignature Language="C#" Value="public sealed class AdaptiveGroup : Microsoft.Toolkit.Uwp.Notifications.IAdaptiveChild, Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild, Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AdaptiveGroup extends System.Object implements class Microsoft.Toolkit.Uwp.Notifications.IAdaptiveChild, class Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild, class Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AdaptiveGroup&#xA;Implements IAdaptiveChild, ITileBindingContentAdaptiveChild, IToastBindingGenericChild" />
+  <TypeSignature Language="F#" Value="type AdaptiveGroup = class&#xA;    interface ITileBindingContentAdaptiveChild&#xA;    interface IAdaptiveChild&#xA;    interface IToastBindingGenericChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdaptiveGroup sealed : Microsoft::Toolkit::Uwp::Notifications::IAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::ITileBindingContentAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::IToastBindingGenericChild" />
+  <TypeSignature Language="C++ CX" Value="public ref class AdaptiveGroup sealed : Microsoft::Toolkit::Uwp::Notifications::IAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::ITileBindingContentAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::IToastBindingGenericChild" />
+  <TypeSignature Language="C++ WINRT" Value="class AdaptiveGroup sealed : Microsoft::Toolkit::Uwp::Notifications::IAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::ITileBindingContentAdaptiveChild, Microsoft::Toolkit::Uwp::Notifications::IToastBindingGenericChild" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.Notifications.IAdaptiveChild</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Groups semantically identify that the content in the group must either be displayed as a whole, or not displayed if it cannot fit. Groups also allow creating multiple columns. Supported on Tiles since RTM. Supported on Toasts since Anniversary Update.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AdaptiveGroup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AdaptiveGroup();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; AdaptiveGroup();" />
+      <MemberSignature Language="C++ WINRT" Value=" AdaptiveGroup();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Children">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup&gt; Children { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup&gt; Children" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As IList(Of AdaptiveSubgroup)" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup&gt;" Usage="Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;Microsoft::Toolkit::Uwp::Notifications::AdaptiveSubgroup ^&gt; ^ Children { System::Collections::Generic::IList&lt;Microsoft::Toolkit::Uwp::Notifications::AdaptiveSubgroup ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the only valid children of groups are <see cref="T:Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup" />.
+            Each subgroup is displayed as a separate vertical column. Note that you must
+            include at least one subgroup in your group, otherwise an <see cref="T:System.InvalidOperationException" />
+            will be thrown when you try to retrieve the XML for the notification.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

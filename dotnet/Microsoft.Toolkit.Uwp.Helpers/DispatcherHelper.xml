@@ -1,0 +1,402 @@
+<Type Name="DispatcherHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper">
+  <TypeSignature Language="C#" Value="public static class DispatcherHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DispatcherHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Module DispatcherHelper" />
+  <TypeSignature Language="F#" Value="type DispatcherHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherHelper abstract sealed" />
+  <TypeSignature Language="C++ CX" Value="public ref class DispatcherHelper abstract sealed" />
+  <TypeSignature Language="C++ WINRT" Value="class DispatcherHelper abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This class provides static methods helper for executing code in UI thread of the main window.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AwaitableRunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AwaitableRunAsync (this Windows.UI.Core.CoreDispatcher dispatcher, Action function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AwaitableRunAsync(class Windows.UI.Core.CoreDispatcher dispatcher, class System.Action function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Action,Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AwaitableRunAsync (dispatcher As CoreDispatcher, function As Action, Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member AwaitableRunAsync : Windows.UI.Core.CoreDispatcher * Action * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Windows.UI.Core.CoreDispatcher" RefType="this" />
+        <Parameter Name="function" Type="System.Action" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitableRunAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task AwaitableRunAsync (this Windows.UI.Core.CoreDispatcher dispatcher, Func&lt;System.Threading.Tasks.Task&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task AwaitableRunAsync(class Windows.UI.Core.CoreDispatcher dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AwaitableRunAsync (dispatcher As CoreDispatcher, function As Func(Of Task), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member AwaitableRunAsync : Windows.UI.Core.CoreDispatcher * Func&lt;System.Threading.Tasks.Task&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Windows.UI.Core.CoreDispatcher" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitableRunAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; AwaitableRunAsync&lt;T&gt; (this Windows.UI.Core.CoreDispatcher dispatcher, Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; AwaitableRunAsync&lt;T&gt;(class Windows.UI.Core.CoreDispatcher dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AwaitableRunAsync(Of T) (dispatcher As CoreDispatcher, function As Func(Of Task(Of T)), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member AwaitableRunAsync : Windows.UI.Core.CoreDispatcher * Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Windows.UI.Core.CoreDispatcher" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AwaitableRunAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; AwaitableRunAsync&lt;T&gt; (this Windows.UI.Core.CoreDispatcher dispatcher, Func&lt;T&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; AwaitableRunAsync&lt;T&gt;(class Windows.UI.Core.CoreDispatcher dispatcher, class System.Func`1&lt;!!T&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync``1(Windows.UI.Core.CoreDispatcher,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AwaitableRunAsync(Of T) (dispatcher As CoreDispatcher, function As Func(Of T), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member AwaitableRunAsync : Windows.UI.Core.CoreDispatcher * Func&lt;'T&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.AwaitableRunAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Windows.UI.Core.CoreDispatcher" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
+        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            </summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ExecuteOnUIThreadAsync (Action function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ExecuteOnUIThreadAsync(class System.Action function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(System.Action,Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteOnUIThreadAsync (function As Action, Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Action * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="function" Type="System.Action" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task/&gt;</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ExecuteOnUIThreadAsync (Func&lt;System.Threading.Tasks.Task&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ExecuteOnUIThreadAsync(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteOnUIThreadAsync (function As Func(Of Task), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Func&lt;System.Threading.Tasks.Task&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on UI thread of the main view
+            </summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ExecuteOnUIThreadAsync (this Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, Action function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ExecuteOnUIThreadAsync(class Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, class System.Action function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Action,Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExecuteOnUIThreadAsync (viewToExecuteOn As CoreApplicationView, function As Action, Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Windows.ApplicationModel.Core.CoreApplicationView * Action * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (viewToExecuteOn, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewToExecuteOn" Type="Windows.ApplicationModel.Core.CoreApplicationView" RefType="this" />
+        <Parameter Name="function" Type="System.Action" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task/&gt;</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task ExecuteOnUIThreadAsync (this Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, Func&lt;System.Threading.Tasks.Task&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task ExecuteOnUIThreadAsync(class Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, class System.Func`1&lt;class System.Threading.Tasks.Task&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExecuteOnUIThreadAsync (viewToExecuteOn As CoreApplicationView, function As Func(Of Task), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Windows.ApplicationModel.Core.CoreApplicationView * Func&lt;System.Threading.Tasks.Task&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (viewToExecuteOn, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="viewToExecuteOn" Type="Windows.ApplicationModel.Core.CoreApplicationView" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ExecuteOnUIThreadAsync&lt;T&gt; (Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ExecuteOnUIThreadAsync&lt;T&gt;(class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteOnUIThreadAsync(Of T) (function As Func(Of Task(Of T)), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on UI thread of the main view
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ExecuteOnUIThreadAsync&lt;T&gt; (Func&lt;T&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ExecuteOnUIThreadAsync&lt;T&gt;(class System.Func`1&lt;!!T&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteOnUIThreadAsync(Of T) (function As Func(Of T), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Func&lt;'T&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="function" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="function">Synchronous function to be executed on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ExecuteOnUIThreadAsync&lt;T&gt; (this Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ExecuteOnUIThreadAsync&lt;T&gt;(class Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{System.Threading.Tasks.Task{``0}},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExecuteOnUIThreadAsync(Of T) (viewToExecuteOn As CoreApplicationView, function As Func(Of Task(Of T)), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Windows.ApplicationModel.Core.CoreApplicationView * Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (viewToExecuteOn, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="viewToExecuteOn" Type="Windows.ApplicationModel.Core.CoreApplicationView" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; ExecuteOnUIThreadAsync&lt;T&gt; (this Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, Func&lt;T&gt; function, Windows.UI.Core.CoreDispatcherPriority priority = Windows.UI.Core.CoreDispatcherPriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; ExecuteOnUIThreadAsync&lt;T&gt;(class Windows.ApplicationModel.Core.CoreApplicationView viewToExecuteOn, class System.Func`1&lt;!!T&gt; function, valuetype Windows.UI.Core.CoreDispatcherPriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync``1(Windows.ApplicationModel.Core.CoreApplicationView,System.Func{``0},Windows.UI.Core.CoreDispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ExecuteOnUIThreadAsync(Of T) (viewToExecuteOn As CoreApplicationView, function As Func(Of T), Optional priority As CoreDispatcherPriority = Windows.UI.Core.CoreDispatcherPriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member ExecuteOnUIThreadAsync : Windows.ApplicationModel.Core.CoreApplicationView * Func&lt;'T&gt; * Windows.UI.Core.CoreDispatcherPriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.DispatcherHelper.ExecuteOnUIThreadAsync (viewToExecuteOn, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="viewToExecuteOn" Type="Windows.ApplicationModel.Core.CoreApplicationView" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">returned data type of the function</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
+        <param name="function">Synchronous function with return type <typeparamref name="T" /> to be executed on UI thread</param>
+        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <summary>
+            Execute the given function asynchronously on given view's UI thread. Default view is the main view.
+            </summary>
+        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,443 @@
+<Type Name="IncrementalLoadingCollection&lt;TSource,IType&gt;" FullName="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;TSource,IType&gt;">
+  <TypeSignature Language="C#" Value="public class IncrementalLoadingCollection&lt;TSource,IType&gt; : System.Collections.ObjectModel.ObservableCollection&lt;IType&gt;, Windows.UI.Xaml.Data.ISupportIncrementalLoading where TSource : IIncrementalSource&lt;IType&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncrementalLoadingCollection`2&lt;(class Microsoft.Toolkit.Collections.IIncrementalSource`1&lt;!IType&gt;) TSource, IType&gt; extends System.Collections.ObjectModel.ObservableCollection`1&lt;!IType&gt; implements class Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" />
+  <TypeSignature Language="VB.NET" Value="Public Class IncrementalLoadingCollection(Of TSource, IType)&#xA;Inherits ObservableCollection(Of IType)&#xA;Implements ISupportIncrementalLoading" />
+  <TypeSignature Language="F#" Value="type IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; IIncrementalSource&lt;'IType&gt;)&gt; = class&#xA;    inherit ObservableCollection&lt;'IType&gt;&#xA;    interface ISupportIncrementalLoading" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource, typename IType&gt;&#xA; where TSource : IIncrementalSource&lt;IType&gt;public ref class IncrementalLoadingCollection : System::Collections::ObjectModel::ObservableCollection&lt;IType&gt;, Windows::UI::Xaml::Data::ISupportIncrementalLoading" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSource">
+      <Constraints>
+        <InterfaceName>Microsoft.Toolkit.Collections.IIncrementalSource&lt;IType&gt;</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="IType" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Collections.ObjectModel.ObservableCollection&lt;IType&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">IType</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Windows.UI.Xaml.Data.ISupportIncrementalLoading</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TSource">
+            The data source that must be loaded incrementally.
+            </typeparam>
+    <typeparam name="IType">
+            The type of collection items.
+            </typeparam>
+    <summary>
+            This class represents an <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> whose items can be loaded incrementally.
+            </summary>
+    <remarks>To be added.</remarks>
+    <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
+    <altmember cref="T:Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; : int * Action * Action * Action&lt;Exception&gt; -&gt; Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;" Usage="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; (itemsPerPage, onStartLoading, onEndLoading, onError)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="itemsPerPage" Type="System.Int32" />
+        <Parameter Name="onStartLoading" Type="System.Action" />
+        <Parameter Name="onEndLoading" Type="System.Action" />
+        <Parameter Name="onError" Type="System.Action&lt;System.Exception&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="itemsPerPage">
+            The number of items to retrieve for each call. Default is 20.
+            </param>
+        <param name="onStartLoading">
+            An <see cref="T:System.Action" /> that is called when a retrieval operation begins.
+            </param>
+        <param name="onEndLoading">
+            An <see cref="T:System.Action" /> that is called when a retrieval operation ends.
+            </param>
+        <param name="onError">
+            An <see cref="T:System.Action" /> that is called if an error occours during data retrieval.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class optionally specifying how many items to load for each data page.
+            </summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (TSource source, int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSource source, int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(`0,System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As TSource, Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; : 'Source * int * Action * Action * Action&lt;Exception&gt; -&gt; Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;" Usage="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; (source, itemsPerPage, onStartLoading, onEndLoading, onError)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="source" Type="TSource" />
+        <Parameter Name="itemsPerPage" Type="System.Int32" />
+        <Parameter Name="onStartLoading" Type="System.Action" />
+        <Parameter Name="onEndLoading" Type="System.Action" />
+        <Parameter Name="onError" Type="System.Action&lt;System.Exception&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="source">
+            An implementation of the <see cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" /> interface that contains the logic to actually load data incrementally.
+            </param>
+        <param name="itemsPerPage">
+            The number of items to retrieve for each call. Default is 20.
+            </param>
+        <param name="onStartLoading">
+            An <see cref="T:System.Action" /> that is called when a retrieval operation begins.
+            </param>
+        <param name="onEndLoading">
+            An <see cref="T:System.Action" /> that is called when a retrieval operation ends.
+            </param>
+        <param name="onError">
+            An <see cref="T:System.Action" /> that is called if an error occours during data retrieval.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class using the specified <see cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" /> implementation and, optionally, how many items to load for each data page.
+            </summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentPageIndex">
+      <MemberSignature Language="C#" Value="protected int CurrentPageIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentPageIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.CurrentPageIndex" />
+      <MemberSignature Language="VB.NET" Value="Protected Property CurrentPageIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.CurrentPageIndex : int with get, set" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.CurrentPageIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int CurrentPageIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property int CurrentPageIndex { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating The zero-based index of the current items page.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasMoreItems">
+      <MemberSignature Language="C#" Value="public bool HasMoreItems { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasMoreItems" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.HasMoreItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasMoreItems As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasMoreItems : bool" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.HasMoreItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasMoreItems { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool HasMoreItems { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the collection contains more items to retrieve.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLoading">
+      <MemberSignature Language="C#" Value="public bool IsLoading { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsLoading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.IsLoading" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoading As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLoading : bool" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.IsLoading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoading { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsLoading { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether new items are being loaded.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsPerPage">
+      <MemberSignature Language="C#" Value="protected int ItemsPerPage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ItemsPerPage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.ItemsPerPage" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ItemsPerPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemsPerPage : int" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.ItemsPerPage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int ItemsPerPage { int get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property int ItemsPerPage { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating how many items that must be retrieved for each incremental call.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadDataAsync">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt; LoadDataAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!IType&gt;&gt; LoadDataAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.LoadDataAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;&#xA;override this.LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;" Usage="incrementalLoadingCollection.LoadDataAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;IType&gt; ^&gt; ^ LoadDataAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2/&lt;LoadDataAsync&gt;d__37))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">
+            Used to propagate notification that operation should be canceled.
+            </param>
+        <summary>
+            Actually performs the incremental loading.
+            </summary>
+        <returns>
+            Returns a collection of <typeparamref name="IType" />.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadMoreItemsAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt; LoadMoreItemsAsync (uint count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;valuetype Windows.UI.Xaml.Data.LoadMoreItemsResult&gt; LoadMoreItemsAsync(unsigned int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.LoadMoreItemsAsync(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadMoreItemsAsync (count As UInteger) As IAsyncOperation(Of LoadMoreItemsResult)" />
+      <MemberSignature Language="F#" Value="abstract member LoadMoreItemsAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;&#xA;override this.LoadMoreItemsAsync : uint32 -&gt; Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;" Usage="incrementalLoadingCollection.LoadMoreItemsAsync count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Windows::Foundation::IAsyncOperation&lt;Windows::UI::Xaml::Data::LoadMoreItemsResult&gt; ^ LoadMoreItemsAsync(System::UInt32 count);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; Windows::Foundation::IAsyncOperation&lt;Windows::UI::Xaml::Data::LoadMoreItemsResult&gt; ^ LoadMoreItemsAsync(unsigned int count);" />
+      <MemberSignature Language="C++ WINRT" Value="winrt::Windows::Foundation::IAsyncOperation&lt;Windows::UI::Xaml::Data::LoadMoreItemsResult&gt; LoadMoreItemsAsync(unsigned int count);" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Windows.UI.Xaml.Data.ISupportIncrementalLoading.LoadMoreItemsAsync(System.UInt32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="count">
+            The number of items to load.
+            </param>
+        <summary>
+            Initializes incremental loading from the view.
+            </summary>
+        <returns>
+            An object of the <see cref="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.LoadMoreItemsAsync(System.UInt32)" /> that specifies how many items have been actually retrieved.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEndLoading">
+      <MemberSignature Language="C#" Value="public Action OnEndLoading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action OnEndLoading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.OnEndLoading" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnEndLoading As Action" />
+      <MemberSignature Language="F#" Value="member this.OnEndLoading : Action with get, set" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.OnEndLoading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action ^ OnEndLoading { Action ^ get(); void set(Action ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an <see cref="T:System.Action" /> that is called when a retrieval operation ends.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnError">
+      <MemberSignature Language="C#" Value="public Action&lt;Exception&gt; OnError { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class System.Exception&gt; OnError" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.OnError" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnError As Action(Of Exception)" />
+      <MemberSignature Language="F#" Value="member this.OnError : Action&lt;Exception&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.OnError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;Exception ^&gt; ^ OnError { Action&lt;Exception ^&gt; ^ get(); void set(Action&lt;Exception ^&gt; ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;System.Exception&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an <see cref="T:System.Action" /> that is called if an error occours during data retrieval. The actual <see cref="T:System.Exception" /> is passed as an argument.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnStartLoading">
+      <MemberSignature Language="C#" Value="public Action OnStartLoading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action OnStartLoading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.OnStartLoading" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnStartLoading As Action" />
+      <MemberSignature Language="F#" Value="member this.OnStartLoading : Action with get, set" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.OnStartLoading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action ^ OnStartLoading { Action ^ get(); void set(Action ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an <see cref="T:System.Action" /> that is called when a retrieval operation begins.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Refresh">
+      <MemberSignature Language="C#" Value="public void Refresh ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="incrementalLoadingCollection.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Refresh();" />
+      <MemberSignature Language="C++ WINRT" Value="void Refresh();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clears the collection and resets the page index
+            which triggers an automatic reload of the first page
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task RefreshAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task RefreshAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.RefreshAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function RefreshAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.RefreshAsync : unit -&gt; System.Threading.Tasks.Task" Usage="incrementalLoadingCollection.RefreshAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ RefreshAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("RefreshAsync is deprecated, please use Refresh instead.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2/&lt;RefreshAsync&gt;d__35))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clears the collection and reloads data from the source
+            </summary>
+        <returns>This method does not return a result</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="protected TSource Source { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TSource Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Source" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Source As TSource" />
+      <MemberSignature Language="F#" Value="member this.Source : 'Source" Usage="Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;.Source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property TSource Source { TSource get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property TSource Source { TSource get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating the source of incremental loading.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

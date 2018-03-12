@@ -1,0 +1,464 @@
+<Type Name="RangeSelector" FullName="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector">
+  <TypeSignature Language="C#" Value="public class RangeSelector : Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeSelector extends Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class RangeSelector&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type RangeSelector = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RangeSelector : Windows::UI::Xaml::Controls::Control" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RangeSelector : winrt::Windows::UI::Xaml::Controls::Control" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="OutOfRangeContentContainer", Type=typeof(Windows.UI.Xaml.Controls.Border))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="ActiveRectangle", Type=typeof(Windows.UI.Xaml.Shapes.Rectangle))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="MinThumb", Type=typeof(Windows.UI.Xaml.Controls.Primitives.Thumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="MaxThumb", Type=typeof(Windows.UI.Xaml.Controls.Primitives.Thumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="ContainerCanvas", Type=typeof(Windows.UI.Xaml.Controls.Canvas))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="ControlGrid", Type=typeof(Windows.UI.Xaml.Controls.Grid))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Normal")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MinPressed")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MaxPressed")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Disabled")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            RangeSelector is a "double slider" control for range values.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RangeSelector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RangeSelector();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; RangeSelector();" />
+      <MemberSignature Language="C++ WINRT" Value=" RangeSelector();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector" /> class.
+            Create a default range selector control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTouchOptimized">
+      <MemberSignature Language="C#" Value="public bool IsTouchOptimized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTouchOptimized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimized" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTouchOptimized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTouchOptimized : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTouchOptimized { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsTouchOptimized { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the control is optimized for touch use.
+            </summary>
+        <value>
+            The value for touch optimization.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTouchOptimizedProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty IsTouchOptimizedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty IsTouchOptimizedProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimizedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTouchOptimizedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTouchOptimizedProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimizedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ IsTouchOptimizedProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty IsTouchOptimizedProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the IsTouchOptimized dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
+      <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum value of the range.
+            </summary>
+        <value>
+            The maximum.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaximumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaximumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.MaximumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MaximumProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MaximumProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Maximum dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
+      <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the minimum value of the range.
+            </summary>
+        <value>
+            The minimum.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MinimumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MinimumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinimumProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.MinimumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MinimumProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MinimumProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Minimum dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="rangeSelector.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ WINRT" Value=" override void OnApplyTemplate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Update the visual state of the control when its template is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeMax">
+      <MemberSignature Language="C#" Value="public double RangeMax { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RangeMax" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMax" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeMax As Double" />
+      <MemberSignature Language="F#" Value="member this.RangeMax : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMax" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RangeMax { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double RangeMax { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current upper limit value of the range.
+            </summary>
+        <value>
+            The current upper limit.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeMaxProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty RangeMaxProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty RangeMaxProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMaxProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RangeMaxProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RangeMaxProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMaxProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ RangeMaxProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty RangeMaxProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the RangeMax dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeMin">
+      <MemberSignature Language="C#" Value="public double RangeMin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RangeMin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMin" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeMin As Double" />
+      <MemberSignature Language="F#" Value="member this.RangeMin : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RangeMin { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double RangeMin { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current lower limit value of the range.
+            </summary>
+        <value>
+            The current lower limit.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeMinProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty RangeMinProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty RangeMinProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMinProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RangeMinProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RangeMinProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.RangeMinProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ RangeMinProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty RangeMinProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the RangeMin dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepFrequency">
+      <MemberSignature Language="C#" Value="public double StepFrequency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StepFrequency" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.StepFrequency" />
+      <MemberSignature Language="VB.NET" Value="Public Property StepFrequency As Double" />
+      <MemberSignature Language="F#" Value="member this.StepFrequency : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.StepFrequency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StepFrequency { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double StepFrequency { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value part of a value range that steps should be created for.
+            </summary>
+        <value>
+            The value part of a value range that steps should be created for.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepFrequencyProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty StepFrequencyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty StepFrequencyProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.StepFrequencyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StepFrequencyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepFrequencyProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.StepFrequencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ StepFrequencyProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty StepFrequencyProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the StepFrequency dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbDragCompleted">
+      <MemberSignature Language="C#" Value="public event Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler ThumbDragCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler ThumbDragCompleted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.ThumbDragCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ThumbDragCompleted As DragCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ThumbDragCompleted : Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler " Usage="member this.ThumbDragCompleted : Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Windows::UI::Xaml::Controls::Primitives::DragCompletedEventHandler ^ ThumbDragCompleted;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range thumbs end being dragged.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbDragStarted">
+      <MemberSignature Language="C#" Value="public event Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler ThumbDragStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler ThumbDragStarted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.ThumbDragStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ThumbDragStarted As DragStartedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ThumbDragStarted : Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler " Usage="member this.ThumbDragStarted : Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Windows::UI::Xaml::Controls::Primitives::DragStartedEventHandler ^ ThumbDragStarted;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range thumbs start being dragged.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt; ValueChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt; ValueChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.ValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ValueChanged As EventHandler(Of RangeChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt; " Usage="member this.ValueChanged : System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;Microsoft::Toolkit::Uwp::UI::Controls::RangeChangedEventArgs ^&gt; ^ ValueChanged;" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range values are changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
