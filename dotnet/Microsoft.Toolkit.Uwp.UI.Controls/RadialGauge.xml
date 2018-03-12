@@ -1,0 +1,1331 @@
+﻿<Type Name="RadialGauge" FullName="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge">
+  <TypeSignature Language="C#" Value="public class RadialGauge : Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadialGauge extends Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge" />
+  <TypeSignature Language="VB.NET" Value="Public Class RadialGauge&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type RadialGauge = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RadialGauge : Windows::UI::Xaml::Controls::Control" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class RadialGauge : winrt::Windows::UI::Xaml::Controls::Control" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_Container", Type=typeof(Windows.UI.Xaml.Controls.Grid))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_Scale", Type=typeof(Windows.UI.Xaml.Shapes.Path))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_Trail", Type=typeof(Windows.UI.Xaml.Shapes.Path))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_ValueText", Type=typeof(Windows.UI.Xaml.Controls.TextBlock))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A Modern UI Radial Gauge using XAML and Composition API.
+            The scale of the gauge is a clockwise arc that sweeps from MinAngle (default lower left, at -150°) to MaxAngle (default lower right, at +150°).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadialGauge ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RadialGauge();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; RadialGauge();" />
+      <MemberSignature Language="C++ WINRT" Value=" RadialGauge();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge" /> class.
+            Create a default radial gauge control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInteractive">
+      <MemberSignature Language="C#" Value="public bool IsInteractive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInteractive" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.IsInteractive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInteractive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInteractive : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.IsInteractive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInteractive { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsInteractive { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the control accepts setting its value through interaction.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInteractiveProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty IsInteractiveProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty IsInteractiveProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.IsInteractiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInteractiveProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInteractiveProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.IsInteractiveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ IsInteractiveProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty IsInteractiveProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.IsInteractive" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxAngle">
+      <MemberSignature Language="C#" Value="public int MaxAngle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxAngle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaxAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxAngle As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxAngle : int with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaxAngle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxAngle { int get(); void set(int value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MaxAngle { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the end angle of the scale, which corresponds with the Maximum value, in degrees.
+            </summary>
+        <value>To be added.</value>
+        <remarks>Changing MaxAngle may require retemplating the control.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxAngleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaxAngleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaxAngleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaxAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxAngleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxAngleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaxAngleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MaxAngleProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MaxAngleProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the MaxAngle dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
+      <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Maximum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double Maximum { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum value of the scale.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaximumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaximumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MaximumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MaximumProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MaximumProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Maximum dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinAngle">
+      <MemberSignature Language="C#" Value="public int MinAngle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MinAngle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinAngle" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinAngle As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinAngle : int with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinAngle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinAngle { int get(); void set(int value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MinAngle { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the start angle of the scale, which corresponds with the Minimum value, in degrees.
+            </summary>
+        <value>To be added.</value>
+        <remarks>Changing MinAngle may require retemplating the control.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinAngleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MinAngleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MinAngleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinAngleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinAngleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinAngleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MinAngleProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MinAngleProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the MinAngle dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
+      <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double Minimum { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the minimum value of the scale.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MinimumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MinimumProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinimumProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.MinimumProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ MinimumProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty MinimumProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Minimum dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.SolidColorBrush NeedleBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.SolidColorBrush NeedleBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property NeedleBrush As SolidColorBrush" />
+      <MemberSignature Language="F#" Value="member this.NeedleBrush : Windows.UI.Xaml.Media.SolidColorBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ NeedleBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ NeedleBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the needle brush.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NeedleBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NeedleBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NeedleBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NeedleBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ NeedleBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty NeedleBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the NeedleBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleLength">
+      <MemberSignature Language="C#" Value="public double NeedleLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NeedleLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property NeedleLength As Double" />
+      <MemberSignature Language="F#" Value="member this.NeedleLength : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NeedleLength { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double NeedleLength { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the needle length, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleLengthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NeedleLengthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NeedleLengthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleLengthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NeedleLengthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NeedleLengthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleLengthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ NeedleLengthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty NeedleLengthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the NeedleLength dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleWidth">
+      <MemberSignature Language="C#" Value="public double NeedleWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NeedleWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property NeedleWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.NeedleWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NeedleWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double NeedleWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the needle width, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NeedleWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NeedleWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NeedleWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NeedleWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NeedleWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NeedleWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ NeedleWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty NeedleWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the NeedleWidth dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizedMaxAngle">
+      <MemberSignature Language="C#" Value="protected double NormalizedMaxAngle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NormalizedMaxAngle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NormalizedMaxAngle" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NormalizedMaxAngle As Double" />
+      <MemberSignature Language="F#" Value="member this.NormalizedMaxAngle : double" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NormalizedMaxAngle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double NormalizedMaxAngle { double get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property double NormalizedMaxAngle { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the normalized maximum angle.
+            </summary>
+        <value>The maximum angle, in the range from -180 to 540.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizedMinAngle">
+      <MemberSignature Language="C#" Value="protected double NormalizedMinAngle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 NormalizedMinAngle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NormalizedMinAngle" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NormalizedMinAngle As Double" />
+      <MemberSignature Language="F#" Value="member this.NormalizedMinAngle : double" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.NormalizedMinAngle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double NormalizedMinAngle { double get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property double NormalizedMinAngle { double get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the normalized minimum angle.
+            </summary>
+        <value>The minimum angle in the range from -180 to 180.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="radialGauge.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void OnApplyTemplate();" />
+      <MemberSignature Language="C++ WINRT" Value=" override void OnApplyTemplate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Update the visual state of the control when its template is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush ScaleBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush ScaleBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScaleBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.ScaleBrush : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ ScaleBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ ScaleBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the scale brush.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ScaleBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ScaleBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ScaleBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ScaleBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ScaleBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScalePadding">
+      <MemberSignature Language="C#" Value="public double ScalePadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScalePadding" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScalePadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScalePadding As Double" />
+      <MemberSignature Language="F#" Value="member this.ScalePadding : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScalePadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScalePadding { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ScalePadding { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the distance of the scale from the outside of the control, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScalePaddingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ScalePaddingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ScalePaddingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScalePaddingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScalePaddingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScalePaddingProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScalePaddingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ScalePaddingProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ScalePaddingProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ScalePadding dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTickBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.SolidColorBrush ScaleTickBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.SolidColorBrush ScaleTickBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScaleTickBrush As SolidColorBrush" />
+      <MemberSignature Language="F#" Value="member this.ScaleTickBrush : Windows.UI.Xaml.Media.SolidColorBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ ScaleTickBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ ScaleTickBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the scale tick brush.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTickBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ScaleTickBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ScaleTickBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleTickBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleTickBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ScaleTickBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ScaleTickBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ScaleTickBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTickWidth">
+      <MemberSignature Language="C#" Value="public double ScaleTickWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleTickWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScaleTickWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ScaleTickWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScaleTickWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ScaleTickWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the width of the scale ticks, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleTickWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ScaleTickWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ScaleTickWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleTickWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleTickWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleTickWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ScaleTickWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ScaleTickWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ScaleTickWidth dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleWidth">
+      <MemberSignature Language="C#" Value="public double ScaleWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ScaleWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScaleWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ScaleWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ScaleWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ScaleWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the width of the scale, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ScaleWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ScaleWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScaleWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScaleWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ScaleWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ScaleWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ScaleWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ScaleWidth dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepSize">
+      <MemberSignature Language="C#" Value="public double StepSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StepSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.StepSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property StepSize As Double" />
+      <MemberSignature Language="F#" Value="member this.StepSize : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.StepSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StepSize { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double StepSize { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the rounding interval for the Value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepSizeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty StepSizeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty StepSizeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.StepSizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StepSizeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepSizeProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.StepSizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ StepSizeProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty StepSizeProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the optional StepSize property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.SolidColorBrush TickBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.SolidColorBrush TickBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property TickBrush As SolidColorBrush" />
+      <MemberSignature Language="F#" Value="member this.TickBrush : Windows.UI.Xaml.Media.SolidColorBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ TickBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::SolidColorBrush ^ TickBrush { Windows::UI::Xaml::Media::SolidColorBrush ^ get(); void set(Windows::UI::Xaml::Media::SolidColorBrush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the outer tick brush.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TickBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TickBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TickBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TickBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TickBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TickBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the TickBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickLength">
+      <MemberSignature Language="C#" Value="public double TickLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TickLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property TickLength As Double" />
+      <MemberSignature Language="F#" Value="member this.TickLength : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TickLength { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double TickLength { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the length of the ticks, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickLengthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TickLengthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TickLengthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickLengthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TickLengthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TickLengthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickLengthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TickLengthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TickLengthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the TickLength dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickSpacing">
+      <MemberSignature Language="C#" Value="public int TickSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TickSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property TickSpacing As Integer" />
+      <MemberSignature Language="F#" Value="member this.TickSpacing : int with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TickSpacing { int get(); void set(int value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int TickSpacing { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the tick spacing, in units.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickSpacingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TickSpacingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TickSpacingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TickSpacingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TickSpacingProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickSpacingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TickSpacingProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TickSpacingProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the TickSpacing dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickWidth">
+      <MemberSignature Language="C#" Value="public double TickWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TickWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property TickWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.TickWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TickWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double TickWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the width of the ticks, in percentage of the gauge radius.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TickWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TickWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TickWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TickWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TickWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TickWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TickWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TickWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the TickWidth dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush TrailBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush TrailBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TrailBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrailBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.TrailBrush : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TrailBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ TrailBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ TrailBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the trail brush.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrailBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TrailBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TrailBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TrailBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrailBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TrailBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.TrailBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TrailBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TrailBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the TrailBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unit">
+      <MemberSignature Language="C#" Value="public string Unit { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Unit" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unit As String" />
+      <MemberSignature Language="F#" Value="member this.Unit : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Unit { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Unit { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the displayed unit measure.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnitBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush UnitBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush UnitBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnitBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.UnitBrush : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ UnitBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ UnitBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property has been depracated. Use the RadialGaugeAccentBrush ThemeResource instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush for the displayed unit measure.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnitBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty UnitBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty UnitBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnitBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UnitBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ UnitBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty UnitBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property has been deprecated. Use the RadialGaugeAccentBrush ThemeResource instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the UnitBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnitProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty UnitProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty UnitProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnitProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UnitProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.UnitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ UnitProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty UnitProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Unit dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public double Value { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Double" />
+      <MemberSignature Language="F#" Value="member this.Value : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double Value { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueAngle">
+      <MemberSignature Language="C#" Value="protected double ValueAngle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ValueAngle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueAngle" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ValueAngle As Double" />
+      <MemberSignature Language="F#" Value="member this.ValueAngle : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueAngle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property double ValueAngle { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property double ValueAngle { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current angle of the needle (between MinAngle and MaxAngle). Setting the angle will update the Value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueAngleProperty">
+      <MemberSignature Language="C#" Value="protected static readonly Windows.UI.Xaml.DependencyProperty ValueAngleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field family static initonly class Windows.UI.Xaml.DependencyProperty ValueAngleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueAngleProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly ValueAngleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueAngleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueAngleProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly Windows::UI::Xaml::DependencyProperty ^ ValueAngleProperty;" />
+      <MemberSignature Language="C++ CX" Value="protected: static initonly Windows::UI::Xaml::DependencyProperty ^ ValueAngleProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ValueAngleProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ValueAngle dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueBrush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush ValueBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush ValueBrush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.ValueBrush : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ ValueBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Xaml::Media::Brush ^ ValueBrush { Windows::UI::Xaml::Media::Brush ^ get(); void set(Windows::UI::Xaml::Media::Brush ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property has been depracated. Use the Foreground property or the RadialGaugeForegroundBrush ThemeResource instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush for the displayed value.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueBrushProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ValueBrushProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ValueBrushProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueBrushProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ValueBrushProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ValueBrushProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This property has been deprecated. Use the Foreground property or the RadialGaugeForegroundBrush ThemeResource instead")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ValueBrush dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ValueProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ValueProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Value dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueStringFormat">
+      <MemberSignature Language="C#" Value="public string ValueStringFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ValueStringFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueStringFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueStringFormat As String" />
+      <MemberSignature Language="F#" Value="member this.ValueStringFormat : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueStringFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ValueStringFormat { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value string format.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueStringFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ValueStringFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ValueStringFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueStringFormatProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueStringFormatProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueStringFormatProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RadialGauge.ValueStringFormatProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ValueStringFormatProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ValueStringFormatProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ValueStringFormat dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

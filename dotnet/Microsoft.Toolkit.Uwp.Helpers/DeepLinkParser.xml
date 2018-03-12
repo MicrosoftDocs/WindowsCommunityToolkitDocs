@@ -1,0 +1,331 @@
+﻿<Type Name="DeepLinkParser" FullName="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser">
+  <TypeSignature Language="C#" Value="public class DeepLinkParser : System.Collections.Generic.Dictionary&lt;string,string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeepLinkParser extends System.Collections.Generic.Dictionary`2&lt;string, string&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeepLinkParser&#xA;Inherits Dictionary(Of String, String)" />
+  <TypeSignature Language="F#" Value="type DeepLinkParser = class&#xA;    inherit Dictionary&lt;string, string&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeepLinkParser : System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.String</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides assistance with parsing <see cref="T:Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs" /> and its .Arguments property in to a key-value set and target path
+            </summary>
+    <remarks>To be added.</remarks>
+    <example>
+            in OnLaunched of App.xaml.cs:
+            <code lang="c#">
+            if (e.PrelaunchActivated == false)
+            {
+                if (rootFrame.Content == null)
+                {
+                    var parser = DeepLinkParser.Create(args);
+                    if (parser["username"] == "John Doe")
+                    {
+                        // do work here
+                    }
+                    if (parser.Root == "Signup")
+                    {
+                        rootFrame.Navigate(typeof(Signup));
+                    }
+            </code></example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeepLinkParser();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; DeepLinkParser();" />
+      <MemberSignature Language="C++ WINRT" Value=" DeepLinkParser();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser : string -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeepLinkParser(System::String ^ uri);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; DeepLinkParser(Platform::String ^ uri);" />
+      <MemberSignature Language="C++ WINRT" Value=" DeepLinkParser(std::wstring const &amp; uri);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null, empty, or consists only of whitespace characters</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.#ctor(System.Uri)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser : Uri -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeepLinkParser(Uri ^ uri);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (Windows.ApplicationModel.Activation.IActivatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Windows.ApplicationModel.Activation.IActivatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.#ctor(Windows.ApplicationModel.Activation.IActivatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (args As IActivatedEventArgs)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser : Windows.ApplicationModel.Activation.IActivatedEventArgs -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="new Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DeepLinkParser(Windows::ApplicationModel::Activation::IActivatedEventArgs ^ args);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; DeepLinkParser(Windows::ApplicationModel::Activation::IActivatedEventArgs ^ args);" />
+      <MemberSignature Language="C++ WINRT" Value=" DeepLinkParser(winrt::Windows::ApplicationModel::Activation::IActivatedEventArgs const &amp; args);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /> instance containing the event data.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">'args' is not an instance of ILaunchActivatedEventArgs or IProtocolActivatedEventArgs - args</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (uri As String) As DeepLinkParser" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Toolkit::Uwp::Helpers::DeepLinkParser ^ Create(System::String ^ uri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI to parse.</param>
+        <summary>
+            Creates an instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> for the given <see cref="T:System.Uri" /></summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="uri" /> will be tested for null</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create(System.Uri)" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Toolkit::Uwp::Helpers::DeepLinkParser ^ Create(Uri ^ uri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI to parse.</param>
+        <summary>
+            Creates an instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> for the given <see cref="T:System.Uri" /></summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="uri" /> will be tested for null</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create (Windows.ApplicationModel.Activation.IActivatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser Create(class Windows.ApplicationModel.Activation.IActivatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create(Windows.ApplicationModel.Activation.IActivatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (args As IActivatedEventArgs) As DeepLinkParser" />
+      <MemberSignature Language="F#" Value="static member Create : Windows.ApplicationModel.Activation.IActivatedEventArgs -&gt; Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" Usage="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Create args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::Toolkit::Uwp::Helpers::DeepLinkParser ^ Create(Windows::ApplicationModel::Activation::IActivatedEventArgs ^ args);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /> instance containing the launch Uri data.</param>
+        <summary>
+            Creates an instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> for the given <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /></summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="args" /> will be cast to <see cref="T:Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs" /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseUriString">
+      <MemberSignature Language="C#" Value="protected virtual void ParseUriString (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ParseUriString(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.ParseUriString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ParseUriString (uri As String)" />
+      <MemberSignature Language="F#" Value="abstract member ParseUriString : string -&gt; unit&#xA;override this.ParseUriString : string -&gt; unit" Usage="deepLinkParser.ParseUriString uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ParseUriString(System::String ^ uri);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual void ParseUriString(Platform::String ^ uri);" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual void ParseUriString(std::wstring const &amp; uri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Parses the URI string in to components.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public string Root { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Root" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Root" />
+      <MemberSignature Language="VB.NET" Value="Public Property Root As String" />
+      <MemberSignature Language="F#" Value="member this.Root : string with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Root" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::String ^ Root {  public:&#xA;System::String ^ get(); protected:&#xA; void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:  property Platform::String ^ Root {  public:&#xA;Platform::String ^ get(); protected:&#xA; void set(Platform::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root path of the Deep link URI</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <example>
+            for "MainPage/Options?option1=value1"
+            Root = "MainPage/Options"
+            </example>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRoot">
+      <MemberSignature Language="C#" Value="protected virtual void SetRoot (Uri validatedUri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetRoot(class System.Uri validatedUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.SetRoot(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetRoot (validatedUri As Uri)" />
+      <MemberSignature Language="F#" Value="abstract member SetRoot : Uri -&gt; unit&#xA;override this.SetRoot : Uri -&gt; unit" Usage="deepLinkParser.SetRoot validatedUri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetRoot(Uri ^ validatedUri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validatedUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="validatedUri">The validated URI (from <see cref="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.ValidateSourceUri(System.String)" />).</param>
+        <summary>
+            Sets <see cref="P:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.Root" /> on this <see cref="T:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser" /> instance and computes the query string position
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSourceUri">
+      <MemberSignature Language="C#" Value="protected static Uri ValidateSourceUri (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Uri ValidateSourceUri(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.ValidateSourceUri(System.String)" />
+      <MemberSignature Language="F#" Value="static member ValidateSourceUri : string -&gt; Uri" Usage="Microsoft.Toolkit.Uwp.Helpers.DeepLinkParser.ValidateSourceUri uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static Uri ^ ValidateSourceUri(System::String ^ uri);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Validates the source URI.
+            </summary>
+        <returns>
+          <paramref name="uri" /> as a <c>System.Uri</c> instance
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">thrown if <paramref name="uri" /> is null</exception>
+        <exception cref="T:System.ArgumentException">Not a valid URI format</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
