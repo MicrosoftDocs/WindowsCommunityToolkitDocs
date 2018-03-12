@@ -1,0 +1,165 @@
+﻿<Type Name="HttpHelper" FullName="Microsoft.Toolkit.Uwp.HttpHelper">
+  <TypeSignature Language="C#" Value="public class HttpHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.HttpHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpHelper" />
+  <TypeSignature Language="F#" Value="type HttpHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpHelper" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class HttpHelper" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This class exposes functionality of HttpClient through a singleton to take advantage of built-in connection pooling.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpHelper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.HttpHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpHelper();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; HttpHelper();" />
+      <MemberSignature Language="C++ WINRT" Value=" HttpHelper();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.HttpHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public HttpHelper (int poolSize, Windows.Web.Http.Filters.IHttpFilter httpFilter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 poolSize, class Windows.Web.Http.Filters.IHttpFilter httpFilter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.HttpHelper.#ctor(System.Int32,Windows.Web.Http.Filters.IHttpFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (poolSize As Integer, httpFilter As IHttpFilter)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.HttpHelper : int * Windows.Web.Http.Filters.IHttpFilter -&gt; Microsoft.Toolkit.Uwp.HttpHelper" Usage="new Microsoft.Toolkit.Uwp.HttpHelper (poolSize, httpFilter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpHelper(int poolSize, Windows::Web::Http::Filters::IHttpFilter ^ httpFilter);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; HttpHelper(int poolSize, Windows::Web::Http::Filters::IHttpFilter ^ httpFilter);" />
+      <MemberSignature Language="C++ WINRT" Value=" HttpHelper(int poolSize, winrt::Windows::Web::Http::Filters::IHttpFilter const &amp; httpFilter);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="poolSize" Type="System.Int32" />
+        <Parameter Name="httpFilter" Type="Windows.Web.Http.Filters.IHttpFilter" />
+      </Parameters>
+      <Docs>
+        <param name="poolSize">number of HttpClient instances allowed</param>
+        <param name="httpFilter">HttpFilter to use when instances of HttpClient are created</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.HttpHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInputStreamAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt; GetInputStreamAsync (Microsoft.Toolkit.Uwp.HttpHelperRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.HttpHelperResponse&gt; GetInputStreamAsync(class Microsoft.Toolkit.Uwp.HttpHelperRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.HttpHelper.GetInputStreamAsync(Microsoft.Toolkit.Uwp.HttpHelperRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetInputStreamAsync : Microsoft.Toolkit.Uwp.HttpHelperRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt;" Usage="httpHelper.GetInputStreamAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.HttpHelper/&lt;GetInputStreamAsync&gt;d__10))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Toolkit.Uwp.HttpHelperRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">instance of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperRequest" /></param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Process Http Request using instance of HttpClient.
+            </summary>
+        <returns>Instane of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperResponse" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.HttpHelper Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Uwp.HttpHelper Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.HttpHelper.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As HttpHelper" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Uwp.HttpHelper" Usage="Microsoft.Toolkit.Uwp.HttpHelper.Instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Uwp::HttpHelper ^ Instance { Microsoft::Toolkit::Uwp::HttpHelper ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.HttpHelper</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets public singleton property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt; SendRequestAsync (Microsoft.Toolkit.Uwp.HttpHelperRequest request, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.HttpHelperResponse&gt; SendRequestAsync(class Microsoft.Toolkit.Uwp.HttpHelperRequest request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.HttpHelper.SendRequestAsync(Microsoft.Toolkit.Uwp.HttpHelperRequest,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SendRequestAsync : Microsoft.Toolkit.Uwp.HttpHelperRequest * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt;" Usage="httpHelper.SendRequestAsync (request, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.HttpHelper/&lt;SendRequestAsync&gt;d__9))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.HttpHelperResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="Microsoft.Toolkit.Uwp.HttpHelperRequest" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="request">instance of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperRequest" /></param>
+        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <summary>
+            Process Http Request using instance of HttpClient.
+            </summary>
+        <returns>Instane of <see cref="T:Microsoft.Toolkit.Uwp.HttpHelperResponse" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,205 @@
+﻿<Type Name="InMemoryStorage&lt;T&gt;" FullName="Microsoft.Toolkit.Uwp.UI.InMemoryStorage&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class InMemoryStorage&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InMemoryStorage`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class InMemoryStorage(Of T)" />
+  <TypeSignature Language="F#" Value="type InMemoryStorage&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class InMemoryStorage" />
+  <TypeSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA;[Windows::Foundation::Metadata::WebHostHidden]&#xA;class InMemoryStorage" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">T defines the type of item stored</typeparam>
+    <summary>
+            Generic in-memory storage of items
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InMemoryStorage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InMemoryStorage();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; InMemoryStorage();" />
+      <MemberSignature Language="C++ WINRT" Value=" InMemoryStorage();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="inMemoryStorage.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="C++ WINRT" Value="void Clear();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clears all items stored in memory
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear (TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear(valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.Clear(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear (duration As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Clear : TimeSpan -&gt; unit" Usage="inMemoryStorage.Clear duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear(TimeSpan duration);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="duration">TimeSpan to identify expired items</param>
+        <summary>
+            Clears items stored in memory based on duration passed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItem">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;T&gt; GetItem (string id, TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem`1&lt;!T&gt; GetItem(string id, valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.GetItem(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (id As String, duration As TimeSpan) As InMemoryStorageItem(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetItem : string * TimeSpan -&gt; Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;'T&gt;" Usage="inMemoryStorage.GetItem (id, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Toolkit::Uwp::UI::InMemoryStorageItem&lt;T&gt; ^ GetItem(System::String ^ id, TimeSpan duration);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="id">id of the in-memory storage item</param>
+        <param name="duration">timespan denoting expiration</param>
+        <summary>
+            Get item from in-memory storage as long as it has not ex
+            </summary>
+        <returns>Valid item if not out of date or return null if out of date or item does not exist</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxItemCount">
+      <MemberSignature Language="C#" Value="public int MaxItemCount { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.MaxItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxItemCount : int with get, set" Usage="Microsoft.Toolkit.Uwp.UI.InMemoryStorage&lt;'T&gt;.MaxItemCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemCount { int get(); void set(int value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int MaxItemCount { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the maximum count of Items that can be stored in this InMemoryStorage instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (System.Collections.Generic.IEnumerable&lt;string&gt; keys);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Collections.Generic.IEnumerable`1&lt;string&gt; keys) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.Remove(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (keys As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="member this.Remove : seq&lt;string&gt; -&gt; unit" Usage="inMemoryStorage.Remove keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ keys);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="keys" Type="System.Collections.Generic.IEnumerable&lt;System.String&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="keys">identified of the in-memory storage item</param>
+        <summary>
+            Remove items based on provided keys
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetItem">
+      <MemberSignature Language="C#" Value="public void SetItem (Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;T&gt; item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetItem(class Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem`1&lt;!T&gt; item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.InMemoryStorage`1.SetItem(Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (item As InMemoryStorageItem(Of T))" />
+      <MemberSignature Language="F#" Value="member this.SetItem : Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;'T&gt; -&gt; unit" Usage="inMemoryStorage.SetItem item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(Microsoft::Toolkit::Uwp::UI::InMemoryStorageItem&lt;T&gt; ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="void SetItem(Microsoft::Toolkit::Uwp::UI::InMemoryStorageItem&lt;T&gt; const &amp; item);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Microsoft.Toolkit.Uwp.UI.InMemoryStorageItem&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="item">item to be stored</param>
+        <summary>
+            Add new item to in-memory storage
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
