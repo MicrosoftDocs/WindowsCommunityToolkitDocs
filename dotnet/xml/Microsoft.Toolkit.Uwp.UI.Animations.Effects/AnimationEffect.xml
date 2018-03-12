@@ -1,10 +1,15 @@
-<Type Name="AnimationEffect" FullName="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect">
+﻿<Type Name="AnimationEffect" FullName="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect">
   <TypeSignature Language="C#" Value="public abstract class AnimationEffect" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AnimationEffect extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AnimationEffect" />
+  <TypeSignature Language="F#" Value="type AnimationEffect = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnimationEffect abstract" />
+  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class AnimationEffect abstract" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AnimationEffect abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,10 +27,14 @@
       <MemberSignature Language="C#" Value="protected AnimationEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AnimationEffect();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; AnimationEffect();" />
+      <MemberSignature Language="C++ WINRT" Value=" AnimationEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -37,10 +46,15 @@
       <MemberSignature Language="C#" Value="public abstract string[] ApplyEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] ApplyEffect() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.ApplyEffect" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ApplyEffect () As String()" />
+      <MemberSignature Language="F#" Value="abstract member ApplyEffect : unit -&gt; string[]" Usage="animationEffect.ApplyEffect " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::String ^&gt; ^ ApplyEffect();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract Platform::Array &lt;Platform::String ^&gt; ^ ApplyEffect();" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract std::Array &lt;std::wstring const &amp;&gt; ApplyEffect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -58,10 +72,14 @@
       <MemberSignature Language="C#" Value="public Windows.UI.Composition.Compositor Compositor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.Compositor Compositor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor" />
+      <MemberSignature Language="VB.NET" Value="Public Property Compositor As Compositor" />
+      <MemberSignature Language="F#" Value="member this.Compositor : Windows.UI.Composition.Compositor with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.Compositor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Composition::Compositor ^ Compositor { Windows::UI::Composition::Compositor ^ get(); void set(Windows::UI::Composition::Compositor ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Composition::Compositor ^ Compositor { Windows::UI::Composition::Compositor ^ get(); void set(Windows::UI::Composition::Compositor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Composition.Compositor</ReturnType>
@@ -77,13 +95,14 @@
       </Docs>
     </Member>
     <Member MemberName="EffectAnimation">
-      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet EffectAnimation (Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet EffectAnimation(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet EffectAnimation (Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet EffectAnimation(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectAnimation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
+      <MemberSignature Language="F#" Value="member this.EffectAnimation : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationEffect.EffectAnimation (animationSet, value, duration, delay, easingType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -93,12 +112,14 @@
         <Parameter Name="value" Type="System.Double" />
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
         <param name="value">The value.</param>
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds.</param>
+        <param name="easingType">The easing function to use</param>
         <summary>
             An animation which will apply the derived effect.
             </summary>
@@ -110,10 +131,14 @@
       <MemberSignature Language="C#" Value="public Windows.UI.Composition.CompositionEffectBrush EffectBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.CompositionEffectBrush EffectBrush" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property EffectBrush As CompositionEffectBrush" />
+      <MemberSignature Language="F#" Value="member this.EffectBrush : Windows.UI.Composition.CompositionEffectBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Composition::CompositionEffectBrush ^ EffectBrush { Windows::UI::Composition::CompositionEffectBrush ^ get(); void set(Windows::UI::Composition::CompositionEffectBrush ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Windows::UI::Composition::CompositionEffectBrush ^ EffectBrush { Windows::UI::Composition::CompositionEffectBrush ^ get(); void set(Windows::UI::Composition::CompositionEffectBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Composition.CompositionEffectBrush</ReturnType>
@@ -132,10 +157,14 @@
       <MemberSignature Language="C#" Value="public abstract string EffectName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EffectName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property EffectName As String" />
+      <MemberSignature Language="F#" Value="member this.EffectName : string" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.EffectName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ EffectName { System::String ^ get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract property Platform::String ^ EffectName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -154,10 +183,14 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSupported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSupported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Effects.AnimationEffect.IsSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsSupported { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract property bool IsSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
