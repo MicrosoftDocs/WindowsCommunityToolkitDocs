@@ -1,10 +1,14 @@
-<Type Name="FileCache" FullName="Microsoft.Toolkit.Uwp.UI.FileCache">
+﻿<Type Name="FileCache" FullName="Microsoft.Toolkit.Uwp.UI.FileCache">
   <TypeSignature Language="C#" Value="public class FileCache : Microsoft.Toolkit.Uwp.UI.CacheBase&lt;Windows.Storage.StorageFile&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileCache extends Microsoft.Toolkit.Uwp.UI.CacheBase`1&lt;class Windows.Storage.StorageFile&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.FileCache" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileCache&#xA;Inherits CacheBase(Of StorageFile)" />
+  <TypeSignature Language="F#" Value="type FileCache = class&#xA;    inherit CacheBase&lt;StorageFile&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileCache : Microsoft::Toolkit::Uwp::UI::CacheBase&lt;Windows::Storage::StorageFile ^&gt;" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class FileCache : Microsoft::Toolkit::Uwp::UI::CacheBase&lt;Windows::Storage::StorageFile&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Uwp.UI.CacheBase&lt;Windows.Storage.StorageFile&gt;</BaseTypeName>
@@ -24,10 +28,14 @@
       <MemberSignature Language="C#" Value="public FileCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.FileCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileCache();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; FileCache();" />
+      <MemberSignature Language="C++ WINRT" Value=" FileCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,10 +47,11 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt; InitializeTypeAsync (System.IO.Stream stream, System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; initializerKeyValues = null);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Windows.Storage.StorageFile&gt; InitializeTypeAsync(class System.IO.Stream stream, class System.Collections.Generic.List`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; initializerKeyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.FileCache.InitializeTypeAsync(System.IO.Stream,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
+      <MemberSignature Language="F#" Value="override this.InitializeTypeAsync : System.IO.Stream * System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;" Usage="fileCache.InitializeTypeAsync (stream, initializerKeyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;</ReturnType>
@@ -65,10 +74,12 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt; InitializeTypeAsync (Windows.Storage.StorageFile baseFile, System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; initializerKeyValues = null);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class Windows.Storage.StorageFile&gt; InitializeTypeAsync(class Windows.Storage.StorageFile baseFile, class System.Collections.Generic.List`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; initializerKeyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.FileCache.InitializeTypeAsync(Windows.Storage.StorageFile,System.Collections.Generic.List{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InitializeTypeAsync (baseFile As StorageFile, Optional initializerKeyValues As List(Of KeyValuePair(Of String, Object)) = null) As Task(Of StorageFile)" />
+      <MemberSignature Language="F#" Value="override this.InitializeTypeAsync : Windows.Storage.StorageFile * System.Collections.Generic.List&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt; -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;" Usage="fileCache.InitializeTypeAsync (baseFile, initializerKeyValues)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;</ReturnType>
@@ -91,10 +102,13 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.FileCache Instance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Uwp.UI.FileCache Instance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.FileCache.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As FileCache" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Uwp.UI.FileCache" Usage="Microsoft.Toolkit.Uwp.UI.FileCache.Instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Uwp::UI::FileCache ^ Instance { Microsoft::Toolkit::Uwp::UI::FileCache ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.FileCache</ReturnType>
