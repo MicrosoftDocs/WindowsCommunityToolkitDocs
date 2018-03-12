@@ -1,0 +1,168 @@
+﻿<Type Name="AppPinManager" FullName="Microsoft.Toolkit.Uwp.Helpers.AppPinManager">
+  <TypeSignature Language="C#" Value="public static class AppPinManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AppPinManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.AppPinManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppPinManager" />
+  <TypeSignature Language="F#" Value="type AppPinManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppPinManager abstract sealed" />
+  <TypeSignature Language="C++ CX" Value="public ref class AppPinManager abstract sealed" />
+  <TypeSignature Language="C++ WINRT" Value="class AppPinManager abstract sealed" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This helper will be removed in future releases. Please use the platform APIs directly")</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This class provides static helper methods help to add the app in startmenu or TaskBar.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PinCurrentAppToTaskBarAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinCurrentAppToTaskBarAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinCurrentAppToTaskBarAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinCurrentAppToTaskBarAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PinCurrentAppToTaskBarAsync () As Task(Of PinResult)" />
+      <MemberSignature Language="F#" Value="static member PinCurrentAppToTaskBarAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinCurrentAppToTaskBarAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Uwp::Helpers::PinResult&gt; ^ PinCurrentAppToTaskBarAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This helper will be removed in future releases. Please use the Windows.UI.Shel.TaskbarManager APIs directly")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.AppPinManager/&lt;PinCurrentAppToTaskBarAsync&gt;d__0))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Pin the current app in Windows TaskBar
+            </summary>
+        <returns>PinResult</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinSpecificAppToStartMenuAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinSpecificAppToStartMenuAsync (Windows.ApplicationModel.Core.AppListEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinSpecificAppToStartMenuAsync(class Windows.ApplicationModel.Core.AppListEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinSpecificAppToStartMenuAsync(Windows.ApplicationModel.Core.AppListEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PinSpecificAppToStartMenuAsync (entry As AppListEntry) As Task(Of PinResult)" />
+      <MemberSignature Language="F#" Value="static member PinSpecificAppToStartMenuAsync : Windows.ApplicationModel.Core.AppListEntry -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinSpecificAppToStartMenuAsync entry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Uwp::Helpers::PinResult&gt; ^ PinSpecificAppToStartMenuAsync(Windows::ApplicationModel::Core::AppListEntry ^ entry);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This helper will be removed in future releases. Please use the Windows.UI.StartScreen.StartScreenManager APIs directly")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.AppPinManager/&lt;PinSpecificAppToStartMenuAsync&gt;d__2))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="entry" Type="Windows.ApplicationModel.Core.AppListEntry" />
+      </Parameters>
+      <Docs>
+        <param name="entry">AppListEntry</param>
+        <summary>
+            Pin Specific App in Windows StartMenu
+            </summary>
+        <returns>PinResult</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinSpecificAppToTaskBarAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinSpecificAppToTaskBarAsync (Windows.ApplicationModel.Core.AppListEntry appListEntry);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinSpecificAppToTaskBarAsync(class Windows.ApplicationModel.Core.AppListEntry appListEntry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinSpecificAppToTaskBarAsync(Windows.ApplicationModel.Core.AppListEntry)" />
+      <MemberSignature Language="F#" Value="static member PinSpecificAppToTaskBarAsync : Windows.ApplicationModel.Core.AppListEntry -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinSpecificAppToTaskBarAsync appListEntry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Uwp::Helpers::PinResult&gt; ^ PinSpecificAppToTaskBarAsync(Windows::ApplicationModel::Core::AppListEntry ^ appListEntry);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This helper will be removed in future releases. Please use the Windows.UI.Shel.TaskbarManager APIs directly")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.AppPinManager/&lt;PinSpecificAppToTaskBarAsync&gt;d__1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appListEntry" Type="Windows.ApplicationModel.Core.AppListEntry" />
+      </Parameters>
+      <Docs>
+        <param name="appListEntry">AppListEntry</param>
+        <summary>
+             Pin Specific App in Windows TaskBar
+            </summary>
+        <returns>PinResult</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PinUserSpecificAppToStartMenuAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinUserSpecificAppToStartMenuAsync (Windows.System.User user, Windows.ApplicationModel.Core.AppListEntry entry);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;valuetype Microsoft.Toolkit.Uwp.Helpers.PinResult&gt; PinUserSpecificAppToStartMenuAsync(class Windows.System.User user, class Windows.ApplicationModel.Core.AppListEntry entry) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinUserSpecificAppToStartMenuAsync(Windows.System.User,Windows.ApplicationModel.Core.AppListEntry)" />
+      <MemberSignature Language="F#" Value="static member PinUserSpecificAppToStartMenuAsync : Windows.System.User * Windows.ApplicationModel.Core.AppListEntry -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.AppPinManager.PinUserSpecificAppToStartMenuAsync (user, entry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Uwp::Helpers::PinResult&gt; ^ PinUserSpecificAppToStartMenuAsync(Windows::System::User ^ user, Windows::ApplicationModel::Core::AppListEntry ^ entry);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("This helper will be removed in future releases. Please use the Windows.UI.StartScreen.StartScreenManager APIs directly")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.AppPinManager/&lt;PinUserSpecificAppToStartMenuAsync&gt;d__3))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.PinResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Windows.System.User" />
+        <Parameter Name="entry" Type="Windows.ApplicationModel.Core.AppListEntry" />
+      </Parameters>
+      <Docs>
+        <param name="user">User</param>
+        <param name="entry">AppListEntry</param>
+        <summary>
+            Pin Specific App in Windows StartMenu based on User
+            </summary>
+        <returns>PinResult</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
