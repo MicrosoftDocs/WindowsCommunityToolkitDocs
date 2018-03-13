@@ -1,0 +1,504 @@
+﻿<Type Name="OneDriveStorageFolder" FullName="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder">
+  <TypeSignature Language="C#" Value="public class OneDriveStorageFolder : Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OneDriveStorageFolder extends Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder" />
+  <TypeSignature Language="VB.NET" Value="Public Class OneDriveStorageFolder&#xA;Inherits OneDriveStorageItem" />
+  <TypeSignature Language="F#" Value="type OneDriveStorageFolder = class&#xA;    inherit OneDriveStorageItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OneDriveStorageFolder : Microsoft::Toolkit::Services::OneDrive::OneDriveStorageItem" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class OneDriveStorageFolder : Microsoft::Toolkit::Services::OneDrive::OneDriveStorageItem" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            OneDriveStorageFolder Type
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OneDriveStorageFolder (Microsoft.Graph.IBaseClient oneDriveProvider, Microsoft.Graph.IBaseRequestBuilder requestBuilder, Microsoft.Graph.DriveItem oneDriveItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.IBaseClient oneDriveProvider, class Microsoft.Graph.IBaseRequestBuilder requestBuilder, class Microsoft.Graph.DriveItem oneDriveItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Graph.DriveItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oneDriveProvider As IBaseClient, requestBuilder As IBaseRequestBuilder, oneDriveItem As DriveItem)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder : Microsoft.Graph.IBaseClient * Microsoft.Graph.IBaseRequestBuilder * Microsoft.Graph.DriveItem -&gt; Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder" Usage="new Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder (oneDriveProvider, requestBuilder, oneDriveItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OneDriveStorageFolder(Microsoft::Graph::IBaseClient ^ oneDriveProvider, Microsoft::Graph::IBaseRequestBuilder ^ requestBuilder, Microsoft::Graph::DriveItem ^ oneDriveItem);" />
+      <MemberSignature Language="C++ WINRT" Value=" OneDriveStorageFolder(Microsoft::Graph::IBaseClient const &amp; oneDriveProvider, Microsoft::Graph::IBaseRequestBuilder const &amp; requestBuilder, Microsoft::Graph::DriveItem const &amp; oneDriveItem);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="oneDriveProvider" Type="Microsoft.Graph.IBaseClient" />
+        <Parameter Name="requestBuilder" Type="Microsoft.Graph.IBaseRequestBuilder" />
+        <Parameter Name="oneDriveItem" Type="Microsoft.Graph.DriveItem" />
+      </Parameters>
+      <Docs>
+        <param name="oneDriveProvider">Instance of Graph Client class</param>
+        <param name="requestBuilder">Http request builder.</param>
+        <param name="oneDriveItem">OneDrive's item</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder" /> class.
+            <para>Permissions : Have full access to user files and files shared with user</para></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelSessionAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CancelSessionAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CancelSessionAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.CancelSessionAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function CancelSessionAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.CancelSessionAsync : unit -&gt; System.Threading.Tasks.Task" Usage="oneDriveStorageFolder.CancelSessionAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CancelSessionAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;CancelSessionAsync&gt;d__30))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Cancel the upload Session
+            </summary>
+        <returns>Task to support await of async call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; GetFileAsync (string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; GetFileAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFileAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetFileAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;" Usage="oneDriveStorageFolder.GetFileAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;GetFileAsync&gt;d__22))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name (or path relative to the current folder) of the file to get.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the file with the specified name from the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a IOneDriveStorageFile that represents the specified file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFilesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt; GetFilesAsync (int top = 20, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy orderBy = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy.None, string filter = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt; GetFilesAsync(int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy orderBy, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFilesAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetFilesAsync : int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt;" Usage="oneDriveStorageFolder.GetFilesAsync (top, orderBy, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="orderBy" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="top">The number of items to return in a result set.</param>
+        <param name="orderBy">Sort the order of items in the response collection</param>
+        <param name="filter">Filters the response based on a set of criteria.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the files in the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a list of the files in the current folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; GetFolderAsync (string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; GetFolderAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFolderAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetFolderAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;" Usage="oneDriveStorageFolder.GetFolderAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;GetFolderAsync&gt;d__24))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name (or path relative to the current folder) of the folder to get.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the folder with the specified name from the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a IOneDriveStorageFolder that represents the specified file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFoldersAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt; GetFoldersAsync (int top = 100, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy orderBy = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy.None, string filter = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt; GetFoldersAsync(int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy orderBy, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFoldersAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetFoldersAsync : int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt;" Usage="oneDriveStorageFolder.GetFoldersAsync (top, orderBy, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="orderBy" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="top">The number of items to return in a result set.</param>
+        <param name="orderBy">Sort the order of items in the response collection</param>
+        <param name="filter">Filters the response based on a set of criteria.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the subfolders in the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a list of the subfolders in the current folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt; GetItemAsync (string name, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt; GetItemAsync(string name, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetItemAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;" Usage="oneDriveStorageFolder.GetItemAsync (name, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;GetItemAsync&gt;d__26))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="name">The name (or path relative to the current folder) of the folder to get.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the item with the specified name from the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a IOneDriveStorageItem that represents the specified file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; GetItemsAsync (uint startIndex, uint maxItemsToRetrieve, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; GetItemsAsync(unsigned int32 startIndex, unsigned int32 maxItemsToRetrieve, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemsAsync(System.UInt32,System.UInt32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetItemsAsync : uint32 * uint32 * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;" Usage="oneDriveStorageFolder.GetItemsAsync (startIndex, maxItemsToRetrieve, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;GetItemsAsync&gt;d__28))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.UInt32" />
+        <Parameter Name="maxItemsToRetrieve" Type="System.UInt32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">The zero-based index of the first item in the range to get</param>
+        <param name="maxItemsToRetrieve">The maximum number of items to get</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets an index-based range of files and folders from the list of all files and subfolders in the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a list of the subfolders and files in the current folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetItemsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; GetItemsAsync (int top, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy orderBy = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy.None, string filter = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; GetItemsAsync(int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy orderBy, string filter, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.GetItemsAsync : int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy * string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;" Usage="oneDriveStorageFolder.GetItemsAsync (top, orderBy, filter, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;GetItemsAsync&gt;d__27))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="orderBy" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy" />
+        <Parameter Name="filter" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="top">The number of items to return in a result set.</param>
+        <param name="orderBy">Sort the order of items in the response collection</param>
+        <param name="filter">Filters the response based on a set of criteria.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Gets the items from the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns a list of the subfolders and files in the current folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUploadStatusAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;long&gt; GetUploadStatusAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int64&gt; GetUploadStatusAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetUploadStatusAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUploadStatusAsync () As Task(Of Long)" />
+      <MemberSignature Language="F#" Value="member this.GetUploadStatusAsync : unit -&gt; System.Threading.Tasks.Task&lt;int64&gt;" Usage="oneDriveStorageFolder.GetUploadStatusAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;long&gt; ^ GetUploadStatusAsync();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Int64&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets the next expected ranges of the upload
+            </summary>
+        <returns>return next expected ranges, 0 if no more data</returns>
+        <remarks>Not available for OneDriveForBusiness</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUploadCompleted">
+      <MemberSignature Language="C#" Value="public bool IsUploadCompleted { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsUploadCompleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.IsUploadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUploadCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUploadCompleted : bool with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.IsUploadCompleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUploadCompleted { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsUploadCompleted { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether if a large file upload is completed
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextFilesAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt; NextFilesAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt; NextFilesAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextFilesAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.NextFilesAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt;" Usage="oneDriveStorageFolder.NextFilesAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;NextFilesAsync&gt;d__32))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Retrieve the next page of files
+            </summary>
+        <returns>The next collection of files or null if there are no more files</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextFoldersAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt; NextFoldersAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt; NextFoldersAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextFoldersAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.NextFoldersAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt;" Usage="oneDriveStorageFolder.NextFoldersAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;NextFoldersAsync&gt;d__31))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Retrieve the next page of folders
+            </summary>
+        <returns>The next collection of folders or null if there are no more folders</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextItemsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; NextItemsAsync (System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IReadOnlyList`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt; NextItemsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextItemsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.NextItemsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;" Usage="oneDriveStorageFolder.NextItemsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;NextItemsAsync&gt;d__29))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IReadOnlyList&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Retrieve the next page of items
+            </summary>
+        <returns>The next collection of items or null if there are no more items (an item could be a folder or  file)</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; RenameAsync (string desiredName, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; RenameAsync(string desiredName, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.RenameAsync(System.String,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.RenameAsync : string * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;" Usage="oneDriveStorageFolder.RenameAsync (desiredName, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder/&lt;RenameAsync&gt;d__21))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredName" Type="System.String" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="desiredName">The desired, new name for the current folder.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Renames the current folder.
+            </summary>
+        <returns>When this method completes successfully, it returns an IOneDriveStorageFolder that represents the specified folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StorageFolderPlatformService">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform StorageFolderPlatformService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform StorageFolderPlatformService" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.StorageFolderPlatformService" />
+      <MemberSignature Language="VB.NET" Value="Public Property StorageFolderPlatformService As IOneDriveStorageFolderPlatform" />
+      <MemberSignature Language="F#" Value="member this.StorageFolderPlatformService : Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.StorageFolderPlatformService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ StorageFolderPlatformService { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ StorageFolderPlatformService { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveStorageFolderPlatform ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets platform-specific implementation of platform services.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

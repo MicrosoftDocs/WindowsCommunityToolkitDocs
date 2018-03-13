@@ -1,5 +1,1034 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="uwp-toolkit-dotnet">
+  <Namespace Name="Microsoft.Toolkit.Collections">
+    <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
+      <Member Id="M:Microsoft.Toolkit.Collections.IIncrementalSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Extensions">
+    <Type Name="Microsoft.Toolkit.Extensions.StringExtensions" Id="T:Microsoft.Toolkit.Extensions.StringExtensions">
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.DecodeHtml(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.FixHtml(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsCharacterString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsDecimal(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsEmail(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsNumeric(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsPhoneNumber(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.ToSafeString(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.Bing">
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingCountry" Id="T:Microsoft.Toolkit.Services.Bing.BingCountry">
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Albania" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Argentina" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Armenia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Australia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Austria" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Azerbaijan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Bahrain" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Belgium" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Bolivia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.BosniaHerzegovina" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Brazil" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Bulgaria" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Canada" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Chile" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.China" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.CostaRica" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Croatia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.DominicanRepublic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Ecuador" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.ElSalvador" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.France" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Georgia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Germany" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Greece" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Guatemala" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Honduras" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.HongKong" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Hungary" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Iceland" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.India" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Indonesia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Iran" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Iraq" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Ireland" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Israel" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Italy" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Japan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Jordan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Kenya" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Korea" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Kuwait" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Latvia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Lebanon" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Libya" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Lithuania" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Luxembourg" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Macedonia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Malaysia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Malta" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Mexico" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Morocco" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Netherlands" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.NewZealand" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Nicaragua" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.None" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Norway" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Oman" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Pakistan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Panama" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Paraguay" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Peru" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Philippines" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Poland" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Portugal" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.PuertoRico" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Qatar" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Romania" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Russia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.SaudiArabia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Serbia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Singapore" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Slovakia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Slovenia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.SouthAfrica" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Spain" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Sweden" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Switzerland" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Syria" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Taiwan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Thailand" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Tunisia" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Turkey" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Ukraine" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.UnitedArabEmirates" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.UnitedKingdom" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.UnitedStates" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Vietnam" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Yemen" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingDataProvider" Id="T:Microsoft.Toolkit.Services.Bing.BingDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Bing.BingSearchConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Bing.BingSearchConfig)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.ValidateConfig(Microsoft.Toolkit.Services.Bing.BingSearchConfig)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingLanguage" Id="T:Microsoft.Toolkit.Services.Bing.BingLanguage">
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Abkhazian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Afar" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Afrikaans" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Akan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Albanian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Amharic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Arabic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Aragonese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Armenian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Assamese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Avaric" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Avestan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Aymara" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Azerbaijani" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bambara" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bashkir" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Basque" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Belarusian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bengali" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bihari" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bislama" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bosnian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Breton" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Bulgarian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Burmese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Catalan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Chamorro" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Chechen" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Chichewa" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Chinese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.ChurchSlavic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Chuvash" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Cornish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Corsican" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Cree" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Croatian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Czech" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Danish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Divehi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Dutch" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Dzongkha" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.English" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Esperanto" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Estonian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ewe" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Faroese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Fijian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Finnish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.French" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Fulah" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Galician" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ganda" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Georgian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.German" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Greek" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Guaraní" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Gujarati" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Haitian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Hausa" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Hebrew" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Herero" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Hindi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.HiriMotu" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Hungarian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Icelandic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ido" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Igbo" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Indonesian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Interlingua" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Interlingue" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Inuktitut" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Inupiaq" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Irish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Italian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Japanese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Javanese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kalaallisut" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kannada" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kanuri" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kashmiri" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kazakh" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Khmer" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kikuyu" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kinyarwanda" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kirghiz" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kirundi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Komi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kongo" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Korean" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kurdish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Kwanyama" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Lao" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Latin" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Latvian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Limburgish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Lingala" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Lithuanian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.LubaKatanga" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Luxembourgish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Macedonian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Malagasy" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Malay" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Malayalam" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Maltese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Manx" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Māori" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Marathi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Marshallese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Moldavian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Mongolian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Nauru" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Navajo" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ndonga" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Nepali" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.None" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.NorthernSami" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.NorthNdebele" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Norwegian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.NorwegianBokmål" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.NorwegianNynorsk" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Occitan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ojibwa" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Oriya" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Oromo" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ossetian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Pāli" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Panjabi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Pashto" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Persian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Polish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Portuguese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Quechua" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.RaetoRomance" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Romanian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Russian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Samoan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sango" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sanskrit" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sardinian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.ScottishGaelic" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Serbian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.SerboCroatian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Shona" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.SichuanYi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sindhi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sinhala" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Slovak" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Slovenian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Somali" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.SouthernSotho" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.SouthNdebele" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Spanish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Sundanese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Swahili" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Swati" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Swedish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tagalog" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tahitian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tajik" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tamil" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tatar" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Telugu" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Thai" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tibetan" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tigrinya" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tonga" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tsonga" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Tswana" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Turkish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Turkmen" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Twi" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Uighur" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Ukrainian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Urdu" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Uzbek" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Venda" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Vietnamese" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Volapük" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Walloon" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Welsh" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.WesternFrisian" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Wolof" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Xhosa" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Yiddish" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Yoruba" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Zhuang" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingLanguage.Zulu" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingParser" Id="T:Microsoft.Toolkit.Services.Bing.BingParser">
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingParser.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingParser.Parse(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingQueryType" Id="T:Microsoft.Toolkit.Services.Bing.BingQueryType">
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingQueryType.News" />
+      <Member Id="F:Microsoft.Toolkit.Services.Bing.BingQueryType.Search" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingResult" Id="T:Microsoft.Toolkit.Services.Bing.BingResult">
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingResult.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingResult.Link" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingResult.Published" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingResult.Summary" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingResult.Title" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingSearchConfig" Id="T:Microsoft.Toolkit.Services.Bing.BingSearchConfig">
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingSearchConfig.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingSearchConfig.Country" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingSearchConfig.Language" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingSearchConfig.Query" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingSearchConfig.QueryType" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Bing.BingService" Id="T:Microsoft.Toolkit.Services.Bing.BingService">
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingService.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingService.#ctor(Microsoft.Toolkit.Services.Bing.BingSearchConfig)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingService.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Bing.BingService.RequestAsync(Microsoft.Toolkit.Services.Bing.BingSearchConfig,System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingService.Instance" />
+      <Member Id="P:Microsoft.Toolkit.Services.Bing.BingService.Provider" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.Core">
+    <Type Name="Microsoft.Toolkit.Services.Core.ExtensionMethods" Id="T:Microsoft.Toolkit.Services.Core.ExtensionMethods">
+      <Member Id="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.DecodeHtml(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingCountry)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingLanguage)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.ToSafeString(System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Core.IDataService`3" Id="T:Microsoft.Toolkit.Services.Core.IDataService`3">
+      <Member Id="M:Microsoft.Toolkit.Services.Core.IDataService`3.RequestAsync(`2,System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Toolkit.Services.Core.IDataService`3.Provider" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Core.StringValueAttribute" Id="T:Microsoft.Toolkit.Services.Core.StringValueAttribute">
+      <Member Id="M:Microsoft.Toolkit.Services.Core.StringValueAttribute.#ctor(System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Services.Core.StringValueAttribute.Value" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services">
+    <Type Name="Microsoft.Toolkit.Services.DataProviderBase`1" Id="T:Microsoft.Toolkit.Services.DataProviderBase`1">
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`1.GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`1.LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`1.ValidateConfig(`0)" />
+      <Member Id="P:Microsoft.Toolkit.Services.DataProviderBase`1.HttpClient" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.DataProviderBase`2" Id="T:Microsoft.Toolkit.Services.DataProviderBase`2">
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`2.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`2.GetDefaultParser(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Services.DataProviderBase`2.LoadDataAsync(`0,System.Int32,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.IParser`1" Id="T:Microsoft.Toolkit.Services.IParser`1" />
+    <Type Name="Microsoft.Toolkit.Services.SchemaBase" Id="T:Microsoft.Toolkit.Services.SchemaBase">
+      <Member Id="M:Microsoft.Toolkit.Services.SchemaBase.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.Exceptions">
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.ConfigNullException" Id="T:Microsoft.Toolkit.Services.Exceptions.ConfigNullException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigNullException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigNullException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigNullException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.ConfigParameterNullException" Id="T:Microsoft.Toolkit.Services.Exceptions.ConfigParameterNullException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigParameterNullException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigParameterNullException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ConfigParameterNullException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.OAuthKeysNotPresentException" Id="T:Microsoft.Toolkit.Services.Exceptions.OAuthKeysNotPresentException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysNotPresentException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysNotPresentException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysNotPresentException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.OAuthKeysRevokedException" Id="T:Microsoft.Toolkit.Services.Exceptions.OAuthKeysRevokedException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysRevokedException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysRevokedException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.OAuthKeysRevokedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.ParserNullException" Id="T:Microsoft.Toolkit.Services.Exceptions.ParserNullException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ParserNullException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ParserNullException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.ParserNullException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.RequestFailedException" Id="T:Microsoft.Toolkit.Services.Exceptions.RequestFailedException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.RequestFailedException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.RequestFailedException.#ctor(System.Net.HttpStatusCode,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.RequestFailedException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.RequestFailedException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.TooManyRequestsException" Id="T:Microsoft.Toolkit.Services.Exceptions.TooManyRequestsException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.TooManyRequestsException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.TooManyRequestsException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.TooManyRequestsException.#ctor(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.Exceptions.UserNotFoundException" Id="T:Microsoft.Toolkit.Services.Exceptions.UserNotFoundException">
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.UserNotFoundException.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.UserNotFoundException.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Exceptions.UserNotFoundException.#ctor(System.String,System.Exception)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph">
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.JwToken" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.AccessToken" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.ExpiresIn" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.IdToken" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.RefreshToken" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.Scope" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.JwToken.TokenType" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Attendees" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Body" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.BodyPreview" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Categories" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.ChangeKey" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.CreatedDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.HasAttachments" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Id" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Importance" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.IsAllDay" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.IsCancelled" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.IsOrganizer" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.IsReminderOn" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.LastModifiedDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Location" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.OnlineMeetingUrl" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Organizer" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.OriginalEndTimeZone" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.OriginalStart" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.OriginalStartTimeZone" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Recurrence" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.ReminderMinutesBeforeStart" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.ResponseRequested" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.ResponseStatus" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Sensitivity" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.SeriesMasterId" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.ShowAs" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Start" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Subject" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.Type" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields.WebLink" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.AddTo(Microsoft.Graph.IUserMessagesCollectionPage,System.Collections.ObjectModel.ObservableCollection{Microsoft.Graph.Message})" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.CopyTo(System.String[],System.Collections.Generic.List{Microsoft.Graph.Recipient})" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Attachments" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.BccRecipients" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Body" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.BodyPreview" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Categories" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.CcRecipients" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ChangeKey" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ConversationId" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.CreatedDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.From" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.HasAttachments" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Id" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Importance" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.InferenceClassification" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.InternetMessageId" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.IsDeliveryReceiptRequested" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.IsDraft" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.IsRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.IsReadReceiptRequested" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.LastModifiedDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ParentFolderId" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ReceivedDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ReplyTo" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Sender" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.SentDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.Subject" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.ToRecipients" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.UniqueBody" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields.WebLink" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GetUserAsyncProfile" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize``1(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.LoginAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Logout" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.AppClientId" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.DelegatedPermissionScopes" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GraphProvider" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Instance" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsConnected" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsInitialized" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.ServicesToInitialize" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.User" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Graph.User)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.GetEventsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[])" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.GetEventsAsync(System.Threading.CancellationToken,System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[])" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.NextPageEventsAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.NextPageEventsAsync(System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Graph.User)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.GetEmailsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[])" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.GetEmailsAsync(System.Threading.CancellationToken,System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[])" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.NextPageEmailsAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.NextPageEmailsAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.SendEmailAsync(System.String,System.String,Microsoft.Graph.BodyType,System.String[],System.String[],Microsoft.Graph.Importance)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.SendEmailAsync(System.Threading.CancellationToken,System.String,System.String,Microsoft.Graph.BodyType,System.String[],System.String[],Microsoft.Graph.Importance)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.AboutMe" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.AccountEnabled" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.AssignedLicenses" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.AssignedPlans" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Birthday" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.BusinessPhones" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.City" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.CompanyName" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Country" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Department" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.DisplayName" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.GivenName" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.HireDate" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Id" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Interests" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.JobTitle" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Mail" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.MailNickname" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.MobilePhone" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.MySite" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.OfficeLocation" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.OnPremisesImmutableId" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.OnPremisesLastSyncDateTime" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.OnPremisesSecurityIdentifier" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.OnPremisesSyncEnabled" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PasswordPolicies" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PasswordProfile" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PastProjects" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PostalCode" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PreferredLanguage" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.PreferredName" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.ProvisionedPlans" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Responsibilities" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Schools" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Skills" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.State" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.StreetAddress" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.Surname" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.UsageLocation" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.UserPrincipalName" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.UserType" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetProfileAsync(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields[])" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetProfileAsync(System.Threading.CancellationToken,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields[])" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.Event" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.Message" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.PhotosService" />
+    </Type>
+  </Namespace>
+  <Namespace Name="">
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/AuthenticationModel" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V1" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V2" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OneDriveItemNameCollisionOption" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Fail" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Rename" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Replace" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Date" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateDesc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Name" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameDesc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.None" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Size" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeDesc" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Event" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Message" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.OneDrive" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.UserProfile" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ThumbnailSize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Large" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Medium" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Small" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice/RSSIComparer" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.Compare(System.Object,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics/DisplayTypes" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Bool" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Decimal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Hex" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.NotSet" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Unsupported" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf16" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf8" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView/NotificationDeferrer" Id="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.#ctor(Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.Dispose" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Constant" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String,Windows.UI.Color)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String,System.Numerics.Matrix3x2)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String,System.Numerics.Matrix4x4)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String,System.Numerics.Quaternion)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String,System.Single)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String,System.Numerics.Vector2)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String,System.Numerics.Vector3)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String,System.Numerics.Vector4)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/CurrentValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateBooleanCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateColorCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix3x2CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix4x4CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateQuaternionCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateScalarCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector2CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector3CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector4CurrentValue" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Reference" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateAmbientLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateColorBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDistantLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDropShadowReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInsetClipReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInteractionTrackerReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateNineGridBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePointLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePropertySetReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSpotLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSurfaceBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateVisualReference(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/StartingValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateBooleanStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateColorStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix3x2StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix4x4StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateQuaternionStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateScalarStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector2StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector3StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector4StartingValue" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Target" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateAmbientLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateColorBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDistantLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDropShadowTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInsetClipTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInteractionTrackerTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateNineGridBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePointLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePropertySetTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSpotLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSurfaceBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateVisualTarget" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel11" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel12" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel21" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel22" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel31" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel32" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel11" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel12" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel13" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel14" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel21" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel22" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel23" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel24" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel31" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel32" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel33" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel34" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel41" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel42" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel43" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel44" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.Y" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Y" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.W" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Y" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.BasedOnAlignment" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.CurrentAndNext" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndCurrent" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndNext" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Columns" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Rows" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GripperCursorType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Arrow" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Cross" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Default" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Hand" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Help" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.IBeam" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeAll" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNortheastSouthwest" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthSouth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthwestSoutheast" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeWestEast" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UniversalNo" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UpArrow" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Wait" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/SplitterCursorBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnGripperHover" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnSplitterHover" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile/RotateDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Down" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Left" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Right" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Up" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase/StretchDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Both" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Horizontal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Vertical" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationMode" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Forced" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Normal" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationType" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Characters" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Decimal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Email" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Number" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.PhoneNumber" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph.Platform">
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos.GetPhotoAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos.GetPhotoAsync(System.Threading.CancellationToken)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.OneDrive">
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveConflictItem" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveConflictItem">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveConflictItem.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveConflictItem.ConflictBehavior" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveHelper" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveHelper">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveHelper.TransformCollisionOptionToConflictBehavior(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveHelper.TransformOrderByToODataString(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveItemConflictBehavior" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveItemConflictBehavior">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemConflictBehavior.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveItemConflictBehavior.Item" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.Graph.IDriveItemRequestBuilder,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.Graph.IGraphServiceClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveParent" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveParent">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveParent.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveParent.Path" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveParentReference" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveParentReference">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveParentReference.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveParentReference.Name" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveParentReference.Parent" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveService" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveService">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.AppRootFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.CameraRollFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.DocumentsFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize``2(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.LoginAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.LogoutAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.MusicFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.PhotosFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.RootFolderAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.RootFolderForMeAsync" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.AppClientId" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.IsConnected" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.IsInitialized" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Provider" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Scopes" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformInitializer" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformService" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Graph.DriveItem)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile.RenameAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile.FileType" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile.StorageFilePlatformService" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Graph.DriveItem)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.CancelSessionAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFileAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFilesAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFolderAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetFoldersAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetItemsAsync(System.UInt32,System.UInt32,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.GetUploadStatusAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextFilesAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextFoldersAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.NextItemsAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.RenameAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.IsUploadCompleted" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder.StorageFolderPlatformService" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Graph.DriveItem)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.CopyAsync(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.DeleteAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.GetThumbnailSetAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.IsFile" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.IsFolder" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.IsOneNote" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.MoveAsync(Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder,System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.RenameAsync(System.String,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.DateCreated" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.DateModified" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.DisplayName" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.DisplayType" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.FolderRelativeId" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.Name" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.OneDriveItem" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.Path" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.Provider" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.RequestBuilder" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem.StorageItemPlatformService" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.#ctor(System.Collections.Generic.List{Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem})" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.GetEnumerator" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.Count" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.Item(System.Int32)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsCollection.System#Collections#Generic#IReadOnlyList&lt;Microsoft#Toolkit#Services#OneDrive#OneDriveStorageItem&gt;#Item(System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.#ctor(System.Collections.Generic.List{Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem})" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.Dispose" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.MoveNext" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.Reset" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.Current" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.CurrentItem" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItemsEnumerator.System#Collections#IEnumerator#Current" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet">
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet.Large" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet.Medium" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet.Small" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet.Source" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants" Id="T:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants">
+      <Member Id="F:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants.DefaultMaxChunkSizeForUploadSession" />
+      <Member Id="F:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants.RequiredChunkSizeIncrementForUploadSession" />
+      <Member Id="F:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants.SimpleUploadMaxSize" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.OneDrive.Platform">
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform.CreateBackgroundDownloadForItemAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer" Id="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer.CreateOneDriveServicePlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer.CreateOneDriveStorageFilePlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer.CreateOneDriveStorageFolderPlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer.CreateOneDriveStorageItemPlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFilePlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFilePlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFilePlatform.CreateBackgroundDownloadAsync(System.Object,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFilePlatform.OpenAsync(System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.CreateFileAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.CreateFolderAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.UploadFileAsync(System.String,System.Object,System.Object,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageItemPlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageItemPlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageItemPlatform.GetThumbnailAsync(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageItemPlatform.IsOfType(System.Object)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageItemPlatform.ThumbNail" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.Services.MicrosoftGraph">
+    <Type Name="Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope" Id="T:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope">
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.CalendarsRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.CalendarsReadShare" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.CalendarsReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.CalendarsReadWriteShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.ContactsRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.ContactsReadShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.ContactsReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.ContactsReadWriteShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementAppsReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementAppsReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementConfigurationReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementConfigurationReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementManagedDevicesPrivilegedOperationsAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementManagedDevicesReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementManagedDevicesReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementRBACReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementRBACReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementServiceConfigReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceManagementServiceConfigReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DeviceRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DirectoryAccessAsUserAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DirectoryReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.DirectoryReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.Email" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadSelected" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadWriteAppFolder" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.FilesReadWriteSelected" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.GroupReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.GroupReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.IdentityProviderReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.IdentityProviderReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.IdentityRiskEventReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailboxSettingsRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailboxSettingsReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailReadShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailReadWriteShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailSend" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MailSendShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.MemberReadHidden" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesCreate" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.NotesReadWriteCreatedByApp" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.OfflineAccess" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.OpenId" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.PeopleRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.PeopleReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.Profile" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.SitesFullControlAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.SitesManageAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.SitesReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.SitesReadWriteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.TasksRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.TasksReadShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.TasksReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.TasksReadWriteShared" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserInviteAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserRead" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserReadAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserReadBasicAll" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserReadWrite" />
+      <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.UserReadWriteAll" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Connectivity">
     <Type Name="Microsoft.Toolkit.Uwp.Connectivity.BluetoothLEHelper" Id="T:Microsoft.Toolkit.Uwp.Connectivity.BluetoothLEHelper">
       <Member Id="E:Microsoft.Toolkit.Uwp.Connectivity.BluetoothLEHelper.EnumerationCompleted" />
@@ -245,191 +1274,6 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService.Name" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService.Service" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService.UUID" />
-    </Type>
-  </Namespace>
-  <Namespace Name="">
-    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice/RSSIComparer" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer">
-      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.Compare(System.Object,System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics/DisplayTypes" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes">
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Bool" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Decimal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Hex" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.NotSet" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Unsupported" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf16" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf8" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView/NotificationDeferrer" Id="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.#ctor(Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.Dispose" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Constant" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String,System.Boolean)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String,Windows.UI.Color)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String,System.Numerics.Matrix3x2)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String,System.Numerics.Matrix4x4)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String,System.Numerics.Quaternion)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String,System.Single)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String,System.Numerics.Vector2)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String,System.Numerics.Vector3)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String,System.Numerics.Vector4)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/CurrentValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateBooleanCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateColorCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix3x2CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix4x4CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateQuaternionCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateScalarCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector2CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector3CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector4CurrentValue" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Reference" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateAmbientLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateColorBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDistantLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDropShadowReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInsetClipReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInteractionTrackerReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateNineGridBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePointLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePropertySetReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSpotLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSurfaceBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateVisualReference(System.String)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/StartingValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateBooleanStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateColorStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix3x2StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix4x4StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateQuaternionStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateScalarStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector2StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector3StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector4StartingValue" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Target" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateAmbientLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateColorBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDistantLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDropShadowTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInsetClipTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInteractionTrackerTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateNineGridBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePointLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePropertySetTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSpotLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSurfaceBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateVisualTarget" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel11" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel12" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel21" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel22" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel31" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel32" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel11" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel12" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel13" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel14" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel21" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel22" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel23" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel24" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel31" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel32" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel33" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel34" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel41" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel42" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel43" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel44" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.Y" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Y" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Z" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.W" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Y" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Z" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.BasedOnAlignment" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.CurrentAndNext" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndCurrent" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndNext" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Auto" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Columns" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Rows" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GripperCursorType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Arrow" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Cross" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Custom" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Default" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Hand" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Help" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.IBeam" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeAll" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNortheastSouthwest" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthSouth" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthwestSoutheast" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeWestEast" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UniversalNo" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UpArrow" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Wait" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/SplitterCursorBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnGripperHover" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnSplitterHover" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile/RotateDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Down" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Left" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Right" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Up" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase/StretchDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Both" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Horizontal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Vertical" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationMode" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Forced" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Normal" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationType" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Characters" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Custom" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Decimal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Email" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Number" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.PhoneNumber" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.DeveloperTools">
