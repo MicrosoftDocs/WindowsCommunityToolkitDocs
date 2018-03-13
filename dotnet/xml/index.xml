@@ -1,5 +1,88 @@
 <Overview>
   <Assemblies>
+    <Assembly Name="Microsoft.Toolkit" Version="2.2.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("This package includes .NET Standard code only helpers.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.2.0.165")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.2.0+gd22f16484f")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Toolkit")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Toolkit")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v1.4", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+    <Assembly Name="Microsoft.Toolkit.Services" Version="2.2.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("This .NET standard library enables access to different data sources such as Bing. It is part of the UWP Community Toolkit.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.2.0.165")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.2.0+gd22f16484f")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Toolkit.Services")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Toolkit.Services")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("Microsoft.Toolkit.Uwp.Services")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v1.4", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
     <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="2.2.0.0">
       <Attributes>
         <Attribute>
@@ -287,6 +370,90 @@
   <Remarks>To be added.</Remarks>
   <Copyright>To be added.</Copyright>
   <Types>
+    <Namespace Name="Microsoft.Toolkit.Collections">
+      <Type Name="IIncrementalSource`1" DisplayName="IIncrementalSource&lt;TSource&gt;" Kind="Interface" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Extensions">
+      <Type Name="StringExtensions" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services">
+      <Type Name="DataProviderBase`1" DisplayName="DataProviderBase&lt;TConfig&gt;" Kind="Class" />
+      <Type Name="DataProviderBase`2" DisplayName="DataProviderBase&lt;TConfig,TSchema&gt;" Kind="Class" />
+      <Type Name="IParser`1" DisplayName="IParser&lt;T&gt;" Kind="Interface" />
+      <Type Name="SchemaBase" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.Bing">
+      <Type Name="BingCountry" Kind="Enumeration" />
+      <Type Name="BingDataProvider" Kind="Class" />
+      <Type Name="BingLanguage" Kind="Enumeration" />
+      <Type Name="BingParser" Kind="Class" />
+      <Type Name="BingQueryType" Kind="Enumeration" />
+      <Type Name="BingResult" Kind="Class" />
+      <Type Name="BingSearchConfig" Kind="Class" />
+      <Type Name="BingService" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.Core">
+      <Type Name="ExtensionMethods" Kind="Class" />
+      <Type Name="IDataService`3" DisplayName="IDataService&lt;T,U,V&gt;" Kind="Interface" />
+      <Type Name="StringValueAttribute" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.Exceptions">
+      <Type Name="ConfigNullException" Kind="Class" />
+      <Type Name="ConfigParameterNullException" Kind="Class" />
+      <Type Name="OAuthKeysNotPresentException" Kind="Class" />
+      <Type Name="OAuthKeysRevokedException" Kind="Class" />
+      <Type Name="ParserNullException" Kind="Class" />
+      <Type Name="RequestFailedException" Kind="Class" />
+      <Type Name="TooManyRequestsException" Kind="Class" />
+      <Type Name="UserNotFoundException" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph">
+      <Type Name="JwToken" Kind="Class" />
+      <Type Name="MicrosoftGraphEnums" Kind="Class" />
+      <Type Name="MicrosoftGraphEnums+AuthenticationModel" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphEnums+OneDriveItemNameCollisionOption" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphEnums+OrderBy" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphEnums+ServicesToInitialize" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphEnums+ThumbnailSize" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphEventFields" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphExtensions" Kind="Class" />
+      <Type Name="MicrosoftGraphMessageFields" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphService" Kind="Class" />
+      <Type Name="MicrosoftGraphServiceEvent" Kind="Class" />
+      <Type Name="MicrosoftGraphServiceMessage" Kind="Class" />
+      <Type Name="MicrosoftGraphUserFields" Kind="Enumeration" />
+      <Type Name="MicrosoftGraphUserService" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph.Platform">
+      <Type Name="IMicrosoftGraphUserServicePhotos" Kind="Interface" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.OneDrive">
+      <Type Name="OneDriveConflictItem" Kind="Class" />
+      <Type Name="OneDriveHelper" Kind="Class" />
+      <Type Name="OneDriveItemConflictBehavior" Kind="Class" />
+      <Type Name="OneDriveItemExtension" Kind="Class" />
+      <Type Name="OneDriveParent" Kind="Class" />
+      <Type Name="OneDriveParentReference" Kind="Class" />
+      <Type Name="OneDriveRequestSource`1" DisplayName="OneDriveRequestSource&lt;T&gt;" Kind="Class" />
+      <Type Name="OneDriveService" Kind="Class" />
+      <Type Name="OneDriveStorageFile" Kind="Class" />
+      <Type Name="OneDriveStorageFolder" Kind="Class" />
+      <Type Name="OneDriveStorageItem" Kind="Class" />
+      <Type Name="OneDriveStorageItemsCollection" Kind="Class" />
+      <Type Name="OneDriveStorageItemsEnumerator" Kind="Class" />
+      <Type Name="OneDriveThumbnailSet" Kind="Class" />
+      <Type Name="OneDriveUploadConstants" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.OneDrive.Platform">
+      <Type Name="IOneDriveServicePlatform" Kind="Interface" />
+      <Type Name="IOneDriveServicePlatformInitializer" Kind="Interface" />
+      <Type Name="IOneDriveStorageFilePlatform" Kind="Interface" />
+      <Type Name="IOneDriveStorageFolderPlatform" Kind="Interface" />
+      <Type Name="IOneDriveStorageItemPlatform" Kind="Interface" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Services.Services.MicrosoftGraph">
+      <Type Name="MicrosoftGraphScope" Kind="Class" />
+    </Namespace>
     <Namespace Name="Microsoft.Toolkit.Uwp">
       <Type Name="HslColor" Kind="Structure" />
       <Type Name="HsvColor" Kind="Structure" />
@@ -726,6 +893,521 @@
   </Types>
   <Title>Untitled</Title>
   <ExtensionMethods>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="DecodeHtml">
+        <MemberSignature Language="C#" Value="public static string DecodeHtml (this string htmlText);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecodeHtml(string htmlText) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.DecodeHtml(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DecodeHtml (htmlText As String) As String" />
+        <MemberSignature Language="F#" Value="static member DecodeHtml : string -&gt; string" Usage="Microsoft.Toolkit.Extensions.StringExtensions.DecodeHtml htmlText" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ DecodeHtml(System::String ^ htmlText);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ DecodeHtml(Platform::String ^ htmlText);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="htmlText" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="htmlText">HTML string.</param>
+          <summary>
+            Decode HTML string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.DecodeHtml(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="FixHtml">
+        <MemberSignature Language="C#" Value="public static string FixHtml (this string html);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FixHtml(string html) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.FixHtml(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FixHtml (html As String) As String" />
+        <MemberSignature Language="F#" Value="static member FixHtml : string -&gt; string" Usage="Microsoft.Toolkit.Extensions.StringExtensions.FixHtml html" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ FixHtml(System::String ^ html);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ FixHtml(Platform::String ^ html);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="html" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="html">HTML string to fix</param>
+          <summary>
+            Applies regular expressions to string of HTML to remove comments, scripts, styles.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.FixHtml(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="IsCharacterString">
+        <MemberSignature Language="C#" Value="public static bool IsCharacterString (this string str);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCharacterString(string str) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.IsCharacterString(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCharacterString (str As String) As Boolean" />
+        <MemberSignature Language="F#" Value="static member IsCharacterString : string -&gt; bool" Usage="Microsoft.Toolkit.Extensions.StringExtensions.IsCharacterString str" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsCharacterString(System::String ^ str);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsCharacterString(Platform::String ^ str);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="str" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="str">string value.</param>
+          <summary>
+            Returns whether said string contains only letters or not.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.IsCharacterString(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="IsDecimal">
+        <MemberSignature Language="C#" Value="public static bool IsDecimal (this string str);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDecimal(string str) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.IsDecimal(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDecimal (str As String) As Boolean" />
+        <MemberSignature Language="F#" Value="static member IsDecimal : string -&gt; bool" Usage="Microsoft.Toolkit.Extensions.StringExtensions.IsDecimal str" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDecimal(System::String ^ str);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsDecimal(Platform::String ^ str);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="str" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="str">To be added.</param>
+          <summary>
+            Returns whether said string is a valid decimal number or not.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.IsDecimal(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="IsEmail">
+        <MemberSignature Language="C#" Value="public static bool IsEmail (this string str);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEmail(string str) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.IsEmail(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsEmail (str As String) As Boolean" />
+        <MemberSignature Language="F#" Value="static member IsEmail : string -&gt; bool" Usage="Microsoft.Toolkit.Extensions.StringExtensions.IsEmail str" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsEmail(System::String ^ str);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsEmail(Platform::String ^ str);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="str" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="str">string value.</param>
+          <summary>
+            Returns whether said string is a valid email or not.
+            Uses general Email Regex (RFC 5322 Official Standard) from emailregex.com
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.IsEmail(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="IsNumeric">
+        <MemberSignature Language="C#" Value="public static bool IsNumeric (this string str);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNumeric(string str) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.IsNumeric(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsNumeric (str As String) As Boolean" />
+        <MemberSignature Language="F#" Value="static member IsNumeric : string -&gt; bool" Usage="Microsoft.Toolkit.Extensions.StringExtensions.IsNumeric str" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNumeric(System::String ^ str);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsNumeric(Platform::String ^ str);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="str" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="str">string value.</param>
+          <summary>
+            Returns whether said string is a valid integer or not.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.IsNumeric(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="IsPhoneNumber">
+        <MemberSignature Language="C#" Value="public static bool IsPhoneNumber (this string str);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPhoneNumber(string str) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.IsPhoneNumber(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPhoneNumber (str As String) As Boolean" />
+        <MemberSignature Language="F#" Value="static member IsPhoneNumber : string -&gt; bool" Usage="Microsoft.Toolkit.Extensions.StringExtensions.IsPhoneNumber str" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsPhoneNumber(System::String ^ str);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsPhoneNumber(Platform::String ^ str);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Boolean</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="str" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="str">string value.</param>
+          <summary>
+            Returns whether said string is a valid phonenumber or not.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.IsPhoneNumber(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.Object" />
+      </Targets>
+      <Member MemberName="ToSafeString">
+        <MemberSignature Language="C#" Value="public static string ToSafeString (this object value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToSafeString(object value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.ToSafeString(System.Object)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSafeString (value As Object) As String" />
+        <MemberSignature Language="F#" Value="static member ToSafeString : obj -&gt; string" Usage="Microsoft.Toolkit.Extensions.StringExtensions.ToSafeString value" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ ToSafeString(System::Object ^ value);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ ToSafeString(Platform::Object ^ value);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="System.Object" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="value">Object value.</param>
+          <summary>
+            Converts object into string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.ToSafeString(System.Object)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="Truncate">
+        <MemberSignature Language="C#" Value="public static string Truncate (this string value, int length);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Truncate(string value, int32 length) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Truncate (value As String, length As Integer) As String" />
+        <MemberSignature Language="F#" Value="static member Truncate : string * int -&gt; string" Usage="Microsoft.Toolkit.Extensions.StringExtensions.Truncate (value, length)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Truncate(System::String ^ value, int length);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ Truncate(Platform::String ^ value, int length);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="System.String" RefType="this" />
+          <Parameter Name="length" Type="System.Int32" />
+        </Parameters>
+        <Docs>
+          <param name="value">The string to be truncated.</param>
+          <param name="length">The maximum length.</param>
+          <summary>
+            Trims and Truncates the specified string to the specified length.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="Truncate">
+        <MemberSignature Language="C#" Value="public static string Truncate (this string value, int length, bool ellipsis);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Truncate(string value, int32 length, bool ellipsis) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Truncate (value As String, length As Integer, ellipsis As Boolean) As String" />
+        <MemberSignature Language="F#" Value="static member Truncate : string * int * bool -&gt; string" Usage="Microsoft.Toolkit.Extensions.StringExtensions.Truncate (value, length, ellipsis)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ Truncate(System::String ^ value, int length, bool ellipsis);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ Truncate(Platform::String ^ value, int length, bool ellipsis);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="System.String" RefType="this" />
+          <Parameter Name="length" Type="System.Int32" />
+          <Parameter Name="ellipsis" Type="System.Boolean" />
+        </Parameters>
+        <Docs>
+          <param name="value">The string to be truncated.</param>
+          <param name="length">The maximum length.</param>
+          <param name="ellipsis">if set to <c>true</c> add a text ellipsis.</param>
+          <summary>
+            Trims and Truncates the specified string to the specified length.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Extensions.StringExtensions" Member="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="DecodeHtml">
+        <MemberSignature Language="C#" Value="public static string DecodeHtml (this string htmlText);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecodeHtml(string htmlText) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.DecodeHtml(System.String)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DecodeHtml (htmlText As String) As String" />
+        <MemberSignature Language="F#" Value="static member DecodeHtml : string -&gt; string" Usage="Microsoft.Toolkit.Services.Core.ExtensionMethods.DecodeHtml htmlText" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ DecodeHtml(System::String ^ htmlText);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ DecodeHtml(Platform::String ^ htmlText);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="htmlText" Type="System.String" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="htmlText">HTML string.</param>
+          <summary>
+            Decode HTML string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.Core.ExtensionMethods" Member="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.DecodeHtml(System.String)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Toolkit.Services.Bing.BingCountry" />
+      </Targets>
+      <Member MemberName="GetStringValue">
+        <MemberSignature Language="C#" Value="public static string GetStringValue (this Microsoft.Toolkit.Services.Bing.BingCountry value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStringValue(valuetype Microsoft.Toolkit.Services.Bing.BingCountry value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingCountry)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStringValue (value As BingCountry) As String" />
+        <MemberSignature Language="F#" Value="static member GetStringValue : Microsoft.Toolkit.Services.Bing.BingCountry -&gt; string" Usage="Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue value" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetStringValue(Microsoft::Toolkit::Services::Bing::BingCountry value);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ GetStringValue(Microsoft::Toolkit::Services::Bing::BingCountry value);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="Microsoft.Toolkit.Services.Bing.BingCountry" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="value">BingCountry enumeration.</param>
+          <summary>
+            Converts between country code and country name.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.Core.ExtensionMethods" Member="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingCountry)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Toolkit.Services.Bing.BingLanguage" />
+      </Targets>
+      <Member MemberName="GetStringValue">
+        <MemberSignature Language="C#" Value="public static string GetStringValue (this Microsoft.Toolkit.Services.Bing.BingLanguage value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStringValue(valuetype Microsoft.Toolkit.Services.Bing.BingLanguage value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingLanguage)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetStringValue (value As BingLanguage) As String" />
+        <MemberSignature Language="F#" Value="static member GetStringValue : Microsoft.Toolkit.Services.Bing.BingLanguage -&gt; string" Usage="Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue value" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ GetStringValue(Microsoft::Toolkit::Services::Bing::BingLanguage value);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ GetStringValue(Microsoft::Toolkit::Services::Bing::BingLanguage value);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="Microsoft.Toolkit.Services.Bing.BingLanguage" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="value">BingLanguage enumeration.</param>
+          <summary>
+            Converts between language code and language name.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.Core.ExtensionMethods" Member="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.GetStringValue(Microsoft.Toolkit.Services.Bing.BingLanguage)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.Object" />
+      </Targets>
+      <Member MemberName="ToSafeString">
+        <MemberSignature Language="C#" Value="public static string ToSafeString (this object value);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToSafeString(object value) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.ToSafeString(System.Object)" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSafeString (value As Object) As String" />
+        <MemberSignature Language="F#" Value="static member ToSafeString : obj -&gt; string" Usage="Microsoft.Toolkit.Services.Core.ExtensionMethods.ToSafeString value" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::String ^ ToSafeString(System::Object ^ value);" />
+        <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::String ^ ToSafeString(Platform::Object ^ value);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.String</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="value" Type="System.Object" RefType="this" />
+        </Parameters>
+        <Docs>
+          <param name="value">Object value.</param>
+          <summary>
+            Converts object into string.
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.Core.ExtensionMethods" Member="M:Microsoft.Toolkit.Services.Core.ExtensionMethods.ToSafeString(System.Object)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Graph.IUserMessagesCollectionPage" />
+      </Targets>
+      <Member MemberName="AddTo">
+        <MemberSignature Language="C#" Value="public static void AddTo (this Microsoft.Graph.IUserMessagesCollectionPage source, System.Collections.ObjectModel.ObservableCollection&lt;Microsoft.Graph.Message&gt; dest);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddTo(class Microsoft.Graph.IUserMessagesCollectionPage source, class System.Collections.ObjectModel.ObservableCollection`1&lt;class Microsoft.Graph.Message&gt; dest) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.AddTo(Microsoft.Graph.IUserMessagesCollectionPage,System.Collections.ObjectModel.ObservableCollection{Microsoft.Graph.Message})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub AddTo (source As IUserMessagesCollectionPage, dest As ObservableCollection(Of Message))" />
+        <MemberSignature Language="F#" Value="static member AddTo : Microsoft.Graph.IUserMessagesCollectionPage * System.Collections.ObjectModel.ObservableCollection&lt;Microsoft.Graph.Message&gt; -&gt; unit" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.AddTo (source, dest)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void AddTo(Microsoft::Graph::IUserMessagesCollectionPage ^ source, System::Collections::ObjectModel::ObservableCollection&lt;Microsoft::Graph::Message ^&gt; ^ dest);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Void</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="source" Type="Microsoft.Graph.IUserMessagesCollectionPage" RefType="this" />
+          <Parameter Name="dest" Type="System.Collections.ObjectModel.ObservableCollection&lt;Microsoft.Graph.Message&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="source">A collection of messages</param>
+          <param name="dest">The destination collection</param>
+          <summary>
+            Add items from source to dest
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions" Member="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.AddTo(Microsoft.Graph.IUserMessagesCollectionPage,System.Collections.ObjectModel.ObservableCollection{Microsoft.Graph.Message})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:System.String" />
+      </Targets>
+      <Member MemberName="CopyTo">
+        <MemberSignature Language="C#" Value="public static void CopyTo (this string[] source, System.Collections.Generic.List&lt;Microsoft.Graph.Recipient&gt; dest);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo(string[] source, class System.Collections.Generic.List`1&lt;class Microsoft.Graph.Recipient&gt; dest) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.CopyTo(System.String[],System.Collections.Generic.List{Microsoft.Graph.Recipient})" />
+        <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo (source As String(), dest As List(Of Recipient))" />
+        <MemberSignature Language="F#" Value="static member CopyTo : string[] * System.Collections.Generic.List&lt;Microsoft.Graph.Recipient&gt; -&gt; unit" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.CopyTo (source, dest)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(cli::array &lt;System::String ^&gt; ^ source, System::Collections::Generic::List&lt;Microsoft::Graph::Recipient ^&gt; ^ dest);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Void</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="source" Type="System.String[]" RefType="this" />
+          <Parameter Name="dest" Type="System.Collections.Generic.List&lt;Microsoft.Graph.Recipient&gt;" />
+        </Parameters>
+        <Docs>
+          <param name="source">A collection of email addresses</param>
+          <param name="dest">A collection of Microsoft Graph recipients</param>
+          <summary>
+            Create a list of recipients
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions" Member="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphExtensions.CopyTo(System.String[],System.Collections.Generic.List{Microsoft.Graph.Recipient})" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Graph.IDriveItemRequestBuilder" />
+      </Targets>
+      <Member MemberName="GetThumbnailSetAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet&gt; GetThumbnailSetAsync (this Microsoft.Graph.IDriveItemRequestBuilder builder, System.Threading.CancellationToken cancellationToken);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet&gt; GetThumbnailSetAsync(class Microsoft.Graph.IDriveItemRequestBuilder builder, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.Graph.IDriveItemRequestBuilder,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member GetThumbnailSetAsync : Microsoft.Graph.IDriveItemRequestBuilder * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet&gt;" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync (builder, cancellationToken)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::OneDrive::OneDriveThumbnailSet ^&gt; ^ GetThumbnailSetAsync(Microsoft::Graph::IDriveItemRequestBuilder ^ builder, System::Threading::CancellationToken cancellationToken);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveThumbnailSet&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="builder" Type="Microsoft.Graph.IDriveItemRequestBuilder" RefType="this" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="builder">Http request builder</param>
+          <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+          <summary>
+            Gets a file's thumbnail set
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension" Member="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.GetThumbnailSetAsync(Microsoft.Graph.IDriveItemRequestBuilder,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
+    <ExtensionMethod>
+      <Targets>
+        <Target Type="T:Microsoft.Graph.IGraphServiceClient" />
+      </Targets>
+      <Member MemberName="SendAuthenticatedRequestAsync">
+        <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt; SendAuthenticatedRequestAsync (this Microsoft.Graph.IGraphServiceClient provider, System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);" />
+        <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.DriveItem&gt; SendAuthenticatedRequestAsync(class Microsoft.Graph.IGraphServiceClient provider, class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+        <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.Graph.IGraphServiceClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+        <MemberSignature Language="F#" Value="static member SendAuthenticatedRequestAsync : Microsoft.Graph.IGraphServiceClient * System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt;" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync (provider, request, cancellationToken)" />
+        <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;Microsoft::Graph::DriveItem ^&gt; ^ SendAuthenticatedRequestAsync(Microsoft::Graph::IGraphServiceClient ^ provider, System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
+        <MemberType>ExtensionMethod</MemberType>
+        <ReturnValue>
+          <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt;</ReturnType>
+        </ReturnValue>
+        <Parameters>
+          <Parameter Name="provider" Type="Microsoft.Graph.IGraphServiceClient" RefType="this" />
+          <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+          <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        </Parameters>
+        <Docs>
+          <param name="provider">Graph Client Provider</param>
+          <param name="request">Http Request to execute</param>
+          <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+          <summary>
+            Send an httpRequest to get an Onedrive Item
+            </summary>
+        </Docs>
+        <Link Type="Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension" Member="M:Microsoft.Toolkit.Services.OneDrive.OneDriveItemExtension.SendAuthenticatedRequestAsync(Microsoft.Graph.IGraphServiceClient,System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+      </Member>
+    </ExtensionMethod>
     <ExtensionMethod>
       <Targets>
         <Target Type="T:System.Nullable`1" />

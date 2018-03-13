@@ -1,0 +1,117 @@
+﻿<Type Name="IOneDriveStorageFolderPlatform" FullName="Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform">
+  <TypeSignature Language="C#" Value="public interface IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="F#" Value="type IOneDriveStorageFolderPlatform = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="C++ CX" Value="public interface class IOneDriveStorageFolderPlatform" />
+  <TypeSignature Language="C++ WINRT" Value="__interface IOneDriveStorageFolderPlatform" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Platform abstraction.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; CreateFileAsync (string desiredName, object options = null, object content = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; CreateFileAsync(string desiredName, object options, object content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.CreateFileAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateFileAsync : string * obj * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;" Usage="iOneDriveStorageFolderPlatform.CreateFileAsync (desiredName, options, content, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredName" Type="System.String" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="content" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="desiredName">The name of the new file to create in the current folder.</param>
+        <param name="options">One of the enumeration values that determines how to handle the collision if a file with the specified desiredName already exists in the current folder.</param>
+        <param name="content">The data's stream to push into the file</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Creates a new file in the current folder. This method also specifies what to
+            do if a file with the same name already exists in the current folder.
+            </summary>
+        <returns>When this method completes, it returns a IOneDriveStorageFile that represents the new file.</returns>
+        <remarks>With OneDrive Consumer, the content could not be null</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; CreateFolderAsync (string desiredName, object options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; CreateFolderAsync(string desiredName, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.CreateFolderAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CreateFolderAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;" Usage="iOneDriveStorageFolderPlatform.CreateFolderAsync (desiredName, options, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredName" Type="System.String" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="desiredName">The name of the new subfolder to create in the current folder.</param>
+        <param name="options">&gt;One of the enumeration values that determines how to handle the collision if a file with the specified desiredName already exists in the current folder.</param>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            Creates a new subfolder in the current folder.
+            </summary>
+        <returns>When this method completes, it returns a IOneDriveStorageFolder that represents the new subfolder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UploadFileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; UploadFileAsync (string desiredName, object content, object options, int maxChunkSize = -1);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; UploadFileAsync(string desiredName, object content, object options, int32 maxChunkSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveStorageFolderPlatform.UploadFileAsync(System.String,System.Object,System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UploadFileAsync (desiredName As String, content As Object, options As Object, Optional maxChunkSize As Integer = -1) As Task(Of OneDriveStorageFile)" />
+      <MemberSignature Language="F#" Value="abstract member UploadFileAsync : string * obj * obj * int -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;" Usage="iOneDriveStorageFolderPlatform.UploadFileAsync (desiredName, content, options, maxChunkSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desiredName" Type="System.String" />
+        <Parameter Name="content" Type="System.Object" />
+        <Parameter Name="options" Type="System.Object" />
+        <Parameter Name="maxChunkSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="desiredName">The name of the new file to create in the current folder.</param>
+        <param name="content">The data's stream to push into the file</param>
+        <param name="options">One of the enumeration values that determines how to handle the collision if a file with the specified desiredName already exists in the current folder.</param>
+        <param name="maxChunkSize">Max chunk size must be a multiple of 320 KiB (ie: 320*1024)</param>
+        <summary>
+            Creates a new large file in the current folder.
+            Use this method when your file is larger than
+            </summary>
+        <returns>When this method completes, it returns a IOneDriveStorageFile that represents the new file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

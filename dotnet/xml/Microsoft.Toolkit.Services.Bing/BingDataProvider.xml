@@ -1,0 +1,148 @@
+﻿<Type Name="BingDataProvider" FullName="Microsoft.Toolkit.Services.Bing.BingDataProvider">
+  <TypeSignature Language="C#" Value="public class BingDataProvider : Microsoft.Toolkit.Services.DataProviderBase&lt;Microsoft.Toolkit.Services.Bing.BingSearchConfig,Microsoft.Toolkit.Services.Bing.BingResult&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BingDataProvider extends Microsoft.Toolkit.Services.DataProviderBase`2&lt;class Microsoft.Toolkit.Services.Bing.BingSearchConfig, class Microsoft.Toolkit.Services.Bing.BingResult&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Bing.BingDataProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class BingDataProvider&#xA;Inherits DataProviderBase(Of BingSearchConfig, BingResult)" />
+  <TypeSignature Language="F#" Value="type BingDataProvider = class&#xA;    inherit DataProviderBase&lt;BingSearchConfig, BingResult&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BingDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Bing::BingSearchConfig ^, Microsoft::Toolkit::Services::Bing::BingResult ^&gt;" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BingDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Bing::BingSearchConfig, Microsoft::Toolkit::Services::Bing::BingResult const &amp;&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Services.DataProviderBase&lt;Microsoft.Toolkit.Services.Bing.BingSearchConfig,Microsoft.Toolkit.Services.Bing.BingResult&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TConfig">Microsoft.Toolkit.Services.Bing.BingSearchConfig</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TSchema">Microsoft.Toolkit.Services.Bing.BingResult</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Data Provider for connecting to Bing service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BingDataProvider ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BingDataProvider();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; BingDataProvider();" />
+      <MemberSignature Language="C++ WINRT" Value=" BingDataProvider();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDataAsync&lt;TSchema&gt;">
+      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt; GetDataAsync&lt;TSchema&gt; (Microsoft.Toolkit.Services.Bing.BingSearchConfig config, int maxRecords, int pageIndex, Microsoft.Toolkit.Parsers.IParser&lt;TSchema&gt; parser) where TSchema : Microsoft.Toolkit.Parsers.SchemaBase;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!!TSchema&gt;&gt; GetDataAsync&lt;(class Microsoft.Toolkit.Parsers.SchemaBase) TSchema&gt;(class Microsoft.Toolkit.Services.Bing.BingSearchConfig config, int32 maxRecords, int32 pageIndex, class Microsoft.Toolkit.Parsers.IParser`1&lt;!!TSchema&gt; parser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Bing.BingSearchConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDataAsync(Of TSchema As SchemaBase) (config As BingSearchConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
+      <MemberSignature Language="F#" Value="override this.GetDataAsync : Microsoft.Toolkit.Services.Bing.BingSearchConfig * int * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="bingDataProvider.GetDataAsync (config, maxRecords, pageIndex, parser)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase override System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetDataAsync(Microsoft::Toolkit::Services::Bing::BingSearchConfig ^ config, int maxRecords, int pageIndex, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.Bing.BingDataProvider/&lt;GetDataAsync&gt;d__1`1))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSchema">
+          <Constraints>
+            <BaseTypeName>Microsoft.Toolkit.Parsers.SchemaBase</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Services.Bing.BingSearchConfig" />
+        <Parameter Name="maxRecords" Type="System.Int32" />
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="parser" Type="Microsoft.Toolkit.Parsers.IParser&lt;TSchema&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSchema">Schema to use</typeparam>
+        <param name="config">Query configuration.</param>
+        <param name="maxRecords">Upper limit for records returned.</param>
+        <param name="pageIndex">The zero-based index of the page that corresponds to the items to retrieve.</param>
+        <param name="parser">IParser implementation for interpreting results.</param>
+        <summary>
+            Wrapper around REST API for making data request.
+            </summary>
+        <returns>Strongly typed list of results.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDefaultParser">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt; GetDefaultParser (Microsoft.Toolkit.Services.Bing.BingSearchConfig config);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Toolkit.Parsers.IParser`1&lt;class Microsoft.Toolkit.Services.Bing.BingResult&gt; GetDefaultParser(class Microsoft.Toolkit.Services.Bing.BingSearchConfig config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Bing.BingSearchConfig)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDefaultParser (config As BingSearchConfig) As IParser(Of BingResult)" />
+      <MemberSignature Language="F#" Value="override this.GetDefaultParser : Microsoft.Toolkit.Services.Bing.BingSearchConfig -&gt; Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;" Usage="bingDataProvider.GetDefaultParser config" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Toolkit::Parsers::IParser&lt;Microsoft::Toolkit::Services::Bing::BingResult ^&gt; ^ GetDefaultParser(Microsoft::Toolkit::Services::Bing::BingSearchConfig ^ config);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Services.Bing.BingSearchConfig" />
+      </Parameters>
+      <Docs>
+        <param name="config">Query configuration.</param>
+        <summary>
+            Returns parser implementation for specified configuration.
+            </summary>
+        <returns>Strongly typed parser.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateConfig">
+      <MemberSignature Language="C#" Value="protected override void ValidateConfig (Microsoft.Toolkit.Services.Bing.BingSearchConfig config);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateConfig(class Microsoft.Toolkit.Services.Bing.BingSearchConfig config) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Bing.BingDataProvider.ValidateConfig(Microsoft.Toolkit.Services.Bing.BingSearchConfig)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateConfig (config As BingSearchConfig)" />
+      <MemberSignature Language="F#" Value="override this.ValidateConfig : Microsoft.Toolkit.Services.Bing.BingSearchConfig -&gt; unit" Usage="bingDataProvider.ValidateConfig config" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateConfig(Microsoft::Toolkit::Services::Bing::BingSearchConfig ^ config);" />
+      <MemberSignature Language="C++ WINRT" Value=" override void ValidateConfig(Microsoft::Toolkit::Services::Bing::BingSearchConfig const &amp; config);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Services.Bing.BingSearchConfig" />
+      </Parameters>
+      <Docs>
+        <param name="config">Query configuration.</param>
+        <summary>
+            Check validity of configuration.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
