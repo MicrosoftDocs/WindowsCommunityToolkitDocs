@@ -40,6 +40,49 @@
         </Attribute>
       </Attributes>
     </Assembly>
+    <Assembly Name="Microsoft.Toolkit.Parsers" Version="2.2.0.0">
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.IgnoreSymbolStoreSequencePoints)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("Release")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation. All rights reserved.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("This .NET standard library contains various Parsers. It is part of the UWP Community Toolkit.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2.2.0.165")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("2.2.0+gd22f16484f")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft.Toolkit.Parsers")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Microsoft.Toolkit.Parsers")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.CompilationRelaxations(8)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.InternalsVisibleTo("UnitTests")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETStandard,Version=v1.4", FrameworkDisplayName="")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
     <Assembly Name="Microsoft.Toolkit.Services" Version="2.2.0.0">
       <Attributes>
         <Attribute>
@@ -375,6 +418,66 @@
     </Namespace>
     <Namespace Name="Microsoft.Toolkit.Extensions">
       <Type Name="StringExtensions" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers">
+      <Type Name="IParser`1" DisplayName="IParser&lt;T&gt;" Kind="Interface" />
+      <Type Name="SchemaBase" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Core">
+      <Type Name="ParseHelpers" Kind="Class" />
+      <Type Name="StringValueAttribute" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown">
+      <Type Name="MarkdownDocument" Kind="Class" />
+      <Type Name="MarkdownElement" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Blocks">
+      <Type Name="CodeBlock" Kind="Class" />
+      <Type Name="HeaderBlock" Kind="Class" />
+      <Type Name="HorizontalRuleBlock" Kind="Class" />
+      <Type Name="LinkReferenceBlock" Kind="Class" />
+      <Type Name="ListBlock" Kind="Class" />
+      <Type Name="MarkdownBlock" Kind="Class" />
+      <Type Name="ParagraphBlock" Kind="Class" />
+      <Type Name="QuoteBlock" Kind="Class" />
+      <Type Name="TableBlock" Kind="Class" />
+      <Type Name="TableBlock+TableCell" Kind="Class" />
+      <Type Name="TableBlock+TableColumnDefinition" Kind="Class" />
+      <Type Name="TableBlock+TableRow" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.List">
+      <Type Name="ListItemBlock" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Enums">
+      <Type Name="ColumnAlignment" Kind="Enumeration" />
+      <Type Name="HyperlinkType" Kind="Enumeration" />
+      <Type Name="ListStyle" Kind="Enumeration" />
+      <Type Name="MarkdownBlockType" Kind="Enumeration" />
+      <Type Name="MarkdownInlineType" Kind="Enumeration" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Inlines">
+      <Type Name="BoldTextInline" Kind="Class" />
+      <Type Name="CodeInline" Kind="Class" />
+      <Type Name="EmojiInline" Kind="Class" />
+      <Type Name="HyperlinkInline" Kind="Class" />
+      <Type Name="IInlineContainer" Kind="Interface" />
+      <Type Name="IInlineLeaf" Kind="Interface" />
+      <Type Name="ImageInline" Kind="Class" />
+      <Type Name="ItalicTextInline" Kind="Class" />
+      <Type Name="LinkAnchorInline" Kind="Class" />
+      <Type Name="MarkdownInline" Kind="Class" />
+      <Type Name="MarkdownLinkInline" Kind="Class" />
+      <Type Name="StrikethroughTextInline" Kind="Class" />
+      <Type Name="SuperscriptTextInline" Kind="Class" />
+      <Type Name="TextRunInline" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Render">
+      <Type Name="IRenderContext" Kind="Interface" />
+      <Type Name="MarkdownRendererBase" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.Toolkit.Parsers.Rss">
+      <Type Name="RssParser" Kind="Class" />
+      <Type Name="RssSchema" Kind="Class" />
     </Namespace>
     <Namespace Name="Microsoft.Toolkit.Services">
       <Type Name="DataProviderBase`1" DisplayName="DataProviderBase&lt;TConfig&gt;" Kind="Class" />
