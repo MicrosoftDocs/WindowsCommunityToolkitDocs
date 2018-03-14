@@ -19,6 +19,496 @@
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Core">
+    <Type Name="Microsoft.Toolkit.Parsers.Core.ParseHelpers" Id="T:Microsoft.Toolkit.Parsers.Core.ParseHelpers">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Core.ParseHelpers.IsMarkdownBlankOrWhiteSpace(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Core.ParseHelpers.IsMarkdownWhiteSpace(System.Char)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Core.StringValueAttribute" Id="T:Microsoft.Toolkit.Parsers.Core.StringValueAttribute">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Core.StringValueAttribute.#ctor(System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Core.StringValueAttribute.Value" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers">
+    <Type Name="Microsoft.Toolkit.Parsers.IParser`1" Id="T:Microsoft.Toolkit.Parsers.IParser`1">
+      <Member Id="M:Microsoft.Toolkit.Parsers.IParser`1.Parse(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.SchemaBase" Id="T:Microsoft.Toolkit.Parsers.SchemaBase">
+      <Member Id="M:Microsoft.Toolkit.Parsers.SchemaBase.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.SchemaBase.InternalID" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Blocks">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock.CodeLanguage" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock.Text" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock.HeaderLevel" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.HorizontalRuleBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.HorizontalRuleBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.HorizontalRuleBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.HorizontalRuleBlock.ToString" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock.Id" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock.Tooltip" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.LinkReferenceBlock.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock.Items" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock.Style" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.GetHashCode" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.Type" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock.Blocks" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.ColumnDefinitions" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.Rows" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.List">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.List.ListItemBlock" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.List.ListItemBlock">
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.List.ListItemBlock.Blocks" />
+    </Type>
+  </Namespace>
+  <Namespace Name="">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock/TableCell" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableCell">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableCell.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableCell.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock/TableColumnDefinition" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableColumnDefinition">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableColumnDefinition.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableColumnDefinition.Alignment" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock/TableRow" Id="T:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableRow">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableRow.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock.TableRow.Cells" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/AuthenticationModel" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V1" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V2" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OneDriveItemNameCollisionOption" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Fail" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Rename" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Replace" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Date" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateDesc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Name" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameDesc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.None" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Size" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeAsc" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeDesc" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Event" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Message" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.OneDrive" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.UserProfile" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ThumbnailSize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize">
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Large" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Medium" />
+      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Small" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice/RSSIComparer" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.Compare(System.Object,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics/DisplayTypes" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Bool" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Decimal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Hex" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.NotSet" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Unsupported" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf16" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf8" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView/NotificationDeferrer" Id="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.#ctor(Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.Dispose" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Constant" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String,Windows.UI.Color)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String,System.Numerics.Matrix3x2)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String,System.Numerics.Matrix4x4)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String,System.Numerics.Quaternion)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String,System.Single)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String,System.Numerics.Vector2)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String,System.Numerics.Vector3)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String,System.Numerics.Vector4)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/CurrentValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateBooleanCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateColorCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix3x2CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix4x4CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateQuaternionCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateScalarCurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector2CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector3CurrentValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector4CurrentValue" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Reference" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateAmbientLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateColorBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDistantLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDropShadowReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInsetClipReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInteractionTrackerReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateNineGridBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePointLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePropertySetReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSpotLightReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSurfaceBrushReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateVisualReference(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/StartingValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateBooleanStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateColorStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix3x2StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix4x4StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateQuaternionStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateScalarStartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector2StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector3StartingValue" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector4StartingValue" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Target" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateAmbientLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateColorBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDistantLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDropShadowTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInsetClipTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInteractionTrackerTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateNineGridBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePointLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePropertySetTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSpotLightTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSurfaceBrushTarget" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateVisualTarget" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel11" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel12" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel21" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel22" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel31" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel32" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel11" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel12" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel13" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel14" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel21" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel22" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel23" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel24" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel31" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel32" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel33" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel34" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel41" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel42" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel43" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel44" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.Y" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Y" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.W" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.X" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Y" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.BasedOnAlignment" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.CurrentAndNext" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndCurrent" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndNext" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Columns" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Rows" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GripperCursorType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Arrow" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Cross" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Default" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Hand" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Help" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.IBeam" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeAll" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNortheastSouthwest" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthSouth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthwestSoutheast" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeWestEast" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UniversalNo" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UpArrow" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Wait" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/SplitterCursorBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnGripperHover" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnSplitterHover" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile/RotateDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Down" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Left" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Right" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Up" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase/StretchDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Both" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Horizontal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Vertical" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationMode" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Forced" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Normal" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationType" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Characters" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Decimal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Email" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Number" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.PhoneNumber" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Enums">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment" Id="T:Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment">
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment.Center" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment.Left" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment.Right" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ColumnAlignment.Unspecified" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType" Id="T:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType">
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.BracketedUrl" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.Email" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.FullUrl" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.PartialUrl" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.Subreddit" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.HyperlinkType.User" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Enums.ListStyle" Id="T:Microsoft.Toolkit.Parsers.Markdown.Enums.ListStyle">
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ListStyle.Bulleted" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.ListStyle.Numbered" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType" Id="T:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType">
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Code" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Header" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.HorizontalRule" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.LinkReference" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.List" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.ListItemBuilder" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Paragraph" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Quote" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Root" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownBlockType.Table" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType" Id="T:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType">
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Bold" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Code" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Comment" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Emoji" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Image" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Italic" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.LinkReference" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.MarkdownLink" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.RawHyperlink" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.RawSubreddit" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Strikethrough" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.Superscript" />
+      <Member Id="F:Microsoft.Toolkit.Parsers.Markdown.Enums.MarkdownInlineType.TextRun" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Inlines">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline.Text" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline.Text" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline.LinkType" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline.Text" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineContainer" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineContainer">
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineContainer.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineLeaf" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineLeaf">
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineLeaf.Text" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.ImageHeight" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.ImageWidth" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.Text" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.Tooltip" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.LinkAnchorInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.LinkAnchorInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.LinkAnchorInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.LinkAnchorInline.Link" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.LinkAnchorInline.Raw" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline">
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline.Type" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.ResolveReference(Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.Inlines" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.ReferenceId" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.Tooltip" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline.Inlines" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline" Id="T:Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline.Text" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument" Id="T:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.LookUpReference(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.Parse(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.ToString" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.Blocks" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.MarkdownElement" Id="T:Microsoft.Toolkit.Parsers.Markdown.MarkdownElement">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.MarkdownElement.#ctor" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Markdown.Render">
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext" Id="T:Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext.Clone" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext.Parent" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext.TrimLeadingWhitespace" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase" Id="T:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.#ctor(Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.CheckRenderMarkdownLink(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.CollapseWhitespace(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.Render(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlock(Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlocks(System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock},Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBoldRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderCode(Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderCodeRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderEmoji(Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHeader(Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHorizontalRule(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHyperlink(Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderImage(Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderInline(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderInlineChildren(System.Collections.Generic.IList{Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline},Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderItalicRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderListElement(Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderMarkdownLink(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderParagraph(Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderQuote(Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderStrikethroughRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderSuperscriptRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderTable(Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderTextRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.Document" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Parsers.Rss">
+    <Type Name="Microsoft.Toolkit.Parsers.Rss.RssParser" Id="T:Microsoft.Toolkit.Parsers.Rss.RssParser">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Rss.RssParser.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Parsers.Rss.RssParser.Parse(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Parsers.Rss.RssSchema" Id="T:Microsoft.Toolkit.Parsers.Rss.RssSchema">
+      <Member Id="M:Microsoft.Toolkit.Parsers.Rss.RssSchema.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.Author" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.Content" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.ExtraImageUrl" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.FeedUrl" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.ImageUrl" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.MediaUrl" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.PublishDate" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.Summary" />
+      <Member Id="P:Microsoft.Toolkit.Parsers.Rss.RssSchema.Title" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Services.Bing">
     <Type Name="Microsoft.Toolkit.Services.Bing.BingCountry" Id="T:Microsoft.Toolkit.Services.Bing.BingCountry">
       <Member Id="F:Microsoft.Toolkit.Services.Bing.BingCountry.Albania" />
@@ -576,223 +1066,6 @@
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.Event" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.Message" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.PhotosService" />
-    </Type>
-  </Namespace>
-  <Namespace Name="">
-    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/AuthenticationModel" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel">
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V1" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.AuthenticationModel.V2" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OneDriveItemNameCollisionOption" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption">
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Fail" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Rename" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OneDriveItemNameCollisionOption.Replace" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy">
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Date" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateAsc" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.DateDesc" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Name" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameAsc" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.NameDesc" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.None" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.Size" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeAsc" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy.SizeDesc" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize">
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Event" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.Message" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.OneDrive" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize.UserProfile" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ThumbnailSize" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize">
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Large" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Medium" />
-      <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Small" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice/RSSIComparer" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer">
-      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.RSSIComparer.Compare(System.Object,System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics/DisplayTypes" Id="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes">
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Bool" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Decimal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Hex" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.NotSet" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Unsupported" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf16" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DisplayTypes.Utf8" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView/NotificationDeferrer" Id="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.#ctor(Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.NotificationDeferrer.Dispose" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Constant" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantBoolean(System.String,System.Boolean)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantColor(System.String,Windows.UI.Color)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix3x2(System.String,System.Numerics.Matrix3x2)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantMatrix4x4(System.String,System.Numerics.Matrix4x4)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantQuaternion(System.String,System.Numerics.Quaternion)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantScalar(System.String,System.Single)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector2(System.String,System.Numerics.Vector2)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector3(System.String,System.Numerics.Vector3)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Constant.CreateConstantVector4(System.String,System.Numerics.Vector4)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/CurrentValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateBooleanCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateColorCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix3x2CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateMatrix4x4CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateQuaternionCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateScalarCurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector2CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector3CurrentValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.CurrentValue.CreateVector4CurrentValue" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Reference" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateAmbientLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateColorBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDistantLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateDropShadowReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInsetClipReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateInteractionTrackerReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateNineGridBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePointLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreatePropertySetReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSpotLightReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateSurfaceBrushReference(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Reference.CreateVisualReference(System.String)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/StartingValue" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateBooleanStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateColorStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix3x2StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateMatrix4x4StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateQuaternionStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateScalarStartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector2StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector3StartingValue" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.StartingValue.CreateVector4StartingValue" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues/Target" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target">
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateAmbientLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateColorBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDistantLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateDropShadowTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInsetClipTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateInteractionTrackerTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateNineGridBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePointLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreatePropertySetTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSpotLightTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateSurfaceBrushTarget" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionValues.Target.CreateVisualTarget" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel11" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel12" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel21" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel22" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel31" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix3x2Node.Subchannel.Channel32" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel11" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel12" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel13" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel14" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel21" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel22" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel23" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel24" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel31" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel32" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel33" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel34" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel41" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel42" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel43" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Matrix4x4Node.Subchannel.Channel44" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector2Node.Subchannel.Y" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Y" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector3Node.Subchannel.Z" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node/Subchannel" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.W" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.X" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Y" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.Vector4Node.Subchannel.Z" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.BasedOnAlignment" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.CurrentAndNext" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndCurrent" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeBehavior.PreviousAndNext" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GridResizeDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Auto" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Columns" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GridResizeDirection.Rows" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/GripperCursorType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Arrow" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Cross" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Custom" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Default" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Hand" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Help" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.IBeam" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeAll" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNortheastSouthwest" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthSouth" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeNorthwestSoutheast" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.SizeWestEast" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UniversalNo" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.UpArrow" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.GripperCursorType.Wait" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter/SplitterCursorBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnGripperHover" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.SplitterCursorBehavior.ChangeOnSplitterHover" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile/RotateDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Down" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Left" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Right" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.RotateDirection.Up" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase/StretchDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Both" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Horizontal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewBase.StretchDirection.Vertical" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationMode" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Forced" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Normal" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationType" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType">
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Characters" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Custom" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Decimal" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Email" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.Number" />
-      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType.PhoneNumber" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph.Platform">
