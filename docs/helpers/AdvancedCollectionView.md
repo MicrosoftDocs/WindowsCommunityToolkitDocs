@@ -22,7 +22,7 @@ In your viewmodel instead of having a public [IEnumerable](https://docs.microsof
 ## Example
 
 > [!div class="tabbedCodeSnippets"]
-```csharp
+    ```csharp
 // Be sure to include the using at the top of the file:
 //using Microsoft.Toolkit.Uwp.UI;
 
@@ -72,8 +72,8 @@ person.Name = "Zaphod"; // Now a re-sort is triggered and person will be last in
 
 // AdvancedCollectionView can be bound to anything that uses collections. 
 YourListView.ItemsSource = acv;
-```
-```vb
+    ```
+    ```vb
 ' Be sure to include the using at the top of the file:
 'Imports Microsoft.Toolkit.Uwp.UI
 
@@ -121,7 +121,7 @@ person.Name = "Zaphod" ' Now a re-sort is triggered and person will be last in t
 
 ' AdvancedCollectionView can be bound to anything that uses collections.
 YourListView.ItemsSource = acv
-```
+    ```
 
 ## Remarks
 
