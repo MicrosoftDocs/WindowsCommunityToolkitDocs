@@ -25,7 +25,11 @@ In your viewmodel instead of having a public [IEnumerable](https://docs.microsof
     ```csharp
     // Be sure to include the using at the top of the file:
     //using Microsoft.Toolkit.Uwp.UI;
-
+    ```
+    ```vb
+    test
+    ```
+    
     // Grab a sample type
     public class Person
     {
