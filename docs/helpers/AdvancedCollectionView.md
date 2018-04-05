@@ -21,7 +21,7 @@ In your viewmodel instead of having a public [IEnumerable](https://docs.microsof
 
 ## Example
 
-> [!div class="tabbedCodeSnippets" data-resources="OutlookServices.Calendar"]
+> [!div class="tabbedCodeSnippets"]
 ```csharp
 // Be sure to include the using at the top of the file:
 //using Microsoft.Toolkit.Uwp.UI;
