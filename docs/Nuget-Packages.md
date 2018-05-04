@@ -5,7 +5,7 @@ description: The UWP Community Toolkit is updated regularly with new controls, s
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, nuget, visual studio
 ---
 
-# UWP Community Toolkit Nuget Packages
+# Windows Community Toolkit Nuget Packages
 
 NuGet is a standard package manager for .Net applications that is built into Visual Studio. From your open solution choose the *Tools* menu, *NuGet Package Manager*, *Manage NuGet packages for solution...* to open the UI.  Enter one of the package names below to search for it online.
 
