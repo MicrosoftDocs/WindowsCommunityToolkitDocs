@@ -56,6 +56,21 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
 
 <!-- Image/Text can show the output of the control/helper -->
 
+## Add the GraphLogin component to the Visual Studio Toolbox
+
+<!-- Remove these steps before going public. This is for early adopters only -->
+1. Open the Visual Studio **Toolbox**, then right-click anywhere in the toolbox, and select the **Choose Items** option.
+
+2. In the **.NET Framework Components** tab of the **Choose Toolbox Items** dialog box.
+
+3. Use the **Browse** button to locate the **Microsoft.Toolkit.Services.dll** in your NuGet package folder (choose the *net461* folder).
+
+   For help finding that folder, see [Managing the global packages, cache, and temp folders](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+
+4. Add that file to the list of Toolbox controls, and then close the **Choose Toolbox Items** dialog box.
+
+   The **GraphLoginComponent** appears in the **General** section of the **Toolbox**.
+
 ## Properties
 
 | Property | Type | Description |
