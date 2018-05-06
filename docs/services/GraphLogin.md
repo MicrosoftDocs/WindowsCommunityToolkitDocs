@@ -11,7 +11,8 @@ The [GraphLogin component](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use Login experience.  The control then provides read-only properties about the logged on user and an instance of the **GraphServiceClient** which can be used for additional calls with the Microsoft Graph SDK.
 
-> [!IMPORTANT] Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration.
+> [!IMPORTANT]
+Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration.
 
 
 ## Syntax
