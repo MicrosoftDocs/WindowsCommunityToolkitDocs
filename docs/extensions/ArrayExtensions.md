@@ -7,6 +7,9 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 
 ### How it works
 
+> [!NOTE] 
+This extension is in preview and can be found in a prerelease package. The extension could change between now and the final release
+
 Provides a few helpers for dealing with multi-dimensional and jagged arrays.  Also, provides string helpers for debug output.
 
 ## Syntax

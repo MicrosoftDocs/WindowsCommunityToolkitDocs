@@ -6,6 +6,10 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, nullable bool, de
 ---
 
 # NullableBool Markup Extension
+
+> [!NOTE] 
+This extension is in preview and can be found in a prerelease package. The extension could change between now and the final release
+
 The [NullableBool Markup Extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.nullablebool) provides the ability to set nullable boolean dependency properties in XAML markup.  These types of properties can normally be bound to, but can't be explicitly set to a specific value.  This extension provides that capability.
 
 ## Syntax
