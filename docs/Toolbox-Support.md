@@ -2,7 +2,7 @@
 title: Windows Community Toolkit controls in the Visual Studio Toolbox
 author: nmetulev
 description: Adding the Windows Community Toolkit to your Visual Studio Toolbox simplifies the development workflow with the Visual Studio designer 
-keywords: windows 10, uwp, Windows community toolkit, uwp toolkit, visual studio, toolbox
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, visual studio, toolbox
 ---
 
 > [!NOTE]
@@ -10,7 +10,7 @@ Starting with version 2.1, the Windows Community Toolkit controls will be automa
 
 # Adding the Windows Community Toolkit to your Visual Studio Toolbox (for version 2.0 or below)
 
-Add the UWWindowsP Community Toolkit controls into the Visual Studio toolbox by following these steps:
+Add the Windows Community Toolkit controls into the Visual Studio toolbox by following these steps:
 
 1) Add the *Microsoft.Toolkit.Uwp.UI.Controls* NuGet package to your application. 
 
