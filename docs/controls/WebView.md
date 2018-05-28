@@ -7,9 +7,6 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # WebView controls for Windows Forms and WPF applications
 
-> [!NOTE] 
-This control is in preview and can be found as a prerelease package. The control could change between now and the final release
-
 The **WebView** control shows web content in your Windows Forms or WPF desktop application.
 
 ![Web View Samples](../resources/images/Controls/WebView/web-view-samples.png)
@@ -318,5 +315,5 @@ You can use the [Settings](https://docs.microsoft.com/uwp/api/windows.web.ui.int
 
 ## API Source Code
 
-- [WinForms.WebView](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Win32.UI.Controls/WinForms/WebView)
-- [WPF.WebView](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Win32.UI.Controls/WPF/WebView)
+- [WinForms.WebView](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Win32.UI.Controls/WinForms/WebView)
+- [WPF.WebView](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Win32.UI.Controls/WPF/WebView)
