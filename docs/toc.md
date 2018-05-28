@@ -91,7 +91,7 @@
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 ## [Logical Tree](extensions/LogicalTree.md)
 ## [Matrix Extensions](extensions/MatrixExtensions.md)
-### [Extra Matrix Helpers](extentions/MatrixHelperEx.md)
+### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
 ### [Transform Extensions](extensions/TransformExtensions.md)
 ## [Mouse Cursor](extensions/MouseCursor.md)
 ## [NavigationView Styles](extensions/NavigationView.md)
