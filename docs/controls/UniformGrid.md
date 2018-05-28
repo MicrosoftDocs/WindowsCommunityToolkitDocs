@@ -7,9 +7,6 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, UniformGrid, xaml
 
 # UniformGrid XAML Control 
 
-> [!NOTE] 
-This control is in preview and can be found as a prerelease package. The control could change between now and the final release
-
 The **UniformGrid Control** is a responsive layout control which arranges items in a evenly-spaced set of rows or columns to fill the total available display space.  Each cell in the grid, by default, will be the same size.
 
 If no value for `Rows` and `Columns` are provided, the UniformGrid will create a square layout based on the total number of visible items.
@@ -177,7 +174,7 @@ Changing the `FlowDirection` or `Orientation` properties effect how `FirstColumn
 
 ## Example Code
 
-[UniformGrid Sample Page](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid)
+[UniformGrid Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid)
 
 ## Requirements (Windows 10 Device Family)
 
@@ -188,7 +185,7 @@ Changing the `FlowDirection` or `Orientation` properties effect how `FirstColumn
 
 ## API Source Code
 
-- [UniformGrid source code](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/UniformGrid.cs)
+- [UniformGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/UniformGrid.cs)
 
 ## Related Topics
 

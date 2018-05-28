@@ -7,9 +7,6 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 
 ### How it works
 
-> [!NOTE] 
-This extension is in preview and can be found in a prerelease package. The extension could change between now and the final release
-
 Provides a few helpers for dealing with multi-dimensional and jagged arrays.  Also, provides string helpers for debug output.
 
 ## Syntax
@@ -49,7 +46,7 @@ Output:
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.14393.0 or higher |
+| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.15063.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
@@ -60,4 +57,4 @@ The Array Extensions supports .NET Standard
 
 ## API
 
-* [ArrayExtensions source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)
+* [ArrayExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)
