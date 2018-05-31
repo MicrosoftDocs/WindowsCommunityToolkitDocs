@@ -1,4 +1,4 @@
-﻿<Type Name="PullToRefreshListView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView">
+<Type Name="PullToRefreshListView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView">
   <TypeSignature Language="C#" Value="public class PullToRefreshListView : Windows.UI.Xaml.Controls.ListView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PullToRefreshListView extends Windows.UI.Xaml.Controls.ListView" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView" />
@@ -8,13 +8,16 @@
   <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class PullToRefreshListView : winrt::Windows::UI::Xaml::Controls::ListView" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Windows.UI.Xaml.Controls.ListView</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The PullToRefreshListView will be removed in a future major release. Please use the RefreshContainer control available in the 1803 version of Windows")</AttributeName>
+    </Attribute>
     <Attribute>
       <AttributeName>Windows.UI.Xaml.TemplatePart(Name="Root", Type=typeof(Windows.UI.Xaml.Controls.Border))</AttributeName>
     </Attribute>
@@ -58,7 +61,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -79,7 +82,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -103,7 +106,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -112,6 +115,30 @@
         <summary>
             IsPullToRefreshWithMouseEnabled Dependency Property
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRefreshContainerSupported">
+      <MemberSignature Language="C#" Value="public static bool IsRefreshContainerSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsRefreshContainerSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.IsRefreshContainerSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsRefreshContainerSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRefreshContainerSupported : bool" Usage="Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.IsRefreshContainerSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsRefreshContainerSupported { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static property bool IsRefreshContainerSupported { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether <see cref="T:Windows.UI.Xaml.Controls.RefreshContainer" /> is supported
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +154,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -154,7 +181,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -178,7 +205,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -200,7 +227,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RefreshProgressEventArgs&gt;</ReturnType>
@@ -223,7 +250,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -247,7 +274,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -270,7 +297,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -296,7 +323,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -319,7 +346,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -344,7 +371,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -366,7 +393,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
@@ -390,7 +417,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -413,7 +440,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -437,7 +464,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -459,7 +486,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -481,7 +508,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Input.ICommand</ReturnType>
@@ -505,7 +532,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -527,7 +554,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -550,7 +577,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -576,7 +603,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -599,7 +626,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -624,7 +651,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -632,6 +659,54 @@
       <Docs>
         <summary>
             Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.ReleaseToRefreshLabel" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseRefreshContainerWhenPossible">
+      <MemberSignature Language="C#" Value="public bool UseRefreshContainerWhenPossible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool UseRefreshContainerWhenPossible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.UseRefreshContainerWhenPossible" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseRefreshContainerWhenPossible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseRefreshContainerWhenPossible : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.UseRefreshContainerWhenPossible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseRefreshContainerWhenPossible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool UseRefreshContainerWhenPossible { bool get(); void set(bool value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the HamburgerMenu should use the NavigationView when possible (Fall Creators Update and above)
+            When set to true and the device supports NavigationView, the HamburgerMenu will use a template based on NavigationView
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseRefreshContainerWhenPossibleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty UseRefreshContainerWhenPossibleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty UseRefreshContainerWhenPossibleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.UseRefreshContainerWhenPossibleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseRefreshContainerWhenPossibleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UseRefreshContainerWhenPossibleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.UseRefreshContainerWhenPossibleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ UseRefreshContainerWhenPossibleProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty UseRefreshContainerWhenPossibleProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.PullToRefreshListView.UseRefreshContainerWhenPossible" /> dependency property
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

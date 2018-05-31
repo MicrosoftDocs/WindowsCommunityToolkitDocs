@@ -1,4 +1,4 @@
-﻿<Type Name="AnimationExtensions" FullName="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions">
+<Type Name="AnimationExtensions" FullName="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions">
   <TypeSignature Language="C#" Value="public static class AnimationExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AnimationExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" />
@@ -9,7 +9,7 @@
   <TypeSignature Language="C++ WINRT" Value="class AnimationExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,6 +18,12 @@
   <Docs>
     <summary>
             These extension methods perform animation on UIElements
+            </summary>
+    <summary>
+            Provides an extension which allows lighting.
+            </summary>
+    <summary>
+            A partial for the AnimationExtension which includes saturation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -31,7 +37,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -40,24 +46,24 @@
         <Parameter Name="storyboard" Type="Windows.UI.Xaml.Media.Animation.Storyboard" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="storyboard">The storyoard to be started</param>
+        <param name="storyboard">The storyboard to be started</param>
         <summary>
             Begins a Storyboard animation and returns a task that completes when the
-            animaton is complete
+            animation is complete
             </summary>
         <returns>Task that completes when the animation is complete</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Blur">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Blur : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur (animationSet, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Blur : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur (animationSet, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -68,6 +74,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -75,8 +82,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay. (ignored if duration == 0)</param>
         <param name="easingType">The easing function</param>
+        <param name="easingMode">The easing mode</param>
         <summary>
-            Animates the gaussian blur of the the UIElement.
+            Animates the gaussian blur of the UIElement.
             </summary>
         <returns>
             An Animation Set.
@@ -86,14 +94,14 @@
       </Docs>
     </Member>
     <Member MemberName="Blur">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur (this Windows.UI.Xaml.FrameworkElement associatedObject, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Blur : Windows.UI.Xaml.FrameworkElement * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur (associatedObject, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur (this Windows.UI.Xaml.FrameworkElement associatedObject, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Blur(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Blur : Windows.UI.Xaml.FrameworkElement * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur (associatedObject, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -104,6 +112,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -111,8 +120,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay. (ignored if duration == 0)</param>
         <param name="easingType">The easing function</param>
+        <param name="easingMode">The easing mode</param>
         <summary>
-            Animates the gaussian blur of the the UIElement.
+            Animates the gaussian blur of the UIElement.
             </summary>
         <returns>
             An Animation Set.
@@ -131,7 +141,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.Effects.Blur</ReturnType>
@@ -157,7 +167,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.EasingType</ReturnType>
@@ -171,14 +181,14 @@
       </Docs>
     </Member>
     <Member MemberName="Fade">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Fade : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade (animationSet, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Fade : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade (animationSet, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -189,6 +199,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -196,8 +207,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the opacity of the the UIElement.
+            Animates the opacity of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -206,14 +218,14 @@
       </Docs>
     </Member>
     <Member MemberName="Fade">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade (this Windows.UI.Xaml.UIElement associatedObject, float value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade(class Windows.UI.Xaml.UIElement associatedObject, float32 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Windows.UI.Xaml.UIElement,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Fade : Windows.UI.Xaml.UIElement * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade (associatedObject, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade (this Windows.UI.Xaml.UIElement associatedObject, float value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Fade(class Windows.UI.Xaml.UIElement associatedObject, float32 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade(Windows.UI.Xaml.UIElement,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Fade : Windows.UI.Xaml.UIElement * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Fade (associatedObject, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -224,6 +236,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The UI Element to change the opacity of.</param>
@@ -231,8 +244,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The easing mode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the opacity of the the UIElement.
+            Animates the opacity of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -241,17 +255,15 @@
       </Docs>
     </Member>
     <Member MemberName="GetCompositionEasingFunction">
-      <MemberSignature Language="C#" Value="public static Windows.UI.Composition.CompositionEasingFunction GetCompositionEasingFunction (Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, Windows.UI.Composition.Compositor compositor);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Composition.CompositionEasingFunction GetCompositionEasingFunction(valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, class Windows.UI.Composition.Compositor compositor) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetCompositionEasingFunction(Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Composition.Compositor)" />
-      <MemberSignature Language="F#" Value="static member GetCompositionEasingFunction : Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Composition.Compositor -&gt; Windows.UI.Composition.CompositionEasingFunction" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetCompositionEasingFunction (easingType, compositor)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Composition::CompositionEasingFunction ^ GetCompositionEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType, Windows::UI::Composition::Compositor ^ compositor);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Windows::UI::Composition::CompositionEasingFunction ^ GetCompositionEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType, Windows::UI::Composition::Compositor ^ compositor);" />
-      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::UI::Composition::CompositionEasingFunction GetCompositionEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType, winrt::Windows::UI::Composition::Compositor const &amp; compositor);" />
+      <MemberSignature Language="C#" Value="public static Windows.UI.Composition.CompositionEasingFunction GetCompositionEasingFunction (Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, Windows.UI.Composition.Compositor compositor, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Composition.CompositionEasingFunction GetCompositionEasingFunction(valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, class Windows.UI.Composition.Compositor compositor, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetCompositionEasingFunction(Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Composition.Compositor,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member GetCompositionEasingFunction : Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Composition.Compositor * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Windows.UI.Composition.CompositionEasingFunction" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetCompositionEasingFunction (easingType, compositor, easingMode)" />
+      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::UI::Composition::CompositionEasingFunction GetCompositionEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType, winrt::Windows::UI::Composition::Compositor const &amp; compositor, winrt::Windows::UI::Xaml::Media::Animation::EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Composition.CompositionEasingFunction</ReturnType>
@@ -259,10 +271,12 @@
       <Parameters>
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
         <Parameter Name="compositor" Type="Windows.UI.Composition.Compositor" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="easingType">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType" /> used to generate the CompositionEasingFunction</param>
         <param name="compositor">The <see cref="T:Windows.UI.Composition.Compositor" /></param>
+        <param name="easingMode">The <see cref="T:Windows.UI.Xaml.Media.Animation.EasingMode" /> used to generate the CompositionEasingFunction. Defaults to <see cref="F:Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut" /></param>
         <summary>
             Generates an <see cref="T:Windows.UI.Composition.CompositionEasingFunction" /> to be used with Composition animations
             </summary>
@@ -273,28 +287,28 @@
       </Docs>
     </Member>
     <Member MemberName="GetEasingFunction">
-      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.EasingFunctionBase GetEasingFunction (Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Xaml.Media.Animation.EasingFunctionBase GetEasingFunction(valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetEasingFunction(Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member GetEasingFunction : Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Windows.UI.Xaml.Media.Animation.EasingFunctionBase" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetEasingFunction easingType" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Xaml::Media::Animation::EasingFunctionBase ^ GetEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static Windows::UI::Xaml::Media::Animation::EasingFunctionBase ^ GetEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType);" />
-      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::UI::Xaml::Media::Animation::EasingFunctionBase GetEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType);" />
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.EasingFunctionBase GetEasingFunction (Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Xaml.Media.Animation.EasingFunctionBase GetEasingFunction(valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetEasingFunction(Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member GetEasingFunction : Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Windows.UI.Xaml.Media.Animation.EasingFunctionBase" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.GetEasingFunction (easingType, easingMode)" />
+      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::UI::Xaml::Media::Animation::EasingFunctionBase GetEasingFunction(Microsoft::Toolkit::Uwp::UI::Animations::EasingType easingType, winrt::Windows::UI::Xaml::Media::Animation::EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.Animation.EasingFunctionBase</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="easingType">The EasingType used to determine the EasingFunction</param>
+        <param name="easingMode">The EasingMode used to determine the EasingFunction. Defaults to <see cref="F:Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut" /></param>
         <summary>
-            Gets the EasingFunction from EasingType to be used with Storyboard animations
+            Gets the EasingFunction from an EasingType and optional EasingMode to be used with Storyboard animations
             </summary>
         <returns>Return the appropriate EasingFuntion or null if the EasingType is Linear</returns>
         <remarks>To be added.</remarks>
@@ -311,7 +325,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -325,7 +339,7 @@
             A check should always be made to IsBlurSupported prior to calling Blur,
             since older operating systems will not support blurs.
             </remarks>
-        <altmember cref="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
+        <altmember cref="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Blur(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
       </Docs>
     </Member>
     <Member MemberName="IsLightingSupported">
@@ -339,7 +353,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -355,14 +369,14 @@
       </Docs>
     </Member>
     <Member MemberName="Light">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double distance = 0, double duration = 500, double delay = 0, Nullable&lt;Windows.UI.Color&gt; color = null, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Light : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (animationSet, distance, duration, delay, color, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double distance = 0, double duration = 500, double delay = 0, Nullable&lt;Windows.UI.Color&gt; color = null, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Light : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (animationSet, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -374,6 +388,7 @@
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -382,6 +397,7 @@
         <param name="delay">The delay. (ignored if duration == 0)</param>
         <param name="color">The color of the spotlight.</param>
         <param name="easingType">The easing function</param>
+        <param name="easingMode">The easing mode</param>
         <summary>
             Animates a point light and it's distance.
             </summary>
@@ -393,14 +409,14 @@
       </Docs>
     </Member>
     <Member MemberName="Light">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Windows.UI.Xaml.FrameworkElement associatedObject, double distance = 0, double duration = 500, double delay = 0, Nullable&lt;Windows.UI.Color&gt; color = null, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Light : Windows.UI.Xaml.FrameworkElement * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (associatedObject, distance, duration, delay, color, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Windows.UI.Xaml.FrameworkElement associatedObject, double distance = 0, double duration = 500, double delay = 0, Nullable&lt;Windows.UI.Color&gt; color = null, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Light : Windows.UI.Xaml.FrameworkElement * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (associatedObject, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -412,6 +428,7 @@
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -420,6 +437,7 @@
         <param name="delay">The delay.</param>
         <param name="color">The color of the spotlight.</param>
         <param name="easingType">The easing function</param>
+        <param name="easingMode">The easing mode</param>
         <summary>
             Animates a point light and it's distance.
             </summary>
@@ -428,14 +446,14 @@
       </Docs>
     </Member>
     <Member MemberName="Offset">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float offsetX = 0, float offsetY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 offsetX, float32 offsetY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Offset : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset (animationSet, offsetX, offsetY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float offsetX = 0, float offsetY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 offsetX, float32 offsetY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Offset : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset (animationSet, offsetX, offsetY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -447,6 +465,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -455,8 +474,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the offset of the the UIElement.
+            Animates the offset of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -465,14 +485,14 @@
       </Docs>
     </Member>
     <Member MemberName="Offset">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset (this Windows.UI.Xaml.UIElement associatedObject, float offsetX = 0, float offsetY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset(class Windows.UI.Xaml.UIElement associatedObject, float32 offsetX, float32 offsetY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Offset : Windows.UI.Xaml.UIElement * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset (associatedObject, offsetX, offsetY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset (this Windows.UI.Xaml.UIElement associatedObject, float offsetX = 0, float offsetY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Offset(class Windows.UI.Xaml.UIElement associatedObject, float32 offsetX, float32 offsetY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Offset : Windows.UI.Xaml.UIElement * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Offset (associatedObject, offsetX, offsetY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -484,6 +504,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The specified UI Element.</param>
@@ -492,8 +513,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the offset of the the UIElement.
+            Animates the offset of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -502,14 +524,14 @@
       </Docs>
     </Member>
     <Member MemberName="Rotate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float value = 0, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 value, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Rotate : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate (animationSet, value, centerX, centerY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float value = 0, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 value, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Rotate : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate (animationSet, value, centerX, centerY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -522,6 +544,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -531,8 +554,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the rotation in degrees of the the UIElement.
+            Animates the rotation in degrees of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -541,14 +565,14 @@
       </Docs>
     </Member>
     <Member MemberName="Rotate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate (this Windows.UI.Xaml.UIElement associatedObject, float value = 0, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate(class Windows.UI.Xaml.UIElement associatedObject, float32 value, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Rotate : Windows.UI.Xaml.UIElement * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate (associatedObject, value, centerX, centerY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate (this Windows.UI.Xaml.UIElement associatedObject, float value = 0, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Rotate(class Windows.UI.Xaml.UIElement associatedObject, float32 value, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Rotate : Windows.UI.Xaml.UIElement * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Rotate (associatedObject, value, centerX, centerY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -561,6 +585,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The UI Element to rotate.</param>
@@ -570,8 +595,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">EasingMode used to interpolate between keyframes.</param>
         <summary>
-            Animates the rotation in degrees of the the UIElement.
+            Animates the rotation in degrees of the UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -580,14 +606,14 @@
       </Docs>
     </Member>
     <Member MemberName="Saturation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Saturation : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation (animationSet, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Saturation : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation (animationSet, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -598,6 +624,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -605,6 +632,7 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds.</param>
         <param name="easingType">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType" /></param>
+        <param name="easingMode">The <see cref="T:Windows.UI.Xaml.Media.Animation.EasingMode" /></param>
         <summary>
             Saturates the visual within the animation set.
             </summary>
@@ -613,14 +641,14 @@
       </Docs>
     </Member>
     <Member MemberName="Saturation">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation (this Windows.UI.Xaml.FrameworkElement associatedObject, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Saturation : Windows.UI.Xaml.FrameworkElement * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation (associatedObject, value, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation (this Windows.UI.Xaml.FrameworkElement associatedObject, double value = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Saturation(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 value, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Saturation : Windows.UI.Xaml.FrameworkElement * double * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Saturation (associatedObject, value, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -631,6 +659,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -638,6 +667,7 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds.</param>
         <param name="easingType">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType" /></param>
+        <param name="easingMode">The <see cref="T:Windows.UI.Xaml.Media.Animation.EasingMode" /></param>
         <summary>
             Saturates the FrameworkElement.
             </summary>
@@ -655,7 +685,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.Effects.Saturation</ReturnType>
@@ -671,14 +701,14 @@
       </Docs>
     </Member>
     <Member MemberName="Scale">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float scaleX = 1, float scaleY = 1, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 scaleX, float32 scaleY, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Scale : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale (animationSet, scaleX, scaleY, centerX, centerY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float scaleX = 1, float scaleY = 1, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float32 scaleX, float32 scaleY, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Scale : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * single * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale (animationSet, scaleX, scaleY, centerX, centerY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -692,6 +722,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animationSet object.</param>
@@ -702,8 +733,9 @@
         <param name="duration">The duration in milliseconds.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the scale of the the specified UIElement.
+            Animates the scale of the specified UIElement.
             </summary>
         <returns>
             An AnimationSet.
@@ -712,14 +744,14 @@
       </Docs>
     </Member>
     <Member MemberName="Scale">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale (this Windows.UI.Xaml.UIElement associatedObject, float scaleX = 1, float scaleY = 1, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale(class Windows.UI.Xaml.UIElement associatedObject, float32 scaleX, float32 scaleY, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType)" />
-      <MemberSignature Language="F#" Value="static member Scale : Windows.UI.Xaml.UIElement * single * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale (associatedObject, scaleX, scaleY, centerX, centerY, duration, delay, easingType)" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale (this Windows.UI.Xaml.UIElement associatedObject, float scaleX = 1, float scaleY = 1, float centerX = 0, float centerY = 0, double duration = 500, double delay = 0, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Scale(class Windows.UI.Xaml.UIElement associatedObject, float32 scaleX, float32 scaleY, float32 centerX, float32 centerY, float64 duration, float64 delay, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale(Windows.UI.Xaml.UIElement,System.Single,System.Single,System.Single,System.Single,System.Double,System.Double,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="F#" Value="static member Scale : Windows.UI.Xaml.UIElement * single * single * single * single * double * double * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Scale (associatedObject, scaleX, scaleY, centerX, centerY, duration, delay, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
@@ -733,6 +765,7 @@
         <Parameter Name="duration" Type="System.Double" />
         <Parameter Name="delay" Type="System.Double" />
         <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated UIElement.</param>
@@ -743,8 +776,9 @@
         <param name="duration">The duration in millisecond.</param>
         <param name="delay">The delay in milliseconds. (ignored if duration == 0)</param>
         <param name="easingType">Used to describe how the animation interpolates between keyframes.</param>
+        <param name="easingMode">The EasingMode to use to interpolate between keyframes.</param>
         <summary>
-            Animates the scale of the the specified UIElement.
+            Animates the scale of the specified UIElement.
             </summary>
         <returns>
             An AnimationSet.

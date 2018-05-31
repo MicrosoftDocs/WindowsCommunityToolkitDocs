@@ -1,4 +1,4 @@
-﻿<Type Name="AdvancedCollectionView" FullName="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView">
+<Type Name="AdvancedCollectionView" FullName="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView">
   <TypeSignature Language="C#" Value="public class AdvancedCollectionView : Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView, System.Collections.Generic.ICollection&lt;object&gt;, System.Collections.Generic.IComparer&lt;object&gt;, System.Collections.Generic.IEnumerable&lt;object&gt;, System.Collections.Generic.IList&lt;object&gt;, System.ComponentModel.INotifyPropertyChanged, Windows.Foundation.Collections.IObservableVector&lt;object&gt;, Windows.UI.Xaml.Data.ICollectionView, Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdvancedCollectionView extends System.Object implements class Microsoft.Toolkit.Uwp.UI.IAdvancedCollectionView, class System.Collections.Generic.ICollection`1&lt;object&gt;, class System.Collections.Generic.IComparer`1&lt;object&gt;, class System.Collections.Generic.IEnumerable`1&lt;object&gt;, class System.Collections.Generic.IList`1&lt;object&gt;, class System.Collections.IEnumerable, class System.ComponentModel.INotifyPropertyChanged, class Windows.Foundation.Collections.IObservableVector`1&lt;object&gt;, class Windows.UI.Xaml.Data.ICollectionView, class Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView" />
@@ -7,7 +7,7 @@
   <TypeSignature Language="C++ CLI" Value="public ref class AdvancedCollectionView : Microsoft::Toolkit::Uwp::UI::IAdvancedCollectionView, System::Collections::Generic::ICollection&lt;System::Object ^&gt;, System::Collections::Generic::IComparer&lt;System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Object ^&gt;, System::Collections::Generic::IList&lt;System::Object ^&gt;, System::ComponentModel::INotifyPropertyChanged, Windows::Foundation::Collections::IObservableVector&lt;System::Object ^&gt;, Windows::UI::Xaml::Data::ICollectionView, Windows::UI::Xaml::Data::ISupportIncrementalLoading" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -45,6 +45,9 @@
     <summary>
             A collection view implementation that supports filtering, sorting and incremental loading
             </summary>
+    <summary>
+            A collection view implementation that supports filtering, grouping, sorting and incremental loading
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -59,7 +62,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -70,18 +73,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public AdvancedCollectionView (System.Collections.IEnumerable source, bool isLiveShaping = false);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IEnumerable source, bool isLiveShaping) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.#ctor(System.Collections.IEnumerable,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (source As IEnumerable, Optional isLiveShaping As Boolean = false)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView : System.Collections.IEnumerable * bool -&gt; Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView" Usage="new Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView (source, isLiveShaping)" />
+      <MemberSignature Language="C#" Value="public AdvancedCollectionView (System.Collections.IList source, bool isLiveShaping = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IList source, bool isLiveShaping) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.#ctor(System.Collections.IList,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As IList, Optional isLiveShaping As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView : System.Collections.IList * bool -&gt; Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView" Usage="new Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView (source, isLiveShaping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="source" Type="System.Collections.IEnumerable" />
+        <Parameter Name="source" Type="System.Collections.IList" />
         <Parameter Name="isLiveShaping" Type="System.Boolean" />
       </Parameters>
       <Docs>
@@ -108,7 +111,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -137,7 +140,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -164,7 +167,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -192,7 +195,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -219,7 +222,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -245,7 +248,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.Collections.IObservableVector&lt;System.Object&gt;</ReturnType>
@@ -273,7 +276,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -301,7 +304,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -332,7 +335,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -354,7 +357,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
@@ -379,7 +382,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Data.CurrentChangingEventHandler</ReturnType>
@@ -402,7 +405,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -429,7 +432,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -455,7 +458,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -482,7 +485,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Predicate&lt;System.Object&gt;</ReturnType>
@@ -508,7 +511,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Object&gt;</ReturnType>
@@ -536,7 +539,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -564,7 +567,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -595,7 +598,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -626,7 +629,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -653,7 +656,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -680,7 +683,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -705,7 +708,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -743,7 +746,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;</ReturnType>
@@ -776,7 +779,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -808,7 +811,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -837,7 +840,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -866,7 +869,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -895,7 +898,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -927,7 +930,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -956,7 +959,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -981,7 +984,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1016,7 +1019,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
@@ -1043,7 +1046,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1071,7 +1074,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1098,7 +1101,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1125,7 +1128,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1156,7 +1159,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1188,7 +1191,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.SortDescription&gt;</ReturnType>
@@ -1202,19 +1205,19 @@
       </Docs>
     </Member>
     <Member MemberName="Source">
-      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Source { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable Source" />
+      <MemberSignature Language="C#" Value="public System.Collections.IList Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Source" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.Source" />
-      <MemberSignature Language="VB.NET" Value="Public Property Source As IEnumerable" />
-      <MemberSignature Language="F#" Value="member this.Source : System.Collections.IEnumerable with get, set" Usage="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.Source" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Source { System::Collections::IEnumerable ^ get(); void set(System::Collections::IEnumerable ^ value); };" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As IList" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Collections.IList with get, set" Usage="Microsoft.Toolkit.Uwp.UI.AdvancedCollectionView.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Source { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.IEnumerable</ReturnType>
+        <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -1237,7 +1240,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerable</ReturnType>
@@ -1264,7 +1267,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1295,7 +1298,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -1322,7 +1325,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.Collections.VectorChangedEventHandler&lt;System.Object&gt;</ReturnType>
