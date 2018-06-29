@@ -23,6 +23,7 @@ To guarantee that edits can be committed and canceled correctly, the objects in 
 ### Editing methods and events
 
 The following table lists the methods and events supported by DataGrid for cell and row editing functionality.
+
 Type | Name | Description
 ---|--- | ---
 Method | PreparingCellForEdit | Occurs when a cell in a DataGridTemplateColumn enters editing mode. This event does not occur for cells in other column types.
