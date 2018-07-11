@@ -18,7 +18,7 @@ Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/wind
 // Creates a Camera Helper and gets video frames from an available frame source.
 using Microsoft.Toolkit.Uwp.Helpers.CameraHelper;
 
-CameraHelper cameraHelper = new CameraHelper();
+CameraHelper _cameraHelper = new CameraHelper();
 var result = await _cameraHelper.InitializeAndStartCaptureAsync();
 
 // Camera Initialization and Capture failed for some reason
