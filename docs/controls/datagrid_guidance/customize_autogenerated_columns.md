@@ -79,7 +79,7 @@ if (e.PropertyType == GetType(Boolean))
 
 ## See Also
 
-* [Add a DataGrid control to a page](datagrid_guidance/datagrid_basics.md)
-* [Customize the DataGrid control using styling and formatting options](datagrid_guidance/styling_formatting_options.md)
-* [Sizing options in the DataGrid control](datagrid_guidance/sizing_options.md)
+* [Add a DataGrid control to a page](datagrid_basics.md)
+* [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
+* [Sizing options in the DataGrid control](sizing_options.md)
 * [DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/harinikmsft/datagrid/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid) 
