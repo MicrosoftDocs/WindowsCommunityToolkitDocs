@@ -1,4 +1,4 @@
-﻿<Type Name="MasterDetailsView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView">
+<Type Name="MasterDetailsView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView">
   <TypeSignature Language="C#" Value="public class MasterDetailsView : Windows.UI.Xaml.Controls.ItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MasterDetailsView extends Windows.UI.Xaml.Controls.ItemsControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView" />
@@ -8,7 +8,7 @@
   <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class MasterDetailsView : winrt::Windows::UI::Xaml::Controls::ItemsControl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Windows.UI.Xaml.Controls.ItemsControl</BaseTypeName>
@@ -26,6 +26,12 @@
     </Attribute>
     <Attribute>
       <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="NoSelectionWide")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionWide")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionNarrow")</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="WidthStates", Name="NarrowState")</AttributeName>
@@ -53,12 +59,59 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompactModeThresholdWidth">
+      <MemberSignature Language="C#" Value="public double CompactModeThresholdWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CompactModeThresholdWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView.CompactModeThresholdWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompactModeThresholdWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.CompactModeThresholdWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView.CompactModeThresholdWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CompactModeThresholdWidth { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double CompactModeThresholdWidth { double get(); void set(double value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Threshold width that witll trigger the control to go into compact mode
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompactModeThresholdWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty CompactModeThresholdWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty CompactModeThresholdWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView.CompactModeThresholdWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompactModeThresholdWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CompactModeThresholdWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView.CompactModeThresholdWidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ CompactModeThresholdWidthProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty CompactModeThresholdWidthProperty;" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsView.CompactModeThresholdWidth" /> dependancy property
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -73,7 +126,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Controls.CommandBar</ReturnType>
@@ -97,7 +150,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -120,7 +173,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
@@ -144,7 +197,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -167,7 +220,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Func&lt;System.Object,System.Object&gt;</ReturnType>
@@ -191,7 +244,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Controls.CommandBar</ReturnType>
@@ -215,7 +268,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -239,7 +292,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -265,7 +318,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -288,7 +341,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
@@ -314,7 +367,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -338,7 +391,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
@@ -362,7 +415,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -386,7 +439,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -413,7 +466,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -437,7 +490,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -461,7 +514,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -484,7 +537,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
@@ -511,7 +564,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -536,7 +589,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -562,7 +615,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -586,7 +639,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -609,7 +662,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Controls.SelectionChangedEventHandler</ReturnType>
@@ -632,7 +685,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsViewState</ReturnType>
@@ -655,7 +708,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.MasterDetailsViewState&gt;</ReturnType>
@@ -678,7 +731,7 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
