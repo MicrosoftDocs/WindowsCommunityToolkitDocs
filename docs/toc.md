@@ -38,6 +38,8 @@
 ## Microsoft Graph Controls
 ### [AadLogin](graph/AadLogin.md)
 ### [PeoplePicker](graph/PeoplePicker.md)
+### [PlannerTaskList](graph/PlannerTaskList.md)
+### [PowerBIEmbedded](graph/PowerBIEmbedded.md)
 ### [ProfileCard](graph/ProfileCard.md)
 ### [SharePointFileList](graph/SharePointFileList.md)
 ## [OrbitView](controls/OrbitView.md)
@@ -53,6 +55,7 @@
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WebView (win32)](controls/WebView.md)
+### [WebView known issues](controls/WebView-known-issues.md)
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Animations
