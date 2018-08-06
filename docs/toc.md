@@ -10,7 +10,7 @@
 ## [BladeView](controls/BladeView.md)
 ## [CameraPreview](controls/CameraPreview.md)
 ## [Carousel](controls/Carousel.md)
-## [DataGrid (preview)](controls/DataGrid.md)
+## [DataGrid](controls/DataGrid.md)
 ### [How to: Add a DataGrid control to a page](controls/datagrid_guidance/datagrid_basics.md)
 ### [How to: Customize the DataGrid control using styling and formatting options](controls/datagrid_guidance/styling_formatting_options.md)
 ### [How to: Display and configure Row Details](controls/datagrid_guidance/rowdetails.md)
