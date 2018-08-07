@@ -66,6 +66,7 @@ If the XAML page is enabled for gaze based interactions, the visibility and size
 | MaxDwellRepeatCount | int | The maximum amount of times the control will invoked repeatedly without the user's gaze having to leave and re-enter the control. The default value is zero which disables repeated invocation of a control. Developers can set a higher value to enable repeated invocation. |
 | DwellRepeatDuration | TimeSpan | Gets or sets the duration of repeated dwell invocations, should the user continue to dwell on the control. The first repeat will occur after an additional delay specified by `RepeatDelayDuration`. Subsequent repeats happen after every period of `DwellRepeatDuration`. _A control is invoked repeatedly only if MaxDwellRepeatCount is set to greater than zero_. |
 | RepeatDelayDuration | TimeSpan | Gets or sets the additional duration for the first repeat to occur. This prevents  inadvertent repeated invocation. See above for details. |
+| IsSwitchEnabled | bool | Gets or sets whether switch activation is enabled. When Switch support is enabled, the currently fixated element will not transition to the dwell state. Further, when the `GazePointer.Click()` method is called the currently fixated element will be invoked. |
 
 
 ## GazeElement Events
@@ -182,7 +183,7 @@ private void OnInvokeProgress(object sender, GazeProgressEventArgs e)
 
 <!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
 <!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/example -->
-<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/animations/animationset#examples  -->
+<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/en-us/windows/communitytoolkit/animations/animationset#examples  -->
 
 ## Sample Code
 
