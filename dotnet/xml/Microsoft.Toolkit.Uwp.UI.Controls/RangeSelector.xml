@@ -9,6 +9,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Windows.UI.Xaml.Controls.Control</BaseTypeName>
@@ -45,6 +46,12 @@
     <Attribute>
       <AttributeName>Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Disabled")</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="ToolTip", Type=typeof(Windows.UI.Xaml.Controls.Grid))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="ToolTipText", Type=typeof(Windows.UI.Xaml.Controls.TextBlock))</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>
@@ -65,61 +72,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector" /> class.
             Create a default range selector control.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsTouchOptimized">
-      <MemberSignature Language="C#" Value="public bool IsTouchOptimized { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsTouchOptimized" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimized" />
-      <MemberSignature Language="VB.NET" Value="Public Property IsTouchOptimized As Boolean" />
-      <MemberSignature Language="F#" Value="member this.IsTouchOptimized : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimized" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTouchOptimized { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsTouchOptimized { bool get(); void set(bool value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Boolean</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets a value indicating whether the control is optimized for touch use.
-            </summary>
-        <value>
-            The value for touch optimization.
-            </value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsTouchOptimizedProperty">
-      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty IsTouchOptimizedProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty IsTouchOptimizedProperty" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimizedProperty" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTouchOptimizedProperty As DependencyProperty " />
-      <MemberSignature Language="F#" Value=" staticval mutable IsTouchOptimizedProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RangeSelector.IsTouchOptimizedProperty" />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ IsTouchOptimizedProperty;" />
-      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty IsTouchOptimizedProperty;" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Identifies the IsTouchOptimized dependency property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -136,6 +95,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -162,6 +122,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -185,6 +146,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -211,6 +173,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -235,6 +198,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -259,6 +223,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -285,6 +250,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -308,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -334,6 +301,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -357,6 +325,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -383,6 +352,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -405,6 +375,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Controls.Primitives.DragCompletedEventHandler</ReturnType>
@@ -427,6 +398,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Controls.Primitives.DragStartedEventHandler</ReturnType>
@@ -449,6 +421,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RangeChangedEventArgs&gt;</ReturnType>

@@ -1,0 +1,616 @@
+﻿<Type Name="Tweet" FullName="Microsoft.Toolkit.Services.Twitter.Tweet">
+  <TypeSignature Language="C#" Value="public class Tweet : Microsoft.Toolkit.Parsers.SchemaBase, Microsoft.Toolkit.Services.Twitter.ITwitterResult" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Tweet extends Microsoft.Toolkit.Parsers.SchemaBase implements class Microsoft.Toolkit.Services.Twitter.ITwitterResult" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Twitter.Tweet" />
+  <TypeSignature Language="VB.NET" Value="Public Class Tweet&#xA;Inherits SchemaBase&#xA;Implements ITwitterResult" />
+  <TypeSignature Language="F#" Value="type Tweet = class&#xA;    inherit SchemaBase&#xA;    interface ITwitterResult" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Parsers.SchemaBase</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Services.Twitter.ITwitterResult</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Twitter Timeline item.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Tweet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.Tweet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Coordinates">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterCoordinates Coordinates { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterCoordinates Coordinates" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Coordinates" />
+      <MemberSignature Language="VB.NET" Value="Public Property Coordinates As TwitterCoordinates" />
+      <MemberSignature Language="F#" Value="member this.Coordinates : Microsoft.Toolkit.Services.Twitter.TwitterCoordinates with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Coordinates" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonConverter(typeof(Microsoft.Toolkit.Services.Twitter.TwitterCoordinatesConverter))</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("coordinates")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterCoordinates</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets geo coordinates (latitude and logitude) returned by Twitter for some locations
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatedAt">
+      <MemberSignature Language="C#" Value="public string CreatedAt { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CreatedAt" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.CreatedAt" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreatedAt As String" />
+      <MemberSignature Language="F#" Value="member this.CreatedAt : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.CreatedAt" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("created_at")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets time item was created.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreationDate">
+      <MemberSignature Language="C#" Value="public DateTime CreationDate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationDate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.CreationDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreationDate : DateTime" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.CreationDate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the creation date
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayTextRange">
+      <MemberSignature Language="C#" Value="public int[] DisplayTextRange { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32[] DisplayTextRange" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.DisplayTextRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayTextRange As Integer()" />
+      <MemberSignature Language="F#" Value="member this.DisplayTextRange : int[] with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.DisplayTextRange" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("display_text_range")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets display text range (indexes of tweet text without RT and leading user mentions)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Entities">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterEntities Entities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterEntities Entities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Entities" />
+      <MemberSignature Language="VB.NET" Value="Public Property Entities As TwitterEntities" />
+      <MemberSignature Language="F#" Value="member this.Entities : Microsoft.Toolkit.Services.Twitter.TwitterEntities with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Entities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("entities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterEntities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets attached content of the tweet
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Extended">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterExtended Extended { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterExtended Extended" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Extended" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extended As TwitterExtended" />
+      <MemberSignature Language="F#" Value="member this.Extended : Microsoft.Toolkit.Services.Twitter.TwitterExtended with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Extended" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("extended_tweet")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This member has been deprecated by Twitter. Use Text instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterExtended</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets full 280-character tweet text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtendedEntities">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterExtendedEntities ExtendedEntities { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterExtendedEntities ExtendedEntities" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.ExtendedEntities" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtendedEntities As TwitterExtendedEntities" />
+      <MemberSignature Language="F#" Value="member this.ExtendedEntities : Microsoft.Toolkit.Services.Twitter.TwitterExtendedEntities with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.ExtendedEntities" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("extended_entities")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterExtendedEntities</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets extended attached content of the tweet
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GeoData">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterGeoData GeoData { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterGeoData GeoData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.GeoData" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeoData As TwitterGeoData" />
+      <MemberSignature Language="F#" Value="member this.GeoData : Microsoft.Toolkit.Services.Twitter.TwitterGeoData with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.GeoData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("geo")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Obsolete("This member is deprecated by Twitter. Use Place and Coordinates instead.")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterGeoData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets geographic data (latitude and longitude).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Id" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("id_str")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets item Id.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InReplyToScreenName">
+      <MemberSignature Language="C#" Value="public string InReplyToScreenName { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InReplyToScreenName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToScreenName" />
+      <MemberSignature Language="VB.NET" Value="Public Property InReplyToScreenName As String" />
+      <MemberSignature Language="F#" Value="member this.InReplyToScreenName : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToScreenName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("in_reply_to_screen_name")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets in_reply_to_screen_name
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InReplyToStatusId">
+      <MemberSignature Language="C#" Value="public string InReplyToStatusId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InReplyToStatusId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToStatusId" />
+      <MemberSignature Language="VB.NET" Value="Public Property InReplyToStatusId As String" />
+      <MemberSignature Language="F#" Value="member this.InReplyToStatusId : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToStatusId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("in_reply_to_status_id_str")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets in_reply_to_status_id_str
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InReplyToUserId">
+      <MemberSignature Language="C#" Value="public string InReplyToUserId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string InReplyToUserId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToUserId" />
+      <MemberSignature Language="VB.NET" Value="Public Property InReplyToUserId As String" />
+      <MemberSignature Language="F#" Value="member this.InReplyToUserId : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.InReplyToUserId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("in_reply_to_user_id_str")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets in_reply_to_user_id_str
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTruncated">
+      <MemberSignature Language="C#" Value="public bool IsTruncated { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTruncated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.IsTruncated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTruncated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTruncated : bool with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.IsTruncated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("truncated")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether tweet is truncated
+            (true when tweet is longer than 140 characters)
+            This entity may be deprecated - it never seems to be set to true.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Place">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterPlace Place { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterPlace Place" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Place" />
+      <MemberSignature Language="VB.NET" Value="Public Property Place As TwitterPlace" />
+      <MemberSignature Language="F#" Value="member this.Place : Microsoft.Toolkit.Services.Twitter.TwitterPlace with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Place" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("place")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterPlace</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Place object returned by Twitter for some locations
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.Tweet QuotedStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.Tweet QuotedStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuotedStatus As Tweet" />
+      <MemberSignature Language="F#" Value="member this.QuotedStatus : Microsoft.Toolkit.Services.Twitter.Tweet with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("quoted_status")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.Tweet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets quoted_status
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedStatusId">
+      <MemberSignature Language="C#" Value="public string QuotedStatusId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string QuotedStatusId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatusId" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuotedStatusId As String" />
+      <MemberSignature Language="F#" Value="member this.QuotedStatusId : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatusId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("quoted_status_id_str")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets quoted_status_id_str
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotedStatusPermalink">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterUrl QuotedStatusPermalink { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterUrl QuotedStatusPermalink" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatusPermalink" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuotedStatusPermalink As TwitterUrl" />
+      <MemberSignature Language="F#" Value="member this.QuotedStatusPermalink : Microsoft.Toolkit.Services.Twitter.TwitterUrl with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.QuotedStatusPermalink" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("quoted_status_permalink")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterUrl</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets quoted_status_permalink
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RetweetedStatus">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.Tweet RetweetedStatus { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.Tweet RetweetedStatus" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.RetweetedStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Property RetweetedStatus As Tweet" />
+      <MemberSignature Language="F#" Value="member this.RetweetedStatus : Microsoft.Toolkit.Services.Twitter.Tweet with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.RetweetedStatus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("retweeted_status")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.Tweet</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Retweeted Tweet
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public string Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("source")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets tweet source (client or website used)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("text")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets text of the tweet (handles both 140 and 280 characters)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.Twitter.TwitterUser User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.Twitter.TwitterUser User" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.Tweet.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As TwitterUser" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Toolkit.Services.Twitter.TwitterUser with get, set" Usage="Microsoft.Toolkit.Services.Twitter.Tweet.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Newtonsoft.Json.JsonProperty("user")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterUser</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets user who posted the status.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

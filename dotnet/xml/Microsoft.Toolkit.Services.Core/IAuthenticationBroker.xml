@@ -1,0 +1,48 @@
+﻿<Type Name="IAuthenticationBroker" FullName="Microsoft.Toolkit.Services.Core.IAuthenticationBroker">
+  <TypeSignature Language="C#" Value="public interface IAuthenticationBroker" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthenticationBroker" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Core.IAuthenticationBroker" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAuthenticationBroker" />
+  <TypeSignature Language="F#" Value="type IAuthenticationBroker = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This gets an Uri value.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Authenticate">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Core.AuthenticationResult&gt; Authenticate (Uri requestUri, Uri callbackUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.Core.AuthenticationResult&gt; Authenticate(class System.Uri requestUri, class System.Uri callbackUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.IAuthenticationBroker.Authenticate(System.Uri,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Authenticate (requestUri As Uri, callbackUri As Uri) As Task(Of AuthenticationResult)" />
+      <MemberSignature Language="F#" Value="abstract member Authenticate : Uri * Uri -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Core.AuthenticationResult&gt;" Usage="iAuthenticationBroker.Authenticate (requestUri, callbackUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Core.AuthenticationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requestUri" Type="System.Uri" />
+        <Parameter Name="callbackUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="requestUri"> Autorization base url</param>
+        <param name="callbackUri"> LinkedInOAuthTokens callbackUri</param>
+        <summary>
+            Returns the authentication status, it could be UserCancel, ErrorHttp and Success.
+            </summary>
+        <returns> Returns a status </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,17 +1,19 @@
 ﻿<Type Name="Expander" FullName="Microsoft.Toolkit.Uwp.UI.Controls.Expander">
-  <TypeSignature Language="C#" Value="public class Expander : Windows.UI.Xaml.Controls.ContentControl" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Expander extends Windows.UI.Xaml.Controls.ContentControl" />
+  <TypeSignature Language="C#" Value="public class Expander : Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Expander extends Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.Expander" />
-  <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits ContentControl" />
-  <TypeSignature Language="F#" Value="type Expander = class&#xA;    inherit ContentControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits HeaderedContentControl" />
+  <TypeSignature Language="F#" Value="type Expander = class&#xA;    inherit HeaderedContentControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Expander : Windows::UI::Xaml::Controls::ContentControl" />
   <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class Expander : winrt::Windows::UI::Xaml::Controls::ContentControl" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Windows.UI.Xaml.Controls.ContentControl</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="uwp-toolkit-dotnet">Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
@@ -86,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -106,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -129,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.UIElement</ReturnType>
@@ -153,6 +158,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -176,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.ExpandDirection</ReturnType>
@@ -200,6 +207,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -222,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -233,95 +242,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Header">
-      <MemberSignature Language="C#" Value="public string Header { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance string Header" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.Header" />
-      <MemberSignature Language="VB.NET" Value="Public Property Header As String" />
-      <MemberSignature Language="F#" Value="member this.Header : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.Header" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Header { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Header { Platform::String ^ get(); void set(Platform::String ^ value); };" />
+    <Member MemberName="HeaderStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style HeaderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style HeaderStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.String</ReturnType>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a value indicating whether the Header of the control.
+            Gets or sets a value for the style to use for the Header of the Expander.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="HeaderProperty">
-      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty HeaderProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty HeaderProperty" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderProperty" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
-      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderProperty" />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ HeaderProperty;" />
-      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty HeaderProperty;" />
+    <Member MemberName="HeaderStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty HeaderStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty HeaderStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderStyleProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.Header" /> dependency property.
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeaderTemplate">
-      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate HeaderTemplate { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate HeaderTemplate" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderTemplate" />
-      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
-      <MemberSignature Language="F#" Value="member this.HeaderTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderTemplate" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::DataTemplate ^ HeaderTemplate { Windows::UI::Xaml::DataTemplate ^ get(); void set(Windows::UI::Xaml::DataTemplate ^ value); };" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Gets or sets a value indicating whether the HeaderTemplate of the control.
-            </summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="HeaderTemplateProperty">
-      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty HeaderTemplateProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty HeaderTemplateProperty" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderTemplateProperty" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
-      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderTemplateProperty" />
-      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ HeaderTemplateProperty;" />
-      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty HeaderTemplateProperty;" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderTemplate" /> dependency property.
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.Expander.HeaderStyle" /> dependency property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,6 +297,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -362,6 +322,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -386,6 +347,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -408,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -434,6 +397,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

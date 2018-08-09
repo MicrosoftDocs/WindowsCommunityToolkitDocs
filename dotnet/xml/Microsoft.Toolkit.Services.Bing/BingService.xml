@@ -1,6 +1,6 @@
 ﻿<Type Name="BingService" FullName="Microsoft.Toolkit.Services.Bing.BingService">
-  <TypeSignature Language="C#" Value="public class BingService : Microsoft.Toolkit.Collections.IIncrementalSource&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;, Microsoft.Toolkit.Services.Core.IDataService&lt;Microsoft.Toolkit.Services.Bing.BingDataProvider,Microsoft.Toolkit.Services.Bing.BingResult,Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BingService extends System.Object implements class Microsoft.Toolkit.Collections.IIncrementalSource`1&lt;class Microsoft.Toolkit.Services.Bing.BingResult&gt;, class Microsoft.Toolkit.Services.Core.IDataService`3&lt;class Microsoft.Toolkit.Services.Bing.BingDataProvider, class Microsoft.Toolkit.Services.Bing.BingResult, class Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;" />
+  <TypeSignature Language="C#" Value="public class BingService : Microsoft.Toolkit.Collections.IIncrementalSource&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;, Microsoft.Toolkit.Services.IDataService&lt;Microsoft.Toolkit.Services.Bing.BingDataProvider,Microsoft.Toolkit.Services.Bing.BingResult,Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BingService extends System.Object implements class Microsoft.Toolkit.Collections.IIncrementalSource`1&lt;class Microsoft.Toolkit.Services.Bing.BingResult&gt;, class Microsoft.Toolkit.Services.IDataService`3&lt;class Microsoft.Toolkit.Services.Bing.BingDataProvider, class Microsoft.Toolkit.Services.Bing.BingResult, class Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Bing.BingService" />
   <TypeSignature Language="VB.NET" Value="Public Class BingService&#xA;Implements IDataService(Of BingDataProvider, BingResult, BingSearchConfig), IIncrementalSource(Of BingResult)" />
   <TypeSignature Language="F#" Value="type BingService = class&#xA;    interface IDataService&lt;BingDataProvider, BingResult, BingSearchConfig&gt;&#xA;    interface IIncrementalSource&lt;BingResult&gt;" />
@@ -9,6 +9,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -18,9 +19,14 @@
       <InterfaceName>Microsoft.Toolkit.Collections.IIncrementalSource&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;</InterfaceName>
     </Interface>
     <Interface>
-      <InterfaceName>Microsoft.Toolkit.Services.Core.IDataService&lt;Microsoft.Toolkit.Services.Bing.BingDataProvider,Microsoft.Toolkit.Services.Bing.BingResult,Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;</InterfaceName>
+      <InterfaceName>Microsoft.Toolkit.Services.IDataService&lt;Microsoft.Toolkit.Services.Bing.BingDataProvider,Microsoft.Toolkit.Services.Bing.BingResult,Microsoft.Toolkit.Services.Bing.BingSearchConfig&gt;</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("The Bing Service will be removed in a future major release. Please use the Cognitive Services SDKs found at https://aka.ms/AA209h0.")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Class for connecting to Bing.
@@ -40,6 +46,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -61,6 +68,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="config" Type="Microsoft.Toolkit.Services.Bing.BingSearchConfig" />
@@ -85,12 +93,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.Bing.BingService/&lt;GetPagedItemsAsync&gt;d__10))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -129,6 +133,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Bing.BingService</ReturnType>
@@ -150,11 +155,12 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::Bing::BingDataProvider ^ Provider { Microsoft::Toolkit::Services::Bing::BingDataProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
-        <InterfaceMember>P:Microsoft.Toolkit.Services.Core.IDataService`3.Provider</InterfaceMember>
+        <InterfaceMember>P:Microsoft.Toolkit.Services.IDataService`3.Provider</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Bing.BingDataProvider</ReturnType>
@@ -175,17 +181,13 @@
       <MemberSignature Language="F#" Value="abstract member RequestAsync : Microsoft.Toolkit.Services.Bing.BingSearchConfig * int * int -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;&gt;&#xA;override this.RequestAsync : Microsoft.Toolkit.Services.Bing.BingSearchConfig * int * int -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;&gt;" Usage="bingService.RequestAsync (config, maxRecords, pageIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
-        <InterfaceMember>M:Microsoft.Toolkit.Services.Core.IDataService`3.RequestAsync(`2,System.Int32,System.Int32)</InterfaceMember>
+        <InterfaceMember>M:Microsoft.Toolkit.Services.IDataService`3.RequestAsync(`2,System.Int32,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.Bing.BingService/&lt;RequestAsync&gt;d__9))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.Bing.BingResult&gt;&gt;</ReturnType>
       </ReturnValue>

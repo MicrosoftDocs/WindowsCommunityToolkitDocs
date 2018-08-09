@@ -9,6 +9,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,21 +23,19 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MicrosoftGraphUserService (Microsoft.Graph.GraphServiceClient graphProvider, Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos photosService);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.GraphServiceClient graphProvider, class Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos photosService) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos)" />
+      <MemberSignature Language="C#" Value="public MicrosoftGraphUserService (Microsoft.Graph.GraphServiceClient graphProvider, Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos photosService);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.GraphServiceClient graphProvider, class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos photosService) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (graphProvider As GraphServiceClient, photosService As IMicrosoftGraphUserServicePhotos)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService : Microsoft.Graph.GraphServiceClient * Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos -&gt; Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService" Usage="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService (graphProvider, photosService)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; MicrosoftGraphUserService(Microsoft::Graph::GraphServiceClient ^ graphProvider, Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ photosService);" />
-      <MemberSignature Language="C++ WINRT" Value=" MicrosoftGraphUserService(Microsoft::Graph::GraphServiceClient const &amp; graphProvider, Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos const &amp; photosService);" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService : Microsoft.Graph.GraphServiceClient * Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos -&gt; Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService" Usage="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService (graphProvider, photosService)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="graphProvider" Type="Microsoft.Graph.GraphServiceClient" />
-        <Parameter Name="photosService" Type="Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos" />
+        <Parameter Name="photosService" Type="Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos" />
       </Parameters>
       <Docs>
         <param name="graphProvider">Instance of GraphClientService class</param>
@@ -58,6 +57,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent</ReturnType>
@@ -80,6 +80,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;</ReturnType>
@@ -106,12 +107,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService/&lt;GetProfileAsync&gt;d__14))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;</ReturnType>
       </ReturnValue>
@@ -141,6 +138,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage</ReturnType>
@@ -154,20 +152,21 @@
       </Docs>
     </Member>
     <Member MemberName="PhotosService">
-      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos PhotosService { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos PhotosService" />
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos PhotosService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos PhotosService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.PhotosService" />
       <MemberSignature Language="VB.NET" Value="Public Property PhotosService As IMicrosoftGraphUserServicePhotos" />
-      <MemberSignature Language="F#" Value="member this.PhotosService : Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.PhotosService" />
+      <MemberSignature Language="F#" Value="member this.PhotosService : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.PhotosService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ PhotosService { Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ get(); void set(Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ value); };" />
       <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ PhotosService { Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ get(); void set(Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotos ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos</ReturnType>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

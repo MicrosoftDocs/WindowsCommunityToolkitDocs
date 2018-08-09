@@ -8,6 +8,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TSource">
@@ -41,6 +42,7 @@
     <remarks>To be added.</remarks>
     <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
     <altmember cref="T:Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
+    <altmember cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="itemsPerPage" Type="System.Int32" />
@@ -78,6 +81,7 @@
             </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
+        <altmember cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -90,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="TSource" />
@@ -100,7 +105,7 @@
       </Parameters>
       <Docs>
         <param name="source">
-            An implementation of the <see cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" /> interface that contains the logic to actually load data incrementally.
+            An implementation of the <see cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" /> interface that contains the logic to actually load data incrementally.
             </param>
         <param name="itemsPerPage">
             The number of items to retrieve for each call. Default is 20.
@@ -115,10 +120,11 @@
             An <see cref="T:System.Action" /> that is called if an error occours during data retrieval.
             </param>
         <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class using the specified <see cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" /> implementation and, optionally, how many items to load for each data page.
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class using the specified <see cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" /> implementation and, optionally, how many items to load for each data page.
             </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:Microsoft.Toolkit.Uwp.IIncrementalSource`1" />
+        <altmember cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
       </Docs>
     </Member>
     <Member MemberName="CurrentPageIndex">
@@ -133,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -157,6 +164,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -181,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -205,6 +214,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -227,12 +237,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2/&lt;LoadDataAsync&gt;d__37))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -268,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;</ReturnType>
@@ -299,6 +306,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -322,6 +330,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action&lt;System.Exception&gt;</ReturnType>
@@ -345,6 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -354,32 +364,6 @@
             Gets or sets an <see cref="T:System.Action" /> that is called when a retrieval operation begins.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Refresh">
-      <MemberSignature Language="C#" Value="public void Refresh ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Refresh" />
-      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
-      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="incrementalLoadingCollection.Refresh " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Refresh();" />
-      <MemberSignature Language="C++ WINRT" Value="void Refresh();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Clears the collection and resets the page index
-            which triggers an automatic reload of the first page
-            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -394,22 +378,15 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("RefreshAsync is deprecated, please use Refresh instead.")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2/&lt;RefreshAsync&gt;d__35))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>
-            Clears the collection and reloads data from the source
+            Clears the collection and triggers/forces a reload of the first page
             </summary>
         <returns>This method does not return a result</returns>
         <remarks>To be added.</remarks>
@@ -427,6 +404,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TSource</ReturnType>
