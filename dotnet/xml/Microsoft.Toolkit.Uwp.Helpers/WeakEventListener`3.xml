@@ -1,0 +1,156 @@
+﻿<Type Name="WeakEventListener&lt;TInstance,TSource,TEventArgs&gt;" FullName="Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;TInstance,TSource,TEventArgs&gt;">
+  <TypeSignature Language="C#" Value="public sealed class WeakEventListener&lt;TInstance,TSource,TEventArgs&gt; where TInstance : class" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WeakEventListener`3&lt;class TInstance, TSource, TEventArgs&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WeakEventListener(Of TInstance, TSource, TEventArgs)" />
+  <TypeSignature Language="F#" Value="type WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TInstance">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TSource" />
+    <TypeParameter Name="TEventArgs" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TInstance">Type of instance listening for the event.</typeparam>
+    <typeparam name="TSource">Type of source for the event.</typeparam>
+    <typeparam name="TEventArgs">Type of event arguments for the event.</typeparam>
+    <summary>
+            Implements a weak event listener that allows the owner to be garbage
+            collected if its only remaining link is an event handler.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WeakEventListener (TInstance instance);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TInstance instance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instance As TInstance)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt; : 'Instance -&gt; Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt;" Usage="new Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt; instance" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="instance" Type="TInstance" />
+      </Parameters>
+      <Docs>
+        <param name="instance">Instance subscribing to the event.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Detach">
+      <MemberSignature Language="C#" Value="public void Detach ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Detach() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3.Detach" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Detach ()" />
+      <MemberSignature Language="F#" Value="member this.Detach : unit -&gt; unit" Usage="weakEventListener.Detach " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Detaches from the subscribed event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDetachAction">
+      <MemberSignature Language="C#" Value="public Action&lt;Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;TInstance,TSource,TEventArgs&gt;&gt; OnDetachAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3&lt;!TInstance, !TSource, !TEventArgs&gt;&gt; OnDetachAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3.OnDetachAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnDetachAction As Action(Of WeakEventListener(Of TInstance, TSource, TEventArgs))" />
+      <MemberSignature Language="F#" Value="member this.OnDetachAction : Action&lt;Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs&gt;&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt;.OnDetachAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;TInstance,TSource,TEventArgs&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the method to call when detaching from the event.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEvent">
+      <MemberSignature Language="C#" Value="public void OnEvent (TSource source, TEventArgs eventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void OnEvent(!TSource source, !TEventArgs eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3.OnEvent(`1,`2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnEvent (source As TSource, eventArgs As TEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnEvent : 'Source * 'EventArgs -&gt; unit" Usage="weakEventListener.OnEvent (source, eventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="TSource" />
+        <Parameter Name="eventArgs" Type="TEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="source">Event source.</param>
+        <param name="eventArgs">Event arguments.</param>
+        <summary>
+            Handler for the subscribed event calls OnEventAction to handle it.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEventAction">
+      <MemberSignature Language="C#" Value="public Action&lt;TInstance,TSource,TEventArgs&gt; OnEventAction { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Action`3&lt;!TInstance, !TSource, !TEventArgs&gt; OnEventAction" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.WeakEventListener`3.OnEventAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnEventAction As Action(Of TInstance, TSource, TEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnEventAction : Action&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.WeakEventListener&lt;'Instance, 'Source, 'EventArgs (requires 'Instance : null)&gt;.OnEventAction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;TInstance,TSource,TEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the method to call when the event fires.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

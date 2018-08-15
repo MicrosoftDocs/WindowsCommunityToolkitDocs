@@ -1,0 +1,677 @@
+﻿<Type Name="SurfaceDialTextbox" FullName="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox">
+  <TypeSignature Language="C#" Value="public class SurfaceDialTextbox" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SurfaceDialTextbox extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox" />
+  <TypeSignature Language="VB.NET" Value="Public Class SurfaceDialTextbox" />
+  <TypeSignature Language="F#" Value="type SurfaceDialTextbox = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper class that provides attached properties to enable any TextBox with the Surface Dial. Rotate to change the value by StepValue between MinValue and MaxValue, and tap to go to the Next focus element from a TextBox
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public SurfaceDialTextbox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Controller">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Input.RadialController Controller { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Windows.UI.Input.RadialController Controller" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.Controller" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Controller As RadialController" />
+      <MemberSignature Language="F#" Value="member this.Controller : Windows.UI.Input.RadialController with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.Controller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Input.RadialController</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the controller for the Surface Dial. The RadialController can be set from your app logic in case you use Surface Dial in other custom cases than on a TextBox.
+            This helper class will do everything for you, but if you want to control the Menu Items and/or wish to use the same Surface Dial insta
+            This is the property for the static controller so you can access it if needed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableHapticFeedbackProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty EnableHapticFeedbackProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty EnableHapticFeedbackProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableHapticFeedbackProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnableHapticFeedbackProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EnableHapticFeedbackProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableHapticFeedbackProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A flag to enable or disable haptic feedback when rotating the dial for the give TextBox. This is enabled by default.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableMinMaxValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty EnableMinMaxValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty EnableMinMaxValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableMinMaxValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnableMinMaxValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EnableMinMaxValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableMinMaxValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            EnableMinMax limits the value in the textbox to your spesificed Min and Max values, see the other properties.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableTapToNextControlProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty EnableTapToNextControlProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty EnableTapToNextControlProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableTapToNextControlProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnableTapToNextControlProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EnableTapToNextControlProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableTapToNextControlProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            TapToNext is a feature you can set to automatically try to focus the next focusable element from the Surface Dial enabled TextBox. This is on dy default.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForceMenuItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ForceMenuItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ForceMenuItemProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.ForceMenuItemProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForceMenuItemProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ForceMenuItemProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.ForceMenuItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            If you provide the Controller yourself, set this to true so you won't add new menu items.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableHapticFeedback">
+      <MemberSignature Language="C#" Value="public static bool GetEnableHapticFeedback (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEnableHapticFeedback(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableHapticFeedback(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnableHapticFeedback (obj As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetEnableHapticFeedback : Windows.UI.Xaml.DependencyObject -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableHapticFeedback obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Setter of the Haptic Feedback property
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableMinMaxValue">
+      <MemberSignature Language="C#" Value="public static bool GetEnableMinMaxValue (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEnableMinMaxValue(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableMinMaxValue(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnableMinMaxValue (obj As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetEnableMinMaxValue : Windows.UI.Xaml.DependencyObject -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableMinMaxValue obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the EnableMinMax property
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnableTapToNextControl">
+      <MemberSignature Language="C#" Value="public static bool GetEnableTapToNextControl (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetEnableTapToNextControl(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableTapToNextControl(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEnableTapToNextControl (obj As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetEnableTapToNextControl : Windows.UI.Xaml.DependencyObject -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetEnableTapToNextControl obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the TapToNext flag.
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForceMenuItem">
+      <MemberSignature Language="C#" Value="public static bool GetForceMenuItem (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetForceMenuItem(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetForceMenuItem(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetForceMenuItem (obj As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetForceMenuItem : Windows.UI.Xaml.DependencyObject -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetForceMenuItem obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the Force Menu Item flag
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIcon">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Input.RadialControllerMenuKnownIcon GetIcon (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Input.RadialControllerMenuKnownIcon GetIcon(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetIcon(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIcon (obj As DependencyObject) As RadialControllerMenuKnownIcon" />
+      <MemberSignature Language="F#" Value="static member GetIcon : Windows.UI.Xaml.DependencyObject -&gt; Windows.UI.Input.RadialControllerMenuKnownIcon" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetIcon obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Input.RadialControllerMenuKnownIcon</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the Icon
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMaxValue">
+      <MemberSignature Language="C#" Value="public static double GetMaxValue (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetMaxValue(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetMaxValue(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaxValue (obj As DependencyObject) As Double" />
+      <MemberSignature Language="F#" Value="static member GetMaxValue : Windows.UI.Xaml.DependencyObject -&gt; double" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetMaxValue obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the MaxValue
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMinValue">
+      <MemberSignature Language="C#" Value="public static double GetMinValue (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetMinValue(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetMinValue(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMinValue (obj As DependencyObject) As Double" />
+      <MemberSignature Language="F#" Value="static member GetMinValue : Windows.UI.Xaml.DependencyObject -&gt; double" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetMinValue obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Getter of the MinValue
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStepValue">
+      <MemberSignature Language="C#" Value="public static double GetStepValue (Windows.UI.Xaml.DependencyObject obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetStepValue(class Windows.UI.Xaml.DependencyObject obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetStepValue(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetStepValue (obj As DependencyObject) As Double" />
+      <MemberSignature Language="F#" Value="static member GetStepValue : Windows.UI.Xaml.DependencyObject -&gt; double" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.GetStepValue obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <summary>
+            Setter of the StepValue.
+            </summary>
+        <returns>Return value of property</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty IconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty IconProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.IconProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IconProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.IconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Set the default icon of the menu item that gets added. A user will most likely not see this. Defaults to the Ruler icon.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this attached proeprty is supported
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaxValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaxValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MaxValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MaxValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sets the maxium value the TextBox can have when modifying it using a Surface Dial. Default is 100.0
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MinValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MinValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MinValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MinValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Sets the minimum value the TextBox can have when modifying it using a Surface Dial. Default is -100.0
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEnableHapticFeedback">
+      <MemberSignature Language="C#" Value="public static void SetEnableHapticFeedback (Windows.UI.Xaml.DependencyObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnableHapticFeedback(class Windows.UI.Xaml.DependencyObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableHapticFeedback(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEnableHapticFeedback (obj As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetEnableHapticFeedback : Windows.UI.Xaml.DependencyObject * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableHapticFeedback (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Getter of the Haptic Feedback property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEnableMinMaxValue">
+      <MemberSignature Language="C#" Value="public static void SetEnableMinMaxValue (Windows.UI.Xaml.DependencyObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnableMinMaxValue(class Windows.UI.Xaml.DependencyObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableMinMaxValue(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEnableMinMaxValue (obj As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetEnableMinMaxValue : Windows.UI.Xaml.DependencyObject * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableMinMaxValue (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the EnableMinMax property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetEnableTapToNextControl">
+      <MemberSignature Language="C#" Value="public static void SetEnableTapToNextControl (Windows.UI.Xaml.DependencyObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetEnableTapToNextControl(class Windows.UI.Xaml.DependencyObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableTapToNextControl(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetEnableTapToNextControl (obj As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetEnableTapToNextControl : Windows.UI.Xaml.DependencyObject * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetEnableTapToNextControl (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the TapToNext flag.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetForceMenuItem">
+      <MemberSignature Language="C#" Value="public static void SetForceMenuItem (Windows.UI.Xaml.DependencyObject obj, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetForceMenuItem(class Windows.UI.Xaml.DependencyObject obj, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetForceMenuItem(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetForceMenuItem (obj As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetForceMenuItem : Windows.UI.Xaml.DependencyObject * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetForceMenuItem (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the Force Menu Item flag
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIcon">
+      <MemberSignature Language="C#" Value="public static void SetIcon (Windows.UI.Xaml.DependencyObject obj, Windows.UI.Input.RadialControllerMenuKnownIcon value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIcon(class Windows.UI.Xaml.DependencyObject obj, valuetype Windows.UI.Input.RadialControllerMenuKnownIcon value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetIcon(Windows.UI.Xaml.DependencyObject,Windows.UI.Input.RadialControllerMenuKnownIcon)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIcon (obj As DependencyObject, value As RadialControllerMenuKnownIcon)" />
+      <MemberSignature Language="F#" Value="static member SetIcon : Windows.UI.Xaml.DependencyObject * Windows.UI.Input.RadialControllerMenuKnownIcon -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetIcon (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="Windows.UI.Input.RadialControllerMenuKnownIcon" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the Icon
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMaxValue">
+      <MemberSignature Language="C#" Value="public static void SetMaxValue (Windows.UI.Xaml.DependencyObject obj, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMaxValue(class Windows.UI.Xaml.DependencyObject obj, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetMaxValue(Windows.UI.Xaml.DependencyObject,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMaxValue (obj As DependencyObject, value As Double)" />
+      <MemberSignature Language="F#" Value="static member SetMaxValue : Windows.UI.Xaml.DependencyObject * double -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetMaxValue (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the MaxValue
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMinValue">
+      <MemberSignature Language="C#" Value="public static void SetMinValue (Windows.UI.Xaml.DependencyObject obj, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMinValue(class Windows.UI.Xaml.DependencyObject obj, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetMinValue(Windows.UI.Xaml.DependencyObject,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMinValue (obj As DependencyObject, value As Double)" />
+      <MemberSignature Language="F#" Value="static member SetMinValue : Windows.UI.Xaml.DependencyObject * double -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetMinValue (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Setter of the MinValue
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetStepValue">
+      <MemberSignature Language="C#" Value="public static void SetStepValue (Windows.UI.Xaml.DependencyObject obj, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetStepValue(class Windows.UI.Xaml.DependencyObject obj, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetStepValue(Windows.UI.Xaml.DependencyObject,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetStepValue (obj As DependencyObject, value As Double)" />
+      <MemberSignature Language="F#" Value="static member SetStepValue : Windows.UI.Xaml.DependencyObject * double -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetStepValue (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The Depenency Object we are dealing with, like a TextBox.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Getter of the StepValue
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty StepValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty StepValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.StepValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StepValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.StepValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The amount the TextBox will be modified for each rotation step on the Surface Dial. This can be any double value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

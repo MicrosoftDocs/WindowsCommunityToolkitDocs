@@ -1,0 +1,61 @@
+﻿<Type Name="IIncrementalSource&lt;TSource&gt;" FullName="Microsoft.Toolkit.Collections.IIncrementalSource&lt;TSource&gt;">
+  <TypeSignature Language="C#" Value="public interface IIncrementalSource&lt;TSource&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIncrementalSource`1&lt;TSource&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IIncrementalSource(Of TSource)" />
+  <TypeSignature Language="F#" Value="type IIncrementalSource&lt;'Source&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TSource" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TSource">Type of collection element.</typeparam>
+    <summary>
+            This interface represents a data source whose items can be loaded incrementally.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetPagedItemsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSource&gt;&gt; GetPagedItemsAsync (int pageIndex, int pageSize, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!TSource&gt;&gt; GetPagedItemsAsync(int32 pageIndex, int32 pageSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Collections.IIncrementalSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPagedItemsAsync : int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Source&gt;&gt;" Usage="iIncrementalSource.GetPagedItemsAsync (pageIndex, pageSize, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSource&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="pageIndex">
+            The zero-based index of the page that corresponds to the items to retrieve.
+            </param>
+        <param name="pageSize">
+            The number of <typeparamref name="TSource" /> items to retrieve for the specified <paramref name="pageIndex" />.
+            </param>
+        <param name="cancellationToken">
+            Used to propagate notification that operation should be canceled.
+            </param>
+        <summary>
+            This method is invoked everytime the view need to show more items. Retrieves items based on <paramref name="pageIndex" /> and <paramref name="pageSize" /> arguments.
+            </summary>
+        <returns>
+            Returns a collection of <typeparamref name="TSource" />.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

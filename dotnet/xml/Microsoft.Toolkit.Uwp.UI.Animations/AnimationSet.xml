@@ -1,0 +1,645 @@
+﻿<Type Name="AnimationSet" FullName="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet">
+  <TypeSignature Language="C#" Value="public class AnimationSet : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnimationSet extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnimationSet&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type AnimationSet = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Defines an object for storing and managing CompositionAnimations for an element
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnimationSet (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.#ctor(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (element As UIElement)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet : Windows.UI.Xaml.UIElement -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="new Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet element" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The associated element</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCompositionAnimation">
+      <MemberSignature Language="C#" Value="public void AddCompositionAnimation (string propertyName, Windows.UI.Composition.CompositionAnimation animation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCompositionAnimation(string propertyName, class Windows.UI.Composition.CompositionAnimation animation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.AddCompositionAnimation(System.String,Windows.UI.Composition.CompositionAnimation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCompositionAnimation (propertyName As String, animation As CompositionAnimation)" />
+      <MemberSignature Language="F#" Value="member this.AddCompositionAnimation : string * Windows.UI.Composition.CompositionAnimation -&gt; unit" Usage="animationSet.AddCompositionAnimation (propertyName, animation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The property to be animated on the backing Visual</param>
+        <param name="animation">The <see cref="T:Windows.UI.Composition.CompositionAnimation" /> to be applied</param>
+        <summary>
+            Adds a composition animation to be run on <see cref="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCompositionDirectPropertyChange">
+      <MemberSignature Language="C#" Value="public void AddCompositionDirectPropertyChange (string propertyName, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCompositionDirectPropertyChange(string propertyName, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.AddCompositionDirectPropertyChange(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCompositionDirectPropertyChange (propertyName As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddCompositionDirectPropertyChange : string * obj -&gt; unit" Usage="animationSet.AddCompositionDirectPropertyChange (propertyName, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The property to be animated on the backing Visual</param>
+        <param name="value">The value to be applied</param>
+        <summary>
+            Adds a composition property that will change instantaneously
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCompositionEffectAnimation">
+      <MemberSignature Language="C#" Value="public void AddCompositionEffectAnimation (Windows.UI.Composition.CompositionObject effectBrush, Windows.UI.Composition.CompositionAnimation animation, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCompositionEffectAnimation(class Windows.UI.Composition.CompositionObject effectBrush, class Windows.UI.Composition.CompositionAnimation animation, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.AddCompositionEffectAnimation(Windows.UI.Composition.CompositionObject,Windows.UI.Composition.CompositionAnimation,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCompositionEffectAnimation (effectBrush As CompositionObject, animation As CompositionAnimation, propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.AddCompositionEffectAnimation : Windows.UI.Composition.CompositionObject * Windows.UI.Composition.CompositionAnimation * string -&gt; unit" Usage="animationSet.AddCompositionEffectAnimation (effectBrush, animation, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="effectBrush" Type="Windows.UI.Composition.CompositionObject" />
+        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="effectBrush">The <see cref="T:Windows.UI.Composition.CompositionEffectBrush" /> that will have a property animated</param>
+        <param name="animation">The animation to be applied</param>
+        <param name="propertyName">The property of the effect to be animated</param>
+        <summary>
+            Adds a composition effect animation to be run on backing <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Visual" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddStoryboardAnimation">
+      <MemberSignature Language="C#" Value="public void AddStoryboardAnimation (string propertyPath, Windows.UI.Xaml.Media.Animation.Timeline timeline);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddStoryboardAnimation(string propertyPath, class Windows.UI.Xaml.Media.Animation.Timeline timeline) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.AddStoryboardAnimation(System.String,Windows.UI.Xaml.Media.Animation.Timeline)" />
+      <MemberSignature Language="F#" Value="member this.AddStoryboardAnimation : string * Windows.UI.Xaml.Media.Animation.Timeline -&gt; unit" Usage="animationSet.AddStoryboardAnimation (propertyPath, timeline)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyPath" Type="System.String" />
+        <Parameter Name="timeline" Type="Windows.UI.Xaml.Media.Animation.Timeline" />
+      </Parameters>
+      <Docs>
+        <param name="propertyPath">The property to be animated with Storyboards</param>
+        <param name="timeline">The timeline object to be added to storyboard</param>
+        <summary>
+            Adds a storyboard animation to be run
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler(Of AnimationSetCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " Usage="member this.Completed : System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when all animations have completed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="animationSet.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Dispose resources.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.UIElement Element { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.UIElement Element" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Element" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Element As UIElement" />
+      <MemberSignature Language="F#" Value="member this.Element : Windows.UI.Xaml.UIElement" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Element" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.UIElement" /></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCompositionAnimation">
+      <MemberSignature Language="C#" Value="public void RemoveCompositionAnimation (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCompositionAnimation(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.RemoveCompositionAnimation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCompositionAnimation (propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.RemoveCompositionAnimation : string -&gt; unit" Usage="animationSet.RemoveCompositionAnimation propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The property that no longer needs to be animated</param>
+        <summary>
+            Removes a composition animation from being run on <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Visual" /> property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveCompositionDirectPropertyChange">
+      <MemberSignature Language="C#" Value="public void RemoveCompositionDirectPropertyChange (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCompositionDirectPropertyChange(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.RemoveCompositionDirectPropertyChange(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveCompositionDirectPropertyChange (propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.RemoveCompositionDirectPropertyChange : string -&gt; unit" Usage="animationSet.RemoveCompositionDirectPropertyChange propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The property that no longer needs to be changed</param>
+        <summary>
+            Removes a composition property change
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelay">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelay (double delayTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelay(float64 delayTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDelay(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDelay (delayTime As Double) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDelay : double -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDelay delayTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delayTime" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="delayTime">The delay time in milliseconds</param>
+        <summary>
+            Overwrites the delay time on all animations after last Then()
+            to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelay">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelay (TimeSpan delayTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelay(valuetype System.TimeSpan delayTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDelay(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDelay (delayTime As TimeSpan) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDelay : TimeSpan -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDelay delayTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delayTime" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="delayTime">
+          <see cref="T:System.TimeSpan" /> for how much to delay</param>
+        <summary>
+            Overwrites the delay time on all animations after last Then()
+            to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelayForAll">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelayForAll (double delayTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelayForAll(float64 delayTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDelayForAll(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDelayForAll (delayTime As Double) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDelayForAll : double -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDelayForAll delayTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delayTime" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="delayTime">The delay time in milliseconds</param>
+        <summary>
+            Overwrites the delay time on all animations to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDelayForAll">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelayForAll (TimeSpan delayTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDelayForAll(valuetype System.TimeSpan delayTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDelayForAll(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDelayForAll (delayTime As TimeSpan) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDelayForAll : TimeSpan -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDelayForAll delayTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="delayTime" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="delayTime">
+          <see cref="T:System.TimeSpan" /> for how much to delay</param>
+        <summary>
+            Overwrites the delay time on all animations to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDuration">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDuration (double duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDuration(float64 duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDuration(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDuration (duration As Double) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDuration : double -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDuration duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="duration">The duration in milliseconds</param>
+        <summary>
+            Overwrites the duration on all animations after last Then()
+            to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDuration">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDuration (TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDuration(valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDuration(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDuration (duration As TimeSpan) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDuration : TimeSpan -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDuration duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="duration">
+          <see cref="T:System.TimeSpan" /> for the duration</param>
+        <summary>
+            Overwrites the duration on all animations after last Then()
+            to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDurationForAll">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDurationForAll (double duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDurationForAll(float64 duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDurationForAll(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDurationForAll (duration As Double) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDurationForAll : double -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDurationForAll duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="duration">The duration in milliseconds</param>
+        <summary>
+            Overwrites the duration on all animations to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDurationForAll">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDurationForAll (TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet SetDurationForAll(valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.SetDurationForAll(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDurationForAll (duration As TimeSpan) As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.SetDurationForAll : TimeSpan -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.SetDurationForAll duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="duration">
+          <see cref="T:System.TimeSpan" /> for the duration</param>
+        <summary>
+            Overwrites the duration on all animations to the specified value
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="animationSet.Start " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stats all animations. This method is not awaitable.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; StartAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; StartAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="animationSet.StartAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Starts all animations and returns an awaitable task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that can be awaited until all animations have completed</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetState State" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As AnimationSetState" />
+      <MemberSignature Language="F#" Value="member this.State : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetState" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current state of the AnimationSet
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="animationSet.Stop " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Stops all animations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Then">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Then ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Then() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Then" />
+      <MemberSignature Language="VB.NET" Value="Public Function Then () As AnimationSet" />
+      <MemberSignature Language="F#" Value="member this.Then : unit -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="animationSet.Then " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Wait for existing animations to complete before running new animations
+            </summary>
+        <returns>AnimationSet to allow chaining</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UseComposition">
+      <MemberSignature Language="C#" Value="public static bool UseComposition { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool UseComposition" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.UseComposition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property UseComposition As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseComposition : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.UseComposition" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether composition must be use even on SDK &gt; 10586
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visual">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.Visual Visual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.Visual Visual" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Visual" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visual As Visual" />
+      <MemberSignature Language="F#" Value="member this.Visual : Windows.UI.Composition.Visual" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Visual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Visual" /> object that backs the XAML element
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

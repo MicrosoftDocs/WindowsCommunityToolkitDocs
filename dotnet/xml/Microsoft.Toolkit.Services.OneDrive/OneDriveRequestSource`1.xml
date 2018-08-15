@@ -1,0 +1,108 @@
+﻿<Type Name="OneDriveRequestSource&lt;T&gt;" FullName="Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class OneDriveRequestSource&lt;T&gt; : Microsoft.Toolkit.Collections.IIncrementalSource&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OneDriveRequestSource`1&lt;T&gt; extends System.Object implements class Microsoft.Toolkit.Collections.IIncrementalSource`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class OneDriveRequestSource(Of T)&#xA;Implements IIncrementalSource(Of T)" />
+  <TypeSignature Language="F#" Value="type OneDriveRequestSource&lt;'T&gt; = class&#xA;    interface IIncrementalSource&lt;'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Collections.IIncrementalSource&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">Strong type to return.</typeparam>
+    <summary>
+            Type to handle paged requests to OneDrive.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OneDriveRequestSource ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public OneDriveRequestSource (Microsoft.Graph.IBaseClient provider, Microsoft.Graph.IBaseRequestBuilder requestBuilder, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy orderBy, string filter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.IBaseClient provider, class Microsoft.Graph.IBaseRequestBuilder requestBuilder, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy orderBy, string filter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt; : Microsoft.Graph.IBaseClient * Microsoft.Graph.IBaseRequestBuilder * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy * string -&gt; Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt;" Usage="new Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt; (provider, requestBuilder, orderBy, filter)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="provider" Type="Microsoft.Graph.IBaseClient" />
+        <Parameter Name="requestBuilder" Type="Microsoft.Graph.IBaseRequestBuilder" />
+        <Parameter Name="orderBy" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+OrderBy" />
+        <Parameter Name="filter" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="provider">OneDrive Data Client Provider</param>
+        <param name="requestBuilder">Http request to execute</param>
+        <param name="orderBy">Sort the order of items in the response collection</param>
+        <param name="filter">Filters the response based on a set of criteria.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPagedItemsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt; GetPagedItemsAsync (int pageIndex, int pageSize, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; GetPagedItemsAsync(int32 pageIndex, int32 pageSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetPagedItemsAsync : int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'T&gt;&gt;&#xA;override this.GetPagedItemsAsync : int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'T&gt;&gt;" Usage="oneDriveRequestSource.GetPagedItemsAsync (pageIndex, pageSize, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Collections.IIncrementalSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageIndex" Type="System.Int32" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="pageIndex">Page number.</param>
+        <param name="pageSize">Size of page.</param>
+        <param name="cancellationToken">Cancellation token.</param>
+        <summary>
+            Returns strong typed page of data.
+            </summary>
+        <returns>Strong typed page of data.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

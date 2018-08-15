@@ -1,0 +1,337 @@
+﻿<Type Name="PrintHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.PrintHelper">
+  <TypeSignature Language="C#" Value="public class PrintHelper : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintHelper extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintHelper&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintHelper = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Helper class used to simplify document printing.
+            Based on https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/Printing/cs/PrintHelper.cs /&gt;
+            It allows you to render a framework element per page.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintHelper (Windows.UI.Xaml.Controls.Panel canvasContainer, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Controls.Panel canvasContainer, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="canvasContainer" Type="Windows.UI.Xaml.Controls.Panel" />
+        <Parameter Name="defaultPrintHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" />
+      </Parameters>
+      <Docs>
+        <param name="canvasContainer">XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance</param>
+        <param name="defaultPrintHelperOptions">Default settings for the print tasks</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFrameworkElementToPrint">
+      <MemberSignature Language="C#" Value="public void AddFrameworkElementToPrint (Windows.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFrameworkElementToPrint(class Windows.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFrameworkElementToPrint (element As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="member this.AddFrameworkElementToPrint : Windows.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.AddFrameworkElementToPrint element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">Framework element to print</param>
+        <summary>
+            Add an element to the list of printable elements.
+            </summary>
+        <remarks>The element cannot have a parent. He must not be included in any visual tree.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationContentMarginLeft">
+      <MemberSignature Language="C#" Value="public double ApplicationContentMarginLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ApplicationContentMarginLeft" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginLeft As Double" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContentMarginLeft : double with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the percent of app's margin width
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationContentMarginTop">
+      <MemberSignature Language="C#" Value="public double ApplicationContentMarginTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ApplicationContentMarginTop" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginTop As Double" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContentMarginTop : double with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginTop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the percent of app's margin height
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearListOfPrintableFrameworkElements">
+      <MemberSignature Language="C#" Value="public void ClearListOfPrintableFrameworkElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearListOfPrintableFrameworkElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ClearListOfPrintableFrameworkElements" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearListOfPrintableFrameworkElements ()" />
+      <MemberSignature Language="F#" Value="member this.ClearListOfPrintableFrameworkElements : unit -&gt; unit" Usage="printHelper.ClearListOfPrintableFrameworkElements " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Empties the list of printable elements
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printHelper.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Release associated resources
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewPagesCreated">
+      <MemberSignature Language="C#" Value="public event Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt; OnPreviewPagesCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class System.Collections.Generic.List`1&lt;class Windows.UI.Xaml.FrameworkElement&gt;&gt; OnPreviewPagesCreated" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPreviewPagesCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPreviewPagesCreated As Action(Of List(Of FrameworkElement)) " />
+      <MemberSignature Language="F#" Value="member this.OnPreviewPagesCreated : Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt; " Usage="member this.OnPreviewPagesCreated : System.Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event which is called after print preview pages are generated.
+            </summary>
+        <remarks>
+            You can use this event to tweak the final rendering by adding/moving controls in the page.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintCanceled">
+      <MemberSignature Language="C#" Value="public event Action OnPrintCanceled;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintCanceled" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintCanceled As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintCanceled : Action " Usage="member this.OnPrintCanceled : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when print is cancelled by the user
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintFailed">
+      <MemberSignature Language="C#" Value="public event Action OnPrintFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintFailed As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintFailed : Action " Usage="member this.OnPrintFailed : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when print failed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintSucceeded">
+      <MemberSignature Language="C#" Value="public event Action OnPrintSucceeded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintSucceeded" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintSucceeded" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintSucceeded As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintSucceeded : Action " Usage="member this.OnPrintSucceeded : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when print was successful
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFrameworkElementToPrint">
+      <MemberSignature Language="C#" Value="public void RemoveFrameworkElementToPrint (Windows.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFrameworkElementToPrint(class Windows.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFrameworkElementToPrint (element As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="member this.RemoveFrameworkElementToPrint : Windows.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.RemoveFrameworkElementToPrint element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">Framework element to remove</param>
+        <summary>
+            Remove an element from the list of printable elements
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPrintUIAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ShowPrintUIAsync (string printTaskName, bool directPrint = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ShowPrintUIAsync(string printTaskName, bool directPrint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ShowPrintUIAsync(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowPrintUIAsync (printTaskName As String, Optional directPrint As Boolean = false) As Task" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintUIAsync : string * bool -&gt; System.Threading.Tasks.Task" Usage="printHelper.ShowPrintUIAsync (printTaskName, directPrint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printTaskName" Type="System.String" />
+        <Parameter Name="directPrint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="printTaskName">Name of the print task to use</param>
+        <param name="directPrint">Directly print the content of the container instead of relying on list built with AddFrameworkElementToPrint method</param>
+        <summary>
+            Start the print task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPrintUIAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ShowPrintUIAsync (string printTaskName, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions printHelperOptions, bool directPrint = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ShowPrintUIAsync(string printTaskName, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions printHelperOptions, bool directPrint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ShowPrintUIAsync(System.String,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintUIAsync : string * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions * bool -&gt; System.Threading.Tasks.Task" Usage="printHelper.ShowPrintUIAsync (printTaskName, printHelperOptions, directPrint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printTaskName" Type="System.String" />
+        <Parameter Name="printHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" />
+        <Parameter Name="directPrint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="printTaskName">Name of the print task to use</param>
+        <param name="printHelperOptions">Settings for the print task</param>
+        <param name="directPrint">Directly print the content of the container instead of relying on list built with AddFrameworkElementToPrint method</param>
+        <summary>
+            Start the print task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

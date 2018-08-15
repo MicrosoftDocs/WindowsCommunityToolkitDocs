@@ -1,0 +1,220 @@
+﻿<Type Name="EmptyObjectToObjectConverter" FullName="Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter">
+  <TypeSignature Language="C#" Value="public class EmptyObjectToObjectConverter : Windows.UI.Xaml.DependencyObject, Windows.UI.Xaml.Data.IValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmptyObjectToObjectConverter extends Windows.UI.Xaml.DependencyObject implements class Windows.UI.Xaml.Data.IValueConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmptyObjectToObjectConverter&#xA;Inherits DependencyObject&#xA;Implements IValueConverter" />
+  <TypeSignature Language="F#" Value="type EmptyObjectToObjectConverter = class&#xA;    inherit DependencyObject&#xA;    interface IValueConverter" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Windows.UI.Xaml.Data.IValueConverter</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            This class converts an object value into a an object (if the value is null returns the false value).
+            Can be used to bind a visibility, a color or an image to the value of an object.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EmptyObjectToObjectConverter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckValueIsEmpty">
+      <MemberSignature Language="C#" Value="protected virtual bool CheckValueIsEmpty (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CheckValueIsEmpty(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.CheckValueIsEmpty(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CheckValueIsEmpty (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CheckValueIsEmpty : obj -&gt; bool&#xA;override this.CheckValueIsEmpty : obj -&gt; bool" Usage="emptyObjectToObjectConverter.CheckValueIsEmpty value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value to be checked.</param>
+        <summary>
+            Checks value for emptiness.
+            </summary>
+        <returns>True if value is null, false otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Convert">
+      <MemberSignature Language="C#" Value="public object Convert (object value, Type targetType, object parameter, string language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type targetType, object parameter, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Convert (value As Object, targetType As Type, parameter As Object, language As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj * Type * obj * string -&gt; obj&#xA;override this.Convert : obj * Type * obj * string -&gt; obj" Usage="emptyObjectToObjectConverter.Convert (value, targetType, parameter, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The source data being passed to the target.</param>
+        <param name="targetType">The type of the target property, as a type reference.</param>
+        <param name="parameter">An optional parameter to be used to invert the converter logic.</param>
+        <param name="language">The language of the conversion.</param>
+        <summary>
+            Convert a boolean value to an other object.
+            </summary>
+        <returns>The value to be passed to the target dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertBack">
+      <MemberSignature Language="C#" Value="public object ConvertBack (object value, Type targetType, object parameter, string language);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object value, class System.Type targetType, object parameter, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertBack (value As Object, targetType As Type, parameter As Object, language As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ConvertBack : obj * Type * obj * string -&gt; obj&#xA;override this.ConvertBack : obj * Type * obj * string -&gt; obj" Usage="emptyObjectToObjectConverter.ConvertBack (value, targetType, parameter, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="targetType" Type="System.Type" />
+        <Parameter Name="parameter" Type="System.Object" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The target data being passed to the source.</param>
+        <param name="targetType">The type of the target property, as a type reference (System.Type for Microsoft .NET, a TypeName helper struct for Visual C++ component extensions (C++/CX)).</param>
+        <param name="parameter">An optional parameter to be used to invert the converter logic.</param>
+        <param name="language">The language of the conversion.</param>
+        <summary>
+            Not implemented
+            </summary>
+        <returns>The value to be passed to the source object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyValue">
+      <MemberSignature Language="C#" Value="public object EmptyValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object EmptyValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.EmptyValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmptyValue As Object" />
+      <MemberSignature Language="F#" Value="member this.EmptyValue : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.EmptyValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value to be returned when the object is either null or empty
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmptyValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty EmptyValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty EmptyValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.EmptyValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EmptyValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EmptyValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.EmptyValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.EmptyValue" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEmptyValue">
+      <MemberSignature Language="C#" Value="public object NotEmptyValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NotEmptyValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.NotEmptyValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NotEmptyValue As Object" />
+      <MemberSignature Language="F#" Value="member this.NotEmptyValue : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.NotEmptyValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value to be returned when the object is neither null nor empty
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotEmptyValueProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NotEmptyValueProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NotEmptyValueProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.NotEmptyValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NotEmptyValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NotEmptyValueProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.NotEmptyValueProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Converters.EmptyObjectToObjectConverter.NotEmptyValue" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

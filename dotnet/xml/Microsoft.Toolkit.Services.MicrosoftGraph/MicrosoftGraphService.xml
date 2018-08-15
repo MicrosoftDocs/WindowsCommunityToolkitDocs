@@ -1,0 +1,483 @@
+﻿<Type Name="MicrosoftGraphService" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService">
+  <TypeSignature Language="C#" Value="public class MicrosoftGraphService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftGraphService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" />
+  <TypeSignature Language="VB.NET" Value="Public Class MicrosoftGraphService" />
+  <TypeSignature Language="F#" Value="type MicrosoftGraphService = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Class for connecting to Office 365 Microsoft Graph
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MicrosoftGraphService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MicrosoftGraphService (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.#ctor(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" Usage="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appClientId" Type="System.String" />
+        <Parameter Name="servicesToInitialize" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize" />
+        <Parameter Name="delegatedPermissionScopes" Type="System.String[]" />
+        <Parameter Name="uiParent" Type="Microsoft.Identity.Client.UIParent" />
+        <Parameter Name="redirectUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appClientId">Azure AD's App client id</param>
+        <param name="servicesToInitialize">A combination of value to instanciate different services</param>
+        <param name="delegatedPermissionScopes">Permission scopes for MSAL v2 endpoints</param>
+        <param name="uiParent">UiParent instance - required for Android</param>
+        <param name="redirectUri">Redirect Uri - required for Android</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" /> class.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppClientId">
+      <MemberSignature Language="C#" Value="protected string AppClientId { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string AppClientId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.AppClientId" />
+      <MemberSignature Language="VB.NET" Value="Protected Property AppClientId As String" />
+      <MemberSignature Language="F#" Value="member this.AppClientId : string with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.AppClientId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets AppClientId.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectForAnotherUserAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ConnectForAnotherUserAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ConnectForAnotherUserAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.ConnectForAnotherUserAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConnectForAnotherUserAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ConnectForAnotherUserAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="microsoftGraphService.ConnectForAnotherUserAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Log in a new user and log out old user
+            </summary>
+        <returns>Returns success or failure of login attempt.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelegatedPermissionScopes">
+      <MemberSignature Language="C#" Value="protected string[] DelegatedPermissionScopes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] DelegatedPermissionScopes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.DelegatedPermissionScopes" />
+      <MemberSignature Language="VB.NET" Value="Protected Property DelegatedPermissionScopes As String()" />
+      <MemberSignature Language="F#" Value="member this.DelegatedPermissionScopes : string[] with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.DelegatedPermissionScopes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating deletgated permission scopes for MSAL (v2) endpoint
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserAsyncProfile">
+      <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task GetUserAsyncProfile ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task GetUserAsyncProfile() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GetUserAsyncProfile" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetUserAsyncProfile () As Task" />
+      <MemberSignature Language="F#" Value="abstract member GetUserAsyncProfile : unit -&gt; System.Threading.Tasks.Task&#xA;override this.GetUserAsyncProfile : unit -&gt; System.Threading.Tasks.Task" Usage="microsoftGraphService.GetUserAsyncProfile " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initialize a instance of MicrosoftGraphUserService class
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GraphProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.Graph.GraphServiceClient GraphProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Graph.GraphServiceClient GraphProvider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GraphProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property GraphProvider As GraphServiceClient" />
+      <MemberSignature Language="F#" Value="member this.GraphProvider : Microsoft.Graph.GraphServiceClient with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GraphProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graph.GraphServiceClient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets store a reference to an instance of the underlying data provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool" Usage="microsoftGraphService.Initialize (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appClientId" Type="System.String" />
+        <Parameter Name="servicesToInitialize" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize" />
+        <Parameter Name="delegatedPermissionScopes" Type="System.String[]" />
+        <Parameter Name="uiParent" Type="Microsoft.Identity.Client.UIParent" />
+        <Parameter Name="redirectUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appClientId">Azure AD's App client id</param>
+        <param name="servicesToInitialize">A combination of value to instanciate different services</param>
+        <param name="delegatedPermissionScopes">Permission scopes for MSAL v2 endpoints</param>
+        <param name="uiParent">UiParent instance - required for Android</param>
+        <param name="redirectUri">Redirect Uri - required for Android</param>
+        <summary>
+            Initialize Microsoft Graph.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool Initialize&lt;T&gt; (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null) where T : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize&lt;.ctor (class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos) T&gt;(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize``1(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'T : (new : unit -&gt; 'T))" Usage="microsoftGraphService.Initialize (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <InterfaceName>Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="appClientId" Type="System.String" />
+        <Parameter Name="servicesToInitialize" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize" />
+        <Parameter Name="delegatedPermissionScopes" Type="System.String[]" />
+        <Parameter Name="uiParent" Type="Microsoft.Identity.Client.UIParent" />
+        <Parameter Name="redirectUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Concrete type that inherits IMicrosoftGraphUserServicePhotos.</typeparam>
+        <param name="appClientId">Azure AD's App client id</param>
+        <param name="servicesToInitialize">A combination of value to instanciate different services</param>
+        <param name="delegatedPermissionScopes">Permission scopes for MSAL v2 endpoints</param>
+        <param name="uiParent">UiParent instance - required for Android</param>
+        <param name="redirectUri">Redirect Uri - required for Android</param>
+        <summary>
+            Initialize Microsoft Graph.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As MicrosoftGraphService" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets public singleton property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticated">
+      <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsAuthenticated" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAuthenticated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsAuthenticated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether user is connected.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAuthenticatedChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler IsAuthenticatedChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler IsAuthenticatedChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsAuthenticatedChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event IsAuthenticatedChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticatedChanged : EventHandler " Usage="member this.IsAuthenticatedChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when user logs in our out.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitialized">
+      <MemberSignature Language="C#" Value="protected bool IsInitialized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsInitialized" />
+      <MemberSignature Language="VB.NET" Value="Protected Property IsInitialized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether initialization status.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; LoginAsync (string loginHint = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; LoginAsync(string loginHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.LoginAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoginAsync (Optional loginHint As String = null) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member LoginAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.LoginAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="microsoftGraphService.LoginAsync loginHint" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="loginHint" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="loginHint">To be added.</param>
+        <summary>
+            Login the user from Azure AD and Get Microsoft Graph access token.
+            </summary>
+        <returns>Returns success or failure of login attempt.</returns>
+        <remarks>Need Sign in and read user profile scopes (User.Read)</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logout">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; Logout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; Logout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Logout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Logout () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Logout : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.Logout : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="microsoftGraphService.Logout " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Logout the current user
+            </summary>
+        <returns>success or failure</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ServicesToInitialize">
+      <MemberSignature Language="C#" Value="protected Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize ServicesToInitialize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize ServicesToInitialize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.ServicesToInitialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Property ServicesToInitialize As MicrosoftGraphEnums.ServicesToInitialize" />
+      <MemberSignature Language="F#" Value="member this.ServicesToInitialize : Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.ServicesToInitialize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets field to store the services to initialize
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInFailed">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt; SignInFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt; SignInFailed" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.SignInFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Event SignInFailed As EventHandler(Of SignInFailedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SignInFailed : EventHandler&lt;Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt; " Usage="member this.SignInFailed : System.EventHandler&lt;Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when sign in failed when attempting to sign in
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryLoginAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryLoginAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryLoginAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.TryLoginAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryLoginAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.TryLoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="microsoftGraphService.TryLoginAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tries to log in user if not already loged in. Calls LoginAsync internaly
+            </summary>
+        <returns>Returns success or failure of login attempt.</returns>
+        <remarks>Exceptions are not thrown but SignInFailed event is raised</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="User">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService User { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService User" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.User" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property User As MicrosoftGraphUserService" />
+      <MemberSignature Language="F#" Value="member this.User : Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.User" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets fields to store a MicrosoftGraphServiceMessages instance
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,157 @@
+﻿<Type Name="CanvasBrushBase" FullName="Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase">
+  <TypeSignature Language="C#" Value="public abstract class CanvasBrushBase : Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CanvasBrushBase extends Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CanvasBrushBase&#xA;Inherits XamlCompositionBrushBase" />
+  <TypeSignature Language="F#" Value="type CanvasBrushBase = class&#xA;    inherit XamlCompositionBrushBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Media.XamlCompositionBrushBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper Brush class to interop with Win2D Canvas calls.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CanvasBrushBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnConnected">
+      <MemberSignature Language="C#" Value="protected override void OnConnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnConnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.OnConnected" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnConnected ()" />
+      <MemberSignature Language="F#" Value="override this.OnConnected : unit -&gt; unit" Usage="canvasBrushBase.OnConnected " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes the Composition Brush.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisconnected">
+      <MemberSignature Language="C#" Value="protected override void OnDisconnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisconnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.OnDisconnected" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisconnected ()" />
+      <MemberSignature Language="F#" Value="override this.OnDisconnected : unit -&gt; unit" Usage="canvasBrushBase.OnDisconnected " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Deconstructs the Composition Brush.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDraw">
+      <MemberSignature Language="C#" Value="protected abstract bool OnDraw (Microsoft.Graphics.Canvas.CanvasDevice device, Microsoft.Graphics.Canvas.CanvasDrawingSession session, System.Numerics.Vector2 size);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDraw(class Microsoft.Graphics.Canvas.CanvasDevice device, class Microsoft.Graphics.Canvas.CanvasDrawingSession session, valuetype System.Numerics.Vector2 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.OnDraw(Microsoft.Graphics.Canvas.CanvasDevice,Microsoft.Graphics.Canvas.CanvasDrawingSession,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnDraw (device As CanvasDevice, session As CanvasDrawingSession, size As Vector2) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnDraw : Microsoft.Graphics.Canvas.CanvasDevice * Microsoft.Graphics.Canvas.CanvasDrawingSession * System.Numerics.Vector2 -&gt; bool" Usage="canvasBrushBase.OnDraw (device, session, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="device" Type="Microsoft.Graphics.Canvas.CanvasDevice" />
+        <Parameter Name="session" Type="Microsoft.Graphics.Canvas.CanvasDrawingSession" />
+        <Parameter Name="size" Type="System.Numerics.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="device">Canvas device.</param>
+        <param name="session">Canvas drawing session.</param>
+        <param name="size">Size of surface to draw on.</param>
+        <summary>
+            Implemented by parent class and called when canvas is being constructed for brush.
+            </summary>
+        <returns>True if drawing was completed and the brush is ready, otherwise return False to not create brush yet.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurfaceHeight">
+      <MemberSignature Language="C#" Value="protected float SurfaceHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SurfaceHeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.SurfaceHeight" />
+      <MemberSignature Language="VB.NET" Value="Protected Property SurfaceHeight As Single" />
+      <MemberSignature Language="F#" Value="member this.SurfaceHeight : single with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.SurfaceHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the internal surface render height.  Modify during construction.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurfaceWidth">
+      <MemberSignature Language="C#" Value="protected float SurfaceWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 SurfaceWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.SurfaceWidth" />
+      <MemberSignature Language="VB.NET" Value="Protected Property SurfaceWidth As Single" />
+      <MemberSignature Language="F#" Value="member this.SurfaceWidth : single with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase.SurfaceWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the internal surface render width.  Modify during construction.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

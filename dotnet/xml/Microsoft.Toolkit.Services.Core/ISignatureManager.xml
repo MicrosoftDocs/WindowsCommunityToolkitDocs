@@ -1,0 +1,50 @@
+﻿<Type Name="ISignatureManager" FullName="Microsoft.Toolkit.Services.Core.ISignatureManager">
+  <TypeSignature Language="C#" Value="public interface ISignatureManager" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISignatureManager" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Core.ISignatureManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISignatureManager" />
+  <TypeSignature Language="F#" Value="type ISignatureManager = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides platform specific logic to sign request for OAuth communication
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetSignature">
+      <MemberSignature Language="C#" Value="public string GetSignature (string baseString, string secret, bool append = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSignature(string baseString, string secret, bool append) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Core.ISignatureManager.GetSignature(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSignature (baseString As String, secret As String, Optional append As Boolean = false) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetSignature : string * string * bool -&gt; string" Usage="iSignatureManager.GetSignature (baseString, secret, append)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseString" Type="System.String" />
+        <Parameter Name="secret" Type="System.String" />
+        <Parameter Name="append" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="baseString">String to sign</param>
+        <param name="secret">Secret to use to sign</param>
+        <param name="append">If true append &amp; to the base string</param>
+        <summary>
+            Generate request signature
+            </summary>
+        <returns>The signed baseString to use in the OAuth requests</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
