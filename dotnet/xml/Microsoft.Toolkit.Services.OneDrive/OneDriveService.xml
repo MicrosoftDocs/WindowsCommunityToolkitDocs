@@ -8,7 +8,7 @@
   <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class OneDriveService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -32,7 +32,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -51,7 +51,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -74,13 +74,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveService/&lt;AppRootFolderAsync&gt;d__35))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
       </ReturnValue>
@@ -103,7 +98,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -127,7 +122,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -142,15 +137,15 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="public bool Initialize (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool Initialize (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Initialize(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
-      <MemberSignature Language="F#" Value="member this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
-      <MemberSignature Language="C++ WINRT" Value="bool Initialize(std::wstring const &amp; appClientId, std::Array &lt;std::wstring const &amp;&gt; const &amp; scopes, Microsoft::Identity::Client::UIParent const &amp; uiParent = null, std::wstring const &amp; redirectUri = null);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool&#xA;override this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual bool Initialize(std::wstring const &amp; appClientId, std::Array &lt;std::wstring const &amp;&gt; const &amp; scopes, Microsoft::Identity::Client::UIParent const &amp; uiParent = null, std::wstring const &amp; redirectUri = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -174,15 +169,15 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize&lt;T,U&gt;">
-      <MemberSignature Language="C#" Value="public bool Initialize&lt;T,U&gt; (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null) where T : Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializernew() where U : Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotosnew();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize&lt;.ctor (class Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer) T, .ctor (class Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos) U&gt;(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
+      <MemberSignature Language="C#" Value="public virtual bool Initialize&lt;T,U&gt; (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null) where T : Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializernew() where U : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Initialize&lt;.ctor (class Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer) T, .ctor (class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos) U&gt;(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize``2(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
-      <MemberSignature Language="F#" Value="member this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer and 'T : (new : unit -&gt; 'T) and 'U :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos and 'U : (new : unit -&gt; 'U))" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
-      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T, typename U&gt;&#xA; where T : Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializergcnew() where U : Microsoft::Toolkit::Services::MicrosoftGraph::Platform::IMicrosoftGraphUserServicePhotosgcnew() bool Initialize(std::wstring const &amp; appClientId, std::Array &lt;std::wstring const &amp;&gt; const &amp; scopes, Microsoft::Identity::Client::UIParent const &amp; uiParent = null, std::wstring const &amp; redirectUri = null);" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer and 'T : (new : unit -&gt; 'T) and 'U :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'U : (new : unit -&gt; 'U))&#xA;override this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer and 'T : (new : unit -&gt; 'T) and 'U :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'U : (new : unit -&gt; 'U))" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T, typename U&gt;&#xA; where T : Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializergcnew() where U : Microsoft::Toolkit::Services::MicrosoftGraph::IMicrosoftGraphUserServicePhotosgcnew() virtual bool Initialize(std::wstring const &amp; appClientId, std::Array &lt;std::wstring const &amp;&gt; const &amp; scopes, Microsoft::Identity::Client::UIParent const &amp; uiParent = null, std::wstring const &amp; redirectUri = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -191,13 +186,13 @@
         <TypeParameter Name="T">
           <Constraints>
             <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <InterfaceName>Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer</InterfaceName>
+            <InterfaceName>Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer</InterfaceName>
           </Constraints>
         </TypeParameter>
         <TypeParameter Name="U">
           <Constraints>
             <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
-            <InterfaceName>Microsoft.Toolkit.Services.MicrosoftGraph.Platform.IMicrosoftGraphUserServicePhotos</InterfaceName>
+            <InterfaceName>Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos</InterfaceName>
           </Constraints>
         </TypeParameter>
       </TypeParameters>
@@ -231,7 +226,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.OneDrive.OneDriveService</ReturnType>
@@ -255,7 +250,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -269,17 +264,17 @@
       </Docs>
     </Member>
     <Member MemberName="IsInitialized">
-      <MemberSignature Language="C#" Value="protected bool IsInitialized { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
+      <MemberSignature Language="C#" Value="protected static bool IsInitialized { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsInitialized" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.IsInitialized" />
-      <MemberSignature Language="VB.NET" Value="Protected Property IsInitialized As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Property IsInitialized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInitialized : bool with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveService.IsInitialized" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsInitialized { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; property bool IsInitialized { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static property bool IsInitialized { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; static property bool IsInitialized { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -302,13 +297,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveService/&lt;LoginAsync&gt;d__32))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
@@ -331,13 +321,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveService/&lt;LogoutAsync&gt;d__31))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -360,7 +345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -384,7 +369,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -408,7 +393,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService</ReturnType>
@@ -418,35 +403,6 @@
             Gets a reference to an instance of the underlying data provider.
             </summary>
         <value>To be added.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="RootFolderAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; RootFolderAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; RootFolderAsync() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.RootFolderAsync" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function RootFolderAsync () As Task(Of OneDriveStorageFolder)" />
-      <MemberSignature Language="F#" Value="abstract member RootFolderAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;&#xA;override this.RootFolderAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;" Usage="oneDriveService.RootFolderAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::OneDrive::OneDriveStorageFolder ^&gt; ^ RootFolderAsync();" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveService/&lt;RootFolderAsync&gt;d__33))</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Gets the OneDrive root folder (default drive)
-            </summary>
-        <returns>When this method completes, it returns a OneDriveStorageFolder</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -460,13 +416,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Services.OneDrive.OneDriveService/&lt;RootFolderForMeAsync&gt;d__34))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
       </ReturnValue>
@@ -490,7 +441,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -504,20 +455,20 @@
       </Docs>
     </Member>
     <Member MemberName="ServicePlatformInitializer">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer ServicePlatformInitializer { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer ServicePlatformInitializer" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer ServicePlatformInitializer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer ServicePlatformInitializer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformInitializer" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ServicePlatformInitializer As IOneDriveServicePlatformInitializer" />
-      <MemberSignature Language="F#" Value="member this.ServicePlatformInitializer : Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformInitializer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ ServicePlatformInitializer { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ ServicePlatformInitializer { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatformInitializer ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePlatformInitializer : Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformInitializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ ServicePlatformInitializer { Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; static property Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ ServicePlatformInitializer { Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatformInitializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatformInitializer</ReturnType>
+        <ReturnType>Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
@@ -528,20 +479,20 @@
       </Docs>
     </Member>
     <Member MemberName="ServicePlatformService">
-      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform ServicePlatformService { get; set; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform ServicePlatformService" />
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatform ServicePlatformService { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatform ServicePlatformService" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformService" />
       <MemberSignature Language="VB.NET" Value="Public Property ServicePlatformService As IOneDriveServicePlatform" />
-      <MemberSignature Language="F#" Value="member this.ServicePlatformService : Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformService" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ ServicePlatformService { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ ServicePlatformService { Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::Platform::IOneDriveServicePlatform ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServicePlatformService : Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatform with get, set" Usage="Microsoft.Toolkit.Services.OneDrive.OneDriveService.ServicePlatformService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ ServicePlatformService { Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ ServicePlatformService { Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ get(); void set(Microsoft::Toolkit::Services::OneDrive::IOneDriveServicePlatform ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Toolkit.Services.OneDrive.Platform.IOneDriveServicePlatform</ReturnType>
+        <ReturnType>Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatform</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>

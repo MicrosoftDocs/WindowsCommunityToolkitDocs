@@ -7,7 +7,7 @@
   <TypeSignature Language="C++ CLI" Value="public ref class PrintHelper : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,24 +27,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public PrintHelper (Windows.UI.Xaml.Controls.Panel canvasContainer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Controls.Panel canvasContainer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel)" />
-      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper canvasContainer" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintHelper(Windows::UI::Xaml::Controls::Panel ^ canvasContainer);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; PrintHelper(Windows::UI::Xaml::Controls::Panel ^ canvasContainer);" />
-      <MemberSignature Language="C++ WINRT" Value=" PrintHelper(winrt::Windows::UI::Xaml::Controls::Panel const &amp; canvasContainer);" />
+      <MemberSignature Language="C#" Value="public PrintHelper (Windows.UI.Xaml.Controls.Panel canvasContainer, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Controls.Panel canvasContainer, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions)" />
+      <MemberSignature Language="C++ WINRT" Value=" PrintHelper(winrt::Windows::UI::Xaml::Controls::Panel const &amp; canvasContainer, Microsoft::Toolkit::Uwp::Helpers::PrintHelperOptions const &amp; defaultPrintHelperOptions = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="canvasContainer" Type="Windows.UI.Xaml.Controls.Panel" />
+        <Parameter Name="defaultPrintHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" />
       </Parameters>
       <Docs>
         <param name="canvasContainer">XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance</param>
+        <param name="defaultPrintHelperOptions">Default settings for the print tasks</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" /> class.
             </summary>
@@ -63,7 +63,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -90,7 +90,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -114,7 +114,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -139,7 +139,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -167,7 +167,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -190,7 +190,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt;</ReturnType>
@@ -214,7 +214,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -236,7 +236,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -258,7 +258,7 @@
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -282,7 +282,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -307,13 +307,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.PrintHelper/&lt;ShowPrintUIAsync&gt;d__33))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -323,6 +318,35 @@
       </Parameters>
       <Docs>
         <param name="printTaskName">Name of the print task to use</param>
+        <param name="directPrint">Directly print the content of the container instead of relying on list built with AddFrameworkElementToPrint method</param>
+        <summary>
+            Start the print task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPrintUIAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ShowPrintUIAsync (string printTaskName, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions printHelperOptions, bool directPrint = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ShowPrintUIAsync(string printTaskName, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions printHelperOptions, bool directPrint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ShowPrintUIAsync(System.String,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintUIAsync : string * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions * bool -&gt; System.Threading.Tasks.Task" Usage="printHelper.ShowPrintUIAsync (printTaskName, printHelperOptions, directPrint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printTaskName" Type="System.String" />
+        <Parameter Name="printHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" />
+        <Parameter Name="directPrint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="printTaskName">Name of the print task to use</param>
+        <param name="printHelperOptions">Settings for the print task</param>
         <param name="directPrint">Directly print the content of the container instead of relying on list built with AddFrameworkElementToPrint method</param>
         <summary>
             Start the print task.

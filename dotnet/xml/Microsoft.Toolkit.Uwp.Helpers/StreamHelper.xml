@@ -9,7 +9,7 @@
   <TypeSignature Language="C++ WINRT" Value="class StreamHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,13 +30,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.StreamHelper/&lt;GetHttpStreamAsync&gt;d__1))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
       </ReturnValue>
@@ -63,13 +58,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.StreamHelper/&lt;GetHttpStreamToStorageFileAsync&gt;d__2))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -95,7 +85,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -125,7 +115,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -153,7 +143,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -181,7 +171,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -200,172 +190,6 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="IsFileExistsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsFileExistsAsync (this Windows.Storage.StorageFolder workingFolder, string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsFileExistsAsync(class Windows.Storage.StorageFolder workingFolder, string fileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsFileExistsAsync(Windows.Storage.StorageFolder,System.String)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsFileExistsAsync (workingFolder As StorageFolder, fileName As String) As Task(Of Boolean)" />
-      <MemberSignature Language="F#" Value="static member IsFileExistsAsync : Windows.Storage.StorageFolder * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsFileExistsAsync (workingFolder, fileName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ IsFileExistsAsync(Windows::Storage::StorageFolder ^ workingFolder, System::String ^ fileName);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use StorageFileHelper.FileExistsAsync instead.")</AttributeName>
-        </Attribute>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.StreamHelper/&lt;IsFileExistsAsync&gt;d__11))</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="workingFolder" Type="Windows.Storage.StorageFolder" RefType="this" />
-        <Parameter Name="fileName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="workingFolder">Folder to use.</param>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
-        <summary>
-            Test if a file exists in the application local folder.
-            </summary>
-        <returns>True if file exists.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsKnownFolderFileExistsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsKnownFolderFileExistsAsync (Windows.Storage.KnownFolderId knownFolderId, string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsKnownFolderFileExistsAsync(valuetype Windows.Storage.KnownFolderId knownFolderId, string fileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsKnownFolderFileExistsAsync(Windows.Storage.KnownFolderId,System.String)" />
-      <MemberSignature Language="F#" Value="static member IsKnownFolderFileExistsAsync : Windows.Storage.KnownFolderId * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsKnownFolderFileExistsAsync (knownFolderId, fileName)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ IsKnownFolderFileExistsAsync(Windows::Storage::KnownFolderId knownFolderId, System::String ^ fileName);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use StorageFileHelper.FileExistsAsync instead.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="knownFolderId" Type="Windows.Storage.KnownFolderId" />
-        <Parameter Name="fileName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="knownFolderId">The well known folder ID to use</param>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
-        <summary>
-            Test if a file exists in the application local cache folder.
-            </summary>
-        <returns>True if file exists.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsLocalCacheFileExistsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsLocalCacheFileExistsAsync (string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsLocalCacheFileExistsAsync(string fileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsLocalCacheFileExistsAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function IsLocalCacheFileExistsAsync (fileName As String) As Task(Of Boolean)" />
-      <MemberSignature Language="F#" Value="static member IsLocalCacheFileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsLocalCacheFileExistsAsync fileName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ IsLocalCacheFileExistsAsync(System::String ^ fileName);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use StorageFileHelper.FileExistsAsync instead.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
-        <summary>
-            Test if a file exists in the application local cache folder.
-            </summary>
-        <returns>True if file exists.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsLocalFileExistsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsLocalFileExistsAsync (string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsLocalFileExistsAsync(string fileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsLocalFileExistsAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function IsLocalFileExistsAsync (fileName As String) As Task(Of Boolean)" />
-      <MemberSignature Language="F#" Value="static member IsLocalFileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsLocalFileExistsAsync fileName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ IsLocalFileExistsAsync(System::String ^ fileName);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use StorageFileHelper.FileExistsAsync instead.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
-        <summary>
-            Test if a file exists in the application local folder.
-            </summary>
-        <returns>True if file exists.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="IsPackagedFileExistsAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; IsPackagedFileExistsAsync (string fileName);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; IsPackagedFileExistsAsync(string fileName) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsPackagedFileExistsAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function IsPackagedFileExistsAsync (fileName As String) As Task(Of Boolean)" />
-      <MemberSignature Language="F#" Value="static member IsPackagedFileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.IsPackagedFileExistsAsync fileName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;bool&gt; ^ IsPackagedFileExistsAsync(System::String ^ fileName);" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("Use StorageFileHelper.FileExistsAsync instead.")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="fileName" Type="System.String" />
-      </Parameters>
-      <Docs>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
-        <summary>
-            Test if a file exists in the application installation folder.
-            </summary>
-        <returns>True if file exists.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="ReadTextAsync">
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;string&gt; ReadTextAsync (this Windows.Storage.Streams.IRandomAccessStream stream, System.Text.Encoding encoding = null);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;string&gt; ReadTextAsync(class Windows.Storage.Streams.IRandomAccessStream stream, class System.Text.Encoding encoding) cil managed" />
@@ -374,13 +198,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.AsyncStateMachine(typeof(Microsoft.Toolkit.Uwp.Helpers.StreamHelper/&lt;ReadTextAsync&gt;d__12))</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
