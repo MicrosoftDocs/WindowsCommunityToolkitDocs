@@ -4,6 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class LinkedInDataProvider" />
   <TypeSignature Language="F#" Value="type LinkedInDataProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinkedInDataProvider" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class LinkedInDataProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.#ctor(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokens As LinkedInOAuthTokens, requiredPermissions As LinkedInPermissions, authentication As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider : Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens * Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager -&gt; Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider" Usage="new Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider (tokens, requiredPermissions, authentication, passwordManager, storageManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedInDataProvider(Microsoft::Toolkit::Services::LinkedIn::LinkedInOAuthTokens ^ tokens, Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions requiredPermissions, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authentication, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager);" />
+      <MemberSignature Language="C++ WINRT" Value=" LinkedInDataProvider(Microsoft::Toolkit::Services::LinkedIn::LinkedInOAuthTokens const &amp; tokens, Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions requiredPermissions, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authentication, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -92,6 +96,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.LoggedIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoggedIn As Boolean" />
       <MemberSignature Language="F#" Value="member this.LoggedIn : bool" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.LoggedIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -114,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.LoginAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="linkedInDataProvider.LoginAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ LoginAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -137,6 +144,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="linkedInDataProvider.Logout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="C++ WINRT" Value="void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -159,6 +169,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.RequiredPermissions" />
       <MemberSignature Language="VB.NET" Value="Public Property RequiredPermissions As LinkedInPermissions" />
       <MemberSignature Language="F#" Value="member this.RequiredPermissions : Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions with get, set" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.RequiredPermissions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions RequiredPermissions { Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions get(); void set(Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions RequiredPermissions { Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions get(); void set(Microsoft::Toolkit::Services::LinkedIn::LinkedInPermissions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -181,6 +193,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.ShareDataAsync``2(``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ShareDataAsync(Of T, U) (dataToShare As T) As Task(Of U)" />
       <MemberSignature Language="F#" Value="member this.ShareDataAsync : 'T -&gt; System.Threading.Tasks.Task&lt;'U&gt;" Usage="linkedInDataProvider.ShareDataAsync dataToShare" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename U&gt;&#xA; System::Threading::Tasks::Task&lt;U&gt; ^ ShareDataAsync(T dataToShare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -213,6 +226,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.Tokens" />
       <MemberSignature Language="VB.NET" Value="Public Property Tokens As LinkedInOAuthTokens" />
       <MemberSignature Language="F#" Value="member this.Tokens : Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens with get, set" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.Tokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::LinkedIn::LinkedInOAuthTokens ^ Tokens { Microsoft::Toolkit::Services::LinkedIn::LinkedInOAuthTokens ^ get(); void set(Microsoft::Toolkit::Services::LinkedIn::LinkedInOAuthTokens ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -235,6 +249,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.Username" />
       <MemberSignature Language="VB.NET" Value="Public Property Username As String" />
       <MemberSignature Language="F#" Value="member this.Username : string with get, set" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.Username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Username { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Username { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -257,6 +273,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.ValidateConfig(Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ValidateConfig (config As LinkedInDataConfig)" />
       <MemberSignature Language="F#" Value="member this.ValidateConfig : Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig -&gt; unit" Usage="linkedInDataProvider.ValidateConfig config" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ValidateConfig(Microsoft::Toolkit::Services::LinkedIn::LinkedInDataConfig ^ config);" />
+      <MemberSignature Language="C++ WINRT" Value="void ValidateConfig(Microsoft::Toolkit::Services::LinkedIn::LinkedInDataConfig const &amp; config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>

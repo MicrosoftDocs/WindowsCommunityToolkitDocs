@@ -4,6 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarkdownRendererBase" />
   <TypeSignature Language="F#" Value="type MarkdownRendererBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarkdownRendererBase abstract" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class MarkdownRendererBase abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.#ctor(Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (document As MarkdownDocument)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase : Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument -&gt; Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase" Usage="new Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MarkdownRendererBase(Microsoft::Toolkit::Parsers::Markdown::MarkdownDocument ^ document);" />
+      <MemberSignature Language="C++ WINRT" Value=" MarkdownRendererBase(Microsoft::Toolkit::Parsers::Markdown::MarkdownDocument const &amp; document);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -47,6 +51,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.CheckRenderMarkdownLink(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub CheckRenderMarkdownLink (element As MarkdownLinkInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="member this.CheckRenderMarkdownLink : Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.CheckRenderMarkdownLink (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckRenderMarkdownLink(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownLinkInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value="void CheckRenderMarkdownLink(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownLinkInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.CollapseWhitespace(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Function CollapseWhitespace (context As IRenderContext, text As String) As String" />
       <MemberSignature Language="F#" Value="member this.CollapseWhitespace : Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext * string -&gt; string" Usage="markdownRendererBase.CollapseWhitespace (context, text)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ CollapseWhitespace(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context, System::String ^ text);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; Platform::String ^ CollapseWhitespace(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context, Platform::String ^ text);" />
+      <MemberSignature Language="C++ WINRT" Value="std::wstring CollapseWhitespace(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context, std::wstring const &amp; text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -102,6 +111,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.Document" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Document As MarkdownDocument" />
       <MemberSignature Language="F#" Value="member this.Document : Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument" Usage="Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.Document" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Microsoft::Toolkit::Parsers::Markdown::MarkdownDocument ^ Document { Microsoft::Toolkit::Parsers::Markdown::MarkdownDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -124,6 +134,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.Render(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member Render : Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit&#xA;override this.Render : Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.Render context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Render(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual void Render(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual void Render(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -149,6 +162,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlock(Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderBlock (element As MarkdownBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="member this.RenderBlock : Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBlock (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderBlock(Microsoft::Toolkit::Parsers::Markdown::Blocks::MarkdownBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; void RenderBlock(Microsoft::Toolkit::Parsers::Markdown::Blocks::MarkdownBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value="void RenderBlock(Microsoft::Toolkit::Parsers::Markdown::Blocks::MarkdownBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -176,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlocks(System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock},Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBlocks (blockElements As IEnumerable(Of MarkdownBlock), context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderBlocks : seq&lt;Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock&gt; * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit&#xA;override this.RenderBlocks : seq&lt;Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock&gt; * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBlocks (blockElements, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBlocks(System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Parsers::Markdown::Blocks::MarkdownBlock ^&gt; ^ blockElements, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -203,6 +220,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderBoldRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderBoldRun (element As BoldTextInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderBoldRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.BoldTextInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBoldRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderBoldRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::BoldTextInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderBoldRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::BoldTextInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -230,6 +249,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderCode(Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderCode (element As CodeBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderCode : Microsoft.Toolkit.Parsers.Markdown.Blocks.CodeBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderCode (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderCode(Microsoft::Toolkit::Parsers::Markdown::Blocks::CodeBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderCode(Microsoft::Toolkit::Parsers::Markdown::Blocks::CodeBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -257,6 +278,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderCodeRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderCodeRun (element As CodeInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderCodeRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.CodeInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderCodeRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderCodeRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::CodeInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderCodeRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::CodeInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -284,6 +307,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderEmoji(Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderEmoji (element As EmojiInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderEmoji : Microsoft.Toolkit.Parsers.Markdown.Inlines.EmojiInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderEmoji (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderEmoji(Microsoft::Toolkit::Parsers::Markdown::Inlines::EmojiInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderEmoji(Microsoft::Toolkit::Parsers::Markdown::Inlines::EmojiInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -311,6 +336,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHeader(Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHeader (element As HeaderBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderHeader : Microsoft.Toolkit.Parsers.Markdown.Blocks.HeaderBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHeader (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderHeader(Microsoft::Toolkit::Parsers::Markdown::Blocks::HeaderBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderHeader(Microsoft::Toolkit::Parsers::Markdown::Blocks::HeaderBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -338,6 +365,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHorizontalRule(Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHorizontalRule (context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderHorizontalRule : Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHorizontalRule context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderHorizontalRule(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; abstract void RenderHorizontalRule(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderHorizontalRule(Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -363,6 +393,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderHyperlink(Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHyperlink (element As HyperlinkInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderHyperlink : Microsoft.Toolkit.Parsers.Markdown.Inlines.HyperlinkInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHyperlink (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderHyperlink(Microsoft::Toolkit::Parsers::Markdown::Inlines::HyperlinkInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderHyperlink(Microsoft::Toolkit::Parsers::Markdown::Inlines::HyperlinkInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -390,6 +422,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderImage(Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderImage (element As ImageInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderImage : Microsoft.Toolkit.Parsers.Markdown.Inlines.ImageInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderImage (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderImage(Microsoft::Toolkit::Parsers::Markdown::Inlines::ImageInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderImage(Microsoft::Toolkit::Parsers::Markdown::Inlines::ImageInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -417,6 +451,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderInline(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderInline (element As MarkdownInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="member this.RenderInline : Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderInline (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderInline(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; void RenderInline(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value="void RenderInline(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -444,6 +481,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderInlineChildren(System.Collections.Generic.IList{Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline},Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderInlineChildren (inlineElements As IList(Of MarkdownInline), context As IRenderContext)" />
       <MemberSignature Language="F#" Value="member this.RenderInlineChildren : System.Collections.Generic.IList&lt;Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline&gt; * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderInlineChildren (inlineElements, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderInlineChildren(System::Collections::Generic::IList&lt;Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownInline ^&gt; ^ inlineElements, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -471,6 +509,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderItalicRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderItalicRun (element As ItalicTextInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderItalicRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.ItalicTextInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderItalicRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderItalicRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::ItalicTextInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderItalicRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::ItalicTextInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -498,6 +538,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderListElement(Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderListElement (element As ListBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderListElement : Microsoft.Toolkit.Parsers.Markdown.Blocks.ListBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderListElement (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderListElement(Microsoft::Toolkit::Parsers::Markdown::Blocks::ListBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderListElement(Microsoft::Toolkit::Parsers::Markdown::Blocks::ListBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -525,6 +567,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderMarkdownLink(Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderMarkdownLink (element As MarkdownLinkInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderMarkdownLink : Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownLinkInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderMarkdownLink (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderMarkdownLink(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownLinkInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderMarkdownLink(Microsoft::Toolkit::Parsers::Markdown::Inlines::MarkdownLinkInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -552,6 +596,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderParagraph(Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderParagraph (element As ParagraphBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderParagraph : Microsoft.Toolkit.Parsers.Markdown.Blocks.ParagraphBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderParagraph (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderParagraph(Microsoft::Toolkit::Parsers::Markdown::Blocks::ParagraphBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderParagraph(Microsoft::Toolkit::Parsers::Markdown::Blocks::ParagraphBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -579,6 +625,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderQuote(Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderQuote (element As QuoteBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderQuote : Microsoft.Toolkit.Parsers.Markdown.Blocks.QuoteBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderQuote (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderQuote(Microsoft::Toolkit::Parsers::Markdown::Blocks::QuoteBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderQuote(Microsoft::Toolkit::Parsers::Markdown::Blocks::QuoteBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -606,6 +654,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderStrikethroughRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderStrikethroughRun (element As StrikethroughTextInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderStrikethroughRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.StrikethroughTextInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderStrikethroughRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderStrikethroughRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::StrikethroughTextInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderStrikethroughRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::StrikethroughTextInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -633,6 +683,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderSuperscriptRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderSuperscriptRun (element As SuperscriptTextInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderSuperscriptRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.SuperscriptTextInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderSuperscriptRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderSuperscriptRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::SuperscriptTextInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderSuperscriptRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::SuperscriptTextInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -660,6 +712,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderTable(Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderTable (element As TableBlock, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderTable : Microsoft.Toolkit.Parsers.Markdown.Blocks.TableBlock * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderTable (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderTable(Microsoft::Toolkit::Parsers::Markdown::Blocks::TableBlock ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderTable(Microsoft::Toolkit::Parsers::Markdown::Blocks::TableBlock const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>
@@ -687,6 +741,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Parsers.Markdown.Render.MarkdownRendererBase.RenderTextRun(Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline,Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderTextRun (element As TextRunInline, context As IRenderContext)" />
       <MemberSignature Language="F#" Value="abstract member RenderTextRun : Microsoft.Toolkit.Parsers.Markdown.Inlines.TextRunInline * Microsoft.Toolkit.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderTextRun (element, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void RenderTextRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::TextRunInline ^ element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext ^ context);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void RenderTextRun(Microsoft::Toolkit::Parsers::Markdown::Inlines::TextRunInline const &amp; element, Microsoft::Toolkit::Parsers::Markdown::Render::IRenderContext const &amp; context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Parsers</AssemblyName>

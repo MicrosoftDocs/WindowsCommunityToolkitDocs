@@ -4,6 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Class MarkDownFormatter&#xA;Inherits Formatter" />
   <TypeSignature Language="F#" Value="type MarkDownFormatter = class&#xA;    inherit Formatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarkDownFormatter : Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarFormats::Formatter" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class MarkDownFormatter : Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarFormats::Formatter" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (model As TextToolbar)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter : Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar -&gt; Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter" Usage="new Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter model" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MarkDownFormatter(Microsoft::Toolkit::Uwp::UI::Controls::TextToolbar ^ model);" />
+      <MemberSignature Language="C++ WINRT" Value=" MarkDownFormatter(Microsoft::Toolkit::Uwp::UI::Controls::TextToolbar const &amp; model);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -48,6 +52,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DefaultButtons" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultButtons As ButtonMap" />
       <MemberSignature Language="F#" Value="member this.DefaultButtons : Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ButtonMap" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DefaultButtons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarButtons::ButtonMap ^ DefaultButtons { Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarButtons::ButtonMap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -69,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineInlineWrapListReverse(System.Func{System.String})" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function DetermineInlineWrapListReverse (listChar As Func(Of String)) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member DetermineInlineWrapListReverse : Func&lt;string&gt; -&gt; bool&#xA;override this.DetermineInlineWrapListReverse : Func&lt;string&gt; -&gt; bool" Usage="markDownFormatter.DetermineInlineWrapListReverse listChar" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool DetermineInlineWrapListReverse(Func&lt;System::String ^&gt; ^ listChar);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -95,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineListReverse(System.Func{System.String},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function DetermineListReverse (listChar As Func(Of String), wrapNewLines As Boolean) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member DetermineListReverse : Func&lt;string&gt; * bool -&gt; bool&#xA;override this.DetermineListReverse : Func&lt;string&gt; * bool -&gt; bool" Usage="markDownFormatter.DetermineListReverse (listChar, wrapNewLines)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool DetermineListReverse(Func&lt;System::String ^&gt; ^ listChar, bool wrapNewLines);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -123,6 +130,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineSimpleInlineReverse(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function DetermineSimpleInlineReverse (start As String, end As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member DetermineSimpleInlineReverse : string * string -&gt; bool&#xA;override this.DetermineSimpleInlineReverse : string * string -&gt; bool" Usage="markDownFormatter.DetermineSimpleInlineReverse (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool DetermineSimpleInlineReverse(System::String ^ start, System::String ^ end);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual bool DetermineSimpleInlineReverse(Platform::String ^ start, Platform::String ^ end);" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual bool DetermineSimpleInlineReverse(std::wstring const &amp; start, std::wstring const &amp; end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -151,6 +161,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineSimpleReverse(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function DetermineSimpleReverse (start As String, end As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member DetermineSimpleReverse : string * string -&gt; bool&#xA;override this.DetermineSimpleReverse : string * string -&gt; bool" Usage="markDownFormatter.DetermineSimpleReverse (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool DetermineSimpleReverse(System::String ^ start, System::String ^ end);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; virtual bool DetermineSimpleReverse(Platform::String ^ start, Platform::String ^ end);" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual bool DetermineSimpleReverse(std::wstring const &amp; start, std::wstring const &amp; end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -179,6 +192,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.FormatCode(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FormatCode (button As ToolbarButton)" />
       <MemberSignature Language="F#" Value="member this.FormatCode : Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton -&gt; unit" Usage="markDownFormatter.FormatCode button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FormatCode(Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarButtons::ToolbarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -204,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.FormatQuote(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub FormatQuote (button As ToolbarButton)" />
       <MemberSignature Language="F#" Value="member this.FormatQuote : Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton -&gt; unit" Usage="markDownFormatter.FormatQuote button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FormatQuote(Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarButtons::ToolbarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -229,6 +244,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.ListLineIterator" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListLineIterator As Integer" />
       <MemberSignature Language="F#" Value="member this.ListLineIterator : int" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.ListLineIterator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ListLineIterator { int get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int ListLineIterator { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -251,6 +268,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.NewLineChars" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NewLineChars As String" />
       <MemberSignature Language="F#" Value="member this.NewLineChars : string" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.NewLineChars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewLineChars { System::String ^ get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property Platform::String ^ NewLineChars { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -272,6 +291,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.ReachedEndLine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReachedEndLine As Boolean" />
       <MemberSignature Language="F#" Value="member this.ReachedEndLine : bool" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.ReachedEndLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReachedEndLine { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool ReachedEndLine { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -323,6 +344,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.SetSelection(System.String,System.String,System.Boolean,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetSelection (start As String, end As String, Optional reversible As Boolean = true, Optional contents As String = null)" />
       <MemberSignature Language="F#" Value="abstract member SetSelection : string * string * bool * string -&gt; unit&#xA;override this.SetSelection : string * string * bool * string -&gt; unit" Usage="markDownFormatter.SetSelection (start, end, reversible, contents)" />
+      <MemberSignature Language="C++ WINRT" Value=" virtual void SetSelection(std::wstring const &amp; start, std::wstring const &amp; end, bool reversible = true, std::wstring const &amp; contents = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -354,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.StyleHeader(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StyleHeader (button As ToolbarButton)" />
       <MemberSignature Language="F#" Value="member this.StyleHeader : Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton -&gt; unit" Usage="markDownFormatter.StyleHeader button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StyleHeader(Microsoft::Toolkit::Uwp::UI::Controls::TextToolbarButtons::ToolbarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -379,6 +402,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property Platform::String ^ Text { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>

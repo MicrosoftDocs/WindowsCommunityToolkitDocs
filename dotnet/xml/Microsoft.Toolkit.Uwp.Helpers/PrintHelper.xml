@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class PrintHelper&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type PrintHelper = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintHelper : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +32,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions)" />
+      <MemberSignature Language="C++ WINRT" Value=" PrintHelper(winrt::Windows::UI::Xaml::Controls::Panel const &amp; canvasContainer, Microsoft::Toolkit::Uwp::Helpers::PrintHelperOptions const &amp; defaultPrintHelperOptions = null);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -55,6 +57,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.AddFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFrameworkElementToPrint (element As FrameworkElement)" />
       <MemberSignature Language="F#" Value="member this.AddFrameworkElementToPrint : Windows.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.AddFrameworkElementToPrint element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFrameworkElementToPrint(Windows::UI::Xaml::FrameworkElement ^ element);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void AddFrameworkElementToPrint(Windows::UI::Xaml::FrameworkElement ^ element);" />
+      <MemberSignature Language="C++ WINRT" Value="void AddFrameworkElementToPrint(winrt::Windows::UI::Xaml::FrameworkElement const &amp; element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -80,6 +85,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginLeft" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginLeft As Double" />
       <MemberSignature Language="F#" Value="member this.ApplicationContentMarginLeft : double with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ApplicationContentMarginLeft { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ApplicationContentMarginLeft { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -102,6 +109,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginTop" />
       <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginTop As Double" />
       <MemberSignature Language="F#" Value="member this.ApplicationContentMarginTop : double with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ApplicationContentMarginTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ApplicationContentMarginTop { double get(); void set(double value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property double ApplicationContentMarginTop { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -124,6 +133,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.ClearListOfPrintableFrameworkElements" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearListOfPrintableFrameworkElements ()" />
       <MemberSignature Language="F#" Value="member this.ClearListOfPrintableFrameworkElements : unit -&gt; unit" Usage="printHelper.ClearListOfPrintableFrameworkElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearListOfPrintableFrameworkElements();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void ClearListOfPrintableFrameworkElements();" />
+      <MemberSignature Language="C++ WINRT" Value="void ClearListOfPrintableFrameworkElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -146,6 +158,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printHelper.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -171,6 +186,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPreviewPagesCreated" />
       <MemberSignature Language="VB.NET" Value="Public Event OnPreviewPagesCreated As Action(Of List(Of FrameworkElement)) " />
       <MemberSignature Language="F#" Value="member this.OnPreviewPagesCreated : Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt; " Usage="member this.OnPreviewPagesCreated : System.Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Action&lt;System::Collections::Generic::List&lt;Windows::UI::Xaml::FrameworkElement ^&gt; ^&gt; ^ OnPreviewPagesCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -194,6 +210,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Event OnPrintCanceled As Action " />
       <MemberSignature Language="F#" Value="member this.OnPrintCanceled : Action " Usage="member this.OnPrintCanceled : System.Action " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Action ^ OnPrintCanceled;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -215,6 +232,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintFailed" />
       <MemberSignature Language="VB.NET" Value="Public Event OnPrintFailed As Action " />
       <MemberSignature Language="F#" Value="member this.OnPrintFailed : Action " Usage="member this.OnPrintFailed : System.Action " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Action ^ OnPrintFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -236,6 +254,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.OnPrintSucceeded" />
       <MemberSignature Language="VB.NET" Value="Public Event OnPrintSucceeded As Action " />
       <MemberSignature Language="F#" Value="member this.OnPrintSucceeded : Action " Usage="member this.OnPrintSucceeded : System.Action " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event Action ^ OnPrintSucceeded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -257,6 +276,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.RemoveFrameworkElementToPrint(Windows.UI.Xaml.FrameworkElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFrameworkElementToPrint (element As FrameworkElement)" />
       <MemberSignature Language="F#" Value="member this.RemoveFrameworkElementToPrint : Windows.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.RemoveFrameworkElementToPrint element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFrameworkElementToPrint(Windows::UI::Xaml::FrameworkElement ^ element);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void RemoveFrameworkElementToPrint(Windows::UI::Xaml::FrameworkElement ^ element);" />
+      <MemberSignature Language="C++ WINRT" Value="void RemoveFrameworkElementToPrint(winrt::Windows::UI::Xaml::FrameworkElement const &amp; element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>

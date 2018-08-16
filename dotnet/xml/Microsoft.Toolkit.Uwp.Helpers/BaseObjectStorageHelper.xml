@@ -4,6 +4,9 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseObjectStorageHelper&#xA;Implements IObjectStorageHelper" />
   <TypeSignature Language="F#" Value="type BaseObjectStorageHelper = class&#xA;    interface IObjectStorageHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
+  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.#ctor" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseObjectStorageHelper();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; BaseObjectStorageHelper();" />
+      <MemberSignature Language="C++ WINRT" Value=" BaseObjectStorageHelper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -45,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.FileExistsAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FileExistsAsync (filePath As String) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member FileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.FileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="baseObjectStorageHelper.FileExistsAsync filePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ FileExistsAsync(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.FileExistsAsync(System.String)</InterfaceMember>
@@ -74,6 +81,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Folder" />
       <MemberSignature Language="VB.NET" Value="Protected Property Folder As StorageFolder" />
       <MemberSignature Language="F#" Value="member this.Folder : Windows.Storage.StorageFolder with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Folder" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Windows::Storage::StorageFolder ^ Folder { Windows::Storage::StorageFolder ^ get(); void set(Windows::Storage::StorageFolder ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property Windows::Storage::StorageFolder ^ Folder { Windows::Storage::StorageFolder ^ get(); void set(Windows::Storage::StorageFolder ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -96,6 +105,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.KeyExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string -&gt; bool&#xA;override this.KeyExists : string -&gt; bool" Usage="baseObjectStorageHelper.KeyExists key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool KeyExists(System::String ^ key);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ key);" />
+      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String)</InterfaceMember>
@@ -125,6 +137,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.KeyExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (compositeKey As String, key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string * string -&gt; bool&#xA;override this.KeyExists : string * string -&gt; bool" Usage="baseObjectStorageHelper.KeyExists (compositeKey, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool KeyExists(System::String ^ compositeKey, System::String ^ key);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ compositeKey, Platform::String ^ key);" />
+      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; compositeKey, std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String,System.String)</InterfaceMember>
@@ -156,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Read``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * 'T -&gt; 'T&#xA;override this.Read : string * 'T -&gt; 'T" Usage="baseObjectStorageHelper.Read (key, default)" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,``0)</InterfaceMember>
@@ -191,6 +207,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Read``1(System.String,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (compositeKey As String, key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * string * 'T -&gt; 'T&#xA;override this.Read : string * string * 'T -&gt; 'T" Usage="baseObjectStorageHelper.Read (compositeKey, key, default)" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; compositeKey, std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,System.String,``0)</InterfaceMember>
@@ -263,6 +280,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (compositeKey As String, values As IDictionary(Of String, T))" />
       <MemberSignature Language="F#" Value="abstract member Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit&#xA;override this.Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit" Usage="baseObjectStorageHelper.Save (compositeKey, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual void Save(System::String ^ compositeKey, System::Collections::Generic::IDictionary&lt;System::String ^, T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})</InterfaceMember>
@@ -300,6 +318,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (key As String, value As T)" />
       <MemberSignature Language="F#" Value="abstract member Save : string * 'T -&gt; unit&#xA;override this.Save : string * 'T -&gt; unit" Usage="baseObjectStorageHelper.Save (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual void Save(System::String ^ key, T value);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Save(Platform::String ^ key, T value);" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; void Save(std::wstring const &amp; key, T value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,``0)</InterfaceMember>
@@ -336,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveFileAsync(Of T) (filePath As String, value As T) As Task(Of StorageFile)" />
       <MemberSignature Language="F#" Value="abstract member SaveFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;&#xA;override this.SaveFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;" Usage="baseObjectStorageHelper.SaveFileAsync (filePath, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual System::Threading::Tasks::Task&lt;Windows::Storage::StorageFile ^&gt; ^ SaveFileAsync(System::String ^ filePath, T value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)</InterfaceMember>
@@ -372,6 +394,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Settings" />
       <MemberSignature Language="VB.NET" Value="Protected Property Settings As ApplicationDataContainer" />
       <MemberSignature Language="F#" Value="member this.Settings : Windows.Storage.ApplicationDataContainer with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Settings" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Windows::Storage::ApplicationDataContainer ^ Settings { Windows::Storage::ApplicationDataContainer ^ get(); void set(Windows::Storage::ApplicationDataContainer ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property Windows::Storage::ApplicationDataContainer ^ Settings { Windows::Storage::ApplicationDataContainer ^ get(); void set(Windows::Storage::ApplicationDataContainer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>

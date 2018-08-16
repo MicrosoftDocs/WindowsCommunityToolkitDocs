@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionNode&#xA;Implements IDisposable" />
   <TypeSignature Language="F#" Value="type ExpressionNode = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionNode abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +30,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="expressionNode.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -54,6 +58,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.GetValue" />
       <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetValue () As String" />
       <MemberSignature Language="F#" Value="abstract member GetValue : unit -&gt; string" Usage="expressionNode.GetValue " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetValue();" />
+      <MemberSignature Language="C++ CX" Value="protected public:&#xA; abstract Platform::String ^ GetValue();" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract std::wstring GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -77,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.PopulateParameterNodes(System.Collections.Generic.Dictionary{System.String,System.Object}@,System.Collections.Generic.HashSet{Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ReferenceNode}@)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub PopulateParameterNodes (ByRef constParamMap As Dictionary(Of String, Object), ByRef referenceNodes As HashSet(Of ReferenceNode))" />
       <MemberSignature Language="F#" Value="member this.PopulateParameterNodes :  *  -&gt; unit" Usage="expressionNode.PopulateParameterNodes (constParamMap, referenceNodes)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void PopulateParameterNodes(System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ % constParamMap, System::Collections::Generic::HashSet&lt;Microsoft::Toolkit::Uwp::UI::Animations::Expressions::ReferenceNode ^&gt; ^ % referenceNodes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -104,6 +112,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetBooleanParameter(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetBooleanParameter (parameterName As String, value As Boolean)" />
       <MemberSignature Language="F#" Value="member this.SetBooleanParameter : string * bool -&gt; unit" Usage="expressionNode.SetBooleanParameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBooleanParameter(System::String ^ parameterName, bool value);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void SetBooleanParameter(Platform::String ^ parameterName, bool value);" />
+      <MemberSignature Language="C++ WINRT" Value="void SetBooleanParameter(std::wstring const &amp; parameterName, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -131,6 +142,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetColorParameter(System.String,Windows.UI.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetColorParameter (parameterName As String, value As Color)" />
       <MemberSignature Language="F#" Value="member this.SetColorParameter : string * Windows.UI.Color -&gt; unit" Usage="expressionNode.SetColorParameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColorParameter(System::String ^ parameterName, Windows::UI::Color value);" />
+      <MemberSignature Language="C++ WINRT" Value="void SetColorParameter(std::wstring const &amp; parameterName, winrt::Windows::UI::Color value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -158,6 +171,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetMatrix3x2Parameter(System.String,System.Numerics.Matrix3x2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMatrix3x2Parameter (parameterName As String, value As Matrix3x2)" />
       <MemberSignature Language="F#" Value="member this.SetMatrix3x2Parameter : string * System.Numerics.Matrix3x2 -&gt; unit" Usage="expressionNode.SetMatrix3x2Parameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMatrix3x2Parameter(System::String ^ parameterName, System::Numerics::Matrix3x2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -185,6 +199,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetMatrix4x4Parameter(System.String,System.Numerics.Matrix4x4)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetMatrix4x4Parameter (parameterName As String, value As Matrix4x4)" />
       <MemberSignature Language="F#" Value="member this.SetMatrix4x4Parameter : string * System.Numerics.Matrix4x4 -&gt; unit" Usage="expressionNode.SetMatrix4x4Parameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMatrix4x4Parameter(System::String ^ parameterName, System::Numerics::Matrix4x4 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -212,6 +227,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetQuaternionParameter(System.String,System.Numerics.Quaternion)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetQuaternionParameter (parameterName As String, value As Quaternion)" />
       <MemberSignature Language="F#" Value="member this.SetQuaternionParameter : string * System.Numerics.Quaternion -&gt; unit" Usage="expressionNode.SetQuaternionParameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetQuaternionParameter(System::String ^ parameterName, System::Numerics::Quaternion value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -239,6 +255,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetReferenceParameter(System.String,Windows.UI.Composition.CompositionObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetReferenceParameter (parameterName As String, compObj As CompositionObject)" />
       <MemberSignature Language="F#" Value="member this.SetReferenceParameter : string * Windows.UI.Composition.CompositionObject -&gt; unit" Usage="expressionNode.SetReferenceParameter (parameterName, compObj)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReferenceParameter(System::String ^ parameterName, Windows::UI::Composition::CompositionObject ^ compObj);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void SetReferenceParameter(Platform::String ^ parameterName, Windows::UI::Composition::CompositionObject ^ compObj);" />
+      <MemberSignature Language="C++ WINRT" Value="void SetReferenceParameter(std::wstring const &amp; parameterName, winrt::Windows::UI::Composition::CompositionObject const &amp; compObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -266,6 +285,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetScalarParameter(System.String,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetScalarParameter (parameterName As String, value As Single)" />
       <MemberSignature Language="F#" Value="member this.SetScalarParameter : string * single -&gt; unit" Usage="expressionNode.SetScalarParameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetScalarParameter(System::String ^ parameterName, float value);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void SetScalarParameter(Platform::String ^ parameterName, float value);" />
+      <MemberSignature Language="C++ WINRT" Value="void SetScalarParameter(std::wstring const &amp; parameterName, float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -293,6 +315,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetVector2Parameter(System.String,System.Numerics.Vector2)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVector2Parameter (parameterName As String, value As Vector2)" />
       <MemberSignature Language="F#" Value="member this.SetVector2Parameter : string * System.Numerics.Vector2 -&gt; unit" Usage="expressionNode.SetVector2Parameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVector2Parameter(System::String ^ parameterName, System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -320,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetVector3Parameter(System.String,System.Numerics.Vector3)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVector3Parameter (parameterName As String, value As Vector3)" />
       <MemberSignature Language="F#" Value="member this.SetVector3Parameter : string * System.Numerics.Vector3 -&gt; unit" Usage="expressionNode.SetVector3Parameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVector3Parameter(System::String ^ parameterName, System::Numerics::Vector3 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -347,6 +371,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SetVector4Parameter(System.String,System.Numerics.Vector4)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVector4Parameter (parameterName As String, value As Vector4)" />
       <MemberSignature Language="F#" Value="member this.SetVector4Parameter : string * System.Numerics.Vector4 -&gt; unit" Usage="expressionNode.SetVector4Parameter (parameterName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVector4Parameter(System::String ^ parameterName, System::Numerics::Vector4 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -374,6 +399,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.Subchannels" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Property Subchannels As String()" />
       <MemberSignature Language="F#" Value="member this.Subchannels : string[] with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.Subchannels" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property cli::array &lt;System::String ^&gt; ^ Subchannels { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="protected public:&#xA; property Platform::Array &lt;Platform::String ^&gt; ^ Subchannels { Platform::Array &lt;Platform::String ^&gt; ^ get(); void set(Platform::Array &lt;Platform::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -396,6 +423,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode.SubchannelsInternal``1(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function SubchannelsInternal(Of T As ExpressionNode) (ParamArray subchannels As String()) As T" />
       <MemberSignature Language="F#" Value="member this.SubchannelsInternal : string[] -&gt; 'T (requires 'T :&gt; Microsoft.Toolkit.Uwp.UI.Animations.Expressions.ExpressionNode)" Usage="expressionNode.SubchannelsInternal subchannels" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : Microsoft::Toolkit::Uwp::UI::Animations::Expressions::ExpressionNode T SubchannelsInternal(... cli::array &lt;System::String ^&gt; ^ subchannels);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>

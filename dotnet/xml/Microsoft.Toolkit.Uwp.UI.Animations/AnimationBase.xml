@@ -4,6 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class AnimationBase&#xA;Inherits DependencyObject" />
   <TypeSignature Language="F#" Value="type AnimationBase = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnimationBase abstract : Windows::UI::Xaml::DependencyObject" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class AnimationBase abstract : winrt::Windows::UI::Xaml::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,9 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnimationBase();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; AnimationBase();" />
+      <MemberSignature Language="C++ WINRT" Value=" AnimationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -48,6 +53,7 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.AnimationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event AnimationChanged As EventHandler " />
       <MemberSignature Language="F#" Value="member this.AnimationChanged : EventHandler " Usage="member this.AnimationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AnimationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -69,6 +75,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Delay" />
       <MemberSignature Language="VB.NET" Value="Public Property Delay As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.Delay : TimeSpan with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Delay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Delay { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -91,6 +98,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.DelayProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DelayProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DelayProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.DelayProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ DelayProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty DelayProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -112,6 +121,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Duration" />
       <MemberSignature Language="VB.NET" Value="Public Property Duration As TimeSpan" />
       <MemberSignature Language="F#" Value="member this.Duration : TimeSpan with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Duration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -134,6 +144,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.DurationProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DurationProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable DurationProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.DurationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ DurationProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty DurationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -154,6 +166,9 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.UI.Composition.CompositionAnimation GetCompositionAnimation(class Windows.UI.Composition.Compositor compositor) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.GetCompositionAnimation(Windows.UI.Composition.Compositor)" />
       <MemberSignature Language="F#" Value="abstract member GetCompositionAnimation : Windows.UI.Composition.Compositor -&gt; Windows.UI.Composition.CompositionAnimation" Usage="animationBase.GetCompositionAnimation compositor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Windows::UI::Composition::CompositionAnimation ^ GetCompositionAnimation(Windows::UI::Composition::Compositor ^ compositor);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract Windows::UI::Composition::CompositionAnimation ^ GetCompositionAnimation(Windows::UI::Composition::Compositor ^ compositor);" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract winrt::Windows::UI::Composition::CompositionAnimation GetCompositionAnimation(winrt::Windows::UI::Composition::Compositor const &amp; compositor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -182,6 +197,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.ImplicitTarget" />
       <MemberSignature Language="VB.NET" Value="Public Property ImplicitTarget As String" />
       <MemberSignature Language="F#" Value="member this.ImplicitTarget : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.ImplicitTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImplicitTarget { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ ImplicitTarget { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -204,6 +221,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.ImplicitTargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ImplicitTargetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ImplicitTargetProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.ImplicitTargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ ImplicitTargetProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty ImplicitTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -225,6 +244,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.KeyFrames" />
       <MemberSignature Language="VB.NET" Value="Public Property KeyFrames As KeyFrameCollection" />
       <MemberSignature Language="F#" Value="member this.KeyFrames : Microsoft.Toolkit.Uwp.UI.Animations.KeyFrameCollection with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.KeyFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Uwp::UI::Animations::KeyFrameCollection ^ KeyFrames { Microsoft::Toolkit::Uwp::UI::Animations::KeyFrameCollection ^ get(); void set(Microsoft::Toolkit::Uwp::UI::Animations::KeyFrameCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -247,6 +267,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.KeyFramesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyFramesProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable KeyFramesProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.KeyFramesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ KeyFramesProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty KeyFramesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -268,6 +290,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.OnAnimationChanged" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnAnimationChanged ()" />
       <MemberSignature Language="F#" Value="member this.OnAnimationChanged : unit -&gt; unit" Usage="animationBase.OnAnimationChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnAnimationChanged();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; void OnAnimationChanged();" />
+      <MemberSignature Language="C++ WINRT" Value="void OnAnimationChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -290,6 +315,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.SetInitialValueBeforeDelay" />
       <MemberSignature Language="VB.NET" Value="Public Property SetInitialValueBeforeDelay As Boolean" />
       <MemberSignature Language="F#" Value="member this.SetInitialValueBeforeDelay : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.SetInitialValueBeforeDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetInitialValueBeforeDelay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool SetInitialValueBeforeDelay { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -312,6 +339,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.SetInitialValueBeforeDelayProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SetInitialValueBeforeDelayProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable SetInitialValueBeforeDelayProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.SetInitialValueBeforeDelayProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ SetInitialValueBeforeDelayProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty SetInitialValueBeforeDelayProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -333,6 +362,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.StartAnimation(Windows.UI.Xaml.UIElement)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartAnimation (element As UIElement)" />
       <MemberSignature Language="F#" Value="member this.StartAnimation : Windows.UI.Xaml.UIElement -&gt; unit" Usage="animationBase.StartAnimation element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartAnimation(Windows::UI::Xaml::UIElement ^ element);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void StartAnimation(Windows::UI::Xaml::UIElement ^ element);" />
+      <MemberSignature Language="C++ WINRT" Value="void StartAnimation(winrt::Windows::UI::Xaml::UIElement const &amp; element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -358,6 +390,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Target" />
       <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
       <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Target { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
@@ -380,6 +414,8 @@
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.TargetProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBase.TargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Windows::UI::Xaml::DependencyProperty ^ TargetProperty;" />
+      <MemberSignature Language="C++ WINRT" Value="static initonly winrt::Windows::UI::Xaml::DependencyProperty TargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>

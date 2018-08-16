@@ -4,6 +4,8 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class TwitterDataProvider&#xA;Inherits DataProviderBase(Of TwitterDataConfig, SchemaBase)" />
   <TypeSignature Language="F#" Value="type TwitterDataProvider = class&#xA;    inherit DataProviderBase&lt;TwitterDataConfig, SchemaBase&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TwitterDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Twitter::TwitterDataConfig ^, Microsoft::Toolkit::Parsers::SchemaBase ^&gt;" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TwitterDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Twitter::TwitterDataConfig, Microsoft::Toolkit::Parsers::SchemaBase const &amp;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +31,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.#ctor(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokens As TwitterOAuthTokens, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager, signatureManager As ISignatureManager)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.Twitter.TwitterDataProvider : Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager * Microsoft.Toolkit.Services.Core.ISignatureManager -&gt; Microsoft.Toolkit.Services.Twitter.TwitterDataProvider" Usage="new Microsoft.Toolkit.Services.Twitter.TwitterDataProvider (tokens, authenticationBroker, passwordManager, storageManager, signatureManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TwitterDataProvider(Microsoft::Toolkit::Services::Twitter::TwitterOAuthTokens ^ tokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager ^ signatureManager);" />
+      <MemberSignature Language="C++ WINRT" Value=" TwitterDataProvider(Microsoft::Toolkit::Services::Twitter::TwitterOAuthTokens const &amp; tokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager const &amp; signatureManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -60,6 +64,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Twitter.TwitterDataConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDataAsync(Of TSchema As SchemaBase) (config As TwitterDataConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="override this.GetDataAsync : Microsoft.Toolkit.Services.Twitter.TwitterDataConfig * int * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="twitterDataProvider.GetDataAsync (config, maxRecords, pageIndex, parser)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase override System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetDataAsync(Microsoft::Toolkit::Services::Twitter::TwitterDataConfig ^ config, int maxRecords, int pageIndex, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -100,6 +105,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Twitter.TwitterDataConfig)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDefaultParser (config As TwitterDataConfig) As IParser(Of SchemaBase)" />
       <MemberSignature Language="F#" Value="override this.GetDefaultParser : Microsoft.Toolkit.Services.Twitter.TwitterDataConfig -&gt; Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Parsers.SchemaBase&gt;" Usage="twitterDataProvider.GetDefaultParser config" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Toolkit::Parsers::IParser&lt;Microsoft::Toolkit::Parsers::SchemaBase ^&gt; ^ GetDefaultParser(Microsoft::Toolkit::Services::Twitter::TwitterDataConfig ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -152,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetUserTimeLineAsync``1(System.String,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUserTimeLineAsync(Of TSchema As SchemaBase) (screenName As String, maxRecords As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="member this.GetUserTimeLineAsync : string * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="twitterDataProvider.GetUserTimeLineAsync (screenName, maxRecords, parser)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetUserTimeLineAsync(System::String ^ screenName, int maxRecords, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -190,6 +197,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.LoggedIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoggedIn As Boolean" />
       <MemberSignature Language="F#" Value="member this.LoggedIn : bool" Usage="Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.LoggedIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -212,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.LoginAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterDataProvider.LoginAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ LoginAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -235,6 +245,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="twitterDataProvider.Logout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="C++ WINRT" Value="void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -257,6 +270,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.SearchAsync``1(System.String,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function SearchAsync(Of TSchema As SchemaBase) (hashTag As String, maxRecords As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="member this.SearchAsync : string * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="twitterDataProvider.SearchAsync (hashTag, maxRecords, parser)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ SearchAsync(System::String ^ hashTag, int maxRecords, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -295,6 +309,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.StartUserStreamAsync(Microsoft.Toolkit.Services.Twitter.TwitterUserStreamParser,Microsoft.Toolkit.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartUserStreamAsync (parser As TwitterUserStreamParser, callback As TwitterStreamCallbacks.TwitterStreamCallback) As Task" />
       <MemberSignature Language="F#" Value="member this.StartUserStreamAsync : Microsoft.Toolkit.Services.Twitter.TwitterUserStreamParser * Microsoft.Toolkit.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback -&gt; System.Threading.Tasks.Task" Usage="twitterDataProvider.StartUserStreamAsync (parser, callback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ StartUserStreamAsync(Microsoft::Toolkit::Services::Twitter::TwitterUserStreamParser ^ parser, Microsoft::Toolkit::Services::Twitter::TwitterStreamCallbacks::TwitterStreamCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -323,6 +338,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.StopStream" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopStream ()" />
       <MemberSignature Language="F#" Value="member this.StopStream : unit -&gt; unit" Usage="twitterDataProvider.StopStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopStream();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void StopStream();" />
+      <MemberSignature Language="C++ WINRT" Value="void StopStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -345,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.TweetStatusAsync(Microsoft.Toolkit.Services.Twitter.TwitterStatus,System.IO.Stream[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (status As TwitterStatus, ParamArray pictures As Stream()) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : Microsoft.Toolkit.Services.Twitter.TwitterStatus * System.IO.Stream[] -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterDataProvider.TweetStatusAsync (status, pictures)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(Microsoft::Toolkit::Services::Twitter::TwitterStatus ^ status, ... cli::array &lt;System::IO::Stream ^&gt; ^ pictures);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -379,6 +398,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.TweetStatusAsync(System.String,System.IO.Stream[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (tweet As String, ParamArray pictures As Stream()) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : string * System.IO.Stream[] -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterDataProvider.TweetStatusAsync (tweet, pictures)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(System::String ^ tweet, ... cli::array &lt;System::IO::Stream ^&gt; ^ pictures);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -412,6 +432,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; UploadPictureAsync(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.UploadPictureAsync(System.IO.Stream)" />
       <MemberSignature Language="F#" Value="member this.UploadPictureAsync : System.IO.Stream -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="twitterDataProvider.UploadPictureAsync stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ UploadPictureAsync(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -438,6 +459,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.UserScreenName" />
       <MemberSignature Language="VB.NET" Value="Public Property UserScreenName As String" />
       <MemberSignature Language="F#" Value="member this.UserScreenName : string with get, set" Usage="Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.UserScreenName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserScreenName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserScreenName { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
@@ -460,6 +483,8 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.ValidateConfig(Microsoft.Toolkit.Services.Twitter.TwitterDataConfig)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateConfig (config As TwitterDataConfig)" />
       <MemberSignature Language="F#" Value="override this.ValidateConfig : Microsoft.Toolkit.Services.Twitter.TwitterDataConfig -&gt; unit" Usage="twitterDataProvider.ValidateConfig config" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateConfig(Microsoft::Toolkit::Services::Twitter::TwitterDataConfig ^ config);" />
+      <MemberSignature Language="C++ WINRT" Value=" override void ValidateConfig(Microsoft::Toolkit::Services::Twitter::TwitterDataConfig const &amp; config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>

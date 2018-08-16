@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper" />
   <TypeSignature Language="VB.NET" Value="Public Class InlineCollectionWrapper&#xA;Implements ICollection(Of Inline), IEnumerable(Of Inline), IList(Of Inline)" />
   <TypeSignature Language="F#" Value="type InlineCollectionWrapper = class&#xA;    interface IList&lt;Inline&gt;&#xA;    interface ICollection&lt;Inline&gt;&#xA;    interface seq&lt;Inline&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InlineCollectionWrapper : System::Collections::Generic::ICollection&lt;Windows::UI::Xaml::Documents::Inline ^&gt;, System::Collections::Generic::IEnumerable&lt;Windows::UI::Xaml::Documents::Inline ^&gt;, System::Collections::Generic::IList&lt;Windows::UI::Xaml::Documents::Inline ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Add(Windows.UI.Xaml.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (item As Inline)" />
       <MemberSignature Language="F#" Value="abstract member Add : Windows.UI.Xaml.Documents.Inline -&gt; unit&#xA;override this.Add : Windows.UI.Xaml.Documents.Inline -&gt; unit" Usage="inlineCollectionWrapper.Add item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Add(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="void Add(winrt::Windows::UI::Xaml::Documents::Inline const &amp; item);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
@@ -63,6 +67,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="inlineCollectionWrapper.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="C++ WINRT" Value="void Clear();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
@@ -87,6 +94,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Contains(Windows.UI.Xaml.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (item As Inline) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Contains : Windows.UI.Xaml.Documents.Inline -&gt; bool&#xA;override this.Contains : Windows.UI.Xaml.Documents.Inline -&gt; bool" Usage="inlineCollectionWrapper.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool Contains(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="bool Contains(winrt::Windows::UI::Xaml::Documents::Inline const &amp; item);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
@@ -115,6 +125,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.CopyTo(Windows.UI.Xaml.Documents.Inline[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Inline(), arrayIndex As Integer)" />
       <MemberSignature Language="F#" Value="abstract member CopyTo : Windows.UI.Xaml.Documents.Inline[] * int -&gt; unit&#xA;override this.CopyTo : Windows.UI.Xaml.Documents.Inline[] * int -&gt; unit" Usage="inlineCollectionWrapper.CopyTo (array, arrayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;Windows::UI::Xaml::Documents::Inline ^&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void CopyTo(Platform::Array &lt;Windows::UI::Xaml::Documents::Inline ^&gt; ^ array, int arrayIndex);" />
+      <MemberSignature Language="C++ WINRT" Value="void CopyTo(std::Array &lt;Windows::UI::Xaml::Documents::Inline const &amp;&gt; const &amp; array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
@@ -141,6 +154,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -165,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetEnumerator () As IEnumerator(Of Inline)" />
       <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Windows.UI.Xaml.Documents.Inline&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;Windows.UI.Xaml.Documents.Inline&gt;" Usage="inlineCollectionWrapper.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;Windows::UI::Xaml::Documents::Inline ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -195,6 +211,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.IndexOf(Windows.UI.Xaml.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As Inline) As Integer" />
       <MemberSignature Language="F#" Value="abstract member IndexOf : Windows.UI.Xaml.Documents.Inline -&gt; int&#xA;override this.IndexOf : Windows.UI.Xaml.Documents.Inline -&gt; int" Usage="inlineCollectionWrapper.IndexOf item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; int IndexOf(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="int IndexOf(winrt::Windows::UI::Xaml::Documents::Inline const &amp; item);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
@@ -223,6 +242,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Insert(System.Int32,Windows.UI.Xaml.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As Inline)" />
       <MemberSignature Language="F#" Value="abstract member Insert : int * Windows.UI.Xaml.Documents.Inline -&gt; unit&#xA;override this.Insert : int * Windows.UI.Xaml.Documents.Inline -&gt; unit" Usage="inlineCollectionWrapper.Insert (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Insert(int index, Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="void Insert(int index, winrt::Windows::UI::Xaml::Documents::Inline const &amp; item);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
@@ -252,6 +274,8 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -276,6 +300,7 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Inline" />
       <MemberSignature Language="F#" Value="member this.Item(int) : Windows.UI.Xaml.Documents.Inline with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Windows::UI::Xaml::Documents::Inline ^ default[int] { Windows::UI::Xaml::Documents::Inline ^ get(int index); void set(int index, Windows::UI::Xaml::Documents::Inline ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
@@ -304,6 +329,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.Remove(Windows.UI.Xaml.Documents.Inline)" />
       <MemberSignature Language="VB.NET" Value="Public Function Remove (item As Inline) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Remove : Windows.UI.Xaml.Documents.Inline -&gt; bool&#xA;override this.Remove : Windows.UI.Xaml.Documents.Inline -&gt; bool" Usage="inlineCollectionWrapper.Remove item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool Remove(Windows::UI::Xaml::Documents::Inline ^ item);" />
+      <MemberSignature Language="C++ WINRT" Value="bool Remove(winrt::Windows::UI::Xaml::Documents::Inline const &amp; item);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
@@ -332,6 +360,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="inlineCollectionWrapper.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="C++ WINRT" Value="void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
@@ -358,6 +389,7 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InlineCollectionWrapper.System#Collections#IEnumerable#GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>

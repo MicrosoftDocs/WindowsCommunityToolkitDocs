@@ -4,6 +4,9 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper" />
   <TypeSignature Language="VB.NET" Value="Public Interface IObjectStorageHelper" />
   <TypeSignature Language="F#" Value="type IObjectStorageHelper = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IObjectStorageHelper" />
+  <TypeSignature Language="C++ CX" Value="public interface class IObjectStorageHelper" />
+  <TypeSignature Language="C++ WINRT" Value="__interface IObjectStorageHelper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +25,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.FileExistsAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FileExistsAsync (filePath As String) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member FileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iObjectStorageHelper.FileExistsAsync filePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ FileExistsAsync(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -48,6 +52,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string -&gt; bool" Usage="iObjectStorageHelper.KeyExists key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool KeyExists(System::String ^ key);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ key);" />
+      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -74,6 +81,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (compositeKey As String, key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string * string -&gt; bool" Usage="iObjectStorageHelper.KeyExists (compositeKey, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool KeyExists(System::String ^ compositeKey, System::String ^ key);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ compositeKey, Platform::String ^ key);" />
+      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; compositeKey, std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -102,6 +112,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * 'T -&gt; 'T" Usage="iObjectStorageHelper.Read (key, default)" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -134,6 +145,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (compositeKey As String, key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * string * 'T -&gt; 'T" Usage="iObjectStorageHelper.Read (compositeKey, key, default)" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; compositeKey, std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -200,6 +212,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (compositeKey As String, values As IDictionary(Of String, T))" />
       <MemberSignature Language="F#" Value="abstract member Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit" Usage="iObjectStorageHelper.Save (compositeKey, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Save(System::String ^ compositeKey, System::Collections::Generic::IDictionary&lt;System::String ^, T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -234,6 +247,9 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (key As String, value As T)" />
       <MemberSignature Language="F#" Value="abstract member Save : string * 'T -&gt; unit" Usage="iObjectStorageHelper.Save (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Save(System::String ^ key, T value);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Save(Platform::String ^ key, T value);" />
+      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; void Save(std::wstring const &amp; key, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
@@ -265,6 +281,7 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveFileAsync(Of T) (filePath As String, value As T) As Task(Of StorageFile)" />
       <MemberSignature Language="F#" Value="abstract member SaveFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;" Usage="iObjectStorageHelper.SaveFileAsync (filePath, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Threading::Tasks::Task&lt;Windows::Storage::StorageFile ^&gt; ^ SaveFileAsync(System::String ^ filePath, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
