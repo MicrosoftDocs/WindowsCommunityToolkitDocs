@@ -1,0 +1,402 @@
+﻿<Type Name="WebViewHost" FullName="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost">
+  <TypeSignature Language="C#" Value="public abstract class WebViewHost : System.Windows.Interop.HwndHost" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract WebViewHost extends System.Windows.Interop.HwndHost" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebViewHost&#xA;Inherits HwndHost" />
+  <TypeSignature Language="F#" Value="type WebViewHost = class&#xA;    inherit HwndHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebViewHost abstract : System::Windows::Interop::HwndHost" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Windows.Interop.HwndHost</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.ComponentModel.DesignTimeVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" /> class hosts a <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView" /> inside of a WPF tree
+            </summary>
+    <remarks>Requires unmanaged code permissions</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected WebViewHost ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebViewHost();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; WebViewHost();" />
+      <MemberSignature Language="C++ WINRT" Value=" WebViewHost();" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuildWindowCore">
+      <MemberSignature Language="C#" Value="protected override System.Runtime.InteropServices.HandleRef BuildWindowCore (System.Runtime.InteropServices.HandleRef hwndParent);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Runtime.InteropServices.HandleRef BuildWindowCore(valuetype System.Runtime.InteropServices.HandleRef hwndParent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function BuildWindowCore (hwndParent As HandleRef) As HandleRef" />
+      <MemberSignature Language="F#" Value="override this.BuildWindowCore : System.Runtime.InteropServices.HandleRef -&gt; System.Runtime.InteropServices.HandleRef" Usage="webViewHost.BuildWindowCore hwndParent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Runtime::InteropServices::HandleRef BuildWindowCore(System::Runtime::InteropServices::HandleRef hwndParent);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.HandleRef</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwndParent" Type="System.Runtime.InteropServices.HandleRef" />
+      </Parameters>
+      <Docs>
+        <param name="hwndParent">The window handle of the parent window.</param>
+        <summary>
+            When overridden in a derived class, creates the window to be hosted.
+            </summary>
+        <returns>The handle to the child Win32 window to create.</returns>
+        <remarks>To be added.</remarks>
+        <altmember cref="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Initialize" />
+      </Docs>
+    </Member>
+    <Member MemberName="ChildWindow">
+      <MemberSignature Language="C#" Value="protected System.Runtime.InteropServices.HandleRef ChildWindow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.HandleRef ChildWindow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ChildWindow" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ChildWindow As HandleRef" />
+      <MemberSignature Language="F#" Value="member this.ChildWindow : System.Runtime.InteropServices.HandleRef" Usage="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ChildWindow" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Runtime::InteropServices::HandleRef ChildWindow { System::Runtime::InteropServices::HandleRef get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.HandleRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the child window.
+            </summary>
+        <value>The child window created during <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Initialize" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public abstract void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Close" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="webViewHost.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Close();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; abstract void Close();" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void Close();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Closes the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" />.
+            </summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="M:System.IDisposable.Dispose" />
+      </Docs>
+    </Member>
+    <Member MemberName="DestroyWindowCore">
+      <MemberSignature Language="C#" Value="protected override void DestroyWindowCore (System.Runtime.InteropServices.HandleRef hwnd);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DestroyWindowCore(valuetype System.Runtime.InteropServices.HandleRef hwnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyWindowCore (hwnd As HandleRef)" />
+      <MemberSignature Language="F#" Value="override this.DestroyWindowCore : System.Runtime.InteropServices.HandleRef -&gt; unit" Usage="webViewHost.DestroyWindowCore hwnd" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DestroyWindowCore(System::Runtime::InteropServices::HandleRef hwnd);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.Runtime.InteropServices.HandleRef" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">A structure that contains the window handle.</param>
+        <summary>
+            Destroys the hosted window.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceDpi">
+      <MemberSignature Language="C#" Value="protected int DeviceDpi { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DeviceDpi" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DeviceDpi" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DeviceDpi As Integer" />
+      <MemberSignature Language="F#" Value="member this.DeviceDpi : int" Usage="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DeviceDpi" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int DeviceDpi { int get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property int DeviceDpi { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current DPI for this control
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.IsScalingRequired" />
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="webViewHost.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="C++ WINRT" Value=" override void Dispose(bool disposing);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">Set to <see langword="true" /> if called from an explicit disposer and <see langword="false" /> otherwise.</param>
+        <summary>
+            Immediately frees any system resources that the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" /> might hold.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected abstract void Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="webViewHost.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Initialize();" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; abstract void Initialize();" />
+      <MemberSignature Language="C++ WINRT" Value=" abstract void Initialize();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes this instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsScalingRequired">
+      <MemberSignature Language="C#" Value="protected bool IsScalingRequired { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsScalingRequired" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.IsScalingRequired" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsScalingRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsScalingRequired : bool" Usage="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.IsScalingRequired" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsScalingRequired { bool get(); };" />
+      <MemberSignature Language="C++ CX" Value="protected:&#xA; property bool IsScalingRequired { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether scaling is required for the current DPI.
+            </summary>
+        <value>
+          <see langword="true" /> if scaling is required; otherwise, <see langword="false" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentHandle">
+      <MemberSignature Language="C#" Value="protected System.Runtime.InteropServices.HandleRef ParentHandle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.InteropServices.HandleRef ParentHandle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ParentHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentHandle As HandleRef" />
+      <MemberSignature Language="F#" Value="member this.ParentHandle : System.Runtime.InteropServices.HandleRef" Usage="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ParentHandle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Runtime::InteropServices::HandleRef ParentHandle { System::Runtime::InteropServices::HandleRef get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Runtime.InteropServices.HandleRef</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the parent handle.
+            </summary>
+        <value>The <see cref="T:System.Runtime.InteropServices.HandleRef" /> passed in to <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TranslateAcceleratorCore">
+      <MemberSignature Language="C#" Value="protected override bool TranslateAcceleratorCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TranslateAcceleratorCore (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TranslateAcceleratorCore :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="webViewHost.TranslateAcceleratorCore (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TranslateAcceleratorCore(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="msg" Type="System.Windows.Interop.MSG" RefType="ref" />
+        <Parameter Name="modifiers" Type="System.Windows.Input.ModifierKeys" />
+      </Parameters>
+      <Docs>
+        <param name="msg">The message and associated data. Do not modify this structure. It is passed by reference for performance reasons only.</param>
+        <param name="modifiers">Modifier keys.</param>
+        <summary>
+            Processes keyboard input at the keydown message level.
+            </summary>
+        <returns>Always returns <see langword="false" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateBounds">
+      <MemberSignature Language="C#" Value="protected abstract void UpdateBounds (System.Windows.Rect bounds);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateBounds(valuetype System.Windows.Rect bounds) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.UpdateBounds(System.Windows.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub UpdateBounds (bounds As Rect)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateBounds : System.Windows.Rect -&gt; unit" Usage="webViewHost.UpdateBounds bounds" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void UpdateBounds(System::Windows::Rect bounds);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="bounds" Type="System.Windows.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="bounds">A <see cref="T:System.Windows.Rect" /> containing numerical values that represent the location and size of the control.</param>
+        <summary>
+            Updates the location and size of <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateSize">
+      <MemberSignature Language="C#" Value="protected virtual void UpdateSize (System.Windows.Size size);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateSize(valuetype System.Windows.Size size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.UpdateSize(System.Windows.Size)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateSize : System.Windows.Size -&gt; unit&#xA;override this.UpdateSize : System.Windows.Size -&gt; unit" Usage="webViewHost.UpdateSize size" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateSize(System::Windows::Size size);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Windows.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size">A <see cref="T:System.Windows.Size" /> containing numerical values that represent the size of the control.</param>
+        <summary>
+            Updates the size of the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" /> using the current visual offset for location.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WndProc">
+      <MemberSignature Language="C#" Value="protected override IntPtr WndProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool&amp; handled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function WndProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr, ByRef handled As Boolean) As IntPtr" />
+      <MemberSignature Language="F#" Value="override this.WndProc : nativeint * int * nativeint * nativeint *  -&gt; nativeint" Usage="webViewHost.WndProc (hwnd, msg, wParam, lParam, handled)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, bool % handled);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.Controls</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hwnd" Type="System.IntPtr" />
+        <Parameter Name="msg" Type="System.Int32" />
+        <Parameter Name="wParam" Type="System.IntPtr" />
+        <Parameter Name="lParam" Type="System.IntPtr" />
+        <Parameter Name="handled" Type="System.Boolean" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="hwnd">The window handle of the hosted window.</param>
+        <param name="msg">The message to act upon.</param>
+        <param name="wParam">Information that may be relevant to handling the message. This is typically used to store small pieces of information, such as flags.</param>
+        <param name="lParam">Information that may be relevant to handling the message. This is typically used to reference an object.</param>
+        <param name="handled">Whether events resulting should be marked handled.</param>
+        <summary>
+            When overridden in a derived class, accesses the window process (handle) of the hosted child window.
+            </summary>
+        <returns>The window handle of the child window.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

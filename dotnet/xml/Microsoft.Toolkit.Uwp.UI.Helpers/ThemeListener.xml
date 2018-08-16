@@ -1,20 +1,22 @@
 ﻿<Type Name="ThemeListener" FullName="Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener">
-  <TypeSignature Language="C#" Value="public sealed class ThemeListener" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThemeListener extends System.Object" />
+  <TypeSignature Language="C#" Value="public sealed class ThemeListener : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ThemeListener extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeListener" />
-  <TypeSignature Language="F#" Value="type ThemeListener = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ThemeListener sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class ThemeListener sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class ThemeListener sealed" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ThemeListener&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ThemeListener = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThemeListener sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-    <AssemblyVersion>2.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>Windows.Foundation.Metadata.AllowForWeb</AttributeName>
@@ -39,7 +41,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -60,7 +62,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.ApplicationTheme</ReturnType>
@@ -84,7 +86,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -95,6 +97,33 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="themeListener.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="C++ WINRT" Value="void Dispose();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsHighContrast">
@@ -108,7 +137,7 @@
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -128,11 +157,10 @@
       <MemberSignature Language="VB.NET" Value="Public Event ThemeChanged As ThemeChangedEvent " />
       <MemberSignature Language="F#" Value="member this.ThemeChanged : Microsoft.Toolkit.Uwp.UI.Helpers.ThemeChangedEvent " Usage="member this.ThemeChanged : Microsoft.Toolkit.Uwp.UI.Helpers.ThemeChangedEvent " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event Microsoft::Toolkit::Uwp::UI::Helpers::ThemeChangedEvent ^ ThemeChanged;" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; event Microsoft::Toolkit::Uwp::UI::Helpers::ThemeChangedEvent ^ ThemeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>2.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Helpers.ThemeChangedEvent</ReturnType>
