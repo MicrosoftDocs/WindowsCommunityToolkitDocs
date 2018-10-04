@@ -16,7 +16,7 @@ The **InkCanvas** control provides a surface for Windows Ink-based user interact
 
 ## About InkCanvas control
 
-The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is coming soon, and it will be located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
 Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control.
 
@@ -43,10 +43,11 @@ This control, like the UWP **Windows.UI.Xaml.Controls.InkCanvas** control, provi
 
 ## Requirements
 
+|        |        |
+|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
-| -- | -- |
-| Namespace | Windows Forms (coming soon): Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
-| NuGet package | Windows Forms (coming soon): [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
+| Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
+| NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
 ## API Source Code
 
@@ -56,5 +57,5 @@ This control, like the UWP **Windows.UI.Xaml.Controls.InkCanvas** control, provi
 
 ## Related Topics
 
-- [InkCanvas (UWP)](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
+- [InkCanvas (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
 - [Pen and Windows Ink](https://docs.microsoft.com/windows/uwp/design/input/pen-and-stylus-interactions)

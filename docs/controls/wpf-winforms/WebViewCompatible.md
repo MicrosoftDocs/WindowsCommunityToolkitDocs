@@ -216,8 +216,9 @@ Scripts in the web view content can use **window.external.notify** with a string
 
 ## Requirements
 
+|        |        |
+|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
-| -- | -- |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) |
 

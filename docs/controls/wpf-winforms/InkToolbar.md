@@ -16,7 +16,7 @@ The **InkToolbar** control provides an interface to manage an [InkCanvas](InkCan
 
 ## About InkToolbar control
 
-The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is coming soon, and it will be located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
 Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control.
 
@@ -59,7 +59,7 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](htt
 
 ## Events
 
-| Events | Description |
+| Event | Description |
 | -- | -- |
 | ActiveToolChanged | Wraps the [ActiveToolChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetoolchanged) event of the internal UWP **InkToolbar** control. |
 | EraseAllClicked | Wraps the [EraseAllClicked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.eraseallclicked) event of the internal UWP **InkToolbar** control. |
@@ -70,10 +70,11 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](htt
 
 ## Requirements
 
+|        |        |
+|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
-| -- | -- |
-| Namespace | Windows Forms (coming soon): Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
-| NuGet package | Windows Forms (coming soon): [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
+| Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
+| NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
 ## API Source Code
 
@@ -83,5 +84,5 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](htt
 
 ## Related Topics
 
-- [InkToolbar (UWP)](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.InkToolbar)
+- [InkToolbar (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar)
 - [Pen and Windows Ink](https://docs.microsoft.com/windows/uwp/design/input/pen-and-stylus-interactions)
