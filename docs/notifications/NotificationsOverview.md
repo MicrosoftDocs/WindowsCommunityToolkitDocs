@@ -25,8 +25,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Interactive Toast Notifications](https://blogs.msdn.microsoft.com/tiles_and_toasts/2015/07/02/adaptive-and-interactive-toast-notifications-for-windows-10/) |
-| [Quickstart: Sending a local Toast notification](https://blogs.msdn.microsoft.com/tiles_and_toasts/2015/07/08/quickstart-sending-a-local-toast-notification-and-handling-activations-from-it-windows-10/) |
+| [Interactive Toast Notifications](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts) |
+| [Quickstart: Sending a local Toast notification](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast) |
 
 ## Sample Output
 
