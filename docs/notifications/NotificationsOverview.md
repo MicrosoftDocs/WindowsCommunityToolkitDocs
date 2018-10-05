@@ -14,8 +14,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Create Adaptive Tile](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
-| [Sending a local Tile notification](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification/) |
+| [Create Adaptive Tile](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
+| [Sending a local Tile notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification/) |
 
 ## Sample Output
 
@@ -25,8 +25,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Create adaptive and interactive Toast](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts/) |
-| [Send a local toast](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast/) |
+| [Create adaptive and interactive Toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts/) |
+| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast/) |
 
 ## Sample Output
 
