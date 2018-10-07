@@ -154,7 +154,7 @@ In display mode the combobox column looks like the normal text column. In edit m
 
 The **DataGridComboBoxColumn** contains the following specific properties:
 
-* **ItemsSource** (IEnumerable): This property is bound to a collection of objects representing the elements of the combobox (the source is the same for all cells in the column). The **ItemsSource** elements of the column must have at least on property with the same name as the elements of the **ItemsSource** belonging to the **DataGrid** itself.
+* **ItemsSource** (IEnumerable): This property is bound to a collection of objects representing the elements of the combobox (the source is the same for all cells in the column). The **ItemsSource** elements of the column must have at least one property with the same name as the elements of the **ItemsSource** belonging to the **DataGrid** itself.
 
 * **Binding** (Binding): This property binds the column to a property in the **DataGrid**'s **ItemsSource**. It also links this property to a property with the same name within the column's **ItemsSource**.
 
