@@ -148,6 +148,94 @@ You can override the default automatic generation of columns by setting the **Au
 </controls:DataGrid>  
 ```
 
+### DataGridComboBoxColumn
+
+In display mode the combobox column looks like the normal text column. In edit mode the column allows the user to select a value from a provided collection displayed in a **ComboBox** control.
+
+The **DataGridComboBoxColumn** contains the following specific properties:
+
+* **ItemsSource** (IEnumerable): This property is bound to a collection of objects representing the elements of the combobox (the source is the same for all cells in the column). The **ItemsSource** elements of the column must have at least one property with the same name as the elements of the **ItemsSource** belonging to the **DataGrid** itself.
+
+* **Binding** (Binding): This property binds the column to a property in the **DataGrid**'s **ItemsSource**. It also links this property to a property with the same name within the column's **ItemsSource**.
+
+* **DisplayMemberPath** (string): This property tells the column which property value to show in both display and edit mode. It's value must match the name of a property within the column's **ItemsSource** elements.
+
+The following code example demonstrates how to specify and configure a **DataGridComboBoxColumn** in XAML.
+
+```xml
+<controls:DataGrid x:Name="EmployeeGrid"
+                  ItemsSource="{x:Bind Persons}"
+                  AutoGenerateColumns="False">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="First Name"
+                                             Binding="{Binding FirstName}"/>
+                <controls:DataGridTextColumn Header="Last Name"
+                                             Binding="{Binding LastName}"/>
+                <controls:DataGridTextColumn Header="Position"
+                                             Binding="{Binding Position}"/>
+                <controls:DataGridComboBoxColumn Header="Department"
+                                                 Binding="{Binding DepartmentId}"                                                  
+                                                 ItemsSource="{x:Bind Departments, Mode=OneWay}"
+                                                 DisplayMemberPath="DepartmentName"/>
+            </controls:DataGrid.Columns>
+</controls:DataGrid>
+```
+
+Code-Behind:
+
+```C#
+public class Department
+{
+    public int DepartmentId { get; set; }
+    public string DepartmentName { get; set; }
+}
+
+public class Person
+{
+    public int PersonId { get; set; }
+    public int DepartmentId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Position { get; set; }
+}
+public sealed partial class MainPage : Page
+{
+    public List<Department> Departments { get; set; }
+    public List<Person> Persons { get; set; }
+
+    public MainPage()
+    {
+        this.InitializeComponent();
+
+        Departments = new List<Department>
+        {
+            new Department {DepartmentId = 1, DepartmentName = "R&D"},
+            new Department {DepartmentId = 2, DepartmentName = "Finance"},
+            new Department {DepartmentId = 3, DepartmentName = "IT"}
+        };
+
+        Persons = new List<Person>
+        {
+            new Person
+            {
+                PersonId = 1, DepartmentId = 3, FirstName = "Ronald", LastName = "Rumple",
+                Position = "Network Administrator"
+            },
+            new Person
+            {
+                PersonId = 2, DepartmentId = 1, FirstName = "Brett", LastName = "Banner",
+                Position = "Software Developer"
+            },
+            new Person
+            {
+                PersonId = 3, DepartmentId = 2, FirstName = "Alice", LastName = "Anderson",
+                Position = "Accountant"
+            }
+        };
+    }
+}
+```
+
 ### DataGridTemplateColumn
 
 The DataGridTemplateColumn type enables you to create your own column types by specifying the cell templates used to display values and enable editing. Set the **CellTemplate** property to specify the contents of cells that display values, but do not allow editing. Set the **CellEditingTemplate** property to specify the contents of cells in editing mode. If you set the column's **IsReadOnly** property to true, the CellEditingTemplate property value is never used.
