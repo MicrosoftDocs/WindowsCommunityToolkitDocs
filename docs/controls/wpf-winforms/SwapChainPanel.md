@@ -40,19 +40,20 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.SwapChainPanel]
 
 | Property | Type | Description |
 | -- | -- | -- |
-|  |  |
+| CompositionScaleX | float  | Wraps the [CompositionScaleX](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalex) property of the internal UWP **SwapChainPanel** control. |
+| CompositionScaleY | float  |  Wraps the [CompositionScaleY](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscaley) property of the internal UWP **SwapChainPanel** control. |
 
 ## Methods
 
-| Method | Type | Description |
-| -- | -- | -- |
-|  |  |
+| Method | Description |
+| -- | -- |
+| CreateCoreIndependentInputSource | Wraps the [CreateCoreIndependentInputSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.createcoreindependentinputsource) method of the internal UWP **SwapChainPanel** control. |
 
 ## Events
 
-| Event | Type | Description |
-| -- | -- | -- |
-|  |  |
+| Event | Description |
+| -- | -- |
+| CompositionScaleChanged  | Wraps the [CompositionScaleChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalechanged) event of the internal UWP **SwapChainPanel** control. |
 
 
 ## Requirements
