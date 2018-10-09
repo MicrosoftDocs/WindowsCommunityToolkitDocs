@@ -38,7 +38,7 @@ This control, like the UWP **Windows.UI.Xaml.Controls.InkCanvas** control, provi
 
 | Property | Type | Description |
 | -- | -- | -- |
-| InkPresenter | InkPresenter | Wraps the [InkPresenter](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property. |
+| InkPresenter | InkPresenter | Wraps the [InkPresenter](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property of the internal UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. |
 
 
 ## Requirements

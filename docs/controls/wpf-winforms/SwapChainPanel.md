@@ -40,20 +40,20 @@ This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Swa
 
 | Property | Type | Description |
 | -- | -- | -- |
-| CompositionScaleX | float  | Wraps the [CompositionScaleX](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalex) property. |
-| CompositionScaleY | float  |  Wraps the [CompositionScaleY](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscaley) property. |
+| CompositionScaleX | float  | Wraps the [CompositionScaleX](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalex) property of the internal UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) object. |
+| CompositionScaleY | float  |  Wraps the [CompositionScaleY](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscaley) property of the internal UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) object. |
 
 ## Methods
 
 | Method | Description |
 | -- | -- |
-| CreateCoreIndependentInputSource | Wraps the [CreateCoreIndependentInputSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.createcoreindependentinputsource) method. |
+| CreateCoreIndependentInputSource | Wraps the [CreateCoreIndependentInputSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.createcoreindependentinputsource) method of the internal UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) object. |
 
 ## Events
 
 | Event | Description |
 | -- | -- |
-| CompositionScaleChanged  | Wraps the [CompositionScaleChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalechanged) event. |
+| CompositionScaleChanged  | Wraps the [CompositionScaleChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalechanged) event of the internal UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) object. |
 
 
 ## Requirements
