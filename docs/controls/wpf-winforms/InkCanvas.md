@@ -18,7 +18,7 @@ The **InkCanvas** control provides a surface for Windows Ink-based user interact
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control.
+This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control.
 
 ## Known Limitations
 
@@ -38,7 +38,7 @@ This control, like the UWP **Windows.UI.Xaml.Controls.InkCanvas** control, provi
 
 | Property | Type | Description |
 | -- | -- | -- |
-| InkPresenter | Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter | Wraps the [InkPresenter](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property of the internal UWP **InkCanvas** control. |
+| InkPresenter | InkPresenter | Wraps the [InkPresenter](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property. |
 
 
 ## Requirements

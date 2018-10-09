@@ -18,7 +18,7 @@ The **InkToolbar** control provides an interface to manage an [InkCanvas](InkCan
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control.
+This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control.
 
 ## Syntax
 ```xaml
@@ -37,34 +37,38 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.InkToolbar](htt
 
 ## Properties
 
+The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#properties) of the internal UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
+
 | Property | Type | Description |
 | -- | -- | -- |
-| ActiveTool | Microsoft.Toolkit.Wpf.UI.Controls.WindowsXamlHostBaseExt (WPF)<br/>Microsoft.Toolkit.Forms.UI.Controls.WindowsXamlHostBaseExt (Windows Forms) | Wraps the [ActiveTool](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetool) property of the internal UWP **InkToolbar** control. |
+| ActiveTool | WindowsXamlHostBaseExt | Wraps the [ActiveTool](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetool) property. |
 | ActiveToolProperty | DependencyProperty | Dependency property for the **ActiveTool** property. |
-| ButtonFlyoutPlacement | Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement | Wraps the [ButtonFlyoutPlacement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.buttonflyoutplacement) property of the internal UWP **InkToolbar** control. |
+| ButtonFlyoutPlacement | InkToolbarButtonFlyoutPlacement | Wraps the [ButtonFlyoutPlacement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.buttonflyoutplacement) property. |
 | ButtonFlyoutPlacementProperty | DependencyProperty | Dependency property for the **ButtonFlyoutPlacement** property. |
-| Children | ObservableCollection<DependencyObject> | Wraps the [Children](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.children) property of the internal UWP **InkToolbar** control. |
-| InitialControls | Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls  | Wraps the [InitialControls](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.initialcontrols) property of the internal UWP **InkToolbar** control. |
+| Children | ObservableCollection&lt;DependencyObject&gt; | Wraps the [Children](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.children) property. |
+| InitialControls | InkToolbarInitialControls  | Wraps the [InitialControls](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.initialcontrols) property. |
 | InitialControlsProperty | DependencyProperty | Dependency property for the **InitialControls** property. |
-| InkDrawingAttributes | Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes | Wraps the [InkDrawingAttributes](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkdrawingattributes) property of the internal UWP **InkToolbar** control.  |
+| InkDrawingAttributes | InkDrawingAttributes | Wraps the [InkDrawingAttributes](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkdrawingattributes) property.  |
 | InkDrawingAttributesProperty | DependencyProperty | Dependency property for the **InkDrawingAttributes** property. |
-| IsRulerButtonChecked | bool | Wraps the [IsRulerButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttonchecked) property of the internal UWP **InkToolbar** control. |
+| IsRulerButtonChecked | bool | Wraps the [IsRulerButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttonchecked) property. |
 | IsRulerButtonCheckedProperty | DependencyProperty | Dependency property for the **IsRulerButtonChecked** property. |
-| IsStencilButtonChecked | bool | Wraps the [IsStencilButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttonchecked) property of the internal UWP **InkToolbar** control. |
+| IsStencilButtonChecked | bool | Wraps the [IsStencilButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttonchecked) property. |
 | IsStencilButtonCheckedProperty | DependencyProperty | Dependency property for the **IsStencilButtonChecked** property. |
-| Orientation | Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Orientation | Wraps the [Orientation](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.orientation) property of the internal UWP **InkToolbar** control. |
+| Orientation | Orientation | Wraps the [Orientation](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.orientation) property. |
 | OrientationProperty | DependencyProperty | Dependency property for the **Orientation** property. |
-| TargetInkCanvas | Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas (WPF)<br/>Microsoft.Toolkit.Forms.UI.Controls.InkCanvas (Windows Forms) | Wraps the [TargetInkCanvas](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkcanvas) property of the internal UWP **InkToolbar** control. |
+| TargetInkCanvas | InkCanvas | Wraps the [TargetInkCanvas](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkcanvas) property. |
 | TargetInkCanvasProperty | DependencyProperty | Dependency property for the **TargetInkCanvas** property. |
 
 ## Events
 
+The following events wrap corresponding [events](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#events) of the internal UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
+
 | Event | Description |
 | -- | -- |
-| ActiveToolChanged | Wraps the [ActiveToolChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetoolchanged) event of the internal UWP **InkToolbar** control. |
-| EraseAllClicked | Wraps the [EraseAllClicked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.eraseallclicked) event of the internal UWP **InkToolbar** control. |
-| IsRulerButtonCheckedChanged | Wraps the [IsRulerButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttoncheckedchanged) event of the internal UWP **InkToolbar** control. |
-| IsStencilButtonCheckedChanged | Wraps the [IsStencilButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttoncheckedchanged) event of the internal UWP **InkToolbar** control. |
+| ActiveToolChanged | Wraps the [ActiveToolChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetoolchanged) event. |
+| EraseAllClicked | Wraps the [EraseAllClicked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.eraseallclicked) event. |
+| IsRulerButtonCheckedChanged | Wraps the [IsRulerButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttoncheckedchanged) event. |
+| IsStencilButtonCheckedChanged | Wraps the [IsStencilButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttoncheckedchanged) event. |
 
 
 

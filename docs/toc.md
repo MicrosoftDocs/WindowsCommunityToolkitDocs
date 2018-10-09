@@ -9,7 +9,9 @@
 ## Controls for WPF and Windows Forms
 ### [InkCanvas](controls/wpf-winforms/InkCanvas.md)
 ### [InkToolbar](controls/wpf-winforms/InkToolbar.md)
+### [MapControl](controls/wpf-winforms/MapControl.md)
 ### [MediaPlayerElement](controls/wpf-winforms/MediaPlayerElement.md)
+### [SwapChainPanel](controls/wpf-winforms/SwapChainPanel.md)
 ### [WebView](controls/wpf-winforms/WebView.md)
 #### [WebView known issues](controls/wpf-winforms/WebView-known-issues.md)
 ### [WebViewCompatible](controls/wpf-winforms/WebViewCompatible.md)

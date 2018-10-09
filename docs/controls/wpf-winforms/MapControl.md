@@ -81,7 +81,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 
 ## Methods
 
-The following properties wrap corresponding [methods](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#methods) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each method.
+The following methods wrap corresponding [methods](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#methods) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each method.
 
 | Method | Return Type | Description |
 | -- | -- | -- |
@@ -120,7 +120,7 @@ The following properties wrap corresponding [methods](https://docs.microsoft.com
 
 ## Events
 
-The following properties wrap corresponding [events](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#events) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each event.
+The following events wrap corresponding [events](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#events) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each event.
 
 | Event | Description |
 | -- | -- |

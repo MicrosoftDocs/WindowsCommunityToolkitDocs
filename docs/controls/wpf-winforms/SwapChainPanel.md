@@ -20,7 +20,7 @@ The **SwapChainPanel** control provides a hosting surface in your Windows Forms 
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) control.
+This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) control.
 
 ## Known Limitations
 
@@ -40,20 +40,20 @@ Internally, this control wraps the UWP [Windows.UI.Xaml.Controls.SwapChainPanel]
 
 | Property | Type | Description |
 | -- | -- | -- |
-| CompositionScaleX | float  | Wraps the [CompositionScaleX](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalex) property of the internal UWP **SwapChainPanel** control. |
-| CompositionScaleY | float  |  Wraps the [CompositionScaleY](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscaley) property of the internal UWP **SwapChainPanel** control. |
+| CompositionScaleX | float  | Wraps the [CompositionScaleX](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalex) property. |
+| CompositionScaleY | float  |  Wraps the [CompositionScaleY](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscaley) property. |
 
 ## Methods
 
 | Method | Description |
 | -- | -- |
-| CreateCoreIndependentInputSource | Wraps the [CreateCoreIndependentInputSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.createcoreindependentinputsource) method of the internal UWP **SwapChainPanel** control. |
+| CreateCoreIndependentInputSource | Wraps the [CreateCoreIndependentInputSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.createcoreindependentinputsource) method. |
 
 ## Events
 
 | Event | Description |
 | -- | -- |
-| CompositionScaleChanged  | Wraps the [CompositionScaleChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalechanged) event of the internal UWP **SwapChainPanel** control. |
+| CompositionScaleChanged  | Wraps the [CompositionScaleChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.swapchainpanel.compositionscalechanged) event. |
 
 
 ## Requirements
