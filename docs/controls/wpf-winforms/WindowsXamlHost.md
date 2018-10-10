@@ -5,7 +5,7 @@ description: This guide helps you add UWP XAML controls to your WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, host controls, xaml islands, WPF, Windows Forms
 ---
 
-# WindowsXamlHost control
+# WindowsXamlHost Control  for Windows Forms and WPF
 
 > [!NOTE]
 > This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases. [Known Issues](../../knownissues.md)
@@ -14,11 +14,9 @@ By using the **WindowsXamlHost** control, you can add built-in or custom UWP con
 
 ## Get started
 
-To get the **WindowsXamlHost** control, install the appropriate Nuget package.
-
-For WPF applications, install the [Microsoft.Toolkit.Wpf.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) package.
-
-For Windows Forms applications, install the [Microsoft.Toolkit.Forms.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.XamlHost) package.
+To get the **WindowsXamlHost** control, install the appropriate Nuget package:
+* For WPF applications, install the [Microsoft.Toolkit.Wpf.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) package.
+* For Windows Forms applications, install the [Microsoft.Toolkit.Forms.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.XamlHost) package.
 
 After you install the NuGet package, [set up your project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-enhance#first-set-up-your-project) so that it can use UWP types.
 

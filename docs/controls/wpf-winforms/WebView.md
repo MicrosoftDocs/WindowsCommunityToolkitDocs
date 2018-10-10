@@ -5,7 +5,7 @@ description: The Windows Community Toolkit provides a version of the UWP web vie
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebView, Windows Forms, WPF
 ---
 
-# WebView control for Windows Forms and WPF
+# WebView Control for Windows Forms and WPF
 
 The **WebView** control shows web content in your Windows Forms or WPF desktop application.
 

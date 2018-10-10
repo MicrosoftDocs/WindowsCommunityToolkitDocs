@@ -5,7 +5,7 @@ description: This control is a wrapper to enable use of the UWP InkToolbar contr
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InkToolbar, Windows Forms, WPF
 ---
 
-# InkToolbar control for Windows Forms and WPF
+# InkToolbar Control for Windows Forms and WPF
 
 > [!NOTE]
 > This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases.

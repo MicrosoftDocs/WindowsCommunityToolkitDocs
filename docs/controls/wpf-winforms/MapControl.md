@@ -20,9 +20,10 @@ The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Con
 
 This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
 
+<!-- 
 ## Known Limitations
 
-<!-- TBD  -->
+TBD  -->
 
 ## Syntax
 ```xaml
