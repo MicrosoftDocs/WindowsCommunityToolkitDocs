@@ -61,7 +61,7 @@ The [OrbitView control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | OrbitThickness | double | Gets or sets a value indicating the thickness of the orbits |
 
 > [!IMPORTANT]
-For `MaxItemSize` and `MinItemSize` property to work, Data Context must be derived from OrbitViewItems and Diameter must be between 0 and 1
+> For `MaxItemSize` and `MinItemSize` property to work, Data Context must be derived from OrbitViewItems and Diameter must be between 0 and 1
 
 ### OrbitViewDataItem Properties
 
@@ -82,7 +82,7 @@ For `MaxItemSize` and `MinItemSize` property to work, Data Context must be deriv
 | ItemClick | Raised when an item has been clicked or activated with keyboard/controller |
 
 > [!IMPORTANT]
-`IsItemClickedEnabled` should be true for this event to work
+> `IsItemClickedEnabled` should be true for this event to work
 
 ## Examples
 

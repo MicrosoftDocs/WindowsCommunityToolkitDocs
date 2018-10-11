@@ -32,7 +32,7 @@ The Windows Store SID is a unique value per application generated, and it not ti
 ```
 
 > [!NOTE]
-You may have to turn on the Output window in Visual Studio to see this debug writeline.
+> You may have to turn on the Output window in Visual Studio to see this debug writeline.
 
 The above code will output something like this:
 
@@ -254,22 +254,22 @@ Class for connecting to Facebook
 
 ### Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| Initialize(FacebookOAuthTokens, FacebookPermissions) | bool | Initialize underlying provider with relevant token information |
-| LoginAsync() | Task<bool> | Login with set of required requiredPermissions |
-| LogoutAsync() | Task | Log out of the underlying service instance |
-| RequestAsync(FacebookDataConfig, int) | Task<List<FacebookPost>> | Request list data from service provider based upon a given config / query |
-| RequestAsync<T>(FacebookDataConfig, int, string) | Task<List<T>> | Request list data from service provider based upon a given config / query |
-| RequestAsync(FacebookDataConfig, int, int) | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPost>, FacebookPost>> | Request list data from service provider based upon a given config / query |
-| RequestAsync<T>(FacebookDataConfig, int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource<T>, T>> | Request generic list data from service provider based upon a given config / query |
-| GetUserPictureInfoAsync() | Task<FacebookPicture> | Returns the `FacebookPicture` object associated with the logged user |
-| GetUserAlbumsAsync(int, string) | Task<List<FacebookAlbum>> | Retrieves list of user photo albums |
-| GetUserAlbumsAsync(int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookAlbum>, FacebookAlbum>> | Retrieves list of user photo albums |
-| GetUserPhotosByAlbumIdAsync(string, int, string) | Task<List<FacebookPhoto>> | Retrieves list of user photos by album id |
-| GetUserPhotosByAlbumIdAsync(string, int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPhoto>, FacebookPhoto>> | Retrieves list of user photos by album id |
-| GetPhotoByPhotoIdAsync(string) | Task<FacebookPhoto> | Retrieves a photo by id |
-| PostToFeedWithDialogAsync(string) | Task<bool> | Enables posting data to the timeline using Facebook dialog |
+|                        Methods                        |                                       Return Type                                       |                                    Description                                    |
+|-------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Initialize(FacebookOAuthTokens, FacebookPermissions)  |                                          bool                                           |          Initialize underlying provider with relevant token information           |
+|                     LoginAsync()                      |                                       Task<bool>                                        |                  Login with set of required requiredPermissions                   |
+|                     LogoutAsync()                     |                                          Task                                           |                    Log out of the underlying service instance                     |
+|         RequestAsync(FacebookDataConfig, int)         |                                Task<List<FacebookPost>>                                 |     Request list data from service provider based upon a given config / query     |
+|   RequestAsync<T>(FacebookDataConfig, int, string)    |                                      Task<List<T>>                                      |     Request list data from service provider based upon a given config / query     |
+|      RequestAsync(FacebookDataConfig, int, int)       |  Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPost>, FacebookPost>>  |     Request list data from service provider based upon a given config / query     |
+| RequestAsync<T>(FacebookDataConfig, int, int, string) |             Task<IncrementalLoadingCollection<FacebookRequestSource<T>, T>>             | Request generic list data from service provider based upon a given config / query |
+|               GetUserPictureInfoAsync()               |                                  Task<FacebookPicture>                                  |       Returns the `FacebookPicture` object associated with the logged user        |
+|            GetUserAlbumsAsync(int, string)            |                                Task<List<FacebookAlbum>>                                |                        Retrieves list of user photo albums                        |
+|         GetUserAlbumsAsync(int, int, string)          | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookAlbum>, FacebookAlbum>> |                        Retrieves list of user photo albums                        |
+|   GetUserPhotosByAlbumIdAsync(string, int, string)    |                                Task<List<FacebookPhoto>>                                |                     Retrieves list of user photos by album id                     |
+| GetUserPhotosByAlbumIdAsync(string, int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPhoto>, FacebookPhoto>> |                     Retrieves list of user photos by album id                     |
+|            GetPhotoByPhotoIdAsync(string)             |                                   Task<FacebookPhoto>                                   |                              Retrieves a photo by id                              |
+|           PostToFeedWithDialogAsync(string)           |                                       Task<bool>                                        |            Enables posting data to the timeline using Facebook dialog             |
 
 ## Sample Code
 

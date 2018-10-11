@@ -22,7 +22,7 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 ```
 
 > [!NOTE]
-On Windows 10.0.16299.0 or higher, `CornerRadius` is supported on ImageEx.  Use of this property will not cause an exception on downlevel platforms; however, the desired effect will not render.
+> On Windows 10.0.16299.0 or higher, `CornerRadius` is supported on ImageEx.  Use of this property will not cause an exception on downlevel platforms; however, the desired effect will not render.
 
 ## Sample Output
 
