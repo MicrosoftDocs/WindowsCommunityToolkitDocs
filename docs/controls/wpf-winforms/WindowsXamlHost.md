@@ -164,138 +164,133 @@ The following instructions uses a WPF project.
 
 ### Configure a UWP class library project
 
-First, add a **Class Library (Universal Windows)** project to your solution.
+1. First, add a **Class Library (Universal Windows)** project to your solution.
+    ![Class library project](../../resources/images/Controls/WindowsXAMLHost/class-library-project.png)
 
-![Class library project](../../resources/images/Controls/WindowsXAMLHost/class-library-project.png)
+2. In **Solution Explorer**, right-click the class library project, and then choose **Unload Project**. Then, right-click that project, and choose **Edit <Your project name>** to open it in the Visual Studio code editor.
+    ![Edit project](../../resources/images/Controls/WindowsXAMLHost/edit-project.png)
 
-In **Solution Explorer**, right-click the class library project, and then choose **Unload Project**. Then, right-click that project, and choose **Edit <Your project name>** to open it in the Visual Studio code editor.
+3. Add these properties to the project file anywhere **before** the ``<Import>`` element for the Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come before this element, you may see errors compiling XamlTypeInfo.g.cs in your host project.
+    ```xml
+    <PropertyGroup>
+      <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
+      <EnableXBindDiagnostics>false</EnableXBindDiagnostics>
+    </PropertyGroup>
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+    ```
 
-![Edit project](../../resources/images/Controls/WindowsXAMLHost/edit-project.png)
+4. Add these post-build steps **after** the ``<Import>`` element for the Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come after this element, the **$(TargetDir)**, **$(ProjectDir)**, and **$(ProjectName)** project variables will not be defined and you will see copy errors and the post-build event failures.
 
-Add these properties to the project file anywhere **before** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come before, you may see errors compiling XamlTypeInfo.g.cs in your host project.
-
-```xml
-<PropertyGroup>
-  <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
-  <EnableXBindDiagnostics>false</EnableXBindDiagnostics>
-</PropertyGroup>
-<Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
-```
-
-Add these post-build steps **after** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below.  If they don't come after, the project variables, ie: $(TargetDir), $(ProjectDir), and $(ProjectName) will not be defined resulting in copy errors and the post-build event failing.
-
-```xml
-  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />  
-  <PropertyGroup>
-    <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
-    <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
-    <ObjPath>obj\$(Configuration)\</ObjPath>
-  </PropertyGroup>
-  <PropertyGroup>
+    ```xml
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />  
+    <PropertyGroup>
+      <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
+      <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+      <ObjPath>obj\$(Configuration)\</ObjPath>
+    </PropertyGroup>
+    <PropertyGroup>
     <!-- Copy source and build output files to hostapp folders -->
     <!-- Default Winforms/WPF projects do not use $Platform for build output folder -->
-    <PostBuildEvent>
-      md $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-      md $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-      copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-      copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-      copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-      copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-    </PostBuildEvent>
-  </PropertyGroup>
-```
->[!NOTE]
->Make sure to set the value of the ``<HostFrameworkProject>`` element to the name of your WPF project
+      <PostBuildEvent>
+        md $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+        md $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+        copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+        copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+        copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+        copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+      </PostBuildEvent>
+    </PropertyGroup>
+    ```
+    >[!NOTE]
+    > Make sure to set the value of the ``<HostFrameworkProject>`` element to the name of your WPF project
 
-Right-click the library project, and then choose **Reload Project**.
+5. Right-click the library project, and then choose **Reload Project**.
 
-Build the UWP class library project.
+6. Build the UWP class library project.
 
-### Include UWP Xaml artifacts in the WPF application project
-Now we need to add the Xaml artifacts that were built by the UWP Class library and published into the WPF project via the post-Build events.  To do this click on the WPF project and choose the **Show All Files** icon in the solution explorer.  This will show the UWPClassLibrary folder that was created.  Then right-click on the folder and choose **Include in Project**.
+### Include UWP XAML artifacts in the WPF application project
+Now we need to add the XAML artifacts that were built by the UWP class library and published into the WPF project via the post-build events. To do this:
 
-![Include folder in project](../../resources/images/Controls/WindowsXAMLHost/include-in-project.png)
+1. Click on the WPF project and choose the **Show All Files** icon in the solution explorer. This will show the UWPClassLibrary folder that was created. Then right-click on the folder and choose **Include in Project**.
+    ![Include folder in project](../../resources/images/Controls/WindowsXAMLHost/include-in-project.png)
 
-After including, you can turn off Show All Files.
+    After including, you can turn off **Show All Files**.
 
-Build your WPF application.
+2. Build your WPF application.
 
-To keep the WPF application in sync with future changes to the UWP Class Library, you need to explicitly add a build dependency by right-clicking on the WPF project, and choosing "Build Dependencies".  Add a Project dependency so the WPF application depends on the UWP Class Library.
+To keep the WPF application in sync with future changes to the UWP class library, you need to explicitly add a build dependency by right-clicking on the WPF project and choosing **Build Dependencies**. Add a **Project** dependency so the WPF application depends on the UWP class library.
 
 ## Bind data from your desktop application to a field in the custom control
 
-In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
+1. In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
+    ![Code behind file](../../resources/images/Controls/WindowsXAMLHost/code-behind-file-uwp-class.png)
 
-![Code behind file](../../resources/images/Controls/WindowsXAMLHost/code-behind-file-uwp-class.png)
-
-Add a field to that page. This example adds a field named ``WPFMessage`` in a WPF application.
-
-```csharp
-public sealed partial class MyPage : Page
-{
-    // Some backing class for x:Bindings
-    public string WPFMessage { get; set; }
-    public MyPage()
+2. Add a field to that page. This example adds a field named ``WPFMessage`` in a WPF application.
+    ```csharp
+    public sealed partial class MyPage : Page
     {
-        this.InitializeComponent();
-    }
-}
-```
-
-Open the XAML for that page in the designer, add a control, and bind an attribute of that control to the field that you just defined.
-
-This example adds a ``TextBlock`` control to a ``StackPanel``, and then binds the ``Text`` attribute of that control to the ``WPFMessage`` field.
-
-```xml
-<StackPanel Background="LightCoral">
-    <TextBlock>This is a simple UWP XAML page</TextBlock>
-    <Rectangle Fill="Blue" Height="100" Width="100"/>
-    <TextBlock Text="{x:Bind WPFMessage}" FontSize="50"></TextBlock>
-</StackPanel>
-```
-
-In **Solution Explorer**, expand the WPF application project, and open a XAML page from that project in the designer.
-
-In the Visual Studio **Toolbox** window, find the **WindowsXamlHost** control and then drag it onto the designer of your WPF application.
-
-In the **Properties** window, set the **InitialTypeName** property to the fully qualified name of the class in your UWP class library project that contains the field you defined earlier.
-
-![InitialTypeName property in Properties Window](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf-custom.png)
-
-In the **Properties** window, double-click the **ChildChanged** field to generate an event handler.
-
-In this handler, assign the value of the ``WPFMessage`` field that is in the UWP class to the value of the field that you add to the WPF application. In this example, the name of that field is also ``WPFMessage``.
-
-```csharp
-public partial class MainWindow : Window
-{
-
-    private void MyUWPPage_ChildChanged(object sender, EventArgs e)
-    {
-        // Hook up x:Bind source
-        global::Microsoft.Windows.Interop.WindowsXamlHost windowsXamlHost = sender as global::Microsoft.Windows.Interop.WindowsXamlHost;
-        global::UWPClassLibrary.MyPage myUWPPage = windowsXamlHost.Child as global::UWPClassLibrary.MyPage;
-
-        if (myUWPPage != null)
+        // Some backing class for x:Bindings
+        public string WPFMessage { get; set; }
+        public MyPage()
         {
-            myUWPPage.WPFMessage = this.WPFMessage;
+            this.InitializeComponent();
         }
     }
-    public string WPFMessage
+    ```
+
+3. Open the XAML for that page in the designer, add a control, and bind an attribute of that control to the field that you just defined.
+
+    This example adds a ``TextBlock`` control to a ``StackPanel``, and then binds the ``Text`` attribute of that control to the ``WPFMessage`` field.
+
+    ```xml
+    <StackPanel Background="LightCoral">
+        <TextBlock>This is a simple UWP XAML page</TextBlock>
+        <Rectangle Fill="Blue" Height="100" Width="100"/>
+        <TextBlock Text="{x:Bind WPFMessage}" FontSize="50"></TextBlock>
+    </StackPanel>
+    ```
+
+4. In **Solution Explorer**, expand the WPF application project, and open a XAML page from that project in the designer.
+
+5. In the Visual Studio **Toolbox** window, find the **WindowsXamlHost** control and then drag it onto the designer of your WPF application.
+
+6. In the **Properties** window, set the **InitialTypeName** property to the fully qualified name of the class in your UWP class library project that contains the field you defined earlier.
+    ![InitialTypeName property in Properties Window](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf-custom.png)
+
+7. In the **Properties** window, double-click the **ChildChanged** field to generate an event handler.
+
+8. In this handler, assign the value of the ``WPFMessage`` field that is in the UWP class to the value of the field that you add to the WPF application. In this example, the name of that field is also ``WPFMessage``.
+
+    ```csharp
+    public partial class MainWindow : Window
     {
-        get
+
+        private void MyUWPPage_ChildChanged(object sender, EventArgs e)
         {
-            return "Binding from WPF to UWP XAML";
+            // Hook up x:Bind source
+            global::Microsoft.Windows.Interop.WindowsXamlHost windowsXamlHost = sender as global::Microsoft.Windows.Interop.WindowsXamlHost;
+            global::UWPClassLibrary.MyPage myUWPPage = windowsXamlHost.Child as global::UWPClassLibrary.MyPage;
+
+            if (myUWPPage != null)
+            {
+                myUWPPage.WPFMessage = this.WPFMessage;
+            }
+        }
+        public string WPFMessage
+        {
+            get
+            {
+                return "Binding from WPF to UWP XAML";
+            }
+        }
+        public MainWindow()
+        {
+            InitializeComponent();
         }
     }
-    public MainWindow()
-    {
-        InitializeComponent();
-    }
-}
-```
+    ```
 
 ## Requirements
 
