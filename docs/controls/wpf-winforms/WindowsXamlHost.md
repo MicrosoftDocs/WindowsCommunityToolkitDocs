@@ -111,7 +111,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Initialize UWP controls first, and then assign them to Windows XAML host controls
@@ -157,7 +156,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Add a custom UWP control
@@ -196,7 +194,6 @@ copy $(ProjectDir)\*.xaml $(SolutionDir)\$(HostFrameworkProject)\bin\$(Configura
 copy $(ProjectDir)\*.xaml.cs $(SolutionDir)\$(HostFrameworkProject)\$(ProjectName)
 copy $(ProjectDir)\obj\$(PlatformName)\$(ConfigurationName)\*.g.* $(SolutionDir)\$(HostFrameworkProject)\$(ProjectName)</PostBuildEvent>
 </PropertyGroup>
-
 ```
 >[!NOTE]
 >Make sure to set the value of the ``<HostFrameworkProject`` element to the name of your WPF project

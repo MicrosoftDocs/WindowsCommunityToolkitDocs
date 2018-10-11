@@ -11,7 +11,7 @@ dev_langs:
 # ParallaxService
 
 > [!WARNING]
-The ParallaxService is deprecated and will be removed in a future major release. Please use the [ParallaxView](https://docs.microsoft.com/windows/uwp/style/parallax) available in the Fall Creators Update. Read the [Moving to ParallaxView](#parallaxview) section for more info.
+> The ParallaxService is deprecated and will be removed in a future major release. Please use the [ParallaxView](https://docs.microsoft.com/windows/uwp/style/parallax) available in the Fall Creators Update. Read the [Moving to ParallaxView](#parallaxview) section for more info.
 
 The [ParallaxService class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.parallaxservice) allows to create a parallax effect for items contained within an element that scrolls like a ScrollViewer or ListView.
 

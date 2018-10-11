@@ -19,24 +19,24 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 
 ## IncrementalLoadingCollection Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| CurrentPageIndex | int | Gets or sets a value indicating The zero-based index of the current items page |
-| HasMoreItems | bool | Gets a value indicating whether the collection contains more items to retrieve |
-| IsLoading | bool | Gets a value indicating whether new items are being loaded |
-| ItemsPerPage | int | Gets a value indicating how many items that must be retrieved for each incremental call |
-| OnEndLoading | [Action](https://msdn.microsoft.com/library/system.action(v=vs.110).aspx) | Gets or sets an Action that is called when a retrieval operation ends |
-| OnError | Action<Exception> | Gets or sets an Action that is called if an error occours during data retrieval. The actual Exception is passed as an argument |
-| OnStartLoading | Action | Gets or sets an Action that is called when a retrieval operation begins |
+|     Property     |                                   Type                                    |                                                          Description                                                           |
+|------------------|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| CurrentPageIndex |                                    int                                    |                         Gets or sets a value indicating The zero-based index of the current items page                         |
+|   HasMoreItems   |                                   bool                                    |                         Gets a value indicating whether the collection contains more items to retrieve                         |
+|    IsLoading     |                                   bool                                    |                                   Gets a value indicating whether new items are being loaded                                   |
+|   ItemsPerPage   |                                    int                                    |                    Gets a value indicating how many items that must be retrieved for each incremental call                     |
+|   OnEndLoading   | [Action](https://msdn.microsoft.com/library/system.action(v=vs.110).aspx) |                             Gets or sets an Action that is called when a retrieval operation ends                              |
+|     OnError      |                             Action<Exception>                             | Gets or sets an Action that is called if an error occours during data retrieval. The actual Exception is passed as an argument |
+|  OnStartLoading  |                                  Action                                   |                            Gets or sets an Action that is called when a retrieval operation begins                             |
 
 ## IncrementalLoadingCollection Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| LoadDataAsync(CancellationToken) | Task<IEnumerable<IType>> | Actually performs the incremental loading |
-| LoadMoreItemsAsync(UInt32) | IAsyncOperation<LoadMoreItemsResult> | Initializes incremental loading from the view |
-| Refresh() | void | Clears the collection and resets the page index which triggers an automatic reload of the first page |
-| RefreshAsync() | Task | Clears the collection and reloads data from the source |
+|             Methods              |             Return Type              |                                             Description                                              |
+|----------------------------------|--------------------------------------|------------------------------------------------------------------------------------------------------|
+| LoadDataAsync(CancellationToken) |       Task<IEnumerable<IType>>       |                              Actually performs the incremental loading                               |
+|    LoadMoreItemsAsync(UInt32)    | IAsyncOperation<LoadMoreItemsResult> |                            Initializes incremental loading from the view                             |
+|            Refresh()             |                 void                 | Clears the collection and resets the page index which triggers an automatic reload of the first page |
+|          RefreshAsync()          |                 Task                 |                        Clears the collection and reloads data from the source                        |
 
 ## Example
 

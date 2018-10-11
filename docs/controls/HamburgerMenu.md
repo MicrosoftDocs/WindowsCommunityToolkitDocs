@@ -11,7 +11,7 @@ dev_langs:
 # HamburgerMenu XAML Control
 
 > [!WARNING]
-The HamburgerMenu is deprecated and will be removed in a future major release. Please use the [NavigationView](https://docs.microsoft.com/windows/uwp/controls-and-patterns/navigationview) available in the Fall Creators Update. Read the [Moving to NavigationView](#navview) section for more info.
+> The HamburgerMenu is deprecated and will be removed in a future major release. Please use the [NavigationView](https://docs.microsoft.com/windows/uwp/controls-and-patterns/navigationview) available in the Fall Creators Update. Read the [Moving to NavigationView](#navview) section for more info.
 
 The [HamburgerMenu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.hamburgermenu) provides an easy-to-use, side-bar menu which users can show or hide by using a Hamburger button. By  tapping the icon, it opens up a side menu with a selection of options or additional pages.
 
@@ -24,11 +24,11 @@ Developers can place menu specific content, navigation, images, text or custom c
 ```xaml
 
 <controls:HamburgerMenu PaneBackground="Black" x:Name="HamburgerMenuControl"
-	Foreground="White" ItemTemplate="{StaticResource ButtonTemplate}"
-	OptionsItemTemplate="{StaticResource OptionTemplate}" ItemClick="HamburgerMenu_OnItemClick"
-	OptionsItemClick="HamburgerMenu_OnOptionsItemClick" OpenPaneLength="240"
-	DisplayMode="CompactInline" CompactPaneLength="48"
-	HamburgerHeight="48" IsPaneOpen="False">
+    Foreground="White" ItemTemplate="{StaticResource ButtonTemplate}"
+    OptionsItemTemplate="{StaticResource OptionTemplate}" ItemClick="HamburgerMenu_OnItemClick"
+    OptionsItemClick="HamburgerMenu_OnOptionsItemClick" OpenPaneLength="240"
+    DisplayMode="CompactInline" CompactPaneLength="48"
+    HamburgerHeight="48" IsPaneOpen="False">
 </controls:HamburgerMenu>
 ```
 
@@ -194,7 +194,6 @@ Public Class MenuItem
         Return items
     End Function
 End Class
-
 ```
 
 ## <a name="navview"></a> Moving to NavigationView
@@ -214,24 +213,24 @@ The HamburgerMenu and NavigationView share the same concepts and provide the sam
     | ItemClick | ItemInvoked |
 
     The *OptionsItemsSource* and *OptionItemsTemplate* is not available in the NavigationView. Instead, the NavigationView has two additional new properties that provide a much more flexible way of handling settings and optional items:
-    - An optional property for app settings. Simply set the property *IsSettingsVisible* to true and the NavigationView will display the settings button at the bottom. You can even customize the settings item 
+  - An optional property for app settings. Simply set the property *IsSettingsVisible* to true and the NavigationView will display the settings button at the bottom. You can even customize the settings item 
 
-        ```csharp
-        var settingsItem = HamburgerMenu.SettingsItem as NavigationViewItem;
-        settingsItem.Content = "About";
-        settingsItem.Icon = new FontIcon() { Glyph = "?" };
-        ```
-        ```vb
-        Dim settingsItem = TryCast(HamburgerMenu.SettingsItem, NavigationViewItem)
-        settingsItem.Content = "About"
-        settingsItem.Icon = New FontIcon() With {.Glyph = "?"}
-        ```
+      ```csharp
+      var settingsItem = HamburgerMenu.SettingsItem as NavigationViewItem;
+      settingsItem.Content = "About";
+      settingsItem.Icon = new FontIcon() { Glyph = "?" };
+      ```
+      ```vb
+      Dim settingsItem = TryCast(HamburgerMenu.SettingsItem, NavigationViewItem)
+      settingsItem.Content = "About"
+      settingsItem.Icon = New FontIcon() With {.Glyph = "?"}
+      ```
 
-    - Free-form content in the pane's footer, by adding any content in the new *PaneFooter* property 
+  - Free-form content in the pane's footer, by adding any content in the new *PaneFooter* property 
 
     In addition, the NavigationView introduces new classes for quickly adding navigation items and grouping items. You can use the new NavigationViewItem, NavigationViewItemSeparator and NavigationViewItemHeader to directly populate the MenuItems and get the look you want
 
-* **Additional features in the NavigationView:** The navigation view also introduces several new features that are not available in the HamburgerMenu:
+- **Additional features in the NavigationView:** The navigation view also introduces several new features that are not available in the HamburgerMenu:
 
     * There is a new optional header area that is vertically aligned with the navigation button and has a fixed height. Its purpose is to hold the page title of the selected nav category. The header is docked to the top of the page and acts as a scroll clipping point for the content area.
     * AutoSuggestBox property allows you to add a search box that integrates directly with the NavigationView. Some developers accomplished the same with the HamburgerMenu by re-templating it and writing a lot of custom code. That is not needed with the NavigationView
@@ -244,10 +243,10 @@ Using this property will enable you to take advantage of the NavigationView on d
 Version 3.0 of the Windows Community Toolkit adds another related property called **UseNavigationViewSettingsWhenPossible**. When this and UseNavigationViewWhenPossible are both set to true, the control will attempt to detect any of the OptionsItems that represent settings and map this to the built in Settings item in the NavigationView. If the control fails to detect the correct item, you can tell it which item to use by setting the Tag property of the OPtionsItem to the value "setting".
 
 > [!NOTE]
-The `ItemClick` and `OptionsItemClick` events will continue to work but the EventArgs will be null when `UseNavigationViewWhenPossible` is set to true. There is a new event called `ItemInvoked` that should be used instead. This new event will include information about the clicked item and whether it is an item or options item. This event also works if UseNavigationViewWhenPossible is set to false. 
-
+> The `ItemClick` and `OptionsItemClick` events will continue to work but the EventArgs will be null when `UseNavigationViewWhenPossible` is set to true. There is a new event called `ItemInvoked` that should be used instead. This new event will include information about the clicked item and whether it is an item or options item. This event also works if UseNavigationViewWhenPossible is set to false. 
+> 
 > [!NOTE]
-The PaneBackground will not have any effect when `UseNavigationViewWhenPossible` is set to null. To change the pane background of the NavigationView, modify the two theme resources by overwriting them in your App.xaml. See the [NavigationVew documentation](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/navigationview#customizing-backgrounds) for more details.
+> The PaneBackground will not have any effect when `UseNavigationViewWhenPossible` is set to null. To change the pane background of the NavigationView, modify the two theme resources by overwriting them in your App.xaml. See the [NavigationVew documentation](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/navigationview#customizing-backgrounds) for more details.
 
 There are several HamburgerMenu properties that have no effect when the HamburgerMenu is using the NavigationView:
 

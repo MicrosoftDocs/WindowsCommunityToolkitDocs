@@ -13,7 +13,7 @@ dev_langs:
 The [Light animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.light) behavior performs a point light (A point source of light that emits light in all directions) in the middle of a given UIElement. You set the distance property of the light to determine how bright the light will be. The closer the light source, the darker the UI element will be. 
 
 > [!NOTE]
-Heavy usage of effects may have a negative impact on the performance of your application. 
+> Heavy usage of effects may have a negative impact on the performance of your application. 
 
 ## Syntax
 
