@@ -204,20 +204,20 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
 - If using ExpressionBuilder to create expressions for use with InteractionTracker’s InertiaModifiers, the following extensions methods are available:
 
-	- InteractionTrackerInertiaRestingValue.SetCondition
+  - InteractionTrackerInertiaRestingValue.SetCondition
 
-	- InteractionTrackerInertiaRestingValue.SetRestingValue
+  - InteractionTrackerInertiaRestingValue.SetRestingValue
 
-	- InteractionTrackerInertiaMotion.SetCondition
+  - InteractionTrackerInertiaMotion.SetCondition
 
-	- InteractionTrackerInertiaMotion.SetMotion
+  - InteractionTrackerInertiaMotion.SetMotion
 
-	- Referencing ExpressionValues and ExpressionFunctions in your code can be a bit verbose, so you can define shortened versions in the Using section of your app:
+  - Referencing ExpressionValues and ExpressionFunctions in your code can be a bit verbose, so you can define shortened versions in the Using section of your app:
 
 	```csharp
 	using EF = ExpressionBuilder.ExpressionFunctions;
 	using EV = ExpressionBuilder.ExpressionValues;
-	```
+    ```
 
 # <a name="intro"></a>Intro
 
@@ -597,7 +597,7 @@ ExpressionValues object:
 
 - **ExpressionValues.StartingValue** – This keyword defines a reference to the property the Expression targets, sampled at the first frame of execution. **Note**: if the Expression is connected to a subchannel of a property (e.*g. “Offset.X”), then StartingValue will be of the same data type as the subchannel (e.g. ScalarStartingValue for “Offset.X”).
 
-- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. *Note: if the Expression is connected to a subchannel of a property (e.*g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”).
+- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. <em>Note: if the Expression is connected to a subchannel of a property (e.</em>g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”).
 
 In the example below, we create an Expression using the Target keyword:
 
@@ -927,7 +927,7 @@ Next, let’s get a reference to that ManipulationPropertySet (specifically, the
 
 - Use the static method to get the Translation.Y property
 
-    - A Scalar property
+  - A Scalar property
 
     This can be done all in one line:
 

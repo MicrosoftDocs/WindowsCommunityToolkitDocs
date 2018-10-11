@@ -34,7 +34,6 @@ var detectedLanguageConfidence = detectResult.Score;
 // Translates the text to Italian.
 var translationResult = await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it");
 var translatedText = translationResult.Translation.Text;
-
 ```
 ```vb
 ' Imports Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
@@ -50,7 +49,7 @@ Dim detectedLanguage = detectResult.Language
 Dim detectedLanguageConfidence = detectResult.Score
 
 ' Translates the text to Italian.
-Dim translatedText = Await TranslatorService.Instance.TranslateAsync("Hello everyone!", "it")
+Dim translationResult = Await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it")
 Dim translatedText = translationResult.Translation.Text
 ```
 

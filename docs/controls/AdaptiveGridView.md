@@ -49,7 +49,7 @@ There are 3 ways to use this Control:
 | StretchContentForSingleRow | Boolean | Gets or sets a value indicating whether the control should stretch the content to fill at least one row |
 
 > [!IMPORTANT]
-ItemHeight property must be set when OneRowModeEnabled property set as `true`
+> ItemHeight property must be set when OneRowModeEnabled property set as `true`
 
 ## Examples
 
