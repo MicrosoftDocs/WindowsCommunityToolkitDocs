@@ -165,12 +165,15 @@ The following instructions uses a WPF project.
 ### Configure a UWP class library project
 
 1. First, add a **Class Library (Universal Windows)** project to your solution.
+
     ![Class library project](../../resources/images/Controls/WindowsXAMLHost/class-library-project.png)
 
 2. In **Solution Explorer**, right-click the class library project, and then choose **Unload Project**. Then, right-click that project, and choose **Edit <Your project name>** to open it in the Visual Studio code editor.
+
     ![Edit project](../../resources/images/Controls/WindowsXAMLHost/edit-project.png)
 
 3. Add these properties to the project file anywhere **before** the ``<Import>`` element for the Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come before this element, you may see errors compiling XamlTypeInfo.g.cs in your host project.
+
     ```xml
     <PropertyGroup>
       <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
@@ -214,6 +217,7 @@ The following instructions uses a WPF project.
 Now we need to add the XAML artifacts that were built by the UWP class library and published into the WPF project via the post-build events. To do this:
 
 1. Click on the WPF project and choose the **Show All Files** icon in the solution explorer. This will show the UWPClassLibrary folder that was created. Then right-click on the folder and choose **Include in Project**.
+
     ![Include folder in project](../../resources/images/Controls/WindowsXAMLHost/include-in-project.png)
 
     After including, you can turn off **Show All Files**.
@@ -225,9 +229,11 @@ To keep the WPF application in sync with future changes to the UWP class library
 ## Bind data from your desktop application to a field in the custom control
 
 1. In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
+
     ![Code behind file](../../resources/images/Controls/WindowsXAMLHost/code-behind-file-uwp-class.png)
 
 2. Add a field to that page. This example adds a field named ``WPFMessage`` in a WPF application.
+
     ```csharp
     public sealed partial class MyPage : Page
     {
@@ -257,6 +263,7 @@ To keep the WPF application in sync with future changes to the UWP class library
 5. In the Visual Studio **Toolbox** window, find the **WindowsXamlHost** control and then drag it onto the designer of your WPF application.
 
 6. In the **Properties** window, set the **InitialTypeName** property to the fully qualified name of the class in your UWP class library project that contains the field you defined earlier.
+
     ![InitialTypeName property in Properties Window](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf-custom.png)
 
 7. In the **Properties** window, double-click the **ChildChanged** field to generate an event handler.
