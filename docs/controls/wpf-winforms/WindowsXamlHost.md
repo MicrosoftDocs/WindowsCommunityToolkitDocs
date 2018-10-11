@@ -228,6 +228,8 @@ After including, you can turn off Show All Files.
 
 Build your WPF application.
 
+To keep the WPF application in sync with future changes to the UWP Class Library, you need to explicitly add a build dependency by right-clicking on the WPF project, and choosing "Build Dependencies".  Add a Project dependency so the WPF application depends on the UWP Class Library. 
+
 ## Bind data from your desktop application to a field in the custom control
 
 In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
