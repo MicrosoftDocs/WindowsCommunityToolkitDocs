@@ -111,7 +111,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Initialize UWP controls first, and then assign them to Windows XAML host controls
@@ -157,7 +156,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Add a custom UWP control
@@ -186,7 +184,7 @@ Add these properties to the project file anywhere **before** the import for Micr
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 ```
 
-Add these post-build steps **after** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below.  If they don't come after, the project variables, ie: $(TargetDir), $(ProjectDir), and $(ProjectName) will not be defined resulting in copy errors and the post-build event failing. 
+Add these post-build steps **after** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below.  If they don't come after, the project variables, ie: $(TargetDir), $(ProjectDir), and $(ProjectName) will not be defined resulting in copy errors and the post-build event failing.
 
 ```xml
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />  
@@ -209,7 +207,6 @@ Add these post-build steps **after** the import for Microsoft.Windows.UI.Xaml.CS
       copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
     </PostBuildEvent>
   </PropertyGroup>
-
 ```
 >[!NOTE]
 >Make sure to set the value of the ``<HostFrameworkProject>`` element to the name of your WPF project
@@ -219,7 +216,6 @@ Right-click the library project, and then choose **Reload Project**.
 Build the UWP class library project.
 
 ### Include UWP Xaml artifacts in the WPF application project
-
 Now we need to add the Xaml artifacts that were built by the UWP Class library and published into the WPF project via the post-Build events.  To do this click on the WPF project and choose the **Show All Files** icon in the solution explorer.  This will show the UWPClassLibrary folder that was created.  Then right-click on the folder and choose **Include in Project**. 
 
 ![Include folder in project](../../resources/images/Controls/WindowsXAMLHost/include-in-project.png)

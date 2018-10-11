@@ -56,8 +56,8 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 | SpreadMethod | [GradientSpreadMethod](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.GradientSpreadMethod) | The type of spread method that specifies how to draw a gradient that starts or ends inside the bounds of the object to be painted.  The default is `Pad`.
 
 > [!NOTE]
-The `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.  
-The Animation or Binding of *GradientStop* `Offset` and `Color` properties is not supported.
+> The `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.  
+> The Animation or Binding of *GradientStop* `Offset` and `Color` properties is not supported.
 
 ## Sample Code
 

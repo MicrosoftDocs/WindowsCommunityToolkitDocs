@@ -22,20 +22,20 @@ There are several operations that apps need commonly to do against their APPX, o
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| GetHttpStreamAsync(Uri, CancellationToken) | Task<IRandomAccessStream> | Get the response stream returned by a HTTP get request |
-| GetHttpStreamToStorageFileAsync(Uri, StorageFile) | Task | Get the response stream returned by a HTTP get request and save it to a local file |
-| GetKnowFoldersFileStreamAsync(KnownFolderId, String, FileAccessMode) | Task<IRandomAccessStream> | Return a stream to a specified file from the application local cache folder |
-| GetLocalCacheFileStreamAsync(String, FileAccessMode) | Task<IRandomAccessStream> | Return a stream to a specified file from the application local cache folder |
-| GetLocalFileStreamAsync(String, FileAccessMode) | Task<IRandomAccessStream> | Return a stream to a specified file from the application local folder |
-| GetPackagedFileStreamAsync(String, FileAccessMode) | Task<IRandomAccessStream> | Return a stream to a specified file from the installation folder |
-| IsFileExistsAsync(StorageFolder, String) | Task<bool> | Test if a file exists in the application local folder |
-| IsKnownFolderFileExistsAsync(KnownFolderId, String) | Task<bool> | Test if a file exists in the application local cache folder |
-| IsLocalCacheFileExistsAsync(String) | Task<bool> | Test if a file exists in the application local cache folder |
-| IsLocalFileExistsAsync(String) | Task<bool> | Test if a file exists in the application local folder |
-| IsPackagedFileExistsAsync(String) | Task<bool> | Test if a file exists in the application installation folder |
-| ReadTextAsync(IRandomAccessStream, Encoding) | Task<string> | Read stream content as a string |
+|                               Methods                                |        Return Type        |                                    Description                                     |
+|----------------------------------------------------------------------|---------------------------|------------------------------------------------------------------------------------|
+|              GetHttpStreamAsync(Uri, CancellationToken)              | Task<IRandomAccessStream> |               Get the response stream returned by a HTTP get request               |
+|          GetHttpStreamToStorageFileAsync(Uri, StorageFile)           |           Task            | Get the response stream returned by a HTTP get request and save it to a local file |
+| GetKnowFoldersFileStreamAsync(KnownFolderId, String, FileAccessMode) | Task<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
+|         GetLocalCacheFileStreamAsync(String, FileAccessMode)         | Task<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
+|           GetLocalFileStreamAsync(String, FileAccessMode)            | Task<IRandomAccessStream> |       Return a stream to a specified file from the application local folder        |
+|          GetPackagedFileStreamAsync(String, FileAccessMode)          | Task<IRandomAccessStream> |          Return a stream to a specified file from the installation folder          |
+|               IsFileExistsAsync(StorageFolder, String)               |        Task<bool>         |               Test if a file exists in the application local folder                |
+|         IsKnownFolderFileExistsAsync(KnownFolderId, String)          |        Task<bool>         |            Test if a file exists in the application local cache folder             |
+|                 IsLocalCacheFileExistsAsync(String)                  |        Task<bool>         |            Test if a file exists in the application local cache folder             |
+|                    IsLocalFileExistsAsync(String)                    |        Task<bool>         |               Test if a file exists in the application local folder                |
+|                  IsPackagedFileExistsAsync(String)                   |        Task<bool>         |            Test if a file exists in the application installation folder            |
+|             ReadTextAsync(IRandomAccessStream, Encoding)             |       Task<string>        |                          Read stream content as a string                           |
 
 ## Example
 

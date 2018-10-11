@@ -7,7 +7,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # NavigationView Styles
 
-> [!NOTE] The NavigationView extension will be removed in a future major release.
+> [!NOTE]
+> The NavigationView extension will be removed in a future major release.
 
 <!-- Describe your control -->
 The [NavigationView Styles](https://docs.microsoft.com/en-us/windows/communitytoolkit/extensions/navigationview) are a set of styles and extensions to reskin a `NavigationView` to look and behave like the `Activity Bar` and `Side Bar` in *Visual Studio Code*.
@@ -24,7 +25,7 @@ The following example shows you how to modify a NavigationView to use the Visual
 
 ```xaml
     ... xmlns:ex="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-  
+
     <Page.Resources>
       <ResourceDictionary>
         <ResourceDictionary.MergedDictionaries>
@@ -44,7 +45,6 @@ The following example shows you how to modify a NavigationView to use the Visual
                     <FontIcon Glyph="&#xE8C8;"/>
                 </NavigationViewItem.Icon>
     ...
-
 ```
 
 You need to include the toolkit extensions namespace, add the style dictionary to your resources, utilize the styles, and add the extension properties to modify the behavior.

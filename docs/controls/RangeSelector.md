@@ -43,7 +43,7 @@ The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.tool
 ## Examples
 
 > [!NOTE]
-If you are using a RangeSelector within a ScrollViewer you'll need to add some codes. This is because by default, the ScrollViewer will block the thumbs of the RangeSelector to capture the pointer.
+> If you are using a RangeSelector within a ScrollViewer you'll need to add some codes. This is because by default, the ScrollViewer will block the thumbs of the RangeSelector to capture the pointer.
 
 Here is an example of using RangeSelector within a ScrollViewer
 

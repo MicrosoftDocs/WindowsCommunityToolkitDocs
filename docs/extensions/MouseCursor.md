@@ -43,7 +43,7 @@ Here is a example of setting Mouse.Cursor
 ```
 
 > [!NOTE]
-Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
+> Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
 
 ## Limitations
 
