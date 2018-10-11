@@ -1,6 +1,6 @@
 ---
 title: InkCanvas control for Windows Forms and WPF
-author: granitestatehacker
+author: mcleanbyron
 description: This control is a wrapper to enable use of the UWP InkCanvas control in Windows Forms or WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InkCanvas, Windows Forms, WPF
 ---

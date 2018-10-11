@@ -1,6 +1,6 @@
 ---
 title: Known Issues for WebView control for Windows Forms and WPF
-author: normesta
+author: mcleanbyron
 description: This guide highlights known limitations with the current release of the WebView control for Windows Forms and WPF applications.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebView, Windows Forms, WPF, known issues, release notes
 ---
@@ -109,7 +109,3 @@ The **WebView** control implements these events of the [IWebViewControl](https:/
 * You can't programmatically print information from a WebView control.
 
 * There's no way to programmatically refresh content with cache validation. By default, pages refresh without cache validation by sending a "Pragma:no-cache" header to the server.
-
- 
-
- 

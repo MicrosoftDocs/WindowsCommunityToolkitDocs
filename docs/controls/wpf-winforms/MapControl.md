@@ -1,6 +1,6 @@
 ---
 title: MapControl for Windows Forms and WPF
-author: granitestatehacker
+author: mcleanbyron
 description: This control is a wrapper to enable use of the UWP MapControl class in Windows Forms or WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MapControl, Windows Forms, WPF
 ---
@@ -20,7 +20,7 @@ The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Con
 
 This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
 
-<!-- 
+<!--
 ## Known Limitations
 
 TBD  -->

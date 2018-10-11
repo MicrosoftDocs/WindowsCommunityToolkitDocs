@@ -47,7 +47,7 @@ The [SurfaceDialTextbox XAML Property](https://docs.microsoft.com/dotnet/api/mic
 | StepValue | double | The amount the TextBox will be modified for each rotation step on the Surface Dial |
 
 > [!IMPORTANT]
-`StepValue` and `ForceMenuItem` are mandatory fields
+> `StepValue` and `ForceMenuItem` are mandatory fields
 
 ## Properties
 

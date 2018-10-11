@@ -101,7 +101,7 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 ### Changing Cursor Type
 
 > [!IMPORTANT]
-Resource file must be manually added to change the cursor type when middle click scrolling. If you didn't add then the cursor won't change when middle click scrolling but functionality won't be affected.
+> Resource file must be manually added to change the cursor type when middle click scrolling. If you didn't add then the cursor won't change when middle click scrolling but functionality won't be affected.
 
 #### Using Existing Resource File
 

@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, CameraHel
 The **CameraHelper** provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps. The helper currently shows camera frame sources that support color video preview or video record streams. 
 
 > [!IMPORTANT]
-Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
+> Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
 ## Syntax
 
@@ -60,12 +60,12 @@ Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| GetFrameSourceGroupsAsync() | Task<IReadOnlyList<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams.
-| InitializeAndStartCaptureAsync() | Task<CameraHelperResult>| Initializes Media Capture and Frame Reader for video preview and capture frames in real time. |
-| CleanUpAsync() | Task | Use this asynchronous method to dispose Camera Helper resources |
-| Dispose() | void | Use this method to dispose Camera Helper resources |
+|             Methods              |                Return Type                 |                                                Description                                                |
+|----------------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+|   GetFrameSourceGroupsAsync()    | Task<IReadOnlyList<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams. |
+| InitializeAndStartCaptureAsync() |          Task<CameraHelperResult>          |       Initializes Media Capture and Frame Reader for video preview and capture frames in real time.       |
+|          CleanUpAsync()          |                    Task                    |                      Use this asynchronous method to dispose Camera Helper resources                      |
+|            Dispose()             |                    void                    |                            Use this method to dispose Camera Helper resources                             |
 
 ## Events
 
@@ -92,7 +92,7 @@ if(availableFrameSourceGroups != null)
   {
     // Subscribe to get frames as they arrive
     cameraHelper.FrameArrived += CameraHelper_FrameArrived;
-	
+
     // Optionally set a different frame source format
     var newFormat = cameraHelper.FrameFormatsAvailable.Find((format) => format.VideoFormat.Width == 640);
     if (newFormat != null)
@@ -101,7 +101,6 @@ if(availableFrameSourceGroups != null)
     }
   }
 }
-
 ```
 
 ## Sample Code

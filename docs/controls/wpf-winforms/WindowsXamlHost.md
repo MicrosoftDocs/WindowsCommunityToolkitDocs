@@ -1,11 +1,11 @@
 ---
 title: WindowsXAMLHost control
-author: normesta
+author: mcleanbyron
 description: This guide helps you add UWP XAML controls to your WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, host controls, xaml islands, WPF, Windows Forms
 ---
 
-# WindowsXamlHost Control  for Windows Forms and WPF
+# WindowsXamlHost Control for Windows Forms and WPF
 
 > [!NOTE]
 > This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases. [Known Issues](../../knownissues.md)
@@ -109,7 +109,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Initialize UWP controls first, and then assign them to Windows XAML host controls
@@ -155,7 +154,6 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("My Button Worked");
 }
-
 ```
 
 ## Add a custom UWP control
@@ -174,48 +172,57 @@ In **Solution Explorer**, right-click the class library project, and then choose
 
 ![Edit project](../../resources/images/Controls/WindowsXAMLHost/edit-project.png)
 
-Add these properties to the project file.
+Add these properties to the project file anywhere **before** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come before, you may see errors compiling XamlTypeInfo.g.cs in your host project.
 
 ```xml
 <PropertyGroup>
   <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
   <EnableXBindDiagnostics>false</EnableXBindDiagnostics>
 </PropertyGroup>
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
 ```
 
-Add these post-build steps anywhere beneath the last element that has an ``Include`` attribute.
+Add these post-build steps **after** the import for Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below.  If they don't come after, the project variables, ie: $(TargetDir), $(ProjectDir), and $(ProjectName) will not be defined resulting in copy errors and the post-build event failing.
 
 ```xml
-<PropertyGroup>
-  <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
-  <PostBuildEvent>md $(SolutionDir)\$(HostFrameworkProject)\bin\$(ConfigurationName)\$(ProjectName)
-copy $(TargetDir)\*.* $(SolutionDir)\$(HostFrameworkProject)\bin\$(ConfigurationName)\$(ProjectName)
-copy $(ProjectDir)\*.xaml $(SolutionDir)\$(HostFrameworkProject)\bin\$(ConfigurationName)\$(ProjectName)
-copy $(ProjectDir)\*.xaml.cs $(SolutionDir)\$(HostFrameworkProject)\$(ProjectName)
-copy $(ProjectDir)\obj\$(PlatformName)\$(ConfigurationName)\*.g.* $(SolutionDir)\$(HostFrameworkProject)\$(ProjectName)</PostBuildEvent>
-</PropertyGroup>
-
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />  
+  <PropertyGroup>
+    <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
+    <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <ObjPath>obj\$(Configuration)\</ObjPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <!-- Copy source and build output files to hostapp folders -->
+    <!-- Default Winforms/WPF projects do not use $Platform for build output folder -->
+    <PostBuildEvent>
+      md $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+      md $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+      copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+      copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
+      copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+      copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+    </PostBuildEvent>
+  </PropertyGroup>
 ```
 >[!NOTE]
->Make sure to set the value of the ``<HostFrameworkProject`` element to the name of your WPF project
+>Make sure to set the value of the ``<HostFrameworkProject>`` element to the name of your WPF project
 
 Right-click the library project, and then choose **Reload Project**.
 
-### Configure the WPF application project
-
-Right-click the WPF project, and then click **Add Folder**. Give this folder the same name as your UWP library project.
-
-![Add folder to project](../../resources/images/Controls/WindowsXAMLHost/folder-to-project.png)
-
 Build the UWP class library project.
 
-Then, in **Solution Explorer**, right-click the folder that you just created in your WPF project, and choose **Add**->**Existing Item**. Then, browse to the location of the folder where the post-build steps copied files. (For example: *C:\NewVersion\TestWPFApp\TestWPFApp\bin\Debug\UWPClassLibrary*).
+### Include UWP Xaml artifacts in the WPF application project
+Now we need to add the Xaml artifacts that were built by the UWP Class library and published into the WPF project via the post-Build events.  To do this click on the WPF project and choose the **Show All Files** icon in the solution explorer.  This will show the UWPClassLibrary folder that was created.  Then right-click on the folder and choose **Include in Project**.
 
-Select all of the files in that folder, and then click the **Add** button to add them to the folder in your project.
+![Include folder in project](../../resources/images/Controls/WindowsXAMLHost/include-in-project.png)
 
-![Add files to folder](../../resources/images/Controls/WindowsXAMLHost/add-files-to-folder.png)
+After including, you can turn off Show All Files.
 
 Build your WPF application.
+
+To keep the WPF application in sync with future changes to the UWP Class Library, you need to explicitly add a build dependency by right-clicking on the WPF project, and choosing "Build Dependencies".  Add a Project dependency so the WPF application depends on the UWP Class Library.
 
 ## Bind data from your desktop application to a field in the custom control
 

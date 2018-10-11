@@ -37,7 +37,7 @@ The RowBackground and RowForeground properties are used to paint the background 
 You can toggle the visibility of row and column headers using the **DataGrid.HeadersVisibility** property. The **DataGridHeadersVisibility** enumeration has the following member values:
    * *All*: Both column and row header cells are displayed.
    * *Column*: Only column header cells are displayed.
-   * *Row*: Only column header cells are displayed.
+   * *Row*: Only row header cells are displayed.
    * *None*: No header cells are displayed.
 
 Note: By default, DataGrid row headers are not displayed. To display row headers, the **HeadersVisibility** property must be set to *DataGridHeadersVisibility.Row* or *DataGridHeadersVisibility.All* and the DataGrid's ControlTemplate should be altered to provide a visual for the RowHeader as desired.

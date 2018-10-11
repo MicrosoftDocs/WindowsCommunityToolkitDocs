@@ -15,7 +15,7 @@ The [InAppNotification](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 The control should be placed where you want your notification to be displayed in the page, generally in the root grid.
 
 > [!NOTE]
-Since the control is part of the page visual tree, it will render in the order it was added in the parent control, and might be hidden by other elements. For the control to render on top of other elements, add it as the last child of the parent control or set the Canvas.ZIndex to a high number.
+> Since the control is part of the page visual tree, it will render in the order it was added in the parent control, and might be hidden by other elements. For the control to render on top of other elements, add it as the last child of the parent control or set the Canvas.ZIndex to a high number.
 
 ## Syntax
 
@@ -175,34 +175,34 @@ You can change this behavior with one of these values:
 
     Here is the list of existing styles :
 
-    - [Microsoft Edge notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml)
+  - [Microsoft Edge notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml)
 
-        ![Microsoft Edge notification style](../resources/images/Controls/InAppNotification/MicrosoftEdge-Notification-Style.png)
+      ![Microsoft Edge notification style](../resources/images/Controls/InAppNotification/MicrosoftEdge-Notification-Style.png)
 
-    - [Visual Studio Code notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml)
+  - [Visual Studio Code notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml)
 
-        ![Visual Studio Code notification style](../resources/images/Controls/InAppNotification/VisualStudioCode-Notification-style.png)
+      ![Visual Studio Code notification style](../resources/images/Controls/InAppNotification/VisualStudioCode-Notification-style.png)
 
     If you want to use another style than the default one, please follow the example below :
 
-    - Import external styles in your resources
+  - Import external styles in your resources
 
     ```xaml
     <Page.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="ms-appx:///Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+      <ResourceDictionary>
+          <ResourceDictionary.MergedDictionaries>
+              <ResourceDictionary Source="ms-appx:///Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml" />
+          </ResourceDictionary.MergedDictionaries>
+      </ResourceDictionary>
     </Page.Resources>
     ```
 
-    - Apply the `Style`
+  - Apply the `Style`
 
     ```xaml
     <controls:InAppNotification 
-        x:Name="ExampleVSCodeInAppNotification"
-        Style="{StaticResource VSCodeNotificationStyle}" />
+      x:Name="ExampleVSCodeInAppNotification"
+      Style="{StaticResource VSCodeNotificationStyle}" />
     ```
 
 ## Adding styles to Toolkit

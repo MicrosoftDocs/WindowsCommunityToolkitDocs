@@ -21,19 +21,19 @@ You can handle the DataGrid's **AutoGeneratingColumn** event to modify, replace,
 ## To handle the AutoGeneratingColumn event
 
 1. Create an event handler for the DataGrid's **AutoGeneratingColumn** event.
-```C#
-private void dataGrid1_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
-{
+   ```C#
+   private void dataGrid1_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
+   {
     //...
-}
-```
+   }
+   ```
 
 2. Add the event handler to the DataGrid instances events.
-```xml
-<controls:DataGrid x:Name="dataGrid1"
+   ```xml
+   <controls:DataGrid x:Name="dataGrid1"
             AutoGenerateColumns="True"
             AutoGeneratingColumn="dataGrid1_AutoGeneratingColumn"/>
-```
+   ```
 
 ## To modify a generated column
 
@@ -49,22 +49,22 @@ if (e.Column.Header.ToString() == "Name")
 ## To replace a generated column
 
 1. In the AutoGeneratingColumn event handler, create a new **DataGridColumn**.
-```C#
-//Replace the DueDate column with a custom template column.
-if (e.PropertyName = "DueDate")
-{
+   ```C#
+   //Replace the DueDate column with a custom template column.
+   if (e.PropertyName = "DueDate")
+   {
     //Create a new template column.
     var templateColumn = new DataGridTemplateColumn();
     templateColumn.Header = "Due Date";
     //...
-}
-```
+   }
+   ```
 
 2. Replace the column from the **DataGridAutoGeneratingColumnEventArgs.Column** property with the new **DataGridColumn** instance.
-```C#
-//Replace the auto-generated column with the templateColumn.
-e.Column = templateColumn;
-```
+   ```C#
+   //Replace the auto-generated column with the templateColumn.
+   e.Column = templateColumn;
+   ```
 
 ## To cancel generation of a column
 

@@ -1,6 +1,6 @@
 ---
 title: InkToolbar control for Windows Forms and WPF
-author: granitestatehacker
+author: mcleanbyron
 description: This control is a wrapper to enable use of the UWP InkToolbar control in Windows Forms or WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InkToolbar, Windows Forms, WPF
 ---
