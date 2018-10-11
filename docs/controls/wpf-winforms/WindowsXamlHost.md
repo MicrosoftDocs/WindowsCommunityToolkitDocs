@@ -115,7 +115,7 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 
 In some situations, you might want to create instances of UWP controls without having to first create Windows XAML host controls.
 
-If you choose to do this, make sure to first call the **InitializeForCurrentThread** method of the **WindowsXamlManager** class. This initializes the UWP hosting environment so that you can create and initialize UWP controls.
+If you choose to do this, make sure to first call the [InitializeForCurrentThread](https://docs.microsoft.com/uwp/api/windows.ui.xaml.hosting.windowsxamlmanager.initializeforcurrentthread) method of the [WindowsXamlManager](https://docs.microsoft.com/uwp/api/windows.ui.xaml.hosting.windowsxamlmanager) class. This initializes the UWP hosting environment so that you can create and initialize UWP controls.
 
 You can create a Windows XAML host control when you are ready to show any of those UWP controls in a UI. This example initializes the UWP hosting environment, creates a UWP button and then creates a Windows XAML host control only for the purpose of showing the UWP control in the UI.
 
