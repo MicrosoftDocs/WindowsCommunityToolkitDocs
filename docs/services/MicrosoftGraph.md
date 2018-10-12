@@ -90,10 +90,12 @@ If you don't have one, you need to create an Office 365 Developer Site. There ar
 
 ```csharp
 // Initialize the service
-if (!MicrosoftGraphService.Instance.Initialize(ClientId.Text))
+var scopes = "Calendars.Read Mail.Read Mail.Send User.Read".Split(' ');
+if (!MicrosoftGraphService.Instance.Initialize(ClientId.Text, ServicesToInitialize.Message | ServicesToInitialize.UserProfile | ServicesToInitialize.Event, scopes))
 {
- return;
+    return;
 }
+
 // Login via Azure Active Directory 
 if (!await MicrosoftGraphService.Instance.LoginAsync())
 {
