@@ -145,6 +145,7 @@
 ## [Microsoft Translator Service](services/MicrosoftTranslator.md)
 ## [OneDrive Service](services/OneDrive.md)
 ## [Twitter Service](services/Twitter.md)
+## [Weibo Service](services/Weibo.md)
 
 # Parsers
 ## [MarkdownParser](parsers/MarkdownParser.md)
