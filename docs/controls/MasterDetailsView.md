@@ -25,13 +25,28 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ![MasterDetailsView animation](../resources/images/Controls/MasterDetailsView.gif)
 
+## BackButtonBehavior
+The MasterDetailsView control uses the first Frame in the parent tree to handle back navigations - moving from details to master in compact mode. For example, if the Details view state is active when attempting back navigation on the Frame will move the MasterDetailsView view to the Master view and cancel the back navigation.
+
+The MasterDetailsView will handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
+- `Automatic` to let the control decide which back button to make visible/enabled, either the system back button or a back button in a parent NavigationView. 
+- `System` to use the system back button controlled by the SystemNavigationManager
+- `Inline` to use a back button built into the control
+- `Manual` to not enable any back buttons (if using a custom button)
+
+
+
+
 ## Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
+| BackButtonBehavior | BackButtonBehavior | Gets or sets the behavior to use for the back button. |
 | CompactModeThresholdWidth | double | If width of control is less than CompactModeThresholdWidth, the control will only display the master or details view - otherwise it will show both views. |
 | DetailsCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the details section |
 | DetailsTemplate | DataTemplate | Gets or sets the DataTemplate used to display the details |
+| DetailsHeader | object | Gets or sets the content for the details pane's header | 
+| DetailsHeaderTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content of the details pane's header |
 | MapDetails | Func<object,object> | Gets or sets a function for mapping the selected item to a different model. This new model will be the DataContext of the Details area |
 | MasterCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the master section |
 | MasterHeader | object | Gets or sets the content for the master pane's header |
