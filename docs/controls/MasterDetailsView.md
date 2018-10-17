@@ -28,6 +28,8 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 ## BackButtonBehavior
 When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view. 
 
+If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
+
 To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
 - `Automatic` will let the control decide which back button to make visible/enabled.
     - If the system back button is visible the control won't use any other buttons
@@ -36,8 +38,6 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 - `System` will use the system back button controlled by the SystemNavigationManager. The control will make the button visible (if not already visible) when in the Details view and restore the visibility when transitioning to the Master view. This is the default value.
 - `Inline` will use a back button built into the control
 - `Manual` will not enable any back buttons (if using a custom button).
-
-If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
 
 ## Properties
 
