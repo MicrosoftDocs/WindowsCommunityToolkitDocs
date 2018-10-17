@@ -84,13 +84,15 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 | InlineCodeBorderBrush | Brush | Gets or sets the border brush for inline code |
 | InlineCodeBorderThickness | Thickness | Gets or sets the thickness of the border for inline code |
 | InlineCodeFontFamily | FontFamily | Gets or sets the font used to display code. If this is `null`, then `Windows.UI.Xaml.Media.FontFamily` is used |
-| InlineCodePadding | Thickness | Gets or sets the foreground brush for inline code |
+| InlineCodePadding | Thickness | Gets or sets the padding for inline code |
+| InlineCodeMargin | Thickness | Gets or sets the margin for inline code |
 | IsTextSelectionEnabled | bool | Gets or sets a value indicating whether text selection is enabled |
 | LinkForeground | Brush | Gets or sets the brush used to render links. If this is `null`, then Foreground is used |
 | ListBulletSpacing | double | Gets or sets the space between the list item bullets/numbers and the list item content |
 | ListGutterWidth | double | Gets or sets the width of the space used by list item bullets/numbers |
 | ListMargin | Thickness | Gets or sets the margin used by lists |
 | ParagraphMargin | Thickness | Gets or sets the margin used for paragraphs |
+| ParagraphLineHeight | int | Gets or sets the line hegiht used for paragraphs. |
 | QuoteBackground | Brush | Gets or sets the brush used to fill the background of a quote block |
 | QuoteBorderBrush | Brush | Gets or sets the brush used to render a quote border. If this is null, then [QuoteBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.quoteborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_QuoteBorderBrush) is used |
 | QuoteBorderThickness | Thickness | Gets or sets the thickness of quote borders. |
@@ -98,10 +100,12 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 | QuoteMargin | Thickness | Gets or sets the space outside of quote borders |
 | QuotePadding | Thickness | Gets or sets the space between the quote border and the text |
 | SchemeList | string(separated by comma) | Gets or sets the custom SchemeList to render a URL. |
-| TableBorderBrush | boBrushol | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| TableBorderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | TableBorderThickness | double | Gets or sets the thickness of any table borders |
 | TableCellPadding | Thickness | Gets or sets the padding inside each cell |
 | TableMargin | Thickness | Gets or sets the margin used by tables |
+| YamlBoderThickness | Thickness | Gets or sets the thickness of any yaml header borders. |
+| YamlBoderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | Text | string | Gets or sets the markdown text to display |
 | TextWrapping | TextWrapping | Gets or sets the word wrapping behavior |
 | UriPrefix | string | Gets or sets the Prefix of Uri |
@@ -230,3 +234,8 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 ## Related Topics
 
 * [Markdown Parser](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
+
+
+
+
+
