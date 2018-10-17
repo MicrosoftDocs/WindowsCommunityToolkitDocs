@@ -34,9 +34,6 @@ The MasterDetailsView will handle back button visibility of the SystemNavigation
 - `Inline` to use a back button built into the control
 - `Manual` to not enable any back buttons (if using a custom button)
 
-
-
-
 ## Properties
 
 | Property | Type | Description |
