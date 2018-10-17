@@ -105,7 +105,7 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 | TableCellPadding | Thickness | Gets or sets the padding inside each cell |
 | TableMargin | Thickness | Gets or sets the margin used by tables |
 | YamlBoderThickness | Thickness | Gets or sets the thickness of any yaml header borders. |
-| YamlBoderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| YamlBoderBrush | Brush | Gets or sets the brush used to render yaml heade borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | Text | string | Gets or sets the markdown text to display |
 | TextWrapping | TextWrapping | Gets or sets the word wrapping behavior |
 | UriPrefix | string | Gets or sets the Prefix of Uri |
