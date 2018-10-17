@@ -26,11 +26,14 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 ![MasterDetailsView animation](../resources/images/Controls/MasterDetailsView.gif)
 
 ## BackButtonBehavior
-The MasterDetailsView control uses the first Frame in the parent tree to handle back navigations - moving from details to master in compact mode. For example, if the Details view state is active when attempting back navigation on the Frame will move the MasterDetailsView view to the Master view and cancel the back navigation.
+The MasterDetailsView control uses the first Frame in the parent tree to handle moving from the Details view to the Maste view in compact mode. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
 
-The MasterDetailsView will handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
-- `Automatic` to let the control decide which back button to make visible/enabled, either the system back button or a back button in a parent NavigationView. 
-- `System` to use the system back button controlled by the SystemNavigationManager
+The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
+- `Automatic` to let the control decide which back button to make visible/enabled.
+    - If the system back button is visible the control won't use any other buttons
+    - Else, if the control parent tree contains a Frame hosted in a NavigationView, the NavigationView back button will be used
+    - Otherwise, the inline button will be used 
+- `System` to use the system back button controlled by the SystemNavigationManager. This is the default value.
 - `Inline` to use a back button built into the control
 - `Manual` to not enable any back buttons (if using a custom button)
 
