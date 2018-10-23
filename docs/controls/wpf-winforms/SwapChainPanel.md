@@ -5,7 +5,7 @@ description: This control is a wrapper to enable use of the UWP SwapChainPanel c
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, SwapChainPanel, Windows Forms, WPF
 ---
 
-# SwapChainPanel Control for Windows Forms and WPF
+# SwapChainPanel control for Windows Forms and WPF
 
 > [!NOTE]
 > This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases.
@@ -22,13 +22,12 @@ The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Con
 
 This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.SwapChainPanel](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel) control.
 
-<!--
+## Known issues and limitations
 
-## Known Limitations
-
-TBD  -->
+See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
 
 ## Syntax
+
 ```xaml
 <Window x:Class="TestSample.MainWindow" ...
   xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
@@ -66,13 +65,13 @@ TBD  -->
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
-## API Source Code
+## API source code
 
 - [SwapChainPanel (Windows Forms)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Forms.UI.Controls/SwapChainPanel)
 - [SwapChainPanel (WPF)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Wpf.UI.Controls/SwapChainPanel)
 
 
-## Related Topics
+## Related topics
 
 - [SwapChainPanel (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SwapChainPanel)
 - [SwapChainPanel and gaming](https://docs.microsoft.com/windows/uwp/gaming/directx-and-xaml-interop#swapchainpanel-and-gaming)

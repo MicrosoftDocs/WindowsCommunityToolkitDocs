@@ -20,12 +20,12 @@ The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Con
 
 This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
 
-<!--
-## Known Limitations
+## Known issues and limitations
 
-TBD  -->
+See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
 
 ## Syntax
+
 ```xaml
 <Window x:Class="TestSample.MainWindow" ...
   xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
@@ -34,6 +34,20 @@ TBD  -->
 
 <controls:MapControl x:Name="mapControl" DockPanel.Dock="Top" ZoomInteractionMode="GestureAndControl"
     TiltInteractionMode="GestureAndControl" MapServiceToken="EnterYourAuthenticationKeyHere" />
+```
+
+## Example
+
+```csharp
+private async void MapControl_Loaded(object sender, RoutedEventArgs e)
+{
+    // Specify a known location.
+    BasicGeoposition cityPosition = new BasicGeoposition() { Latitude = 47.604, Longitude = -122.329 };
+    var cityCenter = new Geopoint(cityPosition);
+
+    // Set the map location.
+    await (sender as MapControl).TrySetViewAsync(cityCenter, 12);
+}
 ```
 
 ## Properties

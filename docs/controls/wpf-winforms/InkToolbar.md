@@ -5,7 +5,7 @@ description: This control is a wrapper to enable use of the UWP InkToolbar contr
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InkToolbar, Windows Forms, WPF
 ---
 
-# InkToolbar Control for Windows Forms and WPF
+# InkToolbar control for Windows Forms and WPF
 
 > [!NOTE]
 > This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases.
@@ -20,7 +20,12 @@ The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Con
 
 This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control.
 
+## Known issues and limitations
+
+See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
+
 ## Syntax
+
 ```xaml
 <Window x:Class="TestSample.MainWindow" ...
   xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
