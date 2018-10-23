@@ -25,13 +25,30 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ![MasterDetailsView animation](../resources/images/Controls/MasterDetailsView.gif)
 
+## BackButtonBehavior
+When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view. 
+
+If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
+
+To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
+- `Automatic` will let the control decide which back button to make visible/enabled.
+    - If the system back button is visible the control won't use any other buttons
+    - Else, if the control parent tree contains a Frame hosted in a NavigationView, the NavigationView back button will be used
+    - Otherwise, an inline button will be used 
+- `System` will use the system back button controlled by the SystemNavigationManager. The control will make the button visible (if not already visible) when in the Details view and restore the visibility when transitioning to the Master view. This is the default value.
+- `Inline` will use a back button built into the control
+- `Manual` will not enable any back buttons (if using a custom button).
+
 ## Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
+| BackButtonBehavior | BackButtonBehavior | Gets or sets the behavior to use for the back button. |
 | CompactModeThresholdWidth | double | If width of control is less than CompactModeThresholdWidth, the control will only display the master or details view - otherwise it will show both views. |
 | DetailsCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the details section |
 | DetailsTemplate | DataTemplate | Gets or sets the DataTemplate used to display the details |
+| DetailsHeader | object | Gets or sets the content for the details pane's header | 
+| DetailsHeaderTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content of the details pane's header |
 | MapDetails | Func<object,object> | Gets or sets a function for mapping the selected item to a different model. This new model will be the DataContext of the Details area |
 | MasterCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the master section |
 | MasterHeader | object | Gets or sets the content for the master pane's header |
