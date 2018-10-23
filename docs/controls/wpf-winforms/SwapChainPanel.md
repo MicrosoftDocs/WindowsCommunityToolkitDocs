@@ -24,7 +24,7 @@ This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Swa
 
 ## Known issues and limitations
 
-See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
+See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
 

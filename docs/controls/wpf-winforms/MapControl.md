@@ -22,7 +22,7 @@ This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Map
 
 ## Known issues and limitations
 
-See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
+See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ See our list of [known issues](https://github.com/windows-toolkit/WindowsCommuni
     TiltInteractionMode="GestureAndControl" MapServiceToken="EnterYourAuthenticationKeyHere" />
 ```
 
-## Example
+## Code example
 
 ```csharp
 private async void MapControl_Loaded(object sender, RoutedEventArgs e)

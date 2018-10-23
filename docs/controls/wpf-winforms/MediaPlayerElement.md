@@ -24,7 +24,7 @@ This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Med
 
 * This controls does not currently support full screen video.
 * The **Source** property is exposed as a string, which is interpreted as a URL and bound to the **Source** property of the internal UWP control as a UWP-implemented **IMediaPlaybackSource**.
-* See also our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug).
+* See also our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
 ```xaml
