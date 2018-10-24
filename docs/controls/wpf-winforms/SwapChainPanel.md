@@ -33,8 +33,12 @@ See our list of [known issues](https://github.com/windows-toolkit/WindowsCommuni
   xmlns:controls="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls"
 ...>
 
-
-<controls:SwapChainPanel x:Name="swapChainPanel" DockPanel.Dock="Top" />
+<controls:SwapChainPanel x:Name="swapChainPanel">
+    <SwapChainPanel.ColumnDefinitions>
+        <ColumnDefinition Width="300*"/>
+        <ColumnDefinition Width="1069*"/>
+    </SwapChainPanel.ColumnDefinitions>
+</controls:SwapChainPanel>
 ```
 
 ## Properties
