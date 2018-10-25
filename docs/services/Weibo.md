@@ -41,7 +41,6 @@ if (!await WeiboService.Instance.LoginAsync())
 
 // Get current user info
 var user = await WeiboService.Instance.GetUserAsync();
-ProfileImage.DataContext = user;
 
 // Get user timeline
 ListView.ItemsSource = await WeiboService.Instance.GetUserTimeLineAsync(user.ScreenName, 50);
