@@ -85,13 +85,13 @@ The following events wrap corresponding [events](https://docs.microsoft.com/uwp/
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
-## API Source Code
+## API source code
 
 - [InkToolbar (Windows Forms)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Forms.UI.Controls/InkToolbar)
 - [InkToolbar (WPF)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Wpf.UI.Controls/InkToolbar)
 
 
-## Related Topics
+## Related topics
 
 - [InkToolbar (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar)
 - [Pen and Windows Ink](https://docs.microsoft.com/windows/uwp/design/input/pen-and-stylus-interactions)

@@ -75,13 +75,13 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
-## API Source Code
+## API source code
 
 - [MediaPlayerElement (Windows Forms)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
 - [MediaPlayerElement (WPF)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
 
 
-## Related Topics
+## Related topics
 
 - [MediaPlayerElement (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement)
 - [Media playback](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/media-playback)
