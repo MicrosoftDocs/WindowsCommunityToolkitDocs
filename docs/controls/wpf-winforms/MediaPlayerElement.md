@@ -18,12 +18,12 @@ The **MediaPlayerElement** control embeds a view that streams and renders media 
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.MediaPlayerElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement) control.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.MediaPlayerElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement) control.
 
 ## Known issues and limitations
 
 * This controls does not currently support full screen video.
-* The **Source** property is exposed as a string, which is interpreted as a URL and bound to the **Source** property of the internal UWP control as a UWP-implemented **IMediaPlaybackSource**.
+* The **Source** property is exposed as a string, which is interpreted as a URL and bound to the **Source** property of the wrapped UWP control as a UWP-implemented **IMediaPlaybackSource**.
 * See also our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
@@ -39,7 +39,7 @@ This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Med
 
 ## Properties
 
-The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement#properties) of the internal UWP [Windows.UI.Xaml.Controls.MediaPlayerElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement) object. See the links in this table for more information about each property.
+The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement#properties) of the wrapped UWP [Windows.UI.Xaml.Controls.MediaPlayerElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement) object. See the links in this table for more information about each property.
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -53,7 +53,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | MediaPlayerProperty | DependencyProperty | Dependency property for the **MediaPlayer** property. |
 | PosterSource | ImageSource | Wraps the [PosterSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.postersource) property. |
 | PosterSourceProperty | DependencyProperty | Dependency property for the **PosterSource** property. |
-| Source | string | Wraps the [Source](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.source) property. The **Source** property of this wrapped control is exposed as a string, which is interpreted as a URL and bound to the **Source** property of the internal UWP control as a UWP-implemented **IMediaPlaybackSource**.|
+| Source | string | Wraps the [Source](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.source) property. The **Source** property of this wrapped control is exposed as a string, which is interpreted as a URL and bound to the **Source** property of the wrapped UWP control as a UWP-implemented **IMediaPlaybackSource**.|
 | SourceProperty | DependencyProperty | Dependency property for the **Source** property. |
 | Stretch | Stretch | Wraps the [Stretch](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.stretch) property. |
 | StretchProperty | DependencyProperty | Dependency property for the **Stretch** property. |
@@ -64,7 +64,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| SetMediaPlayer(MediaPlayer) | void | Wraps the [SetMediaPlayer](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.setmediaplayer) method of the internal UWP **MediaPlayerElement** control. |
+| SetMediaPlayer(MediaPlayer) | void | Wraps the [SetMediaPlayer](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.mediaplayerelement.setmediaplayer) method of the wrapped UWP **MediaPlayerElement** control. |
 
 
 ## Requirements

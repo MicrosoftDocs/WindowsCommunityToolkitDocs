@@ -18,7 +18,7 @@ The **MapControl** class enables you to display a symbolic or photorealistic map
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-This control wraps an internal instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
 
 ## Known issues and limitations
 
@@ -52,7 +52,7 @@ private async void MapControl_Loaded(object sender, RoutedEventArgs e)
 
 ## Properties
 
-The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#properties) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each property.
+The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#properties) of the wrapped UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each property.
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -96,7 +96,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 
 ## Methods
 
-The following methods wrap corresponding [methods](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#methods) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each method.
+The following methods wrap corresponding [methods](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#methods) of the wrapped UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each method.
 
 | Method | Return Type | Description |
 | -- | -- | -- |
@@ -135,7 +135,7 @@ The following methods wrap corresponding [methods](https://docs.microsoft.com/uw
 
 ## Events
 
-The following events wrap corresponding [events](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#events) of the internal UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each event.
+The following events wrap corresponding [events](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol#events) of the wrapped UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol) object. See the links in this table for more information about each event.
 
 | Event | Description |
 | -- | -- |
