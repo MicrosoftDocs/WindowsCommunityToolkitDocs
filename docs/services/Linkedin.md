@@ -60,7 +60,7 @@ Await LinkedInService.Instance.ShareActivityAsync(ShareText.Text)
 
 ## Using the service on non-UWP platforms
 
-The LinkedIn Service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
+This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
 
 **IAuthenticationBroker**
 
