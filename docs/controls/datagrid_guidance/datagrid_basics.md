@@ -15,8 +15,8 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
 1. Download [Visual Studio 2017](https://developer.microsoft.com/en-us/windows/downloads) and ensure you choose the **Universal Windows Platform development** Workload in the Visual Studio installer.
 
-    > [!NOTE]
-    Visual Studio 2015 is not supported with the Windows Community Toolkit 2.0 or higher
+   > [!NOTE]
+   >  Visual Studio 2015 is not supported with the Windows Community Toolkit 2.0 or higher
 
 2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Build 15063 or higher is supported by current version of the Toolkit.   
 
@@ -40,21 +40,21 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
 5. Add a DataGrid control to your MainPage in XAML or C#
 
-    * Add the following XAML to your page
+   * Add the following XAML to your page
 
-        ```xml
-        <controls:DataGrid x:Name="dataGrid1"> 
+       ```xml
+       <controls:DataGrid x:Name="dataGrid1"> 
         
-        </controls:DataGrid>
-        ```
+       </controls:DataGrid>
+       ```
 
-    * In your C# page, add the namespaces to the toolkit
+   * In your C# page, add the namespaces to the toolkit
 
-        ```c#
-        DataGrid dataGrid1 = new DataGrid();
-        LayoutRoot.Children.Add(dataGrid1);
-        ```   
-## Binding a DataGrid to a data source
+       ```c#
+       DataGrid dataGrid1 = new DataGrid();
+       LayoutRoot.Children.Add(dataGrid1);
+       ```   
+     ## Binding a DataGrid to a data source
 
 You can use the **DataGrid.ItemsSource** property to bind to a collection that will be used to generate the contents of the DataGrid control. The following example demonstates how to use the **ItemsSource** and **AutoGenerateColumns** properties to automatically display a collection of Customer data in rows and columns.
 
@@ -146,6 +146,94 @@ You can override the default automatic generation of columns by setting the **Au
             Binding="{Binding IsNew}" />
     </controls:DataGrid.Columns>
 </controls:DataGrid>  
+```
+
+### DataGridComboBoxColumn
+
+In display mode the combobox column looks like the normal text column. In edit mode the column allows the user to select a value from a provided collection displayed in a **ComboBox** control.
+
+The **DataGridComboBoxColumn** contains the following specific properties:
+
+* **ItemsSource** (IEnumerable): This property is bound to a collection of objects representing the elements of the combobox (the source is the same for all cells in the column). The **ItemsSource** elements of the column must have at least one property with the same name as the elements of the **ItemsSource** belonging to the **DataGrid** itself.
+
+* **Binding** (Binding): This property binds the column to a property in the **DataGrid**'s **ItemsSource**. It also links this property to a property with the same name within the column's **ItemsSource**.
+
+* **DisplayMemberPath** (string): This property tells the column which property value to show in both display and edit mode. It's value must match the name of a property within the column's **ItemsSource** elements.
+
+The following code example demonstrates how to specify and configure a **DataGridComboBoxColumn** in XAML.
+
+```xml
+<controls:DataGrid x:Name="EmployeeGrid"
+                  ItemsSource="{x:Bind Persons}"
+                  AutoGenerateColumns="False">
+            <controls:DataGrid.Columns>
+                <controls:DataGridTextColumn Header="First Name"
+                                             Binding="{Binding FirstName}"/>
+                <controls:DataGridTextColumn Header="Last Name"
+                                             Binding="{Binding LastName}"/>
+                <controls:DataGridTextColumn Header="Position"
+                                             Binding="{Binding Position}"/>
+                <controls:DataGridComboBoxColumn Header="Department"
+                                                 Binding="{Binding DepartmentId}"                                                  
+                                                 ItemsSource="{x:Bind Departments, Mode=OneWay}"
+                                                 DisplayMemberPath="DepartmentName"/>
+            </controls:DataGrid.Columns>
+</controls:DataGrid>
+```
+
+Code-Behind:
+
+```C#
+public class Department
+{
+    public int DepartmentId { get; set; }
+    public string DepartmentName { get; set; }
+}
+
+public class Person
+{
+    public int PersonId { get; set; }
+    public int DepartmentId { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public string Position { get; set; }
+}
+public sealed partial class MainPage : Page
+{
+    public List<Department> Departments { get; set; }
+    public List<Person> Persons { get; set; }
+
+    public MainPage()
+    {
+        this.InitializeComponent();
+
+        Departments = new List<Department>
+        {
+            new Department {DepartmentId = 1, DepartmentName = "R&D"},
+            new Department {DepartmentId = 2, DepartmentName = "Finance"},
+            new Department {DepartmentId = 3, DepartmentName = "IT"}
+        };
+
+        Persons = new List<Person>
+        {
+            new Person
+            {
+                PersonId = 1, DepartmentId = 3, FirstName = "Ronald", LastName = "Rumple",
+                Position = "Network Administrator"
+            },
+            new Person
+            {
+                PersonId = 2, DepartmentId = 1, FirstName = "Brett", LastName = "Banner",
+                Position = "Software Developer"
+            },
+            new Person
+            {
+                PersonId = 3, DepartmentId = 2, FirstName = "Alice", LastName = "Anderson",
+                Position = "Accountant"
+            }
+        };
+    }
+}
 ```
 
 ### DataGridTemplateColumn

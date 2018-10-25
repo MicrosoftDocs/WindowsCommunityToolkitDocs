@@ -8,7 +8,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # Windows Community Toolkit Known Issues
 
 > [!NOTE]
-For an accurate list of known bugs and issues, take a look at the [issues on GitHub](https://github.com/Microsoft/WindowsCommunityToolkit//issues)
+> For an accurate list of known bugs and issues, take a look at the [issues on GitHub](https://github.com/Microsoft/WindowsCommunityToolkit//issues)
 
 
 ## Controls
