@@ -15,6 +15,8 @@ Commonly used **converters** that allow the data to be modified as it passes thr
 | [BoolToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltoobjectconverter?view=uwp-toolkit-dotnet) | Converts a boolean value into an object. The converted value is selected between the values of TrueValue and FalseValue properties |
 | [BoolToVisibilityConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltovisibilityconverter?view=uwp-toolkit-dotnet) | Converts a boolean value into a Visibility enumeration |
 | [CollectionVisibilityConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.collectionvisibilityconverter?view=uwp-toolkit-dotnet) | Converts a collection into a Visibility enumeration (Collapsed if the given collection is empty or null) |
+| [DoubleToObjectConverter]((https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletoobjectconverter?view=uwp-toolkit-dotnet) | Converts a double value into an object based on a value to be greater than, less than, or in-between. |
+| [DoubleToVisibilityConverter]((https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletovisibilityconverter?view=uwp-toolkit-dotnet) | Converts a double value into a Visibility enumeration based on a value to be greater than, less than, or in-between. |
 | [EmptyCollectionToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptycollectiontoobjectconverter?view=uwp-toolkit-dotnet) | Converts a collection into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
 | [EmptyObjectToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties | 
 | [EmptyStringToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptystringtoobjectconverter?view=uwp-toolkit-dotnet) | Converts a string into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
@@ -105,6 +107,26 @@ or if you want to not pass a parameter, you can use `BoolToObjectConverter` to c
 <Page.Resources>
     <converters:BoolToObjectConverter x:Key="InverseBoolToVisibilityConverter" TrueValue="Collapsed" FalseValue="Visible"/>
 </Page.Resources>
+```
+
+
+## DoubleToVisibilityConverter Examples
+
+`DoubleToVisibilityConverter` can be used to easily change a double value to a Visibility based one based on a given threshold value.  If both `GreaterThan` and `LessThan` are set, the converter will set the visibility if the target value is in-between those two values.  Otherwise, it will look for the target being greater than or less than the specified value.
+
+If a `True` value is provided for a `ConverterParameter` than the equation will be inverted.
+
+```xaml
+<Page.Resources>
+    <converters:DoubleToVisibilityConverter x:Key="GreaterThanToleranceVisibilityConverter" GreaterThan="65.0"/>
+</Page.Resources>
+```
+
+and use it like this :
+
+```xaml
+<Button x:Name="ScrollBackButton"
+        Visibility="{Binding ScrollableWidth, Converter={StaticResource GreaterThanToleranceVisibilityConverter}, ElementName=ScrollViewer, FallbackValue=Collapsed, TargetNullValue=Collapsed}"/>
 ```
 
 
