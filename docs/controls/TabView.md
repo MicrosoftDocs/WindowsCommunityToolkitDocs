@@ -46,7 +46,7 @@ The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.con
 | TabWidthBehavior | TabWidthMode | Actual, Equal, or Compact values specify how Tab Headers should be sized.  Defaults to Actual. |
 
 > [!IMPORTANT]
-Do not use `ItemsStackPanel` if you override the ItemsPanel.  It is suggested to keep the `TabWidthBehavior` to `Actual` when using a custom panel.
+> Do not use `ItemsStackPanel` if you override the ItemsPanel.  It is suggested to keep the `TabWidthBehavior` to `Actual` when using a custom panel.
 
 ### TabViewItem Properties
 
@@ -92,6 +92,37 @@ If you want to replicate the behavior of Microsoft Edge with the TabView, you ca
 </controls:TabView>
 ```
 
+The TabView supports data binding as well.  The following example shows binding the TabView to a collection of 'DataItems' which have both 'Value' and 'MyText' properties:
+
+```xaml
+<controls:TabView x:Name="TabItems"
+                  ItemsSource="{Binding TabItemCollection}">
+  <controls:TabView.ItemHeaderTemplate>
+    <DataTemplate>
+      <TextBlock>
+        <Run Text="{Binding Value}"/>
+        <Run Text=": "/>
+        <Run Text="{Binding MyText}"/>
+      </TextBlock>
+    </DataTemplate>
+  </controls:TabView.ItemHeaderTemplate>
+  <controls:TabView.ItemTemplate>
+    <DataTemplate>
+      <StackPanel>
+        <TextBlock Margin="8">
+          <Run Text="Tab Value: "/>
+          <Run Text="{Binding Value}" />
+        </TextBlock>
+        <TextBlock Margin="8,0,0,0" Text="Some other shared content..." />
+      </StackPanel>
+    </DataTemplate>
+  </controls:TabView.ItemTemplate>
+</controls:TabView>
+```
+
+> [!NOTE]
+> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+
 ## Sample Code
 
 [TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
@@ -114,5 +145,6 @@ If you want to replicate the behavior of Microsoft Edge with the TabView, you ca
 
 ## Related Topics
 
+- [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
 - [IconElement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.IconElement)
 - [TabControl (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tabcontrol)
