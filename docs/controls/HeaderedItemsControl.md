@@ -33,6 +33,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | -- | -- | -- |
 | Header | object | Gets or sets the data used for the header of each control |
 | HeaderTemplate | DataTemplate | Gets or sets the template used to display the content of the control's header |
+| Orientation | Orientation | Gets or sets the Orientation to use for layout of the header. If set to Vertical the Header will be above the items. If set to Horizontal the Header will be to the left of the items. |
 
 ### Examples
 
@@ -76,7 +77,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |

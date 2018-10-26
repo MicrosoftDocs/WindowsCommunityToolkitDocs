@@ -1,6 +1,6 @@
 ---
 title: Notifications Overview 
-author: nmetulev
+author: andrewleader
 description: Instead of having to deal with XML, you can now use Windows Community toolkit and its notification extensions to work with Tiles and notifications using a complete object model.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, adaptive live tiles, interactive toast, tiles, notifications
 ---
@@ -15,7 +15,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 | Documentation |
 | --- |
 | [Create Adaptive Tile](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
-| [Sending a local Tile notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification/) |
+| [Sending a local Tile notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification) |
 
 ## Sample Output
 
@@ -25,8 +25,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Create adaptive and interactive Toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts/) |
-| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast/) |
+| [Interactive Toast Notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts) |
+| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast) |
 
 ## Sample Output
 
@@ -34,7 +34,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.10240.0 or higher |
 | --- | --- |
 | Namespace for C# | Microsoft.Toolkit.Uwp.Notifications |
 | Namespace for JavaScript | Microsoft.Toolkit.Uwp.Notifications.Javascript |

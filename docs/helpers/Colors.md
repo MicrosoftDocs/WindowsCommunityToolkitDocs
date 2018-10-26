@@ -16,7 +16,7 @@ The [Colors Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 
 ```csharp
 // Be sure to include the using at the top of the file:
-using Microsoft.Toolkit.Uwp;
+using Microsoft.Toolkit.Uwp.Helpers;
 
 // Given an HTML color, lets convert it to a Windows Color
 Windows.UI.Color color = ColorHelper.ToColor("#3a4ab0");
@@ -29,7 +29,7 @@ Windows.UI.Color redColor = "Red".ToColor();
 ```
 ```vb
 ' Be sure to include the imports at the top of the file:
-Imports Microsoft.Toolkit.Uwp
+Imports Microsoft.Toolkit.Uwp.Helpers
 
 ' Given an HTML color, lets convert it to a Windows Color
 Dim color As Windows.UI.Color = ColorHelper.ToColor("#3a4ab0")
@@ -59,9 +59,9 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp |
+| Namespace | Microsoft.Toolkit.Uwp.Helpers |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |
 
 ## API

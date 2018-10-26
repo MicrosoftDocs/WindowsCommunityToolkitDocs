@@ -172,7 +172,9 @@ The following instructions uses a WPF project.
 
     ![Class library project](../../resources/images/Controls/WindowsXAMLHost/class-library-project.png)
 
-2. In **Solution Explorer**, right-click the class library project, and then choose **Unload Project**. Then, right-click that project, and choose **Edit <Your project name>** to open it in the Visual Studio code editor.
+2. In **Solution Explorer**, right-click the class library project, and then choose **Add -> New Item**. Select **Blank Page**, give it a name and click **Add**.
+
+2. In **Solution Explorer**, right-click the class library project, and choose **Unload Project**. Then, right-click the class library project, and choose **Edit `<Your project name>`** to open it in the Visual Studio code editor.
 
     ![Edit project](../../resources/images/Controls/WindowsXAMLHost/edit-project.png)
 
@@ -183,15 +185,17 @@ The following instructions uses a WPF project.
       <EnableTypeInfoReflection>false</EnableTypeInfoReflection>
       <EnableXBindDiagnostics>false</EnableXBindDiagnostics>
     </PropertyGroup>
+
     <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
     ```
 
 4. Add these post-build steps **after** the ``<Import>`` element for the Microsoft.Windows.UI.Xaml.CSharp.targets file as shown below. If they don't come after this element, the **$(TargetDir)**, **$(ProjectDir)**, and **$(ProjectName)** project variables will not be defined and you will see copy errors and the post-build event failures.
 
     ```xml
-    <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />  
+    <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+
     <PropertyGroup>
-      <HostFrameworkProject>TestWPFApp</HostFrameworkProject>
+      <HostFrameworkProject>YOUR_WPF_PROJECT_NAME</HostFrameworkProject>
       <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
@@ -215,7 +219,7 @@ The following instructions uses a WPF project.
 
 5. Right-click the library project, and then choose **Reload Project**.
 
-6. Build the UWP class library project.
+6. Build the UWP class library project (right click on the project and click **Build**).
 
 ### Include UWP XAML artifacts in the WPF application project
 Now we need to add the XAML artifacts that were built by the UWP class library and published into the WPF project via the post-build events. To do this:
@@ -281,8 +285,8 @@ To keep the WPF application in sync with future changes to the UWP class library
         private void MyUWPPage_ChildChanged(object sender, EventArgs e)
         {
             // Hook up x:Bind source
-            global::Microsoft.Windows.Interop.WindowsXamlHost windowsXamlHost = sender as global::Microsoft.Windows.Interop.WindowsXamlHost;
-            global::UWPClassLibrary.MyPage myUWPPage = windowsXamlHost.Child as global::UWPClassLibrary.MyPage;
+            global::Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost windowsXamlHost = sender as global::Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost;
+            global::UWPClassLibrary.MyPage myUWPPage = windowsXamlHost.GetUwpInternalObject() as global::UWPClassLibrary.MyPage;
 
             if (myUWPPage != null)
             {
