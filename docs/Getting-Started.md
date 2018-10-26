@@ -11,10 +11,10 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
 1. Download [Visual Studio 2017](https://developer.microsoft.com/en-us/windows/downloads) and ensure you choose the **Universal Windows Platform development** Workload in the Visual Studio installer.
 
-   > [NOTE]
+   > [!NOTE]
    >  Visual Studio 2015 is not supported with the Windows Community Toolkit 2.0 or higher
 
-2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Only build 15063 or higher is supported by current version of the Toolkit.   
+2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Build 16299 or higher is supported by current version of the Toolkit.
 
 3. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.UWP**, and choose your desired [NuGet Packages](Nuget-Packages.md) from the list.
 
