@@ -10,27 +10,7 @@ dev_langs:
 # Title
 The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
-<!-- Use below format to display note
-> [!NOTE]
-Some note
-
-> [!IMPORTANT]
-Some important note
-
-> [!WARNING]
-Some warning note
--->
-
 ## Syntax
-
-```csharp
-
-```
-<!-- VB.Net samples are optional. If included, 'vb' should also be listed in the 'dev_langs' defined in the header. Code Blocks will be combined if there is no other content between different Code Block languages.
-```vb
-
-```
--->
 
 ```xaml
 <controls:TabView x:Name="Tabs">
@@ -94,9 +74,23 @@ Do not use `ItemsStackPanel` if you override the ItemsPanel.  It is suggested to
 
 ## Examples
 
-<!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
-<!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example -->
-<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/windows/communitytoolkit/animations/animationset#examples  -->
+If you want to replicate the behavior of Microsoft Edge with the TabView, you can use the following setup:
+
+```xaml
+<controls:TabView TabWidthBehavior="Equal"
+                  CanCloseTabs="True"
+                  IsCloseButtonOverlay="True"
+                  CanDragItems="True"
+                  CanReorderItems="True"
+                  AllowDrop="True">
+  <controls:TabView.Resources>
+    <x:Double x:Key="TabViewItemHeaderMinHeight">32</x:Double>
+    <x:Double x:Key="TabViewItemHeaderMinWidth">90</x:Double>
+    <x:Double x:Key="TabViewItemHeaderMaxWidth">200</x:Double>
+  </controls:TabView.Resources>
+  ...
+</controls:TabView>
+```
 
 ## Sample Code
 
@@ -115,7 +109,7 @@ Do not use `ItemsStackPanel` if you override the ItemsPanel.  It is suggested to
 
 ## API Source Code
 
-- [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)
+- [TabView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView)
 
 
 ## Related Topics
