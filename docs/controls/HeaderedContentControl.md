@@ -33,6 +33,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 | -- | -- | -- |
 | Header | object | Gets or sets the data used for the header of each control |
 | HeaderTemplate | DataTemplate | Gets or sets the template used to display the content of the control's header |
+| Orientation | Orientation | Gets or sets the Orientation to use for layout of the header. If set to Vertical the Header will be above the content. If set to Horizontal the Header will be to the left of the content. |
 
 ### Examples
 
