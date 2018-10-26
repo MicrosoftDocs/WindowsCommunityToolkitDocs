@@ -15,10 +15,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
 1. Download [Visual Studio 2017](https://developer.microsoft.com/en-us/windows/downloads) and ensure you choose the **Universal Windows Platform development** Workload in the Visual Studio installer.
 
-   > [!NOTE]
-   >  Visual Studio 2015 is not supported with the Windows Community Toolkit 2.0 or higher
-
-2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Build 15063 or higher is supported by current version of the Toolkit.   
+2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Build 16299 or higher is supported by current version of the Toolkit.
 
 3. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.UWP.UI.Controls.DataGrid**, and choose the [Microsoft.Toolkit.Uwp.UI.Controls.DataGrid](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/) nuget package.
 
@@ -32,7 +29,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
         xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
         ```
 
-    * In your C# page, add the namespaces to the toolkit
+    * Alternatively, in your C# page, add the namespaces to the toolkit 
 
         ```c#
         using Microsoft.Toolkit.Uwp.UI.Controls;
@@ -43,7 +40,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
    * Add the following XAML to your page
 
        ```xml
-       <controls:DataGrid x:Name="dataGrid1"> 
+       <controls:DataGrid x:Name="dataGrid1">
         
        </controls:DataGrid>
        ```
@@ -53,10 +50,10 @@ The toolkit is available as NuGet packages that can be added to any existing or 
        ```c#
        DataGrid dataGrid1 = new DataGrid();
        LayoutRoot.Children.Add(dataGrid1);
-       ```   
+       ```
      ## Binding a DataGrid to a data source
 
-You can use the **DataGrid.ItemsSource** property to bind to a collection that will be used to generate the contents of the DataGrid control. The following example demonstates how to use the **ItemsSource** and **AutoGenerateColumns** properties to automatically display a collection of Customer data in rows and columns.
+You can use the **DataGrid.ItemsSource** property to bind to a collection that will be used to generate the contents of the DataGrid control. The following example demonstrates how to use the **ItemsSource** and **AutoGenerateColumns** properties to automatically display a collection of Customer data in rows and columns.
 
 ```xml
 <controls:DataGrid x:Name="dataGrid1" 
