@@ -21,37 +21,37 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
     ![NuGet Packages](../../resources/images/ManageNugetPackages.png "Manage NuGet Packages Image")
 
-4. Add a reference to the toolkit in your XAML pages or C#
+4. Add a reference to the toolkit and add the DataGrid control in your XAML page
 
-    * In your XAML page, add a reference at the top of your page
+    * Add a reference at the top of your page
 
         ```xml
         xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
         ```
+    * Add the following XAML in your page to add the DataGrid control
 
-    * Alternatively, in your C# page, add the namespaces to the toolkit 
+       ```xml
+       <controls:DataGrid x:Name="dataGrid">
+
+       </controls:DataGrid>
+       ```
+
+5. Alternatively, you can add the DataGrid control directly in C# in your page code behind. **Important** You would either add it to the XAML directly or the code behind, not both. 
+
+    * Add the namespaces to the toolkit
 
         ```c#
         using Microsoft.Toolkit.Uwp.UI.Controls;
         ```
 
-5. Add a DataGrid control to your MainPage in XAML or C#
+    * Add the control in your Loaded event
 
-   * Add the following XAML to your page
+        ```c#
+        DataGrid dataGrid1 = new DataGrid();
+        LayoutRoot.Children.Add(dataGrid1);
+        ```
 
-       ```xml
-       <controls:DataGrid x:Name="dataGrid1">
-        
-       </controls:DataGrid>
-       ```
-
-   * In your C# page, add the namespaces to the toolkit
-
-       ```c#
-       DataGrid dataGrid1 = new DataGrid();
-       LayoutRoot.Children.Add(dataGrid1);
-       ```
-     ## Binding a DataGrid to a data source
+## Binding a DataGrid to a data source
 
 You can use the **DataGrid.ItemsSource** property to bind to a collection that will be used to generate the contents of the DataGrid control. The following example demonstrates how to use the **ItemsSource** and **AutoGenerateColumns** properties to automatically display a collection of Customer data in rows and columns.
 
