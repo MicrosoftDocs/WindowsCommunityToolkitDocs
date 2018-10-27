@@ -135,8 +135,8 @@ The TabView supports data binding as well.  The following example shows binding 
 
 | Device family | Universal, 10.0.16299.0 or higher  |
 | -- | -- |
-| Namespace |  |
-| Microsoft.Toolkit.Uwp.UI.Controls | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
+| Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
 ## API Source Code
 
