@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# Title
+# TabView XAML Control
 The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 ## Syntax
