@@ -33,7 +33,7 @@ Below are a few eye gaze related concepts that are helpful in order to better un
 
 * **Saccade.** A saccade is a rapid movement of the eyes from one fixation point to another. Our eyes alternate between fixations and saccades.
 * **Fixation.**  A fixation is the collection of gaze points on a single location of the screen for a relatively short amount of time (roughly around 200ms). This happens after a saccade when the eye comes to rest upon an object and it comes into sharp focus.
-* **Dwell.** A dwell is the concious fixation by the user for a duration greater than the fixation time. This  mechanism is typically used to identify user intent when the user is using only their eyes as an input method. The dwell time duration can be application and control dependent.
+* **Dwell.** A dwell is the conscious fixation by the user for a duration greater than the fixation time. This  mechanism is typically used to identify user intent when the user is using only their eyes as an input method. The dwell time duration can be application and control dependent.
 * **Enter/Exit.** These are states and properties specific to this API to help manage gaze related interactions and refer to the time elapsed since the first recorded gaze sample and the last recorded gaze sample on a particular control (Button, ToggleButton etc.)
 
 The Gaze Interaction Library enables dwell based gaze interactions on the page by reading the data from the eye tracker over the page invoking specific controls when the user's gaze dwells on a control for a specific time. The application can configure this time based on its usage scenario.
