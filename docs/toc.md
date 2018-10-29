@@ -59,6 +59,7 @@
 ## [ScrollHeader](controls/ScrollHeader.md)
 ## [StaggeredPanel](controls/StaggeredPanel.md)
 ## [TextToolbar](controls/TextToolbar.md)
+## [TabView](controls/TabView.md)
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WrapPanel](controls/WrapPanel.md)
