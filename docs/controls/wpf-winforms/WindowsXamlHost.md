@@ -15,7 +15,7 @@ By using the **WindowsXamlHost** control, you can add built-in or custom UWP con
 ## Get started
 
 To get the **WindowsXamlHost** control, install the appropriate Nuget package:
-* For WPF applications, install the [Microsoft.Toolkit.Wpf.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) package.
+* For WPF applications, install the [Microsoft.Toolkit.Wpf.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) package.
 * For Windows Forms applications, install the [Microsoft.Toolkit.Forms.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.XamlHost) package.
 
 After you install the NuGet package, [set up your project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-enhance#first-set-up-your-project) so that it can use UWP types.
