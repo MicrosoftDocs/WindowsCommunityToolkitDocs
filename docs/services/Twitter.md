@@ -168,7 +168,7 @@ If you are posting from your app and never seeing them show up in the timeline c
 
 ## Using the service on non-UWP platforms
 
-To use the service outside the UWP platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager, IStorageManager and ISignatureManager.
+This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
 
 **IAuthenticationBroker**
 
@@ -204,7 +204,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.Services |
 | NuGet package | [Microsoft.Toolkit.Uwp.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Services/) |

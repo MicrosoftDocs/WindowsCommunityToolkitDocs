@@ -11,8 +11,8 @@ dev_langs:
 # HttpHelperResponse
 
 > [!WARNING]
-(This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx) 
-or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
+> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx) 
+> or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
 [HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers. 
 
@@ -49,12 +49,12 @@ The **HttpHelperResponse** class has these constructors.
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| Dispose() | void | Performs tasks associated with freeing, releasing, or resetting unmanaged resources |
-| GetStreamResultAsync() | Task<IInputStream> | Reads the Content as stream and returns it to the caller |
-| GetTextResultAsync() | Task<string> | Serialize the HTTP content to a String as an asynchronous operation |
-| ToString() | string | Returns a string that represents the current HttpHelperResponse object |
+|        Methods         |    Return Type     |                                     Description                                     |
+|------------------------|--------------------|-------------------------------------------------------------------------------------|
+|       Dispose()        |        void        | Performs tasks associated with freeing, releasing, or resetting unmanaged resources |
+| GetStreamResultAsync() | Task<IInputStream> |              Reads the Content as stream and returns it to the caller               |
+|  GetTextResultAsync()  |    Task<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
+|       ToString()       |       string       |       Returns a string that represents the current HttpHelperResponse object        |
 
 ## Remarks
 
@@ -82,7 +82,7 @@ End Using
 
 ## Requirements
 
-| [Device family | Universal, 10.0.15063.0 or higher |
+| [Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

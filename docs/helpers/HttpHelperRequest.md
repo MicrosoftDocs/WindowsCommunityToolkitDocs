@@ -11,8 +11,8 @@ dev_langs:
 # HttpHelperRequest
 
 > [!WARNING]
-(This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
-or [Windows.Web.Http.HttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.http.httprequestmessage) directly)
+> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
+> or [Windows.Web.Http.HttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.http.httprequestmessage) directly)
 
 The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers. 
 
@@ -71,7 +71,7 @@ request.Headers.Authorization = New Windows.Web.Http.Headers.HttpCredentialsHead
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

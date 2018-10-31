@@ -35,7 +35,7 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.DataGrid](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/) |

@@ -16,12 +16,12 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 ### Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| BluetoothLeDevices | ObservableCollection<ObservableBluetoothLEDevice> | Gets the list of available bluetooth devices |
-| IsEnumerating | bool | Gets a value indicating whether app is currently enumerating |
-| IsPeripheralRoleSupported | bool | Gets a value indicating whether peripheral mode is supported by this device |
-| IsCentralRoleSupported | bool | Gets a value indicating whether central role is supported by this device |
+|         Property          |                       Type                        |                                 Description                                 |
+|---------------------------|---------------------------------------------------|-----------------------------------------------------------------------------|
+|    BluetoothLeDevices     | ObservableCollection<ObservableBluetoothLEDevice> |                Gets the list of available bluetooth devices                 |
+|       IsEnumerating       |                       bool                        |        Gets a value indicating whether app is currently enumerating         |
+| IsPeripheralRoleSupported |                       bool                        | Gets a value indicating whether peripheral mode is supported by this device |
+|  IsCentralRoleSupported   |                       bool                        |  Gets a value indicating whether central role is supported by this device   |
 
 ### Methods
 
@@ -40,20 +40,20 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 ### Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| BluetoothAddressAsString | string | Gets the bluetooth address of this device as a string |
-| BluetoothAddressAsUlong | ulong | Gets the bluetooth address of this device |
-| BluetoothLEDevice | BluetoothLEDevice | Gets the base bluetooth device this class wraps |
-| DeviceInfo | [DeviceInformation](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation) | Gets the device information for the device this class wraps |
-| ErrorText | string | Gets the error text when connecting to this device fails |
-| Glyph | BitmapImage | Gets or sets the glyph of this bluetooth device |
-| IsConnected | bool | Gets a value indicating whether this device is connected |
-| IsPaired | bool | Gets a value indicating whether this device is paired |
-| Name | string | Gets the name of this device |
-| RSSI | int | Gets the RSSI value of this device |
-| Services | ObservableCollection<ObservableGattDeviceService> | Gets the services this device supports |
-| ServiceCount | int | Gets or sets the number of services this device has |
+|         Property         |                                                 Type                                                  |                         Description                         |
+|--------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| BluetoothAddressAsString |                                                string                                                 |    Gets the bluetooth address of this device as a string    |
+| BluetoothAddressAsUlong  |                                                 ulong                                                 |          Gets the bluetooth address of this device          |
+|    BluetoothLEDevice     |                                           BluetoothLEDevice                                           |       Gets the base bluetooth device this class wraps       |
+|        DeviceInfo        | [DeviceInformation](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation) | Gets the device information for the device this class wraps |
+|        ErrorText         |                                                string                                                 |  Gets the error text when connecting to this device fails   |
+|          Glyph           |                                              BitmapImage                                              |       Gets or sets the glyph of this bluetooth device       |
+|       IsConnected        |                                                 bool                                                  |  Gets a value indicating whether this device is connected   |
+|         IsPaired         |                                                 bool                                                  |    Gets a value indicating whether this device is paired    |
+|           Name           |                                                string                                                 |                Gets the name of this device                 |
+|           RSSI           |                                                  int                                                  |             Gets the RSSI value of this device              |
+|         Services         |                           ObservableCollection<ObservableGattDeviceService>                           |           Gets the services this device supports            |
+|       ServiceCount       |                                                  int                                                  |     Gets or sets the number of services this device has     |
 
 ### Methods
 
@@ -68,12 +68,12 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 ### Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
+|    Property     |                        Type                         |                 Description                  |
+|-----------------|-----------------------------------------------------|----------------------------------------------|
 | Characteristics | ObservableCollection<ObservableGattCharacteristics> | Gets all the characteristics of this service |
-| Name | string | Gets the name of this service |
-| UUID | string | Gets the UUID of this service |
-| Service | GattDeviceService | Gets the service this class wraps |
+|      Name       |                       string                        |        Gets the name of this service         |
+|      UUID       |                       string                        |        Gets the UUID of this service         |
+|     Service     |                  GattDeviceService                  |      Gets the service this class wraps       |
 
 ## ObservableGattCharacteristics
 
@@ -92,13 +92,13 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 ### Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| ReadValueAsync() | Task<string> | Reads the value of the Characteristic |
-| SetIndicateAsync() | Task<bool> | Set's the indicate descriptor |
-| StopIndicateAsync() | Task<bool> | Unset the indicate descriptor |
-| SetNotifyAsync() | Task<bool> | Sets the notify characteristic |
-| StopNotifyAsync() | Task<bool> | Unsets the notify descriptor |
+|       Methods       | Return Type  |              Description              |
+|---------------------|--------------|---------------------------------------|
+|  ReadValueAsync()   | Task<string> | Reads the value of the Characteristic |
+| SetIndicateAsync()  |  Task<bool>  |     Set's the indicate descriptor     |
+| StopIndicateAsync() |  Task<bool>  |     Unset the indicate descriptor     |
+|  SetNotifyAsync()   |  Task<bool>  |    Sets the notify characteristic     |
+|  StopNotifyAsync()  |  Task<bool>  |     Unsets the notify descriptor      |
 
 ## Example
 
@@ -152,7 +152,7 @@ End If
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.Connectivity |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

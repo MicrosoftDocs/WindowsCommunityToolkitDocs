@@ -4,11 +4,13 @@
 ## [Getting Started with the Windows Community Toolkit](Getting-Started.md)
 ## [Windows Community Toolkit Nuget Packages](Nuget-Packages.md)
 ## [Adding the Windows Community Toolkit to your Visual Studio Toolbox](Toolbox-Support.md)
+## [Known Issues](knownissues.md)
 
 # Controls
 ## Controls for WPF and Windows Forms
 ### [InkCanvas](controls/wpf-winforms/InkCanvas.md)
 ### [InkToolbar](controls/wpf-winforms/InkToolbar.md)
+### [MapControl](controls/wpf-winforms/MapControl.md)
 ### [MediaPlayerElement](controls/wpf-winforms/MediaPlayerElement.md)
 ### [WebView](controls/wpf-winforms/WebView.md)
 #### [WebView known issues](controls/wpf-winforms/WebView-known-issues.md)
@@ -31,7 +33,6 @@
 ## [DropShadowPanel Control](controls/DropShadowPanel.md)
 ## [Expander Control](controls/Expander.md)
 ## [GridSplitter](controls/GridSplitter.md)
-## [HamburgerMenu](controls/HamburgerMenu.md)
 ## [HeaderedContentControl](controls/HeaderedContentControl.md)
 ## [HeaderedItemsControl](controls/HeaderedItemsControl.md)
 ## [HeaderedTextBlock](controls/HeaderedTextBlock.md)
@@ -51,15 +52,14 @@
 ### [ProfileCard](graph/ProfileCard.md)
 ### [SharePointFileList](graph/SharePointFileList.md)
 ## [OrbitView](controls/OrbitView.md)
-## [PullToRefreshListView](controls/PullToRefreshListview.md)
 ## [RadialGauge](controls/RadialGauge.md)
 ## [RadialProgressBar](controls/RadialProgressBar.md)
 ## [RangeSelector](controls/RangeSelector.md)
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
-## [SlidableListItem](controls/SlidableListItem.md)
 ## [StaggeredPanel](controls/StaggeredPanel.md)
 ## [TextToolbar](controls/TextToolbar.md)
+## [TabView](controls/TabView.md)
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WrapPanel](controls/WrapPanel.md)
@@ -75,7 +75,6 @@
 ## [Implicit Animations](animations/ImplicitAnimations.md)
 ## [Light](animations/Light.md)
 ## [Offset](animations/Offset.md)
-## [ParallaxService](animations/ParallaxService.md)
 ## [ReorderGridAnimation](animations/ReorderGrid.md)
 ## [Rotate](animations/Rotate.md)
 ## [Saturation](animations/Saturation.md)
@@ -137,7 +136,6 @@
 ## [WeakEventListener](helpers/WeakEventListener.md)
 
 # Services
-## [Bing Service](services/Bing.md)
 ## [Facebook Service](services/Facebook.md)
 ## [LinkedIn Service](services/Linkedin.md)
 ## [Microsoft Graph Service](services/MicrosoftGraph.md)
@@ -145,6 +143,7 @@
 ## [Microsoft Translator Service](services/MicrosoftTranslator.md)
 ## [OneDrive Service](services/OneDrive.md)
 ## [Twitter Service](services/Twitter.md)
+## [Weibo Service](services/Weibo.md)
 
 # Parsers
 ## [MarkdownParser](parsers/MarkdownParser.md)
@@ -160,4 +159,12 @@
 
 # [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
-# [Known Issues](knownissues.md)
+# Archive
+## Controls
+### [HamburgerMenu](archive/HamburgerMenu.md)
+### [PullToRefreshListView](archive/PullToRefreshListview.md)
+### [SlidableListItem](archive/SlidableListItem.md)
+## Animations
+### [ParallaxService](archive/ParallaxService.md)
+## Services
+### [Bing Service](archive/Bing.md)

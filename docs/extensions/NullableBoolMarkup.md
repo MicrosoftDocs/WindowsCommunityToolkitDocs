@@ -17,7 +17,6 @@ The [NullableBool Markup Extension](https://docs.microsoft.com/en-us/dotnet/api/
     <Page.Resources>
         <helpers:ObjectWithNullableBoolProperty x:Key="OurObject" NullableBool="{ex:NullableBool Value=True}"/>
     </Page.Resources>
-
 ```
 
 **C#**

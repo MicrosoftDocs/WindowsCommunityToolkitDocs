@@ -31,7 +31,7 @@ In addition, you can customize the printing dialog using the `PrintHelperOptions
 You can call `ShowPrintUIAsync` with a second parameter to determine that the list of controls to print should directly be taken from the content of the container passed to the PrintHelper constructor. In this mode you are responsible for the sizing and the layout.
 
 > [!IMPORTANT]
-Printing in Dark Theme will likely print white text, which won't be visible. To fix this, ensure the text is a visible color before printing, then restore the original color.
+> Printing in Dark Theme will likely print white text, which won't be visible. To fix this, ensure the text is a visible color before printing, then restore the original color.
 
 ## Syntax
 
@@ -298,7 +298,7 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

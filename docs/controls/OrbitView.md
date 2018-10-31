@@ -61,7 +61,7 @@ The [OrbitView control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | OrbitThickness | double | Gets or sets a value indicating the thickness of the orbits |
 
 > [!IMPORTANT]
-For `MaxItemSize` and `MinItemSize` property to work, Data Context must be derived from OrbitViewItems and Diameter must be between 0 and 1
+> For `MaxItemSize` and `MinItemSize` property to work, Data Context must be derived from OrbitViewItems and Diameter must be between 0 and 1
 
 ### OrbitViewDataItem Properties
 
@@ -82,7 +82,7 @@ For `MaxItemSize` and `MinItemSize` property to work, Data Context must be deriv
 | ItemClick | Raised when an item has been clicked or activated with keyboard/controller |
 
 > [!IMPORTANT]
-`IsItemClickedEnabled` should be true for this event to work
+> `IsItemClickedEnabled` should be true for this event to work
 
 ## Examples
 
@@ -138,7 +138,7 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |

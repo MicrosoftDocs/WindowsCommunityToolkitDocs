@@ -45,20 +45,20 @@ End Function)
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| AwaitableRunAsync(CoreDispatcher, Action, CoreDispatcherPriority) | Task | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-| AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority) | Task | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-| AwaitableRunAsync(CoreDispatcher, Func<Task<T>>, CoreDispatcherPriority) | Task<T> | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-| AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority) | Task<T> | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-| ExecuteOnUIThreadAsync(Action, CoreDispatcherPriority) | Task | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
-| ExecuteOnUIThreadAsync(Func, CoreDispatcherPriority) | Task | Execute the given function asynchronously on UI thread of the main view |
-| ExecuteOnUIThreadAsync(CoreApplicationView, Action, CoreDispatcherPriority) | Task | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
-| ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority) | Task | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
-| ExecuteOnUIThreadAsync(Func<Task<T>>, CoreDispatcherPriority) | Task<T> | Execute the given function asynchronously on UI thread of the main view |
-| ExecuteOnUIThreadAsync(Func<T>, CoreDispatcherPriority) | Task<T> | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
-| ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task<T>>, CoreDispatcherPriority) | Task<T> | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
-| ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority) | Task<T> | Execute the given function asynchronously on given view's UI thread. Default view is the main view |
+|                                      Methods                                       | Return Type |                                                                Description                                                                |
+|------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+|         AwaitableRunAsync(CoreDispatcher, Action, CoreDispatcherPriority)          |    Task     | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|          AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority)           |    Task     | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|      AwaitableRunAsync(CoreDispatcher, Func<Task<T>>, CoreDispatcherPriority)      |   Task<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|          AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority)           |   Task<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|               ExecuteOnUIThreadAsync(Action, CoreDispatcherPriority)               |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|                ExecuteOnUIThreadAsync(Func, CoreDispatcherPriority)                |    Task     |                                  Execute the given function asynchronously on UI thread of the main view                                  |
+|    ExecuteOnUIThreadAsync(CoreApplicationView, Action, CoreDispatcherPriority)     |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|     ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority)      |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|           ExecuteOnUIThreadAsync(Func<Task<T>>, CoreDispatcherPriority)            |   Task<T>   |                                  Execute the given function asynchronously on UI thread of the main view                                  |
+|              ExecuteOnUIThreadAsync(Func<T>, CoreDispatcherPriority)               |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+| ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task<T>>, CoreDispatcherPriority) |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|     ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority)      |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
 
 ## Example
 
@@ -99,7 +99,7 @@ End Function)
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 

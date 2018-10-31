@@ -1,9 +1,9 @@
 # Welcome to the Windows Community Toolkit Documentation
 
-The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building UWP apps for Windows 10.
+The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building apps for Windows 10.
 
 ## Contributing
-Do you want to contribute or update the docs? All contributions (including docs) are currently done in the [Windows Community Toolkit repository](https://github.com/Microsoft/WindowsCommunityToolkit).
+Do you want to contribute or update the docs? Read the [contribution guidelines](CONTRIBUTING.md)
 
 
 ## Documentation Links

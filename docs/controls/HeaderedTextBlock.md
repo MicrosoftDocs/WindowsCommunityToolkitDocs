@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredtextblock) provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
 
+> [!NOTE] 
+> The HeaderedTextBlock control will be removed in a future major release. Please use [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) instead.
+
 ## Syntax
 
 ```xaml
@@ -41,7 +44,7 @@ The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |

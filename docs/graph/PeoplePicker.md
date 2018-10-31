@@ -25,14 +25,14 @@ The [PeoplePicker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Properties
 
-| Property | Type | Description |
-| -- | -- | -- |
-| RequiredDelegatedPermissions | String[] | Gets required delegated permissions for Graph API access |
-| GroupId | String | Search people in this group if specified, otherwise, search the organizational AD |
-| AllowMultiple | Boolean | Whether multiple people can be selected |
-| SearchResultLimit | Int | Max person returned in the search results |
-| PlaceholderText | String | Text to be displayed when no user is selected |
-| Selections | ObservableCollection<Person> | The selected person list |
+|           Property           |             Type             |                                    Description                                    |
+|------------------------------|------------------------------|-----------------------------------------------------------------------------------|
+| RequiredDelegatedPermissions |           String[]           |             Gets required delegated permissions for Graph API access              |
+|           GroupId            |            String            | Search people in this group if specified, otherwise, search the organizational AD |
+|        AllowMultiple         |           Boolean            |                      Whether multiple people can be selected                      |
+|      SearchResultLimit       |             Int              |                     Max person returned in the search results                     |
+|       PlaceholderText        |            String            |                   Text to be displayed when no user is selected                   |
+|          Selections          | ObservableCollection<Person> |                             The selected person list                              |
 
 ## Sample Code
 
@@ -62,7 +62,7 @@ await MicrosoftGraphService.Instance.LoginAsync();
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |

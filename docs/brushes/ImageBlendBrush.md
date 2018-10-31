@@ -35,8 +35,8 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 | Mode | [ImageBlendMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendmode) | The `ImageBlendMode` property specifies how the image should be blended with the backdrop.  See the [BlendEffectMode](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffectMode.htm) reference.  The `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a Windows version 10.0.16299 or higher. |
 
 > [!NOTE]
-The `Stretch` property for values other than `None` requires a Windows version 10.0.16299 or higher.
-In addition, the `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a Windows version 10.0.16299 or higher.
+> The `Stretch` property for values other than `None` requires a Windows version 10.0.16299 or higher.
+> In addition, the `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a Windows version 10.0.16299 or higher.
 
 ## Sample Code
 
@@ -44,7 +44,7 @@ In addition, the `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a 
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Media |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
