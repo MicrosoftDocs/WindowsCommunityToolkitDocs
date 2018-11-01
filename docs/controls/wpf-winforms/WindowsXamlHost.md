@@ -196,10 +196,6 @@ The following instructions uses a WPF project.
 
     <PropertyGroup>
       <HostFrameworkProject>YOUR_WPF_PROJECT_NAME</HostFrameworkProject>
-      <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
-      <ObjPath>obj\$(Configuration)\</ObjPath>
     </PropertyGroup>
     <PropertyGroup>
     <!-- Copy source and build output files to hostapp folders -->
@@ -210,7 +206,7 @@ The following instructions uses a WPF project.
         copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
         copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
         copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-        copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+        copy $(ProjectDir)$(IntermediateOutputPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
       </PostBuildEvent>
     </PropertyGroup>
     ```
