@@ -201,12 +201,10 @@ The following instructions uses a WPF project.
     <!-- Copy source and build output files to hostapp folders -->
     <!-- Default Winforms/WPF projects do not use $Platform for build output folder -->
       <PostBuildEvent>
-        md $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-        md $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-        copy $(ProjectDir)$(IntermediateOutputPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+        xcopy "$(TargetDir)*.xbf"            "$(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)\"
+        xcopy "$(ProjectDir)*.xaml"          "$(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)\"
+        xcopy "$(ProjectDir)*.xaml.cs"       "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\"
+        xcopy "$(ProjectDir)$(IntermediateOutputPath)*.g.*" "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\"
       </PostBuildEvent>
     </PropertyGroup>
     ```
