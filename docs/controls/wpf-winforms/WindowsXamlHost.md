@@ -196,21 +196,15 @@ The following instructions uses a WPF project.
 
     <PropertyGroup>
       <HostFrameworkProject>YOUR_WPF_PROJECT_NAME</HostFrameworkProject>
-      <ObjPath>obj\$(Platform)\$(Configuration)\</ObjPath>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
-      <ObjPath>obj\$(Configuration)\</ObjPath>
     </PropertyGroup>
     <PropertyGroup>
     <!-- Copy source and build output files to hostapp folders -->
     <!-- Default Winforms/WPF projects do not use $Platform for build output folder -->
       <PostBuildEvent>
-        md $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-        md $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(TargetDir)*.xbf            $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(ProjectDir)*.xaml          $(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)
-        copy $(ProjectDir)*.xaml.cs       $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
-        copy $(ProjectDir)$(ObjPath)*.g.* $(SolutionDir)$(HostFrameworkProject)\$(ProjectName)
+        xcopy "$(TargetDir)*.xbf"            "$(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)\" /Y
+        xcopy "$(ProjectDir)*.xaml"          "$(SolutionDir)$(HostFrameworkProject)\bin\$(Configuration)\$(ProjectName)\" /Y
+        xcopy "$(ProjectDir)*.xaml.cs"       "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\" /Y
+        xcopy "$(ProjectDir)$(IntermediateOutputPath)*.g.*" "$(SolutionDir)$(HostFrameworkProject)\$(ProjectName)\" /Y
       </PostBuildEvent>
     </PropertyGroup>
     ```
