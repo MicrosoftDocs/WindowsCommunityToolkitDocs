@@ -63,9 +63,9 @@ if (helper.KeyExists(keyCompositeObject, keySimpleObject))
 helper.Save(keySimpleObject, 47);
 
 // Save simple objects in a composite
-Dictionary<string, object>() simpleObjects = new Dictionary<string, object>();
-simpleObjects.add("simpleObjectValueOne", 47);
-simpleObjects.add("simpleObjectValueTwo", "hello!");
+Dictionary<string, object> simpleObjects = new Dictionary<string, object>();
+simpleObjects.Add("simpleObjectValueOne", 47);
+simpleObjects.Add("simpleObjectValueTwo", "hello!");
 helper.Save(keyCompositeObject, simpleObjects);
 
 // Read complex/large objects 
@@ -101,9 +101,9 @@ End If
 helper.Save(keySimpleObject, 47)
 
 ' Save simple objects in a composite
-Dictionary(Of String, Object)() simpleObjects = New Dictionary(Of String, Object)()
-simpleObjects.add("simpleObjectValueOne", 47)
-simpleObjects.add("simpleObjectValueTwo", "hello!")
+Dictionary(Of String, Object) simpleObjects = New Dictionary(Of String, Object)()
+simpleObjects.Add("simpleObjectValueOne", 47)
+simpleObjects.Add("simpleObjectValueTwo", "hello!")
 helper.Save(keyCompositeObject, simpleObjects)
 
 ' Read complex/large objects 
@@ -145,9 +145,9 @@ if (helper.KeyExists(keyCompositeObject, keySimpleObject))
 helper.Save(keySimpleObject, 47);
 
 // Save simple objects in a composite
-Dictionary<string, object>() simpleObjects = new Dictionary<string, object>();
-simpleObjects.add("simpleObjectValueOne", 47);
-simpleObjects.add("simpleObjectValueTwo", "hello!");
+Dictionary<string, object> simpleObjects = new Dictionary<string, object>();
+simpleObjects.Add("simpleObjectValueOne", 47);
+simpleObjects.Add("simpleObjectValueTwo", "hello!");
 helper.Save(keyCompositeObject, simpleObjects);
 
 // Read complex/large objects 
@@ -183,9 +183,9 @@ End If
 helper.Save(keySimpleObject, 47)
 
 ' Save simple objects in a composite
-Dictionary(Of String, Object)() simpleObjects = New Dictionary(Of String, Object)()
-simpleObjects.add("simpleObjectValueOne", 47)
-simpleObjects.add("simpleObjectValueTwo", "hello!")
+Dictionary(Of String, Object) simpleObjects = New Dictionary(Of String, Object)()
+simpleObjects.Add("simpleObjectValueOne", 47)
+simpleObjects.Add("simpleObjectValueTwo", "hello!")
 helper.Save(keyCompositeObject, simpleObjects)
 
 ' Read complex/large objects 
