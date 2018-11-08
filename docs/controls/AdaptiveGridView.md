@@ -49,7 +49,7 @@ There are 3 ways to use this Control:
 | StretchContentForSingleRow | Boolean | Gets or sets a value indicating whether the control should stretch the content to fill at least one row |
 
 > [!IMPORTANT]
-ItemHeight property must be set when OneRowModeEnabled property set as `true`
+> ItemHeight property must be set when OneRowModeEnabled property set as `true`
 
 ## Examples
 
@@ -143,7 +143,7 @@ ItemHeight property must be set when OneRowModeEnabled property set as `true`
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |

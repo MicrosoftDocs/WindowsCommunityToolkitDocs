@@ -56,8 +56,8 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 | SpreadMethod | [GradientSpreadMethod](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.GradientSpreadMethod) | The type of spread method that specifies how to draw a gradient that starts or ends inside the bounds of the object to be painted.  The default is `Pad`.
 
 > [!NOTE]
-The `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.  
-The Animation or Binding of *GradientStop* `Offset` and `Color` properties is not supported.
+> The `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.  
+> The Animation or Binding of *GradientStop* `Offset` and `Color` properties is not supported.
 
 ## Sample Code
 
@@ -65,7 +65,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Media |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |

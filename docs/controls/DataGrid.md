@@ -11,7 +11,7 @@ The DataGrid control provides a flexible way to display a collection of data in 
 
 ![DataGrid control](../resources/images/Controls/DataGrid/DataGrid.gif)
 
-The built-in column types include a text column, a check box column, and a template column for hosting custom content. The built-in row type includes a drop-down details section that you can use to display additional content below the cell values.
+The built-in column types include a text column, a check box column, a combobox column and a template column for hosting custom content. The built-in row type includes a drop-down details section that you can use to display additional content below the cell values.
 
 The DataGrid control supports common table formatting options, such as alternating row backgrounds and foregrounds and the ability to show or hide headers, grid lines, and scroll bars. Additionally, the control provides several style and template properties that you can use to completely change the appearance of the control and its rows, columns, cells, and row or column headers.
 
@@ -35,7 +35,7 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.DataGrid](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/) |

@@ -24,17 +24,17 @@ The Object Storage Helper will help you handle storage of generic objects within
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| FileExistsAsync(String) | Task<bool> | Detect if a file already exists |
-| KeyExists(String) | bool | Detect if a setting already exists |
-| KeyExists(String, String) | bool | Detect if a setting already exists in composite |
-| Read(String, T) | T | Retrieve single item by its key |
-| Read(String, String, T) | T | Retrieve single item by its key in composite |
-| ReadFileAsync(String, T) | Task<T> | Retrieve object from file |
-| Save(String, IDictionary) | void | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
-| Save(String, T) | void | Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects) |
-| SaveFileAsync(String, T) | Task<StorageFile> | Save object inside file. There is no limitation to use this method (refers to Save<T>(String, T) method for simple objects) |
+|          Methods          |    Return Type    |                                                                                                                                               Description                                                                                                                                               |
+|---------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  FileExistsAsync(String)  |    Task<bool>     |                                                                                                                                     Detect if a file already exists                                                                                                                                     |
+|     KeyExists(String)     |       bool        |                                                                                                                                   Detect if a setting already exists                                                                                                                                    |
+| KeyExists(String, String) |       bool        |                                                                                                                             Detect if a setting already exists in composite                                                                                                                             |
+|      Read(String, T)      |         T         |                                                                                                                                     Retrieve single item by its key                                                                                                                                     |
+|  Read(String, String, T)  |         T         |                                                                                                                              Retrieve single item by its key in composite                                                                                                                               |
+| ReadFileAsync(String, T)  |      Task<T>      |                                                                                                                                        Retrieve object from file                                                                                                                                        |
+| Save(String, IDictionary) |       void        | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
+|      Save(String, T)      |       void        |                                             Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects)                                              |
+| SaveFileAsync(String, T)  | Task<StorageFile> |                                                                                       Save object inside file. There is no limitation to use this method (refers to Save<T>(String, T) method for simple objects)                                                                                       |
 
 ## Example
 
@@ -63,9 +63,9 @@ if (helper.KeyExists(keyCompositeObject, keySimpleObject))
 helper.Save(keySimpleObject, 47);
 
 // Save simple objects in a composite
-Dictionary<string, object>() simpleObjects = new Dictionary<string, object>();
-simpleObjects.add("simpleObjectValueOne", 47);
-simpleObjects.add("simpleObjectValueTwo", "hello!");
+Dictionary<string, object> simpleObjects = new Dictionary<string, object>();
+simpleObjects.Add("simpleObjectValueOne", 47);
+simpleObjects.Add("simpleObjectValueTwo", "hello!");
 helper.Save(keyCompositeObject, simpleObjects);
 
 // Read complex/large objects 
@@ -101,9 +101,9 @@ End If
 helper.Save(keySimpleObject, 47)
 
 ' Save simple objects in a composite
-Dictionary(Of String, Object)() simpleObjects = New Dictionary(Of String, Object)()
-simpleObjects.add("simpleObjectValueOne", 47)
-simpleObjects.add("simpleObjectValueTwo", "hello!")
+Dictionary(Of String, Object) simpleObjects = New Dictionary(Of String, Object)()
+simpleObjects.Add("simpleObjectValueOne", 47)
+simpleObjects.Add("simpleObjectValueTwo", "hello!")
 helper.Save(keyCompositeObject, simpleObjects)
 
 ' Read complex/large objects 
@@ -145,9 +145,9 @@ if (helper.KeyExists(keyCompositeObject, keySimpleObject))
 helper.Save(keySimpleObject, 47);
 
 // Save simple objects in a composite
-Dictionary<string, object>() simpleObjects = new Dictionary<string, object>();
-simpleObjects.add("simpleObjectValueOne", 47);
-simpleObjects.add("simpleObjectValueTwo", "hello!");
+Dictionary<string, object> simpleObjects = new Dictionary<string, object>();
+simpleObjects.Add("simpleObjectValueOne", 47);
+simpleObjects.Add("simpleObjectValueTwo", "hello!");
 helper.Save(keyCompositeObject, simpleObjects);
 
 // Read complex/large objects 
@@ -183,9 +183,9 @@ End If
 helper.Save(keySimpleObject, 47)
 
 ' Save simple objects in a composite
-Dictionary(Of String, Object)() simpleObjects = New Dictionary(Of String, Object)()
-simpleObjects.add("simpleObjectValueOne", 47)
-simpleObjects.add("simpleObjectValueTwo", "hello!")
+Dictionary(Of String, Object) simpleObjects = New Dictionary(Of String, Object)()
+simpleObjects.Add("simpleObjectValueOne", 47)
+simpleObjects.Add("simpleObjectValueTwo", "hello!")
 helper.Save(keyCompositeObject, simpleObjects)
 
 ' Read complex/large objects 
@@ -207,7 +207,7 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

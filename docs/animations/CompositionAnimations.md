@@ -27,18 +27,18 @@ These XAML elements enable developer to specify composition animations directly 
 
 ### Animation Types
 
-| Animation Type | Accepted KeyFrame type | Description |
-| -- | -- | -- |
-| ScalarAnimation | ScalarKeyFrame and ExpressionKeyFrame | Animation that animates a scalar (double) value |
-| Vector2Animation | Vector2KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector2](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector2) ("0" or "0, 0") |
-| Vector3Animation | Vector3KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector3](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector3) ("0" or "0, 0, 0") |
-| Vector4Animation | Vector4KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector4](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector4) ("0" or "0, 0, 0, 0") |
-| OpacityAnimation | ScalarKeyFrame and ExpressionKeyFrame | ScalarAnimation where `Target = "Opacity". Animates the Visual.Opacity property |
-| RotationAnimation | ScalarKeyFrame and ExpressionKeyFrame | ScalarAnimation where `Target = "RotationAngle". Animates the Visual.RotationAngle property |
-| RotationInDegreesAnimation | ScalarKeyFrame and ExpressionKeyFrame | ScalarAnimation where `Target = "RotationAngleInDegrees". Animates the Visual.RotationAngleInDegrees property |
-| ScaleAnimation | Vector3KeyFrame and ExpressionKeyFrame | Vector3Animation where `Target = "Scale". Animates the Visual.Scale property |
-| TranslationAnimation | Vector3KeyFrame and ExpressionKeyFrame | Vector3Animation where `Target = "Translation". Animates the Visual.Translation property |
-| OffsetAnimations | Vector3KeyFrame and ExpressionKeyFrame | Vector3Animation where `Target = "Offset". Animates the Visual.Offset property |
+|       Animation Type       |         Accepted KeyFrame type         |                                                                   Description                                                                   |
+|----------------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|      ScalarAnimation       | ScalarKeyFrame and ExpressionKeyFrame  |                                                 Animation that animates a scalar (double) value                                                 |
+|      Vector2Animation      | Vector2KeyFrame and ExpressionKeyFrame |    Animation that animates a value of type [Vector2](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector2) ("0" or "0, 0")    |
+|      Vector3Animation      | Vector3KeyFrame and ExpressionKeyFrame |  Animation that animates a value of type [Vector3](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector3) ("0" or "0, 0, 0")   |
+|      Vector4Animation      | Vector4KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector4](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector4) ("0" or "0, 0, 0, 0") |
+|      OpacityAnimation      | ScalarKeyFrame and ExpressionKeyFrame  |                                ScalarAnimation where \`Target = "Opacity". Animates the Visual.Opacity property                                 |
+|     RotationAnimation      | ScalarKeyFrame and ExpressionKeyFrame  |                          ScalarAnimation where \`Target = "RotationAngle". Animates the Visual.RotationAngle property                           |
+| RotationInDegreesAnimation | ScalarKeyFrame and ExpressionKeyFrame  |                 ScalarAnimation where \`Target = "RotationAngleInDegrees". Animates the Visual.RotationAngleInDegrees property                  |
+|       ScaleAnimation       | Vector3KeyFrame and ExpressionKeyFrame |                                  Vector3Animation where \`Target = "Scale". Animates the Visual.Scale property                                  |
+|    TranslationAnimation    | Vector3KeyFrame and ExpressionKeyFrame |                            Vector3Animation where \`Target = "Translation". Animates the Visual.Translation property                            |
+|      OffsetAnimations      | Vector3KeyFrame and ExpressionKeyFrame |                                 Vector3Animation where \`Target = "Offset". Animates the Visual.Offset property                                 |
 
 ### Animation Properties
 
@@ -92,7 +92,7 @@ A collection of animations.
 ## Examples
 
 > [!NOTE]
-Use [Implicit Composition Animations in XAML](https://docs.microsoft.com/windows/communitytoolkit/animations/implicitanimations) to run these animations.
+> Use [Implicit Composition Animations in XAML](https://docs.microsoft.com/windows/communitytoolkit/animations/implicitanimations) to run these animations.
 
 Let's create some plain animation first. Theses animation will run when the `Target` property is changed.
 
@@ -147,7 +147,7 @@ Now we can add KeyFrames
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher   |
+| Device family | Universal, 10.0.16299.0 or higher   |
 | ---------------------------------------------------------------- | ----------------------------------- |
 | Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Animations |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Animations](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Animations/) |

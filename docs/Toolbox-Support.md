@@ -6,7 +6,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 ---
 
 > [!NOTE]
-Starting with version 2.1, the Windows Community Toolkit controls will be automatically available in the Visual Studio Toolbox as soon as the NuGet package is installed.
+> Starting with version 2.1, the Windows Community Toolkit controls will be automatically available in the Visual Studio Toolbox as soon as the NuGet package is installed.
 
 # Adding the Windows Community Toolkit to your Visual Studio Toolbox (for version 2.0 or below)
 

@@ -23,28 +23,34 @@ The **Microsoft Translator Service** allows you to translate text to various sup
 
 await TranslatorService.Instance.InitializeAsync("<translator service key");
 
-// Retrieves friendly names for the languages available for text translation.
-var languages = await TranslatorService.Instance.GetLanguageNamesAsync();
+// Retrieves codes and friendly names for the languages available for text translation.
+var languages = await TranslatorService.Instance.GetLanguageNamesAsync("en");
 
 // Detects the language of a text.
-var language = await TranslatorService.Instance.DetectLanguageAsync("Hello everyone!");
+var detectResult = await TranslatorService.Instance.DetectLanguageWithResponseAsync("Hello everyone!");
+var detectedLanguage = detectResult.Language;
+var detectedLanguageConfidence = detectResult.Score;
 
 // Translates the text to Italian.
-var translatedText = await TranslatorService.Instance.TranslateAsync("Hello everyone!", "it");
+var translationResult = await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it");
+var translatedText = translationResult.Translation.Text;
 ```
 ```vb
 ' Imports Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
 
 Await TranslatorService.Instance.InitializeAsync("<translator service key")
 
-' Retrieves friendly names for the languages available for text translation.
-Dim languages = Await TranslatorService.Instance.GetLanguageNamesAsync()
+' Retrieves codes and friendly names for the languages available for text translation.
+Dim languages = Await TranslatorService.Instance.GetLanguageNamesAsync("en")
 
 ' Detects the language of a text.
-Dim language = Await TranslatorService.Instance.DetectLanguageAsync("Hello everyone!")
+Dim detectResult = Await TranslatorService.Instance.DetectLanguageWithResponseAsync("Hello everyone!")
+Dim detectedLanguage = detectResult.Language
+Dim detectedLanguageConfidence = detectResult.Score
 
 ' Translates the text to Italian.
-Dim translatedText = Await TranslatorService.Instance.TranslateAsync("Hello everyone!", "it")
+Dim translationResult = Await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it")
+Dim translatedText = translationResult.Translation.Text
 ```
 
 ## Sample Code
@@ -53,7 +59,7 @@ Dim translatedText = Await TranslatorService.Instance.TranslateAsync("Hello ever
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |

@@ -101,7 +101,7 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 ### Changing Cursor Type
 
 > [!IMPORTANT]
-Resource file must be manually added to change the cursor type when middle click scrolling. If you didn't add then the cursor won't change when middle click scrolling but functionality won't be affected.
+> Resource file must be manually added to change the cursor type when middle click scrolling. If you didn't add then the cursor won't change when middle click scrolling but functionality won't be affected.
 
 #### Using Existing Resource File
 
@@ -131,7 +131,7 @@ You can easily edit the existing resource file to customise the cursor depending
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |

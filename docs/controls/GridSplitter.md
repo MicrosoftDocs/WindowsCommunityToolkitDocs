@@ -12,7 +12,7 @@ The [GridSplitter Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 The control automatically detects the targeted columns/rows to resize, while dragging the control it starts to resize the columns/rows and redistributes space between columns/rows, you can manually specify the Resize Direction Auto, Column, Row and the Resize Behavior to select which columns/rows to resize.
 
 > [!NOTE]
-You can use the control to resize fixed and star (*) width/height columns/rows.
+> You can use the control to resize fixed and star (*) width/height columns/rows.
 
 ## Syntax
 
@@ -106,7 +106,7 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |

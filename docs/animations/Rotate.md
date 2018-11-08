@@ -17,7 +17,7 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 ```xaml
 <Page ...
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"  
-    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors"/>
+    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors">
 
 <interactivity:Interaction.Behaviors>
     <behaviors:Rotate x:Name="RotateBehavior" 
@@ -26,9 +26,8 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 				CenterY="0.0" 
 				Duration="500" 
 				Delay="250" 
-                EasingType="Linear"
+                                EasingType="Linear"
 				AutomaticallyStart="True"/>
-  </behaviors:Rotate>
 </interactivity:Interaction.Behaviors>
 ```
 
@@ -112,7 +111,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher   |
+| Device family | Universal, 10.0.16299.0 or higher   |
 | ---------------------------------------------------------------- | ----------------------------------- |
 | Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Animations |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Animations](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Animations/) |

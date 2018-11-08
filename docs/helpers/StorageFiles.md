@@ -75,30 +75,30 @@ Dim isFilePathValid As Boolean = StorageFileHelper.IsFilePathValid("folder/appFi
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| FileExistsAsync(StorageFolder, String, Boolean) | Task<bool> | Gets a value indicating whether a file exists in the current folder |
-| IsFileNameValid(String) | bool | Gets a value indicating whether a filename is correct or not using the Storage feature |
-| IsFilePathValid(String) | bool | Gets a value indicating whether a file path is correct or not using the Storage feature |
-| ReadBytesAsync(StorageFile) | Task<byte[]> | Gets an array of bytes from a `StorageFile` |
-| ReadBytesFromFileAsync(StorageFolder, String) | Task<byte[]> | Gets an array of bytes from a `StorageFile` located in the given `StorageFolder` |
-| ReadBytesFromKnownFoldersFileAsync(KnownFolderId, String) | Task<byte[]> | Gets an array of bytes from a `StorageFile` located in a well known folder |
-| ReadBytesFromLocalCacheFileAsync(String) | Task<byte[]> | Gets an array of bytes from a `StorageFile` located in the application local cache folder |
-| ReadBytesFromLocalFileAsync(String) | Task<byte[]> | Gets an array of bytes from a `StorageFile` located in the application local folder |
-| ReadBytesFromPackagedFileAsync(String) | Task<byte[]> | Gets an array of bytes from a `StorageFile` located in the application installation folder |
-| ReadTextFromFileAsync(StorageFolder, String) | Task<string> | Gets a string value from a `StorageFile` located in the given `StorageFolder` |
-| ReadTextFromKnownFoldersFileAsync(KnownFolderId, String) | Task<string> | Gets a string value from a `StorageFile` located in a well known folder |
-| ReadTextFromLocalCacheFileAsync(String) | Task<string> | Gets a string value from a `StorageFile` located in the application local cache folder |
-| ReadTextFromLocalFileAsync(String) | Task<string> | Gets a string value from a `StorageFile` located in the application local folder |
-| ReadTextFromPackagedFileAsync(String) | Task<string> | Gets a string value from a `StorageFile` located in the application installation folder |
-| WriteBytesToFileAsync(StorageFolder, Byte[], String, CreationCollisionOption) | Task<StorageFile> | Saves an array of bytes to a `StorageFile` in the given `StorageFolder` |
-| WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte[], String, CreationCollisionOption) | Task<StorageFile> | Saves an array of bytes to a `StorageFile` to well known folder |
-| WriteBytesToLocalCacheFileAsync(Byte[], String, CreationCollisionOption) | Task<StorageFile> | Saves an array of bytes to a `StorageFile` to application local cache folder |
-| WriteBytesToLocalFileAsync(Byte[], String, CreationCollisionOption) | Task<StorageFile> | Saves an array of bytes to a `StorageFile` to application local folder |
-| WriteTextToFileAsync(StorageFolder, String, String, CreationCollisionOption) | Task<StorageFile> | Saves a string value to a `StorageFile` in the given `StorageFolder` |
-| WriteTextToKnownFolderFileAsync(KnownFolderId, String, String, CreationCollisionOption) | Task<StorageFile> | Saves a string value to a Windows.Storage.StorageFile in well known folder |
-| WriteTextToLocalCacheFileAsync(String, String, CreationCollisionOption) | Task<StorageFile> | Saves a string value to a Windows.Storage.StorageFile in application local cache folder |
-| WriteTextToLocalFileAsync(String, String, CreationCollisionOption) | Task<StorageFile> | Saves a string value to a Windows.Storage.StorageFile in application local folder |
+|                                         Methods                                          |    Return Type    |                                        Description                                         |
+|------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------------------------------------------------|
+|                     FileExistsAsync(StorageFolder, String, Boolean)                      |    Task<bool>     |            Gets a value indicating whether a file exists in the current folder             |
+|                                 IsFileNameValid(String)                                  |       bool        |   Gets a value indicating whether a filename is correct or not using the Storage feature   |
+|                                 IsFilePathValid(String)                                  |       bool        |  Gets a value indicating whether a file path is correct or not using the Storage feature   |
+|                               ReadBytesAsync(StorageFile)                                |   Task<byte[]>    |                        Gets an array of bytes from a `StorageFile`                         |
+|                      ReadBytesFromFileAsync(StorageFolder, String)                       |   Task<byte[]>    |      Gets an array of bytes from a `StorageFile` located in the given `StorageFolder`      |
+|                ReadBytesFromKnownFoldersFileAsync(KnownFolderId, String)                 |   Task<byte[]>    |         Gets an array of bytes from a `StorageFile` located in a well known folder         |
+|                         ReadBytesFromLocalCacheFileAsync(String)                         |   Task<byte[]>    | Gets an array of bytes from a `StorageFile` located in the application local cache folder  |
+|                           ReadBytesFromLocalFileAsync(String)                            |   Task<byte[]>    |    Gets an array of bytes from a `StorageFile` located in the application local folder     |
+|                          ReadBytesFromPackagedFileAsync(String)                          |   Task<byte[]>    | Gets an array of bytes from a `StorageFile` located in the application installation folder |
+|                       ReadTextFromFileAsync(StorageFolder, String)                       |   Task<string>    |       Gets a string value from a `StorageFile` located in the given `StorageFolder`        |
+|                 ReadTextFromKnownFoldersFileAsync(KnownFolderId, String)                 |   Task<string>    |          Gets a string value from a `StorageFile` located in a well known folder           |
+|                         ReadTextFromLocalCacheFileAsync(String)                          |   Task<string>    |   Gets a string value from a `StorageFile` located in the application local cache folder   |
+|                            ReadTextFromLocalFileAsync(String)                            |   Task<string>    |      Gets a string value from a `StorageFile` located in the application local folder      |
+|                          ReadTextFromPackagedFileAsync(String)                           |   Task<string>    |  Gets a string value from a `StorageFile` located in the application installation folder   |
+|      WriteBytesToFileAsync(StorageFolder, Byte[], String, CreationCollisionOption)       | Task<StorageFile> |          Saves an array of bytes to a `StorageFile` in the given `StorageFolder`           |
+| WriteBytesToKnownFolderFileAsync(KnownFolderId, Byte[], String, CreationCollisionOption) | Task<StorageFile> |              Saves an array of bytes to a `StorageFile` to well known folder               |
+|         WriteBytesToLocalCacheFileAsync(Byte[], String, CreationCollisionOption)         | Task<StorageFile> |        Saves an array of bytes to a `StorageFile` to application local cache folder        |
+|           WriteBytesToLocalFileAsync(Byte[], String, CreationCollisionOption)            | Task<StorageFile> |           Saves an array of bytes to a `StorageFile` to application local folder           |
+|       WriteTextToFileAsync(StorageFolder, String, String, CreationCollisionOption)       | Task<StorageFile> |            Saves a string value to a `StorageFile` in the given `StorageFolder`            |
+| WriteTextToKnownFolderFileAsync(KnownFolderId, String, String, CreationCollisionOption)  | Task<StorageFile> |         Saves a string value to a Windows.Storage.StorageFile in well known folder         |
+|         WriteTextToLocalCacheFileAsync(String, String, CreationCollisionOption)          | Task<StorageFile> |  Saves a string value to a Windows.Storage.StorageFile in application local cache folder   |
+|            WriteTextToLocalFileAsync(String, String, CreationCollisionOption)            | Task<StorageFile> |     Saves a string value to a Windows.Storage.StorageFile in application local folder      |
 
 ## Sample Code
 
@@ -106,7 +106,7 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |

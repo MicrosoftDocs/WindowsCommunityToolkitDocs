@@ -17,8 +17,8 @@ The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in orde
 * Retrieve User events
 
 > [!NOTE]
-This API will not work on an XBOX UWP Application
- 
+> This API will not work on an XBOX UWP Application
+
 ## Get a Client Id
 
 To authenticate your app, you need to register your app with Azure AD, and provide some details about your app. 
@@ -61,7 +61,7 @@ When you register your app in the [Azure Management Portal](http://portal.azure.
    * **Read user calendars** to retrieve events.
 
 **Note:** Once register copy and save the Client ID for future use.
- 
+
 |Setting|Value|
 |----------|:-------------:|
 |Native application|Yes|
@@ -90,10 +90,12 @@ If you don't have one, you need to create an Office 365 Developer Site. There ar
 
 ```csharp
 // Initialize the service
-if (!MicrosoftGraphService.Instance.Initialize(ClientId.Text))
+var scopes = "Calendars.Read Mail.Read Mail.Send User.Read".Split(' ');
+if (!MicrosoftGraphService.Instance.Initialize(ClientId.Text, ServicesToInitialize.Message | ServicesToInitialize.UserProfile | ServicesToInitialize.Event, scopes))
 {
- return;
+    return;
 }
+
 // Login via Azure Active Directory 
 if (!await MicrosoftGraphService.Instance.LoginAsync())
 {
@@ -101,13 +103,12 @@ if (!await MicrosoftGraphService.Instance.LoginAsync())
 }
 
 // Create a instance of the service
-var msg = new MicrosoftGraphService(ClientId.Text);
+var msg = new MicrosoftGraphService(ClientId.Text, ServicesToInitialize.Message | ServicesToInitialize.UserProfile | ServicesToInitialize.Event, scopes);
 // Login via Azure Active Directory 
 if (!await msg.LoginAsync())
 {
  return;
 }
-
 ```
 ```vb
 ' Initialize the service
@@ -296,7 +297,7 @@ EventsList.ItemsSource = events;
 events = await MicrosoftGraphService.Instance.User.Event.NextPageEventsAsync();
 if (events == null)
 {
-	// no more events
+    // no more events
 }
 ```
 ```vb
@@ -329,7 +330,7 @@ End If
 
 ### Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |

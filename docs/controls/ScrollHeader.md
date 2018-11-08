@@ -12,16 +12,25 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 ## Syntax
 
 ```xaml
-<Page ...
-    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
+<Page xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls" .../>
 
 <ListView Name="listView" ItemsSource="{x:Bind _items, Mode=OneWay}">
 	<ListView.Header>
-		<controls:ScrollHeader Mode="Sticky" TargetListViewBase="{x:Bind listView}">
+		<controls:ScrollHeader Mode="Sticky">
 			<TextBlock Text="Scroll Header" />
 		</controls:ScrollHeader>
 	</ListView.Header>
 </ListView>
+
+<!-- or -->
+
+<GridView Name="gridView" ItemsSource="{x:Bind _items, Mode=OneWay}">
+	<GridView.Header>
+		<controls:ScrollHeader Mode="Sticky">
+			<TextBlock Text="Scroll Header" />
+		</controls:ScrollHeader>
+	</GridView.Header>
+</GridView>
 ```
 
 ## Sample Output
@@ -45,7 +54,7 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Requirements
 
-| Device family | Universal, 10.0.15063.0 or higher |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
