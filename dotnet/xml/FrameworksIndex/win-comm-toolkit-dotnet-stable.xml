@@ -2,6 +2,9 @@
 <Framework Name="win-comm-toolkit-dotnet-stable">
   <Assemblies>
     <Assembly Name="Microsoft.Toolkit" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.XamlHost" Version="5.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Parsers" Version="5.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Services" Version="5.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="5.0.0.0" />
@@ -14,6 +17,9 @@
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="5.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="5.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Win32.UI.Controls" Version="4.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="5.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Toolkit.Collections">
     <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
@@ -41,6 +47,372 @@
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.ToSafeString(System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Forms.UI.Controls">
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkCanvas" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkCanvas">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkCanvas.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkCanvas.#ctor(System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkCanvas.InkPresenter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbar" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.ActiveToolChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.EraseAllClicked" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.InkDrawingAttributesChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.IsRulerButtonCheckedChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.IsStencilButtonCheckedChanged" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.OnHandleCreated(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.ActiveTool" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.AutoSize" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.AutoSizeMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.ButtonFlyoutPlacement" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.InitialControls" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.InkDrawingAttributes" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.IsRulerButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.IsStencilButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.Orientation" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.TargetInkCanvas" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbar.UwpControl" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.CustomPen" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.MaxStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.MinStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.Palette" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.SelectedBrush" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.SelectedBrushIndex" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.SelectedStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomPenButton.ToolKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarCustomToolButton.ToolKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.FromInkToolbarIsStencilButtonCheckedChangedEventArgs(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)~Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilButton" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.Checked" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.Indeterminate" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.Unchecked" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.IsChecked" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarMenuButton.IsThreeState" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.MaxStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.MinStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.Palette" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.SelectedBrush" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.SelectedBrushIndex" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.SelectedStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarPenButton.ToolKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.IsProtractorItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.IsRulerItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.Protractor" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.Ruler" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarStencilButton.SelectedStencil" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.Checked" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.Indeterminate" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.Unchecked" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.IsChecked" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.IsThreeState" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToggleButton.ToggleKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton" Id="T:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.InkToolbarToolButton.ToolKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.IWebViewCompatibleAdapter" Id="T:Microsoft.Toolkit.Forms.UI.Controls.IWebViewCompatibleAdapter">
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.IWebViewCompatibleAdapter.View" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.MapControl" Id="T:Microsoft.Toolkit.Forms.UI.Controls.MapControl">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ActualCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ActualCameraChanging" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.CenterChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.CustomExperienceChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.HeadingChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.LoadingStatusChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapContextRequested" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapDoubleTapped" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapElementClick" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapElementPointerEntered" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapElementPointerExited" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapHolding" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapRightTapped" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapTapped" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.PitchChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TargetCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TransformOriginChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ZoomLevelChanged" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.GetOffsetFromLocation(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.GetVisibleRegion(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.IsLocationInView(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Boolean@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StartContinuousPan(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StartContinuousRotate(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StartContinuousTilt(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StartContinuousZoom(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StopContinuousPan" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StopContinuousRotate" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StopContinuousTilt" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StopContinuousZoom" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryPanAsync(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryPanToAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryRotateAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryRotateToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryTiltAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryTiltToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryZoomInAsync" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryZoomOutAsync" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TryZoomToAsync(System.Double)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ActualCamera" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.BusinessLandmarksEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.BusinessLandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Center" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ColorScheme" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.CustomExperience" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.DesiredPitch" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Heading" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Is3DSupported" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.IsStreetsideSupported" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.LandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Layers" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.LoadingStatus" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapElements" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapProjection" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MapServiceToken" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MaxZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.MinZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.PanInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.PedestrianFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Pitch" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Region" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.RotateInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Routes" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Scene" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.Style" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.StyleSheet" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TargetCamera" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TileSources" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TiltInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TrafficFlowVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TransformOrigin" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TransitFeaturesEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.TransitFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.WatermarkMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ZoomInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MapControl.ZoomLevel" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement" Id="T:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.SetMediaPlayer(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.AreTransportControlsEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.AutoPlay" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.IsFullWindow" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.MediaPlayer" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.PosterSource" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.Source" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.Stretch" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.MediaPlayerElement.TransportControls" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Id="T:Microsoft.Toolkit.Forms.UI.Controls.WebView">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.AcceleratorKeyPressed" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContainsFullScreenElementChanged" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.DOMContentLoaded" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameDOMContentLoaded" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameNavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameNavigationStarting" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.LongRunningScriptDetected" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.MoveFocusRequested" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigationStarting" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NewWindowRequested" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.PermissionRequested" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ScriptNotify" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnsafeContentWarningDisplaying" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnsupportedUriSchemeIdentified" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnviewableContentIdentified" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.#ctor(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.AddInitializeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.AddPreLoadedScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Close" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.DestroyHandle" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GetDeferredPermissionRequestById(System.UInt32)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GoBack" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GoForward" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String,System.String[])" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String,System.String[])" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Navigate(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Navigate(System.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Navigate(System.Uri,System.Net.Http.HttpMethod,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToLocal(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.OnHandleDestroyed(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Refresh" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Stop" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.System#ComponentModel#ISupportInitialize#EndInit" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.AllowDrop" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackColor" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImage" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImageLayout" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoBack" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoForward" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContainsFullScreenElement" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Cursor" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DefaultSize" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DesignMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DocumentTitle" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Enabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.EnterpriseId" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Focused" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Font" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ForeColor" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ImeMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsIndexedDBEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsJavaScriptEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsScriptNotifyAllowed" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsSupported" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Padding" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Process" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.RightToLeft" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Settings" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Source" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Text" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.UseWaitCursor" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Version" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible" Id="T:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.ContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.NavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.NavigationStarting" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.GoBack" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.GoForward" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.InvokeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Navigate(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Navigate(System.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.NavigateToString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Refresh" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Stop" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.CanGoBack" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.CanGoForward" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.IsLegacy" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.Source" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.Controls.WebViewCompatible.View" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Forms.UI.XamlHost">
+    <Type Name="Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost" Id="T:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.OnHandleCreated(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.AutoSize" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.AutoSizeMode" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.Child" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHost.InitialTypeName" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase" Id="T:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase">
+      <Member Id="E:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.ChildChanged" />
+      <Member Id="F:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase._dpiScalingRenderTransformEnabled" />
+      <Member Id="F:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase._xamlSource" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.GetPreferredSize(System.Drawing.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.GetUwpInternalObject" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.OnChildSizeChanged(System.Object,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.OnHandleCreated(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.OnPaint(System.Windows.Forms.PaintEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.OnWindowXamlHostSizeChanged(System.Object,System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.ProcessTabKey(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.Select(System.Boolean,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.SetContent(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.UpdateDpiScalingFactor" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.WndProc(System.Windows.Forms.Message@)" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.ChildInternal" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.DefaultSize" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.DpiScalingRenderTransform" />
+      <Member Id="P:Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase.Focused" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Forms.UI.XamlHost.WrapperLookup" Id="T:Microsoft.Toolkit.Forms.UI.XamlHost.WrapperLookup">
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WrapperLookup.ClearWrapper(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WrapperLookup.GetWrapper(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Forms.UI.XamlHost.WrapperLookup.SetWrapper(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Forms.UI.XamlHost.WindowsXamlHostBase)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Parsers.Core">
@@ -1528,6 +1900,24 @@
       <Member Id="P:Microsoft.Toolkit.Services.Weibo.WeiboUser.StatusesCount" />
       <Member Id="P:Microsoft.Toolkit.Services.Weibo.WeiboUser.Url" />
       <Member Id="P:Microsoft.Toolkit.Services.Weibo.WeiboUser.Verified" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.UI.Controls">
+    <Type Name="Microsoft.Toolkit.UI.Controls.IWebViewCompatible" Id="T:Microsoft.Toolkit.UI.Controls.IWebViewCompatible">
+      <Member Id="E:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.ContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.NavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.NavigationStarting" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.GoBack" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.GoForward" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.InvokeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.Navigate(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.Navigate(System.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.NavigateToString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.Refresh" />
+      <Member Id="M:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.Stop" />
+      <Member Id="P:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.CanGoBack" />
+      <Member Id="P:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.CanGoForward" />
+      <Member Id="P:Microsoft.Toolkit.UI.Controls.IWebViewCompatible.Source" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Connectivity">
@@ -6414,12 +6804,95 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT">
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem.Ellipsoid" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem.Geoid" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem.Surface" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem.Terrain" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem.Unspecified" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo.#ctor(Windows.UI.Composition.AnimationPropertyInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo.FromAnimationPropertyInfo(Windows.UI.Composition.AnimationPropertyInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo.op_Implicit(Windows.UI.Composition.AnimationPropertyInfo)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AnimationPropertyInfo.AccessMode" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfEventPresent(System.String,System.String,System.Action)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfMethodPresent(System.String,System.String,System.Action)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfMethodPresent(System.String,System.String,System.UInt32,System.Action)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfPropertyPresent(System.String,System.String,System.Action)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfPropertyPresent``1(System.String,System.String,System.Func{``0})" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ApiInformationExtensions.ExecuteIfTypePresent(System.String,System.Action)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BackgroundSizing" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BackgroundSizing">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BackgroundSizing.InnerBorderEdge" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BackgroundSizing.OuterBorderEdge" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition.Altitude" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition.Latitude" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition.Longitude" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition.FromBasicGeoposition(Windows.Devices.Geolocation.BasicGeoposition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition.op_Implicit(Windows.Devices.Geolocation.BasicGeoposition)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase.#ctor(Windows.UI.Xaml.Data.BindingBase)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase.FromBindingBase(Windows.UI.Xaml.Data.BindingBase)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase.op_Implicit(Windows.UI.Xaml.Data.BindingBase)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingBase" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression.#ctor(Windows.UI.Xaml.Data.BindingExpression)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression.FromBindingExpression(Windows.UI.Xaml.Data.BindingExpression)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression.op_Implicit(Windows.UI.Xaml.Data.BindingExpression)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression.DataItem" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BindingExpression.ParentBinding" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.#ctor(Windows.UI.Xaml.BringIntoViewOptions)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.FromBringIntoViewOptions(Windows.UI.Xaml.BringIntoViewOptions)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.op_Implicit(Windows.UI.Xaml.BringIntoViewOptions)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.AnimationDesired" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.HorizontalAlignmentRatio" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.HorizontalOffset" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.TargetRect" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.VerticalAlignmentRatio" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BringIntoViewOptions.VerticalOffset" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.#ctor(Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.FromBrush(Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.op_Implicit(Windows.UI.Xaml.Media.Brush)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.Opacity" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.RelativeTransform" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Brush.Transform" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition.#ctor(Windows.UI.Xaml.BrushTransition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition.FromBrushTransition(Windows.UI.Xaml.BrushTransition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition.op_Implicit(Windows.UI.Xaml.BrushTransition)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BrushTransition.Duration" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode.#ctor(Windows.UI.Xaml.Media.CacheMode)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode.FromCacheMode(Windows.UI.Xaml.Media.CacheMode)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode.op_Implicit(Windows.UI.Xaml.Media.CacheMode)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CacheMode" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ClickMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ClickMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ClickMode.Hover" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ClickMode.Press" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ClickMode.Release" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection.#ctor(Windows.UI.Xaml.Controls.ColumnDefinitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection.FromColumnDefinitionCollection(Windows.UI.Xaml.Controls.ColumnDefinitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection.op_Implicit(Windows.UI.Xaml.Controls.ColumnDefinitionCollection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ColumnDefinitionCollection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate.#ctor(Windows.UI.Xaml.Controls.ControlTemplate)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate.FromControlTemplate(Windows.UI.Xaml.Controls.ControlTemplate)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate.op_Implicit(Windows.UI.Xaml.Controls.ControlTemplate)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ControlTemplate.TargetType" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreAcceleratorKeyEventType" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreAcceleratorKeyEventType">
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreAcceleratorKeyEventType.Character" />
@@ -6432,8 +6905,706 @@
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreAcceleratorKeyEventType.SystemKeyUp" />
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreAcceleratorKeyEventType.UnicodeCharacter" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher.#ctor(Windows.UI.Core.CoreDispatcher)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher.FromCoreDispatcher(Windows.UI.Core.CoreDispatcher)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher.op_Implicit(Windows.UI.Core.CoreDispatcher)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher.CurrentPriority" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreDispatcher.HasThreadAccess" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.#ctor(Windows.UI.Core.CoreIndependentInputSource)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.FromCoreIndependentInputSource(Windows.UI.Core.CoreIndependentInputSource)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.op_Implicit(Windows.UI.Core.CoreIndependentInputSource)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.Dispatcher" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.DispatcherQueue" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.HasCapture" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.IsInputEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.PointerCursor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreIndependentInputSource.PointerPosition" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes.Mouse" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes.None" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes.Pen" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.CoreInputDeviceTypes.Touch" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate.#ctor(Windows.UI.Xaml.DataTemplate)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate.FromDataTemplate(Windows.UI.Xaml.DataTemplate)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate.op_Implicit(Windows.UI.Xaml.DataTemplate)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplate" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector.#ctor(Windows.UI.Xaml.Controls.DataTemplateSelector)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector.FromDataTemplateSelector(Windows.UI.Xaml.Controls.DataTemplateSelector)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector.op_Implicit(Windows.UI.Xaml.Controls.DataTemplateSelector)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DataTemplateSelector" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback.#ctor(Windows.UI.Xaml.DependencyPropertyChangedCallback)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback.FromDependencyPropertyChangedCallback(Windows.UI.Xaml.DependencyPropertyChangedCallback)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback.op_Implicit(Windows.UI.Xaml.DependencyPropertyChangedCallback)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.DependencyPropertyChangedCallback" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementCompositeMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementCompositeMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementCompositeMode.Inherit" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementCompositeMode.MinBlend" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementCompositeMode.SourceOver" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementHighContrastAdjustment" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementHighContrastAdjustment">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementHighContrastAdjustment.Application" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementHighContrastAdjustment.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementHighContrastAdjustment.None" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementSoundMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementSoundMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementSoundMode.Default" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementSoundMode.FocusOnly" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementSoundMode.Off" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementTheme" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementTheme">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementTheme.Dark" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementTheme.Default" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ElementTheme.Light" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken.#ctor(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken.FromEventRegistrationToken(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken.op_Implicit(System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.EventRegistrationToken" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlowDirection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlowDirection">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlowDirection.LeftToRight" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlowDirection.RightToLeft" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.#ctor(Windows.UI.Xaml.Controls.Primitives.FlyoutBase)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.FromFlyoutBase(Windows.UI.Xaml.Controls.Primitives.FlyoutBase)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.op_Implicit(Windows.UI.Xaml.Controls.Primitives.FlyoutBase)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.AllowFocusOnInteraction" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.AllowFocusWhenDisabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.AreOpenCloseAnimationsEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.ElementSoundMode" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.InputDevicePrefersPrimaryCommands" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.IsOpen" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.LightDismissOverlayMode" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.OverlayInputPassThroughElement" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.Placement" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.ShowMode" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FlyoutBase.Target" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState.Keyboard" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState.Pointer" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState.Programmatic" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FocusState.Unfocused" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily.#ctor(Windows.UI.Xaml.Media.FontFamily)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily.FromFontFamily(Windows.UI.Xaml.Media.FontFamily)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily.op_Implicit(Windows.UI.Xaml.Media.FontFamily)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontFamily.Source" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.Condensed" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.Expanded" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.ExtraCondensed" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.ExtraExpanded" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.Normal" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.SemiCondensed" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.SemiExpanded" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.UltraCondensed" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.UltraExpanded" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStretch.Undefined" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStyle" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStyle">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStyle.Italic" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStyle.Normal" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontStyle.Oblique" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight.#ctor(Windows.UI.Text.FontWeight)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight.FromFontWeight(Windows.UI.Text.FontWeight)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight.op_Implicit(Windows.UI.Text.FontWeight)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.FontWeight" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform.#ctor(Windows.UI.Xaml.Media.GeneralTransform)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform.FromGeneralTransform(Windows.UI.Xaml.Media.GeneralTransform)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform.op_Implicit(Windows.UI.Xaml.Media.GeneralTransform)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeneralTransform.Inverse" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.#ctor(Windows.Devices.Geolocation.GeoboundingBox)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.FromGeoboundingBox(Windows.Devices.Geolocation.GeoboundingBox)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.op_Implicit(Windows.Devices.Geolocation.GeoboundingBox)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.AltitudeReferenceSystem" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.Center" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.GeoshapeType" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.MaxAltitude" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.MinAltitude" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.NorthwestCorner" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.SoutheastCorner" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoboundingBox.SpatialReferenceId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.#ctor(Windows.Devices.Geolocation.Geopath)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.FromGeopath(Windows.Devices.Geolocation.Geopath)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.op_Implicit(Windows.Devices.Geolocation.Geopath)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.AltitudeReferenceSystem" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.GeoshapeType" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.Positions" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopath.SpatialReferenceId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.#ctor(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.BasicGeoposition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.FromGeopoint(Windows.Devices.Geolocation.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.op_Implicit(Windows.Devices.Geolocation.Geopoint)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.AltitudeReferenceSystem" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.GeoshapeType" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.Position" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint.SpatialReferenceId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType.GeoboundingBox" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType.Geocircle" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType.Geopath" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.GeoshapeType.Geopoint" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment.Center" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment.Left" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment.Right" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.HorizontalAlignment.Stretch" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource.#ctor(Windows.UI.Xaml.Media.ImageSource)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource.FromImageSource(Windows.UI.Xaml.Media.ImageSource)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource.op_Implicit(Windows.UI.Xaml.Media.ImageSource)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ImageSource" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.#ctor(Windows.UI.Input.Inking.InkDrawingAttributes)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.FromInkDrawingAttributes(Windows.UI.Input.Inking.InkDrawingAttributes)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.op_Implicit(Windows.UI.Input.Inking.InkDrawingAttributes)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.Color" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.DrawAsHighlighter" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.FitToCurve" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.IgnorePressure" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.IgnoreTilt" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.Kind" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.ModelerAttributes" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.PencilProperties" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.PenTip" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkDrawingAttributes.Size" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkHighContrastAdjustment" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkHighContrastAdjustment">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkHighContrastAdjustment.UseOriginalColors" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkHighContrastAdjustment.UseSystemColors" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkHighContrastAdjustment.UseSystemColorsWhenNecessary" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration.#ctor(Windows.UI.Input.Inking.InkInputConfiguration)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration.FromInkInputConfiguration(Windows.UI.Input.Inking.InkInputConfiguration)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration.op_Implicit(Windows.UI.Input.Inking.InkInputConfiguration)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration.IsEraserInputEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputConfiguration.IsPrimaryBarrelButtonInputEnabled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration.#ctor(Windows.UI.Input.Inking.InkInputProcessingConfiguration)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration.FromInkInputProcessingConfiguration(Windows.UI.Input.Inking.InkInputProcessingConfiguration)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration.op_Implicit(Windows.UI.Input.Inking.InkInputProcessingConfiguration)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration.Mode" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkInputProcessingConfiguration.RightDragAction" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.#ctor(Windows.UI.Input.Inking.InkPresenter)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.FromInkPresenter(Windows.UI.Input.Inking.InkPresenter)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.op_Implicit(Windows.UI.Input.Inking.InkPresenter)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.HighContrastAdjustment" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.InputConfiguration" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.InputDeviceTypes" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.InputProcessingConfiguration" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.IsInputEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.StrokeContainer" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.StrokeInput" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenter.UnprocessedInput" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterPredefinedConfiguration" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterPredefinedConfiguration">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterPredefinedConfiguration.SimpleMultiplePointer" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterPredefinedConfiguration.SimpleSinglePointer" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.#ctor(Windows.UI.Input.Inking.InkPresenterProtractor)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.FromInkPresenterProtractor(Windows.UI.Input.Inking.InkPresenterProtractor)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.op_Implicit(Windows.UI.Input.Inking.InkPresenterProtractor)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.AccentColor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.AreRaysVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.AreTickMarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.BackgroundColor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.ForegroundColor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.IsAngleReadoutVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.IsCenterMarkerVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.IsResizable" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.IsVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.Kind" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterProtractor.Radius" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.#ctor(Windows.UI.Input.Inking.InkPresenterRuler)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.FromInkPresenterRuler(Windows.UI.Input.Inking.InkPresenterRuler)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.op_Implicit(Windows.UI.Input.Inking.InkPresenterRuler)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.AreTickMarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.BackgroundColor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.ForegroundColor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.IsCompassVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.IsVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.Kind" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.Length" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkPresenterRuler.Width" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer.#ctor(Windows.UI.Input.Inking.InkStrokeContainer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer.FromInkStrokeContainer(Windows.UI.Input.Inking.InkStrokeContainer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer.op_Implicit(Windows.UI.Input.Inking.InkStrokeContainer)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeContainer.BoundingRect" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput.#ctor(Windows.UI.Input.Inking.InkStrokeInput)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput.FromInkStrokeInput(Windows.UI.Input.Inking.InkStrokeInput)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput.op_Implicit(Windows.UI.Input.Inking.InkStrokeInput)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkStrokeInput.InkPresenter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer.#ctor(Windows.UI.Input.Inking.InkSynchronizer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer.FromInkSynchronizer(Windows.UI.Input.Inking.InkSynchronizer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer.op_Implicit(Windows.UI.Input.Inking.InkSynchronizer)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkSynchronizer" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement.Bottom" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement.Left" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement.Right" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarButtonFlyoutPlacement.Top" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen.#ctor(Windows.UI.Xaml.Controls.InkToolbarCustomPen)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen.FromInkToolbarCustomPen(Windows.UI.Xaml.Controls.InkToolbarCustomPen)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen.op_Implicit(Windows.UI.Xaml.Controls.InkToolbarCustomPen)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarCustomPen" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls.All" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls.AllExceptPens" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls.None" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarInitialControls.PensOnly" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarMenuKind" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarMenuKind">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarMenuKind.Stencil" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarStencilKind" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarStencilKind">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarStencilKind.Protractor" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarStencilKind.Ruler" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle.Ruler" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.BallpointPen" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.CustomPen" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.CustomTool" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.Eraser" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.Highlighter" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool.Pencil" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput.#ctor(Windows.UI.Input.Inking.InkUnprocessedInput)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput.FromInkUnprocessedInput(Windows.UI.Input.Inking.InkUnprocessedInput)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput.op_Implicit(Windows.UI.Input.Inking.InkUnprocessedInput)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkUnprocessedInput.InkPresenter" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver.UriToStream(System.Uri)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardAcceleratorPlacementMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardAcceleratorPlacementMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardAcceleratorPlacementMode.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardAcceleratorPlacementMode.Hidden" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardNavigationModex" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardNavigationModex">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardNavigationModex.Cycle" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardNavigationModex.Local" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyboardNavigationModex.Once" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Bottom" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Center" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Hidden" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Left" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Right" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.KeyTipPlacementMode.Top" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.All" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.None" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.Rotate" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.RotateInertia" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.Scale" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.ScaleInertia" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.System" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.TranslateInertia" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.TranslateRailsX" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.TranslateRailsY" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.TranslateX" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ManipulationModes.TranslateY" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs.FromMapActualCameraChangedEventArgs(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs.Camera" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangedEventArgs.ChangeReason" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs.FromMapActualCameraChangingEventArgs(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapActualCameraChangingEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs.Camera" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapActualCameraChangingEventArgs.ChangeReason" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind.Bow" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind.Default" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind.Linear" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind.None" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.#ctor(Windows.UI.Xaml.Controls.Maps.MapCamera)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.FromMapCamera(Windows.UI.Xaml.Controls.Maps.MapCamera)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapCamera)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.FieldOfView" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.Heading" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.Pitch" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCamera.Roll" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCameraChangeReason" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCameraChangeReason">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCameraChangeReason.Programmatic" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCameraChangeReason.System" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCameraChangeReason.UserInteraction" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapColorScheme" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapColorScheme">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapColorScheme.Dark" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapColorScheme.Light" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs.FromMapContextRequestedEventArgs(Windows.UI.Xaml.Controls.Maps.MapContextRequestedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapContextRequestedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs.MapElements" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapContextRequestedEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience.#ctor(Windows.UI.Xaml.Controls.Maps.MapCustomExperience)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience.FromMapCustomExperience(Windows.UI.Xaml.Controls.Maps.MapCustomExperience)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapCustomExperience)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperience" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperienceChangedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperienceChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperienceChangedEventArgs.FromMapCustomExperienceChangedEventArgs(Windows.UI.Xaml.Controls.Maps.MapCustomExperienceChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperienceChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapCustomExperienceChangedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapCustomExperienceChangedEventArgs" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.#ctor(Windows.UI.Xaml.Controls.Maps.MapElement)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.FromMapElement(Windows.UI.Xaml.Controls.Maps.MapElement)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapElement)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.IsEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.MapStyleSheetEntry" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.MapStyleSheetEntryState" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.MapTabIndex" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.Tag" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.Visible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElement.ZIndex" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs.FromMapElementClickEventArgs(Windows.UI.Xaml.Controls.Maps.MapElementClickEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapElementClickEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs.MapElements" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementClickEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs.FromMapElementPointerEnteredEventArgs(Windows.UI.Xaml.Controls.Maps.MapElementPointerEnteredEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapElementPointerEnteredEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs.MapElement" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerEnteredEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs.FromMapElementPointerExitedEventArgs(Windows.UI.Xaml.Controls.Maps.MapElementPointerExitedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapElementPointerExitedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs.MapElement" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapElementPointerExitedEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs.FromMapInputEventArgs(Windows.UI.Xaml.Controls.Maps.MapInputEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapInputEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs.Dispatcher" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInputEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.ControlOnly" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.GestureAndControl" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.GestureOnly" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.PointerAndKeyboard" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.PointerKeyboardAndControl" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapInteractionMode.PointerOnly" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapLoadingStatus" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapLoadingStatus">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapLoadingStatus.DataUnavailable" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapLoadingStatus.Loaded" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapLoadingStatus.Loading" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapPanInteractionMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapPanInteractionMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapPanInteractionMode.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapPanInteractionMode.Disabled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapProjection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapProjection">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapProjection.Globe" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapProjection.WebMercator" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs.FromMapRightTappedEventArgs(Windows.UI.Xaml.Controls.Maps.MapRightTappedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapRightTappedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapRightTappedEventArgs.Position" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene.#ctor(Windows.UI.Xaml.Controls.Maps.MapScene)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene.FromMapScene(Windows.UI.Xaml.Controls.Maps.MapScene)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapScene)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene.TargetCamera" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Aerial" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Aerial3D" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Aerial3DWithRoads" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.AerialWithRoads" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Custom" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.None" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Road" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyle.Terrain" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet.#ctor(Windows.UI.Xaml.Controls.Maps.MapStyleSheet)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet.FromMapStyleSheet(Windows.UI.Xaml.Controls.Maps.MapStyleSheet)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapStyleSheet)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapStyleSheet" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs.FromMapTargetCameraChangedEventArgs(Windows.UI.Xaml.Controls.Maps.MapTargetCameraChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.Maps.MapTargetCameraChangedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs.Camera" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapTargetCameraChangedEventArgs.ChangeReason" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind.Full" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind.Near" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapWatermarkMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapWatermarkMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapWatermarkMode.Automatic" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapWatermarkMode.On" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4.#ctor(System.Numerics.Matrix4x4)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4.FromMatrix4x4(System.Numerics.Matrix4x4)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4.op_Implicit(System.Numerics.Matrix4x4)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Matrix4x4.IsIdentity" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.#ctor(Windows.Media.Playback.MediaPlayer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.FromMediaPlayer(Windows.Media.Playback.MediaPlayer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.op_Implicit(Windows.Media.Playback.MediaPlayer)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AudioBalance" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AudioCategory" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AudioDevice" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AudioDeviceType" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AudioStateMonitor" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.AutoPlay" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.BreakManager" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.CommandManager" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.IsLoopingEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.IsMuted" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.IsVideoFrameServerEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.PlaybackSession" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.ProtectionManager" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.RealTimePlayback" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.Source" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.StereoscopicVideoRenderMode" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.SystemMediaTransportControls" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.TimelineController" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.TimelineControllerPositionOffset" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer.Volume" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.#ctor(Windows.UI.Xaml.Controls.MediaTransportControls)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.FromMediaTransportControls(Windows.UI.Xaml.Controls.MediaTransportControls)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.op_Implicit(Windows.UI.Xaml.Controls.MediaTransportControls)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.FastPlayFallbackBehaviour" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsCompact" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsCompactOverlayButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsCompactOverlayEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFastForwardButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFastForwardEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFastRewindButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFastRewindEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFullWindowButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsFullWindowEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsNextTrackButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsPlaybackRateButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsPlaybackRateEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsPreviousTrackButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsRepeatButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsRepeatEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSeekBarVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSeekEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSkipBackwardButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSkipBackwardEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSkipForwardButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsSkipForwardEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsStopButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsStopEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsVolumeButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsVolumeEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsZoomButtonVisible" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.IsZoomEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaTransportControls.ShowAndHideAutomatically" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Orientation" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Orientation">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Orientation.Horizontal" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Orientation.Vertical" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.#ctor(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.Equals(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.FromPoint(Windows.Foundation.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.GetHashCode" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.op_Equality(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.op_Implicit(Windows.Foundation.Point)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.op_Inequality(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.ToString" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.ToString(System.String,System.IFormatProvider)" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.X" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point.Y" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.#ctor(Windows.UI.Xaml.Input.Pointer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.FromPointer(Windows.UI.Xaml.Input.Pointer)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.op_Implicit(Windows.UI.Xaml.Input.Pointer)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.IsInContact" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.IsInRange" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.PointerDeviceType" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Pointer.PointerId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.#ctor(Windows.UI.Input.PointerPoint)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.FromPointerPoint(Windows.UI.Input.PointerPoint)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.op_Implicit(Windows.UI.Input.PointerPoint)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.FrameId" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.IsInContact" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.PointerDevice" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.PointerId" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.Position" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.Properties" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.RawPosition" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.PointerPoint.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.#ctor(Windows.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.FromProcessKeyboardAcceleratorEventArgs(Windows.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.op_Implicit(Windows.UI.Xaml.Input.ProcessKeyboardAcceleratorEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.Key" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ProcessKeyboardAcceleratorEventArgs.Modifiers" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection.#ctor(Windows.UI.Xaml.Media.Projection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection.FromProjection(Windows.UI.Xaml.Media.Projection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection.op_Implicit(Windows.UI.Xaml.Media.Projection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Projection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry.#ctor(Windows.UI.Xaml.Media.RectangleGeometry)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry.FromRectangleGeometry(Windows.UI.Xaml.Media.RectangleGeometry)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry.op_Implicit(Windows.UI.Xaml.Media.RectangleGeometry)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RectangleGeometry.Rect" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RequiresPointer" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RequiresPointer">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RequiresPointer.Never" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RequiresPointer.WhenEngaged" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RequiresPointer.WhenFocused" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.#ctor(Windows.UI.Xaml.ResourceDictionary)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.FromResourceDictionary(Windows.UI.Xaml.ResourceDictionary)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.op_Implicit(Windows.UI.Xaml.ResourceDictionary)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.MergedDictionaries" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.Source" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ResourceDictionary.ThemeDictionaries" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent.#ctor(Windows.UI.Xaml.RoutedEvent)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent.FromRoutedEvent(Windows.UI.Xaml.RoutedEvent)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent.op_Implicit(Windows.UI.Xaml.RoutedEvent)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RoutedEvent" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection.#ctor(Windows.UI.Xaml.Controls.RowDefinitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection.FromRowDefinitionCollection(Windows.UI.Xaml.Controls.RowDefinitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection.op_Implicit(Windows.UI.Xaml.Controls.RowDefinitionCollection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.RowDefinitionCollection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition.#ctor(Windows.UI.Xaml.ScalarTransition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition.FromScalarTransition(Windows.UI.Xaml.ScalarTransition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition.op_Implicit(Windows.UI.Xaml.ScalarTransition)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.ScalarTransition.Duration" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch.Fill" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch.None" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch.Uniform" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Stretch.UniformToFill" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform.#ctor(Windows.UI.Xaml.Media.Transform)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform.FromTransform(Windows.UI.Xaml.Media.Transform)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform.op_Implicit(Windows.UI.Xaml.Media.Transform)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D.#ctor(Windows.UI.Xaml.Media.Media3D.Transform3D)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D.FromTransform3D(Windows.UI.Xaml.Media.Media3D.Transform3D)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D.op_Implicit(Windows.UI.Xaml.Media.Media3D.Transform3D)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Transform3D" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection.#ctor(Windows.UI.Xaml.Media.Animation.TransitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection.FromTransitionCollection(Windows.UI.Xaml.Media.Animation.TransitionCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection.op_Implicit(Windows.UI.Xaml.Media.Animation.TransitionCollection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TransitionCollection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection.#ctor(Windows.UI.Xaml.TriggerCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection.FromTriggerCollection(Windows.UI.Xaml.TriggerCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection.op_Implicit(Windows.UI.Xaml.TriggerCollection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.TriggerCollection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection.#ctor(Windows.UI.Xaml.Controls.UIElementCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection.FromUIElementCollection(Windows.UI.Xaml.Controls.UIElementCollection)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection.op_Implicit(Windows.UI.Xaml.Controls.UIElementCollection)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.UIElementCollection" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition.#ctor(Windows.UI.Xaml.Vector3Transition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition.FromVector3Transition(Windows.UI.Xaml.Vector3Transition)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition.op_Implicit(Windows.UI.Xaml.Vector3Transition)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition.Components" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Vector3Transition.Duration" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment.Bottom" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment.Center" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment.Stretch" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VerticalAlignment.Top" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VirtualKey" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VirtualKey">
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VirtualKey.A" />
@@ -6607,6 +7778,10 @@
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VirtualKey.Y" />
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.VirtualKey.Z" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Visibility" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Visibility">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Visibility.Collapsed" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Visibility.Visible" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebErrorStatus" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebErrorStatus">
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebErrorStatus.BadGateway" />
       <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebErrorStatus.BadRequest" />
@@ -6677,7 +7852,11 @@
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.FromWebViewControlContentLoadingEventArgs(Windows.Web.UI.WebViewControlContentLoadingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.op_Implicit(System.Windows.Forms.WebBrowserNavigatingEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.op_Implicit(System.Windows.Navigation.NavigatingCancelEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.op_Implicit(Windows.Web.UI.WebViewControlContentLoadingEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.ToWebViewControlContentLoadingEventArgs(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.ToWebViewControlNavigationStartingEventArgs(System.Windows.Forms.WebBrowserNavigatingEventArgs)" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs.Uri" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest">
@@ -6711,14 +7890,22 @@
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusRequestedEventArgs.Reason" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.op_Implicit(System.Windows.Forms.WebBrowserNavigatedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.op_Implicit(System.Windows.Navigation.NavigationEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.op_Implicit(Windows.Web.UI.WebViewControlNavigationCompletedEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.ToWebViewControlNavigationCompletedEventArgs(System.Windows.Forms.WebBrowserNavigatedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.ToWebViewControlNavigationCompletedEventArgs(System.Windows.Navigation.NavigationEventArgs)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.ToWebViewControlNavigationCompletedEventArgs(Windows.Web.UI.WebViewControlNavigationCompletedEventArgs)" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.IsSuccess" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.Uri" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs.WebErrorStatus" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.op_Implicit(System.Windows.Forms.WebBrowserNavigatingEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.op_Implicit(System.Windows.Navigation.NavigatingCancelEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.op_Implicit(Windows.Web.UI.WebViewControlNavigationStartingEventArgs)~Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.ToWebViewControlNavigationStartingEventArgs(System.Windows.Forms.WebBrowserNavigatingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.ToWebViewControlNavigationStartingEventArgs(System.Windows.Navigation.NavigatingCancelEventArgs)" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.ToWebViewControlNavigationStartingEventArgs(Windows.Web.UI.WebViewControlNavigationStartingEventArgs)" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.Cancel" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs.Uri" />
@@ -6810,6 +7997,17 @@
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs.Referrer" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs.Uri" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusKeyboardNavigationMode" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusKeyboardNavigationMode">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusKeyboardNavigationMode.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusKeyboardNavigationMode.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusKeyboardNavigationMode.Enabled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy" Id="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy">
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy.NavigationDirectionDistance" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy.Projection" />
+      <Member Id="F:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.XYFocusNavigationStrategy.RectilinearDistance" />
+    </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Win32.UI.Controls">
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.IWebView" Id="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView">
@@ -6865,6 +8063,10 @@
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Settings" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Source" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Version" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Win32.UI.Controls.WinForms">
@@ -7029,6 +8231,433 @@
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DpiScale" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.IsScalingRequired" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ParentHandle" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Win32.UI.XamlHost">
+    <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions.GetInterop(Windows.UI.Xaml.Hosting.DesktopWindowXamlSource)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative.AttachToWindow(System.IntPtr)" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative.WindowHandle" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory.CreateXamlContentByType(System.String)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Wpf.UI.Controls">
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.OnInitialized(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.InkPresenter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveToolChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.EraseAllClicked" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributesChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonCheckedChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonCheckedChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetMenuButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarMenuKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetToggleButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetToolButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.OnInitialized(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveTool" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveToolProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ButtonFlyoutPlacement" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ButtonFlyoutPlacementProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.Children" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InitialControls" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InitialControlsProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributes" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributesProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonCheckedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonCheckedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.Orientation" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.OrientationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.TargetInkCanvas" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.TargetInkCanvasProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.ConfigurationContentProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.CustomPen" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.CustomPenProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.ConfigurationContentProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.FromInkToolbarIsStencilButtonCheckedChangedEventArgs(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)~Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilButton" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.IsExtensionGlyphShownProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.MenuKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MaxStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MaxStrokeWidthProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MinStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MinStrokeWidthProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.Palette" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.PaletteProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrush" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushIndex" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushIndexProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedStrokeWidthProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsProtractorItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsProtractorItemVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsRulerItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsRulerItemVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.Protractor" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.ProtractorProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.Ruler" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.RulerProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SelectedStencil" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SelectedStencilProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.ToggleKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.IsExtensionGlyphShownProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.ToolKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter.Initialize" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter.View" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.MapControl" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.MapControl">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCameraChanging" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CenterChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CustomExperienceChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.HeadingChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatusChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapContextRequested" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapDoubleTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementClick" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementPointerEntered" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementPointerExited" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapHolding" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapRightTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PitchChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TargetCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOriginChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevelChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetOffsetFromLocation(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetVisibleRegion(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsLocationInView(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Boolean@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousPan(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousRotate(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousTilt(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousZoom(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousPan" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousRotate" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousTilt" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousZoom" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryPanAsync(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryPanToAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryRotateAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryRotateToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryTiltAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryTiltToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomInAsync" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomOutAsync" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomToAsync(System.Double)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCamera" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Center" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CenterProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Children" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ColorScheme" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ColorSchemeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CustomExperience" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.DesiredPitch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.DesiredPitchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Heading" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.HeadingProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Is3DSupported" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Is3DSupportedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsStreetsideSupported" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsStreetsideSupportedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LandmarksVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Layers" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LayersProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatus" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElements" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementsProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapProjection" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapProjectionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapServiceToken" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapServiceTokenProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MaxZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MinZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PanInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PanInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PedestrianFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PedestrianFeaturesVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Pitch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PitchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Region" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RegionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RotateInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RotateInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Routes" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RoutesProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Scene" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.SceneProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Style" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleSheet" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleSheetProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TargetCamera" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TileSources" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TileSourcesProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TiltInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TiltInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrafficFlowVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrafficFlowVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOrigin" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOriginProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.WatermarkMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.WatermarkModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevelProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.SetMediaPlayer(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AreTransportControlsEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AreTransportControlsEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AutoPlay" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AutoPlayProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.IsFullWindow" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.IsFullWindowProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.MediaPlayer" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.MediaPlayerProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.PosterSource" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.PosterSourceProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.Source" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.SourceProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.Stretch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.StretchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.TransportControls" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.WebView">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.AcceleratorKeyPressed" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.ContainsFullScreenElementChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.ContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.DOMContentLoaded" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.FrameContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.FrameDOMContentLoaded" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.FrameNavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.FrameNavigationStarting" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.LongRunningScriptDetected" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.MoveFocusRequested" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NavigationStarting" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NewWindowRequested" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.PermissionRequested" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.ScriptNotify" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.UnsafeContentWarningDisplaying" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.UnsupportedUriSchemeIdentified" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.UnviewableContentIdentified" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.#ctor(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.AddInitializeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.AddPreLoadedScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.BeginInit" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Close" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.EndInit" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.GetDeferredPermissionRequestById(System.UInt32)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.GoBack" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.GoForward" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Initialize" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScript(System.String,System.String[])" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScriptAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.InvokeScriptAsync(System.String,System.String[])" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Navigate(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Navigate(System.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Navigate(System.Uri,System.Net.Http.HttpMethod,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NavigateToLocal(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.NavigateToString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Refresh" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Stop" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.UpdateBounds(System.Windows.Rect)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.CanGoBack" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.CanGoForward" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.ContainsFullScreenElement" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.DocumentTitle" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.EnterpriseId" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsIndexedDBEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsJavaScriptEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsScriptNotifyAllowed" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsSupported" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.IsWebViewVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Process" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Settings" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Source" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebView.Version" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.ContentLoading" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.NavigationCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.NavigationStarting" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Dispose" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Finalize" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.GoBack" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.GoForward" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.InvokeScript(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Navigate(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Navigate(System.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.NavigateToString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Refresh" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Stop" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.CanGoBack" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.CanGoForward" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.IsLegacy" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.Source" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.SourceProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewCompatible.View" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.Close" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.Initialize" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.UpdateBounds(System.Windows.Rect)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.UpdateSize(System.Windows.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.ChildWindow" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.DeviceDpi" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.DpiScale" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.IsScalingRequired" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.ParentHandle" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Wpf.UI.XamlHost">
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.GetWrapper(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.SetWrapper(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.Child" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.InitialTypeName" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.InitialTypeNameProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ChildChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ArrangeOverride(System.Windows.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.Bind(System.String,System.Windows.DependencyProperty,Windows.UI.Xaml.DependencyProperty,System.Object,System.ComponentModel.BindingDirection)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.GetUwpInternalObject" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.MeasureOverride(System.Windows.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.OnGotFocus(System.Windows.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.SetContent" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.TabIntoCore(System.Windows.Input.TraversalRequest)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.XamlContentSizeChanged(System.Object,Windows.UI.Xaml.SizeChangedEventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ChildInternal" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.IsDisposed" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
     </Type>
   </Namespace>
 </Framework>
