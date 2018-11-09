@@ -10,6 +10,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -17,7 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Helper extension methods for Arrays.
+            Helpers for working with arrays.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -34,6 +35,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -50,17 +52,16 @@
         <Parameter Name="height" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of array values.</typeparam>
-        <param name="array">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="array">The source array.</param>
         <param name="value">Value to fill with.</param>
         <param name="row">Row to start on (inclusive, zero-index).</param>
         <param name="col">Column to start on (inclusive, zero-index).</param>
-        <param name="width">Positive Width of area to fill.</param>
-        <param name="height">Positive Height of area to fill.</param>
+        <param name="width">Positive width of area to fill.</param>
+        <param name="height">Positive height of area to fill.</param>
         <summary>
-            Fills in values of a multi-dimensional rectangular array to specified value based on the position and size given.
-            Ranges given outside the bounds of the array will fill in as much as possible and ignore elements that should appear outside it.
-            Won't throw bounds exception, just won't do work if ranges out of bounds.
+            Fills elements of a rectangular array at the given position and size to a specific value.
+            Ranges given will fill in as many elements as possible, ignoring positions outside the bounds of the array.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -76,6 +77,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -93,13 +95,13 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of rectangular array.</typeparam>
-        <param name="rectarray">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="rectarray">The source array.</param>
         <param name="column">Column record to retrieve, 0-based index.</param>
         <summary>
-            Retrieve a column from a multi-dimensional rectangular array.
+            Yields a column from a rectangular array.
             </summary>
-        <returns>Yielded Enumerable of results.</returns>
+        <returns>Yielded column.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -131,15 +134,15 @@
         <Parameter Name="column" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of jagged array.</typeparam>
-        <param name="rectarray">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="rectarray">The source array.</param>
         <param name="column">Column record to retrieve, 0-based index.</param>
         <summary>
-            Retrieve a column from a multi-dimensional jagged array.
-            Will throw an exception if the column is out of bounds, and return default in places where there are no elements from inner arrays.
-            Note: No equivalent GetRow method, as you can use array[row] to retrieve.
+            Yields a column from a jagged array.
+            An exception will be thrown if the column is out of bounds, and return default in places where there are no elements from inner arrays.
+            Note: There is no equivalent GetRow method, as you can use array[row] to retrieve.
             </summary>
-        <returns>Yielded Enumerable of column elements for given column and default values for smaller inner arrays.</returns>
+        <returns>Yielded enumerable of column elements for given column, and default values for smaller inner arrays.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -154,6 +157,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -171,13 +175,13 @@
         <Parameter Name="row" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of rectangular array.</typeparam>
-        <param name="rectarray">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="rectarray">The source array.</param>
         <param name="row">Row record to retrieve, 0-based index.</param>
         <summary>
-            Retrieve a row as an enumerable from a multi-dimensional rectangular array.
+            Yields a row from a rectangular array.
             </summary>
-        <returns>Yielded Enumerable of results.</returns>
+        <returns>Yielded row.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -204,12 +209,12 @@
         <Parameter Name="rectarray" Type="T[,]" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of rectangular array.</typeparam>
-        <param name="rectarray">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="rectarray">The source array.</param>
         <summary>
-            Joins the rectangular-array together in a string representation.
+            Returns a simple string representation of a rectangular array.
             </summary>
-        <returns>String representation of array.</returns>
+        <returns>String representation of the array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -225,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -236,12 +242,12 @@
         <Parameter Name="array" Type="T[]" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of array.</typeparam>
-        <param name="array">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="array">The source array.</param>
         <summary>
-            Joins the array together in a simple string representation.
+            Returns a simple string representation of an array.
             </summary>
-        <returns>String representation of array.</returns>
+        <returns>String representation of the array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -256,6 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -267,12 +274,12 @@
         <Parameter Name="mdarray" Type="T[][]" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of jagged array.</typeparam>
-        <param name="mdarray">Extended type instance.</param>
+        <typeparam name="T">The element type of the array.</typeparam>
+        <param name="mdarray">The source array.</param>
         <summary>
-            Joins the multi-dimensional array together in a string representation.
+            Returns a simple string representation of a jagged array.
             </summary>
-        <returns>String representation of array.</returns>
+        <returns>String representation of the array.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

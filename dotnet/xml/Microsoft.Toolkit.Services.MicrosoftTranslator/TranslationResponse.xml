@@ -1,0 +1,123 @@
+﻿<Type Name="TranslationResponse" FullName="Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse">
+  <TypeSignature Language="C#" Value="public class TranslationResponse" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TranslationResponse extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class TranslationResponse" />
+  <TypeSignature Language="F#" Value="type TranslationResponse = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TranslationResponse" />
+  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TranslationResponse" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Strong type for Translate Response
+            </summary>
+    <remarks>To be added.</remarks>
+    <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String,System.String)" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TranslationResponse (Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase detectedLanguage, System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt; translations);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase detectedLanguage, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt; translations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.#ctor(Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase,System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Services.MicrosoftTranslator.Translation})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (detectedLanguage As DetectedLanguageBase, translations As IEnumerable(Of Translation))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse : Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase * seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt; -&gt; Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse" Usage="new Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse (detectedLanguage, translations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TranslationResponse(Microsoft::Toolkit::Services::MicrosoftTranslator::DetectedLanguageBase ^ detectedLanguage, System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::Translation ^&gt; ^ translations);" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="detectedLanguage" Type="Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase" />
+        <Parameter Name="translations" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="detectedLanguage">A <see cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase" /> object describing the detected language.</param>
+        <param name="translations">an array of <see cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.Translation" /> results.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <altmember cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.Translation" />
+        <altmember cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase" />
+      </Docs>
+    </Member>
+    <Member MemberName="DetectedLanguage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase DetectedLanguage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase DetectedLanguage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.DetectedLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DetectedLanguage As DetectedLanguageBase" />
+      <MemberSignature Language="F#" Value="member this.DetectedLanguage : Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase" Usage="Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.DetectedLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::MicrosoftTranslator::DetectedLanguageBase ^ DetectedLanguage { Microsoft::Toolkit::Services::MicrosoftTranslator::DetectedLanguageBase ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a <see cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageBase" /> object describing the detected language.
+            </summary>
+        <value>To be added.</value>
+        <remarks>This property has a value only when the <see cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.String,System.String)" /> method is invoked without the <strong>from</strong> parameter, so that automatic language detection is applied to determine the source language.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.MicrosoftTranslator.Translation Translation { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.MicrosoftTranslator.Translation Translation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.Translation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Translation As Translation" />
+      <MemberSignature Language="F#" Value="member this.Translation : Microsoft.Toolkit.Services.MicrosoftTranslator.Translation" Usage="Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.Translation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::MicrosoftTranslator::Translation ^ Translation { Microsoft::Toolkit::Services::MicrosoftTranslator::Translation ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.MicrosoftTranslator.Translation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the first translation result.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translations">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt; Translations { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt; Translations" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.Translations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Translations As IEnumerable(Of Translation)" />
+      <MemberSignature Language="F#" Value="member this.Translations : seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt;" Usage="Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse.Translations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::Translation ^&gt; ^ Translations { System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::Translation ^&gt; ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.Translation&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an array of <see cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.Translation" /> results.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
