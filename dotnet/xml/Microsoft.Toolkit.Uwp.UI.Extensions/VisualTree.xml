@@ -10,6 +10,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,6 +23,35 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName="FindAscendant">
+      <MemberSignature Language="C#" Value="public static object FindAscendant (this Windows.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object FindAscendant(class Windows.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendant(Windows.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Windows.UI.Xaml.DependencyObject * Type -&gt; obj" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendant (element, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ FindAscendant(Windows::UI::Xaml::DependencyObject ^ element, Type ^ type);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::Object ^ FindAscendant(Windows::UI::Xaml::DependencyObject ^ element, Platform::Type ^ type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">Child element.</param>
+        <param name="type">Type of ascendant to look for.</param>
+        <summary>
+            Find first visual ascendant control of a specified type.
+            </summary>
+        <returns>Ascendant control or null if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FindAscendant&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T FindAscendant&lt;T&gt; (this Windows.UI.Xaml.DependencyObject element) where T : Windows.UI.Xaml.DependencyObject;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendant&lt;(class Windows.UI.Xaml.DependencyObject) T&gt;(class Windows.UI.Xaml.DependencyObject element) cil managed" />
@@ -34,6 +64,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -70,6 +101,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
@@ -88,6 +120,67 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="FindAscendants">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Windows.UI.Xaml.DependencyObject&gt; FindAscendants (this Windows.UI.Xaml.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Windows.UI.Xaml.DependencyObject&gt; FindAscendants(class Windows.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendants(Windows.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function FindAscendants (element As DependencyObject) As IEnumerable(Of DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member FindAscendants : Windows.UI.Xaml.DependencyObject -&gt; seq&lt;Windows.UI.Xaml.DependencyObject&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendants element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;Windows::UI::Xaml::DependencyObject ^&gt; ^ FindAscendants(Windows::UI::Xaml::DependencyObject ^ element);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree/&lt;FindAscendants&gt;d__7))</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Windows.UI.Xaml.DependencyObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="element">Child element.</param>
+        <summary>
+            Find all visual ascendants for the element.
+            </summary>
+        <returns>A collection of parent elements or null if none found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant">
+      <MemberSignature Language="C#" Value="public static object FindDescendant (this Windows.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object FindDescendant(class Windows.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendant(Windows.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Windows.UI.Xaml.DependencyObject * Type -&gt; obj" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendant (element, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Object ^ FindDescendant(Windows::UI::Xaml::DependencyObject ^ element, Type ^ type);" />
+      <MemberSignature Language="C++ CX" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Platform::Object ^ FindDescendant(Windows::UI::Xaml::DependencyObject ^ element, Platform::Type ^ type);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">Parent element.</param>
+        <param name="type">Type of descendant.</param>
+        <summary>
+            Find first descendant control of a specified type.
+            </summary>
+        <returns>Descendant control or null if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="FindDescendant&lt;T&gt;">
       <MemberSignature Language="C#" Value="public static T FindDescendant&lt;T&gt; (this Windows.UI.Xaml.DependencyObject element) where T : Windows.UI.Xaml.DependencyObject;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendant&lt;(class Windows.UI.Xaml.DependencyObject) T&gt;(class Windows.UI.Xaml.DependencyObject element) cil managed" />
@@ -100,6 +193,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -136,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
@@ -165,10 +260,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree/&lt;FindDescendants&gt;d__2`1))</AttributeName>
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree/&lt;FindDescendants&gt;d__3`1))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
