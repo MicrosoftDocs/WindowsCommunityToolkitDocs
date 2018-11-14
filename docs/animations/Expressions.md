@@ -1088,7 +1088,7 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 ### <a name="curtain-building-with-expressionnodes"></a>Building with ExpressionNodes
 
-We’ll start with defining out the first Expression, which is the Condition portion of the InertiaMotion Modifier. This is done by using the CompositionExtensions.SetCondition(…) extension method, which is accessed via InterationTrackerInertiaMotion.SetCondition(…).
+We’ll start with defining out the first Expression, which is the Condition portion of the InertiaMotion Modifier. This is done by using the CompositionExtensions.SetCondition(…) extension method, which is accessed via InteractionTrackerInertiaMotion.SetCondition(…).
 
 ```csharp
 modifier.SetCondition(true);
