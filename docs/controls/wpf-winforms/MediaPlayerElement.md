@@ -77,8 +77,8 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 
 ## API source code
 
-- [MediaPlayerElement (Windows Forms)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
-- [MediaPlayerElement (WPF)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
+- [MediaPlayerElement (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
+- [MediaPlayerElement (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
 
 
 ## Related topics

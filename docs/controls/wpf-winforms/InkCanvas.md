@@ -53,8 +53,8 @@ See also our list of [known issues](https://github.com/windows-toolkit/WindowsCo
 
 ## API source code
 
-- [InkCanvas (Windows Forms)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Forms.UI.Controls/InkCanvas)
-- [InkCanvas (WPF)](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Win32/Microsoft.Toolkit.Wpf.UI.Controls/InkCanvas)
+- [InkCanvas (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/InkCanvas)
+- [InkCanvas (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/InkCanvas)
 
 
 ## Related topics
