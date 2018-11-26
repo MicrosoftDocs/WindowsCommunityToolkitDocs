@@ -72,7 +72,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## API Source Code
 
-- [RadialGradientBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Media/RadialGradientBrush.cs)
+- [RadialGradientBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/RadialGradientBrush.cs)
 
 ## Related Topics
 
