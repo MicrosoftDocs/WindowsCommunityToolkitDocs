@@ -4,6 +4,7 @@ author: nmetulev
 ms.topic: overview
 description: The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building UWP apps for Windows 10. 
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit
+ms.custom: RS5
 ---
 
 # Windows Community Toolkit Documentation
