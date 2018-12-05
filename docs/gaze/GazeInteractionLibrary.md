@@ -175,7 +175,7 @@ This library provides a default animation of a shriniking rectangle over the con
 ```
 
 ```c#
-private void OnInvokeProgress(object sender, GazeProgressEventArgs e)
+private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 {
     e.Handled = true;
 }
