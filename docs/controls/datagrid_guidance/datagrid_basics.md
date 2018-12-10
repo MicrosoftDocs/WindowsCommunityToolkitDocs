@@ -1,6 +1,6 @@
 ---
 title: How to - Add a DataGrid control to a page
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to add a DataGrid control and display data in rows and columns
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml
 ---

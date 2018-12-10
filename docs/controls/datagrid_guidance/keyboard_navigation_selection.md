@@ -1,6 +1,6 @@
 ---
 title: Keyboard navigation and selection concepts in the DataGrid control
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to use keyboard to navigate the DataGrid control and selection models
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml, keyboard
 ---
