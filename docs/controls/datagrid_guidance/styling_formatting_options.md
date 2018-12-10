@@ -1,6 +1,6 @@
 ---
 title: How to - Customize the DataGrid control through UI formatting options
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to use the different formatting options to customize the look and feel of the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml
 ---

@@ -1,6 +1,6 @@
 ---
 title: How to - Group, Sort and Filter data in the DataGrid Control
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to group, sort and filter data in the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml, group, sort, filter
 ---

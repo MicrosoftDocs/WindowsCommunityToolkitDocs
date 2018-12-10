@@ -1,6 +1,6 @@
 ---
 title: How to - Display and Configure Row Details in the DataGrid Control
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to customize row details section in the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml, RowDetails
 ---
