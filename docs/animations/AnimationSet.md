@@ -91,7 +91,7 @@ You can change the way how the animation interpolates between keyframes by defin
 | SetDuration(TimeSpan) | Ovewrites the duration on all animations after last Then() to the specified value |
 | SetDurationForAll(Double) | Ovewrites the duration on all animations to the specified value |
 | SetDurationForAll(TimeSpan) | Ovewrites the duration on all animations to the specified value |
-| Start() | Stats all animations. This method is not awaitable. |
+| Start() | Starts all animations. This method is not awaitable. |
 | StartAsync() | Starts all animations and returns an awaitable task |
 | Stop() | Stops all animations |
 | Then() | Wait for existing animations to complete before running new animations |
