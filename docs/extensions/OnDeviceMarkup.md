@@ -23,7 +23,7 @@ The [OnDevice Markup Extension](https://docs.microsoft.com/en-us/dotnet/api/micr
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Default | object | Gets or sets the default value for this property, used if the device family property is not set
+| Default | object | Gets or sets the default value for this property, used if the device family property is not set or doesn't match one of the provided values.
 | Desktop | object | Gets or sets a value for this property on a Windows.Desktop device
 | Holographic | object | Gets or sets a value for this property on a Windows.Holographic device
 | IoT | object | Gets or sets a value for this property on a Windows.IoT device
