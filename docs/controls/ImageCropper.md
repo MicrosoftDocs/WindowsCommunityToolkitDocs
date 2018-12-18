@@ -27,50 +27,55 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 ## Properties
 
 
-| Property | Type | Description |
-| -- | -- | -- |
-| MinCroppedPixelLength | double | Gets or sets the minimum cropped length(in pixel). |
-| MinSelectedLength | double | Gets or sets the minimum selectable length. |
-| Source | WriteableBitmap |  Gets or sets the source of the cropped image. |
-| AspectRatio | double | Gets or sets the aspect ratio of the cropped image，the default value is -1. |
-| CircularCrop | bool | Gets or sets a value indicating whether gets or sets whether to use a circular ImageCropper. |
-| Mask | Brush | Gets or sets the mask on the cropped image. |
-| PrimaryThumbStyle | Style | Gets or sets a value for the style to use for the primary thumbs of the ImageCropper. |
-| SecondaryThumbStyle | Style | Gets or sets a value for the style to use for the secondary thumbs of the ImageCropper. |
-| IsSecondaryThumbVisible | bool | Gets or sets a value indicating whether secondary thumbs is displayed. |
+| Property              | Type            | Description                                                  |
+| --------------------- | --------------- | ------------------------------------------------------------ |
+| MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
+| MinSelectedLength     | double          | Gets or sets the minimum selectable length.                  |
+| Source                | WriteableBitmap | Gets or sets the source of the cropped image.                |
+| AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image，the default value is null. |
+| CropShape             | CropShape       | Gets or sets the shape to use when cropping.                 |
+| Mask                  | Brush           | Gets or sets the mask on the cropped image.                  |
+| PrimaryThumbStyle     | Style           | Gets or sets a value for the style to use for the primary thumbs of the ImageCropper. |
+| SecondaryThumbStyle   | Style           | Gets or sets a value for the style to use for the secondary thumbs of the ImageCropper. |
+| ThumbPlacement        | ThumbPlacement  | Gets or sets a value for thumb placement.                    |
 
 
 ## Methods
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| LoadImageFromFile(StorageFile)| Task | Load an image from a file. |
-| GetCroppedBitmapAsync() | Task<WriteableBitmap> | The cropped image. |
+| Methods                        | Return Type           | Description                |
+| ------------------------------ | --------------------- | -------------------------- |
+| LoadImageFromFile(StorageFile) | Task                  | Load an image from a file. |
+| GetCroppedBitmapAsync()        | Task<WriteableBitmap> | Gets the cropped image.    |
+| Reset()                        | void                  | Reset the cropped area.    |
 
 
 ## Examples
 
-### Circular ImageCropper
-You can set `CircularCrop` property to use a circular ImageCropper.
+### Use ImageCropper
+You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or by setting the `Source` property.
 ```csharp
-ImageCropper.CircularCrop = true;
+//Load image.
+await ImageCropper.LoadImageFromFile(file);
+//Another way
+ImageCropper.Source = writeableBitmap;
+//Gets the cropped image.
+var writeableBitmap = await ImageCropper.GetCroppedBitmapAsync();
 ```
+
+### Circular ImageCropper
+You can set `CropShape` property to use a circular ImageCropper.
+```csharp
+ImageCropper.CropShape = CropShape.Circular;
+```
+
 ### Image aspect ratio
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
-
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
 Or you can crop image without aspect ratio.
-
 ```csharp
-ImageCropper.AspectRatio = -1;
-```
-### SecondaryControlButton
-You can set `IsSecondaryThumbVisible` property to display the secondary control buttons, can also set `IsSecondaryThumbVisible` property to change the style of the secondary control buttons.
-
-```csharp
-ImageCropper.IsSecondaryThumbVisible = true;
+ImageCropper.AspectRatio = null;
 ```
 
 ## Sample Code
