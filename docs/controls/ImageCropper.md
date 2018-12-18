@@ -52,11 +52,12 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 ## Examples
 
 ### Use ImageCropper
-You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or by setting the `Source` property.
+You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or setting the `Source` property.
+
 ```csharp
 //Load image.
 await ImageCropper.LoadImageFromFile(file);
-//Another way
+//Another way.
 ImageCropper.Source = writeableBitmap;
 //Gets the cropped image.
 var writeableBitmap = await ImageCropper.GetCroppedBitmapAsync();
@@ -64,16 +65,19 @@ var writeableBitmap = await ImageCropper.GetCroppedBitmapAsync();
 
 ### Circular ImageCropper
 You can set `CropShape` property to use a circular ImageCropper.
+
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
 
 ### Image aspect ratio
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
+
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
 Or you can crop image without aspect ratio.
+
 ```csharp
 ImageCropper.AspectRatio = null;
 ```
