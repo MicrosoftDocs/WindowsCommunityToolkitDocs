@@ -42,11 +42,13 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Methods
 
-| Methods                        | Return Type           | Description                |
-| ------------------------------ | --------------------- | -------------------------- |
-| LoadImageFromFile(StorageFile) | Task                  | Load an image from a file. |
-| GetCroppedBitmapAsync()        | Task<WriteableBitmap> | Gets the cropped image.    |
-| Reset()                        | void                  | Reset the cropped area.    |
+| Methods                                         | Return Type           | Description                                                  |
+| ----------------------------------------------- | --------------------- | ------------------------------------------------------------ |
+| LoadImageFromFile(StorageFile)                  | Task                  | Load an image from a file.                                   |
+| GetCroppedImageAsync()                          | Task<WriteableBitmap> | Gets the cropped image.                                      |
+| SaveAsync(StorageFile,BitmapFileFormat)         | Task                  | Saves the cropped image to a file with the specified format. |
+| SaveAsync(IRandomAccessStream,BitmapFileFormat) | Task                  | Saves the cropped image to a stream with the specified format. |
+| Reset()                                         | void                  | Reset the cropped area.                                      |
 
 
 ## Examples
@@ -60,7 +62,9 @@ await ImageCropper.LoadImageFromFile(file);
 //Another way.
 ImageCropper.Source = writeableBitmap;
 //Gets the cropped image.
-var writeableBitmap = await ImageCropper.GetCroppedBitmapAsync();
+var writeableBitmap = await ImageCropper.GetCroppedImageAsync();
+//Saves the cropped image to a file.
+await ImageCropper.SaveAsync(imageFile, BitmapFileFormat.Png)
 ```
 
 ### Circular ImageCropper
