@@ -31,6 +31,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
 | MinSelectedLength     | double          | Gets or sets the minimum selectable length.                  |
+| CroppedRegion         | Rect            | Gets or sets the minimum selectable length.                  |
 | Source                | WriteableBitmap | Gets or sets the source of the cropped image.                |
 | AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image，the default value is null. |
 | CropShape             | CropShape       | Gets or sets the shape to use when cropping.                 |
@@ -42,13 +43,11 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Methods
 
-| Methods                                         | Return Type           | Description                                                  |
-| ----------------------------------------------- | --------------------- | ------------------------------------------------------------ |
-| LoadImageFromFile(StorageFile)                  | Task                  | Load an image from a file.                                   |
-| GetCroppedImageAsync()                          | Task<WriteableBitmap> | Gets the cropped image.                                      |
-| SaveAsync(StorageFile,BitmapFileFormat)         | Task                  | Saves the cropped image to a file with the specified format. |
-| SaveAsync(IRandomAccessStream,BitmapFileFormat) | Task                  | Saves the cropped image to a stream with the specified format. |
-| Reset()                                         | void                  | Reset the cropped area.                                      |
+| Methods                                              | Return Type | Description                                                  |
+| ---------------------------------------------------- | ----------- | ------------------------------------------------------------ |
+| LoadImageFromFile(StorageFile)                       | Task        | Load an image from a file.                                   |
+| SaveAsync(IRandomAccessStream,BitmapFileFormat,bool) | Task        | Saves the cropped image to a stream with the specified format. |
+| Reset()                                              | void        | Reset the cropped area.                                      |
 
 
 ## Examples
@@ -63,8 +62,8 @@ await ImageCropper.LoadImageFromFile(file);
 ImageCropper.Source = writeableBitmap;
 //Gets the cropped image.
 var writeableBitmap = await ImageCropper.GetCroppedImageAsync();
-//Saves the cropped image to a file.
-await ImageCropper.SaveAsync(imageFile, BitmapFileFormat.Png)
+//Saves the cropped image to a stream.
+await ImageCropper.SaveAsync(stream, bitmapFileFormat, false);
 ```
 
 ### Circular ImageCropper
