@@ -79,6 +79,7 @@
 ## [Rotate](animations/Rotate.md)
 ## [Saturation](animations/Saturation.md)
 ## [Scale](animations/Scale.md)
+## [ViewportBehavior](animations/ViewportBehavior.md)
 
 # Brushes
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
