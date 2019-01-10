@@ -8,9 +8,11 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # MapControl for Windows Forms and WPF
 
 > [!NOTE]
-> This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases.
+> This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases. If you have feedback about this control, send your feedback to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
-The **MapControl** class enables you to display a symbolic or photorealistic map in your Windows Forms or WPF desktop application. This control shows rich and customizable map data including road maps, aerial, 3D, views, directions, search results, and traffic. You can also display the user's location, directions, and points of interest.
+The **MapControl** class enables you to display a symbolic or photorealistic map in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
+
+This control shows rich and customizable map data including road maps, aerial, 3D, views, directions, search results, and traffic. You can also display the user's location, directions, and points of interest.
 
 ![MapControl example](../../resources/images/Controls/MapControl.png)
 

@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # WebViewCompatible control for Windows Forms and WPF
 
-The **WebViewCompatible** control shows web content in your Windows Forms or WPF desktop application.
+The **WebViewCompatible** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls). 
 
 ![WebViewCompatible example](../../resources/images/Controls/WebView/web-view-samples.png)
 
@@ -15,6 +15,9 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 
 * On Windows 10 devices, the newer Microsoft Edge rendering engine is used to embed a view that renders richly formatted HTML content from a remote web server, dynamically generated code, or content files.
 * On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) is used, which provides Internet Explorer engine-based rendering.
+
+> [!NOTE]
+> If you have feedback about this control, send your feedback to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
 ## About WebViewCompatible control
 
