@@ -7,11 +7,14 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # WebView control for Windows Forms and WPF
 
-The **WebView** control shows web content in your Windows Forms or WPF desktop application.
+The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![WebView example](../../resources/images/Controls/WebView/web-view-samples.png)
 
 This control uses the Microsoft Edge rendering engine to embed a view that renders richly formatted HTML content from a remote web server, dynamically generated code, or content files.
+
+> [!NOTE]
+> If you have feedback about this control, create a new issue in the [WindowsCommunityToolkit repo](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
 ## About WebView controls
 
