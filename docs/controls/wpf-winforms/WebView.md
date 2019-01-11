@@ -11,14 +11,21 @@ The **WebView** control shows web content in your Windows Forms or WPF desktop a
 
 ![WebView example](../../resources/images/Controls/WebView/web-view-samples.png)
 
-This control uses the Microsoft Edge rendering engine to embed a view that renders richly formatted HTML content from a remote web server, dynamically generated code, or content files.
+This control uses the Microsoft Edge rendering engine (EdgeHTML) to embed a view that renders richly formatted HTML5 content from a remote web server, dynamically generated code, or content files.
 
 > [!NOTE]
 > If you have feedback about this control, create a new issue in the [WindowsCommunityToolkit repo](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
 ## About WebView controls
 
-The Windows Forms version of this control is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace in the **Microsoft.Toolkit.Forms.UI.Controls.WebView** NuGet package. The WPF version is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace in the **Microsoft.Toolkit.Wpf.UI.Controls.WebView** NuGet package. You can find additional related types (such as event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+Here's where to find the *Windows Forms* and *Windows Presentation Foundation* (WPF) versions of the Microsoft Edge WebView control:
+
+| | NuGet Package | Namespace |
+|--------|--------| ---------|
+| Windows Forms | Microsoft.Toolkit.Forms.UI.Controls.WebView | Microsoft.Toolkit.Forms.UI.Controls |
+| WPF | Microsoft.Toolkit.Wpf.UI.Controls.WebView | Microsoft.Toolkit.Wpf.UI.Controls
+
+(You can find additional related types (such as event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.)
 
 These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.
 
@@ -37,6 +44,8 @@ Unless specified otherwise in this article, the documentation for the [WebViewCo
 ## Feature limitations
 
 When compared to the UWP **WebView** control, the current release of the WPF and Windows Forms **WebView** control has some limitations. For the complete list of these limitations, see [Known Issues of the WebView control for Windows Forms and WPF applications](WebView-known-issues.md).
+
+**See also the [*FAQs*](#frequently-asked-questions-(faqs)) section below for answers to common questions when WebView for Windows Forms and WPF applications.**
 
 ## Add the WebView control to the Visual Studio Toolbox for Windows Forms applications
 
@@ -394,6 +403,38 @@ public partial class MainWindow : Window
     }
 }
 ```
+## Frequently Asked Questions (FAQs)
+
+### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
+
+When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
+
+### Is *WebViewControl* available on Windows Server?
+
+No. [Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel) versions of Windows, including *Windows Server*, don't include Microsoft Edge or many other UWP applications. These apps and their required services are frequently updated with new functionality and cannot be supported on systems running a LTSC operating system.
+
+A future workaround might be to use [Windows Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/) to run your WebViewControl application through a virtualized desktop on Windows 7, Windows 10 LTSC versions, and other environments where Microsoft Edge (and the WebViewControl) wouldn't otherwise be supported.
+
+### Are there samples?
+
+Yes! Samples are available for Windows Forms, Windows Presentation Foundation, and C++ here: 
+https://github.com/rjmurillo/webview-samples
+
+### Can I simply swap out the Internet Explorer *WebBrowser* for Microsoft Edge *WebViewControl* in my application?
+
+No, the APIs differ significantly, as the *WebViewControl* represents several generations of browser development since the IE *WebBrowser* control was released.
+
+### Can I inject native objects into my WebViewControl content?
+
+No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround 
+
+### Can I host the UWP WebView in WPF or Windows Forms using XAML islands?
+
+No. It is not possible to host the (full-featured) UWP WebView using XAML islands due to architectural and security constraints. The WebViewControl provided by Windows Community Toolkit is the recommended way of hosting a modern WebView control in desktop applications.
+
+### How do I debug WebViewControl?
+
+To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
 
 ## Requirements
 
