@@ -17,7 +17,7 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 * On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) is used, which provides Internet Explorer engine-based rendering.
 
 > [!NOTE]
-> If you have feedback about this control, send your feedback to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
+> If you have feedback about this control, create a new issue in the [WindowsCommunityToolkit repo](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
 ## About WebViewCompatible control
 
