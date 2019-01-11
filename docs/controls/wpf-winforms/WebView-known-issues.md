@@ -9,7 +9,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 This document describes issues and limitations in this release of the **WebView** control.
 
-Answers to a number of [*Frequently Asked Questions on WebView*](./WebView.md#frequently-asked-questions-(faqs))  for Windows Forms and WPF applications are also available.
+Answers to a number of [*Frequently Asked Questions on WebView*](./WebView.md#frequently-asked-questions-faqs)  for Windows Forms and WPF applications are also available.
 
 ## WebView control members
 
