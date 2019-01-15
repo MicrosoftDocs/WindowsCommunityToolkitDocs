@@ -64,14 +64,14 @@ ImageCropper.Source = writeableBitmap;
 await ImageCropper.SaveAsync(stream, bitmapFileFormat, false);
 ```
 
-### Circular ImageCropper
+### Use Circular ImageCropper
 You can set `CropShape` property to use the circular ImageCropper.
 
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
 
-### Image aspect ratio
+### Change Aspect Ratio
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
 
 ```csharp
