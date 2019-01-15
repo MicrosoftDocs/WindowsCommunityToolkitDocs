@@ -17,7 +17,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 <Page ...
      xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
     <controls:ImageCropper x:Name="ImageCropper" />
-</controls:DropShadowPanel>
+</Page>
 ```
 
 ## Sample Output
@@ -31,9 +31,9 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
 | MinSelectedLength     | double          | Gets or sets the minimum selectable length.                  |
-| CroppedRegion         | Rect            | Gets or sets the minimum selectable length.                  |
+| CroppedRegion         | Rect            | Gets the current cropped region.                             |
 | Source                | WriteableBitmap | Gets or sets the source of the cropped image.                |
-| AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image，the default value is null. |
+| AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image, the default value is null. |
 | CropShape             | CropShape       | Gets or sets the shape to use when cropping.                 |
 | Mask                  | Brush           | Gets or sets the mask on the cropped image.                  |
 | PrimaryThumbStyle     | Style           | Gets or sets a value for the style to use for the primary thumbs of the ImageCropper. |
@@ -56,18 +56,16 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or setting the `Source` property.
 
 ```csharp
-//Load image.
+//Load an image.
 await ImageCropper.LoadImageFromFile(file);
-//Another way.
+//Another way to load an image.
 ImageCropper.Source = writeableBitmap;
-//Gets the cropped image.
-var writeableBitmap = await ImageCropper.GetCroppedImageAsync();
 //Saves the cropped image to a stream.
 await ImageCropper.SaveAsync(stream, bitmapFileFormat, false);
 ```
 
 ### Circular ImageCropper
-You can set `CropShape` property to use a circular ImageCropper.
+You can set `CropShape` property to use the circular ImageCropper.
 
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
@@ -95,10 +93,10 @@ ImageCropper.AspectRatio = null;
 
 ## Requirements
 
-| Device family | Universal, MinVersion or higher   |
+| Device family | Universal, 10.0.16299.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
-| NuGet package | [NuGet package](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/)  |
 ## API Source Code
 
 - [ImageCropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper)
