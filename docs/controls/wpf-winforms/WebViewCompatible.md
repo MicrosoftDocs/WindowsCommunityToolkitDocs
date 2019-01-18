@@ -198,7 +198,7 @@ string returnValue = await webViewCompatible1.InvokeScript("myScript");
 ```
 
 > [!NOTE]
-> Unlike [WebView](WebView.md), **WebViewCompatible** does not provide an **InvokeScript** method that supports script arguments or an **InvokeScriptAsync** method. For more information, see [Feature limitations](#feature-limitations).
+> Unlike [WebView](WebView.md), **WebViewCompatible** does not provide an **InvokeScript** method that supports script arguments, an **InvokeScriptAsync** method, or a **ScriptNotify** event. This is because **WebViewCompatible** only provides a common subset of features that are supported on both Windows 10 and earlier versions. For more information, see [Feature limitations](#feature-limitations).
 
 ## Requirements
 
