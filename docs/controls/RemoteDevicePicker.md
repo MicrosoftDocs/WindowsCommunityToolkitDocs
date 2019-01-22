@@ -23,6 +23,19 @@ var result = await remoteDevicePicker.PickDeviceAsync();
 await new MessageDialog($"You picked {result.Count.ToString()} Device(s)" + Environment.NewLine + string.Join(",", result.Select(x => x.DisplayName.ToString()).ToList())).ShowAsync();
 ```
 
+You can also use default filer types for initailizing. Like Below.
+
+```c#
+RemoteDevicePicker remoteDevicePicker = new RemoteDevicePicker(RemoteSystemDiscoveryType.Proximal, RemoteSystemAuthorizationKind.Anonymous, RemoteSystemStatusType.Any)
+{
+    Title = "Pick Remote Device",
+	SelectionMode = RemoteDevicesSelectionMode.Multiple
+};
+
+var remoteSystems = await remoteDevicePicker.PickDeviceAsync();
+await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s)" + Environment.NewLine + string.Join(",", remoteSystems.Select(x => x.DisplayName.ToString()).ToList())).ShowAsync();
+```
+
 ## Properties
 
 | Property | Type | Description |
