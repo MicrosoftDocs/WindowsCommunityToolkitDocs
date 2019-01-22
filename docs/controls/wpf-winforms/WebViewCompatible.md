@@ -17,13 +17,13 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 * On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) is used, which provides Internet Explorer engine-based rendering.
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [WindowsCommunityToolkit repo](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
 
 ## About WebViewCompatible control
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is coming soon, and it will be located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.  Because **WebViewCompatible** wraps [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) and **WebBrowser**, it provides a simpler subset of common functionality.
+These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.  Because **WebViewCompatible** wraps [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) (on Windows 10) and [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) (on older versions of Windows), it provides a simpler subset of common functionality.
 
 Unless specified otherwise in this article, the documentation for the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class applies to the WPF and Windows Forms **WebView** controls. This article links to reference pages for the UWP [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class for more information about most members.
 
@@ -39,7 +39,9 @@ Unless specified otherwise in this article, the documentation for the [WebViewCo
 
 ## Feature limitations
 
-When compared to the UWP **WebView** control, the current release of the WPF and Windows Forms **WebView** controls has some limitations. For the complete list of these limitations, see [Known Issues of the WebView control for Windows Forms and WPF applications](WebView-known-issues.md). The **WebViewCompatible** control has further limitations because it exposes a common interface that is a subset of common functionality across the two underlying implementations. In a system that supports the Windows 10 **WebViewControl**, this control will exhibit those limitations plus further exclusions to the exposed functionality. In a legacy environment, this control will use **WebBrowser**, and have the same additional interface limitations.
+When compared to the UWP **WebView** control, the current release of the WPF and Windows Forms [WebView](WebView.md) controls have some limitations. For the complete list of these limitations, see [Known Issues of the WebView control for Windows Forms and WPF applications](WebView-known-issues.md). 
+
+The **WebViewCompatible** control has further limitations because it exposes a common interface that is a subset of common functionality across the two underlying implementations. On a Windows 10 computer that supports [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), **WebViewCompatible** has the same limitations as [WebView](WebView.md) as well as further exclusions to the exposed functionality. On a computer running an earlier version of Windows, **WebViewCompatible** will use [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) and have the same additional interface limitations.
 
 ## Add the WebViewCompatible control to the Visual Studio Toolbox for Windows Forms applications
 
@@ -117,10 +119,6 @@ This table contains links to each of these members.
 |Height property|[Height](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.height)|[Height](https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.height)|
 
 
-## Input events and tab order
-
-You can use the [InvokeScript](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method with the JavaScript **eval** function to use the HTML event handlers, and use **window.external.notify** from the HTML event handlers to notify the application using the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
-
 ## Navigate to content
 
 The **WebViewCompatible** control has several APIs for basic navigation:  [GoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goback), [GoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goforward), [Stop](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.stop), [Refresh](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.refresh), [CanGoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoback), and [CanGoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoforward). You can use these to add typical web browsing capabilities to your app.
@@ -191,31 +189,16 @@ private void webViewCompatible1_NavigationCompleted(WebView sender, WebViewNavig
 
 ## Interact with web view content
 
-You can interact with the content of the web view by using the [InvokeScript](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method to invoke or inject script into the web view content, and the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event to get information back from the web view content.
+To invoke JavaScript inside the web view content, use the **InvokeScript** method. The invoked script can return only string values.
 
-To invoke JavaScript inside the web view content, use the [InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method. The invoked script can return only string values.
-
-For example, if the content of a web view named `webView1` contains a function named `setDate` that takes 3 parameters, you can invoke it like this.
+For example, if the content of a web view named `webViewCompatible1` contains a function named `myScript`, you can invoke it like this.
 
 ```csharp
-string[] args = {"January", "1", "2000"};
-string returnValue = await webView1.InvokeScriptAsync("setDate", args);
+string returnValue = await webViewCompatible1.InvokeScript("myScript");
 ```
 
-You can use **InvokeScriptAsync** with the JavaScript **eval** function to inject content into the web page.
-
-Here, the text of a XAML text box (`nameTextBox.Text`) is written to a div in an HTML page hosted in `webView1`.
-
-```csharp
-private async void Button_Click(object sender, RoutedEventArgs e)
-{
-    string functionString = String.Format("document.getElementById('nameDiv').innerText = 'Hello, {0}';", nameTextBox.Text);
-    await webView1.InvokeScriptAsync("eval", new string[] { functionString });
-}
-```
-
-Scripts in the web view content can use **window.external.notify** with a string parameter to send information back to your app. To receive these messages, handle the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
-
+> [!NOTE]
+> Unlike [WebView](WebView.md), **WebViewCompatible** does not provide an **InvokeScript** method that supports script arguments, an **InvokeScriptAsync** method, or a **ScriptNotify** event. This is because **WebViewCompatible** only provides a common subset of features that are supported on both Windows 10 and earlier versions. For more information, see [Feature limitations](#feature-limitations).
 
 ## Requirements
 
@@ -223,7 +206,7 @@ Scripts in the web view content can use **window.external.notify** with a string
 |--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
-| NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) |
+| NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) |
 
 ## API source code
 
