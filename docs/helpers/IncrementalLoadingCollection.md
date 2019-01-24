@@ -14,7 +14,7 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 
 | Helper | Purpose |
 | --- | --- |
-|[IIncrementalSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
+|[IIncrementalSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
 |[IncrementalLoadingCollection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
 
 ## IncrementalLoadingCollection Properties
