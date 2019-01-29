@@ -18,6 +18,14 @@ In order to use the Windows 10 Gaze Input APIs or this Gaze Interaction Library,
 * A device with the Windows 10 April 2018 Update
 * A [supported eye tracker](https://support.microsoft.com/help/4043921/windows-10-get-started-eye-control#supported-devices), like the [Tobii EyeX 4C](https://tobiigaming.com/products/)
 
+To use the gaze input APIs, you must register the gazeInput capability in the app manifest. Add the following DeviceCapability to the Capabilities node in the Package.appxmanifest file of your project (you can do this by checking Gaze Input in the Capabilities tab in Visual Studio when you have Package.appxmanifest open in the App Manifest Designer):
+
+```xml
+<Capabilities>
+   <DeviceCapability Name="gazeInput" />
+</Capabilities>
+```
+
 ## Supported Features
 
 The Gaze Interaction Library currently supports the following features:
