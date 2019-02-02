@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Windows Forms, Gr
 
 # GraphLogin Component
 <!-- Describe your control -->
-The [GraphLogin component](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.win32.ui.controls.winforms.graphlogin) is a Windows Forms component that provides an easy to use experience for authenticating with Azure AD and the Microsoft Graph.  This component is being provided for Windows Forms developers that need a Microsoft Graph authentication solution on Windows 10 builds 1803 and earlier and on Windows 7.
+The GraphLogin component is a Windows Forms component that provides an easy to use experience for authenticating with Azure AD and the Microsoft Graph.  This component is being provided for Windows Forms developers that need a Microsoft Graph authentication solution on Windows 10 builds 1803 and earlier and on Windows 7.
 
 This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use Login experience.  The control then provides read-only properties about the logged on user and an instance of the **GraphServiceClient** which can be used for additional calls with the Microsoft Graph SDK.
 
@@ -30,7 +30,7 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
         {
             InitializeComponent();
 
-           // values to connect to Microsoft Graph
+            // values to connect to Microsoft Graph
             graphLoginComponent1.ClientId = "{your app's clientid}";
             graphLoginComponent1.Scopes = new string[] { MicrosoftGraphScope.UserRead };
         }
@@ -89,4 +89,4 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
 
 ## API Source Code
 
-- [WinForms.GraphLogin](/Microsoft.Toolkit.Services/Services/MicrosoftGraph/WinForms)
+- [WinForms.GraphLogin](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Services/Services/MicrosoftGraph/WinForms)
