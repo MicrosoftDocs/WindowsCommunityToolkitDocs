@@ -46,7 +46,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | Methods                                              | Return Type | Description                                                  |
 | ---------------------------------------------------- | ----------- | ------------------------------------------------------------ |
 | LoadImageFromFile(StorageFile)                       | Task        | Load an image from a file.                                   |
-| SaveAsync(IRandomAccessStream,BitmapFileFormat,bool) | Task        | Saves the cropped image to a stream with the specified format. |
+| SaveAsync(IRandomAccessStream,BitmapFileFormat,bool) | Task        | Saves the cropped image to a stream with the specified format. Setting the boolean argument to True will save pixel values to the extent of the cropped area regardless of the crop shape, otherwise transparent or black pixels will fill the uncropped area depending on file format. |
 | Reset()                                              | void        | Reset the cropped area.                                      |
 
 
