@@ -26,7 +26,7 @@ var result = await remoteDevicePicker.PickDeviceAsync();
 await new MessageDialog($"You picked {result.Count.ToString()} Device(s)" + Environment.NewLine + string.Join(",", result.Select(x => x.DisplayName.ToString()).ToList())).ShowAsync();
 ```
 
-You can also use default filer types for initailizing. Like Below.
+You can also use default filter types for initializing. Like Below.
 
 ```c#
 RemoteDevicePicker remoteDevicePicker = new RemoteDevicePicker(RemoteSystemDiscoveryType.Proximal, RemoteSystemAuthorizationKind.Anonymous, RemoteSystemStatusType.Any)
@@ -44,7 +44,7 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 | Property | Type | Description |
 | -- | -- | -- |
 | SelectionMode | RemoteDevicesSelectionMode | Gets or sets the DeviceList Selection Mode. Defaults to RemoteDevicesSelectionMode.Single |
-| ShowAdvancedFilters | Boolean | Gets or sets a value indicating whether Advanced Filters visible or not |
+| ShowAdvancedFilters | Boolean | Gets or sets a value indicating whether Advanced Filters are visible or not. Defaults to false |
 
 ## Sample Code
 

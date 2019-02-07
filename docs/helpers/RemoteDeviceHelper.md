@@ -22,7 +22,7 @@ RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
 
 ```
 
-You can also use default filer types for initailizing. Like Below.
+You can also use default filter types for initializing. Like Below.
 
 ```c#
 
