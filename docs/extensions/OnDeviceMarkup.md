@@ -6,7 +6,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, device family, ma
 ---
 
 # OnDevice Markup Extension
-The [OnDevice Markup Extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.ondevice) allows you to customize UI appearance on a per-DeviceFamily basis. It is inspired on the OnPlatform(https://github.com/xamarin/Xamarin.Forms/issues/2608) markup extensions from Xamarin.Forms 3.2
+The [OnDevice Markup Extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.ondevice) allows you to customize UI appearance on a per-DeviceFamily basis. It is inspired on the [OnPlatform](https://github.com/xamarin/Xamarin.Forms/issues/2608) markup extensions from Xamarin.Forms 3.2
 
 ## Syntax
 
