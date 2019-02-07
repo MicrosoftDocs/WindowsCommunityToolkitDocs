@@ -7,9 +7,9 @@ dev_langs:
   - csharp
 ---
 
-# RemoteDevicePicker Control 
+# RemoteDeviceHelper 
 
-The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
+The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicehelper) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
 > [!IMPORTANT]
 > Make sure you enable "RemoteSystem" Capability in `package.appxmanifest`
