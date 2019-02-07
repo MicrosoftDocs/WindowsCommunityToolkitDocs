@@ -87,7 +87,11 @@ DevicesList.DataContext = _remoteDeviceHelper;
 | Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.Helpers |
-| NuGet package | [Microsoft.Toolkit.Uwp.Helpers](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Helpers/) |
+| NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |
+
+## API
+
+* [RemoteDeviceHelper source code](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp/Helpers/RemoteDeviceHelper)
 
 ## Related Topics
 
