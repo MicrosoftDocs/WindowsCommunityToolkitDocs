@@ -61,7 +61,10 @@ await ImageCropper.LoadImageFromFile(file);
 //Another way to load an image.
 ImageCropper.Source = writeableBitmap;
 //Saves the cropped image to a stream.
-await ImageCropper.SaveAsync(stream, bitmapFileFormat, false);
+using (var fileStream = await someFile.OpenAsync(FileAccessMode.ReadWrite, StorageOpenOptions.None))
+{
+    await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png);
+}
 ```
 
 ### Use Circular ImageCropper
