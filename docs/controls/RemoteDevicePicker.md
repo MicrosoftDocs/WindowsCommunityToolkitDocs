@@ -3,13 +3,16 @@ title: RemoteDevicePicker Control
 author: avknaidu
 description: The RemoteDevicePicker control helps you to pick a device that you can use to Remote Launch Apps, Services.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, RemoteDevicePicker, picker
+dev_langs:
+  - csharp
 ---
 
 # RemoteDevicePicker Control 
 
 The [RemoteDevicePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
-**Make sure you enable "RemoteSystem" Capability in `package.appxmanifest`**
+> [!IMPORTANT]
+> Make sure you enable "RemoteSystem" Capability in `package.appxmanifest`
 
 ## Syntax
 
@@ -45,11 +48,11 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## Sample Code
 
-[RemoteDevicePicker Sample Page Source](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RemoteDevicePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Default Template 
 
-[RemoteDevicePicker XAML File](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
+[RemoteDevicePicker XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -66,3 +69,6 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 * [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
 * [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
+* [Connected apps and devices (Project Rome)](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices)
+* [Communicate with a remote app service](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)

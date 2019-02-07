@@ -3,13 +3,16 @@ title: RemoteDeviceHelper
 author: avknaidu
 description: The RemoteDeviceHelper is a Helper to get a List Remote Devices that are accessible.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, RemoteDeviceHelper, helper
+dev_langs:
+  - csharp
 ---
 
 # RemoteDevicePicker Control 
 
 The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
-**Make sure you enable "RemoteSystem" Capability in `package.appxmanifest`**
+> [!IMPORTANT]
+> Make sure you enable "RemoteSystem" Capability in `package.appxmanifest`
 
 ## Syntax
 
@@ -33,7 +36,7 @@ var filters = new List<IRemoteSystemFilter>
 RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper(filters);
 ```
 
-## ## Example
+## Example
 
 ```c#
 // without filters
@@ -77,7 +80,7 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ## Sample Code
 
-[RemoteDeviceHelper Sample Page Source](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Requirements
 
@@ -90,3 +93,6 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 * [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
 * [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
+* [Connected apps and devices (Project Rome)](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices)
+* [Communicate with a remote app service](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)
