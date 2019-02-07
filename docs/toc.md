@@ -36,6 +36,7 @@
 ## [HeaderedContentControl](controls/HeaderedContentControl.md)
 ## [HeaderedItemsControl](controls/HeaderedItemsControl.md)
 ## [HeaderedTextBlock](controls/HeaderedTextBlock.md)
+## [ImageCropper](controls/ImageCropper.md)
 ## [ImageEx](controls/ImageEx.md)
 ## [InAppNotification](controls/InAppNotification.md)
 ## [InfiniteCanvas](controls/InfiniteCanvas.md)
