@@ -91,7 +91,7 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ## API
 
-* [RemoteDeviceHelper source code](https://github.com/Microsoft/UWPCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp/Helpers/RemoteDeviceHelper)
+* [RemoteDeviceHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp/Helpers/RemoteDeviceHelper)
 
 ## Related Topics
 
