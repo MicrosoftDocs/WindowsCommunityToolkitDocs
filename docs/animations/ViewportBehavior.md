@@ -1,3 +1,12 @@
+---
+title: ViewportBehavior class
+author: h82258652
+description: This behavior allows you to listen an element enter or exit the ScrollViewer viewport
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, your control name
+dev_langs:
+  - csharp
+---
+
 # ViewportBehavior
 
 This behavior allows you to listen an element enter or exit the ScrollViewer viewport.
