@@ -17,7 +17,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 | [Create Adaptive Tile](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
 | [Sending a local Tile notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification) |
 
-## Sample Output
+### Sample Output
 
 ![LiveTile](../resources/images/Notifications/LiveTile.gif)
 
@@ -26,11 +26,15 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 | Documentation |
 | --- |
 | [Interactive Toast Notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts) |
-| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast) |
+| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast)
 
-## Sample Output
+### Sample Output
 
 ![Toast](../resources/images/Notifications/PopToast.gif "Toast")
+
+### Sending toasts from Win32 C# apps
+
+If you're developing a non-UWP C# app for Windows, the Windows Community toolkit makes it easier to send an interactive toast notification from your Win32 C# app. To learn more, see [Send a local toast notification from desktop C# apps](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop).
 
 ## Requirements
 
