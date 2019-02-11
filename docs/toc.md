@@ -79,7 +79,6 @@
 ## [Rotate](animations/Rotate.md)
 ## [Saturation](animations/Saturation.md)
 ## [Scale](animations/Scale.md)
-## [ViewportBehavior](animations/ViewportBehavior.md)
 
 # Brushes
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
@@ -135,6 +134,7 @@
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
+## [ViewportBehavior](helpers/ViewportBehavior.md)
 
 # Services
 ## [Facebook Service](services/Facebook.md)
