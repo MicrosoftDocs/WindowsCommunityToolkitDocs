@@ -30,7 +30,7 @@ You probably have a JSON file, `LottieLogo1.json` in this example, that was expo
 
 4. Add the JSON file to your project: create a new  `/AnimatedVisuals` folder and include `LottieLogo1.json` in the Project Solution by right clicking > Add > Existing Item. Set its [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) to **Content** in the Properties window.
 
-    ![BuildAction image](../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png)
+    ![BuildAction image](../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png =150px)
 
 5. Instantiate the `AnimatedVisualPlayer` element and configure its `Source` as follows:
 
