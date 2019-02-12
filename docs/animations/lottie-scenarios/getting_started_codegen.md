@@ -7,11 +7,11 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Using Codegen
 
-Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the `LottieVisualSource`. Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](../json_codegen.md).
+Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the `LottieVisualSource`. Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](/json_codegen.md).
 
 ## Generating a C# or C++ class from JSON
 
-To generate a C# or C++ file, you may either use the [LottieGen](https://github.com/windows-toolkit/Lottie-Windows/tree/master/LottieGen) command-line tool or the [Lottie Viewer](https://www.microsoft.com/p/lottie-viewer/9p7x9k692tmw) application.
+To generate a C# or C++ file, you may either use the [LottieGen](http://aka.ms/lottiegen) command-line tool or the [Lottie Viewer](http://aka.ms/lottieviewer) application.
 
 ### LottieGen CLI
 
