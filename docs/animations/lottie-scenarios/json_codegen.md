@@ -9,7 +9,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 Whether you choose to use a Bodymovin JSON file with a `LottieVisualSource` or a codegen’ed C# or C++ class depends on your application’s requirements. Both approaches ultimately produce a `Source` for the `AnimatedVisualPlayer` element, but with slightly different workflows. Here’s an overview of how the pieces fit in:
 
-<img src="../../resources/images/Animations/Lottie/LottieDocs_Workflow.png" alt="BuildAction" width="300"/>
+<img src="../../resources/images/Animations/Lottie/LottieDocs_Workflow.png" alt="Workflow" width="500"/>
 
 The tradeoffs between using JSON and Codegen are as follows:
 
