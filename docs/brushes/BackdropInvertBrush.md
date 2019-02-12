@@ -36,7 +36,7 @@ The [BackdropInvertBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 ## API Source Code
 
-- [BackdropInvertBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Media/BackdropInvertBrush.cs)
+- [BackdropInvertBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/BackdropInvertBrush.cs)
 
 ## Related Topics
 
