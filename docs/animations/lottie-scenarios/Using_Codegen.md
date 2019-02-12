@@ -39,7 +39,7 @@ For additional information about additional options including optimizations, use
 
 ## Using the Codegen File
 
-1. **Add** the generated file, `LottieLogo1.cs`, to your VisualStudio Project Solution using steps similar to those outline previously. Ensure that the [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) for all codegen C# or C++ files is set to **Compile**.
+1. Add the generated file, `LottieLogo1.cs`, to your VisualStudio Project Solution using steps similar to those outline previously. Ensure that the [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) for all codegen C# or C++ files is set to **Compile**.
 
 2. By default, all codegen classes are generated in the `AnimatedVisuals` namespace. Modify your `Page.xaml` to include the namespace:
 
@@ -47,13 +47,13 @@ For additional information about additional options including optimizations, use
     xmlns:animatedvisuals="using:AnimatedVisuals"
     ```
 
-3. **Install** the [`Microsoft.UI.Xaml` nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. Modify your `Page.xaml` to include the `Microsoft.UI.Xaml.Controls` namespace:
+3. Install the [`Microsoft.UI.Xaml` nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. Modify your `Page.xaml` to include the `Microsoft.UI.Xaml.Controls` namespace:
 
     ```xaml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```
 
-4. **Instantiate** the `AnimatedVisualPlayer` element and configure its `Source` as follows:
+4. Instantiate the `AnimatedVisualPlayer` element and configure its `Source` as follows:
 
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
