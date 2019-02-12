@@ -11,7 +11,7 @@ So far, we’ve ignored the return value of the `AnimatedVisualPlayer`’s `Play
 
 To demonstrate this, we use two `AnimatedVisualPlayer` instances with `LightBulb.json` to create the following pattern of animation sequences:
 
-![Async Gif](../resources/images/Animations/Lottie/LottieDocs_Async.gif)
+![Async Gif](../../resources/images/Animations/Lottie/LottieDocs_Async.gif)
 
 ```C#
     private async Task PlayAnimationSequencesAsync()
