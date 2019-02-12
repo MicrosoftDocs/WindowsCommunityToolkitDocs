@@ -35,7 +35,7 @@ For additional information about additional options including optimizations, use
 
 2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
 
-    ![LottieViewer Codegen](../../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png =500px)
+	<img src="../../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png" alt="LottieViewerCodegen" width="600"/>
 
 ## Using the Codegen File
 
