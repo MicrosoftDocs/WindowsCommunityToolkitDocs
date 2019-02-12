@@ -1,3 +1,10 @@
+---
+title: Interactive Segments on an Animation Timeline
+author: sohchatt
+description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
+---
+
 # Interactive Segments on an Animation Timeline
 
 Lottie-Windows may be used to create interactive controls such as animated icons or first-run experiences which may be comprised of several behaviors that depend upon the user's input. Instead of using multiple JSON files, it’s possible to use a single Lottie animation with multiple segments designed into its timeline.
@@ -8,12 +15,17 @@ For instance, the following ToggleButton behaviors are contained in `LightBulb.j
 * Pointer Clicked: animation segment between 0.35 and 1, play once.
 * Checked: static frame at progress 1.
 
-To configure the playback of the relevant animation segments based on `PointerEntered/Exited/Clicked` events, we build upon the previous scenarios as follows:
+To configure the playback of the relevant animation segments based on `PointerEntered/Exited/Pressed` events, we build upon the previous scenarios as follows:
 
 ```xaml
     <Border Style="{StaticResource LottiePlayer}">
         <!--AnimatedVisualPlayer with AutoPlay disabled-->
-        <controls:AnimatedVisualPlayer x:Name="player" AutoPlay="False">
+        <controls:AnimatedVisualPlayer x:Name="player"
+                                       AutoPlay="False"
+                                       x:Name="player"
+                                       PointerEntered="Player_PointerEntered"
+                                       PointerExited="Player_PointerExited"
+                                       PointerPressed="Player_PointerPressed">
             <!--Codegen class AnimatedVisuals/LightBulb.cs-->
             <animatedvisuals:LightBulb/>
         </controls:AnimatedVisualPlayer>
