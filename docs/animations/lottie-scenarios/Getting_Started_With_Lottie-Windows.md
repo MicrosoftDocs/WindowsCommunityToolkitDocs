@@ -46,7 +46,7 @@ You probably have a JSON file, `LottieLogo1.json` in this example, that was expo
 
 Since the `AutoPlay` property is set to `True` by default, the result will be a looping animation:
 
-![Json Gif](../resources/images/Animations/Lottie/LottieDocs_Autoplay.gif)
+![Autoplay Gif](../resources/images/Animations/Lottie/LottieDocs_Autoplay.gif)
 
 ## Resources
 
