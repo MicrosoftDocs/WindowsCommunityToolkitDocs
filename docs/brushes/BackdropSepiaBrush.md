@@ -42,7 +42,7 @@ The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## API Source Code
 
-- [BackdropSepiaBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Media/BackdropSepiaBrush.cs)
+- [BackdropSepiaBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/BackdropSepiaBrush.cs)
 
 ## Related Topics
 
