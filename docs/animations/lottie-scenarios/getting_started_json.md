@@ -51,7 +51,7 @@ Since the `AutoPlay` property is set to `True` by default, the result will be a 
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/JsonPage.xaml) for sample: getting started with a JSON file
-* The resulting page in the [Lottie Samples application](aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
 * [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) API reference
 * [Lottie Viewer application](https://www.microsoft.com/p/lottie-viewer/9p7x9k692tmw) for previewing JSON files
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

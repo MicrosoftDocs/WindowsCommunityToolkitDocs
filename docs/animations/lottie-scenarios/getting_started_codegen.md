@@ -72,7 +72,7 @@ This should result in a looping Lottie animation that is visually identical to o
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/CodegenPage.xaml) for sample: getting started with Codegen
-* The resulting page in the [Lottie Samples application](aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
 * [LottieGen](https://github.com/windows-toolkit/Lottie-Windows/tree/master/LottieGen) CLI tool
 * [Lottie Viewer application](https://www.microsoft.com/p/lottie-viewer/9p7x9k692tmw) for codegen and previewing JSON files
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

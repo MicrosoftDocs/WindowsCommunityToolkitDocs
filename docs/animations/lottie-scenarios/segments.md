@@ -87,6 +87,6 @@ This yields the following interactive animated ToggleButton icon:
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/SegmentsPage.xaml.cs) for sample: interactive segments on an animation timeline
-* The resulting page in the [Lottie Samples application](aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
 * [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)
