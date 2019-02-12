@@ -7,7 +7,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Using Codegen
 
-Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the `LottieVisualSource`. Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](/json_codegen.md).
+Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the `LottieVisualSource`. Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](./json_codegen.md).
 
 ## Generating a C# or C++ class from JSON
 
@@ -73,7 +73,7 @@ This should result in a looping Lottie animation that is visually identical to o
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/CodegenPage.xaml) for sample: getting started with Codegen
 * The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
-* [LottieGen](https://github.com/windows-toolkit/Lottie-Windows/tree/master/LottieGen) CLI tool
-* [Lottie Viewer application](https://www.microsoft.com/p/lottie-viewer/9p7x9k692tmw) for codegen and previewing JSON files
-* A comparison of [JSON verus Codegen](../json_codegen.md)
+* [LottieGen](http://aka.ms/lottiegen) CLI tool
+* [Lottie Viewer application](http://aka.ms/lottieviewer) for codegen and previewing JSON files
+* A comparison of [JSON verus Codegen](./json_codegen.md)
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)
