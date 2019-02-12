@@ -42,7 +42,7 @@ Next, let’s configure the `PlayAsync` method with the from and to progress val
 
 Now, let's introduce Pause, Stop, and Reverse Buttons and update the method above to account for these other states. Our desired end result is as follows:
 
-![Playback Gif](../resources/images/Animations/Lottie/LottieDocs_Playback.gif)
+![Playback Gif](../../resources/images/Animations/Lottie/LottieDocs_Playback.gif)
 
 ```C#
     private void PlayButton_Click(object sender, RoutedEventArgs e)

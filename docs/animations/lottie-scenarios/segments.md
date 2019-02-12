@@ -80,9 +80,9 @@ To configure the playback of the relevant animation segments based on `PointerEn
 
 ```
 
-This yields the following interactive animated ToggleButton icon:
+This results in the following interactive animated ToggleButton icon:
 
-![Segments Gif](../resources/images/Animations/Lottie/LottieDocs_Segments.gif)
+![Segments Gif](../../resources/images/Animations/Lottie/LottieDocs_Segments.gif)
 
 ## Resources
 

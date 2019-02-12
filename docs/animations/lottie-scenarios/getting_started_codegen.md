@@ -35,7 +35,7 @@ For additional information about additional options including optimizations, use
 
 2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
 
-    ![Lottie Viewer Codegen](../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png)
+    ![LottieViewer Codegen](../../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png)
 
 ## Using the Codegen File
 
@@ -67,7 +67,7 @@ For additional information about additional options including optimizations, use
 
 This should result in a looping Lottie animation that is visually identical to our earlier approach of using a JSON file:
 
-![Autoplay Gif](../resources/images/Animations/Lottie/LottieDocs_Autoplay.gif)
+![Autoplay Gif](../../resources/images/Animations/Lottie/LottieDocs_Autoplay.gif)
 
 ## Resources
 
