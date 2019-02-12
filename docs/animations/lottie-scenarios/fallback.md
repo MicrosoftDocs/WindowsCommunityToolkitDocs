@@ -25,7 +25,7 @@ In the example below, we use a static `Image` as fallback for the Lottie animati
         <controls:AnimatedVisualPlayer.FallbackContent>
             <DataTemplate>
                 <!-- Static Image for Fallback.
-                        Because this is in a DataTemplate, the Image is only instantiated when in the fallback case. -->
+                     Because this is in a DataTemplate, the Image is only instantiated when in the fallback case. -->
                 <Image Source="/Assets/LottieLogo1.png" />
             </DataTemplate>
         </controls:AnimatedVisualPlayer.FallbackContent>
