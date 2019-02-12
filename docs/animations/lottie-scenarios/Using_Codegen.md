@@ -17,15 +17,15 @@ To generate a C# or C++ file, you may either use the [LottieGen](https://github.
 
 1. In your command-line interface, install the LottieGen tool from nuget:
 
-```bash
-dotnet tool install -g LottieGen
-```
+    ```bash
+    dotnet tool install -g LottieGen
+    ```
 
 2. Generate classes in your desired language as follows:
 
-```bash
-LottieGen -InputFile LottieLogo1.json -Language cs
-```
+    ```bash
+    LottieGen -InputFile LottieLogo1.json -Language cs
+    ```
 
 For additional information about additional options including optimizations, use `LottieGen -Help`.
 
@@ -35,7 +35,7 @@ For additional information about additional options including optimizations, use
 
 2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
 
-![Lottie Viewer Codegen](../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png)
+    ![Lottie Viewer Codegen](../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png)
 
 ## Using the Codegen File
 
@@ -43,27 +43,27 @@ For additional information about additional options including optimizations, use
 
 2. By default, all codegen classes are generated in the `AnimatedVisuals` namespace. Modify your `Page.xaml` to include the namespace:
 
-```xaml
-xmlns:animatedvisuals="using:AnimatedVisuals"
-```
+    ```xaml
+    xmlns:animatedvisuals="using:AnimatedVisuals"
+    ```
 
 3. **Install** the [`Microsoft.UI.Xaml` nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. Modify your `Page.xaml` to include the `Microsoft.UI.Xaml.Controls` namespace:
 
-```xaml
-xmlns:controls="using:Microsoft.UI.Xaml.Controls"
-```
+    ```xaml
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    ```
 
 4. **Instantiate** the `AnimatedVisualPlayer` element and configure its `Source` as follows:
 
-```xaml
-    <Border Style="{StaticResource LottiePlayer}">
-        <!--AnimatedVisualPlayer with AutoPlay-->
-        <winui:AnimatedVisualPlayer x:Name="LottiePlayer">
-            <!--Codegen class AnimatedVisuals/LottieLogo1.cs-->
-            <animatedvisuals:LottieLogo1/>
-        </winui:AnimatedVisualPlayer>
-    </Border>
-```
+    ```xaml
+        <Border Style="{StaticResource LottiePlayer}">
+            <!--AnimatedVisualPlayer with AutoPlay-->
+            <winui:AnimatedVisualPlayer x:Name="LottiePlayer">
+                <!--Codegen class AnimatedVisuals/LottieLogo1.cs-->
+                <animatedvisuals:LottieLogo1/>
+            </winui:AnimatedVisualPlayer>
+        </Border>
+    ```
 
 This should result in a looping Lottie animation that is visually identical to our earlier approach of using a JSON file:
 
