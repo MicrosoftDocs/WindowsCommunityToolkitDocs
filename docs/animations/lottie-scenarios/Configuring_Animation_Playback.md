@@ -13,7 +13,7 @@ The [`AnimatedVisualPlayer`](https://docs.microsoft.com/uwp/api/microsoft.ui.xam
 * [`IsPlaying`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.isplaying) indicates whether a play is currently underway.
 * [`PlaybackRate`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playbackrate) is a live property that modifies the rate of the animation; negative values change the direction of playback.
 * [`PlayAsync(Double, Double, Boolean)`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) plays a Lottie animation asynchronously between two specified progress values, looping or once.
-* [`Pause()`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.pause) pauses the animation
+* [`Pause()`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.pause) pauses the animation.
 * [`Resume()`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.resume) resumes a paused animation.
 * [`Stop()`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.stop) stops and completes the current play.
 * [`SetProgress(Double)`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.setprogress) moves the animation to the specified progress value.
