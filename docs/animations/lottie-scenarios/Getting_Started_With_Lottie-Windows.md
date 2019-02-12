@@ -37,10 +37,10 @@ You probably have a JSON file, `LottieLogo1.json` in this example, that was expo
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
             <!--AnimatedVisualPlayer with AutoPlay-->
-            <winui:AnimatedVisualPlayer x:Name="LottiePlayer">
+            <controls:AnimatedVisualPlayer x:Name="LottiePlayer">
                 <!--LottieVisualSource with JSON UriSource-->
                 <lottie:LottieVisualSource x:Name="LottieJsonSource" UriSource="ms-appx:///AnimatedVisuals/LottieLogo1.json"/>
-            </winui:AnimatedVisualPlayer>
+            </controls:AnimatedVisualPlayer>
         </Border>
     ```
 

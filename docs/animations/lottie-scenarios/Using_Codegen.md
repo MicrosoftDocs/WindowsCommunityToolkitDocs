@@ -58,10 +58,10 @@ For additional information about additional options including optimizations, use
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
             <!--AnimatedVisualPlayer with AutoPlay-->
-            <winui:AnimatedVisualPlayer x:Name="LottiePlayer">
+            <controls:AnimatedVisualPlayer x:Name="LottiePlayer">
                 <!--Codegen class AnimatedVisuals/LottieLogo1.cs-->
                 <animatedvisuals:LottieLogo1/>
-            </winui:AnimatedVisualPlayer>
+            </controls:AnimatedVisualPlayer>
         </Border>
     ```
 
