@@ -42,7 +42,7 @@ The [BackdropBlurBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API Source Code
 
-- [BackdropBlurBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Media/BackdropBlurBrush.cs)
+- [BackdropBlurBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/BackdropBlurBrush.cs)
 
 ## Related Topics
 

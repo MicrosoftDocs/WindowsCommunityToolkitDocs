@@ -44,7 +44,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## API Source Code
 
-- [BackdropGammaTransferBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Media/BackdropGammaTransferBrush.cs)
+- [BackdropGammaTransferBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/BackdropGammaTransferBrush.cs)
 
 ## Related Topics
 
