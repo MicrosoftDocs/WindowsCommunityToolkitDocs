@@ -7,7 +7,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Using Codegen
 
-Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the [`LottieVisualSource`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource). Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](./json_codegen.md).
+Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standard way of displaying Lottie animations on Web, Android, and iOS. However, this approach comes with the overhead of having to parse and translate JSON in your application’s process. You can get significant performance benefits by having Lottie-Windows generate the animation code as a C# or C++ class ahead of time, which may be used instead of the [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource). Both approaches, JSON and Codegen, have the same visual outcome but [different workflows and benefits](./json_codegen.md).
 
 ## Generating a C# or C++ class from JSON
 
@@ -47,13 +47,13 @@ For additional information about additional options including optimizations, use
     xmlns:animatedvisuals="using:AnimatedVisuals"
     ```
 
-3. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. Modify your Page.xaml to include the namespace:
+3. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. Modify your Page.xaml to include the namespace:
 
     ```xaml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
     ```
 
-4. Instantiate the `AnimatedVisualPlayer` element and configure its [Source](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.source) as follows:
+4. Instantiate the [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and configure its [Source](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.source) as follows:
 
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
