@@ -9,7 +9,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 You probably have a JSON file that was exported from [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) using the [BodyMovin](https://aescripts.com/bodymovin/) plugin. If not, you can find many from the [fantastic community](https://lottiefiles.com/) of Lottie designers and creators. Let’s bring these animations to your Windows applications with the following steps:
 
-1. _(Optional but Recommended)_ Install the [Lottie Viewer app](http://aka.ms/lottieviewer) from the Store and validate that the JSON file — _LottieLogo1.json_ in this example — works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
+1. _(Optional but Recommended)_ Install the [Lottie Viewer](http://aka.ms/lottieviewer) application from the Store and validate that the JSON file — _LottieLogo1.json_ in this example — works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
 
 2. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. In your VisualStudio project:
     * Go to the Nuget Package Manager by navigating to Project > Manage Nuget Packages.
