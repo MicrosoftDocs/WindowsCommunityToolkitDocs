@@ -30,7 +30,7 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
 
 4. Add the JSON file to your project: create a new  `/AnimatedVisuals` folder and include `LottieLogo1.json` in the Project Solution by right clicking > Add > Existing Item. Set its [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) to **Content** in the Properties window.
 
-    <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="250" margin="10"/>
+    <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="300" margin="10"/>
 
 5. Instantiate the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and configure the [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) to be consumed:
 
