@@ -8,14 +8,14 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 # Interactive Segments on an Animation Timeline
 
 Lottie-Windows may be used to create interactive controls such as animated icons or first-run experiences which may be comprised of several behaviors that depend upon the user's input. Instead of using multiple JSON files, it’s possible to use a single Lottie animation with multiple segments designed into its timeline.
-For instance, the following ToggleButton behaviors are contained in `LightBulb.json`'s animation timeline:
+For instance, the following ToggleButton behaviors are contained in the _LightBulb_ Lottie animation timeline:
 
 * Unchecked: static frame at progress 0.
 * Pointer Hovered: animation segment between 0 and 0.35, looped.
 * Pointer Clicked: animation segment between 0.35 and 1, play once.
 * Checked: static frame at progress 1.
 
-To configure the playback of the relevant animation segments based on `PointerEntered/Exited/Pressed` events, we build upon the previous scenarios as follows:
+To configure the playback of the relevant animation segments based on PointerEntered/Exited/Pressed events, we build upon the previous scenarios as follows:
 
 ```xaml
     <Border Style="{StaticResource LottiePlayer}">
