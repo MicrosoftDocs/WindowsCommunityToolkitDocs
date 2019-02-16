@@ -9,7 +9,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 You probably have a JSON file that was exported from [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) using the [BodyMovin](https://aescripts.com/bodymovin/) plugin. If not, you can find many from the [fantastic community](https://lottiefiles.com/) of Lottie designers and creators. Let’s bring these animations to your Windows applications with the following steps:
 
-1. _(Optional but Recommended)_ Install the [Lottie Viewer app](http://aka.ms/lottieviewer) from the Store and validate that the JSON file — `LottieLogo1.json` in this example — works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
+1. _(Optional but Recommended)_ Install the [Lottie Viewer app](http://aka.ms/lottieviewer) from the Store and validate that the JSON file — _LottieLogo1.json_ in this example — works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
 
 2. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. In your VisualStudio project:
     * Go to the Nuget Package Manager by navigating to Project > Manage Nuget Packages.
@@ -28,7 +28,9 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
     xmlns:lottie="using:Microsoft.Toolkit.Uwp.UI.Lottie"
     ```
 
-4. Add the JSON file to your project: create a new  `/AnimatedVisuals` folder and include `LottieLogo1.json` in the Project Solution by right clicking > Add > Existing Item. Set its [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) to **Content** in the Properties window.
+4. Add the JSON file to your project: 
+    * Create a new  /AnimatedVisuals folder and include _LottieLogo1.json_ in the solution by right-clicking > Add > Existing Item.
+    * Set its [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) to **Content** in the Properties window.
 
     <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="300" margin="10"/>
 
