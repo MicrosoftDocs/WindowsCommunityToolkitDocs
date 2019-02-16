@@ -15,7 +15,7 @@ For instance, the following ToggleButton behaviors are contained in the _LightBu
 * Pointer Clicked: animation segment between 0.35 and 1, play once.
 * Checked: static frame at progress 1.
 
-To configure the playback of the relevant animation segments based on PointerEntered/Exited/Pressed events, we build upon the previous scenarios as follows:
+To configure the playback of the relevant animation segments based on PointerEntered / Exited/ Pressed events, we build upon the previous scenarios as follows:
 
 ```xaml
     <Border Style="{StaticResource LottiePlayer}">
