@@ -7,13 +7,13 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Handling Failure and Down-level
 
-The `AnimatedVisualPlayer` has a [`FallbackContent`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.fallbackcontent) property which allows you to provide custom XAML to be displayed in cases where Lottie-Windows is unable to render the animation, such as:
+The AnimatedVisualPlayer has a [FallbackContent](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.fallbackcontent) property that allows you to provide custom XAML to be displayed in cases where Lottie-Windows is unable to render the animation, such as:
 
 * a Lottie source that fails to load due to a malformed JSON file, incorrect URI, etc.
-* the application running on a Windows 10 OS version **prior to 1809** (10.0.17763).
+* your application running on a Windows 10 OS version **prior to 1809** (10.0.17763).
 
-The `FallbackContent` is of type `DataTemplate`: this ensures that your custom XAML tree is only instantiated when the AnimatedVisualPlayer is, in fact, in the fallback case.
-In the example below, we use a static `Image` as fallback for the Lottie animation:
+The FallbackContent is of type [DataTemplate](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.DataTemplate) — this ensures that your custom XAML tree is only instantiated when the AnimatedVisualPlayer needs to fallback.
+In the example below, we use an Image as fallback for the Lottie animation:
 
 ```xaml
     <!-- AnimatedVisualPlayer -->
