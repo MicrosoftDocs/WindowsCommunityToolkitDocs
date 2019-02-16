@@ -7,16 +7,16 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Getting Started with Lottie-Windows
 
-You probably have a JSON file, `LottieLogo1.json` in this example, that was exported from [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) using the [BodyMovin](https://aescripts.com/bodymovin/) plugin. If not, you can find many from the [fantastic community](https://lottiefiles.com/) of Lottie designers and creators. Let’s bring these animations to your Windows applications with the following steps:
+You probably have a JSON file that was exported from [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) using the [BodyMovin](https://aescripts.com/bodymovin/) plugin. If not, you can find many from the [fantastic community](https://lottiefiles.com/) of Lottie designers and creators. Let’s bring these animations to your Windows applications with the following steps:
 
-1. _(Optional but Recommended)_ Install the [Lottie Viewer app](http://aka.ms/lottieviewer) from the Store and validate that the JSON file works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
+1. _(Optional but Recommended)_ Install the [Lottie Viewer app](http://aka.ms/lottieviewer) from the Store and validate that the JSON file — `LottieLogo1.json` in this example — works as expected. If there are any known issues due to unsupported AfterEffects features, the warning icon may light up and provide more context.  
 
-2. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. In your VisualStudio project:
+2. Install the [Microsoft.UI.Xaml nuget package](https://www.nuget.org/packages/Microsoft.UI.Xaml/) which contains the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element. In your VisualStudio project:
     * Go to the Nuget Package Manager by navigating to Project > Manage Nuget Packages.
     * Check the _Include prerelease_ box and search for “Microsoft.UI.Xaml” in nuget.org.
     * Install the latest prerelease version of the nuget package available.
 
-    Modify your Page.xaml to include the Microsoft.UI.Xaml.Controls namespace:
+    Modify your Page.xaml to include the namespace:
 
     ```xaml
     xmlns:controls="using:Microsoft.UI.Xaml.Controls"
@@ -32,7 +32,7 @@ You probably have a JSON file, `LottieLogo1.json` in this example, that was expo
 
     <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="250" margin="10"/>
 
-5. Instantiate the [`AnimatedVisualPlayer`](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and provide it the [`LottieVisualSource`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) to be consumed:
+5. Instantiate the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and configure the [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) to be consumed:
 
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
