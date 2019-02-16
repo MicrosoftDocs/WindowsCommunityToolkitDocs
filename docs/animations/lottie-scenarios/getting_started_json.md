@@ -29,7 +29,7 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
     ```
 
 4. Add the JSON file to your project: 
-    * Create a new  /AnimatedVisuals folder and include _LottieLogo1.json_ in the solution by right-clicking > Add > Existing Item.
+    * Add _LottieLogo1.json_ to the /AnimatedVisuals folder and include by right-clicking > Add > Existing Item.
     * Set its [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) to **Content** in the Properties window.
 
     <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="300" margin="10"/>
