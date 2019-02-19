@@ -17,13 +17,13 @@ To generate a C# or C++ file, you may either use the [LottieGen](http://aka.ms/l
 
 1. In your command-line interface, install the LottieGen tool from nuget:
 
-    ```bash
+    ```
     dotnet tool install -g LottieGen
     ```
 
 2. Generate classes in your desired language as follows:
 
-    ```bash
+    ```
     LottieGen -InputFile LottieLogo1.json -Language cs
     ```
 
