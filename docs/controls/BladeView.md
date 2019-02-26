@@ -50,9 +50,8 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | CloseButtonBackground | Brush | Gets or sets the background color of the default close button in the title bar |
 | CloseButtonForeground | Brush | Gets or sets the foreground color of the close button |
 | IsOpen | bool | Gets or sets a value indicating whether this blade is opened |
-| Title | string | Gets or sets the title to appear in the title bar |
+| Header | string | Gets or sets the content for the header |
 | TitleBarBackground | Brush | Gets or sets the background color of the title bar |
-| TitleBarForeground | Brush | Gets or sets the titlebar foreground color |
 | TitleBarVisibility | Visibility | Gets or sets the visibility of the title bar for this blade |
 
 ## Events
