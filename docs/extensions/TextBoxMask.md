@@ -26,9 +26,9 @@ TextBoxMask has 2 type of characters
 Variable characters a represented to end user in form of placeholder so the user can know which characters he can change and which he can't, ex mask aaa-9999 will be presented to user as `___-____`
 the default placeholder is _ but you can change it using  extensions:TextBoxMask.PlaceHolder property (Check the second textbox in syntax section)
 
-In case you want to add a custom variable character you can use property TextBoxMask.CustomMask (Check the third textbox in syntax section), you can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma "," after every character and it's representation. this feature is helpful if you want to allow certain language characters ex French or Arabic only TextBox.
+You can escape variable by using `\`, ex mask `+\964` will be presented to user as `+964`. This way, the `9` in the mask is treated as a fixed character, not as a variable. If you needed `\` in the mask then you can write it as `\\`, ex `99\\99\\9999` will be presented to user as `__\__\__`.
 
-You can escape variable by using `\`, for example if you need the mask to be rendered as `+964` then you can write the mask as `+\964`. This way, the `9` in the mask is treated as a fixed character, not as a variable. If you needed `\` in the mask then you can write it as `\\`. For example `99\\99\\9999` will be rendered as `__\__\__` (assuming `_` is the placeholder character).
+In case you want to add a custom variable character you can use property TextBoxMask.CustomMask (Check the fifth textbox in syntax section), you can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma "," after every character and it's representation. this feature is helpful if you want to allow certain language characters ex French or Arabic only TextBox.
 
 ## Syntax
 
