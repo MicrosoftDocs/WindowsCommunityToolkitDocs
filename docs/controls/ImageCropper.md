@@ -31,7 +31,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
 | MinSelectedLength     | double          | Gets or sets the minimum selectable length.                  |
-| CroppedRegion         | Rect            | Gets the current cropped region.                             |
+| CroppedRegion         | Rect            | Gets or sets the current cropped region.                             |
 | Source                | WriteableBitmap | Gets or sets the source of the cropped image.                |
 | AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image, the default value is null. |
 | CropShape             | CropShape       | Gets or sets the shape to use when cropping.                 |
