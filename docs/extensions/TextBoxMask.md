@@ -28,6 +28,8 @@ the default placeholder is _ but you can change it using  extensions:TextBoxMask
 
 In case you want to add a custom variable character you can use property TextBoxMask.CustomMask (Check the third textbox in syntax section), you can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma "," after every character and it's representation. this feature is helpful if you want to allow certain language characters ex French or Arabic only TextBox.
 
+You can escape variable by using `\`, for example if you need the mask to be rendered as `+964` then you can write the mask as `+\964`. This way, the `9` in the mask is treated as a fixed character, not as a variable. If you needed `\` in the mask then you can write it as `\\`. For example `99\\99\\9999` will be rendered as `__\__\__` (assuming `_` is the placeholder character).
+
 ## Syntax
 
 ```xaml
@@ -89,6 +91,8 @@ The following sample demonstrates how to add TextBoxMask property.
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
             <TextBox extensions:TextBoxMask.Mask="9a9a-a9a*"
@@ -104,6 +108,18 @@ The following sample demonstrates how to add TextBoxMask property.
                      Style="{StaticResource MaskedTextBoxStyle}" />
 
             <TextBox Grid.Row="2"
+                     extensions:TextBoxMask.Mask="+\964 799 999 9999"
+                     Header="Text box with Mask +964 799 999 9999 (Notice how we escape the first 9 with a backslash)"
+                     HeaderTemplate="{StaticResource HeaderTemplate}"
+                     Style="{StaticResource MaskedTextBoxStyle}" />
+
+            <TextBox Grid.Row="3"
+                     extensions:TextBoxMask.Mask="99\\99\\9999"
+                     Header="Text box with Mask 99\99\9999 (You can escape a backslash with another backslash)"
+                     HeaderTemplate="{StaticResource HeaderTemplate}"
+                     Style="{StaticResource MaskedTextBoxStyle}" />
+
+            <TextBox Grid.Row="4"
                      extensions:TextBoxMask.CustomMask="5:[1-5],c:[a-c]"
                      extensions:TextBoxMask.Mask="a5c-5c*9"
                      Header="Text box with CustomMask in case you want to define your own variable character like a,9 and * , mask: a5c-5c*9, 5: [1-5], c: [a-c]"
