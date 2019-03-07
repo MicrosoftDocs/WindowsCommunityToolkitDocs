@@ -1,0 +1,436 @@
+﻿<Type Name="DataGridComboBoxColumn" FullName="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn">
+  <TypeSignature Language="C#" Value="public class DataGridComboBoxColumn : Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridComboBoxColumn extends Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridComboBoxColumn&#xA;Inherits DataGridBoundColumn" />
+  <TypeSignature Language="F#" Value="type DataGridComboBoxColumn = class&#xA;    inherit DataGridBoundColumn" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.StyleTypedProperty(Property="ElementStyle", StyleTargetType=typeof(Windows.UI.Xaml.Controls.TextBlock))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.StyleTypedProperty(Property="EditingElementStyle", StyleTargetType=typeof(Windows.UI.Xaml.Controls.ComboBox))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" /> column that hosts textual content in its cells. In edit mode data can be changed to a value from a collection hosted in a ComboBox.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridComboBoxColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCellEdit">
+      <MemberSignature Language="C#" Value="protected override void CancelCellEdit (Windows.UI.Xaml.FrameworkElement editingElement, object uneditedValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CancelCellEdit(class Windows.UI.Xaml.FrameworkElement editingElement, object uneditedValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.CancelCellEdit : Windows.UI.Xaml.FrameworkElement * obj -&gt; unit" Usage="dataGridComboBoxColumn.CancelCellEdit (editingElement, uneditedValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingElement" Type="Windows.UI.Xaml.FrameworkElement" />
+        <Parameter Name="uneditedValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
+        <param name="uneditedValue">The previous, unedited value in the cell being edited.</param>
+        <summary>
+            Causes the column cell being edited to revert to the specified value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberPath">
+      <MemberSignature Language="C#" Value="public string DisplayMemberPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DisplayMemberPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayMemberPath As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberPath : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the name or path of the property that is displayed in the ComboBox.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayMemberPathProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DisplayMemberPathProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DisplayMemberPathProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayMemberPathProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DisplayMemberPathProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPathProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the DisplayMemberPath dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.FontFamily FontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : Windows.UI.Xaml.Media.FontFamily with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamilyProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty FontFamilyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty FontFamilyProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamilyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamilyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the FontFamily dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.ComponentModel.DefaultValue(NaN)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontStyle FontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontStyle FontStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : Windows.UI.Text.FontStyle with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font style.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight FontWeight" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight or thickness.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush Foreground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Foreground : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a brush that describes the foreground of the column cells.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateEditingElement">
+      <MemberSignature Language="C#" Value="protected override Windows.UI.Xaml.FrameworkElement GenerateEditingElement (Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell cell, object dataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Xaml.FrameworkElement GenerateEditingElement(class Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell cell, object dataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="override this.GenerateEditingElement : Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell * obj -&gt; Windows.UI.Xaml.FrameworkElement" Usage="dataGridComboBoxColumn.GenerateEditingElement (cell, dataItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell" />
+        <Parameter Name="dataItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The cell that will contain the generated element.</param>
+        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
+        <summary>
+            Gets a <see cref="T:Windows.UI.Xaml.Controls.ComboBox" /> control that is bound to the column's ItemsSource collection.
+            </summary>
+        <returns>A new <see cref="T:Windows.UI.Xaml.Controls.ComboBox" /> control that is bound to the column's ItemsSource collection.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateElement">
+      <MemberSignature Language="C#" Value="protected override Windows.UI.Xaml.FrameworkElement GenerateElement (Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell cell, object dataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Xaml.FrameworkElement GenerateElement(class Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell cell, object dataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="override this.GenerateElement : Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell * obj -&gt; Windows.UI.Xaml.FrameworkElement" Usage="dataGridComboBoxColumn.GenerateElement (cell, dataItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell" />
+        <Parameter Name="dataItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cell">The cell that will contain the generated element.</param>
+        <param name="dataItem">The data item represented by the row that contains the intended cell.</param>
+        <summary>
+            Gets a read-only <see cref="T:Windows.UI.Xaml.Controls.TextBlock" /> element that is bound to the column's <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.Binding" /> property value.
+            </summary>
+        <returns>A new, read-only <see cref="T:Windows.UI.Xaml.Controls.TextBlock" /> element that is bound to the column's <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.Binding" /> property value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSource">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerable ItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable ItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsSource As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.ItemsSource : System.Collections.IEnumerable with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a collection that is used to generate the content of the ComboBox while in editing mode.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemsSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemsSourceProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ItemsSource dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareCellForEdit">
+      <MemberSignature Language="C#" Value="protected override object PrepareCellForEdit (Windows.UI.Xaml.FrameworkElement editingElement, Windows.UI.Xaml.RoutedEventArgs editingEventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object PrepareCellForEdit(class Windows.UI.Xaml.FrameworkElement editingElement, class Windows.UI.Xaml.RoutedEventArgs editingEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
+      <MemberSignature Language="F#" Value="override this.PrepareCellForEdit : Windows.UI.Xaml.FrameworkElement * Windows.UI.Xaml.RoutedEventArgs -&gt; obj" Usage="dataGridComboBoxColumn.PrepareCellForEdit (editingElement, editingEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingElement" Type="Windows.UI.Xaml.FrameworkElement" />
+        <Parameter Name="editingEventArgs" Type="Windows.UI.Xaml.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="editingElement">The element that the column displays for a cell in editing mode.</param>
+        <param name="editingEventArgs">Information about the user gesture that is causing a cell to enter editing mode.</param>
+        <summary>
+            Called when the cell in the column enters editing mode.
+            </summary>
+        <returns>The unedited value. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshCellContent">
+      <MemberSignature Language="C#" Value="protected internal override void RefreshCellContent (Windows.UI.Xaml.FrameworkElement element, Windows.UI.Xaml.Media.Brush computedRowForeground, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RefreshCellContent(class Windows.UI.Xaml.FrameworkElement element, class Windows.UI.Xaml.Media.Brush computedRowForeground, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.RefreshCellContent(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshCellContent (element As FrameworkElement, computedRowForeground As Brush, propertyName As String)" />
+      <MemberSignature Language="F#" Value="override this.RefreshCellContent : Windows.UI.Xaml.FrameworkElement * Windows.UI.Xaml.Media.Brush * string -&gt; unit" Usage="dataGridComboBoxColumn.RefreshCellContent (element, computedRowForeground, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" />
+        <Parameter Name="computedRowForeground" Type="Windows.UI.Xaml.Media.Brush" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="computedRowForeground">To be added.</param>
+        <param name="propertyName">To be added.</param>
+        <summary>
+            Called by the DataGrid control when this column asks for its elements to be updated, because a property changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshForeground">
+      <MemberSignature Language="C#" Value="protected internal override void RefreshForeground (Windows.UI.Xaml.FrameworkElement element, Windows.UI.Xaml.Media.Brush computedRowForeground);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RefreshForeground(class Windows.UI.Xaml.FrameworkElement element, class Windows.UI.Xaml.Media.Brush computedRowForeground) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.RefreshForeground(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RefreshForeground (element As FrameworkElement, computedRowForeground As Brush)" />
+      <MemberSignature Language="F#" Value="override this.RefreshForeground : Windows.UI.Xaml.FrameworkElement * Windows.UI.Xaml.Media.Brush -&gt; unit" Usage="dataGridComboBoxColumn.RefreshForeground (element, computedRowForeground)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.FrameworkElement" />
+        <Parameter Name="computedRowForeground" Type="Windows.UI.Xaml.Media.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="computedRowForeground">To be added.</param>
+        <summary>
+            Called when the computed foreground of a row changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -105,6 +105,62 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As TwitterOAuthTokens) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens -&gt; bool" Usage="twitterService.Initialize oAuthTokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string consumerKey, string consumerSecret, string callbackUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string consumerKey, string consumerSecret, string callbackUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (consumerKey As String, consumerSecret As String, callbackUri As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * string -&gt; bool" Usage="twitterService.Initialize (consumerKey, consumerSecret, callbackUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="consumerKey" Type="System.String" />
+        <Parameter Name="consumerSecret" Type="System.String" />
+        <Parameter Name="callbackUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="consumerKey">Consumer key.</param>
+        <param name="consumerSecret">Consumer secret.</param>
+        <param name="callbackUri">Callback URI. Has to match callback URI defined at apps.twitter.com (can be arbitrary).</param>
+        <summary>
+            Initialize underlying provider with relevent token information for Uwp.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager, Microsoft.Toolkit.Services.Core.ISignatureManager signatureManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager, class Microsoft.Toolkit.Services.Core.ISignatureManager signatureManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
