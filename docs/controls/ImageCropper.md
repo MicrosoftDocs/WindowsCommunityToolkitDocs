@@ -31,7 +31,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
 | MinSelectedLength     | double          | Gets or sets the minimum selectable length.                  |
-| CroppedRegion         | Rect            | Gets or sets the current cropped region.                             |
+| CroppedRegion         | Rect            | Gets the current cropped region.                             |
 | Source                | WriteableBitmap | Gets or sets the source of the cropped image.                |
 | AspectRatio           | double?         | Gets or sets the aspect ratio of the cropped image, the default value is null. |
 | CropShape             | CropShape       | Gets or sets the shape to use when cropping.                 |
@@ -48,6 +48,7 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | LoadImageFromFile(StorageFile)                       | Task        | Load an image from a file.                                   |
 | SaveAsync(IRandomAccessStream,BitmapFileFormat,bool) | Task        | Saves the cropped image to a stream with the specified format. Setting the boolean argument to True will save pixel values to the extent of the cropped area regardless of the crop shape, otherwise transparent or black pixels will fill the uncropped area depending on file format. |
 | Reset()                                              | void        | Reset the cropped area.                                      |
+| TrySetCroppedRegion(Rect rect)                       | bool        | Tries to set a new value for the cropped region, returns true if it succeeded, false if the region is invalid  |
 
 
 ## Examples
