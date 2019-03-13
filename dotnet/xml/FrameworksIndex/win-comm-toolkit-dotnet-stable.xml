@@ -1,25 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="win-comm-toolkit-dotnet-stable">
   <Assemblies>
-    <Assembly Name="Microsoft.Toolkit" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Forms.UI.XamlHost" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Parsers" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Services" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.DeveloperTools" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.Notifications" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Animations" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Win32.UI.Controls" Version="4.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="5.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="5.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Forms.UI.XamlHost" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Parsers" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Services" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.DeveloperTools" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Notifications" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Services" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Animations" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="5.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction" Version="255.255.255.255" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Toolkit.Collections">
     <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
@@ -37,6 +39,7 @@
       <Member Id="M:Microsoft.Toolkit.Extensions.ArrayExtensions.ToArrayString``1(``0[0:,0:])" />
     </Type>
     <Type Name="Microsoft.Toolkit.Extensions.StringExtensions" Id="T:Microsoft.Toolkit.Extensions.StringExtensions">
+      <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.AsFormat(System.String,System.Object[])" />
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.DecodeHtml(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.FixHtml(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Extensions.StringExtensions.IsCharacterString(System.String)" />
@@ -810,6 +813,7 @@
       <Member Id="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig.Query" />
     </Type>
     <Type Name="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider" Id="T:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.#ctor(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.#ctor(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider.LoginAsync" />
@@ -863,6 +867,8 @@
     <Type Name="Microsoft.Toolkit.Services.LinkedIn.LinkedInService" Id="T:Microsoft.Toolkit.Services.LinkedIn.LinkedInService">
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.GetUserProfileAsync(System.Boolean)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions)" />
+      <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions)" />
+      <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.LoginAsync" />
       <Member Id="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Logout" />
@@ -1025,6 +1031,7 @@
       <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Logout" />
       <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.TryLoginAsync" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.AppClientId" />
+      <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.AuthenticationModel" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.DelegatedPermissionScopes" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.GraphProvider" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Instance" />
@@ -1093,7 +1100,10 @@
       <Member Id="F:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields.UserType" />
     </Type>
     <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.#ctor(Microsoft.Graph.GraphServiceClient)" />
       <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetPhotoAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetPhotoAsync(System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetProfileAsync(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields[])" />
       <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.GetProfileAsync(System.Threading.CancellationToken,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserFields[])" />
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService.Event" />
@@ -1102,6 +1112,13 @@
     </Type>
     <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs">
       <Member Id="P:Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs.Exception" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.MicrosoftGraph.Uwp">
+    <Type Name="Microsoft.Toolkit.Services.MicrosoftGraph.Uwp.MicrosoftGraphUserServicePhotos" Id="T:Microsoft.Toolkit.Services.MicrosoftGraph.Uwp.MicrosoftGraphUserServicePhotos">
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.Uwp.MicrosoftGraphUserServicePhotos.#ctor(Microsoft.Graph.GraphServiceClient)" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.Uwp.MicrosoftGraphUserServicePhotos.GetPhotoAsync" />
+      <Member Id="M:Microsoft.Toolkit.Services.MicrosoftGraph.Uwp.MicrosoftGraphUserServicePhotos.GetPhotoAsync(System.Threading.CancellationToken)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Services.MicrosoftTranslator">
@@ -1345,6 +1362,44 @@
       <Member Id="M:Microsoft.Toolkit.Services.OneDrive.OneDriveUploadConstants.#ctor" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Services.OneDrive.Uwp">
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatform.#ctor(Microsoft.Toolkit.Services.OneDrive.OneDriveService)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatform.CreateBackgroundDownloadForItemAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer.CreateOneDriveServicePlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer.CreateOneDriveStorageFilePlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer.CreateOneDriveStorageFolderPlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveServicePlatformInitializer.CreateOneDriveStorageItemPlatformInstance(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFilePlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFilePlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFilePlatform.#ctor(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFilePlatform.CreateBackgroundDownloadAsync(System.Object,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFilePlatform.OpenAsync(System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform.#ctor(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform.CreateFileAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform.CreateFolderAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform.GetItemsAsync(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageFolderPlatform.UploadFileAsync(System.String,System.Object,System.Object,System.Int32)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform.#ctor(Microsoft.Toolkit.Services.OneDrive.OneDriveService,Microsoft.Toolkit.Services.OneDrive.OneDriveStorageItem)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform.GetThumbnailAsync(Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform.IsOfType(System.Object)" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.Uwp.OneDriveStorageItemPlatform.ThumbNail" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings" Id="T:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings">
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings.Load" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings.AccessToken" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings.Expiration" />
+      <Member Id="P:Microsoft.Toolkit.Services.OneDrive.Uwp.UserInfoSettings.UserPrincipalName" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Services.Services.MicrosoftGraph">
     <Type Name="Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope" Id="T:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope">
       <Member Id="F:Microsoft.Toolkit.Services.Services.MicrosoftGraph.MicrosoftGraphScope.CalendarsRead" />
@@ -1476,6 +1531,7 @@
       <Member Id="P:Microsoft.Toolkit.Services.Twitter.TwitterDataConfig.QueryType" />
     </Type>
     <Type Name="Microsoft.Toolkit.Services.Twitter.TwitterDataProvider" Id="T:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.#ctor(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.#ctor(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Twitter.TwitterDataConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Twitter.TwitterDataConfig)" />
@@ -1662,7 +1718,9 @@
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.GetUserAsync(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.GetUserTimeLineAsync(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.LoginAsync" />
       <Member Id="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Logout" />
@@ -1801,6 +1859,7 @@
       <Member Id="P:Microsoft.Toolkit.Services.Weibo.WeiboDataConfig.QueryType" />
     </Type>
     <Type Name="Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" Id="T:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.#ctor(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.#ctor(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Weibo.WeiboDataConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Weibo.WeiboDataConfig)" />
@@ -1848,7 +1907,9 @@
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.GetUserAsync(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.GetUserTimeLineAsync(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
+      <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(System.String,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.LoginAsync" />
       <Member Id="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Logout" />
@@ -2205,6 +2266,13 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.DeveloperTools.Microsoft_Toolkit_Uwp_DeveloperTools_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Extensions">
+    <Type Name="Microsoft.Toolkit.Uwp.Extensions.StringExtensions" Id="T:Microsoft.Toolkit.Uwp.Extensions.StringExtensions">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Extensions.StringExtensions.GetLocalized(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Extensions.StringExtensions.GetLocalized(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Extensions.StringExtensions.GetViewLocalized(System.String)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Helpers">
     <Type Name="Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper" Id="T:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper">
       <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.BackgroundTaskHelper.GetBackgroundTask(System.String)" />
@@ -2362,6 +2430,12 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.QueryParameterCollection.#ctor(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.QueryParameterCollection.#ctor(System.Uri)" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" Id="T:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.#ctor(System.Collections.Generic.List{Windows.System.RemoteSystems.IRemoteSystemFilter})" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.GenerateSystems" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.RemoteSystems" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper" Id="T:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper">
       <Member Id="M:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper.#ctor" />
     </Type>
@@ -2470,6 +2544,180 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Source" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs.Handled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Progress" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.State" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Complete" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Fixating" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Idle" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Progressing" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.DwellProgressFeedback" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.Invoked" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.StateChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Set(Windows.Foundation.Point,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Capabilities" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Configuration" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_ConfigurationStatus" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Control" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DeviceModeRequest" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerDate" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayProductId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplaySerialNumber" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_EyeTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_GazePoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadDirectionPoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadPosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_LeftEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MinimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_OptimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RightEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_SamplingFrequency" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Status" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Timestamp" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackerQuality" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackingData" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.UsagePage_EyeHeadTracker" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailableChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetCursorRadius(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellRepeatDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetFixationDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazeElement(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazePointer(Windows.UI.Xaml.Controls.Page)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetInteraction(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsCursorVisible(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsSwitchEnabled(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetRepeatDelayDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetThresholdDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Invoke(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetCursorRadius(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellRepeatDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetFixationDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetGazeElement(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetInteraction(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsCursorVisible(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsSwitchEnabled(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetRepeatDelayDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetThresholdDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadiusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackCompleteBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackEnterBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackProgressBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellStrokeThickness" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElementProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Interaction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.InteractionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCountProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDurationProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.GazeEvent" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Click" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Close" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.RequestCalibrationAsync" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.IsAlwaysActivated" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper.RetrieveSharedSettings(Windows.Foundation.Collections.ValueSet)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Update(System.Single,System.Single)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Mean" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.StandardDeviation" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Enabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Inherited" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Dwell" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.DwellRepeat" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Enter" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Exit" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Fixation" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.PreEnter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.ElapsedTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.PointerState" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.X" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Y" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.GetPosition(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadPosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadRotation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.LeftEyePosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.RightEyePosition" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.GetGazeHidPositions(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.GetRotation(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Notifications">
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup" Id="T:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup">
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup.#ctor" />
@@ -2564,7 +2812,6 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.#ctor(Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphValue)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.GetContent" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.GetXml" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.ToString" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.BadgeGlyphContent.Glyph" />
     </Type>
@@ -2587,7 +2834,6 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.#ctor(System.UInt32)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.GetContent" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.GetXml" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.ToString" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.BadgeNumericContent.Number" />
     </Type>
@@ -2617,7 +2863,6 @@
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.INotificationContent" Id="T:Microsoft.Toolkit.Uwp.Notifications.INotificationContent">
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.INotificationContent.GetContent" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.INotificationContent.GetXml" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent" Id="T:Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent" />
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild" Id="T:Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild" />
@@ -2700,7 +2945,6 @@
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.TileContent" Id="T:Microsoft.Toolkit.Uwp.Notifications.TileContent">
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.TileContent.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.TileContent.GetContent" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.TileContent.GetXml" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.TileContent.Visual" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.TilePeekImage" Id="T:Microsoft.Toolkit.Uwp.Notifications.TilePeekImage">
@@ -2813,7 +3057,6 @@
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.ToastContent" Id="T:Microsoft.Toolkit.Uwp.Notifications.ToastContent">
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.ToastContent.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.ToastContent.GetContent" />
-      <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.ToastContent.GetXml" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastContent.Actions" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastContent.ActivationOptions" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastContent.ActivationType" />
@@ -2927,6 +3170,119 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastVisual.BindingGeneric" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastVisual.BindingShoulderTap" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Notifications.ToastVisual.Language" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Services.Facebook">
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Cover_Photo" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Description" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Fields" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Id" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Name" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum.Picture" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig.MyFeed" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig.MyPosts" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig.MyTagged" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig.Query" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens.AppId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens.WindowsStoreId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.Email" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublishActions" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserAboutMe" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserBirthday" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserEducationHistory" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserFriends" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserGamesActivity" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserHometown" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserLikes" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserLocation" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPhotos" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserRelationshipDetails" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserRelationships" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserReligionPolitics" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserStatus" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserTaggedPlaces" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserVideos" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserWebsite" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserWorkHistory" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Album" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Created_Time" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Fields" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Id" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Images" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Link" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Name" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto.Picture" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture.Id" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture.Is_Silhouette" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture.Link" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPictureData" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPictureData">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPictureData.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPictureData.Data" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource.Fields" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource.Height" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource.Source" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPlatformImageSource.Width" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Created_Time" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Fields" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Full_Picture" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Id" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Link" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost.Message" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1.#ctor(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.String,System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService" Id="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetPhotoByPhotoIdAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPictureInfoAsync" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Initialize(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Initialize(System.String,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LoginAsync" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LogoutAsync" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostPictureToFeedAsync(System.String,System.String,Windows.Storage.Streams.IRandomAccessStreamWithContentType)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostToFeedAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostToFeedWithDialogAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync``1(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync``1(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LoggedUser" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Provider" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.WindowsStoreId" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI">
@@ -3074,6 +3430,8 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.WebViewExtensions.GetContentUri(Windows.UI.Xaml.DependencyObject)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.WebViewExtensions.SetContent(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.WebViewExtensions.SetContentUri(Windows.UI.Xaml.DependencyObject,System.Uri)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.WebViewExtensions.Content" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.WebViewExtensions.ContentUri" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Animations">
@@ -3191,11 +3549,16 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.RemoveAnchoredElementForConnectedAnimation(Windows.UI.Xaml.Controls.Page,Windows.UI.Xaml.UIElement,Windows.UI.Xaml.UIElement)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetAnchorElement(Windows.UI.Xaml.DependencyObject,Windows.UI.Xaml.UIElement)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetKey(Windows.UI.Xaml.DependencyObject,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetListDataItemForNextConnectedAnimation(Windows.UI.Xaml.Controls.Frame,System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetListDataItemForNextConnectedAnnimation(Windows.UI.Xaml.Controls.Frame,System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetListItemElementName(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.SetListItemKey(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.UnregisterElementForConnectedAnimation(Windows.UI.Xaml.Controls.Page,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.UnregisterListItemForConnectedAnimation(Windows.UI.Xaml.Controls.Page,Windows.UI.Xaml.Controls.ListViewBase,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Connected.AnchorElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Connected.Key" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Connected.ListItemElementName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Connected.ListItemKey" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Back" />
@@ -3224,6 +3587,9 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetAnimations(Windows.UI.Xaml.DependencyObject,Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetHideAnimations(Windows.UI.Xaml.DependencyObject,Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetShowAnimations(Windows.UI.Xaml.DependencyObject,Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.Animations" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.HideAnimations" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.ShowAnimations" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame.KeyProperty" />
@@ -3245,6 +3611,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.ReorderGridAnimation.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.ReorderGridAnimation.GetDuration(Windows.UI.Xaml.DependencyObject)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.ReorderGridAnimation.SetDuration(Windows.UI.Xaml.DependencyObject,System.Double)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.ReorderGridAnimation.Duration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.ReorderGridAnimation.IsSupported" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.RotationAnimation" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.RotationAnimation">
@@ -4219,6 +4586,14 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior.Manual" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior.System" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.Bmp" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.Gif" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.Jpeg" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.JpegXR" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.Png" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat.Tiff" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.BladeItem" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem">
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem.VisibilityChanged" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.BladeItem.CloseButtonBackgroundProperty" />
@@ -4316,6 +4691,10 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.InlineCollection" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.Text" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.CropShape" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.CropShape">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Circular" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Rectangular" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AutoGeneratingColumn" />
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.BeginningEdit" />
@@ -4354,6 +4733,7 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderHeightProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderStyleProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnWidthProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DataFetchSizeProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DragIndicatorStyleProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DropLocationIndicatorStyleProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.FrozenColumnCountProperty" />
@@ -4361,6 +4741,8 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HeadersVisibilityProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalGridLinesBrushProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalScrollBarVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingThresholdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingTriggerProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsReadOnlyProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsValidProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ItemsSourceProperty" />
@@ -4432,6 +4814,7 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnWidth" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CurrentColumn" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CurrentItem" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DataFetchSize" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DragIndicatorStyle" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DropLocationIndicatorStyle" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.FrozenColumnCount" />
@@ -4439,6 +4822,8 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HeadersVisibility" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalGridLinesBrush" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalScrollBarVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingThreshold" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingTrigger" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsReadOnly" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsValid" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ItemsSource" />
@@ -4769,6 +5154,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.GetDock(Windows.UI.Xaml.FrameworkElement)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.MeasureOverride(Windows.Foundation.Size)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.SetDock(Windows.UI.Xaml.FrameworkElement,Microsoft.Toolkit.Uwp.UI.Controls.Dock)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.Dock" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.LastChildFill" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DockPanel.Padding" />
     </Type>
@@ -4879,6 +5265,7 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.HeaderTemplateProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.OrientationProperty" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.OnApplyTemplate" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.OnHeaderChanged(System.Object,System.Object)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.Header" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedContentControl.HeaderTemplate" />
@@ -4917,6 +5304,38 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment.None" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment.Right" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment.Top" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatioProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShapeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MaskProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SourceProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacementProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.LoadImageFromFile(Windows.Storage.StorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SaveAsync(Windows.Storage.Streams.IRandomAccessStream,Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat,System.Boolean)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatio" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CroppedRegion" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShape" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Mask" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinCroppedPixelLength" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinSelectedLength" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Source" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacement" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb.XProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb.YProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb.X" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb.Y" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ImageEx" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageEx">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageEx.NineGridProperty" />
@@ -5013,6 +5432,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(Windows.UI.Xaml.UIElement,System.Int32)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.AnimationDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.HorizontalOffset" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.KeyFrameDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.ShowDismissButton" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.StackMode" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.VerticalOffset" />
@@ -5047,10 +5467,13 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.MinZoomFactorProperty" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.ExportAsJson" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.ExportInkStrokes" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.ExportText" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.ImportFromJson(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.OnApplyTemplate" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.OnKeyDown(Windows.UI.Xaml.Input.KeyRoutedEventArgs)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.Redo" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.SaveBitmapAsync(Windows.Storage.Streams.IRandomAccessStream,Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.Undo" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.CanvasHeight" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.InfiniteCanvas.CanvasWidth" />
@@ -5316,6 +5739,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Menu.OnApplyTemplate" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Menu.SetAllowTooltip(Microsoft.Toolkit.Uwp.UI.Controls.Menu,System.Boolean)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Menu.SetInputGestureText(Windows.UI.Xaml.FrameworkElement,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Menu.InputGestureText" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Menu.IsOpened" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Menu.MenuFlyoutStyle" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Menu.Orientation" />
@@ -5526,6 +5950,20 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelectorProperty.MaximumValue" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RangeSelectorProperty.MinimumValue" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.SelectionModeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.ShowAdvancedFiltersProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.#ctor(Windows.System.RemoteSystems.RemoteSystemDiscoveryType,Windows.System.RemoteSystems.RemoteSystemAuthorizationKind,Windows.System.RemoteSystems.RemoteSystemStatusType)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.PickDeviceAsync" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.SelectionMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDevicePicker.ShowAdvancedFilters" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RemoteDeviceSelectionMode" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDeviceSelectionMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDeviceSelectionMode.Multiple" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RemoteDeviceSelectionMode.Single" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.CurrentItemProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.RotatorTile.ExtraRandomDurationProperty" />
@@ -5723,6 +6161,10 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarStrings.UrlLabel" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarStrings.WarningLabel" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement.All" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement.Corners" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TileControl" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TileControl">
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.TileControl.ImageLoaded" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TileControl.AnimationDurationProperty" />
@@ -5762,6 +6204,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.GetAutoLayout(Windows.UI.Xaml.FrameworkElement)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.MeasureOverride(Windows.Foundation.Size)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.SetAutoLayout(Windows.UI.Xaml.FrameworkElement,System.Nullable{System.Boolean})" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.AutoLayout" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Columns" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.FirstColumn" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.UniformGrid.Orientation" />
@@ -5989,6 +6432,7 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.CodePadding" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.DefaultEmojiFont" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.EmojiFontFamily" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.FlowDirection" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.FontFamily" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.FontSize" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.MarkdownRenderer.FontStretch" />
@@ -6121,6 +6565,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.GetIsFrozen(Windows.UI.Xaml.DependencyObject)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.SetIsFrozen(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.IsFrozen" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty" />
@@ -6361,6 +6806,11 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.FormatStringConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.FormatStringConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Converters.RemoteSystemKindToSymbolConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Converters.RemoteSystemKindToSymbolConverter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.RemoteSystemKindToSymbolConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.RemoteSystemKindToSymbolConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.RemoteSystemKindToSymbolConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Converters.ResourceNameToResourceStringConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Converters.ResourceNameToResourceStringConverter">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.ResourceNameToResourceStringConverter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Converters.ResourceNameToResourceStringConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
@@ -6411,6 +6861,11 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.SetAncestor(Windows.UI.Xaml.DependencyObject,System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.SetAncestorType(Windows.UI.Xaml.DependencyObject,System.Type)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.SetEnableActualSizeBinding(Windows.UI.Xaml.FrameworkElement,System.Boolean)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.ActualHeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.ActualWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.Ancestor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.AncestorType" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.FrameworkElementExtensions.EnableActualSizeBinding" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.AlternateColorProperty" />
@@ -6422,6 +6877,9 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.SetAlternateColor(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.Media.Brush)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.SetAlternateItemTemplate(Windows.UI.Xaml.Controls.ListViewBase,Windows.UI.Xaml.DataTemplate)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.SetStretchItemContainerDirection(Windows.UI.Xaml.Controls.ListViewBase,Microsoft.Toolkit.Uwp.UI.Extensions.StretchDirection)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.AlternateColor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.AlternateItemTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ListViewExtensions.StretchItemContainerDirection" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.FindChild``1(Windows.UI.Xaml.FrameworkElement)" />
@@ -6451,6 +6909,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.Mouse.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.Mouse.GetCursor(Windows.UI.Xaml.FrameworkElement)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.Mouse.SetCursor(Windows.UI.Xaml.FrameworkElement,Windows.UI.Core.CoreCursorType)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Mouse.Cursor" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.NullableBool.#ctor" />
@@ -6474,6 +6933,9 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.SetEnableMiddleClickScrolling(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.SetHorizontalScrollBarMargin(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Thickness)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.SetVerticalScrollBarMargin(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Thickness)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.EnableMiddleClickScrolling" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.HorizontalScrollBarMargin" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.ScrollViewerExtensions.VerticalScrollBarMargin" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.SkewTransformExtensions" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.SkewTransformExtensions">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.SkewTransformExtensions.GetMatrix(Windows.UI.Xaml.Media.SkewTransform)" />
@@ -6489,6 +6951,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.StatusBarExtensions.SetForegroundColor(Windows.UI.Xaml.Controls.Page,Windows.UI.Color)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.StatusBarExtensions.SetIsVisible(Windows.UI.Xaml.Controls.Page,System.Boolean)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.StatusBarExtensions.IsStatusBarSupported" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.StatusBarExtensions.IsVisible" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.StretchDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.StretchDirection">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.StretchDirection.Both" />
@@ -6522,7 +6985,15 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetMinValue(Windows.UI.Xaml.DependencyObject,System.Double)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.SetStepValue(Windows.UI.Xaml.DependencyObject,System.Double)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.Controller" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableHapticFeedback" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableMinMaxValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.EnableTapToNextControl" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.ForceMenuItem" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.Icon" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.IsSupported" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MaxValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.MinValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.SurfaceDialTextbox.StepValue" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.CustomMaskProperty" />
@@ -6535,6 +7006,9 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.SetCustomMask(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.SetMask(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.SetPlaceHolder(Windows.UI.Xaml.DependencyObject,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.CustomMask" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.Mask" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxMask.PlaceHolder" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.IsValidProperty" />
@@ -6550,6 +7024,10 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.SetRegex(Windows.UI.Xaml.Controls.TextBox,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.SetValidationMode(Windows.UI.Xaml.Controls.TextBox,Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.SetValidationType(Windows.UI.Xaml.Controls.TextBox,Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.IsValid" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.Regex" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationType" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex/ValidationMode" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Extensions.TextBoxRegex.ValidationMode.Dynamic" />
@@ -6629,6 +7107,16 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.ToVector2(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.ToVector3(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.ToVector4(System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.AnchorPoint" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.CenterPoint" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.NormalizedCenterPoint" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.Offset" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.Opacity" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.RotationAngle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.RotationAngleInDegrees" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.RotationAxis" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.Scale" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.VisualExtensions.Size" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindAscendant(Windows.UI.Xaml.DependencyObject,System.Type)" />
@@ -6639,6 +7127,18 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendant``1(Windows.UI.Xaml.DependencyObject)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendantByName(Windows.UI.Xaml.DependencyObject,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.VisualTree.FindDescendants``1(Windows.UI.Xaml.DependencyObject)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Extensions.Markup">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice" Id="T:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.ProvideValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Default" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Desktop" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Holographic" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.IoT" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Team" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Extensions.Markup.OnDevice.Xbox" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Helpers">
@@ -6664,6 +7164,69 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener.CurrentTheme" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener.CurrentThemeName" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener.IsHighContrast" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Lottie">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.Issue" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.Issue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.put_Code(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.put_Description(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.ToString" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Code" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Description" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateCSharpCode" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateCxCode(System.String,System.String@,System.String@)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateLottieXml" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateWinCompXml" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Duration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.FileName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.InstantiationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.IsCompatibleWithCurrentOS" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.JsonParsingIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieDetails" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieHeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieValidationIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieVersion" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Markers" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.OptimizationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Options" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ParseTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ReadTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.SuggestedClassName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.SuggestedFileName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.TranslationIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.TranslationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ValidationTime" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.All" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.IncludeDiagnostics" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.None" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.Optimize" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.AnimatedVisualInvalidated" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.#ctor(Windows.Storage.StorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.CreateFromString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.put_Options(Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.put_UriSource(Windows.Foundation.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetSourceAsync(Windows.Foundation.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetSourceAsync(Windows.Storage.StorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.ToString" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.TryCreateAnimatedVisual(Windows.UI.Composition.Compositor,System.Object@)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.Options" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.OptionsProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.UriSource" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.UriSourceProperty" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Media">
@@ -8067,170 +8630,6 @@
     <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WebBrowserUriTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Toolkit.Win32.UI.Controls.WinForms">
-    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebBrowserUriTypeConverter" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebBrowserUriTypeConverter">
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebBrowserUriTypeConverter.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebBrowserUriTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView">
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.AcceleratorKeyPressed" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ContainsFullScreenElementChanged" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ContentLoading" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.DOMContentLoaded" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.FrameContentLoading" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.FrameDOMContentLoaded" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.FrameNavigationCompleted" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.FrameNavigationStarting" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.LongRunningScriptDetected" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.MoveFocusRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NavigationCompleted" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NavigationStarting" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NewWindowRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.PermissionRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ScriptNotify" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.UnsafeContentWarningDisplaying" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.UnsupportedUriSchemeIdentified" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.UnviewableContentIdentified" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.AddInitializeScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.AddPreLoadedScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Close" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.DestroyHandle" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Dispose(System.Boolean)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.GetDeferredPermissionRequestById(System.UInt32)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.GoBack" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.GoForward" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScript(System.String,System.String[])" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScriptAsync(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.InvokeScriptAsync(System.String,System.String[])" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Navigate(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Navigate(System.Uri)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Navigate(System.Uri,System.Net.Http.HttpMethod,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NavigateToLocal(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.NavigateToString(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.OnHandleDestroyed(System.EventArgs)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Refresh" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Stop" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.System#ComponentModel#ISupportInitialize#BeginInit" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.System#ComponentModel#ISupportInitialize#EndInit" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.AllowDrop" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.BackColor" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.BackgroundImage" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.BackgroundImageLayout" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.CanGoBack" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.CanGoForward" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ContainsFullScreenElement" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Cursor" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.DefaultSize" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.DesignMode" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.DocumentTitle" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Enabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.EnterpriseId" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Focused" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Font" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ForeColor" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.ImeMode" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.IsIndexedDBEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.IsJavaScriptEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.IsScriptNotifyAllowed" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.IsSupported" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Padding" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Process" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.RightToLeft" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Settings" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Source" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Text" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.UseWaitCursor" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView.Version" />
-    </Type>
-  </Namespace>
-  <Namespace Name="Microsoft.Toolkit.Win32.UI.Controls.WPF">
-    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView">
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.AcceleratorKeyPressed" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.ContainsFullScreenElementChanged" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.ContentLoading" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.DOMContentLoaded" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.FrameContentLoading" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.FrameDOMContentLoaded" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.FrameNavigationCompleted" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.FrameNavigationStarting" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.LongRunningScriptDetected" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.MoveFocusRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NavigationCompleted" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NavigationStarting" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NewWindowRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.PermissionRequested" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.ScriptNotify" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.UnsafeContentWarningDisplaying" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.UnsupportedUriSchemeIdentified" />
-      <Member Id="E:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.UnviewableContentIdentified" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.AddInitializeScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.AddPreLoadedScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.BeginInit" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Close" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.EndInit" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.GetDeferredPermissionRequestById(System.UInt32)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.GoBack" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.GoForward" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Initialize" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScript(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScript(System.String,System.String[])" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScriptAsync(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.InvokeScriptAsync(System.String,System.String[])" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Navigate(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Navigate(System.Uri)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Navigate(System.Uri,System.Net.Http.HttpMethod,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NavigateToLocal(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.NavigateToString(System.String)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Refresh" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Stop" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.UpdateBounds(System.Windows.Rect)" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.CanGoBack" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.CanGoForward" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.ContainsFullScreenElement" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.DocumentTitle" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.EnterpriseId" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsIndexedDBEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsJavaScriptEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsScriptNotifyAllowed" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsSupported" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.IsWebViewVisible" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Process" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Settings" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Source" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebView.Version" />
-    </Type>
-    <Type Name="Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost" Id="T:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost">
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.#ctor" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Close" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Dispose(System.Boolean)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.Initialize" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.UpdateBounds(System.Windows.Rect)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.UpdateSize(System.Windows.Size)" />
-      <Member Id="M:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ChildWindow" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DeviceDpi" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.DpiScale" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.IsScalingRequired" />
-      <Member Id="P:Microsoft.Toolkit.Win32.UI.Controls.WPF.WebViewHost.ParentHandle" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Win32.UI.XamlHost">
