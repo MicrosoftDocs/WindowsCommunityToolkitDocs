@@ -1,0 +1,226 @@
+﻿<Type Name="MicrosoftGraphServiceMessage" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage">
+  <TypeSignature Language="C#" Value="public class MicrosoftGraphServiceMessage" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftGraphServiceMessage extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class MicrosoftGraphServiceMessage" />
+  <TypeSignature Language="F#" Value="type MicrosoftGraphServiceMessage = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Class using Office 365 Microsoft Graph Messages API
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MicrosoftGraphServiceMessage (Microsoft.Graph.GraphServiceClient graphClientProvider, Microsoft.Graph.User currentConnectedUser);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.GraphServiceClient graphClientProvider, class Microsoft.Graph.User currentConnectedUser) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.#ctor(Microsoft.Graph.GraphServiceClient,Microsoft.Graph.User)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (graphClientProvider As GraphServiceClient, currentConnectedUser As User)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage : Microsoft.Graph.GraphServiceClient * Microsoft.Graph.User -&gt; Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage" Usage="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage (graphClientProvider, currentConnectedUser)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="graphClientProvider" Type="Microsoft.Graph.GraphServiceClient" />
+        <Parameter Name="currentConnectedUser" Type="Microsoft.Graph.User" />
+      </Parameters>
+      <Docs>
+        <param name="graphClientProvider">Instance of GraphClientService class</param>
+        <param name="currentConnectedUser">Instance of Graph.User class</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmailsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt; GetEmailsAsync (int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] selectFields = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserMessagesCollectionPage&gt; GetEmailsAsync(int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] selectFields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.GetEmailsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEmailsAsync (Optional top As Integer = 10, Optional selectFields As MicrosoftGraphMessageFields() = null) As Task(Of IUserMessagesCollectionPage)" />
+      <MemberSignature Language="F#" Value="member this.GetEmailsAsync : int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;" Usage="microsoftGraphServiceMessage.GetEmailsAsync (top, selectFields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="selectFields" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[]" />
+      </Parameters>
+      <Docs>
+        <param name="top">The number of items to return in a result set.</param>
+        <param name="selectFields">array of fields Microsoft Graph has to include in the response.</param>
+        <summary>
+            Retrieve current connected user's emails.
+            <para>(default=10)</para><para>Permission Scope: Mail.Read (Read user mail)</para></summary>
+        <returns>a Collection of Pages containing the messages</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEmailsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt; GetEmailsAsync (System.Threading.CancellationToken cancellationToken, int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] selectFields = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserMessagesCollectionPage&gt; GetEmailsAsync(valuetype System.Threading.CancellationToken cancellationToken, int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] selectFields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.GetEmailsAsync(System.Threading.CancellationToken,System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[])" />
+      <MemberSignature Language="F#" Value="member this.GetEmailsAsync : System.Threading.CancellationToken * int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;" Usage="microsoftGraphServiceMessage.GetEmailsAsync (cancellationToken, top, selectFields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="top" Type="System.Int32" />
+        <Parameter Name="selectFields" Type="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphMessageFields[]" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <param name="top">The number of items to return in a result set.</param>
+        <param name="selectFields">array of fields Microsoft Graph has to include in the response.</param>
+        <summary>
+            Retrieve current connected user's emails.
+            <para>(default=10)</para><para>Permission Scope : Mail.Read (Read user mail)</para></summary>
+        <returns>a Collection of Pages containing the messages</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageEmailsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt; NextPageEmailsAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserMessagesCollectionPage&gt; NextPageEmailsAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.NextPageEmailsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextPageEmailsAsync () As Task(Of IUserMessagesCollectionPage)" />
+      <MemberSignature Language="F#" Value="member this.NextPageEmailsAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;" Usage="microsoftGraphServiceMessage.NextPageEmailsAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            retrieve the next page of messages
+            </summary>
+        <returns>the next collection of messages or null if there are no more messages</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextPageEmailsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt; NextPageEmailsAsync (System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserMessagesCollectionPage&gt; NextPageEmailsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.NextPageEmailsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.NextPageEmailsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;" Usage="microsoftGraphServiceMessage.NextPageEmailsAsync cancellationToken" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserMessagesCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <summary>
+            retrieve the next page of messages
+            </summary>
+        <returns>the next collection of messages or null if there are no more messages</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendEmailAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendEmailAsync (string subject, string content, Microsoft.Graph.BodyType contentType, string[] to, string[] cc = null, Microsoft.Graph.Importance importance = Microsoft.Graph.Importance.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendEmailAsync(string subject, string content, valuetype Microsoft.Graph.BodyType contentType, string[] to, string[] cc, valuetype Microsoft.Graph.Importance importance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.SendEmailAsync(System.String,System.String,Microsoft.Graph.BodyType,System.String[],System.String[],Microsoft.Graph.Importance)" />
+      <MemberSignature Language="F#" Value="member this.SendEmailAsync : string * string * Microsoft.Graph.BodyType * string[] * string[] * Microsoft.Graph.Importance -&gt; System.Threading.Tasks.Task" Usage="microsoftGraphServiceMessage.SendEmailAsync (subject, content, contentType, to, cc, importance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="contentType" Type="Microsoft.Graph.BodyType" />
+        <Parameter Name="to" Type="System.String[]" />
+        <Parameter Name="cc" Type="System.String[]" />
+        <Parameter Name="importance" Type="Microsoft.Graph.Importance" />
+      </Parameters>
+      <Docs>
+        <param name="subject">The subject of the message.</param>
+        <param name="content">The text or HTML content.</param>
+        <param name="contentType">The content type: Text = 0, HTML = 1</param>
+        <param name="to">The To recipients for the message.</param>
+        <param name="cc">The Cc recipients for the message.</param>
+        <param name="importance">The importance of the message: Low = 0, Normal = 1, High = 2.</param>
+        <summary>
+            Send an message
+            <para> Permission Scope: (Send mail as user)</para></summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SendEmailAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SendEmailAsync (System.Threading.CancellationToken cancellationToken, string subject, string content, Microsoft.Graph.BodyType contentType, string[] to, string[] cc = null, Microsoft.Graph.Importance importance = Microsoft.Graph.Importance.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SendEmailAsync(valuetype System.Threading.CancellationToken cancellationToken, string subject, string content, valuetype Microsoft.Graph.BodyType contentType, string[] to, string[] cc, valuetype Microsoft.Graph.Importance importance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceMessage.SendEmailAsync(System.Threading.CancellationToken,System.String,System.String,Microsoft.Graph.BodyType,System.String[],System.String[],Microsoft.Graph.Importance)" />
+      <MemberSignature Language="F#" Value="member this.SendEmailAsync : System.Threading.CancellationToken * string * string * Microsoft.Graph.BodyType * string[] * string[] * Microsoft.Graph.Importance -&gt; System.Threading.Tasks.Task" Usage="microsoftGraphServiceMessage.SendEmailAsync (cancellationToken, subject, content, contentType, to, cc, importance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+        <Parameter Name="subject" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="contentType" Type="Microsoft.Graph.BodyType" />
+        <Parameter Name="to" Type="System.String[]" />
+        <Parameter Name="cc" Type="System.String[]" />
+        <Parameter Name="importance" Type="Microsoft.Graph.Importance" />
+      </Parameters>
+      <Docs>
+        <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" /> for the request.</param>
+        <param name="subject">The subject of the message.</param>
+        <param name="content">The text or HTML content.</param>
+        <param name="contentType">The content type: Text = 0, HTML = 1</param>
+        <param name="to">The To recipients for the message.</param>
+        <param name="cc">The Cc recipients for the message.</param>
+        <param name="importance">The importance of the message: Low = 0, Normal = 1, High = 2.</param>
+        <summary>
+            Send a message
+            <para> Permission Scope: (Send mail as user)</para></summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

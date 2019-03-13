@@ -1,0 +1,384 @@
+﻿<Type Name="LinkedInService" FullName="Microsoft.Toolkit.Services.LinkedIn.LinkedInService">
+  <TypeSignature Language="C#" Value="public class LinkedInService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinkedInService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.LinkedIn.LinkedInService" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinkedInService" />
+  <TypeSignature Language="F#" Value="type LinkedInService = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class for connecting to LinkedIn.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetUserProfileAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInProfile&gt; GetUserProfileAsync (bool requireEmailAddress = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.LinkedIn.LinkedInProfile&gt; GetUserProfileAsync(bool requireEmailAddress) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.GetUserProfileAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserProfileAsync (Optional requireEmailAddress As Boolean = false) As Task(Of LinkedInProfile)" />
+      <MemberSignature Language="F#" Value="member this.GetUserProfileAsync : bool -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInProfile&gt;" Usage="linkedInService.GetUserProfileAsync requireEmailAddress" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInProfile&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="requireEmailAddress" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="requireEmailAddress">Require email address - which needs user consensus.</param>
+        <summary>
+            Retrieve logged in users profile details.
+            </summary>
+        <returns>Strongly typed profile.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens oAuthTokens, Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions requiredPermissions = Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions.NotSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens oAuthTokens, valuetype Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions requiredPermissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As LinkedInOAuthTokens, Optional requiredPermissions As LinkedInPermissions = Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions.NotSet) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens * Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions -&gt; bool" Usage="linkedInService.Initialize (oAuthTokens, requiredPermissions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens" />
+        <Parameter Name="requiredPermissions" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <param name="requiredPermissions">Scope / permissions app requires user to sign up for.</param>
+        <summary>
+            Initialize underlying provider with relevent token information for Uwp.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string clientId, string clientSecret, string callbackUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string clientId, string clientSecret, string callbackUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (clientId As String, clientSecret As String, callbackUri As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * string -&gt; bool" Usage="linkedInService.Initialize (clientId, clientSecret, callbackUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientId" Type="System.String" />
+        <Parameter Name="clientSecret" Type="System.String" />
+        <Parameter Name="callbackUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="clientId">Client Id.</param>
+        <param name="clientSecret">Client secret.</param>
+        <param name="callbackUri">Callback URI. Has to match callback URI defined at www.linkedin.com/developer/apps/ (can be arbitrary).</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens oAuthTokens, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authentication, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager, Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions requiredPermissions = Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions.NotSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens oAuthTokens, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authentication, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager, valuetype Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions requiredPermissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As LinkedInOAuthTokens, authentication As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager, Optional requiredPermissions As LinkedInPermissions = Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions.NotSet) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager * Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions -&gt; bool" Usage="linkedInService.Initialize (oAuthTokens, authentication, passwordManager, storageManager, requiredPermissions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInOAuthTokens" />
+        <Parameter Name="authentication" Type="Microsoft.Toolkit.Services.Core.IAuthenticationBroker" />
+        <Parameter Name="passwordManager" Type="Microsoft.Toolkit.Services.Core.IPasswordManager" />
+        <Parameter Name="storageManager" Type="Microsoft.Toolkit.Services.Core.IStorageManager" />
+        <Parameter Name="requiredPermissions" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInPermissions" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <param name="authentication">Authentication result interface.</param>
+        <param name="passwordManager">Password Manager interface, store the password.</param>
+        <param name="storageManager">Storage Manager interface.</param>
+        <param name="requiredPermissions">Scope / permissions app requires user to sign up for.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string clientId, string clientSecret, string callbackUri, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authentication, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string clientId, string clientSecret, string callbackUri, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authentication, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (clientId As String, clientSecret As String, callbackUri As String, authentication As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * string * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager -&gt; bool" Usage="linkedInService.Initialize (clientId, clientSecret, callbackUri, authentication, passwordManager, storageManager)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientId" Type="System.String" />
+        <Parameter Name="clientSecret" Type="System.String" />
+        <Parameter Name="callbackUri" Type="System.String" />
+        <Parameter Name="authentication" Type="Microsoft.Toolkit.Services.Core.IAuthenticationBroker" />
+        <Parameter Name="passwordManager" Type="Microsoft.Toolkit.Services.Core.IPasswordManager" />
+        <Parameter Name="storageManager" Type="Microsoft.Toolkit.Services.Core.IStorageManager" />
+      </Parameters>
+      <Docs>
+        <param name="clientId">Client Id.</param>
+        <param name="clientSecret">Client secret.</param>
+        <param name="callbackUri">Callback URI. Has to match callback URI defined at www.linkedin.com/developer/apps/ (can be arbitrary).</param>
+        <param name="authentication">Authentication result interface.</param>
+        <param name="passwordManager">Password Manager interface, store the password.</param>
+        <param name="storageManager">Storage Manager interface.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Services.LinkedIn.LinkedInService Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Services.LinkedIn.LinkedInService Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As LinkedInService" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Services.LinkedIn.LinkedInService" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.LinkedIn.LinkedInService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets public singleton property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; LoginAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; LoginAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.LoginAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="linkedInService.LoginAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Log user in to LinkedIn.
+            </summary>
+        <returns>Returns success or failure of login attempt.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Logout">
+      <MemberSignature Language="C#" Value="public void Logout ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Logout() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Logout" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
+      <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="linkedInService.Logout " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Obsolete("Logout is deprecated, please use LogoutAsync instead.", true)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Log user out of LinkedIn.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoutAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LogoutAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LogoutAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.LogoutAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoutAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.LogoutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="linkedInService.LogoutAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Log user out of LinkedIn.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider Provider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As LinkedInDataProvider" />
+      <MemberSignature Language="F#" Value="member this.Provider : Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider" Usage="Microsoft.Toolkit.Services.LinkedIn.LinkedInService.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Services.LinkedIn.LinkedInDataProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a reference to an instance of the underlying data provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt; RequestAsync&lt;T&gt; (Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig config, int maxRecords = 20, int startRecord = 0, string fields = &quot;id&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;!!T&gt;&gt; RequestAsync&lt;T&gt;(class Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig config, int32 maxRecords, int32 startRecord, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.RequestAsync``1(Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig,System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync(Of T) (config As LinkedInDataConfig, Optional maxRecords As Integer = 20, Optional startRecord As Integer = 0, Optional fields As String = &quot;id&quot;) As Task(Of List(Of T))" />
+      <MemberSignature Language="F#" Value="member this.RequestAsync : Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig * int * int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;'T&gt;&gt;" Usage="linkedInService.RequestAsync (config, maxRecords, startRecord, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInDataConfig" />
+        <Parameter Name="maxRecords" Type="System.Int32" />
+        <Parameter Name="startRecord" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Strong type of model.</typeparam>
+        <param name="config">LinkedInDataConfig instance.</param>
+        <param name="maxRecords">Upper limit of records to return.</param>
+        <param name="startRecord">Index of paged results.</param>
+        <param name="fields">A comma seperated string of required fields, which will have strongly typed representation in the model passed in.</param>
+        <summary>
+            Request list data from service provider based upon a given config / query.
+            </summary>
+        <returns>Strongly typed list of data returned from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShareActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt; ShareActivityAsync (Microsoft.Toolkit.Services.LinkedIn.LinkedInShareRequest shareRequest);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt; ShareActivityAsync(class Microsoft.Toolkit.Services.LinkedIn.LinkedInShareRequest shareRequest) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.ShareActivityAsync(Microsoft.Toolkit.Services.LinkedIn.LinkedInShareRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShareActivityAsync (shareRequest As LinkedInShareRequest) As Task(Of LinkedInShareResponse)" />
+      <MemberSignature Language="F#" Value="member this.ShareActivityAsync : Microsoft.Toolkit.Services.LinkedIn.LinkedInShareRequest -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt;" Usage="linkedInService.ShareActivityAsync shareRequest" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shareRequest" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInShareRequest" />
+      </Parameters>
+      <Docs>
+        <param name="shareRequest">Share request.</param>
+        <summary>
+            Share content to LinkedIn.
+            </summary>
+        <returns>Boolean indicating success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShareActivityAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt; ShareActivityAsync (string commentContainingUrl, Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility visibilityCode = Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility.ConnectionsOnly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt; ShareActivityAsync(string commentContainingUrl, valuetype Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility visibilityCode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.LinkedIn.LinkedInService.ShareActivityAsync(System.String,Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShareActivityAsync (commentContainingUrl As String, Optional visibilityCode As LinkedInShareVisibility = Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility.ConnectionsOnly) As Task(Of LinkedInShareResponse)" />
+      <MemberSignature Language="F#" Value="member this.ShareActivityAsync : string * Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt;" Usage="linkedInService.ShareActivityAsync (commentContainingUrl, visibilityCode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.LinkedIn.LinkedInShareResponse&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="commentContainingUrl" Type="System.String" />
+        <Parameter Name="visibilityCode" Type="Microsoft.Toolkit.Services.LinkedIn.LinkedInShareVisibility" />
+      </Parameters>
+      <Docs>
+        <param name="commentContainingUrl">Comment containing a Url.</param>
+        <param name="visibilityCode">Code for who to share with.</param>
+        <summary>
+            Share content to LinkedIn.
+            </summary>
+        <returns>Boolean indicating success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

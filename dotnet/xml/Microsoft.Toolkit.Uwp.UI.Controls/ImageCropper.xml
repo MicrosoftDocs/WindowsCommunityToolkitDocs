@@ -1,0 +1,570 @@
+﻿<Type Name="ImageCropper" FullName="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper">
+  <TypeSignature Language="C#" Value="public class ImageCropper : Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageCropper extends Windows.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImageCropper&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type ImageCropper = class&#xA;    inherit Control" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_LayoutGrid", Type=typeof(Windows.UI.Xaml.Controls.Grid))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_ImageCanvas", Type=typeof(Windows.UI.Xaml.Controls.Canvas))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_SourceImage", Type=typeof(Windows.UI.Xaml.Controls.Image))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_MaskAreaPath", Type=typeof(Windows.UI.Xaml.Shapes.Path))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_TopThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_BottomThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_LeftThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_RightThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_UpperLeftThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_UpperRightThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_LowerLeftThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Windows.UI.Xaml.TemplatePart(Name="PART_LowerRightThumb", Type=typeof(Microsoft.Toolkit.Uwp.UI.Controls.ImageCropperThumb))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper" /> control allows user to crop image freely.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ImageCropper ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AspectRatio">
+      <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; AspectRatio { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; AspectRatio" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property AspectRatio As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.AspectRatio : Nullable&lt;double&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatio" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.Double&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the aspect ratio of the cropped image, the default value is null.
+            Only works when <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShape" /> = <see cref="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Rectangular" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AspectRatioProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty AspectRatioProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty AspectRatioProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatioProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AspectRatioProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AspectRatioProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatioProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.AspectRatio" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CroppedRegion">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Rect CroppedRegion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.Foundation.Rect CroppedRegion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CroppedRegion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CroppedRegion As Rect" />
+      <MemberSignature Language="F#" Value="member this.CroppedRegion : Windows.Foundation.Rect" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CroppedRegion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Rect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current cropped region.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CropShape">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Controls.CropShape CropShape { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Controls.CropShape CropShape" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property CropShape As CropShape" />
+      <MemberSignature Language="F#" Value="member this.CropShape : Microsoft.Toolkit.Uwp.UI.Controls.CropShape with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShape" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.CropShape</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the shape to use when cropping.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CropShapeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty CropShapeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty CropShapeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShapeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CropShapeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CropShapeProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShapeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.CropShape" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadImageFromFile">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LoadImageFromFile (Windows.Storage.StorageFile imageFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LoadImageFromFile(class Windows.Storage.StorageFile imageFile) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.LoadImageFromFile(Windows.Storage.StorageFile)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadImageFromFile (imageFile As StorageFile) As Task" />
+      <MemberSignature Language="F#" Value="member this.LoadImageFromFile : Windows.Storage.StorageFile -&gt; System.Threading.Tasks.Task" Usage="imageCropper.LoadImageFromFile imageFile" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageFile" Type="Windows.Storage.StorageFile" />
+      </Parameters>
+      <Docs>
+        <param name="imageFile">The image file.</param>
+        <summary>
+            Load an image from a file.
+            </summary>
+        <returns>Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mask">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush Mask { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush Mask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Mask" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mask As Brush" />
+      <MemberSignature Language="F#" Value="member this.Mask : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Mask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the mask on the cropped image.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaskProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaskProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MaskProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaskProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaskProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MaskProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Mask" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override Windows.Foundation.Size MeasureOverride (Windows.Foundation.Size availableSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Windows.Foundation.Size MeasureOverride(valuetype Windows.Foundation.Size availableSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MeasureOverride(Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : Windows.Foundation.Size -&gt; Windows.Foundation.Size" Usage="imageCropper.MeasureOverride availableSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="availableSize" Type="Windows.Foundation.Size" />
+      </Parameters>
+      <Docs>
+        <param name="availableSize">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="MinCroppedPixelLength">
+      <MemberSignature Language="C#" Value="public double MinCroppedPixelLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinCroppedPixelLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinCroppedPixelLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinCroppedPixelLength As Double" />
+      <MemberSignature Language="F#" Value="member this.MinCroppedPixelLength : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinCroppedPixelLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the minimum cropped length(in pixel).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinSelectedLength">
+      <MemberSignature Language="C#" Value="public double MinSelectedLength { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinSelectedLength" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinSelectedLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinSelectedLength As Double" />
+      <MemberSignature Language="F#" Value="member this.MinSelectedLength : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.MinSelectedLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the minimum selectable length.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="imageCropper.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryThumbStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style PrimaryThumbStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style PrimaryThumbStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryThumbStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.PrimaryThumbStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value for the style to use for the primary thumbs of the ImageCropper.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrimaryThumbStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PrimaryThumbStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PrimaryThumbStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PrimaryThumbStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PrimaryThumbStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.PrimaryThumbStyle" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="imageCropper.Reset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Reset the cropped area.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SaveAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (Windows.Storage.Streams.IRandomAccessStream stream, Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat bitmapFileFormat, bool keepRectangularOutput = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class Windows.Storage.Streams.IRandomAccessStream stream, valuetype Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat bitmapFileFormat, bool keepRectangularOutput) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SaveAsync(Windows.Storage.Streams.IRandomAccessStream,Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : Windows.Storage.Streams.IRandomAccessStream * Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat * bool -&gt; System.Threading.Tasks.Task" Usage="imageCropper.SaveAsync (stream, bitmapFileFormat, keepRectangularOutput)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Windows.Storage.Streams.IRandomAccessStream" />
+        <Parameter Name="bitmapFileFormat" Type="Microsoft.Toolkit.Uwp.UI.Controls.BitmapFileFormat" />
+        <Parameter Name="keepRectangularOutput" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="stream">The target stream.</param>
+        <param name="bitmapFileFormat">the specified format.</param>
+        <param name="keepRectangularOutput">Whether to always keep rectangular output.</param>
+        <summary>
+            Saves the cropped image to a stream with the specified format.
+            </summary>
+        <returns>Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondaryThumbStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style SecondaryThumbStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style SecondaryThumbStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecondaryThumbStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.SecondaryThumbStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value for the style to use for the secondary thumbs of the ImageCropper.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SecondaryThumbStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SecondaryThumbStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SecondaryThumbStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SecondaryThumbStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SecondaryThumbStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SecondaryThumbStyle" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Imaging.WriteableBitmap Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Imaging.WriteableBitmap Source" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As WriteableBitmap" />
+      <MemberSignature Language="F#" Value="member this.Source : Windows.UI.Xaml.Media.Imaging.WriteableBitmap with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Imaging.WriteableBitmap</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets or sets the source of the cropped image.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.SourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.Source" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbPlacement">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement ThumbPlacement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement ThumbPlacement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacement" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThumbPlacement As ThumbPlacement" />
+      <MemberSignature Language="F#" Value="member this.ThumbPlacement : Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.ThumbPlacement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value for thumb placement.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbPlacementProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ThumbPlacementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ThumbPlacementProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ThumbPlacementProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ThumbPlacementProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageCropper.ThumbPlacement" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
