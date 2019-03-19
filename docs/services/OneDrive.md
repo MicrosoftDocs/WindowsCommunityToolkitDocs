@@ -292,11 +292,7 @@ End Using
 
 ### Known issues and limitations
 
-This service, uses [Windows.Storage](https://docs.microsoft.com/en-us/uwp/api/windows.storage) for file managing.
-
-As OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_, when usign the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method. 
-
-This method transforms the Windows Storage collision Option into OneDriveConflictBehavior parameters that are sent alongside the request to the API.
+As OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_, when usign the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException as it's not supported by the time being.
 
 
 ## Sample Code
