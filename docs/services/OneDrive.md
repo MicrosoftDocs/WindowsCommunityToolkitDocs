@@ -290,14 +290,14 @@ Using stream = TryCast((Await file.StorageItemPlatformService.GetThumbnailAsync(
 End Using
 ```
 
-## Known issues and limitations
+### Known issues and limitations
 
-> [!IMPORTANT]
-> Creating a File using the _OpenIfExists_ CollisionOption is not supported and in the future will return an argument Exception. 
+This service, uses [Windows.Storage](https://docs.microsoft.com/en-us/uwp/api/windows.storage) for file managing.
 
-This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing.
+As OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_, when usign the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method. 
 
-As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is caught, or else, manually checking previously if the file exists.
+This method transforms the Windows Storage collision Option into OneDriveConflictBehavior parameters that are sent alongside the request to the API.
+
 
 ## Sample Code
 
