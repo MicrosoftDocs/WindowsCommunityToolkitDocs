@@ -292,7 +292,8 @@ End Using
 
 ### Known issues and limitations
 
-Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception. 
+> [!IMPORTANT]
+> Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception. 
 
 This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when using the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
 
