@@ -290,7 +290,7 @@ Using stream = TryCast((Await file.StorageItemPlatformService.GetThumbnailAsync(
 End Using
 ```
 
-### Known issues and limitations
+## Known issues and limitations
 
 > [!IMPORTANT]
 > Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception. 
