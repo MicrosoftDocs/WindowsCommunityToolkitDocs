@@ -51,7 +51,7 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## API Source Code
 
-- [BackdropInvertBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/ImageBlendBrush.cs)
+- [ImageBlendBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/ImageBlendBrush.cs)
 
 ## Related Topics
 
