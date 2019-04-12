@@ -294,7 +294,7 @@ End Using
 
 Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception. 
 
-This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when usign the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
+This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when using the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
 
 As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is catched, or else, manually checking previously if the file exists.
 
