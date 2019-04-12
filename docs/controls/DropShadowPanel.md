@@ -3,6 +3,9 @@ title: DropShadowPanel XAML Control
 author: nmetulev
 description: The DropShadowPanel Control allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, DropShadowPanel, DropShadow, xaml Control, xaml
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # DropShadowPanel XAML Control
