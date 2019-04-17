@@ -26,7 +26,7 @@ To get started using the **WindowsXamlHost** control:
 
 See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
-### Add a Windows XAML host control
+## Add a Windows XAML host control
 
 In the Visual Studio **Toolbox** window, find the **WindowsXamlHost** control, and then drag it onto the designer of your WPF or Windows Forms application.
 
@@ -237,7 +237,7 @@ Now we need to add the XAML artifacts that were built by the UWP class library a
 
 To keep the WPF application in sync with future changes to the UWP class library, you need to explicitly add a build dependency by right-clicking on the WPF project and choosing **Build Dependencies**. Add a **Project** dependency so the WPF application depends on the UWP class library.
 
-## Bind data from your desktop application to a field in the custom control
+### Bind data from your desktop application to a field in the custom control
 
 1. In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
 
