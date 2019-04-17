@@ -26,7 +26,7 @@ To get started using the **WindowsXamlHost** control:
 
 The **WindowsXamlHost** control provides several ways to host a first-party control provided by the Windows SDK or WinUI library. You can configure the controls at design time or dynamically at run time.
 
-The following sections provide general instructions. For a walkthrough that demonstrates how to use the **WindowsXamlHost** control to host a UWP [CalendarView](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/calendar-view) control in a WPF app, see [Host a standard UWP control in a WPF app](https://docs.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
+## Add a Windows XAML host control
 
 ### Set up your project
 
@@ -238,7 +238,7 @@ Now we need to add the XAML artifacts that were built by the UWP class library a
 
 To keep the WPF application in sync with future changes to the UWP class library, you need to explicitly add a build dependency by right-clicking on the WPF project and choosing **Build Dependencies**. Add a **Project** dependency so the WPF application depends on the UWP class library.
 
-## Bind data from your desktop application to a field in the custom control
+### Bind data from your desktop application to a field in the custom control
 
 1. In **Solution Explorer**, expand the UWP class library project, and open the code behind file of a page.
 
