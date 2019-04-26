@@ -45,7 +45,7 @@ Unless specified otherwise in this article, the documentation for the [WebViewCo
 
 When compared to the UWP **WebView** control, the current release of the WPF and Windows Forms **WebView** control has some limitations. For the complete list of these limitations, see [Known Issues of the WebView control for Windows Forms and WPF applications](WebView-known-issues.md).
 
-**See also the [*FAQs*](#frequently-asked-questions-(faqs)) section below for answers to common questions when WebView for Windows Forms and WPF applications.**
+See also the [FAQs](#frequently-asked-questions-faqs) section below for answers to common questions when WebView for Windows Forms and WPF applications.
 
 ## Add the WebView control to the Visual Studio Toolbox for Windows Forms applications
 
