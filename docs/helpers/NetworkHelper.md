@@ -1,7 +1,7 @@
 ---
 title: NetworkHelper
 author: nmetulev
-description: he NetworkHelper class provides functionality to monitor changes in network connection and allows users to query for network information without additional lookups.
+description: The NetworkHelper class provides functionality to monitor changes in network connection and allows users to query for network information without additional lookups.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, NetworkHelper
 dev_langs:
   - csharp
@@ -12,7 +12,7 @@ dev_langs:
 
 The [NetworkHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.networkhelper) class provides functionality to monitor changes in network connection and allows users to query for network information without additional lookups.
 
-It exposes network information though a property called ConnectionInformation. The [ConnectionInformation](https://docs.microsoft.comdotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) holds information about ConnectionType, ConnectivityLevel, ConnectionCost, SignalStrength, Internet Connectivity and more.
+It exposes network information though a property called ConnectionInformation. The [ConnectionInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) holds information about ConnectionType, ConnectivityLevel, ConnectionCost, SignalStrength, Internet Connectivity and more.
 
 **_What is a metered connection?_**
 A metered connection is an Internet connection that has a data limit or cost associated with it. Cellular data connections are set as metered by default. Wi-Fi network connections can be set to metered, but aren't by default. Application developers should take metered nature of connection into account and reduce data usage.
@@ -21,7 +21,7 @@ A metered connection is an Internet connection that has a data limit or cost ass
 
 | Property | Type | Description |
 | -- | -- | -- |
-| ConnectionInformation | [ConnectionInformation](https://docs.microsoft.comdotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) | Gets instance of ConnectionInformation |
+| ConnectionInformation | [ConnectionInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) | Gets instance of ConnectionInformation |
 | Instance | NetworkHelper | Gets public singleton property |
 
 ## ConnectionInformation Properties
@@ -29,7 +29,7 @@ A metered connection is an Internet connection that has a data limit or cost ass
 |           Property            |                                                          Type                                                           |                                  Description                                  |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
 |        ConnectionCost         |           [ConnectionCost](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionCost)           |       Gets connection cost for the current Internet Connection Profile        |
-|        ConnectionType         |       [ConnectionType](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectiontype)]        |       Gets connection type for the current Internet Connection Profile        |
+|        ConnectionType         |       [ConnectionType](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectiontype)        |       Gets connection type for the current Internet Connection Profile        |
 |       ConnectivityLevel       | [NetworkConnectivityLevel](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkConnectivityLevel) |      Gets connectivity level for the current Internet Connection Profile      |
 |      IsInternetAvailable      |                                                          bool                                                           | Gets a value indicating whether internet is available across all connections  |
 | IsInternetOnMeteredConnection |                                                          bool                                                           | Gets a value indicating whether if the current internet connection is metered |
