@@ -110,7 +110,6 @@
 ### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
 ### [Transform Extensions](extensions/TransformExtensions.md)
 ## [Mouse Cursor](extensions/MouseCursor.md)
-## [NavigationView Styles](extensions/NavigationView.md)
 ## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 ## [StringExtensions](extensions/StringExtensions.md)
