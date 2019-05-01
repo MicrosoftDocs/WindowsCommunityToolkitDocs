@@ -134,6 +134,6 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
 
 ## Related Topics
 
-- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layern)
+- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
 - [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
 - [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)
