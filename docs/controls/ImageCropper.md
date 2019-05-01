@@ -5,6 +5,7 @@ description: ImageCropper control allows user to crop image freely.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ImageCropper
 dev_langs:
   - csharp
+  - vb
 ---
 
 # ImageCropper XAML Control
@@ -59,13 +60,27 @@ You can set the cropped image source by using the `LoadImageFromFile(StorageFile
 ```csharp
 //Load an image.
 await ImageCropper.LoadImageFromFile(file);
+
 //Another way to load an image.
 ImageCropper.Source = writeableBitmap;
+
 //Saves the cropped image to a stream.
 using (var fileStream = await someFile.OpenAsync(FileAccessMode.ReadWrite, StorageOpenOptions.None))
 {
     await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png);
 }
+```
+``vb
+' Load an image.
+Await ImageCropper.LoadImageFromFile(file)
+
+' Another way to load an image.
+ImageCropper.Source = writeableBitmap
+
+' Saves the cropped image to a stream.
+Using fileStream = Await someFile.OpenAsync(FileAccessMode.ReadWrite, StorageOpenOptions.None)
+    Await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png)
+End Using
 ```
 
 ### Use Circular ImageCropper
@@ -74,6 +89,9 @@ You can set `CropShape` property to use the circular ImageCropper.
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
+``vb
+ImageCropper.CropShape = CropShape.Circular
+```
 
 ### Change Aspect Ratio
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
@@ -81,10 +99,17 @@ You can set `AspectRatio` property to change the aspect ratio of the cropped ima
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
+``vb
+ImageCropper.AspectRatio = 16R / 9R
+```
+
 Or you can crop image without aspect ratio.
 
 ```csharp
 ImageCropper.AspectRatio = null;
+```
+``vb
+ImageCropper.AspectRatio = Nothing
 ```
 
 ## Sample Code
