@@ -3,6 +3,9 @@ title: Connected Animations XAML Attached Properties
 author: nmetulev
 description: The Connected Animation XAML Attached Properties enable connected animations to be defined in your XAML code
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, connected animations, animation, coordinated animations
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # Connected Animations XAML Attached Properties
@@ -15,7 +18,7 @@ The Connected Animations XAML Attached Properties enable connected animations to
 
 ```xaml
 <Page ...
-    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"/>
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations">
 
 <Border x:Name="Element" animations:Connected.Key="item"></Border>
 
@@ -29,6 +32,7 @@ The Connected Animations XAML Attached Properties enable connected animations to
         </DataTemplate>
     </GridView.ItemTemplate>
 </GridView>
+</Page>
 ```
 
 ## Sample Output
@@ -81,12 +85,21 @@ In those cases, you can use the **SetListDataItemForNextConnectedAnnimation** ex
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.Navigate(typeof(DetailsPage), dataItemToAnimate.Id);
 ```
+```vb
+    ' dataItemToAnimate is an object in the ListViewBase.ItemsSource collection
+    Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
+    Frame.Navigate(GetType(DetailsPage), dataItemToAnimate.Id)
+```
 
-This method is also helpful when navigating back to an item different from the item it was navigated from. 
+This method is also helpful when navigating back to an item different from the item it was navigated from.
 
 ```csharp
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.GoBack();
+```
+```vb
+    Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
+    Frame.GoBack()
 ```
 
 ## Examples
@@ -99,14 +112,14 @@ We need a set a key for the element to be connected with another element in a di
 
 ```xaml
 <Grid>
-    <Border Height="100" Width="100" Background="Purple" 
-        VerticalAlignment="Center" HorizontalAlignment="Center" 
-        animations:Connected.Key="item"/>
+    <Border Height="100" Width="100" Background="Purple"
+        VerticalAlignment="Center" HorizontalAlignment="Center"
+        animations:Connected.Key="item" />
 </Grid>
 ```
 
 **In second page**
- 
+
 We need to set the same key for the element to be connected with. Also, You can anchor another element to move along the connected animation path.
 
 ```xaml
