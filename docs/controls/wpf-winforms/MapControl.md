@@ -74,7 +74,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | LandmarksVisible | bool | Wraps the [LandmarksVisible](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.landmarksvisible) property. |
 | Layers | IList&lt;MapLayer&gt; | Wraps the [Layers](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.layers) property. |
 | LoadingStatus | MapLoadingStatus  | Wraps the [LoadingStatus](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.loadingstatus) property. |
-| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapcolorscheme) property. |
+| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.colorscheme) property. |
 | MapElements  | IList&lt;MapElement&gt; | Wraps the [MapElements](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapelements) property. |
 | MapProjection | MapProjection | Wraps the [MapProjection](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapprojection) property. |
 | MapServiceToken | string | Wraps the [MapServiceToken](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapservicetoken) property. |
