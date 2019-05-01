@@ -49,4 +49,4 @@ Visual Basic
 
 <!-- Optional -->
 
-- [Platform Specific Differences Generator](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.platformspecificanalyzerdifferencesgen)
+- [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
