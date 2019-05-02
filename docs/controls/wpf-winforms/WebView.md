@@ -3,6 +3,9 @@ title: WebView control for Windows Forms and WPF
 author: mcleanbyron
 description: The Windows Community Toolkit provides a version of the UWP web view control that can be used in WPF and Windows Forms applications. This control embeds a view into your application that renders web content using the Microsoft Edge rendering engine.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebView, Windows Forms, WPF
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # WebView control for Windows Forms and WPF
@@ -139,6 +142,9 @@ To set the initial content of the the **WebView** control, you can set the [Sour
 ```csharp
 webView1.Navigate("http://www.contoso.com");
 ```
+```vb
+webView1.Navigate("http://www.contoso.com")
+```
 
 ## Respond to navigation events
 
@@ -157,12 +163,22 @@ The **NavigationStarting** event is raised before the web view navigates to new 
 ```csharp
 webView1.NavigationStarting += webView1_NavigationStarting;
 
-private void webView1_NavigationStarting(object sender, WebViewNavigationStartingEventArgs args)
+private void webView1_NavigationStarting(object sender, WebViewControlNavigationStartingEventArgs args)
 {
     // Cancel navigation if URL is not allowed. (Implemetation of IsAllowedUri not shown.)
     if (!IsAllowedUri(args.Uri))
         args.Cancel = true;
 }
+```
+```vb
+Imports Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT
+
+AddHandler webView1.NavigationStarting, AddressOf webView1_NavigationStarting
+
+Private Sub webView1_NavigationStarting(ByVal sender As Object, ByVal args As WebViewControlNavigationStartingEventArgs)
+    ' Cancel navigation if URL is not allowed. (Implemetation of IsAllowedUri not shown.)
+    If Not IsAllowedUri(args.Uri) Then args.Cancel = True
+End Sub
 ```
 
 The **ContentLoading** is raised when the web view has started loading new content.
@@ -170,7 +186,7 @@ The **ContentLoading** is raised when the web view has started loading new conte
 ```csharp
 webView1.ContentLoading += webView1_ContentLoading;
 
-private void webView1_ContentLoading(WebView sender, WebViewContentLoadingEventArgs args)
+private void webView1_ContentLoading(WebView sender, WebViewControlContentLoadingEventArgs args)
 {
     // Show status.
     if (args.Uri != null)
@@ -179,13 +195,24 @@ private void webView1_ContentLoading(WebView sender, WebViewContentLoadingEventA
     }
 }
 ```
+```vb
+Imports Microsoft.Toolkit.Wpf.UI.Controls
+
+AddHandler webView1.ContentLoading, AddressOf webView1_ContentLoading
+
+Private Sub webView1_ContentLoading(ByVal sender As WebView, ByVal args As WebViewControlContentLoadingEventArgs)
+    If args.Uri IsNot Nothing Then
+        statusTextBlock.Text = "Loading content for " & args.Uri.ToString()
+    End If
+End Sub
+```
 
 The **DOMContentLoaded** event is raised when the web view has finished parsing the current HTML content.
 
 ```csharp
 webView1.DOMContentLoaded += webView1_DOMContentLoaded;
 
-private void webView1_DOMContentLoaded(WebView sender, WebViewDOMContentLoadedEventArgs args)
+private void webView1_DOMContentLoaded(WebView sender, WebViewControlDOMContentLoadedEventArgs args)
 {
     // Show status.
     if (args.Uri != null)
@@ -194,13 +221,22 @@ private void webView1_DOMContentLoaded(WebView sender, WebViewDOMContentLoadedEv
     }
 }
 ```
+```vb
+AddHandler webView1.DOMContentLoaded, AddressOf webView1_DOMContentLoaded
+
+Private Sub webView1_DOMContentLoaded(ByVal sender As WebView, ByVal args As WebViewControlDOMContentLoadedEventArgs)
+    If args.Uri IsNot Nothing Then
+        statusTextBlock.Text = "Content for " & args.Uri.ToString() & " has finished loading"
+    End If
+End Sub
+```
 
 The **NavigationCompleted** event is raised when the web view has finished loading the current content or if navigation has failed. To determine whether navigation has failed, check the **IsSuccess** and **WebErrorStatus** properties of the event args.
 
 ```csharp
 webView1.NavigationCompleted += webView1_NavigationCompleted;
 
-private void webView1_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+private void webView1_NavigationCompleted(WebView sender, WebViewControlNavigationCompletedEventArgs args)
 {
     if (args.IsSuccess == true)
     {
@@ -212,6 +248,17 @@ private void webView1_NavigationCompleted(WebView sender, WebViewNavigationCompl
                                " failed with error " + args.WebErrorStatus.ToString();
     }
 }
+```
+```vb
+AddHandler webView1.NavigationCompleted, AddressOf webView1_NavigationCompleted
+
+Private Sub webView1_NavigationCompleted(ByVal sender As WebView, ByVal args As WebViewControlNavigationCompletedEventArgs)
+    If args.IsSuccess = True Then
+        statusTextBlock.Text = "Navigation to " & args.Uri.ToString() & " completed successfully."
+    Else
+        statusTextBlock.Text = "Navigation to: " & args.Uri.ToString() & " failed with error " + args.WebErrorStatus.ToString()
+    End If
+End Sub
 ```
 
 Similar events occur in the same order for each **iframe** in the web view content:
@@ -262,6 +309,21 @@ private void webView_ContainsFullScreenElementChanged(object sender, object args
     }
 }
 ```
+```vb
+' Assume webView1 is defined in XAML
+AddHandler webView1.ContainsFullScreenElementChanged, AddressOf webView1_ContainsFullScreenElementChanged
+
+Private Sub webView_ContainsFullScreenElementChanged(ByVal sender As Object, ByVal args As Object)
+    Dim webview = TryCast(sender, WebView)
+    Dim applicationView = ApplicationView.GetForCurrentView()
+
+    If webview.ContainsFullScreenElement Then
+        applicationView.TryEnterFullScreenMode()
+    ElseIf applicationView.IsFullScreenMode Then
+        applicationView.ExitFullScreenMode()
+    End If
+End Sub
+```
 
 You can use the [NewWindowRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.newwindowrequested) event to handle cases where hosted web content requests a new window, such as a popup window. You can use another **WebView** control to display the contents of the requested window.
 <!-- Cannot get this event to fire -->
@@ -279,14 +341,23 @@ Here is an example of how an app would enable geolocation in a map from Bing:
 // Assume webView is defined in XAML
 webView.PermissionRequested += webView_PermissionRequested;
 
-private void webView_PermissionRequested(WebView sender, WebViewPermissionRequestedEventArgs args)
+private void webView_PermissionRequested(WebView sender, WebViewControlPermissionRequestedEventArgs args)
 {
-    if (args.PermissionRequest.PermissionType == WebViewPermissionType.Geolocation &&
+    if (args.PermissionRequest.PermissionType == WebViewControlPermissionType.Geolocation &&
         args.PermissionRequest.Uri.Host == "www.bing.com")
     {
         args.PermissionRequest.Allow();
     }
 }
+```
+```vb
+AddHandler webView1.PermissionRequested, AddressOf webView1_PermissionRequested
+
+Private Sub webView1_PermissionRequested(ByVal sender As WebView, ByVal args As WebViewControlPermissionRequestedEventArgs)
+    If args.PermissionRequest.PermissionType = WebViewControlPermissionType.Geolocation AndAlso args.PermissionRequest.Uri.Host = "www.bing.com" Then
+        args.PermissionRequest.Allow()
+    End If
+End Sub
 ```
 
 If your app requires user input or other asynchronous operations to respond to a permission request, use the [Defer](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest.defer) method of [WebViewControlPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest) to create a [WebViewControlDeferredPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontroldeferredpermissionrequest) that can be acted upon at a later time.
@@ -303,6 +374,10 @@ For example, if the content of a web view named `webView1` contains a function n
 string[] args = {"January", "1", "2000"};
 string returnValue = await webView1.InvokeScriptAsync("setDate", args);
 ```
+```vb
+Dim args As String() = {"January", "1", "2000"}
+Dim returnValue As String = Await webView1.InvokeScriptAsync("setDate", args)
+```
 
 You can use **InvokeScriptAsync** with the JavaScript **eval** function to inject content into the web page.
 
@@ -314,6 +389,12 @@ private async void Button_Click(object sender, RoutedEventArgs e)
     string functionString = String.Format("document.getElementById('nameDiv').innerText = 'Hello, {0}';", nameTextBox.Text);
     await webView1.InvokeScriptAsync("eval", new string[] { functionString });
 }
+```
+```vb
+Private Async Sub Button_Click(sender As Object, e As RoutedEventArgs)
+    Dim functionString As String = String.Format("document.getElementById('nameDiv').innerText = 'Hello, {0}';", nameTextBox.Text)
+    Await webView1.InvokeScriptAsync("eval", New String() {functionString})
+End Sub
 ```
 
 Scripts in the web view content can use **window.external.notify** with a string parameter to send information back to your app. To receive these messages, handle the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
@@ -340,13 +421,29 @@ public partial class Form1 : Form
     {
         InitializeComponent();
 
-        // Assume webView created through the designer
+        // Assume webView1 created through the designer
         webView2 = new WebView(webView1.Process);
         ((ISupportInitialize)webView).BeginInit();
         // ... other initialization code
         ((ISupportInitialize)webView).EndInit();
     }
 }
+```
+```vb
+Private Class Form1
+
+    Private webView2 As WebView
+
+    Public Sub New()
+        InitializeComponent()
+
+        ' Assume webView1 created through the designer
+        webView2 = New WebView(webView1.Process)
+        (CType(webView, ISupportInitialize)).BeginInit()
+        ' ... other initialization code
+        (CType(webView, ISupportInitialize)).EndInit()
+    End Sub
+End Class
 ```
 
 ### For WPF Applications
@@ -403,6 +500,21 @@ public partial class MainWindow : Window
     }
 }
 ```
+```vb
+Class MainWindow
+    Private Sub WebView_Loaded(sender As Object, e As RoutedEventArgs)
+        Dim webView2 = New WebView(webView1.Process)
+        webView2.BeginInit()
+        webView2.EndInit()
+
+        Grid.SetRow(webView2, 0)
+        Grid.SetColumn(webView2, 1)
+
+        Grid1.Children.Add(webView2)
+    End Sub
+End Class
+```
+
 ## Frequently Asked Questions (FAQs)
 
 ### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
