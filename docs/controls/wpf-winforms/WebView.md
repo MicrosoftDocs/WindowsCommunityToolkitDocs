@@ -140,6 +140,9 @@ To set the initial content of the the **WebView** control, you can set the [Sour
 webView1.Navigate("http://www.contoso.com");
 ```
 
+> [!IMPORTANT]
+> If calling `Navigate()` in code, you must wait until the control has loaded for the operation to complete successfully.
+
 ## Respond to navigation events
 
 The **WebView** control provides several events that you can use to respond to navigation and content loading states. The events occur in the following order for the root web view content:
