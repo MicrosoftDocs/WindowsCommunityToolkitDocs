@@ -65,7 +65,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | IsStencilButtonCheckedProperty | DependencyProperty | Dependency property for the **IsStencilButtonChecked** property. |
 | Orientation | Orientation | Wraps the [Orientation](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.orientation) property. |
 | OrientationProperty | DependencyProperty | Dependency property for the **Orientation** property. |
-| TargetInkCanvas | InkCanvas | Wraps the [TargetInkCanvas](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkcanvas) property. |
+| TargetInkCanvas | InkCanvas | Wraps the [TargetInkCanvas](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.targetinkcanvas) property. |
 | TargetInkCanvasProperty | DependencyProperty | Dependency property for the **TargetInkCanvas** property. |
 
 ## Events
