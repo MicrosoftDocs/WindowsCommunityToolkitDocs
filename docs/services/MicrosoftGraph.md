@@ -5,7 +5,7 @@ description: The MicrosoftGraph Service aim to easily logon to Microsoft Graph s
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MicrosoftGraph Service
 dev_langs:
   - csharp
-  - vb
+  - vb 
 ---
 
 # MicrosoftGraph Service
@@ -111,13 +111,23 @@ if (!await msg.LoginAsync())
 }
 ```
 ```vb
+
 ' Initialize the service
-If Not MicrosoftGraphService.Instance.Initialize(ClientId.Text) Then
+Dim scopes = "Calendars.Read Mail.Read Mail.Send User.Read".Split(" "c)
+
+If Not MicrosoftGraphService.Instance.Initialize(ClientId.Text, ServicesToInitialize.Message Or ServicesToInitialize.UserProfile Or ServicesToInitialize.[Event], scopes) Then
     Return
 End If
 
 ' Login via Azure Active Directory
 If Not Await MicrosoftGraphService.Instance.LoginAsync() Then
+    Return
+End If
+
+' Create a instance of the service
+Dim msg = New MicrosoftGraphService(ClientId.Text, ServicesToInitialize.Message Or ServicesToInitialize.UserProfile Or ServicesToInitialize.[Event], scopes)
+
+If Not Await msg.LoginAsync() Then
     Return
 End If
 ```
@@ -133,6 +143,19 @@ MicrosoftGraphService.Instance.SignInFailed += (sender, e) =>
 {
     // do something
 };
+```
+```vb
+' Register event handler to capture authentication state changes
+AddHandler MicrosoftGraphService.Instance.IsAuthenticatedChanged,
+    Sub(sender, e)
+        ' do something
+    End Sub
+
+' Register event handler to capture sign in exceptions
+AddHandler MicrosoftGraphService.Instance.SignInFailed,
+    Sub(sender, e)
+        ' do something
+    End Sub
 ```
 
 ### Get the connected user's info
@@ -231,7 +254,7 @@ if (messages == null)
 
 // Send a message
 string[] toRecipients = { "user1@contoso.com", "user2@contoso.com" };
-string subject = "This is the subject of my message;
+string subject = "This is the subject of my message";
 string content = "This is the content of my message";
 
 await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, content, BodyType.Text, toRecipients);
@@ -263,7 +286,7 @@ End If
 
 ' Send a message
 Dim toRecipients As String() = {"user1@contoso.com", "user2@contoso.com"}
-Dim subject As String = "This is the subject of my message;"
+Dim subject As String = "This is the subject of my message"
 Dim content As String = "This is the content of my message"
 Await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, content, BodyType.Text, toRecipients)
 
