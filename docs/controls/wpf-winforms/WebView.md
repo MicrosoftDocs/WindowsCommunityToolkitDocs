@@ -360,7 +360,7 @@ Private Sub webView1_PermissionRequested(ByVal sender As WebView, ByVal args As 
 End Sub
 ```
 
-If your app requires user input or other asynchronous operations to respond to a permission request, use the [Defer](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest.defer) method of [WebViewControlPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest) to create a [WebViewControlDeferredPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewdeferredpermissionrequest) that can be acted upon at a later time.
+If your app requires user input or other asynchronous operations to respond to a permission request, use the [Defer](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest.defer) method of [WebViewControlPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest) to create a [WebViewControlDeferredPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontroldeferredpermissionrequest) that can be acted upon at a later time.
 
 ## Interact with web view content
 
@@ -401,7 +401,7 @@ Scripts in the web view content can use **window.external.notify** with a string
 
 ## Options for web content hosting
 
-You can use the [Settings](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.settings) property (of type [WebViewControlSettings](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
+You can use the [Settings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) property (of type [WebViewControlSettings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
 
 ## Creating multiple web views in the same process
 
