@@ -404,7 +404,7 @@ Scripts in the web view content can use **window.external.notify** with a string
 
 ## Options for web content hosting
 
-You can use the [Settings](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolsettings) property (of type [WebViewControlSettings](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
+You can use the [Settings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) property (of type [WebViewControlSettings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
 
 ## Creating multiple web views in the same process
 
