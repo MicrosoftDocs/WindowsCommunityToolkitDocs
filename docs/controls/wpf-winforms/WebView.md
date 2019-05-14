@@ -140,11 +140,17 @@ The **WebView** control has several APIs for basic navigation:  [GoBack](https:/
 To set the initial content of the the **WebView** control, you can set the [Source](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
 
 ```csharp
-webView1.Navigate("http://www.contoso.com");
+private void WebView_Loaded(object sender, RoutedEventArgs e)
+{
+    webView1.Navigate("http://www.contoso.com");
+}
 ```
 ```vb
 webView1.Navigate("http://www.contoso.com")
 ```
+
+> [!IMPORTANT]
+> If calling `Navigate()` in code, you must wait until the control has loaded for the operation to complete successfully.
 
 ## Respond to navigation events
 
