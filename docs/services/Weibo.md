@@ -5,11 +5,12 @@ description: The Weibo Service allows users to retrieve or publish data to Weibo
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Weibo
 dev_langs:
   - csharp
+  - vb
 ---
 
 # Weibo Service
 
-The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [http://open.weibo.com](http://open.weibo.com) to create a new app or manage existing apps.
+The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [https://open.weibo.com](https://open.weibo.com) to create a new app or manage existing apps.
 
 ## App Setup
 
@@ -51,6 +52,29 @@ await WeiboService.Instance.PostStatusAsync(StatusText.Text);
 // Post a status with a picture
 await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream);
 
+```
+```vb
+
+' Initialize service
+WeiboService.Instance.Initialize(AppKey, AppSecret, RedirectUri)
+
+' Login to Weibo
+If Not Await WeiboService.Instance.LoginAsync() Then
+    Return
+End If
+
+' Get current user info
+Dim user = Await WeiboService.Instance.GetUserAsync()
+
+' Get user timeline
+ListView.ItemsSource = Await WeiboService.Instance.GetUserTimeLineAsync(user.ScreenName, 50)
+
+' Post a status
+Await WeiboService.Instance.PostStatusAsync(StatusText.Text)
+
+' Post a status with a picture
+Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
+  
 ```
 
 ## Methods

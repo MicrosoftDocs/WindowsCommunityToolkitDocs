@@ -182,7 +182,6 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Related
 
-- [ ClAnimationSetCompletedEventArgsass](hTopicsttps://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetcompletedeventargs)
+- [AnimationSetCompletedEventArgs](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetcompletedeventargs)
 
-- [ Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions)
-AnimationExtensions
+- [AnimationExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions)
