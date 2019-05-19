@@ -11,7 +11,7 @@ The [TextBoxMask Property](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 The developer adds the mask property to prevent end user to enter any other format but the required one, ex postal code aaa-9999
 
-TextBox Mask property has 3 build in variable characters 
+TextBox Mask property has 3 build in variable characters
 1) a which represents [a-Z]
 2) 9 which represents [0-9]
 3) '*' which represents a or 9
@@ -19,7 +19,7 @@ TextBox Mask property has 3 build in variable characters
 At the post code example the user will only be allowed to enter from a to Z in the first 3 characters then there is a fixed character (-) which the user can change or remove it and the last part which the user can change by entering from 0 to 9 at each character
 TextBoxMask prevent the text box from having non specified characters ex if you entered 1 or 2 into a mask like 9999.
 
-TextBoxMask has 2 type of characters 
+TextBoxMask has 2 type of characters
 1) Variable: which the user can change like a,9,*
 2) Fixed: which the user can't change and it is any non variable character ex the - in the first example
 
@@ -27,6 +27,9 @@ Variable characters a represented to end user in form of placeholder so the user
 the default placeholder is _ but you can change it using  extensions:TextBoxMask.PlaceHolder property (Check the second textbox in syntax section)
 
 In case you want to add a custom variable character you can use property TextBoxMask.CustomMask (Check the third textbox in syntax section), you can add a character that represents certain regex as c:[a-c] and once you use character c in the mask the mask will prevent any characters but from a to c inside the TextBox, also you specify multiple variable characters by adding comma "," after every character and it's representation. this feature is helpful if you want to allow certain language characters ex French or Arabic only TextBox.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=TextBoxMask)
 
 ## Syntax
 
@@ -116,7 +119,7 @@ The following sample demonstrates how to add TextBoxMask property.
 
 ## Sample Code
 
-[TextBoxMask Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[TextBoxMask Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can [see this in action](uwpct://Extensions?sample=TextBoxMask) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -15,6 +15,9 @@ The **CameraPreview** control allows to easily preview video in the MediaPlayerE
 > [!IMPORTANT]
 > Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=CameraPreview)
+
 ## Syntax
 
 ```xaml
@@ -112,10 +115,9 @@ if(availableFrameSourceGroups != null)
     End If
 ```
 
-## Sample Code
+## Sample Project
 
-[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
-
+[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -124,8 +126,6 @@ if(availableFrameSourceGroups != null)
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
-## API Source Code
+## API
 
-- [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview)
-
-
+* [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview)

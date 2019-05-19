@@ -12,6 +12,9 @@ dev_langs:
 
 The [ImageCache](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.imagecache) provides methods and tools to cache images in a temporary local folder. ImageCache also supports optional in-memory layer of caching, that provides better performance when same images are requested multiple times (like in long virtualized lists of images). This type of caching is disabled by default, but can be enabled by setting MaxMemoryCacheSize to desired size. For example: setting MaxMemoryCacheSize to 100 means that 100 last requested images will be held in memory to be instantly available, without disk reads.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=ImageCache)
+
 ## Syntax
 
 ```csharp
@@ -68,6 +71,10 @@ Await ImageCache.Instance.ClearAsync()
 |                PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)                 |       Task        |                                                                      Assures that item represented by Uri is cached                                                                      |
 |                                RemoveAsync(IEnumerable)                                |       Task        |                                                                          Removed items based on uri list passed                                                                          |
 |                              RemoveExpiredAsync(Nullable)                              |       Task        |                                                                          Removes cached files that have expired                                                                          |
+
+## Sample Project
+
+[Image Cache Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCache). You can [see this in action](uwpct://Helpers?sample=ImageCache) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -10,7 +10,7 @@ dev_langs:
 
 # MicrosoftGraph Service
 
-The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in order to: 
+The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in order to:
 
 * Retrieve User Information
 * Retrieve and Send emails
@@ -19,18 +19,20 @@ The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in orde
 > [!NOTE]
 > This API will not work on an XBOX UWP Application
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=Microsoft%20Graph%20Service)
+
 ## Get a Client Id
 
-To authenticate your app, you need to register your app with Azure AD, and provide some details about your app. 
-
+To authenticate your app, you need to register your app with Azure AD, and provide some details about your app.
 
 ### Register the App to use Azure AD v2 Endpoint
 
-1. Go to the [App Registration Portal](https://apps.dev.microsoft.com) 
+1. Go to the [App Registration Portal](https://apps.dev.microsoft.com)
 2. Click in the "Add an app" button.
 3. Enter the app name and click "create"
 4. Once the App is created, copy the Application Id to use it later.
-5. Next, add a Platform to the App clicking in "Add Platform" and select "Native Application" tile. 
+5. Next, add a Platform to the App clicking in "Add Platform" and select "Native Application" tile.
 6. Scroll to the Microsoft Graph Permissions section (by default the User.Read permission is added). Add the following permissions: Sign in and read user profile, Read user mail, Send mail as a user, Read user calendars.
 7. Finally, save your changes.
 
@@ -70,10 +72,10 @@ When you register your app in the [Azure Management Portal](http://portal.azure.
 |Delegate Permissions |Sign in and read user profile, Read user mail, Send mail as a user, Read user calendars|
 
 ### Testing access to the Graph API
-Using ADAL, v1 authentication, registering your application creates an App ID/Client and you can simply paste that into the Client Id field inside of the Microsoft Graph services page. 
+
+Using ADAL, v1 authentication, registering your application creates an App ID/Client and you can simply paste that into the Client Id field inside of the Microsoft Graph services page.
 
 Using MSAL, v2 (default) authentication, you can use the same App ID to paste to the Client Id field.  You can also optionally provide different permission scopes and a login hint (suggested user name).
-
 
 ### Get an Office 365 Subscription
 
@@ -347,17 +349,17 @@ If events Is Nothing Then
 End If
 ```
 
-## Sample Code
+## Sample Project
 
-[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-### Requirements
+## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
 
-### API
+## API
 
 * [MicrosoftGraph Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Services/Services/MicrosoftGraph)

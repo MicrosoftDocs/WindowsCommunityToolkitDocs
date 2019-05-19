@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ScrollViewerExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.scrollviewerextensions) provide extension methods to improve your ScrollViewer implementation.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=ScrollViewerExtensions)
+
 ## ScrollBarMargin
 
 The ScrollBarMargin property provides a way to assign a Thickness to the vertical/horizontal ScrollBar of your container.
@@ -125,9 +128,9 @@ You can easily edit the existing resource file to customise the cursor depending
 | -- | -- | -- |
 | EnableMiddleClickScrolling | bool | Set `true` to enable middle click scrolling |
 
-## Sample Code
+## Sample Project
 
-[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can [see this in action](uwpct://Extensions?sample=ScrollViewerExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -136,6 +139,6 @@ You can easily edit the existing resource file to customise the cursor depending
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
-## API Source Code
+## API
 
-- [ScrollViewerExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer)
+* [ScrollViewerExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer)

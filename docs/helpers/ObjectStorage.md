@@ -15,6 +15,9 @@ The Object Storage Helper will help you handle storage of generic objects within
 - [LocalObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
 - [RoamingObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=Object%20Storage)
+
 ## Properties
 
 | Property | Type | Description |
@@ -201,9 +204,9 @@ Dim o = New MyLargeObject With {
 Await helper.SaveFileAsync(keySimpleObject, o)
 ```
 
-## Sample Code
+## Sample Project
 
-[Object Storage sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Object Storage sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

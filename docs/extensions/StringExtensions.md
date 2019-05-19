@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 Provides helpers and extensions for strings, including validation methods for common scenarios.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=StringExtensions)
+
 ## Syntax
 
 ```c#
