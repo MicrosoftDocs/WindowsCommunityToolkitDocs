@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [SurfaceDialTextbox XAML Property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.surfacedialtextbox) adds features from the Surface Dial control to a numeric TextBox. This enables you to modify the content of the TextBox when rotating the Surface Dial (increasing or decreasing the value) and optionally go to the next focus element by tapping the Surface Dial click button.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=SurfaceDialTextbox)
+
 ## Syntax
 
 ```xaml
@@ -56,9 +59,9 @@ The [SurfaceDialTextbox XAML Property](https://docs.microsoft.com/dotnet/api/mic
 | static Controller | [RadialController](https://docs.microsoft.com/uwp/api/Windows.UI.Input.RadialController) | Gets or sets the controller for the Surface Dial. The RadialController can be set from your app logic in case you use Surface Dial in other custom cases than on a TextBox. This helper class will do everything for you, but if you want to control the Menu Items and/or wish to use the same Surface Dial insta This is the property for the static controller so you can access it if needed. |
 | static IsSupported | bool | Gets a value indicating whether this attached proeprty is supported |
 
-## Sample Code
+## Sample Project
 
-[SurfaceDialTextbox Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SurfaceDialTextbox). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[SurfaceDialTextbox Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SurfaceDialTextbox). You can [see this in action](uwpct://Extensions?sample=SurfaceDialTextbox) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

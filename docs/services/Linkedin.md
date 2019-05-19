@@ -12,6 +12,9 @@ dev_langs:
 
 The **LinkedIn Service** allows you to retrieve or publish data to the LinkedIn graph. Examples of the types of objects you can work with are User profile data and sharing Activity.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=LinkedIn%20Service)
+
 ## Creating a new Application on LinkedIn Developer Site
 
 1. Go to: https://www.linkedin.com/developer/apps.
@@ -85,6 +88,10 @@ The Get method receives a string key and returns the saved string.
 The Set method receives a string key and a string value.
 
 The toolkit has implementations of each of them for UWP. You can find them as UwpAuthenticationBroker, UwpPasswordManager and UwpStorageManager.
+
+## Sample Project
+
+[LinkedIn Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

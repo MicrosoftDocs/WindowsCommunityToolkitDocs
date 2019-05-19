@@ -10,7 +10,10 @@ dev_langs:
 
 # Background Task Helper
 
-The [Background Task Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner. 
+The [Background Task Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=BackgroundTaskHelper)
 
 ## Syntax
 
@@ -171,9 +174,9 @@ Protected Overrides Sub OnBackgroundActivated(ByVal args As BackgroundActivatedE
 End Sub
 ```
 
-## Sample Code
+## Sample Project
 
-[Background Task Helper](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Background Task Helper](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can [see this in action](uwpct://Helpers?sample=BackgroundTaskHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -5,7 +5,7 @@ description: Instead of having to deal with XML, you can now use Windows Communi
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, adaptive live tiles, interactive toast, tiles, notifications
 ---
 
-# Notifications Overview 
+# Notifications Overview
 
 Adaptive Live Tiles and interactive Toasts are key engagement components of a UWP Application on Windows 10.
 Instead of having to deal with XML, you can now use Windows Community toolkit and its notification extensions to work with Tiles and notifications using a complete object model.

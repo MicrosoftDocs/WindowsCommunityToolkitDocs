@@ -19,6 +19,9 @@ In addition, UniformGrid is a `Panel` instead of an `ItemsControl`.  As such, it
 
 The UWP UniformGrid now inherits from [Grid](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Grid) and provides many additional features compared to its predecessor, see more below.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=UniformGrid)
+
 ## WPF Conversion Notes
 
 When porting your UniformGrid XAML from WPF, just add the `controls:` namespace prefix to your `UniformGrid` and add the `xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"` to your XAML namespace list.
@@ -171,9 +174,9 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 | -- | -- | -- |
 | AutoLayout | bool? | **DO NOT USE** - Internal property used to keep track of items that are fixed in position or need to automatically adjusted during layout. *Only set to `False` for the top-left edge case scenario described above for fixed child locations.* |
 
-## Example Code
+## Sample Project
 
-[UniformGrid Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid)
+[UniformGrid Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid). You can [see this in action](uwpct://Controls?sample=UniformGrid) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements (Windows 10 Device Family)
 
@@ -182,7 +185,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
-## API Source Code
+## API
 
 - [UniformGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/UniformGrid.cs)
 

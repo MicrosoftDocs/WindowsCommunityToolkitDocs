@@ -10,7 +10,10 @@ dev_langs:
 
 # BluetoothLEHelper
 
-The BluetoothLEHelper class provides functionality to easily enumerate, connect to and interact with Bluetooth LE Peripherals. 
+The BluetoothLEHelper class provides functionality to easily enumerate, connect to and interact with Bluetooth LE Peripherals.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=BluetoothLEHelper)
 
 ## BluetoothLEHelper class
 
@@ -149,6 +152,10 @@ If BluetoothLEHelper.IsBluetoothLESupported Then
 	Dim services = device.Services
 End If
 ```
+
+## Sample Project
+
+[BluetoothLE Helper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BluetoothLEHelper). You can [see this in action](uwpct://Helpers?sample=BluetoothLEHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

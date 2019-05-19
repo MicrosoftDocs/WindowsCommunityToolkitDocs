@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.aadlogin) leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph, it relies on the [MicrosoftGraphService](../services/MicrosoftGraph.md) for authentication.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=AadLogin)
+
 ## Syntax
 
 ```xaml
@@ -66,9 +69,9 @@ MicrosoftGraphService.Instance.Initialize(
 );
 ```
 
-[AadLogin Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AadLogin). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[AadLogin Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AadLogin). You can [see this in action](uwpct://Controls?sample=AadLogin) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [AadLogin XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/AadLogin/AadLogin.xaml) is the XAML template used in the toolkit for the default styling.
 

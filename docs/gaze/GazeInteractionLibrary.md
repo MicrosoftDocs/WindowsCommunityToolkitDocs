@@ -11,6 +11,9 @@ Microsoft announced native support for eye tracking in Windows in the [Windows 1
 
 This Gaze Interaction Library is built on top of the Windows Gaze Input APIs and provides a set of developer helper classes to more easily enable UWP applications to respond to where the user is looking on the screen. This library is intended to abstract away some of the complexities of dealing with the raw stream of gaze input coming from the eye tracking device exposed through the Windows APIs.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Gaze?sample=GazeInteraction)
+
 ## Prerequisites
 
 In order to use the Windows 10 Gaze Input APIs or this Gaze Interaction Library, you need to have the following:
@@ -57,7 +60,6 @@ The Windows Gaze Input APIs delivers a stream of timestamped gaze point coordina
 |Dwell | enum | A user is conciously dwelling on the control and has exceeded the dwell time. This is interpreted as the user's intent to activate or invoke the control, e.g. click a button|
 |Exit | enum | A user's gaze is no longer within the control|
 
-
 ## GazeInput Properties
 
 If the XAML page is enabled for gaze based interactions, the visibility and size of the gaze cursor, and the timings associated with the states above can be configured using the properties below:
@@ -76,8 +78,8 @@ If the XAML page is enabled for gaze based interactions, the visibility and size
 | RepeatDelayDuration | TimeSpan | Gets or sets the additional duration for the first repeat to occur. This prevents  inadvertent repeated invocation. See above for details. |
 | IsSwitchEnabled | bool | Gets or sets whether switch activation is enabled. When Switch support is enabled, the currently fixated element will not transition to the dwell state. Further, when the `GazePointer.Click()` method is called the currently fixated element will be invoked. |
 
-
 ## GazeElement Events
+
 Add description here.
 
 | Events | Description |
@@ -86,8 +88,8 @@ Add description here.
 |DwellProgressFeedback| This event is fired to indicate progress towards a dwell event. An application can handle this event to either customize visual feedback and/or turn off the default animation for dwell by setting `DwellProgressEventArgs.Handled` to `true`|
 |Invoked|This event is fired when the library is about to invoke the control in response to a dwell event. An application can handle this even to perform custom processing before invocation, and/or suppress invocation by setting the `DwellInvokedRoutedEventArgs.Handled` to `true`|
 
-
 ## StateChangedEventArgs Properties
+
 This parameter is passed to the `StateChanged` event which is fired when the `PointerState` changes.
 
 | Property | Type | Description |
@@ -95,8 +97,8 @@ This parameter is passed to the `StateChanged` event which is fired when the `Po
 |PointerState|GazePointerState|The `GazePointerState` associated with this event|
 |ElapsedTime|TimeSpan|The time the user has spent looking at the control to reach the specific pointer state above|
 
-
 ## DwellProgressEventArgs Properties
+
 This parameter is passed to the event handling the `DwellProgressFeedback` event.
 
 | Property | Type | Description |
@@ -105,16 +107,13 @@ This parameter is passed to the event handling the `DwellProgressFeedback` event
 |Progress|double|A value between 0 and 1 that indicates the fractional progress towards completing dwell|
 |Handled|bool|If an application sets this value to `true` the default animation provided by the library is suppressed|
 
-
 ## DwellInvokedRoutedEventArgs Properties
+
 This parameter is passed to the GazeElement::Invoked event and allows the application to prevent default invocation when the user dwells on a control.
 
 | Property | Type | Description |
 | -- | -- | -- |
 | Handled | bool | This parameter is passed to the `GazeElement.Invoked` event. If set to `true` the library will suppress invoking the control on a dwell event|
-
-
-<!-- Use <remarks> tag in C# to give more info about a property. For more info - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/remarks -->
 
 ## Examples
 
@@ -155,8 +154,6 @@ To enable only a subset of the page, e.g. just one Grid on the page:
 
 In the above example, the button will be clicked when the user looks at the button in the grid for a period equal to the default dwell time.
 
-
-
 ### To change the dwell time for a control
 
 The code below sets the Dwell time duration for the button to be 500ms. This means the button will be clicked 500ms after the control enters the Fixation state.
@@ -167,7 +164,8 @@ The code below sets the Dwell time duration for the button to be 500ms. This mea
 ```
 
 ### Animations
-This library provides a default animation of a shriniking rectangle over the control to indicate progress towards a dwell event. The style of animation can be customized in two ways: 
+
+This library provides a default animation of a shriniking rectangle over the control to indicate progress towards a dwell event. The style of animation can be customized in two ways:
 * If you wish to retain the animation style, but change the colors used:
   * Set the `GazeInput.DwellFeedbackEnterBrush` property to add a rectangle over controls immediately gaze is detected on them
   * Change the `GazeInput.DwellFeedbackProgressBrush` property to change the color of the progress rectangle
@@ -193,9 +191,9 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 <!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/example -->
 <!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/en-us/windows/communitytoolkit/animations/animationset#examples  -->
 
-## Sample Code
+## Sample Project
 
-[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can see all of this in action in the [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -204,7 +202,7 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 | Namespace | Microsoft.Toolkit.Uwp.Input.GazeInteraction |
 | NuGet package | [NuGet package](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Input.GazeInteraction/) |
 
-## API Source Code
+## API
 
 * [Gaze Interaction Library source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
 

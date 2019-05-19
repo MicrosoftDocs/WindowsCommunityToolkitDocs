@@ -17,6 +17,9 @@ It exposes network information though a property called ConnectionInformation. T
 **_What is a metered connection?_**
 A metered connection is an Internet connection that has a data limit or cost associated with it. Cellular data connections are set as metered by default. Wi-Fi network connections can be set to metered, but aren't by default. Application developers should take metered nature of connection into account and reduce data usage.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=NetworkHelper)
+
 ## NetworkHelper Properties
 
 | Property | Type | Description |
@@ -102,9 +105,9 @@ Select Case NetworkHelper.Instance.ConnectionInformation.ConnectionType
 End Select
 ```
 
-## Sample Code
+## Sample Project
 
-[NetworkHelper sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[NetworkHelper sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can [see this in action](uwpct://Helpers?sample=NetworkHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -116,4 +119,3 @@ End Select
 ## API
 
 * [NetworkHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.Connectivity/Network/NetworkHelper.cs)
-
