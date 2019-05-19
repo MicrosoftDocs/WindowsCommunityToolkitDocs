@@ -7,7 +7,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Menu Control
 
-> [!NOTE] This control will be removed in a future major release.
+> [!NOTE]
+> This control will be removed in a future major release.
 
 The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) defines a menu of choices for users to invoke, it is inheriting from `ItemsControl`. The default ItemsPanel for the menu control is `WrapPanel` and it only supports MenuItem as an item\children.
 
