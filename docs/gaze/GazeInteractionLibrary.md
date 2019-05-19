@@ -49,7 +49,7 @@ Below are a few eye gaze related concepts that are helpful in order to better un
 
 The Gaze Interaction Library enables dwell based gaze interactions on the page by reading the data from the eye tracker over the page invoking specific controls when the user's gaze dwells on a control for a specific time. The application can configure this time based on its usage scenario.
 
-## <a name="pointerstate">PointerState Properties</a>
+## PointerState Properties
 
 The Windows Gaze Input APIs delivers a stream of timestamped gaze point coordinates of the user's gaze location on the screen. This  library aggregates these samples over each control and converts the stream into gaze events. Corresponding to these events, are the following states:
 
@@ -157,7 +157,7 @@ In the above example, the button will be clicked when the user looks at the butt
 ### To change the dwell time for a control
 
 The code below sets the Dwell time duration for the button to be 500ms. This means the button will be clicked 500ms after the control enters the Fixation state.
-(See [PointerState](#PointerState) for details)
+(See [PointerState](#pointerstate-properties) for details)
 
 ```xaml
     <Button Content="Click Me" gaze:GazeInput.DwellDuration="00:00:00.500">
