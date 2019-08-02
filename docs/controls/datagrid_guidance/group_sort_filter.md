@@ -165,14 +165,14 @@ private void dg_Sorting(object sender, DataGridColumnEventArgs e)
 }
 ```
 
-3. Set the SortDirection property to the approrpriate value for showing the built-in ascending sort icon in column header
+3. Set the SortDirection property to the appropriate value for showing the built-in ascending sort icon in column header
 
 ```C#
 //Show the ascending icon when acending sort is done
 e.Column.SortDirection = DataGridSortDirection.Ascending;
 
 //Show the descending icon when descending sort is done
-e.Column.SortDirection = DataGridSortDirection.Ascending;
+e.Column.SortDirection = DataGridSortDirection.Descending;
 
 //Clear the SortDirection in a previously sorted column when a different column is sorted
 previousSortedColumn.SortDirection = null;
