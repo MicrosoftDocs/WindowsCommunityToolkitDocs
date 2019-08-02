@@ -133,17 +133,36 @@ The following walk-through shows how to implement sorting in the DataGrid contro
 ```C#
 private void dg_Sorting(object sender, DataGridColumnEventArgs e)
 {
-    if (e.Column.SortDirection == null || e.Column.SortDirection == DataGridSortDirection.Ascending)
+    //Use the Tag property to pass the bound column name for the sorting implementation 
+    if (e.Column.Tag.ToString() == "Range")
     {
-        //Use the Tag property to pass the bound column name for the sorting implementation 
-        if (e.Column.Tag.ToString() == "Range")
+        //Implement sort on the column "Range" using LINQ
+        if (e.Column.SortDirection == null || e.Column.SortDirection == DataGridSortDirection.Descending)
         {
-            //Implement ascending sort on the column "Range" using LINQ
             dg.ItemsSource = new ObservableCollection<Mountain>(from item in _items
                                                                 orderby item.Range ascending
                                                                 select item);
-        }       
-        // ... 
+            e.Column.SortDirection = DataGridSortDirection.Ascending;
+        }
+        else
+        {
+            dg.ItemsSource = new ObservableCollection<Mountain>(from item in _items
+                                                                orderby item.Range descending
+                                                                select item);
+            e.Column.SortDirection = DataGridSortDirection.Descending;
+        }
+    }
+    // add code to handle sorting by other columns as required
+    
+    // Remove sorting indicators from other columns
+    foreach (var dgColumn in dg.Columns)
+    {
+        if (dgColumn.Tag.ToString() != e.Column.Tag.ToString())
+        {
+            dgColumn.SortDirection = null;
+        }
+    }    
+}
 ```
 
 3. Set the SortDirection property to the appropriate value for showing the built-in ascending sort icon in column header
