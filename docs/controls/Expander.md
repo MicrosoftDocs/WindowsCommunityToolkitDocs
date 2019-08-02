@@ -110,5 +110,5 @@ For instance to remove the header entirely from the Expander:
 
 ## Related Topics
 
-- [HeaderedControlControl](HeaderedContentControl.md)
+- [HeaderedContentControl](HeaderedContentControl.md)
 - [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)
