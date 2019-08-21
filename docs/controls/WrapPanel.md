@@ -15,6 +15,9 @@ Spacing can be automatically added between items using the HorizontalSpacing and
 
 When the Orientation is Vertical, HorizontalSpacing adds uniform spacing between each column of items, and VerticalSpacing adds uniform vertical spacing between individual items.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=WrapPanel)
+
 ## Syntax
 
 ```xaml
@@ -68,9 +71,9 @@ The following example of adding WrapPanel Control.
 </Page>
 ```
 
-## Sample Code
+## Sample Project
 
-[WrapPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[WrapPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can [see this in action](uwpct://Controls?sample=WrapPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

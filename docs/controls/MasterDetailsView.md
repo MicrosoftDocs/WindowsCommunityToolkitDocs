@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) presents items in a master/details pattern. It shows a collection of items within the "master panel" and the details for that item within the "details panel". The MasterDetailsView reacts to the width it is given to determine if it should show both the master and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=MasterDetailsView)
+
 ## Syntax
 
 ```xaml
@@ -67,9 +70,9 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 | SelectionChanged | Occurs when the currently selected item changes |
 | ViewStateChanged | Occurs when the view state changes |
 
-## Sample Code
+## Sample Project
 
-[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template 
 

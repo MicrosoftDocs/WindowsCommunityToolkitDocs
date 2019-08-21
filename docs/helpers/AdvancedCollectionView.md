@@ -10,7 +10,10 @@ dev_langs:
 
 # AdvancedCollectionView
 
-The [AdvancedCollectionView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.advancedcollectionview) is a collection view implementation that support filtering, sorting and incremental loading. It's meant to be used in a viewmodel. 
+The [AdvancedCollectionView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.advancedcollectionview) is a collection view implementation that support filtering, sorting and incremental loading. It's meant to be used in a viewmodel.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=AdvancedCollectionView)
 
 ## Usage
 
@@ -201,9 +204,9 @@ Using acv.DeferRefresh()
 End Using ' acv.Refresh() gets called here
 ```
 
-## Sample Code
+## Sample Project
 
-[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheader) provides a header for ListViews or GridViews that adds the ability to keep its content visible or fade it out while scrolling down. It also has a quick return mode where the header hides when the ListView is scrolled down and reappears immediately as soon as the ListView is scrolled up again.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=ScrollHeader)
+
 ## Syntax
 
 ```xaml
@@ -44,9 +47,9 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | Mode | [ScrollHeaderMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheadermode) | Gets or sets a value indicating whether the current mode. Default is none |
 | TargetListViewBase | ListViewBase | Gets or sets the container this header belongs to |
 
-## Sample Code
+## Sample Project
 
-[ScrollHeader Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[ScrollHeader Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -62,4 +65,3 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 ## API
 
 * [ScrollHeader source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader)
-

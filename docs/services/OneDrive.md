@@ -16,6 +16,9 @@ The **OneDrive** Service provides an easy to use service helper for the [OneDriv
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code
 * Perform CRUD operations on OneDrive resources
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=OneDrive%20Service)
+
 ## Getting Started
 
 To use the OneDrive API, you need to have an access token that authenticates your app to a particular set of permissions for a user. In this section, you'll learn how to:
@@ -54,6 +57,7 @@ to your application manifest to enable AAD authentication. Capabilities in the m
 Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth)
 
 ### Testing access to the OneDrive API
+
 Registering your applicatioin creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
 
 ## Syntax
@@ -299,9 +303,9 @@ This is because OneDrive's API doesn't offer the same level of collision options
 
 As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is catched, or else, manually checking previously if the file exists.
 
-## Sample Code
+## Sample Project
 
-[OneDrive Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[OneDrive Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

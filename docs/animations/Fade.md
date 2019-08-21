@@ -12,6 +12,9 @@ dev_langs:
 
 The [Fade animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.fade) fades objects, in and out, over time. Fade animation is applied to all the XAML elements in its parent control/panel. Fade animation doesn't affect the functionality of the control.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Animations?sample=Fade)
+
 ## Syntax
 
 ```xaml
@@ -103,8 +106,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Fade Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Fade). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
-
+[Fade Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Fade). You can [see this in action](uwpct://Animations?sample=Fade) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -119,5 +121,5 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Related Topics
 
-- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+* [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

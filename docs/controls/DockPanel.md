@@ -12,6 +12,9 @@ The [DockPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 The DockPanel position child controls based on the child Dock property, you have 4 options to Dock, left (Default), right, top, bottom.
 You can set DockPanel LastChildFill property to true if you want the last item added to the DockPanel to fill the rest empty space.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=DockPanel)
+
 ## Syntax
 
 ```xaml
@@ -37,9 +40,9 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 | LastChildFill | bool | Gets or sets a value indicating whether the last child element within a DockPanel stretches to fill the remaining available space |
 | Padding | Thickness | The dimensions of the space between the edge and its child as a Thickness value. Thickness is a structure that stores dimension values using pixel measures. |
 
-## Sample Code
+## Sample Project
 
-[DockPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[DockPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can [see this in action](uwpct://Controls?sample=DockPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

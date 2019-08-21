@@ -13,6 +13,9 @@ Lottie simplifies the design-to-code workflow for bringing engaging, interactive
 
 ![Lottie Gif](../resources/images/Animations/Lottie/LottieDocs_Intro.gif)
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Animations?sample=Lottie)
+
 ## Key Concepts
 
 * **AnimatedVisualPlayer**, a [XAML element](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) that plays the Lottie animation.

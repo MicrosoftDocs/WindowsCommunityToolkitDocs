@@ -12,6 +12,9 @@ dev_langs:
 
 The [RssParser](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.rss.rssparser) class allows you to parse an RSS content String into an RSS Schema.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=RSS%20Parser)
+
 ## Example
 
 ```csharp
@@ -36,7 +39,7 @@ public async void ParseRSS()
         foreach (var element in rss)
         {
             Console.WriteLine($"Title: {element.Title}");
-			Console.WriteLine($"Summary: {element.Summary}");
+            Console.WriteLine($"Summary: {element.Summary}");
         }
     }
 }
@@ -77,11 +80,9 @@ End Sub
 | -- | -- | -- |
 | Parse(string) | IEnumerable\<RssSchema\> | Parse an RSS content string into RSS Schema. |
 
-## Sample Code
+## Sample Project
 
-[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs).
-
-You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -92,4 +93,4 @@ You can see this in action in [Windows Community Toolkit Sample App](https://www
 
 ## API Source Code
 
-- [RSS Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Parsers/Rss)
+* [RSS Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Parsers/Rss)

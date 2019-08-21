@@ -16,6 +16,9 @@ The validation has 3 modes (`ValidationMode`):
 2) Forced : This type sets the IsValid property and remove the TextBox text if not valid when the TextBox lose focus. 
 3) Dynamic : This type extends 1) Normal and if is the newest input of the Textbox  is invalid, the character which is invalied will be deleted. Note that ValidationType Email and Phone Number not support the ValidationMode Dynamic. If you set the ValidationMode to Dynamic, the ValidationMode Normal is selected automatically.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=TextBoxRegex)
+
 ## Syntax
 
 ```xaml
@@ -82,7 +85,7 @@ The following sample demonstrates how to add TextBoxRegex property.
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
-			    <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
 
             <StackPanel Margin="10,0,10,0">
@@ -159,9 +162,9 @@ The following sample demonstrates how to add TextBoxRegex property.
 </Page>
 ```
 
-## Sample Code
+## Sample Project
 
-[TextBoxRegex Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxRegex). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[TextBoxRegex Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxRegex). You can [see this in action](uwpct://Extensions?sample=TextBoxRegex) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

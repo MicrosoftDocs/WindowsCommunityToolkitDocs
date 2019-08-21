@@ -11,6 +11,9 @@ The [MarkdownTextBlock control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 Under the hood, the control uses XAML sub elements to build the visual rendering tree for the Markdown input. We chose to use full XAML elements over using the RichEditTextBlock control because the RichEditTextBlock isn't flexible enough to correctly render all of the standard Markdown styles.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=MarkdownTextBlock)
+
 ## Syntax
 
 ```xaml
@@ -212,11 +215,11 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 * [MarkdownRenderer and Helpers](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/Render)
 * [Sample App custom markdown renderer](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
 
-## Sample Code
+## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [MarkdownTextBlock XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -234,8 +237,3 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 ## Related Topics
 
 * [Markdown Parser](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
-
-
-
-
-

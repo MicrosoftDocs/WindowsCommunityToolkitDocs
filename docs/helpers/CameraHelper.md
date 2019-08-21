@@ -15,6 +15,9 @@ The **CameraHelper** provides helper methods to easily use the available camera 
 > [!IMPORTANT]
 > Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=CameraHelper)
+
 ## Syntax
 
 ```csharp
@@ -152,10 +155,9 @@ If availableFrameSourceGroups IsNot Nothing Then
 End If
 ```
 
-## Sample Code
+## Sample Project
 
-[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
-
+[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -164,7 +166,6 @@ End If
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |
 
-## API Source Code
+## API
 
-- [CameraHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)
-
+* [CameraHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)
