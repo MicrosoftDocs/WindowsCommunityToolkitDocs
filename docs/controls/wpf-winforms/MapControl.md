@@ -18,9 +18,7 @@ This control shows rich and customizable map data including road maps, aerial, 3
 
 ## About MapControl
 
-The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
-
-This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
 ## Requirements
 
@@ -28,7 +26,7 @@ Before you can use this control, you must follow [these instructions](https://do
 
 ## Known issues and limitations
 
-See our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
+See our list of [known issues](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
 
@@ -74,7 +72,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | LandmarksVisible | bool | Wraps the [LandmarksVisible](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.landmarksvisible) property. |
 | Layers | IList&lt;MapLayer&gt; | Wraps the [Layers](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.layers) property. |
 | LoadingStatus | MapLoadingStatus  | Wraps the [LoadingStatus](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.loadingstatus) property. |
-| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapcolorscheme) property. |
+| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.colorscheme) property. |
 | MapElements  | IList&lt;MapElement&gt; | Wraps the [MapElements](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapelements) property. |
 | MapProjection | MapProjection | Wraps the [MapProjection](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapprojection) property. |
 | MapServiceToken | string | Wraps the [MapServiceToken](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapservicetoken) property. |
