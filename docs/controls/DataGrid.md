@@ -32,9 +32,16 @@ The following guidance sections describe the additional concepts and techniques 
 * [Group, sort and filter data using LINQ and the DataGrid control](datagrid_guidance/group_sort_filter.md)
 * [Editing and input validation in the DataGrid control](datagrid_guidance/editing_inputvalidation.md)
 
-## Sample Project
+## Examples
 
-[DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid). You can [see this in action](uwpct://Controls?sample=DataGrid) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+
+Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
+
+If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
+- [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+- [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
+
 
 ## Requirements
 
