@@ -32,7 +32,7 @@ The following guidance sections describe the additional concepts and techniques 
 * [Group, sort and filter data using LINQ and the DataGrid control](datagrid_guidance/group_sort_filter.md)
 * [Editing and input validation in the DataGrid control](datagrid_guidance/editing_inputvalidation.md)
 
-## Examples
+## Sample Project
 
 See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
