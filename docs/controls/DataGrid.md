@@ -34,14 +34,12 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Sample Project
 
-See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp)**.
 
 Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
 
-If you have the **XAML Controls Gallery** app installed, click here to [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
+If you have the **XAML Controls Gallery** app installed, [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
 - [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
-- [Get the source code (GitHub)](https://github.com/Microsoft/Xaml-Controls-Gallery)
-
 
 ## Requirements
 
