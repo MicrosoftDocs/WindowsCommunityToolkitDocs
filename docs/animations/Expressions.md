@@ -79,7 +79,7 @@ Welcome to the ExpressionBuilder classes! The ExpressionBuilder classes are a C#
 To use the ExpressionBuilder in your app, add the Microsoft.Toolkit.Uwp.UI.Animations nuget package to your project. Next, within your app project, make sure to add the using directive to leverage the ExpressionBuilder classes:
 
 ```csharp
-using  Microsoft.Toolkit.Uwp.UI.Animations.Expressions;
+using Microsoft.Toolkit.Uwp.UI.Animations.Expressions;
 ``` 
 
 Once you have the nuget package added to your project, you are all set to start using the ExpressionBuilder classes!
