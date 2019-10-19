@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) downloads images asynchronously, while showing a loading indicator. Source images are then stored in the application's local cache to preserve resources and load time. ImageEx also extends the default *Image* and *ImageBrush* Platform controls respectively to improve performance through caching. You can also use a placeholder image that will be displayed while loading the main image.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=ImageEx)
+
 ## Syntax
 
 ```xaml
@@ -29,10 +32,11 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 | IsCacheEnabled | bool | Gets or sets a value indicating whether gets or sets cache state |
 | ImageExCachingStrategy | enum | Gets or sets a value indicating how the Image will be cached |
 | CornerRadius | double | Get or set the radius of image corner |
+| EnableLazyLoading | bool | Gets or sets a value indicating is lazy loading enabled. (17763 or higher supported) |
 
-## Sample Code
+## Sample Project
 
-[ImageExControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageEx). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[ImageExControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageEx). You can [see this in action](uwpct://Controls?sample=ImageEx) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

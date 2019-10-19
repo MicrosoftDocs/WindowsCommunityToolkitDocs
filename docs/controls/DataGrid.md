@@ -17,6 +17,9 @@ The DataGrid control supports common table formatting options, such as alternati
 
 The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns. 
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=DataGrid)
+
 ## How-Tos
 
 The following guidance sections describe the additional concepts and techniques that you can use to build DataGrid control features into your applications:
@@ -29,9 +32,14 @@ The following guidance sections describe the additional concepts and techniques 
 * [Group, sort and filter data using LINQ and the DataGrid control](datagrid_guidance/group_sort_filter.md)
 * [Editing and input validation in the DataGrid control](datagrid_guidance/editing_inputvalidation.md)
 
-## Sample Code
+## Sample Project
 
-[DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid). 
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp)**.
+
+Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
+
+If you have the **XAML Controls Gallery** app installed, [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
+- [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
 
 ## Requirements
 

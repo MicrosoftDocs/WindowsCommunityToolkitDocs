@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 FrameworkElementExtensions provide helpers to bind to the actual size for any FrameworkElement or to bind to a parent value (to replace [RelativeSourceMode.FindAncestor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesourcemode)).
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=FrameworkElementExtensions)
+
 ## EnableActualSizeBinding
 
 The EnableActualSizeBinding property allows you to enable/disable the binding for the ActualHeight and ActualWidth extensions.

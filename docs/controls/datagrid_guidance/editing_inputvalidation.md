@@ -1,6 +1,6 @@
 ---
 title: How to - Implement editing functionality
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to implement editing and input validation functionality in the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml
 ---

@@ -4,13 +4,9 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITranslatorService" />
   <TypeSignature Language="F#" Value="type ITranslatorService = interface" />
-  <TypeSignature Language="C++ CLI" Value="public interface class ITranslatorService" />
-  <TypeSignature Language="C++ CX" Value="public interface class ITranslatorService" />
-  <TypeSignature Language="C++ WINRT" Value="__interface ITranslatorService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -26,18 +22,16 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DetectLanguageAsync (input As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member DetectLanguageAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iTranslatorService.DetectLanguageAsync input" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ DetectLanguageAsync(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="input" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="input">A string representing the text whose language must be detected.</param>
@@ -67,11 +61,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.DetectLanguagesWithResponseAsync(System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function DetectLanguagesWithResponseAsync (input As IEnumerable(Of String)) As Task(Of IEnumerable(Of DetectedLanguageResponse))" />
       <MemberSignature Language="F#" Value="abstract member DetectLanguagesWithResponseAsync : seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;&gt;" Usage="iTranslatorService.DetectLanguagesWithResponseAsync input" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::DetectedLanguageResponse ^&gt; ^&gt; ^ DetectLanguagesWithResponseAsync(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;&gt;</ReturnType>
@@ -113,11 +106,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.DetectLanguageWithResponseAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function DetectLanguageWithResponseAsync (input As String) As Task(Of DetectedLanguageResponse)" />
       <MemberSignature Language="F#" Value="abstract member DetectLanguageWithResponseAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;" Usage="iTranslatorService.DetectLanguageWithResponseAsync input" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::DetectedLanguageResponse ^&gt; ^ DetectLanguageWithResponseAsync(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;</ReturnType>
@@ -156,8 +148,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt;</ReturnType>
@@ -178,7 +169,6 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <see cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
@@ -188,12 +178,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLanguagesAsync () As Task(Of IEnumerable(Of String))" />
       <MemberSignature Language="F#" Value="abstract member GetLanguagesAsync : unit -&gt; System.Threading.Tasks.Task&lt;seq&lt;string&gt;&gt;" Usage="iTranslatorService.GetLanguagesAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^&gt; ^ GetLanguagesAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;</ReturnType>
@@ -220,12 +208,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.InitializeAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function InitializeAsync () As Task" />
       <MemberSignature Language="F#" Value="abstract member InitializeAsync : unit -&gt; System.Threading.Tasks.Task" Usage="iTranslatorService.InitializeAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ InitializeAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -250,7 +236,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -280,13 +266,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
       <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
       <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ Language { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -306,13 +289,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" />
       <MemberSignature Language="VB.NET" Value="Public Property SubscriptionKey As String" />
       <MemberSignature Language="F#" Value="member this.SubscriptionKey : string with get, set" Usage="Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubscriptionKey { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ SubscriptionKey { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -336,15 +316,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
-        <Parameter Name="to" Type="System.String" Index="1" />
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="input">A string representing the text to translate.</param>
@@ -376,20 +355,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateAsync (input As String, from As String, to As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member TranslateAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iTranslatorService.TranslateAsync (input, from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::String ^&gt; ^ TranslateAsync(System::String ^ input, System::String ^ from, System::String ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="input" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
-        <Parameter Name="from" Type="System.String" Index="1" />
-        <Parameter Name="to" Type="System.String" Index="2" />
+        <Parameter Name="input" Type="System.String" />
+        <Parameter Name="from" Type="System.String" />
+        <Parameter Name="to" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="input">A string representing the text to translate.</param>
@@ -425,7 +402,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -469,11 +446,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As String, to As IEnumerable(Of String)) As Task(Of TranslationResponse)" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;" Usage="iTranslatorService.TranslateWithResponseAsync (input, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::TranslationResponse ^&gt; ^ TranslateWithResponseAsync(System::String ^ input, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -520,7 +496,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -559,11 +535,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As IEnumerable(Of String), from As String, to As IEnumerable(Of String)) As Task(Of IEnumerable(Of TranslationResponse))" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : seq&lt;string&gt; * string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;" Usage="iTranslatorService.TranslateWithResponseAsync (input, from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::TranslationResponse ^&gt; ^&gt; ^ TranslateWithResponseAsync(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ input, System::String ^ from, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -609,11 +584,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As IEnumerable(Of String), from As String, to As String) As Task(Of IEnumerable(Of TranslationResponse))" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : seq&lt;string&gt; * string * string -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;" Usage="iTranslatorService.TranslateWithResponseAsync (input, from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::TranslationResponse ^&gt; ^&gt; ^ TranslateWithResponseAsync(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ input, System::String ^ from, System::String ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -659,11 +633,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As String, from As String, to As IEnumerable(Of String)) As Task(Of TranslationResponse)" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : string * string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;" Usage="iTranslatorService.TranslateWithResponseAsync (input, from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::TranslationResponse ^&gt; ^ TranslateWithResponseAsync(System::String ^ input, System::String ^ from, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -709,11 +682,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.TranslateWithResponseAsync(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As String, from As String, to As String) As Task(Of TranslationResponse)" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : string * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;" Usage="iTranslatorService.TranslateWithResponseAsync (input, from, to)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::MicrosoftTranslator::TranslationResponse ^&gt; ^ TranslateWithResponseAsync(System::String ^ input, System::String ^ from, System::String ^ to);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>

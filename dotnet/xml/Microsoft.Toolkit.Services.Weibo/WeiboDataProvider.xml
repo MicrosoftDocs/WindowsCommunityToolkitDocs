@@ -4,11 +4,9 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class WeiboDataProvider&#xA;Inherits DataProviderBase(Of WeiboDataConfig, SchemaBase)" />
   <TypeSignature Language="F#" Value="type WeiboDataProvider = class&#xA;    inherit DataProviderBase&lt;WeiboDataConfig, SchemaBase&gt;" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WeiboDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Weibo::WeiboDataConfig ^, Microsoft::Toolkit::Parsers::SchemaBase ^&gt;" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class WeiboDataProvider : Microsoft::Toolkit::Services::DataProviderBase&lt;Microsoft::Toolkit::Services::Weibo::WeiboDataConfig, Microsoft::Toolkit::Parsers::SchemaBase const &amp;&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Services.DataProviderBase&lt;Microsoft.Toolkit.Services.Weibo.WeiboDataConfig,Microsoft.Toolkit.Parsers.SchemaBase&gt;</BaseTypeName>
@@ -26,17 +24,38 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WeiboDataProvider (Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens tokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens tokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.#ctor(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tokens As WeiboOAuthTokens)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.Weibo.WeiboDataProvider : Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens -&gt; Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" Usage="new Microsoft.Toolkit.Services.Weibo.WeiboDataProvider tokens" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="tokens" Type="Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens" />
+      </Parameters>
+      <Docs>
+        <param name="tokens">OAuth tokens for request.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" /> class.
+            Constructor.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WeiboDataProvider (Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens tokens, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens tokens, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.#ctor(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (tokens As WeiboOAuthTokens, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.Weibo.WeiboDataProvider : Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager -&gt; Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" Usage="new Microsoft.Toolkit.Services.Weibo.WeiboDataProvider (tokens, authenticationBroker, passwordManager, storageManager)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeiboDataProvider(Microsoft::Toolkit::Services::Weibo::WeiboOAuthTokens ^ tokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager);" />
-      <MemberSignature Language="C++ WINRT" Value=" WeiboDataProvider(Microsoft::Toolkit::Services::Weibo::WeiboOAuthTokens const &amp; tokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="tokens" Type="Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens" />
@@ -62,11 +81,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.GetDataAsync``1(Microsoft.Toolkit.Services.Weibo.WeiboDataConfig,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDataAsync(Of TSchema As SchemaBase) (config As WeiboDataConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="override this.GetDataAsync : Microsoft.Toolkit.Services.Weibo.WeiboDataConfig * int * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="weiboDataProvider.GetDataAsync (config, maxRecords, pageIndex, parser)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase override System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetDataAsync(Microsoft::Toolkit::Services::Weibo::WeiboDataConfig ^ config, int maxRecords, int pageIndex, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt;</ReturnType>
@@ -103,11 +121,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.GetDefaultParser(Microsoft.Toolkit.Services.Weibo.WeiboDataConfig)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDefaultParser (config As WeiboDataConfig) As IParser(Of SchemaBase)" />
       <MemberSignature Language="F#" Value="override this.GetDefaultParser : Microsoft.Toolkit.Services.Weibo.WeiboDataConfig -&gt; Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Parsers.SchemaBase&gt;" Usage="weiboDataProvider.GetDefaultParser config" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Microsoft::Toolkit::Parsers::IParser&lt;Microsoft::Toolkit::Parsers::SchemaBase ^&gt; ^ GetDefaultParser(Microsoft::Toolkit::Services::Weibo::WeiboDataConfig ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Parsers.IParser&lt;Microsoft.Toolkit.Parsers.SchemaBase&gt;</ReturnType>
@@ -133,7 +150,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt;</ReturnType>
@@ -156,11 +173,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.GetUserTimeLineAsync``1(System.String,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUserTimeLineAsync(Of TSchema As SchemaBase) (screenName As String, maxRecords As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="member this.GetUserTimeLineAsync : string * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="weiboDataProvider.GetUserTimeLineAsync (screenName, maxRecords, parser)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetUserTimeLineAsync(System::String ^ screenName, int maxRecords, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt;</ReturnType>
@@ -195,12 +211,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.LoggedIn" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoggedIn As Boolean" />
       <MemberSignature Language="F#" Value="member this.LoggedIn : bool" Usage="Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.LoggedIn" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool LoggedIn { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -219,11 +233,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.LoginAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="weiboDataProvider.LoginAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ LoginAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -243,13 +256,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="weiboDataProvider.Logout " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ WINRT" Value="void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -273,11 +283,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.LogoutAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LogoutAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.LogoutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="weiboDataProvider.LogoutAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ LogoutAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -300,7 +309,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;</ReturnType>
@@ -325,11 +334,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.Uid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uid As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.Uid : Nullable&lt;int64&gt;" Usage="Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.Uid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Uid { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>
@@ -348,12 +356,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboDataProvider.ValidateConfig(Microsoft.Toolkit.Services.Weibo.WeiboDataConfig)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateConfig (config As WeiboDataConfig)" />
       <MemberSignature Language="F#" Value="override this.ValidateConfig : Microsoft.Toolkit.Services.Weibo.WeiboDataConfig -&gt; unit" Usage="weiboDataProvider.ValidateConfig config" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateConfig(Microsoft::Toolkit::Services::Weibo::WeiboDataConfig ^ config);" />
-      <MemberSignature Language="C++ WINRT" Value=" override void ValidateConfig(Microsoft::Toolkit::Services::Weibo::WeiboDataConfig const &amp; config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

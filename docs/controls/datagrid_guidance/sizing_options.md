@@ -1,6 +1,6 @@
 ---
 title: How to - Use the different sizing options in the DataGrid control
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to size the rows, columns and headers of the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml
 ---

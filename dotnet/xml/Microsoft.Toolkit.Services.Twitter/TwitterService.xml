@@ -4,12 +4,9 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Twitter.TwitterService" />
   <TypeSignature Language="VB.NET" Value="Public Class TwitterService" />
   <TypeSignature Language="F#" Value="type TwitterService = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class TwitterService" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class TwitterService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -27,14 +24,10 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; TwitterService();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; TwitterService();" />
-      <MemberSignature Language="C++ WINRT" Value=" TwitterService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -53,8 +46,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Twitter.TwitterUser&gt;</ReturnType>
@@ -80,8 +72,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.Twitter.Tweet&gt;&gt;</ReturnType>
@@ -101,18 +92,71 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As TwitterOAuthTokens) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens -&gt; bool" Usage="twitterService.Initialize oAuthTokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string consumerKey, string consumerSecret, string callbackUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string consumerKey, string consumerSecret, string callbackUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (consumerKey As String, consumerSecret As String, callbackUri As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * string -&gt; bool" Usage="twitterService.Initialize (consumerKey, consumerSecret, callbackUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="consumerKey" Type="System.String" />
+        <Parameter Name="consumerSecret" Type="System.String" />
+        <Parameter Name="callbackUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="consumerKey">Consumer key.</param>
+        <param name="consumerSecret">Consumer secret.</param>
+        <param name="callbackUri">Callback URI. Has to match callback URI defined at apps.twitter.com (can be arbitrary).</param>
+        <summary>
+            Initialize underlying provider with relevent token information for Uwp.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager, Microsoft.Toolkit.Services.Core.ISignatureManager signatureManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens oAuthTokens, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager, class Microsoft.Toolkit.Services.Core.ISignatureManager signatureManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As TwitterOAuthTokens, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager, signatureManager As ISignatureManager) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.Twitter.TwitterOAuthTokens * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager * Microsoft.Toolkit.Services.Core.ISignatureManager -&gt; bool" Usage="twitterService.Initialize (oAuthTokens, authenticationBroker, passwordManager, storageManager, signatureManager)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Initialize(Microsoft::Toolkit::Services::Twitter::TwitterOAuthTokens ^ oAuthTokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager ^ signatureManager);" />
-      <MemberSignature Language="C++ WINRT" Value="bool Initialize(Microsoft::Toolkit::Services::Twitter::TwitterOAuthTokens const &amp; oAuthTokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager const &amp; signatureManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -143,14 +187,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager,Microsoft.Toolkit.Services.Core.ISignatureManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function Initialize (consumerKey As String, consumerSecret As String, callbackUri As String, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager, signatureManager As ISignatureManager) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : string * string * string * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager * Microsoft.Toolkit.Services.Core.ISignatureManager -&gt; bool" Usage="twitterService.Initialize (consumerKey, consumerSecret, callbackUri, authenticationBroker, passwordManager, storageManager, signatureManager)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Initialize(System::String ^ consumerKey, System::String ^ consumerSecret, System::String ^ callbackUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager ^ signatureManager);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool Initialize(Platform::String ^ consumerKey, Platform::String ^ consumerSecret, Platform::String ^ callbackUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager ^ signatureManager);" />
-      <MemberSignature Language="C++ WINRT" Value="bool Initialize(std::wstring const &amp; consumerKey, std::wstring const &amp; consumerSecret, std::wstring const &amp; callbackUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager, Microsoft::Toolkit::Services::Core::ISignatureManager const &amp; signatureManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -185,12 +225,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.TwitterService.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As TwitterService" />
       <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Services.Twitter.TwitterService" Usage="Microsoft.Toolkit.Services.Twitter.TwitterService.Instance" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Services::Twitter::TwitterService ^ Instance { Microsoft::Toolkit::Services::Twitter::TwitterService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterService</ReturnType>
@@ -209,12 +247,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.LoginAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterService.LoginAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ LoginAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -234,14 +270,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="twitterService.Logout " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ WINRT" Value="void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -265,11 +297,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.LogoutAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LogoutAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.LogoutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="twitterService.LogoutAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ LogoutAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -289,12 +320,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.TwitterService.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As TwitterDataProvider" />
       <MemberSignature Language="F#" Value="member this.Provider : Microsoft.Toolkit.Services.Twitter.TwitterDataProvider" Usage="Microsoft.Toolkit.Services.Twitter.TwitterService.Provider" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::Twitter::TwitterDataProvider ^ Provider { Microsoft::Toolkit::Services::Twitter::TwitterDataProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Twitter.TwitterDataProvider</ReturnType>
@@ -316,8 +345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Services.Twitter.Tweet&gt;&gt;</ReturnType>
@@ -345,8 +373,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt;</ReturnType>
@@ -382,8 +409,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.Twitter.Tweet&gt;&gt;</ReturnType>
@@ -408,12 +434,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.StartUserStreamAsync(Microsoft.Toolkit.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback)" />
       <MemberSignature Language="VB.NET" Value="Public Function StartUserStreamAsync (callback As TwitterStreamCallbacks.TwitterStreamCallback) As Task" />
       <MemberSignature Language="F#" Value="member this.StartUserStreamAsync : Microsoft.Toolkit.Services.Twitter.TwitterStreamCallbacks.TwitterStreamCallback -&gt; System.Threading.Tasks.Task" Usage="twitterService.StartUserStreamAsync callback" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ StartUserStreamAsync(Microsoft::Toolkit::Services::Twitter::TwitterStreamCallbacks::TwitterStreamCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -436,14 +460,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.StopUserStream" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopUserStream ()" />
       <MemberSignature Language="F#" Value="member this.StopUserStream : unit -&gt; unit" Usage="twitterService.StopUserStream " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopUserStream();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void StopUserStream();" />
-      <MemberSignature Language="C++ WINRT" Value="void StopUserStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -462,12 +482,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Services.Twitter.TwitterStatus)" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (status As TwitterStatus) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : Microsoft.Toolkit.Services.Twitter.TwitterStatus -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterService.TweetStatusAsync status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(Microsoft::Toolkit::Services::Twitter::TwitterStatus ^ status);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -490,12 +508,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.TweetStatusAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (message As String) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterService.TweetStatusAsync message" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -518,12 +534,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.TweetStatusAsync(Microsoft.Toolkit.Services.Twitter.TwitterStatus,System.IO.Stream[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (status As TwitterStatus, ParamArray pictures As Stream()) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : Microsoft.Toolkit.Services.Twitter.TwitterStatus * System.IO.Stream[] -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterService.TweetStatusAsync (status, pictures)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(Microsoft::Toolkit::Services::Twitter::TwitterStatus ^ status, ... cli::array &lt;System::IO::Stream ^&gt; ^ pictures);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -554,12 +568,10 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterService.TweetStatusAsync(System.String,System.IO.Stream[])" />
       <MemberSignature Language="VB.NET" Value="Public Function TweetStatusAsync (message As String, ParamArray pictures As Stream()) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.TweetStatusAsync : string * System.IO.Stream[] -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="twitterService.TweetStatusAsync (message, pictures)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ TweetStatusAsync(System::String ^ message, ... cli::array &lt;System::IO::Stream ^&gt; ^ pictures);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -590,13 +602,10 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Twitter.TwitterService.UserScreenName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserScreenName As String" />
       <MemberSignature Language="F#" Value="member this.UserScreenName : string" Usage="Microsoft.Toolkit.Services.Twitter.TwitterService.UserScreenName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserScreenName { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ UserScreenName { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

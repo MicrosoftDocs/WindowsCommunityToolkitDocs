@@ -12,6 +12,9 @@ dev_langs:
 
 The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.rotate) allows users to modify and animate the control's rotation. Rotate animation is applied to all the XAML elements in its parent control/panel. Rotate animation doesn't affect the functionality of the control.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Animations?sample=Rotate)
+
 ## Syntax
 
 ```xaml
@@ -107,7 +110,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Rotate Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Rotate). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Rotate Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Rotate). You can [see this in action](uwpct://Animations?sample=Rotate) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -122,4 +125,4 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Related Topics
 
-- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)

@@ -7,18 +7,27 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # MapControl for Windows Forms and WPF
 
-> [!NOTE]
-> This control is currently available as a developer preview. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. This control will continue to mature and stabilize in future toolkit releases.
+The **MapControl** class enables you to display a symbolic or photorealistic map in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications as part of a feature called *XAML Islands*. For more information, see [UWP controls in desktop applications (XAML Islands)](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
 
-The **MapControl** class enables you to display a symbolic or photorealistic map in your Windows Forms or WPF desktop application. This control shows rich and customizable map data including road maps, aerial, 3D, views, directions, search results, and traffic. You can also display the user's location, directions, and points of interest.
+This control shows rich and customizable map data including road maps, aerial, 3D, views, directions, search results, and traffic. You can also display the user's location, directions, and points of interest.
 
 ![MapControl example](../../resources/images/Controls/MapControl.png)
+
+> [!NOTE]
+> This control is currently available as a developer preview for Windows 10, version 1903, and later. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. For more information, see the [XAML Islands feature roadmap](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#feature-roadmap). If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=MapControl)
 
 ## About MapControl
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
 This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.Maps.MapControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Maps.MapControl) class.
+
+## Requirements
+
+Before you can use this control, you must follow [these instructions](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
 
 ## Known issues and limitations
 
@@ -68,7 +77,7 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 | LandmarksVisible | bool | Wraps the [LandmarksVisible](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.landmarksvisible) property. |
 | Layers | IList&lt;MapLayer&gt; | Wraps the [Layers](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.layers) property. |
 | LoadingStatus | MapLoadingStatus  | Wraps the [LoadingStatus](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.loadingstatus) property. |
-| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapcolorscheme) property. |
+| MapColorScheme  |  ColorScheme| Wraps the [MapColorScheme](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.colorscheme) property. |
 | MapElements  | IList&lt;MapElement&gt; | Wraps the [MapElements](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapelements) property. |
 | MapProjection | MapProjection | Wraps the [MapProjection](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapprojection) property. |
 | MapServiceToken | string | Wraps the [MapServiceToken](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.mapservicetoken) property. |
@@ -158,7 +167,6 @@ The following events wrap corresponding [events](https://docs.microsoft.com/uwp/
 | TransformOriginChanged  | Wraps the [TransformOriginChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.transformoriginchanged) event. |
 | ZoomLevelChanged  | Wraps the [ZoomLevelChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.maps.mapcontrol.zoomlevelchanged) event. |
 
-
 ## Requirements
 
 |        |        |
@@ -167,11 +175,10 @@ The following events wrap corresponding [events](https://docs.microsoft.com/uwp/
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
-## API source code
+## API
 
 - [MapControl (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/MapControl)
 - [MapControl (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/MapControl)
-
 
 ## Related topics
 

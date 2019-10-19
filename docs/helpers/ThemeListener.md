@@ -12,6 +12,9 @@ dev_langs:
 
 The [Theme Listener](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.themelistener) class allows you to determine the current Application Theme, and when it is changed via System Theme changes.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=ThemeListener)
+
 ## Syntax
 
 ```csharp
@@ -48,11 +51,9 @@ End Sub
 | -- | -- |
 | ThemeChanged | An event that fires if the Theme changes. |
 
-## Sample Code
+## Sample Project
 
-[Theme Listener Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ThemeListener/ThemeListenerPage.xaml.cs).
-
-You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Theme Listener Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ThemeListener/ThemeListenerPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=ThemeListener) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -61,6 +62,6 @@ You can see this in action in [Windows Community Toolkit Sample App](https://www
 | Namespace | Microsoft.Toolkit.Uwp.UI |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/)  |
 
-## API Source Code
+## API
 
-- [Theme Listener source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Helpers/ThemeListener.cs)
+* [Theme Listener source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Helpers/ThemeListener.cs)

@@ -12,6 +12,9 @@ dev_langs:
 
 The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=BladeView)
+
 ## Syntax
 
 ```xaml
@@ -50,9 +53,8 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | CloseButtonBackground | Brush | Gets or sets the background color of the default close button in the title bar |
 | CloseButtonForeground | Brush | Gets or sets the foreground color of the close button |
 | IsOpen | bool | Gets or sets a value indicating whether this blade is opened |
-| Title | string | Gets or sets the title to appear in the title bar |
+| Header | string | Gets or sets the content for the header |
 | TitleBarBackground | Brush | Gets or sets the background color of the title bar |
-| TitleBarForeground | Brush | Gets or sets the titlebar foreground color |
 | TitleBarVisibility | Visibility | Gets or sets the visibility of the title bar for this blade |
 
 ## Events
@@ -91,11 +93,11 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
     </controls:BladeView>
     ```
 
-## Sample Code
+## Sample Project
 
-[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [BladeView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -109,4 +111,3 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 ## API
 
 * [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)
-

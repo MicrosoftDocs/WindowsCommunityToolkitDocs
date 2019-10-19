@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [SystemInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformation?view=uwp-toolkit-dotnet) class is a static utility class that provides properties with some system, application and device information.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=SystemInformation)
+
 ## Properties
 
 | Property | Type | Description |
@@ -42,6 +45,10 @@ The [SystemInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | LaunchStoreForReviewAsync() | Task | Launch the store app so the user can leave a review. |
 | ResetLaunchCount() | void | Reset launch count so you can get launch count from a new perspective |
 | TrackAppUse() | void | Track app launch time and count. |
+
+## Sample Project
+
+[System Information Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

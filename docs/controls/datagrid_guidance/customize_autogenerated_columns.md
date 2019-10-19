@@ -1,6 +1,6 @@
 ---
 title: How to - Customize Auto-Generated Columns in the DataGrid Control
-author: harinik
+author: harinikmsft
 description: Guidance document that shows how to customize auto generated columns in the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml, AutoGenerateColumns
 ---
