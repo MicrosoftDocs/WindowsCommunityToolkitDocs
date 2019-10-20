@@ -32,6 +32,7 @@
 ## [DockPanel](controls/DockPanel.md)
 ## [DropShadowPanel Control](controls/DropShadowPanel.md)
 ## [Expander Control](controls/Expander.md)
+## [Eyedropper](controls/Eyedropper.md)
 ## [GridSplitter](controls/GridSplitter.md)
 ## [HeaderedContentControl](controls/HeaderedContentControl.md)
 ## [HeaderedItemsControl](controls/HeaderedItemsControl.md)
