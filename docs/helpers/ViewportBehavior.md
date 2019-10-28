@@ -16,7 +16,7 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 ```xaml
 <Page 
     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
-    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors" />
+    xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Behaviors" />
 
 <ScrollViewer>
     <StackPanel Orientation="Vertical"
@@ -60,10 +60,10 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 
 | Device family | Universal, 10.0.16299.0 or higher   |
 | ---------------------------------------------------------------- | ----------------------------------- |
-| Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Animations |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI.Animations](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Animations/) |
+| Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Behaviors |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
 ## API
 
-* [ViewportBehavior source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/ViewportBehavior.cs)
+* [ViewportBehavior source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI/Behaviors/ViewportBehavior.cs)
 
