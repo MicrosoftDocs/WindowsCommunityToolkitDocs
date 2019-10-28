@@ -41,7 +41,7 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 | -- | -- | -- |
 | IsInViewport | bool | Gets a value indicating whether associated element is in the ScrollViewer viewport |
 | IsFullyInViewport | bool | Gets a value indicating whether associated element is fully in the ScrollViewer viewport |
-| IsRemoveBehaviorAfterEnteredViewport | bool | Gets or sets a value indicating whether remove this behavior after associated element entered viewport |
+| IsAlwaysOn | bool | Gets or sets a value indicating whether this behavior will remain attached after the associated element enters the viewport. By default, when false, the behavior will remove itself after the attached element enters. |
 
 ## Events
 
