@@ -145,6 +145,7 @@
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
+## [ViewportBehavior](helpers/ViewportBehavior.md)
 
 # Services
 ## [Facebook Service](services/Facebook.md)
