@@ -61,9 +61,10 @@
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
 ## [StaggeredPanel](controls/StaggeredPanel.md)
-## [TextToolbar](controls/TextToolbar.md)
 ## [TabView](controls/TabView.md)
+## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
+## [TokenizingTextBox](controls/TokenizingTextBox.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WrapPanel](controls/WrapPanel.md)
 
