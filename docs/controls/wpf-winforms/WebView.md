@@ -10,6 +10,8 @@ dev_langs:
 
 # WebView control for Windows Forms and WPF
 
+Please note that WebView will eventually be replaced by [WebView2] (https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2).
+
 The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![WebView example](../../resources/images/Controls/WebView/web-view-samples.png)
