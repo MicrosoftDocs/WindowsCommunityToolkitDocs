@@ -71,11 +71,11 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 | Device family | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Media |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI.Media](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Media/)
 
 ## API
 
-- [RadialGradientBrush source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Media/RadialGradientBrush.cs)
+- [RadialGradientBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/RadialGradientBrush.cs)
 
 ## Related Topics
 
