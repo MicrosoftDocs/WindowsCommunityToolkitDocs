@@ -37,10 +37,6 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 | Stretch | Windows.UI.Xaml.Media.Stretch | The `Stretch` property specifies how the image should stretch to its container.  Requires 10.0.16299 or higher for modes other than None (default). |
 | Mode | [ImageBlendMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendmode) | The `ImageBlendMode` property specifies how the image should be blended with the backdrop.  See the [BlendEffectMode](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffectMode.htm) reference.  The `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a Windows version 10.0.16299 or higher. |
 
-> [!NOTE]
-> The `Stretch` property for values other than `None` requires a Windows version 10.0.16299 or higher.
-> In addition, the `Hue`, `Saturation`, `Color`, and `Luminosity` modes require a Windows version 10.0.16299 or higher.
-
 ## Sample Project
 
 [ImageBlendBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageBlendBrush). You can [see this in action](uwpct://Brushes?sample=ImageBlendBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
