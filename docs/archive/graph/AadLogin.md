@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # AadLogin Control
 
-The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.aadlogin) leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph, it relies on the [MicrosoftGraphService](../services/MicrosoftGraph.md) for authentication.
+The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.aadlogin) leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 
 ## Example Image
 
-![AadLogin animation](../resources/images/Graph/AadLogin.png)
+![AadLogin animation](../../resources/images/Graph/AadLogin.png)
 
 ## Properties
 
@@ -54,7 +54,7 @@ The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 
 ## Sample Code
 
-First of all, initialize the [MicrosoftGraphService](../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
+First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
 ```c#
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;

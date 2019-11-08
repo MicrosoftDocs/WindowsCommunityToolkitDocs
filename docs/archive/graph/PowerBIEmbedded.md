@@ -22,7 +22,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Example Image
 
-![PowerBIEmbedded animation](../resources/images/Graph/PowerBIEmbedded.png)
+![PowerBIEmbedded animation](../../resources/images/Graph/PowerBIEmbedded.png)
 
 ## Properties
 
@@ -36,7 +36,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 ## Integration
 
 1. Follow the
-[MicrosoftGraphService](../services/MicrosoftGraph.md#register-the-app-to-use-azure-ad-v1-endpoint) to create Azure AD app registration (v1), and grant the permissions below.
+[MicrosoftGraphService](../../services/MicrosoftGraph.md#register-the-app-to-use-azure-ad-v1-endpoint) to create Azure AD app registration (v1), and grant the permissions below.
 
    * Microsoft Graph
       - Sign in and read user profile
@@ -55,7 +55,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
       - View all Datasets
       - View all Dashboards
       - View all workspaces
-        ![PowerBIEmbedded Permissions](../resources/images/Graph/PowerBIEmbedded-Permissions.png)
+        ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
 
 <!-- workaround for bullets styling -->
 2. Follow this [article](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content) to do the primary tasks below.

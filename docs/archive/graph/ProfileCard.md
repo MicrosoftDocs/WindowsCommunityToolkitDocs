@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ProfileCard Control
 
-The [ProfileCard Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.profilecard) is a simple way to display a user in multiple different formats and mixes of name/image/e-mail, it relies on the [MicrosoftGraphService](../services/MicrosoftGraph.md) for authentication.
+The [ProfileCard Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.profilecard) is a simple way to display a user in multiple different formats and mixes of name/image/e-mail, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
 
@@ -22,7 +22,7 @@ The [ProfileCard Control](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 ## Example Image
 
-![ProfileCard animation](../resources/images/Graph/ProfileCard.png)
+![ProfileCard animation](../../resources/images/Graph/ProfileCard.png)
 
 ## Properties
 
@@ -38,7 +38,7 @@ The [ProfileCard Control](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 ## Sample Code
 
-First of all, initialize the [MicrosoftGraphService](../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
+First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
 ```c#
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;
