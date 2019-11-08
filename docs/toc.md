@@ -46,13 +46,6 @@
 ## [MarkdownTextBlock](controls/MarkdownTextBlock.md)
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 ## [Menu Control](controls/Menu.md)
-## Microsoft Graph Controls
-### [AadLogin](graph/AadLogin.md)
-### [PeoplePicker](graph/PeoplePicker.md)
-### [PlannerTaskList](graph/PlannerTaskList.md)
-### [PowerBIEmbedded](graph/PowerBIEmbedded.md)
-### [ProfileCard](graph/ProfileCard.md)
-### [SharePointFileList](graph/SharePointFileList.md)
 ## [OrbitView](controls/OrbitView.md)
 ## [RadialGauge](controls/RadialGauge.md)
 ## [RadialProgressBar](controls/RadialProgressBar.md)
@@ -122,6 +115,15 @@
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
 
+# Microsoft Graph
+## Controls
+### [LoginButton](graph/controls/LoginButton.md)
+### [PersonView](graph/controls/PersonView.md)
+### [PeoplePicker](graph/controls/PeoplePicker.md)
+## Providers
+### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
+
 # Helpers
 ## [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
 ## [BackgroundTaskHelper](helpers/BackgroundTaskHelper.md)
@@ -173,11 +175,18 @@
 # [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 # Archive
+## Animations
+### [ParallaxService](archive/ParallaxService.md)
 ## Controls
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 ### [SlidableListItem](archive/SlidableListItem.md)
-## Animations
-### [ParallaxService](archive/ParallaxService.md)
+## Microsoft Graph Controls
+### [AadLogin](archive/graph/AadLogin.md)
+### [PeoplePicker](archive/graph/PeoplePicker.md)
+### [PlannerTaskList](archive/graph/PlannerTaskList.md)
+### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
+### [ProfileCard](archive/graph/ProfileCard.md)
+### [SharePointFileList](archive/graph/SharePointFileList.md)
 ## Services
 ### [Bing Service](archive/Bing.md)
