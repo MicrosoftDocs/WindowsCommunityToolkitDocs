@@ -22,7 +22,7 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 ## Sample Output
 
-<!-- Image/Text can show the output of the control/helper -->
+![PeoplePicker Control](../../resources/images/Graph/Controls/PeoplePicker.png)
 
 ## Properties
 

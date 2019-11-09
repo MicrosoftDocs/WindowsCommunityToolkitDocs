@@ -25,7 +25,7 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## Sample Output
 
-<!-- Image/Text can show the output of the control/helper -->
+![LoginButton Control](../../resources/images/Graph/Controls/LoginButton.png)
 
 ## Properties
 

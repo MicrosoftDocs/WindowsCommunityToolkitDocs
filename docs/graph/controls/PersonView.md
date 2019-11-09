@@ -17,12 +17,12 @@ The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.c
 ## Syntax
 
 ```xaml
-  <wgt:PersonView PersonQuery="me"/>
+  <wgt:PersonView PersonQuery="me" ShowEmail="True"/>
 ```
 
 ## Sample Output
 
-<!-- Image/Text can show the output of the control/helper -->
+![PersonView Control](../../resources/images/Graph/Controls/PersonView.png)
 
 ## Properties
 
