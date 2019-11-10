@@ -19,9 +19,9 @@ The **InkCanvas** control provides a surface for Windows Ink-based user interact
 
 ## About InkCanvas control
 
-The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control.
+For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](https://docs.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
 ## Requirements
 
@@ -31,7 +31,7 @@ Before you can use this control, you must follow [these instructions](https://do
 
 This control, like the UWP **Windows.UI.Xaml.Controls.InkCanvas** control, provides no interaction without an associated [InkToolbar](InkToolbar.md) with the interaction mode set. You'll also find it may not show ink properly while running on a device that uses the Windows 10 dark theme.
 
-See also our list of [known issues](https://github.com/windows-toolkit/WindowsCommunityToolkit/issues?utf8=%E2%9C%93&q=is:issue+is:open+label:XamlIslands+label:bug) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
+See also our list of [known issues](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) for WPF and Windows Forms controls in the Windows Community Toolkit repo.
 
 ## Syntax
 
