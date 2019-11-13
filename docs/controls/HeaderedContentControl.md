@@ -12,6 +12,9 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 > [!NOTE]
 > Setting the `Background`, `BorderBrush` and `BorderThickness` properties will not have any effect on the HeaderedContentControl. This is to maintain the same functionality as the ContentControl.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=HeaderedContentControl)
+
 ## Syntax
 
 ```xaml
@@ -65,8 +68,9 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
     </<controls:HeaderedContentControl>
     ```
 
-## Sample Code
-[HeaderedContentControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+## Sample Project
+
+[HeaderedContentControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

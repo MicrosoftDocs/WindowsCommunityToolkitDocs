@@ -3,6 +3,9 @@ title: Connected Animations XAML Attached Properties
 author: nmetulev
 description: The Connected Animation XAML Attached Properties enable connected animations to be defined in your XAML code
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, connected animations, animation, coordinated animations
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # Connected Animations XAML Attached Properties
@@ -11,11 +14,14 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The Connected Animations XAML Attached Properties enable connected animations to be defined directly in your XAML code by simply adding a Key to the element that should animate. There are also attached properties to enable coordinated animations and animations in lists and grids.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Animations?sample=Connected%20Animations)
+
 ## Syntax
 
 ```xaml
 <Page ...
-    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"/>
+    xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations">
 
 <Border x:Name="Element" animations:Connected.Key="item"></Border>
 
@@ -29,6 +35,7 @@ The Connected Animations XAML Attached Properties enable connected animations to
         </DataTemplate>
     </GridView.ItemTemplate>
 </GridView>
+</Page>
 ```
 
 ## Sample Output
@@ -38,15 +45,19 @@ The Connected Animations XAML Attached Properties enable connected animations to
 ## XAML Attached Properties
 
 ### Connected.Key
+
 Registers element with the [ConnectedAnimationsService](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.animation.connectedanimation.aspx). For the animation to work, the same key must be registered on two different pages when navigating
 
 ### Connected.AnchorElement
+
 To enable [coordinated animations](https://docs.microsoft.com/windows/uwp/style/connected-animation#coordinated-animation), use the AnchorElement attached property on the element that should appear alongside the connected animation element by specifying the connected animation element
 
 ### Connected.ListItemKey
+
 Registers a ListView/GridView for connected animations. When navigating from/to a page that is using this property, the connected animation will use the item passed as a **parameter** in the page navigation to select the item in the list that should animated. See *Select List Item to be animated* section below for more details. The *Connected.ListItemElementName* attached property must also be set for the animation to be registered
 
 ### Connected.ListItemElementName
+
 Specifies what named element in the DataTemplate of an item should animate. The Connected.ListItemKey attached property must also be set for the animation to be registered.
 
 ## Registering elements in code behind
@@ -54,24 +65,31 @@ Specifies what named element in the DataTemplate of an item should animate. The 
 In cases where an element has not loaded before the navigation completes, the attached properties are not able to access the element properties to register it for the connected animation. In those case, you can register the element through code behind inside the OnNavigatedTo method. The following extension methods are available:
 
 ### RegisterElementForConnectedAnimation(this Page page, string key, UIElement element, IEnumerable<UIElement> anchors = null)
+
 Registers a UIElement with the ConnectedAnimations service to run automatically on page navigation
 
 ### UnregisterElementForConnectedAnimation(this Page page, string key)
+
 Unregisters a UIElement from the ConnectedAnimations service
 
 ### AttachAnchorElementForConnectedAnimation(this Page page, UIElement element, UIElement anchor)
+
 Add an anchor element to animate alongside the main element
 
 ### RemoveAnchoredElementForConnectedAnimation(this Page page, UIElement element, UIElement anchor)
+
 Remove an anchor element from animating alongside the main element
 
 ### RegisterListItemForConnectedAnimation(this Page page, ListViewBase listViewBase, string key, string elementName)
+
 Registers an element (part of a DataTemplate in a list control) with the ConnectedAnimations service to run automatically on page navigation
 
 ### UnregisterListItemForConnectedAnimation(this Page page, ListViewBase listViewBase, string key)
+
 Unregisters an element (part of a DataTemplate in a list control) from the ConnectedAnimations service
 
 ## Select List Item to be animated
+
 The helper uses the page navigation parameter to decide which list item will be animated during the page navigation. However, in some cases the parameter passed during page navigation is not part of the list. For example, you might be only passing the id of an item as a navigation parameter and not the item itself.
 
 In those cases, you can use the **SetListDataItemForNextConnectedAnnimation** extension method before page navigation to specify which item should be animated.
@@ -81,12 +99,21 @@ In those cases, you can use the **SetListDataItemForNextConnectedAnnimation** ex
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.Navigate(typeof(DetailsPage), dataItemToAnimate.Id);
 ```
+```vb
+    ' dataItemToAnimate is an object in the ListViewBase.ItemsSource collection
+    Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
+    Frame.Navigate(GetType(DetailsPage), dataItemToAnimate.Id)
+```
 
-This method is also helpful when navigating back to an item different from the item it was navigated from. 
+This method is also helpful when navigating back to an item different from the item it was navigated from.
 
 ```csharp
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.GoBack();
+```
+```vb
+    Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
+    Frame.GoBack()
 ```
 
 ## Examples
@@ -99,14 +126,14 @@ We need a set a key for the element to be connected with another element in a di
 
 ```xaml
 <Grid>
-    <Border Height="100" Width="100" Background="Purple" 
-        VerticalAlignment="Center" HorizontalAlignment="Center" 
-        animations:Connected.Key="item"/>
+    <Border Height="100" Width="100" Background="Purple"
+        VerticalAlignment="Center" HorizontalAlignment="Center"
+        animations:Connected.Key="item" />
 </Grid>
 ```
 
 **In second page**
- 
+
 We need to set the same key for the element to be connected with. Also, You can anchor another element to move along the connected animation path.
 
 ```xaml
@@ -163,9 +190,9 @@ In this page, you just need to give the same key.
 </StackPanel>
 ```
 
-## Sample Code
+## Sample Project
 
-[Connected Animations sample page source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Connected Animations sample page source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can [see this in action](uwpct://Animations?sample=Connected%20Animations) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -180,4 +207,4 @@ In this page, you just need to give the same key.
 
 ## Related Topics
 
-- [ConnectedAnimationService Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimationService)
+* [ConnectedAnimationService Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimationService)

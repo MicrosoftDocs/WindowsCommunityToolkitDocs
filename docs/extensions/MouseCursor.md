@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.mouse.cursor) enables you to easily change the mouse cursor over specific Framework elements.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=Mouse)
+
 ## Syntax
 
 ```xaml
@@ -31,13 +34,13 @@ Here is a example of setting Mouse.Cursor
 ```xaml
 <Page x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MouseCursorPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border extensions:Mouse.Cursor="Hand"
-	        Width="220" Height="120" Background="DeepSkyBlue"
-	        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            Width="220" Height="120" Background="DeepSkyBlue"
+            HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
 </Page>
 ```
@@ -49,9 +52,9 @@ Here is a example of setting Mouse.Cursor
 
 Because the UWP framework does not support metadata on Attached Properties, specifically the [FrameworkPropertyMetadata.Inherits](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the Mouse.Cursor might not work properly in some very specific XAML layout scenarios when combining nested FrameworkElements with different Mouse.Cursor values set on them.
 
-## Sample Code
+## Sample Project
 
-[Mouse Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Mouse Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can [see this in action](uwpct://Extensions?sample=Mouse) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -63,4 +66,3 @@ Because the UWP framework does not support metadata on Attached Properties, spec
 ## API
 
 * [Mouse.Cursor source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Mouse)
-

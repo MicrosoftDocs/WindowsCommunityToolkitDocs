@@ -12,6 +12,9 @@ dev_langs:
 
 The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=DropShadowPanel)
+
 ## Syntax
 
 ```xaml
@@ -40,10 +43,6 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 | OffsetZ | double | Gets or sets the z offset of the drop shadow |
 | ShadowOpacity | double | Gets or sets the opacity of the drop shadow |
 
-## Sample Code
-
-[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
-
 ## Examples
 
 - Use IsSupported property to verify the availability of drop shadow and take necessary action if not available
@@ -60,7 +59,11 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
     End If
     ```
 
-## Default Template 
+## Sample Project
+
+[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+
+## Default Template
 
 [DropShadowPanel XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml) is the XAML template used in the toolkit for the default styling.
 

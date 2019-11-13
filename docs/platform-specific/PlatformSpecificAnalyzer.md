@@ -13,12 +13,14 @@ dev_langs:
 When writing [version](https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
 The platform specific analyzer is a Roslyn Analyzer that can parse through code and suggest fixes where appropriate.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=PlatformSpecificAnalyzer)
+
 ## Installation
 
 The analyzer is available both as a nuget package
 
 * References > Manage NuGet References > install [Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
-
 
 ## Sample Output
 
@@ -34,6 +36,10 @@ Visual Basic
 
 ![Code Analysis](../resources/images/CodeFixSuggestionVB.png)
 
+## Sample Project
+
+You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher   |
@@ -41,12 +47,10 @@ Visual Basic
 | Namespace                                                        | Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer |
 | NuGet package | [Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer/) |
 
-## API Source Code
+## API
 
-- [Platform Specific Analyzer](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
+* [Platform Specific Analyzer](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
 
 ## Related Topics
 
-<!-- Optional -->
-
-- [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)

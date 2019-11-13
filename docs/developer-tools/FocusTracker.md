@@ -5,7 +5,7 @@ description: The FocusTracker Control can be used to display information about t
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, FocusTracker, XAML Control, xaml 
 ---
 
-# FocusTracker XAML Control 
+# FocusTracker XAML Control
 
 The [FocusTracker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.developertools.focustracker) can be used to display information about the current focused XAML element (if any).
 
@@ -14,6 +14,9 @@ FocusTracker will display the following information (when available) about the c
 - Type
 - AutomationProperties.Name
 - Name of the first parent in hierarchy with a name
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=FocusTracker)
 
 ## Syntax
 
@@ -31,9 +34,9 @@ FocusTracker will display the following information (when available) about the c
 | -- | -- | -- |
 | IsActive | bool | Gets or sets a boolean indicating whether the tracker is running or not |
 
-## Sample Code
+## Sample Project
 
-[FocusTracker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[FocusTracker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can [see this in action](uwpct://Controls?sample=FocusTracker) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -45,4 +48,3 @@ FocusTracker will display the following information (when available) about the c
 ## API
 
 * [FocusTracker source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.DeveloperTools/FocusTracker)
-

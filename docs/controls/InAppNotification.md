@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# InAppNotification 
+# InAppNotification
 
 The [InAppNotification](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
 
@@ -16,6 +16,9 @@ The control should be placed where you want your notification to be displayed in
 
 > [!NOTE]
 > Since the control is part of the page visual tree, it will render in the order it was added in the parent control, and might be hidden by other elements. For the control to render on top of other elements, add it as the last child of the parent control or set the Canvas.ZIndex to a high number.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=InAppNotification)
 
 ## Syntax
 
@@ -214,11 +217,11 @@ If you want to add styles to the Toolkit, please follow these steps :
 3. Create a new `ControlTemplate` with `TargetType="local:InAppNotification"` and add a `ContentPresenter` inside the Template
 4. Do not forget to set the `Template` property inside your `Style` resource
 
-## Sample Code
+## Sample Project
 
-[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [InAppNotification XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xaml) is the XAML template used in the toolkit for the default styling.
 

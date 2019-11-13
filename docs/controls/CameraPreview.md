@@ -3,6 +3,9 @@ title: CameraPreview
 author: skommireddi
 description: The CameraPreview control allows to easily preview video in the MediaPlayerElement from available camera frame source groups. You can subscribe and get real time video frames and software bitmaps as they arrive from the selected camera source. It shows only frame sources that support color video preview or video record streams.
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, CameraPreview, Camera, Preview, Video Frame, Software Bitmap
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # CameraPreview
@@ -12,11 +15,14 @@ The **CameraPreview** control allows to easily preview video in the MediaPlayerE
 > [!IMPORTANT]
 > Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=CameraPreview)
+
 ## Syntax
 
 ```xaml
-<controls:CameraPreview x:Name="CameraPreviewControl">	
-</controls:CameraPreview>       
+<controls:CameraPreview x:Name="CameraPreviewControl">
+</controls:CameraPreview>
 ```
 
 ```csharp
@@ -24,7 +30,7 @@ The **CameraPreview** control allows to easily preview video in the MediaPlayerE
 CameraPreviewControl.PreviewFailed += CameraPreviewControl_PreviewFailed;
 await CameraPreviewControl.StartAsync();
 CameraPreviewControl.CameraHelper.FrameArrived += CameraPreviewControl_FrameArrived;
-     
+
 
 private void CameraPreviewControl_FrameArrived(object sender, FrameEventArgs e)
 {
@@ -36,6 +42,21 @@ private void CameraPreviewControl_PreviewFailed(object sender, PreviewFailedEven
 {
 	var errorMessage = e.Error;
 }
+```
+```vb
+
+    AddHandler CameraPreviewControl.PreviewFailed, AddressOf CameraPreviewControl_PreviewFailed
+    Await CameraPreviewControl.StartAsync()
+    AddHandler CameraPreviewControl.CameraHelper.FrameArrived, AddressOf CameraPreviewControl_FrameArrived
+
+    Private Sub CameraPreviewControl_FrameArrived(ByVal sender As Object, ByVal e As FrameEventArgs)
+        Dim videoFrame = e.VideoFrame
+        Dim softwareBitmap = videoFrame.SoftwareBitmap
+    End Sub
+
+    Private Sub CameraPreviewControl_PreviewFailed(ByVal sender As Object, ByVal e As PreviewFailedEventArgs)
+        Dim errorMessage = e.[Error]
+    End Sub
 ```
 
 > [!IMPORTANT]
@@ -49,9 +70,9 @@ private void CameraPreviewControl_PreviewFailed(object sender, PreviewFailedEven
 | IsFrameSourceGroupButtonVisible | bool| Set this property to hide or show Frame Source Group Button. Note: This button is conditionally visible based on more than one source being available. |
 
 ```xaml
-<controls:CameraPreview x:Name="CameraPreviewControl" IsFrameSourceGroupButtonVisible="false">	
-</controls:CameraPreview>       
-``` 
+<controls:CameraPreview x:Name="CameraPreviewControl" IsFrameSourceGroupButtonVisible="false"
+</controls:CameraPreview>
+```
 
 ## Methods
 
@@ -81,11 +102,22 @@ if(availableFrameSourceGroups != null)
   _cameraPreviewControl.CameraHelper.FrameArrived += CameraPreviewControl_FrameArrived; 
 }
 ```
+```vb
+    Dim availableFrameSourceGroups = Await CameraHelper.GetFrameSourceGroupsAsync()
 
-## Sample Code
+    If availableFrameSourceGroups IsNot Nothing Then
+        Dim cameraHelper As CameraHelper = New CameraHelper() With {
+        .FrameSourceGroup = availableFrameSourceGroups.FirstOrDefault()
+    }
+        AddHandler CameraPreviewControl.PreviewFailed, AddressOf CameraPreviewControl_PreviewFailed
+        Await _CameraPreviewControl.StartAsync(cameraHelper)
+        AddHandler CameraPreviewControl.CameraHelper.FrameArrived, AddressOf CameraPreviewControl_FrameArrived
+    End If
+```
 
-[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+## Sample Project
 
+[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -94,8 +126,6 @@ if(availableFrameSourceGroups != null)
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
-## API Source Code
+## API
 
-- [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview)
-
-
+* [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview)

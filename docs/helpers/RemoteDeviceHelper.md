@@ -7,12 +7,15 @@ dev_langs:
   - csharp
 ---
 
-# RemoteDeviceHelper 
+# RemoteDeviceHelper
 
 The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicehelper) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
 > [!IMPORTANT]
 > Make sure you enable the [RemoteSystem capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=RemoteDeviceHelper)
 
 ## Syntax
 
@@ -78,9 +81,9 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ```
 
-## Sample Code
+## Sample Project
 
-[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can [see this in action](uwpct://Helpers?sample=RemoteDeviceHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
