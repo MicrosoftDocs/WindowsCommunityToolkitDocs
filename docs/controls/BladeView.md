@@ -12,6 +12,9 @@ dev_langs:
 
 The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=BladeView)
+
 ## Syntax
 
 ```xaml
@@ -90,11 +93,11 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
     </controls:BladeView>
     ```
 
-## Sample Code
+## Sample Project
 
-[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [BladeView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -108,4 +111,3 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 ## API
 
 * [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)
-

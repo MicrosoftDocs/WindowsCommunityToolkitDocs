@@ -3,6 +3,9 @@ title: CameraHelper
 author: skommireddi
 description: The CameraHelper provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps.
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, CameraHelper, Camera, Frame Source, Video Frame, Software Bitmap
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # CameraHelper
@@ -12,13 +15,16 @@ The **CameraHelper** provides helper methods to easily use the available camera 
 > [!IMPORTANT]
 > Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=CameraHelper)
+
 ## Syntax
 
 ```csharp
 // Creates a Camera Helper and gets video frames from an available frame source.
 using Microsoft.Toolkit.Uwp.Helpers.CameraHelper;
 
-CameraHelper cameraHelper = new CameraHelper();
+CameraHelper _cameraHelper = new CameraHelper();
 var result = await _cameraHelper.InitializeAndStartCaptureAsync();
 
 // Camera Initialization and Capture failed for some reason
@@ -30,7 +36,7 @@ if(result != CameraHelperResult.Success)
 else 
 {
   // Subscribe to get frames as they arrive
-  cameraHelper.FrameArrived += CameraHelper_FrameArrived;
+  _cameraHelper.FrameArrived += CameraHelper_FrameArrived;
 }
 
 private void CameraHelper_FrameArrived(object sender, FrameEventArgs e)
@@ -41,6 +47,31 @@ private void CameraHelper_FrameArrived(object sender, FrameEventArgs e)
   // Gets the software bitmap image
   SoftwareBitmap softwareBitmap = currentVideoFrame.SoftwareBitmap;
 }
+```
+```vb
+' Creates a Camera Helper and gets video frames from an available frame source.
+Imports Microsoft.Toolkit.Uwp.Helpers
+
+Dim _cameraHelper As CameraHelper = New CameraHelper()
+
+Dim result = Await _cameraHelper.InitializeAndStartCaptureAsync()
+
+' Camera Initialization and Capture failed for some reason
+If result <> CameraHelperResult.Success Then
+    ' get error information
+    Dim errorMessage = result.ToString()
+Else
+    ' Subscribe to get frames as they arrive
+    AddHandler _cameraHelper.FrameArrived, AddressOf CameraHelper_FrameArrived
+End If
+
+Private Sub CameraHelper_FrameArrived(ByVal sender As Object, ByVal e As FrameEventArgs)
+    ' Gets the current video frame
+    Dim currentVideoFrame As VideoFrame = e.VideoFrame
+
+    ' Gets the software bitmap image
+    Dim softwareBitmap As SoftwareBitmap = currentVideoFrame.SoftwareBitmap
+End Sub
 ```
 
 ## Cleaning up resources
@@ -56,7 +87,7 @@ Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [
 | Property | Type | Description |
 | -- | -- | -- |
 | FrameSourceGroup | MediaFrameSourceGroup | Gets the currently selected MediaFrameSourceGroup for video preview. User can set this property to preview video from a specific source. If no MediaFrameSourceGroup is provided, Camera Helper selects the first available camera source to  use for media capture. |
-| FrameSource | MediaFrameSource | Gets the currently selected MediaFrameSource for video preview. |
+| PreviewFrameSource | MediaFrameSource | Gets the currently selected MediaFrameSource for video preview. |
 
 ## Methods
 
@@ -97,16 +128,36 @@ if(availableFrameSourceGroups != null)
     var newFormat = cameraHelper.FrameFormatsAvailable.Find((format) => format.VideoFormat.Width == 640);
     if (newFormat != null)
     {
-      await cameraHelper.FrameSource.SetFormatAsync(newFormat);
+      await cameraHelper.PreviewFrameSource.SetFormatAsync(newFormat);
     }
   }
 }
 ```
+```vb
+Imports Microsoft.Toolkit.Uwp.Helpers
 
-## Sample Code
+Dim availableFrameSourceGroups = Await CameraHelper.GetFrameSourceGroupsAsync()
 
-[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+If availableFrameSourceGroups IsNot Nothing Then
+    Dim cameraHelper As CameraHelper = New CameraHelper() With {
+        .FrameSourceGroup = availableFrameSourceGroups.FirstOrDefault()
+    }
+    Dim result = Await cameraHelper.InitializeAndStartCaptureAsync()
 
+    If result = CameraHelperResult.Success Then
+        AddHandler cameraHelper.FrameArrived, AddressOf CameraHelper_FrameArrived
+        Dim newFormat = cameraHelper.FrameFormatsAvailable.Find(Function(format) format.VideoFormat.Width = 640)
+
+        If newFormat IsNot Nothing Then
+            Await cameraHelper.PreviewFrameSource.SetFormatAsync(newFormat)
+        End If
+    End If
+End If
+```
+
+## Sample Project
+
+[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -115,7 +166,6 @@ if(availableFrameSourceGroups != null)
 | Namespace | Microsoft.Toolkit.Uwp |
 | NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp/) |
 
-## API Source Code
+## API
 
-- [CameraHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)
-
+* [CameraHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)

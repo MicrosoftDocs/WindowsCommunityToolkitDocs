@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.applicationview), [StatusBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.statusbar) & [TitleBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.titlebar) provide a declarative way of setting AppView, StatusBar & TitleBar properties from XAML.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=ViewExtensions)
+
 ## Example
 
 ```xaml
@@ -56,6 +59,10 @@ The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.
 | BackgroundColor | Color | Set background color of title bar |
 | ForegroundColor | Color | Set foreground color of title bar |
 
+## Sample Project
+
+[ViewExtensions Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ViewExtensions). You can [see this in action](uwpct://Extensions?sample=ViewExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher |
@@ -68,4 +75,3 @@ The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.
 * [ApplicationViewExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/ApplicationView/ApplicationViewExtensions.cs)
 * [StatusBarExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/StatusBar/StatusBarExtensions.cs)
 * [TitleBarExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/TitleBar/TitleBarExtensions.cs)
-

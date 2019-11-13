@@ -14,6 +14,9 @@ The [TextToolbar Control](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 It supports Keyboard Shortcuts, Button Toggling for indicating whether a Format is enabled, such as putting the cursor on Bold Text in Rich Text Formatting.
 You can also Remove Default Buttons from any format, or Add Custom buttons to any format, without restyling the whole control, or inheriting a Formatter Class.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=TextToolbar)
+
 ## Syntax
 
 ```xaml
@@ -108,9 +111,9 @@ Toolbar.CustomButtons.Add(New ToolbarButton With {
 Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 ```
 
-## Sample Code
+## Sample Project
 
-[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

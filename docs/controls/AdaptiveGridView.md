@@ -20,6 +20,9 @@ There are 3 ways to use this Control:
 
 3. Using `OneRowModeEnabled`, you can set `DesiredWidth` and `ItemHeight` which will adjust the **width** of each item and the number of visible columns on demand, using all horizontal space.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=AdaptiveGridView)
+
 ## Syntax
 
 ```xaml
@@ -137,9 +140,9 @@ There are 3 ways to use this Control:
 
     If there are not enough items to fill one row, the control will stretch the items until all available space is filled. This can result in much wider items than specified. If you prefer your items to always stay close to the DesiredWidth, you can set the **StretchContentForSingleRow** property to **false**, to prevent further stretching.
 
-## Sample Code
+## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -150,7 +153,7 @@ There are 3 ways to use this Control:
 
 ## API
 
-* [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/AdaptiveGridView)
+- [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/AdaptiveGridView)
 
 ## Related Topics
 

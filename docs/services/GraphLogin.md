@@ -3,6 +3,9 @@ title: GraphLogin Component
 author: AdamBraden
 description: Windows Forms component to authenticate with Azure AD v2 and the Microsoft Graph
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Windows Forms, GraphLogin 
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # GraphLogin Component
@@ -50,6 +53,34 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
             // Do more things with the graph
             graphClient = graphLoginComponent1.GraphServiceClient;
         }
+```
+```vb
+Imports Microsoft.Toolkit.Services.Services.MicrosoftGraph
+
+' Instance of Microsoft Graph 
+Private graphClient As GraphServiceClient = Nothing
+
+Public Sub New()
+    InitializeComponent()
+
+    ' values to connect to Microsoft Graph
+    graphLoginComponent1.ClientId = "{your app's clientid}"
+    graphLoginComponent1.Scopes = New String() {MicrosoftGraphScope.UserRead}
+End Sub
+
+Private Async Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
+    If Not Await graphLoginComponent1.LoginAsync() Then
+        Return
+    End If
+
+    ' update the user's display fields
+    label1.Text = graphLoginComponent1.DisplayName
+    label2.Text = graphLoginComponent1.JobTitle
+    pictureBox1.Image = graphLoginComponent1.Photo
+
+    ' Do more things with the graph
+    graphClient = graphLoginComponent1.GraphServiceClient
+End Sub
 ```
 
 <!-- ## Sample Output -->

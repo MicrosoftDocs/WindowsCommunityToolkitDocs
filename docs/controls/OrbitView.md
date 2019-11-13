@@ -11,6 +11,9 @@ The [OrbitView control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 [OrbitViewDataItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=OrbitView)
+
 ## Syntax
 
 ```xaml
@@ -128,11 +131,11 @@ The following sample demonstrates how to add OrbitView Control.
 </controls:OrbitView>
 ```
 
-## Sample Code
+## Sample Project
 
-[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [OrbitView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml) is the XAML template used in the toolkit for the default styling.
 

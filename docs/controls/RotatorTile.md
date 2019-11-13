@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotatortile) is an ItemsControl that rotates through a set of items one-by-one. It enables you to show multiple items of data in a live-tile like way.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=RotatorTile)
+
 ## Syntax
 
 ```xaml
@@ -38,11 +41,11 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | ItemTemplate | DataTemplate | Gets or sets the item template |
 | RotationDelay | TimeSpan | Gets or sets the duration for tile rotation |
 
-## Sample Code
+## Sample Project
 
-[RotatorTile Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RotatorTile Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can [see this in action](uwpct://Controls?sample=RotatorTile) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [RotatorTile XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -56,4 +59,3 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 ## API
 
 * [RotatorTile source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile)
-
