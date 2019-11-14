@@ -33,6 +33,10 @@ The [Eyedropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
 ```
+```vb
+Dim eyedropper = New Eyedropper()
+Dim color = Await eyedropper.Open()
+```
 
 ## Sample Output
 
@@ -88,14 +92,14 @@ var color = await eyedropper.Open();
 
 - Use the global Eyedropper in code.
 
-    ```csharp
-    var eyedropper = new Eyedropper();
-    var color = await eyedropper.Open();
-    ```
-    ```vb
-    Dim eyedropper = New Eyedropper()
-    Dim color = Await eyedropper.Open()
-    ```
+```csharp
+var eyedropper = new Eyedropper();
+var color = await eyedropper.Open();
+```
+```vb
+Dim eyedropper = New Eyedropper()
+Dim color = Await eyedropper.Open()
+```
 
 ## Sample Project
 
