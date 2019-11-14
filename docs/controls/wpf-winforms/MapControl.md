@@ -56,6 +56,16 @@ private async void MapControl_Loaded(object sender, RoutedEventArgs e)
     await (sender as MapControl).TrySetViewAsync(cityCenter, 12);
 }
 ```
+```vb
+Private Async Sub MapControl_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim cityPosition As BasicGeoposition = New BasicGeoposition() With {
+        .Latitude = 47.604,
+        .Longitude = -122.329
+    }
+    Dim cityCenter = New Geopoint(cityPosition)
+    Await (TryCast(sender, MapControl)).TrySetViewAsync(cityCenter, 12)
+End Sub
+```
 
 ## Properties
 
