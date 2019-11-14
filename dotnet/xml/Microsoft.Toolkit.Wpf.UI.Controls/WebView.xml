@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost</BaseTypeName>
@@ -25,6 +26,9 @@
     </Attribute>
     <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItem(true)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WebView control will be replaced by WebView2 in the future. Read more here to provide early feedback: https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -45,6 +49,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -69,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -97,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlAcceleratorKeyPressedEventArgs&gt;</ReturnType>
@@ -106,6 +113,7 @@
             An event that is triggered when the accelerator key is pressed.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="AddInitializeScript">
@@ -121,6 +129,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -134,6 +143,7 @@
             Adds the script to be loaded before any others on the page.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="AddPreLoadedScript">
@@ -149,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -167,6 +178,7 @@
             Adds the script to be loaded before any others on the page.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.AddPreLoadedScript(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="BeginInit">
@@ -179,6 +191,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -192,6 +205,7 @@
         <exception cref="T:System.InvalidOperationException">
             May occur if the element is already initialized or is already initializing.
             </exception>
+        <inheritdoc cref="M:System.Windows.FrameworkElement.BeginInit" />
       </Docs>
     </Member>
     <Member MemberName="CanGoBack">
@@ -208,6 +222,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -219,6 +234,7 @@
         <value>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> can navigate backward; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CanGoForward">
@@ -235,6 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -246,6 +263,7 @@
         <value>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> can navigate forward; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -261,6 +279,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -271,6 +290,7 @@
             Closes this instance.
             </summary>
         <remarks>Equivalent to calling <see cref="M:System.IDisposable.Dispose" />.</remarks>
+        <inheritdoc cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Close" />
       </Docs>
     </Member>
     <Member MemberName="ContainsFullScreenElement">
@@ -286,6 +306,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -297,6 +318,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> contains an element that supports full screen; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ContainsFullScreenElementChanged">
@@ -312,12 +334,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1009:DeclareEventHandlersCorrectly", Justification="Event does not provide argument deriving from EventArgs")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
@@ -326,6 +344,7 @@
             Occurs when the status of whether the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> currently contains a full screen element or not changes.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ContentLoading">
@@ -342,6 +361,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt;</ReturnType>
@@ -351,6 +371,7 @@
             Occurs when the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> has started loading new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -363,6 +384,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -389,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -399,6 +422,7 @@
             </summary>
         <value>The page title.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="DOMContentLoaded">
@@ -414,6 +438,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt;</ReturnType>
@@ -423,6 +448,7 @@
             Occurs when the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> finished parsing the current content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="EndInit">
@@ -435,6 +461,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -446,6 +473,7 @@
             </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">May occur when <see cref="M:Microsoft.Toolkit.Wpf.UI.Controls.WebView.BeginInit" /> is not previously called.</exception>
+        <inheritdoc cref="M:System.Windows.FrameworkElement.EndInit" />
       </Docs>
     </Member>
     <Member MemberName="EnterpriseId">
@@ -461,6 +489,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -477,6 +506,7 @@
         <value>The enterprise ID of this process.</value>
         <remarks>Value can be set prior to the component being initialized.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcessOptions.EnterpriseId" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FrameContentLoading">
@@ -492,6 +522,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt;</ReturnType>
@@ -501,6 +532,7 @@
             Occurs when a frame in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> has started loading new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FrameDOMContentLoaded">
@@ -516,12 +548,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", Justification="Name is the same as the WinRT type", MessageId="DOM")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -530,6 +558,7 @@
             Occurs when a frame in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> finished parsing its current content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FrameNavigationCompleted">
@@ -545,6 +574,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt;</ReturnType>
@@ -554,6 +584,7 @@
             Occurs when a frame in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> finished navigating to new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="FrameNavigationStarting">
@@ -569,6 +600,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt;</ReturnType>
@@ -578,6 +610,7 @@
             Occurs when a frame in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigates to new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetDeferredPermissionRequestById">
@@ -593,6 +626,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest</ReturnType>
@@ -608,6 +642,7 @@
         <returns>
           <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest" /> The deferred permission request with the specified <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequest.Id" />, or null if no permission request with the specified <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequest.Id" /> was found.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GoBack">
@@ -624,6 +659,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -636,6 +672,7 @@
         <returns>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation to the previous page in the navigation history is successful; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -652,6 +689,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -664,6 +702,7 @@
         <returns>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation to the next page in the navigation history is successful; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -676,6 +715,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -686,6 +726,7 @@
             Initializes this instance.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -702,6 +743,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -716,6 +758,7 @@
             </summary>
         <returns>When this method returns, the <see cref="T:System.String" /> result of the script invocation.</returns>
         <remarks>To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -731,6 +774,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -749,6 +793,7 @@
         <remarks>
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -764,6 +809,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -788,6 +834,7 @@
         <remarks>
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -803,6 +850,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -820,6 +868,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -835,6 +884,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -854,6 +904,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -869,6 +920,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -894,6 +946,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsIndexedDBEnabled">
@@ -909,6 +962,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -926,6 +980,7 @@
           <c>true</c> if IndexedDB is allowed; otherwise, <c>false</c>. The default is <c>true</c>.</value>
         <remarks>To be added.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsIndexedDBEnabled" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsJavaScriptEnabled">
@@ -941,6 +996,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -957,6 +1013,7 @@
         <value> true if JavaScript is allowed in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />; otherwise, false. The default is true.</value>
         <remarks>To be added.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsJavaScriptEnabled" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsPrivateNetworkClientServerCapabilityEnabled">
@@ -972,6 +1029,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -988,6 +1046,7 @@
           <see langword="true" /> if this instance is private network client server capability enabled; otherwise, <see langword="false" />.</value>
         <remarks>Value can be set prior to the component being initialized.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcessOptions.PrivateNetworkClientServerCapability" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsScriptNotifyAllowed">
@@ -1003,6 +1062,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1019,6 +1079,7 @@
         <value>Whether <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.ScriptNotify" /> is allowed.</value>
         <remarks>To be added.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsScriptNotifyAllowed" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsSupported">
@@ -1031,6 +1092,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1054,6 +1116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1088,6 +1151,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs&gt;</ReturnType>
@@ -1106,6 +1170,7 @@
         <altmember cref="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs" />
         <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs.ExecutionTime" />
         <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs.StopPageScriptExecution" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="MoveFocus">
@@ -1121,6 +1186,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1134,6 +1200,7 @@
             Moves the focus.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="MoveFocusRequested">
@@ -1149,6 +1216,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusRequestedEventArgs&gt;</ReturnType>
@@ -1158,6 +1226,7 @@
             Occurs when a focus move is requested.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1174,6 +1243,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1189,6 +1259,7 @@
         <remarks>To be added.</remarks>
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.String)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1205,6 +1276,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1221,6 +1293,7 @@
         <altmember cref="T:System.Uri" />
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.Uri)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1235,6 +1308,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1257,6 +1331,7 @@
             This method only supports <see cref="P:System.Net.Http.HttpMethod.Get" /> and <see cref="P:System.Net.Http.HttpMethod.Post" /> for the <paramref name="httpMethod" /> parameter.
             </remarks>
         <altmember cref="M:Windows.Web.UI.Interop.WebViewControl.NavigateWithHttpRequestMessage(Windows.Web.Http.HttpRequestMessage)" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToLocal">
@@ -1272,6 +1347,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1292,6 +1368,7 @@
         <remarks>To be added.</remarks>
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToLocal(System.String)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToLocalStreamUri">
@@ -1307,6 +1384,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1322,6 +1400,7 @@
             Loads local web content at the specified Uniform Resource Identifier (URI) using an <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver" />.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToString">
@@ -1338,6 +1417,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1357,6 +1437,7 @@
              <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToString(System.String)" /> supports content with references to external files such as CSS, scripts, images,
               and fonts. However, it does not provide a way to generate or provide these resources programmatically.
              </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigationCompleted">
@@ -1373,6 +1454,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt;</ReturnType>
@@ -1382,6 +1464,7 @@
             Occurs when the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> control finished navigating to new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigationStarting">
@@ -1398,6 +1481,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt;</ReturnType>
@@ -1407,6 +1491,7 @@
             Occurs before the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigates to new content.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NewWindowRequested">
@@ -1422,6 +1507,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNewWindowRequestedEventArgs&gt;</ReturnType>
@@ -1431,6 +1517,7 @@
             Occurs when an action is performed that causes content to be opened in a new window.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -1443,6 +1530,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1456,6 +1544,7 @@
             Invoked whenever the effective value of any dependency property on this <see cref="T:System.Windows.FrameworkElement" /> has been updated. The specific dependency property that changed is reported in the arguments parameter. Overrides <see cref="M:System.Windows.DependencyObject.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="PermissionRequested">
@@ -1471,6 +1560,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequestedEventArgs&gt;</ReturnType>
@@ -1488,6 +1578,7 @@
              the value of the <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequestedEventArgs.PermissionRequest" /> property. You can call Allow to grant the request,
              Deny to deny the request, or Defer to defer the request until a later time.
              </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Process">
@@ -1503,6 +1594,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1518,6 +1610,7 @@
             </summary>
         <value>The <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess" /> that the control is hosted in.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Refresh">
@@ -1534,6 +1627,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1544,6 +1638,7 @@
             Reloads the current <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Source" /> in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />.
             </summary>
         <remarks>If the current source was loaded via <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.Uri)" />, this method reloads the file without forced cache validation by sending a <c>Pragma:no-cache</c> header to the server.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ScriptNotify">
@@ -1559,6 +1654,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlScriptNotifyEventArgs&gt;</ReturnType>
@@ -1568,6 +1664,7 @@
             Occurs when the content contained in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> control passes a string to the application by using JavaScript.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Settings">
@@ -1583,6 +1680,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1601,6 +1699,7 @@
         <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsScriptNotifyAllowed" />
         <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsJavaScriptEnabled" />
         <altmember cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings.IsIndexedDBEnabled" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -1617,6 +1716,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -1629,6 +1729,7 @@
             The Uniform Resource Identifier (URI) source of the HTML content to display in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />.
             </value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -1645,6 +1746,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1655,6 +1757,7 @@
             Halts the current <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation or download.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UnsafeContentWarningDisplaying">
@@ -1670,12 +1773,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1009:DeclareEventHandlersCorrectly", Justification="WinRT type signature does not have argument that inherits from EventArgs")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
@@ -1684,6 +1783,7 @@
             Occurs when <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> shows a warning page for content that was reported as unsafe by SmartScreen filter.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UnsupportedUriSchemeIdentified">
@@ -1699,6 +1799,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs&gt;</ReturnType>
@@ -1708,6 +1809,7 @@
             Occurs when an attempt is made to navigate to a <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Source" /> using a scheme that <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> does not support.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UnviewableContentIdentified">
@@ -1723,12 +1825,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", Justification="Unviewable is in WinRT type", MessageId="Unviewable")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -1739,6 +1837,7 @@
         <remarks>
             Event is triggered as soon as the content that can be identified is unsupported. For HTTP(s) content, this is right after the headers have been received.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="UpdateBounds">
@@ -1751,6 +1850,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1764,6 +1864,7 @@
             Updates the location and size of <see cref="T:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost" />.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -1779,6 +1880,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.Controls.WebView</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1794,6 +1896,7 @@
             </summary>
         <value>The version of EDGEHTML.DLL used by <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

@@ -12,6 +12,10 @@
     <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Win32.UI.XamlHost.Managed</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -22,27 +26,31 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
-    <Member MemberName="GetInterop">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative GetInterop (this Windows.UI.Xaml.Hosting.DesktopWindowXamlSource desktopWindowXamlSource);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative GetInterop(class Windows.UI.Xaml.Hosting.DesktopWindowXamlSource desktopWindowXamlSource) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions.GetInterop(Windows.UI.Xaml.Hosting.DesktopWindowXamlSource)" />
-      <MemberSignature Language="F#" Value="static member GetInterop : Windows.UI.Xaml.Hosting.DesktopWindowXamlSource -&gt; Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative" Usage="Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions.GetInterop desktopWindowXamlSource" />
+    <Member MemberName="GetInterop&lt;TInterface&gt;">
+      <MemberSignature Language="C#" Value="public static TInterface GetInterop&lt;TInterface&gt; (this Windows.UI.Xaml.Hosting.DesktopWindowXamlSource desktopWindowXamlSource) where TInterface : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TInterface GetInterop&lt;class TInterface&gt;(class Windows.UI.Xaml.Hosting.DesktopWindowXamlSource desktopWindowXamlSource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions.GetInterop``1(Windows.UI.Xaml.Hosting.DesktopWindowXamlSource)" />
+      <MemberSignature Language="F#" Value="static member GetInterop : Windows.UI.Xaml.Hosting.DesktopWindowXamlSource -&gt; 'Interface (requires 'Interface : null)" Usage="Microsoft.Toolkit.Win32.UI.XamlHost.DesktopWindowXamlSourceExtensions.GetInterop desktopWindowXamlSource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Forms.UI.XamlHost</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Toolkit.Win32.UI.XamlHost.Managed</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative</ReturnType>
+        <ReturnType>TInterface</ReturnType>
       </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TInterface">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
       <Parameters>
         <Parameter Name="desktopWindowXamlSource" Type="Windows.UI.Xaml.Hosting.DesktopWindowXamlSource" RefType="this" />
       </Parameters>
       <Docs>
+        <typeparam name="TInterface">The interface to cast to</typeparam>
         <param name="desktopWindowXamlSource">The DesktopWindowXamlSource instance to get the interface from</param>
         <summary>
             Gets the <see cref="T:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative" /> interface from a <see cref="T:Windows.UI.Xaml.Hosting.DesktopWindowXamlSource" /> instance.

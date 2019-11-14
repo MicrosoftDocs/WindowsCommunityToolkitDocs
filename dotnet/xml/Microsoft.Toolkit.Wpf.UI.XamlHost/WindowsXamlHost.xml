@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.HandleRef</ReturnType>
@@ -72,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -89,31 +93,6 @@
         <remarks>This UWP XAML element is the root element of the wrapped DesktopWindowXamlSource.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="Dispose">
-      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.Dispose(System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
-      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="windowsXamlHost.Dispose disposing" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" />
-      </Parameters>
-      <Docs>
-        <param name="disposing">Is disposing?</param>
-        <summary>
-            WindowsXamlHost Dispose
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
     <Member MemberName="InitialTypeName">
       <MemberSignature Language="C#" Value="public string InitialTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InitialTypeName" />
@@ -124,6 +103,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -159,6 +139,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.DependencyProperty</ReturnType>
@@ -171,35 +152,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="WndProc">
-      <MemberSignature Language="C#" Value="protected override IntPtr WndProc (IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int WndProc(native int hwnd, int32 msg, native int wParam, native int lParam, bool&amp; handled) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Function WndProc (hwnd As IntPtr, msg As Integer, wParam As IntPtr, lParam As IntPtr, ByRef handled As Boolean) As IntPtr" />
-      <MemberSignature Language="F#" Value="override this.WndProc : nativeint * int * nativeint * nativeint *  -&gt; nativeint" Usage="windowsXamlHost.WndProc (hwnd, msg, wParam, lParam, handled)" />
+    <Member MemberName="OnChildChanged">
+      <MemberSignature Language="C#" Value="protected override void OnChildChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChildChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.OnChildChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChildChanged ()" />
+      <MemberSignature Language="F#" Value="override this.OnChildChanged : unit -&gt; unit" Usage="windowsXamlHost.OnChildChanged " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Wpf.UI.XamlHost</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.IntPtr</ReturnType>
+        <ReturnType>System.Void</ReturnType>
       </ReturnValue>
-      <Parameters>
-        <Parameter Name="hwnd" Type="System.IntPtr" />
-        <Parameter Name="msg" Type="System.Int32" />
-        <Parameter Name="wParam" Type="System.IntPtr" />
-        <Parameter Name="lParam" Type="System.IntPtr" />
-        <Parameter Name="handled" Type="System.Boolean" RefType="ref" />
-      </Parameters>
+      <Parameters />
       <Docs>
-        <param name="hwnd">To be added.</param>
-        <param name="msg">To be added.</param>
-        <param name="wParam">To be added.</param>
-        <param name="lParam">To be added.</param>
-        <param name="handled">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Set data context on <seealso cref="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.Child" /> when it has changed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

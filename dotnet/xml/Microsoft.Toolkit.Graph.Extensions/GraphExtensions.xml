@@ -1,0 +1,153 @@
+<Type Name="GraphExtensions" FullName="Microsoft.Toolkit.Graph.Extensions.GraphExtensions">
+  <TypeSignature Language="C#" Value="public static class GraphExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GraphExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Graph.Extensions.GraphExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module GraphExtensions" />
+  <TypeSignature Language="F#" Value="type GraphExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods to the Graph SDK used by the Microsoft.Toolkit.Graph.Controls.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindPersonAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt; FindPersonAsync (this Microsoft.Graph.GraphServiceClient graph, string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserPeopleCollectionPage&gt; FindPersonAsync(class Microsoft.Graph.GraphServiceClient graph, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.FindPersonAsync(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindPersonAsync (graph As GraphServiceClient, query As String) As Task(Of IUserPeopleCollectionPage)" />
+      <MemberSignature Language="F#" Value="static member FindPersonAsync : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt;" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.FindPersonAsync (graph, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" /></param>
+        <param name="query">User to search for.</param>
+        <summary>
+            Shortcut to perform a person query.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graph.IUserPeopleCollectionPage" /> collection of <see cref="T:Microsoft.Graph.User" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserPhoto">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetUserPhoto (this Microsoft.Graph.GraphServiceClient graph, string userid);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetUserPhoto(class Microsoft.Graph.GraphServiceClient graph, string userid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.GetUserPhoto(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserPhoto (graph As GraphServiceClient, userid As String) As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="static member GetUserPhoto : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.GetUserPhoto (graph, userid)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" /></param>
+        <param name="userid">UserID</param>
+        <summary>
+            Helper to get the photo of a particular user.
+            </summary>
+        <returns>Stream with user photo or null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Search&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Search&lt;T&gt; (this T request, string query) where T : Microsoft.Graph.IBaseRequest;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Search&lt;(class Microsoft.Graph.IBaseRequest) T&gt;(!!T request, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.Search``1(``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Search(Of T As IBaseRequest) (request As T, query As String) As T" />
+      <MemberSignature Language="F#" Value="static member Search : 'T * string -&gt; 'T (requires 'T :&gt; Microsoft.Graph.IBaseRequest)" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.Search (request, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Graph.IBaseRequest</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="request" Type="T" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:Microsoft.Graph.IBaseRequest" /> type</typeparam>
+        <param name="request">Request chain.</param>
+        <param name="query">Query to add for searching in QueryOptions</param>
+        <summary>
+            Extension to provider Searching on OData Requests
+            </summary>
+        <returns>Same type</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPerson">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graph.Person ToPerson (this Microsoft.Graph.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graph.Person ToPerson(class Microsoft.Graph.User user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.ToPerson(Microsoft.Graph.User)" />
+      <MemberSignature Language="F#" Value="static member ToPerson : Microsoft.Graph.User -&gt; Microsoft.Graph.Person" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.ToPerson user" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graph.Person</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Graph.User" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="user">
+          <see cref="T:Microsoft.Graph.User" /> instance to convert.</param>
+        <summary>
+            Simple method to convert a <see cref="T:Microsoft.Graph.User" /> to a <see cref="T:Microsoft.Graph.Person" /> with basic common properties like <see cref="P:Microsoft.Graph.Entity.Id" />, <see cref="P:Microsoft.Graph.User.DisplayName" />, <see cref="P:Microsoft.Graph.Person.EmailAddresses" />, <see cref="P:Microsoft.Graph.User.GivenName" />, and <see cref="P:Microsoft.Graph.User.Surname" /> intact.
+            </summary>
+        <returns>A new basic <see cref="T:Microsoft.Graph.Person" /> representation of that user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
