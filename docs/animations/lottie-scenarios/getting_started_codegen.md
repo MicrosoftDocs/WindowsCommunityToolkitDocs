@@ -29,14 +29,6 @@ To generate a C# or C++ file, you may either use the [LottieGen](http://aka.ms/l
 
 For additional information about additional options including optimizations, use `LottieGen -Help`.
 
-### Lottie Viewer GUI
-
-1. Install the [Lottie Viewer](http://aka.ms/lottieviewer) application from the Store. Drag and drop your JSON file, or use the the “Pick a Lottie file” icon in the top left to open local files or URIs.
-
-2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
-
-	<img src="../../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png" alt="LottieViewerCodegen" width="600"/>
-
 ## Using the Codegen File
 
 1. Add the generated file, _LottieLogo1.cs_, to your project by following steps similar to those outlined previously. Ensure that the [Build Action](https://docs.microsoft.com/visualstudio/ide/build-actions) for all codegen C# or C++ files is set to **Compile**.
