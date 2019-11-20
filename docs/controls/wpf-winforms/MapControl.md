@@ -3,6 +3,9 @@ title: MapControl for Windows Forms and WPF
 author: mcleanbyron
 description: This control is a wrapper to enable use of the UWP MapControl class in Windows Forms or WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MapControl, Windows Forms, WPF
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # MapControl for Windows Forms and WPF
@@ -55,6 +58,16 @@ private async void MapControl_Loaded(object sender, RoutedEventArgs e)
     // Set the map location.
     await (sender as MapControl).TrySetViewAsync(cityCenter, 12);
 }
+```
+```vb
+Private Async Sub MapControl_Loaded(sender As Object, e As RoutedEventArgs)
+    Dim cityPosition As BasicGeoposition = New BasicGeoposition() With {
+        .Latitude = 47.604,
+        .Longitude = -122.329
+    }
+    Dim cityCenter = New Geopoint(cityPosition)
+    Await (TryCast(sender, MapControl)).TrySetViewAsync(cityCenter, 12)
+End Sub
 ```
 
 ## Properties

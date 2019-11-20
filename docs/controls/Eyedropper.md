@@ -19,7 +19,8 @@ The [Eyedropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 > [Try it in the sample app](uwpct://Controls?sample=Eyedropper)
 
 ## Syntax
-- Use EyedropperToolButton in xaml.
+
+Use EyedropperToolButton in xaml.
 
 ```xaml
 <Page ...
@@ -27,11 +28,16 @@ The [Eyedropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
     <controls:EyedropperToolButton />
 </Page>
 ```
-- Or use the global Eyedropper in code.
+
+Or use the global Eyedropper in code.
 
 ```csharp
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
+```
+```vb
+Dim eyedropper = New Eyedropper()
+Dim color = Await eyedropper.Open()
 ```
 
 ## Sample Output
@@ -88,14 +94,14 @@ var color = await eyedropper.Open();
 
 - Use the global Eyedropper in code.
 
-    ```csharp
-    var eyedropper = new Eyedropper();
-    var color = await eyedropper.Open();
-    ```
-    ```vb
-    Dim eyedropper = New Eyedropper()
-    Dim color = Await eyedropper.Open()
-    ```
+```csharp
+var eyedropper = new Eyedropper();
+var color = await eyedropper.Open();
+```
+```vb
+Dim eyedropper = New Eyedropper()
+Dim color = Await eyedropper.Open()
+```
 
 ## Sample Project
 
