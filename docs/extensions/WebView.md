@@ -1,12 +1,12 @@
 ---
-title: WebView
+title: WebView extension
 author: nmetulev
 ms.date: 08/20/2017
 description: The UWP Community Toolkit WebView extensions allow attaching HTML content to WebView through XAML directly or through Binding
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, WebViewExtensions, webview, extensions
 ---
 
-# WebView
+# WebView extension
 
 The **WebView** extension allows attaching HTML content to WebView.
 
