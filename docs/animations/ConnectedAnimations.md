@@ -1,5 +1,5 @@
 ---
-title: Connected Animations XAML Attached Properties
+title: Connected Animations in XAML
 author: nmetulev
 description: The Connected Animation XAML Attached Properties enable connected animations to be defined in your XAML code
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, connected animations, animation, coordinated animations
@@ -141,8 +141,8 @@ We need to set the same key for the element to be connected with. Also, You can 
     <Border x:Name="HeroElement" Height="300"  Width="300" Background="Purple"
     animations:Connected.Key="item"/>
 
-    <StackPanel x:Name="HeroDetailsElement" Margin="20,0" 
-        VerticalAlignment="Bottom" MaxWidth="500" 
+    <StackPanel x:Name="HeroDetailsElement" Margin="20,0"
+        VerticalAlignment="Bottom" MaxWidth="500"
         animations:Connected.AnchorElement="{x:Bind HeroElement}">
         <TextBlock Text="Header" FontSize="50">Header</TextBlock>
         <TextBlock TextWrapping="WrapWholeWords">Lorem ipsum ...</TextBlock>
@@ -153,7 +153,7 @@ We need to set the same key for the element to be connected with. Also, You can 
 In this page, we can also create a GridView which implements connected animation for its items. You need to set ListItemKey and ListItemElementName for specifying the UIElement to animate.
 
 ```xaml
-<GridView x:Name="listView" Margin="0, 40, 0, 0" SelectionMode="None" 
+<GridView x:Name="listView" Margin="0, 40, 0, 0" SelectionMode="None"
 Grid.Row="1" ItemClick="ListView_ItemClick" IsItemClickEnabled="True"
 animations:Connected.ListItemElementName="ItemThumbnail"
 animations:Connected.ListItemKey="listItem">
@@ -175,14 +175,14 @@ In this page, you just need to give the same key.
 ```xaml
 <StackPanel>
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
-        <StackPanel x:Name="HeroDetailsElement" Margin="20,0" VerticalAlignment="Bottom" MaxWidth="500" 
+        <StackPanel x:Name="HeroDetailsElement" Margin="20,0" VerticalAlignment="Bottom" MaxWidth="500"
         animations:Connected.AnchorElement="{x:Bind ItemHeroElement}">
-            <TextBlock Text="{x:Bind item.Title}" 
+            <TextBlock Text="{x:Bind item.Title}"
             FontSize="50"/>
             <TextBlock TextWrapping="WrapWholeWords">Lorem ipsum ...</TextBlock>
         </StackPanel>
 
-        <Border x:Name="ItemHeroElement" Height="300" Width="300" Background="Purple" 
+        <Border x:Name="ItemHeroElement" Height="300" Width="300" Background="Purple"
         animations:Connected.Key="listItem"/>
     </StackPanel>
 
