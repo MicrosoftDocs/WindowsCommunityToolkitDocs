@@ -37,7 +37,7 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
 5. Instantiate the [AnimatedVisualPlayer](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and configure the [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) to be consumed:
 
     ```xaml
-        <Border Style="{StaticResource LottiePlayer}">
+        <Border>
             <!--AnimatedVisualPlayer with AutoPlay-->
             <muxc:AnimatedVisualPlayer x:Name="LottiePlayer">
                 <!--LottieVisualSource with JSON UriSource-->
