@@ -19,7 +19,7 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
     Modify your Page.xaml to include the namespace:
 
     ```xaml
-    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
     ```
 
 3. Install the latest [Microsoft.Toolkit.Uwp.UI.Lottie nuget package](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Lottie/) by following steps similar to those listed above. Modify your Page.xaml to include the namespace:
@@ -39,10 +39,10 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
     ```xaml
         <Border Style="{StaticResource LottiePlayer}">
             <!--AnimatedVisualPlayer with AutoPlay-->
-            <controls:AnimatedVisualPlayer x:Name="LottiePlayer">
+            <muxc:AnimatedVisualPlayer x:Name="LottiePlayer">
                 <!--LottieVisualSource with JSON UriSource-->
                 <lottie:LottieVisualSource x:Name="LottieJsonSource" UriSource="ms-appx:///AnimatedVisuals/LottieLogo1.json"/>
-            </controls:AnimatedVisualPlayer>
+            </muxc:AnimatedVisualPlayer>
         </Border>
     ```
 
