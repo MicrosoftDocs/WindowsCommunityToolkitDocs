@@ -45,9 +45,9 @@ End Sub
 ```
 
 You can customize how blocks and inline's are parsed with the [IDocmentBuilder](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.IDocumentBuilder).
-An [MarkdownInline] can be a link or specific format like strikethrough and is part of other inline's or blocks. A [MarkdownBlock] can represent a paragraph, table or similar top-level elements. A [MarkdownDocument] consist of zero, one or multiple [MarkdownBlock].
+An [MarkdownInline](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline) can be a link or specific format like strikethrough and is part of other inline's or blocks. A [MarkdownBlock](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock) can represent a paragraph, table or similar top-level elements. A [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument) consist of zero, one or multiple [MarkdownBlock](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock).
 
-A [IDocumentBuilder] can be obtained from an existing [MarkdownDocument] calling the [GetBulder] method that contains all parsers used by the document or the static [CreateBuilder] method to create a new builder without any parsers.
+A [IDocumentBuilder](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.IDocumentBuilder) can be obtained from an existing [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument) calling the [GetBulder](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.GetBuilder) method that contains all parsers used by the document or the static [CreateBuilder](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.CreateBuilder) method to create a new builder without any parsers.
 
 ## Example 
 
@@ -62,15 +62,15 @@ var document = MarkdownDocument.CreateBuilder()
 
 document.Parse(md);
 ```
-Order the Parsers relative to each other by calling the [Before<T>] and [After<T>] methods after you added an Parser. Parsers may have a default ordering. The [Before<T>] call can be omitted in the sample and the ordering would still not change, since Italic has a default ordering after bold.
+Order the Parsers relative to each other by calling the [Before<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.DocumentBuilder.DocumentBuilderBlockConfiguration<TParser>.Before<T>()) and [After<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.DocumentBuilder.DocumentBuilderBlockConfiguration<TParser>.After<T>()) methods after you added an Parser. Parsers may have a default ordering. The [Before<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument.DocumentBuilder.DocumentBuilderBlockConfiguration<TParser>.Before<T>()) call can be omitted in the sample and the ordering would still not change, since Italic has a default ordering after bold.
 
-To create a new parser, extend either [MarkdownBlock.Parser<T>] or [MarkdownInline.Parser<T>]. Then it can be added in the IDocumentBuilder.
+To create a new parser, extend either [MarkdownBlock.Parser<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.Parser<T>) or [MarkdownInline.Parser<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline.Parser<T>). Then it can be added in the IDocumentBuilder.
 
-The [ParseInternal] method of [MarkdownBlock.Parser<T>] is called for every Line in the document as long as an previous parser did not match. The method is supplied with the text that is currently parsed. The start of the line, where the current document is parsing. The position of the first non space character and the end of the first line. In addition the maximum position until the parser should look is provided in maxEnd. If the parser can parse the current part actualEnd must point to the last character parsed by this parser.
+The [ParseInternal](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.Parser<T>.ParseInternal) method of [MarkdownBlock.Parser<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock) is called for every Line in the document as long as an previous parser did not match. The method is supplied with the text that is currently parsed. The start of the line, where the current document is parsing. The position of the first non space character and the end of the first line. In addition the maximum position until the parser should look is provided in maxEnd. If the parser can parse the current part actualEnd must point to the last character parsed by this parser.
 
-Besides that it is also reported if the current line is a new Paragraph (the previous line was empty) and the current parsing [MarkdownDocument]. If your parser parses something like an underline header style a StringBuilder holding all 
+Besides that it is also reported if the current line is a new Paragraph (the previous line was empty) and the current parsing [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument). If your parser parses something like an underline header style a StringBuilder holding all 
 
-By implementing a [MarkdownBlock.Parser<T>] or [MarkdownInline.Parser<T>] custom parse logic can be added to the [MarkdownDocument].
+By implementing a [MarkdownBlock.Parser<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Blocks.MarkdownBlock.Parser<T>) or [MarkdownInline.Parser<T>](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline.Parser<T>) custom parse logic can be added to the [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/Microsoft.Toolkit.Parsers.Markdown.MarkdownDocument).
 
 ## Build in Block Parsers
 
