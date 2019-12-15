@@ -214,6 +214,8 @@ Parses a link in the form of `<a name="URL" />`.
 
 Attempts to parse a markdown link e.g. `[Text](http://www.reddit.com)`. The `Text` will also be parsed as inline but will ignore other HyperLinks.
 
+A valid Url must start with a schema, or with a `/` or `#` if it is an relative url or it must be an mailaddress. 
+
 ### Strikethrough
 
 Matches a sequence of two `~` at the start and end of an text.
