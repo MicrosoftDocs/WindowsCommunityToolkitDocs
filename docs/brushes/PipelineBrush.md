@@ -52,7 +52,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 
 ## Code behind support
 
-The pipelines of effects that can be build from XAML through the `PipelineBrush` type can also be created directly from code behind through the `PipelineBuilder` class.
+The pipelines of effects that can be built from XAML through the `PipelineBrush` type can also be created directly from code behind through the `PipelineBuilder` class.
 
 ```csharp
 Brush brush =

@@ -86,6 +86,7 @@
 ## [Scale](animations/Scale.md)
 
 # Brushes
+## [AcrylicBrush](brushes/AcrylicBrush.md)
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
 ## [BackdropGammaTransferBrush](brushes/BackdropGammaTransferBrush.md)
 ## [BackdropInvertBrush](brushes/BackdropInvertBrush.md)
