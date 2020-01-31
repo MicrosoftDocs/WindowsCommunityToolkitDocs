@@ -92,6 +92,7 @@
 ## [BackdropSaturationBrush](brushes/BackdropSaturationBrush.md)
 ## [BackdropSepiaBrush](brushes/BackdropSepiaBrush.md)
 ## [ImageBlendBrush](brushes/ImageBlendBrush.md)
+## [PipelineBrush](brushes/PipelineBrush.md)
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
 
 # Extensions
