@@ -95,6 +95,7 @@
 ## [ImageBlendBrush](brushes/ImageBlendBrush.md)
 ## [PipelineBrush](brushes/PipelineBrush.md)
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
+## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
 ## [ArrayExtensions](extensions/ArrayExtensions.md)
