@@ -23,7 +23,6 @@ The [AcrylicBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
         TintMix="0.25"
         BlurAmount="20"
         TextureUri="ms-appx:///Assets/BrushAssets/NoiseTexture.png"/>
-    </brushes:PipelineBrush>
   </Border.Background>
 </Border>
 ```
