@@ -222,6 +222,8 @@ Await MyGridView.SmoothScrollIntoViewWithItem(item:=Object, itemPlacement:=ItemP
 
     ![Use Case 1 Output](../resources/images/Extensions/SmoothScrollIntoView-CenterSelected.gif)
 
+    For PopUp effect see [GridView selectedItem Popup](https://stackoverflow.com/a/44707177/7331395)
+
 ## Sample Project
 
 [ListViewExtensions](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ListViewExtensions). You can [see this in action](uwpct://Extensions?sample=ListViewExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
