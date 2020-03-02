@@ -20,6 +20,7 @@ Commonly used **converters** that allow the data to be modified as it passes thr
 | [EmptyCollectionToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptycollectiontoobjectconverter?view=uwp-toolkit-dotnet) | Converts a collection into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
 | [EmptyObjectToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties | 
 | [EmptyStringToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptystringtoobjectconverter?view=uwp-toolkit-dotnet) | Converts a string into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
+| [EnumerationToValueConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.enumerationtovalueconverter?view=uwp-toolkit-dotnet) | Converts an enumeration value into an object. The converted value is selected between the values of TrueValue and FalseValue properties |
 | [FormatStringConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.formatstringconverter?view=uwp-toolkit-dotnet) | Converts an [IFormattable](https://docs.microsoft.com/dotnet/api/system.string.format?view=netframework-4.7) value into a string. The ConverterParameter provides the string format |
 | [ResourceNameToResourceStringConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.resourcenametoresourcestringconverter?view=uwp-toolkit-dotnet) | Converter to look up the source string in the App Resources strings and returns its value, if found |
 | [StringFormatConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.stringformatconverter?view=uwp-toolkit-dotnet) | Converts a source object to the formatted string version using [string.Format](https://docs.microsoft.com/dotnet/api/system.string.format?view=netframework-4.7). The ConverterParameter provides the string format |
@@ -153,6 +154,42 @@ this can be used as follows to hide a list with no items and instead show text t
 <TextBlock Text="No Items." Visibility="{Binding Path=MyCollectionValue, Converter={StaticResource CollectionVisibilityConverter}, ConverterParameter=True}">
 ```
 
+## EnumerationToValueConverter Examples
+
+
+`EnumerationToValueConverter` can be used to easily change an enumeration value to one of the two values (`TrueValue`/`FalseValue`) it can return.
+The converter will return `TrueValue` if the value it receives matches its parameter.
+
+> If using [x:Bind](https://docs.microsoft.com/windows/uwp/xaml-platform/x-bind-markup-extension), it will be simpler to use a function binding.
+
+
+First, declare the enumeration you want to convert in your code:
+```csharp
+public enum Status
+{
+    Valid,
+    Invalid,
+}
+```
+
+Then, declare the converter and its expected value that will be provided as a parameter in your resources:
+
+```xaml
+<Page.Resources>
+    <converters:EnumerationToValueConverter 
+        x:Key="StatusToColorConverter"
+        TrueValue="Green"
+        FalseValue="Red"/>
+
+    <vm:Status x:Key="ValidStatus">Valid</vm:Status>
+</Page.Resources>
+```
+
+
+Then, in your control
+```xaml
+<Border Background="{Binding Status, Converter={StaticResource StatusToColorConverter}, ConverterParameter={StaticResource ValidStatus}}" />
+```
 
 ## StringFormatConverter Examples
 
