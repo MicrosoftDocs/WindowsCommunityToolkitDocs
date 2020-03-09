@@ -2,14 +2,14 @@
 title: ParallelHelper
 author: Sergio0694
 description: Helpers to work with parallel code in a highly optimized manner
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, parallel, high performance
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, parallel, high performance, net core, net standard
 dev_langs:
   - csharp
 ---
 
 # ParallelHelper
 
-The [ParallelHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute paralell operations over a given data set or iteration range or area.
+The [ParallelHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute paralell operations over a given data set or iteration range or area.
 
 ## How it works
 
