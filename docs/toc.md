@@ -141,6 +141,7 @@
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
+## [ParallelHelper](helpers/ParallelHelper.md)
 ## [PrintHelper](helpers/PrintHelper.md)
 ## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
