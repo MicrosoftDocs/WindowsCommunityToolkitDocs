@@ -103,7 +103,7 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 | Namespace | Microsoft.Toolkit.Diagnostics |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
 
-The Array Extensions supports .NET Standard
+The Guard class supports .NET Standard
 
 ## API
 
