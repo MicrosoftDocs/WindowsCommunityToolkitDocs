@@ -76,22 +76,22 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| IsNotNull<T>(T, string) | void | Asserts that the input value is not null |
-| IsOfType<T>(object, string) | void | Asserts that the input value is of a specific type |
-| IsAssignableToType<T>(object, string) | void | Asserts that the input value can be assigned to a specified type |
-| IsReferenceEqualTo<T>(T, T, string) | void | Asserts that the input value must be the same instance as the target value |
+| IsNotNull&lt;T>(T, string) | void | Asserts that the input value is not null |
+| IsOfType&lt;T>(object, string) | void | Asserts that the input value is of a specific type |
+| IsAssignableToType&lt;T>(object, string) | void | Asserts that the input value can be assigned to a specified type |
+| IsReferenceEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be the same instance as the target value |
 | IsTrue(bool, string) | void | Asserts that the input value must be true |
 
 ### Comparisons
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| IsEqualTo<T>(T, T, string) | void | Asserts that the input value must be equal to a specified value |
-| IsBitwiseEqualTo<T>(T, T, string) | void | Asserts that the input value must be a bitwise match with a specified value |
-| IsLessThan<T>(T, T, string) | void | Asserts that the input value must be less than a specified value |
-| IsLessThanOrEqualTo<T>(T, T, string) | void | Asserts that the input value must be less than or equal to a specified value |
-| IsInRange<T>(T, T, T, string) | void | Asserts that the input value must be in a given range |
-| IsBetween<T>(T, T, T, string name) | void | Asserts that the input value must be in a given interval |
+| IsEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be equal to a specified value |
+| IsBitwiseEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be a bitwise match with a specified value |
+| IsLessThan&lt;T>(T, T, string) | void | Asserts that the input value must be less than a specified value |
+| IsLessThanOrEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be less than or equal to a specified value |
+| IsInRange&lt;T>(T, T, T, string) | void | Asserts that the input value must be in a given range |
+| IsBetween&lt;T>(T, T, T, string name) | void | Asserts that the input value must be in a given interval |
 
 ### Strings
 
@@ -104,11 +104,11 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| IsNotEmpty<T>(T[], string) | void | Asserts that the input array instance must not be empty |
-| HasSizeEqualTo<T>(T[], int, string) | void | Asserts that the input array instance must have a size of a specified value |
-| HasSizeAtLeast<T>(T[], int, string) | void | Asserts that the input array must have a size of at least or equal to a specified value |
-| IsInRangeFor<T>(int, T[], string) | void | Asserts that the input index is valid for a given array |
-| HasSizeLessThanOrEqualTo<T>(T[], T[], string) | void | Asserts that the source array must have a size of less than or equal to that of the destination array |
+| IsNotEmpty&lt;T>(T[], string) | void | Asserts that the input array instance must not be empty |
+| HasSizeEqualTo&lt;T>(T[], int, string) | void | Asserts that the input array instance must have a size of a specified value |
+| HasSizeAtLeast&lt;T>(T[], int, string) | void | Asserts that the input array must have a size of at least or equal to a specified value |
+| IsInRangeFor&lt;T>(int, T[], string) | void | Asserts that the input index is valid for a given array |
+| HasSizeLessThanOrEqualTo&lt;T>(T[], T[], string) | void | Asserts that the source array must have a size of less than or equal to that of the destination array |
 
 ### Tasks
 
