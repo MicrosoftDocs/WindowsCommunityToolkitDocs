@@ -75,6 +75,10 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 | Methods | Return Type | Description |
 | -- | -- | -- |
 | IsNotNull<T>(T?, string) | void | Asserts that the input value is not null |
+| HasSizeAtLeast<T>(T[], int, string) | void | Asserts that the input array must have a size of at least or equal to a specified value |
+| IsInRangeFor<T>(int, T[], string) | void | Asserts that the input index is valid for a given array |
+| HasSizeLessThanOrEqualTo<T>(T[], T[], string) | void | Asserts that the source array must have a size of less than or equal to that of the destination array |
+| IsNotNullOrEmpty(string, string) | void | Asserts that the input string instance must not be null or empty |
 | IsOfType<T>(object, string) | void | Asserts that the input value is of a specific type |
 | IsReferenceEqualTo<T>(T, T, string) | void | Asserts that the input value must be the same instance as the target value |
 | IsTrue(bool, string) | void | Asserts that the input value must be true |
