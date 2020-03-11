@@ -21,7 +21,7 @@ These `Guard` APIs are built with three core principles in mind:
 
 ## Syntax
 
-Here is a sample method, with some checks being done with explicit checks and manual throw statements:
+Here is a sample method, with some checks being done with explicitly and with manual throw statements:
 
 ```csharp
 public static void SampleMethod(int[] array, int index, Span<int> span, string text)
