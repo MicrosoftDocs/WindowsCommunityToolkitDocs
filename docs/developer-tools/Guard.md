@@ -90,8 +90,9 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 | IsBitwiseEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be a bitwise match with a specified value |
 | IsLessThan&lt;T>(T, T, string) | void | Asserts that the input value must be less than a specified value |
 | IsLessThanOrEqualTo&lt;T>(T, T, string) | void | Asserts that the input value must be less than or equal to a specified value |
-| IsInRange&lt;T>(T, T, T, string) | void | Asserts that the input value must be in a given range |
-| IsBetween&lt;T>(T, T, T, string name) | void | Asserts that the input value must be in a given interval |
+| IsInRange&lt;T>(T, T, T, string) | void | Asserts that the input value must be in the [minimum, maximum) range |
+| IsBetween&lt;T>(T, T, T, string name) | void | Asserts that the input value must be in the (minimum, maximum) interval |
+| IsBetweenOrEqualTo&lt;T>(T, T, T, string name) | void | Asserts that the input value must be in the [minimum, maximum] interval |
 
 ### Strings
 
