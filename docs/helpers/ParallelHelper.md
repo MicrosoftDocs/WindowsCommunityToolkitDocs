@@ -73,10 +73,10 @@ These are the 4 main APIs exposed by `ParallelHelper`, corresponding to the `IAc
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| For<TAction>(int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
-| For2D<TAction>(int, int, int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
-| ForEach<TItem,TAction>(Memory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
-| ForEach<TItem,TAction>(ReadOnlyMemory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
+| For&lt;TAction>(int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
+| For2D&lt;TAction>(int, int, int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
+| ForEach&lt;TItem,TAction>(Memory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
+| ForEach&lt;TItem,TAction>(ReadOnlyMemory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
 
 ## Sample Code
 
