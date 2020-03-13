@@ -95,7 +95,7 @@ ParallelHelper.For(0, array.Length, new ArrayInitializer(array));
 
 These are the 4 main APIs exposed by `ParallelHelper`, corresponding to the `IAction`, `IAction2D`, `IRefAction<T>` and `IInAction<T>` interfaces. The `ParallelHelper` type also exposes a number of overloads for these methods, that offer a number of ways to specify the iteration range(s), or the type of input callback.
 
-| Methods | Return Type | Description |
+| Method | Return Type | Description |
 | -- | -- | -- |
 | For&lt;TAction>(int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
 | For2D&lt;TAction>(int, int, int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
