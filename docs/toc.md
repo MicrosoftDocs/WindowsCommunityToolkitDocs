@@ -166,8 +166,9 @@
 
 # High performance
 ## [Introduction](high-performance/Introduction.md)
-## [MemoryOwner&lt;T>](high-performance/MemoryOwner.md)
-## [SpanOwner&lt;T>](high-performance/SpanOwner.md)
+## Buffers
+### [MemoryOwner&lt;T>](high-performance/MemoryOwner.md)
+### [SpanOwner&lt;T>](high-performance/SpanOwner.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
 
 # Developer tools
