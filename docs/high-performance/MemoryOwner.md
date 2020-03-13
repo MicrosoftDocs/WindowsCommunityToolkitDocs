@@ -1,7 +1,7 @@
 ---
-title: MemoryOwner&lt;T> and SpanOwner&lt;T>
+title: MemoryOwner&lt;T>
 author: Sergio0694
-description: Buffer types that rent memory from a shared pool
+description: A buffer type implementing `IMemoryOwner<T>` that rents memory from a shared pool
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, parallel, high performance, net core, net standard
 dev_langs:
   - csharp
