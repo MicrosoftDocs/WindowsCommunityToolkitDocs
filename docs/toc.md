@@ -165,6 +165,7 @@
 ## [RSSParser](parsers/RSSParser.md)
 
 # High performance
+## [Introduction](high-performance/Introduction.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
 
 # Developer tools
