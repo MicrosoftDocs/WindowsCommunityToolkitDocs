@@ -170,6 +170,7 @@
 ### [MemoryOwner&lt;T>](high-performance/MemoryOwner.md)
 ### [SpanOwner&lt;T>](high-performance/SpanOwner.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
+## [ByReference&lt;T> and ReadOnlyByReference&lt;T>](high-performance/ByReference.md)
 
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
