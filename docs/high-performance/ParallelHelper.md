@@ -21,12 +21,52 @@ The [ParallelHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.hig
 
 ## Syntax
 
-Here is an example that shows how to initialize all the items of an array in parallel:
+Let's say we're interested in processing all the items in some `float[]` array, and to multiply each of them by `2`. In this case we don't need to capture any variables: we can just use the `IRefAction<T>` `interface` and `ParallelHelper` will load each item to feed to our callback automatically. All that's needed is to define our callback, that will receive a `ref float` argument and perform the necessary operation:
 
 ```csharp
 // Be sure to include this using at the top of the file:
-using Microsoft.Toolkit.HighPerformance;
+using Microsoft.Toolkit.HighPerformance.Helpers;
 
+public readonly struct ByTwoMultiplier : IRefAction<float>
+{
+    public void Invoke(ref float x) => x *= 2;
+}
+
+// Create an array and run the callback
+float[] array = new int[10000];
+
+ParallelHelper.ForEach<float, ByTwoMultiplier>(array);
+```
+
+With the `ForEach` API, we don't need to specify the iteration ranges: `ParallelHelper` will batch the collection and process each input item automatically. Furthermore, in this specific example we didn't even have to pass our `struct` as an argument: since it didn't contain any fields we needed to initialize, we could just specify its type as a type argument when invoking `ParallelHelper.ForEach`: that API will then create a new instance of that `struct` on its own, and use that to process the various items.
+
+To introduce the concept of closures, suppose we want to multiply the array elements by a value that is specified at runtime. To do so, we need to "capture" that value in our callback `struct` type. We can do that like so:
+
+```csharp
+public readonly struct ItemsMultiplier : IRefAction<float>
+{
+    private readonly float factor;
+    
+    public ItemsMultiplier(float factor)
+    {
+        this.factor = factor;
+    }
+
+    public void Invoke(ref float x) => x *= this.factor;
+}
+
+// ...
+
+ParallelHelper.ForEach(array, new ItemsMultiplier(3.14f));
+```
+
+We can see that the `struct` now contains a field that represents the factor we want to use to multiply elements, instead of using a constant. And when invoking `ForEach`, we're explicitly creating an instance of our callback type, with the factor we're interested in. Furthermore, in this case the C# compiler is also able to automatically recognize the type arguments we're using, so we can omit them together from the method invocation.
+
+This approach of creating fields for values we need to access from a callback lets us explicitly declare what values we want to capture, which helps makes the code more expressive. This is exactly the same thing that the C# compiler does behind the scenes when we declare a lambda function or local function that accesses some local variable as well.
+
+Here is another example, this time using the `For` API to initialize all the items of an array in parallel. Note how this time we're capturing the target array directly, and we're using the `IAction` `interface` for our callback, which gives our method the current parallel iteration index as argument:
+
+```csharp
 // First declare the struct callback
 public readonly struct ArrayInitializer : IAction
 {
@@ -49,23 +89,7 @@ int[] array = new int[10000];
 ParallelHelper.For(0, array.Length, new ArrayInitializer(array));
 ```
 
-In this case, we have used the `IAction` `interface`, as we needed the index as input for each item to process. We also had to manually specify the `int[] array` field in the `struct` type to be able to reuse it in our callback: this is exactly the same thing that the C# compiler does behind the scenes when we declare a lambda function or local function that accesses some local variable as well, we just made it explicit in this case.
-
-Let's say we're instead interested in processing all the items in some `float[]` array, and to multiply each of them by `2`. In that case we don't actually need to capture any variables: we can just use the `IRefAction<T>` `interface` and `ParallelHelper` will load each item to feed to our callback automatically.
-
-```csharp
-public readonly struct ByTwoMultiplier : IRefAction<float>
-{
-    public void Invoke(ref float x) => x *= 2;
-}
-
-// Create an array and run the callback
-float[] array = new int[10000];
-
-ParallelHelper.ForEach<float, ByTwoMultiplier>(array);
-```
-
-In this case, just like with a `foreach` loop, we don't even need to specify the iteration ranges: `ParallelHelper` will process each input item automatically. Furthermore, in this specific example we didn't even have to pass our `struct` as an argument: since it didn't contain any fields we needed to initialize, we could just specify its type as a type argument when invoking `ParallelHelper.ForEach`: that API will then create a new instance of that `struct` on its own, and use that to process the various items.
+**NOTE:** since the callback types are `struct`-s, they're passed _by copy_ to each thread running parallel, not by reference. This means that value types being stored as fields in a callback types will be copied as well. A good practice to remember that detail and avoid errors is to mark the callback `struct` as `readonly`, so that the C# compiler will not let us modify the values of its fields. This only applies to _instance_ fields of a value type: if a callback `struct` has a `static` field of any type, or a reference field, then that value will correctly be shared between parallel threads.
 
 ## Methods
 
