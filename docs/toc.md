@@ -141,7 +141,6 @@
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
-## [ParallelHelper](helpers/ParallelHelper.md)
 ## [PrintHelper](helpers/PrintHelper.md)
 ## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
@@ -164,6 +163,9 @@
 # Parsers
 ## [MarkdownParser](parsers/MarkdownParser.md)
 ## [RSSParser](parsers/RSSParser.md)
+
+# High performance
+## [ParallelHelper](high-performance/ParallelHelper.md)
 
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
