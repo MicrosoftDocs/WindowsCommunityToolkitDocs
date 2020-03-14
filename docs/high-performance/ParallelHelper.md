@@ -27,6 +27,7 @@ Let's say we're interested in processing all the items in some `float[]` array, 
 // Be sure to include this using at the top of the file:
 using Microsoft.Toolkit.HighPerformance.Helpers;
 
+// First declare the struct callback
 public readonly struct ByTwoMultiplier : IRefAction<float>
 {
     public void Invoke(ref float x) => x *= 2;
@@ -67,7 +68,6 @@ This approach of creating fields for values we need to access from a callback le
 Here is another example, this time using the `For` API to initialize all the items of an array in parallel. Note how this time we're capturing the target array directly, and we're using the `IAction` `interface` for our callback, which gives our method the current parallel iteration index as argument:
 
 ```csharp
-// First declare the struct callback
 public readonly struct ArrayInitializer : IAction
 {
     private int[] array;
@@ -83,8 +83,7 @@ public readonly struct ArrayInitializer : IAction
     }
 }
 
-// Create an array and run the callback
-int[] array = new int[10000];
+// ...
 
 ParallelHelper.For(0, array.Length, new ArrayInitializer(array));
 ```
