@@ -19,10 +19,10 @@ The same core features of `MemoryOwner<T>` apply to this type as well, with the 
 // Be sure to include this using at the top of the file:
 using Microsoft.Toolkit.HighPerformance.Buffers;
 
-using (SpanOwner<int> buffer = SpanOwner<T>.Allocate(42))
+using (SpanOwner<int> buffer = SpanOwner<int>.Allocate(42))
 {
     // Buffer has exactly 42 items
-    Span<T> span = buffer.Span;
+    Span<int> span = buffer.Span;
 }
 ```
 

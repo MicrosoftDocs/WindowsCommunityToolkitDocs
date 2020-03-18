@@ -28,11 +28,11 @@ Here is an example of how to rent a buffer and retrieve a `Memory<T>` instance:
 // Be sure to include this using at the top of the file:
 using Microsoft.Toolkit.HighPerformance.Buffers;
 
-using (MemoryOwner<int> buffer = MemoryOwner<T>.Allocate(42))
+using (MemoryOwner<int> buffer = MemoryOwner<int>.Allocate(42))
 {
     // Buffer has exactly 42 items
-    Memory<T> memory = buffer.Memory;
-    Span<T> span = buffer.Span;
+    Memory<int> memory = buffer.Memory;
+    Span<int> span = buffer.Span;
 }
 ```
 
