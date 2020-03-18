@@ -28,6 +28,27 @@ using (SpanOwner<int> buffer = SpanOwner<int>.Allocate(42))
 
 **NOTE:** as this is a stack-only type, it relies on the duck-typed `IDisposable` pattern introduced with C# 8. That is shown in the sample above: the `SpanOwner<T>` type is being used within a `using` block despite the fact that the type doesn't implement the `IDisposable` interface at all, and it's also never boxed. The functionality is just the same: as soon as the buffer goes out of scope, it is automatically disposed. The APIs in `SpanOwner{T}` rely on this pattern for extra performance: they assume that the underlying buffer will never be disposed as long as the `SpanOwner<T>` type is in scope, and they don't perform the additional checks that are done in `MemoryOwner<T>` to ensure that the buffer is in fact still available before returning a `Memory<T>` or `Span<T>` instance from it. As such, this type should always be used with a `using` block or expression. Not doing so will cause the underlying buffer not to be returned to the shared pool. Technically the same can also be achieved by manually calling `Dispose` on the `SpanOwner<T>` type (which doesn't require C# 8), but that is error prone and hence not recommended.
 
+The `SpanOwner<T>` type can also be seen as a lightweight wrapper around the `ArrayPool<T>` APIs, which makes them both more compact and easier to use, reducing the amount of code that needs to be written to properly rent and dispose short lived buffers. For reference, the previous code sample is conceptually equivalent to this snippet:
+
+```csharp
+// Using directive to access the ArrayPool<T> type
+using System.Buffers;
+
+int[] buffer = ArrayPool<int>.Shared.Rent(42);
+
+try
+{
+    // The span needs to manually be sliced to have the right length
+    Span<int> span = buffer.AsSpan(0, 42);
+}
+finally
+{
+    ArrayPool<int>.Shared.Return(buffer);
+}
+```
+
+You can see how using `SpanOwner<T>` makes the code much shorter and more straightforward.
+
 ## Properties
 
 | Property | Return Type | Description |
