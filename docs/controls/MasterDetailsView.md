@@ -22,12 +22,18 @@ The [ListDetailsView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsv
           ItemTemplate="{StaticResource ListTemplate}"
           DetailsTemplate="{StaticResource DetailsTemplate}"
           NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
-          CompactModeThresholdWidth="720" />
+          CompactModeThresholdWidth="640" />
 ```
 
 ## Sample Output
 
 ![ListDetailsView animation](../resources/images/Controls/ListDetailsView.gif)
+
+## Windows 10X
+
+The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) is spanning-aware and adapts it self for multi screen devices like found on Windows 10X devices.
+
+This is archived by using the [Two-pane view](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/two-pane-view).
 
 ## BackButtonBehavior
 
