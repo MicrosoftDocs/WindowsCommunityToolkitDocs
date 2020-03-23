@@ -140,6 +140,7 @@
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
+## [ObjectSerializer](helpers/ObjectSerializer.md)
 ## [PrintHelper](helpers/PrintHelper.md)
 ## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
