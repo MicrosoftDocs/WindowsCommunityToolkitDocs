@@ -111,6 +111,7 @@
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
+## [UIElementExtensions](extensions/UIElementExtensions.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)

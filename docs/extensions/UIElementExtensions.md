@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # UIElement Extensions
 
-`UIElementExtensions` provides helpers for `UIElement`.
+The [UIElementExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions) provide helpers for `UIElement`.
 
 ## ClipToBounds
 
