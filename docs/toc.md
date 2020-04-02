@@ -97,6 +97,7 @@
 # Extensions
 ## [ArrayExtensions](extensions/ArrayExtensions.md)
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
+## [FontIconExtension(s)](extensions/FontIconMarkupExtension.md)
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
