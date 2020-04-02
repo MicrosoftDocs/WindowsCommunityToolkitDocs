@@ -73,6 +73,37 @@ The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/ap
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
+# BitmapIcon markup extension
+The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.bitmapiconextension) is similar in structure to the two previous extensions, but it produces `BitmapIcon` instances instead of font-based icons.
+
+## Syntax
+
+**XAML**
+
+```xml
+<MenuFlyout>
+
+    <!--Before-->
+    <MenuFlyoutItem Text="Click me!">
+        <MenuFlyoutItem.Icon>
+            <BitmapIcon Source="/Assets/myicon.png"/>
+        </MenuFlyoutItem.Icon>
+    </MenuFlyoutItem>
+
+    <!--After-->
+    <MenuFlyoutItem
+        Text="No, click me!"
+        Icon="{ex:BitmapIcon Source=/Assets/myicon.png}" />
+</MenuFlyout>
+```
+
+## Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Source | Uri | The `Uri` representing the image to display. |
+| ShowAsMonochrome | bool | Indicates whether to display the icon as monochrome. |
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher   |
@@ -83,6 +114,8 @@ The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/ap
 ## API Source Code
 
 - [FontIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconExtension.cs)
+- [FontIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconSourceExtension.cs)
+- [BitmapIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconExtension.cs)
 
 ## Related Topics
 
