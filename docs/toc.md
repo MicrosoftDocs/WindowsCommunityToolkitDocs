@@ -115,6 +115,9 @@
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
 
+# Collections
+## [Observable Groups](collections/ObservableGroups.md)
+
 # Microsoft Graph
 ## Controls
 ### [LoginButton](graph/controls/LoginButton.md)
