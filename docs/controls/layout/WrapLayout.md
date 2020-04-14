@@ -30,7 +30,7 @@ When the Orientation is Vertical, HorizontalSpacing adds uniform spacing between
 
 ## Sample Output
 
-![WrapLayout animation](../resources/images/Layout-WrapLayout.jpg)
+![WrapLayout animation](../../resources/images/Layout-WrapLayout.jpg)
 
 ## Properties
 

@@ -32,7 +32,7 @@ The [StaggeredLayout](https://docs.microsoft.com/en-us/dotnet/api/microsoft.tool
 
 ## Sample Output
 
-![StaggeredLayout](../resources/images/Layout-StaggeredLayout.jpg "StaggeredLayout")
+![StaggeredLayout](../../resources/images/Layout-StaggeredLayout.jpg "StaggeredLayout")
 
 ## Properties
 
