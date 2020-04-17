@@ -19,8 +19,10 @@ Documentation Links
 
 Please check if your PR fulfills the following requirements:
 
-- [ ] Tested code with current [supported SDKs](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md#controls)
-- [ ] Tests for the changes have been added (for bug fixes / features) (if applicable)
+- [ ] Correctly picked the right branch to base the change off (`master` for new features, `live` for typos/improvements)
+- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/.template.md)
+- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md)
+- [ ] Ran against a spell and grammar checker 
 - [ ] Contains **NO** breaking changes
 
 <!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. 
