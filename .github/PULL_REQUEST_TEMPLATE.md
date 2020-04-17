@@ -12,28 +12,8 @@ Documentation Links
 
 ## Fixes # <!-- Link to relevant issue (for ex: #1234) which will create reference to the associated issue once the PR is created. -->
 
-<!-- Add a brief overview here of the feature/bug & fix. -->
-
-## PR Type
-What kind of change does this PR introduce?
-<!-- Please uncomment one or more that apply to this PR. -->
-
-<!-- - Bugfix -->
-<!-- - Feature -->
-<!-- - Code style update (formatting) -->
-<!-- - Refactoring (no functional changes, no api changes) -->
-<!-- - Build or CI related changes -->
-<!-- - Documentation content changes -->
-<!-- - Other... Please describe: -->
-
-
-## What is the current behavior?
-<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
-
-
-## What is the new behavior?
-<!-- Describe how was this issue resolved or changed? -->
-
+## What changes to the docs does this PR provide?
+<!-- Please describe the updated information in detail -->
 
 ## PR Checklist
 
