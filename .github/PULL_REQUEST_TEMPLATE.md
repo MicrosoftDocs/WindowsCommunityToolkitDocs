@@ -7,7 +7,7 @@ If you have a typo or existing document improvement to an already shipped featur
 We will periodically merge updates from the live branch to master to keep master in-sync with the published docs.  When we make a new release, we will push master to the live branch in order to publish documentation for new features.
 
 Documentation Links
-- [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/?branch=master)
+- [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/communitytoolkit/?branch=master)
 - [Live site from 'live' branch](https://docs.microsoft.com/windows/communitytoolkit) -->
 
 ## Fixes # <!-- Link to relevant issue (for ex: #1234) which will create reference to the associated issue once the PR is created. -->
