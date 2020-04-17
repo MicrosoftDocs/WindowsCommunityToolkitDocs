@@ -11,7 +11,7 @@ Documentation Links
 - [Live site from 'live' branch](https://docs.microsoft.com/windows/communitytoolkit) -->
 
 ## Fixes # <!-- Link to a relevant issue # in this docs repository (if any, otherwise remove this line) -->
-## Docs for Toolkit PR [#](https://github.com/windows-toolkit/WindowsCommunityToolkit/pull/#) <!-- Link to relevant issue or Feature PR # of the Windows Community Toolkit repo which will create a reference to the associated issue and PR once it is created, remove if not tied to an issue or feature -->
+## Docs for Toolkit PR [#](https://github.com/windows-toolkit/WindowsCommunityToolkit/pulls/#) <!-- Link to relevant issue or Feature PR # of the Windows Community Toolkit repo which will create a reference to the associated issue and PR once it is created, remove if not tied to an issue or feature -->
 
 ## What changes to the docs does this PR provide?
 <!-- Please describe the updated information in detail -->
