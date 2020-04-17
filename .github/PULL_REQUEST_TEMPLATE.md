@@ -10,7 +10,7 @@ Documentation Links
 **This link is currently only available for Microsoft Employees** - [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/communitytoolkit/?branch=master)
 - [Live site from 'live' branch](https://docs.microsoft.com/windows/communitytoolkit) -->
 
-## Fixes # <!-- Link to relevant issue (for ex: #1234) which will create reference to the associated issue once the PR is created. -->
+## Fixes # <!-- Link to relevant issue or Feature PR of the Windows Community Toolkit repo (for ex: #1234) which will create a reference to the associated issue and PR once it is created-->
 
 ## What changes to the docs does this PR provide?
 <!-- Please describe the updated information in detail -->
