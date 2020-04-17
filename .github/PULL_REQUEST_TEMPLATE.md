@@ -8,7 +8,7 @@ We will periodically merge updates from the live branch to master to keep master
 
 Documentation Links
 - [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/?branch=master)
-- [Live site from 'live' branch](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit) -->
+- [Live site from 'live' branch](https://docs.microsoft.com/windows/communitytoolkit) -->
 
 ## Fixes # <!-- Link to relevant issue (for ex: #1234) which will create reference to the associated issue once the PR is created. -->
 
