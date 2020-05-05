@@ -34,7 +34,7 @@ public readonly struct ByTwoMultiplier : IRefAction<float>
 }
 
 // Create an array and run the callback
-float[] array = new int[10000];
+float[] array = new float[10000];
 
 ParallelHelper.ForEach<float, ByTwoMultiplier>(array);
 ```
