@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Introduction to the High Performance package
 
-This package can be installed through NuGet, and it multitargets .NET Standard 2.0 and .NET Standard 2.1. This means that you can use it from both UWP apps, as well as modern .NET Core 3.0 applications. The API surface is almost identical in both cases, and lots of work has been put into backporting as many features as possible to .NET Standard 2.0 as well. Except for some minor differences, you can expect the same APIs to be available on both target frameworks.
+This package can be installed through NuGet, and it multi-targets .NET Standard 2.0 and .NET Standard 2.1. This means that you can use it from both UWP apps, as well as modern .NET Core 3.0 applications. The API surface is almost identical in both cases, and lots of work has been put into backporting as many features as possible to .NET Standard 2.0 as well. Except for some minor differences, you can expect the same APIs to be available on both target frameworks.
 
 Follow these steps to install the High Performance package:
 
