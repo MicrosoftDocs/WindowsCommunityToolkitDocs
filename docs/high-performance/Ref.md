@@ -13,7 +13,8 @@ The [Ref&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperf
 
 ## How it works
 
-Due to how it's implemented on different .NET Standard contracts, the `Ref<T>` has some minor differences on .NET Standard 2.0 and .NET Standard 2.1. In particular, on .NET Standard 2.0 it can only be used to reference fields _within an object_, instead of arbitrary values pointed by a managed reference. This is because the underlying APIs being used on .NET Standard 2.0 don't have built-in support for the `Span<T>` type.
+> [!NOTE]
+> Due to how it's implemented on different .NET Standard contracts, the `Ref<T>` has some minor differences on .NET Standard 2.0 and .NET Standard 2.1. In particular, on .NET Standard 2.0 it can only be used to reference fields _within an object_, instead of arbitrary values pointed by a managed reference. This is because the underlying APIs being used on .NET Standard 2.0 don't have built-in support for the `Span<T>` type.
 
 ### `Ref<T>` on .NET Standard 2.0
 
@@ -40,7 +41,8 @@ byRef.Value++;
 Console.WriteLine(model.Number); // Prints 43!
 ```
 
-**NOTE:** the `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object.
+> [!WARNING]
+> The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object.
 
 ### `Ref<T>` on .NET Standard 2.1
 
@@ -58,7 +60,8 @@ byRef1.Value++;
 Console.WriteLine(number); // Prints 43!
 ```
 
-**NOTE:** this type comes with a few caveats and should be used carefully, as it can lead to runtime crashes if a `Ref<T>` instance is created with an invalid reference. In particular, you should only create a `Ref<T>` instance pointing to values that have a lifetime that is greater than that of the `Ref<T>` in use. Consider the following snippet:
+> [!WARNING]
+> This type comes with a few caveats and should be used carefully, as it can lead to runtime crashes if a `Ref<T>` instance is created with an invalid reference. In particular, you should only create a `Ref<T>` instance pointing to values that have a lifetime that is greater than that of the `Ref<T>` in use. Consider the following snippet:
 
 ```csharp
 public static ref int GetDummyReference()
