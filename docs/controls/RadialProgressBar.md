@@ -14,6 +14,9 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 - A Thickness parameter, which sets the thickness of the circular sector and the outline it's drawn on
 - An Outline property, which sets the brush of the circular outline
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=RadialProgressBar)
+
 ## Syntax
 
 ```xaml
@@ -37,11 +40,11 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 | Outline | Brush | Gets or sets the color of the circular ouline on which the segment is drawn |
 | Thickness | double | Gets or sets the thickness of the circular ouline and segment |
 
-## Sample Code
+## Sample Project
 
-[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [RadialProgressBar XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -55,4 +58,3 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 ## API
 
 * [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar)
-

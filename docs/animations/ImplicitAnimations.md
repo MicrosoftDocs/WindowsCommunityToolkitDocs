@@ -1,5 +1,5 @@
 ---
-title: Implicit Animations XAML Attached Properties
+title: Implicit Animations in XAML
 author: nmetulev
 description: The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, composition animations, animation, implicit animations, XAML, implicit, composition, show animation, hide animation
@@ -11,9 +11,12 @@ Implicit Animations are Composition Animations that are used to describe how and
 
 **Prerequisites** - [Composition Animation in XAML](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations)
 
-The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code by using the [Composition Animation](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations) XAML objects. This allows animations to be defined directly on the element, or defined as XAML resources and applied to any XAML element. 
+The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code by using the [Composition Animation](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations) XAML objects. This allows animations to be defined directly on the element, or defined as XAML resources and applied to any XAML element.
 
 The Implicit Animations Attached Properties can be used in combination with the [VisualExtensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/visualex). This works well when used in Storyboards.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Animations?sample=Implicit%20Animations)
 
 ## Syntax
 
@@ -54,9 +57,11 @@ The Implicit Animations Attached Properties can be used in combination with the 
 ## Properties
 
 ### Implicit.Animations
+
 Specifies an [Composition Animation](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations) with animations to run when properties are modified.
 
 ### Implicit.ShowAnimations and Implicit.HideAnimations
+
 Specifies an [Composition Animation](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations) with animations to run when an element is added or removed from the visual tree respectively (including when Visibility on an element is changed).
 
 ## Examples
@@ -95,6 +100,7 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
         </animations:Implicit.HideAnimations>
     </Border>
     ```
+
     Now, when you set `Element.Visibility = Visibility.Collapsed` the HideAnimations will run and when you set `Element.Visibility = Visibility.Visible` the ShowAnimations will run.
 
     ![Example Output 2](../resources/images/Animations/ImplicitAnimations/Example-Output-2.gif)
@@ -119,7 +125,12 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
             extensions:VisualEx.NormalizedCenterPoint="0.5,0.5,0" animations:Implicit.Animations="{StaticResource OffRotAnim}"/>
     </Border>
     ```
+
     ![Example Output 3](../resources/images/Animations/ImplicitAnimations/Example-Output-3.gif)
+
+## Sample Project
+
+You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -134,6 +145,6 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
 
 ## Related Topics
 
-- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layern)
-- [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
-- [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)
+* [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
+* [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
+* [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)

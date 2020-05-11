@@ -33,6 +33,9 @@ You can call `ShowPrintUIAsync` with a second parameter to determine that the li
 > [!IMPORTANT]
 > Printing in Dark Theme will likely print white text, which won't be visible. To fix this, ensure the text is a visible color before printing, then restore the original color.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=PrintHelper)
+
 ## Syntax
 
 ```csharp
@@ -295,6 +298,10 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
   Await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", printHelperOptions)
 ```
+
+## Sample Project
+
+[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

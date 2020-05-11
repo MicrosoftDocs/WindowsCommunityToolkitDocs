@@ -12,6 +12,9 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 > [!NOTE]
 > Setting the `Background`, `BorderBrush` and `BorderThickness` properties will not have any effect on the HeaderedItemsControl. This is to maintain the same functionality as the ItemsControl.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=HeaderedItemsControl)
+
 ## Syntax
 
 ```xaml
@@ -67,9 +70,9 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
     </<controls:HeaderedItemsControl>
     ```
 
-## Sample Code
+## Sample Project
 
-[HeaderedItemsControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedItemsControl). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[HeaderedItemsControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedItemsControl). You can [see this in action](uwpct://Controls?sample=HeaderedItemsControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

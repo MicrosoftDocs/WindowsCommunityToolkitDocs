@@ -1,5 +1,5 @@
 ---
-title: Known Issues for WebView control for Windows Forms and WPF
+title: Known Issues in WebView control
 author: mcleanbyron
 description: This guide highlights known limitations with the current release of the WebView control for Windows Forms and WPF applications.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebView, Windows Forms, WPF, known issues, release notes
@@ -8,6 +8,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # Known Issues of the WebView control for Windows Forms and WPF applications
 
 This document describes issues and limitations in this release of the **WebView** control.
+
+Answers to a number of [*Frequently Asked Questions on WebView*](./WebView.md#frequently-asked-questions-faqs)  for Windows Forms and WPF applications are also available.
 
 ## WebView control members
 
@@ -34,6 +36,13 @@ The **WebView** control implements these events of the [IWebViewControl](https:/
 * [UnviewableContentIdentified](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.unviewablecontentidentified)
 
 * [NewWindowRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested)
+
+### InvokeScriptAsync
+
+* Contrary to its name, the [WebViewControl.InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method is not actually asynchrounous, as the Win32 application and WebView share the same input queue.
+
+* [WebViewControl.InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) only returns strings. For example, `WebView.InvokeScriptAsync("eval", "1==1")` returns an empty string rather than *true*, unless you use *toString*:
+`WebView.InvokeScriptAsync("eval", "(1==1).toString()")`
 
 ## Rendering and layout
 

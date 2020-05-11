@@ -1,16 +1,13 @@
-﻿<Type Name="StreamHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.StreamHelper">
+<Type Name="StreamHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.StreamHelper">
   <TypeSignature Language="C#" Value="public static class StreamHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.StreamHelper" />
   <TypeSignature Language="VB.NET" Value="Public Module StreamHelper" />
   <TypeSignature Language="F#" Value="type StreamHelper = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class StreamHelper abstract sealed" />
-  <TypeSignature Language="C++ CX" Value="public ref class StreamHelper abstract sealed" />
-  <TypeSignature Language="C++ WINRT" Value="class StreamHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,8 +28,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -43,11 +40,11 @@
       </Parameters>
       <Docs>
         <param name="uri">Uri to request.</param>
-        <param name="cancellationToken">instance of <see cref="T:System.Threading.CancellationToken" /></param>
+        <param name="cancellationToken">A <see cref="T:System.Threading.CancellationToken" /> used to cancel the operation.</param>
         <summary>
-            Get the response stream returned by a HTTP get request.
+            Gets the response stream returned by a HTTP get request.
             </summary>
-        <returns>Response stream</returns>
+        <returns>The response stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -56,12 +53,11 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task GetHttpStreamToStorageFileAsync(class System.Uri uri, class Windows.Storage.StorageFile targetFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.StreamHelper.GetHttpStreamToStorageFileAsync(System.Uri,Windows.Storage.StorageFile)" />
       <MemberSignature Language="F#" Value="static member GetHttpStreamToStorageFileAsync : Uri * Windows.Storage.StorageFile -&gt; System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Uwp.Helpers.StreamHelper.GetHttpStreamToStorageFileAsync (uri, targetFile)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Threading::Tasks::Task ^ GetHttpStreamToStorageFileAsync(Uri ^ uri, Windows::Storage::StorageFile ^ targetFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -74,9 +70,9 @@
         <param name="uri">Uri to request.</param>
         <param name="targetFile">StorageFile to save the stream to.</param>
         <summary>
-            Get the response stream returned by a HTTP get request and save it to a local file.
+            Gets the response stream returned by a HTTP get request and save it to a local file.
             </summary>
-        <returns>True if success.</returns>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -88,8 +84,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -104,9 +100,9 @@
         <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
         <param name="accessMode">File access mode. Default is read.</param>
         <summary>
-            Return a stream to a specified file from the application local cache folder.
+            Gets a stream to a specified file from the application local cache folder.
             </summary>
-        <returns>File stream</returns>
+        <returns>The file stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,8 +115,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -130,12 +126,12 @@
         <Parameter Name="accessMode" Type="Windows.Storage.FileAccessMode" />
       </Parameters>
       <Docs>
-        <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
+        <param name="fileName">Relative name of the file to open. Can contain subfolders.</param>
         <param name="accessMode">File access mode. Default is read.</param>
         <summary>
-            Return a stream to a specified file from the application local cache folder.
+            Gets a stream to a specified file from the application local cache folder.
             </summary>
-        <returns>File stream</returns>
+        <returns>The file stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -148,8 +144,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -162,9 +158,9 @@
         <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
         <param name="accessMode">File access mode. Default is read.</param>
         <summary>
-            Return a stream to a specified file from the application local folder.
+            Gets a stream to a specified file from the application local folder.
             </summary>
-        <returns>File stream</returns>
+        <returns>The file stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -177,8 +173,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.Streams.IRandomAccessStream&gt;</ReturnType>
@@ -191,9 +187,9 @@
         <param name="fileName">Relative name of the file to open. Can contains subfolders.</param>
         <param name="accessMode">File access mode. Default is read.</param>
         <summary>
-            Return a stream to a specified file from the installation folder.
+            Gets a stream to a specified file from the installation folder.
             </summary>
-        <returns>File stream</returns>
+        <returns>The file stream</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -205,8 +201,8 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -217,11 +213,11 @@
       </Parameters>
       <Docs>
         <param name="stream">Stream to read from.</param>
-        <param name="encoding">Encoding to use. Can be set to null (ASCII will be used in this case).</param>
+        <param name="encoding">Encoding to use. If set to null, ASCII will be used.</param>
         <summary>
-            Read stream content as a string.
+            Reads stream content as a string.
             </summary>
-        <returns>Stream content.</returns>
+        <returns>The stream content</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

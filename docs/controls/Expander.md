@@ -10,6 +10,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 The [Expander Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
 You can show or hide this content by interacting with the Header.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=Expander)
+
 ## Syntax
 
 ```xaml
@@ -89,11 +92,11 @@ For instance to remove the header entirely from the Expander:
   </controls:Expander>
 ```
 
-## Sample Code
+## Sample Project
 
-[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [Expander XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -106,9 +109,9 @@ For instance to remove the header entirely from the Expander:
 
 ## API
 
-- [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander)
+* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander)
 
 ## Related Topics
 
-- [HeaderedControlControl](HeaderedContentControl.md)
-- [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)
+* [HeaderedControlControl](HeaderedContentControl.md)
+* [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)

@@ -1,13 +1,13 @@
-﻿<Type Name="WebView" FullName="Microsoft.Toolkit.Forms.UI.Controls.WebView">
+<Type Name="WebView" FullName="Microsoft.Toolkit.Forms.UI.Controls.WebView">
   <TypeSignature Language="C#" Value="public sealed class WebView : System.Windows.Forms.Control, Microsoft.Toolkit.Win32.UI.Controls.IWebView, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebView extends System.Windows.Forms.Control implements class Microsoft.Toolkit.Win32.UI.Controls.IWebView, class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Forms.UI.Controls.WebView" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebView&#xA;Inherits Control&#xA;Implements ISupportInitialize, IWebView" />
   <TypeSignature Language="F#" Value="type WebView = class&#xA;    inherit Control&#xA;    interface IWebView&#xA;    interface ISupportInitialize" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WebView sealed : System::Windows::Forms::Control, Microsoft::Toolkit::Win32::UI::Controls::IWebView, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Windows.Forms.Control</BaseTypeName>
@@ -39,14 +39,22 @@
     <Attribute>
       <AttributeName>System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)</AttributeName>
     </Attribute>
+    <Attribute>
+      <AttributeName>System.Obsolete("The WebView control will be replaced by WebView2 in the future. Read more here to provide early feedback: https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2")</AttributeName>
+    </Attribute>
   </Attributes>
   <Docs>
     <summary>
-            Provides a control that hosts HTML content in an app.
+            This class is an implementation of <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> for Windows Forms. This class cannot be inherited.
             </summary>
     <remarks>
             Subset of functionality from <see cref="T:Windows.Web.UI.IWebViewControl" /></remarks>
     <altmember cref="T:System.IDisposable" />
+    <inheritdoc cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.Windows.Forms.Control" />
+    <altmember cref="T:System.ComponentModel.ISupportInitialize" />
+    <inheritdoc cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />
+    <inheritdoc cref="T:System.ComponentModel.ISupportInitialize" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,13 +62,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebView();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WebView();" />
-      <MemberSignature Language="C++ WINRT" Value=" WebView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -76,13 +82,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.#ctor(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (process As WebViewControlProcess)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Forms.UI.Controls.WebView : Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess -&gt; Microsoft.Toolkit.Forms.UI.Controls.WebView" Usage="new Microsoft.Toolkit.Forms.UI.Controls.WebView process" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebView(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ process);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WebView(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ process);" />
-      <MemberSignature Language="C++ WINRT" Value=" WebView(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess const &amp; process);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="process" Type="Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess" />
@@ -99,14 +103,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.AcceleratorKeyPressed" />
       <MemberSignature Language="VB.NET" Value="Public Event AcceleratorKeyPressed As EventHandler(Of WebViewControlAcceleratorKeyPressedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.AcceleratorKeyPressed : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlAcceleratorKeyPressedEventArgs&gt; " Usage="member this.AcceleratorKeyPressed : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlAcceleratorKeyPressedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlAcceleratorKeyPressedEventArgs ^&gt; ^ AcceleratorKeyPressed;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.AcceleratorKeyPressed</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlAcceleratorKeyPressedEventArgs&gt;</ReturnType>
@@ -116,6 +120,7 @@
             An event that is triggered when the accelerator key is pressed.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="AddInitializeScript">
@@ -124,16 +129,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.AddInitializeScript(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddInitializeScript (script As String)" />
       <MemberSignature Language="F#" Value="abstract member AddInitializeScript : string -&gt; unit&#xA;override this.AddInitializeScript : string -&gt; unit" Usage="webView.AddInitializeScript script" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddInitializeScript(System::String ^ script);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void AddInitializeScript(Platform::String ^ script);" />
-      <MemberSignature Language="C++ WINRT" Value="void AddInitializeScript(std::wstring const &amp; script);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.AddInitializeScript(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -147,6 +150,7 @@
             Adds the script to be loaded before any others on the page.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="AddPreLoadedScript">
@@ -155,16 +159,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.AddPreLoadedScript(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddPreLoadedScript (script As String)" />
       <MemberSignature Language="F#" Value="abstract member AddPreLoadedScript : string -&gt; unit&#xA;override this.AddPreLoadedScript : string -&gt; unit" Usage="webView.AddPreLoadedScript script" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddPreLoadedScript(System::String ^ script);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void AddPreLoadedScript(Platform::String ^ script);" />
-      <MemberSignature Language="C++ WINRT" Value="void AddPreLoadedScript(std::wstring const &amp; script);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.AddPreLoadedScript(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -183,6 +185,7 @@
             Adds the script to be loaded before any others on the page.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="AllowDrop">
@@ -191,12 +194,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.AllowDrop" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AllowDrop As Boolean" />
       <MemberSignature Language="F#" Value="member this.AllowDrop : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.AllowDrop" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property bool AllowDrop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -206,7 +208,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,11 +231,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
       <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.BackColor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -243,7 +245,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -265,11 +267,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
       <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImage" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -279,7 +281,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -301,11 +303,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImageLayout" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
       <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.BackgroundImageLayout" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -315,7 +317,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -337,15 +339,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoBack" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoBack As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanGoBack : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoBack" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoBack { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool CanGoBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.CanGoBack</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -365,6 +366,7 @@
         <value>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> can navigate backward; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="CanGoForward">
@@ -373,15 +375,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoForward" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoForward As Boolean" />
       <MemberSignature Language="F#" Value="member this.CanGoForward : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.CanGoForward" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoForward { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool CanGoForward { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.CanGoForward</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -401,6 +402,7 @@
         <value>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> can navigate forward; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -409,16 +411,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="webView.Close " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Close();" />
-      <MemberSignature Language="C++ WINRT" Value="void Close();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Close</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -437,15 +437,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContainsFullScreenElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContainsFullScreenElement As Boolean" />
       <MemberSignature Language="F#" Value="member this.ContainsFullScreenElement : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.ContainsFullScreenElement" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContainsFullScreenElement { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool ContainsFullScreenElement { bool get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.ContainsFullScreenElement</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -465,6 +464,7 @@
         <value>
           <see langword="true" /> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> contains an element that supports full screen; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ContainsFullScreenElementChanged">
@@ -473,20 +473,15 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContainsFullScreenElementChanged" />
       <MemberSignature Language="VB.NET" Value="Public Event ContainsFullScreenElementChanged As EventHandler(Of Object) " />
       <MemberSignature Language="F#" Value="member this.ContainsFullScreenElementChanged : EventHandler&lt;obj&gt; " Usage="member this.ContainsFullScreenElementChanged : System.EventHandler&lt;System.obj&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Object ^&gt; ^ ContainsFullScreenElementChanged;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.ContainsFullScreenElementChanged</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1009:DeclareEventHandlersCorrectly", Justification="Declaration of WinRT type")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
@@ -495,6 +490,7 @@
             Occurs when the status of whether the <see cref="T:Microsoft.Toolkit.Forms.UI.Controls.WebView" /> current contains a full screen element or not changes.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ContentLoading">
@@ -503,14 +499,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ContentLoading" />
       <MemberSignature Language="VB.NET" Value="Public Event ContentLoading As EventHandler(Of WebViewControlContentLoadingEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ContentLoading : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt; " Usage="member this.ContentLoading : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlContentLoadingEventArgs ^&gt; ^ ContentLoading;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.ContentLoading</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt;</ReturnType>
@@ -528,11 +524,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Cursor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
       <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Cursor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -542,7 +538,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -564,11 +560,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DefaultSize" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
       <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.DefaultSize" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -587,12 +583,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.DesignMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DesignMode { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -620,13 +615,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.DestroyHandle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DestroyHandle ()" />
       <MemberSignature Language="F#" Value="override this.DestroyHandle : unit -&gt; unit" Usage="webView.DestroyHandle " />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DestroyHandle();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void DestroyHandle();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void DestroyHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -635,6 +628,7 @@
       <Docs>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -643,13 +637,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="webView.Dispose disposing" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; override void Dispose(bool disposing);" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -672,15 +664,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.DocumentTitle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentTitle As String" />
       <MemberSignature Language="F#" Value="member this.DocumentTitle : string" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.DocumentTitle" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentTitle { System::String ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ DocumentTitle { Platform::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.DocumentTitle</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -699,6 +690,7 @@
             </summary>
         <value>The document title.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="DOMContentLoaded">
@@ -707,14 +699,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.DOMContentLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Event DOMContentLoaded As EventHandler(Of WebViewControlDOMContentLoadedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.DOMContentLoaded : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt; " Usage="member this.DOMContentLoaded : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlDOMContentLoadedEventArgs ^&gt; ^ DOMContentLoaded;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.DOMContentLoaded</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt;</ReturnType>
@@ -732,12 +724,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Enabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -747,7 +738,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -770,15 +761,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.EnterpriseId" />
       <MemberSignature Language="VB.NET" Value="Public Property EnterpriseId As String" />
       <MemberSignature Language="F#" Value="member this.EnterpriseId : string with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.EnterpriseId" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EnterpriseId { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Platform::String ^ EnterpriseId { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.EnterpriseId</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -795,6 +785,7 @@
         <value>The enterprise ID of this process.</value>
         <remarks>Value can be set prior to the component being initialized.</remarks>
         <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcessOptions.EnterpriseId" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Focused">
@@ -803,12 +794,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Focused" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Focused As Boolean" />
       <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Focused" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Focused { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property bool Focused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -820,6 +810,7 @@
         <value>
           <see langword="true" /> if focused; otherwise, <see langword="false" />.</value>
         <remarks>Returns <see langword="true" /> if this or any of its child windows has focus.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -828,11 +819,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Font" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
       <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Font" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -842,7 +833,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -864,11 +855,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
       <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.ForeColor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -878,7 +869,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -900,14 +891,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameContentLoading" />
       <MemberSignature Language="VB.NET" Value="Public Event FrameContentLoading As EventHandler(Of WebViewControlContentLoadingEventArgs) " />
       <MemberSignature Language="F#" Value="member this.FrameContentLoading : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt; " Usage="member this.FrameContentLoading : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlContentLoadingEventArgs ^&gt; ^ FrameContentLoading;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.FrameContentLoading</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlContentLoadingEventArgs&gt;</ReturnType>
@@ -925,20 +916,15 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameDOMContentLoaded" />
       <MemberSignature Language="VB.NET" Value="Public Event FrameDOMContentLoaded As EventHandler(Of WebViewControlDOMContentLoadedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.FrameDOMContentLoaded : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt; " Usage="member this.FrameDOMContentLoaded : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlDOMContentLoadedEventArgs ^&gt; ^ FrameDOMContentLoaded;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.FrameDOMContentLoaded</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1709:IdentifiersShouldBeCasedCorrectly", Justification="Name of WinRT type", MessageId="DOM")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDOMContentLoadedEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -955,14 +941,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameNavigationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event FrameNavigationCompleted As EventHandler(Of WebViewControlNavigationCompletedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.FrameNavigationCompleted : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt; " Usage="member this.FrameNavigationCompleted : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlNavigationCompletedEventArgs ^&gt; ^ FrameNavigationCompleted;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.FrameNavigationCompleted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt;</ReturnType>
@@ -980,14 +966,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.FrameNavigationStarting" />
       <MemberSignature Language="VB.NET" Value="Public Event FrameNavigationStarting As EventHandler(Of WebViewControlNavigationStartingEventArgs) " />
       <MemberSignature Language="F#" Value="member this.FrameNavigationStarting : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt; " Usage="member this.FrameNavigationStarting : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlNavigationStartingEventArgs ^&gt; ^ FrameNavigationStarting;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.FrameNavigationStarting</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt;</ReturnType>
@@ -1005,16 +991,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GetDeferredPermissionRequestById(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeferredPermissionRequestById (id As UInteger) As WebViewControlDeferredPermissionRequest" />
       <MemberSignature Language="F#" Value="abstract member GetDeferredPermissionRequestById : uint32 -&gt; Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest&#xA;override this.GetDeferredPermissionRequestById : uint32 -&gt; Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest" Usage="webView.GetDeferredPermissionRequestById id" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlDeferredPermissionRequest ^ GetDeferredPermissionRequestById(System::UInt32 id);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlDeferredPermissionRequest ^ GetDeferredPermissionRequestById(unsigned int id);" />
-      <MemberSignature Language="C++ WINRT" Value="Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlDeferredPermissionRequest GetDeferredPermissionRequestById(unsigned int id);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.GetDeferredPermissionRequestById(System.UInt32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlDeferredPermissionRequest</ReturnType>
@@ -1037,16 +1021,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GoBack" />
       <MemberSignature Language="VB.NET" Value="Public Function GoBack () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GoBack : unit -&gt; bool&#xA;override this.GoBack : unit -&gt; bool" Usage="webView.GoBack " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GoBack();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool GoBack();" />
-      <MemberSignature Language="C++ WINRT" Value="bool GoBack();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.GoBack</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1059,6 +1041,7 @@
         <returns>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation to the previous page in the navigation history is successful; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GoForward">
@@ -1067,16 +1050,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.GoForward" />
       <MemberSignature Language="VB.NET" Value="Public Function GoForward () As Boolean" />
       <MemberSignature Language="F#" Value="abstract member GoForward : unit -&gt; bool&#xA;override this.GoForward : unit -&gt; bool" Usage="webView.GoForward " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool GoForward();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool GoForward();" />
-      <MemberSignature Language="C++ WINRT" Value="bool GoForward();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.GoForward</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1089,6 +1070,7 @@
         <returns>
           <c>true</c> if the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation to the next page in the navigation history is successful; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ImeMode">
@@ -1097,11 +1079,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.ImeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
       <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.ImeMode" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1111,7 +1093,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1131,16 +1113,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String) As String" />
       <MemberSignature Language="F#" Value="abstract member InvokeScript : string -&gt; string&#xA;override this.InvokeScript : string -&gt; string" Usage="webView.InvokeScript scriptName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ InvokeScript(System::String ^ scriptName);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; Platform::String ^ InvokeScript(Platform::String ^ scriptName);" />
-      <MemberSignature Language="C++ WINRT" Value="std::wstring InvokeScript(std::wstring const &amp; scriptName);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScript(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1155,6 +1135,7 @@
             </summary>
         <returns>When this method returns, the <see cref="T:System.String" /> result of the script invocation.</returns>
         <remarks>To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -1163,14 +1144,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String, arguments As IEnumerable(Of String)) As String" />
       <MemberSignature Language="F#" Value="abstract member InvokeScript : string * seq&lt;string&gt; -&gt; string&#xA;override this.InvokeScript : string * seq&lt;string&gt; -&gt; string" Usage="webView.InvokeScript (scriptName, arguments)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ InvokeScript(System::String ^ scriptName, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScript(System.String,System.Collections.Generic.IEnumerable{System.String})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1189,6 +1170,7 @@
         <remarks>
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScript">
@@ -1197,14 +1179,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScript(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String, ParamArray arguments As String()) As String" />
       <MemberSignature Language="F#" Value="abstract member InvokeScript : string * string[] -&gt; string&#xA;override this.InvokeScript : string * string[] -&gt; string" Usage="webView.InvokeScript (scriptName, arguments)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ InvokeScript(System::String ^ scriptName, ... cli::array &lt;System::String ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScript(System.String,System.String[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1229,6 +1211,7 @@
         <remarks>
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -1237,14 +1220,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScriptAsync (scriptName As String) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member InvokeScriptAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.InvokeScriptAsync : string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webView.InvokeScriptAsync scriptName" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ InvokeScriptAsync(System::String ^ scriptName);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScriptAsync(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -1262,6 +1245,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -1270,14 +1254,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScriptAsync (scriptName As String, arguments As IEnumerable(Of String)) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member InvokeScriptAsync : string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.InvokeScriptAsync : string * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webView.InvokeScriptAsync (scriptName, arguments)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ InvokeScriptAsync(System::String ^ scriptName, System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScriptAsync(System.String,System.Collections.Generic.IEnumerable{System.String})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -1297,6 +1281,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="InvokeScriptAsync">
@@ -1305,14 +1290,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.InvokeScriptAsync(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Function InvokeScriptAsync (scriptName As String, ParamArray arguments As String()) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member InvokeScriptAsync : string * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.InvokeScriptAsync : string * string[] -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="webView.InvokeScriptAsync (scriptName, arguments)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::String ^&gt; ^ InvokeScriptAsync(System::String ^ scriptName, ... cli::array &lt;System::String ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.InvokeScriptAsync(System.String,System.String[])</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -1338,6 +1323,7 @@
             To prevent malicious code from exploiting your app, be sure to call this method to invoke only scripts that you trust.
             The invoked script can only return string values.
             </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsIndexedDBEnabled">
@@ -1346,15 +1332,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsIndexedDBEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsIndexedDBEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsIndexedDBEnabled : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.IsIndexedDBEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIndexedDBEnabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsIndexedDBEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.IsIndexedDBEnabled</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1371,6 +1356,7 @@
         <value>
           <see langword="true" /> if this instance is indexed database enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsJavaScriptEnabled">
@@ -1379,15 +1365,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsJavaScriptEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsJavaScriptEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsJavaScriptEnabled : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.IsJavaScriptEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsJavaScriptEnabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsJavaScriptEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.IsJavaScriptEnabled</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1404,6 +1389,7 @@
         <value>
           <c>true</c> if the use of JavaScript is allowed; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsPrivateNetworkClientServerCapabilityEnabled">
@@ -1412,15 +1398,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsPrivateNetworkClientServerCapabilityEnabled As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsPrivateNetworkClientServerCapabilityEnabled : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.IsPrivateNetworkClientServerCapabilityEnabled" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivateNetworkClientServerCapabilityEnabled { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsPrivateNetworkClientServerCapabilityEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.IsPrivateNetworkClientServerCapabilityEnabled</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1438,6 +1423,7 @@
           <see langword="true" /> if this instance is private network client server capability enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">Value cannot be set once the control is initialized.</exception>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsScriptNotifyAllowed">
@@ -1446,15 +1432,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsScriptNotifyAllowed" />
       <MemberSignature Language="VB.NET" Value="Public Property IsScriptNotifyAllowed As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsScriptNotifyAllowed : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.IsScriptNotifyAllowed" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsScriptNotifyAllowed { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool IsScriptNotifyAllowed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.IsScriptNotifyAllowed</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1471,6 +1456,7 @@
         <value>
           <c>true</c> if <see cref="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ScriptNotify" /> is allowed; otherwise, <c>false</c>.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="IsSupported">
@@ -1479,12 +1465,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.IsSupported" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.IsSupported" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1504,14 +1489,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.LongRunningScriptDetected" />
       <MemberSignature Language="VB.NET" Value="Public Event LongRunningScriptDetected As EventHandler(Of WebViewControlLongRunningScriptDetectedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.LongRunningScriptDetected : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs&gt; " Usage="member this.LongRunningScriptDetected : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlLongRunningScriptDetectedEventArgs ^&gt; ^ LongRunningScriptDetected;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.LongRunningScriptDetected</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlLongRunningScriptDetectedEventArgs&gt;</ReturnType>
@@ -1538,16 +1523,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveFocus (reason As WebViewControlMoveFocusReason)" />
       <MemberSignature Language="F#" Value="abstract member MoveFocus : Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason -&gt; unit&#xA;override this.MoveFocus : Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason -&gt; unit" Usage="webView.MoveFocus reason" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MoveFocus(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlMoveFocusReason reason);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void MoveFocus(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlMoveFocusReason reason);" />
-      <MemberSignature Language="C++ WINRT" Value="void MoveFocus(Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlMoveFocusReason reason);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.MoveFocus(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusReason)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1561,6 +1544,7 @@
             Moves the focus.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="MoveFocusRequested">
@@ -1569,14 +1553,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.MoveFocusRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event MoveFocusRequested As EventHandler(Of WebViewControlMoveFocusRequestedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.MoveFocusRequested : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusRequestedEventArgs&gt; " Usage="member this.MoveFocusRequested : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusRequestedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlMoveFocusRequestedEventArgs ^&gt; ^ MoveFocusRequested;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.MoveFocusRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlMoveFocusRequestedEventArgs&gt;</ReturnType>
@@ -1594,16 +1578,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Navigate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As String)" />
       <MemberSignature Language="F#" Value="abstract member Navigate : string -&gt; unit&#xA;override this.Navigate : string -&gt; unit" Usage="webView.Navigate source" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Navigate(System::String ^ source);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Navigate(Platform::String ^ source);" />
-      <MemberSignature Language="C++ WINRT" Value="void Navigate(std::wstring const &amp; source);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1619,6 +1601,7 @@
         <remarks>To be added.</remarks>
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.String)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1627,14 +1610,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Navigate(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As Uri)" />
       <MemberSignature Language="F#" Value="abstract member Navigate : Uri -&gt; unit&#xA;override this.Navigate : Uri -&gt; unit" Usage="webView.Navigate source" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Navigate(Uri ^ source);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.Uri)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1651,6 +1634,7 @@
         <altmember cref="T:System.Uri" />
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.Uri)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -1664,7 +1648,8 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1687,6 +1672,7 @@
             This method only supports <see cref="P:System.Net.Http.HttpMethod.Get" /> and <see cref="P:System.Net.Http.HttpMethod.Post" /> for the <paramref name="httpMethod" /> parameter.
             </remarks>
         <altmember cref="M:Windows.Web.UI.Interop.WebViewControl.NavigateWithHttpRequestMessage(Windows.Web.Http.HttpRequestMessage)" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToLocal">
@@ -1695,16 +1681,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToLocal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NavigateToLocal (relativePath As String)" />
       <MemberSignature Language="F#" Value="abstract member NavigateToLocal : string -&gt; unit&#xA;override this.NavigateToLocal : string -&gt; unit" Usage="webView.NavigateToLocal relativePath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NavigateToLocal(System::String ^ relativePath);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void NavigateToLocal(Platform::String ^ relativePath);" />
-      <MemberSignature Language="C++ WINRT" Value="void NavigateToLocal(std::wstring const &amp; relativePath);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToLocal(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1725,6 +1709,7 @@
         <remarks>To be added.</remarks>
         <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToLocal(System.String)" />
         <see cref="E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted" />
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToLocalStreamUri">
@@ -1733,14 +1718,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NavigateToLocalStreamUri (relativePath As Uri, streamResolver As IUriToStreamResolver)" />
       <MemberSignature Language="F#" Value="abstract member NavigateToLocalStreamUri : Uri * Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver -&gt; unit&#xA;override this.NavigateToLocalStreamUri : Uri * Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver -&gt; unit" Usage="webView.NavigateToLocalStreamUri (relativePath, streamResolver)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NavigateToLocalStreamUri(Uri ^ relativePath, Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::IUriToStreamResolver ^ streamResolver);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToLocalStreamUri(System.Uri,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1756,6 +1741,7 @@
             Loads local web content at the specified Uniform Resource Identifier (URI) using an <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.IUriToStreamResolver" />.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigateToString">
@@ -1764,16 +1750,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigateToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub NavigateToString (text As String)" />
       <MemberSignature Language="F#" Value="abstract member NavigateToString : string -&gt; unit&#xA;override this.NavigateToString : string -&gt; unit" Usage="webView.NavigateToString text" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NavigateToString(System::String ^ text);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void NavigateToString(Platform::String ^ text);" />
-      <MemberSignature Language="C++ WINRT" Value="void NavigateToString(std::wstring const &amp; text);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToString(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1793,6 +1777,7 @@
              <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigateToString(System.String)" /> supports content with references to external files such as CSS, scripts, images,
               and fonts. However, it does not provide a way to generate or provide these resources programmatically.
              </remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="NavigationCompleted">
@@ -1801,14 +1786,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigationCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Event NavigationCompleted As EventHandler(Of WebViewControlNavigationCompletedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.NavigationCompleted : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt; " Usage="member this.NavigationCompleted : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlNavigationCompletedEventArgs ^&gt; ^ NavigationCompleted;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationCompleted</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationCompletedEventArgs&gt;</ReturnType>
@@ -1826,14 +1811,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NavigationStarting" />
       <MemberSignature Language="VB.NET" Value="Public Event NavigationStarting As EventHandler(Of WebViewControlNavigationStartingEventArgs) " />
       <MemberSignature Language="F#" Value="member this.NavigationStarting : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt; " Usage="member this.NavigationStarting : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlNavigationStartingEventArgs ^&gt; ^ NavigationStarting;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NavigationStarting</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNavigationStartingEventArgs&gt;</ReturnType>
@@ -1851,14 +1836,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.NewWindowRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event NewWindowRequested As EventHandler(Of WebViewControlNewWindowRequestedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.NewWindowRequested : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNewWindowRequestedEventArgs&gt; " Usage="member this.NewWindowRequested : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNewWindowRequestedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlNewWindowRequestedEventArgs ^&gt; ^ NewWindowRequested;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.NewWindowRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlNewWindowRequestedEventArgs&gt;</ReturnType>
@@ -1876,11 +1861,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.OnHandleDestroyed(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
       <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="webView.OnHandleDestroyed e" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1892,6 +1877,7 @@
         <param name="e">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -1900,11 +1886,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Padding" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1914,7 +1900,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1934,14 +1920,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.PermissionRequested" />
       <MemberSignature Language="VB.NET" Value="Public Event PermissionRequested As EventHandler(Of WebViewControlPermissionRequestedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.PermissionRequested : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequestedEventArgs&gt; " Usage="member this.PermissionRequested : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequestedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlPermissionRequestedEventArgs ^&gt; ^ PermissionRequested;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.PermissionRequested</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlPermissionRequestedEventArgs&gt;</ReturnType>
@@ -1956,7 +1942,7 @@
              If you don't handle the <see cref="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.PermissionRequested" /> event, the <see cref="T:Microsoft.Toolkit.Forms.UI.Controls.WebView" /> denies permission by default.
             
              When you handle a permission request in <see cref="T:Microsoft.Toolkit.Forms.UI.Controls.WebView" />, you get a <see cref="T:Windows.Web.UI.WebViewControlPermissionRequest" /> object as
-             the value of the <see cref="M:WebViewControlPermissionRequestedEventArgs.PermissionRequest" /> property. You can call Allow to grant the request,
+             the value of the <see cref="P:Windows.Web.UI.WebViewControlPermissionRequestedEventArgs.PermissionRequest" /> property. You can call Allow to grant the request,
              Deny to deny the request, or Defer to defer the request until a later time.
              </remarks>
       </Docs>
@@ -1967,12 +1953,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Process" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Process As WebViewControlProcess" />
       <MemberSignature Language="F#" Value="member this.Process : Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlProcess" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Process" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ Process { Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ Process { Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlProcess ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1999,16 +1984,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Refresh" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
       <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="webView.Refresh " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; override void Refresh();" />
-      <MemberSignature Language="C++ WINRT" Value=" override void Refresh();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Refresh</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2019,6 +2002,7 @@
             Reloads the current <see cref="P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Source" /> in the <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" />.
             </summary>
         <remarks>If the current source was loaded via <see cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Navigate(System.Uri)" />, this method reloads the file without forced cache validation by sending a <c>Pragma:no-cache</c> header to the server.</remarks>
+        <inheritdoc cref="M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Refresh" />
       </Docs>
     </Member>
     <Member MemberName="RightToLeft">
@@ -2027,21 +2011,21 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.RightToLeft" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
       <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.RightToLeft" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2062,14 +2046,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.ScriptNotify" />
       <MemberSignature Language="VB.NET" Value="Public Event ScriptNotify As EventHandler(Of WebViewControlScriptNotifyEventArgs) " />
       <MemberSignature Language="F#" Value="member this.ScriptNotify : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlScriptNotifyEventArgs&gt; " Usage="member this.ScriptNotify : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlScriptNotifyEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlScriptNotifyEventArgs ^&gt; ^ ScriptNotify;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.ScriptNotify</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlScriptNotifyEventArgs&gt;</ReturnType>
@@ -2087,15 +2071,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Settings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As WebViewControlSettings" />
       <MemberSignature Language="F#" Value="member this.Settings : Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlSettings" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Settings" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlSettings ^ Settings { Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlSettings ^ get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlSettings ^ Settings { Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Settings</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2122,14 +2105,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Source" />
       <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
       <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Source" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Source</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2159,16 +2142,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="F#" Value="abstract member Stop : unit -&gt; unit&#xA;override this.Stop : unit -&gt; unit" Usage="webView.Stop " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Stop();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Stop();" />
-      <MemberSignature Language="C++ WINRT" Value="void Stop();" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Stop</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2179,6 +2160,7 @@
             Halts the current <see cref="T:Microsoft.Toolkit.Win32.UI.Controls.IWebView" /> navigation or download.
             </summary>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitialize.BeginInit">
@@ -2186,16 +2168,11 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.System#ComponentModel#ISupportInitialize#BeginInit" />
       <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
-      <MemberSignature Language="C++ WINRT" Value="void System.ComponentModel.ISupportInitialize.BeginInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2211,16 +2188,11 @@
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Forms.UI.Controls.WebView.System#ComponentModel#ISupportInitialize#EndInit" />
       <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
-      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
-      <MemberSignature Language="C++ CX" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
-      <MemberSignature Language="C++ WINRT" Value="void System.ComponentModel.ISupportInitialize.EndInit();" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2237,12 +2209,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Text" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; virtual property Platform::String ^ Text { Platform::String ^ get(); void set(Platform::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2255,7 +2226,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2276,20 +2247,15 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnsafeContentWarningDisplaying" />
       <MemberSignature Language="VB.NET" Value="Public Event UnsafeContentWarningDisplaying As EventHandler(Of Object) " />
       <MemberSignature Language="F#" Value="member this.UnsafeContentWarningDisplaying : EventHandler&lt;obj&gt; " Usage="member this.UnsafeContentWarningDisplaying : System.EventHandler&lt;System.obj&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Object ^&gt; ^ UnsafeContentWarningDisplaying;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.UnsafeContentWarningDisplaying</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1009:DeclareEventHandlersCorrectly", Justification="Declaration of WinRT type")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
@@ -2306,14 +2272,14 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnsupportedUriSchemeIdentified" />
       <MemberSignature Language="VB.NET" Value="Public Event UnsupportedUriSchemeIdentified As EventHandler(Of WebViewControlUnsupportedUriSchemeIdentifiedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.UnsupportedUriSchemeIdentified : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs&gt; " Usage="member this.UnsupportedUriSchemeIdentified : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlUnsupportedUriSchemeIdentifiedEventArgs ^&gt; ^ UnsupportedUriSchemeIdentified;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.UnsupportedUriSchemeIdentified</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnsupportedUriSchemeIdentifiedEventArgs&gt;</ReturnType>
@@ -2331,20 +2297,15 @@
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Forms.UI.Controls.WebView.UnviewableContentIdentified" />
       <MemberSignature Language="VB.NET" Value="Public Event UnviewableContentIdentified As EventHandler(Of WebViewControlUnviewableContentIdentifiedEventArgs) " />
       <MemberSignature Language="F#" Value="member this.UnviewableContentIdentified : EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs&gt; " Usage="member this.UnviewableContentIdentified : System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs&gt; " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;Microsoft::Toolkit::Win32::UI::Controls::Interop::WinRT::WebViewControlUnviewableContentIdentifiedEventArgs ^&gt; ^ UnviewableContentIdentified;" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.Toolkit.Win32.UI.Controls.IWebView.UnviewableContentIdentified</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", Justification="Name from WinRT type", MessageId="Unviewable")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.WebViewControlUnviewableContentIdentifiedEventArgs&gt;</ReturnType>
       </ReturnValue>
@@ -2361,12 +2322,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.UseWaitCursor" />
       <MemberSignature Language="VB.NET" Value="Public Property UseWaitCursor As Boolean" />
       <MemberSignature Language="F#" Value="member this.UseWaitCursor : bool with get, set" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.UseWaitCursor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseWaitCursor { bool get(); void set(bool value); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; property bool UseWaitCursor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2376,7 +2336,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2398,14 +2358,14 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Forms.UI.Controls.WebView.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
       <MemberSignature Language="F#" Value="member this.Version : Version" Usage="Microsoft.Toolkit.Forms.UI.Controls.WebView.Version" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:Microsoft.Toolkit.Win32.UI.Controls.IWebView.Version</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Forms.UI.Controls.WebView</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
