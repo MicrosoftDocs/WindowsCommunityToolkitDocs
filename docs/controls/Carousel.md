@@ -14,6 +14,9 @@ The [Carousel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.co
 This control lets you specify a lot of properties for a flexible layouting.  
 The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=Carousel)
+
 ## Syntax
 
 ```xaml
@@ -62,11 +65,11 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 | -- | -- |
 | SelectionChanged | Occurs when the selected item has changed |
 
-## Sample Code
+## Sample Project
 
-[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Carousel). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Carousel). You can [see this in action](uwpct://Controls?sample=Carousel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [Carousel XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml) is the XAML template used in the toolkit for the default styling.
 

@@ -32,10 +32,12 @@
 ## [DockPanel](controls/DockPanel.md)
 ## [DropShadowPanel Control](controls/DropShadowPanel.md)
 ## [Expander Control](controls/Expander.md)
+## [Eyedropper](controls/Eyedropper.md)
 ## [GridSplitter](controls/GridSplitter.md)
 ## [HeaderedContentControl](controls/HeaderedContentControl.md)
 ## [HeaderedItemsControl](controls/HeaderedItemsControl.md)
 ## [HeaderedTextBlock](controls/HeaderedTextBlock.md)
+## [ImageCropper](controls/ImageCropper.md)
 ## [ImageEx](controls/ImageEx.md)
 ## [InAppNotification](controls/InAppNotification.md)
 ## [InfiniteCanvas](controls/InfiniteCanvas.md)
@@ -44,22 +46,16 @@
 ## [MarkdownTextBlock](controls/MarkdownTextBlock.md)
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 ## [Menu Control](controls/Menu.md)
-## Microsoft Graph Controls
-### [AadLogin](graph/AadLogin.md)
-### [PeoplePicker](graph/PeoplePicker.md)
-### [PlannerTaskList](graph/PlannerTaskList.md)
-### [PowerBIEmbedded](graph/PowerBIEmbedded.md)
-### [ProfileCard](graph/ProfileCard.md)
-### [SharePointFileList](graph/SharePointFileList.md)
 ## [OrbitView](controls/OrbitView.md)
 ## [RadialGauge](controls/RadialGauge.md)
 ## [RadialProgressBar](controls/RadialProgressBar.md)
 ## [RangeSelector](controls/RangeSelector.md)
+## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
 ## [StaggeredPanel](controls/StaggeredPanel.md)
-## [TextToolbar](controls/TextToolbar.md)
 ## [TabView](controls/TabView.md)
+## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WrapPanel](controls/WrapPanel.md)
@@ -74,6 +70,14 @@
 ## [FadeHeader](animations/FadeHeader.md)
 ## [Implicit Animations](animations/ImplicitAnimations.md)
 ## [Light](animations/Light.md)
+## [Lottie](animations/Lottie.md)
+### [Getting Started with Lottie-Windows](animations/lottie-scenarios/getting_started_json.md)
+### [Using Codegen](animations/lottie-scenarios/getting_started_codegen.md)
+### [JSON versus Codegen](animations/lottie-scenarios/json_codegen.md)
+### [Configuring Animation Playback](animations/lottie-scenarios/playback.md)
+### [Interactive Segments on an Animation Timeline](animations/lottie-scenarios/segments.md)
+### [The Asynchronous Play Method](animations/lottie-scenarios/async_play.md)
+### [Handling Failure and Down-level](animations/lottie-scenarios/fallback.md)
 ## [Offset](animations/Offset.md)
 ## [ReorderGridAnimation](animations/ReorderGrid.md)
 ## [Rotate](animations/Rotate.md)
@@ -100,7 +104,6 @@
 ### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
 ### [Transform Extensions](extensions/TransformExtensions.md)
 ## [Mouse Cursor](extensions/MouseCursor.md)
-## [NavigationView Styles](extensions/NavigationView.md)
 ## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 ## [StringExtensions](extensions/StringExtensions.md)
@@ -110,6 +113,15 @@
 ## [ViewExtensions](extensions/ViewExtensions.md)
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
+
+# Microsoft Graph
+## Controls
+### [LoginButton](graph/controls/LoginButton.md)
+### [PersonView](graph/controls/PersonView.md)
+### [PeoplePicker](graph/controls/PeoplePicker.md)
+## Providers
+### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
 
 # Helpers
 ## [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
@@ -129,11 +141,13 @@
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
 ## [PrintHelper](helpers/PrintHelper.md)
+## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
 ## [Streams Helper](helpers/Streams.md)
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
+## [ViewportBehavior](helpers/ViewportBehavior.md)
 
 # Services
 ## [Facebook Service](services/Facebook.md)
@@ -160,11 +174,18 @@
 # [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 # Archive
+## Animations
+### [ParallaxService](archive/ParallaxService.md)
 ## Controls
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 ### [SlidableListItem](archive/SlidableListItem.md)
-## Animations
-### [ParallaxService](archive/ParallaxService.md)
+## Microsoft Graph Controls
+### [AadLogin](archive/graph/AadLogin.md)
+### [PeoplePicker](archive/graph/PeoplePicker.md)
+### [PlannerTaskList](archive/graph/PlannerTaskList.md)
+### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
+### [ProfileCard](archive/graph/ProfileCard.md)
+### [SharePointFileList](archive/graph/SharePointFileList.md)
 ## Services
 ### [Bing Service](archive/Bing.md)

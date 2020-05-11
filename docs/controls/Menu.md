@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Menu Control
 
+> [!NOTE]
+> This control will be removed in a future major release.
+
 The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) defines a menu of choices for users to invoke, it is inheriting from `ItemsControl`. The default ItemsPanel for the menu control is `WrapPanel` and it only supports MenuItem as an item\children.
 
 The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) positions it's items the way the WrapPanel does based on the selected orientation Virtical\Horizontal (Developers can change the control ItemsPanel). The Menu items must be of type MenuItem, each MenuItem can be opened using keyboard or pointer.
@@ -15,7 +18,10 @@ The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 
 To invoke any command on any Menu, MenuItem or MenuFlyoutItem you must use property `InputGestureText`
 
-If the tooltip is allowed on the Menu control when clicking Alt a tooltip with the input gesture text will show\hide.  
+If the tooltip is allowed on the Menu control when clicking Alt a tooltip with the input gesture text will show\hide.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=Menu)
 
 ## Syntax
 
@@ -137,11 +143,11 @@ internal class NewProjectCommand : ICommand
 }
 ```
 
-## Sample Code
+## Sample Project
 
-[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [Menu XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xaml) is the XAML template used in the toolkit for the default styling.
 

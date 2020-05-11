@@ -12,6 +12,9 @@ dev_langs:
 
 The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=RangeSelector)
+
 ## Syntax
 
 ```xaml
@@ -22,7 +25,7 @@ The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.tool
 	Minimum="10" 
 	Maximum="100"
 	StepFrequency="2">
-</controls:RangeSelector>       
+</controls:RangeSelector>
 ```
 
 ## Sample Output
@@ -76,11 +79,11 @@ Private Sub Selector_OnDragCompleted(ByVal sender As Object, ByVal e As DragComp
 End Sub
 ```
 
-## Sample Code
+## Sample Project
 
-[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [RangeSelector XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
 

@@ -17,6 +17,9 @@ The transformations that can be applied are one of the following:
 * [MatrixTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrixtransform)
 * [TransformGroup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.transformgroup)
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=LayoutTransformControl)
+
 ## Syntax
 
 **XAML**
@@ -48,9 +51,9 @@ The transformations that can be applied are one of the following:
 | Child | FrameworkElement | The content of the control that will receive matrix transformations |
 | Transform | Transform | The transformations to apply on the `Content`. It can be a single transformation like `RotateTransform`, `ScaleTransform` or `SkewTransform` or it can be a combo of multiple transformations using `TransformGroup` |
 
-## Sample Code
+## Sample Project
 
-[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can see this in action in the Windows Community Toolkit Sample App.
+[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -59,15 +62,15 @@ The transformations that can be applied are one of the following:
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
-## API Source Code
+## API
 
-- [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl)
+*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl)
 
 ## Related Topics
 
-- [Expander](Expander.md)
-- [MatrixTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrixtransform)
-- [TransformGroup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.transformgroup)
-- [RotateTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.rotatetransform)
-- [ScaleTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.scaletransform)
-- [SkewTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.skewtransform)
+* [Expander](Expander.md)
+* [MatrixTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrixtransform)
+* [TransformGroup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.transformgroup)
+* [RotateTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.rotatetransform)
+* [ScaleTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.scaletransform)
+* [SkewTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.skewtransform)
