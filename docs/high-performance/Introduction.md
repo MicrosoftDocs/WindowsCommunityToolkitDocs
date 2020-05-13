@@ -23,7 +23,7 @@ Follow these steps to install the High Performance package:
 1. Open an existing project in Visual studio, targeting any of the following:
     - UWP (>= 10.0)
     - .NET Standard (>= 1.4)
-    - .NET Core (>= 2.1)
+    - .NET Core (>= 1.0)
     - Any other framework supporting .NET Standard 1.4 and up
 
 2. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.HighPerformance** and install it.
@@ -36,7 +36,7 @@ Follow these steps to install the High Performance package:
     using Microsoft.Toolkit.HighPerformance;
     ```
 
-4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared/Helpers) for the project.
+4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests/UnitTests.HighPerformance.Shared) for the project.
 
 ## When should I use this package?
 
