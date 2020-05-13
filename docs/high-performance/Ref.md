@@ -14,11 +14,11 @@ The [Ref&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperf
 ## How it works
 
 > [!NOTE]
-> Due to how it's implemented on different .NET Standard contracts, the `Ref<T>` has some minor differences on .NET Standard 2.0 and .NET Standard 2.1. In particular, on .NET Standard 2.0 it can only be used to reference fields _within an object_, instead of arbitrary values pointed by a managed reference. This is because the underlying APIs being used on .NET Standard 2.0 don't have built-in support for the `Span<T>` type.
+> Due to how it's implemented on different .NET Standard contracts, the `Ref<T>` has some minor differences on .NET Standard 1.4 and .NET Standard 2.1 (and equivalent .NET Core runtimes). In particular, on .NET Standard 1.4 it can only be used to reference fields _within an object_, instead of arbitrary values pointed by a managed reference. This is because the underlying APIs being used on .NET Standard 1.4 don't have built-in support for the `Span<T>` type.
 
-### `Ref<T>` on .NET Standard 2.0
+### `Ref<T>` on .NET Standard 1.4
 
-As mentioned before, on .NET Standard 2.0, `Ref<T>` can only point to locations within a given `object`. Consider the following code:
+As mentioned before, on .NET Standard 1.4, `Ref<T>` can only point to locations within a given `object`. Consider the following code:
 
 ```csharp
 // Be sure to include this using at the top of the file:
@@ -42,7 +42,7 @@ Console.WriteLine(model.Number); // Prints 43!
 ```
 
 > [!WARNING]
-> The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object.
+> The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object. Failing to do so might cause the `Ref<T>.Value` property to return an invalid reference.
 
 ### `Ref<T>` on .NET Standard 2.1
 
@@ -76,6 +76,9 @@ public static ref int GetDummyReference()
 
 This will compile and run fine, but the returned `ref int` will be invalid (as in, it will not point to a valid location) and could cause crashes if it's dereferenced. It is your responsability to track the lifetime of values being referenced by new `Ref<T>` values.
 
+> [!NOTE]
+> Although it is possible to create a `Ref<T>` value wrapping a `null` reference, by using the `default(Ref<T>)` expression, the `Ref<T>` type is not designed to be used with nullable references and does not include proper features to validate the internal reference. If you need to return a reference that can be set to `null`, use the `NullableRef<T>` and `NullableReadOnlyRef<T>` types.
+
 ## Properties
 
 | Property | Return Type | Description |
@@ -98,7 +101,7 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher |
+| Device family | Universal, 10.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.HighPerformance |
 | NuGet package | [Microsoft.Toolkit.HighPerformance](https://www.nuget.org/packages/Microsoft.Toolkit.HighPerformance/) |
