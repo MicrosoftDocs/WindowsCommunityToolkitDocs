@@ -7,15 +7,24 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Introduction to the High Performance package
 
-This package can be installed through NuGet, and it multi-targets .NET Standard 2.0 and .NET Standard 2.1. This means that you can use it from both UWP apps, as well as modern .NET Core 3.0 applications. The API surface is almost identical in both cases, and lots of work has been put into backporting as many features as possible to .NET Standard 2.0 as well. Except for some minor differences, you can expect the same APIs to be available on both target frameworks.
+This package can be installed through NuGet, and it has the following multi-targets:
+- .NET Standard 1.4
+- .NET Standard 2.0
+- .NET Standard 2.1
+- .NET Core 2.1
+- .NET Core 3.1
+
+This means that you can use it from anything from UWP or legacy .NET Framework applications, games written in Unity, cross-platform mobile applications using Xamarin, to .NET Standard libraries and modern .NET Core 2.1 or .NET Core 3.1 applications. The API surface is almost identical in all cases, and lots of work has been put into backporting as many features as possible to older targets like .NET Standard 1.4 and .NET Standard 2.0. Except for some minor differences, you can expect the same APIs to be available on all target frameworks.
+
+The reason why multi-targeting has been used is to allow the package to leverage all the latest APIs on modern runtimes (like .NET Core 3.1) whenever possible, while still offering most of its functionalities to all target platforms. It also makes it possible for .NET Core 2.1 to use all the APIs that it has in common with .NET Standard 2.1, even though the runtime itself doesn't fully implement .NET Standard 2.1. All of this would not have been possible without multi-targeting to both .NET Standard as well as individual runtimes.
 
 Follow these steps to install the High Performance package:
 
 1. Open an existing project in Visual studio, targeting any of the following:
-    - UWP (SDK >= 16299)
-    - .NET Standard (>= 2.0)
+    - UWP (>= 10.0)
+    - .NET Standard (>= 1.4)
     - .NET Core (>= 2.1)
-    - Any other framework supporting .NET Standard 2.0 and up
+    - Any other framework supporting .NET Standard 1.4 and up
 
 2. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.HighPerformance** and install it.
 
