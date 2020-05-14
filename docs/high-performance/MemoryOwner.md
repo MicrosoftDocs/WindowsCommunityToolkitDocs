@@ -45,14 +45,14 @@ In this example, we used a `using` block to declare the `MemoryOwner<T>` buffer:
 
 `MemoryOwner<T>` can be used as a general purpose buffer type, which has the advantage of minimizing the number of allocations done over time, as it internally reuses the same arrays from a shared pool. A common use case is to replace `new T[]` array allocations, especially when doing repeated operations that either require a temporary buffer to work on, or that produce a buffer as a result.
 
-Suppose we have a dataset consisting of a series of binary files, each of size 1024, and that we need to read all these files and process them in some way. To properly separate our code, we might end up writing a method that simply reads one binary file, which might look like this:
+Suppose we have a dataset consisting of a series of binary files, and that we need to read all these files and process them in some way. To properly separate our code, we might end up writing a method that simply reads one binary file, which might look like this:
 
 ```csharp
 public static byte[] GetBytesFromFile(string path)
 {
-    byte[] buffer = new byte[1024];
-
     using Stream stream = File.OpenRead(path);
+
+    byte[] buffer = new byte[(int)stream.Length];
 
     stream.Read(buffer, 0, buffer.Length);
 
@@ -60,14 +60,35 @@ public static byte[] GetBytesFromFile(string path)
 }
 ```
 
-Note that `new byte[1024]` expression. If we read a large number of files, we'll end up allocating a lot of new arrays, which will put a lot of pressure over the garbage collector. If we refactor this code to use `MemoryOwner<T>` instead, we end up with the following:
+Note that `new byte[]` expression. If we read a large number of files, we'll end up allocating a lot of new arrays, which will put a lot of pressure over the garbage collector. We might want to refactor this code using buffers rented from a pool, like so:
 
 ```csharp
-public static IMemoryOwner<byte> GetBytesFromFile(string path)
+public static (byte[] Buffer, int Length) GetBytesFromFile(string path)
 {
-    MemoryOwner<byte> buffer = MemoryOwner<byte>.Allocate(1024);
-
     using Stream stream = File.OpenRead(path);
+
+    byte[] buffer = ArrayPool<T>.Shared.Rent((int)stream.Length);
+
+    stream.Read(buffer, 0, (int)stream.Length);
+
+    return (buffer, (int)stream.Length);
+}
+```
+
+Using this approach, buffers are now rented from a pool, which means that in most cases we're able to skip an allocation. Additionally, since rented buffers are not cleared by default, we can also save the time needed to fill them with zeros, which gives us another small performance improvement. In the example above, loading 1000 files would bring the total allocation size from around 1MB down to just 1024 bytes - just a single buffer would effectively be allocated, and then reused automatically.
+
+There are two main issues with the code above:
+- `ArrayPool<T>` might return buffers that have a size greater than the requested one. To work around this issue, we need to return a tuple which also indicates the actual used size into our rented buffer.
+- By simply returning an array, we need to be extra careful to properly track its lifetime and to return it to the appropriate pool. We might work around this issue by using [`MemoryPool<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.memorypool-1) instead and by returning an `IMemoryOwner<T>` instance, but we still have the problem of rented buffers having a greater size than what we need. Additionally, `IMemoryOwner<T>` has some overhead when retrieving a `Span<T>` to work on, due to it being an interface, and the fact that we always need to get a `Memory<T>` instance first, and then a `Span<T>`.
+
+To solve both these issues, we can refactor this code again by using `MemoryOwner<T>`:
+
+```csharp
+public static MemoryOwner<byte> GetBytesFromFile(string path)
+{
+    using Stream stream = File.OpenRead(path);
+
+    MemoryOwner<byte> buffer = MemoryOwner<byte>.Allocate((int)stream.Length);
 
     stream.Read(buffer.Span);
 
@@ -75,9 +96,7 @@ public static IMemoryOwner<byte> GetBytesFromFile(string path)
 }
 ```
 
-Using this approach, buffers are now rented from a pool, which means that in most cases we're able to skip an allocation. Additionally, since rented buffers are not cleared by default, we can also save the time needed to fill them with zeros, which gives us another small performance improvement. In the example above, loading 1000 files would bring the total allocation size from around 1MB down to just 1024 bytes - just a single buffer would effectively be allocated, and then reused automatically.
-
-The returned `IMemoryOwner<byte>` instance will take care of disposing the underlying buffer and returning it to the pool when its [`IDisposable.Dispose`](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose) method is invoked. We can use it to get a `Memory<T>` or `Span<T>` instance to interact with the loaded data, and then dispose the instance when we no longer need it.
+The returned `IMemoryOwner<byte>` instance will take care of disposing the underlying buffer and returning it to the pool when its [`IDisposable.Dispose`](https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose) method is invoked. We can use it to get a `Memory<T>` or `Span<T>` instance to interact with the loaded data, and then dispose the instance when we no longer need it. Additionally, all the `MemoryOwner<T>` properties (like `MemoryOwner<T>.Span`) respect the initial requested size we used, so we no longer need to manually keep track of the effective size within the rented buffer.
 
 ## Properties
 
