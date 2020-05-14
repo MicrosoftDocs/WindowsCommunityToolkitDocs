@@ -59,7 +59,7 @@ And here is the same method, but using the new `Guard.APIs` to validate the inpu
 public static void SampleMethod(int[] array, int index, Span<int> span, string text)
 {
     Guard.IsNotNull(array, nameof(array));
-    Guard.HasSizeAtLeast(array, 10, nameof(array));
+    Guard.HasSizeGreaterThanOrEqualTo(array, 10, nameof(array));
     Guard.IsInRangeFor(index, array, nameof(index));
     Guard.HasSizeLessThanOrEqualTo(array, span, nameof(span));
     Guard.IsNotNullOrEmpty(text, nameof(text));
