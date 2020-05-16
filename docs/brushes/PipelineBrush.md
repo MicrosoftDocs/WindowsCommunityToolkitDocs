@@ -14,7 +14,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 
 ## Syntax
 
-```xaml
+```xml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <brushes:PipelineBrush>

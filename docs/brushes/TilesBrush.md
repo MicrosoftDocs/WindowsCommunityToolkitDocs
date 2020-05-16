@@ -14,7 +14,7 @@ The [TilesBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.
 
 ## Syntax
 
-```xaml
+```xml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <brushes:TilesBrush TextureUri="ms-appx:///Assets/BrushAssets/TileTexture.png"/>
