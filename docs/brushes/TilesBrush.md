@@ -58,5 +58,4 @@ Brush brush = PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png".T
 
 ## Related Topics
 
-* [Win2D GaussianBlurEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
 * [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
