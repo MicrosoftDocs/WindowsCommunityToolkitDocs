@@ -36,7 +36,7 @@ The [AcrylicBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 | Property | Type | Description |
 | -- | -- | -- |
 | Source | AcrylicBackgroundSource | The source mode for the effect. |
-| BlurAmount | double | The blur amount for the effect. |
+| BlurAmount | double | The blur amount for the effect (ignored when using HostBackdrop source). |
 | Tint | Color | The tint for the effect. |
 | TintMix | double | The tint mix factor for the effect. |
 | TextureUri | Uri | The `Uri` for the texture to use. |
