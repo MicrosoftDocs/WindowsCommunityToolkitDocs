@@ -31,6 +31,7 @@ The [TilesBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.
 | Property | Type | Description |
 | -- | -- | -- |
 | TextureUri | Uri | The `Uri` for the texture to use. |
+| DpiMode | DpiMode | The DPI mode used to render the texture (the default is `DpiMode.DisplayDpiWith96AsLowerBound`) |
 
 ## Code behind support
 
