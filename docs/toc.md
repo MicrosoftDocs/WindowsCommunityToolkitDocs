@@ -167,10 +167,10 @@
 # High performance
 ## [Introduction](high-performance/Introduction.md)
 ## Buffers
-### [MemoryOwner&lt;T>](high-performance/MemoryOwner.md)
-### [SpanOwner&lt;T>](high-performance/SpanOwner.md)
+### [MemoryOwner<T>](high-performance/MemoryOwner.md)
+### [SpanOwner<T>](high-performance/SpanOwner.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
-## [Ref&lt;T> and ReadOnlyRef&lt;T>](high-performance/Ref.md)
+## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
 
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
