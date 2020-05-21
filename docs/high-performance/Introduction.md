@@ -50,3 +50,8 @@ This package makes heavy use of APIs such as:
 
 If you are already familiar with these APIs or even if you're just getting started with writing high performance code in C# and want a set of well tested helpers to use in your own projects, have a look at what's included in this package to see how you can use it in your own projects!
 
+## Where to start?
+
+Here are some APIs you could look at first, if you were already using one of those types mentioned above:
+- [MemoryOwner<T>](high-performance/MemoryOwner.md) and [SpanOwner<T>](high-performance/SpanOwner.md), if you were using `System.Buffers.ArrayPool<T>`.
+- [ParallelHelper](high-performance/ParallelHelper.md), if you were using `System.Threading.Tasks.Parallel`.
