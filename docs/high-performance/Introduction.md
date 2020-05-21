@@ -53,5 +53,5 @@ If you are already familiar with these APIs or even if you're just getting start
 ## Where to start?
 
 Here are some APIs you could look at first, if you were already using one of those types mentioned above:
-- [MemoryOwner<T>](high-performance/MemoryOwner.md) and [SpanOwner<T>](high-performance/SpanOwner.md), if you were using `System.Buffers.ArrayPool<T>`.
-- [ParallelHelper](high-performance/ParallelHelper.md), if you were using `System.Threading.Tasks.Parallel`.
+- [MemoryOwner<T>](MemoryOwner.md) and [SpanOwner<T>](SpanOwner.md), if you were using `System.Buffers.ArrayPool<T>`.
+- [ParallelHelper](ParallelHelper.md), if you were using `System.Threading.Tasks.Parallel`.
