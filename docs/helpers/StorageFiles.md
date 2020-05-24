@@ -102,7 +102,7 @@ Dim isFilePathValid As Boolean = StorageFileHelper.IsFilePathValid("folder/appFi
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/Helpers/Test_StorageFileHelper.cs)
+You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.UWP/Helpers/Test_StorageFileHelper.cs)
 
 ## Requirements
 

@@ -46,4 +46,4 @@ For a type that has additions, the additions are listed alongside
 
 <!-- Optional -->
 
-- [Platform Specific Analyzer](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.platformspecificanalyzer)
+- [Platform Specific Analyzer](./platformspecificanalyzer)
