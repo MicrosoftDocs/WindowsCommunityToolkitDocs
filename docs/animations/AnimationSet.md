@@ -83,14 +83,14 @@ You can change the way how the animation interpolates between keyframes by defin
 | Dispose() | Dispose resources |
 | RemoveCompositionAnimation(String) | Removes a composition animation from being run on Visual property |
 | RemoveCompositionDirectPropertyChange(String) | Removes a composition property change |
-| SetDelay(Double) | Ovewrites the delay time on all animations after last Then() to the specified value |
-| SetDelay(TimeSpan) | Ovewrites the delay time on all animations after last Then() to the specified value |
-| SetDelayForAll(Double)| Ovewrites the delay time on all animations to the specified value |
-| SetDelayForAll(TimeSpan) | Ovewrites the delay time on all animations to the specified value |
-| SetDuration(Double) | Ovewrites the duration on all animations after last Then() to the specified value |
-| SetDuration(TimeSpan) | Ovewrites the duration on all animations after last Then() to the specified value |
-| SetDurationForAll(Double) | Ovewrites the duration on all animations to the specified value |
-| SetDurationForAll(TimeSpan) | Ovewrites the duration on all animations to the specified value |
+| SetDelay(Double) | Overwrites the delay time on all animations after last Then() to the specified value |
+| SetDelay(TimeSpan) | Overwrites the delay time on all animations after last Then() to the specified value |
+| SetDelayForAll(Double)| Overwrites the delay time on all animations to the specified value |
+| SetDelayForAll(TimeSpan) | Overwrites the delay time on all animations to the specified value |
+| SetDuration(Double) | Overwrites the duration on all animations after last Then() to the specified value |
+| SetDuration(TimeSpan) | Overwrites the duration on all animations after last Then() to the specified value |
+| SetDurationForAll(Double) | Overwrites the duration on all animations to the specified value |
+| SetDurationForAll(TimeSpan) | Overwrites the duration on all animations to the specified value |
 | Start() | Starts all animations. This method is not awaitable. |
 | StartAsync() | Starts all animations and returns an awaitable task |
 | Stop() | Stops all animations |
