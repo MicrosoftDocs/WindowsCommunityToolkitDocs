@@ -17,24 +17,18 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 ```xml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
-    <brushes:PipelineBrush>
-        <brushes:PipelineBrush.Effects>
-            <effects:BackdropEffect Source="Backdrop"/>
-            <effects:LuminanceToAlphaEffect/>
-            <effects:OpacityEffect Value="0.4"/>
-            <effects:BlendEffect Mode="Multiply">
-            <effects:BlendEffect.Input>
-                <effects:BackdropEffect Source="Backdrop"/>
-            </effects:BlendEffect.Input>
-            </effects:BlendEffect>
-            <effects:BlurEffect Value="16"/>
-            <effects:ShadeEffect Color="#FF222222" Intensity="0.2"/>
-            <effects:BlendEffect Mode="Overlay" Placement="Background">
-            <effects:BlendEffect.Input>
-                <effects:TileEffect Uri="ms-appx:///Assets/BrushAssets/NoiseTexture.png"/>
-            </effects:BlendEffect.Input>
-            </effects:BlendEffect>
-        </brushes:PipelineBrush.Effects>
+    <media:PipelineBrush Source="{effects:BackdropSource}">
+      <effects:LuminanceToAlphaEffect/>
+      <effects:OpacityEffect Value="0.4"/>
+      <effects:BlendEffect
+        Mode="Multiply"
+        Source="{effects:BackdropSource}"/>
+      <effects:BlurEffect Value="16"/>
+      <effects:ShadeEffect Color="#FF222222" Intensity="0.2"/>
+      <effects:BlendEffect
+        Mode="Overlay"
+        Placement="Foreground"
+        Source="{effects:TileSource Uri=ms-appx:///Assets/BrushAssets/NoiseTexture.png}"/>
     </brushes:PipelineBrush>
   </Border.Background>
 </Border>
@@ -48,6 +42,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 
 | Property | Type | Description |
 | -- | -- | -- |
+| Source | PipelineBuilder | The source for the current pipeline |
 | Effects | IList<IPipelineEffect> | The collection of effects to use in the current pipeline. |
 
 ## Code behind support
@@ -68,7 +63,7 @@ Brush brush =
     .Blend(
       PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png"),
       BlendEffectMode.Overlay,
-      Placement.Background)
+      Placement.Foreground)
     .AsBrush();
 ```
 
