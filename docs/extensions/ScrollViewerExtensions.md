@@ -5,7 +5,7 @@ description: ScrollViewerEx provides a simple way to manage Margin for any Scrol
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ScrollViewer, extentions
 ---
 
-# ScrollViewer extentions
+# ScrollViewer extensions
 
 The [ScrollViewerExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.scrollviewerextensions) provide extension methods to improve your ScrollViewer implementation.
 
@@ -115,7 +115,7 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 
 ### Edit Existing Resource File
 
-You can easily edit the existing resource file to customise the cursor depending upon your needs.
+You can easily edit the existing resource file to customize the cursor depending upon your needs.
 
 1. Follow the above steps to add the resource file
 2. Open MiddleClickScrolling-CursorType.res file in Visual Studio
