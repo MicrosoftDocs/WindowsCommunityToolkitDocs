@@ -24,6 +24,9 @@
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="6.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction" Version="255.255.255.255" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost" Version="255.255.255.255" />
   </Assemblies>
   <Namespace Name="Microsoft.Toolkit.Collections">
     <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
@@ -2753,6 +2756,181 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.OnError" />
       <Member Id="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.OnStartLoading" />
       <Member Id="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Source" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs.Handled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Progress" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.State" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Complete" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Fixating" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Idle" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Progressing" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.DwellProgressFeedback" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.Invoked" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.StateChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Set(Windows.Foundation.Point,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Capabilities" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Configuration" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_ConfigurationStatus" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Control" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DeviceModeRequest" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerDate" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayProductId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplaySerialNumber" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_EyeTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_GazePoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadDirectionPoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadPosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_LeftEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MinimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_OptimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RightEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_SamplingFrequency" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Status" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Timestamp" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackerQuality" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackingData" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.UsagePage_EyeHeadTracker" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailableChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetCursorRadius(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellRepeatDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetFixationDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazeElement(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazePointer(Windows.UI.Xaml.Controls.Page)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetInteraction(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsCursorVisible(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsSwitchEnabled(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetRepeatDelayDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetThresholdDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Invoke(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetCursorRadius(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellRepeatDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetFixationDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetGazeElement(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetInteraction(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsCursorVisible(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsSwitchEnabled(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetRepeatDelayDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetThresholdDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadiusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackCompleteBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackEnterBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackProgressBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellStrokeThickness" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElementProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Interaction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.InteractionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCountProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDurationProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.GazeEvent" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Click" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Close" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.RequestCalibrationAsync" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.CursorElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.IsAlwaysActivated" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper.RetrieveSharedSettings(Windows.Foundation.Collections.ValueSet)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Update(System.Single,System.Single)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Mean" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.StandardDeviation" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Enabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Inherited" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Dwell" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.DwellRepeat" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Enter" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Exit" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Fixation" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.PreEnter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.ElapsedTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.PointerState" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.X" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Y" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.GetPosition(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadPosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadRotation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.LeftEyePosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.RightEyePosition" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.GetGazeHidPositions(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.GetRotation(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Notifications">
@@ -7291,6 +7469,73 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Helpers.ThemeListener.IsHighContrast" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Lottie">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.Issue" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.Issue">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.ToString" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Code" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Description" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.Issue.Url" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateCSharpCode" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateCxCode(System.String,System.String@,System.String@)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateLottieXml" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.GenerateWinCompXml" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Duration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.FileName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.InstantiationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.JsonParsingIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieDetails" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieHeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieValidationIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieVersion" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.LottieWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Markers" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.OptimizationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.Options" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ParseTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ReadTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.SuggestedClassName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.SuggestedFileName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.TranslationIssues" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.TranslationTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualDiagnostics.ValidationTime" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.All" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.IncludeDiagnostics" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.None" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualOptions.Optimize" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.AnimatedVisualInvalidated" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.#ctor(Windows.Storage.StorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.CreateFromString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetSourceAsync(Windows.Foundation.Uri)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetSourceAsync(Windows.Storage.StorageFile)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.ToString" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.TryCreateAnimatedVisual(Windows.UI.Composition.Compositor,System.Object@)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.Windows#Foundation#IStringable#ToString" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.Options" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.OptionsProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.UriSource" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.UriSourceProperty" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(Windows.UI.Xaml.Interop.TypeName)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Lottie.Lottie_Windows_XamlTypeInfo.XamlMetaDataProvider.Windows#Foundation#IStringable#ToString" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Media">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Media.AlphaMode" Id="T:Microsoft.Toolkit.Uwp.UI.Media.AlphaMode">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.AlphaMode.Premultiplied" />
@@ -8702,8 +8947,20 @@
       <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative.AttachToWindow(System.IntPtr)" />
       <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.IDesktopWindowXamlSourceNative.WindowHandle" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.IXamlMetadataContainer" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.IXamlMetadataContainer">
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.IXamlMetadataContainer.MetadataProviders" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory.CreateXamlContentByType(System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication">
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.#ctor(Windows.Foundation.Collections.IVector{Windows.UI.Xaml.Markup.IXamlMetadataProvider})" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.Close" />
+      <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.Initialize" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.IsDisposed" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.MetadataProviders" />
+      <Member Id="P:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplication.WindowsXamlManager" />
     </Type>
     <Type Name="Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplicationExtensions" Id="T:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplicationExtensions">
       <Member Id="M:Microsoft.Toolkit.Win32.UI.XamlHost.XamlApplicationExtensions.GetOrCreateXamlMetadataContainer" />
