@@ -3,6 +3,9 @@ title: WindowsXAMLHost control
 author: mcleanbyron
 description: This guide helps you add UWP XAML controls to your WPF.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, host controls, xaml islands, WPF, Windows Forms
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # WindowsXamlHost control for Windows Forms and WPF
@@ -97,6 +100,18 @@ Before getting started, follow these instructions to install the necessary NuGet
         MessageBox.Show("My UWP button works");
     }
     ```
+    ```vb
+    Private Sub MyWindowsXAMLHost_ChildChanged(sender As Object, e As EventArgs)
+        Dim windowsXamlHost As WindowsXamlHost = CType(sender, WindowsXamlHost)
+        Dim button As Windows.UI.Xaml.Controls.Button = CType(windowsXamlHost.Child, Windows.UI.Xaml.Controls.Button)
+        button.Content = "My UWP button"
+        AddHandler button.Click, AddressOf Button_Click
+    End Sub
+
+    Private Sub Button_Click(sender As Object, e As Windows.UI.Xaml.RoutedEventArgs)
+        MessageBox.Show("My UWP button works")
+    End Sub
+    ```
 
 ### Create and host UWP controls dynamically at run time
 
@@ -138,6 +153,36 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("This is a UWP button.");
 }
+```
+```vb
+Private Sub UseHelperMethod()
+    Dim myHostControl As Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost = New Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost()
+
+    ' Use helper method to create a UWP control instance.
+    Dim myButton As Windows.UI.Xaml.Controls.Button = TryCast(Microsoft.Toolkit.Win32.UI.XamlHost.UWPTypeFactory.CreateXamlContentByType("Windows.UI.Xaml.Controls.Button"), Windows.UI.Xaml.Controls.Button)
+
+    ' Initialize UWP control.
+    myButton.Name = "button1"
+    myButton.Width = 75
+    myButton.Height = 40
+    myButton.TabIndex = 0
+    myButton.Content = "button1"
+    AddHandler myButton.Click, AddressOf MyButton_Click
+
+    ' initialize the Windows XAML host control.
+    myHostControl.Name = "myWindowsXamlHostControl"
+
+    ' Associate the Windows XAML host control with the UWP control.
+    ' For Windows Forms applications, you might use this.Controls.Add(myHostControl);
+    myHostControl.Child = myButton
+
+    ' Make the UWP control appear in the UI.
+    Me.MyStackPanel.Children.Add(myHostControl)
+End Sub
+
+Private Sub MyButton_Click(sender As Object, e As Windows.UI.Xaml.RoutedEventArgs)
+    MessageBox.Show("My UWP button works")
+End Sub
 ```
 
 ### Initialize UWP controls first, and then assign them to WindowsXamlHost controls
@@ -184,6 +229,40 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
 {
     MessageBox.Show("This is a UWP button.");
 }
+```
+```vb
+Private Sub CreateUWPControlsFirst()
+    ' Initialize the UWP hosting environment.
+    Windows.UI.Xaml.Hosting.WindowsXamlManager.InitializeForCurrentThread()
+
+    ' Create a UWP control.
+    Dim myButton As Windows.UI.Xaml.Controls.Button = New Windows.UI.Xaml.Controls.Button()
+
+    ' Initialize UWP control.
+    myButton.Name = "button1"
+    myButton.Width = 75
+    myButton.Height = 40
+    myButton.TabIndex = 0
+    myButton.Content = "button1"
+    AddHandler myButton.Click, AddressOf MyButton_Click
+
+    ' Create a Windows XAML host control.
+    Dim myHostControl As Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost = New Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost()
+
+    ' initialize the Windows XAML host control.
+    myHostControl.Name = "myWindowsXamlHostControl"
+
+    ' Associate the Windows XAML host control with the UWP control.
+    myHostControl.Child = myButton
+
+    ' Make the UWP control appear in the UI.
+    ' For Windows Forms applications, you might use this.Controls.Add(myHostControl);
+    Me.MyStackPanel.Children.Add(myHostControl)
+End Sub
+
+Private Sub MyButton_Click(sender As Object, e As Windows.UI.Xaml.RoutedEventArgs)
+    MessageBox.Show("My UWP button works")
+End Sub
 ```
 
 ## Sample Project
