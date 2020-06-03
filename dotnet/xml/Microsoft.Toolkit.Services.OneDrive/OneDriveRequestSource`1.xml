@@ -51,6 +51,7 @@
       <MemberSignature Language="C#" Value="public OneDriveRequestSource (Microsoft.Graph.IBaseClient provider, Microsoft.Graph.IBaseRequestBuilder requestBuilder, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy orderBy, string filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Graph.IBaseClient provider, class Microsoft.Graph.IBaseRequestBuilder requestBuilder, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/OrderBy orderBy, string filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.#ctor(Microsoft.Graph.IBaseClient,Microsoft.Graph.IBaseRequestBuilder,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (provider As IBaseClient, requestBuilder As IBaseRequestBuilder, orderBy As MicrosoftGraphEnums.OrderBy, filter As String)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt; : Microsoft.Graph.IBaseClient * Microsoft.Graph.IBaseRequestBuilder * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.OrderBy * string -&gt; Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt;" Usage="new Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource&lt;'T&gt; (provider, requestBuilder, orderBy, filter)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -76,9 +77,10 @@
       </Docs>
     </Member>
     <Member MemberName="GetPagedItemsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt; GetPagedItemsAsync (int pageIndex, int pageSize, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;T&gt;&gt; GetPagedItemsAsync (int pageIndex, int pageSize, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!T&gt;&gt; GetPagedItemsAsync(int32 pageIndex, int32 pageSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveRequestSource`1.GetPagedItemsAsync(System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPagedItemsAsync (pageIndex As Integer, pageSize As Integer, Optional cancellationToken As CancellationToken = null) As Task(Of IEnumerable(Of T))" />
       <MemberSignature Language="F#" Value="abstract member GetPagedItemsAsync : int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'T&gt;&gt;&#xA;override this.GetPagedItemsAsync : int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'T&gt;&gt;" Usage="oneDriveRequestSource.GetPagedItemsAsync (pageIndex, pageSize, cancellationToken)" />
       <MemberType>Method</MemberType>
       <Implements>

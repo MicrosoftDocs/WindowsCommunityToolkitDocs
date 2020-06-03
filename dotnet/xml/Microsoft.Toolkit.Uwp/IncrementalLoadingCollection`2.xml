@@ -44,7 +44,7 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (int itemsPerPage = 20, Action onStartLoading = default, Action onEndLoading = default, Action&lt;Exception&gt; onError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
@@ -82,7 +82,7 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (TSource source, int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (TSource source, int itemsPerPage = 20, Action onStartLoading = default, Action onEndLoading = default, Action&lt;Exception&gt; onError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSource source, int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(`0,System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (source As TSource, Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
@@ -219,6 +219,7 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt; LoadDataAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!IType&gt;&gt; LoadDataAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.LoadDataAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadDataAsync (cancellationToken As CancellationToken) As Task(Of IEnumerable(Of IType))" />
       <MemberSignature Language="F#" Value="abstract member LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;&#xA;override this.LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;" Usage="incrementalLoadingCollection.LoadDataAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
