@@ -1,0 +1,705 @@
+<Type Name="TileContentBuilder" FullName="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder">
+  <TypeSignature Language="C#" Value="public class TileContentBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TileContentBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class TileContentBuilder" />
+  <TypeSignature Language="F#" Value="type TileContentBuilder = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Builder class used to create <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContent" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TileContentBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAdaptiveTileVisualChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddAdaptiveTileVisualChild (Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild child, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddAdaptiveTileVisualChild(class Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild child, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.AddAdaptiveTileVisualChild(Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAdaptiveTileVisualChild (child As ITileBindingContentAdaptiveChild, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddAdaptiveTileVisualChild : Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.AddAdaptiveTileVisualChild (child, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Toolkit.Uwp.Notifications.ITileBindingContentAdaptiveChild" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="child">An adaptive child to add</param>
+        <param name="size">Tile size that the adaptive child should be added to. Default to all currently supported tile size.</param>
+        <summary>
+            Add an adaptive child to the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>
+            This can be used to add Group and Subgroup to the tile.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddText">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddText (string text, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle? hintStyle = default, bool? hintWrap = default, int? hintMaxLines = default, int? hintMinLines = default, Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign? hintAlign = default, string language = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddText(string text, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt; hintStyle, valuetype System.Nullable`1&lt;bool&gt; hintWrap, valuetype System.Nullable`1&lt;int32&gt; hintMaxLines, valuetype System.Nullable`1&lt;int32&gt; hintMinLines, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt; hintAlign, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.AddText(System.String,Microsoft.Toolkit.Uwp.Notifications.TileSize,System.Nullable{Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddText (text As String, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, Optional hintStyle As Nullable(Of AdaptiveTextStyle) = null, Optional hintWrap As Nullable(Of Boolean) = null, Optional hintMaxLines As Nullable(Of Integer) = null, Optional hintMinLines As Nullable(Of Integer) = null, Optional hintAlign As Nullable(Of AdaptiveTextAlign) = null, Optional language As String = null) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddText : string * Microsoft.Toolkit.Uwp.Notifications.TileSize * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt; * string -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.AddText (text, size, hintStyle, hintWrap, hintMaxLines, hintMinLines, hintAlign, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+        <Parameter Name="hintStyle" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt;" />
+        <Parameter Name="hintWrap" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="hintMaxLines" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintMinLines" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintAlign" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt;" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">Custom text to display on the tile.</param>
+        <param name="size">The tile size that the custom text would be added to. Default to all currently supported tile size.</param>
+        <param name="hintStyle">Style that controls the text's font size, weight, and opacity.</param>
+        <param name="hintWrap">Indicating whether text wrapping is enabled. For Tiles, this is false by default.</param>
+        <param name="hintMaxLines">The maximum number of lines the text element is allowed to display. For Tiles, this is infinity by default</param>
+        <param name="hintMinLines">The minimum number of lines the text element must display.</param>
+        <param name="hintAlign">The horizontal alignment of the text</param>
+        <param name="language">
+            The target locale of the XML payload, specified as a BCP-47 language tags such as "en-US" or "fr-FR". The locale specified here overrides any other specified locale, such as that in binding or visual.
+            </param>
+        <summary>
+            Add a custom text that will appear on the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTile">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddTile (Microsoft.Toolkit.Uwp.Notifications.TileSize size, Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent tileContent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder AddTile(valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size, class Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent tileContent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.AddTile(Microsoft.Toolkit.Uwp.Notifications.TileSize,Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTile (size As TileSize, Optional tileContent As ITileBindingContent = null) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddTile : Microsoft.Toolkit.Uwp.Notifications.TileSize * Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.AddTile (size, tileContent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+        <Parameter Name="tileContent" Type="Microsoft.Toolkit.Uwp.Notifications.ITileBindingContent" />
+      </Parameters>
+      <Docs>
+        <param name="size">The size of tile that the notification will be displayed on.</param>
+        <param name="tileContent">Specialized tile content. Use for special tile template. Default to NULL.</param>
+        <summary>
+            Add a tile layout size that the notification will be displayed on.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AllSize">
+      <MemberSignature Language="C#" Value="public const Microsoft.Toolkit.Uwp.Notifications.TileSize AllSize = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize AllSize = (7)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.AllSize" />
+      <MemberSignature Language="VB.NET" Value="Public Const AllSize As TileSize  = 7" />
+      <MemberSignature Language="F#" Value="val mutable AllSize : Microsoft.Toolkit.Uwp.Notifications.TileSize" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.AllSize" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileSize</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>
+            Flag used to create all tile size (Small , Medium, Large and Wide)
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContent Content { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Uwp.Notifications.TileContent Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As TileContent" />
+      <MemberSignature Language="F#" Value="member this.Content : Microsoft.Toolkit.Uwp.Notifications.TileContent" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets internal instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContent" />. This is equivalent to the call to <see cref="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.GetTileContent" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateContactTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentContact CreateContactTileContent (Uri contactImageUri, string contactName, string contactImageAltText = default, bool? contactImageAddImageQuery = default, string textLanguage = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentContact CreateContactTileContent(class System.Uri contactImageUri, string contactName, string contactImageAltText, valuetype System.Nullable`1&lt;bool&gt; contactImageAddImageQuery, string textLanguage) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreateContactTileContent(System.Uri,System.String,System.String,System.Nullable{System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateContactTileContent (contactImageUri As Uri, contactName As String, Optional contactImageAltText As String = null, Optional contactImageAddImageQuery As Nullable(Of Boolean) = null, Optional textLanguage As String = null) As TileBindingContentContact" />
+      <MemberSignature Language="F#" Value="static member CreateContactTileContent : Uri * string * string * Nullable&lt;bool&gt; * string -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentContact" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreateContactTileContent (contactImageUri, contactName, contactImageAltText, contactImageAddImageQuery, textLanguage)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentContact</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="contactImageUri" Type="System.Uri" />
+        <Parameter Name="contactName" Type="System.String" />
+        <Parameter Name="contactImageAltText" Type="System.String" />
+        <Parameter Name="contactImageAddImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="textLanguage" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="contactImageUri">Source for the contact picture</param>
+        <param name="contactName">Name of the contact</param>
+        <param name="contactImageAltText">A description of the contact image, for users of assistive technologies.</param>
+        <param name="contactImageAddImageQuery">Indicating whether Windows should append a query string to the image URI supplied in the Tile notification.</param>
+        <param name="textLanguage">Gets or sets the target locale of the XML payload, specified as a BCP-47 language tags such as "en-US" or "fr-FR". The locale specified here overrides any other specified locale, such as that in binding or visual.</param>
+        <summary>
+            Helper method for creating a tile notification content for using Contact tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentContact" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateIconicTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentIconic CreateIconicTileContent (Uri iconImageUri, string iconImageAltText = default, bool? iconImageAddImageQuery = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentIconic CreateIconicTileContent(class System.Uri iconImageUri, string iconImageAltText, valuetype System.Nullable`1&lt;bool&gt; iconImageAddImageQuery) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreateIconicTileContent(System.Uri,System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateIconicTileContent (iconImageUri As Uri, Optional iconImageAltText As String = null, Optional iconImageAddImageQuery As Nullable(Of Boolean) = null) As TileBindingContentIconic" />
+      <MemberSignature Language="F#" Value="static member CreateIconicTileContent : Uri * string * Nullable&lt;bool&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentIconic" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreateIconicTileContent (iconImageUri, iconImageAltText, iconImageAddImageQuery)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentIconic</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="iconImageUri" Type="System.Uri" />
+        <Parameter Name="iconImageAltText" Type="System.String" />
+        <Parameter Name="iconImageAddImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="iconImageUri">Source of the icon image.</param>
+        <param name="iconImageAltText">A description of the icon image, for users of assistive technologies.</param>
+        <param name="iconImageAddImageQuery">Indicating whether Windows should append a query string to the image URI supplied in the Tile notification.</param>
+        <summary>
+            Helper method for creating a tile notification content for using Iconic tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentIconic" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePeopleTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent (System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; peoplePictures);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; peoplePictures) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent(System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Notifications.TileBasicImage})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePeopleTileContent (peoplePictures As IEnumerable(Of TileBasicImage)) As TileBindingContentPeople" />
+      <MemberSignature Language="F#" Value="static member CreatePeopleTileContent : seq&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent peoplePictures" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peoplePictures" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="peoplePictures">Pictures that will be used on the people tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using People tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePeopleTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent (params Uri[] peoplePictureSources);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent(class System.Uri[] peoplePictureSources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent(System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePeopleTileContent (ParamArray peoplePictureSources As Uri()) As TileBindingContentPeople" />
+      <MemberSignature Language="F#" Value="static member CreatePeopleTileContent : Uri[] -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent peoplePictureSources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peoplePictureSources" Type="System.Uri[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="peoplePictureSources">Sources of pictures that will be used on the people tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using People tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePeopleTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent (params ValueTuple&lt;Uri,string,Nullable&lt;bool&gt;&gt;[] peoplePictures);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople CreatePeopleTileContent(valuetype System.ValueTuple`3&lt;class System.Uri, string, valuetype System.Nullable`1&lt;bool&gt;&gt;[] peoplePictures) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent(System.ValueTuple{System.Uri,System.String,System.Nullable{System.Boolean}}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePeopleTileContent (ParamArray peoplePictures As ValueTuple(Of Uri, String, Nullable(Of Boolean))()) As TileBindingContentPeople" />
+      <MemberSignature Language="F#" Value="static member CreatePeopleTileContent : ValueTuple&lt;Uri, string, Nullable&lt;bool&gt;&gt;[] -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePeopleTileContent peoplePictures" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peoplePictures" Type="System.ValueTuple&lt;System.Uri,System.String,System.Nullable&lt;System.Boolean&gt;&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "source", "imageAltText", "addImageQuery" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="peoplePictures">Sources of pictures with description and image query indicator that will be used on the people tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using People tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPeople" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePhotosTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent (System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; photos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; photos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent(System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.Notifications.TileBasicImage})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePhotosTileContent (photos As IEnumerable(Of TileBasicImage)) As TileBindingContentPhotos" />
+      <MemberSignature Language="F#" Value="static member CreatePhotosTileContent : seq&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent photos" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photos" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.Notifications.TileBasicImage&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="photos">Pictures that will be used for the photos tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using Photos tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePhotosTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent (params Uri[] photoSources);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent(class System.Uri[] photoSources) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent(System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePhotosTileContent (ParamArray photoSources As Uri()) As TileBindingContentPhotos" />
+      <MemberSignature Language="F#" Value="static member CreatePhotosTileContent : Uri[] -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent photoSources" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoSources" Type="System.Uri[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="photoSources">Sources of pictures that will be used on the photos tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using Photos tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePhotosTileContent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent (params ValueTuple&lt;Uri,string,Nullable&lt;bool&gt;&gt;[] photos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos CreatePhotosTileContent(valuetype System.ValueTuple`3&lt;class System.Uri, string, valuetype System.Nullable`1&lt;bool&gt;&gt;[] photos) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent(System.ValueTuple{System.Uri,System.String,System.Nullable{System.Boolean}}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePhotosTileContent (ParamArray photos As ValueTuple(Of Uri, String, Nullable(Of Boolean))()) As TileBindingContentPhotos" />
+      <MemberSignature Language="F#" Value="static member CreatePhotosTileContent : ValueTuple&lt;Uri, string, Nullable&lt;bool&gt;&gt;[] -&gt; Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" Usage="Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.CreatePhotosTileContent photos" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photos" Type="System.ValueTuple&lt;System.Uri,System.String,System.Nullable&lt;System.Boolean&gt;&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "source", "imageAltText", "addImageQuery" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="photos">Sources of pictures with description and addImageQuery indicator that will be used for the photos tile.</param>
+        <summary>
+            Helper method for creating a tile notification content for using Photos tile template.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBindingContentPhotos" /> represent a payload of a tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTileContent">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContent GetTileContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContent GetTileContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.GetTileContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTileContent () As TileContent" />
+      <MemberSignature Language="F#" Value="member this.GetTileContent : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContent" Usage="tileContentBuilder.GetTileContent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContent</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Get the instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContent" /> that has been built by the builder with specified configuration so far.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContent" /> that can be used to create tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetActivationArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetActivationArgument (string args, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetActivationArgument(string args, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetActivationArgument(System.String,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetActivationArgument (args As String, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetActivationArgument : string * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetActivationArgument (args, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.String" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="args">App-Defined custom arguments that will be passed in when the user click on the tile when this tile notification is being displayed.</param>
+        <param name="size">The tile size that the custom argument should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set the tile's activation arguments for chasable tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackgroundImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBackgroundImage (Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage backgroundImage, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBackgroundImage(class Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage backgroundImage, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetBackgroundImage(Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBackgroundImage (backgroundImage As TileBackgroundImage, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetBackgroundImage : Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetBackgroundImage (backgroundImage, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="backgroundImage" Type="Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="backgroundImage">An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImage" /> as the background image for the tile.</param>
+        <param name="size">The tile size that the background image should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set the optional background image that stays behind the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackgroundImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBackgroundImage (Uri imageUri, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, string alternateText = default, bool? addImageQuery = default, int? hintOverlay = default, Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop hintCrop = Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop.Default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBackgroundImage(class System.Uri imageUri, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size, string alternateText, valuetype System.Nullable`1&lt;bool&gt; addImageQuery, valuetype System.Nullable`1&lt;int32&gt; hintOverlay, valuetype Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop hintCrop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetBackgroundImage(System.Uri,Microsoft.Toolkit.Uwp.Notifications.TileSize,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBackgroundImage (imageUri As Uri, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, Optional alternateText As String = null, Optional addImageQuery As Nullable(Of Boolean) = null, Optional hintOverlay As Nullable(Of Integer) = null, Optional hintCrop As TileBackgroundImageCrop = Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop.Default) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetBackgroundImage : Uri * Microsoft.Toolkit.Uwp.Notifications.TileSize * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetBackgroundImage (imageUri, size, alternateText, addImageQuery, hintOverlay, hintCrop)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageUri" Type="System.Uri" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="addImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="hintOverlay" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintCrop" Type="Microsoft.Toolkit.Uwp.Notifications.TileBackgroundImageCrop" />
+      </Parameters>
+      <Docs>
+        <param name="imageUri">Source of the background image</param>
+        <param name="size">The tile size that the background image should be applied to. Default to all currently supported tile size.</param>
+        <param name="alternateText">Description of the background image, for user of assistance technology</param>
+        <param name="addImageQuery">
+            Indicating whether Windows should append a query string to the image URI supplied in the Tile notification.
+            Use this attribute if your server hosts images and can handle query strings, either by retrieving an image variant based on the query strings or by ignoring the query string and returning the image as specified without the query string.
+            This query string specifies scale, contrast setting, and language.
+            </param>
+        <param name="hintOverlay">The opacity of the black overlay on the background image.</param>
+        <param name="hintCrop">Desired cropping of the image.</param>
+        <summary>
+            Set the optional background image that stays behind the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBranding">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBranding (Microsoft.Toolkit.Uwp.Notifications.TileBranding branding, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetBranding(valuetype Microsoft.Toolkit.Uwp.Notifications.TileBranding branding, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetBranding(Microsoft.Toolkit.Uwp.Notifications.TileBranding,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBranding (branding As TileBranding, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetBranding : Microsoft.Toolkit.Uwp.Notifications.TileBranding * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetBranding (branding, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="branding" Type="Microsoft.Toolkit.Uwp.Notifications.TileBranding" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="branding">How branding should appear on the tile</param>
+        <param name="size">The tile size that the <paramref name="branding" /> parameter should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set how the tile notification should display the application branding.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDisplayName">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetDisplayName (string displayName, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetDisplayName(string displayName, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetDisplayName(System.String,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDisplayName (displayName As String, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetDisplayName : string * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetDisplayName (displayName, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="displayName" Type="System.String" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="displayName">Custom name to display on the tile in place of the application's name</param>
+        <param name="size">The tile size that <paramref name="displayName" /> parameter should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set the name that will be used to override the application's name on the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPeekImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetPeekImage (Microsoft.Toolkit.Uwp.Notifications.TilePeekImage peekImage, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetPeekImage(class Microsoft.Toolkit.Uwp.Notifications.TilePeekImage peekImage, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetPeekImage(Microsoft.Toolkit.Uwp.Notifications.TilePeekImage,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPeekImage (peekImage As TilePeekImage, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetPeekImage : Microsoft.Toolkit.Uwp.Notifications.TilePeekImage * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetPeekImage (peekImage, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="peekImage" Type="Microsoft.Toolkit.Uwp.Notifications.TilePeekImage" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="peekImage">An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TilePeekImage" /> for the Tile's peek image </param>
+        <param name="size">The tile size that the peek image should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set the Tile's Peek Image that animate from the top of the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPeekImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetPeekImage (Uri imageUri, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, string alternateText = default, bool? addImageQuery = default, int? hintOverlay = default, Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop hintCrop = Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop.Default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetPeekImage(class System.Uri imageUri, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size, string alternateText, valuetype System.Nullable`1&lt;bool&gt; addImageQuery, valuetype System.Nullable`1&lt;int32&gt; hintOverlay, valuetype Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop hintCrop) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetPeekImage(System.Uri,Microsoft.Toolkit.Uwp.Notifications.TileSize,System.String,System.Nullable{System.Boolean},System.Nullable{System.Int32},Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPeekImage (imageUri As Uri, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide, Optional alternateText As String = null, Optional addImageQuery As Nullable(Of Boolean) = null, Optional hintOverlay As Nullable(Of Integer) = null, Optional hintCrop As TilePeekImageCrop = Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop.Default) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetPeekImage : Uri * Microsoft.Toolkit.Uwp.Notifications.TileSize * string * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetPeekImage (imageUri, size, alternateText, addImageQuery, hintOverlay, hintCrop)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageUri" Type="System.Uri" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="addImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="hintOverlay" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintCrop" Type="Microsoft.Toolkit.Uwp.Notifications.TilePeekImageCrop" />
+      </Parameters>
+      <Docs>
+        <param name="imageUri">Source of the peek image</param>
+        <param name="size">The tile size that the peek image should be applied to. Default to all currently supported tile size.</param>
+        <param name="alternateText">Description of the peek image, for user of assistance technology</param>
+        <param name="addImageQuery">
+            Indicating whether Windows should append a query string to the image URI supplied in the Tile notification.
+            Use this attribute if your server hosts images and can handle query strings, either by retrieving an image variant based on the query strings or by ignoring the query string and returning the image as specified without the query string.
+            This query string specifies scale, contrast setting, and language.
+            </param>
+        <param name="hintOverlay">The opacity of the black overlay on the peek image.</param>
+        <param name="hintCrop">Desired cropping of the image.</param>
+        <summary>
+            Set the Tile's Peek Image that animate from the top of the tile notification.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextStacking">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetTextStacking (Microsoft.Toolkit.Uwp.Notifications.TileTextStacking textStacking, Microsoft.Toolkit.Uwp.Notifications.TileSize size = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder SetTextStacking(valuetype Microsoft.Toolkit.Uwp.Notifications.TileTextStacking textStacking, valuetype Microsoft.Toolkit.Uwp.Notifications.TileSize size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder.SetTextStacking(Microsoft.Toolkit.Uwp.Notifications.TileTextStacking,Microsoft.Toolkit.Uwp.Notifications.TileSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetTextStacking (textStacking As TileTextStacking, Optional size As TileSize = Microsoft.Toolkit.Uwp.Notifications.TileSize.Large | Microsoft.Toolkit.Uwp.Notifications.TileSize.Medium | Microsoft.Toolkit.Uwp.Notifications.TileSize.Wide) As TileContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetTextStacking : Microsoft.Toolkit.Uwp.Notifications.TileTextStacking * Microsoft.Toolkit.Uwp.Notifications.TileSize -&gt; Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" Usage="tileContentBuilder.SetTextStacking (textStacking, size)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textStacking" Type="Microsoft.Toolkit.Uwp.Notifications.TileTextStacking" />
+        <Parameter Name="size" Type="Microsoft.Toolkit.Uwp.Notifications.TileSize" />
+      </Parameters>
+      <Docs>
+        <param name="textStacking">Text Stacking Option</param>
+        <param name="size">The tile size that the peek image should be applied to. Default to all currently supported tile size.</param>
+        <summary>
+            Set the text stacking (vertical alignment) of the entire binding element.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.TileContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

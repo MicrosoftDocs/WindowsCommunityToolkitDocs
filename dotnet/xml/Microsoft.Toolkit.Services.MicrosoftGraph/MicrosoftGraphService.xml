@@ -1,4 +1,4 @@
-﻿<Type Name="MicrosoftGraphService" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService">
+<Type Name="MicrosoftGraphService" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService">
   <TypeSignature Language="C#" Value="public class MicrosoftGraphService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftGraphService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" />
@@ -7,11 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Please use the Microsoft Graph SDK or our new providers at https://aka.ms/wgt")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
              Class for connecting to Office 365 Microsoft Graph
@@ -28,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -38,14 +45,16 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MicrosoftGraphService (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="C#" Value="public MicrosoftGraphService (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, string[] delegatedPermissionScopes = default, Microsoft.Identity.Client.UIParent uiParent = default, string redirectUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.#ctor(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appClientId As String, Optional servicesToInitialize As MicrosoftGraphEnums.ServicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, Optional delegatedPermissionScopes As String() = null, Optional uiParent As UIParent = null, Optional redirectUri As String = null)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService" Usage="new Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="appClientId" Type="System.String" />
@@ -77,6 +86,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -99,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+AuthenticationModel</ReturnType>
@@ -119,6 +130,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -142,6 +154,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -164,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -188,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Graph.GraphServiceClient</ReturnType>
@@ -201,14 +216,16 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="public bool Initialize (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="C#" Value="public bool Initialize (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, string[] delegatedPermissionScopes = default, Microsoft.Identity.Client.UIParent uiParent = default, string redirectUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (appClientId As String, Optional servicesToInitialize As MicrosoftGraphEnums.ServicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, Optional delegatedPermissionScopes As String() = null, Optional uiParent As UIParent = null, Optional redirectUri As String = null) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool" Usage="microsoftGraphService.Initialize (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -234,14 +251,16 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public bool Initialize&lt;T&gt; (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event, string[] delegatedPermissionScopes = null, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null) where T : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
+      <MemberSignature Language="C#" Value="public bool Initialize&lt;T&gt; (string appClientId, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize servicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, string[] delegatedPermissionScopes = default, Microsoft.Identity.Client.UIParent uiParent = default, string redirectUri = default) where T : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize&lt;.ctor (class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos) T&gt;(string appClientId, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums/ServicesToInitialize servicesToInitialize, string[] delegatedPermissionScopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.Initialize``1(System.String,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize(Of T As {IMicrosoftGraphUserServicePhotosNew}) (appClientId As String, Optional servicesToInitialize As MicrosoftGraphEnums.ServicesToInitialize = Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Event | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.Message | Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize.UserProfile, Optional delegatedPermissionScopes As String() = null, Optional uiParent As UIParent = null, Optional redirectUri As String = null) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ServicesToInitialize * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'T : (new : unit -&gt; 'T))" Usage="microsoftGraphService.Initialize (appClientId, servicesToInitialize, delegatedPermissionScopes, uiParent, redirectUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -285,6 +304,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService</ReturnType>
@@ -307,6 +327,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -329,6 +350,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
@@ -350,6 +372,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -363,7 +386,7 @@
       </Docs>
     </Member>
     <Member MemberName="LoginAsync">
-      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; LoginAsync (string loginHint = null);" />
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; LoginAsync (string loginHint = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; LoginAsync(string loginHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService.LoginAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LoginAsync (Optional loginHint As String = null) As Task(Of Boolean)" />
@@ -372,6 +395,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -398,6 +422,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -421,6 +446,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums+ServicesToInitialize</ReturnType>
@@ -443,6 +469,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Services.MicrosoftGraph.SignInFailedEventArgs&gt;</ReturnType>
@@ -464,6 +491,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -471,7 +499,7 @@
       <Parameters />
       <Docs>
         <summary>
-            Tries to log in user if not already loged in. Calls LoginAsync internaly
+            Tries to log in user if not already logged in. Calls LoginAsync internally
             </summary>
         <returns>Returns success or failure of login attempt.</returns>
         <remarks>Exceptions are not thrown but SignInFailed event is raised</remarks>
@@ -487,6 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphUserService</ReturnType>

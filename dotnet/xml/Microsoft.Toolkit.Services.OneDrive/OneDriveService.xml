@@ -1,4 +1,4 @@
-﻿<Type Name="OneDriveService" FullName="Microsoft.Toolkit.Services.OneDrive.OneDriveService">
+<Type Name="OneDriveService" FullName="Microsoft.Toolkit.Services.OneDrive.OneDriveService">
   <TypeSignature Language="C#" Value="public class OneDriveService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OneDriveService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.OneDrive.OneDriveService" />
@@ -7,11 +7,17 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("Please use the Microsoft Graph SDK or our new providers at https://aka.ms/wgt")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
              Class using OneDrive API
@@ -28,6 +34,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -67,6 +75,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -90,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -113,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -127,14 +138,16 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="public virtual bool Initialize (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null);" />
+      <MemberSignature Language="C#" Value="public virtual bool Initialize (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = default, string redirectUri = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Initialize(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Initialize (appClientId As String, scopes As String(), Optional uiParent As UIParent = null, Optional redirectUri As String = null) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool&#xA;override this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -158,14 +171,16 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize&lt;T,U&gt;">
-      <MemberSignature Language="C#" Value="public virtual bool Initialize&lt;T,U&gt; (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = null, string redirectUri = null) where T : Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializernew() where U : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
+      <MemberSignature Language="C#" Value="public virtual bool Initialize&lt;T,U&gt; (string appClientId, string[] scopes, Microsoft.Identity.Client.UIParent uiParent = default, string redirectUri = default) where T : Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializernew() where U : Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotosnew();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Initialize&lt;.ctor (class Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer) T, .ctor (class Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos) U&gt;(string appClientId, string[] scopes, class Microsoft.Identity.Client.UIParent uiParent, string redirectUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.OneDriveService.Initialize``2(System.String,System.String[],Microsoft.Identity.Client.UIParent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Initialize(Of T As {IOneDriveServicePlatformInitializerNew}, U As {IOneDriveServicePlatformInitializerNew}) (appClientId As String, scopes As String(), Optional uiParent As UIParent = null, Optional redirectUri As String = null) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer and 'T : (new : unit -&gt; 'T) and 'U :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'U : (new : unit -&gt; 'U))&#xA;override this.Initialize : string * string[] * Microsoft.Identity.Client.UIParent * string -&gt; bool (requires 'T :&gt; Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer and 'T : (new : unit -&gt; 'T) and 'U :&gt; Microsoft.Toolkit.Services.MicrosoftGraph.IMicrosoftGraphUserServicePhotos and 'U : (new : unit -&gt; 'U))" Usage="oneDriveService.Initialize (appClientId, scopes, uiParent, redirectUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -214,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.OneDrive.OneDriveService</ReturnType>
@@ -236,6 +252,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -258,6 +275,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -280,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -303,6 +322,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -326,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -349,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -372,6 +394,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphService</ReturnType>
@@ -394,6 +417,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -417,6 +441,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
@@ -439,6 +464,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatformInitializer</ReturnType>
@@ -461,6 +487,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.OneDrive.IOneDriveServicePlatform</ReturnType>
