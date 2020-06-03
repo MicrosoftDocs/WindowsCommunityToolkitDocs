@@ -60,6 +60,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 | MasterPaneWidth | double | Gets or sets the width of the master pane when the view is expanded |
 | NoSelectionContent | object | Gets or sets the content to dsiplay when there is no item selected in the master list |
 | NoSelectionContentTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content when there is no selection |
+| SelectedIndex | int | Gets or sets the selected index (-1 if nothing is selected) |
 | SelectedItem | object | Gets or sets the selected item |
 | ViewState | [MasterDetailsViewState](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsviewstate) | Gets the current visual state of the control |
 
