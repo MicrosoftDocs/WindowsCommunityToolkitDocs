@@ -52,7 +52,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 | ColorInterpolationMode | [ColorInteropolationMode](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.ColorInterpolationMode) | Specifies how the gradient's colors are interpolated.  The default is `SRgbLinearInterpolation`. |
 | FallbackColor | Windows.UI.Color | The color to use for rendering in case the CompositionBrush can't be rendered. |
 | GradientOrigin | Windows.Foundation.Point | The location of the two-dimensional focal point that defines the beginning of the gradient.  The default is `0.5,0.5`. |
-| GradientStops | Windows.UI.Xaml.Media.GradientStopCollection | The brush's gradient stops.  *Indiviual GradientStop's `Offset` and `Color` properties can't be bound or animated.* |
+| GradientStops | Windows.UI.Xaml.Media.GradientStopCollection | The brush's gradient stops.  *Individual GradientStop's `Offset` and `Color` properties can't be bound or animated.* |
 | Opacity | double | Gets or sets the degree of opacity of a Brush. |
 | RadiusX | double | The horizontal radius of the outermost circle of the radial gradient. The default is `0.5`. |
 | RadiusY | double | The vertical radius of the outermost circle of the radial gradient.  The default is `0.5`. |

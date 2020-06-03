@@ -30,7 +30,6 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Properties
 
-
 | Property              | Type            | Description                                                  |
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
@@ -44,7 +43,6 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | SecondaryThumbStyle   | Style           | Gets or sets a value for the style to use for the secondary thumbs of the ImageCropper. |
 | ThumbPlacement        | ThumbPlacement  | Gets or sets a value for thumb placement.                    |
 
-
 ## Methods
 
 | Methods                                              | Return Type | Description                                                  |
@@ -54,10 +52,10 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | Reset()                                              | void        | Reset the cropped area.                                      |
 | TrySetCroppedRegion(Rect rect)                       | bool        | Tries to set a new value for the cropped region, returns true if it succeeded, false if the region is invalid  |
 
-
 ## Examples
 
 ### Use ImageCropper
+
 You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or setting the `Source` property.
 
 ```csharp
@@ -73,7 +71,7 @@ using (var fileStream = await someFile.OpenAsync(FileAccessMode.ReadWrite, Stora
     await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png);
 }
 ```
-``vb
+```vb
 ' Load an image.
 Await ImageCropper.LoadImageFromFile(file)
 
@@ -92,7 +90,7 @@ You can set `CropShape` property to use the circular ImageCropper.
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
-``vb
+```vb
 ImageCropper.CropShape = CropShape.Circular
 ```
 
@@ -102,7 +100,7 @@ You can set `AspectRatio` property to change the aspect ratio of the cropped ima
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
-``vb
+```vb
 ImageCropper.AspectRatio = 16R / 9R
 ```
 
@@ -111,7 +109,7 @@ Or you can crop image without aspect ratio.
 ```csharp
 ImageCropper.AspectRatio = null;
 ```
-``vb
+```vb
 ImageCropper.AspectRatio = Nothing
 ```
 
