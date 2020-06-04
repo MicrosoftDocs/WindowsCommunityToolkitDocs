@@ -18,6 +18,14 @@ The Object Storage Helper will help you handle storage of generic objects within
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Object%20Storage)
 
+## Constructors
+
+LocalObjectStorageHelper and RoamingObjectStorageHelper have the same constructor with an optional parameter:
+
+| Constructor | Description |
+|-------------|-------------|
+| ObjectStorageHelper(IObjectSerializer = null) | Initializes a new instance of the ObjectStorageHelper class with the provided [IObjectSerializer](ObjectSerializer.md), that will be used when serializing and deserializing data in Settings or in Storage; if no serializer is provided, a default JSON serializer will be used. |
+
 ## Properties
 
 | Property | Type | Description |
@@ -219,3 +227,4 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 * [LocalObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
 * [RoamingObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
