@@ -3,8 +3,7 @@ title: State Triggers
 author: dotMorten
 description: A collection of custom visual State Triggers
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, CompareStateTrigger, FullScreenModeStateTrigger, IsEqualStateTrigger, IsNotEqualStateTrigger, IsNullOrEmptyStateTriggers, NetworkConnectionStateTrigger, RegexStateTrigger, UserHandPreferenceStateTrigger, UserInteractionModeStateTrigger
-dev_langs:
-  - csharp
+
 ---
 
 # State Triggers
@@ -95,7 +94,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/dotnet
 ## Sample Project
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can [see this in action](uwpct://CategoryName?sample=pageName) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can see this in action in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
