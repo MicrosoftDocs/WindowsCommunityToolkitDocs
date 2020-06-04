@@ -43,9 +43,62 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/dotnet
 | [UserHandPreferenceStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserHandPreferenceStateTrigger) | Trigger for switching UI based on whether the user favors their left or right hand |
 | [UserInteractionModeStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserInteractionModeStateTrigger) | Trigger for switching when the User interaction mode changes (tablet mode) |
 
-## Sample Output
-
-<!-- Image/Text can show the output of the control/helper -->
+## CompareStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" To="3" Comparison="LessThan" />
+</VisualState.StateTriggers>
+```
+## FullScreenModeStateTrigger Example 
+```
+<VisualState.StateTriggers>
+    <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
+</VisualState.StateTriggers>
+```                    
+## IsEqualStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:IsEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
+</VisualState.StateTriggers>
+```
+## IsNotEqualStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
+</VisualState.StateTriggers>
+```
+## IsNullOrEmptyStateTriggers Example
+```
+<VisualState.StateTriggers>
+    <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
+</VisualState.StateTriggers>
+```              
+## NetworkConnectionStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:NetworkConnectionStateTrigger ConnectionState="Connected" />
+</VisualState.StateTriggers>
+```
+## RegexStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:RegexStateTrigger Value="{Binding Text, ElementName=emailTextBox, Mode=OneWay}"
+		                    Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
+				    Options="IgnoreCase" />
+</VisualState.StateTriggers>
+```
+## UserHandPreferenceStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:UserHandPreferenceStateTrigger HandPreference="LeftHanded" />
+</VisualState.StateTriggers>
+```
+## UserInteractionModeStateTrigger Example
+```
+<VisualState.StateTriggers>
+    <triggers:UserInteractionModeStateTrigger InteractionMode="Mouse" />
+</VisualState.StateTriggers>
+```
 
 ## Properties
 
