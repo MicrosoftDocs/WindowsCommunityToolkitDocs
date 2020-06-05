@@ -53,11 +53,13 @@
 ## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
+## [StaggeredLayout](controls/StaggeredLayout.md)
 ## [StaggeredPanel](controls/StaggeredPanel.md)
 ## [TabView](controls/TabView.md)
 ## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
+## [WrapLayout](controls/WrapLayout.md)
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Animations
