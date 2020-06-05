@@ -176,6 +176,14 @@
 ## [MarkdownParser](parsers/MarkdownParser.md)
 ## [RSSParser](parsers/RSSParser.md)
 
+# High performance
+## [Introduction](high-performance/Introduction.md)
+## Buffers
+### [MemoryOwner<T>](high-performance/MemoryOwner.md)
+### [SpanOwner<T>](high-performance/SpanOwner.md)
+## [ParallelHelper](high-performance/ParallelHelper.md)
+## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
+
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
