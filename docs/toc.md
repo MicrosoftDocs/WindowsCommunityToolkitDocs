@@ -146,6 +146,7 @@
 ## [Streams Helper](helpers/Streams.md)
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
+## [Triggers](helpers/Triggers.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
