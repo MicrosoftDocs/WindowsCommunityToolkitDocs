@@ -187,6 +187,7 @@
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
+## [Guard](developer-tools/Guard.md)
 
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
