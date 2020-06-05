@@ -88,7 +88,8 @@ public readonly struct ArrayInitializer : IAction
 ParallelHelper.For(0, array.Length, new ArrayInitializer(array));
 ```
 
-**NOTE:** since the callback types are `struct`-s, they're passed _by copy_ to each thread running parallel, not by reference. This means that value types being stored as fields in a callback types will be copied as well. A good practice to remember that detail and avoid errors is to mark the callback `struct` as `readonly`, so that the C# compiler will not let us modify the values of its fields. This only applies to _instance_ fields of a value type: if a callback `struct` has a `static` field of any type, or a reference field, then that value will correctly be shared between parallel threads.
+> [!NOTE]
+> Since the callback types are `struct`-s, they're passed _by copy_ to each thread running parallel, not by reference. This means that value types being stored as fields in a callback types will be copied as well. A good practice to remember that detail and avoid errors is to mark the callback `struct` as `readonly`, so that the C# compiler will not let us modify the values of its fields. This only applies to _instance_ fields of a value type: if a callback `struct` has a `static` field of any type, or a reference field, then that value will correctly be shared between parallel threads.
 
 ## Methods
 
