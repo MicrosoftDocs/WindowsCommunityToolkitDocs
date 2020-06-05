@@ -124,7 +124,7 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher |
+| Implementation | .NET Standard 2.0 |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Diagnostics |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
