@@ -9,18 +9,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # State Triggers
 
 <!-- Describe your control -->
-A collection of custom visual [State Triggers](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers)
-
-<!-- Use below format to display note
-> [!NOTE]
-> Some note
-
-> [!IMPORTANT]
-> Some important note
-
-> [!WARNING]
-> Some warning note
--->
+A collection of custom visual [State Triggers](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.statetrigger).
 
 | Trigger | Purpose |
 | --- | --- |
@@ -35,57 +24,57 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/dotnet
 | [UserInteractionModeStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserInteractionModeStateTrigger) | Trigger for switching when the User interaction mode changes (tablet mode) |
 
 ## CompareStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
-    <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" To="3" Comparison="LessThan" />
+    <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" Comparison="LessThanOrEqual" To="3"/>
 </VisualState.StateTriggers>
 ```
 ## FullScreenModeStateTrigger Example 
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
 </VisualState.StateTriggers>
 ```                    
 ## IsEqualStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:IsEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
 ## IsNotEqualStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
 ## IsNullOrEmptyStateTriggers Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
 </VisualState.StateTriggers>
 ```              
 ## NetworkConnectionStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:NetworkConnectionStateTrigger ConnectionState="Connected" />
 </VisualState.StateTriggers>
 ```
 ## RegexStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:RegexStateTrigger Value="{Binding Text, ElementName=emailTextBox, Mode=OneWay}"
-		                    Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
-				    Options="IgnoreCase" />
+                                                  Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
+                                                  Options="IgnoreCase" />
 </VisualState.StateTriggers>
 ```
 ## UserHandPreferenceStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:UserHandPreferenceStateTrigger HandPreference="LeftHanded" />
 </VisualState.StateTriggers>
 ```
 ## UserInteractionModeStateTrigger Example
-```
+```xml
 <VisualState.StateTriggers>
     <triggers:UserInteractionModeStateTrigger InteractionMode="Mouse" />
 </VisualState.StateTriggers>
@@ -101,7 +90,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/dotnet
 | Device family | Universal, 10.0.16299.0 or higher   |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Triggers |
-| NuGet package | [Microsoft.Toolkit.Uwp](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
 
 ## API
