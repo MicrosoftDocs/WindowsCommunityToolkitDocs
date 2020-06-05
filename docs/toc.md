@@ -89,13 +89,16 @@
 ## [Scale](animations/Scale.md)
 
 # Brushes
+## [AcrylicBrush](brushes/AcrylicBrush.md)
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
 ## [BackdropGammaTransferBrush](brushes/BackdropGammaTransferBrush.md)
 ## [BackdropInvertBrush](brushes/BackdropInvertBrush.md)
 ## [BackdropSaturationBrush](brushes/BackdropSaturationBrush.md)
 ## [BackdropSepiaBrush](brushes/BackdropSepiaBrush.md)
 ## [ImageBlendBrush](brushes/ImageBlendBrush.md)
+## [PipelineBrush](brushes/PipelineBrush.md)
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
+## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
 ## [ArrayExtensions](extensions/ArrayExtensions.md)
