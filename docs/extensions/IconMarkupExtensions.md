@@ -43,6 +43,39 @@ The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/micr
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
+## SymbolIcon
+The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconextension) mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets".
+
+### Syntax
+
+**XAML**
+
+```xml
+<CommandBar>
+
+    <!--Before-->
+    <AppBarButton>
+        <AppBarButton.Icon>
+            <SymbolIcon Symbol="Play"/>
+        </AppBarButton.Icon>
+    </AppBarButton>
+
+    <!--After-->
+    <AppBarButton Icon="{ex:SymbolIcon Glyph=Play}"/>
+</CommandBar>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Glyph | Symbol | The `Symbol` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
 ## FontIconSource
 The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonsourceextension) mirrors the `FontIconExtension` type, but producing `FontIconSource` instances instead of `FontIcon`.
 
