@@ -5,14 +5,14 @@ description: The FontIcon, FontIconSource and BitmapIcon markup extensions allow
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, nullable bool, dependency property, markup extension, XAML, markup 
 ---
 
-## IconMarkupExtensions
+# IconMarkupExtensions
 
 The icon extensions are a group of markup extensions meant to simplify the creation of various icon types (specifically, `FontIcon`, `FontIconSource` and `BitmapIcon`) used across a variety of XAML controls. Using these extensions doesn't enable new capabilities per se, but it greatly simplifies the XAML syntax needed to create instances of these icon types. There are three such extensions available at the moment: `FontIconExtension`, `FontIconSourceExtension` and `BitmapIconExtension`.
 
-# FontIcon markup extension
+## FontIcon
 The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonextension) provides the ability to create `FontIcon` instances from XAML with a more compact representation than by explicitly creating a new `FontIcon` object to assign to the target property. The property also maps all the available `FontIcon` properties, so the two APIs expose the same set of customization options, just through a different XAML syntax.
 
-## Syntax
+### Syntax
 
 **XAML**
 
@@ -31,7 +31,7 @@ The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/micr
 </CommandBar>
 ```
 
-## Properties
+### Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -43,10 +43,10 @@ The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/micr
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
-# FontIconSource markup extension
+## FontIconSource
 The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonsourceextension) mirrors the `FontIconExtension` type, but producing `FontIconSource` instances instead of `FontIcon`.
 
-## Syntax
+### Syntax
 
 **XAML**
 
@@ -65,7 +65,7 @@ The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/ap
 </SwipeItems>
 ```
 
-## Properties
+### Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -77,10 +77,10 @@ The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/ap
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
-# BitmapIcon markup extension
+## BitmapIcon
 The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.bitmapiconextension) is similar in structure to the two previous extensions, but it produces `BitmapIcon` instances instead of font-based icons.
 
-## Syntax
+### Syntax
 
 **XAML**
 
@@ -101,7 +101,7 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 </MenuFlyout>
 ```
 
-## Properties
+### Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
