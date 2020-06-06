@@ -110,6 +110,30 @@ The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/ap
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
+## SymbolIconSource
+The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconsourceextension) is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance.
+
+### Syntax
+
+**XAML**
+
+```xml
+<SwipeItems Mode="Reveal">
+    <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Glyph=Play}"/>
+</SwipeItems>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Glyph | Symbol | The `Symbol` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
 ## BitmapIcon
 The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.bitmapiconextension) is similar in structure to the two previous extensions, but it produces `BitmapIcon` instances instead of font-based icons.
 
