@@ -161,6 +161,9 @@ The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
+> [!NOTE]
+> The `SymbolIconExtension` actually returns a `FontIcon` value instead of a `SymbolIcon` one. This is done to include the additional properties (eg. `FontSize`, `FontWeight`, etc.) that would otherwise not have been available. When those are not modified, the look of the resulting icon will still be the same as the one that would've resulted from the use of a `SymbolIcon` instance.
+
 ## SymbolIconSource
 The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconsourceextension) is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance.
 
