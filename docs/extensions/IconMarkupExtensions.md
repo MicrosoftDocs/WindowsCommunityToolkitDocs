@@ -165,6 +165,26 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 | Source | Uri | The `Uri` representing the image to display. |
 | ShowAsMonochrome | bool | Indicates whether to display the icon as monochrome. |
 
+## BitmapIconSource
+The [BitmapIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.bitmapiconsourceextension) mirrors the `BitmapIconExtension` type, with the only difference being that it returns a [`BitmapIconSource`](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.bitmapiconsource) instance..
+
+### Syntax
+
+**XAML**
+
+```xml
+<SwipeItems Mode="Reveal">
+    <SwipeItem Text="Send" IconSource="{ex:BitmapIconSource Source=/Assets/myicon.png}"/>
+</SwipeItems>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Source | Uri | The `Uri` representing the image to display. |
+| ShowAsMonochrome | bool | Indicates whether to display the icon as monochrome. |
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher   |
@@ -179,6 +199,7 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 - [FontIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconSourceExtension.cs)
 - [SymbolIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconSourceExtension.cs)
 - [BitmapIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconExtension.cs)
+- [BitmapIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconSourceExtension.cs)
 
 ## Related Topics
 
