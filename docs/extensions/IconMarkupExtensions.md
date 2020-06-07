@@ -61,7 +61,7 @@ The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
     </AppBarButton>
 
     <!--After-->
-    <AppBarButton Icon="{ex:SymbolIcon Glyph=Play}"/>
+    <AppBarButton Icon="{ex:SymbolIcon Symbol=Play}"/>
 </CommandBar>
 ```
 
@@ -69,7 +69,7 @@ The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Glyph | Symbol | The `Symbol` representing the icon to display. |
+| Symbol | Symbol | The `Symbol` representing the icon to display. |
 | FontSize | double | The size of the icon to display. |
 | FontWeight | FontWeight | The thickness of the icon glyph. |
 | FontStyle | FontStyle | The font style for the icon glyph. |
@@ -119,7 +119,7 @@ The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/
 
 ```xml
 <SwipeItems Mode="Reveal">
-    <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Glyph=Play}"/>
+    <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Symbol=Play}"/>
 </SwipeItems>
 ```
 
@@ -127,7 +127,7 @@ The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Glyph | Symbol | The `Symbol` representing the icon to display. |
+| Symbol | Symbol | The `Symbol` representing the icon to display. |
 | FontSize | double | The size of the icon to display. |
 | FontWeight | FontWeight | The thickness of the icon glyph. |
 | FontStyle | FontStyle | The font style for the icon glyph. |
@@ -175,7 +175,9 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/mi
 ## API Source Code
 
 - [FontIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconExtension.cs)
+- [SymbolIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconExtension.cs)
 - [FontIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconSourceExtension.cs)
+- [SymbolIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconSourceExtension.cs)
 - [BitmapIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconExtension.cs)
 
 ## Related Topics
