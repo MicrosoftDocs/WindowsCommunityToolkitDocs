@@ -9,131 +9,6 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, nullable bool, de
 
 The icon extensions are a group of markup extensions meant to simplify the creation of various icon types (specifically, [`FontIcon`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.FontIcon), [`FontIconSource`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.FontIconSource) and [`BitmapIcon`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.BitmapIcon)) used across a variety of XAML controls. Using these extensions doesn't enable new capabilities per se, but it greatly simplifies the XAML syntax needed to create instances of these icon types. There are three such extensions available at the moment: `FontIconExtension`, `FontIconSourceExtension` and `BitmapIconExtension`.
 
-## FontIcon
-The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonextension) provides the ability to create `FontIcon` instances from XAML with a more compact representation than by explicitly creating a new `FontIcon` object to assign to the target property. The property also maps all the available `FontIcon` properties, so the two APIs expose the same set of customization options, just through a different XAML syntax.
-
-### Syntax
-
-**XAML**
-
-```xml
-<CommandBar>
-
-    <!--Before-->
-    <AppBarButton>
-        <AppBarButton.Icon>
-            <FontIcon Glyph="&#xE102;" FontFamily="Segoe MDL2 Assets"/>
-        </AppBarButton.Icon>
-    </AppBarButton>
-
-    <!--After-->
-    <AppBarButton Icon="{ex:FontIcon Glyph=&#xE102;}"/>
-</CommandBar>
-```
-
-### Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Glyph | string | The `string` representing the icon to display. |
-| FontSize | double | The size of the icon to display. |
-| FontFamily | FontFamily | The font family to use to display the icon. If `null`, "Segoe MDL2 Assets" will be used. |
-| FontWeight | FontWeight | The thickness of the icon glyph. |
-| FontStyle | FontStyle | The font style for the icon glyph. |
-| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
-| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
-
-## SymbolIcon
-The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconextension) mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets".
-
-### Syntax
-
-**XAML**
-
-```xml
-<CommandBar>
-
-    <!--Before-->
-    <AppBarButton>
-        <AppBarButton.Icon>
-            <SymbolIcon Symbol="Play"/>
-        </AppBarButton.Icon>
-    </AppBarButton>
-
-    <!--After-->
-    <AppBarButton Icon="{ex:SymbolIcon Symbol=Play}"/>
-</CommandBar>
-```
-
-### Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Symbol | Symbol | The `Symbol` representing the icon to display. |
-| FontSize | double | The size of the icon to display. |
-| FontWeight | FontWeight | The thickness of the icon glyph. |
-| FontStyle | FontStyle | The font style for the icon glyph. |
-| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
-| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
-
-## FontIconSource
-The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonsourceextension) mirrors the `FontIconExtension` type, but producing `FontIconSource` instances instead of `FontIcon`.
-
-### Syntax
-
-**XAML**
-
-```xml
-<SwipeItems Mode="Reveal">
-
-    <!--Before-->
-    <SwipeItem Text="Accept">
-        <SwipeItem.IconSource>
-            <FontIconSource Glyph="&#xE10B;"/>
-        </SwipeItem.IconSource>
-    </SwipeItem>
-    
-    <!--After-->
-    <SwipeItem Text="Accept" IconSource="{ex:FontIconSource Glyph=&#xE10B;}"/>
-</SwipeItems>
-```
-
-### Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Glyph | string | The `string` representing the icon to display. |
-| FontSize | double | The size of the icon to display. |
-| FontFamily | FontFamily | The font family to use to display the icon. If `null`, "Segoe MDL2 Assets" will be used. |
-| FontWeight | FontWeight | The thickness of the icon glyph. |
-| FontStyle | FontStyle | The font style for the icon glyph. |
-| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
-| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
-
-## SymbolIconSource
-The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconsourceextension) is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance.
-
-### Syntax
-
-**XAML**
-
-```xml
-<SwipeItems Mode="Reveal">
-    <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Symbol=Play}"/>
-</SwipeItems>
-```
-
-### Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Symbol | Symbol | The `Symbol` representing the icon to display. |
-| FontSize | double | The size of the icon to display. |
-| FontWeight | FontWeight | The thickness of the icon glyph. |
-| FontStyle | FontStyle | The font style for the icon glyph. |
-| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
-| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
-
 ## BitmapIcon
 The [BitmapIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.bitmapiconextension) is similar in structure to the two previous extensions, but it produces `BitmapIcon` instances instead of font-based icons.
 
@@ -185,6 +60,131 @@ The [BitmapIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/
 | Source | Uri | The `Uri` representing the image to display. |
 | ShowAsMonochrome | bool | Indicates whether to display the icon as monochrome. |
 
+## FontIcon
+The [FontIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonextension) provides the ability to create `FontIcon` instances from XAML with a more compact representation than by explicitly creating a new `FontIcon` object to assign to the target property. The property also maps all the available `FontIcon` properties, so the two APIs expose the same set of customization options, just through a different XAML syntax.
+
+### Syntax
+
+**XAML**
+
+```xml
+<CommandBar>
+
+    <!--Before-->
+    <AppBarButton>
+        <AppBarButton.Icon>
+            <FontIcon Glyph="&#xE102;" FontFamily="Segoe MDL2 Assets"/>
+        </AppBarButton.Icon>
+    </AppBarButton>
+
+    <!--After-->
+    <AppBarButton Icon="{ex:FontIcon Glyph=&#xE102;}"/>
+</CommandBar>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Glyph | string | The `string` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontFamily | FontFamily | The font family to use to display the icon. If `null`, "Segoe MDL2 Assets" will be used. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
+## FontIconSource
+The [FontIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonsourceextension) mirrors the `FontIconExtension` type, but producing `FontIconSource` instances instead of `FontIcon`.
+
+### Syntax
+
+**XAML**
+
+```xml
+<SwipeItems Mode="Reveal">
+
+    <!--Before-->
+    <SwipeItem Text="Accept">
+        <SwipeItem.IconSource>
+            <FontIconSource Glyph="&#xE10B;"/>
+        </SwipeItem.IconSource>
+    </SwipeItem>
+    
+    <!--After-->
+    <SwipeItem Text="Accept" IconSource="{ex:FontIconSource Glyph=&#xE10B;}"/>
+</SwipeItems>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Glyph | string | The `string` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontFamily | FontFamily | The font family to use to display the icon. If `null`, "Segoe MDL2 Assets" will be used. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
+## SymbolIcon
+The [SymbolIcon markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconextension) mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets".
+
+### Syntax
+
+**XAML**
+
+```xml
+<CommandBar>
+
+    <!--Before-->
+    <AppBarButton>
+        <AppBarButton.Icon>
+            <SymbolIcon Symbol="Play"/>
+        </AppBarButton.Icon>
+    </AppBarButton>
+
+    <!--After-->
+    <AppBarButton Icon="{ex:SymbolIcon Symbol=Play}"/>
+</CommandBar>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Symbol | Symbol | The `Symbol` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
+## SymbolIconSource
+The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconsourceextension) is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance.
+
+### Syntax
+
+**XAML**
+
+```xml
+<SwipeItems Mode="Reveal">
+    <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Symbol=Play}"/>
+</SwipeItems>
+```
+
+### Properties
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Symbol | Symbol | The `Symbol` representing the icon to display. |
+| FontSize | double | The size of the icon to display. |
+| FontWeight | FontWeight | The thickness of the icon glyph. |
+| FontStyle | FontStyle | The font style for the icon glyph. |
+| IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
+| MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher   |
@@ -194,12 +194,12 @@ The [BitmapIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/
 
 ## API Source Code
 
-- [FontIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconExtension.cs)
-- [SymbolIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconExtension.cs)
-- [FontIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconSourceExtension.cs)
-- [SymbolIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconSourceExtension.cs)
 - [BitmapIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconExtension.cs)
 - [BitmapIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/BitmapIconSourceExtension.cs)
+- [FontIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconExtension.cs)
+- [FontIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/FontIconSourceExtension.cs)
+- [SymbolIconExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconExtension.cs)
+- [SymbolIconSourceExtension source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/SymbolIconSourceExtension.cs)
 
 ## Related Topics
 
