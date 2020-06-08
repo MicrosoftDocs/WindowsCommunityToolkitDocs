@@ -188,6 +188,10 @@ The [SymbolIconSource markup extension](https://docs.microsoft.com/en-us/dotnet/
 | IsTextScaleFactorEnabled | bool | Indicates whether automatic text enlargement, to reflect the system text size setting, is enabled. |
 | MirroredWhenRightToLeft | bool | Indicates whether the icon is mirrored when the flow direction is right to left. |
 
+## Remarks
+
+All the values returned by these markup extensions belong to the `Windows.UI.Xaml.*` namespace. This means that they will only work properly when used with controls from that namespace, and not from `Microsoft.UI.Xaml.*` (the WinUI namespace). For instance, trying to use the `FontIconSourceExtension` to set the `IconSource` property on the `Microsoft.UI.Xaml.Controls.SwipeItems` will not work correctly, as the extension will produce a `Windows.UI.Xaml.Controls.FontIconSource` value instead of a `Microsoft.UI.Xaml.Controls.FontIconSource` one. When working with WinUI controls, you'll need to manually declare the icons you need with the explicit XAML syntax.
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher   |
