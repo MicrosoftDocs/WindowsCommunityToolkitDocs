@@ -9,7 +9,7 @@ dev_langs:
 
 # PeoplePicker XAML Control
 
-The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
+The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PeoplePicker)
