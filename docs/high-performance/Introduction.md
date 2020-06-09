@@ -8,6 +8,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # Introduction to the High Performance package
 
 This package can be installed through NuGet, and it has the following multi-targets:
+
 - .NET Standard 1.4
 - .NET Standard 2.0
 - .NET Standard 2.1
@@ -43,10 +44,11 @@ Follow these steps to install the High Performance package:
 As the name suggests, the High Performance package contains a set of APIs that are heavily focused on optimization. All the new APIs have been carefully crafted to achieve the best possible performance when using them, either through reduced memory allocation, micro-optimizations at the assembly level, or by structuring the APIs in a way that facilitates writing performance oriented code in general.
 
 This package makes heavy use of APIs such as:
-- [`System.Buffers.ArrayPool<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.arraypool-1)
-- [`System.Runtime.CompilerServices.Unsafe`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.unsafe)
-- [`System.Runtime.InteropServices.MemoryMarshal`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.memorymarshal)
-- [`System.Threading.Tasks.Parallel`](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel)
+
+- [System.Buffers.ArrayPool<T>](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.arraypool-1)
+- [System.Runtime.CompilerServices.Unsafe](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.compilerservices.unsafe)
+- [System.Runtime.InteropServices.MemoryMarshal](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.memorymarshal)
+- [System.Threading.Tasks.Parallel](https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.parallel)
 
 If you are already familiar with these APIs or even if you're just getting started with writing high performance code in C# and want a set of well tested helpers to use in your own projects, have a look at what's included in this package to see how you can use it in your own projects!
 
