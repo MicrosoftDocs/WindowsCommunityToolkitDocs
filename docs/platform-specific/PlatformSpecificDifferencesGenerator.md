@@ -46,4 +46,4 @@ For a type that has additions, the additions are listed alongside
 
 <!-- Optional -->
 
-- [Platform Specific Analyzer](./platformspecificanalyzer)
+- [Platform Specific Analyzer](./PlatformSpecificAnalyzer.md)
