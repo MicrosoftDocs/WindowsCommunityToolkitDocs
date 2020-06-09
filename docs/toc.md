@@ -105,6 +105,7 @@
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
+## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 ## [Logical Tree](extensions/LogicalTree.md)
 ## [Matrix Extensions](extensions/MatrixExtensions.md)
