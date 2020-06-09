@@ -17,7 +17,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/en-us/
 | [FullScreenModeStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.FullScreenModeStateTrigger) | Trigger for switching when in full screen mode |
 | [IsEqualStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsEqualStateTrigger) | Enables a state if the value is equal to another value |
 | [IsNotEqualStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsNotEqualStateTrigger) | Enables a state if the value is not equal to another value |
-| [IsNullOrEmptyStateTriggers](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsNullOrEmptyStateTriggers) | Enables a state if an Object is null or a String/IEnumerable is empty |
+| [IsNullOrEmptyStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsNullOrEmptyStateTrigger) | Enables a state if an Object is null or a String/IEnumerable is empty |
 | [NetworkConnectionStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.NetworkConnectionStateTrigger) | Trigger for switching when the network availability changes |
 | [RegexStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.RegexStateTrigger) | Enables a state if the regex expression is true for a given string value |
 | [UserHandPreferenceStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserHandPreferenceStateTrigger) | Trigger for switching UI based on whether the user favors their left or right hand |
@@ -47,7 +47,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/en-us/
     <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
-## IsNullOrEmptyStateTriggers Example
+## IsNullOrEmptyStateTrigger Example
 ```xml
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
