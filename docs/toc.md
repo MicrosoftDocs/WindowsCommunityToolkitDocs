@@ -59,6 +59,7 @@
 ## [TabView](controls/TabView.md)
 ## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
+## [TokenizingTextBox](controls/TokenizingTextBox.md)
 ## [UniformGrid](controls/UniformGrid.md)
 ## [WrapLayout](controls/layout/WrapLayout.md)
 
