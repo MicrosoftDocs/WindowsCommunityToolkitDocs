@@ -1,4 +1,4 @@
-﻿<Type Name="IOneDriveStorageFolderPlatform" FullName="Microsoft.Toolkit.Services.OneDrive.IOneDriveStorageFolderPlatform">
+<Type Name="IOneDriveStorageFolderPlatform" FullName="Microsoft.Toolkit.Services.OneDrive.IOneDriveStorageFolderPlatform">
   <TypeSignature Language="C#" Value="public interface IOneDriveStorageFolderPlatform" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOneDriveStorageFolderPlatform" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.OneDrive.IOneDriveStorageFolderPlatform" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Docs>
@@ -17,14 +18,16 @@
   </Docs>
   <Members>
     <Member MemberName="CreateFileAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; CreateFileAsync (string desiredName, object options = null, object content = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; CreateFileAsync (string desiredName, object options = default, object content = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt; CreateFileAsync(string desiredName, object options, object content, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.IOneDriveStorageFolderPlatform.CreateFileAsync(System.String,System.Object,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFileAsync (desiredName As String, Optional options As Object = null, Optional content As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of OneDriveStorageFile)" />
       <MemberSignature Language="F#" Value="abstract member CreateFileAsync : string * obj * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;" Usage="iOneDriveStorageFolderPlatform.CreateFileAsync (desiredName, options, content, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;</ReturnType>
@@ -49,14 +52,16 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFolderAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; CreateFolderAsync (string desiredName, object options = null, System.Threading.CancellationToken cancellationToken = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; CreateFolderAsync (string desiredName, object options = default, System.Threading.CancellationToken cancellationToken = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt; CreateFolderAsync(string desiredName, object options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.OneDrive.IOneDriveStorageFolderPlatform.CreateFolderAsync(System.String,System.Object,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFolderAsync (desiredName As String, Optional options As Object = null, Optional cancellationToken As CancellationToken = null) As Task(Of OneDriveStorageFolder)" />
       <MemberSignature Language="F#" Value="abstract member CreateFolderAsync : string * obj * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;" Usage="iOneDriveStorageFolderPlatform.CreateFolderAsync (desiredName, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFolder&gt;</ReturnType>
@@ -87,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.OneDrive.OneDriveStorageFile&gt;</ReturnType>

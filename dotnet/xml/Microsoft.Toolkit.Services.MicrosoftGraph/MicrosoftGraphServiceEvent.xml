@@ -1,4 +1,4 @@
-﻿<Type Name="MicrosoftGraphServiceEvent" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent">
+<Type Name="MicrosoftGraphServiceEvent" FullName="Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent">
   <TypeSignature Language="C#" Value="public class MicrosoftGraphServiceEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MicrosoftGraphServiceEvent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent" />
@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="graphClientProvider" Type="Microsoft.Graph.GraphServiceClient" />
@@ -44,7 +46,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync (int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync (int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync(int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.GetEventsAsync(System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[])" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEventsAsync (Optional top As Integer = 10, Optional selectFields As MicrosoftGraphEventFields() = null) As Task(Of IUserEventsCollectionPage)" />
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;</ReturnType>
@@ -72,14 +75,16 @@
       </Docs>
     </Member>
     <Member MemberName="GetEventsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync (System.Threading.CancellationToken cancellationToken, int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync (System.Threading.CancellationToken cancellationToken, int top = 10, Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserEventsCollectionPage&gt; GetEventsAsync(valuetype System.Threading.CancellationToken cancellationToken, int32 top, valuetype Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] selectFields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.GetEventsAsync(System.Threading.CancellationToken,System.Int32,Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEventsAsync (cancellationToken As CancellationToken, Optional top As Integer = 10, Optional selectFields As MicrosoftGraphEventFields() = null) As Task(Of IUserEventsCollectionPage)" />
       <MemberSignature Language="F#" Value="member this.GetEventsAsync : System.Threading.CancellationToken * int * Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphEventFields[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;" Usage="microsoftGraphServiceEvent.GetEventsAsync (cancellationToken, top, selectFields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;</ReturnType>
@@ -110,6 +115,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;</ReturnType>
@@ -127,11 +133,13 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt; NextPageEventsAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserEventsCollectionPage&gt; NextPageEventsAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftGraph.MicrosoftGraphServiceEvent.NextPageEventsAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextPageEventsAsync (cancellationToken As CancellationToken) As Task(Of IUserEventsCollectionPage)" />
       <MemberSignature Language="F#" Value="member this.NextPageEventsAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;" Usage="microsoftGraphServiceEvent.NextPageEventsAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserEventsCollectionPage&gt;</ReturnType>

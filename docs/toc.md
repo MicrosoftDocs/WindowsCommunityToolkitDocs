@@ -53,11 +53,15 @@
 ## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
+## [StaggeredLayout](controls/layout/StaggeredLayout.md)
+
 ## [StaggeredPanel](controls/StaggeredPanel.md)
 ## [TabView](controls/TabView.md)
 ## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
 ## [UniformGrid](controls/UniformGrid.md)
+## [WrapLayout](controls/layout/WrapLayout.md)
+
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Animations
@@ -85,19 +89,23 @@
 ## [Scale](animations/Scale.md)
 
 # Brushes
+## [AcrylicBrush](brushes/AcrylicBrush.md)
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
 ## [BackdropGammaTransferBrush](brushes/BackdropGammaTransferBrush.md)
 ## [BackdropInvertBrush](brushes/BackdropInvertBrush.md)
 ## [BackdropSaturationBrush](brushes/BackdropSaturationBrush.md)
 ## [BackdropSepiaBrush](brushes/BackdropSepiaBrush.md)
 ## [ImageBlendBrush](brushes/ImageBlendBrush.md)
+## [PipelineBrush](brushes/PipelineBrush.md)
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
+## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
 ## [ArrayExtensions](extensions/ArrayExtensions.md)
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
+## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 ## [Logical Tree](extensions/LogicalTree.md)
 ## [Matrix Extensions](extensions/MatrixExtensions.md)
@@ -110,9 +118,13 @@
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
+## [UIElementExtensions](extensions/UIElementExtensions.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
+
+# Collections
+## [Observable Groups](collections/ObservableGroups.md)
 
 # Microsoft Graph
 ## Controls
@@ -140,12 +152,14 @@
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
+## [ObjectSerializer](helpers/ObjectSerializer.md)
 ## [PrintHelper](helpers/PrintHelper.md)
 ## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
 ## [Streams Helper](helpers/Streams.md)
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
+## [Triggers](helpers/Triggers.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
@@ -163,9 +177,18 @@
 ## [MarkdownParser](parsers/MarkdownParser.md)
 ## [RSSParser](parsers/RSSParser.md)
 
+# High performance
+## [Introduction](high-performance/Introduction.md)
+## Buffers
+### [MemoryOwner<T>](high-performance/MemoryOwner.md)
+### [SpanOwner<T>](high-performance/SpanOwner.md)
+## [ParallelHelper](high-performance/ParallelHelper.md)
+## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
+
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
+## [Guard](developer-tools/Guard.md)
 
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 

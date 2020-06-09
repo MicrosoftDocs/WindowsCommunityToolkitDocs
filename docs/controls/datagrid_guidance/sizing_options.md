@@ -1,5 +1,5 @@
 ---
-title: How to - Use the different sizing options in the DataGrid control
+title: Sizing options in the DataGrid control
 author: harinikmsft
 description: Guidance document that shows how to size the rows, columns and headers of the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml
@@ -50,10 +50,10 @@ The following table shows the values provided by the DataGridLengthUnitType stru
 
 | Name | Description |
 |---|---|
-| Auto | The default automatic sizing mode sizes DataGrid columns based on the contents of both cells and column headers. | 
-| SizeToCells | The cell-based automatic sizing mode sizes DataGrid columns based on the contents of cells in the column, not including column headers.| 
-| SizeToHeader | The header-based automatic sizing mode sizes DataGrid columns based on the contents of column headers only.| 
-| Pixel | The pixel-based sizing mode sizes DataGrid columns based on the numeric value provided.| 
+| Auto | The default automatic sizing mode sizes DataGrid columns based on the contents of both cells and column headers. |
+| SizeToCells | The cell-based automatic sizing mode sizes DataGrid columns based on the contents of cells in the column, not including column headers.|
+| SizeToHeader | The header-based automatic sizing mode sizes DataGrid columns based on the contents of column headers only.|
+| Pixel | The pixel-based sizing mode sizes DataGrid columns based on the numeric value provided.|
 | Star | The star sizing mode is used to distribute available space by weighted proportions. In XAML, star values are expressed as n* where n represents a numeric value. 1* is equivalent to *. For example, if two columns in a DataGrid had widths of * and 2*, the first column would receive one portion of the available space and the second column would receive two portions of the available space.
 
 The **DataGridLengthConverter** class can be used to convert data between numeric or string values and DataGridLength values.
@@ -62,14 +62,14 @@ By default, the **DataGrid.ColumnWidth** property is set to Auto, and the **Data
 
 Columns in the DataGrid can also be set to automatically size only within specified boundaries, or columns can be set to a specific size. The following table shows the properties that can be set to control column sizes.
 
-| Property | Description | 
+| Property | Description |
 |---|---|
-| DataGrid.MaxColumnWidth | Sets the upper bound for all columns in the DataGrid.| 
-| DataGridColumn.MaxWidth | Sets the upper bound for an individual column. Overrides DataGrid.MaxColumnWidth.| 
-| DataGrid.MinColumnWidth | Sets the lower bound for all columns in the DataGrid.| 
-| DataGridColumn.MinWidth | Sets the lower bound for an individual column. Overrides DataGrid.MinColumnWidth.| 
-| DataGrid.ColumnWidth | Sets a specific width for all columns in the DataGrid.| 
-| DataGridColumn.Width | Sets a specific width for an individual column. Overrides DataGrid.ColumnWidth.| 
+| DataGrid.MaxColumnWidth | Sets the upper bound for all columns in the DataGrid.|
+| DataGridColumn.MaxWidth | Sets the upper bound for an individual column. Overrides DataGrid.MaxColumnWidth.|
+| DataGrid.MinColumnWidth | Sets the lower bound for all columns in the DataGrid.|
+| DataGridColumn.MinWidth | Sets the lower bound for an individual column. Overrides DataGrid.MinColumnWidth.|
+| DataGrid.ColumnWidth | Sets a specific width for all columns in the DataGrid.|
+| DataGridColumn.Width | Sets a specific width for an individual column. Overrides DataGrid.ColumnWidth.|
 
 ### DataGrid Column Headers
 By default, DataGrid column headers are displayed. To hide column headers, the **HeadersVisibility** property must be set to *DataGridHeadersVisibility.Row* or *DataGridHeadersVisibility.None*. By default, when column headers are displayed, they automatically size to fit their content. The column headers can be given a specific height by setting the **DataGrid.ColumnHeaderHeight** property.

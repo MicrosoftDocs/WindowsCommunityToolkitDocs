@@ -1,0 +1,781 @@
+<Type Name="ToastContentBuilder" FullName="Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder">
+  <TypeSignature Language="C#" Value="public class ToastContentBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToastContentBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToastContentBuilder" />
+  <TypeSignature Language="F#" Value="type ToastContentBuilder = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Builder class used to create <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContent" /></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToastContentBuilder ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAppLogoOverride">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAppLogoOverride (Uri uri, Microsoft.Toolkit.Uwp.Notifications.ToastGenericAppLogoCrop? hintCrop = default, string alternateText = default, bool? addImageQuery = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAppLogoOverride(class System.Uri uri, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.ToastGenericAppLogoCrop&gt; hintCrop, string alternateText, valuetype System.Nullable`1&lt;bool&gt; addImageQuery) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddAppLogoOverride(System.Uri,System.Nullable{Microsoft.Toolkit.Uwp.Notifications.ToastGenericAppLogoCrop},System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAppLogoOverride (uri As Uri, Optional hintCrop As Nullable(Of ToastGenericAppLogoCrop) = null, Optional alternateText As String = null, Optional addImageQuery As Nullable(Of Boolean) = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddAppLogoOverride : Uri * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.ToastGenericAppLogoCrop&gt; * string * Nullable&lt;bool&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddAppLogoOverride (uri, hintCrop, alternateText, addImageQuery)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="hintCrop" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.ToastGenericAppLogoCrop&gt;" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="addImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI of the image. Can be from your application package, application data, or the internet. Internet images must be less than 200 KB in size.</param>
+        <param name="hintCrop">Specify how the image should be cropped.</param>
+        <param name="alternateText">A description of the image, for users of assistive technologies.</param>
+        <param name="addImageQuery">A value whether Windows is allowed to append a query string to the image URI supplied in the Tile notification.</param>
+        <summary>
+            Override the app logo with custom image of choice that will be displayed on the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAttributionText">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAttributionText (string text, string language = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAttributionText(string text, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddAttributionText(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAttributionText (text As String, Optional language As String = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddAttributionText : string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddAttributionText (text, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">Text to be displayed as Attribution Text</param>
+        <param name="language">The target locale of the XML payload, specified as a BCP-47 language tags such as "en-US" or "fr-FR".</param>
+        <summary>
+            Add an Attribution Text to be displayed on the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddAudio">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAudio (Uri src, bool? loop = default, bool? silent = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddAudio(class System.Uri src, valuetype System.Nullable`1&lt;bool&gt; loop, valuetype System.Nullable`1&lt;bool&gt; silent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddAudio(System.Uri,System.Nullable{System.Boolean},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAudio (src As Uri, Optional loop As Nullable(Of Boolean) = null, Optional silent As Nullable(Of Boolean) = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddAudio : Uri * Nullable&lt;bool&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddAudio (src, loop, silent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="src" Type="System.Uri" />
+        <Parameter Name="loop" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="silent" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="src">Source to the media that will be played when the toast is pop</param>
+        <param name="loop">Indicating whether sound should repeat as long as the Toast is shown; false to play only once (default).</param>
+        <param name="silent">Indicating whether sound is muted; false to allow the Toast notification sound to play (default).</param>
+        <summary>
+            Set custom audio to go along with the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddButton">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton (Microsoft.Toolkit.Uwp.Notifications.IToastButton button);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton(class Microsoft.Toolkit.Uwp.Notifications.IToastButton button) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddButton(Microsoft.Toolkit.Uwp.Notifications.IToastButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddButton (button As IToastButton) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddButton : Microsoft.Toolkit.Uwp.Notifications.IToastButton -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddButton button" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="button" Type="Microsoft.Toolkit.Uwp.Notifications.IToastButton" />
+      </Parameters>
+      <Docs>
+        <param name="button">An instance of class that implement <see cref="T:Microsoft.Toolkit.Uwp.Notifications.IToastButton" /> for the button that will be used on the toast.</param>
+        <summary>
+            Add a button to the current toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddButton">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton (string content, Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType, string arguments, Uri imageUri = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton(string content, valuetype Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType, string arguments, class System.Uri imageUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddButton(System.String,Microsoft.Toolkit.Uwp.Notifications.ToastActivationType,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddButton (content As String, activationType As ToastActivationType, arguments As String, Optional imageUri As Uri = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddButton : string * Microsoft.Toolkit.Uwp.Notifications.ToastActivationType * string * Uri -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddButton (content, activationType, arguments, imageUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="activationType" Type="Microsoft.Toolkit.Uwp.Notifications.ToastActivationType" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="imageUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="content">Text to display on the button.</param>
+        <param name="activationType">Type of activation this button will use when clicked. Defaults to Foreground.</param>
+        <param name="arguments">App-defined string of arguments that the app can later retrieve once it is activated when the user clicks the button.</param>
+        <param name="imageUri">Optional image icon for the button to display (required for buttons adjacent to inputs like quick reply).</param>
+        <summary>
+            Add a button to the current toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddButton">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton (string textBoxId, string content, Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType, string arguments, Uri imageUri = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddButton(string textBoxId, string content, valuetype Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType, string arguments, class System.Uri imageUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddButton(System.String,System.String,Microsoft.Toolkit.Uwp.Notifications.ToastActivationType,System.String,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddButton (textBoxId As String, content As String, activationType As ToastActivationType, arguments As String, Optional imageUri As Uri = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddButton : string * string * Microsoft.Toolkit.Uwp.Notifications.ToastActivationType * string * Uri -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddButton (textBoxId, content, activationType, arguments, imageUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBoxId" Type="System.String" />
+        <Parameter Name="content" Type="System.String" />
+        <Parameter Name="activationType" Type="Microsoft.Toolkit.Uwp.Notifications.ToastActivationType" />
+        <Parameter Name="arguments" Type="System.String" />
+        <Parameter Name="imageUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="textBoxId">ID of an existing <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastTextBox" /> in order to have this button display to the right of the input, achieving a quick reply scenario.</param>
+        <param name="content">Text to display on the button.</param>
+        <param name="activationType">Type of activation this button will use when clicked. Defaults to Foreground.</param>
+        <param name="arguments">App-defined string of arguments that the app can later retrieve once it is activated when the user clicks the button.</param>
+        <param name="imageUri">An optional image icon for the button to display (required for buttons adjacent to inputs like quick reply)</param>
+        <summary>
+            Add an button to the toast that will be display to the right of the input text box, achieving a quick reply scenario.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddComboBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox (string id, params ValueTuple&lt;string,string&gt;[] choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox(string id, valuetype System.ValueTuple`2&lt;string, string&gt;[] choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddComboBox(System.String,System.ValueTuple{System.String,System.String}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddComboBox (id As String, ParamArray choices As ValueTuple(Of String, String)()) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddComboBox : string * ValueTuple&lt;string, string&gt;[] -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddComboBox (id, choices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="choices" Type="System.ValueTuple&lt;System.String,System.String&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "comboBoxItemId", "comboBoxItemContent" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="id">Required ID property used so that developers can retrieve user input once the app is activated.</param>
+        <param name="choices">List of choices that will be available for user to select.</param>
+        <summary>
+            Add a combo box / drop-down menu that contain options for user to select.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddComboBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox (string id, string defaultSelectionBoxItemId, params ValueTuple&lt;string,string&gt;[] choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox(string id, string defaultSelectionBoxItemId, valuetype System.ValueTuple`2&lt;string, string&gt;[] choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddComboBox(System.String,System.String,System.ValueTuple{System.String,System.String}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddComboBox (id As String, defaultSelectionBoxItemId As String, ParamArray choices As ValueTuple(Of String, String)()) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddComboBox : string * string * ValueTuple&lt;string, string&gt;[] -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddComboBox (id, defaultSelectionBoxItemId, choices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="defaultSelectionBoxItemId" Type="System.String" />
+        <Parameter Name="choices" Type="System.ValueTuple&lt;System.String,System.String&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "comboBoxItemId", "comboBoxItemContent" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="id">Required ID property used so that developers can retrieve user input once the app is activated.</param>
+        <param name="defaultSelectionBoxItemId">Sets which item is selected by default, and refers to the Id property of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBoxItem" />. If you do not provide this or null, the default selection will be empty (user sees nothing).</param>
+        <param name="choices">List of choices that will be available for user to select.</param>
+        <summary>
+            Add a combo box / drop-down menu that contain options for user to select.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddComboBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox (string id, string title, string defaultSelectionBoxItemId, System.Collections.Generic.IEnumerable&lt;ValueTuple&lt;string,string&gt;&gt; choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox(string id, string title, string defaultSelectionBoxItemId, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.ValueTuple`2&lt;string, string&gt;&gt; choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddComboBox(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.ValueTuple{System.String,System.String}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddComboBox (id As String, title As String, defaultSelectionBoxItemId As String, choices As IEnumerable(Of ValueTuple(Of String, String))) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddComboBox : string * string * string * seq&lt;ValueTuple&lt;string, string&gt;&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddComboBox (id, title, defaultSelectionBoxItemId, choices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="defaultSelectionBoxItemId" Type="System.String" />
+        <Parameter Name="choices" Type="System.Collections.Generic.IEnumerable&lt;System.ValueTuple&lt;System.String,System.String&gt;&gt;">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "comboBoxItemId", "comboBoxItemContent" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="id">Required ID property used so that developers can retrieve user input once the app is activated.</param>
+        <param name="title">Title text to display above the Combo Box.</param>
+        <param name="defaultSelectionBoxItemId">Sets which item is selected by default, and refers to the Id property of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBoxItem" />. If you do not provide this or null, the default selection will be empty (user sees nothing).</param>
+        <param name="choices">List of choices that will be available for user to select.</param>
+        <summary>
+            Add a combo box / drop-down menu that contain options for user to select.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddComboBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox (string id, string title, string defaultSelectionBoxItemId, params ValueTuple&lt;string,string&gt;[] choices);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddComboBox(string id, string title, string defaultSelectionBoxItemId, valuetype System.ValueTuple`2&lt;string, string&gt;[] choices) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddComboBox(System.String,System.String,System.String,System.ValueTuple{System.String,System.String}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddComboBox (id As String, title As String, defaultSelectionBoxItemId As String, ParamArray choices As ValueTuple(Of String, String)()) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddComboBox : string * string * string * ValueTuple&lt;string, string&gt;[] -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddComboBox (id, title, defaultSelectionBoxItemId, choices)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="defaultSelectionBoxItemId" Type="System.String" />
+        <Parameter Name="choices" Type="System.ValueTuple&lt;System.String,System.String&gt;[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+            <Attribute>
+              <AttributeName>System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "comboBoxItemId", "comboBoxItemContent" })</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="id">Required ID property used so that developers can retrieve user input once the app is activated.</param>
+        <param name="title">Title text to display above the Combo Box.</param>
+        <param name="defaultSelectionBoxItemId">Sets which item is selected by default, and refers to the Id property of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBoxItem" />. If you do not provide this or null, the default selection will be empty (user sees nothing).</param>
+        <param name="choices">List of choices that will be available for user to select.</param>
+        <summary>
+            Add a combo box / drop-down menu that contain options for user to select.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddCustomTimeStamp">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddCustomTimeStamp (DateTime dateTime);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddCustomTimeStamp(valuetype System.DateTime dateTime) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddCustomTimeStamp(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddCustomTimeStamp (dateTime As DateTime) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddCustomTimeStamp : DateTime -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddCustomTimeStamp dateTime" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dateTime" Type="System.DateTime" />
+      </Parameters>
+      <Docs>
+        <param name="dateTime">Custom Time to be displayed on the toast</param>
+        <summary>
+            Add custom time stamp on the toast to override the time display on the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHeader">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddHeader (string id, string title, string arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddHeader(string id, string title, string arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddHeader(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHeader (id As String, title As String, arguments As String) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddHeader : string * string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddHeader (id, title, arguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="arguments" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">A developer-created identifier that uniquely identifies this header. If two notifications have the same header id, they will be displayed underneath the same header in Action Center.</param>
+        <param name="title">A title for the header.</param>
+        <param name="arguments">A developer-defined string of arguments that is returned to the app when the user clicks this header.</param>
+        <summary>
+            Add a header to a toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>More info about toast header: https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/toast-headers </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddHeroImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddHeroImage (Uri uri, string alternateText = default, bool? addImageQuery = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddHeroImage(class System.Uri uri, string alternateText, valuetype System.Nullable`1&lt;bool&gt; addImageQuery) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddHeroImage(System.Uri,System.String,System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddHeroImage (uri As Uri, Optional alternateText As String = null, Optional addImageQuery As Nullable(Of Boolean) = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddHeroImage : Uri * string * Nullable&lt;bool&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddHeroImage (uri, alternateText, addImageQuery)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="addImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI of the image. Can be from your application package, application data, or the internet. Internet images must be less than 200 KB in size.</param>
+        <param name="alternateText">A description of the image, for users of assistive technologies.</param>
+        <param name="addImageQuery">A value whether Windows is allowed to append a query string to the image URI supplied in the Tile notification.</param>
+        <summary>
+            Add a hero image to the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInlineImage">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddInlineImage (Uri uri, string alternateText = default, bool? addImageQuery = default, Microsoft.Toolkit.Uwp.Notifications.AdaptiveImageCrop? hintCrop = default, bool? hintRemoveMargin = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddInlineImage(class System.Uri uri, string alternateText, valuetype System.Nullable`1&lt;bool&gt; addImageQuery, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.AdaptiveImageCrop&gt; hintCrop, valuetype System.Nullable`1&lt;bool&gt; hintRemoveMargin) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddInlineImage(System.Uri,System.String,System.Nullable{System.Boolean},System.Nullable{Microsoft.Toolkit.Uwp.Notifications.AdaptiveImageCrop},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddInlineImage (uri As Uri, Optional alternateText As String = null, Optional addImageQuery As Nullable(Of Boolean) = null, Optional hintCrop As Nullable(Of AdaptiveImageCrop) = null, Optional hintRemoveMargin As Nullable(Of Boolean) = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddInlineImage : Uri * string * Nullable&lt;bool&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveImageCrop&gt; * Nullable&lt;bool&gt; -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddInlineImage (uri, alternateText, addImageQuery, hintCrop, hintRemoveMargin)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+        <Parameter Name="alternateText" Type="System.String" />
+        <Parameter Name="addImageQuery" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="hintCrop" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveImageCrop&gt;" />
+        <Parameter Name="hintRemoveMargin" Type="System.Nullable&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI of the image. Can be from your application package, application data, or the internet. Internet images must be less than 200 KB in size.</param>
+        <param name="alternateText">A description of the image, for users of assistive technologies.</param>
+        <param name="addImageQuery">A value whether Windows is allowed to append a query string to the image URI supplied in the Tile notification.</param>
+        <param name="hintCrop">A value whether a margin is removed. images have an 8px margin around them.</param>
+        <param name="hintRemoveMargin">the horizontal alignment of the image.This is only supported when inside an <see cref="T:Microsoft.Toolkit.Uwp.Notifications.AdaptiveSubgroup" />.</param>
+        <summary>
+            Add an image inline with other toast content.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddInputTextBox">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddInputTextBox (string id, string placeHolderContent = default, string title = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddInputTextBox(string id, string placeHolderContent, string title) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddInputTextBox(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddInputTextBox (id As String, Optional placeHolderContent As String = null, Optional title As String = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddInputTextBox : string * string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddInputTextBox (id, placeHolderContent, title)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="id" Type="System.String" />
+        <Parameter Name="placeHolderContent" Type="System.String" />
+        <Parameter Name="title" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="id">Required ID property so that developers can retrieve user input once the app is activated.</param>
+        <param name="placeHolderContent">Placeholder text to be displayed on the text box when the user hasn't typed any text yet.</param>
+        <param name="title">Title text to display above the text box.</param>
+        <summary>
+            Add an input text box that the user can type into.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddProgressBar">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddProgressBar (string title = default, double? value = default, bool isIndeterminate = false, string valueStringOverride = default, string status = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddProgressBar(string title, valuetype System.Nullable`1&lt;float64&gt; value, bool isIndeterminate, string valueStringOverride, string status) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddProgressBar(System.String,System.Nullable{System.Double},System.Boolean,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddProgressBar (Optional title As String = null, Optional value As Nullable(Of Double) = null, Optional isIndeterminate As Boolean = false, Optional valueStringOverride As String = null, Optional status As String = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddProgressBar : string * Nullable&lt;double&gt; * bool * string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddProgressBar (title, value, isIndeterminate, valueStringOverride, status)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="value" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="isIndeterminate" Type="System.Boolean" />
+        <Parameter Name="valueStringOverride" Type="System.String" />
+        <Parameter Name="status" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="title">Title of the progress bar.</param>
+        <param name="value">Value of the progress bar. Default is 0</param>
+        <param name="isIndeterminate">Determine if the progress bar value should be indeterminate. Default to false.</param>
+        <param name="valueStringOverride">An optional string to be displayed instead of the default percentage string. If this isn't provided, something like "70%" will be displayed.</param>
+        <param name="status">A status string which is displayed underneath the progress bar. This string should reflect the status of the operation, like "Downloading..." or "Installing...". Default to empty.</param>
+        <summary>
+            Add a progress bar to the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>More info at: https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/toast-progress-bar </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddText">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddText (string text, Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle? hintStyle = default, bool? hintWrap = default, int? hintMaxLines = default, int? hintMinLines = default, Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign? hintAlign = default, string language = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddText(string text, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt; hintStyle, valuetype System.Nullable`1&lt;bool&gt; hintWrap, valuetype System.Nullable`1&lt;int32&gt; hintMaxLines, valuetype System.Nullable`1&lt;int32&gt; hintMinLines, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt; hintAlign, string language) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddText(System.String,System.Nullable{Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle},System.Nullable{System.Boolean},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddText (text As String, Optional hintStyle As Nullable(Of AdaptiveTextStyle) = null, Optional hintWrap As Nullable(Of Boolean) = null, Optional hintMaxLines As Nullable(Of Integer) = null, Optional hintMinLines As Nullable(Of Integer) = null, Optional hintAlign As Nullable(Of AdaptiveTextAlign) = null, Optional language As String = null) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddText : string * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt; * Nullable&lt;bool&gt; * Nullable&lt;int&gt; * Nullable&lt;int&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt; * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddText (text, hintStyle, hintWrap, hintMaxLines, hintMinLines, hintAlign, language)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="hintStyle" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextStyle&gt;" />
+        <Parameter Name="hintWrap" Type="System.Nullable&lt;System.Boolean&gt;" />
+        <Parameter Name="hintMaxLines" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintMinLines" Type="System.Nullable&lt;System.Int32&gt;" />
+        <Parameter Name="hintAlign" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.Notifications.AdaptiveTextAlign&gt;" />
+        <Parameter Name="language" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="text">Custom text to display on the tile.</param>
+        <param name="hintStyle">Style that controls the text's font size, weight, and opacity.</param>
+        <param name="hintWrap">Indicating whether text wrapping is enabled. For Tiles, this is false by default.</param>
+        <param name="hintMaxLines">The maximum number of lines the text element is allowed to display. For Tiles, this is infinity by default</param>
+        <param name="hintMinLines">The minimum number of lines the text element must display.</param>
+        <param name="hintAlign">The horizontal alignment of the text</param>
+        <param name="language">
+            The target locale of the XML payload, specified as a BCP-47 language tags such as "en-US" or "fr-FR". The locale specified here overrides any other specified locale, such as that in binding or visual.
+            </param>
+        <summary>
+            Add text to the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>More info at: https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts#text-elements</remarks>
+        <exception cref="T:System.InvalidOperationException">Throws when attempting to add/reserve more than 4 lines on a single toast. </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Throws when <paramref name="hintMaxLines" /> value is larger than 2. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToastActivationInfo">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddToastActivationInfo (string launchArgs, Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddToastActivationInfo(string launchArgs, valuetype Microsoft.Toolkit.Uwp.Notifications.ToastActivationType activationType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddToastActivationInfo(System.String,Microsoft.Toolkit.Uwp.Notifications.ToastActivationType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddToastActivationInfo (launchArgs As String, activationType As ToastActivationType) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddToastActivationInfo : string * Microsoft.Toolkit.Uwp.Notifications.ToastActivationType -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddToastActivationInfo (launchArgs, activationType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="launchArgs" Type="System.String" />
+        <Parameter Name="activationType" Type="Microsoft.Toolkit.Uwp.Notifications.ToastActivationType" />
+      </Parameters>
+      <Docs>
+        <param name="launchArgs">Custom app-defined launch arguments to be passed along on toast activation</param>
+        <param name="activationType">Set the activation type that will be used when the user click on this toast</param>
+        <summary>
+            Add info that can be used by the application when the app was activated/launched by the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddToastInput">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddToastInput (Microsoft.Toolkit.Uwp.Notifications.IToastInput input);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddToastInput(class Microsoft.Toolkit.Uwp.Notifications.IToastInput input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddToastInput(Microsoft.Toolkit.Uwp.Notifications.IToastInput)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddToastInput (input As IToastInput) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddToastInput : Microsoft.Toolkit.Uwp.Notifications.IToastInput -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddToastInput input" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.Toolkit.Uwp.Notifications.IToastInput" />
+      </Parameters>
+      <Docs>
+        <param name="input">An instance of a class that impmement <see cref="T:Microsoft.Toolkit.Uwp.Notifications.IToastInput" /> that will be used on the toast.</param>
+        <summary>
+            Add an input option to the Toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddVisualChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddVisualChild (Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder AddVisualChild(class Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild child) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.AddVisualChild(Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddVisualChild (child As IToastBindingGenericChild) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddVisualChild : Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.AddVisualChild child" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="child" Type="Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild" />
+      </Parameters>
+      <Docs>
+        <param name="child">An instance of a class that implement <see cref="T:Microsoft.Toolkit.Uwp.Notifications.IToastBindingGenericChild" />.</param>
+        <summary>
+            Add a visual element to the toast.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Content">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContent Content { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Uwp.Notifications.ToastContent Content" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As ToastContent" />
+      <MemberSignature Language="F#" Value="member this.Content : Microsoft.Toolkit.Uwp.Notifications.ToastContent" Usage="Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.Content" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets internal instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContent" />. This is equivalent to the call to <see cref="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.GetToastContent" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetToastContent">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContent GetToastContent ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContent GetToastContent() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.GetToastContent" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToastContent () As ToastContent" />
+      <MemberSignature Language="F#" Value="member this.GetToastContent : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContent" Usage="toastContentBuilder.GetToastContent " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContent</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Get the instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContent" /> that has been built by the builder with specified configuration so far.
+            </summary>
+        <returns>An instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContent" /> that can be used to create tile notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetToastDuration">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder SetToastDuration (Microsoft.Toolkit.Uwp.Notifications.ToastDuration duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder SetToastDuration(valuetype Microsoft.Toolkit.Uwp.Notifications.ToastDuration duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.SetToastDuration(Microsoft.Toolkit.Uwp.Notifications.ToastDuration)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetToastDuration (duration As ToastDuration) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetToastDuration : Microsoft.Toolkit.Uwp.Notifications.ToastDuration -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.SetToastDuration duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="Microsoft.Toolkit.Uwp.Notifications.ToastDuration" />
+      </Parameters>
+      <Docs>
+        <param name="duration">Duration of the toast</param>
+        <summary>
+            Sets the amount of time the Toast should display. You typically should use the
+            Scenario attribute instead, which impacts how long a Toast stays on screen.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetToastScenario">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder SetToastScenario (Microsoft.Toolkit.Uwp.Notifications.ToastScenario scenario);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder SetToastScenario(valuetype Microsoft.Toolkit.Uwp.Notifications.ToastScenario scenario) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder.SetToastScenario(Microsoft.Toolkit.Uwp.Notifications.ToastScenario)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetToastScenario (scenario As ToastScenario) As ToastContentBuilder" />
+      <MemberSignature Language="F#" Value="member this.SetToastScenario : Microsoft.Toolkit.Uwp.Notifications.ToastScenario -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" Usage="toastContentBuilder.SetToastScenario scenario" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scenario" Type="Microsoft.Toolkit.Uwp.Notifications.ToastScenario" />
+      </Parameters>
+      <Docs>
+        <param name="scenario">Scenario to be used for the toast's behavior</param>
+        <summary>
+             Sets the scenario, to make the Toast behave like an alarm, reminder, or more.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastContentBuilder" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

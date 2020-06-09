@@ -13,13 +13,16 @@
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
+      "customized_template_paths": [],
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -39,19 +42,25 @@
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
-      "xref_query_tags": [ "/uwp", "/dotnet" ], 
+      "xref_query_tags": [
+        "/uwp",
+        "/dotnet"
+      ],
       "open_to_public_contributors": false,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "RestApi": "Content"
+        "RestApi": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0,
-      "customized_template_paths": [
-        "_dependentPackages/memberpage.plugins/content"
-      ],
+      "customized_template_paths": [],
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -86,35 +95,29 @@
   "need_generate_pdf_url_template": false,
   "template_folder": "_themes",
   "dependent_packages": [
-   {
-     "id": "Microsoft.DocAsCode.ECMA2Yaml",
-     "nuget_feed": "https://www.myget.org/F/op/api/v2",
-     "path_to_root": "_dependentPackages/ECMA2Yaml",
-     "target_framework": "net45",
-     "version": "latest"
-   },
-   {
-     "id": "memberpage.plugins",
-     "nuget_feed": "https://www.myget.org/F/docfx/api/v2",
-     "path_to_root": "_dependentPackages/memberpage.plugins",
-     "target_framework": "net45",
-     "version": "latest"
-   },
-   {
-     "id": "Microsoft.OpenPublishing.CommonPlugins",
-     "nuget_feed": "https://www.myget.org/F/op/api/v2",
-     "path_to_root": "_dependentPackages/CommonPlugins",
-     "target_framework": "net45",
-     "version": "latest"
-   }
- ],
- "ECMA2Yaml": {
-   "SourceXmlFolder": "dotnet/xml",
-   "OutputYamlFolder": "dotnet/api",
-   "Flatten": true
- },
- "DiffFolder": [
-   "dotnet/api"
- ],
- "SplitTOC": "dotnet/api/toc.yml"
+    {
+      "id": "Microsoft.DocAsCode.ECMA2Yaml",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/ECMA2Yaml",
+      "target_framework": "net45",
+      "version": "latest"
+    },
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ],
+  "ECMA2Yaml": {
+    "SourceXmlFolder": "dotnet/xml",
+    "OutputYamlFolder": "dotnet/api",
+    "Flatten": true,
+    "SDPMode": true
+  },
+  "DiffFolder": [
+    "dotnet/api"
+  ],
+  "SplitTOC": "dotnet/api/toc.yml"
 }

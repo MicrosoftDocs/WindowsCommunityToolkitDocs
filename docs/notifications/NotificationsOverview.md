@@ -46,3 +46,7 @@ If you're developing a non-UWP C# app for Windows, the Windows Community toolkit
 ## API
 
 * [Notifications source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Notifications/Microsoft.Toolkit.Uwp.Notifications.UWP)
+
+## Related Topics
+
+* [Toast Notification UX Guidance](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance)

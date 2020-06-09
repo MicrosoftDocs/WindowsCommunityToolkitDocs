@@ -1,5 +1,5 @@
 ---
-title: How to - Display and Configure Row Details in the DataGrid Control
+title: Display and Configure Row Details in DataGrid
 author: harinikmsft
 description: Guidance document that shows how to customize row details section in the DataGrid control
 keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid, xaml control, xaml, RowDetails
@@ -61,7 +61,7 @@ Set the **RowDetailsVisibilityMode** property to a value of the **DataGridRowDet
    * *Visible* : The row details section is displayed for all rows.
    * *VisibleWhenSelected* : The row details section is displayed only for selected rows.
 
-The following example shows how to use the RowDetailsVisibilityMode property to change the row details display mode programmatically from the selection of a value in a ComboBox: 
+The following example shows how to use the RowDetailsVisibilityMode property to change the row details display mode programmatically from the selection of a value in a ComboBox:
 
 ```C#
 // Set the row details visibility to the option selected in the combo box.
@@ -93,4 +93,4 @@ Set the **AreRowDetailsFrozen** property to true.
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
 * [Sizing options in the DataGrid control](sizing_options.md)
-* [DataGrid Sample](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid). 
+* [DataGrid Sample](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).

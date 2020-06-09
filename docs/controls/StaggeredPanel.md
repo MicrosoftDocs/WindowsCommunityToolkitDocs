@@ -39,8 +39,10 @@ The [StaggeredPanel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolk
 
 | Property | Type | Description |
 | -- | -- | -- |
+| ColumnSpacing | double  | Gets or sets the distance between columns |
 | DesiredColumnWidth | double | The desired width of each column. The width of columns can exceed the DesiredColumnWidth if the HorizontalAlignment is set to Stretch. |
 | Padding | Thickness | The dimensions of the space between the edge and its child as a Thickness value. Thickness is a structure that stores dimension values using pixel measures. |
+| RowSpacing | double  | Gets or sets the vertical distance between items |
 
 ## Sample Project
 

@@ -41,14 +41,14 @@ The [InfiniteCanvas Control](https://docs.microsoft.com/dotnet/api/microsoft.too
 | -- | -- | -- |
 | Redo() | void | Redo the last action. |
 | Undo() | void | Undo the last action. |
-| ExportAsJson() | string | Export the InfinitCanvas as json string. |
+| ExportAsJson() | string | Export the InfiniteCanvas as json string. |
 | ImportFromJson(string json) | void | Import InfiniteCanvas from json string and render the new canvas, this function will empty the Redo/Undo queue. |
 
 ## Events
 
 ### ReRenderCompleted
 
-This event triggered after each render happended because of any change in the canvas elements.
+This event triggered after each render happened because of any change in the canvas elements.
 This event could be used to do the Auto Save functionality.
 
 ## Examples
