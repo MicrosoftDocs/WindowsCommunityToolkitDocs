@@ -10,7 +10,7 @@ dev_langs:
 
 # Theme Listener
 
-The [Theme Listener](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.themelistener) class allows you to determine the current Application Theme, and when it is changed via System Theme changes.
+The [Theme Listener](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.helpers.themelistener) class allows you to determine the current Application Theme, and when it is changed via System Theme changes.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=ThemeListener)
