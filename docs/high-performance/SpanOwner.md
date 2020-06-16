@@ -1,5 +1,5 @@
 ---
-title: Spanowner&lt;T>
+title: SpanOwner&lt;T>
 author: Sergio0694
 description: A stack-only buffer type renting memory from a shared pool
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, parallel, high performance, net core, net standard
