@@ -1,0 +1,52 @@
+<Type Name="IMemoryOwnerExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.IMemoryOwnerExtensions">
+  <TypeSignature Language="C#" Value="public static class IMemoryOwnerExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IMemoryOwnerExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.IMemoryOwnerExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IMemoryOwnerExtensions" />
+  <TypeSignature Language="F#" Value="type IMemoryOwnerExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Buffers.IMemoryOwner`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this System.Buffers.IMemoryOwner&lt;byte&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(class System.Buffers.IMemoryOwner`1&lt;unsigned int8&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.IMemoryOwnerExtensions.AsStream(System.Buffers.IMemoryOwner{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (memory As IMemoryOwner(Of Byte)) As Stream" />
+      <MemberSignature Language="F#" Value="static member AsStream : System.Buffers.IMemoryOwner&lt;byte&gt; -&gt; System.IO.Stream" Usage="Microsoft.Toolkit.HighPerformance.Extensions.IMemoryOwnerExtensions.AsStream memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Buffers.IMemoryOwner&lt;System.Byte&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="memory">The input <see cref="T:System.Buffers.IMemoryOwner`1" /> of <see cref="T:System.Byte" /> instance.</param>
+        <summary>
+            Returns a <see cref="T:System.IO.Stream" /> wrapping the contents of the given <see cref="T:System.Buffers.IMemoryOwner`1" /> of <see cref="T:System.Byte" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.IO.Stream" /> wrapping the data within <paramref name="memory" />.</returns>
+        <remarks>
+            The caller does not need to track the lifetime of the input <see cref="T:System.Buffers.IMemoryOwner`1" /> of <see cref="T:System.Byte" />
+            instance, as the returned <see cref="T:System.IO.Stream" /> will take care of disposing that buffer when it is closed.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,150 @@
+<Type Name="XamlCompositionEffectBrushBase" FullName="Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase">
+  <TypeSignature Language="C#" Value="public abstract class XamlCompositionEffectBrushBase : Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XamlCompositionEffectBrushBase extends Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XamlCompositionEffectBrushBase&#xA;Inherits XamlCompositionBrushBase" />
+  <TypeSignature Language="F#" Value="type XamlCompositionEffectBrushBase = class&#xA;    inherit XamlCompositionBrushBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Media.XamlCompositionBrushBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A custom <see cref="T:Windows.UI.Xaml.Media.XamlCompositionBrushBase" /><see langword="class" /> that's ready to be used with a custom <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected XamlCompositionEffectBrushBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.IsEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the current brush is using the provided pipeline, or the fallback color
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnBrushRequested">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnBrushRequested ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnBrushRequested() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnBrushRequested" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBrushRequested () As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="abstract member OnBrushRequested : unit -&gt; Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" Usage="xamlCompositionEffectBrushBase.OnBrushRequested " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            A method that builds and returns the <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline to use in the current instance.<para />
+            This method can also be used to store any needed <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectSetter`1" /> or <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectAnimation`1" /> instances in local fields, for later use (they will need to be called upon <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" />).
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> instance to create the brush to display</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnConnected">
+      <MemberSignature Language="C#" Value="protected override void OnConnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnConnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnConnected" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnConnected ()" />
+      <MemberSignature Language="F#" Value="override this.OnConnected : unit -&gt; unit" Usage="xamlCompositionEffectBrushBase.OnConnected " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisconnected">
+      <MemberSignature Language="C#" Value="protected override void OnDisconnected ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisconnected() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnDisconnected" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisconnected ()" />
+      <MemberSignature Language="F#" Value="override this.OnDisconnected : unit -&gt; unit" Usage="xamlCompositionEffectBrushBase.OnDisconnected " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnEnabledToggled">
+      <MemberSignature Language="C#" Value="protected void OnEnabledToggled (bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnEnabledToggled(bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnEnabledToggled(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnEnabledToggled (value As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.OnEnabledToggled : bool -&gt; unit" Usage="xamlCompositionEffectBrushBase.OnEnabledToggled value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The new value being set to the <see cref="P:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.IsEnabled" /> property</param>
+        <summary>
+            Updates the <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" /> property depending on the input value
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
