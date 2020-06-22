@@ -1,9 +1,9 @@
 <Type Name="BackdropBlurBrush" FullName="Microsoft.Toolkit.Uwp.UI.Media.BackdropBlurBrush">
-  <TypeSignature Language="C#" Value="public class BackdropBlurBrush : Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackdropBlurBrush extends Windows.UI.Xaml.Media.XamlCompositionBrushBase" />
+  <TypeSignature Language="C#" Value="public class BackdropBlurBrush : Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BackdropBlurBrush extends Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.BackdropBlurBrush" />
-  <TypeSignature Language="VB.NET" Value="Public Class BackdropBlurBrush&#xA;Inherits XamlCompositionBrushBase" />
-  <TypeSignature Language="F#" Value="type BackdropBlurBrush = class&#xA;    inherit XamlCompositionBrushBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class BackdropBlurBrush&#xA;Inherits XamlCompositionEffectBrushBase" />
+  <TypeSignature Language="F#" Value="type BackdropBlurBrush = class&#xA;    inherit XamlCompositionEffectBrushBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
@@ -11,9 +11,10 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
-    <BaseTypeName>Windows.UI.Xaml.Media.XamlCompositionBrushBase</BaseTypeName>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -36,6 +37,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -59,6 +61,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -85,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -96,55 +100,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="OnConnected">
-      <MemberSignature Language="C#" Value="protected override void OnConnected ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnConnected() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.BackdropBlurBrush.OnConnected" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnConnected ()" />
-      <MemberSignature Language="F#" Value="override this.OnConnected : unit -&gt; unit" Usage="backdropBlurBrush.OnConnected " />
+    <Member MemberName="OnBrushRequested">
+      <MemberSignature Language="C#" Value="protected override Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnBrushRequested ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnBrushRequested() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.BackdropBlurBrush.OnBrushRequested" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBrushRequested () As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="override this.OnBrushRequested : unit -&gt; Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" Usage="backdropBlurBrush.OnBrushRequested " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
         <summary>
-            Initializes the Composition Brush.
+            A method that builds and returns the <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline to use in the current instance.<para />
+            This method can also be used to store any needed <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectSetter`1" /> or <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectAnimation`1" /> instances in local fields, for later use (they will need to be called upon <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" />).
             </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnDisconnected">
-      <MemberSignature Language="C#" Value="protected override void OnDisconnected ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisconnected() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.BackdropBlurBrush.OnDisconnected" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisconnected ()" />
-      <MemberSignature Language="F#" Value="override this.OnDisconnected : unit -&gt; unit" Usage="backdropBlurBrush.OnDisconnected " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>
-            Deconstructs the Composition Brush.
-            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> instance to create the brush to display</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
