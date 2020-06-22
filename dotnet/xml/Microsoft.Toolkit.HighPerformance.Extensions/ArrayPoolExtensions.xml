@@ -1,0 +1,59 @@
+<Type Name="ArrayPoolExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.ArrayPoolExtensions">
+  <TypeSignature Language="C#" Value="public static class ArrayPoolExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArrayPoolExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.ArrayPoolExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ArrayPoolExtensions" />
+  <TypeSignature Language="F#" Value="type ArrayPoolExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Buffers.ArrayPool`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Resize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Resize&lt;T&gt; (this System.Buffers.ArrayPool&lt;T&gt; pool, ref T[] array, int newSize, bool clearArray = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Resize&lt;T&gt;(class System.Buffers.ArrayPool`1&lt;!!T&gt; pool, !!T[]&amp; array, int32 newSize, bool clearArray) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.ArrayPoolExtensions.Resize``1(System.Buffers.ArrayPool{``0},``0[]@,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Resize(Of T) (pool As ArrayPool(Of T), ByRef array As T(), newSize As Integer, Optional clearArray As Boolean = false)" />
+      <MemberSignature Language="F#" Value="static member Resize : System.Buffers.ArrayPool&lt;'T&gt; * T[] * int * bool -&gt; unit" Usage="Microsoft.Toolkit.HighPerformance.Extensions.ArrayPoolExtensions.Resize (pool, array, newSize, clearArray)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" RefType="this" />
+        <Parameter Name="array" Type="T[]" RefType="ref" />
+        <Parameter Name="newSize" Type="System.Int32" />
+        <Parameter Name="clearArray" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items into the target array to resize.</typeparam>
+        <param name="pool">The target <see cref="T:System.Buffers.ArrayPool`1" /> instance to use to resize the array.</param>
+        <param name="array">The rented <typeparamref name="T" /> array to resize, or <see langword="null" /> to create a new array.</param>
+        <param name="newSize">The size of the new array.</param>
+        <param name="clearArray">Indicates whether the contents of the array should be cleared before reuse.</param>
+        <summary>
+            Changes the number of elements of a rented one-dimensional array to the specified new size.
+            </summary>
+        <remarks>When this method returns, the caller must not use any references to the old array anymore.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="newSize" /> is less than 0.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
