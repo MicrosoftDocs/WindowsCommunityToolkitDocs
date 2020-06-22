@@ -27,6 +27,16 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
   ![TokenizingTextBox Example](../resources/images/Controls/TokenizingTextBox.png)
 
+## Remarks
+
+> [!IMPORTANT]
+> It's recommended when providing an ItemsSource to store tokens to use an `ObservableCollection`.
+
+If you inspect the *default* `ItemsSource` or `Items` of the `TokenizingTextBox`, you'll notice some entries of the type `ITokenStringContainer`. These are partial tokens that have yet to be resolved as typed by the user. You can use this interface to inspect partial strings when looking at the collection.
+
+> [!NOTE]
+> If you provide your own `ItemsSource` to the control, partial string tokens are automatically filtered, so your `ObservableCollection` will only contain completed tokens. Look at `Items` instead if you need to see all elements within the `TokenizingTextBox`.
+
 ## Properties
 
 | Property | Type | Description |
