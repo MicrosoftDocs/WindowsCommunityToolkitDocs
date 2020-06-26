@@ -10,6 +10,9 @@ dev_langs:
 
 # OneDrive Service
 
+> [!WARNING]
+> (This API is obsolete and will be removed in the future. Please use the Microsoft Graph SDK or our new providers at [https://aka.ms/wgt](https://aka.ms/wgt))
+
 The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](https://docs.microsoft.com/en-us/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
 
 * Initialize and authenticate with a common set of objects
@@ -314,6 +317,3 @@ As a workaround, the recommended path is using _CreateCollisionOption.FailIfExis
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
 
-## API
-
-* [OneDrive Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Services/Services/OneDrive)
