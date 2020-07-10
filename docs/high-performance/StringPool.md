@@ -45,18 +45,17 @@ The `StringPool` type can also be useful when parsing raw requests using a diffe
 | Property | Return Type | Description |
 | -- | -- | -- |
 | Default | StringPool | Gets the default `StringPool` instance |
-| NumberOfBuckets | int | Gets the total number of buckets in use. |
-| EntriesPerBucket | int | Gets the maximum number of `string` entries stored in each bucket. |
+| Size | int | Gets the total number of `string`-s that can be stored in the current instance. |
 
 ## Methods
 
 | Method | Return Type | Description |
 | -- | -- | -- |
-| Add(string | void | Stores a `string` instance in the internal cache. |
+| Add(string) | void | Stores a `string` instance in the internal cache. |
 | GetOrAdd(string) | string | Gets a cached `string` instance matching the input content, or stores the input one |
-| GetOrAdd(ReadOnlySpan<char>) | string | Gets a cached `string` instance matching the input content, or creates a new one |
-| GetOrAdd(ReadOnlySpan<byte>, Encoding) | string | Gets a cached `string` instance matching the input content (converted to Unicode), or creates a new one. |
-| TryGet(ReadOnlySpan<char>, out string?) | bool | Tries to get a cached `string` instance matching the input content, if present |
+| GetOrAdd(ReadOnlySpan&lt;char&gt;) | string | Gets a cached `string` instance matching the input content, or creates a new one |
+| GetOrAdd(ReadOnlySpan&lt;byte&gt;, Encoding) | string | Gets a cached `string` instance matching the input content (converted to Unicode), or creates a new one. |
+| TryGet(ReadOnlySpan&lt;char&gt;, out string?) | bool | Tries to get a cached `string` instance matching the input content, if present |
 | Reset() | void | Resets the current instance and its associated buckets |
 
 ## Sample Code
