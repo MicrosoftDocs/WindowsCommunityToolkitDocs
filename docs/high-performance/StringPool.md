@@ -1,7 +1,7 @@
 ---
 title: StringPool
 author: Sergio0694
-description: A stack-only buffer type renting memory from a shared pool
+description: A type implementing a configurable pool for string instances
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, parallel, high performance, net core, net standard
 dev_langs:
   - csharp
