@@ -58,29 +58,25 @@ This type is only meant to showcase the use of `ThrowHelper` APIs. Here we're si
 
 ```x86asm
 ExceptionTest.GetValueIfNotZeroOrThrow()
-    L0000: push rsi
-    L0001: sub rsp, 0x20
-    L0005: mov eax, [rcx]   ; read number
-    L0007: test eax, eax    ; if (number != 0)
-    L0009: je short L0011   ; jump to faulting path (if == 0)
-    L000b: add rsp, 0x20
-    L000f: pop rsi
-    L0010: ret              ; return (number is already in eax)
-    L0011: mov rcx, 0x7ff95cbaca80  ; exception setup...
-    L001b: call 0x00007ff9bc6178f0
-    L0020: mov rsi, rax
-    L0023: mov ecx, 1
-    L0028: mov rdx, 0x7ff96590c080
-    L0032: call 0x00007ff9bc7403e0
-    L0037: mov rdx, rax
-    L003a: mov rcx, rsi
-    L003d: call System.InvalidOperationException..ctor(System.String)
-    L0042: mov rcx, rsi
-    L0045: call 0x00007ff9bc5db3a0
-    L004a: int3 ; finally throw the exception
+    mov eax, [rcx]              ; read number
+    test eax, eax               ; if (number != 0)
+    je short L0011              ; jump to faulting path (if == 0)
+    ret                         ; return (number is already in eax)
+    mov rcx, 0x7ff95cbaca80     ; exception setup...
+    call 0x00007ff9bc6178f0
+    mov rsi, rax
+    mov ecx, 1
+    mov rdx, 0x7ff96590c080
+    call 0x00007ff9bc7403e0
+    mov rdx, rax
+    mov rcx, rsi
+    call System.InvalidOperationException..ctor(System.String)
+    mov rcx, rsi
+    call 0x00007ff9bc5db3a0
+    int3 ; finally throw the exception
 ```
 
-We can see the code contains a lot of lines just dedicated to creating the exception being thrown. This can cause a large increase in the code size whenever we have many of these checks, because it will reduce the efficacy of the instruction cache, etc. In general, we'd like the size of our methods to be as small as possible.
+We can see the code contains a lot of lines just dedicated to creating the exception being thrown. This can cause a large increase in the code size whenever we have many of these checks, because it will reduce the efficiency of the instruction cache, etc. In general, we'd like the size of our methods to be as small as possible.
 
 The above snippet, rewritten using the `ThrowHelper` APIs, would like like this:
 
@@ -100,16 +96,14 @@ Which results in the following assembly:
 
 ```x86asm
 ExceptionTest.GetValueIfNotZeroOrThrow2()
-    L0000: sub rsp, 0x28
-    L0004: mov eax, [rcx]   ; load number
-    L0006: test eax, eax    ; if (number != 0)
-    L0008: je short L000f   ; faulting path (if == 0)
-    L000a: add rsp, 0x28
-    L000e: ret              ; return number (already in eax)
-    L000f: mov rcx, 0x23435d85b98   ; load the exception message
-    L0019: mov rcx, [rcx]
-    L001c: call ThrowHelper.ThrowInvalidOperationException(System.String) ; ThrowHelper call!
-    L0021: int3 ; return with fault
+    mov eax, [rcx]          ; load number
+    test eax, eax           ; if (number != 0)
+    je short L000f          ; faulting path (if == 0)
+    ret                     ; return number (already in eax)
+    mov rcx, 0x23435d85b98  ; load the exception message
+    mov rcx, [rcx]
+    call ThrowHelper.ThrowInvalidOperationException(System.String) ; ThrowHelper call!
+    int3 ; return with fault
 ```
 
 We can see that the resulting assembly is much smaller than before. We basically moved all the code to create the exception out of the method, which also means we can just always reuse the same code from the `ThrowHelper` APIs, with different arguments, instead of inlining the exception throw in every single one of our methods. Here we only have those two `mov` instructions to load the `string` with our exception type, and then we jump to the `ThrowHelper.ThrowInvalidOperationException` method. The JIT compiler is able to see that that method will always throw, so it will never inline that call, and it will make sure rewrite our conditional branches in the best way possible (specifically, knowing what is the branch that is supposed to be executed, without faulting).
