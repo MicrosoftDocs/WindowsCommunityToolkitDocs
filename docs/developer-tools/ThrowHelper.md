@@ -23,6 +23,9 @@ throw new InvalidOperationException("Some custom message from my library");
 ThrowHelper.ThrowInvalidOperationException("Some custom message from my library");
 ```
 
+> [!NOTE]
+> This will also result in a slightly different stack trace, as the exception will be thrown by this helper method instead of directly by the original caller. The practical result is still the same as throwing an exception directly.
+
 The `Guard` APIs provide an easy to use abstraction over many common checks that might need to be performed, so it is recommended to first try to see if there is a `Guard` API that can be used, and only fallback on using `ThrowHelper` if that's not the case. As mentioned before, this might be if your library needs to throw a specific exception type not present in the `Guard` APIs, or if you need full control on the exact arguments being included in the exception being thrown.
 
 > [!NOTE]
