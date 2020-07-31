@@ -32,7 +32,7 @@ public static string GetHost(string url)
     // In this example, it would be "docs.microsoft.com"
     ReadOnlySpan<char> span = url.AsSpan(startIndex, endIndex);
 
-    return StringPool.Default.GetOrAdd(span);
+    return StringPool.Shared.GetOrAdd(span);
 }
 ```
 
@@ -44,7 +44,7 @@ The `StringPool` type can also be useful when parsing raw requests using a diffe
 
 | Property | Return Type | Description |
 | -- | -- | -- |
-| Default | StringPool | Gets the default `StringPool` instance |
+| Shared | StringPool | Gets the shared `StringPool` instance |
 | Size | int | Gets the total number of `string`-s that can be stored in the current instance. |
 
 ## Methods
