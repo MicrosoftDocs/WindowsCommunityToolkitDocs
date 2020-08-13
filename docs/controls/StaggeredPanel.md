@@ -1,7 +1,7 @@
 ---
 title: StaggeredPanel
 author: skendrot
-description: Arranges child elements into a staggered grid pattern.
+description: Learn about the StaggeredPanel control. This control arranges child elements into a staggered grid pattern.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, StaggeredPanel 
 ---
 

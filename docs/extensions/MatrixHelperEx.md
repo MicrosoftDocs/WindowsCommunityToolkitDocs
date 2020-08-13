@@ -1,7 +1,7 @@
 ---
 title: MatrixHelperEx
 author: michael-hawker
-description: Extra UWP MatrixHelper-like methods
+description: Learn about the MatrixHelperEx extension. This extension provides extra UWP MatrixHelper-like methods.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix, MatrixHelper, Multiply, round, Rect, Transform
 dev_langs:
   - csharp
