@@ -37,7 +37,8 @@ string pathData = “M 1 1 300 300 1 300 Z”;
 CanvasGeometry triangleGeometry = CanvasPathGeometry.CreateGeometry(device, pathData);
 ```
 
-> [!div class="nextstepaction"][try it in the sample app](uwpct://Helpers?sample=CanvasPathGeometryPage)
+> [!div class="nextstepaction"]
+> [try it in the sample app](uwpct://Helpers?sample=CanvasPathGeometryPage)
 
 ## Sample Project
 
