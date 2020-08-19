@@ -9,7 +9,7 @@ dev_langs:
 
 # ThrowHelper
 
-The [ThrowHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.ThrowHelper) class is a helper type that can be used to efficiently throw exceptions. It is meant to support the [Guard](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.guard) APIs, and it should primarily be used in situations where developers need fine-grained controls over the exception types being thrown, or over the exact exception message to include.
+The [ThrowHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.ThrowHelper) class is a helper type that can be used to efficiently throw exceptions. It is meant to support the [Guard](Guard.md) APIs, and it should primarily be used in situations where developers need fine-grained controls over the exception types being thrown, or over the exact exception message to include.
 
 ## Syntax
 
@@ -145,3 +145,7 @@ The ThrowHelper class supports .NET Standard
 ## API
 
 * [ThrowHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit/Diagnostics/ThrowHelper.ThrowExceptions.cs)
+
+## Related Topics
+
+* [Guard](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.guard)
