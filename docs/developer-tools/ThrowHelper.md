@@ -140,7 +140,7 @@ We can see that the resulting assembly is much smaller than before. We basically
 | Namespace | Microsoft.Toolkit.Diagnostics |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
 
-The Guard class supports .NET Standard
+The ThrowHelper class supports .NET Standard
 
 ## API
 
