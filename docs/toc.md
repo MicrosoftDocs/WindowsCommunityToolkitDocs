@@ -176,7 +176,6 @@
 
 # Parsers
 ## [MarkdownParser](parsers/MarkdownParser.md)
-## [RSSParser](parsers/RSSParser.md)
 
 # High performance
 ## [Introduction](high-performance/Introduction.md)
@@ -211,5 +210,7 @@
 ### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
 ### [ProfileCard](archive/graph/ProfileCard.md)
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
+## Parsers
+### [RSSParser](parsers/RSSParser.md)
 ## Services
 ### [Bing Service](archive/Bing.md)
