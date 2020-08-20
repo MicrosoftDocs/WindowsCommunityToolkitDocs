@@ -116,3 +116,7 @@ Public Sub ParseRSSdotnet()
     End If
 End Sub
 ```
+
+## Related Topics
+
+* [SyndicationFeed Class](https://docs.microsoft.com/dotnet/api/system.servicemodel.syndication.syndicationfeed)
