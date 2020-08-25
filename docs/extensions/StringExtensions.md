@@ -1,7 +1,8 @@
 ---
 title: String Extensions
 author: avknaidu
-description: Learn about string extension methods from the toolkit. See code examples, requirements, and API information.
+description: Learn about string extension methods from the community toolkit. See code examples, requirements, and API information.
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, string
 ---
 
