@@ -1,7 +1,7 @@
 ---
 title: Array Extensions
 author: michael-hawker
-description: Array extension methods from toolkit
+description: Learn about array extension methods from the community toolkit. See code examples and view requirements.
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 ---
 

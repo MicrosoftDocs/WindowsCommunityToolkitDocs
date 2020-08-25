@@ -1,7 +1,7 @@
 ---
 title: Transform Extensions
 author: michael-hawker
-description: UWP Transform extensions methods
+description: Learn about Transform extensions. Transform extensions provide the ability to retrieve the Matrix of the transform.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix, transform, rotate, skew, scale, RotateTransform, Value, ScaleTransform, SkewTransform, TranslateTransform
 dev_langs:
   - csharp
