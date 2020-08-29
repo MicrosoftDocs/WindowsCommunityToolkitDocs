@@ -36,6 +36,7 @@ There are lots of different methods and overloads in the `ThrowHelper` class, pr
 - [ArgumentException](https://docs.microsoft.com/dotnet/api/system.ArgumentException)
 - [ArgumentNullException](https://docs.microsoft.com/dotnet/api/system.ArgumentNullException)
 - [ArgumentOutOfRangeException](https://docs.microsoft.com/dotnet/api/system.ArgumentOutOfRangeException)
+- [COMException](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.COMException)
 - [ExternalException](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.ExternalException)
 - [FormatException](https://docs.microsoft.com/dotnet/api/system.FormatException)
 - [InsufficientMemoryException](https://docs.microsoft.com/dotnet/api/system.InsufficientMemoryException)
