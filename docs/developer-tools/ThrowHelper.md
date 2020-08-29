@@ -28,6 +28,19 @@ ThrowHelper.ThrowInvalidOperationException("Some custom message from my library"
 
 The `Guard` APIs provide an easy to use abstraction over many common checks that might need to be performed, so it is recommended to first try to see if there is a `Guard` API that can be used, and only fallback on using `ThrowHelper` if that's not the case. As mentioned before, this might be if your library needs to throw a specific exception type not present in the `Guard` APIs, or if you need full control on the exact arguments being included in the exception being thrown.
 
+There are also generic overloads for all the available APIs, which can be used within expressions that require a return type of a specific type (eg. a switch expression). These overloads never return any value, but the return type is declared to allow the C# compiler to accept the usage of these APIs within expressions that wouldn't work with a method returning `void`. Consider the following example:
+
+```csharp
+int result = text switch
+{
+    "cat" => 0,
+    "dog" => 1,
+    _ => ThrowHelper.ThrowArgumentException<string>(nameof(text))
+};
+```
+
+Here we're using `ThrowHelper` within an expression that requires a return type of type `string`, so we can use the generic overload of `ThrowArgumentException` to make this possible. This also works with patterns such as ternary operators (`x ? a : b`), null-coalescing operators (`x = a ?? b`) null-coalescing assignment operators (`x ??= y`), and more.
+
 ## Methods
 
 There are lots of different methods and overloads in the `ThrowHelper` class, providing access to the following exceptions (and mapping all their public constructors):
