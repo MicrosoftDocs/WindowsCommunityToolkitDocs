@@ -13,7 +13,7 @@ The Windows 10 [DataGrid](../datagrid.md) control is part of the Windows Communi
 
 The toolkit is available as NuGet packages that can be added to any existing or new project using Visual Studio.
 
-1. Download [Visual Studio 2017](https://developer.microsoft.com/en-us/windows/downloads) and ensure you choose the **Universal Windows Platform development** Workload in the Visual Studio installer.
+1. Download [Visual Studio](https://developer.microsoft.com/en-us/windows/downloads) and ensure you choose the **Universal Windows Platform development** Workload in the Visual Studio installer.
 
 2. Open an existing project, or create a new project using the Blank App template under Visual C# -> Windows -> Universal.  **Important**:  Build 16299 or higher is supported by current version of the Toolkit.
 
