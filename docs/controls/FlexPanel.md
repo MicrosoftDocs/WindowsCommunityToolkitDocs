@@ -60,7 +60,7 @@ The [FlexPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.c
 
 ## Sample Output
 
-<!-- Image/Text can show the output of the control/helper -->
+![SimpleStack](../resources/images/Controls/FlexPanel/SimpleStack.png)
 
 ## Properties
 
@@ -145,6 +145,8 @@ No events.
     </Grid>
 </Page>
 ```
+
+![SimpleStack](../resources/images/Controls/FlexPanel/SimpleStack.png)
 
 Three properties of `FlexPanel` are shown in the above xaml file:
 
@@ -294,6 +296,8 @@ The code-behind file accesses a collection of sample photos and adds them to the
     }
 ```
 
+![PhotoWrap](../resources/images/Controls/FlexPanel/PhotoWrap.png)
+
 ### Page layout with FlexPanel
 
 There is a standard layout in web design called the holy grail because it's a layout format that is very desirable, but often hard to realize with perfection. The layout consists of a header at the top of the page and a footer at the bottom, both extending to the full width of the page. Occupying the center of the page is the main content, but often with a columnar menu to the left of the content and supplementary information (sometimes called an aside area) at the right. Section 5.4.1 of the CSS Flexible Box Layout specification describes how the holy grail layout can be realized with a flex box.
@@ -370,6 +374,8 @@ The below sample shows a simple implementation of this layout using one `FlexPan
 </Page>
 ```
 
+![TheGrail](../resources/images/Controls/FlexPanel/HolyGrail.png)
+
 The first `FlexPanel` in the XAML file has a vertical main axis and contains three children arranged in a column. These are the header, the body of the page, and the footer. The nested `FlexPanel` has a horizontal main axis with three children arranged in a row.
 
 Three attached dependency properties are demonstrated in this program:
@@ -387,6 +393,9 @@ There is also a similar `Shrink` attached dependency property that you can use w
 ### Catalog items with FlexPanel
 
 The following is similar to [Example 1 in Section 1.1 of the CSS Flex Layout Box specification](https://www.w3.org//TR/css-flexbox-1/#overview) except that it displays a horizontally scrollable series of pictures and descriptions of three monkeys:
+
+![CatalogPage1](../resources/images/Controls/FlexPanel/CatalogPage1.png)
+![CatalogPage2](../resources/images/Controls/FlexPanel/CatalogPage2.png)
 
 Each of the three monkeys is a `FlexPanel` contained in a `Border` that is given an explicit height and width, and which is also a child of a larger `FlexPanel`. In this XAML file, most of the properties of the `FlexPanel` children are specified in styles, all but one of which is an implicit style:
 
@@ -536,7 +545,7 @@ You can experiment with the five dependency properties using the [FlexPanelExper
 
 When the program starts up, five Picker views display the default values of these five `FlexPanel` properties. The `FlexPanel` towards the bottom of the screen contains three children:
 
-![](IMAGE HERE)
+![ExperimentPage1](../resources/images/Controls/FlexPanel/Experiment1.png)
 
 Each of the `Border` views has a gray background that shows the space allocated to that `Border` within the `FlexPanel`. The background of the `FlexPanel` itself is Alice Blue. It occupies the entire bottom area of the page except for a little margin around it.
 
@@ -552,7 +561,9 @@ The `Direction` property is of type `FlexDirection`, an enumeration with four me
 
 Here's the Experiment page showing (from left to right), the Row direction, Column direction, and ColumnReverse direction:
 
-![](IMAGE HERE)
+![ExperimentPage2](../resources/images/Controls/FlexPanel/Experiment2.png)
+![ExperimentPage3](../resources/images/Controls/FlexPanel/Experiment3.png)
+![ExperimentPage4](../resources/images/Controls/FlexPanel/Experiment4.png)
 
 Notice that for the `Reverse` options, the items start at the right or bottom.
 
@@ -566,7 +577,9 @@ The `Wrap` property is of type `FlexWrap`, an enumeration with three members:
 
 From left to right, these screens show the `NoWrap`, `Wrap` and `Reverse` options for 12 children:
 
-![](IMAGE HERE)
+![ExperimentPage5](../resources/images/Controls/FlexPanel/Experiment5.png)
+![ExperimentPage6](../resources/images/Controls/FlexPanel/Experiment6.png)
+![ExperimentPage7](../resources/images/Controls/FlexPanel/Experiment7.png)
 
 When the `Wrap` property is set to `NoWrap` and the main axis is constrained (as in this program), and the main axis is not wide or tall enough to fit all the children, the `FlexPanel` attempts to make the items smaller. You can control the shrinkness of the items with the `Shrink` attached dependency property.
 
@@ -583,6 +596,11 @@ The `JustifyContent` property is of type `FlexJustify`, an enumeration with six 
 
 This property specifies how the items are spaced on the main axis, which is the horizontal axis in this example:
 
+![ExperimentPage8](../resources/images/Controls/FlexPanel/Experiment8.png)
+![ExperimentPage9](../resources/images/Controls/FlexPanel/Experiment9.png)
+![ExperimentPage10](../resources/images/Controls/FlexPanel/Experiment10.png)
+
+
 In all three screenshots, the `Wrap` property is set to `Wrap`. The `Start` default is shown in the first screenshot, below. The second screenshot, below, shows the `Center` option: all the items are moved to the center. The three other options (the ones beginning with the word `Space`) allocate the extra space not occupied by the items. `SpaceBetween` allocates the space equally between the items; `SpaceAround` puts equal space around each item, while `SpaceEvenly` puts equal space between each item, and before the first item and after the last item on the row.
 
 ### The AlignItems property
@@ -595,6 +613,10 @@ The `AlignItems` property is of type `FlexAlignItems`, an enumeration with four 
  - `End` (or "flex-end" in XAML)
 
 This is one of two properties (the other being `AlignContent`) that indicates how children are aligned on the cross axis. Within each row, the children are stretched (as shown in the previous screenshot), or aligned on the start, center, or end of each item, as shown in the following three screenshots:
+
+![ExperimentPage11](../resources/images/Controls/FlexPanel/Experiment11.png)
+![ExperimentPage12](../resources/images/Controls/FlexPanel/Experiment12.png)
+![ExperimentPage13](../resources/images/Controls/FlexPanel/Experiment13.png)
 
 In the first screenshot, the tops of all the children are aligned. In the second screenshot, the items are vertically centered based on the tallest child. In the last screenshot, the bottoms of all the items are aligned.
 
@@ -614,7 +636,15 @@ The `AlignContent` property is of type `FlexAlignContent`, an enumeration with s
 
 Like `AlignItems`, the `AlignContent` property also aligns children on the cross axis, but affects entire rows or columns:
 
+![ExperimentPage14](../resources/images/Controls/FlexPanel/Experiment14.png)
+![ExperimentPage15](../resources/images/Controls/FlexPanel/Experiment15.png)
+![ExperimentPage16](../resources/images/Controls/FlexPanel/Experiment16.png)
+
 In the first screenshot, both rows are at the top; in the second screenshot they're in the center; and in the last screenshot they're at the bottom. The rows can also be spaced in various ways:
+
+![ExperimentPage17](../resources/images/Controls/FlexPanel/Experiment17.png)
+![ExperimentPage18](../resources/images/Controls/FlexPanel/Experiment18.png)
+![ExperimentPage19](../resources/images/Controls/FlexPanel/Experiment19.png)
 
 The `AlignContent` has no effect when there is only one row or column.
 
@@ -736,3 +766,5 @@ You can set both the `Grow` and `Shrink` values to accommodate situations where 
 
 * [CSS Flexible Box Layout Module](https://www.w3.org/TR/css-flexbox-1/)
 * [Xamarin.Forms FlexLayout](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/flex-layout)
+* [!VIDEO https://youtube.com/embed/Ng3sel_5D_0]
+* [Xamarin.Forms FlexLayoutDemos](https://docs.microsoft.com/samples/xamarin/xamarin-forms-samples/userinterface-flexlayoutdemos)
