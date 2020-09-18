@@ -31,6 +31,7 @@
 ### [Default keyboard navigation and selection patterns](controls/datagrid_guidance/keyboard_navigation_selection.md)
 ## [DockPanel](controls/DockPanel.md)
 ## [DropShadowPanel Control](controls/DropShadowPanel.md)
+## [FlexPanel](controls/FlexPanel.md)
 ## [Expander Control](controls/Expander.md)
 ## [Eyedropper](controls/Eyedropper.md)
 ## [GridSplitter](controls/GridSplitter.md)
