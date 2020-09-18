@@ -168,7 +168,7 @@ Three properties of `FlexPanel` are shown in the above xaml file:
  
  - The `JustifyContent` property is of type `FlexJustify`, and specifies how items are arranged on the main axis. The `SpaceEvenly` option allocates all leftover vertical space equally between all the items, and above the first item, and below the last item.
  
-These `FlexPanel` properties are discussed in more detail in the section [The dependency properties](#the-dependency-properties) in detail below.
+These `FlexPanel` properties are discussed in more detail in the section [The dependency properties](#the-dependency-properties-in-detail) in detail below.
  
 ### Using FlexPanel for wrapping items
  
