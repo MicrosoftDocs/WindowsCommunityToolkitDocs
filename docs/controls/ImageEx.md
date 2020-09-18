@@ -32,7 +32,8 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 | IsCacheEnabled | bool | Gets or sets a value indicating whether gets or sets cache state |
 | ImageExCachingStrategy | enum | Gets or sets a value indicating how the Image will be cached |
 | CornerRadius | double | Get or set the radius of image corner |
-| EnableLazyLoading | bool | Gets or sets a value indicating is lazy loading enabled. (17763 or higher supported) |
+| EnableLazyLoading | bool | Gets or sets a value indicating is lazy loading enabled. |
+| LazyLoadingThreshold | double | Gets or sets a value indicating the threshold for triggering lazy loading. Default value is 300 px. |
 
 ## Sample Project
 
