@@ -14,13 +14,13 @@
   <Interfaces />
   <Docs>
     <summary>
-            Helper class for XAML Islands to easily initialize provider from just ClientId from within WPF context.
+            Helper class to easily initialize provider from just ClientId.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateMsalProviderAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync (string clientid, string redirectUri = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, string[] scopes = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync (string clientid, string redirectUri = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, string[] scopes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync(string clientid, string redirectUri, string[] scopes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Providers.QuickCreate.CreateMsalProviderAsync(System.String,System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMsalProviderAsync (clientid As String, Optional redirectUri As String = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, Optional scopes As String() = null) As Task(Of MsalProvider)" />
@@ -44,7 +44,7 @@
         <Parameter Name="scopes" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="clientid">Registered ClientId</param>
+        <param name="clientid">Registered ClientId.</param>
         <param name="redirectUri">RedirectUri for auth response.</param>
         <param name="scopes">List of Scopes to initially request.</param>
         <summary>
