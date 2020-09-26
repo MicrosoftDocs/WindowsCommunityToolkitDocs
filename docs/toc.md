@@ -177,6 +177,8 @@
 # Parsers
 ## [MarkdownParser](parsers/MarkdownParser.md)
 ## [RSSParser](parsers/RSSParser.md)
+## [Win2d Path Mini Language Parser](parsers/CanvasPathGeometry.md)
+## [Win2d Path Mini Language](parsers/Win2d_Path_Mini_Language.md)
 
 # High performance
 ## [Introduction](high-performance/Introduction.md)
