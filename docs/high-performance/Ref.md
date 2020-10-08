@@ -61,7 +61,7 @@ Console.WriteLine(number); // Prints 43!
 ```
 
 > [!WARNING]
-> This type comes with a few caveats and should be used carefully, as it can lead to runtime crashes if a `Ref<T>` instance is created with an invalid reference. In particular, you should only create a `Ref<T>` instance pointing to values that have a lifetime that is greater than that of the `Ref<T>` in use. Consider the following snippet:
+> This type comes with a few caveats and should be used very carefully. On .NET Core runtimes, any use of `Ref<T>` may cause intermittent crashes or data corruptions, as `Ref<T>` is using internal implementation details of the .NET runtime in an unsupported way. Also, using this type can lead to runtime crashes if a `Ref<T>` instance is created with an invalid reference. In particular, you should only create a `Ref<T>` instance pointing to values that have a lifetime that is greater than that of the `Ref<T>` in use. Consider the following snippet:
 
 ```csharp
 public static ref int GetDummyReference()
