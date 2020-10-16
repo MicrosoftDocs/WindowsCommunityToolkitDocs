@@ -9,7 +9,7 @@ dev_langs:
 
 # Memory2D&lt;T>
 
-The [Memory2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.memory2d-1) is a type that mirrors the functionality of the [Memory&lt;T>](https://docs.microsoft.com/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D and 3D arrays) or `Memory<T>` instances.
+The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.memory2d-1) is a type that mirrors the functionality of the [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D and 3D arrays) or `Memory<T>` instances. This type is meant to be used together with the `Span2D<T>` type, in the same way that `Memory<T>` is used along with [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1). For more info on the key differences and use case scenarios of these two types you can read [this docs page](https://docs.microsoft.com/dotnet/standard/memory-and-spans/memory-t-usage-guidelines).
 
 ## How it works
 
