@@ -24,7 +24,7 @@ int[,] array =
     { 4, 5, 6 }
 };
 
-Span2D<int> span = new Span2D<int>(array);
+Span2D<int> span = array;
 
 // The memory directly maps the 2*3 array here
 
@@ -35,16 +35,23 @@ span[2, 1] = 20;
 // { 10, 2, 3 },
 // { 4, 20, 6 }
 
+// We can also use indices, on supported runtimes
+int x = span[0, ^1];
+
+// We can also get references to items, like with arrays
+ref int reference = ref span[1, 1];
+
 Span2D<int> slice = span.Slice(0, 1, 2, 2);
 
-slice[0, 0] = 44;
-slice[1, 1] = 99;
+// Or alternatively, on supported runtimes
+
+slice = span[.., 1..];
 
 int[,] copy = slice.ToArray();
 
 // The resulting array is:
-// { 44, 3 },
-// { 20, 99 }
+// { 2, 3 },
+// { 20, 6 }
 ```
 
 We can also directly create a 2D view over native memory:
@@ -55,7 +62,7 @@ int* p = stackalloc int[9];
 Span2D<int> span = new Span2D<int>(p, 3, 3);
 ```
 
-The `Span2D<T>` type also includes custom enumerator types to easily traverse a given row, column or the entire memory area using the standard `foreach` syntax in C#:
+The `Span2D<T>` type also includes custom enumerator types to easily traverse a given row, column or the entire memory area using the standard `foreach` syntax in C#, as well as performing bulk operations in a single call:
 
 ```csharp
 int[,] array =
@@ -65,14 +72,15 @@ int[,] array =
     { 7, 8, 9 }
 };
 
-Span2D<int> span = new Span2D<int>(array);
+Span2D<int> span = array;
 
 foreach (int i in span.GetColumn(1))
 {
     // 2, 5, 8
 }
 
-foreach (int i in span.GetRow(2))
+// We can also iterate by reference
+foreach (ref int i in span.GetRow(2))
 {
     // 7, 8, 9
 }
@@ -81,6 +89,20 @@ foreach (int i in span)
 {
     // 1, 2, 3, 4, 5...
 }
+
+// Set all items in a column to 0
+span.GetColumn(0).Clear();
+
+// Set the value of all items in a row
+span.GetRow(1).Fill(42);
+
+Span<int> copy = stackalloc int[3];
+
+// Copy all items from a column
+span.GetColumn(2).CopyTo(copy);
+
+// Get a copy of a row as an array
+int[] array = span.GetRow(1).ToArray();
 ```
 
 ## Properties
