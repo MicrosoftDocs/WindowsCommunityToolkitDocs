@@ -13,7 +13,7 @@ The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.high
 
 ## How it works
 
-The `Memory2D<T>` type internally tracks the mapped 2D memory area through a reference to the wrapped object, the height and width parameters, and a special pitch parameter. The height and width indicate the length of the rows and columns in the 2D memory areas, while the pitch indicates the offset between the end of each row and the start of the following one. 
+The `Memory2D<T>` type internally tracks the mapped 2D memory area through a reference to the wrapped object, the height and width parameters, and a special pitch parameter. The height and width indicate the length of the rows and columns in the 2D memory area, while the pitch indicates the offset between the end of each row and the start of the following one. 
 
 Here's a simple diagram that illustrates this configuration (the "XX" cells in the grid represent items belonging to the target 2D memory area):
 
@@ -31,9 +31,9 @@ Here's a simple diagram that illustrates this configuration (the "XX" cells in t
 ```
 
 This configuration allows `Memory2D<T>` to be extremely flexible in the way it maps existing buffers to 2D memory areas, as it makes it possible to also represent discontiguous buffers as a "virtual" 2D memory location. For instance, here's a few examples of buffer types that a `Memory2D` instance can map to:
-- A 1D `T[]` array which is mapped as a 2D memory area in row-major order
-- A 2D `T[,]` array, mapped directly to a `Memory2D<T>` instance
-- A 3D `T[,,]` array (which can be thought of as an array of 2D H\*W `T[,]` arrays), with a `Memory2D<T>` instance representing a given depth slice.
+- A 1D `T[]` array which is mapped as a 2D memory area in row-major order.
+- A 2D `T[,]` array, mapped directly to a `Memory2D<T>` instance.
+- A 3D `T[,,]` array, with a `Memory2D<T>` instance representing a given depth slice (a layer).
 
 The `Memory<T>` type also exposes a number of utility methods, including most of the same API surface that the standard `Memory<T>` implements. For instance, it includes a `Slice(int, int)` method that make it easy to do 2D slicing operations directly on the virtual 2D memory location, with the `Memory2D<T>` instance automatically adjusting the necessary parameters internally to shift its mapping on the right memory area(s) corresponding to the requested result.
 
@@ -45,10 +45,11 @@ Here's how you can create a `Memory2D<T>` instance from a 2D array:
 int[,] array =
 {
     { 1, 2, 3 },
-    { 4, 5, 6 }
+    { 4, 5, 6 },
+    { 7, 8, 9 }
 };
 
-Memory2D<int> memory = new Memory2D<int>(array);
+Memory2D<int> memory = array;
 
 // The memory directly maps the 2*3 array here
 
@@ -61,32 +62,20 @@ int[,] copy = slice.ToArray();
 // { 2, 3 }
 // { 5, 6 }
 
-```
+// If on a supported runtime, we can also slice using a range
 
-And here we can see how we can also interact with 3D arrays:
+Memory2D<int> test = memory[.., ..2];
 
-```csharp
-int[,,] array =
-{
-    {
-        { 1, 2 },
-        { 4, 5 }
-    },
-    {
-        { 10, 20 },
-        { 40, 50 }
-    }
-};
+// { 1, 2 }
+// { 4, 5 }
+// { 7, 8 }
 
-Memory2D<int> memory = new Memory2D<int>(array, 1);
+Span2D<int> span = memory.Span;
 
-// We've created a memory from the layer at depth 1 in the array:
-// { 10, 20 }
-// { 40, 50 }
+// We can use the span to perform operations on the underlying
+// data for the memory instance. All the available APIs are
+// documented in the docs about the Span2D<T> type.
 
-int[,] copy = memory.Slice(1, 0, 1, 2);
-
-// { { 40, 50 } }
 ```
 
 ## Properties
