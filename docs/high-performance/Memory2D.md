@@ -18,7 +18,8 @@ The `Memory2D<T>` type internally tracks the mapped 2D memory area through a ref
 Here's a simple diagram that illustrates this configuration (the "XX" cells in the grid represent items belonging to the target 2D memory area):
 
 ```csharp
-//  reference__  _________width_________  ________...
+//                _____________________stride_____...
+//  reference__  /________width_________  ________...
 //             \/                       \/
 // | -- | -- | |- | -- | -- | -- | -- | -- | -- | -- |_
 // | -- | -- | XX | XX | XX | XX | XX | XX | -- | -- | |
@@ -28,6 +29,7 @@ Here's a simple diagram that illustrates this configuration (the "XX" cells in t
 // | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 // | -- | -- | -- | -- | -- | -- | -- | -- | -- | -- |
 // ...__pitch__/
+// ...________/
 ```
 
 This configuration allows `Memory2D<T>` to be extremely flexible in the way it maps existing buffers to 2D memory areas, as it makes it possible to also represent discontiguous buffers as a "virtual" 2D memory location. For instance, here's a few examples of buffer types that a `Memory2D` instance can map to:
