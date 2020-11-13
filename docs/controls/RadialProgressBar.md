@@ -27,11 +27,16 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 	Value="70" Minimum="0" Maximum="180"
 	Thickness="4" Outline="Gray" Foreground="Red">
 </controls:RadialProgressBar>
+
+<controls:RadialProgressBar x:Name="RadialProgressBarControl"
+	IsIndeterminate="True" Minimum="0" Maximum="180"
+	Thickness="4" Outline="Gray" Foreground="Red">
+</controls:RadialProgressBar>
 ```
 
 ## Sample Output
 
-![RadialProgressBar image](../resources/images/Controls/RadialProgressBar.png)
+![RadialProgressBar image](../resources/images/Controls/RadialProgressBar.png) ![RadialProgressBar indeterminate_image](../resources/images/Controls/RadialProgressBarIndeterminate.gif)
 
 ## Properties
 
