@@ -50,7 +50,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
     <controls:HeaderedContentControl>
         <controls:HeaderedContentControl.Header>
             <Border Background="Gray">
-                <TextBlock Text="This is the header!" FontSize="16">
+                <TextBlock Text="This is the header!" FontSize="16" />
             </Border>
         </controls:HeaderedContentControl.Header>
     </<controls:HeaderedContentControl>
@@ -62,7 +62,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
     <controls:HeaderedContentControl Header="{Binding CustomObject}">
         <controls:HeaderedContentControl.HeaderTemplate>
             <DataTemplate>
-                <TextBlock Text="{Binding Title}">
+                <TextBlock Text="{Binding Title}" />
             </DataTemplate>
         </controls:HeaderedContentControl.HeaderTemplate>
     </<controls:HeaderedContentControl>

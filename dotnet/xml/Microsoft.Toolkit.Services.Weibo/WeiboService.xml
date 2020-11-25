@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +31,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -40,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync (string screenName = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync (string screenName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync(string screenName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.GetUserAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUserAsync (Optional screenName As String = null) As Task(Of WeiboUser)" />
@@ -50,6 +52,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt;</ReturnType>
@@ -77,6 +80,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;&gt;</ReturnType>
@@ -106,6 +110,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -114,9 +119,11 @@
         <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens" />
       </Parameters>
       <Docs>
-        <param name="oAuthTokens">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="oAuthTokens">Token instance.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,6 +138,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -141,11 +149,13 @@
         <Parameter Name="redirectUri" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="appKey">To be added.</param>
-        <param name="appSecret">To be added.</param>
-        <param name="redirectUri">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="appKey">App key.</param>
+        <param name="appSecret">App secret.</param>
+        <param name="redirectUri">Redirect URI. Has to match redirect URI defined at open.weibo.com/apps (can be arbitrary).</param>
+        <summary>
+            Initialize underlying provider with relevent token information for Uwp.
+            </summary>
+        <returns>Success or failure.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,6 +170,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -193,6 +204,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -230,6 +242,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Weibo.WeiboService</ReturnType>
@@ -253,6 +266,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -277,6 +291,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -305,6 +320,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -329,6 +345,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;</ReturnType>
@@ -358,6 +375,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;</ReturnType>
@@ -389,6 +407,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Weibo.WeiboDataProvider</ReturnType>
@@ -402,7 +421,7 @@
       </Docs>
     </Member>
     <Member MemberName="Uid">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Uid { get; }" />
+      <MemberSignature Language="C#" Value="public long? Uid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Uid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboService.Uid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uid As Nullable(Of Long)" />
@@ -412,6 +431,7 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>

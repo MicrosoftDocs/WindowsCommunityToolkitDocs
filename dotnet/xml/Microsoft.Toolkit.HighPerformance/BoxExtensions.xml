@@ -1,0 +1,59 @@
+<Type Name="BoxExtensions" FullName="Microsoft.Toolkit.HighPerformance.BoxExtensions">
+  <TypeSignature Language="C#" Value="public static class BoxExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BoxExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.BoxExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module BoxExtensions" />
+  <TypeSignature Language="F#" Value="type BoxExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetReference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T GetReference&lt;T&gt; (this Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; box) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetReference&lt;struct .ctor (class System.ValueType) T&gt;(class Microsoft.Toolkit.HighPerformance.Box`1&lt;!!T&gt; box) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.BoxExtensions.GetReference``1(Microsoft.Toolkit.HighPerformance.Box{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetReference(Of T As Structure) (box As Box(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member GetReference : Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt; -&gt; 'T (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.BoxExtensions.GetReference box" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="box" Type="Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of reference to retrieve.</typeparam>
+        <param name="box">The input <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> instance.</param>
+        <summary>
+            Gets a <typeparamref name="T" /> reference from a <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> instance.
+            </summary>
+        <returns>A <typeparamref name="T" /> reference to the boxed value within <paramref name="box" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

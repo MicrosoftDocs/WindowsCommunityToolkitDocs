@@ -1,0 +1,49 @@
+<Type Name="IInAction&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.Helpers.IInAction&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IInAction&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInAction`1&lt;T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Helpers.IInAction`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInAction(Of T)" />
+  <TypeSignature Language="F#" Value="type IInAction&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of items to process.</typeparam>
+    <summary>
+            A contract for actions being executed on items of a specific type, with readonly access.
+            </summary>
+    <remarks>If the <see cref="M:Microsoft.Toolkit.HighPerformance.Helpers.IInAction`1.Invoke(`0@)" /> method is small enough, it is highly recommended to mark it with <see cref="F:System.Runtime.CompilerServices.MethodImplOptions.AggressiveInlining" />.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Invoke">
+      <MemberSignature Language="C#" Value="public void Invoke (T item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke([in]!T item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.IInAction`1.Invoke(`0@|System.Runtime.InteropServices.InAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke (item As T)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : 'T -&gt; unit" Usage="iInAction.Invoke item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="item">The current item to process.</param>
+        <summary>
+            Executes the action on a specified <typeparamref name="T" /> item.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

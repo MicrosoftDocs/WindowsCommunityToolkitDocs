@@ -33,23 +33,30 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | -- | -- | -- |
 | AutoSuggestBoxStyle | Style | Inner AutoSuggestBox style |
 | AutoSuggestBoxTextBoxStyle | Style | Inner TextBox style of the AutoSuggestBox |
+| PlaceholderText | string | Placeholder text to display when there's no text in the textbox |
+| QueryIcon | IconSource | 
 | QueryText | string | Gets or sets the text query of the AutoSuggestBox |
-| SelectedItems | IList<object> | Collection of items selected by the user |
+| SelectedItems | IList&lt;object&gt; | Collection of items selected by the user |
+| SelectedTokenText | string | Complete set of text for any selection in the control |
 | SuggestedItemsSource | object | List of suggested items |
 | SuggestedItemTemplate | DataTemplate | Template for suggested items |
 | SuggestedItemTemplateSelector | DataTemplateSelector | Template selector for suggested items |
 | SuggestedItemContainerStyle | Style for suggested item's container |
+| TabNavigateBackOnArrow | bool | Value indicating whether the control will move focus to the previous control when an arrow key is pressed and selection is at one of the limits in the control. |
+| Text | string | Text of currently focused text box part |
+| TextMemberPath | string | Path of property for item display |
 | TokenDelimiter | string | Character delimiter for recognizing a token |
 | TokenItemTemplate | DataTemplate | Template for a token item |
 | TokenItemTemplateSelector | DataTemplateSelector | Template selector for token items |
 | TokenItemStyle | Style | Style for a token item |
-| TokenizedItems | IList<object> | Collection of items picked by the user |
 | TokenSpacing | double | Amount of spacing between tokens |
 
 ## Methods
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
+| AddTokenItem(data, bool) | void | Used in special cases where you want to add a token manually to the control |
+| ClearAsync() | Task | Clears everything from the control, tokens and text. |
 | GetUntokenizedText(string) | string | Returns the string representation of each token item, concatenated and delimited. |
 
 ## Events
@@ -59,9 +66,9 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | QuerySubmitted | Event raised when the user submits the text query. |
 | SuggestionChosen | Event raised when a suggested item is chosen by the user. |
 | TextChanged | Event raised when the text input value has changed. |
-| TokenItemAdded | Event raised when a new token item has been added. |
-| TokenItemClicked | Event raised when a token item has been clicked. |
-| TokenItemRemoved | Event raised when a token item has been removed. |
+| TokenItemAdding | Event raised before a new token item has been added. Can be used to transform user text into an object. |
+| TokenItemRemoving | Event raised before a token item is removed (cancelable). |
+| TokenItemRemoved | Event raised after a token item has been removed. |
 
 ## Sample Project
 
@@ -69,7 +76,7 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher |
+| Device family | Universal, 10.0.17763.0 or higher |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
@@ -81,3 +88,4 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 ## Related Topics
 
 * [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox)
+* [IconSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.iconsource)

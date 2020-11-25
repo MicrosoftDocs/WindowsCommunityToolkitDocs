@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T">
@@ -19,25 +20,26 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Obsolete("This helper will be removed in a future release, see example tag for code replacement. https://github.com/windows-toolkit/WindowsCommunityToolkit/issues/3134")</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type to be used for creating the Singleton instance.</typeparam>
     <summary>
-             Provides an easy-to-use thread-safe Singleton Pattern via <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2">ConcurrentDictionary</see>.
-             </summary>
+            Obsolete see https://github.com/windows-toolkit/WindowsCommunityToolkit/issues/3134.
+            </summary>
     <remarks>To be added.</remarks>
     <example>
-             Use by adding a static property to your class for a traditional access pattern:
-             <code>
-             // Setup Singleton
-             public static class MyClass {
-                 public static MyClass Instance =&gt; Singleton&lt;MyClass&gt;.Instance;
-            
-                 public void MyMethod() { }
-             }
-            
-             // Use Singleton Instance
-             MyClass.Instance.MyMethod();
-             </code></example>
+            Instead of this helper, migrate your code to this pattern instead:
+            <code>
+            // Setup Singleton
+            public class MyClass
+            {
+                public static MyClass Instance { get; } = new MyClass();
+            }
+            </code></example>
   </Docs>
   <Members>
     <Member MemberName="Instance">
@@ -50,6 +52,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>

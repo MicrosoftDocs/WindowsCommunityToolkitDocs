@@ -69,4 +69,4 @@ Dim translatedText = translationResult.Translation.Text
 
 ## API
 
-* [Microsoft Translator Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator)
+* [Microsoft Translator Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Services/Services/MicrosoftTranslator)

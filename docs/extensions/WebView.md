@@ -8,7 +8,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, WebViewExtensions
 
 # WebView extension
 
-The **WebView** extension allows attaching HTML content to WebView.
+The **WebViewExtensions** allows attaching HTML content to a WebView.
 
 ## Example
 

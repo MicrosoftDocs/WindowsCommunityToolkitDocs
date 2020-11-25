@@ -43,13 +43,47 @@
         <Parameter Name="query" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" /></param>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
         <param name="query">User to search for.</param>
         <summary>
             Shortcut to perform a person query.
             </summary>
         <returns>
-          <see cref="T:Microsoft.Graph.IUserPeopleCollectionPage" /> collection of <see cref="T:Microsoft.Graph.User" />.</returns>
+          <see cref="T:Microsoft.Graph.IUserPeopleCollectionPage" /> collection of <see cref="T:Microsoft.Graph.Person" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUserAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt; FindUserAsync (this Microsoft.Graph.GraphServiceClient graph, string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IGraphServiceUsersCollectionPage&gt; FindUserAsync(class Microsoft.Graph.GraphServiceClient graph, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.FindUserAsync(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindUserAsync (graph As GraphServiceClient, query As String) As Task(Of IGraphServiceUsersCollectionPage)" />
+      <MemberSignature Language="F#" Value="static member FindUserAsync : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt;" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.FindUserAsync (graph, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="query">User to search for.</param>
+        <summary>
+            Shortcut to perform a user query.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graph.IGraphServiceUsersCollectionPage" /> collection of <see cref="T:Microsoft.Graph.User" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,8 +111,8 @@
         <Parameter Name="userid" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" /></param>
-        <param name="userid">UserID</param>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userid">UserID.</param>
         <summary>
             Helper to get the photo of a particular user.
             </summary>
@@ -113,13 +147,13 @@
       </Parameters>
       <Docs>
         <typeparam name="T">
-          <see cref="T:Microsoft.Graph.IBaseRequest" /> type</typeparam>
+          <see cref="T:Microsoft.Graph.IBaseRequest" /> type.</typeparam>
         <param name="request">Request chain.</param>
-        <param name="query">Query to add for searching in QueryOptions</param>
+        <param name="query">Query to add for searching in QueryOptions.</param>
         <summary>
-            Extension to provider Searching on OData Requests
+            Extension to provider Searching on OData Requests.
             </summary>
-        <returns>Same type</returns>
+        <returns>Same type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,6 +161,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Graph.Person ToPerson (this Microsoft.Graph.User user);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graph.Person ToPerson(class Microsoft.Graph.User user) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Extensions.GraphExtensions.ToPerson(Microsoft.Graph.User)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToPerson (user As User) As Person" />
       <MemberSignature Language="F#" Value="static member ToPerson : Microsoft.Graph.User -&gt; Microsoft.Graph.Person" Usage="Microsoft.Toolkit.Graph.Extensions.GraphExtensions.ToPerson user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>

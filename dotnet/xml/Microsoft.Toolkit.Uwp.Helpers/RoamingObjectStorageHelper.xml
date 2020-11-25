@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper</BaseTypeName>
@@ -21,20 +22,25 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public RoamingObjectStorageHelper ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C#" Value="public RoamingObjectStorageHelper (Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper.#ctor(Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional objectSerializer As IObjectSerializer = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper : Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer -&gt; Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper objectSerializer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>5.1.0.0</AssemblyVersion>
-        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />
+      </Parameters>
       <Docs>
+        <param name="objectSerializer">The serializer to use.</param>
         <summary>
-            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper" /> class.
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.RoamingObjectStorageHelper" /> class,
+            which can read and write data using the provided <see cref="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />;
+            if none is provided, a default Json serializer will be used.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

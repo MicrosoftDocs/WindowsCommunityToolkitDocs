@@ -1,0 +1,160 @@
+<Type Name="IBufferWriterExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions">
+  <TypeSignature Language="C#" Value="public static class IBufferWriterExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IBufferWriterExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IBufferWriterExtensions" />
+  <TypeSignature Language="F#" Value="type IBufferWriterExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Buffers.IBufferWriter`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.Buffers.IBufferWriter&lt;byte&gt; writer, ReadOnlySpan&lt;T&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;struct .ctor (class System.ValueType) T&gt;(class System.Buffers.IBufferWriter`1&lt;unsigned int8&gt; writer, valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write``1(System.Buffers.IBufferWriter{System.Byte},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T As Structure) (writer As IBufferWriter(Of Byte), span As ReadOnlySpan(Of T))" />
+      <MemberSignature Language="F#" Value="static member Write : System.Buffers.IBufferWriter&lt;byte&gt; * ReadOnlySpan&lt;'T (requires 'T : struct)&gt; -&gt; unit (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write (writer, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;System.Byte&gt;" RefType="this" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to write.</typeparam>
+        <param name="writer">The target <see cref="T:System.Buffers.IBufferWriter`1" /> instance to write to.</param>
+        <param name="span">The input <see cref="T:System.ReadOnlySpan`1" /> to write to <paramref name="writer" />.</param>
+        <summary>
+            Writes a series of items of a specified type into a target <see cref="T:System.Buffers.IBufferWriter`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="writer" /> reaches the end.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.Buffers.IBufferWriter&lt;byte&gt; writer, T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;struct .ctor (class System.ValueType) T&gt;(class System.Buffers.IBufferWriter`1&lt;unsigned int8&gt; writer, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write``1(System.Buffers.IBufferWriter{System.Byte},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T As Structure) (writer As IBufferWriter(Of Byte), value As T)" />
+      <MemberSignature Language="F#" Value="static member Write : System.Buffers.IBufferWriter&lt;byte&gt; * 'T -&gt; unit (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write (writer, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;System.Byte&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to write.</typeparam>
+        <param name="writer">The target <see cref="T:System.Buffers.IBufferWriter`1" /> instance to write to.</param>
+        <param name="value">The input value to write to <paramref name="writer" />.</param>
+        <summary>
+            Writes a value of a specified type into a target <see cref="T:System.Buffers.IBufferWriter`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="writer" /> reaches the end.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.Buffers.IBufferWriter&lt;T&gt; writer, ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;T&gt;(class System.Buffers.IBufferWriter`1&lt;!!T&gt; writer, valuetype System.ReadOnlySpan`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write``1(System.Buffers.IBufferWriter{``0},System.ReadOnlySpan{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T) (writer As IBufferWriter(Of T), span As ReadOnlySpan(Of T))" />
+      <MemberSignature Language="F#" Value="static member Write : System.Buffers.IBufferWriter&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; -&gt; unit" Usage="Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write (writer, span)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;T&gt;" RefType="this" />
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="writer">To be added.</param>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.Buffers.IBufferWriter&lt;T&gt; writer, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;T&gt;(class System.Buffers.IBufferWriter`1&lt;!!T&gt; writer, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write``1(System.Buffers.IBufferWriter{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T) (writer As IBufferWriter(Of T), value As T)" />
+      <MemberSignature Language="F#" Value="static member Write : System.Buffers.IBufferWriter&lt;'T&gt; * 'T -&gt; unit" Usage="Microsoft.Toolkit.HighPerformance.Extensions.IBufferWriterExtensions.Write (writer, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="writer" Type="System.Buffers.IBufferWriter&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to write.</typeparam>
+        <param name="writer">The target <see cref="T:System.Buffers.IBufferWriter`1" /> instance to write to.</param>
+        <param name="value">The input value to write to <paramref name="writer" />.</param>
+        <summary>
+            Writes a value of a specified type into a target <see cref="T:System.Buffers.IBufferWriter`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="writer" /> reaches the end.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
