@@ -7,7 +7,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Configuring Animation Playback
 
-The [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) XAML element is responsible for controlling the playback its Lottie animation source through the following properties and methods:
+The [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) XAML element is responsible for controlling the playback of its Lottie animation source through the following properties and methods:
 
 * [AutoPlay](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.autoplay) plays a Lottie animation as soon as it is loaded.
 * [IsPlaying](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.isplaying) indicates whether a play is currently underway.

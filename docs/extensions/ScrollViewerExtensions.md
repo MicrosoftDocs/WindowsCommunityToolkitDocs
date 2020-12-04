@@ -5,9 +5,12 @@ description: ScrollViewerEx provides a simple way to manage Margin for any Scrol
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ScrollViewer, extentions
 ---
 
-# ScrollViewer extentions
+# ScrollViewer extensions
 
 The [ScrollViewerExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.scrollviewerextensions) provide extension methods to improve your ScrollViewer implementation.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=ScrollViewerExtensions)
 
 ## ScrollBarMargin
 
@@ -112,7 +115,7 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 
 ### Edit Existing Resource File
 
-You can easily edit the existing resource file to customise the cursor depending upon your needs.
+You can easily edit the existing resource file to customize the cursor depending upon your needs.
 
 1. Follow the above steps to add the resource file
 2. Open MiddleClickScrolling-CursorType.res file in Visual Studio
@@ -125,9 +128,65 @@ You can easily edit the existing resource file to customise the cursor depending
 | -- | -- | -- |
 | EnableMiddleClickScrolling | bool | Set `true` to enable middle click scrolling |
 
-## Sample Code
+## Expression animations
 
-[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+The `StartExpressionAnimation` methods provide a way to easily start a composition expression animation to sync a `ScrollViewer` instance with another control. This binds the manipulation status on a `ScrollViewer` property set with either the translation or the offset of another visual element, to follow or mirror the motion in the source `ScrollViewer`.
+
+### Example
+
+```xml
+<Grid>
+
+    <!--This is a ListView we can use to display a series of items. It will
+        contain the ScrollViewer that will be targeted by the expression animation.-->
+    <ListView Name="listView">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+            <Image Width="100"
+                   Height="100"
+                   Source="ms-appx:///Assets/ToolkitLogo.png" />
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+
+    <!--This is the panel that will be animated in sync with the main ScrollViewer control
+        inside the ListView in the page, using the ScrollViewerExtensions leveraging composition
+        ExpressionAnimations. Note how the panel is not inside the ListView, but it's just
+        rendering "fixed" items right on top of the ListView. We can use the expression animation
+        to "bind" the scrolling of the ListView and keep the panel "in sync" with it.-->
+    <StackPanel x:Name="shapesPanel">
+      <Polygon Height="100"
+               Width="100"
+               Points="0,0 0,72 44,36"
+               Stroke="DarkGreen"
+               Fill="Green"
+               VerticalAlignment="Center"
+               HorizontalAlignment="Center"/>
+    </StackPanel>
+  </Grid>
+```
+
+```csharp
+using Microsoft.Toolkit.Uwp.UI.Extensions;
+
+ScrollViewer scrollViewer = listView.FindDescendant<ScrollViewer>();
+
+// Binds the Y scroll axis of the ScrollViewer to the Y translation axis of the target
+listScrollViewer.StartExpressionAnimation(shapesPanel, Axis.Y);
+
+// It is also possible to synchronize different axes, as well as targeting
+// different Visual properties. By default, the expression works with the
+// Visual.Translate property, but Visual.Offset can be used as well.
+listScrollViewer.StartExpressionAnimation(shapesPanel, Axis.X, Axis.Y, VisualProperty.Offset);
+```
+
+### Sample output
+
+![Expression Animations](../resources/images/Extensions/ScrollViewerExpressionAnimation.gif)
+
+## Sample Project
+
+[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can [see this in action](uwpct://Extensions?sample=ScrollViewerExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -136,6 +195,6 @@ You can easily edit the existing resource file to customise the cursor depending
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
-## API Source Code
+## API
 
-- [ScrollViewerExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer)
+* [ScrollViewerExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer)

@@ -14,6 +14,9 @@ The control automatically detects the targeted columns/rows to resize, while dra
 > [!NOTE]
 > You can use the control to resize fixed and star (*) width/height columns/rows.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=GridSplitter)
+
 ## Syntax
 
 ```xaml
@@ -98,9 +101,9 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Sample Code
 
-[GridSplitter Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[GridSplitter Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [GridSplitter XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
 

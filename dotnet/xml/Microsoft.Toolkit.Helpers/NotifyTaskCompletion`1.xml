@@ -1,0 +1,356 @@
+<Type Name="NotifyTaskCompletion&lt;TResult&gt;" FullName="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;TResult&gt;">
+  <TypeSignature Language="C#" Value="public sealed class NotifyTaskCompletion&lt;TResult&gt; : System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NotifyTaskCompletion`1&lt;TResult&gt; extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NotifyTaskCompletion(Of TResult)&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type NotifyTaskCompletion&lt;'Result&gt; = class&#xA;    interface INotifyPropertyChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TResult" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TResult">Type of result returned by task.</typeparam>
+    <summary>
+            Helper class to wrap around a Task to provide more information usable for UI databinding scenarios. As discussed in MSDN Magazine: https://msdn.microsoft.com/magazine/dn605875.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public NotifyTaskCompletion (System.Threading.Tasks.Task&lt;TResult&gt; task);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.Tasks.Task`1&lt;!TResult&gt; task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.#ctor(System.Threading.Tasks.Task{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (task As Task(Of TResult))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt; : System.Threading.Tasks.Task&lt;'Result&gt; -&gt; Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;" Usage="new Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt; task" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;TResult&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="task">Task to wait on.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorMessage">
+      <MemberSignature Language="C#" Value="public string ErrorMessage { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.ErrorMessage" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the error message of the task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exception">
+      <MemberSignature Language="C#" Value="public AggregateException Exception { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.AggregateException Exception" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As AggregateException" />
+      <MemberSignature Language="F#" Value="member this.Exception : AggregateException" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.Exception" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.AggregateException</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the exception which occured on the task (if one occurred).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InnerException">
+      <MemberSignature Language="C#" Value="public Exception InnerException { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Exception InnerException" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.InnerException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerException As Exception" />
+      <MemberSignature Language="F#" Value="member this.InnerException : Exception" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.InnerException" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Exception</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the inner exception of the task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCanceled">
+      <MemberSignature Language="C#" Value="public bool IsCanceled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCanceled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.IsCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCanceled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCanceled : bool" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.IsCanceled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the task was cancelled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCompleted">
+      <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.IsCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the task is completed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFaulted">
+      <MemberSignature Language="C#" Value="public bool IsFaulted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFaulted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.IsFaulted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFaulted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFaulted : bool" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.IsFaulted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether there was an error with the task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNotCompleted">
+      <MemberSignature Language="C#" Value="public bool IsNotCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsNotCompleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.IsNotCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNotCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNotCompleted : bool" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.IsNotCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the task is not completed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSuccessfullyCompleted">
+      <MemberSignature Language="C#" Value="public bool IsSuccessfullyCompleted { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSuccessfullyCompleted" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.IsSuccessfullyCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSuccessfullyCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSuccessfullyCompleted : bool" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.IsSuccessfullyCompleted" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the task was successfully completed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            PropertyChanged event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Result">
+      <MemberSignature Language="C#" Value="public TResult Result { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TResult Result" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As TResult" />
+      <MemberSignature Language="F#" Value="member this.Result : 'Result" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.Result" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TResult</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the result of the given task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.TaskStatus Status { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Threading.Tasks.TaskStatus Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As TaskStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Threading.Tasks.TaskStatus" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the status of the task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Task">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; Task { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; Task" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task(Of TResult)" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Threading.Tasks.Task&lt;'Result&gt;" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.Task" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the task that is being waited on.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TaskCompletion">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task TaskCompletion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task TaskCompletion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Helpers.NotifyTaskCompletion`1.TaskCompletion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TaskCompletion As Task" />
+      <MemberSignature Language="F#" Value="member this.TaskCompletion : System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Helpers.NotifyTaskCompletion&lt;'Result&gt;.TaskCompletion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the task wrapper task.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

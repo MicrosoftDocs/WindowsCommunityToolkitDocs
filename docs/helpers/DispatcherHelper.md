@@ -20,6 +20,9 @@ _What is included in the helper?_
 
 - Static helper methods for executing a specific function on the UI thread of the current application's main window.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=DispatcherHelper)
+
 ## Syntax
 
 ```csharp
@@ -96,6 +99,10 @@ returnedFromUIThread = Await CoreApplication.MainView.Dispatcher.AwaitableRunAsy
     Return 1
 End Function)
 ```
+
+## Sample Project
+
+[DispatcherHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DispatcherHelper). You can [see this in action](uwpct://Helpers?sample=DispatcherHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

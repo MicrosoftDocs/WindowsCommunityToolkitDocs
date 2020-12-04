@@ -1,14 +1,14 @@
-﻿<Type Name="WeiboService" FullName="Microsoft.Toolkit.Services.Weibo.WeiboService">
+<Type Name="WeiboService" FullName="Microsoft.Toolkit.Services.Weibo.WeiboService">
   <TypeSignature Language="C#" Value="public class WeiboService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WeiboService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.Weibo.WeiboService" />
   <TypeSignature Language="VB.NET" Value="Public Class WeiboService" />
   <TypeSignature Language="F#" Value="type WeiboService = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WeiboService" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class WeiboService" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,13 +26,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; WeiboService();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; WeiboService();" />
-      <MemberSignature Language="C++ WINRT" Value=" WeiboService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -43,7 +42,7 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync (string screenName = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync (string screenName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.Weibo.WeiboUser&gt; GetUserAsync(string screenName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.GetUserAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUserAsync (Optional screenName As String = null) As Task(Of WeiboUser)" />
@@ -51,7 +50,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboUser&gt;</ReturnType>
@@ -77,7 +78,9 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;&gt;</ReturnType>
@@ -97,17 +100,77 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens oAuthTokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens oAuthTokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As WeiboOAuthTokens) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens -&gt; bool" Usage="weiboService.Initialize oAuthTokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string appKey, string appSecret, string redirectUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appKey, string appSecret, string redirectUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (appKey As String, appSecret As String, redirectUri As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * string * string -&gt; bool" Usage="weiboService.Initialize (appKey, appSecret, redirectUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appKey" Type="System.String" />
+        <Parameter Name="appSecret" Type="System.String" />
+        <Parameter Name="redirectUri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appKey">App key.</param>
+        <param name="appSecret">App secret.</param>
+        <param name="redirectUri">Redirect URI. Has to match redirect URI defined at open.weibo.com/apps (can be arbitrary).</param>
+        <summary>
+            Initialize underlying provider with relevent token information for Uwp.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens oAuthTokens, Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, Microsoft.Toolkit.Services.Core.IStorageManager storageManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens oAuthTokens, class Microsoft.Toolkit.Services.Core.IAuthenticationBroker authenticationBroker, class Microsoft.Toolkit.Services.Core.IPasswordManager passwordManager, class Microsoft.Toolkit.Services.Core.IStorageManager storageManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As WeiboOAuthTokens, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Services.Weibo.WeiboOAuthTokens * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager -&gt; bool" Usage="weiboService.Initialize (oAuthTokens, authenticationBroker, passwordManager, storageManager)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Initialize(Microsoft::Toolkit::Services::Weibo::WeiboOAuthTokens ^ oAuthTokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager);" />
-      <MemberSignature Language="C++ WINRT" Value="bool Initialize(Microsoft::Toolkit::Services::Weibo::WeiboOAuthTokens const &amp; oAuthTokens, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -136,13 +199,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Initialize(System.String,System.String,System.String,Microsoft.Toolkit.Services.Core.IAuthenticationBroker,Microsoft.Toolkit.Services.Core.IPasswordManager,Microsoft.Toolkit.Services.Core.IStorageManager)" />
       <MemberSignature Language="VB.NET" Value="Public Function Initialize (appKey As String, appSecret As String, redirectUri As String, authenticationBroker As IAuthenticationBroker, passwordManager As IPasswordManager, storageManager As IStorageManager) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : string * string * string * Microsoft.Toolkit.Services.Core.IAuthenticationBroker * Microsoft.Toolkit.Services.Core.IPasswordManager * Microsoft.Toolkit.Services.Core.IStorageManager -&gt; bool" Usage="weiboService.Initialize (appKey, appSecret, redirectUri, authenticationBroker, passwordManager, storageManager)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Initialize(System::String ^ appKey, System::String ^ appSecret, System::String ^ redirectUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool Initialize(Platform::String ^ appKey, Platform::String ^ appSecret, Platform::String ^ redirectUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker ^ authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager ^ passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager ^ storageManager);" />
-      <MemberSignature Language="C++ WINRT" Value="bool Initialize(std::wstring const &amp; appKey, std::wstring const &amp; appSecret, std::wstring const &amp; redirectUri, Microsoft::Toolkit::Services::Core::IAuthenticationBroker const &amp; authenticationBroker, Microsoft::Toolkit::Services::Core::IPasswordManager const &amp; passwordManager, Microsoft::Toolkit::Services::Core::IStorageManager const &amp; storageManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -175,11 +237,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboService.Instance" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As WeiboService" />
       <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Services.Weibo.WeiboService" Usage="Microsoft.Toolkit.Services.Weibo.WeiboService.Instance" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::Toolkit::Services::Weibo::WeiboService ^ Instance { Microsoft::Toolkit::Services::Weibo::WeiboService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Weibo.WeiboService</ReturnType>
@@ -198,11 +261,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.LoginAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="weiboService.LoginAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ LoginAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -222,13 +286,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="weiboService.Logout " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; void Logout();" />
-      <MemberSignature Language="C++ WINRT" Value="void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -252,11 +315,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.LogoutAsync" />
       <MemberSignature Language="VB.NET" Value="Public Function LogoutAsync () As Task" />
       <MemberSignature Language="F#" Value="member this.LogoutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="weiboService.LogoutAsync " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ LogoutAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -276,11 +340,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.PostStatusAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function PostStatusAsync (status As String) As Task(Of WeiboStatus)" />
       <MemberSignature Language="F#" Value="member this.PostStatusAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;" Usage="weiboService.PostStatusAsync status" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::Weibo::WeiboStatus ^&gt; ^ PostStatusAsync(System::String ^ status);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;</ReturnType>
@@ -305,11 +370,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Weibo.WeiboService.PostStatusAsync(System.String,System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Function PostStatusAsync (status As String, picture As Stream) As Task(Of WeiboStatus)" />
       <MemberSignature Language="F#" Value="member this.PostStatusAsync : string * System.IO.Stream -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;" Usage="weiboService.PostStatusAsync (status, picture)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;Microsoft::Toolkit::Services::Weibo::WeiboStatus ^&gt; ^ PostStatusAsync(System::String ^ status, System::IO::Stream ^ picture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Weibo.WeiboStatus&gt;</ReturnType>
@@ -336,11 +402,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboService.Provider" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As WeiboDataProvider" />
       <MemberSignature Language="F#" Value="member this.Provider : Microsoft.Toolkit.Services.Weibo.WeiboDataProvider" Usage="Microsoft.Toolkit.Services.Weibo.WeiboService.Provider" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Toolkit::Services::Weibo::WeiboDataProvider ^ Provider { Microsoft::Toolkit::Services::Weibo::WeiboDataProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.Weibo.WeiboDataProvider</ReturnType>
@@ -354,16 +421,17 @@
       </Docs>
     </Member>
     <Member MemberName="Uid">
-      <MemberSignature Language="C#" Value="public Nullable&lt;long&gt; Uid { get; }" />
+      <MemberSignature Language="C#" Value="public long? Uid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int64&gt; Uid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.Weibo.WeiboService.Uid" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uid As Nullable(Of Long)" />
       <MemberSignature Language="F#" Value="member this.Uid : Nullable&lt;int64&gt;" Usage="Microsoft.Toolkit.Services.Weibo.WeiboService.Uid" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;long&gt; Uid { Nullable&lt;long&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Nullable&lt;System.Int64&gt;</ReturnType>

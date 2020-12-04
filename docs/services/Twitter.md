@@ -16,6 +16,9 @@ The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
 [Create new Twitter App](https://apps.twitter.com/app) can be used to create a new app within the Twitter portal.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=Twitter%20Service)
+
 ## App Setup
 
 **Consumer Key**
@@ -198,9 +201,9 @@ Finally, the ISignatureManager will provide a GetSignature method, to sign an OA
 
 The toolkit has implementations of each of them for UWP. You can find them as UwpAuthenticationBroker, UwpPasswordManager, UwpStorageManager and UwpSignatureManager.
 
-## Sample Code
+## Sample Project
 
-[Twitter Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Twitter Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

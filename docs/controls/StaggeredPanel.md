@@ -6,7 +6,11 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 ---
 
 # StaggeredPanel
+
 The [StaggeredPanel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.controls.staggeredpanel) allows for layout of items in a column approach where an item will be added to whichever column has used the least amount of space.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=StaggeredPanel)
 
 ## Syntax
 
@@ -35,12 +39,14 @@ The [StaggeredPanel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolk
 
 | Property | Type | Description |
 | -- | -- | -- |
+| ColumnSpacing | double  | Gets or sets the distance between columns |
 | DesiredColumnWidth | double | The desired width of each column. The width of columns can exceed the DesiredColumnWidth if the HorizontalAlignment is set to Stretch. |
 | Padding | Thickness | The dimensions of the space between the edge and its child as a Thickness value. Thickness is a structure that stores dimension values using pixel measures. |
+| RowSpacing | double  | Gets or sets the vertical distance between items |
 
-## Sample Code
+## Sample Project
 
-[StaggeredPanel Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can see this in action in the Windows Community Toolkit Sample App.
+[StaggeredPanel Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can [see this in action](uwpct://Controls?sample=StaggeredPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -53,6 +59,6 @@ The [StaggeredPanel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolk
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
-## API Source Code
+## API
 
 - [StaggeredPanel](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel)

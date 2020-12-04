@@ -9,6 +9,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [InfiniteCanvas Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.infinitecanvas) is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=InfiniteCanvas)
+
 ## Syntax
 
 ```xaml
@@ -38,14 +41,14 @@ The [InfiniteCanvas Control](https://docs.microsoft.com/dotnet/api/microsoft.too
 | -- | -- | -- |
 | Redo() | void | Redo the last action. |
 | Undo() | void | Undo the last action. |
-| ExportAsJson() | string | Export the InfinitCanvas as json string. |
+| ExportAsJson() | string | Export the InfiniteCanvas as json string. |
 | ImportFromJson(string json) | void | Import InfiniteCanvas from json string and render the new canvas, this function will empty the Redo/Undo queue. |
 
 ## Events
 
 ### ReRenderCompleted
 
-This event triggered after each render happended because of any change in the canvas elements.
+This event triggered after each render happened because of any change in the canvas elements.
 This event could be used to do the Auto Save functionality.
 
 ## Examples
@@ -62,9 +65,9 @@ The following sample demonstrates how to add InfiniteCanvas Control
 </Page>
 ```
 
-## Sample Code
+## Sample Project
 
-[InfiniteCanvas Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[InfiniteCanvas Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can [see this in action](uwpct://Controls?sample=InfiniteCanvas) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

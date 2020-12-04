@@ -1,15 +1,14 @@
-﻿<Type Name="DataProviderBase&lt;TConfig&gt;" FullName="Microsoft.Toolkit.Services.DataProviderBase&lt;TConfig&gt;">
+<Type Name="DataProviderBase&lt;TConfig&gt;" FullName="Microsoft.Toolkit.Services.DataProviderBase&lt;TConfig&gt;">
   <TypeSignature Language="C#" Value="public abstract class DataProviderBase&lt;TConfig&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataProviderBase`1&lt;TConfig&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Services.DataProviderBase`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataProviderBase(Of TConfig)" />
   <TypeSignature Language="F#" Value="type DataProviderBase&lt;'Config&gt; = class" />
-  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TConfig&gt;&#xA;public ref class DataProviderBase abstract" />
-  <TypeSignature Language="C++ WINRT" Value="template &lt;typename TConfig&gt;&#xA;[Windows::Foundation::Metadata::WebHostHidden]&#xA;class DataProviderBase abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TConfig" />
@@ -31,14 +30,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.DataProviderBase`1.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataProviderBase();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; DataProviderBase();" />
-      <MemberSignature Language="C++ WINRT" Value=" DataProviderBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -54,12 +51,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.DataProviderBase`1.GetDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetDataAsync(Of TSchema As SchemaBase) (config As TConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="abstract member GetDataAsync : 'Config * int * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="dataProviderBase.GetDataAsync (config, maxRecords, pageIndex, parser)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase abstract System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ GetDataAsync(TConfig config, int maxRecords, int pageIndex, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt;</ReturnType>
@@ -96,12 +93,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Services.DataProviderBase`1.HttpClient" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property HttpClient As HttpClient" />
       <MemberSignature Language="F#" Value="member this.HttpClient : System.Net.Http.HttpClient with get, set" Usage="Microsoft.Toolkit.Services.DataProviderBase&lt;'Config&gt;.HttpClient" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Http::HttpClient ^ HttpClient { System::Net::Http::HttpClient ^ get(); void set(System::Net::Http::HttpClient ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Http.HttpClient</ReturnType>
@@ -120,12 +117,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.DataProviderBase`1.LoadDataAsync``1(`0,System.Int32,System.Int32,Microsoft.Toolkit.Parsers.IParser{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Function LoadDataAsync(Of TSchema As SchemaBase) (config As TConfig, maxRecords As Integer, pageIndex As Integer, parser As IParser(Of TSchema)) As Task(Of IEnumerable(Of TSchema))" />
       <MemberSignature Language="F#" Value="member this.LoadDataAsync : 'Config * int * int * Microsoft.Toolkit.Parsers.IParser&lt;'Schema (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;'Schema&gt;&gt; (requires 'Schema :&gt; Microsoft.Toolkit.Parsers.SchemaBase)" Usage="dataProviderBase.LoadDataAsync (config, maxRecords, pageIndex, parser)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSchema&gt;&#xA; where TSchema : Microsoft::Toolkit::Parsers::SchemaBase System::Threading::Tasks::Task&lt;System::Collections::Generic::IEnumerable&lt;TSchema&gt; ^&gt; ^ LoadDataAsync(TConfig config, int maxRecords, int pageIndex, Microsoft::Toolkit::Parsers::IParser&lt;TSchema&gt; ^ parser);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;TSchema&gt;&gt;</ReturnType>
@@ -162,14 +159,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.DataProviderBase`1.ValidateConfig(`0)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub ValidateConfig (config As TConfig)" />
       <MemberSignature Language="F#" Value="abstract member ValidateConfig : 'Config -&gt; unit" Usage="dataProviderBase.ValidateConfig config" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ValidateConfig(TConfig config);" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; abstract void ValidateConfig(TConfig config);" />
-      <MemberSignature Language="C++ WINRT" Value=" abstract void ValidateConfig(TConfig config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

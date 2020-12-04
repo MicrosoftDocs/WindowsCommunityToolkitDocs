@@ -8,9 +8,12 @@ dev_langs:
   - vb
 ---
 
-# Facebook Service 
+# Facebook Service
 
 The Facebook Service allows you to retrieve or publish data to the Facebook graph. Examples of the types of objects you can work with are Posts, Tagged Objects, and the primary user feed.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=Facebook%20Service)
 
 ## Getting Windows Store SID
 
@@ -271,9 +274,9 @@ Class for connecting to Facebook
 |            GetPhotoByPhotoIdAsync(string)             |                                   Task<FacebookPhoto>                                   |                              Retrieves a photo by id                              |
 |           PostToFeedWithDialogAsync(string)           |                                       Task<bool>                                        |            Enables posting data to the timeline using Facebook dialog             |
 
-## Sample Code
+## Sample Project
 
-[Facebook Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Facebook Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

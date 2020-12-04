@@ -1,0 +1,113 @@
+<Type Name="EventHandlerExtensions" FullName="Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions">
+  <TypeSignature Language="C#" Value="public static class EventHandlerExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit EventHandlerExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module EventHandlerExtensions" />
+  <TypeSignature Language="F#" Value="type EventHandlerExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extensions to <see cref="T:System.EventHandler`1" /> for Deferred Events.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="InvokeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeAsync&lt;T&gt; (this EventHandler&lt;T&gt; eventHandler, object sender, T eventArgs) where T : Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeAsync&lt;(class Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs) T&gt;(class System.EventHandler`1&lt;!!T&gt; eventHandler, object sender, !!T eventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions.InvokeAsync``1(System.EventHandler{``0},System.Object,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InvokeAsync(Of T As DeferredEventArgs) (eventHandler As EventHandler(Of T), sender As Object, eventArgs As T) As Task" />
+      <MemberSignature Language="F#" Value="static member InvokeAsync : EventHandler&lt;'T (requires 'T :&gt; Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs)&gt; * obj * 'T -&gt; System.Threading.Tasks.Task (requires 'T :&gt; Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs)" Usage="Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions.InvokeAsync (eventHandler, sender, eventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventHandler" Type="System.EventHandler&lt;T&gt;" RefType="this" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="eventArgs" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.EventArgs" /> type.</typeparam>
+        <param name="eventHandler">
+          <see cref="T:System.EventHandler`1" /> to be invoked.</param>
+        <param name="sender">Sender of the event.</param>
+        <param name="eventArgs">
+          <see cref="T:System.EventArgs" /> instance.</param>
+        <summary>
+            Use to invoke an async <see cref="T:System.EventHandler`1" /> using <see cref="T:Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs" />.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> to wait on deferred event handler.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task InvokeAsync&lt;T&gt; (this EventHandler&lt;T&gt; eventHandler, object sender, T eventArgs, System.Threading.CancellationToken cancellationToken) where T : Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task InvokeAsync&lt;(class Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs) T&gt;(class System.EventHandler`1&lt;!!T&gt; eventHandler, object sender, !!T eventArgs, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions.InvokeAsync``1(System.EventHandler{``0},System.Object,``0,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InvokeAsync(Of T As DeferredEventArgs) (eventHandler As EventHandler(Of T), sender As Object, eventArgs As T, cancellationToken As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="static member InvokeAsync : EventHandler&lt;'T (requires 'T :&gt; Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs)&gt; * obj * 'T * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task (requires 'T :&gt; Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs)" Usage="Microsoft.Toolkit.Uwp.Deferred.EventHandlerExtensions.InvokeAsync (eventHandler, sender, eventArgs, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="eventHandler" Type="System.EventHandler&lt;T&gt;" RefType="this" />
+        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="eventArgs" Type="T" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:System.EventArgs" /> type.</typeparam>
+        <param name="eventHandler">
+          <see cref="T:System.EventHandler`1" /> to be invoked.</param>
+        <param name="sender">Sender of the event.</param>
+        <param name="eventArgs">
+          <see cref="T:System.EventArgs" /> instance.</param>
+        <param name="cancellationToken">
+          <see cref="T:System.Threading.CancellationToken" /> option.</param>
+        <summary>
+            Use to invoke an async <see cref="T:System.EventHandler`1" /> using <see cref="T:Microsoft.Toolkit.Uwp.Deferred.DeferredEventArgs" /> with a <see cref="T:System.Threading.CancellationToken" />.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" /> to wait on deferred event handler.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

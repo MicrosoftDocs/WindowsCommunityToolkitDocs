@@ -1,20 +1,24 @@
-﻿<Type Name="SurfaceLoader" FullName="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader">
+<Type Name="SurfaceLoader" FullName="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader">
   <TypeSignature Language="C#" Value="public class SurfaceLoader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SurfaceLoader extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader" />
   <TypeSignature Language="VB.NET" Value="Public Class SurfaceLoader" />
   <TypeSignature Language="F#" Value="type SurfaceLoader = class" />
-  <TypeSignature Language="C++ CLI" Value="public ref class SurfaceLoader" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class SurfaceLoader" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Windows.Foundation.Metadata.Deprecated("This class is deprecated, please use the SurfaceLoader class from the Microsoft.Toolkit.Uwp.UI.Media package.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 6)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             The SurfaceLoader is responsible to loading images into Composition Objects.
@@ -27,14 +31,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; SurfaceLoader();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; SurfaceLoader();" />
-      <MemberSignature Language="C++ WINRT" Value=" SurfaceLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -46,15 +48,14 @@
       <MemberSignature Language="C#" Value="public static void Initialize (Windows.UI.Composition.Compositor compositor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Initialize(class Windows.UI.Composition.Compositor compositor) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.Initialize(Windows.UI.Composition.Compositor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Initialize (compositor As Compositor)" />
       <MemberSignature Language="F#" Value="static member Initialize : Windows.UI.Composition.Compositor -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.Initialize compositor" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Initialize(Windows::UI::Composition::Compositor ^ compositor);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static void Initialize(Windows::UI::Composition::Compositor ^ compositor);" />
-      <MemberSignature Language="C++ WINRT" Value=" static void Initialize(winrt::Windows::UI::Composition::Compositor const &amp; compositor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -76,13 +77,12 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.IsInitialized" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsInitialized { bool get(); };" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static property bool IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -101,13 +101,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromUri (uri As Uri) As Task(Of CompositionDrawingSurface)" />
       <MemberSignature Language="F#" Value="static member LoadFromUri : Uri -&gt; System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri uri" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Windows::UI::Composition::CompositionDrawingSurface ^&gt; ^ LoadFromUri(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;</ReturnType>
@@ -130,13 +131,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri (Uri uri, Windows.Foundation.Size sizeTarget);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri(class System.Uri uri, valuetype Windows.Foundation.Size sizeTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri(System.Uri,Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromUri (uri As Uri, sizeTarget As Size) As Task(Of CompositionDrawingSurface)" />
       <MemberSignature Language="F#" Value="static member LoadFromUri : Uri * Windows.Foundation.Size -&gt; System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri (uri, sizeTarget)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Windows::UI::Composition::CompositionDrawingSurface ^&gt; ^ LoadFromUri(Uri ^ uri, Windows::Foundation::Size sizeTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;</ReturnType>
@@ -161,13 +163,14 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri (Uri uri, Windows.Foundation.Size sizeTarget, Microsoft.Toolkit.Uwp.UI.Animations.LoadTimeEffectHandler loadEffectHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Windows.UI.Composition.CompositionDrawingSurface&gt; LoadFromUri(class System.Uri uri, valuetype Windows.Foundation.Size sizeTarget, class Microsoft.Toolkit.Uwp.UI.Animations.LoadTimeEffectHandler loadEffectHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri(System.Uri,Windows.Foundation.Size,Microsoft.Toolkit.Uwp.UI.Animations.LoadTimeEffectHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadFromUri (uri As Uri, sizeTarget As Size, loadEffectHandler As LoadTimeEffectHandler) As Task(Of CompositionDrawingSurface)" />
       <MemberSignature Language="F#" Value="static member LoadFromUri : Uri * Windows.Foundation.Size * Microsoft.Toolkit.Uwp.UI.Animations.LoadTimeEffectHandler -&gt; System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadFromUri (uri, sizeTarget, loadEffectHandler)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;Windows::UI::Composition::CompositionDrawingSurface ^&gt; ^ LoadFromUri(Uri ^ uri, Windows::Foundation::Size sizeTarget, Microsoft::Toolkit::Uwp::UI::Animations::LoadTimeEffectHandler ^ loadEffectHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.UI.Composition.CompositionDrawingSurface&gt;</ReturnType>
@@ -196,13 +199,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadText(System.String,Windows.Foundation.Size,Microsoft.Graphics.Canvas.Text.CanvasTextFormat,Windows.UI.Color,Windows.UI.Color)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LoadText (text As String, sizeTarget As Size, textFormat As CanvasTextFormat, textColor As Color, bgColor As Color) As CompositionDrawingSurface" />
       <MemberSignature Language="F#" Value="static member LoadText : string * Windows.Foundation.Size * Microsoft.Graphics.Canvas.Text.CanvasTextFormat * Windows.UI.Color * Windows.UI.Color -&gt; Windows.UI.Composition.CompositionDrawingSurface" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.LoadText (text, sizeTarget, textFormat, textColor, bgColor)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Windows::UI::Composition::CompositionDrawingSurface ^ LoadText(System::String ^ text, Windows::Foundation::Size sizeTarget, Microsoft::Graphics::Canvas::Text::CanvasTextFormat ^ textFormat, Windows::UI::Color textColor, Windows::UI::Color bgColor);" />
-      <MemberSignature Language="C++ WINRT" Value=" static winrt::Windows::UI::Composition::CompositionDrawingSurface LoadText(std::wstring const &amp; text, winrt::Windows::Foundation::Size sizeTarget, Microsoft::Graphics::Canvas::Text::CanvasTextFormat const &amp; textFormat, winrt::Windows::UI::Color textColor, winrt::Windows::UI::Color bgColor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Composition.CompositionDrawingSurface</ReturnType>
@@ -235,14 +237,12 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.Uninitialize" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninitialize ()" />
       <MemberSignature Language="F#" Value="static member Uninitialize : unit -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.SurfaceLoader.Uninitialize " />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninitialize();" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; static void Uninitialize();" />
-      <MemberSignature Language="C++ WINRT" Value=" static void Uninitialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

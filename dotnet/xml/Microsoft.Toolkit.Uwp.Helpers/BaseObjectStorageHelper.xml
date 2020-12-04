@@ -1,16 +1,14 @@
-﻿<Type Name="BaseObjectStorageHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper">
+<Type Name="BaseObjectStorageHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper">
   <TypeSignature Language="C#" Value="public abstract class BaseObjectStorageHelper : Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseObjectStorageHelper extends System.Object implements class Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseObjectStorageHelper&#xA;Implements IObjectStorageHelper" />
   <TypeSignature Language="F#" Value="type BaseObjectStorageHelper = class&#xA;    interface IObjectStorageHelper" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
-  <TypeSignature Language="C++ CX" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;public ref class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
-  <TypeSignature Language="C++ WINRT" Value="[Windows::Foundation::Metadata::WebHostHidden]&#xA;class BaseObjectStorageHelper abstract : Microsoft::Toolkit::Uwp::Helpers::IObjectStorageHelper" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-    <AssemblyVersion>4.0.0.0</AssemblyVersion>
-    <AssemblyVersion>5.0.0.0</AssemblyVersion>
+    <AssemblyVersion>5.1.0.0</AssemblyVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -22,28 +20,32 @@
   </Interfaces>
   <Docs>
     <summary>
-            Shared implementation of ObjectStorageHelper
+            Shared implementation of ObjectStorageHelper.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected BaseObjectStorageHelper ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.#ctor" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseObjectStorageHelper();" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; BaseObjectStorageHelper();" />
-      <MemberSignature Language="C++ WINRT" Value=" BaseObjectStorageHelper();" />
+      <MemberSignature Language="C#" Value="public BaseObjectStorageHelper (Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.#ctor(Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional objectSerializer As IObjectSerializer = null)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper : Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer -&gt; Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper objectSerializer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters />
+      <Parameters>
+        <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />
+      </Parameters>
       <Docs>
-        <summary>To be added.</summary>
+        <param name="objectSerializer">The serializer to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper" /> class,
+            which can read and write data using the provided <see cref="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />;
+            if none is provided, a default Json serializer will be used.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -53,15 +55,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.FileExistsAsync(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function FileExistsAsync (filePath As String) As Task(Of Boolean)" />
       <MemberSignature Language="F#" Value="abstract member FileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.FileExistsAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="baseObjectStorageHelper.FileExistsAsync filePath" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ FileExistsAsync(System::String ^ filePath);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.FileExistsAsync(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -72,9 +74,10 @@
       <Docs>
         <param name="filePath">Key of the file (that contains object)</param>
         <summary>
-            Detect if a file already exists
+            Determines whether a file already exists.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>
+          <c>true</c> if the file exists; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -84,20 +87,19 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Folder" />
       <MemberSignature Language="VB.NET" Value="Protected Property Folder As StorageFolder" />
       <MemberSignature Language="F#" Value="member this.Folder : Windows.Storage.StorageFolder with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Folder" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Windows::Storage::StorageFolder ^ Folder { Windows::Storage::StorageFolder ^ get(); void set(Windows::Storage::StorageFolder ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; property Windows::Storage::StorageFolder ^ Folder { Windows::Storage::StorageFolder ^ get(); void set(Windows::Storage::StorageFolder ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Storage.StorageFolder</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets storage folder
+            Gets or sets the storage folder.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -109,17 +111,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.KeyExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string -&gt; bool&#xA;override this.KeyExists : string -&gt; bool" Usage="baseObjectStorageHelper.KeyExists key" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool KeyExists(System::String ^ key);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ key);" />
-      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -130,9 +130,10 @@
       <Docs>
         <param name="key">Key of the setting (that contains object)</param>
         <summary>
-            Detect if a setting already exists
+            Determines whether a setting already exists.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>
+          <c>true</c> if the setting exists; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -142,17 +143,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.KeyExists(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function KeyExists (compositeKey As String, key As String) As Boolean" />
       <MemberSignature Language="F#" Value="abstract member KeyExists : string * string -&gt; bool&#xA;override this.KeyExists : string * string -&gt; bool" Usage="baseObjectStorageHelper.KeyExists (compositeKey, key)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool KeyExists(System::String ^ compositeKey, System::String ^ key);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA; bool KeyExists(Platform::String ^ compositeKey, Platform::String ^ key);" />
-      <MemberSignature Language="C++ WINRT" Value="bool KeyExists(std::wstring const &amp; compositeKey, std::wstring const &amp; key);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.KeyExists(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -165,27 +164,28 @@
         <param name="compositeKey">Key of the composite (that contains settings)</param>
         <param name="key">Key of the setting (that contains object)</param>
         <summary>
-            Detect if a setting already exists in composite.
+            Determines whether a setting already exists in composite.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>
+          <c>true</c> if the setting exists; otherwise, <c>false</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public T Read&lt;T&gt; (string key, T default = null);" />
+      <MemberSignature Language="C#" Value="public T Read&lt;T&gt; (string key, T default = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Read&lt;T&gt;(string key, !!T default) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Read``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * 'T -&gt; 'T&#xA;override this.Read : string * 'T -&gt; 'T" Usage="baseObjectStorageHelper.Read (key, default)" />
-      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,``0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -202,27 +202,27 @@
         <param name="key">Key of the object</param>
         <param name="default">Default value of the object</param>
         <summary>
-            Retrieve single item by its key.
+            Retrieves a single item by its key.
             </summary>
         <returns>The T object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Read&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public T Read&lt;T&gt; (string compositeKey, string key, T default = null);" />
+      <MemberSignature Language="C#" Value="public T Read&lt;T&gt; (string compositeKey, string key, T default = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Read&lt;T&gt;(string compositeKey, string key, !!T default) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Read``1(System.String,System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (compositeKey As String, key As String, Optional default As T = null) As T" />
       <MemberSignature Language="F#" Value="abstract member Read : string * string * 'T -&gt; 'T&#xA;override this.Read : string * string * 'T -&gt; 'T" Usage="baseObjectStorageHelper.Read (compositeKey, key, default)" />
-      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; T Read(std::wstring const &amp; compositeKey, std::wstring const &amp; key, T default = null);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Read``1(System.String,System.String,``0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -241,14 +241,14 @@
         <param name="key">Key of the object</param>
         <param name="default">Default value of the object</param>
         <summary>
-            Retrieve single item by its key in composite.
+            Retrieves a single item by its key in composite.
             </summary>
         <returns>The T object</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ReadFileAsync&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; ReadFileAsync&lt;T&gt; (string filePath, T default = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; ReadFileAsync&lt;T&gt; (string filePath, T default = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; ReadFileAsync&lt;T&gt;(string filePath, !!T default) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.ReadFileAsync``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ReadFileAsync(Of T) (filePath As String, Optional default As T = null) As Task(Of T)" />
@@ -259,8 +259,9 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -277,7 +278,7 @@
         <param name="filePath">Path to the file that contains the object</param>
         <param name="default">Default value of the object</param>
         <summary>
-            Retrieve object from file.
+            Retrieves an object from a file.
             </summary>
         <returns>Waiting task until completion with the object in the file</returns>
         <remarks>To be added.</remarks>
@@ -289,15 +290,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (compositeKey As String, values As IDictionary(Of String, T))" />
       <MemberSignature Language="F#" Value="abstract member Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit&#xA;override this.Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit" Usage="baseObjectStorageHelper.Save (compositeKey, values)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual void Save(System::String ^ compositeKey, System::Collections::Generic::IDictionary&lt;System::String ^, T&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -314,7 +315,7 @@
         <param name="compositeKey">Key of the composite (that contains settings)</param>
         <param name="values">Objects to save</param>
         <summary>
-            Save a group of items by its key in a composite.
+            Saves a group of items by its key in a composite.
             This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
             (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" /> for complex/large objects) and for groups of settings which
             need to be treated in an atomic way.
@@ -328,17 +329,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (key As String, value As T)" />
       <MemberSignature Language="F#" Value="abstract member Save : string * 'T -&gt; unit&#xA;override this.Save : string * 'T -&gt; unit" Usage="baseObjectStorageHelper.Save (key, value)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual void Save(System::String ^ key, T value);" />
-      <MemberSignature Language="C++ CX" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Save(Platform::String ^ key, T value);" />
-      <MemberSignature Language="C++ WINRT" Value="template &lt;typename T&gt;&#xA; void Save(std::wstring const &amp; key, T value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.Save``1(System.String,``0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -355,7 +354,7 @@
         <param name="key">Key of the value saved</param>
         <param name="value">Object to save</param>
         <summary>
-            Save single item by its key.
+            Saves a single item by its key.
             This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
             (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" /> for complex/large objects).
             </summary>
@@ -368,15 +367,15 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function SaveFileAsync(Of T) (filePath As String, value As T) As Task(Of StorageFile)" />
       <MemberSignature Language="F#" Value="abstract member SaveFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;&#xA;override this.SaveFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;" Usage="baseObjectStorageHelper.SaveFileAsync (filePath, value)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual System::Threading::Tasks::Task&lt;Windows::Storage::StorageFile ^&gt; ^ SaveFileAsync(System::String ^ filePath, T value);" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.Toolkit.Uwp.Helpers.IObjectStorageHelper.SaveFileAsync``1(System.String,``0)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;</ReturnType>
@@ -393,10 +392,10 @@
         <param name="filePath">Path to the file that will contain the object</param>
         <param name="value">Object to save</param>
         <summary>
-            Save object inside file.
+            Saves an object inside a file.
             There is no limitation to use this method (refers to <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Save``1(System.String,``0)" /> method for simple objects).
             </summary>
-        <returns>When this method completes, it returns the <see cref="T:Windows.Storage.StorageFile" /> where the object was saved</returns>
+        <returns>The <see cref="T:Windows.Storage.StorageFile" /> where the object was saved</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -406,20 +405,19 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Settings" />
       <MemberSignature Language="VB.NET" Value="Protected Property Settings As ApplicationDataContainer" />
       <MemberSignature Language="F#" Value="member this.Settings : Windows.Storage.ApplicationDataContainer with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.Settings" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Windows::Storage::ApplicationDataContainer ^ Settings { Windows::Storage::ApplicationDataContainer ^ get(); void set(Windows::Storage::ApplicationDataContainer ^ value); };" />
-      <MemberSignature Language="C++ CX" Value="protected:&#xA; property Windows::Storage::ApplicationDataContainer ^ Settings { Windows::Storage::ApplicationDataContainer ^ get(); void set(Windows::Storage::ApplicationDataContainer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>5.0.0.0</AssemblyVersion>
+        <AssemblyVersion>5.1.0.0</AssemblyVersion>
+        <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Storage.ApplicationDataContainer</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets settings container
+            Gets or sets the settings container.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>

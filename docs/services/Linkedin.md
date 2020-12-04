@@ -12,6 +12,9 @@ dev_langs:
 
 The **LinkedIn Service** allows you to retrieve or publish data to the LinkedIn graph. Examples of the types of objects you can work with are User profile data and sharing Activity.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=LinkedIn%20Service)
+
 ## Creating a new Application on LinkedIn Developer Site
 
 1. Go to: https://www.linkedin.com/developer/apps.
@@ -19,7 +22,7 @@ The **LinkedIn Service** allows you to retrieve or publish data to the LinkedIn 
 3. Complete all mandatory fields signified by the red star.  If you agree to the terms and conditions, hit **Submit**.
 4. Make a note of the **Client Id** and **Client Secret** for your app - you will need to supply these in your code.
 5. Take note of the **Default Application Permissions**.  You can either set these in this portal or via code.  These are the permissions your user will need to agree to for you to make calls on their behalf.
-6. Under **OAuth 2.0** you will need to enter a **Authorized Redirect URLs**.  For UWP app development purposes this is arbitrary, but it will need to match what you have in your code (e.g. https://github.com/Microsoft/WindowsCommunityToolkit/).
+6. Under **OAuth 2.0** you will need to enter a **Authorized Redirect URLs**.  For UWP app development purposes this is arbitrary, but it will need to match what you have in your code (e.g. https://github.com/windows-toolkit/WindowsCommunityToolkit/).
 7. Once you have done, hit **Update**.
 
 ## Syntax
@@ -86,6 +89,10 @@ The Set method receives a string key and a string value.
 
 The toolkit has implementations of each of them for UWP. You can find them as UwpAuthenticationBroker, UwpPasswordManager and UwpStorageManager.
 
+## Sample Project
+
+[LinkedIn Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+
 ## Requirements
 
 | Device family | Universal, 10.0.16299.0 or higher |
@@ -95,4 +102,4 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## API
 
-* [LinkedIn Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.Services/Services/LinkedIn)
+* [LinkedIn Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Services/Services/LinkedIn)

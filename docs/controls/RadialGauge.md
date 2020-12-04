@@ -12,6 +12,9 @@ The round gauges are powerful, easy to use, and highly configurable to present d
 
 The Radial Gauge supports animated transitions between configuration states. The control gradually animates as it redraws changes to the needle, needle position, scale range, color range, and more. 
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Controls?sample=RadialGauge)
+
 ## Syntax
 
 ```xaml
@@ -72,11 +75,11 @@ This table shows the resources used by the [RadialGauge](https://docs.microsoft.
 | RadialGaugeForegroundBrush | Label text color for the value of the gauge |
 | RadialGaugeAccentBrush | Label text color for the units of the gauge |
 
-## Sample Code
+## Sample Project
 
-[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can [see this in action](uwpct://Controls?sample=RadialGauge) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [RadialGauge XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge/RadialGauge.xaml) is the XAML template used in the toolkit for the default styling.
 
@@ -90,4 +93,3 @@ This table shows the resources used by the [RadialGauge](https://docs.microsoft.
 ## API
 
 * [RadialGauge source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge)
-

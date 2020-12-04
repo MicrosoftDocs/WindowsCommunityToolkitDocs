@@ -32,6 +32,7 @@
 ## [DockPanel](controls/DockPanel.md)
 ## [DropShadowPanel Control](controls/DropShadowPanel.md)
 ## [Expander Control](controls/Expander.md)
+## [Eyedropper](controls/Eyedropper.md)
 ## [GridSplitter](controls/GridSplitter.md)
 ## [HeaderedContentControl](controls/HeaderedContentControl.md)
 ## [HeaderedItemsControl](controls/HeaderedItemsControl.md)
@@ -45,13 +46,6 @@
 ## [MarkdownTextBlock](controls/MarkdownTextBlock.md)
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 ## [Menu Control](controls/Menu.md)
-## Microsoft Graph Controls
-### [AadLogin](graph/AadLogin.md)
-### [PeoplePicker](graph/PeoplePicker.md)
-### [PlannerTaskList](graph/PlannerTaskList.md)
-### [PowerBIEmbedded](graph/PowerBIEmbedded.md)
-### [ProfileCard](graph/ProfileCard.md)
-### [SharePointFileList](graph/SharePointFileList.md)
 ## [OrbitView](controls/OrbitView.md)
 ## [RadialGauge](controls/RadialGauge.md)
 ## [RadialProgressBar](controls/RadialProgressBar.md)
@@ -59,11 +53,16 @@
 ## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 ## [RotatorTile](controls/RotatorTile.md)
 ## [ScrollHeader](controls/ScrollHeader.md)
+## [StaggeredLayout](controls/layout/StaggeredLayout.md)
+
 ## [StaggeredPanel](controls/StaggeredPanel.md)
-## [TextToolbar](controls/TextToolbar.md)
 ## [TabView](controls/TabView.md)
+## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
+## [TokenizingTextBox](controls/TokenizingTextBox.md)
 ## [UniformGrid](controls/UniformGrid.md)
+## [WrapLayout](controls/layout/WrapLayout.md)
+
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Animations
@@ -91,35 +90,51 @@
 ## [Scale](animations/Scale.md)
 
 # Brushes
+## [AcrylicBrush](brushes/AcrylicBrush.md)
 ## [BackdropBlurBrush](brushes/BackdropBlurBrush.md)
 ## [BackdropGammaTransferBrush](brushes/BackdropGammaTransferBrush.md)
 ## [BackdropInvertBrush](brushes/BackdropInvertBrush.md)
 ## [BackdropSaturationBrush](brushes/BackdropSaturationBrush.md)
 ## [BackdropSepiaBrush](brushes/BackdropSepiaBrush.md)
 ## [ImageBlendBrush](brushes/ImageBlendBrush.md)
+## [PipelineBrush](brushes/PipelineBrush.md)
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
+## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
 ## [ArrayExtensions](extensions/ArrayExtensions.md)
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
+## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 ## [Logical Tree](extensions/LogicalTree.md)
 ## [Matrix Extensions](extensions/MatrixExtensions.md)
 ### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
 ### [Transform Extensions](extensions/TransformExtensions.md)
 ## [Mouse Cursor](extensions/MouseCursor.md)
-## [NavigationView Styles](extensions/NavigationView.md)
 ## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 ## [StringExtensions](extensions/StringExtensions.md)
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 ## [TextBoxMask](extensions/TextBoxMask.md)
 ## [TextBoxRegex](extensions/TextBoxRegex.md)
+## [UIElementExtensions](extensions/UIElementExtensions.md)
 ## [ViewExtensions](extensions/ViewExtensions.md)
 ## [Visual Tree](extensions/VisualTree.md)
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
+
+# Collections
+## [Observable Groups](collections/ObservableGroups.md)
+
+# Microsoft Graph
+## Controls
+### [LoginButton](graph/controls/LoginButton.md)
+### [PersonView](graph/controls/PersonView.md)
+### [PeoplePicker](graph/controls/PeoplePicker.md)
+## Providers
+### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
 
 # Helpers
 ## [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
@@ -138,13 +153,16 @@
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
 ## [ObjectStorage](helpers/ObjectStorage.md)
+## [ObjectSerializer](helpers/ObjectSerializer.md)
 ## [PrintHelper](helpers/PrintHelper.md)
 ## [RemoteDeviceHelper](helpers/RemoteDeviceHelper.md)
 ## [StorageFileHelper](helpers/StorageFiles.md)
 ## [Streams Helper](helpers/Streams.md)
 ## [SystemInformation](helpers/SystemInformation.md)
 ## [ThemeListener](helpers/ThemeListener.md)
+## [Triggers](helpers/Triggers.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
+## [ViewportBehavior](helpers/ViewportBehavior.md)
 
 # Services
 ## [Facebook Service](services/Facebook.md)
@@ -160,9 +178,18 @@
 ## [MarkdownParser](parsers/MarkdownParser.md)
 ## [RSSParser](parsers/RSSParser.md)
 
+# High performance
+## [Introduction](high-performance/Introduction.md)
+## Buffers
+### [MemoryOwner<T>](high-performance/MemoryOwner.md)
+### [SpanOwner<T>](high-performance/SpanOwner.md)
+## [ParallelHelper](high-performance/ParallelHelper.md)
+## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
+
 # Developer tools
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
+## [Guard](developer-tools/Guard.md)
 
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
@@ -171,11 +198,18 @@
 # [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 # Archive
+## Animations
+### [ParallaxService](archive/ParallaxService.md)
 ## Controls
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 ### [SlidableListItem](archive/SlidableListItem.md)
-## Animations
-### [ParallaxService](archive/ParallaxService.md)
+## Microsoft Graph Controls
+### [AadLogin](archive/graph/AadLogin.md)
+### [PeoplePicker](archive/graph/PeoplePicker.md)
+### [PlannerTaskList](archive/graph/PlannerTaskList.md)
+### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
+### [ProfileCard](archive/graph/ProfileCard.md)
+### [SharePointFileList](archive/graph/SharePointFileList.md)
 ## Services
 ### [Bing Service](archive/Bing.md)

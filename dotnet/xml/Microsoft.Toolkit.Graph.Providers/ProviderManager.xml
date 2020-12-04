@@ -1,0 +1,113 @@
+<Type Name="ProviderManager" FullName="Microsoft.Toolkit.Graph.Providers.ProviderManager">
+  <TypeSignature Language="C#" Value="public class ProviderManager" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProviderManager extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Graph.Providers.ProviderManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProviderManager" />
+  <TypeSignature Language="F#" Value="type ProviderManager = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Shared provider manager used by controls in Microsoft.Toolkit.Graph.Controls to authenticate and call the Microsoft Graph.
+            </summary>
+    <remarks>To be added.</remarks>
+    <example>To set your own existing provider:
+            <code>
+            ProviderManager.Instance.GlobalProvider = await MsalProvider.CreateAsync(...);
+            </code></example>
+  </Docs>
+  <Members>
+    <Member MemberName="ClientName">
+      <MemberSignature Language="C#" Value="public static readonly string ClientName;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string ClientName" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Graph.Providers.ProviderManager.ClientName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClientName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ClientName : string" Usage="Microsoft.Toolkit.Graph.Providers.ProviderManager.ClientName" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the name of the toolkit client to identify self in Graph calls.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GlobalProvider">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Graph.Providers.IProvider GlobalProvider { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Graph.Providers.IProvider GlobalProvider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Graph.Providers.ProviderManager.GlobalProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlobalProvider As IProvider" />
+      <MemberSignature Language="F#" Value="member this.GlobalProvider : Microsoft.Toolkit.Graph.Providers.IProvider with get, set" Usage="Microsoft.Toolkit.Graph.Providers.ProviderManager.GlobalProvider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Graph.Providers.IProvider</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the global provider used by all Microsoft.Toolkit.Graph.Controls.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Graph.Providers.ProviderManager Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Graph.Providers.ProviderManager Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Graph.Providers.ProviderManager.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As ProviderManager" />
+      <MemberSignature Language="F#" Value="member this.Instance : Microsoft.Toolkit.Graph.Providers.ProviderManager" Usage="Microsoft.Toolkit.Graph.Providers.ProviderManager.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Graph.Providers.ProviderManager</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the instance of the GlobalProvider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProviderUpdated">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Graph.Providers.ProviderUpdatedEventArgs&gt; ProviderUpdated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Graph.Providers.ProviderUpdatedEventArgs&gt; ProviderUpdated" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Graph.Providers.ProviderManager.ProviderUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProviderUpdated As EventHandler(Of ProviderUpdatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProviderUpdated : EventHandler&lt;Microsoft.Toolkit.Graph.Providers.ProviderUpdatedEventArgs&gt; " Usage="member this.ProviderUpdated : System.EventHandler&lt;Microsoft.Toolkit.Graph.Providers.ProviderUpdatedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Graph</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Graph.Providers.ProviderUpdatedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event called when the <see cref="T:Microsoft.Toolkit.Graph.Providers.IProvider" /> changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

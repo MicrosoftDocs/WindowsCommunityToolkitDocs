@@ -15,6 +15,17 @@ The Object Storage Helper will help you handle storage of generic objects within
 - [LocalObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
 - [RoamingObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Helpers?sample=Object%20Storage)
+
+## Constructors
+
+LocalObjectStorageHelper and RoamingObjectStorageHelper have the same constructor with an optional parameter:
+
+| Constructor | Description |
+|-------------|-------------|
+| ObjectStorageHelper(IObjectSerializer = null) | Initializes a new instance of the ObjectStorageHelper class with the provided [IObjectSerializer](ObjectSerializer.md), that will be used when serializing and deserializing data in Settings or in Storage; if no serializer is provided, a default JSON serializer will be used. |
+
 ## Properties
 
 | Property | Type | Description |
@@ -201,9 +212,9 @@ Dim o = New MyLargeObject With {
 Await helper.SaveFileAsync(keySimpleObject, o)
 ```
 
-## Sample Code
+## Sample Project
 
-[Object Storage sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Object Storage sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -216,3 +227,4 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 * [LocalObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
 * [RoamingObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)

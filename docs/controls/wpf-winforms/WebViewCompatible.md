@@ -3,11 +3,14 @@ title: WebViewCompatible control for Windows Forms and WPF
 author: mcleanbyron
 description: The Windows Community Toolkit provides a version of the UWP web view control that can be used in WPF and Windows Forms applications. This control embeds a view into your application that renders web content in one of two ways. For client environments that support the WebViewControl (Windows 10), that implementation is used. For legacy systems, System.Windows.Controls.WebBrowser implements the view.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebView, Windows Forms, WPF
+dev_langs:
+  - csharp
+  - vb
 ---
 
 # WebViewCompatible control for Windows Forms and WPF
 
-The **WebViewCompatible** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls). 
+The **WebViewCompatible** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![WebViewCompatible example](../../resources/images/Controls/WebView/web-view-samples.png)
 
@@ -17,7 +20,13 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 * On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) is used, which provides Internet Explorer engine-based rendering.
 
 > [!NOTE]
+> The Edge runtime does not at the moment work when the process is elevated as an administrator. Therefore **WebViewCompatible** will fall back to use the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) when it detects that the process is running as administrator.
+
+> [!NOTE]
 > If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
+
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=WebViewCompatible)
 
 ## About WebViewCompatible control
 
@@ -69,7 +78,7 @@ For earlier versions of Visual Studio:
 
 1. Install the [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) NuGet package.
 
-2.  Open the **Toolbox** in Visual Studio or Blend. The **WebViewCompatible** control appears in the **Windows Community Toolkit** section of the **Toolbox** and you can drag it directly the designer. You can also create an instance of the **WebViewCompatible** control in code, but we recommend that you do not add **WebViewCompatible** controls to popup windows because support for that scenario will soon be disabled for security reasons.
+2. Open the **Toolbox** in Visual Studio or Blend. The **WebViewCompatible** control appears in the **Windows Community Toolkit** section of the **Toolbox** and you can drag it directly the designer. You can also create an instance of the **WebViewCompatible** control in code, but we recommend that you do not add **WebViewCompatible** controls to popup windows because support for that scenario will soon be disabled for security reasons.
 
 <a id="high-dpi" />
 
@@ -128,6 +137,9 @@ To set the initial content of the **WebViewCompatible** control, you can set the
 ```csharp
 webViewCompatible1.Navigate("http://www.contoso.com");
 ```
+```vb
+webViewCompatible1.Navigate("http://www.contoso.com")
+```
 
 ## Respond to navigation events
 
@@ -151,13 +163,20 @@ private void webViewCompatible1_NavigationStarting(object sender, WebViewNavigat
         args.Cancel = true;
 }
 ```
+```vb
+AddHandler webViewCompatible1.NavigationStarting, AddressOf webViewCompatible1_NavigationStarting
+
+Private Sub webViewCompatible1_NavigationStarting(sender As Object, args As WebViewControlNavigationStartingEventArgs)
+    If Not IsAllowedUri(args.Uri) Then args.Cancel = True
+End Sub
+```
 
 The **ContentLoading** is raised when the web view has started loading new content.
 
 ```csharp
 webViewCompatible1.ContentLoading += webViewCompatible1_ContentLoading;
 
-private void webViewCompatible1_ContentLoading(WebView sender, WebViewContentLoadingEventArgs args)
+private void webViewCompatible1_ContentLoading(WebView sender, WebViewControlContentLoadingEventArgs args)
 {
     // Show status.
     if (args.Uri != null)
@@ -166,14 +185,23 @@ private void webViewCompatible1_ContentLoading(WebView sender, WebViewContentLoa
     }
 }
 ```
+```vb
+AddHandler webViewCompatible1.ContentLoading, AddressOf webViewCompatible1_ContentLoading
 
+Private Sub webViewCompatible1_ContentLoading(sender As WebView, args As WebViewControlContentLoadingEventArgs)
+    ' Show status.
+    If args.Uri IsNot Nothing Then
+        statusTextBlock.Text = "Loading content for " & args.Uri.ToString()
+    End If
+End Sub
+```
 
 The **NavigationCompleted** event is raised when the web view has finished loading the current content or if navigation has failed. To determine whether navigation has failed, check the **IsSuccess** and **WebErrorStatus** properties of the event args.
 
 ```csharp
 webViewCompatible1.NavigationCompleted += webViewCompatible1_NavigationCompleted;
 
-private void webViewCompatible1_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+private void webViewCompatible1_NavigationCompleted(WebView sender, WebViewControlNavigationCompletedEventArgs args)
 {
     if (args.IsSuccess == true)
     {
@@ -186,6 +214,17 @@ private void webViewCompatible1_NavigationCompleted(WebView sender, WebViewNavig
     }
 }
 ```
+```vb
+AddHandler webViewCompatible1.NavigationCompleted, AddressOf webViewCompatible1_NavigationCompleted
+
+Private Sub webViewCompatible1_NavigationCompleted(sender As WebView, args As WebViewControlNavigationCompletedEventArgs)
+    If args.IsSuccess = True Then
+        statusTextBlock.Text = "Navigation to " & args.Uri.ToString() & " completed successfully."
+    Else
+        statusTextBlock.Text = "Navigation to: " & args.Uri.ToString() & " failed with error " + args.WebErrorStatus.ToString()
+    End If
+End Sub
+```
 
 ## Interact with web view content
 
@@ -195,6 +234,9 @@ For example, if the content of a web view named `webViewCompatible1` contains a 
 
 ```csharp
 string returnValue = await webViewCompatible1.InvokeScript("myScript");
+```
+```vb
+Dim returnValue As String = Await webViewCompatible1.InvokeScript("myScript")
 ```
 
 > [!NOTE]
@@ -208,7 +250,7 @@ string returnValue = await webViewCompatible1.InvokeScript("myScript");
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) |
 
-## API source code
+## API
 
-- [WebViewCompatible (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls.WebView)
-- [WebViewCompatible (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls.WebView)
+* [WebViewCompatible (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls.WebView)
+* [WebViewCompatible (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls.WebView)

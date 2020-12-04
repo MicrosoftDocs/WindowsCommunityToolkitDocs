@@ -12,6 +12,9 @@ dev_langs:
 
 The **Microsoft Translator Service** allows you to translate text to various supported languages.
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Services?sample=Microsoft%20Translator%20Service)
+
 ## Set up Microsoft Translator Service
 
 [Signup for Microsoft Translator Service](https://portal.azure.com/#create/Microsoft.CognitiveServices/apitype/TextTranslation) using your Microsoft Azure subscription account. There is a free trial option for that allows you to translate up to 2,000,000 characters per month.
@@ -53,9 +56,9 @@ Dim translationResult = Await TranslatorService.Instance.TranslateWithResponseAs
 Dim translatedText = translationResult.Translation.Text
 ```
 
-## Sample Code
+## Sample Project
 
-[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -66,4 +69,4 @@ Dim translatedText = translationResult.Translation.Text
 
 ## API
 
-* [Microsoft Translator Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.Services/Services/MicrosoftTranslator)
+* [Microsoft Translator Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Services/Services/MicrosoftTranslator)
