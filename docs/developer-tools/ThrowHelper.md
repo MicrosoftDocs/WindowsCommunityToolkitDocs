@@ -145,7 +145,7 @@ ExceptionTest.GetValueIfNotZeroOrThrow2()
     int3 ; return with fault
 ```
 
-We can see that the resulting assembly is much smaller than before. We basically moved all the code to create the exception out of the method, which also means we can just always reuse the same code from the `ThrowHelper` APIs, with different arguments, instead of inlining the exception throw in every single one of our methods. Here we only have those two `mov` instructions to load the `string` with our exception type, and then we jump to the `ThrowHelper.ThrowInvalidOperationException` method. The JIT compiler is able to see that that method will always throw, so it will never inline that call, and it will make sure rewrite our conditional branches in the best way possible (specifically, knowing what is the branch that is supposed to be executed, without faulting).
+We can see that the resulting assembly is much smaller than before. We basically moved all the code to create the exception out of the method, which also means we can just always reuse the same code from the `ThrowHelper` APIs, with different arguments, instead of inlining the exception throw in every single one of our methods. Here we only have those two `mov` instructions to load the `string` with our exception type, and then we jump to the `ThrowHelper.ThrowInvalidOperationException` method. The JIT compiler is able to see that that method will always throw, so it will never inline that call, and it will make sure to rewrite our conditional branches in the best way possible (specifically, knowing what is the branch that is supposed to be executed, without faulting).
 
 ## Requirements
 
