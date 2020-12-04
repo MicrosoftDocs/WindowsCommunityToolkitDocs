@@ -202,7 +202,7 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
 - The "And" and "Or" operators (“&&” and “||”) are now represented by the & and | operators.
 
-- If using ExpressionBuilder to create expressions for use with InteractionTracker’s InertiaModifiers or CompositionConditionalValue, the following extensions methods are available:
+- If using ExpressionBuilder to create expressions for use with InteractionTracker’s InertiaModifiers or CompositionConditionalValues, the following extensions methods are available:
 
   - InteractionTrackerInertiaRestingValue.SetCondition
 
