@@ -11,7 +11,7 @@ dev_langs:
 # Microsoft Translator Service
 
 > [!WARNING]
-> (This API will be removed in the future. Please refer to the [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) documentation instead.)
+> (This API will be removed in the future. Please refer to the [Microsoft Translator](https://docs.microsoft.com/azure/cognitive-services/translator/) documentation instead.)
 
 The **Microsoft Translator Service** allows you to translate text to various supported languages.
 
@@ -61,7 +61,7 @@ Dim translatedText = translationResult.Translation.Text
 
 ## Sample Project
 
-[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

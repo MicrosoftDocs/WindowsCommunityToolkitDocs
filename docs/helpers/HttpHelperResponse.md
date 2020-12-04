@@ -16,7 +16,7 @@ dev_langs:
 
 [HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers. 
 
-## Example
+## Sample
 
 ```csharp
 using (HttpHelperResponse response = await HttpHelper.Instance.SendRequestAsync(request))
@@ -36,7 +36,7 @@ The **HttpHelperResponse** class has these constructors.
 
 | Constructor | Description |
 | ----------  | ----------- |
-| HttpHelperResponse([HttpResponseMessage](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpresponsemessage.aspx))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
+| HttpHelperResponse([HttpResponseMessage](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpresponsemessage.aspx))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
 
 ## Properties
 
