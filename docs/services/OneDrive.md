@@ -85,7 +85,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize(appClien
 ```
 
 ### Defining scopes
-More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
+More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
 
 ```csharp
 // If the user hasn't selected a scope then set it to FilesReadAll
