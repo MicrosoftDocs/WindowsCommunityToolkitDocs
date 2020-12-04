@@ -10,6 +10,9 @@ dev_langs:
 
 # Twitter Service
 
+> [!WARNING]
+> (This API will be removed in the future.)
+
 The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
 [Twitter Developer Site](https://dev.twitter.com) is the main content site for all twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.

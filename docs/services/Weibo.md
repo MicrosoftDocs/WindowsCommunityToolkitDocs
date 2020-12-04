@@ -10,6 +10,9 @@ dev_langs:
 
 # Weibo Service
 
+> [!WARNING]
+> (This API will be removed in the future.)
+
 The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [https://open.weibo.com](https://open.weibo.com) to create a new app or manage existing apps.
 
 > [!div class="nextstepaction"]

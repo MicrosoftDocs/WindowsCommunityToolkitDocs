@@ -10,6 +10,9 @@ dev_langs:
 
 # Markdown Parser
 
+> [!WARNING]
+> (This API is will be removed in the future. Please consider using [Markdig](https://github.com/lunet-io/markdig) for Markdown document parsing. 
+
 The [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.markdown.markdowndocument) class allows you to parse a Markdown String into a Markdown Document, and then Render it with a Markdown Renderer.
 
 > [!div class="nextstepaction"]

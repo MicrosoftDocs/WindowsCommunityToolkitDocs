@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # SharePointFileList Control
 
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [InteractiveProviderBehavior](../../graph/providers/InteractiveProviderBehavior.md).)
+
 The [SharePointFileList Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.sharepointfilelist) displays a simple list of SharePoint Files, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
