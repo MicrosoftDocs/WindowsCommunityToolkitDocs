@@ -115,7 +115,7 @@ ExceptionTest.GetValueIfNotZeroOrThrow()
     int3 ; finally throw the exception
 ```
 
-We can see the code contains a lot of lines just dedicated to creating the exception being thrown. This can cause a large increase in the code size whenever we have many of these checks, because it will reduce the efficiency of the instruction cache, etc. In general, we'd like the size of our methods to be as small as possible.
+We can see the code contains a lot of lines just dedicated to creating the exception being thrown. This can cause a large increase in the code size whenever we have many of these checks because it will reduce the efficiency of the instruction cache, etc. In general, we'd like the size of our methods to be as small as possible.
 
 The above snippet, rewritten using the `ThrowHelper` APIs, would like like this:
 
