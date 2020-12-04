@@ -15,7 +15,7 @@ The [StringPool](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highper
 
 The main entry point for `StringPool` is its `GetOrAdd(ReadOnlySpan<char>)` API, which returns a `string` instance matching the contents of the input `ReadOnlySpan>char>`, possibly getting the returned object from the internal pool.
 
-As an example, imagine we have an input `string` representing the URL of a given web request, and we want to also retrieve a `string` with just the host name. If we get a large number of requests possibly for a small number of hosts, we might want to cache those `string` instances, we we can do so by using the `StringPool` type as follows:
+As an example, imagine we have an input `string` representing the URL of a given web request, and we want to also retrieve a `string` with just the host name. If we get a large number of requests possibly for a small number of hosts, we might want to cache those `string` instances, we can do so by using the `StringPool` type as follows:
 
 ```csharp
 public static string GetHost(string url)
