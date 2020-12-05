@@ -11,7 +11,7 @@ dev_langs:
 
 The [Span2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.span2d-1) is a type that mirrors the functionality of the [Span&lt;T>](https://docs.microsoft.com/dotnet/api/system.span-1) type, but it supports 2D memory regions. Just like [Memory2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.memory2d-1), it is extremely flexible and can wrap a number of different objects, as well as native pointers or GC references.
 
-The internal layout is similar to that used by the `Memory2D<T>` type, including a pitch parameter than is used to enable support for discontiguous memory buffers. You can read more info on this in the `Memory2D<T>` docs.
+The internal layout is similar to that used by the `Memory2D<T>` type, including a pitch parameter that is used to enable support for discontiguous memory buffers. You can read more info on this in the `Memory2D<T>` docs.
 
 ## Syntax
 

@@ -9,7 +9,7 @@ dev_langs:
 
 # Memory2D&lt;T>
 
-The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.memory2d-1) is a type that mirrors the functionality of the [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D and 3D arrays) or `Memory<T>` instances. This type is meant to be used together with the `Span2D<T>` type, in the same way that `Memory<T>` is used along with [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1). For more info on the key differences and use case scenarios of these two types you can read [this docs page](https://docs.microsoft.com/dotnet/standard/memory-and-spans/memory-t-usage-guidelines).
+The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.memory2d-1) is a type that mirrors the functionality of the [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D, and 3D arrays) or `Memory<T>` instances. This type is meant to be used together with the `Span2D<T>` type, in the same way that `Memory<T>` is used along with [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1). For more info on the key differences and use case scenarios of these two types, you can read [this docs page](https://docs.microsoft.com/dotnet/standard/memory-and-spans/memory-t-usage-guidelines).
 
 ## How it works
 
@@ -37,7 +37,7 @@ This configuration allows `Memory2D<T>` to be extremely flexible in the way it m
 - A 2D `T[,]` array, mapped directly to a `Memory2D<T>` instance.
 - A 3D `T[,,]` array, with a `Memory2D<T>` instance representing a given depth slice (a layer).
 
-The `Memory<T>` type also exposes a number of utility methods, including most of the same API surface that the standard `Memory<T>` implements. For instance, it includes a `Slice(int, int)` method that make it easy to do 2D slicing operations directly on the virtual 2D memory location, with the `Memory2D<T>` instance automatically adjusting the necessary parameters internally to shift its mapping on the right memory area(s) corresponding to the requested result.
+The `Memory<T>` type also exposes a number of utility methods, including most of the same API surface that the standard `Memory<T>` implements. For instance, it includes a `Slice(int, int)` method that makes it easy to do 2D slicing operations directly on the virtual 2D memory location, with the `Memory2D<T>` instance automatically adjusting the necessary parameters internally to shift its mapping on the right memory area(s) corresponding to the requested result.
 
 ## Syntax
 
@@ -99,7 +99,7 @@ Span2D<int> span = memory.Span;
 
 # ReadOnlyMemory2D&lt;T>
 
-The [ReadOnlyMemory2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.readonlymemory2d-1) is to the `Memory2D<T>` type what `ReadOnlyMemory<T>` is to `Memory<T>`. It exposes the same exact functionalities (minuse the APIs that involve modifying the contents of the wrapped memory area) and provides a readonly view to arbitrary 2D memory locations. For more info on how this type works, you can refer to the paragraph on the `Memory2D<T>` type above.
+The [ReadOnlyMemory2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.readonlymemory2d-1) is to the `Memory2D<T>` type what `ReadOnlyMemory<T>` is to `Memory<T>`. It exposes the same exact functionalities (minus the APIs that involve modifying the contents of the wrapped memory area) and provides a read-only view to arbitrary 2D memory locations. For more info on how this type works, you can refer to the paragraph on the `Memory2D<T>` type above.
 
 ## Sample Code
 
