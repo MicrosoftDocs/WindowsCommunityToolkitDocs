@@ -117,7 +117,7 @@ if(availableFrameSourceGroups != null)
 
 ## Sample Project
 
-[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[CameraPreview Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

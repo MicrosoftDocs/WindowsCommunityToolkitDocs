@@ -1,5 +1,5 @@
 ---
-title: TabView XAML Control
+title: TabView
 author: michael-hawker
 description: Learn how to use the TabView XAML control. TabView is a control for displaying a set of tabs and their content.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TabView, TabControl
@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# TabView XAML Control
+# TabView
 The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 > [!div class="nextstepaction"]
@@ -128,7 +128,7 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## Sample Project
 
-[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

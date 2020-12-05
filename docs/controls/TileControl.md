@@ -1,13 +1,13 @@
 ---
-title: TileControl XAML Control
+title: TileControl
 author: samoteph
 description: The Tile Control is a control that repeats an image many times. It enables you to use animation and synchronization with a ScrollViewer to create parallax effect. XAML or Microsoft Composition are automatically used to render the control.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TileControl, XAML Control, xaml
 ---
 
-# TileControl XAML Control
+# TileControl
 
-The [Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tilecontrol) is a control that repeats an image many times. It enables you to use animation and synchronization with a ScrollViewer to create parallax effect. XAML or Microsoft Composition are automatically used to render the control.
+The [Tile](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tilecontrol) control is a control that repeats an image many times. It enables you to use animation and synchronization with a ScrollViewer to create parallax effect. XAML or Microsoft Composition are automatically used to render the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TileControl)
@@ -48,7 +48,7 @@ The [Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 
 ## Sample Project
 
-[TileControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TileControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

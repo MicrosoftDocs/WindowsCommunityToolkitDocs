@@ -1,11 +1,11 @@
 ---
-title: Menu Control
+title: Menu
 author: nmetulev
 description: The Windows Community Toolkit Menu control defines a top level menu for commands, options, properties and much more within your UWP apps.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Menu, xaml, xaml control
 ---
 
-# Menu Control
+# Menu
 
 > [!NOTE]
 > This control will be removed in a future major release.
@@ -145,7 +145,7 @@ internal class NewProjectCommand : ICommand
 
 ## Sample Project
 
-[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

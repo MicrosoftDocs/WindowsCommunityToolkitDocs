@@ -1,13 +1,13 @@
 ---
-title:  ScrollHeader XAML Control
+title:  ScrollHeader
 author: nmetulev
 description: The ScrollHeader Control provides a header for ListViews or GridViews that adds the ability to keep its content visible or fade it out while scrolling down.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ScrollHeader, XAML Control, xaml
 ---
 
-# ScrollHeader XAML Control
+# ScrollHeader
 
-The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheader) provides a header for ListViews or GridViews that adds the ability to keep its content visible or fade it out while scrolling down. It also has a quick return mode where the header hides when the ListView is scrolled down and reappears immediately as soon as the ListView is scrolled up again.
+The [ScrollHeader](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheader) control provides a header for ListViews or GridViews that adds the ability to keep its content visible or fade it out while scrolling down. It also has a quick return mode where the header hides when the ListView is scrolled down and reappears immediately as soon as the ListView is scrolled up again.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=ScrollHeader)
@@ -49,7 +49,7 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Project
 
-[ScrollHeader Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ScrollHeader Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
