@@ -2,7 +2,7 @@
 
 Please visit the [contribution guidelines](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/contributing.md) for the Windows Community Toolkit.
 
-Documentation is **required** when adding, removing, or updating a control or an API in the Windows Community Toolkit. To update the documentation, you must submit a seperate Pull Request in this repository as well (use the *master* branch). **Both Pull Requests (code and docs) must be approved by the core team before either one is merged.**
+Documentation is **required** when adding, removing, or updating a control or an API in the Windows Community Toolkit. To update the documentation, you must submit a separate Pull Request in this repository as well (use the *master* branch). **Both Pull Requests (code and docs) must be approved by the core team before either one is merged.**
 
 Make sure to update both Pull Requests with a link to each other.
 
