@@ -40,7 +40,7 @@ To authenticate your app, you need to register your app with Azure AD, and provi
 
 You can register your app manually by using the [Azure Management Portal](http://portal.azure.com), or by using Visual Studio:
 1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
-2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
+2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
     - Go to the [Azure Management Portal](http://portal.azure.com)
     - Go to the "Azure Active Directory" option
     - Go to "App Registrations" option
@@ -351,7 +351,7 @@ End If
 
 ## Sample Project
 
-[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

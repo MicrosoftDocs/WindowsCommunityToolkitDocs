@@ -73,7 +73,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 
 ## Sample Project
 
-[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template 
 

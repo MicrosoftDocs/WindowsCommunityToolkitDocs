@@ -33,7 +33,7 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 ## Sample Project
 
-[PeoplePicker sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PeoplePicker sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -48,5 +48,5 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 ## Related Topics
 
-* [Person Graph API](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](https://docs.microsoft.com/graph/api/resources/person?view=graph-rest-beta)
 * [MGT PeoplePicker Component](https://docs.microsoft.com/graph/toolkit/components/people-picker)

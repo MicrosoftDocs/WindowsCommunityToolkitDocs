@@ -38,7 +38,7 @@ Visual Basic
 
 ## Sample Project
 
-You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -53,4 +53,4 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## Related Topics
 
-* [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](https://docs.microsoft.com/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)

@@ -142,7 +142,7 @@ There are 3 ways to use this Control:
 
 ## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

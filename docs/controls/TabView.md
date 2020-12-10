@@ -124,11 +124,11 @@ The TabView supports data binding as well.  The following example shows binding 
 ```
 
 > [!NOTE]
-> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
 
 ## Sample Project
 
-[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -147,6 +147,6 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## Related Topics
 
-- [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
-- [IconElement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.IconElement)
-- [TabControl (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tabcontrol)
+- [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1)
+- [IconElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.IconElement)
+- [TabControl (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.controls.tabcontrol)

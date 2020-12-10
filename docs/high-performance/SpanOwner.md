@@ -23,7 +23,7 @@ byte[] buffer = new byte[length];
 // Use buffer here
 ```
 
-This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.arraypool-1):
+This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.arraypool-1):
 
 ```csharp
 // Using directive to access the ArrayPool<T> type

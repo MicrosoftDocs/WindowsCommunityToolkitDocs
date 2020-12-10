@@ -107,7 +107,7 @@ End Select
 
 ## Sample Project
 
-[NetworkHelper sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can [see this in action](uwpct://Helpers?sample=NetworkHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[NetworkHelper sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can [see this in action](uwpct://Helpers?sample=NetworkHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

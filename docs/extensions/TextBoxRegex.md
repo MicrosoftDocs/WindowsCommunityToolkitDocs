@@ -164,7 +164,7 @@ The following sample demonstrates how to add TextBoxRegex property.
 
 ## Sample Project
 
-[TextBoxRegex Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxRegex). You can [see this in action](uwpct://Extensions?sample=TextBoxRegex) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TextBoxRegex Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxRegex). You can [see this in action](uwpct://Extensions?sample=TextBoxRegex) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -91,7 +91,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Sample Project
 
-[LinkedIn Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[LinkedIn Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

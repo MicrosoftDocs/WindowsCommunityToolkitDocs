@@ -219,7 +219,7 @@ If you want to add styles to the Toolkit, please follow these steps :
 
 ## Sample Project
 
-[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

@@ -11,7 +11,7 @@ dev_langs:
 # Light
 
 > [!NOTE]
-> The Light effect will be removed in a future major release. Please use [XAML lighting](https://docs.microsoft.com/en-us/windows/uwp/composition/xaml-lighting) instead.
+> The Light effect will be removed in a future major release. Please use [XAML lighting](https://docs.microsoft.com/windows/uwp/composition/xaml-lighting) instead.
 
 The [Light animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.light) behavior performs a point light (A point source of light that emits light in all directions) in the middle of a given UIElement. You set the distance property of the light to determine how bright the light will be. The closer the light source, the darker the UI element will be.
 
@@ -96,7 +96,7 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 
 ## Sample Project
 
-[Light Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Light Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

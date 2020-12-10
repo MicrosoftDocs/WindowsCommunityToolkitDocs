@@ -61,7 +61,7 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

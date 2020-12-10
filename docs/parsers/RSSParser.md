@@ -10,7 +10,7 @@ dev_langs:
 
 # RSS Parser
 
-The [RssParser](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.rss.rssparser) class allows you to parse an RSS content String into an RSS Schema.
+The [RssParser](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.parsers.rss.rssparser) class allows you to parse an RSS content String into an RSS Schema.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=RSS%20Parser)
@@ -82,7 +82,7 @@ End Sub
 
 ## Sample Project
 
-[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
