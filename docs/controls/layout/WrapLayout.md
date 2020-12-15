@@ -88,7 +88,7 @@ The following example of adding the WrapLayout layout panel.
 
 ## Sample Project
 
-[WrapLayout Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapLayout). You can [see this in action](uwpct://Controls?sample=WrapLayout) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[WrapLayout Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapLayout). You can [see this in action](uwpct://Controls?sample=WrapLayout) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

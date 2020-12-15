@@ -111,7 +111,7 @@ It extends [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/
 
 [Observable group Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ObservableGroup).
 
-You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

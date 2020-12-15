@@ -217,7 +217,7 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

@@ -176,7 +176,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 ## Sample Project
 
-[UniformGrid Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid). You can [see this in action](uwpct://Controls?sample=UniformGrid) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[UniformGrid Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/UniformGrid). You can [see this in action](uwpct://Controls?sample=UniformGrid) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements (Windows 10 Device Family)
 

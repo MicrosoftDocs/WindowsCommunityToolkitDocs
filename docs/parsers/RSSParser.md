@@ -82,7 +82,7 @@ End Sub
 
 ## Sample Project
 
-[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -83,7 +83,7 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ## Sample Project
 
-[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can [see this in action](uwpct://Helpers?sample=RemoteDeviceHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can [see this in action](uwpct://Helpers?sample=RemoteDeviceHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

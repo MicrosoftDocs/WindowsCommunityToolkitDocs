@@ -67,6 +67,6 @@ If your scenario doesn’t require you to `await` the completion of PlayAsync, y
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/AsyncPage.xaml.cs) for sample: the asynchronous play method
-* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [PlayAsync](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) method
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

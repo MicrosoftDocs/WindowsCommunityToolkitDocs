@@ -94,7 +94,7 @@ For instance to remove the header entirely from the Expander:
 
 ## Sample Project
 
-[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

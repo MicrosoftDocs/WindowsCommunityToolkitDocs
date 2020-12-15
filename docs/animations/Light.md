@@ -96,7 +96,7 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 
 ## Sample Project
 
-[Light Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Light Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

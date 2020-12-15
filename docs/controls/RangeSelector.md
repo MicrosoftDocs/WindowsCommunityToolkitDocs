@@ -81,7 +81,7 @@ End Sub
 
 ## Sample Project
 
-[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

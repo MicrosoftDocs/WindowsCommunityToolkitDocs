@@ -351,7 +351,7 @@ End If
 
 ## Sample Project
 
-[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -157,7 +157,7 @@ End If
 
 ## Sample Project
 
-[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

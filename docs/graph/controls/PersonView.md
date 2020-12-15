@@ -39,7 +39,7 @@ The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.c
 
 ## Sample Project
 
-[PersonView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PersonView). You can [see this in action](uwpct://Controls?sample=PersonView) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PersonView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PersonView). You can [see this in action](uwpct://Controls?sample=PersonView) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

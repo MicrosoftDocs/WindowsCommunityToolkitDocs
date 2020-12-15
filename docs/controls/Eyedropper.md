@@ -105,7 +105,7 @@ Dim color = Await eyedropper.Open()
 
 ## Sample Project
 
-[Eyedropper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Eyedropper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

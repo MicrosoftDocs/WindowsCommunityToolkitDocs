@@ -55,7 +55,7 @@ Brush brush = PipelineBuilder.FromBackdropAcrylic(
 
 ## Sample Project
 
-[AcrylicBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AcrylicBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

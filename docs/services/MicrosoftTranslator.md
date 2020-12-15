@@ -58,7 +58,7 @@ Dim translatedText = translationResult.Translation.Text
 
 ## Sample Project
 
-[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Microsoft Translator Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

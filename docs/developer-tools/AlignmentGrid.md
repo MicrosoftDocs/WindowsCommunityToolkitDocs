@@ -35,7 +35,7 @@ You can control the grid's steps with `HorizontalStep` and `VerticalStep` proper
 
 ## Sample Project
 
-[AlignmentGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AlignmentGrid). You can [see this in action](uwpct://Controls?sample=AlignmentGrid) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AlignmentGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AlignmentGrid). You can [see this in action](uwpct://Controls?sample=AlignmentGrid) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

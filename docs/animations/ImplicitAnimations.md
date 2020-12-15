@@ -130,7 +130,7 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
 
 ## Sample Project
 
-You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

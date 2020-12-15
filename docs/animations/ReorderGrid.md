@@ -43,7 +43,7 @@ MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250)
 
 ## Sample Project
 
-[ReorderGridAnimation Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ReorderGridAnimation). You can [see this in action](uwpct://Animations?sample=ReorderGridAnimation) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ReorderGridAnimation Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ReorderGridAnimation). You can [see this in action](uwpct://Animations?sample=ReorderGridAnimation) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

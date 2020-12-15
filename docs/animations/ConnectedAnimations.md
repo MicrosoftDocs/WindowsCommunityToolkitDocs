@@ -192,7 +192,7 @@ In this page, you just need to give the same key.
 
 ## Sample Project
 
-[Connected Animations sample page source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can [see this in action](uwpct://Animations?sample=Connected%20Animations) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Connected Animations sample page source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can [see this in action](uwpct://Animations?sample=Connected%20Animations) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

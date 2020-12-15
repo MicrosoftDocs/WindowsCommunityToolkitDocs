@@ -46,7 +46,7 @@ The [StaggeredPanel](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolk
 
 ## Sample Project
 
-[StaggeredPanel Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can [see this in action](uwpct://Controls?sample=StaggeredPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[StaggeredPanel Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can [see this in action](uwpct://Controls?sample=StaggeredPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

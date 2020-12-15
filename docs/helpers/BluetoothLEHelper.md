@@ -155,7 +155,7 @@ End If
 
 ## Sample Project
 
-[BluetoothLE Helper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BluetoothLEHelper). You can [see this in action](uwpct://Helpers?sample=BluetoothLEHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BluetoothLE Helper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BluetoothLEHelper). You can [see this in action](uwpct://Helpers?sample=BluetoothLEHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

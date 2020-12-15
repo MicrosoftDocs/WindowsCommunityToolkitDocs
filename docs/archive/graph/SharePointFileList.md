@@ -71,7 +71,7 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[SharePointFileList Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SharePointFileList). You can [see this in action](uwpct://Controls?sample=SharePointFileList) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[SharePointFileList Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SharePointFileList). You can [see this in action](uwpct://Controls?sample=SharePointFileList) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

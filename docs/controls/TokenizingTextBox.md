@@ -82,7 +82,7 @@ If you inspect the *default* `ItemsSource` or `Items` of the `TokenizingTextBox`
 
 ## Sample Project
 
-[TokenizingTextBox sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TokenizingTextBox). You can [see this in action](uwpct://Controls?sample=TokenizingTextBox) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TokenizingTextBox sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TokenizingTextBox). You can [see this in action](uwpct://Controls?sample=TokenizingTextBox) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

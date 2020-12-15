@@ -46,7 +46,7 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## Sample Project
 
-[LoginButton sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[LoginButton sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

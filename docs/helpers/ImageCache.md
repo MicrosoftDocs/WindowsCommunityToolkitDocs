@@ -74,7 +74,7 @@ Await ImageCache.Instance.ClearAsync()
 
 ## Sample Project
 
-[Image Cache Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCache). You can [see this in action](uwpct://Helpers?sample=ImageCache) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Image Cache Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCache). You can [see this in action](uwpct://Helpers?sample=ImageCache) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

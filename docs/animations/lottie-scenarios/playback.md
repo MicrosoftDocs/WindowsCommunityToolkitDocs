@@ -101,6 +101,6 @@ Now, let's introduce Pause, Stop, and Reverse Buttons and update the method abov
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/PlaybackPage.xaml.cs) for sample: configuring animation playback
-* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

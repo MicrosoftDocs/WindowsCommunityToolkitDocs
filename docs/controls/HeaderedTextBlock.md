@@ -39,7 +39,7 @@ The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## Sample Project
 
-[HeaderedTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

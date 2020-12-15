@@ -53,7 +53,7 @@ The transformations that can be applied are one of the following:
 
 ## Sample Project
 
-[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

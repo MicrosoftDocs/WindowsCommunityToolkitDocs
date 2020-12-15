@@ -54,7 +54,7 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[PeoplePicker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PeoplePicker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

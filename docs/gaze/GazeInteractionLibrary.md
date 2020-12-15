@@ -193,7 +193,7 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## Sample Project
 
-[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

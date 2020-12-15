@@ -76,7 +76,7 @@ The best way to figure out how to create a Renderer, is to look at the [implemen
 
 ## Sample Project
 
-[Markdown Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Markdown Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

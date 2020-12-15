@@ -70,7 +70,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[PowerBIEmbedded Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PowerBIEmbedded Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

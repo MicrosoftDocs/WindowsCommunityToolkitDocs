@@ -51,7 +51,7 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## Sample Project
 
-[RemoteDevicePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can [see this in action](uwpct://Controls?sample=RemoteDevicePicker) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RemoteDevicePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can [see this in action](uwpct://Controls?sample=RemoteDevicePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

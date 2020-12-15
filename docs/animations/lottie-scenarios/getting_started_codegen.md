@@ -11,7 +11,7 @@ Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standa
 
 ## Generating a C# or C++ class from JSON
 
-To generate a C# or C++ file, you may either use the [LottieGen](http://aka.ms/lottiegen) command-line tool or the [Lottie Viewer](http://aka.ms/lottieviewer) application.
+To generate a C# or C++ file, you may either use the [LottieGen](https://aka.ms/lottiegen) command-line tool or the [Lottie Viewer](https://aka.ms/lottieviewer) application.
 
 ### LottieGen CLI
 
@@ -31,7 +31,7 @@ For additional information about additional options including optimizations, use
 
 ### Lottie Viewer GUI
 
-1. Install the [Lottie Viewer](http://aka.ms/lottieviewer) application from the Store. Drag and drop your JSON file, or use the the “Pick a Lottie file” icon in the top left to open local files or URIs.
+1. Install the [Lottie Viewer](https://aka.ms/lottieviewer) application from the Store. Drag and drop your JSON file, or use the the “Pick a Lottie file” icon in the top left to open local files or URIs.
 
 2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
 
@@ -72,8 +72,8 @@ This should result in a looping Lottie animation that is visually identical to o
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/CodegenPage.xaml) for sample: getting started with Codegen
-* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
-* [LottieGen](http://aka.ms/lottiegen) CLI tool
-* [Lottie Viewer](http://aka.ms/lottieviewer)  application for codegen and previewing JSON files
+* The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
+* [LottieGen](https://aka.ms/lottiegen) CLI tool
+* [Lottie Viewer](https://aka.ms/lottieviewer)  application for codegen and previewing JSON files
 * A comparison of [JSON verus Codegen](./json_codegen.md)
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

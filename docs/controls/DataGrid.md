@@ -34,7 +34,7 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Sample Project
 
-See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp)**.
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp)**.
 
 Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
 

@@ -61,7 +61,7 @@ The [SurfaceDialTextbox XAML Property](https://docs.microsoft.com/dotnet/api/mic
 
 ## Sample Project
 
-[SurfaceDialTextbox Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SurfaceDialTextbox). You can [see this in action](uwpct://Extensions?sample=SurfaceDialTextbox) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[SurfaceDialTextbox Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SurfaceDialTextbox). You can [see this in action](uwpct://Extensions?sample=SurfaceDialTextbox) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -56,7 +56,7 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[ProfileCard Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ProfileCard Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

@@ -267,7 +267,7 @@ End Sub
 
 ## Sample Project
 
-You can [see this in action](uwpct://WPFandWinFormsControls?sample=WindowsXamlHost) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://WPFandWinFormsControls?sample=WindowsXamlHost) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

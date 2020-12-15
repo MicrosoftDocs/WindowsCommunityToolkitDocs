@@ -186,7 +186,7 @@ listScrollViewer.StartExpressionAnimation(shapesPanel, Axis.X, Axis.Y, VisualPro
 
 ## Sample Project
 
-[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can [see this in action](uwpct://Extensions?sample=ScrollViewerExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ScrollViewerExtensions sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollViewerExtensions). You can [see this in action](uwpct://Extensions?sample=ScrollViewerExtensions) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

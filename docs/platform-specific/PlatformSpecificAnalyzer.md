@@ -38,7 +38,7 @@ Visual Basic
 
 ## Sample Project
 
-You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

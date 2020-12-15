@@ -83,7 +83,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/en-us/
 ## Sample Project
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can see this in action in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can see this in action in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
