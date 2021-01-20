@@ -31,7 +31,8 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 ## BackButtonBehavior
 When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view. 
 
-If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
+If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the Master view and cancel the back navigation.
+
 
 To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behavior:
 - `Automatic` will let the control decide which back button to make visible/enabled.
