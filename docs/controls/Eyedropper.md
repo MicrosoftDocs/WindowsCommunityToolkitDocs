@@ -13,7 +13,7 @@ dev_langs:
 The [Eyedropper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.eyedropper) control can pick up a color from anywhere in your application.
 
 > [!NOTE]
-> The Eyedropper Control uses [RenderTargetBitmap](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
+> The Eyedropper Control uses [RenderTargetBitmap](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases, RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=Eyedropper)
