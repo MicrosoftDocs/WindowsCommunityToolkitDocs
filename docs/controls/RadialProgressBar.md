@@ -1,7 +1,8 @@
 ---
 title: RadialProgressBar
 author: nmetulev
-description: The Radial Progress Bar Control displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+description: The Radial Progress Bar Control displays a value in a certain range using a circular sector that grows clockwise until it becomes a full ring.
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Radial Progress Bar, RadialProgressBar, xaml control, xaml
 ---
 
