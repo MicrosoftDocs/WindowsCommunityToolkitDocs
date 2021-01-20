@@ -1,7 +1,8 @@
 ---
 title: AdaptiveGridView
 author: nmetulev
-description: The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space.
+description: The AdaptiveGridView Control presents items in an evenly-spaced set of columns to fill the total available display space.
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, AdaptiveGridView, xaml control, xaml
 dev_langs:
   - csharp
