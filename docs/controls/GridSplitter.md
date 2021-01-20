@@ -9,7 +9,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [GridSplitter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter) control provides an easy-to-use Splitter that redistributes space between columns or rows of a Grid Control. By dragging the control, the control will resize the targeted columns or rows.
 
-The control automatically detects the targeted columns/rows to resize, while dragging the control it starts to resize the columns/rows and redistributes space between columns/rows, you can manually specify the Resize Direction Auto, Column, Row and the Resize Behavior to select which columns/rows to resize.
+The control automatically detects the targeted columns/rows to resize, while dragging the control it starts to resize the columns/rows and redistributes space between columns/rows, you can manually specify the Resize Direction Auto, Column, Row, and the Resize Behavior to select which columns/rows to resize.
+
 
 > [!NOTE]
 > You can use the control to resize fixed and star (*) width/height columns/rows.
