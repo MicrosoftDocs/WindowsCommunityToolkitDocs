@@ -60,7 +60,7 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 |                        Methods                        |                                               Return Type                                               |                        Description                        |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | GetDataAsync(BingSearchConfig, Int32, Int32, IParser) |                                       Task<IEnumerable<TSchema>>                                        |      Wrapper around REST API for making data request      |
-|          GetDefaultParser(BingSearchConfig)           | IParser<[BingResult](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Returns parser implementation for specified configuration |
+|          GetDefaultParser(BingSearchConfig)           | IParser<[BingResult](/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Returns parser implementation for specified configuration |
 
 ## BingParser Class
 
@@ -70,7 +70,7 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 |    Methods    |                                                 Return Type                                                 |                   Description                    |
 |---------------|-------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| Parse(String) | IEnumerable<[BingResult](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Take string data and parse into strong data type |
+| Parse(String) | IEnumerable<[BingResult](/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Take string data and parse into strong data type |
 
 ## BingResult Class
 
@@ -94,10 +94,10 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Country | [BingCountry](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingcountry) | Description |
-| Language | [BingLanguage](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.binglanguage) | Gets or sets search query language |
+| Country | [BingCountry](/dotnet/api/microsoft.toolkit.services.bing.bingcountry) | Description |
+| Language | [BingLanguage](/dotnet/api/microsoft.toolkit.services.bing.binglanguage) | Gets or sets search query language |
 | Query | string | Gets or sets search query |
-| QueryType | [BingQueryType](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingquerytype) | Gets or sets search query type |
+| QueryType | [BingQueryType](/dotnet/api/microsoft.toolkit.services.bing.bingquerytype) | Gets or sets search query type |
 
 ## BingService Class
 
@@ -107,8 +107,8 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Instance | [BingService](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingservice) | Gets public singleton property |
-| Provider | [BingDataProvider](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingdataprovider) | Gets a reference to an instance of the underlying data provider |
+| Instance | [BingService](/dotnet/api/microsoft.toolkit.services.bing.bingservice) | Gets public singleton property |
+| Provider | [BingDataProvider](/dotnet/api/microsoft.toolkit.services.bing.bingdataprovider) | Gets a reference to an instance of the underlying data provider |
 
 ### Methods
 

@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # RotatorTile XAML Control
 
-The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotatortile) is an ItemsControl that rotates through a set of items one-by-one. It enables you to show multiple items of data in a live-tile like way.
+The [Rotator Tile Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotatortile) is an ItemsControl that rotates through a set of items one-by-one. It enables you to show multiple items of data in a live-tile like way.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RotatorTile)
@@ -35,7 +35,7 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | Property | Type | Description |
 | -- | -- | -- |
 | CurrentItem | object | Gets or sets the currently selected visible item |
-| Direction | [RotateDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotatortile.rotatedirection) | Gets or sets the direction the tile slides in |
+| Direction | [RotateDirection](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotatortile.rotatedirection) | Gets or sets the direction the tile slides in |
 | ExtraRandomDuration | TimeSpan | Gets or sets the extra randomized duration to be added to the `RotationDelay` property. A value between zero and this value in seconds will be added to the `RotationDelay` |
 | ItemsSource | object | Gets or sets the ItemsSource |
 | ItemTemplate | DataTemplate | Gets or sets the item template |

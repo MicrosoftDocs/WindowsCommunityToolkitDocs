@@ -10,7 +10,7 @@ dev_langs:
 
 # Connected Animations XAML Attached Properties
 
-[Connected animations](https://docs.microsoft.com/windows/uwp/style/connected-animation) let you create a dynamic and compelling navigation experience by animating the transition of an element between two different views.
+[Connected animations](/windows/uwp/style/connected-animation) let you create a dynamic and compelling navigation experience by animating the transition of an element between two different views.
 
 The Connected Animations XAML Attached Properties enable connected animations to be defined directly in your XAML code by simply adding a Key to the element that should animate. There are also attached properties to enable coordinated animations and animations in lists and grids.
 
@@ -46,11 +46,11 @@ The Connected Animations XAML Attached Properties enable connected animations to
 
 ### Connected.Key
 
-Registers element with the [ConnectedAnimationsService](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.animation.connectedanimation.aspx). For the animation to work, the same key must be registered on two different pages when navigating
+Registers element with the [ConnectedAnimationsService](/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimation). For the animation to work, the same key must be registered on two different pages when navigating
 
 ### Connected.AnchorElement
 
-To enable [coordinated animations](https://docs.microsoft.com/windows/uwp/style/connected-animation#coordinated-animation), use the AnchorElement attached property on the element that should appear alongside the connected animation element by specifying the connected animation element
+To enable [coordinated animations](/windows/uwp/style/connected-animation#coordinated-animation), use the AnchorElement attached property on the element that should appear alongside the connected animation element by specifying the connected animation element
 
 ### Connected.ListItemKey
 
@@ -207,4 +207,4 @@ In this page, you just need to give the same key.
 
 ## Related Topics
 
-* [ConnectedAnimationService Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimationService)
+* [ConnectedAnimationService Class](/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimationService)

@@ -14,13 +14,13 @@ Various options are available to control how the [DataGrid](../datagrid.md) size
 ### Cautions When Using Automatic Sizing
 By default, the **Height** and **Width** properties of the [DataGrid](../datagrid.md) are set to *Double.NaN* ("Auto" in XAML), and the DataGrid will adjust to the size of its contents.
 
-When placed inside a container that does not restrict the size of its children, such as a [StackPanel](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.stackpanel), the DataGrid, like [ListView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listview) and other scrollable controls, will stretch beyond the visible bounds of the container and scrollbars will not be shown. This condition has both usability and performance implications.
+When placed inside a container that does not restrict the size of its children, such as a [StackPanel](/uwp/api/windows.ui.xaml.controls.stackpanel), the DataGrid, like [ListView](/uwp/api/windows.ui.xaml.controls.listview) and other scrollable controls, will stretch beyond the visible bounds of the container and scrollbars will not be shown. This condition has both usability and performance implications.
 
 When bound to a data set, if the Height of the DataGrid is not restricted, it will continue to add a row for each data item in the bound data set. This can cause the DataGrid to grow outside the visible bounds of your application as rows are added. The DataGrid will not show scrollbars in this case because its Height will continue to grow to accommodate the new rows.
 
 An object is created for each row in the DataGrid. If you are working with a large data set and you allow the DataGrid to automatically size itself, the creation of a large number of objects may affect the performance of your application.
 
-To avoid these issues when you work with large data sets, it is recommended that you specifically set the Height of the DataGrid or place it in a container that will restrict its Height, such as a [Grid](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.grid) or [RelativePanel](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.relativepanel). When the Height is restricted, the DataGrid will only create the rows that will fit within its specified Height, and will recycle those rows as needed to display new data.
+To avoid these issues when you work with large data sets, it is recommended that you specifically set the Height of the DataGrid or place it in a container that will restrict its Height, such as a [Grid](/uwp/api/windows.ui.xaml.controls.grid) or [RelativePanel](/uwp/api/windows.ui.xaml.controls.relativepanel). When the Height is restricted, the DataGrid will only create the rows that will fit within its specified Height, and will recycle those rows as needed to display new data.
 
 ### Setting the DataGrid Size
 The DataGrid can be set to automatically size within specified boundaries, or the DataGrid can be set to a specific size. The following table shows the properties that can be set to control the DataGrid size.

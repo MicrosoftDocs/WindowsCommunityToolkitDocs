@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ImageEx XAML Control
 
-The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) downloads images asynchronously, while showing a loading indicator. Source images are then stored in the application's local cache to preserve resources and load time. ImageEx also extends the default *Image* and *ImageBrush* Platform controls respectively to improve performance through caching. You can also use a placeholder image that will be displayed while loading the main image.
+The [ImageEx Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) downloads images asynchronously, while showing a loading indicator. Source images are then stored in the application's local cache to preserve resources and load time. ImageEx also extends the default *Image* and *ImageBrush* Platform controls respectively to improve performance through caching. You can also use a placeholder image that will be displayed while loading the main image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=ImageEx)
@@ -56,4 +56,3 @@ ImageEx control supports use of Progress Indicator. This can be enabled by addin
 ## API
 
 * [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx)
-

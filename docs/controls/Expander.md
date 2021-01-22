@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Expander Control
 
-The [Expander Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
+The [Expander Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
 You can show or hide this content by interacting with the Header.
 
 > [!div class="nextstepaction"]
@@ -34,7 +34,7 @@ You can show or hide this content by interacting with the Header.
 | Property | Type | Description |
 | -- | -- | -- |
 | ContentOverlay | UIElement | Specifies alternate content to show when the Expander is collapsed. |
-| ExpandDirection | [ExpandDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expanddirection) | Specifies the direction of where expanded content should be displayed in relation to the header. |
+| ExpandDirection | [ExpandDirection](/dotnet/api/microsoft.toolkit.uwp.ui.controls.expanddirection) | Specifies the direction of where expanded content should be displayed in relation to the header. |
 | HeaderStyle | Style | Specifies an alternate style template for the `ToggleButton` header control. |
 | IsExpanded | bool | Indicates if the Expander is currently open or closed.  The default is `False`. |
 
@@ -114,4 +114,4 @@ For instance to remove the header entirely from the Expander:
 ## Related Topics
 
 * [HeaderedControlControl](HeaderedContentControl.md)
-* [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)
+* [ToggleButton](/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)

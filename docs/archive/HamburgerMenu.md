@@ -11,9 +11,9 @@ dev_langs:
 # HamburgerMenu XAML Control
 
 > [!WARNING]
-> The HamburgerMenu is no longer available in the Windows Community Toolkit. Please use the [NavigationView](https://docs.microsoft.com/windows/uwp/controls-and-patterns/navigationview). Read the [Moving to NavigationView](#navview) section for more info.
+> The HamburgerMenu is no longer available in the Windows Community Toolkit. Please use the [NavigationView](/windows/uwp/controls-and-patterns/navigationview). Read the [Moving to NavigationView](#navview) section for more info.
 
-The [HamburgerMenu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.hamburgermenu) provides an easy-to-use, side-bar menu which users can show or hide by using a Hamburger button. By  tapping the icon, it opens up a side menu with a selection of options or additional pages.
+The [HamburgerMenu Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.hamburgermenu) provides an easy-to-use, side-bar menu which users can show or hide by using a Hamburger button. By  tapping the icon, it opens up a side menu with a selection of options or additional pages.
 
 The 3-line menu icon, which resembles a Hamburger, allows developers to pack more features into their apps or navigation. The tiny icon takes up a minimal amount of screen real estate and creates a clean, minimalist look.
 
@@ -41,7 +41,7 @@ Developers can place menu specific content, navigation, images, text or custom c
 | Property | Type | Description |
 | -- | -- | -- |
 | CompactPaneLength | double | Gets or sets the width of the pane in its compact display mode |
-| DisplayMode | [SplitViewDisplayMode](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SplitViewDisplayMode) | Gets or sets a value that specifies how the pane and content areas are shown |
+| DisplayMode | [SplitViewDisplayMode](/uwp/api/Windows.UI.Xaml.Controls.SplitViewDisplayMode) | Gets or sets a value that specifies how the pane and content areas are shown |
 | HamburgerHeight | double | Gets or sets main button's height |
 | HamburgerMargin | Thickness | Gets or sets main button's margin |
 | HamburgerMenuTemplate | DataTemplate | Gets or sets a template for the hamburger icon |
@@ -60,12 +60,12 @@ Developers can place menu specific content, navigation, images, text or custom c
 | OptionsVisibility | Visibility | Gets or sets the visibility of the options menu |
 | PaneBackground | Brush | Gets or sets the Brush to apply to the background of the Pane area of the control |
 | PaneForeground | Brush | Gets or sets the Brush to apply to the foreground of the Pane area of the control (specifically, the hamburger button foreground) |
-| PanePlacement | [SplitViewPanePlacement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.splitviewpaneplacement) | Gets or sets a value that specifies whether the pane is shown on the right or left side of the control |
+| PanePlacement | [SplitViewPanePlacement](/uwp/api/windows.ui.xaml.controls.splitviewpaneplacement) | Gets or sets a value that specifies whether the pane is shown on the right or left side of the control |
 | SelectedIndex | int | Gets or sets the selected menu index |
 | SelectedItem | object | Gets or sets the selected menu item |
 | SelectedOptionsIndex | int | Gets or sets the selected options menu index |
 | SelectedOptionsItem | object | Gets or sets the selected options menu item |
-| UseNavigationViewWhenPossible | bool | Set `true` to use a template based on the [NavigationView](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/navigationview) when running on the Fall Creators Update and above, and the regular template otherwise |
+| UseNavigationViewWhenPossible | bool | Set `true` to use a template based on the [NavigationView](/windows/uwp/controls-and-patterns/navigationview) when running on the Fall Creators Update and above, and the regular template otherwise |
 
 ## Events
 
@@ -197,7 +197,7 @@ End Class
 ```
 
 ## <a name="navview"></a> Moving to NavigationView
-The Windows 10 Fall Creators Update SDK now includes the [NavigationView](https://docs.microsoft.com/windows/uwp/controls-and-patterns/navigationview) control among other new controls and APIs. This is great news for the Windows Community Toolkit as it means that one of its most popular controls, the HamburgerMenu, has a comparable counterpart in the Windows SDK and it is very easy to transition to the NavigationView if you are already using the HamburgerMenu. 
+The Windows 10 Fall Creators Update SDK now includes the [NavigationView](/windows/uwp/controls-and-patterns/navigationview) control among other new controls and APIs. This is great news for the Windows Community Toolkit as it means that one of its most popular controls, the HamburgerMenu, has a comparable counterpart in the Windows SDK and it is very easy to transition to the NavigationView if you are already using the HamburgerMenu. 
 
 The HamburgerMenu and NavigationView share the same concepts and provide the same functionality with one major exception being the NavigationView takes advantage of the new fluent design system. In fact, the NavigationView does everything the HamburgerMenu does and even more.
 
@@ -246,7 +246,7 @@ Version 3.0 of the Windows Community Toolkit adds another related property calle
 > The `ItemClick` and `OptionsItemClick` events will continue to work but the EventArgs will be null when `UseNavigationViewWhenPossible` is set to true. There is a new event called `ItemInvoked` that should be used instead. This new event will include information about the clicked item and whether it is an item or options item. This event also works if UseNavigationViewWhenPossible is set to false. 
 > 
 > [!NOTE]
-> The PaneBackground will not have any effect when `UseNavigationViewWhenPossible` is set to null. To change the pane background of the NavigationView, modify the two theme resources by overwriting them in your App.xaml. See the [NavigationVew documentation](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/navigationview#customizing-backgrounds) for more details.
+> The PaneBackground will not have any effect when `UseNavigationViewWhenPossible` is set to null. To change the pane background of the NavigationView, modify the two theme resources by overwriting them in your App.xaml. See the [NavigationVew documentation](/windows/uwp/design/controls-and-patterns/navigationview#customizing-backgrounds) for more details.
 
 There are several HamburgerMenu properties that have no effect when the HamburgerMenu is using the NavigationView:
 

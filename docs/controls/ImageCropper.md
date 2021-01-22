@@ -10,7 +10,7 @@ dev_langs:
 
 # ImageCropper XAML Control
 
-The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagecropper) allows a user to freely crop an image.
+The [ImageCropper Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagecropper) allows a user to freely crop an image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=ImageCropper)

@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # PipelineBrush
 
-The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) which can render any custom Win2D/Composition effects chain.
+The [PipelineBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) which can render any custom Win2D/Composition effects chain.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=PipelineBrush)
@@ -86,4 +86,4 @@ Brush brush =
 ## Related Topics
 
 * [Win2D GaussianBlurEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
-* [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
+* [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)

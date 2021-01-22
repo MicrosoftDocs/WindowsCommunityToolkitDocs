@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # PowerBIEmbedded Control
 
-The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
+The [PowerBIEmbedded Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
 
 ## Syntax
 
@@ -58,7 +58,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
         ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
 
 <!-- workaround for bullets styling -->
-2. Follow this [article](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content) to do the primary tasks below.
+2. Follow this [article](/power-bi/developer/embedding-content) to do the primary tasks below.
 
    * Create Power BI Pro user account
    * Create app workspaces
@@ -66,7 +66,7 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
    * Create and publish reports
 
 <!-- workaround for bullets styling -->
-3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report).
+3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](/power-bi/desktop-create-phone-report).
 
 ## Sample Project
 

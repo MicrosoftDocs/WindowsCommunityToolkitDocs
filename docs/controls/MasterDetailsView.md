@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # MasterDetailsView XAML Control 
 
-The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) presents items in a master/details pattern. It shows a collection of items within the "master panel" and the details for that item within the "details panel". The MasterDetailsView reacts to the width it is given to determine if it should show both the master and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
+The [MasterDetailsView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) presents items in a master/details pattern. It shows a collection of items within the "master panel" and the details for that item within the "details panel". The MasterDetailsView reacts to the width it is given to determine if it should show both the master and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=MasterDetailsView)
@@ -62,7 +62,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 | NoSelectionContentTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content when there is no selection |
 | SelectedIndex | int | Gets or sets the selected index (-1 if nothing is selected) |
 | SelectedItem | object | Gets or sets the selected item |
-| ViewState | [MasterDetailsViewState](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsviewstate) | Gets the current visual state of the control |
+| ViewState | [MasterDetailsViewState](/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsviewstate) | Gets the current visual state of the control |
 
 ## Events
 

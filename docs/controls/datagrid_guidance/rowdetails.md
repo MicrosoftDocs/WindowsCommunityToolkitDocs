@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Display and Configure Row Details in the DataGrid Control
 
-Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
+Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
 
 ![RowDetails](../../resources/images/Controls/DataGrid/rowdetails.png)
 
@@ -15,7 +15,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 
 ## To display a row details section using inline XAML
 
-1. Create a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
+1. Create a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
 2. Place the DataTemplate inside the <DataGrid.RowDetailsTemplate> tags.
 
 ```xml
@@ -36,8 +36,8 @@ The row details section can be displayed for selected rows, displayed for all ro
 
 ## To display a row details section using a DataTemplate resource
 
-1. Create a [DataTemplate](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
-2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](https://docs.microsoft.com/en-us/windows/uwp/xaml-platform/x-key-attribute).
+1. Create a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
+2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](/windows/uwp/xaml-platform/x-key-attribute).
 3. Bind the DataTemplate to the DataGrid's **RowDetailsTemplate** property.
 
 ```xml

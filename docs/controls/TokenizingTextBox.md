@@ -9,7 +9,7 @@ dev_langs:
 
 # TokenizingTextBox XAML Control
 
-The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tokenizingtextbox) is an advanced [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox) which will display selected items as tokens within the textbox. A user can easily see the picked items or remove them easily.
+The [TokenizingTextBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tokenizingtextbox) is an advanced [AutoSuggestBox](/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox) which will display selected items as tokens within the textbox. A user can easily see the picked items or remove them easily.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TokenizingTextBox)
@@ -97,5 +97,5 @@ If you inspect the *default* `ItemsSource` or `Items` of the `TokenizingTextBox`
 
 ## Related Topics
 
-* [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox)
-* [IconSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.iconsource)
+* [AutoSuggestBox](/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox)
+* [IconSource](/uwp/api/windows.ui.xaml.controls.iconsource)

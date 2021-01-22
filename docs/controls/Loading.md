@@ -10,7 +10,7 @@ dev_langs:
 
 # Loading XAML Control 
 
-The [loading control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) is for showing an animation with some content when the user should wait in some tasks of the app.
+The [loading control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) is for showing an animation with some content when the user should wait in some tasks of the app.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=Loading)

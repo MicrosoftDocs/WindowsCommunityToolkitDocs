@@ -10,7 +10,7 @@ dev_langs:
 
 # Saturation
 
-The [Saturation animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.saturation) selectively saturates a XAML element. Saturation animation is applied to all the XAML elements in its parent control/panel. Saturation animation doesn't affect the functionality of the control.
+The [Saturation animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.saturation) selectively saturates a XAML element. Saturation animation is applied to all the XAML elements in its parent control/panel. Saturation animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Saturation)
@@ -130,5 +130,5 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+* [AnimationSet Class](./animationset.md)
 * [SaturationEffect Class](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
