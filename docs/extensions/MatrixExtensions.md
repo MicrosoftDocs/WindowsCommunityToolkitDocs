@@ -8,7 +8,7 @@ dev_langs:
 ---
 
 # Matrix Extensions
-The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixextensions) provide methods to transform a [Matrix](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...).  These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](https://msdn.microsoft.com/en-us/library/system.windows.media.matrix(v=vs.110).aspx) class.
+The [Matrix Extensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixextensions) provide methods to transform a [Matrix](/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...).  These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](/dotnet/api/system.windows.media.matrix) class.
 
 ## Methods
 
@@ -25,7 +25,7 @@ The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
@@ -36,5 +36,5 @@ The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Related Topics
 
-- [Windows.UI.Xaml.Media.Matrix](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Media.Matrix)
-- [System.Windows.Media.Matrix](https://msdn.microsoft.com/en-us/library/system.windows.media.matrix(v=vs.110).aspx)
+- [Windows.UI.Xaml.Media.Matrix](/uwp/api/Windows.UI.Xaml.Media.Matrix)
+- [System.Windows.Media.Matrix](/dotnet/api/system.windows.media.matrix)

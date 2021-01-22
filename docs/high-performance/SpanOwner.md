@@ -9,7 +9,7 @@ dev_langs:
 
 # SpanOwner&lt;T>
 
-The [SpanOwner&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1) is a stack-only buffer type that rents buffers from a shared memory pool. It essentially mirrors the functionality of `MemoryOwner<T>`, but as a `ref struct` type. This is particularly useful for short-lived buffers that are only used in synchronous code (that don't require `Memory<T>` instances), as well as code running in a tight loop, as creating `SpanOwner<T>` values will not require memory allocations at all.
+The [SpanOwner&lt;T>](/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1) is a stack-only buffer type that rents buffers from a shared memory pool. It essentially mirrors the functionality of `MemoryOwner<T>`, but as a `ref struct` type. This is particularly useful for short-lived buffers that are only used in synchronous code (that don't require `Memory<T>` instances), as well as code running in a tight loop, as creating `SpanOwner<T>` values will not require memory allocations at all.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ byte[] buffer = new byte[length];
 // Use buffer here
 ```
 
-This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](https://docs.microsoft.com/en-us/dotnet/api/system.buffers.arraypool-1):
+This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](/dotnet/api/system.buffers.arraypool-1):
 
 ```csharp
 // Using directive to access the ArrayPool<T> type

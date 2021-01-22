@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # WebViewExtensions
 
-The [WebViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.webviewextensions?view=win-comm-toolkit-dotnet-stable) allows attaching HTML content to WebView.
+The [WebViewExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.webviewextensions?view=win-comm-toolkit-dotnet-stable) allows attaching HTML content to WebView.
 
 ## Syntax
 

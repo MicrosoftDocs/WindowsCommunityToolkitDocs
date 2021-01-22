@@ -10,7 +10,7 @@ dev_langs:
 
 # StorageFileHelper
 
-The [StorageFileHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.storagefilehelper) is a static utility class that provides functions to help with reading and writing of text and bytes to the disk.  These functions are all wrapped into Async tasks.
+The [StorageFileHelper](/dotnet/api/microsoft.toolkit.uwp.helpers.storagefilehelper) is a static utility class that provides functions to help with reading and writing of text and bytes to the disk.  These functions are all wrapped into Async tasks.
 
 ## Syntax
 

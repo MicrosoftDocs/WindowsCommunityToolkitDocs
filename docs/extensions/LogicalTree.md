@@ -10,9 +10,9 @@ dev_langs:
 
 # Logical Tree Extensions
 
-The [LogicalTree](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
+The [LogicalTree](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
 
-It provides [FrameworkElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.FrameworkElement) extensions to aid in walking the logical tree of control structures.
+It provides [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) extensions to aid in walking the logical tree of control structures.
 
 This differs from the *Visual Tree* where extra containers and styles can wrap other elements.
 The Logical Tree instead defines how controls are directly connected through construction.
@@ -94,4 +94,4 @@ Dim content = uiElement.GetContentControl()
 
 ## Related Topics
 
-- [VisualTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/visualtree)
+- [VisualTree Extensions](./visualtree.md)

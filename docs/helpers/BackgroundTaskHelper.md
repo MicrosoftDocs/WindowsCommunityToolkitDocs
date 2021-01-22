@@ -10,7 +10,7 @@ dev_langs:
 
 # Background Task Helper
 
-The [Background Task Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner.
+The [Background Task Helper](/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=BackgroundTaskHelper)
@@ -34,11 +34,11 @@ Dim registered As BackgroundTaskRegistration = BackgroundTaskHelper.Register("Ta
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| GetBackgroundTask(String) | [IBackgroundTaskRegistration](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.IBackgroundTaskRegistration) | Get the registered background task of the given type |
+| GetBackgroundTask(String) | [IBackgroundTaskRegistration](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTaskRegistration) | Get the registered background task of the given type |
 | GetBackgroundTask(Type) | IBackgroundTaskRegistration | Get the registered background task of the given type |
 | IsBackgroundTaskRegistered(String) | bool | Check if a background task is registered |
 | IsBackgroundTaskRegistered(Type) | bool | Check if a background task is registered |
-| Register(String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | [BackgroundTaskRegistration](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) | Registers under the Single Process Model |
+| Register(String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | [BackgroundTaskRegistration](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) | Registers under the Single Process Model |
 | Register(Type, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | BackgroundTaskRegistration | Register a background task with conditions |
 | Register(String, String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | BackgroundTaskRegistration | Register a background task with conditions |
 | Unregister(String, Boolean) | void | Unregister a background task |

@@ -10,7 +10,7 @@ dev_langs:
 
 # Colors Helper
 
-The [Colors Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.colorhelper) lets users convert colors from text names, HTML hex, HSV, or HSL to Windows UI Colors (and back again of course).
+The [Colors Helper](/dotnet/api/microsoft.toolkit.uwp.helpers.colorhelper) lets users convert colors from text names, HTML hex, HSV, or HSL to Windows UI Colors (and back again of course).
 
 ## Syntax
 
@@ -49,8 +49,8 @@ Dim redColor As Windows.UI.Color = "Red".ToColor()
 | FromHsv(Double, Double, Double, Double) | int | Returns a Color struct based on HSV model. Hue: 0-360, Saturation:  0-1, Lightness:  0-1, Alpha:  0-1 |
 | ToColor(String) | Color | Returns a color based on XAML color string |
 | ToHex(Color) | string | Converts a Color value to a string representation of the value in hexadecimal |
-| ToHsl(Color) | [HslColor](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.hslcolor) | Converts an RGBA Color the HSL representation |
-| ToHsv(Color) | [HsvColor](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.hsvcolor) | Converts an RGBA Color the HSV representation |
+| ToHsl(Color) | [HslColor](/dotnet/api/microsoft.toolkit.uwp.hslcolor) | Converts an RGBA Color the HSL representation |
+| ToHsv(Color) | [HsvColor](/dotnet/api/microsoft.toolkit.uwp.hsvcolor) | Converts an RGBA Color the HSV representation |
 | ToInt(Color) | int | Returns the color value as a premultiplied Int32 - 4 byte ARGB structure |
 
 ## Sample Code
