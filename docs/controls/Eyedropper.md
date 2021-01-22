@@ -109,7 +109,7 @@ Dim color = Await eyedropper.Open()
 
 ## Default Template
 
-[Eyedropper XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
+[Eyedropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
