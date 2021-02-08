@@ -56,6 +56,7 @@
 ## [StaggeredLayout](controls/layout/StaggeredLayout.md)
 
 ## [StaggeredPanel](controls/StaggeredPanel.md)
+## [TabbedCommandBar](controls/TabbedCommandBar.md)
 ## [TabView](controls/TabView.md)
 ## [TextToolbar](controls/TextToolbar.md)
 ## [TileControl](controls/TileControl.md)
