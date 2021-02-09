@@ -94,7 +94,7 @@ A brief recap of ExpressionAnimations:
 
 - Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations). 
 
-- For more information on ExpressionAnimations, [please check our documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
+- For more information on ExpressionAnimations, [please check our documentation](/uwp/api/Windows.UI.Composition.ExpressionAnimation).
 
 ExpressionAnimations can create some very powerful and unique experiences, but can be a bit cumbersome to author. One of the big pain points with ExpressionAnimations is that the equation or mathematical relationship that defines the animation is written as a string, e.g.:
 
@@ -230,13 +230,13 @@ Expressions are mathematical equations and relationships that are defined by the
 
 The documentation below assumes you are familiar with the Composition and CompositionAnimation APIs, including Expressions. For more information on these, check out the following resources:
 
-- [Composition Overview](https://msdn.microsoft.com/windows/uwp/graphics/visual-layer)
+- [Composition Overview](/windows/uwp/composition/visual-layer)
 
-- [Composition Animation Overview](https://msdn.microsoft.com/windows/uwp/graphics/composition-animation)
+- [Composition Animation Overview](/windows/uwp/composition/composition-animation)
 
 - [Windows UI Dev Labs Github](https://github.com/Microsoft/WindowsUIDevLabs)
 
-- [ExpressionAnimation MSDN Documentation](https://msdn.microsoft.com/library/windows/apps/windows.ui.composition.expressionanimation.aspx)
+- [ExpressionAnimation MSDN Documentation](/uwp/api/Windows.UI.Composition.ExpressionAnimation)
 
 ## <a name="why-expressionbuilder">Why ExpressionBuilder?
 

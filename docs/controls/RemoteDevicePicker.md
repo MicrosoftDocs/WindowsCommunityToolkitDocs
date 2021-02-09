@@ -9,10 +9,10 @@ dev_langs:
 
 # RemoteDevicePicker Control
 
-The [RemoteDevicePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
+The [RemoteDevicePicker](/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
 > [!IMPORTANT]
-> Make sure you enable the [RemoteSystem capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
+> Make sure you enable the [RemoteSystem capability](/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RemoteDevicePicker)
@@ -72,6 +72,6 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 * [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
 * [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
-* [Connected apps and devices (Project Rome)](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices)
-* [Communicate with a remote app service](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Connected apps and devices (Project Rome)](/windows/uwp/launch-resume/connected-apps-and-devices)
+* [Communicate with a remote app service](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
 * [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)

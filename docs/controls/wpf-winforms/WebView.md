@@ -11,9 +11,9 @@ dev_langs:
 # WebView control for Windows Forms and WPF
 
 > [!NOTE]
-> WebView will eventually be replaced by [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2) (currently in preview). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
+> WebView will eventually be replaced by [WebView2](/microsoft-edge/hosting/webview2) (currently in preview). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
 
-The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
+The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![WebView example](../../resources/images/Controls/WebView/web-view-samples.png)
 
@@ -36,9 +36,9 @@ Here's where to find the *Windows Forms* and *Windows Presentation Foundation* (
 
 (You can find additional related types (such as event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.)
 
-These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.
+These controls wrap an instance of the [WebViewControl](/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.
 
-Unless specified otherwise in this article, the documentation for the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class applies to the WPF and Windows Forms **WebView** controls. This article links to reference pages for the UWP [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class for more information about most members.
+Unless specified otherwise in this article, the documentation for the [WebViewControl](/uwp/api/windows.web.ui.interop.webviewcontrol) class applies to the WPF and Windows Forms **WebView** controls. This article links to reference pages for the UWP [WebViewControl](/uwp/api/windows.web.ui.interop.webviewcontrol) class for more information about most members.
 
 ## Prerequisites
 
@@ -70,7 +70,7 @@ For earlier versions of Visual Studio:
 
 2. Open the **Toolbox** in Visual Studio, right-click anywhere in the toolbox, and select the **Choose Items** option.
 
-3. In the **.NET Framework Components** tab of the **Choose Toolbox Items** dialog box, click **Browse** to locate the **Microsoft.Toolkit.Forms.UI.Controls.WebView.dll** in your [NuGet package folder](https://docs.microsoft.com/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
+3. In the **.NET Framework Components** tab of the **Choose Toolbox Items** dialog box, click **Browse** to locate the **Microsoft.Toolkit.Forms.UI.Controls.WebView.dll** in your [NuGet package folder](/nuget/consume-packages/managing-the-global-packages-and-cache-folders).
 
 4. Add **Microsoft.Toolkit.Forms.UI.Controls.WebView.dll** to the list of Toolbox controls, and then close the **Choose Toolbox Items** dialog box.
 
@@ -92,7 +92,7 @@ If users open your application on displays that have a high Dots Per Inch (DPI) 
 
 ### Configure a Windows Forms application
 
-For guidance, see [Configuring your Windows Forms app for high DPI support](https://docs.microsoft.com/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
+For guidance, see [Configuring your Windows Forms app for high DPI support](/dotnet/framework/winforms/high-dpi-support-in-windows-forms#configuring-your-windows-forms-app-for-high-dpi-support).
 
 ### Configure a WPF application
 
@@ -128,22 +128,22 @@ This table contains links to each of these members.
 
 | Member | Windows Forms WebView | WPF WebView |
 |-------|-------------|---|
-|Width property |[Width](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.width)|[Width](https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.width)|
-|Height property|[Height](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.height)|[Height](https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.height)|
+|Width property |[Width](/dotnet/api/system.windows.forms.control.width)|[Width](/dotnet/api/system.windows.frameworkelement.width)|
+|Height property|[Height](/dotnet/api/system.windows.forms.control.height)|[Height](/dotnet/api/system.windows.frameworkelement.height)|
 
 ## Get the web page title
 
-You can get the title of the HTML document currently displayed in the **WebView** by using the [DocumentTitle](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.documenttitle) property.
+You can get the title of the HTML document currently displayed in the **WebView** by using the [DocumentTitle](/uwp/api/windows.web.ui.interop.webviewcontrol.documenttitle) property.
 
 ## Input events and tab order
 
-You can use the [InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method with the JavaScript **eval** function to use the HTML event handlers, and use **window.external.notify** from the HTML event handlers to notify the application using the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
+You can use the [InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method with the JavaScript **eval** function to use the HTML event handlers, and use **window.external.notify** from the HTML event handlers to notify the application using the [ScriptNotify](/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
 
 ## Navigate to content
 
-The **WebView** control has several APIs for basic navigation:  [GoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goback), [GoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goforward), [Stop](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.stop), [Refresh](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.refresh), [CanGoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoback), and [CanGoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoforward). You can use these to add typical web browsing capabilities to your app.
+The **WebView** control has several APIs for basic navigation:  [GoBack](/uwp/api/windows.web.ui.interop.webviewcontrol.goback), [GoForward](/uwp/api/windows.web.ui.interop.webviewcontrol.goforward), [Stop](/uwp/api/windows.web.ui.interop.webviewcontrol.stop), [Refresh](/uwp/api/windows.web.ui.interop.webviewcontrol.refresh), [CanGoBack](/uwp/api/windows.web.ui.interop.webviewcontrol.cangoback), and [CanGoForward](/uwp/api/windows.web.ui.interop.webviewcontrol.cangoforward). You can use these to add typical web browsing capabilities to your app.
 
-To set the initial content of the the **WebView** control, you can set the [Source](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
+To set the initial content of the the **WebView** control, you can set the [Source](/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
 
 ```csharp
 private void WebView_Loaded(object sender, RoutedEventArgs e)
@@ -162,13 +162,13 @@ webView1.Navigate("http://www.contoso.com")
 
 The **WebView** control provides several events that you can use to respond to navigation and content loading states. The events occur in the following order for the root web view content:
 
-1. [NavigationStarting](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.navigationstarting)
+1. [NavigationStarting](/uwp/api/windows.web.ui.interop.webviewcontrol.navigationstarting)
 
-2. [ContentLoading](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.contentloading)
+2. [ContentLoading](/uwp/api/windows.web.ui.interop.webviewcontrol.contentloading)
 
-3. [DOMContentLoaded](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.domcontentloaded)
+3. [DOMContentLoaded](/uwp/api/windows.web.ui.interop.webviewcontrol.domcontentloaded)
 
-4. [NavigationCompleted](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.navigationcompleted)
+4. [NavigationCompleted](/uwp/api/windows.web.ui.interop.webviewcontrol.navigationcompleted)
 
 The **NavigationStarting** event is raised before the web view navigates to new content. You can cancel navigation in a handler for this event by setting the ``WebViewNavigationStartingEventArgs.Cancel`` property to true.
 
@@ -275,30 +275,30 @@ End Sub
 
 Similar events occur in the same order for each **iframe** in the web view content:
 
-1. The [FrameNavigationStarting](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.framenavigationstarting) event is raised before a frame in the web view navigates to new content.
+1. The [FrameNavigationStarting](/uwp/api/windows.web.ui.interop.webviewcontrol.framenavigationstarting) event is raised before a frame in the web view navigates to new content.
 
-2. The [FrameContentLoading](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.framecontentloading) event is raised when a frame in the web view has started loading new content.
+2. The [FrameContentLoading](/uwp/api/windows.web.ui.interop.webviewcontrol.framecontentloading) event is raised when a frame in the web view has started loading new content.
 
-3. The [FrameDOMContentLoaded](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.framedomcontentloaded) event is raised when a frame in the web view has finished parsing its current HTML content.
+3. The [FrameDOMContentLoaded](/uwp/api/windows.web.ui.interop.webviewcontrol.framedomcontentloaded) event is raised when a frame in the web view has finished parsing its current HTML content.
 
-4. The [FrameNavigationCompleted](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.framenavigationcompleted) event is raised when a frame in the web view has finished loading its content.
+4. The [FrameNavigationCompleted](/uwp/api/windows.web.ui.interop.webviewcontrol.framenavigationcompleted) event is raised when a frame in the web view has finished loading its content.
 
 ## Respond to potential problems
 
 You can respond to potential problems with the content such as long running scripts, content that the **WebView** control can't load, and warnings of unsafe content.
 
-Your app might appear unresponsive while scripts are running. The [LongRunningScriptDetected](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.longrunningscriptdetected) event is raised periodically while the web view executes JavaScript. This provides you with an opportunity to interrupt the script. To determine how long the script has been running, check the [ExecutionTime](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs.executiontime) property of the [WebViewControlLongRunningScriptDetectedEventArgs](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs). To halt the script, set the event args [StopPageScriptExecution](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs.stoppagescriptexecution) property to **true**. The halted script will not execute again unless it is reloaded during a subsequent web view navigation.
+Your app might appear unresponsive while scripts are running. The [LongRunningScriptDetected](/uwp/api/windows.web.ui.interop.webviewcontrol.longrunningscriptdetected) event is raised periodically while the web view executes JavaScript. This provides you with an opportunity to interrupt the script. To determine how long the script has been running, check the [ExecutionTime](/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs.executiontime) property of the [WebViewControlLongRunningScriptDetectedEventArgs](/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs). To halt the script, set the event args [StopPageScriptExecution](/uwp/api/windows.web.ui.webviewcontrollongrunningscriptdetectedeventargs.stoppagescriptexecution) property to **true**. The halted script will not execute again unless it is reloaded during a subsequent web view navigation.
 <!-- Not able to get the event to fire without causing the application to go unresponsive -->
 
-The web view control cannot host arbitrary file types. When an attempt is made to load content that the web view can't host, the [UnviewableContentIdentified](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.unviewablecontentidentified) event occurs. You can handle this event and notify the user.
+The web view control cannot host arbitrary file types. When an attempt is made to load content that the web view can't host, the [UnviewableContentIdentified](/uwp/api/windows.web.ui.interop.webviewcontrol.unviewablecontentidentified) event occurs. You can handle this event and notify the user.
 
-Similarly, the [UnsupportedUriSchemeIdentified](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.unsupportedurischemeidentified) event occurs when a URI scheme that's not supported is invoked in the web content, such as fbconnect:// or mailto://. You can handle this event to provide custom behavior instead of allowing the default system launcher to launch the URI.
+Similarly, the [UnsupportedUriSchemeIdentified](/uwp/api/windows.web.ui.interop.webviewcontrol.unsupportedurischemeidentified) event occurs when a URI scheme that's not supported is invoked in the web content, such as fbconnect:// or mailto://. You can handle this event to provide custom behavior instead of allowing the default system launcher to launch the URI.
 
-The [UnsafeContentWarningDisplayingEvent](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.unsafecontentwarningdisplaying) event occurs when the web view shows a warning page for content that was reported as unsafe by the SmartScreen Filter. If the user chooses to continue the navigation, subsequent navigation to the page will not display the warning nor fire the event.
+The [UnsafeContentWarningDisplayingEvent](/uwp/api/windows.web.ui.interop.webviewcontrol.unsafecontentwarningdisplaying) event occurs when the web view shows a warning page for content that was reported as unsafe by the SmartScreen Filter. If the user chooses to continue the navigation, subsequent navigation to the page will not display the warning nor fire the event.
 
 ## Handle special cases for web view content
 
-You can use the [ContainsFullScreenElement](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.containsfullscreenelement) property and [ContainsFullScreenElementChanged](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.containsfullscreenelementchanged) event to detect, respond to, and enable full-screen experiences in web content, such as full-screen video playback.
+You can use the [ContainsFullScreenElement](/uwp/api/windows.web.ui.interop.webviewcontrol.containsfullscreenelement) property and [ContainsFullScreenElementChanged](/uwp/api/windows.web.ui.interop.webviewcontrol.containsfullscreenelementchanged) event to detect, respond to, and enable full-screen experiences in web content, such as full-screen video playback.
 
 For example, you might use the **ContainsFullScreenElementChanged** event to resize the web view to occupy the entire app view, or, as the following example illustrates, put a windowed app in full screen mode.
 
@@ -337,15 +337,15 @@ Private Sub webView_ContainsFullScreenElementChanged(ByVal sender As Object, ByV
 End Sub
 ```
 
-You can use the [NewWindowRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.newwindowrequested) event to handle cases where hosted web content requests a new window, such as a popup window. You can use another **WebView** control to display the contents of the requested window.
+You can use the [NewWindowRequested](/uwp/api/windows.web.ui.interop.webviewcontrol.newwindowrequested) event to handle cases where hosted web content requests a new window, such as a popup window. You can use another **WebView** control to display the contents of the requested window.
 <!-- Cannot get this event to fire -->
 
-Handle the [PermissionRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.permissionrequested) event to enable web features that require special capabilities. These currently include geolocation, IndexedDB storage, and user audio and video (for example, from a microphone or webcam).
+Handle the [PermissionRequested](/uwp/api/windows.web.ui.interop.webviewcontrol.permissionrequested) event to enable web features that require special capabilities. These currently include geolocation, IndexedDB storage, and user audio and video (for example, from a microphone or webcam).
 
 <!-- This behaves differently than UWP: The sandbox process Win32WebViewHost.exe is a system application and has all capabilities listed in its manifest. Since WinForms/WPF do not have their own identities, they use the identity and permissions of the sandbox application.
 The PermissionRequested event is fired when a permission is reqested each time. If the application is the first to request permissions from the sandbox, the user will receive two prompts: one from the application, one from the system for the sandbox. -->
 
-In addition to the app handling the [PermissionRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.permissionrequested) event, the user will have to approve standard system dialogs for apps requesting location or media capabilities in order for these features to be enabled.
+In addition to the app handling the [PermissionRequested](/uwp/api/windows.web.ui.interop.webviewcontrol.permissionrequested) event, the user will have to approve standard system dialogs for apps requesting location or media capabilities in order for these features to be enabled.
 
 Here is an example of how an app would enable geolocation in a map from Bing:
 
@@ -372,13 +372,13 @@ Private Sub webView1_PermissionRequested(ByVal sender As WebView, ByVal args As 
 End Sub
 ```
 
-If your app requires user input or other asynchronous operations to respond to a permission request, use the [Defer](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest.defer) method of [WebViewControlPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolpermissionrequest) to create a [WebViewControlDeferredPermissionRequest](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontroldeferredpermissionrequest) that can be acted upon at a later time.
+If your app requires user input or other asynchronous operations to respond to a permission request, use the [Defer](/uwp/api/windows.web.ui.webviewcontrolpermissionrequest.defer) method of [WebViewControlPermissionRequest](/uwp/api/windows.web.ui.webviewcontrolpermissionrequest) to create a [WebViewControlDeferredPermissionRequest](/uwp/api/windows.web.ui.webviewcontroldeferredpermissionrequest) that can be acted upon at a later time.
 
 ## Interact with web view content
 
-You can interact with the content of the web view by using the [InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method to invoke or inject script into the web view content, and the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event to get information back from the web view content.
+You can interact with the content of the web view by using the [InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method to invoke or inject script into the web view content, and the [ScriptNotify](/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event to get information back from the web view content.
 
-To invoke JavaScript inside the web view content, use the [InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method. The invoked script can return only string values.
+To invoke JavaScript inside the web view content, use the [InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method. The invoked script can return only string values.
 
 For example, if the content of a web view named `webView1` contains a function named `setDate` that takes 3 parameters, you can invoke it like this.
 
@@ -409,11 +409,11 @@ Private Async Sub Button_Click(sender As Object, e As RoutedEventArgs)
 End Sub
 ```
 
-Scripts in the web view content can use **window.external.notify** with a string parameter to send information back to your app. To receive these messages, handle the [ScriptNotify](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
+Scripts in the web view content can use **window.external.notify** with a string parameter to send information back to your app. To receive these messages, handle the [ScriptNotify](/uwp/api/windows.web.ui.interop.webviewcontrol.scriptnotify) event.
 
 ## Options for web content hosting
 
-You can use the [Settings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) property (of type [WebViewControlSettings](https://docs.microsoft.com/uwp/api/windows.web.ui.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
+You can use the [Settings](/uwp/api/windows.web.ui.webviewcontrolsettings) property (of type [WebViewControlSettings](/uwp/api/windows.web.ui.webviewcontrolsettings) to control whether JavaScript and IndexedDB are enabled. For example, if you use a web view to display strictly static content, you might want to disable JavaScript for best performance.
 
 ## Creating multiple web views in the same process
 
@@ -531,11 +531,11 @@ End Class
 
 ### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
 
-When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
+When people refer to a “web view” they either refer to the [WebBrowser](/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](/uwp/api/windows.ui.xaml.controls.webview) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
 
 ### Is *WebViewControl* available on Windows Server?
 
-No. [Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel) versions of Windows, including *Windows Server*, don't include Microsoft Edge or many other UWP applications. These apps and their required services are frequently updated with new functionality and cannot be supported on systems running a LTSC operating system.
+No. [Long-Term Servicing Channel (LTSC)](/windows/deployment/update/waas-overview#long-term-servicing-channel) versions of Windows, including *Windows Server*, don't include Microsoft Edge or many other UWP applications. These apps and their required services are frequently updated with new functionality and cannot be supported on systems running a LTSC operating system.
 
 A future workaround might be to use [Windows Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/) to run your WebViewControl application through a virtualized desktop on Windows 7, Windows 10 LTSC versions, and other environments where Microsoft Edge (and the WebViewControl) wouldn't otherwise be supported.
 
@@ -550,7 +550,7 @@ No, the APIs differ significantly, as the *WebViewControl* represents several ge
 
 ### Can I inject native objects into my WebViewControl content?
 
-No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround 
+No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](/dotnet/api/system.windows.controls.webbrowser.objectforscripting) property nor the WebView (UWP) [AddWebAllowedObject](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround 
 
 ### Can I host the UWP WebView in WPF or Windows Forms using XAML islands?
 
@@ -558,7 +558,7 @@ No. It is not possible to host the (full-featured) UWP WebView using XAML island
 
 ### How do I debug WebViewControl?
 
-To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
+To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
 
 ## Sample Project
 

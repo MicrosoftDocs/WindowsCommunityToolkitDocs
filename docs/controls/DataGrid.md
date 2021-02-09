@@ -51,4 +51,4 @@ If you have the **XAML Controls Gallery** app installed, [open the app and see t
 ## API
 
 * [DataGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid)
-* [Silverlight DataGrid API](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))
+* [Silverlight DataGrid API](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))

@@ -10,7 +10,7 @@ dev_langs:
 
 # InAppNotification
 
-The [InAppNotification](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
+The [InAppNotification](/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
 
 The control should be placed where you want your notification to be displayed in the page, generally in the root grid.
 

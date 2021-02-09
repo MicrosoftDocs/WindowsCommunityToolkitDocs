@@ -10,7 +10,7 @@ dev_langs:
 
 # Carousel XAML Control 
 
-The [Carousel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.carousel) control provides a new control, inherited from the [ItemsControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ItemsControl), representing a nice and smooth carousel.  
+The [Carousel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.carousel) control provides a new control, inherited from the [ItemsControl](/uwp/api/Windows.UI.Xaml.Controls.ItemsControl), representing a nice and smooth carousel.  
 This control lets you specify a lot of properties for a flexible layouting.  
 The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 

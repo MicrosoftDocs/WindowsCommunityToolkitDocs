@@ -10,7 +10,7 @@ dev_langs:
 
 # DropShadowPanel XAML Control
 
-The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
+The [DropShadowPanel Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=DropShadowPanel)

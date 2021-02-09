@@ -9,7 +9,7 @@ dev_langs:
 
 # Guard
 
-The [Guard](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.guard) can be used to validate method arguments in a streamlined manner, which is also faster, less verbose, more expressive and less error prone than manually writing checks and throwing exceptions.
+The [Guard](/dotnet/api/microsoft.toolkit.diagnostics.guard) can be used to validate method arguments in a streamlined manner, which is also faster, less verbose, more expressive and less error prone than manually writing checks and throwing exceptions.
 
 ## How it works
 

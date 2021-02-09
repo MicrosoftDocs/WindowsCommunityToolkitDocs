@@ -50,7 +50,7 @@ anim.Start()
 | Property | Type | Description |
 | -- | -- | -- |
 | Element | UIElement | Gets the UIElement |
-| State | [AnimationSetState](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetstate) | Gets the current state of the AnimationSet |
+| State | [AnimationSetState](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetstate) | Gets the current state of the AnimationSet |
 | UseComposition | Boolean | Gets or sets a value indicating whether composition must be use even on SDK > 10586 |
 | Visual | Visual | Gets the Visual object that backs the XAML element |
 
@@ -62,15 +62,15 @@ You can change the way how the animation interpolates between keyframes by defin
 | ---------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Default    | Creates an animation that accelerates with the default EasingType which is specified in AnimationExtensions.DefaultEasingType which is by default Cubic |                                                                                                                           |
 | Linear     | Creates an animation that accelerates or decelerates linear                                                                                             |                                                                                                                           |
-| Back       | Retracts the motion of an animation slightly before it begins to animate in the path indicated                                                          | ![BackEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/backease-graph.png)           |
-| Bounce     | Creates a bouncing effect                                                                                                                               | ![BounceEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/bounceease-graph.png)       |
-| Circle     | Creates an animation that accelerates or decelerates using a circular function                                                                          | ![CircleEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/circleease-graph.png)       |
-| Cubic      | Creates an animation that accelerates or decelerates using the formula f(t) = t3                                                                        | ![CubicEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/cubicease-graph.png)         |
-| Elastic    | Creates an animation that resembles a spring oscillating back and forth until it comes to rest                                                          | ![ElasticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/elasticease-graph.png)     |
-| Quadratic  | Creates an animation that accelerates or decelerates using the formula f(t) = t2                                                                        | ![QuadraticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quadraticease-graph.png) |
-| Quartic    | Creates an animation that accelerates or decelerates using the formula f(t) = t4                                                                        | ![QuarticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quarticease-graph.png)     |
-| Quintic    | Create an animation that accelerates or decelerates using the formula f(t) = t5                                                                         | ![QuinticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quinticease-graph.png)     |
-| Sine       | Creates an animation that accelerates or decelerates using a sine formula                                                                               | ![SineEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/sineease-graph.png)           |
+| Back       | Retracts the motion of an animation slightly before it begins to animate in the path indicated                                                          | ![BackEase](/dotnet/framework/wpf/graphics-multimedia/media/backease-graph.png)           |
+| Bounce     | Creates a bouncing effect                                                                                                                               | ![BounceEase](/dotnet/framework/wpf/graphics-multimedia/media/bounceease-graph.png)       |
+| Circle     | Creates an animation that accelerates or decelerates using a circular function                                                                          | ![CircleEase](/dotnet/framework/wpf/graphics-multimedia/media/circleease-graph.png)       |
+| Cubic      | Creates an animation that accelerates or decelerates using the formula f(t) = t3                                                                        | ![CubicEase](/dotnet/framework/wpf/graphics-multimedia/media/cubicease-graph.png)         |
+| Elastic    | Creates an animation that resembles a spring oscillating back and forth until it comes to rest                                                          | ![ElasticEase](/dotnet/framework/wpf/graphics-multimedia/media/elasticease-graph.png)     |
+| Quadratic  | Creates an animation that accelerates or decelerates using the formula f(t) = t2                                                                        | ![QuadraticEase](/dotnet/framework/wpf/graphics-multimedia/media/quadraticease-graph.png) |
+| Quartic    | Creates an animation that accelerates or decelerates using the formula f(t) = t4                                                                        | ![QuarticEase](/dotnet/framework/wpf/graphics-multimedia/media/quarticease-graph.png)     |
+| Quintic    | Create an animation that accelerates or decelerates using the formula f(t) = t5                                                                         | ![QuinticEase](/dotnet/framework/wpf/graphics-multimedia/media/quinticease-graph.png)     |
+| Sine       | Creates an animation that accelerates or decelerates using a sine formula                                                                               | ![SineEase](/dotnet/framework/wpf/graphics-multimedia/media/sineease-graph.png)           |
 
 ## Methods
 
@@ -182,6 +182,6 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Related
 
-- [AnimationSetCompletedEventArgs](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetcompletedeventargs)
+- [AnimationSetCompletedEventArgs](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetcompletedeventargs)
 
-- [AnimationExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions)
+- [AnimationExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions)

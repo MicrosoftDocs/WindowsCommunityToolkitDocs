@@ -9,7 +9,7 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 Lottie-Windows is a library for rendering [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) animations natively in your applications. This project adds Windows to the [Lottie](http://airbnb.io/lottie/) family of tools also targeting [Android](https://github.com/airbnb/lottie-android), [iOS](https://github.com/airbnb/lottie-ios), and [Web](https://github.com/airbnb/lottie-web).
 
-Lottie simplifies the design-to-code workflow for bringing engaging, interactive vector animations to your Windows applications, with significant improvements in terms of performance, quality, and engineering efficiency over traditional approaches such as gifs, manually coded animations, etc. Lottie-Windows uses the [Windows.UI.Composition APIs](https://docs.microsoft.com/windows/uwp/composition/visual-layer) to provide smooth, 60 fps animations and resolution-independent vector graphics.
+Lottie simplifies the design-to-code workflow for bringing engaging, interactive vector animations to your Windows applications, with significant improvements in terms of performance, quality, and engineering efficiency over traditional approaches such as gifs, manually coded animations, etc. Lottie-Windows uses the [Windows.UI.Composition APIs](/windows/uwp/composition/visual-layer) to provide smooth, 60 fps animations and resolution-independent vector graphics.
 
 ![Lottie Gif](../resources/images/Animations/Lottie/LottieDocs_Intro.gif)
 
@@ -18,7 +18,7 @@ Lottie simplifies the design-to-code workflow for bringing engaging, interactive
 
 ## Key Concepts
 
-* **AnimatedVisualPlayer**, a [XAML element](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) that plays the Lottie animation.
+* **AnimatedVisualPlayer**, a [XAML element](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) that plays the Lottie animation.
 * **Lottie-Windows**, a [library](http://aka.ms/lottie-windows) for parsing and translating [Bodymovin](https://aescripts.com/bodymovin/) JSON files; provides the **LottieVisualSource** that is consumed by the AnimatedVisualPlayer.
 * **Lottie Viewer**, a [Store app](http://aka.ms/lottieviewer) for previewing Lottie animations to test their visual correctness and to codegen C# or C++ classes.
 * **LottieGen**, a [command-line tool](http://aka.ms/lottiegen) for generating C# or C++ classes in lieu of using real-time JSON parsing.
@@ -50,8 +50,8 @@ The following documents help you get started with Lottie-Windows and provide sim
 
 ## API
 
-* [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer)
-* [LottieVisualSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource)
+* [AnimatedVisualPlayer](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer)
+* [LottieVisualSource](/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource)
 
 ## Resources
 

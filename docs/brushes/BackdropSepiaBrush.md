@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropSepiaBrush
 
-The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsepiabrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
+The [BackdropSepiaBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsepiabrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropSepiaBrush)
