@@ -9,7 +9,7 @@ dev_langs:
 
 # Ref&lt;T>
 
-The [Ref&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
+The [Ref&lt;T>](/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
 
 ## How it works
 
@@ -87,7 +87,7 @@ This will compile and run fine, but the returned `ref int` will be invalid (as i
 
 # ReadOnlyRef&lt;T>
 
-The [ReadOnlyRef&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`. 
+The [ReadOnlyRef&lt;T>](/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`. 
 
 ## Properties
 

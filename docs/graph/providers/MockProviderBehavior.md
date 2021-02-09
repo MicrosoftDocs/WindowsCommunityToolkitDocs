@@ -10,7 +10,7 @@ dev_langs:
 # MockProviderBehavior XAML Behavior
 
 <!-- Describe your control -->
-The [MockProviderBehavior](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.providers.mockproviderbehavior) provides sample data from the Microsoft Graph for demonstration and learning purposes only.
+The [MockProviderBehavior](/dotnet/api/microsoft.toolkit.graph.providers.mockproviderbehavior) provides sample data from the Microsoft Graph for demonstration and learning purposes only.
 
 Add this behavior to your application's main page. It only needs to be added to a single page to bootstrap all the other Graph enabled XAML controls.
 

@@ -10,7 +10,7 @@ dev_langs:
 
 # Theme Listener
 
-The [Theme Listener](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.helpers.themelistener) class allows you to determine the current Application Theme, and when it is changed via System Theme changes.
+The [Theme Listener](/dotnet/api/microsoft.toolkit.uwp.ui.helpers.themelistener) class allows you to determine the current Application Theme, and when it is changed via System Theme changes.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=ThemeListener)
@@ -41,7 +41,7 @@ End Sub
 
 | Property | Type | Description |
 | -- | -- | -- |
-| CurrentTheme | [ApplicationTheme](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.ApplicationTheme) | Gets or sets the Current Theme. |
+| CurrentTheme | [ApplicationTheme](/uwp/api/Windows.UI.Xaml.ApplicationTheme) | Gets or sets the Current Theme. |
 | CurrentThemeName | string | Gets the Name of the Current Theme. |
 | IsHighContrast | bool | Gets or sets a value indicating whether the current theme is high contrast. |
 

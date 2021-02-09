@@ -9,7 +9,7 @@ dev_langs:
 
 # PersonView XAML Control
 
-The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
+The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PersonView)
@@ -54,5 +54,5 @@ The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.c
 
 ## Related Topics
 
-* [Person Graph API](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-beta)
-* [MGT Person Component](https://docs.microsoft.com/graph/toolkit/components/person)
+* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [MGT Person Component](/graph/toolkit/components/person)

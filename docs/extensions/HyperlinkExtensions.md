@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # HyperlinkExtensions
 
-The [HyperlinkExtension](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.hyperlink) allows for a Hyperlink element to invoke the execute method on a bound [ICommand](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Input.ICommand) instance when clicked.
+The [HyperlinkExtension](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.hyperlink) allows for a Hyperlink element to invoke the execute method on a bound [ICommand](/uwp/api/Windows.UI.Xaml.Input.ICommand) instance when clicked.
 
 ## Example
 
@@ -39,4 +39,3 @@ The [HyperlinkExtension](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 ## API
 
 * [Hyperlink source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Hyperlink)
-

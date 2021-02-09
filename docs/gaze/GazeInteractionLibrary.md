@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community
 
 # Gaze Interaction Library
 
-Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
+Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
 
 This Gaze Interaction Library is built on top of the Windows Gaze Input APIs and provides a set of developer helper classes to more easily enable UWP applications to respond to where the user is looking on the screen. This library is intended to abstract away some of the complexities of dealing with the raw stream of gaze input coming from the eye tracking device exposed through the Windows APIs.
 
@@ -208,4 +208,4 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## Related Topics
 
-* [Windows 10 Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview)
+* [Windows 10 Gaze Input APIs](/uwp/api/windows.devices.input.preview)

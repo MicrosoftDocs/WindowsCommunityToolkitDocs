@@ -9,7 +9,7 @@ dev_langs:
 
 # ParallelHelper
 
-The [ParallelHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute paralell operations over a given data set or iteration range or area.
+The [ParallelHelper](/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute paralell operations over a given data set or iteration range or area.
 
 ## How it works
 

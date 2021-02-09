@@ -11,9 +11,9 @@ dev_langs:
 # HttpHelper
 
 > [!WARNING]
-> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx) or [Windows.Web.Http.HttpClient](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpClient) directly)
+> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpClient](/dotnet/api/system.net.http.httpclient) or [Windows.Web.Http.HttpClient](/uwp/api/Windows.Web.Http.HttpClient) directly)
 
-The [HttpHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelper) represents an HTTP request message including headers.
+The [HttpHelper](/dotnet/api/microsoft.toolkit.uwp.httphelper) represents an HTTP request message including headers.
 
 ## Syntax
 

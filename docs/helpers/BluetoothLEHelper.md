@@ -48,7 +48,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 | BluetoothAddressAsString |                                                string                                                 |    Gets the bluetooth address of this device as a string    |
 | BluetoothAddressAsUlong  |                                                 ulong                                                 |          Gets the bluetooth address of this device          |
 |    BluetoothLEDevice     |                                           BluetoothLEDevice                                           |       Gets the base bluetooth device this class wraps       |
-|        DeviceInfo        | [DeviceInformation](https://docs.microsoft.com/uwp/api/Windows.Devices.Enumeration.DeviceInformation) | Gets the device information for the device this class wraps |
+|        DeviceInfo        | [DeviceInformation](/uwp/api/Windows.Devices.Enumeration.DeviceInformation) | Gets the device information for the device this class wraps |
 |        ErrorText         |                                                string                                                 |  Gets the error text when connecting to this device fails   |
 |          Glyph           |                                              BitmapImage                                              |       Gets or sets the glyph of this bluetooth device       |
 |       IsConnected        |                                                 bool                                                  |  Gets a value indicating whether this device is connected   |

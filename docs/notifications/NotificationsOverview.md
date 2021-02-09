@@ -14,8 +14,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Create Adaptive Tile](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
-| [Sending a local Tile notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification) |
+| [Create Adaptive Tile](/windows/uwp/design/shell/tiles-and-notifications/create-adaptive-tiles) |
+| [Sending a local Tile notification](/windows/uwp/design/shell/tiles-and-notifications/sending-a-local-tile-notification) |
 
 ### Sample Output
 
@@ -25,8 +25,8 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 | Documentation |
 | --- |
-| [Interactive Toast Notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts) |
-| [Send a local toast](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast)
+| [Interactive Toast Notifications](/windows/uwp/design/shell/tiles-and-notifications/adaptive-interactive-toasts) |
+| [Send a local toast](/windows/uwp/design/shell/tiles-and-notifications/send-local-toast)
 
 ### Sample Output
 
@@ -34,7 +34,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 ### Sending toasts from Win32 C# apps
 
-If you're developing a non-UWP C# app for Windows, the Windows Community toolkit makes it easier to send an interactive toast notification from your Win32 C# app. To learn more, see [Send a local toast notification from desktop C# apps](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop).
+If you're developing a non-UWP C# app for Windows, the Windows Community toolkit makes it easier to send an interactive toast notification from your Win32 C# app. To learn more, see [Send a local toast notification from desktop C# apps](/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop).
 
 ## Requirements
 
@@ -49,4 +49,4 @@ If you're developing a non-UWP C# app for Windows, the Windows Community toolkit
 
 ## Related Topics
 
-* [Toast Notification UX Guidance](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance)
+* [Toast Notification UX Guidance](/windows/uwp/design/shell/tiles-and-notifications/toast-ux-guidance)

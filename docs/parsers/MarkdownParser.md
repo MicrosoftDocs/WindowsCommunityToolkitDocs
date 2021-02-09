@@ -10,7 +10,7 @@ dev_langs:
 
 # Markdown Parser
 
-The [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.markdown.markdowndocument) class allows you to parse a Markdown String into a Markdown Document, and then Render it with a Markdown Renderer.
+The [MarkdownDocument](/dotnet/api/microsoft.toolkit.parsers.markdown.markdowndocument) class allows you to parse a Markdown String into a Markdown Document, and then Render it with a Markdown Renderer.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Markdown%20Parser)

@@ -10,7 +10,7 @@ dev_langs:
 
 # Streams Helper
 
-There are several operations that apps need commonly to do against their APPX, or from the Internet that are not easy.  [Streams helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.streamhelper) class wraps up some of the most common operations we need in multiple apps.
+There are several operations that apps need commonly to do against their APPX, or from the Internet that are not easy.  [Streams helper](/dotnet/api/microsoft.toolkit.uwp.helpers.streamhelper) class wraps up some of the most common operations we need in multiple apps.
 
 ## Some common scenarios
 
