@@ -125,7 +125,7 @@ The TabbedCommandBar automatically applies styles to known common controls insid
 
 ## Sample Output
 
- ![TabbedCommandBar Overview](../resources/images/Controls/TabbedCommandBar/Overview.gif)
+ ![TabbedCommandBar Overview](../resources/images/Controls/TabbedCommandBar.gif)
 
 ## Properties
 
