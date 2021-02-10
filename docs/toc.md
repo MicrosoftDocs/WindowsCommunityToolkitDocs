@@ -183,6 +183,7 @@
 ## Buffers
 ### [MemoryOwner<T>](high-performance/MemoryOwner.md)
 ### [SpanOwner<T>](high-performance/SpanOwner.md)
+### [StringPool](high-performance/StringPool.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
 ## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
 
