@@ -191,6 +191,7 @@
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
 ## [Guard](developer-tools/Guard.md)
+## [ThrowHelper](developer-tools/ThrowHelper.md)
 
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
