@@ -57,7 +57,7 @@ After you've registered your app, Azure AD will generate a client ID for your ap
 
 When you register your app in the [Azure Management Portal](https://portal.azure.com), you will need to configure details about your application with the following steps:
 
-1. Click "Settings" button
+1. Click the "Settings" button
 2. Go to the "Required permissions" option
 3. Add Application: Choose **Microsoft Graph** API 
 4. Specify the permission levels the MicrosoftGraph Service requires from the Office 365 API (Microsoft Graph). Choose at least:
