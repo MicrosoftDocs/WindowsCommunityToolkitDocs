@@ -46,7 +46,7 @@ You can register your app manually by using the [Azure Management Portal](https:
 2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
     - Go to the [Azure Management Portal](https://portal.azure.com)
     - Go to the "Azure Active Directory" option
-    - Go to "App Registrations" option
+    - Go to the "App Registrations" option
     - Click on the "New application registration" button
     - Enter a name for your App
     - Specify your application as a **Native**
