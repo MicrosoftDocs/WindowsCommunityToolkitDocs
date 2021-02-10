@@ -40,7 +40,7 @@ The [PlannerTaskList Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
-> Note: The permission `Group.ReadWrite.All` used in this control requires [admin consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#request-the-permissions-from-a-directory-admin), which could be done by opening URL like this in browser and sign in with your organization's admin.
+> Note: The permission `Group.ReadWrite.All` used in this control requires [admin consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#request-the-permissions-from-a-directory-admin), which could be done by opening a URL like this in the browser and sign in with your organization's admin.
 > `https://login.microsoftonline.com/common/adminconsent?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&state=12345`
 
 ```c#

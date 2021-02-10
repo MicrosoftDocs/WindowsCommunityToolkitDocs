@@ -206,7 +206,8 @@
 ### [Facebook Service](services/Facebook.md)
 ### [LinkedIn Service](services/Linkedin.md)
 ### [Microsoft Graph Service](services/MicrosoftGraph.md)
-#### [GraphLogin (WinForms)](services/GraphLogin.md)
+### [GraphLogin (WinForms)](services/GraphLogin.md)
+
 ### [Microsoft Translator Service](services/MicrosoftTranslator.md)
 ### [OneDrive Service](services/OneDrive.md)
 ### [Twitter Service](services/Twitter.md)

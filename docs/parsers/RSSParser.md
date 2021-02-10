@@ -23,7 +23,8 @@ This document will show you how to migrate over to the .NET Standard library API
 5. Append `.Text` to any element properties retrieved.
 
 > [!WARNING]
-> If updating a UWP based project, Visual Studio will recommend the `Windows.Web.Syndication` namespace by default. Be sure to ignore this suggestion and instead include the `System.ServiceModel.Syndication` NuGet package and namespace instead.
+> If updating a UWP based project, Visual Studio will recommend the `Windows.Web.Syndication` namespace by default. Be sure to ignore this suggestion and instead include the `System.ServiceModel.Syndication` NuGet package and namespace.
+
 
 ## Toolkit Example
 
