@@ -20,7 +20,8 @@ The **Microsoft Translator Service** allows you to translate text to various sup
 
 ## Set up Microsoft Translator Service
 
-[Signup for Microsoft Translator Service](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation) using your Microsoft Azure subscription account. There is a free trial option for that allows you to translate up to 2,000,000 characters per month.
+[Signup for Microsoft Translator Service](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation) using your Microsoft Azure subscription account. There is a free trial option that allows you to translate up to 2,000,000 characters per month.
+
 
 ## Example Syntax
 
