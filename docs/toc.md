@@ -146,9 +146,6 @@
 ## [Converters](helpers/Converters.md)
 ## [DeepLinkParser](helpers/DeepLinkParsers.md)
 ## [DispatcherHelper](helpers/DispatcherHelper.md)
-## [HttpHelper](helpers/HttpHelper.md)
-## [HttpHelperRequest](helpers/HttpHelperRequest.md)
-## [HttpHelperResponse](helpers/HttpHelperResponse.md)
 ## [ImageCache](helpers/ImageCache.md)
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
@@ -163,20 +160,6 @@
 ## [Triggers](helpers/Triggers.md)
 ## [WeakEventListener](helpers/WeakEventListener.md)
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
-
-# Services
-## [Facebook Service](services/Facebook.md)
-## [LinkedIn Service](services/Linkedin.md)
-## [Microsoft Graph Service](services/MicrosoftGraph.md)
-### [GraphLogin (WinForms)](services/GraphLogin.md)
-## [Microsoft Translator Service](services/MicrosoftTranslator.md)
-## [OneDrive Service](services/OneDrive.md)
-## [Twitter Service](services/Twitter.md)
-## [Weibo Service](services/Weibo.md)
-
-# Parsers
-## [MarkdownParser](parsers/MarkdownParser.md)
-## [RSSParser](parsers/RSSParser.md)
 
 # High performance
 ## [Introduction](high-performance/Introduction.md)
@@ -209,6 +192,10 @@
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 ### [SlidableListItem](archive/SlidableListItem.md)
+## Helpers
+### [HttpHelper](helpers/HttpHelper.md)
+### [HttpHelperRequest](helpers/HttpHelperRequest.md)
+### [HttpHelperResponse](helpers/HttpHelperResponse.md)
 ## Microsoft Graph Controls
 ### [AadLogin](archive/graph/AadLogin.md)
 ### [PeoplePicker](archive/graph/PeoplePicker.md)
@@ -216,5 +203,16 @@
 ### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
 ### [ProfileCard](archive/graph/ProfileCard.md)
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
+## Parsers
+### [MarkdownParser](parsers/MarkdownParser.md)
+### [RSSParser](parsers/RSSParser.md)
 ## Services
 ### [Bing Service](archive/Bing.md)
+### [Facebook Service](services/Facebook.md)
+### [LinkedIn Service](services/Linkedin.md)
+### [Microsoft Graph Service](services/MicrosoftGraph.md)
+### [GraphLogin (WinForms)](services/GraphLogin.md)
+### [Microsoft Translator Service](services/MicrosoftTranslator.md)
+### [OneDrive Service](services/OneDrive.md)
+### [Twitter Service](services/Twitter.md)
+### [Weibo Service](services/Weibo.md)
