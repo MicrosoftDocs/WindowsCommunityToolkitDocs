@@ -11,7 +11,7 @@ dev_langs:
 # HttpHelperRequest
 
 > [!WARNING]
-> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
 > or [Windows.Web.Http.HttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.http.httprequestmessage) directly)
 
 The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers. 
@@ -30,7 +30,7 @@ The **HttpHelperRequest** class has these constructors.
 | Constructor | Description |
 | ----------  | ----------- |
 | HttpHelperRequest([Uri](https://msdn.microsoft.com/library/system.uri.aspx))  | Initializes a new instance of the HttpHelperRequest class with an HTTP Get method and a request Uri.|
-| HttpHelperRequest([HttpMethod](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpmethod.aspx), [Uri](https://msdn.microsoft.com/library/system.uri.aspx))  | Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri.|
+| HttpHelperRequest([HttpMethod](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpmethod.aspx), [Uri](https://msdn.microsoft.com/library/system.uri.aspx))  | Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri.|
 
 ## Methods
 
@@ -38,7 +38,7 @@ The **HttpHelperRequest** class has these methods. It also inherits from **Objec
 
 | Method | Description |
 | ------ | ----------- |
-| ToHttpRequestMessage() | Returns an instance of [**HttpRequestMessage**](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httprequestmessage.aspx) representing current HttpHelperRequest object. |
+| ToHttpRequestMessage() | Returns an instance of [**HttpRequestMessage**](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httprequestmessage.aspx) representing current HttpHelperRequest object. |
 | Dispose() | Performs tasks associated with freeing, releasing, or resetting unmanaged resources. |
 | ToString() | Returns a string that represents the current HttpHelperRequest object. |
 

@@ -10,6 +10,9 @@ dev_langs:
 
 # Weibo Service
 
+> [!WARNING]
+> (This API will be removed in the future.)
+
 The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [https://open.weibo.com](https://open.weibo.com) to create a new app or manage existing apps.
 
 > [!div class="nextstepaction"]
@@ -93,7 +96,7 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## Sample Project
 
-[Weibo Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Weibo Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

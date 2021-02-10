@@ -10,6 +10,9 @@ dev_langs:
 
 # MicrosoftGraph Service
 
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [InteractiveProviderBehavior](../graph/providers/InteractiveProviderBehavior.md).)
+
 The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in order to:
 
 * Retrieve User Information
@@ -38,12 +41,12 @@ To authenticate your app, you need to register your app with Azure AD, and provi
 
 ### Register the App to use Azure AD v1 Endpoint
 
-You can register your app manually by using the [Azure Management Portal](http://portal.azure.com), or by using Visual Studio:
+You can register your app manually by using the [Azure Management Portal](https://portal.azure.com), or by using Visual Studio:
 1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
-2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
-    - Go to the [Azure Management Portal](http://portal.azure.com)
+2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
+    - Go to the [Azure Management Portal](https://portal.azure.com)
     - Go to the "Azure Active Directory" option
-    - Go to "App Registrations" option
+    - Go to the "App Registrations" option
     - Click on the "New application registration" button
     - Enter a name for your App
     - Specify your application as a **Native**
@@ -52,10 +55,10 @@ You can register your app manually by using the [Azure Management Portal](http:/
 
 After you've registered your app, Azure AD will generate a client ID for your app. You'll need to use this client ID to get your access token.
 
-When you register your app in the [Azure Management Portal](http://portal.azure.com), you will need to configure details about your application with the following steps:
+When you register your app in the [Azure Management Portal](https://portal.azure.com), you will need to configure details about your application with the following steps:
 
-1. Click "Settings" button
-2. Go to "Required permissions" option
+1. Click the "Settings" button
+2. Go to the "Required permissions" option
 3. Add Application: Choose **Microsoft Graph** API 
 4. Specify the permission levels the MicrosoftGraph Service requires from the Office 365 API (Microsoft Graph). Choose at least:
    * **Sign in and read user profile** to access user's profile.
@@ -84,7 +87,7 @@ If you don't have one, you need to create an Office 365 Developer Site. There ar
 * [An MSDN subscription](https://msdn.microsoft.com/subscriptions/manage/default.aspx) - This is available to MSDN subscribers with Visual Studio Ultimate and Visual Studio Premium.
 * [An existing Office 365 subscription](https://msdn.microsoft.com/library/2ec857d5-dc6f-4cf6-ba45-adc845ef2a25%28Office.15%29.aspx) - You can use an existing Office 365 subscription, which can be any of the following: Office 365 Midsize Business, Office 365 Enterprise, Office 365 Education, Office 365 Government.
 * [Free O365 trial](https://portal.office.com/Signup?OfferId=6881A1CB-F4EB-4db3-9F18-388898DAF510&DL=DEVELOPERPACK&ali=1) - You can start with a free 30-day trial, or buy an Office 365 developer subscription.
-* [Free O365 Developer](http://dev.office.com/devprogram) - Or Get a One year free Office 365 Developer account
+* [Free O365 Developer](https://dev.office.com/devprogram) - Or Get a One year free Office 365 Developer account
 
 ## Syntax
 
@@ -351,7 +354,7 @@ End If
 
 ## Sample Project
 
-[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MicrosoftGraph Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
