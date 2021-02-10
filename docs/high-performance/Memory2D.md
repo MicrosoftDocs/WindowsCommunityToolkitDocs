@@ -97,7 +97,7 @@ Span2D<int> span = memory.Span;
 | -- | -- | -- |
 | Slice(int, int, int, int) | Memory2D&lt;T> | Slices the current instance with the specified parameters |
 
-# ReadOnlyMemory2D&lt;T>
+## ReadOnlyMemory2D&lt;T>
 
 The [ReadOnlyMemory2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.readonlymemory2d-1) is to the `Memory2D<T>` type what `ReadOnlyMemory<T>` is to `Memory<T>`. It exposes the same exact functionalities (minus the APIs that involve modifying the contents of the wrapped memory area) and provides a read-only view to arbitrary 2D memory locations. For more info on how this type works, you can refer to the paragraph on the `Memory2D<T>` type above.
 
