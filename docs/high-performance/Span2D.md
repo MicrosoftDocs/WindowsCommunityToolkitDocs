@@ -121,7 +121,7 @@ int[] array = span.GetRow(1).ToArray();
 | -- | -- | -- |
 | Slice(int, int, int, int) | Span2D&lt;T> | Slices the current instance with the specified parameters |
 
-# ReadOnlySpan2D&lt;T>
+## ReadOnlySpan2D&lt;T>
 
 The [ReadOnlySpan2D&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.readonlyspan2d-1) is to the `Span2D<T>` type what `ReadOnlySpan<T>` is to `Span<T>`. It exposes a similar set of APIs but provides no way to directly modify the contents of the underlying memory area.
 
