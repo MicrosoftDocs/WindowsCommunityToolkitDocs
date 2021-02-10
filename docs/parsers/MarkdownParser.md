@@ -68,7 +68,7 @@ End Sub
 
 ## Create a Markdown Renderer
 
-In order to create a Markdown Renderer, you can either implement your own, or inherit from `MarkdownRenderBase`, this class already has all the required methods, and some assistive code to make implementing a Renderer easy, all you have to do is implement the Block and Inline Rendering, and the output.
+In order to create a Markdown Renderer, you can either implement your own, or inherit from `MarkdownRendererBase`, this class already has all the required methods, and some assistive code to make implementing a Renderer easy, all you have to do is implement the Block and Inline Rendering, and the output.
 
 This requires an inherited `IRenderContext`, which allows you to keep track of the Context of the rendering.
 
