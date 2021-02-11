@@ -19,12 +19,12 @@ It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the group
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Key | TKey | The key of the group. It is immutable. |
+| Key | TKey | The key of the group. |
 
 ## ObservableGroupedCollection<TKey, TValue>
 
 A list of groups that can be used by a [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource) to display groups in a `ListView` or `GridView`.
-Each group inside the collection has an immutable `TKey` key and contains `TValue` values.
+Each group inside the collection has an observable `TKey` key and contains `TValue` values.
 
 It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 
