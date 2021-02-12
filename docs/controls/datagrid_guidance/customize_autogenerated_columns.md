@@ -51,7 +51,7 @@ if (e.Column.Header.ToString() == "Name")
 1. In the AutoGeneratingColumn event handler, create a new **DataGridColumn**.
    ```C#
    //Replace the DueDate column with a custom template column.
-   if (e.PropertyName = "DueDate")
+   if (e.PropertyName == "DueDate")
    {
     //Create a new template column.
     var templateColumn = new DataGridTemplateColumn();
