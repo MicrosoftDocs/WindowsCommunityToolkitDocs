@@ -10,6 +10,9 @@ dev_langs:
 
 # Facebook Service
 
+> [!WARNING]
+> The Facebook Service is no longer available in the Windows Community Toolkit. The underlying dependent library was no longer maintained.
+
 The Facebook Service allows you to retrieve or publish data to the Facebook graph. Examples of the types of objects you can work with are Posts, Tagged Objects, and the primary user feed.
 
 > [!div class="nextstepaction"]
@@ -276,7 +279,7 @@ Class for connecting to Facebook
 
 ## Sample Project
 
-[Facebook Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Facebook Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

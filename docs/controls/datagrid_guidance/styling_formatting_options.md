@@ -54,7 +54,23 @@ All individual parts of the DataGrid control are customizable through simple Sty
    * *RowStyle* : style that is used when rendering the rows.
    * *ColumnHeaderStyle* : style that is used when rendering the column headers.
    * *RowGroupHeaderStyles* : style that is used when rendering the row group header. The DataGrid control currently supports one-level grouping only - the first style specified as part of RowGroupHeaderStyles will be applied to the row group header.
-   * *RowHeaderStyle* : style that is used when rendering the row headers. The DataGrid control does not have a default visual for the row header. If you would like to alter a row header visual, you should first provide one by altering the DataGrid's control template.
+   * *RowHeaderStyle* : style that is used when rendering the row headers. The DataGrid control does not have a default visual for the row header. To provide one you must provide a `ContentTemplate` for `Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader`. For Example: 
+
+```xml
+   xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
+
+   <Style TargetType="wctprimitives:DataGridRowHeader">
+      <Setter Property="Template">
+           <Setter.Value>
+               <ControlTemplate TargetType="wctprimitives:DataGridRowHeader">
+                   <Grid Background="Red">
+                       <TextBlock Text="{Binding Name}" />
+                   </Grid>
+               </ControlTemplate>
+           </Setter.Value>
+      </Setter>
+   </Style>
+```
 
 Whether defined as an inline style or as a resource, the Style defines the appearance of cells/rows/columns/headers in the data grid, and should specify the appropriate TargetType (say, **DataGridCell** for CellStyle). You typically specify setters for individual properties, and might also use a setter for the Template property if you wanted to change the composition of elements.
 

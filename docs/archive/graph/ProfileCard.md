@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ProfileCard Control
 
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [PersonView](../../graph/controls/PersonView.md).)
+
 The [ProfileCard Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.profilecard) is a simple way to display a user in multiple different formats and mixes of name/image/e-mail, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
@@ -56,7 +59,7 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[ProfileCard Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[ProfileCard Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 

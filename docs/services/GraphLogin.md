@@ -9,6 +9,10 @@ dev_langs:
 ---
 
 # GraphLogin Component
+
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [LoginButton](../graph/controls/LoginButton.md) control.)
+
 <!-- Describe your control -->
 The GraphLogin component is a Windows Forms component that provides an easy to use experience for authenticating with Azure AD and the Microsoft Graph.  This component is being provided for Windows Forms developers that need a Microsoft Graph authentication solution on Windows 10 builds 1803 and earlier and on Windows 7.
 

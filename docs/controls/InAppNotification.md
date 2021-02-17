@@ -62,6 +62,7 @@ You can change this behavior with one of these values:
 | Show(String, int) | void | Show notification using text as the content of the notification with a display duration |
 | Show(DataTemplate, int) | void | Show notification using DataTemplate as the content of the notification with a display duration |
 | Show(UIElement, int) | void | Show notification using UIElement as the content of the notification with a display duration |
+| Show(object, int) | void | Show notification using object as the content of the notification with a display duration. Object will be displayed using the `InAppNotification.ContentTemplate` data template. |
 
 ## Events
 
@@ -127,6 +128,23 @@ You can change this behavior with one of these values:
         If isTemplatePresent AndAlso TypeOf inAppNotificationWithButtonsTemplate Is DataTemplate Then
             ExampleInAppNotification.Show(TryCast(inAppNotificationWithButtonsTemplate, DataTemplate))
         End If
+        ```
+
+    - By using a `DataTemplate` and an object
+
+        ```xaml
+        <controls:InAppNotification
+            x:Name="ExampleInAppNotification"
+            ContentTemplate="{StaticResource MyNotificationDataTemplate}" />
+        ```
+
+        ```csharp
+        var notificationData = new MyNotificationData("Title", "Message");
+        ExampleInAppNotification.Show(notificationData, duration: 2000);
+        ```
+        ```vb
+        Dim notificationData As New MyNotificationData("Title", "Message");
+        ExampleInAppNotification.Show(notificationData, duration: 2000);
         ```
 
 - By passing a second argument to the `Show()` method, you can set the duration of the notification (in milliseconds).
