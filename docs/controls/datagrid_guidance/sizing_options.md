@@ -54,7 +54,7 @@ The following table shows the values provided by the DataGridLengthUnitType stru
 | SizeToCells | The cell-based automatic sizing mode sizes DataGrid columns based on the contents of cells in the column, not including column headers.|
 | SizeToHeader | The header-based automatic sizing mode sizes DataGrid columns based on the contents of column headers only.|
 | Pixel | The pixel-based sizing mode sizes DataGrid columns based on the numeric value provided.|
-| Star | The star sizing mode is used to distribute available space by weighted proportions. In XAML, star values are expressed as n* where n represents a numeric value. 1* is equivalent to *. For example, if two columns in a DataGrid had widths of * and 2*, the first column would receive one portion of the available space and the second column would receive two portions of the available space.
+| Star | The star sizing mode is used to distribute available space by weighted proportions. In XAML, star values are expressed as n\* where n represents a numeric value. 1\* is equivalent to \*. For example, if two columns in a DataGrid had widths of \* and 2\*, the first column would receive one portion of the available space and the second column would receive two portions of the available space.
 
 The **DataGridLengthConverter** class can be used to convert data between numeric or string values and DataGridLength values.
 
