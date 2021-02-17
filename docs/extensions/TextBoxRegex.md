@@ -143,19 +143,19 @@ The following sample demonstrates how to add TextBoxRegex property.
                 </StackPanel>
             </StackPanel>
 
-			<StackPanel Grid.Row="4"
+            <StackPanel Grid.Row="4"
                         Margin="10,10,10,0">
-				<TextBox Name="NumberValidatorDynamic"
-							extensions:TextBoxRegex.ValidationMode="Dynamic"
-							extensions:TextBoxRegex.ValidationType="Number"
-							Header="Text box with ValidationType=Number, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid"
-							HeaderTemplate="{StaticResource HeaderTemplate}"
-							Style="{StaticResource TextBoxRegexStyle}" />
-				<StackPanel Orientation="Horizontal">
-					<TextBlock Text="Is Valid: " />
-					<TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=NumberValidatorDynamic, Converter={StaticResource StringFormatConverter}}" />
-				</StackPanel>
-			</StackPanel>
+                <TextBox Name="NumberValidatorDynamic"
+                   extensions:TextBoxRegex.ValidationMode="Dynamic"
+                   extensions:TextBoxRegex.ValidationType="Number"
+                   Header="Text box with ValidationType=Number, validation occurs at input with ValidationMode=Dynamic and clear only single character when value is invalid"
+                   HeaderTemplate="{StaticResource HeaderTemplate}"
+                   Style="{StaticResource TextBoxRegexStyle}" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Is Valid: " />
+                    <TextBlock Text="{Binding (extensions:TextBoxRegex.IsValid), ElementName=NumberValidatorDynamic, Converter={StaticResource StringFormatConverter}}" />
+                </StackPanel>
+            </StackPanel>
 
         </Grid>
     </Grid>

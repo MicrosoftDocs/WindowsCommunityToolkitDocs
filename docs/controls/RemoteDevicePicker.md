@@ -35,7 +35,7 @@ You can also use default filter types for initializing. Like Below.
 RemoteDevicePicker remoteDevicePicker = new RemoteDevicePicker(RemoteSystemDiscoveryType.Proximal, RemoteSystemAuthorizationKind.Anonymous, RemoteSystemStatusType.Any)
 {
     Title = "Pick Remote Device",
-	SelectionMode = RemoteDevicesSelectionMode.Multiple
+    SelectionMode = RemoteDevicesSelectionMode.Multiple
 };
 
 var remoteSystems = await remoteDevicePicker.PickDeviceAsync();

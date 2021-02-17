@@ -26,7 +26,7 @@ The Windows Store SID is a unique value per application generated, and it not ti
 // Put the following code in your mainform loaded event
 // Note that this will not work in the App.xaml.cs Loaded
 #if DEBUG
-	System.Diagnostics.Debug.WriteLine("Windows Store SID = " + Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance.WindowsStoreId);
+    System.Diagnostics.Debug.WriteLine("Windows Store SID = " + Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance.WindowsStoreId);
 #endif
 ```
 ```vb

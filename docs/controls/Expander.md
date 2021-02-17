@@ -21,8 +21,8 @@ You can show or hide this content by interacting with the Header.
 
 <controls:Expander Header="Header of the expander" Foreground="White"
                    Background="Gray" IsExpanded="True">
-	<!-- Expander content -->
-</controls:Expander>       
+  <!-- Expander content -->
+</controls:Expander>
 ```
 
 ## Sample Output

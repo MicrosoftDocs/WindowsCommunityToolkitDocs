@@ -100,9 +100,9 @@ ExpressionAnimations can create some very powerful and unique experiences, but c
 
 ```csharp
 _parallaxExpression = compositor.CreateExpressionAnimation(
-	"(ScrollManipulation.Translation.Y + StartOffset) * ParallaxValue - 
-	(ScrollManipulation.Translation.Y + StartOffset)");
-``` 
+     "(ScrollManipulation.Translation.Y + StartOffset) * ParallaxValue - " +
+    "(ScrollManipulation.Translation.Y + StartOffset)");
+```
 
 This creates a series of challenges when authoring Expressions in this manner:
 
@@ -218,9 +218,9 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
   - Referencing ExpressionValues and ExpressionFunctions in your code can be a bit verbose, so you can define shortened versions in the Using section of your app:
 
-	```csharp
-	using EF = ExpressionBuilder.ExpressionFunctions;
-	using EV = ExpressionBuilder.ExpressionValues;
+    ```csharp
+    using EF = ExpressionBuilder.ExpressionFunctions;
+    using EV = ExpressionBuilder.ExpressionValues;
     ```
 
 # <a name="intro"></a>Intro
@@ -524,7 +524,7 @@ _propSet.InsertScalarProperty("delta", new Vector3(10));
 
 // Create a static Reference Parameter to a PropertySet and a property inside it
 var newPosition = _redBall.GetReference().Offset +
-	           _propSet.GetReference().GetVector3Property("delta");
+                _propSet.GetReference().GetVector3Property("delta");
 _visual.StartAnimation("Offset", newPosition);
 ```
 
@@ -558,7 +558,7 @@ In the example below, the developer wants to grab a subchannel reference to an X
 
 ```csharp
 Vector2Node xYChannel = _visual.GetReference().Offset.Subchannels(
-	                 Vector3Node.Subchannel.X, Vector3Node.Subchannel.Y);
+                        Vector3Node.Subchannel.X, Vector3Node.Subchannel.Y);
 ```
 
 ### <a name="templating"></a>Templating
@@ -574,8 +574,8 @@ In the example below, we create a generic Expression and attach to two different
 ```csharp
 // Define the Expression template
 var delta = new Vector3(50.0f);
-var deltaExpression = 
-	ExpressionValues.Reference.CreateVisualReference("visual").Offset + delta;
+var deltaExpression =
+    ExpressionValues.Reference.CreateVisualReference("visual").Offset + delta;
 
 // [Later on in code  ...]
 // Set value of "visual" to be a reference to _redBall
@@ -608,8 +608,8 @@ In the example below, we create an Expression using the Target keyword:
 ```csharp
 // windowWidth defined earlier
 // Target creates a reference to _visual
-var opacityExpression = 
-	ExpressionValues.Target.CreateVisualTarget().Offset.X / windowWidth;
+var opacityExpression =
+    ExpressionValues.Target.CreateVisualTarget().Offset.X / windowWidth;
 _visual.StartAnimation("Opacity", opacityExpression);
 ```
 
@@ -762,16 +762,16 @@ In the old world, you could construct constant types within the string equation.
 
 ```csharp
 // Old way
-var expOldWorld = 
-	_compositor.CreateExpressionAnimation("visB.Offset + Vector3(50f, 50f, 0f)");
+var expOldWorld =
+    _compositor.CreateExpressionAnimation("visB.Offset + Vector3(50f, 50f, 0f)");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 
 // New Way (Option 1)
-var expNewWorldTemplate = 
-	_visualB.GetReference().Offset + ExpressionFunctions.Vector3(50f, 50f, 50f);
+var expNewWorldTemplate =
+    _visualB.GetReference().Offset + ExpressionFunctions.Vector3(50f, 50f, 50f);
 // New Way (Option 2)
-var expNewWorldTemplate = 
-	_visualB.GetReference().Offset + new System.Numerics.Vector3(50, 50, 50);
+var expNewWorldTemplate =
+    _visualB.GetReference().Offset + new System.Numerics.Vector3(50, 50, 50);
 ```
 
 ## <a name="defining-reference-parameters"></a>Defining Reference Parameters
@@ -790,7 +790,7 @@ var expNewWorld = _visualB.GetReference().Offset;
 // New Way (2)
 // "Create" a reference and assign the value
 var expNewWorldTemplate = 
-	ExpressionValues.Reference.CreateVisualReference("visB").Offset;
+ ExpressionValues.Reference.CreateVisualReference("visB").Offset;
 expNewWorldTemplate.SetReferenceParameter("visB", _visualB);
 ```
 
@@ -804,13 +804,13 @@ For operators, they were simply included in the string in the old world. In the 
 // Old way
 var extraOffset = new Vector3(50f);
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"Lerp(0f, 1f, visB.Offset.X / windowWidth");
+    "Lerp(0f, 1f, visB.Offset.X / windowWidth");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 expOldWorld.SetScalarParameter("windowWidth", windowWidth);
 
 // New Way
-var expNewWorld = 
-	ExpressionFunctions.Lerp(0f, 1f, _visualB.GetReference().Offset.X / windowWidth);
+var expNewWorld =
+    ExpressionFunctions.Lerp(0f, 1f, _visualB.GetReference().Offset.X / windowWidth);
 ```
 
 ## <a name="using-ternary-and-conditional-operators"></a>Using Ternary and Conditional Operators
@@ -822,7 +822,7 @@ In the old world you would use the *Condition ? ifTrue : ifFalse* format for the
 
 // Old way
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"(visA.Orientation == visB.Orientation) ? rotBy30 : rotby45");
+    "(visA.Orientation == visB.Orientation) ? rotBy30 : rotby45");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 expOldWorld.SetReferenceParameter("visA", _visualA);
 expOldWorld.SetQuaternionParameter("rotBy30", rotateBy30);
@@ -855,7 +855,7 @@ In the new world, the StartingValue/CurrentValue/Target keywords are made availa
 ```csharp
 // Old way
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"visA.RotationAngle <= Pi ? this.StartingValue : fullSize");
+    "visA.RotationAngle <= Pi ? this.StartingValue : fullSize");
 expOldWorld.SetReferenceParameter("visA", _visualA);
 expOldWorld.SetVector2Parameter("fullSize", fullSize);
 
@@ -893,7 +893,7 @@ _parallaxExpression.SetReferenceParameter("ScrollManipulation", _scrollPropertie
 _parallaxExpression.Expression = "(ScrollManipulation.Translation.Y + StartOffset - (0.5 * ItemHeight)) * ParallaxValue - (ScrollManipulation.Translation.Y + StartOffset - (0.5 * ItemHeight))";
 //[Later in the code …]
 _parallaxExpression.SetScalarParameter(
-	"StartOffset", (float)args.ItemIndex * visual.Size.Y / 4.0f);
+    "StartOffset", (float)args.ItemIndex * visual.Size.Y / 4.0f);
 visual.StartAnimation("Offset.Y", _parallaxExpression);
 ```
 
@@ -917,12 +917,12 @@ visual.StartAnimation("Offset.Y", _parallaxExpression);
 So let’s get started building this Expression into an ExpressionNode. To start, we’ll make three variables to keep track of the three Scalar Parameters and specifically for templating purposes:
 
 ```csharp
-var startOffset = 
-	ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
-var parallaxValue = 
-	ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
-var itemHeight = 
-	ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
+var startOffset =
+    ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
+var parallaxValue =
+    ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
+var itemHeight =
+    ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
 ```
 
 Next, let’s get a reference to that ManipulationPropertySet (specifically, the Translation.Y property). To do that, we need to:
@@ -962,12 +962,12 @@ visual.StartAnimation("Offset.Y", parallaxExpression);
 
 ```csharp
 // Not necessary to define as variables, could put directly into parallax variable
-var startOffset = 
-	ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
-var parallaxValue = 
-	ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
-var itemHeight = 
-	ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
+var startOffset =
+    ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
+var parallaxValue =
+    ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
+var itemHeight =
+    ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
 // Not necessary to define into variable, could put directly into parallax variable
 var yTranslation =
 _scrollProperties.GetSpecializedReference<ManipulationPropertySetReferenceNode>()
@@ -993,7 +993,9 @@ Let’s first look at the relevant code for how the Expression is built today us
 ```csharp
 ExpressionAnimation expressionAnimation = 
 compositor.CreateExpressionAnimation(
-	"visual.Offset + propertySet.CenterPointOffset + " + 	"Vector3(cos(ToRadians(propertySet.Rotation)) * 150," +                                                                                            	"sin(ToRadians(propertySet.Rotation)) * 75, 0)");
+    "visual.Offset + propertySet.CenterPointOffset + " +
+    "Vector3(cos(ToRadians(propertySet.Rotation)) * 150," +
+    "sin(ToRadians(propertySet.Rotation)) * 75, 0)");
 
 expressionAnimation.SetReferenceParameter("propertySet", propertySet);
 expressionAnimation.SetReferenceParameter("visual", redSprite);
@@ -1022,16 +1024,16 @@ using EF = HelperClasses.ExpressionFunctions;
 First, we get a reference to the PropertySet and its Rotation and CenterPointOffset properties:
 
 ```csharp
-var rotation = 
-	propertySet.GetReference().GetScalarProperty("Rotation");
-var centerPointOffset = 	propertySet.GetReference().GetVector3Property("CenterPointOffset");
+var rotation =
+    propertySet.GetReference().GetScalarProperty("Rotation");
+var centerPointOffset = propertySet.GetReference().GetVector3Property("CenterPointOffset");
 ```
 
 Now we are ready to put together the full Expression:
 
 ```csharp
 var orbitExp = visual.GetReference().Offset + centerPointOffset +
-               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150, 	
+               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150,  
                           EF.Sin(EF.ToRadians(rotation)) * 75, 
                           0f);
 ```
@@ -1041,12 +1043,12 @@ var orbitExp = visual.GetReference().Offset + centerPointOffset +
 ```csharp
 using EF = HelperClasses.ExpressionFunctions;
 
-var rotation = 
-	propertySet.GetReference().GetScalarProperty("Rotation");
-var centerPointOffset = 	propertySet.GetReference().GetVector3Property("CenterPointOffset");
+var rotation =
+    propertySet.GetReference().GetScalarProperty("Rotation");
+var centerPointOffset = propertySet.GetReference().GetVector3Property("CenterPointOffset");
 var orbitExp = visual.GetReference().Offset + centerPointOffset +
-               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150, 	
-                          EF.Sin(EF.ToRadians(rotation)) * 75, 
+               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150,
+                          EF.Sin(EF.ToRadians(rotation)) * 75,
                           0f);
 ```
 
@@ -1071,13 +1073,13 @@ modifier.Condition = _compositor.CreateExpressionAnimation("true");
 
 // Define a spring-like force, anchored at position 0.
 modifier.Motion = _compositor.CreateExpressionAnimation(
-	@"(-(this.target.Position.Y) * springConstant) - (dampingConstant * 	this.target.PositionVelocityInPixelsPerSecond.Y)");
+    @"(-(this.target.Position.Y) * springConstant) - (dampingConstant * this.target.PositionVelocityInPixelsPerSecond.Y)");
 
 modifier.Motion.SetScalarParameter("dampingConstant", dampingConstant);
 modifier.Motion.SetScalarParameter("springConstant", springConstant);
 
 _tracker.ConfigurePositionYInertiaModifiers(
-	new InteractionTrackerInertiaModifier[] { modifier });
+    new InteractionTrackerInertiaModifier[] { modifier });
 ```
 
 ### <a name="curtain-summary-expression-definition"></a>Summary Expression Definition
@@ -1107,8 +1109,8 @@ var target = ExpressionValues.Target.CreateInteractionTrackerTarget();
 At this point, we are ready to build out the rest of the Expression and set the Motion component of the InertiaModifier, using another extension method CompositionExtensions.SetMotion(…):
 
 ```csharp
-var motion = (-target.Position.Y * springConstant) - 
-	(dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
+var motion = (-target.Position.Y * springConstant) -
+    (dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
 modifier.SetMotion(motion);
 ```
 
@@ -1124,12 +1126,12 @@ var modifier = InteractionTrackerInertiaMotion.Create(_compositor);
 modifier.SetCondition(true);
 
 var target = ExpressionValues.Target.CreateInteractionTrackerTarget();
-var motion = (-target.Position.Y * springConstant) - 
-	(dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
+var motion = (-target.Position.Y * springConstant) -
+    (dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
 modifier.SetMotion(motion);
 
 _tracker.ConfigurePositionYInertiaModifiers(
-	new InteractionTrackerInertiaModifier[] { modifier });
+    new InteractionTrackerInertiaModifier[] { modifier });
 ```
 
 ## <a name="requirements"></a>Requirements

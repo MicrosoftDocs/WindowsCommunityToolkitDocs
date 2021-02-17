@@ -71,15 +71,15 @@ Here is another example, this time using the `For` API to initialize all the ite
 public readonly struct ArrayInitializer : IAction
 {
     private int[] array;
-    
+
     public ArrayInitializer(int[] array)
     {
         this.array = array;
     }
-    
+
     public void Invoke(int i)
     {
-    	this.array[i] = i;
+        this.array[i] = i;
     }
 }
 

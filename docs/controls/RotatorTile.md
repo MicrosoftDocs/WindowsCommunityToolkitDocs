@@ -19,11 +19,11 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
 <controls:RotatorTile x:Name="Tile1"
-	Background="LightGray"
-	Direction="Up" 
-	Width="400"
-	Height="200"
-	Margin="20"/>
+    Background="LightGray"
+    Direction="Up"
+    Width="400"
+    Height="200"
+    Margin="20"/>
 ```
 
 ## Example Image
