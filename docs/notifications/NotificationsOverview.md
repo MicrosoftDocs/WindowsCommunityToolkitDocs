@@ -34,7 +34,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 ### Sending toasts from Win32 C# apps
 
-If you're developing a non-UWP C# app for Windows, the Windows Community toolkit makes it easier to send an interactive toast notification from your Win32 C# app. To learn more, see [Send a local toast notification from desktop C# apps](https://docs.microsoft.com/en-us/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop).
+If you're developing a non-UWP C# app for Windows, the Windows Community toolkit makes it easier to send an interactive toast notification from your Win32 C# app. To learn more, see [Send a local toast notification from desktop C# apps](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/send-local-toast-desktop).
 
 ## Requirements
 

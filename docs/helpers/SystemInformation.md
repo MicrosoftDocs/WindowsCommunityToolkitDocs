@@ -51,7 +51,7 @@ The [SystemInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[System Information Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[System Information Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

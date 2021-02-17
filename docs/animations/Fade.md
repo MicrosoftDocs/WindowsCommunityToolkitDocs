@@ -106,7 +106,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Fade Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Fade). You can [see this in action](uwpct://Animations?sample=Fade) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Fade Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Fade). You can [see this in action](uwpct://Animations?sample=Fade) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

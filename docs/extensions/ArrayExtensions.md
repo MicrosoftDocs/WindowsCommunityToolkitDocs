@@ -5,7 +5,7 @@ description: Array extension methods from toolkit
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 ---
 
-### Array Extensions
+# Array Extensions
 
 Provides a few helpers for dealing with multidimensional and jagged arrays. Also, provides string helpers for debug output.
 
@@ -41,7 +41,7 @@ Output:
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |

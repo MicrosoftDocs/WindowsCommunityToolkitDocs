@@ -11,7 +11,7 @@ The [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.
 
 * [AutoPlay](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.autoplay) plays a Lottie animation as soon as it is loaded.
 * [IsPlaying](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.isplaying) indicates whether a play is currently underway.
-* [PlaybackRate](https://docs.microsoft.com/en-us/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playbackrate) is a live property that modifies the rate of the animation; negative values change the direction of playback.
+* [PlaybackRate](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playbackrate) is a live property that modifies the rate of the animation; negative values change the direction of playback.
 * [PlayAsync(Double, Double, Boolean)](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) plays a Lottie animation asynchronously between two specified progress values, looping or once.
 * [Pause()](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.pause) pauses the animation.
 * [Resume()](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.resume) resumes a paused animation.
@@ -101,6 +101,6 @@ Now, let's introduce Pause, Stop, and Reverse Buttons and update the method abov
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/PlaybackPage.xaml.cs) for sample: configuring animation playback
-* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

@@ -206,7 +206,7 @@ End Using ' acv.Refresh() gets called here
 
 ## Sample Project
 
-[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

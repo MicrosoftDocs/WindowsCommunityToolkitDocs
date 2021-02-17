@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Group, sort and filter data in the DataGrid Control
 
-It is often useful to view data in a DataGrid in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a DataGrid, you bind it to a [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource). You can then manipulate the data in the backing data source using LINQ queries without affecting the underlying data. The changes in the collection view are reflected in the DataGrid user interface (UI).
+It is often useful to view data in a DataGrid in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a DataGrid, you bind it to a [CollectionViewSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.data.collectionviewsource). You can then manipulate the data in the backing data source using LINQ queries without affecting the underlying data. The changes in the collection view are reflected in the DataGrid user interface (UI).
 
 The following walk-throughs demonstrate how to implement grouping, sorting and filtering for the DataGrid control through examples.
 
@@ -15,7 +15,7 @@ See [DataGrid Sample](https://github.com/Microsoft/WindowsCommunityToolkit/tree/
 
 ## 1. Grouping
 
-The DataGrid control has built-in row group header visuals for one-level grouping. You can set the DataGrid.ItemsSource to a grouped collection through [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource) with **IsSourceGrouped** property set to True and the DataGrid will automatically show the contents grouped under row group headers based on the data source.
+The DataGrid control has built-in row group header visuals for one-level grouping. You can set the DataGrid.ItemsSource to a grouped collection through [CollectionViewSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.data.collectionviewsource) with **IsSourceGrouped** property set to True and the DataGrid will automatically show the contents grouped under row group headers based on the data source.
 
 The following walk-through shows how to implement and customize grouping in the DataGrid control.
 

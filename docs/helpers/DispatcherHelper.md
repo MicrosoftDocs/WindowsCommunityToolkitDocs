@@ -10,13 +10,13 @@ dev_langs:
 
 # DispatcherHelper
 
-The DispatcherHelper class enables easy interaction with [CoreDispatcher](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.aspx), mainly in the case of executing a block of code on the UI thread from a non-UI thread.
+The DispatcherHelper class enables easy interaction with [CoreDispatcher](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.coredispatcher.aspx), mainly in the case of executing a block of code on the UI thread from a non-UI thread.
 
 _What is included in the helper?_
 
-- Extension method with overloads for [CoreDispatcher](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.aspx) class.
+- Extension method with overloads for [CoreDispatcher](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.coredispatcher.aspx) class.
 
-- Extension method with overloads for [CoreApplicationView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.coreapplicationview.aspx) (for multi window applications).
+- Extension method with overloads for [CoreApplicationView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.coreapplicationview.aspx) (for multi window applications).
 
 - Static helper methods for executing a specific function on the UI thread of the current application's main window.
 
@@ -102,7 +102,7 @@ End Function)
 
 ## Sample Project
 
-[DispatcherHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DispatcherHelper). You can [see this in action](uwpct://Helpers?sample=DispatcherHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[DispatcherHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DispatcherHelper). You can [see this in action](uwpct://Helpers?sample=DispatcherHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -113,7 +113,7 @@ Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 
 ## Sample Project
 
-[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

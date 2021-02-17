@@ -36,7 +36,7 @@ FocusTracker will display the following information (when available) about the c
 
 ## Sample Project
 
-[FocusTracker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can [see this in action](uwpct://Controls?sample=FocusTracker) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[FocusTracker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can [see this in action](uwpct://Controls?sample=FocusTracker) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
