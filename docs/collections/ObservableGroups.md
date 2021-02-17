@@ -16,7 +16,6 @@ A group of `TValue` objects with a key of type `TKey`.
 It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection<TValue>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the groups.
 
-
 | Property | Type | Description |
 | -- | -- | -- |
 | Key | TKey | The key of the group. |
@@ -27,7 +26,6 @@ A list of groups that can be used by a [CollectionViewSource](https://docs.micro
 Each group inside the collection has an observable `TKey` key and contains `TValue` values.
 
 It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection<T>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
-
 
 ```csharp
 // Grab a sample type
@@ -79,7 +77,6 @@ If changes are made to the underlying collection, the `ReadOnlyObservableGroup<T
 Represents a read-only `ObservableGroupedCollection<TKey, TValue>`.
 This class is a read-only wrapper around an `ObservableGroupedCollection<TKey, TValue>`.
 If changes are made to the underlying collection, the `ReadOnlyObservableGroupedCollection<TKey, TValue>` reflects those changes.
-
 
 ## IReadOnlyObservableGroup
 

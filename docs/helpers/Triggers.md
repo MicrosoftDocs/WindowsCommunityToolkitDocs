@@ -92,7 +92,6 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 | Namespace | Microsoft.Toolkit.Uwp.UI.Triggers |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
-
 ## API
 
 * [Triggers source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI/Triggers)
