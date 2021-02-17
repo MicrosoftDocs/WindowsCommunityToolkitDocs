@@ -30,7 +30,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
     * In your C# page, add the namespaces to the toolkit:
 
-        ```c#
+        ```csharp
         using Microsoft.Toolkit.Uwp;
         ```
 

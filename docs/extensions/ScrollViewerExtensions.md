@@ -64,7 +64,7 @@ The ScrollBarMargin property provides a way to assign a Thickness to the vertica
 
 The converter is used to just bind to top margin, moving only the ScrollBar's top end.
 
-```c#
+```csharp
 class DoubleTopThicknessConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)

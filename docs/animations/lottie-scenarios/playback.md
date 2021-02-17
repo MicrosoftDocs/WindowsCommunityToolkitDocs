@@ -32,7 +32,7 @@ Let’s set up a Lottie animation that plays in response to an event, for instan
 
 Next, let’s configure the PlayAsync method with the from and to progress values and no looping enabled. We won’t `await` the PlayAsync because we don’t want to wait until the animation has finished playing. Since we’re intentionally ignoring the IAsyncAction returned from PlayAsync in this case, we assign the result to a [C# 7 discard](https://docs.microsoft.com/dotnet/csharp/discards#a-standalone-discard) to avoid a CS1998 compiler warning.
 
-```C#
+```csharp
     private void PlayButton_Click(object sender, RoutedEventArgs e)
     {
         _ = player.PlayAsync(fromProgress: 0, toProgress: 1, looped: false);
@@ -44,7 +44,7 @@ Now, let's introduce Pause, Stop, and Reverse Buttons and update the method abov
 
 ![Playback Gif](../../resources/images/Animations/Lottie/LottieDocs_Playback.gif)
 
-```C#
+```csharp
     private void PlayButton_Click(object sender, RoutedEventArgs e)
     {
         // Set forward playback rate.

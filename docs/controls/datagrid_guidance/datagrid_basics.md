@@ -40,13 +40,13 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
     * Add the namespaces to the toolkit
 
-        ```c#
+        ```csharp
         using Microsoft.Toolkit.Uwp.UI.Controls;
         ```
 
     * Add the control in your Loaded event
 
-        ```c#
+        ```csharp
         DataGrid dataGrid1 = new DataGrid();
         LayoutRoot.Children.Add(dataGrid1);
         ```
@@ -62,7 +62,7 @@ You can use the **DataGrid.ItemsSource** property to bind to a collection that w
     ItemsSource="{x:Bind MyViewModel.Customers}" />  
 ```
 
-```C#
+```csharp
 //backing data source in MyViewModel
 public class Customer
 {
@@ -180,7 +180,7 @@ The following code example demonstrates how to specify and configure a **DataGri
 
 Code-Behind:
 
-```C#
+```csharp
 public class Department
 {
     public int DepartmentId { get; set; }

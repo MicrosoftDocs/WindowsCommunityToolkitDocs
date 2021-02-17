@@ -33,7 +33,7 @@ Follow these steps to install the High Performance package:
 
 3. Add a using directive in your C# files to use the new APIs:
 
-    ```c#
+    ```csharp
     using Microsoft.Toolkit.HighPerformance;
     ```
 

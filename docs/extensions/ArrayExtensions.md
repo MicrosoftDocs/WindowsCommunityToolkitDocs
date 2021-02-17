@@ -11,7 +11,7 @@ Provides a few helpers for dealing with multidimensional and jagged arrays. Also
 
 ## Syntax
 
-```c#
+```csharp
 using Microsoft.Toolkit.Extensions;
 
 bool[,] inside = new bool[4, 5];
