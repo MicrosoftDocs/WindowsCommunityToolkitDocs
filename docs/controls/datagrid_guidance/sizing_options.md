@@ -12,6 +12,7 @@ Various options are available to control how the [DataGrid](../datagrid.md) size
 ## Sizing the DataGrid
 
 ### Cautions When Using Automatic Sizing
+
 By default, the **Height** and **Width** properties of the [DataGrid](../datagrid.md) are set to *Double.NaN* ("Auto" in XAML), and the DataGrid will adjust to the size of its contents.
 
 When placed inside a container that does not restrict the size of its children, such as a [StackPanel](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.stackpanel), the DataGrid, like [ListView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listview) and other scrollable controls, will stretch beyond the visible bounds of the container and scrollbars will not be shown. This condition has both usability and performance implications.
@@ -23,6 +24,7 @@ An object is created for each row in the DataGrid. If you are working with a lar
 To avoid these issues when you work with large data sets, it is recommended that you specifically set the Height of the DataGrid or place it in a container that will restrict its Height, such as a [Grid](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.grid) or [RelativePanel](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.relativepanel). When the Height is restricted, the DataGrid will only create the rows that will fit within its specified Height, and will recycle those rows as needed to display new data.
 
 ### Setting the DataGrid Size
+
 The DataGrid can be set to automatically size within specified boundaries, or the DataGrid can be set to a specific size. The following table shows the properties that can be set to control the DataGrid size.
 
 | Property | Description |
@@ -37,14 +39,17 @@ The DataGrid can be set to automatically size within specified boundaries, or th
 ## Sizing Rows and Row Headers
 
 ### DataGrid Rows
+
 By default, a DataGrid row's Height property is set to Double.NaN ("Auto" in XAML), and the row height will expand to the size of its contents. The height of all rows in the DataGrid can be specified by setting the **DataGrid.RowHeight** property. Users cannot change the row height by dragging the row header dividers.
 
 ### DataGrid Row Headers
+
 By default, DataGrid row headers are not displayed. To display row headers, the **HeadersVisibility** property must be set to *DataGridHeadersVisibility.Row* or *DataGridHeadersVisibility.All* and the DataGrid's ControlTemplate should be altered to provide a visual for the RowHeader as desired. By default, when row headers are displayed, they automatically size to fit their content. The row headers can be given a specific width by setting the **DataGrid.RowHeaderWidth** property.
 
 ## Sizing Columns and Column Headers
 
 ### DataGrid Columns
+
 The DataGrid uses values of the **DataGridLength** and the **DataGridLengthUnitType** structure to specify absolute or automatic sizing modes.
 The following table shows the values provided by the DataGridLengthUnitType structure.
 
@@ -72,9 +77,11 @@ Columns in the DataGrid can also be set to automatically size only within specif
 | DataGridColumn.Width | Sets a specific width for an individual column. Overrides DataGrid.ColumnWidth.|
 
 ### DataGrid Column Headers
+
 By default, DataGrid column headers are displayed. To hide column headers, the **HeadersVisibility** property must be set to *DataGridHeadersVisibility.Row* or *DataGridHeadersVisibility.None*. By default, when column headers are displayed, they automatically size to fit their content. The column headers can be given a specific height by setting the **DataGrid.ColumnHeaderHeight** property.
 
 ### Resizing columns by the end user
+
 Users can resize DataGrid columns by dragging the column header dividers with mouse/touch/pen. The DataGrid does not support automatic resizing of columns by double-clicking the column header divider. To prevent a user from resizing particular columns, set the **DataGridColumn.CanUserResize** property to false for the individual columns. To prevent users from resizing all columns, set the **DataGrid.CanUserResizeColumns** property to false.
 
 ## See Also

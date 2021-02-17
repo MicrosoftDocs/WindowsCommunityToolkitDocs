@@ -10,6 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 The [DataGrid](../datagrid.md) control supports various styling and formatting options both through XAML at design time as well as procedurally in code. Some of the common ways to customize the look and feel of the DataGrid control include the following:
 
 ## 1. GridLines
+
 You can control the visibility of the grid lines separating inner cells using the **DataGrid.GridLinesVisibility** property. The **DataGridGridLinesVisibility** enumeration has the following member values:
    * *None*: No grid lines are shown
    * *Horizontal*: Only horizontal grid lines, which separate rows, are shown.
@@ -24,6 +25,7 @@ You can also change the color of the gridlines using **HorizontalGridLinesBrush*
 ![Gridlines](../../resources/images/Controls/DataGrid/gridlines.png)
 
 ## 2. Alternating rows
+
 You can set the **RowBackground**, **RowForeground**, **AlternatingRowBackground** and **AlternatingRowForeground** properties to desired brushes and create customized alternating rows for your DataGrid control.
 
 The RowBackground and RowForeground properties are used to paint the background and foreground of all rows in the DataGrid control. If AlternatingRowBackground and/or AlternatingRowForeground properties are not null, their values override the RowBackground and RowForeground values for odd-numbered rows.
@@ -34,6 +36,7 @@ The RowBackground and RowForeground properties are used to paint the background 
 ![AlternatingRowBackground](../../resources/images/Controls/DataGrid/alternaterowbackground.png)
 
 ## 3. Headers visibility
+
 You can toggle the visibility of row and column headers using the **DataGrid.HeadersVisibility** property. The **DataGridHeadersVisibility** enumeration has the following member values:
    * *All*: Both column and row header cells are displayed.
    * *Column*: Only column header cells are displayed.
@@ -83,6 +86,7 @@ You can also use properties such as **RowHeight**, **RowHeaderWidth**, **ColumnW
 ```
 
 ## 5. Frozen columns
+
 Frozen columns are columns that are always displayed and cannot be scrolled out of visibility. Frozen columns are always the leftmost columns in display order. You cannot drag frozen columns into the group of unfrozen columns or drag unfrozen columns into the group of frozen columns. Set the **DataGrid.FrozenColumnCount** property to the desired number of columns that the user should not scroll horizontally.
 
 ```xml
@@ -91,6 +95,7 @@ Frozen columns are columns that are always displayed and cannot be scrolled out 
 ![FrozenColumns](../../resources/images/Controls/DataGrid/frozencolumns.png)
 
 ## 6. Reorder and resize columns
+
 You can allow users to:
    * Adjust all column widths using mouse/touch/pen through the **DataGrid.CanUserResizeColumns** property.
    * Change the column display order by dragging the column headers using mouse/touch/pen through the **DataGrid.CanUserReorderColumns** property.

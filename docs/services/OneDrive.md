@@ -85,6 +85,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize(appClien
 ```
 
 ### Defining scopes
+
 More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
 
 ```csharp
@@ -102,6 +103,7 @@ End If
 ```
 
 ### Login
+
 ```csharp
 // Login
 if (!await OneDriveService.Instance.LoginAsync())

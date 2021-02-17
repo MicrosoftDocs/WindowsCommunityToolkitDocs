@@ -23,6 +23,7 @@ This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use 
 
 
 ## Syntax
+
 To use this sample code in a Windows Forms application, install the Microsoft.Toolkit.Win32.UI.Controls nuget package, and add a button, 2 labels, and a picturebox on the form.  Then drag a GraphLogin component from the toolbox on to the form, and enter the following code:
 
 ```csharp
