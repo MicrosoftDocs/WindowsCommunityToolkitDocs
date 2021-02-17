@@ -32,7 +32,7 @@ Copy this from the *Keys and Access Tokens* tab on your application page.
 Copy this from the *Keys and Access Tokens* tab on your application page.
 
 **Callback URI** Enter a unique URI for your application.  This must match the *Callback URL* field on the *Application Details* tab in Twitter.
-*Example*: http://myapp.company.com - (this does not have to be a working URL)
+*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
 
 ## Overview
 

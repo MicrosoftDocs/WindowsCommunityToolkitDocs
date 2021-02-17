@@ -542,7 +542,7 @@ A future workaround might be to use [Windows Virtual Desktop](https://azure.micr
 ### Are there samples?
 
 Yes! Samples are available for Windows Forms, Windows Presentation Foundation, and C++ here: 
-https://github.com/rjmurillo/webview-samples
+<https://github.com/rjmurillo/webview-samples>
 
 ### Can I simply swap out the Internet Explorer *WebBrowser* for Microsoft Edge *WebViewControl* in my application?
 
@@ -550,7 +550,7 @@ No, the APIs differ significantly, as the *WebViewControl* represents several ge
 
 ### Can I inject native objects into my WebViewControl content?
 
-No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround 
+No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: <https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround> 
 
 ### Can I host the UWP WebView in WPF or Windows Forms using XAML islands?
 
