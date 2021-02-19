@@ -124,7 +124,7 @@
 ## [WrapPanel](controls/WrapPanel.md)
 
 # Animations
-
+## [AnimationBuilder](animations/AnimationBuilder.md)
 ## [AnimationSet](animations/AnimationSet.md)
 
 ## [Blur](animations/Blur.md)
