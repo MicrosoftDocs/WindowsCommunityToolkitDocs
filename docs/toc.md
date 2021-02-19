@@ -126,7 +126,7 @@
 # Animations
 ## [AnimationBuilder](animations/AnimationBuilder.md)
 ## [AnimationSet](animations/AnimationSet.md)
-
+## [ImplicitAnimationSet](animations/ImplicitAnimationSet.md)
 ## [Blur](animations/Blur.md)
 
 ## [Composition Animations](animations/CompositionAnimations.md)
