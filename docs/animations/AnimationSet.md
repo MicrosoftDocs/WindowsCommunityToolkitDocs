@@ -11,7 +11,7 @@ dev_langs:
 
 The [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet) type represents an animation schedule, effectively representing an [AnimationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationBuilder) instance via XAML code. It can contain any number of animations or activities, exposes methods to start and stop an animation, and events to be notified when an animation has started or is completed. Like `AnimationBuilder`, `AnimationSet` instances can also be shared (e.g. in a [`ResourceDictionary`](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)) and then be used to start animation schedules on multiple UI elements. It can also be directly attached to a parent UI element, via the [`Explicit.Animations`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Explicit) attached property.
 
-> **Platform APIs:** [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet), [AnimationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationBuilder), [`Explicit`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Explicit), [`ITimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline), [`IActivity`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity), [`AnimationScope`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationScope)
+> **Platform APIs:** [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet), [AnimationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationBuilder), [`Explicit`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Explicit), [`ITimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline), [`IActivity`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity), [`AnimationScope`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationScope), [`AnimationStartedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationStartedTriggerBehavior), [`AnimationCompletedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationCompletedTriggerBehavior), [`StartAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StartAnimationAction), [`StopAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StopAnimationAction)
 
 ## How it works
 
@@ -118,6 +118,41 @@ The same functionality with respect to cancellation applies to `AnimationSet` as
 Here's an example of how all these various explicit animations can be combined together (including some of the new effect animations too):
 
 ![](../resources/images/AnimationSet.gif)
+
+## Behaviors
+
+If you are also referencing the `Microsoft.Toolkit.Uwp.UI.Behaviors` package, it will be possible to also use behaviors and actions to better support the new APIs, such as by automatically triggering an animation when a given event is raised, entirely from XAML. There are four main types being introduced in this package that interoperate with the Animation APIs:
+
+- [`AnimationStartedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationStartedTriggerBehavior) and [`AnimationCompletedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationCompletedTriggerBehavior): these are custom triggers that can be used to execute `IAction`-s when an `AnimationSet` starts or completes. All the built-in `IAction` objects can be used from the Behaviors package, as well as custom ones as well.
+- [`StartAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StartAnimationAction): an `IAction` object that can be used within behaviors to easily start a target animation, either with an attached UI element or with an explicit target to animate.
+- [`StopAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StopAnimationAction): an `IAction` object that can be used within behaviors to easily stop a target animation, either with an attached UI element or with an explicit target to animate.
+
+Here is an example that shows how these new APIs can be used together:
+
+```xml
+<Button>
+    <!--Use StartAnimationAction to trigger the animation on click-->
+    <Interactivity:Interaction.Behaviors>
+        <Interactions:EventTriggerBehavior EventName="Click">
+            <behaviors:StartAnimationAction Animation="{x:Bind ScaleAnimation}" />
+        </Interactions:EventTriggerBehavior>
+    </Interactivity:Interaction.Behaviors>
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="ScaleAnimation">
+            <animations:ScaleAnimation From="1" To="1.2"/>
+
+            <!--Use AnimationEndBehavior to invoke a command when the animation ends-->
+            <Interactivity:Interaction.Behaviors>
+                <behaviors:AnimationEndBehavior>
+                    <Interactions:InvokeCommandAction Command="{x:Bind ViewModel.MyCommand}"/>
+                </behaviors:AnimationEndBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
+```
+
+This makes it possible to also not having to name the target UI element, to register the event handler in code behind, and in many cases to even name the `AnimationSet` instance at all, if it doesn't need to be referenced by other animations at all. The resulting code is all in XAML, with no need for code behind at all!
 
 ## Examples
 
