@@ -49,7 +49,7 @@ Here is an example that shows how different animations can be attached to a UI e
 
 This code results in the following, when tested in one of the sample pages in the Toolkit sample app:
 
-![](../resources/images/ImplicitAnimationSet.gif)
+![ImplicitAnimationSet being used in the three supported modes](../resources/images/ImplicitAnimationSet.gif)
 
 ## Examples
 

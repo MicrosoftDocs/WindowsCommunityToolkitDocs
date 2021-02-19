@@ -117,7 +117,7 @@ The same functionality with respect to cancellation applies to `AnimationSet` as
 
 Here's an example of how all these various explicit animations can be combined together (including some of the new effect animations too):
 
-![](../resources/images/AnimationSet.gif)
+![AnimationSet in sequential mode and with combined animations](../resources/images/AnimationSet.gif)
 
 ## Behaviors
 
@@ -198,7 +198,7 @@ Here we are setting the `IsAnimatable` property for the effects we want to anima
 
 And here is the final result from the code above, with an image and some text as content:
 
-![](../resources/images/EffectAnimations.gif)
+![AnimationSet used to animate effects in a custom pipeline](../resources/images/EffectAnimations.gif)
 
 ## Examples
 
