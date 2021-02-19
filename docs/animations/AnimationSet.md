@@ -154,6 +154,52 @@ Here is an example that shows how these new APIs can be used together:
 
 This makes it possible to also not having to name the target UI element, to register the event handler in code behind, and in many cases to even name the `AnimationSet` instance at all, if it doesn't need to be referenced by other animations at all. The resulting code is all in XAML, with no need for code behind at all!
 
+## Effect animations
+
+Lastly, the `AnimationSet` class can also directly animate Composition/Win2D effects. To gain access to this feature, you will need to also reference the `Microsoft.Toolkit.Uwp.UI.Media`. This package includes some special animation types that can be plugged in into an `AnimationSet` instance and used to animate individual effects within a custom effects graph. This can then be used either from a [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) or from an inline graph attached to a UI element through the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type. All these effect animations are powered by the same `AnimationBuilder` type behind the scenes, and can facilitate creating complex animations on specific effects within a graph.
+
+Here is an example of how the new `PipelineVisualFactory` type can be combined with these effect animations:
+
+```xml
+<Button>
+    <!--Behavior to trigger the animation on click-->
+    <Interactivity:Interaction.Behaviors>
+        <Interactions:EventTriggerBehavior EventName="Click">
+            <behaviors:StartAnimationAction Animation="{x:Bind MyAnimationSet}" />
+        </Interactions:EventTriggerBehavior>
+    </Interactivity:Interaction.Behaviors>
+
+    <!--VisualFactory to create and attach a custom Win2D/Composition pipeline-->
+    <media:UIElementExtensions.VisualFactory>
+        <media:PipelineVisualFactory Source="{media:BackdropSource}">
+            <media:BlurEffect x:Name="ImageBlurEffect" Amount="32" IsAnimatable="True"/>
+            <media:SaturationEffect x:Name="ImageSaturationEffect" Value="0" IsAnimatable="True"/>
+            <media:ExposureEffect x:Name="ImageExposureEffect" Amount="0" IsAnimatable="True"/>
+        </media:PipelineVisualFactory>
+    </media:UIElementExtensions.VisualFactory>
+
+    <!--AnimationSet mixing UI element animations and effect animations-->
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="MyAnimationSet">
+            <animations:AnimationScope Duration="0:0:5" EasingMode="EaseOut">
+                <animations:ScaleAnimation From="1.1" To="1"/>
+                <animations:BlurEffectAnimation From="32" To="0" Target="{x:Bind ImageBlurEffect}"/>
+                <animations:SaturationEffectAnimation From="0" To="1" Target="{x:Bind ImageSaturationEffect}"/>
+                <animations:ExposureEffectAnimation From="1" To="0" Target="{x:Bind ImageExposureEffect}"/>
+            </animations:AnimationScope>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+    
+    <!--Button content here...-->
+</Button>
+```
+
+Here we are setting the `IsAnimatable` property for the effects we want to animate after creating the brush. This is necessary because Win2D/Composition effects do not support animation by default, and additional setup is required when creating a Composition brush to enable this functionality. Effects in a pipeline are not just all configured as being animatable by default both in order to reduce the overhead, and because there is a limit on the number of effects that can be animated in a single brush. Making this more advanced functionality opt-in for users ensures that it will still be possible to animate effects even within very large pipelines, without incurring into issues due to this limit.
+
+And here is the final result from the code above, with an image and some text as content:
+
+![](../resources/images/EffectAnimations.gif)
+
 ## Examples
 
 You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp).
