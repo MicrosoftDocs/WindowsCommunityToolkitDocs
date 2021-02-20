@@ -9,7 +9,9 @@ dev_langs:
 
 # Ref&lt;T>
 
-The [Ref&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
+The [`Ref&<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
+
+> **Platform APIs:** [`Ref&<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.ref-1), [`ReadOnlyRef<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1)
 
 ## How it works
 
@@ -79,34 +81,10 @@ This will compile and run fine, but the returned `ref int` will be invalid (as i
 > [!NOTE]
 > Although it is possible to create a `Ref<T>` value wrapping a `null` reference, by using the `default(Ref<T>)` expression, the `Ref<T>` type is not designed to be used with nullable references and does not include proper features to validate the internal reference. If you need to return a reference that can be set to `null`, use the `NullableRef<T>` and `NullableReadOnlyRef<T>` types.
 
-## Properties
-
-| Property | Return Type | Description |
-| -- | -- | -- |
-| Value | ref T | Gets the `T` reference represented by the current `Ref{T}` instance |
-
 # ReadOnlyRef&lt;T>
 
-The [ReadOnlyRef&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`. 
+The [`ReadOnlyRef<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`.
 
-## Properties
+## Examples
 
-| Property | Return Type | Description |
-| -- | -- | -- |
-| Value | ref readonly T | Gets the `T` reference represented by the current `ReadOnlyRef{T}` instance |
-
-## Sample Code
-
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared)
-
-## Requirements
-
-| Device family | Universal, 10.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.HighPerformance |
-| NuGet package | [Microsoft.Toolkit.HighPerformance](https://www.nuget.org/packages/Microsoft.Toolkit.HighPerformance/) |
-
-## API
-
-* [Ref&lt;T> source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.HighPerformance)
-* [ReadOnlyRef&lt;T> source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.HighPerformance)
+You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared).
