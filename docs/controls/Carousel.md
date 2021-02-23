@@ -82,4 +82,4 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 
 ## API
 
-* [Carousel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Carousel)
+* [Carousel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Carousel)
