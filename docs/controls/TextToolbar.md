@@ -122,4 +122,4 @@ Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 
 ## API
 
-* [TextToolbar source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar)
+* [TextToolbar source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar)
