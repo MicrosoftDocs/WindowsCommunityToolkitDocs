@@ -62,7 +62,7 @@ The transformations that can be applied are one of the following:
 
 ## API
 
-*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl)
+*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
 
 ## Related Topics
 
