@@ -56,4 +56,5 @@ ImageEx control supports use of Progress Indicator. This can be enabled by addin
 
 ## API
 
-- [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx)
+- [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/ImageEx)
+
