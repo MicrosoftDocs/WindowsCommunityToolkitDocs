@@ -260,4 +260,4 @@ If you want to add styles to the Toolkit, please follow these steps :
 
 ## API
 
-- [InAppNotification source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification)
+- [InAppNotification source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification)
