@@ -145,7 +145,7 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## API
 
-- [TabView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView)
+- [TabView source code](https://github.com/microsoft/microsoft-ui-xaml/tree/master/dev/TabView)
 
 ## Related Topics
 
