@@ -136,4 +136,4 @@ ImageCropper.AspectRatio = Nothing
 
 ## API
 
-* [ImageCropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper)
+* [ImageCropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper)
