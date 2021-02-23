@@ -122,4 +122,4 @@ Dim color = Await eyedropper.Open()
 
 ## API
 
-- [Eyedropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper)
+- [Eyedropper source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper)
