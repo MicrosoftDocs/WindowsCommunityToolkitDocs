@@ -154,7 +154,7 @@ There are 3 ways to use this Control:
 
 ## API
 
-- [AdaptiveGridView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
+- [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
 
 ## Related Topics
 
