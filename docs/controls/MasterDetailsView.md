@@ -90,4 +90,4 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 
 ## API
 
-- [MasterDetailsView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView)
+- [MasterDetailsView source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView)
