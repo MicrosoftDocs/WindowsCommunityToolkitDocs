@@ -124,9 +124,9 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## API
 
-- [Blur source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Blur.cs)
+- [Blur source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Animations/BlurEffectAnimation.cs)
 
 ## Related Topics
 
-- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
 - [CompositionEffectBrush Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.CompositionEffectBrush)
