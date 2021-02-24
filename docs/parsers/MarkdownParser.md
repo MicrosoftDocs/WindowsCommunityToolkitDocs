@@ -91,4 +91,4 @@ The best way to figure out how to create a Renderer, is to look at the [implemen
 
 ## API
 
-* [Markdown Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Parsers/Markdown)
+* [Markdown Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/Parsers/Markdown)
