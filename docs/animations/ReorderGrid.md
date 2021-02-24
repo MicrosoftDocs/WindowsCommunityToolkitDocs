@@ -58,4 +58,4 @@ MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250)
 
 ## API
 
-* [ReorderGridAnimation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/ReorderGridAnimation.cs)
+* [ReorderGridAnimation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/ItemsReorderAnimation.cs)
