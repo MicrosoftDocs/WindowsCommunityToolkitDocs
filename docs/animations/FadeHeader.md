@@ -96,7 +96,7 @@ Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(New FadeHe
 
 ## API
 
-* [FadeHeader source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/FadeHeaderBehavior.cs)
+* [FadeHeader source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Behaviors/Headers/FadeHeaderBehavior.cs)
 
 ## Related Topics
 
