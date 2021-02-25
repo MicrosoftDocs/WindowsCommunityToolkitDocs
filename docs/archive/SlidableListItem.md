@@ -11,7 +11,7 @@ dev_langs:
 # SlidableListItem XAML Control
 
 > [!WARNING]
-> The SlidableListItem is no longer available in the Windows Community Toolkit. Please use the [SwipeControl](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/swipe). Read the [Moving to SwipeControl](#swipe) section for more info.
+> The SlidableListItem is no longer available in the Windows Community Toolkit. Please use the [SwipeControl](https://docs.microsoft.com/windows/uwp/controls-and-patterns/swipe). Read the [Moving to SwipeControl](#swipe) section for more info.
 
 The [SlidableListItem Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.slidablelistitem) is a UI control that enables actions to be triggered by sliding the content left or right. This effect can be forced to ignore the mouse if only touch screen interaction is desired.
 
@@ -144,7 +144,7 @@ End Sub
 ```
 
 ## <a name="swipe"></a> Moving to SwipeControl
-The Windows 10 Fall Creators Update SDK now includes the [SwipeControl](https://docs.microsoft.com/en-us/windows/uwp/controls-and-patterns/swipe) control among other new controls and APIs. This is great news for the Windows Community Toolkit as it means that one of its most popular controls has a comparable counterpart in the Windows SDK and it is very easy to transition to the SwipeControl if you are already using the SlidableListItem.
+The Windows 10 Fall Creators Update SDK now includes the [SwipeControl](https://docs.microsoft.com/windows/uwp/controls-and-patterns/swipe) control among other new controls and APIs. This is great news for the Windows Community Toolkit as it means that one of its most popular controls has a comparable counterpart in the Windows SDK and it is very easy to transition to the SwipeControl if you are already using the SlidableListItem.
 
 The SlidableListItem and SwipeControl share the same concepts and provide the same functionality. In fact, the SwipeControl adds even more functionality and can be used in even more scenarios.
 

@@ -10,7 +10,10 @@ dev_langs:
 
 # OneDrive Service
 
-The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](https://docs.microsoft.com/en-us/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
+> [!WARNING]
+> (This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit start with the [InteractiveProviderBehavior](../graph/providers/InteractiveProviderBehavior.md).)
+
+The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](https://docs.microsoft.com/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
 
 * Initialize and authenticate with a common set of objects
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code
@@ -52,13 +55,13 @@ You will need to add:
 
 < Capability Name="privateNetworkClientServer" />
 
-to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
+to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](https://docs.microsoft.com/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
 
-Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth)
+Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](https://docs.microsoft.com/onedrive/developer/rest-api/getting-started/graph-oauth)
 
 ### Testing access to the OneDrive API
 
-Registering your applicatioin creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
+Registering your application creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
 
 ## Syntax
 
@@ -82,7 +85,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize(appClien
 ```
 
 ### Defining scopes
-More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
+More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
 
 ```csharp
 // If the user hasn't selected a scope then set it to FilesReadAll
@@ -301,11 +304,11 @@ End Using
 
 This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when using the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
 
-As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is catched, or else, manually checking previously if the file exists.
+As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is caught, or else, manually checking previously if the file exists.
 
 ## Sample Project
 
-[OneDrive Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[OneDrive Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

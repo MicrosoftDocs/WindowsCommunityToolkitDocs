@@ -42,7 +42,7 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## Sample Project
 
-[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

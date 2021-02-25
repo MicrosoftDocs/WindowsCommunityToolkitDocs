@@ -72,7 +72,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Project
 
-[HeaderedItemsControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedItemsControl). You can [see this in action](uwpct://Controls?sample=HeaderedItemsControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedItemsControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedItemsControl). You can [see this in action](uwpct://Controls?sample=HeaderedItemsControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

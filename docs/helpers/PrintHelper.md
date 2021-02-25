@@ -301,7 +301,7 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
 ## Sample Project
 
-[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

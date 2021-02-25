@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # UIElement Extensions
 
-The [UIElementExtensions](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions) provide helpers for `UIElement`.
+The [UIElementExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions) provide helpers for `UIElement`.
 
 ## ClipToBounds
 
@@ -42,7 +42,7 @@ The `ClipToBounds` property allows you to indicate whether to clip the content o
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
@@ -53,4 +53,4 @@ The `ClipToBounds` property allows you to indicate whether to clip the content o
 
 ## Related Topics
 
-- [UIElement.ClipToBounds Property (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.cliptobounds?view=netframework-4.8)
+- [UIElement.ClipToBounds Property (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.uielement.cliptobounds?view=netframework-4.8)

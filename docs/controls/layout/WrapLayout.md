@@ -88,11 +88,11 @@ The following example of adding the WrapLayout layout panel.
 
 ## Sample Project
 
-[WrapLayout Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapLayout). You can [see this in action](uwpct://Controls?sample=WrapLayout) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[WrapLayout Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapLayout). You can [see this in action](uwpct://Controls?sample=WrapLayout) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370#device-families) | Universal, 10.0.17134.0 or higher   |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370#device-families) | Universal, 10.0.17134.0 or higher   |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Layout](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Layout/) |

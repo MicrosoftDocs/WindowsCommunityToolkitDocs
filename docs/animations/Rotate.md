@@ -110,7 +110,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Rotate Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Rotate). You can [see this in action](uwpct://Animations?sample=Rotate) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Rotate Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Rotate). You can [see this in action](uwpct://Animations?sample=Rotate) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

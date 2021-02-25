@@ -112,7 +112,7 @@ The [QueryParameterCollection](https://docs.microsoft.com/dotnet/api/microsoft.t
 ### Example
 
 ```csharp
-var myUrl = "http://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
+var myUrl = "https://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
 var paramCollection = new QueryParameterCollection(myUrl);
 foreach (var pair in paramCollection)
 {
@@ -120,7 +120,7 @@ foreach (var pair in paramCollection)
 }
 ```
 ```vb
-Dim myUrl = "http://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
+Dim myUrl = "https://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
 Dim paramCollection = New QueryParameterCollection(myUrl)
 For Each pair In paramCollection
     Console.WriteLine($"{pair.Key} - {pair.Value}")

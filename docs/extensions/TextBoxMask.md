@@ -135,7 +135,7 @@ The following sample demonstrates how to add TextBoxMask property.
 
 ## Sample Code
 
-[TextBoxMask Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can [see this in action](uwpct://Extensions?sample=TextBoxMask) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TextBoxMask Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can [see this in action](uwpct://Extensions?sample=TextBoxMask) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
