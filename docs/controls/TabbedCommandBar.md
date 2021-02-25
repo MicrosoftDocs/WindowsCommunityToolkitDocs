@@ -238,7 +238,7 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ## API
 
-- [TabbedCommandBar source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TabbedCommandBar)
+- [TabbedCommandBar source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar)
 
 ## Related Topics
 
