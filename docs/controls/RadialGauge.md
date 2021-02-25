@@ -36,6 +36,7 @@ The Radial Gauge supports animated transitions between configuration states. The
 
 | Property | Type | Description |
 | -- | -- | -- |
+| Column | double | Gets or sets the column of the scale |
 | IsInteractive | bool | Gets or sets a value indicating whether the control accepts setting its value through interaction |
 | MaxAngle | int | Gets or sets the end angle of the scale, which corresponds with the Maximum value, in degrees |
 | Maximum | double | Gets or sets the maximum value of the scale |
