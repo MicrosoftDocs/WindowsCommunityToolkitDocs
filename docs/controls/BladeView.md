@@ -1,5 +1,5 @@
 ---
-title: BladeView XAML Control
+title: BladeView
 author: nmetulev
 description: The BladeView provides a container to host blades as extra detail pages in, for example, a master-detail scenario.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, BladeView, XAML Control, xaml
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# BladeView XAML Control
+# BladeView
 
-The [BladeView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
+The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control provides a container to host [BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=BladeView)

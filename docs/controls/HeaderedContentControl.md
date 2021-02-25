@@ -1,11 +1,11 @@
 ---
-title: HeaderedContentControl XAML Control
+title: HeaderedContentControl
 author: skendrot
 description: The HeaderedContentControl allows content to be displayed with a specified header.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HeaderedContentControl, XAML Control, xaml
 ---
 
-# HeaderedContentControl XAML Control
+# HeaderedContentControl
 
 The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) is a UI control that allows content to be displayed with a specified header. The `Header` property can be any object and you can use the `HeaderTemplate` to specify a custom look to the header. Content for the HeaderedContentControl will align to the top left. This is to maintain the same functionality as the ContentControl.
 

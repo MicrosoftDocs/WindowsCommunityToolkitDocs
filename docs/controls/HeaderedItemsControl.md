@@ -1,11 +1,11 @@
 ---
-title: HeaderedItemsControl XAML Control
+title: HeaderedItemsControl
 author: skendrot
 description: The HeaderedItemsControl allows items to be displayed with a specified header.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HeaderedItemsControl, XAML Control, xaml
 ---
 
-# HeaderedItemsControl XAML Control
+# HeaderedItemsControl
 
 The [HeaderedItemsControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headereditemscontrol) is a UI control that allows content to be displayed with a specified header. The `Header` property can be any object and you can use the `HeaderTemplate` to specify a custom look to the header.
 

@@ -1,5 +1,5 @@
 ---
-title: TokenizingTextBox XAML Control
+title: TokenizingTextBox
 author: michael-hawker
 description: A text input control that auto-suggests and displays token items.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TokenizingTextBox
@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# TokenizingTextBox XAML Control
+# TokenizingTextBox
 
 The [TokenizingTextBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tokenizingtextbox) is an advanced [AutoSuggestBox](/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox) which will display selected items as tokens within the textbox. A user can easily see the picked items or remove them easily.
 

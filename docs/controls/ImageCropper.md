@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# ImageCropper XAML Control
+# ImageCropper
 
 The [ImageCropper Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagecropper) allows user to crop image freely.
 

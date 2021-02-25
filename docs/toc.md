@@ -95,15 +95,11 @@
 
 ## [RadialGauge](controls/RadialGauge.md)
 
-## [RadialProgressBar](controls/RadialProgressBar.md)
-
 ## [RangeSelector](controls/RangeSelector.md)
 
 ## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 
 ## [RotatorTile](controls/RotatorTile.md)
-
-## [ScrollHeader](controls/ScrollHeader.md)
 
 ## [StaggeredLayout](controls/layout/StaggeredLayout.md)
 
@@ -394,6 +390,10 @@
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
+
+### [RadialProgressBar](controls/RadialProgressBar.md)
+
+### [ScrollHeader](controls/ScrollHeader.md)
 
 ### [SlidableListItem](archive/SlidableListItem.md)
 

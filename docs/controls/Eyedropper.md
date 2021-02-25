@@ -1,5 +1,5 @@
 ---
-title: Eyedropper XAML Control
+title: Eyedropper
 author: HHChaos
 description: The Eyedropper Control can pick up a color from anywhere in your application.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Eyedropper, xaml Control, xaml
@@ -8,12 +8,12 @@ dev_langs:
   - vb
 ---
 
-# Eyedropper XAML Control
+# Eyedropper
 
-The [Eyedropper Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.eyedropper) can pick up a color from anywhere in your application.
+The [Eyedropper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.eyedropper) control can pick up a color from anywhere in your application.
 
 > [!NOTE]
-> The Eyedropper Control uses [RenderTargetBitmap](/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
+> The Eyedropper Control uses [RenderTargetBitmap](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases, RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=Eyedropper)

@@ -1,5 +1,5 @@
 ---
-title: InAppNotification XAML Control
+title: InAppNotification
 author: nmetulev
 description: The InAppNotification control offers the ability to show local notifications in your application.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InAppNotification, in app notification, xaml control, xaml
