@@ -1,13 +1,13 @@
 ---
-title: InfiniteCanvas XAML Control
+title: InfiniteCanvas
 author: IbraheemOsama
 description: InfiniteCanvas is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InfiniteCanvas, XAML Control, xaml
 ---
 
-# InfiniteCanvas XAML Control
+# InfiniteCanvas
 
-The [InfiniteCanvas Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.infinitecanvas) is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
+The [InfiniteCanvas](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.infinitecanvas) control is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=InfiniteCanvas)
@@ -67,7 +67,7 @@ The following sample demonstrates how to add InfiniteCanvas Control
 
 ## Sample Project
 
-[InfiniteCanvas Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can [see this in action](uwpct://Controls?sample=InfiniteCanvas) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[InfiniteCanvas Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can [see this in action](uwpct://Controls?sample=InfiniteCanvas) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

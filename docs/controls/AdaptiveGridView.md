@@ -1,18 +1,19 @@
 ---
-title: AdaptiveGridView XAML Control
+title: AdaptiveGridView
 author: nmetulev
-description: The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space.
+description: The AdaptiveGridView Control presents items in an evenly-spaced set of columns to fill the total available display space.
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, AdaptiveGridView, xaml control, xaml
 dev_langs:
   - csharp
   - vb
 ---
 
-# AdaptiveGridView XAML Control 
+# AdaptiveGridView
 
-The [AdaptiveGridView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
+The [AdaptiveGridView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) control presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
 
-There are 3 ways to use this Control:
+There are 3 ways to use this control:
 
 1. You can set `DesiredWidth` and `ItemHeight`, which will scale the **width** of each item and adjust the number of columns on demand using all horizontal space.
 
@@ -142,7 +143,7 @@ There are 3 ways to use this Control:
 
 ## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

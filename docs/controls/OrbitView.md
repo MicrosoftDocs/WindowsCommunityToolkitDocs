@@ -1,13 +1,14 @@
 ---
-title: OrbitView XAML Control
+title: OrbitView
 author: nmetulev
-description: The OrbitView is an ItemsControl where all items are arranged in circle around a center element
+description: The OrbitView is an ItemsControl where all items are arranged in a circle around a center element
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, OrbitView, xaml control, xaml
 ---
 
-# OrbitView XAML Control
+# OrbitView
 
-The [OrbitView control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) provides a new control, inherited from the `ItemsControl`. All items are arranged in circle around a center element
+The [OrbitView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) control provides a new control, inherited from the `ItemsControl`. All items are arranged in circle around a center element
 
 [OrbitViewDataItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
 
@@ -133,7 +134,7 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## Sample Project
 
-[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

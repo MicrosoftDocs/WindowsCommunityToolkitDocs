@@ -1,13 +1,13 @@
 ---
-title: HeaderedTextBlock XAML Control
+title: HeaderedTextBlock
 author: nmetulev
-description: The HeaderedTextBlock Control provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
+description: The HeaderedTextBlock control provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HeaderedTextBlock, XAML Control, xaml
 ---
 
 # HeaderedTextBlock XAML Control
 
-The [HeaderedTextBlock Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredtextblock) provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
+The [HeaderedTextBlock](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredtextblock) control provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
 
 > [!NOTE] 
 > The HeaderedTextBlock control will be removed in a future major release. Please use [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) instead.
@@ -39,7 +39,7 @@ The [HeaderedTextBlock Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.he
 
 ## Sample Project
 
-[HeaderedTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

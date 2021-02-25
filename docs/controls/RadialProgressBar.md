@@ -1,13 +1,14 @@
 ---
-title: RadialProgressBar XAML Control
+title: RadialProgressBar
 author: nmetulev
-description: The Radial Progress Bar Control displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+description: The Radial Progress Bar Control displays a value in a certain range using a circular sector that grows clockwise until it becomes a full ring.
+
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Radial Progress Bar, RadialProgressBar, xaml control, xaml
 ---
 
-# RadialProgressBar XAML Control
+# RadialProgressBar
 
-The [Radial Progress Bar Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+The [RadialProgressBar](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) control displays a value in a certain range using a circular sector that grows clockwise until it becomes a full ring.
 
 The control uses the same dependency properties as the standard Progress Bar, with the addition of:
 
@@ -37,12 +38,12 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Outline | Brush | Gets or sets the color of the circular ouline on which the segment is drawn |
-| Thickness | double | Gets or sets the thickness of the circular ouline and segment |
+| Outline | Brush | Gets or sets the color of the circular outline on which the segment is drawn |
+| Thickness | double | Gets or sets the thickness of the circular outline and segment |
 
 ## Sample Project
 
-[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

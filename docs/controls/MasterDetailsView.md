@@ -1,11 +1,11 @@
 ---
-title: MasterDetailsView XAML Control
+title: MasterDetailsView
 author: nmetulev
 description: The MasterDetailsView Control presents items in a master/details pattern.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MasterDetailsView, XAML Control, xaml
 ---
 
-# MasterDetailsView XAML Control 
+# MasterDetailsView
 
 The [MasterDetailsView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) presents items in a master/details pattern. It shows a collection of items within the "master panel" and the details for that item within the "details panel". The MasterDetailsView reacts to the width it is given to determine if it should show both the master and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
 
@@ -31,9 +31,10 @@ The [MasterDetailsView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.ma
 ## BackButtonBehavior
 When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view. 
 
-If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
+If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the Master view and cancel the back navigation.
 
-To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
+
+To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behavior:
 - `Automatic` will let the control decide which back button to make visible/enabled.
     - If the system back button is visible the control won't use any other buttons
     - Else, if the control parent tree contains a Frame hosted in a NavigationView, the NavigationView back button will be used
@@ -58,7 +59,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 | MasterHeaderTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content of the master pane's header |
 | MasterPaneBackground | Brush | Gets or sets the Brush to apply to the background of the list area of the control |
 | MasterPaneWidth | double | Gets or sets the width of the master pane when the view is expanded |
-| NoSelectionContent | object | Gets or sets the content to dsiplay when there is no item selected in the master list |
+| NoSelectionContent | object | Gets or sets the content to display when there is no item selected in the master list |
 | NoSelectionContentTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content when there is no selection |
 | SelectedIndex | int | Gets or sets the selected index (-1 if nothing is selected) |
 | SelectedItem | object | Gets or sets the selected item |
@@ -73,7 +74,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 
 ## Sample Project
 
-[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template 
 

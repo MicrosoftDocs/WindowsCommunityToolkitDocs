@@ -1,13 +1,14 @@
 ---
-title: RadialGauge XAML Control
+title: RadialGauge
 author: nmetulev
 description: The Radial Gauge Control displays a value in a certain range using a needle on a circular face.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Radial Gauge, RadialGauge, xaml control, xaml
 ---
 
-# RadialGauge XAML Control
+# RadialGauge
 
-The [Radial Gauge Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialgauge) displays a value in a certain range using a needle on a circular face. This control will make data visualizations and dashboards more engaging with rich style and interactivity. 
+The [Radial Gauge](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialgauge) control displays a value in a certain range using a needle on a circular face. This control will make data visualizations and dashboards more engaging with rich style and interactivity. 
+
 The round gauges are powerful, easy to use, and highly configurable to present dashboards capable of displaying clocks, industrial panels, automotive dashboards, and even aircraft cockpits.
 
 The Radial Gauge supports animated transitions between configuration states. The control gradually animates as it redraws changes to the needle, needle position, scale range, color range, and more. 
@@ -77,7 +78,7 @@ This table shows the resources used by the [RadialGauge](/dotnet/api/microsoft.t
 
 ## Sample Project
 
-[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can [see this in action](uwpct://Controls?sample=RadialGauge) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can [see this in action](uwpct://Controls?sample=RadialGauge) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
