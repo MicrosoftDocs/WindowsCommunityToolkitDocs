@@ -13,11 +13,11 @@ If no value for `Rows` and `Columns` are provided, the UniformGrid will create a
 
 If a fixed size is provided for `Rows` and `Columns` then additional children that can't fit in the number of cells provided won't be displayed.
 
-It differs from the [AdaptiveGridView](https://docs.microsoft.com/en-us/windows/communitytoolkit/controls/adaptivegridview) which dictates 
+It differs from the [AdaptiveGridView](./adaptivegridview.md) which dictates 
 its layout based on item sizes to where as the UniformGrid maintains the specified number of Rows and/or Columns.
 In addition, UniformGrid is a `Panel` instead of an `ItemsControl`.  As such, it could be used as a Panel in such ItemsControls.
 
-The UWP UniformGrid now inherits from [Grid](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Grid) and provides many additional features compared to its predecessor, see more below.
+The UWP UniformGrid now inherits from [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid) and provides many additional features compared to its predecessor, see more below.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=UniformGrid)
@@ -49,7 +49,7 @@ See further notes below on the additional features the UWP UniformGrid provides 
 
 ### Grid Properties
 
-UniformGrid supports the [RowSpacing](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.grid.rowspacing) and [ColumnSpacing](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.grid.columnspacing#Windows_UI_Xaml_Controls_Grid_ColumnSpacing) properties added in 16299, along with the previous Padding, Margin, and CornerRadius properties.
+UniformGrid supports the [RowSpacing](/uwp/api/windows.ui.xaml.controls.grid.rowspacing) and [ColumnSpacing](/uwp/api/windows.ui.xaml.controls.grid.columnspacing#Windows_UI_Xaml_Controls_Grid_ColumnSpacing) properties added in 16299, along with the previous Padding, Margin, and CornerRadius properties.
 
 ```
     <controls:UniformGrid ColumnSpacing="24" RowSpacing="24">
@@ -180,7 +180,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
@@ -191,7 +191,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 ## Related Topics
 
-- [Grid Class](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Grid)
-- [Layouts with XAML](https://docs.microsoft.com/en-us/windows/uwp/design/layout/layouts-with-xaml)
-- [System.Windows.Controls.Primitives.UniformGrid](https://msdn.microsoft.com/en-us/library/system.windows.controls.primitives.uniformgrid(v=vs.110).aspx)
+- [Grid Class](/uwp/api/Windows.UI.Xaml.Controls.Grid)
+- [Layouts with XAML](/windows/uwp/design/layout/layouts-with-xaml)
+- [System.Windows.Controls.Primitives.UniformGrid](/dotnet/api/system.windows.controls.primitives.uniformgrid)
 - [NullableBool Markup Extension](../extensions/NullableBoolMarkup.md)

@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > (This API is obsolete and will be removed in the future. Please use the Microsoft Graph SDK or our new providers at [https://aka.ms/wgt](https://aka.ms/wgt))
 
-The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](https://docs.microsoft.com/en-us/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
+The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](/onedrive/developer/) that uses the [Microsoft Graph](/graph/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
 
 * Initialize and authenticate with a common set of objects
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code
@@ -55,9 +55,9 @@ You will need to add:
 
 < Capability Name="privateNetworkClientServer" />
 
-to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
+to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
 
-Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth)
+Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](/onedrive/developer/rest-api/getting-started/graph-oauth)
 
 ### Testing access to the OneDrive API
 
@@ -85,7 +85,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize(appClien
 ```
 
 ### Defining scopes
-More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
+More information on scopes can be found in this document [Authentication scopes](/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
 
 ```csharp
 // If the user hasn't selected a scope then set it to FilesReadAll
@@ -316,4 +316,3 @@ As a workaround, the recommended path is using _CreateCollisionOption.FailIfExis
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-

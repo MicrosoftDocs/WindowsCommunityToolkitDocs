@@ -10,7 +10,7 @@ dev_langs:
 
 # Blur
 
-The [Blur animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.blur) blurs a XAML element by increasing or decreasing pixel size. Blur animation is applied to all the XAML elements in its parent control/panel. Blur animation doesn't affect the functionality of the control.
+The [Blur animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.blur) blurs a XAML element by increasing or decreasing pixel size. Blur animation is applied to all the XAML elements in its parent control/panel. Blur animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Blur)
@@ -123,5 +123,5 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [CompositionEffectBrush Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.CompositionEffectBrush)
+* [AnimationSet Class](./animationset.md)
+* [CompositionEffectBrush Class](/uwp/api/Windows.UI.Composition.CompositionEffectBrush)

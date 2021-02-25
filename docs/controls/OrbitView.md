@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [OrbitView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) control provides a new control, inherited from the `ItemsControl`. All items are arranged in circle around a center element
 
-[OrbitViewDataItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
+[OrbitViewDataItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=OrbitView)
@@ -75,7 +75,7 @@ The [OrbitView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.c
 | Distance | double | Gets or sets a value indicating the distance from the center. Expected value betweeen 0 and 1 |
 | Image | ImageSource | Gets or sets a value indicating the image of the item |
 | Item | object | Gets or sets a value of an object that can be used to store model data |
-| Label | string | Gets or sets a value indicating the name of the item. Used for [AutomationProperties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Automation.AutomationProperties) |
+| Label | string | Gets or sets a value indicating the name of the item. Used for [AutomationProperties](/uwp/api/Windows.UI.Xaml.Automation.AutomationProperties) |
 
 ## Events
 

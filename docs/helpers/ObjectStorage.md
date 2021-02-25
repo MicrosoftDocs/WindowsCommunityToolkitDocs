@@ -12,8 +12,8 @@ dev_langs:
 
 The Object Storage Helper will help you handle storage of generic objects within UWP applications, both locally and across all devices (roaming).
 
-- [LocalObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
-- [RoamingObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
+- [LocalObjectStorageHelper Class](/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
+- [RoamingObjectStorageHelper Class](/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Object%20Storage)
@@ -51,7 +51,7 @@ LocalObjectStorageHelper and RoamingObjectStorageHelper have the same constructo
 
 ### Local Storage
 
-If you need to handle local saves of any object (generic), you can use [LocalObjectStorageHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper).
+If you need to handle local saves of any object (generic), you can use [LocalObjectStorageHelper](/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper).
 
 ```csharp
 var helper = new LocalObjectStorageHelper();

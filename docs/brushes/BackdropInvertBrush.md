@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropInvertBrush
 
-The [BackdropInvertBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinvertbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that inverts whatever is behind it in the application.
+The [BackdropInvertBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinvertbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that inverts whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropInvertBrush)

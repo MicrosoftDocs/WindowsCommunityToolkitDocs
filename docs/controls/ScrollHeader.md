@@ -44,7 +44,7 @@ The [ScrollHeader](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Mode | [ScrollHeaderMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheadermode) | Gets or sets a value indicating whether the current mode. Default is none |
+| Mode | [ScrollHeaderMode](/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheadermode) | Gets or sets a value indicating whether the current mode. Default is none |
 | TargetListViewBase | ListViewBase | Gets or sets the container this header belongs to |
 
 ## Sample Project

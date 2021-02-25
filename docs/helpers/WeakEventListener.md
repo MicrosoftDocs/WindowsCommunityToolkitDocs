@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # WeakEventListener
 
-The [WeakEventListener](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.weakeventlistener-3) allows the owner to be garbage collected if its only remaining link is an event handler.
+The [WeakEventListener](/dotnet/api/microsoft.toolkit.uwp.helpers.weakeventlistener-3) allows the owner to be garbage collected if its only remaining link is an event handler.
 
 ## Properties
 

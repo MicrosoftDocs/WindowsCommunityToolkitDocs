@@ -97,18 +97,18 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 | ParagraphMargin | Thickness | Gets or sets the margin used for paragraphs |
 | ParagraphLineHeight | int | Gets or sets the line hegiht used for paragraphs. |
 | QuoteBackground | Brush | Gets or sets the brush used to fill the background of a quote block |
-| QuoteBorderBrush | Brush | Gets or sets the brush used to render a quote border. If this is null, then [QuoteBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.quoteborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_QuoteBorderBrush) is used |
+| QuoteBorderBrush | Brush | Gets or sets the brush used to render a quote border. If this is null, then [QuoteBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.quoteborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_QuoteBorderBrush) is used |
 | QuoteBorderThickness | Thickness | Gets or sets the thickness of quote borders. |
 | QuoteForeground | Brush | Gets or sets the brush used to render the text inside a quote block. If this is `null`, then Foreground is used |
 | QuoteMargin | Thickness | Gets or sets the space outside of quote borders |
 | QuotePadding | Thickness | Gets or sets the space between the quote border and the text |
 | SchemeList | string(separated by comma) | Gets or sets the custom SchemeList to render a URL. |
-| TableBorderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| TableBorderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | TableBorderThickness | double | Gets or sets the thickness of any table borders |
 | TableCellPadding | Thickness | Gets or sets the padding inside each cell |
 | TableMargin | Thickness | Gets or sets the margin used by tables |
 | YamlBoderThickness | Thickness | Gets or sets the thickness of any yaml header borders. |
-| YamlBoderBrush | Brush | Gets or sets the brush used to render yaml heade borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| YamlBoderBrush | Brush | Gets or sets the brush used to render yaml heade borders. If this is null, then [TableBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | Text | string | Gets or sets the markdown text to display |
 | TextWrapping | TextWrapping | Gets or sets the word wrapping behavior |
 | UriPrefix | string | Gets or sets the Prefix of Uri |
@@ -236,4 +236,4 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## Related Topics
 
-* [Markdown Parser](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
+* [Markdown Parser](../parsers/markdownparser.md)

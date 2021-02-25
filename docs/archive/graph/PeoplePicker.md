@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # PeoplePicker Control
 
-The [PeoplePicker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.peoplepicker) is a simple control that allows for selection of one or more users from an organizational AD, see more details [here](https://developer.microsoft.com/en-us/graph/docs/concepts/people_example), it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
+The [PeoplePicker Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.peoplepicker) is a simple control that allows for selection of one or more users from an organizational AD, see more details [here](/graph/people-example), it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
 
@@ -36,7 +36,7 @@ The [PeoplePicker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Code
 
-First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
+First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
 ```c#
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;

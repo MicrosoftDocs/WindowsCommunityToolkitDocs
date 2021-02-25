@@ -8,7 +8,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Visual, compositi
 
 # Composition Visual Attached Properties
 
-The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML. 
+The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML. 
 
 ## Example
 
@@ -66,7 +66,7 @@ The point about which rotation or scaling occurs, normalized between the values 
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
@@ -74,4 +74,3 @@ The point about which rotation or scaling occurs, normalized between the values 
 ## API
 
 * [Visual extensions source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Visual/VisualEx.cs)
-

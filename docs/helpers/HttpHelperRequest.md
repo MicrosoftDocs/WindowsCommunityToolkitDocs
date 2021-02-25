@@ -11,10 +11,10 @@ dev_langs:
 # HttpHelperRequest
 
 > [!WARNING]
-> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
-> or [Windows.Web.Http.HttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.http.httprequestmessage) directly)
+> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage) 
+> or [Windows.Web.Http.HttpRequestMessage](/uwp/api/windows.web.http.httprequestmessage) directly)
 
-The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers. 
+The [HttpHelperRequest](/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers. 
 
 ```csharp
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
@@ -29,8 +29,8 @@ The **HttpHelperRequest** class has these constructors.
 
 | Constructor | Description |
 | ----------  | ----------- |
-| HttpHelperRequest([Uri](https://msdn.microsoft.com/library/system.uri.aspx))  | Initializes a new instance of the HttpHelperRequest class with an HTTP Get method and a request Uri.|
-| HttpHelperRequest([HttpMethod](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpmethod.aspx), [Uri](https://msdn.microsoft.com/library/system.uri.aspx))  | Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri.|
+| HttpHelperRequest([Uri](/dotnet/api/system.uri))  | Initializes a new instance of the HttpHelperRequest class with an HTTP Get method and a request Uri.|
+| HttpHelperRequest([HttpMethod](/uwp/api/Windows.Web.Http.HttpMethod), [Uri](/dotnet/api/system.uri))  | Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri.|
 
 ## Methods
 
@@ -38,7 +38,7 @@ The **HttpHelperRequest** class has these methods. It also inherits from **Objec
 
 | Method | Description |
 | ------ | ----------- |
-| ToHttpRequestMessage() | Returns an instance of [**HttpRequestMessage**](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httprequestmessage.aspx) representing current HttpHelperRequest object. |
+| ToHttpRequestMessage() | Returns an instance of [**HttpRequestMessage**](/uwp/api/Windows.Web.Http.HttpRequestMessage) representing current HttpHelperRequest object. |
 | Dispose() | Performs tasks associated with freeing, releasing, or resetting unmanaged resources. |
 | ToString() | Returns a string that represents the current HttpHelperRequest object. |
 

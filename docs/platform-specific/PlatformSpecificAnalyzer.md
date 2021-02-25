@@ -10,7 +10,7 @@ dev_langs:
 
 # Platform Specific Analyzer
 
-When writing [version](https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
+When writing [version](/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
 The platform specific analyzer is a Roslyn Analyzer that can parse through code and suggest fixes where appropriate.
 
 > [!div class="nextstepaction"]
@@ -53,4 +53,4 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## Related Topics
 
-* [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](./platformspecificdifferencesgenerator.md)

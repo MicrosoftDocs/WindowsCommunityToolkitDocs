@@ -10,13 +10,13 @@ dev_langs:
 
 # DispatcherHelper
 
-The DispatcherHelper class enables easy interaction with [CoreDispatcher](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.aspx), mainly in the case of executing a block of code on the UI thread from a non-UI thread.
+The DispatcherHelper class enables easy interaction with [CoreDispatcher](/uwp/api/Windows.UI.Core.CoreDispatcher), mainly in the case of executing a block of code on the UI thread from a non-UI thread.
 
 _What is included in the helper?_
 
-- Extension method with overloads for [CoreDispatcher](https://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.core.coredispatcher.aspx) class.
+- Extension method with overloads for [CoreDispatcher](/uwp/api/Windows.UI.Core.CoreDispatcher) class.
 
-- Extension method with overloads for [CoreApplicationView](https://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.core.coreapplicationview.aspx) (for multi window applications).
+- Extension method with overloads for [CoreApplicationView](/uwp/api/Windows.ApplicationModel.Core.CoreApplicationView) (for multi window applications).
 
 - Static helper methods for executing a specific function on the UI thread of the current application's main window.
 

@@ -10,12 +10,12 @@ dev_langs:
 
 # Incremental Loading Collection Helpers
 
-The **IncrementalLoadingCollection** helpers greatly simplify the definition and usage of collections whose items can be loaded incrementally only when needed by the view, i.e., when user scrolls a [ListView](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.listview.aspx) or a [GridView](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.gridview.aspx).
+The **IncrementalLoadingCollection** helpers greatly simplify the definition and usage of collections whose items can be loaded incrementally only when needed by the view, i.e., when user scrolls a [ListView](/uwp/api/Windows.UI.Xaml.Controls.ListView) or a [GridView](/uwp/api/Windows.UI.Xaml.Controls.GridView).
 
 | Helper | Purpose |
 | --- | --- |
-|[IIncrementalSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
-|[IncrementalLoadingCollection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
+|[IIncrementalSource](/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
+|[IncrementalLoadingCollection](/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1) such that its items are loaded only when needed. |
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Incremental%20Loading%20Collection)
@@ -28,7 +28,7 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 |   HasMoreItems   |                                   bool                                    |                         Gets a value indicating whether the collection contains more items to retrieve                         |
 |    IsLoading     |                                   bool                                    |                                   Gets a value indicating whether new items are being loaded                                   |
 |   ItemsPerPage   |                                    int                                    |                    Gets a value indicating how many items that must be retrieved for each incremental call                     |
-|   OnEndLoading   | [Action](https://msdn.microsoft.com/library/system.action(v=vs.110).aspx) |                             Gets or sets an Action that is called when a retrieval operation ends                              |
+|   OnEndLoading   | [Action](/dotnet/api/system.action) |                             Gets or sets an Action that is called when a retrieval operation ends                              |
 |     OnError      |                             Action<Exception>                             | Gets or sets an Action that is called if an error occours during data retrieval. The actual Exception is passed as an argument |
 |  OnStartLoading  |                                  Action                                   |                            Gets or sets an Action that is called when a retrieval operation begins                             |
 
@@ -119,7 +119,7 @@ End Class
 
 The *GetPagedItemsAsync* method is invoked everytime the view need to show more items.
 
-`IncrementalLoadingCollection` can then be bound to a [ListView](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.listview.aspx) or a [GridView-like](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.gridview.aspx) control:
+`IncrementalLoadingCollection` can then be bound to a [ListView](/uwp/api/Windows.UI.Xaml.Controls.ListView) or a [GridView-like](/uwp/api/Windows.UI.Xaml.Controls.GridView) control:
 
 ```csharp
 var collection = new IncrementalLoadingCollection<PeopleSource, Person>();

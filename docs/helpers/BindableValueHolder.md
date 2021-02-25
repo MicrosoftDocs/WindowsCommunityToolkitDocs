@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BindableValueHolder
 
-The [BindableValueHolder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.helpers.bindablevalueholder) lets users change several objects' states at a time.
+The [BindableValueHolder](/dotnet/api/microsoft.toolkit.uwp.ui.helpers.bindablevalueholder) lets users change several objects' states at a time.
 
 ## Syntax
 

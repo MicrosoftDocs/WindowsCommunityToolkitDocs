@@ -8,7 +8,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 # How to: Implement editing and input validation in DataGrid control
 
 ## Cell and Row editing
-The [DataGrid](../datagrid.md) control supports cell and row editing functionality. By default, you can edit items directly in the DataGrid. The user can enter edit mode in a cell by pressing F2 key or double tapping on a cell. Alternatively, you can set the **IsReadOnly** property to true to disable editing in the DataGrid. 
+The [DataGrid](../datagrid.md) control supports cell and row editing functionality. By default, you can edit items directly in the DataGrid. The user can enter edit mode in a cell by pressing F2 key or double tapping on a cell. Alternatively, you can set the [DataGridColumn.IsReadOnly](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.datagridcolumn.isreadonly?view=win-comm-toolkit-dotnet-stable) property to true to disable editing in specific columns of the DataGrid. 
 
 ```xml
 <controls:DataGrid BeginningEdit="dg_Editing" CellEditEnding="dg_CellEditEnding" RowEditEnding="dg_RowEditEnding" />
@@ -18,7 +18,7 @@ The [DataGrid](../datagrid.md) control supports cell and row editing functionali
 
 A cell-level edit is committed when you move to another cell in the same row. All edits in a row are committed when you press ENTER or move to another row. 
 
-To guarantee that edits can be committed and canceled correctly, the objects in the DataGrid must implement the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject(v=vs.110).aspx) interface. 
+To guarantee that edits can be committed and canceled correctly, the objects in the DataGrid must implement the [IEditableObject](/dotnet/api/system.componentmodel.ieditableobject) interface. 
 
 ### Editing methods and events
 

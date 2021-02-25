@@ -124,7 +124,7 @@ The TabView supports data binding as well.  The following example shows binding 
 ```
 
 > [!NOTE]
-> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+> It's recommended to use an [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
 
 ## Sample Project
 
@@ -147,6 +147,6 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## Related Topics
 
-- [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
-- [IconElement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.IconElement)
-- [TabControl (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tabcontrol)
+- [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1)
+- [IconElement](/uwp/api/Windows.UI.Xaml.Controls.IconElement)
+- [TabControl (WPF)](/dotnet/api/system.windows.controls.tabcontrol)

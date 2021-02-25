@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ImageBlendBrush
 
-The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that blends the provided image with whatever is behind it in the application with the provided blend mode.
+The [ImageBlendBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that blends the provided image with whatever is behind it in the application with the provided blend mode.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=ImageBlendBrush)
@@ -33,9 +33,9 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Source | Windows.UI.Xaml.Media.ImageSource | The `ImageSource` property specifies which image to use for the effect.  It is assumed it will resolve to a [BitmapImage](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.bitmapimage). |
+| Source | Windows.UI.Xaml.Media.ImageSource | The `ImageSource` property specifies which image to use for the effect.  It is assumed it will resolve to a [BitmapImage](/uwp/api/windows.ui.xaml.media.imaging.bitmapimage). |
 | Stretch | Windows.UI.Xaml.Media.Stretch | The `Stretch` property specifies how the image should stretch to its container.  Requires 10.0.16299 or higher for modes other than None (default). |
-| Mode | [ImageBlendMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendmode) | The `ImageBlendMode` property specifies how the image should be blended with the backdrop.  See the [BlendEffectMode](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffectMode.htm) reference. |
+| Mode | [ImageBlendMode](/dotnet/api/microsoft.toolkit.uwp.ui.media.imageblendmode) | The `ImageBlendMode` property specifies how the image should be blended with the backdrop.  See the [BlendEffectMode](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffectMode.htm) reference. |
 
 ## Sample Project
 
@@ -54,7 +54,7 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## Related Topics
 
-* [BitmapImage](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.bitmapimage)
+* [BitmapImage](/uwp/api/windows.ui.xaml.media.imaging.bitmapimage)
 * [Win2D BlendEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffect.htm)
 * [BlendEffectMode reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_BlendEffectMode.htm)
 * [Working with Brushes and Content – XAML and Visual Layer Interop, Part One](https://blogs.windows.com/buildingapps/2017/07/18/working-brushes-content-xaml-visual-layer-interop-part-one/#c57zf3bW4ylLlSvJ.97)

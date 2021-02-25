@@ -39,8 +39,8 @@ To authenticate your app, you need to register your app with Azure AD, and provi
 ### Register the App to use Azure AD v1 Endpoint
 
 You can register your app manually by using the [Azure Management Portal](http://portal.azure.com), or by using Visual Studio:
-1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
-2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/en-us/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
+1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](/previous-versions/office/office-365-api/)
+2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](/previous-versions/office/office-365-api/). Here is a summary to register your App manually:
     - Go to the [Azure Management Portal](http://portal.azure.com)
     - Go to the "Azure Active Directory" option
     - Go to "App Registrations" option
@@ -82,7 +82,7 @@ Using MSAL, v2 (default) authentication, you can use the same App ID to paste to
 If you don't have one, you need to create an Office 365 Developer Site. There are several ways to create one:
 
 * [An MSDN subscription](https://msdn.microsoft.com/subscriptions/manage/default.aspx) - This is available to MSDN subscribers with Visual Studio Ultimate and Visual Studio Premium.
-* [An existing Office 365 subscription](https://msdn.microsoft.com/library/2ec857d5-dc6f-4cf6-ba45-adc845ef2a25%28Office.15%29.aspx) - You can use an existing Office 365 subscription, which can be any of the following: Office 365 Midsize Business, Office 365 Enterprise, Office 365 Education, Office 365 Government.
+* [An existing Office 365 subscription](/sharepoint/dev/sp-add-ins/create-a-developer-site-on-an-existing-office-365-subscription) - You can use an existing Office 365 subscription, which can be any of the following: Office 365 Midsize Business, Office 365 Enterprise, Office 365 Education, Office 365 Government.
 * [Free O365 trial](https://portal.office.com/Signup?OfferId=6881A1CB-F4EB-4db3-9F18-388898DAF510&DL=DEVELOPERPACK&ali=1) - You can start with a free 30-day trial, or buy an Office 365 developer subscription.
 * [Free O365 Developer](http://dev.office.com/devprogram) - Or Get a One year free Office 365 Developer account
 

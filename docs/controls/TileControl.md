@@ -30,14 +30,14 @@ The [Tile](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.contro
 | AnimationDuration | double | Gets or sets a duration for the animation of the tile |
 | AnimationStepX | double | Gets or sets the animation step of the OffsetX |
 | AnimationStepY | double | Gets or sets the animation step of the OffsetY |
-| ImageAlignment | [ImageAlignment](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagealignment) | Gets or sets the alignment of the tile when the `ScrollOrientation` is set to Vertical or Horizontal. Valid values are Left or Right for `ScrollOrientation` set to Horizontal and Top or Bottom for `ScrollOrientation` set to Vertical |
+| ImageAlignment | [ImageAlignment](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagealignment) | Gets or sets the alignment of the tile when the `ScrollOrientation` is set to Vertical or Horizontal. Valid values are Left or Right for `ScrollOrientation` set to Horizontal and Top or Bottom for `ScrollOrientation` set to Vertical |
 | ImageSource | Uri | Gets or sets the uri of the image to load |
 | IsAnimated | bool | Gets or sets a value indicating whether the tile is animated or not |
 | IsCompositionSupported | bool | Gets a value indicating whether the platform supports Composition |
 | OffsetX | double | Gets or sets an X offset of the image |
 | OffsetY | double | Gets or sets an Y offset of the image |
 | ParallaxSpeedRatio | int | Gets or sets the speed ratio of the parallax effect with the `ScrollViewerContainer` |
-| ScrollOrientation | [ScrollOrientation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollorientation) | Gets or sets the scroll orientation of the tile. Less images are drawn when you choose the Horizontal or Vertical value |
+| ScrollOrientation | [ScrollOrientation](/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollorientation) | Gets or sets the scroll orientation of the tile. Less images are drawn when you choose the Horizontal or Vertical value |
 | ScrollViewerContainer | FrameworkElement | Gets or sets a ScrollViewer or a frameworkElement containing a ScrollViewer. The tile control is synchronized with the offset of the scrollviewer |
 
 ## Events

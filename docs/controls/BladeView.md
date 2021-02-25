@@ -42,9 +42,9 @@ The [BladeView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.c
 
 |          Property          |                                                 Type                                                  |                                               Description                                               |
 |----------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-|        ActiveBlades        | IList<[BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
+|        ActiveBlades        | IList<[BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
 | AutoCollapseCountThreshold |                                                  int                                                  | Gets or sets a value indicating what the overflow amount should be to start auto collapsing blade items |
-|         BladeMode          |    [BladeMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
+|         BladeMode          |    [BladeMode](/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
 
 ### BladeItem Properties
 

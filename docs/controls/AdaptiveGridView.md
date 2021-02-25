@@ -158,4 +158,4 @@ There are 3 ways to use this control:
 
 ## Related Topics
 
-- [GridView Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.GridView)
+- [GridView Class](/uwp/api/Windows.UI.Xaml.Controls.GridView)
