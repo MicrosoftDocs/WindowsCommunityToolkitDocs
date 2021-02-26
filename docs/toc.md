@@ -155,7 +155,17 @@
 
 ### [Handling Failure and Down-level](animations/lottie-scenarios/fallback.md)
 
-## [ItemsReorderAnimation](animations/ItemsReorderAnimation.md)
+## [Offset](animations/Offset.md)
+
+## [ReorderGridAnimation](animations/ReorderGrid.md)
+
+## [Rotate](animations/Rotate.md)
+
+## [Saturation](animations/Saturation.md)
+
+## [Scale](animations/Scale.md)
+
+## [ScrollViewerExtensions](animations/ScrollViewerExtensions.md)
 
 # Brushes
 

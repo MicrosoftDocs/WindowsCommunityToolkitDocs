@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ScrollViewerExtensions
 
-The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions) provide extension methods to improve your [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) implementation.
+The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions) type provides extension methods to improve your [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) implementation.
 
 > **Platform APIs:** [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions)
 
