@@ -91,7 +91,3 @@ Here is an example of using the ParallaxView
 | ---------------------------------------------------------------- | ----------------------------------- |
 | Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Animations |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Animations](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Animations/) |
-
-## API
-
-* [ParallaxService source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Animations/ParallaxService.cs)
