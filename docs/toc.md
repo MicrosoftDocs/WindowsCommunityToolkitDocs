@@ -192,13 +192,6 @@
 ## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
-## [Matrix Extensions](extensions/MatrixExtensions.md)
-
-### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
-
-### [Transform Extensions](extensions/TransformExtensions.md)
-
-## [Mouse Cursor](extensions/MouseCursor.md)
 
 ## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
 

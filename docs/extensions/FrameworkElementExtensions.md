@@ -102,6 +102,34 @@ Here is an example of how this can be used:
     Visibility="{Binding (ui:FrameworkElementExtensions.Ancestor).Visibility,RelativeSource={RelativeSource Self}}"/>
 ```
 
+# Cursor
+
+The `Cursor` attached property enables you to easily change the mouse cursor over specific Framework elements. Values of this property are values from the [`CoreCursorType`](https://docs.microsoft.com/uwp/api/windows.ui.core.corecursortype) type.
+
+Here is how you can easily set a custom cursor type for a target `FrameworkElement` instance:
+
+```xml
+<Page
+    x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MouseCursorPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border
+            ui:FrameworkElementExtensions.Cursor="Hand"
+            Width="220" Height="120" Background="DeepSkyBlue"
+            HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Grid>
+</Page>
+```
+
+> [!NOTE]
+> Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
+
+> [!WARNING]
+> Because the UWP framework does not support metadata on attached properties, specifically the [`FrameworkPropertyMetadata.Inherits`](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the `Cursor` property might not work properly in some very specific XAML layout scenarios when combining nested `FrameworkElement`-s with different `CoreCursorType` values set on them.
+
 ## Examples
 
 You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
