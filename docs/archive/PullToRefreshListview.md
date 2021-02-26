@@ -120,7 +120,3 @@ There are several PullToRefreshListView properties that have no effect when the 
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
-
-## API
-
-* [PullToRefreshListView source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView)
