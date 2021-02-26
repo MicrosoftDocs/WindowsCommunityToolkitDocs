@@ -193,7 +193,7 @@
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
-
+## [DependencyObjectExtensions](extensions/DependencyObjectExtensions.md)
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
 
 ## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
@@ -214,9 +214,6 @@
 ## [UIElementExtensions](extensions/UIElementExtensions.md)
 
 ## [ViewExtensions](extensions/ViewExtensions.md)
-
-## [Visual Tree](extensions/VisualTree.md)
-
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
 
 # Collections

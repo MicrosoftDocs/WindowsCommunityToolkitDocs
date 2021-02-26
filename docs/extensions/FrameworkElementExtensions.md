@@ -1,6 +1,6 @@
 ---
 title: FrameworkElement Extensions
-author: ST-Apps
+author: Sergio0694
 description: Provides attached dependency properties and extensions for the FrameworkElement type.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, FrameworkElement, extensions
 dev_langs:
