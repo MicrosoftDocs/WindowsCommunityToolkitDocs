@@ -128,7 +128,3 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [Bing Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/rel/4.0.0/Microsoft.Toolkit.Services/Services/Bing)
