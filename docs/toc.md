@@ -190,9 +190,6 @@
 ## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
-
-## [ArrayExtensions](extensions/ArrayExtensions.md)
-
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
@@ -208,9 +205,6 @@
 ## [OnDeviceExtension](extensions/OnDeviceExtension.md)
 
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
-
-## [StringExtensions](extensions/StringExtensions.md)
-
 ## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
 
 ## [TextBoxMask](extensions/TextBoxMask.md)
