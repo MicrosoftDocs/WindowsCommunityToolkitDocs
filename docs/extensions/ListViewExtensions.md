@@ -7,47 +7,40 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ListViewExtensions
 
-[ListViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.listviewextensions) provide a lightweight way to extend every control that inherits the [ListViewBase](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties.
+The [`ListViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions) class provide a lightweight way to extend every control that inherits the [`ListViewBase`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties. This means that all the extensions in this class can apply to both [`ListView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listview), [`GridView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.gridview) and other controls.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Extensions?sample=ListViewExtensions)
+> **Platform APIs:** [`ListViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions), [`ItemContainerStretchDirection`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.ItemContainerStretchDirection)
 
-## AlternateColor extentions
+## AlternateColor
 
-The AlternateColor property provides a way to assign a background color to every other item.
+The `AlternateColor` property provides a way to assign a background color to every other item.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid. 
+> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used in XAML:
 
-```xaml
+```xml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <ListView
-    extensions:ListViewExtensions.AlternateColor="Silver"
+    ui:ListViewExtensions.AlternateColor="Silver"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
+## AlternateItemTemplate
 
-| Property | Description |
-| --| -- |
-| AlternateColor | Attached `DependencyProperty` for binding a `Brush` as an alternate background color to a `ListViewBase` |
-
-## AlternateItemTemplate extentions
-
-The AlternateItemTemplate property provides a way to assign an alternate [datatemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the AlternateColor property.
+The `AlternateItemTemplate` property provides a way to assign an alternate [`DataTemplate`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the `AlternateColor` property.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid.
+> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used in XAML:
 
-```xaml
+```xml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <Page.Resources>
     <DataTemplate x:Name="NormalTemplate">
@@ -61,77 +54,48 @@ The AlternateItemTemplate property provides a way to assign an alternate [datate
 
 <ListView
     ItemTemplate="{StaticResource NormalTemplate}"
-    extensions:ListViewExtensions.AlternateItemTemplate="{StaticResource AlternateTemplate}"
+    ui:ListViewExtensions.AlternateItemTemplate="{StaticResource AlternateTemplate}"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
+## Command
 
-| Property | Description |
-| --| -- |
-| AlternateItemTemplate | Attached `DependencyProperty` for binding a `DataTemplate` as an alternate template to a `ListViewBase` |
-
-## Command extentions
-
-ListViewExtensions provides extension method that allow attaching [ICommand](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle ListViewBase Item interaction by means of [ItemClick](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
+`ListViewExtensions` provides extension method that allow attaching an [`ICommand`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle `ListViewBase` item interaction by means of [`ItemClick`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
 
 > [!IMPORTANT]
-> ListViewBase [IsItemClickEnabled](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`
+> ListViewBase [`IsItemClickEnabled`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`.
 
-### Syntax
+Here is how this property can be used in XAML:
 
-```xaml
+```xml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
      
 <ListView
-    extensions:ListViewExtensions.Command="{x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay}"
+    ui:ListViewExtensions.Command="{x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay}"
     IsItemClickEnabled="True"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}"
     SelectionMode="None" />
 ```
 
-### Properties
+## StretchItemContainerDirection
 
-| Property | Description |
-| --| -- |
-| Command | Attached `DependencyProperty` for binding an `ICommand` instance to a `ListViewBase` |
-
-## StretchItemContainerDirection extentions
-
-The StretchItemContainerDirection property provides a way to stretch the ItemContainer in horizontal, vertical or both ways. Possible values for this property are *Horizontal*, *Vertical* and *Both*.
+The `ItemContainerStretchDirection` property provides a way to stretch the `ItemContainer` in horizontal, vertical or both ways. The allowed values are items from the `ItemContainerStretchDirection` type.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than `ItemsStackPanel` or `ItemsWrapGrid`.
+> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used from XAML:
 
-```xaml
+```xml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <ListView
-    extensions:ListViewExtensions.StretchItemContainerDirection="Horizontal"
+    ui:ListViewExtensions.StretchItemContainerDirection="Horizontal"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
+## Examples
 
-| Property | Type | Description |
-| --| -- | -- |
-| StretchItemContainerDirection | [ListViewBase.StretchDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.listviewbase.stretchdirection) | Attached `DependencyProperty` for setting the container content stretch direction on the `ListViewBase` |
-
-## Sample Project
-
-[ListViewExtensions](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ListViewExtensions). You can [see this in action](uwpct://Extensions?sample=ListViewExtensions) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
-
-## API
-
-* [ListViewExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
