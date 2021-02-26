@@ -195,6 +195,8 @@
 
 ## [NullableBoolExtension](extensions/NullableBoolExtension.md)
 
+## [OnDeviceExtension](extensions/OnDeviceExtension.md)
+
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 
 ## [StringExtensions](extensions/StringExtensions.md)
