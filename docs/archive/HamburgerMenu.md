@@ -281,4 +281,5 @@ There are several HamburgerMenu properties that have no effect when the Hamburge
 
 ## API
 
-- [HamburgerMenu source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)
+- [HamburgerMenu source code archive](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)
+
