@@ -193,7 +193,7 @@
 
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 
-## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
+## [NullableBoolExtension](extensions/NullableBoolExtension.md)
 
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 
