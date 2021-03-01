@@ -14,7 +14,7 @@ Provides helpers and extensions for strings, including validation methods for co
 
 ## Syntax
 
-```c#
+```csharp
 using Microsoft.Toolkit.Extensions;
 
 string str = "test@test.com";

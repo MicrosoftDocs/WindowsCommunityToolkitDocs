@@ -94,7 +94,7 @@ For guidance, see [Configuring your Windows Forms app for high DPI support](http
 
 Add the following XML to your application manifest file:
 
-```XML
+```xml
 <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Windows 10 -->
@@ -104,7 +104,7 @@ Add the following XML to your application manifest file:
 ```
 Add the following XML to your application configuration file:
 
-```XML
+```xml
 <application xmlns="urn:schemas-microsoft-com:asm.v3">
    <windowsSettings>
      <!-- The combination of below two tags have the following effect :

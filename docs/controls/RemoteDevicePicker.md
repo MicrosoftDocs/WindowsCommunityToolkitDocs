@@ -19,7 +19,7 @@ The [RemoteDevicePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## Syntax
 
-```c#
+```csharp
 RemoteDevicePicker remoteDevicePicker = new RemoteDevicePicker()
 {
     Title = "Pick Remote Device",
@@ -31,7 +31,7 @@ await new MessageDialog($"You picked {result.Count.ToString()} Device(s)" + Envi
 
 You can also use default filter types for initializing. Like Below.
 
-```c#
+```csharp
 RemoteDevicePicker remoteDevicePicker = new RemoteDevicePicker(RemoteSystemDiscoveryType.Proximal, RemoteSystemAuthorizationKind.Anonymous, RemoteSystemStatusType.Any)
 {
     Title = "Pick Remote Device",

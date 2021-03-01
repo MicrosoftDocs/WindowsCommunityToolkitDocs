@@ -59,7 +59,7 @@ The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 
 First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
-```c#
+```csharp
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;
 
 MicrosoftGraphService.Instance.Initialize(

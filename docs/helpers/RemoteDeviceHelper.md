@@ -19,7 +19,7 @@ The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## Syntax
 
-```c#
+```csharp
 
 RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
 
@@ -27,7 +27,7 @@ RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
 
 You can also use default filter types for initializing. Like Below.
 
-```c#
+```csharp
 
 var filters = new List<IRemoteSystemFilter>
 {
@@ -41,7 +41,7 @@ RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper(filters);
 
 ## Example
 
-```c#
+```csharp
 // without filters
 
 RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();

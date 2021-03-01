@@ -21,7 +21,7 @@ The [NullableBool Markup Extension](https://docs.microsoft.com/dotnet/api/micros
 
 **C#**
 
-```c#
+```csharp
     [Bindable]
     public class ObjectWithNullableBoolProperty : DependencyObject
     {

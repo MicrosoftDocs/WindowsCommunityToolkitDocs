@@ -180,7 +180,7 @@ This library provides a default animation of a shriniking rectangle over the con
 </Button>
 ```
 
-```c#
+```csharp
 private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 {
     e.Handled = true;

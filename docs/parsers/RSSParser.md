@@ -78,7 +78,7 @@ End Sub
 
 ## .NET Example
 
-```cs
+```csharp
 public void ParseRSSdotnet()
 {
     SyndicationFeed feed = null;

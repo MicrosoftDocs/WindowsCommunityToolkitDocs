@@ -32,7 +32,7 @@ To configure the playback of the relevant animation segments based on PointerEnt
     </Border>
 ```
 
-```C#
+```csharp
     private static readonly (double fromProgress, double toProgress, bool looping) s_hoveredSegment = (0, 0.35, true);
     private static readonly (double fromProgress, double toProgress, bool looping) s_clickedSegment = (0.35, 1, false);
     private bool _isChecked;
