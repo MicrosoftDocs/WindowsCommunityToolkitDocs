@@ -160,9 +160,7 @@
 ### [Handling Failure and Down-level](animations/lottie-scenarios/fallback.md)
 
 ## [Offset](animations/Offset.md)
-
-## [ReorderGridAnimation](animations/ReorderGrid.md)
-
+## [ItemsReorderAnimation](animations/ItemsReorderAnimation.md)
 ## [Rotate](animations/Rotate.md)
 
 ## [Saturation](animations/Saturation.md)
@@ -346,7 +344,7 @@
 ## Animations
 
 ### [ParallaxService](archive/ParallaxService.md)
-
+### [ReorderGridAnimation](animations/ReorderGrid.md)
 ## Controls
 
 ### [HamburgerMenu](archive/HamburgerMenu.md)
