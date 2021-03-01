@@ -19,7 +19,7 @@ You can also preview the capabilities of the toolkit by downloading the [Windows
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
-# Open Source
+## Open Source
 
 [Windows Community Toolkit Source Code ](https://aka.ms/uwptoolkit)
 
