@@ -67,7 +67,7 @@ LoadingControl.IsLoading = true
 
 ## Sample Project
 
-[Loading Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Loading). You can [see this in action](uwpct://Controls?sample=Loading) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Loading Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Loading). You can [see this in action](uwpct://Controls?sample=Loading) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

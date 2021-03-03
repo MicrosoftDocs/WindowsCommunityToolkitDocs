@@ -34,7 +34,7 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Sample Project
 
-See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp)**.
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp)**.
 
 Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
 
@@ -51,4 +51,4 @@ If you have the **XAML Controls Gallery** app installed, [open the app and see t
 ## API
 
 * [DataGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid)
-* [Silverlight DataGrid API](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))
+* [Silverlight DataGrid API](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))

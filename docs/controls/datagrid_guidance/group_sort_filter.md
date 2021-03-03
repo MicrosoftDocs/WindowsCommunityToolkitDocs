@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Group, sort and filter data in the DataGrid Control
 
-It is often useful to view data in a DataGrid in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a DataGrid, you bind it to a [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource). You can then manipulate the data in the backing data source using LINQ queries without affecting the underlying data. The changes in the collection view are reflected in the DataGrid user interface (UI).
+It is often useful to view data in a DataGrid in different ways by grouping, sorting, and filtering the data. To group, sort, and filter the data in a DataGrid, you bind it to a [CollectionViewSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.data.collectionviewsource). You can then manipulate the data in the backing data source using LINQ queries without affecting the underlying data. The changes in the collection view are reflected in the DataGrid user interface (UI).
 
 The following walk-throughs demonstrate how to implement grouping, sorting and filtering for the DataGrid control through examples.
 
@@ -15,7 +15,7 @@ See [DataGrid Sample](https://github.com/Microsoft/WindowsCommunityToolkit/tree/
 
 ## 1. Grouping
 
-The DataGrid control has built-in row group header visuals for one-level grouping. You can set the DataGrid.ItemsSource to a grouped collection through [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.collectionviewsource) with **IsSourceGrouped** property set to True and the DataGrid will automatically show the contents grouped under row group headers based on the data source.
+The DataGrid control has built-in row group header visuals for one-level grouping. You can set the DataGrid.ItemsSource to a grouped collection through [CollectionViewSource](https://docs.microsoft.com/uwp/api/windows.ui.xaml.data.collectionviewsource) with **IsSourceGrouped** property set to True and the DataGrid will automatically show the contents grouped under row group headers based on the data source.
 
 The following walk-through shows how to implement and customize grouping in the DataGrid control.
 
@@ -32,7 +32,7 @@ The following walk-through shows how to implement and customize grouping in the 
 
 2. Create the grouped collection using LINQ
 
-```C#
+```csharp
 // Create grouping for collection
 ObservableCollection<GroupInfoCollection<Mountain>> mountains = new ObservableCollection<GroupInfoCollection<Mountain>>();
 
@@ -56,7 +56,7 @@ foreach (var g in query)
 
 3. Populate a CollectionViewSource instance with the grouped collection and set IsSourceGrouped property to True.
 
-```C#
+```csharp
 //Create the CollectionViewSource  and set to grouped collection
 CollectionViewSource groupedItems = new CollectionViewSource();
 groupedItems.IsSourceGrouped = true;
@@ -65,7 +65,7 @@ groupedItems.Source = mountains;
 
 4. Set the ItemsSource of the DataGrid control
 
-```C#
+```csharp
 //Set the datagrid's ItemsSource to grouped collection view source
 dg.ItemsSource = groupedItems.View;
 ```
@@ -88,7 +88,7 @@ dg.ItemsSource = groupedItems.View;
 </controls:DataGrid>
 ```
 
-```C#
+```csharp
 //Handle the LoadingRowGroup event to alter the grouped header property value to be displayed
 private void dg_loadingRowGroup(object sender, DataGridRowGroupHeaderEventArgs e)
 {
@@ -130,7 +130,7 @@ The following walk-through shows how to implement sorting in the DataGrid contro
 
 2. Handle the Sorting event to implement logic for sorting 
 
-```C#
+```csharp
 private void dg_Sorting(object sender, DataGridColumnEventArgs e)
 {
     //Use the Tag property to pass the bound column name for the sorting implementation 
@@ -167,7 +167,7 @@ private void dg_Sorting(object sender, DataGridColumnEventArgs e)
 
 3. Set the SortDirection property to the appropriate value for showing the built-in ascending sort icon in column header
 
-```C#
+```csharp
 //Show the ascending icon when acending sort is done
 e.Column.SortDirection = DataGridSortDirection.Ascending;
 
@@ -208,7 +208,7 @@ The DataGrid control does not support any built-in filtering capabilities. The f
 
 3. Handle the AppBarButton's Click event to implement the filtering logic.
 
-```C#
+```csharp
 private void rankLowFilter_Click(object sender, RoutedEventArgs e)
 {
     dg.ItemsSource = new ObservableCollection<Mountain>(from item in _items

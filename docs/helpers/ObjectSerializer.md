@@ -94,4 +94,4 @@ namespace Contoso.Helpers
 
 ## Related topics
 
-* [ObjectStorage](https://docs.microsoft.com/en-us/windows/communitytoolkit/helpers/objectstorage)
+* [ObjectStorage](https://docs.microsoft.com/windows/communitytoolkit/helpers/objectstorage)

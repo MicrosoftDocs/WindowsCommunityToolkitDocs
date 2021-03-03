@@ -46,7 +46,7 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## Sample Project
 
-[LoginButton sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[LoginButton sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -61,5 +61,5 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## Related Topics
 
-* [User Graph API](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta)
+* [User Graph API](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
 * [MGT Login Component](https://docs.microsoft.com/graph/toolkit/components/login)

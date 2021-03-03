@@ -129,7 +129,7 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 
 Use this event to handle clicking on links for Markdown, by default the MarkdownTextBlock does not handle Clicking on Links.
 
-```c#
+```csharp
 private async void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e)
 {
     if (Uri.TryCreate(e.Link, UriKind.Absolute, out Uri link))
@@ -143,7 +143,7 @@ private async void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs 
 
 Use this event to handle clicking on images for Markdown, by default the MarkdownTextBlock does not handle Clicking on Images.
 
-```c#
+```csharp
 private async void MarkdownText_ImageClicked(object sender, LinkClickedEventArgs e)
 {
     if (Uri.TryCreate(e.Link, UriKind.Absolute, out Uri link))
@@ -160,7 +160,7 @@ Use this event to customize how images in the markdown document are resolved.
 Set the ImageResolvingEventArgs.Image property to the image that should be shown in the rendered markdown document.  
 Also don't forget to set the ImageResolvingEventArgs.Handled flag to true, otherwise your custom image will not be used.
 
-```c#
+```csharp
 private void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArgs e)
 {
     // This is basically the default implementation
@@ -172,7 +172,7 @@ private void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArg
 This event also supports loading the image in an asynchronous way.  
 Just request a Deferral which you complete when you're done.
 
-```c#
+```csharp
 private async void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArgs e)
 {
     var deferral = e.GetDeferral();
@@ -190,7 +190,7 @@ Use this event to customise how Code Block text is rendered, this is useful for 
 
 Manipulate the Inline Collection, and then set e.Handled to true, otherwise the changes won't be processed.
 
-```c#
+```csharp
 private void MarkdownText_CodeBlockResolving(object sender, CodeBlockResolvingEventArgs e)
 {
     if (e.CodeLanguage == "CUSTOM")
@@ -205,7 +205,7 @@ private void MarkdownText_CodeBlockResolving(object sender, CodeBlockResolvingEv
 
 You can customise the rendering of the **MarkdownTextBlock**, by inheriting from `MarkdownRenderer` and setting it as the renderer:
 
-```c#
+```csharp
 var block = new MarkdownTextBlock();
 block.SetRenderer<InheritedMarkdownRenderer>();
 ```
@@ -217,7 +217,7 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -236,4 +236,4 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## Related Topics
 
-* [Markdown Parser](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
+* [Markdown Parser](https://docs.microsoft.com/windows/communitytoolkit/parsers/markdownparser)

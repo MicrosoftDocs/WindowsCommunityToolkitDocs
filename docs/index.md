@@ -15,12 +15,12 @@ The toolkit can be used to build apps for any Windows 10 device, including PC, M
 
 The Windows Community Toolkit is available as a Visual Studio NuGet package for new or existing C# and VB.NET projects. Read the [Getting Started](Getting-Started.md) page for all the details.
 
-You can also preview the capabilities of the toolkit by downloading the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp) in the Windows Store.
+You can also preview the capabilities of the toolkit by downloading the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp) in the Windows Store.
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
 ## Open Source
 
-[Windows Community Toolkit Source Code ](http://aka.ms/uwptoolkit)
+[Windows Community Toolkit Source Code ](https://aka.ms/uwptoolkit)
 
 Built as an open source project hosted on GitHub with support from the community. 

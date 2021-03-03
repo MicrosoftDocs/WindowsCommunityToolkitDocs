@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # FrameworkElement Extensions
 
-FrameworkElementExtensions provide helpers to bind to the actual size for any FrameworkElement or to bind to a parent value (to replace [RelativeSourceMode.FindAncestor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesourcemode)).
+FrameworkElementExtensions provide helpers to bind to the actual size for any FrameworkElement or to bind to a parent value (to replace [RelativeSourceMode.FindAncestor](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesourcemode)).
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=FrameworkElementExtensions)
@@ -35,7 +35,7 @@ The ActualWidth property allows to bind to TargetObject's ActualWidth.
 
 ## AncestorType
 
-The `AncestorType` attached property will walk the VisualTree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [FindAncestor](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesourcemode) mode to RelativeSource data binding in WPF.
+The `AncestorType` attached property will walk the VisualTree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [FindAncestor](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesourcemode) mode to RelativeSource data binding in WPF.
 
 ### Example
 
@@ -50,7 +50,7 @@ The `Ancestor` attached property stores the value discovered from the `AncestorT
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 
@@ -60,5 +60,5 @@ The `Ancestor` attached property stores the value discovered from the `AncestorT
 
 ## Related Topics
 
-- [RelativeSource.AncestorType (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesource.ancestortype)
-- [RelativeSourceMode (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesourcemode)
+- [RelativeSource.AncestorType (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesource.ancestortype)
+- [RelativeSourceMode (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesourcemode)

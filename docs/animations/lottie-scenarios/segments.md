@@ -32,7 +32,7 @@ To configure the playback of the relevant animation segments based on PointerEnt
     </Border>
 ```
 
-```C#
+```csharp
     private static readonly (double fromProgress, double toProgress, bool looping) s_hoveredSegment = (0, 0.35, true);
     private static readonly (double fromProgress, double toProgress, bool looping) s_clickedSegment = (0.35, 1, false);
     private bool _isChecked;
@@ -87,6 +87,6 @@ This results in the following interactive animated ToggleButton icon:
 ## Resources
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/SegmentPage.xaml.cs) for sample: interactive segments on an animation timeline
-* The resulting page in the [Lottie Samples application](http://aka.ms/lottiesamples)
+* The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

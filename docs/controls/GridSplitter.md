@@ -101,7 +101,7 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Sample Code
 
-[GridSplitter Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[GridSplitter Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

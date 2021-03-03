@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community
 
 # Gaze Interaction Library
 
-Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
+Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](https://docs.microsoft.com/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
 
 This Gaze Interaction Library is built on top of the Windows Gaze Input APIs and provides a set of developer helper classes to more easily enable UWP applications to respond to where the user is looking on the screen. This library is intended to abstract away some of the complexities of dealing with the raw stream of gaze input coming from the eye tracking device exposed through the Windows APIs.
 
@@ -180,7 +180,7 @@ This library provides a default animation of a shriniking rectangle over the con
 </Button>
 ```
 
-```c#
+```csharp
 private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 {
     e.Handled = true;
@@ -188,12 +188,12 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 ```
 
 <!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
-<!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/example -->
-<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/en-us/windows/communitytoolkit/animations/animationset#examples  -->
+<!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example -->
+<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/windows/communitytoolkit/animations/animationset#examples  -->
 
 ## Sample Project
 
-[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -208,4 +208,4 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## Related Topics
 
-* [Windows 10 Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview)
+* [Windows 10 Gaze Input APIs](https://docs.microsoft.com/uwp/api/windows.devices.input.preview)

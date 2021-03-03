@@ -77,7 +77,7 @@ This table shows the resources used by the [RadialGauge](https://docs.microsoft.
 
 ## Sample Project
 
-[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can [see this in action](uwpct://Controls?sample=RadialGauge) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialGauge Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGauge). You can [see this in action](uwpct://Controls?sample=RadialGauge) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

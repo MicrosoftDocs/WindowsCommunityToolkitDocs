@@ -145,7 +145,7 @@ internal class NewProjectCommand : ICommand
 
 ## Sample Project
 
-[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

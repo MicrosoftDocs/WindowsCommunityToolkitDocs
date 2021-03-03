@@ -54,7 +54,7 @@ Because the UWP framework does not support metadata on Attached Properties, spec
 
 ## Sample Project
 
-[Mouse Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can [see this in action](uwpct://Extensions?sample=Mouse) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Mouse Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can [see this in action](uwpct://Extensions?sample=Mouse) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
