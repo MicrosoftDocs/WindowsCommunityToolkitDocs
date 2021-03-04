@@ -146,9 +146,6 @@
 ## [Converters](helpers/Converters.md)
 ## [DeepLinkParser](helpers/DeepLinkParsers.md)
 ## [DispatcherHelper](helpers/DispatcherHelper.md)
-## [HttpHelper](helpers/HttpHelper.md)
-## [HttpHelperRequest](helpers/HttpHelperRequest.md)
-## [HttpHelperResponse](helpers/HttpHelperResponse.md)
 ## [ImageCache](helpers/ImageCache.md)
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
 ## [NetworkHelper](helpers/NetworkHelper.md)
@@ -164,27 +161,15 @@
 ## [WeakEventListener](helpers/WeakEventListener.md)
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
-# Services
-## [Facebook Service](services/Facebook.md)
-## [LinkedIn Service](services/Linkedin.md)
-## [Microsoft Graph Service](services/MicrosoftGraph.md)
-### [GraphLogin (WinForms)](services/GraphLogin.md)
-## [Microsoft Translator Service](services/MicrosoftTranslator.md)
-## [OneDrive Service](services/OneDrive.md)
-## [Twitter Service](services/Twitter.md)
-## [Weibo Service](services/Weibo.md)
-
-# Parsers
-## [MarkdownParser](parsers/MarkdownParser.md)
-## [RSSParser](parsers/RSSParser.md)
-## [Win2d Path Mini Language Parser](parsers/CanvasPathGeometry.md)
-## [Win2d Path Mini Language](parsers/Win2d_Path_Mini_Language.md)
-
 # High performance
 ## [Introduction](high-performance/Introduction.md)
 ## Buffers
 ### [MemoryOwner<T>](high-performance/MemoryOwner.md)
 ### [SpanOwner<T>](high-performance/SpanOwner.md)
+### [StringPool](high-performance/StringPool.md)
+## Memory
+### [Memory2D<T>](high-performance/Memory2D.md)
+### [Span2D<T>](high-performance/Span2D.md)
 ## [ParallelHelper](high-performance/ParallelHelper.md)
 ## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
 
@@ -192,6 +177,7 @@
 ## [AlignmentGrid](developer-tools/AlignmentGrid.md)
 ## [FocusTracker](developer-tools/FocusTracker.md)
 ## [Guard](developer-tools/Guard.md)
+## [ThrowHelper](developer-tools/ThrowHelper.md)
 
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
@@ -206,6 +192,10 @@
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 ### [SlidableListItem](archive/SlidableListItem.md)
+## Helpers
+### [HttpHelper](helpers/HttpHelper.md)
+### [HttpHelperRequest](helpers/HttpHelperRequest.md)
+### [HttpHelperResponse](helpers/HttpHelperResponse.md)
 ## Microsoft Graph Controls
 ### [AadLogin](archive/graph/AadLogin.md)
 ### [PeoplePicker](archive/graph/PeoplePicker.md)
@@ -213,5 +203,16 @@
 ### [PowerBIEmbedded](archive/graph/PowerBIEmbedded.md)
 ### [ProfileCard](archive/graph/ProfileCard.md)
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
+## Parsers
+### [MarkdownParser](parsers/MarkdownParser.md)
+### [RSSParser](parsers/RSSParser.md)
 ## Services
 ### [Bing Service](archive/Bing.md)
+### [Facebook Service](services/Facebook.md)
+### [LinkedIn Service](services/Linkedin.md)
+### [Microsoft Graph Service](services/MicrosoftGraph.md)
+### [GraphLogin (WinForms)](services/GraphLogin.md)
+### [Microsoft Translator Service](services/MicrosoftTranslator.md)
+### [OneDrive Service](services/OneDrive.md)
+### [Twitter Service](services/Twitter.md)
+### [Weibo Service](services/Weibo.md)
