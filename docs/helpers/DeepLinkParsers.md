@@ -13,7 +13,7 @@ dev_langs:
 The [DeepLinkParser Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.deeplinkparser) provides a way to create, from `IActivatedEventArgs` a `Dictionary<string,string>`-inheriting object that provides an additional `.Root` property to pull the base path of the URI (eg: in `MainPage/Options?option1=value1`, `.Root` would be `MainPage/Options`.
 Once you have an instance, simply saying `instance["optionName"]` will pull the value from the querystring for that option.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
