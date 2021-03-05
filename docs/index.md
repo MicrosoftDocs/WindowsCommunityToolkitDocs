@@ -21,7 +21,7 @@ Feel free to browse the documentation using the table of contents on the left si
 
 ## Open Source
 
-[Windows Community Toolkit Source Code ](https://aka.ms/uwptoolkit)
+[Windows Community Toolkit Source Code](https://aka.ms/uwptoolkit)
 
 Built as an open source project hosted on GitHub with support from the community. 
 
