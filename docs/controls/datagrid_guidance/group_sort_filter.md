@@ -103,6 +103,7 @@ private void dg_loadingRowGroup(object sender, DataGridRowGroupHeaderEventArgs e
 ## 2. Sorting
 
 Users can sort columns in the DataGrid control by tapping on the desired column headers. To implement sorting, the DataGrid control exposes the following mechanisms:
+
 * You can indicate columns are sortable in 2 ways. **CanUserSortColumns** property on DataGrid can be set to True to indicate all columns in the DataGrid control are sortable by the end user. Alternatively, you can also set **CanUserSort** property on individual DataGridColumns to control which columns are sortable by the end user. The default values for both properties is *True*. If both properties are set, any value of False will take precedence over a value of True.
 * You can indicate the sort direction of a column by setting **DataGridColumn.SortDirection?** property. The **DataGridSortDirection** enumeration allows the values of *Ascending* and *Descending*. The default value for SortDirection property is *null* (unsorted). 
 * If DataGridColumn.SortDirection property is set to *Ascending*, an ascending sort icon (upward facing arrow) will be shown to the right of the column header indicating that the specific column has been sorted in the ascending order. The reverse is true for *Descending*. When the value is *null*, no icon will be shown.

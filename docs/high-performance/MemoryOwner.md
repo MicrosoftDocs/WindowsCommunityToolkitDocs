@@ -80,6 +80,7 @@ public static (byte[] Buffer, int Length) GetBytesFromFile(string path)
 Using this approach, buffers are now rented from a pool, which means that in most cases we're able to skip an allocation. Additionally, since rented buffers are not cleared by default, we can also save the time needed to fill them with zeros, which gives us another small performance improvement. In the example above, loading 1000 files would bring the total allocation size from around 1MB down to just 1024 bytes - just a single buffer would effectively be allocated, and then reused automatically.
 
 There are two main issues with the code above:
+
 - `ArrayPool<T>` might return buffers that have a size greater than the requested one. To work around this issue, we need to return a tuple which also indicates the actual used size into our rented buffer.
 - By simply returning an array, we need to be extra careful to properly track its lifetime and to return it to the appropriate pool. We might work around this issue by using `MemoryPool<T>` instead and by returning an `IMemoryOwner<T>` instance, but we still have the problem of rented buffers having a greater size than what we need. Additionally, `IMemoryOwner<T>` has some overhead when retrieving a `Span<T>` to work on, due to it being an interface, and the fact that we always need to get a `Memory<T>` instance first, and then a `Span<T>`.
 

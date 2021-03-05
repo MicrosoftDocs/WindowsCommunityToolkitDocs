@@ -57,6 +57,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 ## To change the visibility of a row details section
 
 Set the **RowDetailsVisibilityMode** property to a value of the **DataGridRowDetailsVisibilityMode** enumeration:
+
 * *Collapsed* : The row details section is not displayed for any rows.
 * *Visible* : The row details section is displayed for all rows.
 * *VisibleWhenSelected* : The row details section is displayed only for selected rows.

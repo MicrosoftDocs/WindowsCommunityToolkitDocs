@@ -42,6 +42,7 @@ To authenticate your app, you need to register your app with Azure AD, and provi
 ### Register the App to use Azure AD v1 Endpoint
 
 You can register your app manually by using the [Azure Management Portal](https://portal.azure.com), or by using Visual Studio:
+
 1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
 2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
     - Go to the [Azure Management Portal](https://portal.azure.com)

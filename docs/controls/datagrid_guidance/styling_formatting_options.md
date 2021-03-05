@@ -12,6 +12,7 @@ The [DataGrid](../datagrid.md) control supports various styling and formatting o
 ## 1. GridLines
 
 You can control the visibility of the grid lines separating inner cells using the **DataGrid.GridLinesVisibility** property. The **DataGridGridLinesVisibility** enumeration has the following member values:
+
 * *None*: No grid lines are shown
 * *Horizontal*: Only horizontal grid lines, which separate rows, are shown.
 * *Vertical*: Only vertical grid lines, which separate columns, are shown.
@@ -40,6 +41,7 @@ The RowBackground and RowForeground properties are used to paint the background 
 ## 3. Headers visibility
 
 You can toggle the visibility of row and column headers using the **DataGrid.HeadersVisibility** property. The **DataGridHeadersVisibility** enumeration has the following member values:
+
 * *All*: Both column and row header cells are displayed.
 * *Column*: Only column header cells are displayed.
 * *Row*: Only row header cells are displayed.
@@ -56,6 +58,7 @@ Note: By default, DataGrid row headers are not displayed. To display row headers
 ## 4. Customizable templates and styling for cells, rows and headers
 
 All individual parts of the DataGrid control are customizable through simple Style properties such as:
+
 * *CellStyle* : style that is used when rendering the data grid cells.
 * *RowStyle* : style that is used when rendering the rows.
 * *ColumnHeaderStyle* : style that is used when rendering the column headers.
@@ -101,6 +104,7 @@ Frozen columns are columns that are always displayed and cannot be scrolled out 
 ## 6. Reorder and resize columns
 
 You can allow users to:
+
 * Adjust all column widths using mouse/touch/pen through the **DataGrid.CanUserResizeColumns** property.
 * Change the column display order by dragging the column headers using mouse/touch/pen through the **DataGrid.CanUserReorderColumns** property.
 * Set this behavior for individual columns by setting the **DataGridColumn.CanUserReorder/CanUserResize** properties. If the individual column properties and the global DataGrid.** properties are both set, a value of false will take precedence over a value of true.

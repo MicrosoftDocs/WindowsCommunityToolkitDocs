@@ -10,6 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 The [FocusTracker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.developertools.focustracker) can be used to display information about the current focused XAML element (if any).
 
 FocusTracker will display the following information (when available) about the current focused XAML element:
+
 - Name
 - Type
 - AutomationProperties.Name
