@@ -30,7 +30,7 @@ The `Mask` property also supports 2 type of characters:
 1) Variable: which the user can change like `a,9,*`
 2) Fixed: which the user can't change and it is any non variable character (eg. the `-` in the first example)
 
-Variable characters a represented to end user in form of placeholder so the user can know which characters he can change and which he can't, ex mask aaa-9999 will be presented to user as `___-____`. The default placeholder is `_`, but you can change it using the `Placeholder` property.
+Variable characters a represented to end user in form of placeholder so the user can know which characters he can change and which he can't, ex mask aaa-9999 will be presented to user as `___-____`. The default placeholder is `_`, but you can change it using the `MaskPlaceholder` property.
 
 You can escape variable by using `\` (eg. the mask `+\964` will be presented to the user as `+964`). This way, the `9` in the mask is treated as a fixed character, not as a variable. If you needed `\` in the mask then you can write it as `\\` (eg. `99\\99\\9999` will be presented to the user as `__\__\__`).
 
@@ -50,7 +50,7 @@ In case you want to add a custom variable character you can use the `CustomMask`
              characters not yet filled in by the user will just be blank spaces. -->
         <TextBox
             ui:TextBoxMask.Mask="+1999-9999"
-            ui:TextBoxMask.PlaceHolder=" "/>
+            ui:TextBoxMask.MaskPlaceholder=" "/>
 
         <!-- Mask = "+964 799 999 9999" (note the escape fore the first 9) -->
         <TextBox ui:TextBoxMask.Mask="+\964 799 999 9999"/>
@@ -69,7 +69,7 @@ In case you want to add a custom variable character you can use the `CustomMask`
 
 ### Sample output
 
-A `TextBox` with `Mask` set to `+1999-9999` and `Placeholder` as space (the placeholder represents the characters the user can change on runtime) will be displayed as follows:
+A `TextBox` with `Mask` set to `+1999-9999` and `MaskPlaceholder` as space (the placeholder represents the characters the user can change on runtime) will be displayed as follows:
 
 ![TextBoxMask animation](../resources/images/Extensions/TextBoxMask.gif)
 
