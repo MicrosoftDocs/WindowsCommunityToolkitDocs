@@ -50,7 +50,7 @@ When entering the value into the Facebook Developer site you must strip the ms-a
 
 ## Creating a new Application on Facebook Developer Site
 
-1. To get a **Facebook.WindowsStoreID**, go to: https://developers.facebook.com/apps. 
+1. To get a **Facebook.WindowsStoreID**, go to: <https://developers.facebook.com/apps>. 
 2. Select **Create a New App ID**, to start integration Facebook into your app or website. 
 3. Click, **Create a New App**
 4. From the app Dashboard choose the **Settings** item on the left.  It should select the *Basic* item under it by default.
