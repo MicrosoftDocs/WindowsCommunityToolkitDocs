@@ -36,9 +36,9 @@ If there is a Frame in the parent visual tree, the MasterDetailsView control wil
 
 To help with back navigation, The MasterDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonehavior` property to control the behaviour:
 - `Automatic` will let the control decide which back button to make visible/enabled.
-    - If the system back button is visible the control won't use any other buttons
-    - Else, if the control parent tree contains a Frame hosted in a NavigationView, the NavigationView back button will be used
-    - Otherwise, an inline button will be used 
+  - If the system back button is visible the control won't use any other buttons
+  - Else, if the control parent tree contains a Frame hosted in a NavigationView, the NavigationView back button will be used
+  - Otherwise, an inline button will be used
 - `System` will use the system back button controlled by the SystemNavigationManager. The control will make the button visible (if not already visible) when in the Details view and restore the visibility when transitioning to the Master view. This is the default value.
 - `Inline` will use a back button built into the control
 - `Manual` will not enable any back buttons (if using a custom button).
