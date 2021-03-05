@@ -16,8 +16,8 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ```xaml
 <controls:ImageEx Name="ImageExControl" IsCacheEnabled="True"
-	PlaceholderSource="/assets/thumbnails/thumbnails.png"
-	Source="/assets/bigPicture.png" CornerRadius="20"/>
+    PlaceholderSource="/assets/thumbnails/thumbnails.png"
+    Source="/assets/bigPicture.png" CornerRadius="20"/>
 ```
 
 ## Sample Output

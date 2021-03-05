@@ -74,7 +74,7 @@ Example of adding Add/Remove Buttons
     <controls:TextToolbar.CustomButtons>
         <buttons:ToolbarButton
             Name="CustomButton"
-			Icon="ReportHacked"
+            Icon="ReportHacked"
             Position="1"
             Activation="{x:Bind System.Action<ToolbarButton>}"
             ShortcutKey="H" />

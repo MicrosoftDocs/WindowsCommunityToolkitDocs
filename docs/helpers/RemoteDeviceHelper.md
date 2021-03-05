@@ -67,14 +67,14 @@ DevicesList.DataContext = _remoteDeviceHelper;
 <ListView ItemsSource="{Binding RemoteSystems}" x:Name="DevicesList">
   <ListView.ItemTemplate>
     <DataTemplate>
-	  <Grid>
-		<Grid.RowDefinitions>
-		  <RowDefinition Height="*"/>
-		  <RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
-		<TextBlock Text="{Binding DisplayName}" Tag="{Binding }" Grid.Row="0" />
-		<TextBlock Text="{Binding ModelDisplayName}" Tag="{Binding }" Grid.Row="1" />
-	  </Grid>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding DisplayName}" Tag="{Binding }" Grid.Row="0" />
+        <TextBlock Text="{Binding ModelDisplayName}" Tag="{Binding }" Grid.Row="1" />
+      </Grid>
     </DataTemplate>
   </ListView.ItemTemplate>
 </ListView>

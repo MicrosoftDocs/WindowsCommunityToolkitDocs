@@ -18,10 +18,10 @@ Provides helpers and extensions for strings, including validation methods for co
 using Microsoft.Toolkit.Extensions;
 
 string str = "test@test.com";
-bool isvalid = str.IsEmail();		//Returns true
+bool isvalid = str.IsEmail();  //Returns true
 
 string str = "123+888";
-bool isvalid = str.IsDecimal();		//Returns false
+bool isvalid = str.IsDecimal();  //Returns false
 ```
 
 ## Methods

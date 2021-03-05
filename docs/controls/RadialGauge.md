@@ -21,10 +21,10 @@ The Radial Gauge supports animated transitions between configuration states. The
 <Page ...
      xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
-<controls:RadialGauge x:Name="RadialGaugeControl" Column="1" Value="70" Minimum="0" 
-	Maximum="180" TickSpacing="20" ScaleWidth="26" Unit="Units" TickBrush="Gainsboro"
-	ScaleTickBrush="{ThemeResource ApplicationPageBackgroundThemeBrush}"
-	NeedleWidth="5" TickLength="18">
+<controls:RadialGauge x:Name="RadialGaugeControl" Column="1" Value="70" Minimum="0"
+    Maximum="180" TickSpacing="20" ScaleWidth="26" Unit="Units" TickBrush="Gainsboro"
+    ScaleTickBrush="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    NeedleWidth="5" TickLength="18">
 </controls:RadialGauge>
 ```
 

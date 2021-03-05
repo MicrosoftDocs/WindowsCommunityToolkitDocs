@@ -27,11 +27,11 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
 
 ```csharp
 
-	using Microsoft.Toolkit.Services.Services.MicrosoftGraph;
+    using Microsoft.Toolkit.Services.Services.MicrosoftGraph;
 
 
-	// Instance of Microsoft Graph 
-	private GraphServiceClient graphClient = null;
+    // Instance of Microsoft Graph 
+    private GraphServiceClient graphClient = null;
 
         public Form1()
         {
