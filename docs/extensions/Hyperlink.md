@@ -13,14 +13,14 @@ The **Hyperlink extension** allows for a Hyperlink element to invoke the execute
 ## Example
 
 ```xaml
-	// Use Hyperlink in a wrapped TextBlock with text either side and ensure it executes a command when
-	// clicked passing the current data context as the command parameter.
-	<TextBlock>
-	    <Run>Some leading text with a</Run>
-	     <Hyperlink extensions:Hyperlink.Command="{Binding HyperlinkClicked}"
-			        extensions:Hyperlink.CommandParameter="{Binding}">hyperlink</Hyperlink>
-	    <Run>in the middle.</Run>
-	</TextBlock>
+// Use Hyperlink in a wrapped TextBlock with text either side and ensure it executes a command when
+// clicked passing the current data context as the command parameter.
+<TextBlock>
+    <Run>Some leading text with a</Run>
+    <Hyperlink extensions:Hyperlink.Command="{Binding HyperlinkClicked}"
+        extensions:Hyperlink.CommandParameter="{Binding}">hyperlink</Hyperlink>
+    <Run>in the middle.</Run>
+</TextBlock>
 ```
 
 ## Requirements (Windows 10 Device Family)

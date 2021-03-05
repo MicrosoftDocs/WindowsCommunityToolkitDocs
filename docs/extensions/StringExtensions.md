@@ -5,7 +5,7 @@ description: String extension methods from toolkit
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, string
 ---
 
-### String Extensions
+# String Extensions
 
 Provides helpers and extensions for strings, including validation methods for common scenarios.
 
@@ -14,14 +14,14 @@ Provides helpers and extensions for strings, including validation methods for co
 
 ## Syntax
 
-```c#
+```csharp
 using Microsoft.Toolkit.Extensions;
 
 string str = "test@test.com";
-bool isvalid = str.IsEmail();		//Returns true
+bool isvalid = str.IsEmail();  //Returns true
 
 string str = "123+888";
-bool isvalid = str.IsDecimal();		//Returns false
+bool isvalid = str.IsDecimal();  //Returns false
 ```
 
 ## Methods

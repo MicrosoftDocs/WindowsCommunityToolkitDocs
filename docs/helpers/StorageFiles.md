@@ -22,13 +22,13 @@ StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
 // Save some text to a file named appFilename.txt (in the local cache folder)
 var storageFile = await StorageFileHelper.WriteTextToLocalCacheFileAsync(myText, "appFilename.txt");
 
-// Load some text from a file named appFilename.txt in the local cache folder	
+// Load some text from a file named appFilename.txt in the local cache folder 
 string loadedText = await StorageFileHelper.ReadTextFromLocalCacheFileAsync("appFilename.txt");
 
 // Save some text to a file named appFilename.txt (in the local folder)
 storageFile = await StorageFileHelper.WriteTextToLocalFileAsync(myText, "appFilename.txt");
 
-// Load some text from a file named appFilename.txt in the local folder	
+// Load some text from a file named appFilename.txt in the local folder 
 loadedText = await StorageFileHelper.ReadTextFromLocalFileAsync("appFilename.txt");
 
 // Check if a file exists in a specific folder
@@ -51,13 +51,13 @@ Dim localFolder As StorageFolder = Windows.Storage.ApplicationData.Current.Local
 ' Save some text to a file named appFilename.txt (in the local cache folder)
 Dim storageFile = Await StorageFileHelper.WriteTextToLocalCacheFileAsync(myText, "appFilename.txt")
 
-' Load some text from a file named appFilename.txt in the local cache folder	
+' Load some text from a file named appFilename.txt in the local cache folder 
 Dim loadedText As String = Await StorageFileHelper.ReadTextFromLocalCacheFileAsync("appFilename.txt")
 
 ' Save some text to a file named appFilename.txt (in the local folder)
 storageFile = Await StorageFileHelper.WriteTextToLocalFileAsync(myText, "appFilename.txt")
 
-' Load some text from a file named appFilename.txt in the local folder	
+' Load some text from a file named appFilename.txt in the local folder 
 loadedText = Await StorageFileHelper.ReadTextFromLocalFileAsync("appFilename.txt")
 
 ' Check if a file exists in a specific folder

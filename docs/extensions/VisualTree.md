@@ -29,7 +29,7 @@ control = uiElement.FindDescendant<ListView>();
 // Find all visual descendant controls of the specified type.
 foreach (var child in uiElement.FindDescendants<ListViewItem>())
 {
-	// ...
+    // ...
 }
 
 // Find first visual ascendant control using its name.

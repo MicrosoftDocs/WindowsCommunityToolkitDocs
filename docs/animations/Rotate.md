@@ -23,14 +23,14 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
     xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors">
 
 <interactivity:Interaction.Behaviors>
-    <behaviors:Rotate x:Name="RotateBehavior" 
-				Value="180"
-				CenterX="0.0" 
-				CenterY="0.0" 
-				Duration="500" 
-				Delay="250" 
-                                EasingType="Linear"
-				AutomaticallyStart="True"/>
+    <behaviors:Rotate x:Name="RotateBehavior"
+                Value="180"
+                CenterX="0.0"
+                CenterY="0.0"
+                Duration="500"
+                Delay="250"
+                EasingType="Linear"
+                AutomaticallyStart="True"/>
 </interactivity:Interaction.Behaviors>
 ```
 

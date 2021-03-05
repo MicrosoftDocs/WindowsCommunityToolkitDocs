@@ -215,3 +215,11 @@
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
 ## Services
 ### [Bing Service](archive/Bing.md)
+### [Facebook Service](services/Facebook.md)
+### [LinkedIn Service](services/Linkedin.md)
+### [Microsoft Graph Service](services/MicrosoftGraph.md)
+### [GraphLogin (WinForms)](services/GraphLogin.md)
+### [Microsoft Translator Service](services/MicrosoftTranslator.md)
+### [OneDrive Service](services/OneDrive.md)
+### [Twitter Service](services/Twitter.md)
+### [Weibo Service](services/Weibo.md)

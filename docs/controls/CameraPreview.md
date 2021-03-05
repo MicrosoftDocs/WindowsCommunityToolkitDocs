@@ -34,13 +34,13 @@ CameraPreviewControl.CameraHelper.FrameArrived += CameraPreviewControl_FrameArri
 
 private void CameraPreviewControl_FrameArrived(object sender, FrameEventArgs e)
 {
-	var videoFrame = e.VideoFrame;
-	var softwareBitmap = videoFrame.SoftwareBitmap;
+     var videoFrame = e.VideoFrame;
+     var softwareBitmap = videoFrame.SoftwareBitmap;
 }
 
 private void CameraPreviewControl_PreviewFailed(object sender, PreviewFailedEventArgs e)
 {
-	var errorMessage = e.Error;
+    var errorMessage = e.Error;
 }
 ```
 ```vb

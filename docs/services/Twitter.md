@@ -32,7 +32,7 @@ Copy this from the *Keys and Access Tokens* tab on your application page.
 Copy this from the *Keys and Access Tokens* tab on your application page.
 
 **Callback URI** Enter a unique URI for your application.  This must match the *Callback URL* field on the *Application Details* tab in Twitter.
-*Example*: http://myapp.company.com - (this does not have to be a working URL)
+*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
 
 ## Overview
 
@@ -70,19 +70,19 @@ ListView.ItemsSource = await TwitterService.Instance.GetUserTimeLineAsync(user.S
 await TwitterService.Instance.TweetStatusAsync(TweetText.Text);
 
 var status = new TwitterStatus
-			{
-				Message = TweetText.Text,
+    {
+        Message = TweetText.Text,
 
-				// Optional parameters defined by the Twitter "update" API (they may all be null or false)
+        // Optional parameters defined by the Twitter "update" API (they may all be null or false)
 
-				DisplayCoordinates = true,
-				InReplyToStatusId = "@ValidAccount",
-				Latitude = validLatitude,
-				Longitude = validLongitude,
-				PlaceId = "df51dec6f4ee2b2c",	// As defined by Twitter
-				PossiblySensitive = true,		// As defined by Twitter (nudity, violence, or medical procedures)
-				TrimUser = true
-			}
+        DisplayCoordinates = true,
+        InReplyToStatusId = "@ValidAccount",
+        Latitude = validLatitude,
+        Longitude = validLongitude,
+        PlaceId = "df51dec6f4ee2b2c", // As defined by Twitter
+        PossiblySensitive = true,  // As defined by Twitter (nudity, violence, or medical procedures)
+        TrimUser = true
+    }
 
 await TwitterService.Instance.TweetStatusAsync(status);
 
@@ -102,7 +102,7 @@ await TwitterService.Instance.StartUserStreamAsync(async tweet =>
     {
         if (tweet != null)
         {
-		_tweets.Insert(0, tweet);
+            _tweets.Insert(0, tweet);
         }
     });
 });

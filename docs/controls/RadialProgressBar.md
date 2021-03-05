@@ -24,8 +24,8 @@ The control uses the same dependency properties as the standard Progress Bar, wi
      xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
 <controls:RadialProgressBar x:Name="RadialProgressBarControl"
-	Value="70" Minimum="0" Maximum="180"
-	Thickness="4" Outline="Gray" Foreground="Red">
+    Value="70" Minimum="0" Maximum="180"
+    Thickness="4" Outline="Gray" Foreground="Red">
 </controls:RadialProgressBar>
 ```
 

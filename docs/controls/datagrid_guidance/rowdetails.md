@@ -63,7 +63,7 @@ Set the **RowDetailsVisibilityMode** property to a value of the **DataGridRowDet
 
 The following example shows how to use the RowDetailsVisibilityMode property to change the row details display mode programmatically from the selection of a value in a ComboBox:
 
-```C#
+```csharp
 // Set the row details visibility to the option selected in the combo box.
 private void cbRowDetailsVis_SelectionChanged(object sender, RoutedEventArgs e)
 {

@@ -18,21 +18,21 @@ The [ScrollHeader Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 <Page xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls" .../>
 
 <ListView Name="listView" ItemsSource="{x:Bind _items, Mode=OneWay}">
-	<ListView.Header>
-		<controls:ScrollHeader Mode="Sticky">
-			<TextBlock Text="Scroll Header" />
-		</controls:ScrollHeader>
-	</ListView.Header>
+    <ListView.Header>
+        <controls:ScrollHeader Mode="Sticky">
+            <TextBlock Text="Scroll Header" />
+        </controls:ScrollHeader>
+    </ListView.Header>
 </ListView>
 
 <!-- or -->
 
 <GridView Name="gridView" ItemsSource="{x:Bind _items, Mode=OneWay}">
-	<GridView.Header>
-		<controls:ScrollHeader Mode="Sticky">
-			<TextBlock Text="Scroll Header" />
-		</controls:ScrollHeader>
-	</GridView.Header>
+    <GridView.Header>
+        <controls:ScrollHeader Mode="Sticky">
+            <TextBlock Text="Scroll Header" />
+        </controls:ScrollHeader>
+    </GridView.Header>
 </GridView>
 ```
 
