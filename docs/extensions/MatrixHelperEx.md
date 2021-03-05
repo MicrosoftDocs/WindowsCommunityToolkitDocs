@@ -8,6 +8,7 @@ dev_langs:
 ---
 
 # MatrixHelperEx
+
 [MatrixHelperEx](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
 ## Methods

@@ -10,9 +10,11 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 ## Keyboard behaviors
 
 ### Keyboarding in Column headers
+
 The user can use TAB key to set keyboard focus to the current column headers. If the user can sort the columns, pressing ENTER key on the column header sorts that column. LEFT/RIGHT arrow keys move focus to column headers to the left and right of the currently focused column header. DOWN arrow key from a column header moves focus to the cell in the first row directly below the column header.
 
 ### Keyboarding in cells
+
 The following table lists the default keyboard behavior within the cells of the DataGrid control.
 
 Key or key combination | Description
@@ -43,6 +45,7 @@ DELETE | Deletes the character after the cursor when editing a cell.
 CTRL+ENTER | Commits any changes to the current cell without moving the focus.
 
 ## Selection behaviors
+
 The DataGrid control supports single row selection as well as multiple rows selection through the **DataGrid.SelectionMode** property. The **DataGridSelectionMode** enumeration has the following member values:
    * **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
    * **Single** : The user can select only one item at a time.
@@ -73,6 +76,7 @@ The following selection keys modify multi-row selection.
 * CTRL+SHIFT+PAGE UP
 
 ## Pointer behaviors
+
 The following table lists the default behaviors for pointer (mouse/touch/pen) actions.
 
 Pointer action | Description

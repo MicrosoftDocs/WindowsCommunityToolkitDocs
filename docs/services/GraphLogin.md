@@ -22,6 +22,7 @@ This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use 
 > Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see <https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration>.
 
 ## Syntax
+
 To use this sample code in a Windows Forms application, install the Microsoft.Toolkit.Win32.UI.Controls nuget package, and add a button, 2 labels, and a picturebox on the form.  Then drag a GraphLogin component from the toolbox on to the form, and enter the following code:
 
 ```csharp

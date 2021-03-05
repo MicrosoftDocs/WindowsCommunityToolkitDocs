@@ -24,42 +24,55 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 | [UserInteractionModeStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserInteractionModeStateTrigger) | Trigger for switching when the User interaction mode changes (tablet mode) |
 
 ## CompareStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" Comparison="LessThanOrEqual" To="3"/>
 </VisualState.StateTriggers>
 ```
+
 ## FullScreenModeStateTrigger Example 
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
 </VisualState.StateTriggers>
 ```                    
+
 ## IsEqualStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:IsEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
+
 ## IsNotEqualStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
+
 ## IsNullOrEmptyStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
 </VisualState.StateTriggers>
 ```              
+
 ## NetworkConnectionStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:NetworkConnectionStateTrigger ConnectionState="Connected" />
 </VisualState.StateTriggers>
 ```
+
 ## RegexStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:RegexStateTrigger Value="{Binding Text, ElementName=emailTextBox, Mode=OneWay}"
@@ -67,13 +80,17 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
                                                   Options="IgnoreCase" />
 </VisualState.StateTriggers>
 ```
+
 ## UserHandPreferenceStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:UserHandPreferenceStateTrigger HandPreference="LeftHanded" />
 </VisualState.StateTriggers>
 ```
+
 ## UserInteractionModeStateTrigger Example
+
 ```xml
 <VisualState.StateTriggers>
     <triggers:UserInteractionModeStateTrigger InteractionMode="Mouse" />

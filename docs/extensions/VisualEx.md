@@ -35,33 +35,43 @@ The Composition Visual Attached Properties allow developers to modify common pro
 > * Vector4 - "0" or "0, 0, 0, 0"
 
 ### AnchorPoint (Vector2)
+
 The point on the visual to be positioned at the visual's offset. Value is normalized with respect to the size of the visual.
 
 ### CenterPoint (Vector3)
+
 The point about which rotation or scaling occurs. 
 
 ### Offset (Vector3)
+
 The offset of the visual relative to its parent or for a root visual the offset relative to the upper-left corner of the windows that hosts the visual. 
 
 ### Opacity (double)
+
 The opacity of the visual.
 
 ### RotationAngle (double)
+
 The rotation angle in radians of the visual.
 
 ### RotationAngleInDegrees (double)
+
 The rotation angle of the visual in degrees.
 
 ### RotationAxis (Vector3)
+
 The axis to rotate the visual around. 
 
 ### Scale (Vector3)
+
 The scale to apply to the visual.
 
 ### Size (Vector2)
+
 The width and height of the visual.
 
 ### NormalizedCenterPoint (Vector3)
+
 The point about which rotation or scaling occurs, normalized between the values 0.0 and 1.0
 
 ## Requirements (Windows 10 Device Family)

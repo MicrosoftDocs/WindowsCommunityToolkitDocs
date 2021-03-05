@@ -8,6 +8,7 @@ dev_langs:
 ---
 
 # TabView XAML Control
+
 The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 > [!div class="nextstepaction"]
@@ -71,6 +72,7 @@ The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.con
 | TabDraggedOutside | Fires when a Tab is dragged outside of the Tab bar. |
 
 ### TabViewItem Events
+
 | Events | Description |
 | -- | -- |
 | TabClosing | Fires when a Tab's closed button is clicked. |

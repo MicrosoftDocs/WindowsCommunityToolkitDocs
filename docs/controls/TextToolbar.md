@@ -45,6 +45,7 @@ You can also Remove Default Buttons from any format, or Add Custom buttons to an
 | UseURIChecker | bool | Gets or sets a value indicating whether to enable use of URI Checker for Link Creator. This allows you to verify Absolute URIs, before creating the Link |
 
 ## Create a Custom Formatter
+
 In order to create your own Formatter, you need to Inherit from the **Formatter** Class. Then on the TextToolbar, Set the `Format` property to `Custom` and then Set the `Formatter` property with your instantiated Custom Formatter.
 
 When you create the Class, you will need to override the `DefaultButtons` Property. This will allow you to define what buttons you want your Format to display on the **Toolbar**.
