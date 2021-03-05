@@ -21,8 +21,8 @@ Using the `HyperlinkExtensions` attached properties simply requires you to assig
 <TextBlock xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
     <Run>Some leading text with a</Run>
         <Hyperlink
-            ui:Hyperlink.Command="{Binding HyperlinkClicked}"
-            ui:Hyperlink.CommandParameter="{Binding}">hyperlink</Hyperlink>
+            ui:HyperlinkExtensions.Command="{Binding HyperlinkClicked}"
+            ui:HyperlinkExtensions.CommandParameter="{Binding}">hyperlink</Hyperlink>
     <Run>in the middle.</Run>
 </TextBlock>
 ```
