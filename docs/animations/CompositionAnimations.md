@@ -167,7 +167,7 @@ Now we can add KeyFrames
 
 ## API
 
-* [Composition animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/CompositionAnimations)
+- [Composition animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/CompositionAnimations)
 
 ## Related Topics
 

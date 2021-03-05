@@ -129,9 +129,9 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## API
 
-* [Saturation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Saturation.cs)
+- [Saturation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Saturation.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [SaturationEffect Class](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [SaturationEffect Class](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)

@@ -85,4 +85,4 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## API
 
-* [HeaderedContentControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl)
+- [HeaderedContentControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl)

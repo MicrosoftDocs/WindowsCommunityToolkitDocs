@@ -110,4 +110,4 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API
 
-* [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)
+- [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)

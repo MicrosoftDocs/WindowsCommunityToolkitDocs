@@ -48,4 +48,4 @@ FocusTracker will display the following information (when available) about the c
 
 ## API
 
-* [FocusTracker source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.DeveloperTools/FocusTracker)
+- [FocusTracker source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.DeveloperTools/FocusTracker)

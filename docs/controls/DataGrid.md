@@ -41,7 +41,7 @@ Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCom
 
 If you have the **XAML Controls Gallery** app installed, [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
 
-- [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+* [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
 
 ## Requirements
 

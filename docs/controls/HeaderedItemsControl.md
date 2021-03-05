@@ -87,4 +87,4 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## API
 
-* [HeaderedItemsControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl)
+- [HeaderedItemsControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl)

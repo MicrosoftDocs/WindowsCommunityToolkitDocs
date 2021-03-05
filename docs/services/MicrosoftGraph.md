@@ -45,14 +45,14 @@ You can register your app manually by using the [Azure Management Portal](https:
 
 1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
 2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
-    - Go to the [Azure Management Portal](https://portal.azure.com)
-    - Go to the "Azure Active Directory" option
-    - Go to the "App Registrations" option
-    - Click on the "New application registration" button
-    - Enter a name for your App
-    - Specify your application as a **Native**
-    - Specify the Redirect Uri as **urn:ietf:wg:oauth:2.0:oob**
-    - Click "Create" button
+    * Go to the [Azure Management Portal](https://portal.azure.com)
+    * Go to the "Azure Active Directory" option
+    * Go to the "App Registrations" option
+    * Click on the "New application registration" button
+    * Enter a name for your App
+    * Specify your application as a **Native**
+    * Specify the Redirect Uri as **urn:ietf:wg:oauth:2.0:oob**
+    * Click "Create" button
 
 After you've registered your app, Azure AD will generate a client ID for your app. You'll need to use this client ID to get your access token.
 

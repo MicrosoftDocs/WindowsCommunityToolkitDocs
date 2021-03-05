@@ -109,8 +109,8 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 
 ## API
 
-* [Light source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Light.cs)
+- [Light source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Light.cs)
 
 ## Related Topics
 
-* [SceneLightingEffect Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Effects.SceneLightingEffect)
+- [SceneLightingEffect Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Effects.SceneLightingEffect)
