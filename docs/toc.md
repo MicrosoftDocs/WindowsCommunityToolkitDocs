@@ -356,6 +356,24 @@
 
 ### [SlidableListItem](archive/SlidableListItem.md)
 
+## Extensions
+
+### [ArrayExtensions](extensions/ArrayExtensions.md)
+
+### [Logical Tree](extensions/LogicalTree.md)
+
+### [Matrix Extensions](extensions/MatrixExtensions.md)
+
+### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
+
+### [Transform Extensions](extensions/TransformExtensions.md)
+
+### [Mouse Cursor](extensions/MouseCursor.md)
+
+### [Visual Tree](extensions/VisualTree.md)
+
+### [VisualEx](extensions/VisualEx.md)
+
 ## Helpers
 
 ### [HttpHelper](helpers/HttpHelper.md)
