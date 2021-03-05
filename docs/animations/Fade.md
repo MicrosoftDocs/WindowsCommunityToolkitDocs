@@ -36,6 +36,7 @@ The [Fade animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 MyUIElement.Fade(value: 0.5f, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Fade(value: 0.5f, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Fade animation can be awaited
 ```
+
 ```vb
 MyUIElement.Fade(value:=0.5F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Fade(value:=0.5F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Fade animation can be awaited
@@ -92,6 +93,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Fade(0.5F).Blur(5).Rotate(30)
     anim.SetDurationForAll(2500)

@@ -82,6 +82,7 @@ You can change this behavior with one of these values:
         ```csharp
         ExampleInAppNotification.Show();
         ```
+
         ```vb
         ExampleInAppNotification.Show()
         ```
@@ -91,6 +92,7 @@ You can change this behavior with one of these values:
         ```csharp
         ExampleInAppNotification.Show("Some text.");
         ```
+
         ```vb
         ExampleInAppNotification.Show("Some text.")
         ```
@@ -103,6 +105,7 @@ You can change this behavior with one of these values:
         // TODO : Construct the Grid in C#
         ExampleInAppNotification.Show(grid);
         ```
+
         ```vb
         Dim grid = New Grid()
 
@@ -121,6 +124,7 @@ You can change this behavior with one of these values:
             ExampleInAppNotification.Show(inAppNotificationWithButtonsTemplate as DataTemplate);
         }
         ```
+
         ```vb
         Dim inAppNotificationWithButtonsTemplate As Object
         Dim isTemplatePresent As Boolean = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", inAppNotificationWithButtonsTemplate)
@@ -142,6 +146,7 @@ You can change this behavior with one of these values:
         var notificationData = new MyNotificationData("Title", "Message");
         ExampleInAppNotification.Show(notificationData, duration: 2000);
         ```
+
         ```vb
         Dim notificationData As New MyNotificationData("Title", "Message");
         ExampleInAppNotification.Show(notificationData, duration: 2000);
@@ -152,6 +157,7 @@ You can change this behavior with one of these values:
     ```csharp
     ExampleInAppNotification.Show("Some text.", 2000); // the notification will appear for 2 seconds
     ```
+
     ```vb
     ExampleInAppNotification.Show("Some text.", 2000)  ' The notification will appear for 2 seconds
     ```
@@ -161,6 +167,7 @@ You can change this behavior with one of these values:
     ```csharp
     ExampleInAppNotification.Dismiss();
     ```
+
     ```vb
     ExampleInAppNotification.Dismiss()
     ```
@@ -180,6 +187,7 @@ You can change this behavior with one of these values:
         }
     }
     ```
+
     ```vb
     Private Sub InAppNotification_OnClosing(ByVal sender As Object, ByVal e As InAppNotificationDismissingEventArgs)
         If e.DismissKind = InAppNotificationDismissKind.User Then

@@ -77,6 +77,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize
      null, 
      null);
 ```
+
 ```vb
 ' Using the new converged authentication of the Microsoft Graph we can simply
 ' call the Initialize method on the OneDriveService singleton when initializing
@@ -95,6 +96,7 @@ if (scopes == null)
     scopes = new string[] { MicrosoftGraphScope.FilesReadAll };
 }
 ```
+
 ```vb
 ' If the user hasn't selected a scope then set it to FilesReadAll
 If scopes Is Nothing Then
@@ -111,6 +113,7 @@ if (!await OneDriveService.Instance.LoginAsync())
     throw new Exception("Unable to sign in");
 }
 ```
+
 ```vb
 ' Login
 If Not Await OneDriveService.Instance.LoginAsync() Then
@@ -123,6 +126,7 @@ End If
 ```csharp
 var folder = await OneDriveService.Instance.RootFolderForMeAsync();
 ```
+
 ```vb
 Dim folder = Await OneDriveService.Instance.RootFolderForMeAsync()
 ```
@@ -140,6 +144,7 @@ do
 }
 while (OneDriveItems != null);
 ```
+
 ```vb
 ' Once you have a reference to the Root Folder you can get a list of all items
 ' List the Items from the current folder
@@ -161,6 +166,7 @@ if (!string.IsNullOrEmpty(newFolderName))
     await folder.StorageFolderPlatformService.CreateFolderAsync(newFolderName, CreationCollisionOption.GenerateUniqueName);
 }
 ```
+
 ```vb
 ' Then from there you can play with folders and files
 ' Create Folder
@@ -177,6 +183,7 @@ var currentFolder = await _graphCurrentFolder.GetFolderAsync(item.Name);
 OneDriveItemsList.ItemsSource = await currentFolder.GetItemsAsync(20);
 _graphCurrentFolder = currentFolder;
 ```
+
 ```vb
 Dim currentFolder = Await _graphCurrentFolder.GetFolderAsync(item.Name)
 OneDriveItemsList.ItemsSource = Await currentFolder.GetItemsAsync(20)
@@ -196,6 +203,7 @@ await _onedriveStorageItem.CopyAsync(targetonedriveStorageFolder);
 // Rename Folder
 await _onedriveStorageItem.RenameAsync("NewLevel3");
 ```
+
 ```vb
 ' OneDrive API treats all items the same whether file, folder, etc.
 ' Move Folder
@@ -221,6 +229,7 @@ if (selectedFile != null)
     }
 }
 ```
+
 ```vb
 ' Open the local file or create a local file if brand new
 Dim selectedFile = Await OpenLocalFileAsync()
@@ -247,6 +256,7 @@ if (selectedFile != null)
     }
 }
 ```
+
 ```vb
 Dim selectedFile = Await OpenLocalFileAsync()
 If selectedFile IsNot Nothing Then
@@ -271,6 +281,7 @@ using (var remoteStream = (await oneDriveFile.StorageFilePlatformService.OpenAsy
     await SaveToLocalFolder(remoteStream, oneDriveFile.Name);
 }
 ```
+
 ```vb
 ' Download a file and save the content in a local file
 ' Convert the storage item to a storage file
@@ -291,6 +302,7 @@ using (var stream = (await file.StorageItemPlatformService.GetThumbnailAsync(Too
     await OneDriveSampleHelpers.DisplayThumbnail(stream, "thumbnail");
 }
 ```
+
 ```vb
 Dim file = CType((CType(e.OriginalSource, AppBarButton)).DataContext, Toolkit.Services.OneDrive.OneDriveStorageItem)
 Using stream = TryCast((Await file.StorageItemPlatformService.GetThumbnailAsync(Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Large)), IRandomAccessStream)

@@ -75,6 +75,7 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
         </animations:Implicit.Animations>
     </Border>
     ```
+
     ![Example Output 1](../resources/images/Animations/ImplicitAnimations/Example-Output-1.gif)
 
 - Let's create blink animation to show and hide controls.

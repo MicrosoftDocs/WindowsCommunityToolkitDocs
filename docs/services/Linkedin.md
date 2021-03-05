@@ -46,6 +46,7 @@ await LinkedInService.Instance.GetUserProfileAsync();
 // Share message to LinkedIn (text should include a Url so LinkedIn can scrape preview information)
 await LinkedInService.Instance.ShareActivityAsync(ShareText.Text);
 ```
+
 ```vb
 ' Initialize service - use overload if you need to supply additional permissions
 LinkedInService.Instance.Initialize(ClientId.Text, ClientSecret.Text, CallbackUri.Text)

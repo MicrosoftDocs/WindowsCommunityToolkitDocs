@@ -155,6 +155,7 @@ namespace HamburgerSample
     }
 }
 ```
+
 ```vb
 Public NotInheritable Class MainPage
     Inherits Page
@@ -221,6 +222,7 @@ The HamburgerMenu and NavigationView share the same concepts and provide the sam
       settingsItem.Content = "About";
       settingsItem.Icon = new FontIcon() { Glyph = "?" };
       ```
+
       ```vb
       Dim settingsItem = TryCast(HamburgerMenu.SettingsItem, NavigationViewItem)
       settingsItem.Content = "About"

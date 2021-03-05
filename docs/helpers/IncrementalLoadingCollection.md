@@ -83,6 +83,7 @@ public class PeopleSource : IIncrementalSource<Person>
     }
 }
 ```
+
 ```vb
 ' Be sure to include the using at the top of the file:
 'Imports Microsoft.Toolkit.Uwp
@@ -125,6 +126,7 @@ The *GetPagedItemsAsync* method is invoked everytime the view need to show more 
 var collection = new IncrementalLoadingCollection<PeopleSource, Person>();
 PeopleListView.ItemsSource = collection;
 ```
+
 ```vb
 Dim collection = New IncrementalLoadingCollection(Of PeopleSource, Person)()
 PeopleListView.ItemsSource = collection

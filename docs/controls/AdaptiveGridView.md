@@ -106,6 +106,7 @@ There are 3 ways to use this Control:
             }
         }
         ```
+
         ```vb
         Public Class AspectContentControl
             Inherits ContentControl

@@ -34,6 +34,7 @@ anim.SetDurationForAll(2500);
 anim.SetDelay(250);
 anim.Start();
 ```
+
 ```vb
 Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
 anim.SetDurationForAll(2500)
@@ -128,6 +129,7 @@ You can change the way how the animation interpolates between keyframes by defin
         }
     }
     ```
+
     ```vb
     Private Sub MyUIElement_PointerEntered(ByVal sender As Object, ByVal e As PointerRoutedEventArgs)
         preElement = TryCast(sender, FrameworkElement)
@@ -155,6 +157,7 @@ You can change the way how the animation interpolates between keyframes by defin
                .SetDurationForAll(2500)
                .Start();
     ```
+
     ```vb
     MyUIElement.Blur(value:=10) _
                .Fade(value:=0.5F) _

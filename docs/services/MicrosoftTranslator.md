@@ -41,6 +41,7 @@ var detectedLanguageConfidence = detectResult.Score;
 var translationResult = await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it");
 var translatedText = translationResult.Translation.Text;
 ```
+
 ```vb
 ' Imports Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
 

@@ -45,6 +45,7 @@ printHelper.AddFrameworkElementToPrint(frameworkElement);
 
 await printHelper.ShowPrintUIAsync("Title");
 ```
+
 ```vb
 Dim printHelper = New PrintHelper(container)
 
@@ -113,6 +114,7 @@ private async void PrintHelper_OnPrintFailed()
   await dialog.ShowAsync();
 }
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to host printable control. 
@@ -154,6 +156,7 @@ var printHelper = new PrintHelper(container);
 // Start printing process
 await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", true);
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to get the list of printable controls. 
@@ -179,6 +182,7 @@ defaultPrintHelperOptions.Orientation = PrintOrientation.Landscape;
 // "container" is a XAML panel that will be used to get the list of printable controls.
 var printHelper = new PrintHelper(container, defaultPrintHelperOptions);
 ```
+
 ```vb
 ' Create a new PrintHelperOptions instance
 Dim defaultPrintHelperOptions = New PrintHelperOptions()
@@ -214,6 +218,7 @@ printHelperOptions.Orientation = PrintOrientation.Landscape;
 // Start printing process
 await _printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", printHelperOptions);
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to get the list of printable controls.
@@ -273,6 +278,7 @@ foreach (var item in PrintSampleItems)
 // Start printing process
 await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", printHelperOptions);
 ```
+
 ```vb
   Dim printHelper = New PrintHelper(container)
   Dim pageNumber = 0

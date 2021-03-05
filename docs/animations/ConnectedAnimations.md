@@ -99,6 +99,7 @@ In those cases, you can use the **SetListDataItemForNextConnectedAnnimation** ex
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.Navigate(typeof(DetailsPage), dataItemToAnimate.Id);
 ```
+
 ```vb
     ' dataItemToAnimate is an object in the ListViewBase.ItemsSource collection
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
@@ -111,6 +112,7 @@ This method is also helpful when navigating back to an item different from the i
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.GoBack();
 ```
+
 ```vb
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
     Frame.GoBack()

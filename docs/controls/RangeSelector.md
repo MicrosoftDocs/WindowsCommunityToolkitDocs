@@ -67,6 +67,7 @@ private void Selector_OnDragCompleted(object sender, DragCompletedEventArgs e)
  ScrollViewer.VerticalScrollMode = ScrollMode.Auto;
 }
 ```
+
 ```vb
 Private Sub Selector_OnDragStarted(ByVal sender As Object, ByVal e As DragStartedEventArgs)
  ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled

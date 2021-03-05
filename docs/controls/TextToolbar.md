@@ -100,6 +100,7 @@ Toolbar.CustomButtons.Add(new ToolbarButton
 });
 Toolbar.CustomButtons.Add(new ToolbarSeparator { Position = 2 });
 ```
+
 ```vb
 Dim button = Toolbar.GetDefaultButton(ButtonType.Headers)
 button.Visibility = Windows.UI.Xaml.Visibility.Collapsed

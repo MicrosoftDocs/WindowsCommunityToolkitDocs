@@ -53,6 +53,7 @@ using (var stream = await StreamHelper.GetHttpStreamAsync(new Uri("http://dev.wi
     ...
 }
 ```
+
 ```vb
 ' Get access to a text file that was included in solution as Content | do not copy local
 Using stream = Await StreamHelper.GetPackagedFileStreamAsync("Assets/Sub/test.txt")

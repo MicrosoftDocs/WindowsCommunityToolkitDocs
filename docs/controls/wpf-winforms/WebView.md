@@ -106,6 +106,7 @@ Add the following XML to your application manifest file:
     </application>
   </compatibility>
 ```
+
 Add the following XML to your application configuration file:
 
 ```xml
@@ -151,6 +152,7 @@ private void WebView_Loaded(object sender, RoutedEventArgs e)
     webView1.Navigate("http://www.contoso.com");
 }
 ```
+
 ```vb
 webView1.Navigate("http://www.contoso.com")
 ```
@@ -182,6 +184,7 @@ private void webView1_NavigationStarting(object sender, WebViewControlNavigation
         args.Cancel = true;
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT
 
@@ -207,6 +210,7 @@ private void webView1_ContentLoading(WebView sender, WebViewControlContentLoadin
     }
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Wpf.UI.Controls
 
@@ -233,6 +237,7 @@ private void webView1_DOMContentLoaded(WebView sender, WebViewControlDOMContentL
     }
 }
 ```
+
 ```vb
 AddHandler webView1.DOMContentLoaded, AddressOf webView1_DOMContentLoaded
 
@@ -261,6 +266,7 @@ private void webView1_NavigationCompleted(WebView sender, WebViewControlNavigati
     }
 }
 ```
+
 ```vb
 AddHandler webView1.NavigationCompleted, AddressOf webView1_NavigationCompleted
 
@@ -321,6 +327,7 @@ private void webView_ContainsFullScreenElementChanged(object sender, object args
     }
 }
 ```
+
 ```vb
 ' Assume webView1 is defined in XAML
 AddHandler webView1.ContainsFullScreenElementChanged, AddressOf webView1_ContainsFullScreenElementChanged
@@ -362,6 +369,7 @@ private void webView_PermissionRequested(WebView sender, WebViewControlPermissio
     }
 }
 ```
+
 ```vb
 AddHandler webView1.PermissionRequested, AddressOf webView1_PermissionRequested
 
@@ -386,6 +394,7 @@ For example, if the content of a web view named `webView1` contains a function n
 string[] args = {"January", "1", "2000"};
 string returnValue = await webView1.InvokeScriptAsync("setDate", args);
 ```
+
 ```vb
 Dim args As String() = {"January", "1", "2000"}
 Dim returnValue As String = Await webView1.InvokeScriptAsync("setDate", args)
@@ -402,6 +411,7 @@ private async void Button_Click(object sender, RoutedEventArgs e)
     await webView1.InvokeScriptAsync("eval", new string[] { functionString });
 }
 ```
+
 ```vb
 Private Async Sub Button_Click(sender As Object, e As RoutedEventArgs)
     Dim functionString As String = String.Format("document.getElementById('nameDiv').innerText = 'Hello, {0}';", nameTextBox.Text)
@@ -424,6 +434,7 @@ By default, the **WebView** is hosted outside of your application's process in a
 For example, if through the designer a **WebView** named `webView1` is on `Form1`, you can create a new **WebView** that shares the same process and state with `webView1` like this.
 
 **Form1.cs**
+
 ```csharp
 public partial class Form1 : Form
 {
@@ -441,6 +452,7 @@ public partial class Form1 : Form
     }
 }
 ```
+
 ```vb
 Private Class Form1
 
@@ -512,6 +524,7 @@ public partial class MainWindow : Window
     }
 }
 ```
+
 ```vb
 Class MainWindow
     Private Sub WebView_Loaded(sender As Object, e As RoutedEventArgs)

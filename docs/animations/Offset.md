@@ -37,6 +37,7 @@ The [Offset animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 MyUIElement.Offset(offsetX: 25, offsetY: 25, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Offset(offsetX: 25, offsetY: 25, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Offset animation can be awaited
 ```
+
 ```vb
 MyUIElement.Offset(offsetX:=25, offsetY:=25, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Offset(offsetX:=25, offsetY:=25, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Offset animation can be awaited
@@ -90,9 +91,11 @@ You can change the way how the animation interpolates between keyframes by defin
     ```csharp
     await MyUIElement.Offset().Start();
     ```
+
     ```vb
     Await MyUIElement.Offset().Start()
     ```
+
 - Use await to create a continuous movement
 
     **Sample Code**
@@ -106,6 +109,7 @@ You can change the way how the animation interpolates between keyframes by defin
         await MyUIElement.Offset(duration: 1000).StartAsync();
     }
     ```
+
     ```vb
     Public Async Function OffsetAsync() As Task
         Await MyUIElement.Offset(offsetX:=100, duration:=1000).StartAsync()
@@ -130,6 +134,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)

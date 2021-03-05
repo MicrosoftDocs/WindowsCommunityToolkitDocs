@@ -178,6 +178,7 @@ e.Column.SortDirection = DataGridSortDirection.Descending;
 previousSortedColumn.SortDirection = null;
 
 ```
+
 ![Sort](../../resources/images/Controls/DataGrid/sorting.png)
 
 ## 3. Filtering

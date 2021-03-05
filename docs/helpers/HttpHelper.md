@@ -22,6 +22,7 @@ var request = new HttpHelperRequest(new Uri("URI"), HttpMethod.Post);
 
 var response = await HttpHelper.Instance.SendRequestAsync(request);
 ```
+
 ```vb
 Private request = New HttpHelperRequest(New Uri("URI"), HttpMethod.Post)
 
@@ -62,6 +63,7 @@ using (var request = new HttpHelperRequest(new Uri(twitterUrl), HttpMethod.Post)
     }
 }
 ```
+
 ```vb
 Using request = New HttpHelperRequest(New Uri(twitterUrl), HttpMethod.Post)
     Using response = Await HttpHelper.Instance.SendRequestAsync(request)

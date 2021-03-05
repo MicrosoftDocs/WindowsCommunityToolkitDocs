@@ -27,6 +27,7 @@ The [ReorderGridAnimation class](https://docs.microsoft.com/dotnet/api/microsoft
 ```csharp
 MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250);
 ```
+
 ```vb
 MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250)
 ```

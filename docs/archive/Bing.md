@@ -39,6 +39,7 @@ var searchConfig = new BingSearchConfig
 
 ListView.ItemsSource = await BingService.Instance.RequestAsync(searchConfig, 50);
 ```
+
 ```vb
 Imports using Microsoft.Toolkit.Services.Bing
 

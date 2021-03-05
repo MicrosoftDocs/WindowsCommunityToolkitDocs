@@ -77,6 +77,7 @@ person.Name = "Zaphod"; // Now a re-sort is triggered and person will be last in
 // AdvancedCollectionView can be bound to anything that uses collections. 
 YourListView.ItemsSource = acv;
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp.UI
 
@@ -196,6 +197,7 @@ using (acv.DeferRefresh())
     }
 } // acv.Refresh() gets called here
 ```
+
 ```vb
 Using acv.DeferRefresh()
     For i = 0 To 500 - 1

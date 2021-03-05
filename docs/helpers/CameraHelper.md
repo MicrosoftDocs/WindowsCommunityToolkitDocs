@@ -48,6 +48,7 @@ private void CameraHelper_FrameArrived(object sender, FrameEventArgs e)
   SoftwareBitmap softwareBitmap = currentVideoFrame.SoftwareBitmap;
 }
 ```
+
 ```vb
 ' Creates a Camera Helper and gets video frames from an available frame source.
 Imports Microsoft.Toolkit.Uwp.Helpers
@@ -133,6 +134,7 @@ if(availableFrameSourceGroups != null)
   }
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp.Helpers
 

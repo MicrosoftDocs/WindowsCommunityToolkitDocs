@@ -22,6 +22,7 @@ You can also change the color of the gridlines using **HorizontalGridLinesBrush*
 ```xml
 <controls:DataGrid GridLinesVisibility="All"/>
 ```
+
 ![Gridlines](../../resources/images/Controls/DataGrid/gridlines.png)
 
 ## 2. Alternating rows
@@ -33,6 +34,7 @@ The RowBackground and RowForeground properties are used to paint the background 
 ```xml
 <controls:DataGrid AlternatingRowBackground="LightGray"/>
 ```
+
 ![AlternatingRowBackground](../../resources/images/Controls/DataGrid/alternaterowbackground.png)
 
 ## 3. Headers visibility
@@ -48,6 +50,7 @@ Note: By default, DataGrid row headers are not displayed. To display row headers
 ```xml
 <controls:DataGrid HeadersVisibility="Column"/>
 ```
+
 ![Headers](../../resources/images/Controls/DataGrid/gridlines.png)
 
 ## 4. Customizable templates and styling for cells, rows and headers
@@ -92,6 +95,7 @@ Frozen columns are columns that are always displayed and cannot be scrolled out 
 ```xml
 <controls:DataGrid FrozenColumnCount="2"/>
 ```
+
 ![FrozenColumns](../../resources/images/Controls/DataGrid/frozencolumns.png)
 
 ## 6. Reorder and resize columns

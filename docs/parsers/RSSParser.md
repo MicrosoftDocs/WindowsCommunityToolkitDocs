@@ -54,6 +54,7 @@ public async void ParseRSS()
     }
 }
 ```
+
 ```vb
 Public Async Sub ParseRSS()
     Dim feed As String = Nothing
@@ -101,6 +102,7 @@ public void ParseRSSdotnet()
     }
 }
 ```
+
 ```vb
 Public Sub ParseRSSdotnet()
     Dim feed As SyndicationFeed = Nothing

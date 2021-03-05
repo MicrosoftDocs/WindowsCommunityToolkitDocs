@@ -100,6 +100,7 @@ Before getting started, follow these instructions to install the necessary NuGet
         MessageBox.Show("My UWP button works");
     }
     ```
+
     ```vb
     Private Sub MyWindowsXAMLHost_ChildChanged(sender As Object, e As EventArgs)
         Dim windowsXamlHost As WindowsXamlHost = CType(sender, WindowsXamlHost)
@@ -154,6 +155,7 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
     MessageBox.Show("This is a UWP button.");
 }
 ```
+
 ```vb
 Private Sub UseHelperMethod()
     Dim myHostControl As Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost = New Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost()
@@ -230,6 +232,7 @@ private void MyButton_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
     MessageBox.Show("This is a UWP button.");
 }
 ```
+
 ```vb
 Private Sub CreateUWPControlsFirst()
     ' Initialize the UWP hosting environment.

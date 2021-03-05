@@ -36,6 +36,7 @@ The [Blur animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 MyUIElement.Blur(value: 5, duration: 2500, delay: 250).Start();
 await MyUIElement.Blur(value: 5, duration: 2500, delay: 250).StartAsync();  // Blur animation can be awaited
 ```
+
 ```vb
 MyUIElement.Blur(value:=5, duration:=2500, delay:=250).Start()
 Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' Blur animation can be awaited
@@ -94,6 +95,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Blur(5).Fade(0.5F).Rotate(30)
     anim.SetDurationForAll(2500)

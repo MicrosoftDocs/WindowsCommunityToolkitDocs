@@ -34,6 +34,7 @@ The [Scale animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 ```csharp
 MyUIElement.Scale(scaleX: 2, scaleY: 2, centerX: 0, centerY: 0, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 ```
+
 ```vb
 MyUIElement.Scale(scaleX:=2, scaleY:=2, centerX:=0, centerY:=0, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 ```
@@ -99,6 +100,7 @@ You can change the way how the animation interpolates between keyframes by defin
         lastTapped.Scale(scaleX: 2, scaleY: 2, centerX: 50, centerY: 50).Start();
     }
     ```
+
     ```vb
     Private lastTapped As UIElement = Nothing
 
@@ -113,6 +115,7 @@ You can change the way how the animation interpolates between keyframes by defin
         lastTapped.Scale(scaleX:=2, scaleY:=2, centerX:=50, centerY:=50).Start()
     End Sub
     ```
+
     **Sample Output**
 
     ![Use Case 1 Output](../resources/images/Animations/Scale/Sample-Output.gif)
@@ -128,6 +131,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)

@@ -61,6 +61,7 @@ Finally that the loading control appears, we must set the `IsLoading` property t
 ```csharp
 LoadingControl.IsLoading = true;
 ```
+
 ```vb
 LoadingControl.IsLoading = true
 ```

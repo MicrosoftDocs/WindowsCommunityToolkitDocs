@@ -34,6 +34,7 @@ foreach (var element in document.Blocks)
     }
 }
 ```
+
 ```vb
 Dim md As String = "This is **Markdown**"
 Dim document As MarkdownDocument = New MarkdownDocument()

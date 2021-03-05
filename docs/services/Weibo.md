@@ -59,6 +59,7 @@ await WeiboService.Instance.PostStatusAsync(StatusText.Text);
 await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream);
 
 ```
+
 ```vb
 
 ' Initialize service

@@ -45,6 +45,7 @@ control = uiElement.FindParent<Grid>();
 // Retrieves the Content for the specified control from whatever its 'Content' Property may be.
 var content = uiElement.GetContentControl();
 ```
+
 ```vb
 ' Include namespace to access extensions.
 Imports Microsoft.Toolkit.Uwp.UI.Extensions

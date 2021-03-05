@@ -32,6 +32,7 @@ var bitmapImage = await ImageCache.Instance.GetFromCacheAsync(distantUri);
 // Clear the cache. Please note that you can provide a parameter to define a timespan from now to select cache entries to delete.
 await ImageCache.Instance.ClearAsync(); 
 ```
+
 ```vb
 ' Set cache duration
 ImageCache.Instance.CacheDuration = TimeSpan.FromHours(24)
