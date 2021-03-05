@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # SurfaceDialTextbox XAML Property
 
+> [!WARNING]
+> These extensions have been moved to a different class and refactored with breaking changes, please refer to docs page for the [`TextBoxExtensions`](TextBoxExtensions.md) type.
+
 The [SurfaceDialTextbox XAML Property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.surfacedialtextbox) adds features from the Surface Dial control to a numeric TextBox. This enables you to modify the content of the TextBox when rotating the Surface Dial (increasing or decreasing the value) and optionally go to the next focus element by tapping the Surface Dial click button.
 
 > [!div class="nextstepaction"]

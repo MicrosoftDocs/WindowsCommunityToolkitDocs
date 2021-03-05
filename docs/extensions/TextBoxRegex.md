@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # TextBoxRegex XAML Property
 
+> [!WARNING]
+> These extensions have been moved to a different class and refactored with breaking changes, please refer to docs page for the [`TextBoxExtensions`](TextBoxExtensions.md) type.
+
 The [TextBoxRegex Property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.textboxregex) allows text validation using a regular expression or using built in validation types.
 
 The developer adds a regular expression to validate the TextBox Text against the regular expression throw Regex property or from selecting ValidationType property on the TextBox.
