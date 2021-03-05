@@ -35,6 +35,7 @@ Or use the global Eyedropper in code.
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
 ```
+
 ```vb
 Dim eyedropper = New Eyedropper()
 Dim color = Await eyedropper.Open()
@@ -98,6 +99,7 @@ Dim color = Await eyedropper.Open()
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
 ```
+
 ```vb
 Dim eyedropper = New Eyedropper()
 Dim color = Await eyedropper.Open()

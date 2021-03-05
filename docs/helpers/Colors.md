@@ -27,6 +27,7 @@ Windows.UI.Color myColor = ColorHelper.ToColor("#ff3a4ab0");
 // Given a color name, lets convert it to a Windows Color
 Windows.UI.Color redColor = "Red".ToColor();
 ```
+
 ```vb
 ' Be sure to include the imports at the top of the file:
 Imports Microsoft.Toolkit.Uwp.Helpers

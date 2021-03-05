@@ -109,6 +109,7 @@ await TwitterService.Instance.StartUserStreamAsync(async tweet =>
 // Stop receiving live tweets and events
 TwitterService.Instance.StopUserStream();
 ```
+
 ```vb
 ' Initialize service
 TwitterService.Instance.Initialize(ConsumerKey.Text, ConsumerSecret.Text, CallbackUri.Text)

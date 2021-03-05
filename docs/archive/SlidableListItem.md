@@ -98,6 +98,7 @@ private void SlidableListItem_SwipeStatusChanged(SlidableListItem sender, SwipeS
     }
 }
 ```
+
 ```vb
 Private Sub SlidableListItem_SwipeStatusChanged(ByVal sender As SlidableListItem, ByVal args As SwipeStatusChangedEventArgs)
     If args.NewValue = SwipeStatus.Starting Then
@@ -130,6 +131,7 @@ private void ListView_ItemClick(object sender, ItemClickEventArgs e)
     ...
 }
 ```
+
 ```vb
 Private Sub ListView_ItemClick(ByVal sender As Object, ByVal e As ItemClickEventArgs)
     Dim listView = TryCast(sender, ListView)

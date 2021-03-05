@@ -48,6 +48,7 @@ if (e.PrelaunchActivated == false)
         }
 ...
 ```
+
 ```vb
 If e.PrelaunchActivated = False Then
     If rootFrame.Content Is Nothing Then
@@ -87,6 +88,7 @@ if (e.PrelaunchActivated == false)
         }
 ...
 ```
+
 ```vb
 If e.PrelaunchActivated = False Then
     If rootFrame.Content Is Nothing Then
@@ -119,6 +121,7 @@ foreach (var pair in paramCollection)
     Console.WriteLine($"{pair.Key} - {pair.Value}");
 }
 ```
+
 ```vb
 Dim myUrl = "https://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
 Dim paramCollection = New QueryParameterCollection(myUrl)

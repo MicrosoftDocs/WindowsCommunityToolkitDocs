@@ -43,6 +43,7 @@ private void CameraPreviewControl_PreviewFailed(object sender, PreviewFailedEven
     var errorMessage = e.Error;
 }
 ```
+
 ```vb
 
     AddHandler CameraPreviewControl.PreviewFailed, AddressOf CameraPreviewControl_PreviewFailed
@@ -102,6 +103,7 @@ if(availableFrameSourceGroups != null)
   _cameraPreviewControl.CameraHelper.FrameArrived += CameraPreviewControl_FrameArrived; 
 }
 ```
+
 ```vb
     Dim availableFrameSourceGroups = Await CameraHelper.GetFrameSourceGroupsAsync()
 

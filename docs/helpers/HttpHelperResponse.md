@@ -24,6 +24,7 @@ using (HttpHelperResponse response = await HttpHelper.Instance.SendRequestAsync(
     await response.GetTextResultAsync();
 }
 ```
+
 ```vb
 Using response = Await HttpHelper.Instance.SendRequestAsync(request)
     Await response.GetTextResultAsync()
@@ -72,6 +73,7 @@ using (var request = new HttpHelperRequest(new Uri(twitterUrl), HttpMethod.Post)
     }
 }
 ```
+
 ```vb
 Using request = New HttpHelperRequest(New Uri(twitterUrl), HttpMethod.Post)
     Using response = Await HttpHelper.Instance.SendRequestAsync(request)

@@ -23,6 +23,7 @@ using Microsoft.Toolkit.Uwp;
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register(typeof(BackgroundTaskClass), new TimeTrigger(15, true));
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", new TimeTrigger(15, true));
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp
 
@@ -84,6 +85,7 @@ BackgroundTaskRegistration registered =
                                     new SystemCondition(SystemConditionType.InternetAvailable), 
                                     new SystemCondition(SystemConditionType.UserPresent));
 ```
+
 ```vb
 ' Be sure to include the Imports at the top of the file:
 Imports Microsoft.Toolkit.Uwp
@@ -129,6 +131,7 @@ using Windows.ApplicationModel.Background;
 // Register a single process background task (Anniversary Update and later ONLY)
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("Name of the Background Task", new TimeTrigger(15, true));
 ```
+
 ```vb
 ' Be sure to include the imports at the top of the file:
 Imports Microsoft.Toolkit.Uwp
@@ -159,6 +162,7 @@ protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
     deferral.Complete();
 }
 ```
+
 ```vb
 Protected Overrides Sub OnBackgroundActivated(ByVal args As BackgroundActivatedEventArgs)
     MyBase.OnBackgroundActivated(args)

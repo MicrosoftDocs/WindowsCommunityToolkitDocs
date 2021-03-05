@@ -19,6 +19,7 @@ The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 ```csharp
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
 ```
+
 ```vb
 Dim request = New HttpHelperRequest(uri, HttpMethod.[Get])
 ```
@@ -64,6 +65,7 @@ An app starts by using one of the **HttpHelperRequest** constructors to create a
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
 request.Headers.Authorization = new Windows.Web.Http.Headers.HttpCredentialsHeaderValue("OAuth", authorizationHeaderParams);
 ```
+
 ```vb
 Dim request = New HttpHelperRequest(uri, HttpMethod.[Get])
 request.Headers.Authorization = New Windows.Web.Http.Headers.HttpCredentialsHeaderValue("OAuth", authorizationHeaderParams)

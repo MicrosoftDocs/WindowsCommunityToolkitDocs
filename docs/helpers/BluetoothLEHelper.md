@@ -129,6 +129,7 @@ if (BluetoothLEHelper.IsBluetoothLESupported)
     var services = device.Services;
 }
 ```
+
 ```vb
 ' Get a local copy of the context for easier reading
 Dim bluetoothLEHelper As BluetoothLEHelper = BluetoothLEHelper.Context

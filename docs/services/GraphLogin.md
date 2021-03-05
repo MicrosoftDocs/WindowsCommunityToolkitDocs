@@ -58,6 +58,7 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
             graphClient = graphLoginComponent1.GraphServiceClient;
         }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Services.Services.MicrosoftGraph
 

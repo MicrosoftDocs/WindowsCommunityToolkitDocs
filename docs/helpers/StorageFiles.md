@@ -43,6 +43,7 @@ bool isFileNameValid = StorageFileHelper.IsFileNameValid("appFilename.txt");
 // Check if a file path is valid or not
 bool isFilePathValid = StorageFileHelper.IsFilePathValid("folder/appFilename.txt");
 ```
+
 ```vb
 ' NOTE This must be used from an async function
 Dim myText As String = "Great information that the users wants to keep"

@@ -84,6 +84,7 @@ private void cbRowDetailsVis_SelectionChanged(object sender, RoutedEventArgs e)
 ## To prevent a row details section from scrolling horizontally
 
 Set the **AreRowDetailsFrozen** property to true.
+
 ```xml
    <controls:DataGrid
       AreRowDetailsFrozen="True" />

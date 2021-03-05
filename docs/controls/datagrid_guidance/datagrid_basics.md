@@ -28,6 +28,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
         ```xml
         xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
         ```
+
     * Add the following XAML in your page to add the DataGrid control
 
        ```xml

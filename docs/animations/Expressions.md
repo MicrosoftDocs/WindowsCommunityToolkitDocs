@@ -147,11 +147,13 @@ var expression = _compositor.CreateExpressionAnimation("visualA.Offset.X + 50");
 expression.SetReferenceParameter("visualA", _visualA);
 _visualB.StartAnimation("Offset.X", expression);
 ```
+
 With ExpressionBuilder, you can use the GetReference() extension method that performs this same behavior if you don't need to template, but in a type safe manner:
 
 ```csharp
 _visualB.StartAnimation("Offset.X", _visualA.GetReference().Offset.X + 50f);
 ```
+
 Also notice in the above code snippet, the CompositionObject.StartAnimation() extension method  was used to pass in an ExpressionNode instead of an ExpressionAnimation.
 
 ### <a name="how-to-template-with-expressionbuilder"></a>How to template with ExpressionBuilder

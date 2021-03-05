@@ -43,6 +43,7 @@ The [Light animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 MyUIElement.Light(distance: 5, duration: 2500, delay: 250, color: Colors.Red).Start();
 await MyUIElement.Light(distance: 5, duration: 2500, delay: 250, color: Colors.Red).StartAsync(); //Light animation can be awaited
 ```
+
 ```vb
 MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.Red).Start()
 Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.Red).StartAsync()  ' Light animation can be awaited
@@ -82,6 +83,7 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)

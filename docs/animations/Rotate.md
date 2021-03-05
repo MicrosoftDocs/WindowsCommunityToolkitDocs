@@ -38,6 +38,7 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 MyUIElement.Rotate(value: 50.0f, centerX: 0.0f, centerY: 0.0f, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Rotate(value: 50.0f, centerX: 0.0f, centerY: 0.0f, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Rotate animation can be awaited
 ```
+
 ```vb
 MyUIElement.Rotate(value:=50.0F, centerX:=0F, centerY:=0F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Rotate(value:=50.0F, centerX:=0F, centerY:=0F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Rotate animation can be awaited
@@ -96,6 +97,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Rotate(30).Fade(0.5F).Blur(5)
     anim.SetDurationForAll(2500)

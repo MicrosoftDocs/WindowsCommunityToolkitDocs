@@ -102,6 +102,7 @@ Add the following XML to your application manifest file:
     </application>
   </compatibility>
 ```
+
 Add the following XML to your application configuration file:
 
 ```xml
@@ -136,6 +137,7 @@ To set the initial content of the **WebViewCompatible** control, you can set the
 ```csharp
 webViewCompatible1.Navigate("http://www.contoso.com");
 ```
+
 ```vb
 webViewCompatible1.Navigate("http://www.contoso.com")
 ```
@@ -162,6 +164,7 @@ private void webViewCompatible1_NavigationStarting(object sender, WebViewNavigat
         args.Cancel = true;
 }
 ```
+
 ```vb
 AddHandler webViewCompatible1.NavigationStarting, AddressOf webViewCompatible1_NavigationStarting
 
@@ -184,6 +187,7 @@ private void webViewCompatible1_ContentLoading(WebView sender, WebViewControlCon
     }
 }
 ```
+
 ```vb
 AddHandler webViewCompatible1.ContentLoading, AddressOf webViewCompatible1_ContentLoading
 
@@ -213,6 +217,7 @@ private void webViewCompatible1_NavigationCompleted(WebView sender, WebViewContr
     }
 }
 ```
+
 ```vb
 AddHandler webViewCompatible1.NavigationCompleted, AddressOf webViewCompatible1_NavigationCompleted
 
@@ -234,6 +239,7 @@ For example, if the content of a web view named `webViewCompatible1` contains a 
 ```csharp
 string returnValue = await webViewCompatible1.InvokeScript("myScript");
 ```
+
 ```vb
 Dim returnValue As String = Await webViewCompatible1.InvokeScript("myScript")
 ```

@@ -81,6 +81,7 @@ switch(NetworkHelper.Instance.ConnectionInformation.ConnectionType)
         break;
 }
 ```
+
 ```vb
 ' Detect if Internet can be reached
 If NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable Then

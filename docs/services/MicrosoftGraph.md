@@ -115,6 +115,7 @@ if (!await msg.LoginAsync())
  return;
 }
 ```
+
 ```vb
 
 ' Initialize the service
@@ -149,6 +150,7 @@ MicrosoftGraphService.Instance.SignInFailed += (sender, e) =>
     // do something
 };
 ```
+
 ```vb
 ' Register event handler to capture authentication state changes
 AddHandler MicrosoftGraphService.Instance.IsAuthenticatedChanged,
@@ -200,6 +202,7 @@ using (IRandomAccessStream photoStream = await MicrosoftGraphService.Instance.Us
   this.Photo.Source = photo;
 }
 ```
+
 ```vb
 ' Retrieve user's info from Azure Active Directory
 Dim user = Await MicrosoftGraphService.Instance.User.GetProfileAsync()
@@ -268,6 +271,7 @@ await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, conten
 string content = GetHtmlMessage();
 await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, content, BodyType.Html, toRecipients);
 ```
+
 ```vb
 ' Get the top 10 messages
 messages = Await MicrosoftGraphService.Instance.User.Message.GetEmailsAsync(10)
@@ -328,6 +332,7 @@ if (events == null)
     // no more events
 }
 ```
+
 ```vb
 ' Get the top 10 events
 events = Await MicrosoftGraphService.Instance.User.[Event].GetEventsAsync(10)

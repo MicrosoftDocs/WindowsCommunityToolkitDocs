@@ -32,6 +32,7 @@ The [ParallaxService class](https://docs.microsoft.com/dotnet/api/microsoft.tool
 ParallaxService.SetHorizontalMultiplier(MyUIElement, 0.5)
 ParallaxService.SetVerticalMultiplier(MyUIElement, 0.5)
 ```
+
 ```vb
 MyUIElement.SetValue(ParallaxService.VerticalMultiplierProperty, 0.5)
 MyUIElement.SetValue(ParallaxService.HorizontalMultiplierProperty, 0.5)

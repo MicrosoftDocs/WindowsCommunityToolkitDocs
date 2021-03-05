@@ -97,33 +97,44 @@ A collection of animations.
 Let's create some plain animation first. Theses animation will run when the `Target` property is changed.
 
 - Creating a `ScalarAnimation`. ScalarAnimation can target Opacity, RotationAngle, RotationAngleInDegrees, Translation.X, Translation.Y, Translation.Z.
+
     ```xaml
     <animations:ScalarAnimation Target="Opacity" Duration="0:0:1" From="0" To="1"/>
     ```
+
 - Creating a `Vector2Animation`. Vector2Animation can target AnchorPoint, RelativeSizeAdjustment, Size.
+
     ```xaml
     <animations:Vector2Animation Target="AnchorPoint" Duration="0:0:1" From="0, 0" To="50, 50"/>
     ```
+
 - Creating a `Vector3Animation`. Vector3Animation can target CenterPoint, Offset, RelativeOffsetAdjustment, RotationAxis, Scale, Translation.
+
     ```xaml
     <animations:Vector3Animation Target="CenterPoint" Duration="0:0:1" From="0, 0, 0" To="50, 50, 50"/>
     ```
+
 - Creating a animation that takes final value as `To` value. If you didn't set From/To value or any KeyFrames then in this case, an ExpressionKeyFrame will be added of `Value="this.FinalValue"`.
+
     ```xaml
     <animations:OffsetAnimations Duration="0:0:1"/>
     ```
+
     > [!NOTE]
     OffsetAnimations is equivalent to setting `Target = "Offset"` in Vector3Animation. So there is no Target property.
 - Creating an animation which runs when another property changes. You can use `ImplicitTarget`. Whenever ImplicitTarget property changes the animation will run. In this example, if Offset changes then the ScaleAnimation will run.
+
     ```xaml
     <animations:ScaleAnimation Duration="0:0:1" To="50, 50, 50" ImplicitTarget="Offset"/>
     ```
+
     > [!NOTE]
     If `ImplicitTarget` is set then the animation will no longer run when `Target` property is changed.
 
 Now we can add KeyFrames
 
 - Creating a blink and disappear animation with OpacityAnimation. To create a blink animation, we need to reduce and increase the opacity.
+
     ```xaml
     <animations:OpacityAnimation Duration="0:0:1" From="1" To="0">
         <animations:ScalarKeyFrame Key="0.2" Value="0.5"/>
@@ -132,9 +143,11 @@ Now we can add KeyFrames
         <animations:ScalarKeyFrame Key="0.8" Value="0.6"/>
     </animations:OpacityAnimation>
     ```
+
     **Sample Output**
     ![Example Output](../resources/images/Animations/CompositionAnimations/Example-Output-1.gif)
 - You can use ExpressionKeyFrame to specify expression to create [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
+
     ```xaml
     <animations:OffsetAnimation Duration="0:0:1">
         <animations:ExpressionKeyFrame Key="0.2" Value="This.FinalValue / 2"/>

@@ -93,6 +93,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New LocalObjectStorageHelper()
 
@@ -175,6 +176,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New RoamingObjectStorageHelper()
 

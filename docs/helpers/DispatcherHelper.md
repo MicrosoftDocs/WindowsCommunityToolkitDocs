@@ -36,6 +36,7 @@ await CoreApplication.MainView.Dispatcher.AwaitableRunAsync<T>( () =>
     
 });
 ```
+
 ```vb
 DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Function()
     ' Code to execute on main window's UI thread
@@ -83,6 +84,7 @@ returnedFromUIThread = await CoreApplication.MainView.Dispatcher.AwaitableRunAsy
     return 1;
 });
 ```
+
 ```vb
 ' Executing from a non-UI thread with helper method
 Dim returnedFromUIThread As Integer = Await DispatcherHelper.ExecuteOnUIThreadAsync(Of Integer)(Function()
