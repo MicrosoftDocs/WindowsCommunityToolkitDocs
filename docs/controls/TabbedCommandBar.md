@@ -8,7 +8,7 @@ dev_langs:
 ---
 
 # TabbedCommandBar XAML Control
-The [TabbedCommandBar](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbar) displays a set of [TabbedCommandBarItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbaritem) in a shared container, like Microsoft Office's ribbon.
+The [TabbedCommandBar](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbar) displays a set of [TabbedCommandBarItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbaritem) in a shared container found in many productivity type apps. It is based off of [NavigationView](/windows/uwp/design/controls-and-patterns/navigationview).
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TabbedCommandBar)
@@ -231,7 +231,7 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher  |
+| Device family | Universal, 10.0.17763.0 or higher  |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
