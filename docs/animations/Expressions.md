@@ -601,9 +601,9 @@ ExpressionValues object:
 
 - **ExpressionValues.StartingValue** – This keyword defines a reference to the property the Expression targets, sampled at the first frame of execution. **Note**: if the Expression is connected to a subchannel of a property (e.*g. “Offset.X”), then StartingValue will be of the same data type as the subchannel (e.g. ScalarStartingValue for “Offset.X”).
 
-- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. <em>Note: if the Expression is connected to a subchannel of a property (e.</em>g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”).
-
-In the example below, we create an Expression using the Target keyword:
+- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. Note: .
+    > [!NOTE]
+    > if the Expression is connected to a subchannel of a property (e.g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”)
 
 ```csharp
 // windowWidth defined earlier

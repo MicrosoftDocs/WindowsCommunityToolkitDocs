@@ -52,8 +52,8 @@ The **HttpHelperResponse** class has these constructors.
 |        Methods         |    Return Type     |                                     Description                                     |
 |------------------------|--------------------|-------------------------------------------------------------------------------------|
 |       Dispose()        |        void        | Performs tasks associated with freeing, releasing, or resetting unmanaged resources |
-| GetStreamResultAsync() | Task<IInputStream> |              Reads the Content as stream and returns it to the caller               |
-|  GetTextResultAsync()  |    Task<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
+| GetStreamResultAsync() | Task\<IInputStream> |              Reads the Content as stream and returns it to the caller               |
+|  GetTextResultAsync()  |    Task\<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
 |       ToString()       |       string       |       Returns a string that represents the current HttpHelperResponse object        |
 
 ## Remarks

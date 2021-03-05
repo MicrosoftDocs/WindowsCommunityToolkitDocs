@@ -93,8 +93,8 @@ Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [
 
 |             Methods              |                Return Type                 |                                                Description                                                |
 |----------------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|   GetFrameSourceGroupsAsync()    | Task<IReadOnlyList<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams. |
-| InitializeAndStartCaptureAsync() |          Task<CameraHelperResult>          |       Initializes Media Capture and Frame Reader for video preview and capture frames in real time.       |
+|   GetFrameSourceGroupsAsync()    | Task<IReadOnlyList\<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams. |
+| InitializeAndStartCaptureAsync() |          Task\<CameraHelperResult>          |       Initializes Media Capture and Frame Reader for video preview and capture frames in real time.       |
 |          CleanUpAsync()          |                    Task                    |                      Use this asynchronous method to dispose Camera Helper resources                      |
 |            Dispose()             |                    void                    |                            Use this method to dispose Camera Helper resources                             |
 

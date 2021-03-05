@@ -21,7 +21,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |         Property          |                       Type                        |                                 Description                                 |
 |---------------------------|---------------------------------------------------|-----------------------------------------------------------------------------|
-|    BluetoothLeDevices     | ObservableCollection<ObservableBluetoothLEDevice> |                Gets the list of available bluetooth devices                 |
+|    BluetoothLeDevices     | ObservableCollection\<ObservableBluetoothLEDevice> |                Gets the list of available bluetooth devices                 |
 |       IsEnumerating       |                       bool                        |        Gets a value indicating whether app is currently enumerating         |
 | IsPeripheralRoleSupported |                       bool                        | Gets a value indicating whether peripheral mode is supported by this device |
 |  IsCentralRoleSupported   |                       bool                        |  Gets a value indicating whether central role is supported by this device   |
@@ -55,7 +55,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 |         IsPaired         |                                                 bool                                                  |    Gets a value indicating whether this device is paired    |
 |           Name           |                                                string                                                 |                Gets the name of this device                 |
 |           RSSI           |                                                  int                                                  |             Gets the RSSI value of this device              |
-|         Services         |                           ObservableCollection<ObservableGattDeviceService>                           |           Gets the services this device supports            |
+|         Services         |                           ObservableCollection\<ObservableGattDeviceService>                           |           Gets the services this device supports            |
 |       ServiceCount       |                                                  int                                                  |     Gets or sets the number of services this device has     |
 
 ### Methods
@@ -73,7 +73,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |    Property     |                        Type                         |                 Description                  |
 |-----------------|-----------------------------------------------------|----------------------------------------------|
-| Characteristics | ObservableCollection<ObservableGattCharacteristics> | Gets all the characteristics of this service |
+| Characteristics | ObservableCollection\<ObservableGattCharacteristics> | Gets all the characteristics of this service |
 |      Name       |                       string                        |        Gets the name of this service         |
 |      UUID       |                       string                        |        Gets the UUID of this service         |
 |     Service     |                  GattDeviceService                  |      Gets the service this class wraps       |
@@ -97,11 +97,11 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |       Methods       | Return Type  |              Description              |
 |---------------------|--------------|---------------------------------------|
-|  ReadValueAsync()   | Task<string> | Reads the value of the Characteristic |
-| SetIndicateAsync()  |  Task<bool>  |     Set's the indicate descriptor     |
-| StopIndicateAsync() |  Task<bool>  |     Unset the indicate descriptor     |
-|  SetNotifyAsync()   |  Task<bool>  |    Sets the notify characteristic     |
-|  StopNotifyAsync()  |  Task<bool>  |     Unsets the notify descriptor      |
+|  ReadValueAsync()   | Task\<string> | Reads the value of the Characteristic |
+| SetIndicateAsync()  |  Task\<bool>  |     Set's the indicate descriptor     |
+| StopIndicateAsync() |  Task\<bool>  |     Unset the indicate descriptor     |
+|  SetNotifyAsync()   |  Task\<bool>  |    Sets the notify characteristic     |
+|  StopNotifyAsync()  |  Task\<bool>  |     Unsets the notify descriptor      |
 
 ## Example
 

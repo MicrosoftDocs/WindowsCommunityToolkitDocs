@@ -59,7 +59,7 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 |                        Methods                        |                                               Return Type                                               |                        Description                        |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| GetDataAsync(BingSearchConfig, Int32, Int32, IParser) |                                       Task<IEnumerable<TSchema>>                                        |      Wrapper around REST API for making data request      |
+| GetDataAsync(BingSearchConfig, Int32, Int32, IParser) |                                       Task<IEnumerable\<TSchema>>                                        |      Wrapper around REST API for making data request      |
 |          GetDefaultParser(BingSearchConfig)           | IParser<[BingResult](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Returns parser implementation for specified configuration |
 
 ## BingParser Class
@@ -114,8 +114,8 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| GetPagedItemsAsync(Int32, Int32, CancellationToken) | Task<IEnumerable<BingResult>> | Retrieves items based on `pageIndex` and `pageSize` arguments |
-| RequestAsync(BingSearchConfig, Int32, Int32) | Task<List<BingResult>> | Request list data from service provider based upon a given config / query |
+| GetPagedItemsAsync(Int32, Int32, CancellationToken) | Task<IEnumerable\<BingResult>> | Retrieves items based on `pageIndex` and `pageSize` arguments |
+| RequestAsync(BingSearchConfig, Int32, Int32) | Task<List\<BingResult>> | Request list data from service provider based upon a given config / query |
 
 ## Sample Code
 
