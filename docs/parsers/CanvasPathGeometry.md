@@ -9,7 +9,7 @@ dev_langs:
 
 # CanvasPathGeometry
 
-The `CanvasGeometry` class (in the `Microsoft.Graphics.Canvas.Geometry` namespace) facilitates the drawing and manipulation of complex geometrical shapes. These shapes can be outlined with a stroke and filled with a brush (which can be a solid color, a bitmap pattern or a gradient).
+The `CanvasGeometry` class (in the `Microsoft.Graphics.Canvas.Geometry` namespace) facilitates the drawing and manipulation of complex geometrical shapes. These shapes can be outlined with a stroke and filled with a brush (which can be a solid color, a bitmap pattern, or a gradient).
 
 While the `CanvasGeometry` class provides various static methods to create predefined shapes like Circle, Ellipse, Rectangle, RoundedRectangle, the `CanvasPathBuilder` class provides several methods to create freeform CanvasGeometry objects.
 
@@ -24,13 +24,13 @@ pathBuilder.EndFigure(CanvasFigureLoop.Closed);
 CanvasGeometry triangleGeometry = CanvasGeometry.CreatePath(pathBuilder);
 ```
 
-**Win2d Path Mini Language** is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes and stroke styles in a more compact manner.
+**Win2d Path Mini Language** is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes, and stroke styles in a more compact manner.
 
 [More details about Win2d Path Mini Language](https://raw.githubusercontent.com/MicrosoftDocs/WindowsCommunityToolkitDocs/master/docs/parsers/Win2d_Path_Mini_Language.md)
 
-The `CanvasPathGeometry` class provides several static methods that parse the Win2d Mini Language and instantiate the complex geometries, color, brushes, strokes and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
+The `CanvasPathGeometry` class provides several static methods that parse the Win2d Mini Language and instantiate the complex geometries, color, brushes, strokes, and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
 
-Using Win2d Path Mini Language, the geometry in above example can be created in the following way
+Using Win2d Path Mini Language, the geometry in the above example can be created in the following way
 
 ```cs
 string pathData = “M 1 1 300 300 1 300 Z”;
@@ -71,7 +71,7 @@ The **logger** parameter in this method is an option argument of type **StringBu
 
 #### From Hexadecimal Color String or High Dynamic Range Color String
 
-There are two APIs that convert the hexadecimal color string in **#RRGGBB** or **#AARRGGBB** format or the High Dynamic Range Color string in the **R G B A** format to the corresponding Color object. The '#' character is optional in Hexadecimal color string. R, G, B & A should have value in the range between 0 and 1 , inclusive.
+There are two APIs that convert the hexadecimal color string in **#RRGGBB** or **#AARRGGBB** format or the High Dynamic Range Color string in the **R G B A** format to the corresponding Color object. The '#' character is optional in Hexadecimal color string. R, G, B & A should have value in the range between 0 and 1, inclusive.
 
 ```cs
 public static Color CreateColor(string colorString);
