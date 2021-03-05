@@ -24,9 +24,9 @@ Add the Windows Community Toolkit controls into the Visual Studio toolbox by fol
     c:\Users\%USERNAME%\.nuget\packages\Microsoft.Toolkit.Uwp.UI.Controls\
     ```
 
-a.  Choose the folder name matching the version you have installed, then continue to the *lib\uap10.0* folder and select the *Microsoft.Toolkit.Uwp.UI.Controls.dll* file.  You should end up with a dialog similar to the one shown below.
+    a.  Choose the folder name matching the version you have installed, then continue to the *lib\uap10.0* folder and select the *Microsoft.Toolkit.Uwp.UI.Controls.dll* file.  You should end up with a dialog similar to the one shown below.
 
-![UI Toolbox Items](resources/images/choosetoolboxitems.png "Choose Toolbox Image")
+    ![UI Toolbox Items](resources/images/choosetoolboxitems.png "Choose Toolbox Image")
 
 5) Your toolbox should now have a list of UI Controls from the toolkit that you can drag and drop onto your XAML surfaces.
 
