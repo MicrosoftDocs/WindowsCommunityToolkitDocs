@@ -58,7 +58,8 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
       * View all Datasets
       * View all Dashboards
       * View all workspaces
-        ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
+
+      ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
 
 2. Follow this [article](https://docs.microsoft.com/power-bi/developer/embedding-content) to do the primary tasks below.
 
