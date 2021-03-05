@@ -5,7 +5,7 @@ description: String extension methods from toolkit
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, string
 ---
 
-### String Extensions
+# String Extensions
 
 Provides helpers and extensions for strings, including validation methods for common scenarios.
 
