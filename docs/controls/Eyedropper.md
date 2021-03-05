@@ -70,7 +70,7 @@ Dim color = Await eyedropper.Open()
 
 | Methods        | Return Type | Description           |
 | -------------- | ----------- | --------------------- |
-| Open([Point?]) | Task<Color> | Open the eyedropper.  |
+| Open([Point?]) | Task\<Color> | Open the eyedropper.  |
 | Close()        | void        | Close the eyedropper. |
 
 ## Events

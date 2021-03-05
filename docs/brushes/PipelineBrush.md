@@ -43,7 +43,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 | Property | Type | Description |
 | -- | -- | -- |
 | Source | PipelineBuilder | The source for the current pipeline |
-| Effects | IList<IPipelineEffect> | The collection of effects to use in the current pipeline. |
+| Effects | IList\<IPipelineEffect> | The collection of effects to use in the current pipeline. |
 
 ## Code behind support
 

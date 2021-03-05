@@ -28,8 +28,8 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 | Property | Type | Description |
 | -- | -- | -- |
-| PickedPeople | ObservableCollection<Person> | Gets the set of Person objects chosen by the user. |
-| SuggestedPeople | ObservableCollection<Person> | Gets or sets collection of people suggested by the graph from the user's query. |
+| PickedPeople | ObservableCollection\<Person> | Gets the set of Person objects chosen by the user. |
+| SuggestedPeople | ObservableCollection\<Person> | Gets or sets collection of people suggested by the graph from the user's query. |
 
 ## Sample Project
 

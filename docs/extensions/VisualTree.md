@@ -64,11 +64,11 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| FindAscendant<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
+| FindAscendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
 | FindAscendantByName(this DependencyObject, String) | FrameworkElement | Find visual ascendant `FrameworkElement` control using its name |
-| FindDescendant<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
+| FindDescendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
 | FindDescendantByName(this DependencyObject, String) | FrameworkElement | Find descendant `FrameworkElement` control using its name |
-| FindDescendants<T>(this DependencyObject) | IEnumerable<T> where T : DependencyObject | Find all descendant controls of the specified type |
+| FindDescendants\<T>(this DependencyObject) | IEnumerable\<T> where T : DependencyObject | Find all descendant controls of the specified type |
 
 ## Requirements
 

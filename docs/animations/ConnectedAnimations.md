@@ -64,7 +64,7 @@ Specifies what named element in the DataTemplate of an item should animate. The 
 
 In cases where an element has not loaded before the navigation completes, the attached properties are not able to access the element properties to register it for the connected animation. In those case, you can register the element through code behind inside the OnNavigatedTo method. The following extension methods are available:
 
-### RegisterElementForConnectedAnimation(this Page page, string key, UIElement element, IEnumerable<UIElement> anchors = null)
+### RegisterElementForConnectedAnimation(this Page page, string key, UIElement element, IEnumerable\<UIElement> anchors = null)
 
 Registers a UIElement with the ConnectedAnimations service to run automatically on page navigation
 

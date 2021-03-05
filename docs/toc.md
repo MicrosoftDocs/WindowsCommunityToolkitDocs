@@ -308,21 +308,21 @@
 
 ## Buffers
 
-### [MemoryOwner<T>](high-performance/MemoryOwner.md)
+### [MemoryOwner\<T>](high-performance/MemoryOwner.md)
 
-### [SpanOwner<T>](high-performance/SpanOwner.md)
+### [SpanOwner\<T>](high-performance/SpanOwner.md)
 
 ### [StringPool](high-performance/StringPool.md)
 
 ## Memory
 
-### [Memory2D<T>](high-performance/Memory2D.md)
+### [Memory2D\<T>](high-performance/Memory2D.md)
 
-### [Span2D<T>](high-performance/Span2D.md)
+### [Span2D\<T>](high-performance/Span2D.md)
 
 ## [ParallelHelper](high-performance/ParallelHelper.md)
 
-## [Ref<T> and ReadOnlyRef<T>](high-performance/Ref.md)
+## [Ref\<T> and ReadOnlyRef\<T>](high-performance/Ref.md)
 
 # Developer tools
 
