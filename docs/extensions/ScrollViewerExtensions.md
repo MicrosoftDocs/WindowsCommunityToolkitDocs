@@ -13,7 +13,7 @@ The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.t
 
 ## ScrollBarMargin
 
-The `ScrollBarMargi`n property provides a way to assign a [`Thickness`](https://docs.microsoft.com/dotnet/api/system.windows.thickness) to the vertical/horizontal [`ScrollBar`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.scrollbar) of your container.
+The `ScrollBarMargin` property provides a way to assign a [`Thickness`](https://docs.microsoft.com/dotnet/api/system.windows.thickness) to the vertical/horizontal [`ScrollBar`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.scrollbar) of your container.
 
 Here is how this property can be used in XAML:
 

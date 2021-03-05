@@ -50,7 +50,7 @@ The `StartExpressionAnimation` methods provide a way to easily start a compositi
 ```
 
 ```csharp
-using Microsoft.Toolkit.Uwp.UI;
+using Microsoft.Toolkit.Uwp.UI.Animations;
 
 ScrollViewer scrollViewer = listView.FindDescendant<ScrollViewer>();
 
