@@ -108,7 +108,6 @@ There are several PullToRefreshListView properties that have no effect when the 
 * ReleaseToRefreshContent
 * IsPullToRefreshWithMouseEnabled
 
-
 ## Default Template
 
 [PullToRefreshListView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView/PullToRefreshListView.xaml) is the XAML template used in the toolkit for the default styling.

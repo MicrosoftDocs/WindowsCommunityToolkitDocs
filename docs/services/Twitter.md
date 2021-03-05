@@ -17,7 +17,6 @@ The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
 [Twitter Developer Site](https://dev.twitter.com) is the main content site for all Twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.
 
-
 [Create new Twitter App](https://apps.twitter.com/app) can be used to create a new app within the Twitter portal.
 
 > [!div class="nextstepaction"]

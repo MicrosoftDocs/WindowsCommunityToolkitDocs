@@ -77,7 +77,6 @@ and using it like that :
 <Image Source="{x:Bind Path=MyBoolValue, Converter={StaticResource BoolToImageConverter}}" />
 ```
 
-
 ## BoolToVisibilityConverter Examples
 
 `BoolToVisibilityConverter` can be used to easily change a boolean value to a Visibility based one. 
@@ -109,7 +108,6 @@ or if you want to not pass a parameter, you can use `BoolToObjectConverter` to c
 </Page.Resources>
 ```
 
-
 ## DoubleToVisibilityConverter Examples
 
 `DoubleToVisibilityConverter` can be used to easily change a double value to a Visibility based one based on a given threshold value.  If both `GreaterThan` and `LessThan` are set, the converter will set the visibility if the target value is in-between those two values.  Otherwise, it will look for the target being greater than or less than the specified value.
@@ -128,7 +126,6 @@ and use it like this :
 <Button x:Name="ScrollBackButton"
         Visibility="{Binding ScrollableWidth, Converter={StaticResource GreaterThanToleranceVisibilityConverter}, ElementName=ScrollViewer, FallbackValue=Collapsed, TargetNullValue=Collapsed}"/>
 ```
-
 
 ## EmptyObjectToObjectConverter Examples
 
@@ -152,7 +149,6 @@ this can be used as follows to hide a list with no items and instead show text t
 
 <TextBlock Text="No Items." Visibility="{Binding Path=MyCollectionValue, Converter={StaticResource CollectionVisibilityConverter}, ConverterParameter=True}">
 ```
-
 
 ## StringFormatConverter Examples
 

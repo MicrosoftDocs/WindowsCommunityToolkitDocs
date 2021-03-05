@@ -127,7 +127,6 @@ This table contains links to each of these members.
 |Width property |[Width](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.width)|[Width](https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.width)|
 |Height property|[Height](https://docs.microsoft.com/dotnet/api/system.windows.forms.control.height)|[Height](https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.height)|
 
-
 ## Navigate to content
 
 The **WebViewCompatible** control has several APIs for basic navigation:  [GoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goback), [GoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.goforward), [Stop](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.stop), [Refresh](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.refresh), [CanGoBack](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoback), and [CanGoForward](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.cangoforward). You can use these to add typical web browsing capabilities to your app.

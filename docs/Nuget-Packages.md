@@ -29,7 +29,6 @@ NuGet is a standard package manager for .Net applications that is built into Vis
 | Microsoft.Toolkit.Uwp.Connectivity | API helpers such as BluetoothLEHelper and Networking | 
 | Microsoft.Toolkit.Uwp.DeveloperTools | XAML user controls and services to help developer building their app | 
 
-
 ## Search in Visual Studio
 
 Searching in Visual Studio package manager you should see a list similar to the one below (version numbers may be different, but names should be the same).

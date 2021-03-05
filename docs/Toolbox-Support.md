@@ -31,4 +31,3 @@ a.  Choose the folder name matching the version you have installed, then continu
 5) Your toolbox should now have a list of UI Controls from the toolkit that you can drag and drop onto your XAML surfaces.
 
 ![Completed Toolbox Items](resources/images/toolboxfinal.png "Toolbox Final Image")
-

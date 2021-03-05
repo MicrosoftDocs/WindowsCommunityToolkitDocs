@@ -10,7 +10,6 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [SystemInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformation?view=uwp-toolkit-dotnet) class is a utility class that provides properties with some system, application and device information.
 
-
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=SystemInformation)
 

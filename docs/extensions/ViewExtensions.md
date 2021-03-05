@@ -9,7 +9,6 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.applicationviewextensions), [StatusBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.statusbarextensions) & [TitleBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.titlebarextensions) provide a declarative way of setting AppView, StatusBar & TitleBar properties from XAML.
 
-
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=ViewExtensions)
 
