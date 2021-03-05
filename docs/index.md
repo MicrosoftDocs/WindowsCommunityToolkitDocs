@@ -24,3 +24,5 @@ Feel free to browse the documentation using the table of contents on the left si
 [Windows Community Toolkit Source Code ](https://aka.ms/uwptoolkit)
 
 Built as an open source project hosted on GitHub with support from the community. 
+
+The majority of the projects within the Windows Community Toolkit are licensed under a MIT license. Check the specific repo/NuGet packages for details on licensing and third-party usage notes.
