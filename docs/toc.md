@@ -1,3 +1,4 @@
+<!--markdownlint-disable MD025 -->
 # [Windows Community Toolkit Documentation](index.md)
 
 # Setup
