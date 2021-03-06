@@ -125,16 +125,13 @@ The TabbedCommandBar automatically applies styles to known common controls insid
 
 ## Sample Output
 
- ![TabbedCommandBar Overview](../resources/images/Controls/TabbedCommandBar/Overview.gif)
+ ![TabbedCommandBar Overview](../resources/images/Controls/TabbedCommandBar.png)
 
 ## Properties
 
 ### TabbedCommandBar Properties
 
 The TabbedCommandBar does not add any of its own properties. See [NavigationView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.navigationview#properties) for a list of accessible properties.
-
-> [!IMPORTANT]
-> Do not use `ItemsStackPanel` if you override the ItemsPanel.  It is suggested to keep the `TabWidthBehavior` to `Actual` when using a custom panel.
 
 ### TabbedCommandBarItem Properties
 
@@ -165,7 +162,8 @@ The following setup demos contextual tabs, and binding to their visibility:
       <AppBarButton Icon="Redo" Label="Redo"/>
       <AppBarButton Icon="Paste" Label="Paste"/>
     </controls:TabbedCommandBarItem>
-    <controls:TabbedCommandBarItem Header="View" IsContextual="True" Visibility="{Binding ElementName=ContextualToggle, Path=IsOn}">
+    <controls:TabbedCommandBarItem x:Name="PictureFormat" Header="Picture Format"
+                                   IsContextual="True" Visibility="Collapsed">
       <AppBarButton Label="Left" Icon="DockLeft"/>
       <AppBarButton Label="Right" Icon="DockRight"/>
       <AppBarButton Label="Bottom" Icon="DockBottom"/>
@@ -175,9 +173,9 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ...
 
-<ToggleSwitch x:Name="ContextualToggle" IsOn="True"
-              OffContent="Contextual Tab Off"
-              OnContent="Contextual Tab On"/>
+<ToggleSwitch x:Name="ContextualToggle"
+              IsOn="{Binding Visibility, ElementName=PictureFormat, Converter={StaticResource VisBoolConverter}, Mode=TwoWay}"
+              OffContent="Contextual Tab Off" OnContent="Contextual Tab On"/>
 ```
 
 `ComboBox`, `TextBox`, and `SplitButton` do not have "AppBar" variants. Below is how to use those controls in a `TabbedCommandBarItem`:
@@ -227,7 +225,7 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ## Default Template
 
-[TabbedCommandBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/TabbedCommandBar/TabbedCommandBar.xaml) is the XAML template used in the toolkit for the default styling.
+[TabbedCommandBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar/TabbedCommandBar.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
