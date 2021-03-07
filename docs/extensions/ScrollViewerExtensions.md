@@ -99,7 +99,7 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 
 ### Sample Output
 
-![MiddleClickScrolling](../resources/images/Extensions/MiddleClickScrolling.gif)
+![Middle click scrolling UI](../resources/images/Extensions/MiddleClickScrolling.gif)
 
 ### Changing Cursor Type
 

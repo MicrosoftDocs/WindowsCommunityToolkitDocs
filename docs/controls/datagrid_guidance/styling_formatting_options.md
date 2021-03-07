@@ -24,7 +24,7 @@ You can also change the color of the gridlines using **HorizontalGridLinesBrush*
 <controls:DataGrid GridLinesVisibility="All"/>
 ```
 
-![Gridlines](../../resources/images/Controls/DataGrid/gridlines.png)
+![Sample grid lines UI](../../resources/images/Controls/DataGrid/gridlines.png)
 
 ## 2. Alternating rows
 
@@ -99,7 +99,7 @@ Frozen columns are columns that are always displayed and cannot be scrolled out 
 <controls:DataGrid FrozenColumnCount="2"/>
 ```
 
-![FrozenColumns](../../resources/images/Controls/DataGrid/frozencolumns.png)
+![Frozen columns UI](../../resources/images/Controls/DataGrid/frozencolumns.png)
 
 ## 6. Reorder and resize columns
 
@@ -113,7 +113,7 @@ You can allow users to:
 <controls:DataGrid CanUserReorderColumns="True" CanUserResizeColumns="True"/>
 ```
 
-![ResizeColumns](../../resources/images/Controls/DataGrid/resizecolumns.png)
+![Sample resize columns UI](../../resources/images/Controls/DataGrid/resizecolumns.png)
 
 ## See Also
 

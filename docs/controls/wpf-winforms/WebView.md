@@ -544,7 +544,7 @@ End Class
 
 ### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
 
-When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
+When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
 
 ### Is *WebViewControl* available on Windows Server?
 

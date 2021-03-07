@@ -9,7 +9,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
 
-![RowDetails](../../resources/images/Controls/DataGrid/rowdetails.png)
+![Sample row details UI](../../resources/images/Controls/DataGrid/rowdetails.png)
 
 The row details section can be displayed for selected rows, displayed for all rows, or it can be collapsed. The row details section can also be frozen so that it does not scroll horizontally when the DataGrid is scrolled.
 
