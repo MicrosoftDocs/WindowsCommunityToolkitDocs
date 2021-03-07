@@ -20,7 +20,7 @@ You can control the visibility of the grid lines separating inner cells using th
 
 You can also change the color of the gridlines using **HorizontalGridLinesBrush** and/or **VerticalGridLinesBrush** properties.
 
-```xml
+```xaml
 <controls:DataGrid GridLinesVisibility="All"/>
 ```
 
@@ -32,7 +32,7 @@ You can set the **RowBackground**, **RowForeground**, **AlternatingRowBackground
 
 The RowBackground and RowForeground properties are used to paint the background and foreground of all rows in the DataGrid control. If AlternatingRowBackground and/or AlternatingRowForeground properties are not null, their values override the RowBackground and RowForeground values for odd-numbered rows.
 
-```xml
+```xaml
 <controls:DataGrid AlternatingRowBackground="LightGray"/>
 ```
 
@@ -49,7 +49,7 @@ You can toggle the visibility of row and column headers using the **DataGrid.Hea
 
 Note: By default, DataGrid row headers are not displayed. To display row headers, the **HeadersVisibility** property must be set to *DataGridHeadersVisibility.Row* or *DataGridHeadersVisibility.All* and the DataGrid's ControlTemplate should be altered to provide a visual for the RowHeader as desired.
 
-```xml
+```xaml
 <controls:DataGrid HeadersVisibility="Column"/>
 ```
 
@@ -65,7 +65,7 @@ All individual parts of the DataGrid control are customizable through simple Sty
 * *RowGroupHeaderStyles* : style that is used when rendering the row group header. The DataGrid control currently supports one-level grouping only - the first style specified as part of RowGroupHeaderStyles will be applied to the row group header.
 * *RowHeaderStyle* : style that is used when rendering the row headers. The DataGrid control does not have a default visual for the row header. To provide one you must provide a `ContentTemplate` for `Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader`. For Example:
 
-```xml
+```xaml
    xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
 
    <Style TargetType="wctprimitives:DataGridRowHeader">
@@ -85,7 +85,7 @@ Whether defined as an inline style or as a resource, the Style defines the appea
 
 You can also use properties such as **RowHeight**, **RowHeaderWidth**, **ColumnWidth**, **ColumnHeaderHeight** etc., to customize the sizing of the various parts of the DataGrid control.
 
-```xml
+```xaml
 <controls:DataGrid CellStyle="{StaticResource cellStyle}" />
 
 <controls:DataGridTemplateColumn Header="Range" CellTemplate="{StaticResource cellTemplate}" />
@@ -95,7 +95,7 @@ You can also use properties such as **RowHeight**, **RowHeaderWidth**, **ColumnW
 
 Frozen columns are columns that are always displayed and cannot be scrolled out of visibility. Frozen columns are always the leftmost columns in display order. You cannot drag frozen columns into the group of unfrozen columns or drag unfrozen columns into the group of frozen columns. Set the **DataGrid.FrozenColumnCount** property to the desired number of columns that the user should not scroll horizontally.
 
-```xml
+```xaml
 <controls:DataGrid FrozenColumnCount="2"/>
 ```
 
@@ -109,7 +109,7 @@ You can allow users to:
 * Change the column display order by dragging the column headers using mouse/touch/pen through the **DataGrid.CanUserReorderColumns** property.
 * Set this behavior for individual columns by setting the **DataGridColumn.CanUserReorder/CanUserResize** properties. If the individual column properties and the global DataGrid.** properties are both set, a value of false will take precedence over a value of true.
 
-```xml
+```xaml
 <controls:DataGrid CanUserReorderColumns="True" CanUserResizeColumns="True"/>
 ```
 

@@ -19,7 +19,7 @@ The `ImplicitAnimationSet` is mostly used implicitly when attaching implicit ani
 
 Here is an example that shows how different animations can be attached to a UI element using the `Implicit` class:
 
-```xml
+```xaml
 <!--Implicit show animations-->
 <animations:Implicit.ShowAnimations>
   <animations:TranslationAnimation Duration="0:0:1" From="0,-200,0" To="0"/>

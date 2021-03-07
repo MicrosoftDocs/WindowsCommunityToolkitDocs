@@ -134,7 +134,7 @@ The `StartExpressionAnimation` methods provide a way to easily start a compositi
 
 ### Example
 
-```xml
+```xaml
 <Grid>
 
     <!--This is a ListView we can use to display a series of items. It will

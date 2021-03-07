@@ -23,7 +23,7 @@ These two types of animation nodes implement several interfaces (such as [`ITime
 
 Here is how a simple animation can be declared in XAML. In this case we are using `x:Name` so that we can reference it in code behind to start it when the button is clicked. The animation is also directly attached to the [`Button`](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/buttons), so we can start it directly by calling the `Start()` method, without the need to specify the target element to animate.
 
-```xml
+```xaml
 <!--A simple animation using default animation types-->
 <Button Content="Click me!">
     <animations:Explicit.Animations>
@@ -37,7 +37,7 @@ Here is how a simple animation can be declared in XAML. In this case we are usin
 
 By default, animations target the [Composition layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer) as it provides the best performance possible. It is also possible to explicitly target the XAML layer too though, which can enable things such as animating the color of a brush used to display some text in a `Button`. Here is an example where we use this functionality, together with explicit keyframes to have more fine-grained control over the animation to run:
 
-```xml
+```xaml
 <!--An animation set using a scope and explicit keyframes-->
 <Button Content="Click me!" Foreground="White">
     <animations:Explicit.Animations>
@@ -58,7 +58,7 @@ By default, animations target the [Composition layer](https://docs.microsoft.com
 
 Keyframes (both when declared in C# and in XAML) can also use an [expression animation](https://docs.microsoft.com/uwp/api/windows.ui.composition.expressionanimation) when they are being used in an animation targeting the Composition layer. This provides additional control over the animation values and allows consumers to create dynamic animations that can adapt to the current state of the target element. Here is an example:
 
-```xml
+```xaml
 <!--Keyframes can use expressions as well (on the Composition layer)-->
 <Button Content="Click me!">
     <animations:Explicit.Animations>
@@ -80,7 +80,7 @@ When this property is set to `true` each top-level node will be executed sequent
 
 Here is an example that showcases both the sequential mode for animations as well as the ability to combine animations and activities in the same schedule, and how different animations (even on different UI elements) can be combined and interleaved by using the available APIs:
 
-```xml
+```xaml
 <!--This set first runs a scope with three animations and waits for its completion.
     Then, an activity is used to trigger another animation on its attached parent.
     When that completes as well, the last animation in this set will be executed.-->
@@ -129,7 +129,7 @@ If you are also referencing the `Microsoft.Toolkit.Uwp.UI.Behaviors` package, it
 
 Here is an example that shows how these new APIs can be used together:
 
-```xml
+```xaml
 <Button>
     <!--Use StartAnimationAction to trigger the animation on click-->
     <Interactivity:Interaction.Behaviors>
@@ -160,7 +160,7 @@ Lastly, the `AnimationSet` class can also directly animate Composition/Win2D eff
 
 Here is an example of how the new `PipelineVisualFactory` type can be combined with these effect animations:
 
-```xml
+```xaml
 <Button>
     <!--Behavior to trigger the animation on click-->
     <Interactivity:Interaction.Behaviors>

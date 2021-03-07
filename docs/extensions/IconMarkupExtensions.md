@@ -17,7 +17,7 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/dotnet/api/microsof
 
 **XAML**
 
-```xml
+```xaml
 <MenuFlyout>
 
     <!--Before-->
@@ -49,7 +49,7 @@ The [BitmapIconSource markup extension](https://docs.microsoft.com/dotnet/api/mi
 
 **XAML**
 
-```xml
+```xaml
 <SwipeItems Mode="Reveal">
     <SwipeItem Text="Send" IconSource="{ex:BitmapIconSource Source=/Assets/myicon.png}"/>
 </SwipeItems>
@@ -70,7 +70,7 @@ The [FontIcon markup extension](https://docs.microsoft.com/dotnet/api/microsoft.
 
 **XAML**
 
-```xml
+```xaml
 <CommandBar>
 
     <!--Before-->
@@ -105,7 +105,7 @@ The [FontIconSource markup extension](https://docs.microsoft.com/dotnet/api/micr
 
 **XAML**
 
-```xml
+```xaml
 <SwipeItems Mode="Reveal">
 
     <!--Before-->
@@ -140,7 +140,7 @@ The [SymbolIcon markup extension](https://docs.microsoft.com/dotnet/api/microsof
 
 **XAML**
 
-```xml
+```xaml
 <CommandBar>
 
     <!--Before-->
@@ -177,7 +177,7 @@ The [SymbolIconSource markup extension](https://docs.microsoft.com/dotnet/api/mi
 
 **XAML**
 
-```xml
+```xaml
 <SwipeItems Mode="Reveal">
     <SwipeItem Text="Play" IconSource="{ex:SymbolIconSource Symbol=Play}"/>
 </SwipeItems>

@@ -21,14 +21,14 @@ The following walk-through shows how to implement and customize grouping in the 
 
 1. Add the DataGrid control to your XAML page
 
-    ```xml
-    <controls:DataGrid
-       x:Name="dg"
-       Height="600" Margin="12"
-       AutoGenerateColumns="True">
+```xaml
+<controls:DataGrid 
+    x:Name="dg"
+    Height="600" Margin="12"
+    AutoGenerateColumns="True">
 
-    </controls:DataGrid>
-    ```
+</controls:DataGrid>
+```
 
 2. Create the grouped collection using LINQ
 
@@ -72,33 +72,33 @@ The following walk-through shows how to implement and customize grouping in the 
 
 5. Customize the Group header values through **RowGroupHeaderStyles**, **RowGroupHeaderPropertyNameAlternative** properties and by handling the **LoadingRowGroup** event to alter the auto-generated values in code.
 
-    ```xml
-    <controls:DataGrid
-       x:Name="dg"
-       Height="600" Margin="12"
-       AutoGenerateColumns="True"
-       LoadingRowGroup="dg_loadingRowGroup"
-       RowGroupHeaderPropertyNameAlternative="Range">
-       <controls:DataGrid.RowGroupHeaderStyles>
-          <!-- Override the default Style for groups headers -->
-          <Style TargetType="controls:DataGridRowGroupHeader">
-             <Setter Property="Background" Value="LightGray" />
-          </Style>
-       </controls:DataGrid.RowGroupHeaderStyles>
-    </controls:DataGrid>
-    ```
+```xaml
+<controls:DataGrid 
+    x:Name="dg"
+    Height="600" Margin="12"
+    AutoGenerateColumns="True"
+    LoadingRowGroup="dg_loadingRowGroup" 
+    RowGroupHeaderPropertyNameAlternative="Range">
+    <controls:DataGrid.RowGroupHeaderStyles>
+        <!-- Override the default Style for groups headers -->
+        <Style TargetType="controls:DataGridRowGroupHeader">
+            <Setter Property="Background" Value="LightGray" />
+        </Style>
+   </controls:DataGrid.RowGroupHeaderStyles>
+</controls:DataGrid>
+```
 
-    ```csharp
-    //Handle the LoadingRowGroup event to alter the grouped header property value to be displayed
-    private void dg_loadingRowGroup(object sender, DataGridRowGroupHeaderEventArgs e)
-    {
-       ICollectionViewGroup group = e.RowGroupHeader.CollectionViewGroup;
-       Mountain item = group.GroupItems[0] as Mountain;
-       e.RowGroupHeader.PropertyValue = item.Range;
-    }
-    ```
+```csharp
+//Handle the LoadingRowGroup event to alter the grouped header property value to be displayed
+private void dg_loadingRowGroup(object sender, DataGridRowGroupHeaderEventArgs e)
+{
+   ICollectionViewGroup group = e.RowGroupHeader.CollectionViewGroup;
+   Mountain item = group.GroupItems[0] as Mountain;
+   e.RowGroupHeader.PropertyValue = item.Range;
+}
+```
 
-    ![Group](../../resources/images/Controls/DataGrid/grouping.png)
+![Group](../../resources/images/Controls/DataGrid/grouping.png)
 
 ## 2. Sorting
 
@@ -115,24 +115,27 @@ The following walk-through shows how to implement sorting in the DataGrid contro
 
 1. Add the DataGrid control to your XAML page. Set the appropriate sort properties and add a handler for Sorting event.
 
-    ```xml
-    <controls:DataGrid
-       x:Name="dg"
-       Height="600" Margin="12"
-       AutoGenerateColumns="False"
-       CanUserSortColumns="True"
-       Sorting="dg_Sorting">
-           <controls:DataGrid.Columns>
-               <controls:DataGridTextColumn Header="Range" Binding="{Binding Range}" Tag="Range"/>
-               <!-- Add more columns -->
-           </controls:DataGrid.Columns>
-    </controls:DataGrid>
-    ```
+```xaml
+<controls:DataGrid 
+    x:Name="dg"
+    Height="600" Margin="12"
+    AutoGenerateColumns="False"
+    CanUserSortColumns="True"
+    Sorting="dg_Sorting">
+        <controls:DataGrid.Columns>
+            <controls:DataGridTextColumn Header="Range" Binding="{Binding Range}" Tag="Range"/>
+            <!-- Add more columns -->
+       </controls:DataGrid.Columns>
+</controls:DataGrid>
+```
 
-2. Handle the Sorting event to implement logic for sorting
+2. Handle the Sorting event to implement logic for sorting 
 
-    ```csharp
-    private void dg_Sorting(object sender, DataGridColumnEventArgs e)
+```csharp
+private void dg_Sorting(object sender, DataGridColumnEventArgs e)
+{
+    //Use the Tag property to pass the bound column name for the sorting implementation 
+    if (e.Column.Tag.ToString() == "Range")
     {
         //Use the Tag property to pass the bound column name for the sorting implementation
         if (e.Column.Tag.ToString() == "Range")
@@ -188,36 +191,40 @@ The DataGrid control does not support any built-in filtering capabilities. The f
 
 1. Add the DataGrid control to your XAML page.
 
-    ```xml
-    <controls:DataGrid
-       x:Name="dg"
-       Height="600" Margin="12"
-       AutoGenerateColumns="True"/>
-    ```
+```xaml
+<controls:DataGrid 
+    x:Name="dg"
+    Height="600" Margin="12"
+    AutoGenerateColumns="True"/>
+```
 
 2. Add buttons for filtering the DataGrid's content. It is recommended to use the **CommandBar** control with **AppBarButtons** to add filtering visuals at the top of your page. The following example shows a CommandBar with the title for the table and one filter button.
 
-    ```xml
-    <CommandBar Background="White" Margin="12"
-                IsOpen="True" IsSticky="True"
-                DefaultLabelPosition="Right"
-                Content="Mountains table">
-          <AppBarButton Icon="Filter"
-                        Label="Filter by Rank &lt; 50"
-                        Click="rankLowFilter_Click">
-    </CommandBar>
-    ```
+```xaml
+<CommandBar
+    Background="White"
+    Margin="12" 
+    IsOpen="True"
+    IsSticky="True" 
+    DefaultLabelPosition="Right"
+    Content="Mountains table">
+    <AppBarButton
+        Icon="Filter"
+        Label="Filter by Rank &lt; 50"
+        Click="rankLowFilter_Click">
+</CommandBar>
+```
 
 3. Handle the AppBarButton's Click event to implement the filtering logic.
 
-    ```csharp
-    private void rankLowFilter_Click(object sender, RoutedEventArgs e)
-    {
-        dg.ItemsSource = new ObservableCollection<Mountain>(from item in _items
-                                                            where item.Rank < 50
-                                                            select item);
-    }
-    ```
+```csharp
+private void rankLowFilter_Click(object sender, RoutedEventArgs e)
+{
+    dg.ItemsSource = new ObservableCollection<Mountain>(from item in _items
+                                                        where item.Rank < 50
+                                                        select item);
+}
+```
 
 ## Example app
 

@@ -25,7 +25,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## CompareStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" Comparison="LessThanOrEqual" To="3"/>
 </VisualState.StateTriggers>
@@ -33,7 +33,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## FullScreenModeStateTrigger Example 
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
 </VisualState.StateTriggers>
@@ -41,7 +41,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## IsEqualStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
@@ -49,7 +49,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## IsNotEqualStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
@@ -57,7 +57,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## IsNullOrEmptyStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
 </VisualState.StateTriggers>
@@ -65,7 +65,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## NetworkConnectionStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:NetworkConnectionStateTrigger ConnectionState="Connected" />
 </VisualState.StateTriggers>
@@ -73,7 +73,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## RegexStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:RegexStateTrigger Value="{Binding Text, ElementName=emailTextBox, Mode=OneWay}"
                                                   Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
@@ -83,7 +83,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## UserHandPreferenceStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:UserHandPreferenceStateTrigger HandPreference="LeftHanded" />
 </VisualState.StateTriggers>
@@ -91,7 +91,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 
 ## UserInteractionModeStateTrigger Example
 
-```xml
+```xaml
 <VisualState.StateTriggers>
     <triggers:UserInteractionModeStateTrigger InteractionMode="Mouse" />
 </VisualState.StateTriggers>

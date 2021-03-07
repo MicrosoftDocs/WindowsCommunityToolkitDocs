@@ -17,7 +17,7 @@ The [`ItemsReorderAnimation`](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 The `ItemsReorderAnimation` type can be used directly from XAML like other attached properties:
 
-```xml
+```xaml
 <Page ...
     xmlns:animations="using:Microsoft.Toolkit.Uwp.UI.Animations"/>
 <GridView x:Name="MyGridView"

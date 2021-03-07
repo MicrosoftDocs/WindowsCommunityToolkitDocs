@@ -51,7 +51,7 @@ The DataGrid control supports single row selection as well as multiple rows sele
 * **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
 * **Single** : The user can select only one item at a time.
 
-```xml
+```xaml
 <controls:DataGrid SelectionMode="Extended"/>
 ```
 

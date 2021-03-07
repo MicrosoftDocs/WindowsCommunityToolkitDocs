@@ -11,7 +11,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 The [DataGrid](../datagrid.md) control supports cell and row editing functionality. By default, you can edit items directly in the DataGrid. The user can enter edit mode in a cell by pressing F2 key or double tapping on a cell. Alternatively, you can set the **IsReadOnly** property to true to disable editing in the DataGrid. 
 
-```xml
+```xaml
 <controls:DataGrid BeginningEdit="dg_Editing" CellEditEnding="dg_CellEditEnding" RowEditEnding="dg_RowEditEnding" />
 ```
 

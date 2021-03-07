@@ -18,7 +18,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 1. Create a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
 2. Place the DataTemplate inside the <DataGrid.RowDetailsTemplate> tags.
 
-```xml
+```xaml
 <controls:DataGrid>
    <controls:DataGrid.RowDetailsTemplate>
       <DataTemplate>
@@ -40,7 +40,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](https://docs.microsoft.com/windows/uwp/xaml-platform/x-key-attribute).
 3. Bind the DataTemplate to the DataGrid's **RowDetailsTemplate** property.
 
-```xml
+```xaml
 <Page>
    <Page.Resources>
       <DataTemplate x:Key="RowDetailsTemplate">
@@ -86,7 +86,7 @@ private void cbRowDetailsVis_SelectionChanged(object sender, RoutedEventArgs e)
 
 Set the **AreRowDetailsFrozen** property to true.
 
-```xml
+```xaml
    <controls:DataGrid
       AreRowDetailsFrozen="True" />
 ```

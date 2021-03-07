@@ -22,7 +22,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## Syntax
 
-```xml
+```xaml
 <Rectangle Width="300" Height="300" Stroke="Black" StrokeThickness="2">
   <Rectangle.Fill>
     <media:RadialGradientBrush 
