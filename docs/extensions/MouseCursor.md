@@ -1,7 +1,7 @@
 ---
 title: Mouse.Cursor attached property
 author: martinsuchan
-description: Mouse.Cursor attached property enables you to easily change the mouse cursor over specific Framework elements (outdated docs).
+description: Mouse.Cursor attached property enables you to easily change the mouse cursor over specific Framework elements.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Mouse, cursor, extensions
 ---
 
@@ -9,18 +9,15 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 > [!WARNING]
 > This docs page is outdated, please refer to the new one for the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type.
-
 The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.mouse.cursor) enables you to easily change the mouse cursor over specific Framework elements.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=Mouse)
-
 ## Syntax
 
 ```xaml
 <Page ...
      xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
 <UIElement extensions:Mouse.Cursor="Hand"/>
 ```
 
@@ -39,7 +36,6 @@ Here is a example of setting Mouse.Cursor
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border extensions:Mouse.Cursor="Hand"
             Width="220" Height="120" Background="DeepSkyBlue"
@@ -50,7 +46,6 @@ Here is a example of setting Mouse.Cursor
 
 > [!NOTE]
 > Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
-
 ## Limitations
 
 Because the UWP framework does not support metadata on Attached Properties, specifically the [FrameworkPropertyMetadata.Inherits](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the Mouse.Cursor might not work properly in some very specific XAML layout scenarios when combining nested FrameworkElements with different Mouse.Cursor values set on them.
