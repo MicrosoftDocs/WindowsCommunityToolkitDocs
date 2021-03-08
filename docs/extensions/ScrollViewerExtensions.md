@@ -17,7 +17,7 @@ The `ScrollBarMargin` property provides a way to assign a [`Thickness`](https://
 
 Here is how this property can be used in XAML:
 
-```xml
+```xaml
 <Page xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
     <ListView ui:ScrollViewerExtensions.HorizontalScrollBarMargin="2, 2, 2, 2">
         <!-- ListView Item -->
@@ -31,7 +31,7 @@ Here is how this property can be used in XAML:
 
 And here it is in action in a more complex example, where the margin is also bound:
 
-```xml
+```xaml
 <ListView
     Name="listView"
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
@@ -84,7 +84,7 @@ public class DoubleTopThicknessConverter : IValueConverter
 
 Here is how this property can be used in XAML:
 
-```xml
+```xaml
 <!-- Setting MiddleClickScrolling directely for ScrollViewer -->
 <ScrollViewer
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"

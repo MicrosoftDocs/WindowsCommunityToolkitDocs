@@ -15,7 +15,7 @@ The [`WebViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 Here is how the `WebViewExtensions` properties can be used in XAML:
 
-```xml
+```xaml
 <!-- Attach HTML content directly to a WebView -->
 <WebView
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"   

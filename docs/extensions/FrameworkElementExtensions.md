@@ -82,7 +82,7 @@ The `EnableActualSizeBinding` property allows you to enable/disable the binding 
 
 Here is an example of how the `ActualWidth` attached property can be used in a binding:
 
-```xml
+```xaml
 <Rectangle
     x:Name="TargetObject"
     ui:FrameworkElementExtensions.EnableActualSizeBinding="true"/>
@@ -96,7 +96,7 @@ The `AncestorType` attached property will walk the visual tree from the attached
 
 Here is an example of how this can be used:
 
-```xml
+```xaml
 <Button
     ui:FrameworkElementExtensions.AncestorType="Grid"
     Visibility="{Binding (ui:FrameworkElementExtensions.Ancestor).Visibility,RelativeSource={RelativeSource Self}}"/>
@@ -108,7 +108,7 @@ The `Cursor` attached property enables you to easily change the mouse cursor ove
 
 Here is how you can easily set a custom cursor type for a target `FrameworkElement` instance:
 
-```xml
+```xaml
 <Page
     x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MouseCursorPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

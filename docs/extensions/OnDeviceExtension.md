@@ -13,7 +13,7 @@ The [`OnDeviceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 Here is how the property can be used in XAML:
 
-```xml
+```xaml
 <TextBlock
    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
    Text="{ui:OnDevice Default=Hi, Desktop=Hello, Xbox=World}"/>

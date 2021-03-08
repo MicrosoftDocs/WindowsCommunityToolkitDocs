@@ -15,7 +15,7 @@ The [HyperlinkExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 Using the `HyperlinkExtensions` attached properties simply requires you to assign them to a `Hyperlink` control in XAML, and bind to an `ICommand` instance in a viewmodel. Both `{Binding}` and `{x:Bind}` modes are supported, and you can freely choose which one to use depending on your scenario. Here is a small example of these attached properties in action:
 
-```xml
+```xaml
 <!-- Use Hyperlink in a wrapped TextBlock with text either side and ensure it executes a
      command when clicked, passing the current data context as the command parameter -->
 <TextBlock xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">

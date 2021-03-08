@@ -38,7 +38,7 @@ In case you want to add a custom variable character you can use the `CustomMask`
 
 ### Syntax
 
-```xml
+```xaml
 <Page ...
      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
     <StackPanel>
@@ -87,7 +87,7 @@ The validation has 3 modes ([`TextBoxExtensions.ValidationMode`](https://docs.mi
 
 ### Syntax
 
-```xml
+```xaml
 <TextBox
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     ui:TextBoxRegex.Regex="^\s*\+?\s*([0-9][\s-]*){9,}$" />
@@ -120,7 +120,7 @@ The `SurfaceDialOptions` property adds features from the Surface Dial control to
 
 ### Syntax
 
-```xml
+```xaml
 <Page ...
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 

@@ -15,7 +15,7 @@ The [`UIElementExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.tool
 
 The `ClipToBounds` property allows you to indicate whether to clip the content of this element (or content coming from the child elements of this element) to fit into the size of the containing element. Here is how it can be used in XAML to clip a target element:
 
-```xml
+```xaml
 <Grid
     BorderBrush="White"
     BorderThickness="1"

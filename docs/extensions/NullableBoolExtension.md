@@ -12,7 +12,7 @@ The [`NullableBoolExtension`](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 Here is an example of how this extension could be used when binding to a `DependencyProperty`:
 
-```xml
+```xaml
 <Page.Resources
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     xmlns:helpers="using:MyApp.Helpers">

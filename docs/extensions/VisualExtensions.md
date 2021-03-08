@@ -15,7 +15,7 @@ The [`VisualExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 Here is an example of how the `VisualExtensions` type can be used to directly set values for some `Visual` properties for a given UI element directly from XAML:
 
-```xml
+```xaml
 <Page ...
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 

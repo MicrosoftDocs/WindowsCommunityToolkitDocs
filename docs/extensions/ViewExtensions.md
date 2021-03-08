@@ -15,7 +15,7 @@ The [`ApplicationViewExtensions`](https://docs.microsoft.com/dotnet/api/microsof
 
 These attached properties all target a [`Page`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.page) element, so they can be used directly from XAML when declaring a control of this type in an application:
 
-```xml
+```xaml
 <Page x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.ViewExtensionsPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

@@ -20,7 +20,7 @@ The `AlternateColor` property provides a way to assign a background color to eve
 
 Here is how this property can be used in XAML:
 
-```xml
+```xaml
 <Page ...
      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
@@ -38,7 +38,7 @@ The `AlternateItemTemplate` property provides a way to assign an alternate [`Dat
 
 Here is how this property can be used in XAML:
 
-```xml
+```xaml
 <Page ...
      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
@@ -67,7 +67,7 @@ Here is how this property can be used in XAML:
 
 Here is how this property can be used in XAML:
 
-```xml
+```xaml
 <Page ...
      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
      
@@ -87,7 +87,7 @@ The `ItemContainerStretchDirection` property provides a way to stretch the `Item
 
 Here is how this property can be used from XAML:
 
-```xml
+```xaml
 <Page ...
      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
