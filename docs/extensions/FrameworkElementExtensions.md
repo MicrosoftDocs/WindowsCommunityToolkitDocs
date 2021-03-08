@@ -50,6 +50,7 @@ control = uiElement.FindParent<Grid>();
 // Retrieves the Content for the specified control from whatever its "Content" property may be
 var content = uiElement.GetContentControl();
 ```
+
 ```vb
 ' Include the namespace to access the extensions
 Imports Microsoft.Toolkit.Uwp.UI
@@ -102,7 +103,7 @@ Here is an example of how this can be used:
     Visibility="{Binding (ui:FrameworkElementExtensions.Ancestor).Visibility,RelativeSource={RelativeSource Self}}"/>
 ```
 
-# Cursor
+## Cursor
 
 The `Cursor` attached property enables you to easily change the mouse cursor over specific Framework elements. Values of this property are values from the [`CoreCursorType`](https://docs.microsoft.com/uwp/api/windows.ui.core.corecursortype) type.
 

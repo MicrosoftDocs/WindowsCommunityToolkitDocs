@@ -41,6 +41,7 @@ control = uiElement.FindAscendant("MyScrollViewer");
 // Find the first visual ascendant control of a specified type
 control = uiElement.FindAscendant<ScrollViewer>();
 ```
+
 ```vb
 ' Include the namespace to access extensions
 Imports Microsoft.Toolkit.Uwp.UI.Extensions

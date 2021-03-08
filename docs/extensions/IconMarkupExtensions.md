@@ -12,6 +12,7 @@ The icon extensions are a group of markup extensions meant to simplify the creat
 > **Platform APIs:** [`BitmapIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconextension), [`BitmapIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconsourceextension), [`FontIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.fonticonextension), [`FontIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.fonticonsourceextension), [`SymbolIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.symboliconextension) and [`SymbolIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.symboliconsourceextension)
 
 ## BitmapIconExtension
+
 The `BitmapIconExtension` markup extension is similar in structure to the two previous extensions, but it produces `BitmapIcon` instances instead of font-based icons. Here is how it can be used:
 
 ```xaml
@@ -32,6 +33,7 @@ The `BitmapIconExtension` markup extension is similar in structure to the two pr
 ```
 
 ## BitmapIconSourceExtension
+
 The `BitmapIconSourceExtension` class mirrors the `BitmapIconExtension` type, with the only difference being that it returns a `BitmapIconSource` instance. Here is how it can be used:
 
 ```xaml
@@ -43,6 +45,7 @@ The `BitmapIconSourceExtension` class mirrors the `BitmapIconExtension` type, wi
 ```
 
 ## FontIconExtension
+
 The `FontIconExtension` type provides the ability to create `FontIcon` instances from XAML with a more compact representation than by explicitly creating a new `FontIcon` object to assign to the target property. The property also maps all the available `FontIcon` properties, so the two APIs expose the same set of customization options, just through a different XAML syntax:
 
 ```xaml
@@ -61,6 +64,7 @@ The `FontIconExtension` type provides the ability to create `FontIcon` instances
 ```
 
 ## FontIconSourceExtension
+
 The `FontIconSourceExtension` class mirrors the `FontIconExtension` type, but producing `FontIconSource` instances instead of `FontIcon`:
 
 ```xaml
@@ -81,6 +85,7 @@ The `FontIconSourceExtension` class mirrors the `FontIconExtension` type, but pr
 ```
 
 ## SymbolIconExtension
+
 The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets". Here is how it can be used:
 
 ```xaml
@@ -102,6 +107,7 @@ The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the
 > The `SymbolIconExtension` actually returns a `FontIcon` value instead of a `SymbolIcon` one. This is done to include the additional properties (eg. `FontSize`, `FontWeight`, etc.) that would otherwise not have been available. When those are not modified, the look of the resulting icon will still be the same as the one that would've resulted from the use of a `SymbolIcon` instance.
 
 ## SymbolIconSource
+
 The `SymbolIconSourceExtension` type is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance:
 
 ```xaml

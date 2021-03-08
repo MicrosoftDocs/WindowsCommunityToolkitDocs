@@ -190,10 +190,13 @@
 ## [TilesBrush](brushes/TilesBrush.md)
 
 # Extensions
+
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
+
 ## [DependencyObjectExtensions](extensions/DependencyObjectExtensions.md)
+
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
 
 ## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
@@ -205,11 +208,13 @@
 ## [OnDeviceExtension](extensions/OnDeviceExtension.md)
 
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
+
 ## [TextBoxExtensions](extensions/TextBoxExtensions.md)
 
 ## [UIElementExtensions](extensions/UIElementExtensions.md)
 
 ## [ViewExtensions](extensions/ViewExtensions.md)
+
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
 
 # Collections
