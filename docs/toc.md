@@ -109,6 +109,8 @@
 
 ## [StaggeredPanel](controls/StaggeredPanel.md)
 
+## [SwitchPresenter](controls/SwitchPresenter.md)
+
 ## [TabView](controls/TabView.md)
 
 ## [TextToolbar](controls/TextToolbar.md)
