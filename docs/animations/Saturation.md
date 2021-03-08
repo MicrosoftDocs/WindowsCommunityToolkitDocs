@@ -10,6 +10,9 @@ dev_langs:
 
 # Saturation
 
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
+
 The [Saturation animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.saturation) selectively saturates a XAML element. Saturation animation is applied to all the XAML elements in its parent control/panel. Saturation animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]

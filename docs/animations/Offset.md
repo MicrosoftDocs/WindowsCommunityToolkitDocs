@@ -10,6 +10,9 @@ dev_langs:
 
 # Offset
 
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
+
 The [Offset animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.offset) is used to move the control from one place to another. Offset animation is applied to all the XAML elements in its parent control/panel. Offset animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
@@ -121,7 +124,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
     **Sample Output**
 
-    ![Use Case 2 Output](../resources/images/Animations/Offset/Use-Case-1.gif)
+    ![Use Case 1 Output](../resources/images/Animations/Offset/Use-Case-1.gif)
 
 - Use this to create chaining animations with other animations. Visit the [AnimationSet](AnimationSet.md) documentation for more information.
 

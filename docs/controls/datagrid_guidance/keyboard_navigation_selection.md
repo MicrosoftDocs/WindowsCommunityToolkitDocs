@@ -51,11 +51,11 @@ The DataGrid control supports single row selection as well as multiple rows sele
 * **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
 * **Single** : The user can select only one item at a time.
 
-```xml
+```xaml
 <controls:DataGrid SelectionMode="Extended"/>
 ```
 
-![Selection](../../resources/images/Controls/DataGrid/selection.png)
+![Sample selection UI](../../resources/images/Controls/DataGrid/selection.png)
 
 If the **SelectionMode** property is set to **Extended**, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-row selection. Before navigation starts, the control marks the current row as an anchor row. When you navigate while pressing SHIFT, the selection includes all rows between the anchor row and the current row.
 

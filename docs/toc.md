@@ -127,23 +127,17 @@
 
 # Animations
 
+## [AnimationBuilder](animations/AnimationBuilder.md)
+
 ## [AnimationSet](animations/AnimationSet.md)
 
-## [Blur](animations/Blur.md)
-
-## [Composition Animations](animations/CompositionAnimations.md)
+## [ImplicitAnimationSet](animations/ImplicitAnimationSet.md)
 
 ## [Connected Animations](animations/ConnectedAnimations.md)
 
 ## [ExpressionBuilder](animations/Expressions.md)
 
-## [Fade](animations/Fade.md)
-
 ## [FadeHeader](animations/FadeHeader.md)
-
-## [Implicit Animations](animations/ImplicitAnimations.md)
-
-## [Light](animations/Light.md)
 
 ## [Lottie](animations/Lottie.md)
 
@@ -161,15 +155,7 @@
 
 ### [Handling Failure and Down-level](animations/lottie-scenarios/fallback.md)
 
-## [Offset](animations/Offset.md)
-
-## [ReorderGridAnimation](animations/ReorderGrid.md)
-
-## [Rotate](animations/Rotate.md)
-
-## [Saturation](animations/Saturation.md)
-
-## [Scale](animations/Scale.md)
+## [ItemsReorderAnimation](animations/ItemsReorderAnimation.md)
 
 # Brushes
 
@@ -348,6 +334,26 @@
 ## Animations
 
 ### [ParallaxService](archive/ParallaxService.md)
+
+### [ReorderGridAnimation](animations/ReorderGrid.md)
+
+### [Blur](animations/Blur.md)
+
+### [Composition Animations](animations/CompositionAnimations.md)
+
+### [Fade](animations/Fade.md)
+
+### [Implicit Animations](animations/ImplicitAnimations.md)
+
+### [Light](animations/Light.md)
+
+### [Offset](animations/Offset.md)
+
+### [Rotate](animations/Rotate.md)
+
+### [Saturation](animations/Saturation.md)
+
+### [Scale](animations/Scale.md)
 
 ## Controls
 

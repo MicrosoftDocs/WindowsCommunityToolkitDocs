@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Implicit Composition Animations in XAML
 
+> [!WARNING]
+> These animation types have been updated with some breaking changes, please refer to the docs for the [`ImplicitAnimationSet`](ImplicitAnimationSet.md) type. For a comprehensive list of all the available APIs, use the .NET API browser instead.
+
 Implicit Animations are Composition Animations that are used to describe how and when animations occur as a response to direct property changes, such as Opacity or Offset. Show and Hide animations describe the animation to be applied to an element when the Visibility is changed, or the element is added/removed to the visual tree.
 
 **Prerequisites** - [Composition Animation in XAML](https://docs.microsoft.com/windows/communitytoolkit/animations/compositionanimations)
