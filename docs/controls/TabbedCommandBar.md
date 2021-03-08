@@ -8,12 +8,14 @@ dev_langs:
 ---
 
 # TabbedCommandBar XAML Control
+
 The [TabbedCommandBar](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbar) displays a set of [TabbedCommandBarItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcommandbaritem) in a shared container found in many productivity type apps. It is based off of [NavigationView](/windows/uwp/design/controls-and-patterns/navigationview).
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TabbedCommandBar)
 
 ## Remarks
+
 The TabbedCommandBar automatically applies styles to known common controls inside an `AppBarElementContainer`. The following elements have styles:
 - ComboBox
 - SplitButton
