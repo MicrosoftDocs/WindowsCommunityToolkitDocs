@@ -18,7 +18,7 @@ Commonly used **converters** that allow the data to be modified as it passes thr
 | [DoubleToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletoobjectconverter?view=uwp-toolkit-dotnet) | Converts a double value into an object based on a value to be greater than, less than, or in-between. |
 | [DoubleToVisibilityConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletovisibilityconverter?view=uwp-toolkit-dotnet) | Converts a double value into a Visibility enumeration based on a value to be greater than, less than, or in-between. |
 | [EmptyCollectionToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptycollectiontoobjectconverter?view=uwp-toolkit-dotnet) | Converts a collection into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
-| [EmptyObjectToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties | 
+| [EmptyObjectToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties |
 | [EmptyStringToObjectConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptystringtoobjectconverter?view=uwp-toolkit-dotnet) | Converts a string into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
 | [FormatStringConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.formatstringconverter?view=uwp-toolkit-dotnet) | Converts an [IFormattable](https://docs.microsoft.com/dotnet/api/system.string.format?view=netframework-4.7) value into a string. The ConverterParameter provides the string format |
 | [ResourceNameToResourceStringConverter](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.converters.resourcenametoresourcestringconverter?view=uwp-toolkit-dotnet) | Converter to look up the source string in the App Resources strings and returns its value, if found |
@@ -79,7 +79,7 @@ and using it like that :
 
 ## BoolToVisibilityConverter Examples
 
-`BoolToVisibilityConverter` can be used to easily change a boolean value to a Visibility based one. 
+`BoolToVisibilityConverter` can be used to easily change a boolean value to a Visibility based one.
 If targeting 14393 or later, this is done automatically through [x:Bind](https://docs.microsoft.com/windows/uwp/xaml-platform/x-bind-markup-extension).  First, declare the converter in your resources:
 
 ```xaml

@@ -5,7 +5,7 @@ description: The MasterDetailsView Control presents items in a master/details pa
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MasterDetailsView, XAML Control, xaml
 ---
 
-# MasterDetailsView XAML Control 
+# MasterDetailsView XAML Control
 
 The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.masterdetailsview) presents items in a master/details pattern. It shows a collection of items within the "master panel" and the details for that item within the "details panel". The MasterDetailsView reacts to the width it is given to determine if it should show both the master and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
 
@@ -30,7 +30,7 @@ The [MasterDetailsView Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## BackButtonBehavior
 
-When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view. 
+When in compact mode, the MasterDetailsView will either show the Master or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the Master view.
 
 If there is a Frame in the parent visual tree, the MasterDetailsView control will use the Frame navigation events to transition from the Details view to the Master view. If the host Frame is attempting back navigation while the Details view state is active, the MasterDetailsView will transition to the the Master view and cancel the back navigation.
 
@@ -52,7 +52,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 | CompactModeThresholdWidth | double | If width of control is less than CompactModeThresholdWidth, the control will only display the master or details view - otherwise it will show both views. |
 | DetailsCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the details section |
 | DetailsTemplate | DataTemplate | Gets or sets the DataTemplate used to display the details |
-| DetailsHeader | object | Gets or sets the content for the details pane's header | 
+| DetailsHeader | object | Gets or sets the content for the details pane's header |
 | DetailsHeaderTemplate | DataTemplate | Gets or sets the DataTemplate used to display the content of the details pane's header |
 | MapDetails | Func<object,object> | Gets or sets a function for mapping the selected item to a different model. This new model will be the DataContext of the Details area |
 | MasterCommandBar | CommandBar | Gets or sets the Windows.UI.Xaml.Controls.CommandBar for the master section |
@@ -77,7 +77,7 @@ To help with back navigation, The MasterDetailsView can handle back button visib
 
 [MasterDetailsView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MasterDetailsView). You can [see this in action](uwpct://Controls?sample=MasterDetailsView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
-## Default Template 
+## Default Template
 
 [MasterDetailsView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MasterDetailsView/MasterDetailsView.xaml) is the XAML template used in the toolkit for the default styling.
 

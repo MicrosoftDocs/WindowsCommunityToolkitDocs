@@ -31,13 +31,13 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 </VisualState.StateTriggers>
 ```
 
-## FullScreenModeStateTrigger Example 
+## FullScreenModeStateTrigger Example
 
 ```xml
 <VisualState.StateTriggers>
     <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
 </VisualState.StateTriggers>
-```                    
+```
 
 ## IsEqualStateTrigger Example
 
@@ -61,7 +61,7 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
 </VisualState.StateTriggers>
-```              
+```
 
 ## NetworkConnectionStateTrigger Example
 

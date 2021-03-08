@@ -60,7 +60,7 @@ When you register your app in the [Azure Management Portal](https://portal.azure
 
 1. Click the "Settings" button
 2. Go to the "Required permissions" option
-3. Add Application: Choose **Microsoft Graph** API 
+3. Add Application: Choose **Microsoft Graph** API
 4. Specify the permission levels the MicrosoftGraph Service requires from the Office 365 API (Microsoft Graph). Choose at least:
    * **Sign in and read user profile** to access user's profile.
    * **Read user mail and Send mail as user** to retrieve/send messages.

@@ -70,7 +70,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 - [Requirements](#requirements)
 - [API](#api)
 
-## <a name="quick-start"></a>Quick Start 
+## <a name="quick-start"></a>Quick Start
 
 Welcome to the ExpressionBuilder classes! The ExpressionBuilder classes are a C#-only alternative to building Expressions with type safety. Below is a quick introduction to using the ExpressionBuilder classes with your application. Complete documentation and walkthroughs will start from [Intro](#intro) section.
 
@@ -80,7 +80,7 @@ To use the ExpressionBuilder in your app, add the Microsoft.Toolkit.Uwp.UI.Anima
 
 ```csharp
 using Microsoft.Toolkit.Uwp.UI.Animations.Expressions;
-``` 
+```
 
 Once you have the nuget package added to your project, you are all set to start using the ExpressionBuilder classes!
 
@@ -90,9 +90,9 @@ Once you have the nuget package added to your project, you are all set to start 
 
 A brief recap of ExpressionAnimations:
 
-- ExpressionAnimations are a type of CompositionAnimations used to create mathematical relationships between Composition Objects. Simple examples include making a relationship such that one object will move relative to another. 
+- ExpressionAnimations are a type of CompositionAnimations used to create mathematical relationships between Composition Objects. Simple examples include making a relationship such that one object will move relative to another.
 
-- Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations). 
+- Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations).
 
 - For more information on ExpressionAnimations, [please check our documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
 
@@ -126,7 +126,7 @@ Before we highlight how to use the classes, let's reiterate the core components 
 
 - Keywords: a set of known phrases to the Expression language to provide specific behaviors (referencing the CurrentValue, etc.)
 
-- Operators: The glue that brings together all the components of an equation. Your typical mathematical operators (+, -, *, /) 
+- Operators: The glue that brings together all the components of an equation. Your typical mathematical operators (+, -, *, /)
 
 On the surface, the ExpressionBuilder classes provide three major components to build Expressions with:
 

@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# Loading XAML Control 
+# Loading XAML Control
 
 The [loading control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) is for showing an animation with some content when the user should wait in some tasks of the app.
 

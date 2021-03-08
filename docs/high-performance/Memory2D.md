@@ -15,7 +15,7 @@ The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.high
 
 ## How it works
 
-The `Memory2D<T>` type internally tracks the mapped 2D memory area through a reference to the wrapped object, the height and width parameters, and a special pitch parameter. The height and width indicate the length of the rows and columns in the 2D memory area, while the pitch indicates the offset between the end of each row and the start of the following one. 
+The `Memory2D<T>` type internally tracks the mapped 2D memory area through a reference to the wrapped object, the height and width parameters, and a special pitch parameter. The height and width indicate the length of the rows and columns in the 2D memory area, while the pitch indicates the offset between the end of each row and the start of the following one.
 
 Here's a simple diagram that illustrates this configuration (the "XX" cells in the grid represent items belonging to the target 2D memory area):
 

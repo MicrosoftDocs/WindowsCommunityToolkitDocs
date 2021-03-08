@@ -75,7 +75,7 @@ KeyFrames permit more than one target value that is reached at a point along the
 
 ## AnimationCollection
 
-A collection of animations. 
+A collection of animations.
 
 ### AnimationCollection Properties
 

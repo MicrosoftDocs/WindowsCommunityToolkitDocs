@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, DataGrid, xaml co
 
 # DataGrid XAML control
 
-The DataGrid control provides a flexible way to display a collection of data in rows and columns. 
+The DataGrid control provides a flexible way to display a collection of data in rows and columns.
 
 ![DataGrid control](../resources/images/Controls/DataGrid/DataGrid.gif)
 
@@ -15,7 +15,7 @@ The built-in column types include a text column, a check box column, a combobox 
 
 The DataGrid control supports common table formatting options, such as alternating row backgrounds and foregrounds and the ability to show or hide headers, grid lines, and scroll bars. Additionally, the control provides several style and template properties that you can use to completely change the appearance of the control and its rows, columns, cells, and row or column headers.
 
-The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns. 
+The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=DataGrid)

@@ -43,7 +43,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 - The `Header` property can be set to a string, or any xaml elements. If binding the `Header` to an object that is not a string, use the `HeaderTemplate` to control how the content is rendered.
 
     *Sample Code*
-    
+
     ```xaml
     <controls:HeaderedContentControl Header="This is the header!"/>
     

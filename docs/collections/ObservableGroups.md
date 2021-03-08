@@ -102,7 +102,7 @@ It extends [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system
 | Property | Type | Description |
 | -- | -- | -- |
 | Key | object | The key of the group. It is immutable. |
-| Count | int | The number of items currently in the grouped collection. | 
+| Count | int | The number of items currently in the grouped collection. |
 
 ## Sample Project
 
