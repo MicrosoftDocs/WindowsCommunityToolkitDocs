@@ -1,7 +1,7 @@
 ---
 title: Offset animation behavior
 author: nmetulev
-description: The Offset animation behavior gets the number of pixels, from the origin of the associated control, then offsets the control.
+description: The Offset animation behavior gets the number of pixels, from the origin of the associated control, then offsets the control (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, offset animation
 dev_langs:
   - csharp

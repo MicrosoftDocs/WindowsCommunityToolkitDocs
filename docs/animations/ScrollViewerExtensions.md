@@ -1,13 +1,13 @@
 ---
-title: ScrollViewerExtensions
+title: ScrollViewerExtensions (animations)
 author: Sergio0694
 description: The ScrollViewerExtensions type provides helper methods to handle expression animations on ScrollViewer controls.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ScrollViewer, extentions
 ---
 
-# ScrollViewerExtensions
+# ScrollViewerExtensions (animations)
 
-The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions) type provides helper methods to handle expression animations on [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) controls.
+The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions) type from the `Microsoft.Toolkit.Uwp.UI.Animations` package provides helper methods to handle expression animations on [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) controls.
 
 > **Platform APIs:** [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions)
 

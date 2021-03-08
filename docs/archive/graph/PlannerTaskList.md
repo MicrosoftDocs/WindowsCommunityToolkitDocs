@@ -1,7 +1,7 @@
 ---
 title: PlannerTaskList Control
 author: OGcanviz
-description: The PlannerTaskList Control displays a simple list of Planner tasks.
+description: The PlannerTaskList Control displays a simple list of Planner tasks (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, PlannerTaskList Control
 ---
 

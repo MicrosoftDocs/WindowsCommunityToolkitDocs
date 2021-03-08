@@ -1,7 +1,7 @@
 ---
 title: OnDevice Markup Extension
 author: sonnemaf
-description: The OnDevice markup extension allows you to customize UI appearance on a per-DeviceFamily basis.
+description: The OnDevice markup extension allows you to customize UI appearance on a per-DeviceFamily basis (outdated docs).
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, device family, markup extension, XAML, markup 
 ---
 

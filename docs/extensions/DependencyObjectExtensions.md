@@ -10,7 +10,7 @@ dev_langs:
 
 # DependencyObjectExtensions
 
-The [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) type provides a collection of extensions methods for [`DependencyObject`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.dependencyobject) objects. This class exposes several APIs to aid in using the [`VisualTreeHelper`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. There are a number of reasons why walking the visual tree might be useful, which are mentioned [in the docs](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.media.visualtreehelper?view=winrt-19041#traversing-a-visual-tree).
+The [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) type provides a collection of extensions methods for [`DependencyObject`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.dependencyobject) objects. This class exposes several APIs to aid in using the [`VisualTreeHelper`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. There are a number of reasons why walking the visual tree might be useful, which are mentioned [in the docs](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.visualtreehelper?#traversing-a-visual-tree).
 
 > **Platform APIs:** [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
 

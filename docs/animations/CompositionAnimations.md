@@ -1,7 +1,7 @@
 ---
 title: Composition Animations in XAML
 author: nmetulev
-description: The Composition Animations can be used directly from XAML including with Implicit animations
+description: The Composition Animations can be used directly from XAML including with Implicit animations (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, composition animations, animation, implicit animations, XAML, implicit, composition
 ---
 

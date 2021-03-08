@@ -93,7 +93,7 @@ Here is an example of how the `ActualWidth` attached property can be used in a b
 
 ## AncestorType
 
-The `AncestorType` attached property will walk the visual tree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [`FindAncestor`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.data.relativesourcemode) mode to [`RelativeSource`](https://docs.microsoft.com/dotnet/desktop/wpf/advanced/relativesource-markupextension) data binding in WPF.
+The `AncestorType` attached property will walk the visual tree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [`FindAncestor`](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesourcemode) mode to [`RelativeSource`](https://docs.microsoft.com/dotnet/desktop/wpf/advanced/relativesource-markupextension) data binding in WPF.
 
 Here is an example of how this can be used:
 
