@@ -122,7 +122,7 @@ This method is also helpful when navigating back to an item different from the i
 
 We can create the above connected animations.
 
-**In first page**
+### In first page
 
 We need a set a key for the element to be connected with another element in a different page.
 
@@ -134,7 +134,7 @@ We need a set a key for the element to be connected with another element in a di
 </Grid>
 ```
 
-**In second page**
+### In second page
 
 We need to set the same key for the element to be connected with. Also, You can anchor another element to move along the connected animation path.
 
@@ -170,7 +170,7 @@ animations:Connected.ListItemKey="listItem">
 </GridView>
 ```
 
-**In third page**
+### In third page
 
 In this page, you just need to give the same key.
 

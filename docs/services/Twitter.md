@@ -177,11 +177,11 @@ If you are posting from your app and never seeing them show up in the timeline c
 
 This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
 
-**IAuthenticationBroker**
+### IAuthenticationBroker
 
 The IAuthenticationBroker only has the Authenticate method. This method receives a request uri and a callback uri, which you'll use to authenticate with the API. The method returns an AuthenticationResult that tells the service the authentication result.
 
-**IPasswordManager**
+### IPasswordManager
 
 The IPasswordManager will allow the service to manage passwords. The methods you'll have to implement are Get, Store and Remove.
 
@@ -191,7 +191,7 @@ The Store method receives a string resource and a PasswordCredential.
 
 The Remove method receives a string key.
 
-**IStorageManager**
+### IStorageManager
 
 The IStorageManager will allow the service to store application data. The methods you'll have to implement are Get and Set.
 
@@ -199,7 +199,7 @@ The Get method receives a string key and returns the saved string.
 
 The Set method receives a string key and a string value.
 
-**ISignatureManager**
+### ISignatureManager
 
 Finally, the ISignatureManager will provide a GetSignature method, to sign an OAuth request. This method receives a baseString, a secret string and an append boolean. In return, you'll get the signed baseString. In case the append boolean is true, the final string will have a `&amp` at the end.
 

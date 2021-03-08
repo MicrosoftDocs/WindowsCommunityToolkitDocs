@@ -14,8 +14,6 @@ The [OnDevice Markup Extension](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## Syntax
 
-**XAML**
-
 ```xaml
 
    <TextBlock Text="{helpers:OnDevice Default=Hi, Desktop=Hello, Xbox=World}"

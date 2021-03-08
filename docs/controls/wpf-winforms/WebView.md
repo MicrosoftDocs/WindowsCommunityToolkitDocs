@@ -433,8 +433,6 @@ By default, the **WebView** is hosted outside of your application's process in a
 
 For example, if through the designer a **WebView** named `webView1` is on `Form1`, you can create a new **WebView** that shares the same process and state with `webView1` like this.
 
-**Form1.cs**
-
 ```csharp
 public partial class Form1 : Form
 {
@@ -474,7 +472,7 @@ End Class
 
 Similar to the Windows Forms example, if through the designer a **WebView** is created named `WebView1` on the `Window`, you can create a new **WebView** that shares the same process and state with `WebView1` like this.
 
-**MainWindow.xaml**
+MainWindow.xaml
 
 ```xaml
 <Window
@@ -501,7 +499,7 @@ Similar to the Windows Forms example, if through the designer a **WebView** is c
 </Window>
 ```
 
-**MainWindow.xaml.cs**
+MainWindow.xaml.cs
 
 ```csharp
 public partial class MainWindow : Window
@@ -524,6 +522,8 @@ public partial class MainWindow : Window
     }
 }
 ```
+
+MainWindow.xaml.vb
 
 ```vb
 Class MainWindow

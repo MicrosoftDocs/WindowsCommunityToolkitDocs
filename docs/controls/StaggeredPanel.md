@@ -14,8 +14,6 @@ The [StaggeredPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 
 ## Syntax
 
-**XAML**
-
 ```xaml
 <ItemsControl>
     <ItemsControl.ItemTemplate>

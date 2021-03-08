@@ -15,8 +15,6 @@ The [BitmapIcon markup extension](https://docs.microsoft.com/dotnet/api/microsof
 
 ### Syntax
 
-**XAML**
-
 ```xaml
 <MenuFlyout>
 
@@ -47,8 +45,6 @@ The [BitmapIconSource markup extension](https://docs.microsoft.com/dotnet/api/mi
 
 ### Syntax
 
-**XAML**
-
 ```xaml
 <SwipeItems Mode="Reveal">
     <SwipeItem Text="Send" IconSource="{ex:BitmapIconSource Source=/Assets/myicon.png}"/>
@@ -67,8 +63,6 @@ The [BitmapIconSource markup extension](https://docs.microsoft.com/dotnet/api/mi
 The [FontIcon markup extension](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.fonticonextension) provides the ability to create `FontIcon` instances from XAML with a more compact representation than by explicitly creating a new `FontIcon` object to assign to the target property. The property also maps all the available `FontIcon` properties, so the two APIs expose the same set of customization options, just through a different XAML syntax.
 
 ### Syntax
-
-**XAML**
 
 ```xaml
 <CommandBar>
@@ -103,8 +97,6 @@ The [FontIconSource markup extension](https://docs.microsoft.com/dotnet/api/micr
 
 ### Syntax
 
-**XAML**
-
 ```xaml
 <SwipeItems Mode="Reveal">
 
@@ -137,8 +129,6 @@ The [FontIconSource markup extension](https://docs.microsoft.com/dotnet/api/micr
 The [SymbolIcon markup extension](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconextension) mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets".
 
 ### Syntax
-
-**XAML**
 
 ```xaml
 <CommandBar>
@@ -174,8 +164,6 @@ The [SymbolIcon markup extension](https://docs.microsoft.com/dotnet/api/microsof
 The [SymbolIconSource markup extension](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.symboliconsourceextension) is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance.
 
 ### Syntax
-
-**XAML**
 
 ```xaml
 <SwipeItems Mode="Reveal">

@@ -14,8 +14,6 @@ The [StaggeredLayout](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## Syntax
 
-**XAML**
-
 ```xaml
 <winui:ItemsRepeater>
     <winui:ItemsRepeater.Layout>

@@ -22,8 +22,6 @@ The transformations that can be applied are one of the following:
 
 ## Syntax
 
-**XAML**
-
 ```xaml
 <controls:LayoutTransformControl Background="Black" 
                                  HorizontalAlignment="Center" 
