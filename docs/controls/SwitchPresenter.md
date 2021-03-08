@@ -27,7 +27,7 @@ Unlike traditional approaches of showing/hiding components within a page, the `S
                    ui:TextBoxExtensions.Regex="^[a-zA-Z]{6}$"
                    Header="Confirmation code"
                    PlaceholderText="6 letters" />
-          <TextBlock Visibility="{Binding (ui:TextBoxExtensions.IsValid), ElementName=ConfirmationCodeValidator}">Thanks for entering a valid code!</TextBlock>
+          <TextBlock Visibility="{Binding (ui:TextBoxExtensions.IsValid), ElementName=ConfirmationCodeValidator}" Text="Thanks for entering a valid code!" />
         </StackPanel>
       </controls:Case>
       <controls:Case Value="E-ticket number">
@@ -36,7 +36,7 @@ Unlike traditional approaches of showing/hiding components within a page, the `S
                    ui:TextBoxExtensions.Regex="(^\d{10}$)|(^\d{13}$)"
                    Header="E-ticket number"
                    PlaceholderText="10 or 13 numbers" />
-          <TextBlock Visibility="{Binding (ui:TextBoxExtensions.IsValid), ElementName=TicketValidator}">Thanks for entering a valid code!</TextBlock>
+          <TextBlock Visibility="{Binding (ui:TextBoxExtensions.IsValid), ElementName=TicketValidator}" Text="Thanks for entering a valid code!" />
         </StackPanel>
       </controls:Case>
       <controls:Case Value="Mileage Plan number">
@@ -46,7 +46,7 @@ Unlike traditional approaches of showing/hiding components within a page, the `S
       </controls:Case>
       <!-- You can also provide a default case if no match is found -->
       <controls:Case IsDefault="True">
-        <TextBlock>Please select a way to lookup your reservation above...</TextBlock>
+        <TextBlock Text="Please select a way to lookup your reservation above..." />
       </controls:Case>
     </controls:SwitchPresenter>
 ```
