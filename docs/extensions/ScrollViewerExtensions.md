@@ -110,8 +110,8 @@ MiddleClickScrolling allows you to scroll by click middle mouse button (scroll w
 
 1. Download [MiddleClickScrolling-CursorType.res](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer/MiddleClickScrolling-CursorType.res) file
 2. Move this file into your project's folder
-2. Open .csproj file of your project in [Visual Studio Code](https://code.visualstudio.com/) or in any other code editor
-3. Add `<Win32Resource>MiddleClickScrolling-CursorType.res</Win32Resource>` in the first `<PropertyGroup>`
+3. Open .csproj file of your project in [Visual Studio Code](https://code.visualstudio.com/) or in any other code editor
+4. Add `<Win32Resource>MiddleClickScrolling-CursorType.res</Win32Resource>` in the first `<PropertyGroup>`
 
 ### Edit Existing Resource File
 

@@ -157,9 +157,9 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-* [Scale source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
+- [Scale source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

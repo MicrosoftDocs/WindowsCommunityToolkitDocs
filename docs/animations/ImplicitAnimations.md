@@ -142,10 +142,10 @@ You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in
 
 ## API
 
-* [Implicit animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
+- [Implicit animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
 
 ## Related Topics
 
-* [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
-* [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
-* [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)
+- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
+- [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
+- [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)

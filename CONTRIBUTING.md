@@ -7,5 +7,6 @@ Documentation is **required** when adding, removing, or updating a control or an
 Make sure to update both Pull Requests with a link to each other.
 
 If adding a new documentation page:
+
 * Copy the [documentation template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/.template.md) and follow the same format.
 * Update the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md) to point to the new page

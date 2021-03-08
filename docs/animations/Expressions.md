@@ -8,65 +8,65 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # ExpressionBuilder
 
 - [Quick Start](#quick-start)
-    - [Setting up the ExpressionBuilder classes with your app](#setting-up-the-expressionbuilder-classes-with-your-app)
-    - [Getting started with ExpressionBuilder classes](#getting-started-with-expressionbuilder-classes)
-        - [ExpressionAnimation Overview](#expressionAnimation-overview)
-    - [Using the ExpressionBuilder classes](#using-the-expressionbuilder-classes)
-        - [Extension Methods](#extension-methods)
-        - [How to template with ExpressionBuilder](#how-to-template-with-expressionbuilder)
-        - [E2E Example](#e2e-example)
-        - [Things to Note](#things-to-note)
+  - [Setting up the ExpressionBuilder classes with your app](#setting-up-the-expressionbuilder-classes-with-your-app)
+  - [Getting started with ExpressionBuilder classes](#getting-started-with-expressionbuilder-classes)
+    - [ExpressionAnimation Overview](#expressionAnimation-overview)
+  - [Using the ExpressionBuilder classes](#using-the-expressionbuilder-classes)
+    - [Extension Methods](#extension-methods)
+    - [How to template with ExpressionBuilder](#how-to-template-with-expressionbuilder)
+    - [E2E Example](#e2e-example)
+    - [Things to Note](#things-to-note)
 - [Intro](#intro)
-    - [What are Expressions?](#what-are-expressions)
-    - [Why ExpressionBuilder?](#why-expressionbuilder)
+  - [What are Expressions?](#what-are-expressions)
+  - [Why ExpressionBuilder?](#why-expressionbuilder)
 - [How to: Build Core Components of Expressions](#how-to-build-core-components-of-expressions)
-    - [General Construction](#general-construction)
-        - [Interacting with ExpressionNodes via Static Methods](#interacting-with-expressionnodes-via-static-methods)
-        - [Implicit Conversion to ExpressionNodes](#implicit-conversion-to-expressionnodes)
-        - [Using ExpressionNodes with StartAnimation](#using-expressionnodes-with-startanimation)
-        - [Using ExpressionNodes with ExpressionKeyFrames](#using-expressionnodes-with-expressionkeyframes)
-        - [Using ExpressionNodes in other places](#using-expressionnodes-in-other-places)
-    - [Parameters](#parameters)
-        - [Definitions: Constants vs. References](#definitions-constants-vs-references)
-        - [Definitions: Dynamic vs. Static Parameters](#definitions-dynamic-vs-static-parameters)
-        - [Creating Constant Parameters](#creating-constant-parameters)
-        - [Creating Reference Parameters](#creating-reference-parameters)
-        - [Subchanneling (Swizzling)](#subchanneling-swizzling)
-        - [Templating](#templating)
-        - [Keywords](#expressions-keywords)
-    - [Math shortcuts & basic operators](#math-shortcuts-basic-operators)
-        - [Basic Operators](#basic-operators)
-        - [Math Shortcuts (Functions)](#math-shortcuts-functions)
-    - [Advanced Operations](#advanced-operations)
-        - [Comparison Operators](#comparison-operators)
-        - [Conditional Operation](#conditional-operation)
-    - [Tips and Tricks for using Classes](#tips-and-tricks-for-using-classes)
-        - [Shortening Class Names](#shortening-class-names)
+  - [General Construction](#general-construction)
+    - [Interacting with ExpressionNodes via Static Methods](#interacting-with-expressionnodes-via-static-methods)
+    - [Implicit Conversion to ExpressionNodes](#implicit-conversion-to-expressionnodes)
+    - [Using ExpressionNodes with StartAnimation](#using-expressionnodes-with-startanimation)
+    - [Using ExpressionNodes with ExpressionKeyFrames](#using-expressionnodes-with-expressionkeyframes)
+    - [Using ExpressionNodes in other places](#using-expressionnodes-in-other-places)
+  - [Parameters](#parameters)
+    - [Definitions: Constants vs. References](#definitions-constants-vs-references)
+    - [Definitions: Dynamic vs. Static Parameters](#definitions-dynamic-vs-static-parameters)
+    - [Creating Constant Parameters](#creating-constant-parameters)
+    - [Creating Reference Parameters](#creating-reference-parameters)
+    - [Subchanneling (Swizzling)](#subchanneling-swizzling)
+    - [Templating](#templating)
+    - [Keywords](#expressions-keywords)
+  - [Math shortcuts & basic operators](#math-shortcuts-basic-operators)
+    - [Basic Operators](#basic-operators)
+    - [Math Shortcuts (Functions)](#math-shortcuts-functions)
+  - [Advanced Operations](#advanced-operations)
+    - [Comparison Operators](#comparison-operators)
+    - [Conditional Operation](#conditional-operation)
+  - [Tips and Tricks for using Classes](#tips-and-tricks-for-using-classes)
+    - [Shortening Class Names](#shortening-class-names)
 - [Translating Old World to New](#translating-old-world-to-new)
-    - [Creating an Expression](#creating-an-expression)
-    - [Defining Constant Parameters](#defining-constant-parameters)
-    - [Building Constants](#building-constants)
-    - [Defining Reference Parameters](#defining-reference-parameters)
-    - [Using Math Functions & Math Operators](#using-math-functions-math-operators)
-    - [Using Ternary and Conditional Operators](#using-ternary-and-conditional-operators)
-    - [Keywords](#new-world-keywords)
-    - [Starting an Expression on a CompositionObject](#starting-an-expression-on-a-compositionobject)
+  - [Creating an Expression](#creating-an-expression)
+  - [Defining Constant Parameters](#defining-constant-parameters)
+  - [Building Constants](#building-constants)
+  - [Defining Reference Parameters](#defining-reference-parameters)
+  - [Using Math Functions & Math Operators](#using-math-functions-math-operators)
+  - [Using Ternary and Conditional Operators](#using-ternary-and-conditional-operators)
+  - [Keywords](#new-world-keywords)
+  - [Starting an Expression on a CompositionObject](#starting-an-expression-on-a-compositionobject)
 - [E2E Building Examples](#e2e-building-examples)
-    - [Parallaxing Listing Items](#parallaxing-listing-items)
-        - [Old Expression](#parallaxing-old-expression)
-        - [Summary of Expression definition](#parallaxing-summary-of-expression-definition)
-        - [Building with ExpressionNodes](#parallaxing-building-with-expressionnodes)
-        - [Final code snippet](#parallaxing-final-code-snippet)
-    - [PropertySets](#propertysets)
-        - [Old Expression](#propertysets-old-expression)
-        - [Summary of Expression definition](#propertysets-summary-of-expression-definition)
-        - [Building with ExpressionNodes](#propertysets-building-with-expressionnodes)
-        - [Final code snippet](#propertysets-final-code-snippet)
-    - [Curtain](#curtain)
-        - [Old Expression](#curtain-old-expression)
-        - [Summary Expression Definition](#curtain-summary-expression-definition)
-        - [Building with ExpressionNodes](#curtain-building-with-expressionnodes)
-        - [Final code snippet](#curtain-final-code-snippet)
+  - [Parallaxing Listing Items](#parallaxing-listing-items)
+    - [Old Expression](#parallaxing-old-expression)
+    - [Summary of Expression definition](#parallaxing-summary-of-expression-definition)
+    - [Building with ExpressionNodes](#parallaxing-building-with-expressionnodes)
+    - [Final code snippet](#parallaxing-final-code-snippet)
+  - [PropertySets](#propertysets)
+    - [Old Expression](#propertysets-old-expression)
+    - [Summary of Expression definition](#propertysets-summary-of-expression-definition)
+    - [Building with ExpressionNodes](#propertysets-building-with-expressionnodes)
+    - [Final code snippet](#propertysets-final-code-snippet)
+  - [Curtain](#curtain)
+    - [Old Expression](#curtain-old-expression)
+    - [Summary Expression Definition](#curtain-summary-expression-definition)
+    - [Building with ExpressionNodes](#curtain-building-with-expressionnodes)
+    - [Final code snippet](#curtain-final-code-snippet)
 - [Requirements](#requirements)
 - [API](#api)
 
@@ -386,15 +386,15 @@ Using ExpressionNodes with StartAnimation and ExpressionKeyFrames will be the mo
 
 - InteractionTrackerInertiaMotion Extension Methods
 
-    - SetCondition
+  - SetCondition
 
-    - SetMotion
+  - SetMotion
 
 - InteractionTrackerInertiaRestingValue ExtensionMethods
 
-    - SetCondition
+  - SetCondition
 
-    - SetMotion
+  - SetMotion
 
 ### <a name="parameters"></a>Parameters
 
@@ -414,7 +414,7 @@ var extraOffset = new Vector3(50f, 50f, 0f);
 
 - **Reference:** A CompositionObject (Visual, Clip, InteractionTracker, etc.), whose properties will be evaluated each frame the Expression is processed in the Compositor.
 
-    - The usefulness of including a Reference Parameter in an Expression is to reference properties off it (e.g. referencing the Offset property of a Visual).
+  - The usefulness of including a Reference Parameter in an Expression is to reference properties off it (e.g. referencing the Offset property of a Visual).
 
 ```csharp
 var redVisual = _compositor.CreateSpriteVisual();
@@ -498,7 +498,7 @@ Thus, as the Offset value of \_redBall changes (via direct property set or anima
 
 - Create a Parameter using the static methods off the ExpressionValues.Reference class
 
-    - The value of the parameter can be set via the SetReferenceParameter function
+  - The value of the parameter can be set via the SetReferenceParameter function
 
 In the example below, we further expand on the above code such that instead of using a static reference to the redBall visual, we use a named one, so that we can change the parameter to refer to a blueBall Visual later.
 
@@ -903,16 +903,16 @@ visual.StartAnimation("Offset.Y", _parallaxExpression);
 
 - The core of this Expression is uses a ScrollManipulationPropertySet, a CompositionPropertySet that contains information about the XAML ScrollViewer that manages the item in the XAML ListView.
 
-    - Specifically, we are looking at the Translation.Y property. When building our Expression, we will need to grab a reference to this property.
+  - Specifically, we are looking at the Translation.Y property. When building our Expression, we will need to grab a reference to this property.
 
 - There are three other scalar parameters that comprise the remainder of this equation (StartOffset, ParallaxValue and ItemHeight). Note, that in this sample, the intent was to make this Expression a template, meaning that these values may need to be changed later.
 
-    - If the intent was not to template, the Expression would have been created differently, with the values being written directly into the string.
+  - If the intent was not to template, the Expression would have been created differently, with the values being written directly into the string.
 
 - Finally, the equation itself has a common component (we’ll denote it “A”) that gives it the form A\*Parallax – A.
 
-    - In this case “A” is:  
-        "(ScrollManipulation.Translation.Y + StartOffset - (0.5 \* ItemHeight))”
+  - In this case “A” is:
+    "(ScrollManipulation.Translation.Y + StartOffset - (0.5 \* ItemHeight))"
 
 #### <a name="parallaxing-building-with-expressionnodes"></a>Building with ExpressionNodes
 
@@ -1011,7 +1011,7 @@ blueSprite.StartAnimation("Offset", expressionAnimation);
 
 - A scalar property in a CompositionPropertySet named “Rotation” that is being animated by a separate KeyFrameAnimation dictates the core behavior of this Expression.
 
-    - This property “Rotation”, and another property  “CenterPointOffset, will need to be referenced in the equation.
+  - This property “Rotation”, and another property  “CenterPointOffset, will need to be referenced in the equation.
 
 - The Expression also constructs a Vector3 that takes the Cosine of the Radians-converted property “Rotation” in the CompositionPropertySet
 
@@ -1090,7 +1090,7 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 - The main component of this equation is an InteractionTracker and the associated properties of it to drive the damped harmonic oscillator equation.
 
-    - In particular, the properties Position.Y and PositionVelocityInPixelsPerSecond.Y
+  - In particular, the properties Position.Y and PositionVelocityInPixelsPerSecond.Y
 
 - Because this Expression is getting properties from the same InteractionTracker it is animating, the Target keyword will be used here.
 
@@ -1145,4 +1145,4 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 ## <a name="api"></a>API
 
-* [Expressions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)
+- [Expressions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)

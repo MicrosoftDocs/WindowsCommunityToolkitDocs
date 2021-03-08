@@ -47,8 +47,9 @@ CTRL+ENTER | Commits any changes to the current cell without moving the focus.
 ## Selection behaviors
 
 The DataGrid control supports single row selection as well as multiple rows selection through the **DataGrid.SelectionMode** property. The **DataGridSelectionMode** enumeration has the following member values:
-   * **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
-   * **Single** : The user can select only one item at a time.
+
+* **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
+* **Single** : The user can select only one item at a time.
 
 ```xml
 <controls:DataGrid SelectionMode="Extended"/>
@@ -59,6 +60,7 @@ The DataGrid control supports single row selection as well as multiple rows sele
 If the **SelectionMode** property is set to **Extended**, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-row selection. Before navigation starts, the control marks the current row as an anchor row. When you navigate while pressing SHIFT, the selection includes all rows between the anchor row and the current row.
 
 The following selection keys modify multi-row selection.
+
 * SHIFT+DOWN ARROW
 * SHIFT+UP ARROW
 * SHIFT+LEFT ARROW

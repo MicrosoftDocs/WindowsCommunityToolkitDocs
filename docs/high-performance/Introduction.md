@@ -58,6 +58,7 @@ If you are already familiar with these APIs or even if you're just getting start
 ## Where to start?
 
 Here are some APIs you could look at first, if you were already using one of those types mentioned above:
+
 - [`Span2D<T>`](Span2D.md) and [`Memory2D<T>`](Memory2D.md), for a `Span<T>` and `Memory<T>`-like abstraction over 2D memory
 - [`MemoryOwner<T>`](MemoryOwner.md) and [`SpanOwner<T>`](SpanOwner.md), if you were using `System.Buffers.ArrayPool<T>`.
 - [`StringPool`](StringPool.md), for an `ArrayPool<T>`-like type to cache `string` instances

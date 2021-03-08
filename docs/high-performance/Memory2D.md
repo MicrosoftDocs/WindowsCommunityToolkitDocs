@@ -35,6 +35,7 @@ Here's a simple diagram that illustrates this configuration (the "XX" cells in t
 ```
 
 This configuration allows `Memory2D<T>` to be extremely flexible in the way it maps existing buffers to 2D memory areas, as it makes it possible to also represent discontiguous buffers as a "virtual" 2D memory location. For instance, here's a few examples of buffer types that a `Memory2D` instance can map to:
+
 - A 1D `T[]` array which is mapped as a 2D memory area in row-major order.
 - A 2D `T[,]` array, mapped directly to a `Memory2D<T>` instance.
 - A 3D `T[,,]` array, with a `Memory2D<T>` instance representing a given depth slice (a layer).

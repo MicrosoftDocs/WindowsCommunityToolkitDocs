@@ -41,11 +41,11 @@ Event | RowEditEnded | Occurs when a row edit has been committed or canceled.
 ### Enumerations
 
 * **DataGridEditAction** enumeration : Specifies constants that define what action was taken to end an edit. Supported members are:
-   * Cancel: Edit was canceled.
-   * Commit: Edit was committed.
+  * Cancel: Edit was canceled.
+  * Commit: Edit was committed.
 * **DataGridEditingUnit** enumeration : Specifies constants that define whether editing is enabled on a cell level or on a row level. Supported members are:
-   * Cell: Cell editing is enabled.
-   * Row: Row editing is enabled.
+  * Cell: Cell editing is enabled.
+  * Row: Row editing is enabled.
 
 ## Input Validation
 

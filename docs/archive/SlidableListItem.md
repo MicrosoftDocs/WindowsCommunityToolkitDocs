@@ -154,8 +154,8 @@ The SlidableListItem and SwipeControl share the same concepts and provide the sa
 ### What developers need to know to move to the SwipeControl?
 
 * **Two different modes:** The SwipeControl has two different modes of commanding:
-    * Execute mode - works the same way as the commanding on the SlidableListItem, where the user executes a command with a single swipe
-    * Reveal mode - the user swipes an item to open a menu where the commands can be executed by tapping them
+  * Execute mode - works the same way as the commanding on the SlidableListItem, where the user executes a command with a single swipe
+  * Reveal mode - the user swipes an item to open a menu where the commands can be executed by tapping them
 * **Swipe direction:** SlidableListItem only supports left and right swiping while the SwipeControl supports all four directions (Up, Down, Left, Right)
 * **SwipeItem:** The Fall Creators Update defines new objects to help define the swipe commands. Unlike the SlidableListItem where each command is defined through properties on the control itself, the SwipeControl accepts a collection of SwipeItems that define the commands. This is where you can specify properties such as background, foreground, icon, label, and invoked events.
 

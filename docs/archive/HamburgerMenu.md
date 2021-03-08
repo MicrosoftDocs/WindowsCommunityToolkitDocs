@@ -235,8 +235,8 @@ The HamburgerMenu and NavigationView share the same concepts and provide the sam
 
 - **Additional features in the NavigationView:** The navigation view also introduces several new features that are not available in the HamburgerMenu:
 
-    * There is a new optional header area that is vertically aligned with the navigation button and has a fixed height. Its purpose is to hold the page title of the selected nav category. The header is docked to the top of the page and acts as a scroll clipping point for the content area.
-    * AutoSuggestBox property allows you to add a search box that integrates directly with the NavigationView. Some developers accomplished the same with the HamburgerMenu by re-templating it and writing a lot of custom code. That is not needed with the NavigationView
+  - There is a new optional header area that is vertically aligned with the navigation button and has a fixed height. Its purpose is to hold the page title of the selected nav category. The header is docked to the top of the page and acts as a scroll clipping point for the content area.
+  - AutoSuggestBox property allows you to add a search box that integrates directly with the NavigationView. Some developers accomplished the same with the HamburgerMenu by re-templating it and writing a lot of custom code. That is not needed with the NavigationView
 
 ### Making the transition even easier
 
@@ -254,14 +254,14 @@ Version 3.0 of the Windows Community Toolkit adds another related property calle
 
 There are several HamburgerMenu properties that have no effect when the HamburgerMenu is using the NavigationView:
 
-* DisplayMode
-* PanePlacement
-* PaneBackground
-* PaneForeground
-* HamburgerWidth
-* HamburgerHeight
-* HamburgerMargin
-* HamburgerMenuTemplate
+- DisplayMode
+- PanePlacement
+- PaneBackground
+- PaneForeground
+- HamburgerWidth
+- HamburgerHeight
+- HamburgerMargin
+- HamburgerMenuTemplate
 
 ## Sample Code
 
@@ -281,4 +281,4 @@ There are several HamburgerMenu properties that have no effect when the Hamburge
 
 ## API
 
-* [HamburgerMenu source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)
+- [HamburgerMenu source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)

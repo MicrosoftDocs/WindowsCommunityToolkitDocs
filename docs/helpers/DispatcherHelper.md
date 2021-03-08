@@ -114,4 +114,4 @@ End Function)
 
 ## API
 
-* [DispatcherHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs)
+- [DispatcherHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs)
