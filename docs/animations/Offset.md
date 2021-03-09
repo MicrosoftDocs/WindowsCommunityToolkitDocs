@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
-The [Offset animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.offset) is used to move the control from one place to another. Offset animation is applied to all the XAML elements in its parent control/panel. Offset animation doesn't affect the functionality of the control.
+The [Offset animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.offset) is used to move the control from one place to another. Offset animation is applied to all the XAML elements in its parent control/panel. Offset animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Offset)
@@ -163,7 +163,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Offset source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/OffsetAnimation.cs)
+- [Offset source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/OffsetAnimation.cs)
 
 ## Related Topics
 
