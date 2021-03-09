@@ -35,6 +35,7 @@ Or use the global Eyedropper in code.
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
 ```
+
 ```vb
 Dim eyedropper = New Eyedropper()
 Dim color = Await eyedropper.Open()
@@ -69,7 +70,7 @@ Dim color = Await eyedropper.Open()
 
 | Methods        | Return Type | Description           |
 | -------------- | ----------- | --------------------- |
-| Open([Point?]) | Task<Color> | Open the eyedropper.  |
+| Open([Point?]) | Task\<Color> | Open the eyedropper.  |
 | Close()        | void        | Close the eyedropper. |
 
 ## Events
@@ -98,6 +99,7 @@ Dim color = Await eyedropper.Open()
 var eyedropper = new Eyedropper();
 var color = await eyedropper.Open();
 ```
+
 ```vb
 Dim eyedropper = New Eyedropper()
 Dim color = Await eyedropper.Open()
@@ -120,4 +122,4 @@ Dim color = Await eyedropper.Open()
 
 ## API
 
-* [Eyedropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper)
+- [Eyedropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Eyedropper)

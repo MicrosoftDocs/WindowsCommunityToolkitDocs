@@ -10,9 +10,11 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 ## Keyboard behaviors
 
 ### Keyboarding in Column headers
+
 The user can use TAB key to set keyboard focus to the current column headers. If the user can sort the columns, pressing ENTER key on the column header sorts that column. LEFT/RIGHT arrow keys move focus to column headers to the left and right of the currently focused column header. DOWN arrow key from a column header moves focus to the cell in the first row directly below the column header.
 
 ### Keyboarding in cells
+
 The following table lists the default keyboard behavior within the cells of the DataGrid control.
 
 Key or key combination | Description
@@ -43,18 +45,22 @@ DELETE | Deletes the character after the cursor when editing a cell.
 CTRL+ENTER | Commits any changes to the current cell without moving the focus.
 
 ## Selection behaviors
-The DataGrid control supports single row selection as well as multiple rows selection through the **DataGrid.SelectionMode** property. The **DataGridSelectionMode** enumeration has the following member values:
-   * **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
-   * **Single** : The user can select only one item at a time.
 
-```xml
+The DataGrid control supports single row selection as well as multiple rows selection through the **DataGrid.SelectionMode** property. The **DataGridSelectionMode** enumeration has the following member values:
+
+* **Extended** : The user can select multiple items while holding down the SHIFT or CTRL keys during selection.
+* **Single** : The user can select only one item at a time.
+
+```xaml
 <controls:DataGrid SelectionMode="Extended"/>
 ```
-![Selection](../../resources/images/Controls/DataGrid/selection.png)
+
+![Sample  for SelectionMode](../../resources/images/Controls/DataGrid/selection.png)
 
 If the **SelectionMode** property is set to **Extended**, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-row selection. Before navigation starts, the control marks the current row as an anchor row. When you navigate while pressing SHIFT, the selection includes all rows between the anchor row and the current row.
 
 The following selection keys modify multi-row selection.
+
 * SHIFT+DOWN ARROW
 * SHIFT+UP ARROW
 * SHIFT+LEFT ARROW
@@ -73,6 +79,7 @@ The following selection keys modify multi-row selection.
 * CTRL+SHIFT+PAGE UP
 
 ## Pointer behaviors
+
 The following table lists the default behaviors for pointer (mouse/touch/pen) actions.
 
 Pointer action | Description
@@ -83,7 +90,7 @@ Drag a column header cell | If the DataGrid.CanUserReorderColumns property is tr
 Drag a column header separator | If the DataGrid.CanUserResizeColumns property is true and the DataGridColumn.CanUserResize property is true for the current column, resizes the column.
 Tap a column header | If the DataGrid.CanUserSortColumns property is true and the DataGridColumn.CanUserSort property is true for the current column, sorts the column. Tapping the header of a column that is already sorted will reverse the sort direction of that column.
 CTRL+tap a row | If SelectionMode is set to Extended, modifies a non-contiguous multi-row selection. If the row is already selected, deselects the row.
-SHIFT+tap a row | If SelectionMode is set to Extended, modifies a contiguous multi-row selection. 
+SHIFT+tap a row | If SelectionMode is set to Extended, modifies a contiguous multi-row selection.
 Tap a row group header expander button | Expands or collapses the group.
 Double-tap a row group header | Expands or collapses the group.
 

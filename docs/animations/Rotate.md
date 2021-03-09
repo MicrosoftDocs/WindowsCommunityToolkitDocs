@@ -1,7 +1,7 @@
 ---
 title: Rotate animation behavior
 author: nmetulev
-description: The Rotate animation behavior allows users to modify and animate the control's rotation. 
+description: The Rotate animation behavior allows users to modify and animate the control's rotation (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, rotate, rotate animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Rotate
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
 The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.rotate) allows users to modify and animate the control's rotation. Rotate animation is applied to all the XAML elements in its parent control/panel. Rotate animation doesn't affect the functionality of the control.
 
@@ -23,14 +26,14 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
     xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors">
 
 <interactivity:Interaction.Behaviors>
-    <behaviors:Rotate x:Name="RotateBehavior" 
-				Value="180"
-				CenterX="0.0" 
-				CenterY="0.0" 
-				Duration="500" 
-				Delay="250" 
-                                EasingType="Linear"
-				AutomaticallyStart="True"/>
+    <behaviors:Rotate x:Name="RotateBehavior"
+                Value="180"
+                CenterX="0.0"
+                CenterY="0.0"
+                Duration="500"
+                Delay="250"
+                EasingType="Linear"
+                AutomaticallyStart="True"/>
 </interactivity:Interaction.Behaviors>
 ```
 
@@ -38,6 +41,7 @@ The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 MyUIElement.Rotate(value: 50.0f, centerX: 0.0f, centerY: 0.0f, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Rotate(value: 50.0f, centerX: 0.0f, centerY: 0.0f, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Rotate animation can be awaited
 ```
+
 ```vb
 MyUIElement.Rotate(value:=50.0F, centerX:=0F, centerY:=0F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Rotate(value:=50.0F, centerX:=0F, centerY:=0F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Rotate animation can be awaited
@@ -96,6 +100,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Rotate(30).Fade(0.5F).Blur(5)
     anim.SetDurationForAll(2500)
@@ -121,8 +126,8 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-* [Rotate source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Rotate.cs)
+- [Rotate source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Rotate.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)

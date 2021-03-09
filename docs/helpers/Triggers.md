@@ -24,57 +24,74 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 | [UserInteractionModeStateTrigger](https://docs.microsoft.com/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.UserInteractionModeStateTrigger) | Trigger for switching when the User interaction mode changes (tablet mode) |
 
 ## CompareStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" Comparison="LessThanOrEqual" To="3"/>
 </VisualState.StateTriggers>
 ```
-## FullScreenModeStateTrigger Example 
-```xml
+
+## FullScreenModeStateTrigger Example
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:FullScreenModeStateTrigger IsFullScreen="true" />
 </VisualState.StateTriggers>
-```                    
+```
+
 ## IsEqualStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
+
 ## IsNotEqualStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsNotEqualStateTrigger Value="{Binding IsChecked, ElementName=checkbox, Mode=OneWay}" To="{x:Null}" />
 </VisualState.StateTriggers>
 ```
+
 ## IsNullOrEmptyStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:IsNullOrEmptyStateTrigger Value="{Binding Text, ElementName=OurTextBox, Mode=OneWay}"/>
 </VisualState.StateTriggers>
-```              
+```
+
 ## NetworkConnectionStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:NetworkConnectionStateTrigger ConnectionState="Connected" />
 </VisualState.StateTriggers>
 ```
+
 ## RegexStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:RegexStateTrigger Value="{Binding Text, ElementName=emailTextBox, Mode=OneWay}"
                                                   Expression="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
                                                   Options="IgnoreCase" />
 </VisualState.StateTriggers>
 ```
+
 ## UserHandPreferenceStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:UserHandPreferenceStateTrigger HandPreference="LeftHanded" />
 </VisualState.StateTriggers>
 ```
+
 ## UserInteractionModeStateTrigger Example
-```xml
+
+```xaml
 <VisualState.StateTriggers>
     <triggers:UserInteractionModeStateTrigger InteractionMode="Mouse" />
 </VisualState.StateTriggers>
@@ -91,7 +108,6 @@ A collection of custom visual [State Triggers](https://docs.microsoft.com/uwp/ap
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Triggers |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
-
 
 ## API
 

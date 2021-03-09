@@ -27,6 +27,7 @@ private void Listener_ThemeChanged(ThemeListener sender)
     // Use theme dependent code.
 }
 ```
+
 ```vb
 Dim listener = New ThemeListener()
 AddHandler listener.ThemeChanged, AddressOf Listener_ThemeChanged

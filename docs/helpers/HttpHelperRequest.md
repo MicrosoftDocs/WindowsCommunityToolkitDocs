@@ -1,7 +1,7 @@
 ---
 title: HttpHelperRequest
 author: nmetulev
-description: HttpHelperRequest is a Windows Community Toolkit helper class used with the HttpHelper class to create http requests.
+description: HttpHelperRequest is a Windows Community Toolkit helper class used with the HttpHelper class to create http requests (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HttpHelperRequest
 dev_langs:
   - csharp
@@ -11,14 +11,15 @@ dev_langs:
 # HttpHelperRequest
 
 > [!WARNING]
-> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx) 
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpRequestMessage](https://msdn.microsoft.com/library/system.net.http.httprequestmessage(v=vs.110).aspx)
 > or [Windows.Web.Http.HttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.http.httprequestmessage) directly)
 
-The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers. 
+The [HttpHelperRequest](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers.
 
 ```csharp
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
 ```
+
 ```vb
 Dim request = New HttpHelperRequest(uri, HttpMethod.[Get])
 ```
@@ -55,7 +56,7 @@ The **HttpHelperRequest** class has these properties.
 
 ## Remarks
 
-The **HttpHelperRequest** class contains headers, the HTTP verb, and potentially data. 
+The **HttpHelperRequest** class contains headers, the HTTP verb, and potentially data.
 An app starts by using one of the **HttpHelperRequest** constructors to create an **HttpRequestHelper** instance. The app then sets various properties on the **HttpRequestHelper** as needed. Then the **HttpRequestHelper** is passed as a parameter to the HttpHelper.SendRequestAsync method.
 
 ## Example
@@ -64,6 +65,7 @@ An app starts by using one of the **HttpHelperRequest** constructors to create a
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
 request.Headers.Authorization = new Windows.Web.Http.Headers.HttpCredentialsHeaderValue("OAuth", authorizationHeaderParams);
 ```
+
 ```vb
 Dim request = New HttpHelperRequest(uri, HttpMethod.[Get])
 request.Headers.Authorization = New Windows.Web.Http.Headers.HttpCredentialsHeaderValue("OAuth", authorizationHeaderParams)

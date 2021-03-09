@@ -77,81 +77,87 @@ You can change this behavior with one of these values:
 
 - You have multiple options to show an in-app notification.
 
-    - By simply displaying the notification using the current template
+  - By simply displaying the notification using the current template
 
-        ```csharp
-        ExampleInAppNotification.Show();
-        ```
-        ```vb
-        ExampleInAppNotification.Show()
-        ```
+    ```csharp
+    ExampleInAppNotification.Show();
+    ```
 
-    - By using a simple text content.
+    ```vb
+    ExampleInAppNotification.Show()
+    ```
 
-        ```csharp
-        ExampleInAppNotification.Show("Some text.");
-        ```
-        ```vb
-        ExampleInAppNotification.Show("Some text.")
-        ```
+  - By using a simple text content.
 
-    - By using a UIElement (with a container as parent, ex: Grid)
+    ```csharp
+    ExampleInAppNotification.Show("Some text.");
+    ```
 
-        ```csharp
-        var grid = new Grid();
+    ```vb
+    ExampleInAppNotification.Show("Some text.")
+    ```
 
-        // TODO : Construct the Grid in C#
-        ExampleInAppNotification.Show(grid);
-        ```
-        ```vb
-        Dim grid = New Grid()
+  - By using a UIElement (with a container as parent, ex: Grid)
 
-        ' TODO : Construct the Grid in code
-        ExampleInAppNotification.Show(grid)
-        ```
+    ```csharp
+    var grid = new Grid();
 
-    - By using a DataTemplate
+    // TODO : Construct the Grid in C#
+    ExampleInAppNotification.Show(grid);
+    ```
 
-        ```csharp
-        object inAppNotificationWithButtonsTemplate;
-        bool isTemplatePresent = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", out inAppNotificationWithButtonsTemplate);
+    ```vb
+    Dim grid = New Grid()
 
-        if (isTemplatePresent && inAppNotificationWithButtonsTemplate is DataTemplate)
-        {
-            ExampleInAppNotification.Show(inAppNotificationWithButtonsTemplate as DataTemplate);
-        }
-        ```
-        ```vb
-        Dim inAppNotificationWithButtonsTemplate As Object
-        Dim isTemplatePresent As Boolean = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", inAppNotificationWithButtonsTemplate)
+    ' TODO : Construct the Grid in code
+    ExampleInAppNotification.Show(grid)
+    ```
 
-        If isTemplatePresent AndAlso TypeOf inAppNotificationWithButtonsTemplate Is DataTemplate Then
-            ExampleInAppNotification.Show(TryCast(inAppNotificationWithButtonsTemplate, DataTemplate))
-        End If
-        ```
+  - By using a DataTemplate
 
-    - By using a `DataTemplate` and an object
+    ```csharp
+    object inAppNotificationWithButtonsTemplate;
+    bool isTemplatePresent = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", out inAppNotificationWithButtonsTemplate);
 
-        ```xaml
-        <controls:InAppNotification
-            x:Name="ExampleInAppNotification"
-            ContentTemplate="{StaticResource MyNotificationDataTemplate}" />
-        ```
+    if (isTemplatePresent && inAppNotificationWithButtonsTemplate is DataTemplate)
+    {
+        ExampleInAppNotification.Show(inAppNotificationWithButtonsTemplate as DataTemplate);
+    }
+    ```
 
-        ```csharp
-        var notificationData = new MyNotificationData("Title", "Message");
-        ExampleInAppNotification.Show(notificationData, duration: 2000);
-        ```
-        ```vb
-        Dim notificationData As New MyNotificationData("Title", "Message");
-        ExampleInAppNotification.Show(notificationData, duration: 2000);
-        ```
+    ```vb
+    Dim inAppNotificationWithButtonsTemplate As Object
+    Dim isTemplatePresent As Boolean = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", inAppNotificationWithButtonsTemplate)
+
+    If isTemplatePresent AndAlso TypeOf inAppNotificationWithButtonsTemplate Is DataTemplate Then
+        ExampleInAppNotification.Show(TryCast(inAppNotificationWithButtonsTemplate, DataTemplate))
+    End If
+    ```
+
+  - By using a `DataTemplate` and an object
+
+    ```xaml
+    <controls:InAppNotification
+        x:Name="ExampleInAppNotification"
+        ContentTemplate="{StaticResource MyNotificationDataTemplate}" />
+    ```
+
+    ```csharp
+    var notificationData = new MyNotificationData("Title", "Message");
+    ExampleInAppNotification.Show(notificationData, duration: 2000);
+    ```
+
+    ```vb
+    Dim notificationData As New MyNotificationData("Title", "Message");
+    ExampleInAppNotification.Show(notificationData, duration: 2000);
+    ```
 
 - By passing a second argument to the `Show()` method, you can set the duration of the notification (in milliseconds).
 
     ```csharp
     ExampleInAppNotification.Show("Some text.", 2000); // the notification will appear for 2 seconds
     ```
+
     ```vb
     ExampleInAppNotification.Show("Some text.", 2000)  ' The notification will appear for 2 seconds
     ```
@@ -161,6 +167,7 @@ You can change this behavior with one of these values:
     ```csharp
     ExampleInAppNotification.Dismiss();
     ```
+
     ```vb
     ExampleInAppNotification.Dismiss()
     ```
@@ -180,6 +187,7 @@ You can change this behavior with one of these values:
         }
     }
     ```
+
     ```vb
     Private Sub InAppNotification_OnClosing(ByVal sender As Object, ByVal e As InAppNotificationDismissingEventArgs)
         If e.DismissKind = InAppNotificationDismissKind.User Then
@@ -252,4 +260,4 @@ If you want to add styles to the Toolkit, please follow these steps :
 
 ## API
 
-* [InAppNotification source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification)
+- [InAppNotification source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification)

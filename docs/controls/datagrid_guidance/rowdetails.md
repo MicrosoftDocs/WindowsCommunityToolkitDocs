@@ -9,7 +9,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
 
-![RowDetails](../../resources/images/Controls/DataGrid/rowdetails.png)
+![Sample row details UI](../../resources/images/Controls/DataGrid/rowdetails.png)
 
 The row details section can be displayed for selected rows, displayed for all rows, or it can be collapsed. The row details section can also be frozen so that it does not scroll horizontally when the DataGrid is scrolled.
 
@@ -18,7 +18,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 1. Create a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
 2. Place the DataTemplate inside the <DataGrid.RowDetailsTemplate> tags.
 
-```xml
+```xaml
 <controls:DataGrid>
    <controls:DataGrid.RowDetailsTemplate>
       <DataTemplate>
@@ -40,7 +40,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](https://docs.microsoft.com/windows/uwp/xaml-platform/x-key-attribute).
 3. Bind the DataTemplate to the DataGrid's **RowDetailsTemplate** property.
 
-```xml
+```xaml
 <Page>
    <Page.Resources>
       <DataTemplate x:Key="RowDetailsTemplate">
@@ -57,9 +57,10 @@ The row details section can be displayed for selected rows, displayed for all ro
 ## To change the visibility of a row details section
 
 Set the **RowDetailsVisibilityMode** property to a value of the **DataGridRowDetailsVisibilityMode** enumeration:
-   * *Collapsed* : The row details section is not displayed for any rows.
-   * *Visible* : The row details section is displayed for all rows.
-   * *VisibleWhenSelected* : The row details section is displayed only for selected rows.
+
+* *Collapsed* : The row details section is not displayed for any rows.
+* *Visible* : The row details section is displayed for all rows.
+* *VisibleWhenSelected* : The row details section is displayed only for selected rows.
 
 The following example shows how to use the RowDetailsVisibilityMode property to change the row details display mode programmatically from the selection of a value in a ComboBox:
 
@@ -80,10 +81,12 @@ private void cbRowDetailsVis_SelectionChanged(object sender, RoutedEventArgs e)
     }
 }
 ```
+
 ## To prevent a row details section from scrolling horizontally
 
 Set the **AreRowDetailsFrozen** property to true.
-```xml
+
+```xaml
    <controls:DataGrid
       AreRowDetailsFrozen="True" />
 ```

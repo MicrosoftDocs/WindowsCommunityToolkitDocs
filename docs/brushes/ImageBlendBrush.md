@@ -14,7 +14,7 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## Syntax
 
-```xml
+```xaml
 <Border Grid.Column="0">
   <Border.Background>
     <media:ImageBlendBrush

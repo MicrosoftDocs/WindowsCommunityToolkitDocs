@@ -36,6 +36,7 @@ await CoreApplication.MainView.Dispatcher.AwaitableRunAsync<T>( () =>
     
 });
 ```
+
 ```vb
 DispatcherHelper.ExecuteOnUIThreadAsync(Of T)(Function()
     ' Code to execute on main window's UI thread
@@ -52,16 +53,16 @@ End Function)
 |------------------------------------------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 |         AwaitableRunAsync(CoreDispatcher, Action, CoreDispatcherPriority)          |    Task     | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
 |          AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority)           |    Task     | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-|      AwaitableRunAsync(CoreDispatcher, Func<Task<T>>, CoreDispatcherPriority)      |   Task<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
-|          AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority)           |   Task<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|      AwaitableRunAsync(CoreDispatcher, Func\<Task\<T>>, CoreDispatcherPriority)      |   Task\<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
+|          AwaitableRunAsync(CoreDispatcher, Func, CoreDispatcherPriority)           |   Task\<T>   | Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher |
 |               ExecuteOnUIThreadAsync(Action, CoreDispatcherPriority)               |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
 |                ExecuteOnUIThreadAsync(Func, CoreDispatcherPriority)                |    Task     |                                  Execute the given function asynchronously on UI thread of the main view                                  |
 |    ExecuteOnUIThreadAsync(CoreApplicationView, Action, CoreDispatcherPriority)     |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
 |     ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority)      |    Task     |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
-|           ExecuteOnUIThreadAsync(Func<Task<T>>, CoreDispatcherPriority)            |   Task<T>   |                                  Execute the given function asynchronously on UI thread of the main view                                  |
-|              ExecuteOnUIThreadAsync(Func<T>, CoreDispatcherPriority)               |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
-| ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task<T>>, CoreDispatcherPriority) |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
-|     ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority)      |   Task<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|           ExecuteOnUIThreadAsync(Func<Task\<T>>, CoreDispatcherPriority)            |   Task\<T>   |                                  Execute the given function asynchronously on UI thread of the main view                                  |
+|              ExecuteOnUIThreadAsync(Func\<T>, CoreDispatcherPriority)               |   Task\<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+| ExecuteOnUIThreadAsync(CoreApplicationView, Func<Task\<T>>, CoreDispatcherPriority) |   Task\<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
+|     ExecuteOnUIThreadAsync(CoreApplicationView, Func, CoreDispatcherPriority)      |   Task\<T>   |                    Execute the given function asynchronously on given view's UI thread. Default view is the main view                     |
 
 ## Example
 
@@ -83,6 +84,7 @@ returnedFromUIThread = await CoreApplication.MainView.Dispatcher.AwaitableRunAsy
     return 1;
 });
 ```
+
 ```vb
 ' Executing from a non-UI thread with helper method
 Dim returnedFromUIThread As Integer = Await DispatcherHelper.ExecuteOnUIThreadAsync(Of Integer)(Function()
@@ -112,4 +114,4 @@ End Function)
 
 ## API
 
-* [DispatcherHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs)
+- [DispatcherHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/DispatcherHelper.cs)

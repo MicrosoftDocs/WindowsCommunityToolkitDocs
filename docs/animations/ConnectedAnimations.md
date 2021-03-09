@@ -64,7 +64,7 @@ Specifies what named element in the DataTemplate of an item should animate. The 
 
 In cases where an element has not loaded before the navigation completes, the attached properties are not able to access the element properties to register it for the connected animation. In those case, you can register the element through code behind inside the OnNavigatedTo method. The following extension methods are available:
 
-### RegisterElementForConnectedAnimation(this Page page, string key, UIElement element, IEnumerable<UIElement> anchors = null)
+### RegisterElementForConnectedAnimation(this Page page, string key, UIElement element, IEnumerable\<UIElement> anchors = null)
 
 Registers a UIElement with the ConnectedAnimations service to run automatically on page navigation
 
@@ -99,6 +99,7 @@ In those cases, you can use the **SetListDataItemForNextConnectedAnnimation** ex
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.Navigate(typeof(DetailsPage), dataItemToAnimate.Id);
 ```
+
 ```vb
     ' dataItemToAnimate is an object in the ListViewBase.ItemsSource collection
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
@@ -111,6 +112,7 @@ This method is also helpful when navigating back to an item different from the i
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate);
     Frame.GoBack();
 ```
+
 ```vb
     Frame.SetListDataItemForNextConnectedAnnimation(dataItemToAnimate)
     Frame.GoBack()
@@ -120,7 +122,7 @@ This method is also helpful when navigating back to an item different from the i
 
 We can create the above connected animations.
 
-**In first page**
+### In first page
 
 We need a set a key for the element to be connected with another element in a different page.
 
@@ -132,7 +134,7 @@ We need a set a key for the element to be connected with another element in a di
 </Grid>
 ```
 
-**In second page**
+### In second page
 
 We need to set the same key for the element to be connected with. Also, You can anchor another element to move along the connected animation path.
 
@@ -168,7 +170,7 @@ animations:Connected.ListItemKey="listItem">
 </GridView>
 ```
 
-**In third page**
+### In third page
 
 In this page, you just need to give the same key.
 

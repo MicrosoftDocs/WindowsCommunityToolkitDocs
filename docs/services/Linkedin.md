@@ -20,12 +20,12 @@ The **LinkedIn Service** allows you to retrieve or publish data to the LinkedIn 
 
 ## Creating a new Application on LinkedIn Developer Site
 
-1. Go to: https://www.linkedin.com/developer/apps.
+1. Go to: <https://www.linkedin.com/developer/apps>.
 2. Select **Create Application**, to start integrating LinkedIn into your app.
 3. Complete all mandatory fields signified by the red star.  If you agree to the terms and conditions, hit **Submit**.
 4. Make a note of the **Client Id** and **Client Secret** for your app - you will need to supply these in your code.
 5. Take note of the **Default Application Permissions**.  You can either set these in this portal or via code.  These are the permissions your user will need to agree to for you to make calls on their behalf.
-6. Under **OAuth 2.0** you will need to enter a **Authorized Redirect URLs**.  For UWP app development purposes this is arbitrary, but it will need to match what you have in your code (e.g. https://github.com/windows-toolkit/WindowsCommunityToolkit/).
+6. Under **OAuth 2.0** you will need to enter a **Authorized Redirect URLs**.  For UWP app development purposes this is arbitrary, but it will need to match what you have in your code (e.g. <https://github.com/windows-toolkit/WindowsCommunityToolkit/>).
 7. Once you have done, hit **Update**.
 
 ## Syntax
@@ -46,6 +46,7 @@ await LinkedInService.Instance.GetUserProfileAsync();
 // Share message to LinkedIn (text should include a Url so LinkedIn can scrape preview information)
 await LinkedInService.Instance.ShareActivityAsync(ShareText.Text);
 ```
+
 ```vb
 ' Initialize service - use overload if you need to supply additional permissions
 LinkedInService.Instance.Initialize(ClientId.Text, ClientSecret.Text, CallbackUri.Text)
@@ -68,11 +69,11 @@ Await LinkedInService.Instance.ShareActivityAsync(ShareText.Text)
 
 This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
 
-**IAuthenticationBroker**
+### IAuthenticationBroker
 
 The IAuthenticationBroker only has the Authenticate method. This method receives a request uri and a callback uri, which you'll use to authenticate with the API. The method returns an AuthenticationResult that tells the service the authentication result.
 
-**IPasswordManager**
+### IPasswordManager
 
 The IPasswordManager will allow the service to manage passwords. The methods you'll have to implement are Get, Store and Remove.
 
@@ -82,7 +83,7 @@ The Store method receives a string resource and a PasswordCredential.
 
 The Remove method receives a string key.
 
-**IStorageManager**
+### IStorageManager
 
 Finally, the IStorageManager will allow the service to store application data. The methods you'll have to implement are Get and Set.
 

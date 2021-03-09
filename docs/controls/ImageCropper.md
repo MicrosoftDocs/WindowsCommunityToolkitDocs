@@ -71,6 +71,7 @@ using (var fileStream = await someFile.OpenAsync(FileAccessMode.ReadWrite, Stora
     await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png);
 }
 ```
+
 ```vb
 ' Load an image.
 Await ImageCropper.LoadImageFromFile(file)
@@ -85,21 +86,25 @@ End Using
 ```
 
 ### Use Circular ImageCropper
+
 You can set `CropShape` property to use the circular ImageCropper.
 
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
+
 ```vb
 ImageCropper.CropShape = CropShape.Circular
 ```
 
 ### Change Aspect Ratio
+
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
 
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
+
 ```vb
 ImageCropper.AspectRatio = 16R / 9R
 ```
@@ -109,6 +114,7 @@ Or you can crop image without aspect ratio.
 ```csharp
 ImageCropper.AspectRatio = null;
 ```
+
 ```vb
 ImageCropper.AspectRatio = Nothing
 ```

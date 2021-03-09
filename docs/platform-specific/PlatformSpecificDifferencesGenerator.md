@@ -25,18 +25,21 @@ Differences-5.0.0.0.gz
 
 ## Data format
 
-All types are fully qualified 
+All types are fully qualified
 
-##### Namespace.Type 
-*Windows.Management.Update.PreviewBuildsState*
+### Namespace.Type
 
-*Windows.Management.Update.PreviewBuildsManager*
+`Windows.Management.Update.PreviewBuildsState`
+
+`Windows.Management.Update.PreviewBuildsManager`
 
 A new type does not have additional methods and properties listed.
 
 For a type that has additions, the additions are listed alongside
-##### Namespace.Type:Method#ParamCount,Property
-*Windows.Networking.NetworkOperators.MobileBroadbandModem:TryGetPcoAsync#0,IsInEmergencyCallMode*
+
+### Namespace.Type:Method#ParamCount,Property
+
+`Windows.Networking.NetworkOperators.MobileBroadbandModem:TryGetPcoAsync#0,IsInEmergencyCallMode`
 
 ## API Source Code
 

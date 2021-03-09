@@ -1,7 +1,7 @@
 ---
 title: Offset animation behavior
 author: nmetulev
-description: The Offset animation behavior gets the number of pixels, from the origin of the associated control, then offsets the control.
+description: The Offset animation behavior gets the number of pixels, from the origin of the associated control, then offsets the control (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, offset animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Offset
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
 The [Offset animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.offset) is used to move the control from one place to another. Offset animation is applied to all the XAML elements in its parent control/panel. Offset animation doesn't affect the functionality of the control.
 
@@ -37,6 +40,7 @@ The [Offset animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 MyUIElement.Offset(offsetX: 25, offsetY: 25, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Offset(offsetX: 25, offsetY: 25, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Offset animation can be awaited
 ```
+
 ```vb
 MyUIElement.Offset(offsetX:=25, offsetY:=25, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Offset(offsetX:=25, offsetY:=25, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Offset animation can be awaited
@@ -90,9 +94,11 @@ You can change the way how the animation interpolates between keyframes by defin
     ```csharp
     await MyUIElement.Offset().Start();
     ```
+
     ```vb
     Await MyUIElement.Offset().Start()
     ```
+
 - Use await to create a continuous movement
 
     **Sample Code**
@@ -106,6 +112,7 @@ You can change the way how the animation interpolates between keyframes by defin
         await MyUIElement.Offset(duration: 1000).StartAsync();
     }
     ```
+
     ```vb
     Public Async Function OffsetAsync() As Task
         Await MyUIElement.Offset(offsetX:=100, duration:=1000).StartAsync()
@@ -117,7 +124,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
     **Sample Output**
 
-    ![Use Case 2 Output](../resources/images/Animations/Offset/Use-Case-1.gif)
+    ![Use Case 1 Output](../resources/images/Animations/Offset/Use-Case-1.gif)
 
 - Use this to create chaining animations with other animations. Visit the [AnimationSet](AnimationSet.md) documentation for more information.
 
@@ -130,6 +137,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)
@@ -155,9 +163,9 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-* [Offset source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Offset.cs)
+- [Offset source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Offset.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

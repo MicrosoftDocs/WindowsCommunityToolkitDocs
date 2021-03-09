@@ -133,4 +133,4 @@ The Guard class supports .NET Standard
 
 ## API
 
-* [Guard source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Diagnostics)
+- [Guard source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Diagnostics)

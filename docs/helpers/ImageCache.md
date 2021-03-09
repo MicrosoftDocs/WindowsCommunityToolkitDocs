@@ -30,8 +30,9 @@ var distantUri = new Uri("http://www.myserver.com/image.jpg");
 var bitmapImage = await ImageCache.Instance.GetFromCacheAsync(distantUri);
 
 // Clear the cache. Please note that you can provide a parameter to define a timespan from now to select cache entries to delete.
-await ImageCache.Instance.ClearAsync();	
+await ImageCache.Instance.ClearAsync(); 
 ```
+
 ```vb
 ' Set cache duration
 ImageCache.Instance.CacheDuration = TimeSpan.FromHours(24)
@@ -65,8 +66,8 @@ Await ImageCache.Instance.ClearAsync()
 |----------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                      ClearAsync()                                      |       Task        |                                                                              Clears all files in the cache                                                                               |
 |                                  ClearAsync(TimeSpan)                                  |       Task        |                                                                              Clears file if it has expired                                                                               |
-|                               GetFileFromCacheAsync(Uri)                               | Task<StorageFile> |                                                                Gets the StorageFile containing cached item for given Uri                                                                 |
-| GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<string, object>>) |      Task<T>      |              Retrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller              |
+|                               GetFileFromCacheAsync(Uri)                               | Task\<StorageFile> |                                                                Gets the StorageFile containing cached item for given Uri                                                                 |
+| GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<string, object>>) |      Task\<T>      |              Retrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller              |
 |                                GetFromMemoryCache(Uri)                                 |         T         | Retrieves item represented by Uri from the in-memory cache if it exists and is not out of date. If item is not found or is out of date, default instance of the generic type is returned |
 |                PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)                 |       Task        |                                                                      Assures that item represented by Uri is cached                                                                      |
 |                                RemoveAsync(IEnumerable)                                |       Task        |                                                                          Removed items based on uri list passed                                                                          |

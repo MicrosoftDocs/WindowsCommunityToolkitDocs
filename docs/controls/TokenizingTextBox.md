@@ -34,7 +34,7 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | AutoSuggestBoxStyle | Style | Inner AutoSuggestBox style |
 | AutoSuggestBoxTextBoxStyle | Style | Inner TextBox style of the AutoSuggestBox |
 | PlaceholderText | string | Placeholder text to display when there's no text in the textbox |
-| QueryIcon | IconSource | 
+| QueryIcon | IconSource |
 | QueryText | string | Gets or sets the text query of the AutoSuggestBox |
 | SelectedItems | IList&lt;object&gt; | Collection of items selected by the user |
 | SelectedTokenText | string | Complete set of text for any selection in the control |

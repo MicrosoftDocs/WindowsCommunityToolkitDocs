@@ -16,8 +16,8 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ```xaml
 <controls:ImageEx Name="ImageExControl" IsCacheEnabled="True"
-	PlaceholderSource="/assets/thumbnails/thumbnails.png"
-	Source="/assets/bigPicture.png" CornerRadius="20"/>
+    PlaceholderSource="/assets/thumbnails/thumbnails.png"
+    Source="/assets/bigPicture.png" CornerRadius="20"/>
 ```
 
 ## Sample Output
@@ -56,5 +56,4 @@ ImageEx control supports use of Progress Indicator. This can be enabled by addin
 
 ## API
 
-* [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx)
-
+- [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx)

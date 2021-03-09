@@ -1,7 +1,7 @@
 ---
 title: Fade animation behavior
 author: nmetulev
-description: The Fade animation behavior fades objects, in and out, over time and delay. It can be used along side other animations directly through XAML or code
+description: The Fade animation behavior fades objects, in and out, over time and delay. It can be used along side other animations directly through XAML or code (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, fade, fade animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Fade
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
 
 The [Fade animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.fade) fades objects, in and out, over time. Fade animation is applied to all the XAML elements in its parent control/panel. Fade animation doesn't affect the functionality of the control.
 
@@ -36,6 +39,7 @@ The [Fade animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 MyUIElement.Fade(value: 0.5f, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 await MyUIElement.Fade(value: 0.5f, duration: 2500, delay: 250, easingType: EasingType.Default).StartAsync();  //Fade animation can be awaited
 ```
+
 ```vb
 MyUIElement.Fade(value:=0.5F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 Await MyUIElement.Fade(value:=0.5F, duration:=2500, delay:=250, easingType:=EasingType.[Default]).StartAsync()  ' Fade animation can be awaited
@@ -92,6 +96,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Fade(0.5F).Blur(5).Rotate(30)
     anim.SetDurationForAll(2500)
@@ -117,9 +122,9 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-* [Fade source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Fade.cs)
+- [Fade source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Fade.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

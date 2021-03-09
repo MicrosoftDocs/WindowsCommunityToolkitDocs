@@ -21,14 +21,13 @@ NuGet is a standard package manager for .Net applications that is built into Vis
 | Microsoft.Toolkit.Uwp.Services | Services Package - This NuGet package includes the service helpers for Facebook, LinkedIn, Microsoft Graph, Twitter and more |
 | Microsoft.Toolkit.Uwp.UI | UI Packages - XAML converters, Visual tree extensions, and other extensions and helpers for your XAML UI |
 | Microsoft.Toolkit.Uwp.UI.Animations | Animations and Composition behaviors such as Blur, Fade, Rotate, etc. |
-| Microsoft.Toolkit.Uwp.UI.Controls | XAML Controls such as RadialGauge, RangeSelector, etc. | 
-| Microsoft.Toolkit.Uwp.UI.Controls.DataGrid | XAML DataGrid control | 
+| Microsoft.Toolkit.Uwp.UI.Controls | XAML Controls such as RadialGauge, RangeSelector, etc. |
+| Microsoft.Toolkit.Uwp.UI.Controls.DataGrid | XAML DataGrid control |
 | Microsoft.Toolkit.Uwp.UI.Controls.Layout | XAML layout controls such as WrapLayout, StaggeredLayout, etc. |
 | Microsoft.Toolkit.Uwp.UI.Lottie | Library for rendering Adobe AfterEffects animations natively in Windows apps |
 | Microsoft.Toolkit.Uwp.UI.Media | Brushes, Win2D/Composition effects, and helpers to create visual effects  |
-| Microsoft.Toolkit.Uwp.Connectivity | API helpers such as BluetoothLEHelper and Networking | 
-| Microsoft.Toolkit.Uwp.DeveloperTools | XAML user controls and services to help developer building their app | 
-
+| Microsoft.Toolkit.Uwp.Connectivity | API helpers such as BluetoothLEHelper and Networking |
+| Microsoft.Toolkit.Uwp.DeveloperTools | XAML user controls and services to help developer building their app |
 
 ## Search in Visual Studio
 
@@ -42,7 +41,7 @@ The Windows Community Toolkit is updated regularly with new controls, services, 
 
 ## Getting Started
 
-Read the [getting Started with the Windows Community Toolkit](getting-started.md) for more instructions on using these NuGet Packages in your own projects. 
+Read the [getting Started with the Windows Community Toolkit](getting-started.md) for more instructions on using these NuGet Packages in your own projects.
 
 ## Windows 10 Store App
 

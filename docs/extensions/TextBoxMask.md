@@ -1,17 +1,21 @@
 ---
 title: TextBox Mask XAML Property
 author: nmetulev
-description: The TextBoxMask Property allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format
+description: The TextBoxMask Property allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TextBoxMask, XAML
 ---
 
 # TextBoxMask XAML Property
+
+> [!WARNING]
+> These extensions have been moved to a different class and refactored with breaking changes, please refer to docs page for the [`TextBoxExtensions`](TextBoxExtensions.md) type.
 
 The [TextBoxMask Property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.textboxmask) allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format, ex: phone number, postal code.
 
 The developer adds the mask property to prevent end user to enter any other format but the required one, ex postal code aaa-9999
 
 TextBox Mask property has 3 build in variable characters
+
 1) a which represents [a-Z]
 2) 9 which represents [0-9]
 3) '*' which represents a or 9
@@ -20,6 +24,7 @@ At the post code example the user will only be allowed to enter from a to Z in t
 TextBoxMask prevent the text box from having non specified characters ex if you entered 1 or 2 into a mask like 9999.
 
 TextBoxMask has 2 type of characters
+
 1) Variable: which the user can change like a,9,*
 2) Fixed: which the user can't change and it is any non variable character ex the - in the first example
 

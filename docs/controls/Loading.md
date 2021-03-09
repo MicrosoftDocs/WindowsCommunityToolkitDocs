@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# Loading XAML Control 
+# Loading XAML Control
 
 The [loading control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) is for showing an animation with some content when the user should wait in some tasks of the app.
 
@@ -61,6 +61,7 @@ Finally that the loading control appears, we must set the `IsLoading` property t
 ```csharp
 LoadingControl.IsLoading = true;
 ```
+
 ```vb
 LoadingControl.IsLoading = true
 ```
@@ -82,4 +83,4 @@ LoadingControl.IsLoading = true
 
 ## API
 
-* [Loading source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Loading)
+- [Loading source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Loading)

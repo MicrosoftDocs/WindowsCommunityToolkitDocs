@@ -53,6 +53,7 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
         // Change something to counter the lack of drop shadow
     }
     ```
+
     ```vb
     If Not DropShadowPanel.IsSupported Then
         ' Change something to counter the lack of drop shadow
@@ -76,4 +77,4 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## API
 
-* [DropShadowPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel)
+- [DropShadowPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel)

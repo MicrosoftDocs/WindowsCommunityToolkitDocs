@@ -13,9 +13,8 @@ Provides helper class to easily create grouped collections that can be used in [
 
 A group of `TValue` objects with a key of type `TKey`.
 
-It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection<TValue>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
+It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection\<TValue>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the groups.
-
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -26,8 +25,7 @@ It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the group
 A list of groups that can be used by a [CollectionViewSource](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource) to display groups in a `ListView` or `GridView`.
 Each group inside the collection has an observable `TKey` key and contains `TValue` values.
 
-It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection<T>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
-
+It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection\<T>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 
 ```csharp
 // Grab a sample type
@@ -80,7 +78,6 @@ Represents a read-only `ObservableGroupedCollection<TKey, TValue>`.
 This class is a read-only wrapper around an `ObservableGroupedCollection<TKey, TValue>`.
 If changes are made to the underlying collection, the `ReadOnlyObservableGroupedCollection<TKey, TValue>` reflects those changes.
 
-
 ## IReadOnlyObservableGroup
 
 This interface allows us to use `x:Bind` with `ObservableGroup{TKey, TValue}` and `ReadOnlyObservableGroup{TKey, TValue}` by providing
@@ -105,7 +102,7 @@ It extends [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system
 | Property | Type | Description |
 | -- | -- | -- |
 | Key | object | The key of the group. It is immutable. |
-| Count | int | The number of items currently in the grouped collection. | 
+| Count | int | The number of items currently in the grouped collection. |
 
 ## Sample Project
 

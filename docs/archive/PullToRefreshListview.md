@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 > [!NOTE]
 > The PullToRefreshListView is no longer available in the Windows Community Toolkit. Please use the [RefreshContainer](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/pull-to-refresh). Read the [Moving to RefreshContainer](#refreshcontainer) section for more info.
 
-The [PullToRefreshListView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.pulltorefreshlistview), is derived from the built-in List View in XAML. It lets the user pull down beyond the top limit on the listview to trigger a refresh of the content. This control can create rich, animations, and is easy to use. 
+The [PullToRefreshListView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.pulltorefreshlistview), is derived from the built-in List View in XAML. It lets the user pull down beyond the top limit on the listview to trigger a refresh of the content. This control can create rich, animations, and is easy to use.
 
 This control is very common on mobile devices, where the user can pull from the top to force a content refresh in applications like Twitter.
 
@@ -75,6 +75,7 @@ be raised and the *RefreshIntentCanceledCommand*, if any, will be executed.
 [PullToRefreshListView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/rel/4.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PullToRefreshListView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## <a name="refreshcontainer"></a> Moving to RefreshContainer
+
 The 1803 version of Windows now includes its own implementation of [pull-to-refresh](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/pull-to-refresh) controls, having [RefreshContainer](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.refreshcontainer) as the main control.
 
 The PullToRefreshListView and the RefreshContainer share the same concepts and provide mostly the same functionality, with the caveat that the RefreshContainer works only with a touch interface.
@@ -90,6 +91,7 @@ To notify that your refresh code has completed, you can mark the deferral as com
 > Being a touch-only control, it's recommended that you also have a refresh button for users without a touch interface. You can trigger the RefreshRequested event by calling the RefreshContainer's RequestRefresh method.
 
 ### Making the transition even easier
+
 Starting with v3.0 of the Windows Community Toolkit, the PullToRefreshListView provides a new property called **UseRefreshContainerWhenPossible**. Setting the value to true will force the PullToRefreshListView to use a template based on the RefreshContainer when running on the 1803 version of Windows and above, and the regular template otherwise.
 
 Using this property will enable you to take advantage of the RefreshContainer on devices that support it, while providing an experience based on PullToRefreshListView on devices that have not yet updated to the 1803 version of Windows. Make sure to test the experience on multiple OS releases and plan to fully transition to the RefreshContainer as the PullToRefreshListView will be removed from the Windows Community Toolkit in a future major release.
@@ -107,7 +109,6 @@ There are several PullToRefreshListView properties that have no effect when the 
 * PullToRefreshContent
 * ReleaseToRefreshContent
 * IsPullToRefreshWithMouseEnabled
-
 
 ## Default Template
 

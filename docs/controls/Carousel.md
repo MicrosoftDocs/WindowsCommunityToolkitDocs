@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# Carousel XAML Control 
+# Carousel XAML Control
 
 The [Carousel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.carousel) control provides a new control, inherited from the [ItemsControl](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ItemsControl), representing a nice and smooth carousel.  
 This control lets you specify a lot of properties for a flexible layouting.  

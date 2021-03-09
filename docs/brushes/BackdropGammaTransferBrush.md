@@ -1,7 +1,7 @@
 ---
 title: BackdropGammaTransferBrush
 author: michael-hawker
-description: The BackdropBlurBrush is a Brush that blurs whatever is behind it in the application.
+description: The BackdropGammaTransferBrush is a Brush which modifies the color values of whatever is behind it in the application.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, gamma, color
 ---
 
@@ -16,7 +16,7 @@ The [BackdropGammaTransferBrush](https://docs.microsoft.com/dotnet/api/microsoft
 
 To apply a red hue:
 
-```xml
+```xaml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <media:BackdropGammaTransferBrush RedAmplitude="1.25" />

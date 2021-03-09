@@ -1,7 +1,7 @@
 ---
 title: HttpHelperResponse
 author: nmetulev
-description: HttpHelperResponse is a Windows Community Toolkit helper class used with the HttpHelper class to read http responses.
+description: HttpHelperResponse is a Windows Community Toolkit helper class used with the HttpHelper class to read http responses (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HttpHelperResponse
 dev_langs:
   - csharp
@@ -11,10 +11,10 @@ dev_langs:
 # HttpHelperResponse
 
 > [!WARNING]
-> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx) 
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx)
 > or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
-[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers. 
+[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
 
 ## Sample
 
@@ -24,6 +24,7 @@ using (HttpHelperResponse response = await HttpHelper.Instance.SendRequestAsync(
     await response.GetTextResultAsync();
 }
 ```
+
 ```vb
 Using response = Await HttpHelper.Instance.SendRequestAsync(request)
     Await response.GetTextResultAsync()
@@ -52,13 +53,13 @@ The **HttpHelperResponse** class has these constructors.
 |        Methods         |    Return Type     |                                     Description                                     |
 |------------------------|--------------------|-------------------------------------------------------------------------------------|
 |       Dispose()        |        void        | Performs tasks associated with freeing, releasing, or resetting unmanaged resources |
-| GetStreamResultAsync() | Task<IInputStream> |              Reads the Content as stream and returns it to the caller               |
-|  GetTextResultAsync()  |    Task<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
+| GetStreamResultAsync() | Task\<IInputStream> |              Reads the Content as stream and returns it to the caller               |
+|  GetTextResultAsync()  |    Task\<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
 |       ToString()       |       string       |       Returns a string that represents the current HttpHelperResponse object        |
 
 ## Remarks
 
-The **HttpHelperResponse** class contains headers and potentially data. 
+The **HttpHelperResponse** class contains headers and potentially data.
 An app receives an instance of **HttpHelperResponse** when it creates an instance of **HttpHelperRequest** and passes it to the **HttpHelper.SendRequestAsync** method.
 
 ## Example
@@ -72,6 +73,7 @@ using (var request = new HttpHelperRequest(new Uri(twitterUrl), HttpMethod.Post)
     }
 }
 ```
+
 ```vb
 Using request = New HttpHelperRequest(New Uri(twitterUrl), HttpMethod.Post)
     Using response = Await HttpHelper.Instance.SendRequestAsync(request)

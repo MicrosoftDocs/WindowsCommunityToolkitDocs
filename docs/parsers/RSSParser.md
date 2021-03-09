@@ -1,7 +1,7 @@
 ---
 title: RSS Parser
 author: michael-hawker
-description: The RSS Parser allows you to parse an RSS content String into an RSS Schema.
+description: The RSS Parser allows you to parse an RSS content String into an RSS Schema (outdated docs).
 keywords: windows community toolkit, uwp community toolkit, uwp toolkit, microsoft community toolkit, microsoft toolkit, rss, rss parsing, parser
 dev_langs:
   - csharp
@@ -24,7 +24,6 @@ This document will show you how to migrate over to the .NET Standard library API
 
 > [!WARNING]
 > If updating a UWP based project, Visual Studio will recommend the `Windows.Web.Syndication` namespace by default. Be sure to ignore this suggestion and instead include the `System.ServiceModel.Syndication` NuGet package and namespace.
-
 
 ## Toolkit Example
 
@@ -55,6 +54,7 @@ public async void ParseRSS()
     }
 }
 ```
+
 ```vb
 Public Async Sub ParseRSS()
     Dim feed As String = Nothing
@@ -102,6 +102,7 @@ public void ParseRSSdotnet()
     }
 }
 ```
+
 ```vb
 Public Sub ParseRSSdotnet()
     Dim feed As SyndicationFeed = Nothing

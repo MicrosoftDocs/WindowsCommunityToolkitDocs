@@ -9,9 +9,9 @@ ms.custom: RS5
 
 # Windows Community Toolkit Documentation
 
-The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building UWP apps for Windows 10. 
+The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building UWP apps for Windows 10.
 
-The toolkit can be used to build apps for any Windows 10 device, including PC, Mobile, Xbox, IoT and HoloLens. You can also use the toolkit with an existing desktop app converted to UWP using the Desktop Bridge.             
+The toolkit can be used to build apps for any Windows 10 device, including PC, Mobile, Xbox, IoT and HoloLens. You can also use the toolkit with an existing desktop app converted to UWP using the Desktop Bridge.
 
 The Windows Community Toolkit is available as a Visual Studio NuGet package for new or existing C# and VB.NET projects. Read the [Getting Started](Getting-Started.md) page for all the details.
 
@@ -21,6 +21,8 @@ Feel free to browse the documentation using the table of contents on the left si
 
 ## Open Source
 
-[Windows Community Toolkit Source Code ](https://aka.ms/uwptoolkit)
+[Windows Community Toolkit Source Code](https://aka.ms/uwptoolkit)
 
-Built as an open source project hosted on GitHub with support from the community. 
+Built as an open source project hosted on GitHub with support from the community.
+
+The majority of the projects within the Windows Community Toolkit are licensed under a MIT license. Check the specific repo/NuGet packages for details on licensing and third-party usage notes.

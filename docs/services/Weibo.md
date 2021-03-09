@@ -31,8 +31,8 @@ Copy this from the *应用基本信息*(basic information) section on your appli
 **Secure Domains**
 Due to the restriction by Weibo API, a status you post must include a url which starts with "http"/"https". You can add a url to the list of secure domains in the *应用基本信息*(basic information) section on your application page.
 
-**Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar. 
-*Example*: http://myapp.company.com - (this does not have to be a working URL)
+**Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar.
+*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
 
 ## Syntax
 
@@ -59,6 +59,7 @@ await WeiboService.Instance.PostStatusAsync(StatusText.Text);
 await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream);
 
 ```
+
 ```vb
 
 ' Initialize service

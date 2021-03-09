@@ -22,7 +22,6 @@ The **Microsoft Translator Service** allows you to translate text to various sup
 
 [Signup for Microsoft Translator Service](https://ms.portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation) using your Microsoft Azure subscription account. There is a free trial option that allows you to translate up to 2,000,000 characters per month.
 
-
 ## Example Syntax
 
 ```csharp
@@ -42,6 +41,7 @@ var detectedLanguageConfidence = detectResult.Score;
 var translationResult = await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it");
 var translatedText = translationResult.Translation.Text;
 ```
+
 ```vb
 ' Imports Microsoft.Toolkit.Uwp.Services.MicrosoftTranslator
 

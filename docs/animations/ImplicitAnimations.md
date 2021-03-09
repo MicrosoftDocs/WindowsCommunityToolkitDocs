@@ -1,11 +1,14 @@
 ---
 title: Implicit Animations in XAML
 author: nmetulev
-description: The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code
+description: The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, composition animations, animation, implicit animations, XAML, implicit, composition, show animation, hide animation
 ---
 
 # Implicit Composition Animations in XAML
+
+> [!WARNING]
+> These animation types have been updated with some breaking changes, please refer to the docs for the [`ImplicitAnimationSet`](ImplicitAnimationSet.md) type. For a comprehensive list of all the available APIs, use the .NET API browser instead.
 
 Implicit Animations are Composition Animations that are used to describe how and when animations occur as a response to direct property changes, such as Opacity or Offset. Show and Hide animations describe the animation to be applied to an element when the Visibility is changed, or the element is added/removed to the visual tree.
 
@@ -75,6 +78,7 @@ Specifies an [Composition Animation](https://docs.microsoft.com/windows/communit
         </animations:Implicit.Animations>
     </Border>
     ```
+
     ![Example Output 1](../resources/images/Animations/ImplicitAnimations/Example-Output-1.gif)
 
 - Let's create blink animation to show and hide controls.
@@ -141,10 +145,10 @@ You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in
 
 ## API
 
-* [Implicit animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
+- [Implicit animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
 
 ## Related Topics
 
-* [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
-* [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
-* [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)
+- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
+- [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
+- [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)

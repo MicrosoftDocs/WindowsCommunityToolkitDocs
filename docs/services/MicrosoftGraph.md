@@ -1,7 +1,7 @@
 ---
 title: MicrosoftGraph Service
 author: nmetulev
-description: The MicrosoftGraph Service aim to easily logon to Microsoft Graph service in order to Retrieve User Information, Retrieve and Send emails, Retrieve User events
+description: The MicrosoftGraph Service aim to easily logon to Microsoft Graph service in order to Retrieve User Information, Retrieve and Send emails, Retrieve User events (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MicrosoftGraph Service
 dev_langs:
   - csharp
@@ -42,16 +42,17 @@ To authenticate your app, you need to register your app with Azure AD, and provi
 ### Register the App to use Azure AD v1 Endpoint
 
 You can register your app manually by using the [Azure Management Portal](https://portal.azure.com), or by using Visual Studio:
+
 1. To register your app by using Visual Studio, see [Using Visual Studio to register your app and add Office 365 APIs.](https://msdn.microsoft.com/office/office365/HowTo/adding-service-to-your-Visual-Studio-project)
 2. To register your app manually, see [Manually register your app with Azure AD so it can access Office 365 APIs.](https://msdn.microsoft.com/office/office365/howto/add-common-consent-manually). Here is a summary to register your App manually:
-    - Go to the [Azure Management Portal](https://portal.azure.com)
-    - Go to the "Azure Active Directory" option
-    - Go to the "App Registrations" option
-    - Click on the "New application registration" button
-    - Enter a name for your App
-    - Specify your application as a **Native**
-    - Specify the Redirect Uri as **urn:ietf:wg:oauth:2.0:oob**
-    - Click "Create" button
+    * Go to the [Azure Management Portal](https://portal.azure.com)
+    * Go to the "Azure Active Directory" option
+    * Go to the "App Registrations" option
+    * Click on the "New application registration" button
+    * Enter a name for your App
+    * Specify your application as a **Native**
+    * Specify the Redirect Uri as **urn:ietf:wg:oauth:2.0:oob**
+    * Click "Create" button
 
 After you've registered your app, Azure AD will generate a client ID for your app. You'll need to use this client ID to get your access token.
 
@@ -59,7 +60,7 @@ When you register your app in the [Azure Management Portal](https://portal.azure
 
 1. Click the "Settings" button
 2. Go to the "Required permissions" option
-3. Add Application: Choose **Microsoft Graph** API 
+3. Add Application: Choose **Microsoft Graph** API
 4. Specify the permission levels the MicrosoftGraph Service requires from the Office 365 API (Microsoft Graph). Choose at least:
    * **Sign in and read user profile** to access user's profile.
    * **Read user mail and Send mail as user** to retrieve/send messages.
@@ -115,6 +116,7 @@ if (!await msg.LoginAsync())
  return;
 }
 ```
+
 ```vb
 
 ' Initialize the service
@@ -149,6 +151,7 @@ MicrosoftGraphService.Instance.SignInFailed += (sender, e) =>
     // do something
 };
 ```
+
 ```vb
 ' Register event handler to capture authentication state changes
 AddHandler MicrosoftGraphService.Instance.IsAuthenticatedChanged,
@@ -200,6 +203,7 @@ using (IRandomAccessStream photoStream = await MicrosoftGraphService.Instance.Us
   this.Photo.Source = photo;
 }
 ```
+
 ```vb
 ' Retrieve user's info from Azure Active Directory
 Dim user = Await MicrosoftGraphService.Instance.User.GetProfileAsync()
@@ -268,6 +272,7 @@ await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, conten
 string content = GetHtmlMessage();
 await MicrosoftGraphService.Instance.User.Message.SendEmailAsync(subject, content, BodyType.Html, toRecipients);
 ```
+
 ```vb
 ' Get the top 10 messages
 messages = Await MicrosoftGraphService.Instance.User.Message.GetEmailsAsync(10)
@@ -328,6 +333,7 @@ if (events == null)
     // no more events
 }
 ```
+
 ```vb
 ' Get the top 10 events
 events = Await MicrosoftGraphService.Instance.User.[Event].GetEventsAsync(10)

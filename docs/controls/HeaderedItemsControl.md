@@ -28,7 +28,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Output
 
-![HeaderedItemsControl](../resources/images/Controls/HeaderedItemsControl.jpg)
+![HeaderedItemsControl Sample](../resources/images/Controls/HeaderedItemsControl.jpg)
 
 ## Properties
 
@@ -59,7 +59,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 - Used to control the look of the header. The default value for the `HeaderTemplate` will display the string representation of the `Header`. Set this property if you need to bind the `Header` to an object.
 
     *Sample Code*
-    
+
     ```xaml
     <controls:HeaderedItemsControl Header="{Binding CustomObject}">
         <controls:HeaderedItemsControl.HeaderTemplate>
@@ -87,4 +87,4 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## API
 
-* [HeaderedItemsControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl)
+- [HeaderedItemsControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedItemsControl)

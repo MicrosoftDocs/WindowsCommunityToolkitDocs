@@ -16,8 +16,8 @@ You should implement IObjectSerializer when you need to write data using this to
 
 | Methods | Return Type | Description |
 |---------|-------------|-------------|
-| Serialize<T>(T)        | string | Serialize an object of type T into a string. |
-| Deserialize<T>(string) | T      | Deserialize a string to an object of type T. |
+| Serialize\<T>(T)        | string | Serialize an object of type T into a string. |
+| Deserialize\<T>(string) | T      | Deserialize a string to an object of type T. |
 
 ## Examples
 

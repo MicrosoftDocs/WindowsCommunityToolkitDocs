@@ -1,13 +1,17 @@
 ---
 title: MatrixHelperEx
 author: michael-hawker
-description: Extra UWP MatrixHelper-like methods
+description: Extra UWP MatrixHelper-like methods (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix, MatrixHelper, Multiply, round, Rect, Transform
 dev_langs:
   - csharp
 ---
 
 # MatrixHelperEx
+
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
+
 [MatrixHelperEx](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
 ## Methods

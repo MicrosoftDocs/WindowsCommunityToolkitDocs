@@ -25,18 +25,19 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
     * Add a reference at the top of your page
 
-        ```xml
+        ```xaml
         xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
         ```
+
     * Add the following XAML in your page to add the DataGrid control
 
-       ```xml
+       ```xaml
        <controls:DataGrid x:Name="dataGrid">
 
        </controls:DataGrid>
        ```
 
-5. Alternatively, you can add the DataGrid control directly in C# in your page code behind. **Important** You would either add it to the XAML directly or the code behind, not both. 
+5. Alternatively, you can add the DataGrid control directly in C# in your page code behind. **Important** You would either add it to the XAML directly or the code behind, not both.
 
     * Add the namespaces to the toolkit
 
@@ -55,7 +56,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
 
 You can use the **DataGrid.ItemsSource** property to bind to a collection that will be used to generate the contents of the DataGrid control. The following example demonstrates how to use the **ItemsSource** and **AutoGenerateColumns** properties to automatically display a collection of Customer data in rows and columns.
 
-```xml
+```xaml
 <controls:DataGrid x:Name="dataGrid1" 
     Height="600" Margin="12"
     AutoGenerateColumns="True"
@@ -106,7 +107,7 @@ By default, the DataGrid control generates columns automatically when you set th
 
 You can override the default automatic generation of columns by setting the **AutoGenerateColumns** property to False and explicitly creating the bound columns with styling in XAML as shown below.
 
-```xml
+```xaml
 <controls:DataGrid x:Name="dataGrid1" 
     Height="600" Margin="12"
     AutoGenerateColumns="False"
@@ -159,7 +160,7 @@ The **DataGridComboBoxColumn** contains the following specific properties:
 
 The following code example demonstrates how to specify and configure a **DataGridComboBoxColumn** in XAML.
 
-```xml
+```xaml
 <controls:DataGrid x:Name="EmployeeGrid"
                   ItemsSource="{x:Bind Persons}"
                   AutoGenerateColumns="False">
@@ -237,9 +238,9 @@ public sealed partial class MainPage : Page
 
 The DataGridTemplateColumn type enables you to create your own column types by specifying the cell templates used to display values and enable editing. Set the **CellTemplate** property to specify the contents of cells that display values, but do not allow editing. Set the **CellEditingTemplate** property to specify the contents of cells in editing mode. If you set the column's **IsReadOnly** property to true, the CellEditingTemplate property value is never used.
 
-The following code example demonstrates how to specify and configure a DataGridTemplateColumn in XAML. 
+The following code example demonstrates how to specify and configure a DataGridTemplateColumn in XAML.
 
-```xml
+```xaml
 <controls:DataGrid x:Name="dataGrid1" 
     Height="600" Margin="12"
     AutoGenerateColumns="False"

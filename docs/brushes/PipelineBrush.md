@@ -14,7 +14,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 
 ## Syntax
 
-```xml
+```xaml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <media:PipelineBrush Source="{effects:BackdropSource}">
@@ -43,7 +43,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 | Property | Type | Description |
 | -- | -- | -- |
 | Source | PipelineBuilder | The source for the current pipeline |
-| Effects | IList<IPipelineEffect> | The collection of effects to use in the current pipeline. |
+| Effects | IList\<IPipelineEffect> | The collection of effects to use in the current pipeline. |
 
 ## Code behind support
 

@@ -37,15 +37,15 @@ LocalObjectStorageHelper and RoamingObjectStorageHelper have the same constructo
 
 |          Methods          |    Return Type    |                                                                                                                                               Description                                                                                                                                               |
 |---------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  FileExistsAsync(String)  |    Task<bool>     |                                                                                                                                     Detect if a file already exists                                                                                                                                     |
+|  FileExistsAsync(String)  |    Task\<bool>     |                                                                                                                                     Detect if a file already exists                                                                                                                                     |
 |     KeyExists(String)     |       bool        |                                                                                                                                   Detect if a setting already exists                                                                                                                                    |
 | KeyExists(String, String) |       bool        |                                                                                                                             Detect if a setting already exists in composite                                                                                                                             |
 |      Read(String, T)      |         T         |                                                                                                                                     Retrieve single item by its key                                                                                                                                     |
 |  Read(String, String, T)  |         T         |                                                                                                                              Retrieve single item by its key in composite                                                                                                                               |
-| ReadFileAsync(String, T)  |      Task<T>      |                                                                                                                                        Retrieve object from file                                                                                                                                        |
-| Save(String, IDictionary) |       void        | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
-|      Save(String, T)      |       void        |                                             Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects)                                              |
-| SaveFileAsync(String, T)  | Task<StorageFile> |                                                                                       Save object inside file. There is no limitation to use this method (refers to Save<T>(String, T) method for simple objects)                                                                                       |
+| ReadFileAsync(String, T)  |      Task\<T>      |                                                                                                                                        Retrieve object from file                                                                                                                                        |
+| Save(String, IDictionary) |       void        | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync\<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
+|      Save(String, T)      |       void        |                                             Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync\<T>(String, T) for complex/large objects)                                              |
+| SaveFileAsync(String, T)  | Task\<StorageFile> |                                                                                       Save object inside file. There is no limitation to use this method (refers to Save\<T>(String, T) method for simple objects)                                                                                       |
 
 ## Example
 
@@ -93,6 +93,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New LocalObjectStorageHelper()
 
@@ -175,6 +176,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New RoamingObjectStorageHelper()
 
@@ -225,6 +227,6 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## API
 
-* [LocalObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
-* [RoamingObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
-* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
+- [LocalObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
+- [RoamingObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+- [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)

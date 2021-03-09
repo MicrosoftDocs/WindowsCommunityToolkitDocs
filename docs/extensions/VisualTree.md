@@ -29,7 +29,7 @@ control = uiElement.FindDescendant<ListView>();
 // Find all visual descendant controls of the specified type.
 foreach (var child in uiElement.FindDescendants<ListViewItem>())
 {
-	// ...
+    // ...
 }
 
 // Find first visual ascendant control using its name.
@@ -38,6 +38,7 @@ control = uiElement.FindAscendantByName("MyScrollViewer");
 // Find first visual ascendant control of a specified type.
 control = uiElement.FindAscendant<ScrollViewer>();
 ```
+
 ```vb
 ' Include namespace to access extensions.
 Imports Microsoft.Toolkit.Uwp.UI.Extensions
@@ -63,11 +64,11 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| FindAscendant<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
+| FindAscendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
 | FindAscendantByName(this DependencyObject, String) | FrameworkElement | Find visual ascendant `FrameworkElement` control using its name |
-| FindDescendant<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
+| FindDescendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
 | FindDescendantByName(this DependencyObject, String) | FrameworkElement | Find descendant `FrameworkElement` control using its name |
-| FindDescendants<T>(this DependencyObject) | IEnumerable<T> where T : DependencyObject | Find all descendant controls of the specified type |
+| FindDescendants\<T>(this DependencyObject) | IEnumerable\<T> where T : DependencyObject | Find all descendant controls of the specified type |
 
 ## Requirements
 
@@ -82,4 +83,4 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 ## Related Topics
 
-- [LogicalTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/logicaltree)
+* [LogicalTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/logicaltree)

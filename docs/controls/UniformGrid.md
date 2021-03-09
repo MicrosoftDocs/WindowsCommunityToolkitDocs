@@ -5,7 +5,7 @@ description: The UniformGrid Control presents items in a evenly-spaced set of ro
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, UniformGrid, xaml control, xaml, grid, layout, responsive
 ---
 
-# UniformGrid XAML Control 
+# UniformGrid XAML Control
 
 The **UniformGrid Control** is a responsive layout control which arranges items in a evenly-spaced set of rows or columns to fill the total available display space.  Each cell in the grid, by default, will be the same size.
 
@@ -13,7 +13,7 @@ If no value for `Rows` and `Columns` are provided, the UniformGrid will create a
 
 If a fixed size is provided for `Rows` and `Columns` then additional children that can't fit in the number of cells provided won't be displayed.
 
-It differs from the [AdaptiveGridView](https://docs.microsoft.com/windows/communitytoolkit/controls/adaptivegridview) which dictates 
+It differs from the [AdaptiveGridView](https://docs.microsoft.com/windows/communitytoolkit/controls/adaptivegridview) which dictates
 its layout based on item sizes to where as the UniformGrid maintains the specified number of Rows and/or Columns.
 In addition, UniformGrid is a `Panel` instead of an `ItemsControl`.  As such, it could be used as a Panel in such ItemsControls.
 
@@ -51,8 +51,8 @@ See further notes below on the additional features the UWP UniformGrid provides 
 
 UniformGrid supports the [RowSpacing](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.grid.rowspacing) and [ColumnSpacing](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.grid.columnspacing#Windows_UI_Xaml_Controls_Grid_ColumnSpacing) properties added in 16299, along with the previous Padding, Margin, and CornerRadius properties.
 
-```
-    <controls:UniformGrid ColumnSpacing="24" RowSpacing="24">
+```xaml
+<controls:UniformGrid ColumnSpacing="24" RowSpacing="24">
 ```
 
   ![UniformGrid Spacing](../resources/images/Controls/UniformGrid/Spacing.png)
@@ -77,7 +77,7 @@ If a child uses the `Grid.RowSpan` or `Grid.ColumnSpan` attached properties it c
 
 > [!NOTE]
 > If an item is laid out in a position such that it's size would make it too large for the current layout, it may be cropped to fit within the grid instead.  However, it's size is usually taken into account when determining how large the grid should be.
-> 
+>
 > E.g. if the UniformGrid's next available cell is the last cell of the row, but the child is requesting to have a ColumnSpan of 2, then the item will not wrap to the next line leaving a blank space or filling with a smaller item, but instead have it's ColumnSpan request ignored.
 
 ### Fixed Child Locations
@@ -105,9 +105,9 @@ If a child uses the `Grid.Row` or `Grid.Column` attached properties it will be f
 
 > [!NOTE]
 > In order to pin a child to the top-left position (0, 0), you must specify the `controls:UniformGrid.AutoLayout` property to be `False`.  *(This is the ONLY way the `AutoLayout` property should be used.)*  Otherwise, the UniformGrid can't distinguish between the default locations of Grid children (0, 0) and knowing that you don't want it to be automatically arranged during layout.
-> 
+>
 > E.g. ```<Border Background="Gainsboro" controls:UniformGrid.AutoLayout="{ex:NullableBool Value=False}"><TextBlock Text="4"/></Border>```
-> 
+>
 > This specific edge-case is only supported in Markup on 16299 and above for the required Markup Extension; otherwise, name the element and use code-behind to set the property.
 
 ### Override Rows and Columns

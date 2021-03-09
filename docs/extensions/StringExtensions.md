@@ -5,39 +5,23 @@ description: String extension methods from toolkit
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, string
 ---
 
-### String Extensions
+# String Extensions
 
-Provides helpers and extensions for strings, including validation methods for common scenarios.
+The [`StringExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.StringExtensions) type contains helpers and extensions for `string` objects, including validation methods for common scenarios.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Extensions?sample=StringExtensions)
+> **Platform APIs:** [`StringExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.StringExtensions)
 
 ## Syntax
 
 ```csharp
-using Microsoft.Toolkit.Extensions;
+using Microsoft.Toolkit;
 
 string str = "test@test.com";
-bool isvalid = str.IsEmail();		//Returns true
+bool isvalid = str.IsEmail();    //Returns true
 
 string str = "123+888";
-bool isvalid = str.IsDecimal();		//Returns false
+bool isvalid = str.IsDecimal();  //Returns false
 ```
-
-## Methods
-
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| IsEmail(string) | boolean | Determines whether a string is a valid email address. |
-| IsDecimal(string) | boolean | Determines whether a string is a valid decimal number. |
-| IsNumeric(string) | boolean | Determines whether a string is a valid integer. |
-| IsPhoneNumber(string) | boolean | Determines whether a string is a valid phone number. |
-| IsCharacterString(string) | boolean | Determines whether a string contains only letters. |
-| ToSafeString(object) | string | Returns a string representation of an object. |
-| DecodeHtml(string) | string | Returns a string with HTML comments, scripts, styles, and tags removed. |
-| FixHtml(string) | string | Returns a string with HTML comments, scripts, and styles removed. |
-| Truncate(string, int) | string | Truncates a string to the specified length. |
-| Truncate(string, int, bool) | string | Truncates a string to the specified length, adding an ellipsis (`...`) at the end of the string when set to true. |
 
 ### Formats Supported for **IsPhoneNumber** Extension
 
@@ -53,15 +37,6 @@ bool isvalid = str.IsDecimal();		//Returns false
 1-987-654-3210
 ```
 
-## Requirements
+## Examples
 
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Extensions |
-| NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
-
-The String Extensions supports .NET Standard
-
-## API
-
-* [StringExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/StringExtensions.cs)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
