@@ -293,6 +293,36 @@
 
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
+# MVVM
+
+## [Introduction](mvvm/Introduction.md)
+
+## ComponentModel
+
+### [ObservableObject](mvvm/ObservableObject.md)
+
+### [ObservableRecipient](mvvm/ObservableRecipient.md)
+
+### [ObservableValidator](mvvm/ObservableValidator.md)
+
+## Input
+
+### [RelayCommand and RelayCommand<T>](mvvm/RelayCommand.md)
+
+### [AsyncRelayCommand and AsyncRelayCommand<T>](mvvm/AsyncRelayCommand.md)
+
+## [Messenger](mvvm/Messenger.md)
+
+## [Ioc](mvvm/Ioc.md)
+
+## [Putting things together](mvvm/PuttingThingsTogether.md)
+
+## Migrating to the MVVM Toolkit
+
+### [Migrating from MvvmLight](mvvm/MigratingFromMvvmLight.md)
+
+### [Migrating from MvvmBasic](mvvm/MigratingFromMvvmBasic.md)
+
 # High performance
 
 ## [Introduction](high-performance/Introduction.md)
