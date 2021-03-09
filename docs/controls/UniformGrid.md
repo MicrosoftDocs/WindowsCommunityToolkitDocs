@@ -51,8 +51,8 @@ See further notes below on the additional features the UWP UniformGrid provides 
 
 UniformGrid supports the [RowSpacing](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.grid.rowspacing) and [ColumnSpacing](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.grid.columnspacing#Windows_UI_Xaml_Controls_Grid_ColumnSpacing) properties added in 16299, along with the previous Padding, Margin, and CornerRadius properties.
 
-```
-    <controls:UniformGrid ColumnSpacing="24" RowSpacing="24">
+```xaml
+<controls:UniformGrid ColumnSpacing="24" RowSpacing="24">
 ```
 
   ![UniformGrid Spacing](../resources/images/Controls/UniformGrid/Spacing.png)

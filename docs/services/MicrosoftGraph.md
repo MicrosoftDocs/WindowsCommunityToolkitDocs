@@ -1,7 +1,7 @@
 ---
 title: MicrosoftGraph Service
 author: nmetulev
-description: The MicrosoftGraph Service aim to easily logon to Microsoft Graph service in order to Retrieve User Information, Retrieve and Send emails, Retrieve User events
+description: The MicrosoftGraph Service aim to easily logon to Microsoft Graph service in order to Retrieve User Information, Retrieve and Send emails, Retrieve User events (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MicrosoftGraph Service
 dev_langs:
   - csharp

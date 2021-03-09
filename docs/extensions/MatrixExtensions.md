@@ -9,7 +9,9 @@ dev_langs:
 
 # Matrix Extensions
 
-The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixextensions) provide methods to transform a [Matrix](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...).  These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](https://msdn.microsoft.com/library/system.windows.media.matrix(v=vs.110).aspx) class.
+The [`MatrixExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.matrixextensions) type provides methods to transform a [`Matrix`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...). These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](https://msdn.microsoft.com/library/system.windows.media.matrix(v=vs.110).aspx) class.
+
+> **Platform APIs:** [`MatrixExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.matrixextensions)
 
 ## Methods
 

@@ -1,7 +1,7 @@
 ---
 title: Rotate animation behavior
 author: nmetulev
-description: The Rotate animation behavior allows users to modify and animate the control's rotation. 
+description: The Rotate animation behavior allows users to modify and animate the control's rotation (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, rotate, rotate animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Rotate
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
 The [Rotate animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.rotate) allows users to modify and animate the control's rotation. Rotate animation is applied to all the XAML elements in its parent control/panel. Rotate animation doesn't affect the functionality of the control.
 

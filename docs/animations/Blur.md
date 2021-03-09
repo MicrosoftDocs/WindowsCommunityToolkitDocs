@@ -1,7 +1,7 @@
 ---
 title: Blur animation behavior
 author: nmetulev
-description: The Windows Community Toolkit Blur animation behavior selectively blurs a XAML element by increasing or decreasing pixel size
+description: The Windows Community Toolkit Blur animation behavior selectively blurs a XAML element by increasing or decreasing pixel size (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, blur, blur animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Blur
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
 
 The [Blur animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.blur) blurs a XAML element by increasing or decreasing pixel size. Blur animation is applied to all the XAML elements in its parent control/panel. Blur animation doesn't affect the functionality of the control.
 

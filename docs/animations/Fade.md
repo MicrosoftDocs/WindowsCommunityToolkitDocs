@@ -1,7 +1,7 @@
 ---
 title: Fade animation behavior
 author: nmetulev
-description: The Fade animation behavior fades objects, in and out, over time and delay. It can be used along side other animations directly through XAML or code
+description: The Fade animation behavior fades objects, in and out, over time and delay. It can be used along side other animations directly through XAML or code (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, fade, fade animation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Fade
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
 
 The [Fade animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.fade) fades objects, in and out, over time. Fade animation is applied to all the XAML elements in its parent control/panel. Fade animation doesn't affect the functionality of the control.
 

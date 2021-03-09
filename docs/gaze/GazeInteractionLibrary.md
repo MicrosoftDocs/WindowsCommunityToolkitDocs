@@ -23,7 +23,7 @@ In order to use the Windows 10 Gaze Input APIs or this Gaze Interaction Library,
 
 To use the gaze input APIs, you must register the gazeInput capability in the app manifest. Add the following DeviceCapability to the Capabilities node in the Package.appxmanifest file of your project (you can do this by checking Gaze Input in the Capabilities tab in Visual Studio when you have Package.appxmanifest open in the App Manifest Designer):
 
-```xml
+```xaml
 <Capabilities>
    <DeviceCapability Name="gazeInput" />
 </Capabilities>

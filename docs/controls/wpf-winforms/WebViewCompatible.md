@@ -17,10 +17,10 @@ The **WebViewCompatible** control shows web content in your Windows Forms or WPF
 Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering engines to support a broader set of Windows clients:
 
 * On Windows 10 devices, the newer Microsoft Edge rendering engine is used to embed a view that renders richly formatted HTML content from a remote web server, dynamically generated code, or content files.
-* On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) is used, which provides Internet Explorer engine-based rendering.
+* On devices running older versions of Windows, the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) is used, which provides Internet Explorer engine-based rendering.
 
 > [!NOTE]
-> The Edge runtime does not at the moment work when the process is elevated as an administrator. Therefore **WebViewCompatible** will fall back to use the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) when it detects that the process is running as administrator.
+> The Edge runtime does not at the moment work when the process is elevated as an administrator. Therefore **WebViewCompatible** will fall back to use the [System.Windows.Controls.WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) when it detects that the process is running as administrator.
 
 > [!NOTE]
 > If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
@@ -32,7 +32,7 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 
 The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is coming soon, and it will be located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.  Because **WebViewCompatible** wraps [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) (on Windows 10) and [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) (on older versions of Windows), it provides a simpler subset of common functionality.
+These controls wrap an instance of the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class, and they provide a subset of members from that class. The [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) is similar to the [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview) class, but it is designed to run out of process in a desktop application (such as a WPF or Windows Forms application) and it supports a smaller set of members.  Because **WebViewCompatible** wraps [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) (on Windows 10) and [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) (on older versions of Windows), it provides a simpler subset of common functionality.
 
 Unless specified otherwise in this article, the documentation for the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class applies to the WPF and Windows Forms **WebView** controls. This article links to reference pages for the UWP [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol) class for more information about most members.
 
@@ -50,7 +50,7 @@ Unless specified otherwise in this article, the documentation for the [WebViewCo
 
 When compared to the UWP **WebView** control, the current release of the WPF and Windows Forms [WebView](WebView.md) controls have some limitations. For the complete list of these limitations, see [Known Issues of the WebView control for Windows Forms and WPF applications](WebView-known-issues.md).
 
-The **WebViewCompatible** control has further limitations because it exposes a common interface that is a subset of common functionality across the two underlying implementations. On a Windows 10 computer that supports [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), **WebViewCompatible** has the same limitations as [WebView](WebView.md) as well as further exclusions to the exposed functionality. On a computer running an earlier version of Windows, **WebViewCompatible** will use [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) and have the same additional interface limitations.
+The **WebViewCompatible** control has further limitations because it exposes a common interface that is a subset of common functionality across the two underlying implementations. On a Windows 10 computer that supports [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), **WebViewCompatible** has the same limitations as [WebView](WebView.md) as well as further exclusions to the exposed functionality. On a computer running an earlier version of Windows, **WebViewCompatible** will use [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) and have the same additional interface limitations.
 
 ## Add the WebViewCompatible control to the Visual Studio Toolbox for Windows Forms applications
 
@@ -94,7 +94,7 @@ For guidance, see [Configuring your Windows Forms app for high DPI support](http
 
 Add the following XML to your application manifest file:
 
-```xml
+```xaml
 <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Windows 10 -->
@@ -105,7 +105,7 @@ Add the following XML to your application manifest file:
 
 Add the following XML to your application configuration file:
 
-```xml
+```xaml
 <application xmlns="urn:schemas-microsoft-com:asm.v3">
    <windowsSettings>
      <!-- The combination of below two tags have the following effect :

@@ -1,7 +1,7 @@
 ---
 title: GraphLogin Component
 author: AdamBraden
-description: Windows Forms component to authenticate with Azure AD v2 and the Microsoft Graph
+description: Windows Forms component to authenticate with Azure AD v2 and the Microsoft Graph (outdated docs).
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Windows Forms, GraphLogin 
 dev_langs:
   - csharp

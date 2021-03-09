@@ -1,11 +1,14 @@
 ---
 title: Composition Animations in XAML
 author: nmetulev
-description: The Composition Animations can be used directly from XAML including with Implicit animations
+description: The Composition Animations can be used directly from XAML including with Implicit animations (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, composition animations, animation, implicit animations, XAML, implicit, composition
 ---
 
 # Composition Animations in XAML
+
+> [!WARNING]
+> These animation types have been updated with some breaking changes, please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types. For a comprehensive list of all the available APIs, use the .NET API browser instead.
 
 [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation) in the universal windows platform provide a powerful and efficient way to run animations in your application UI and have been designed to ensure that your animations run at 60 FPS independent of the UI thread.
 

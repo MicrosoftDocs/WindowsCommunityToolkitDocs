@@ -98,7 +98,7 @@ For guidance, see [Configuring your Windows Forms app for high DPI support](http
 
 Add the following XML to your application manifest file:
 
-```xml
+```xaml
 <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Windows 10 -->
@@ -109,7 +109,7 @@ Add the following XML to your application manifest file:
 
 Add the following XML to your application configuration file:
 
-```xml
+```xaml
 <application xmlns="urn:schemas-microsoft-com:asm.v3">
    <windowsSettings>
      <!-- The combination of below two tags have the following effect :
@@ -433,8 +433,6 @@ By default, the **WebView** is hosted outside of your application's process in a
 
 For example, if through the designer a **WebView** named `webView1` is on `Form1`, you can create a new **WebView** that shares the same process and state with `webView1` like this.
 
-**Form1.cs**
-
 ```csharp
 public partial class Form1 : Form
 {
@@ -474,7 +472,7 @@ End Class
 
 Similar to the Windows Forms example, if through the designer a **WebView** is created named `WebView1` on the `Window`, you can create a new **WebView** that shares the same process and state with `WebView1` like this.
 
-**MainWindow.xaml**
+MainWindow.xaml
 
 ```xaml
 <Window
@@ -501,7 +499,7 @@ Similar to the Windows Forms example, if through the designer a **WebView** is c
 </Window>
 ```
 
-**MainWindow.xaml.cs**
+MainWindow.xaml.cs
 
 ```csharp
 public partial class MainWindow : Window
@@ -525,6 +523,8 @@ public partial class MainWindow : Window
 }
 ```
 
+MainWindow.xaml.vb
+
 ```vb
 Class MainWindow
     Private Sub WebView_Loaded(sender As Object, e As RoutedEventArgs)
@@ -544,7 +544,7 @@ End Class
 
 ### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
 
-When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
+When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
 
 ### Is *WebViewControl* available on Windows Server?
 

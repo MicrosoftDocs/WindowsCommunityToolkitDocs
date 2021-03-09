@@ -1,7 +1,7 @@
 ---
 title: PowerBIEmbedded Control
 author: OGcanviz
-description: The PowerBIEmbedded control is a simple wrapper to an IFRAME for a PowerBI embed.
+description: The PowerBIEmbedded control is a simple wrapper to an IFRAME for a PowerBI embed (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, PowerBIEmbedded Control
 ---
 

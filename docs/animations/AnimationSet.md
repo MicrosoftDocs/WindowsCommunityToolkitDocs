@@ -1,190 +1,206 @@
 ---
-title: AnimationSet class
-author: Vijay-Nirmal
-description: The AnimationSet class defines an object for storing and managing Storyboard and CompositionAnimations for an element
-keywords: windows 10, uwp, windows community toolkit, uwp toolkit, animationset, animationset class
+title: AnimationSet
+author: Sergio0694
+description: A collection of animations that can be grouped together
+keywords: windows 10, uwp, windows community toolkit, uwp toolkit, animationset, xaml, visual, composition
 dev_langs:
   - csharp
-  - vb
 ---
 
 # AnimationSet
 
-The AnimationSet class defines an object for storing and managing Storyboard and CompositionAnimations for an element. AnimationSet includes [Blur](Blur.md), [Fade](Fade.md), [Light](Light.md), [Offset](Offset.md), [Rotate](Rotate.md), [Saturation](Saturation.md) and [Scale](Scale.md) animations. AnimationSet animations is applied to all the XAML elements in its parent control/panel. AnimationSet animations doesn't affect the functionality of the control.
+The [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet) type represents an animation schedule, effectively representing an [AnimationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationBuilder) instance via XAML code. It can contain any number of animations or activities, exposes methods to start and stop an animation, and events to be notified when an animation has started or is completed. Like `AnimationBuilder`, `AnimationSet` instances can also be shared (e.g. in a [`ResourceDictionary`](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)) and then be used to start animation schedules on multiple UI elements. It can also be directly attached to a parent UI element, via the [`Explicit.Animations`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Explicit) attached property.
 
-## Syntax
+> **Platform APIs:** [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet), [AnimationBuilder](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationBuilder), [`Explicit`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Explicit), [`ITimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline), [`IActivity`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity), [`AnimationScope`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationScope), [`AnimationStartedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationStartedTriggerBehavior), [`AnimationCompletedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationCompletedTriggerBehavior), [`StartAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StartAnimationAction), [`StopAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StopAnimationAction)
+
+## How it works
+
+Each set can contain any number of animation scopes and individual nodes, which can be either animations or "activities":
+
+- **Animation types** are a mapping in XAML for the various APIs exposed by the `AnimationBuilder` class. They are available as both "default" animations that are ready to use and "custom" animations that can be fully configured. Each animation type also supports using keyframes in addition to just defining the starting and final values. 
+- **Activites** on the other hand are a way to interleave an animation schedule with all sorts of custom logic, such as triggering other animations or running arbitrary code (eg. to update a visual state while an animation is running).
+
+These two types of animation nodes implement several interfaces (such as [`ITimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline) and [`IActivity`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity)) which make this system extremely customizable and extensible for users as well for their own scenarios.
+
+Here is how a simple animation can be declared in XAML. In this case we are using `x:Name` so that we can reference it in code behind to start it when the button is clicked. The animation is also directly attached to the [`Button`](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/buttons), so we can start it directly by calling the `Start()` method, without the need to specify the target element to animate.
 
 ```xaml
-<Page ...
-     xmlns:interactivity="using:Microsoft.Xaml.Interactivity"  
-     xmlns:behaviors="using:Microsoft.Toolkit.Uwp.UI.Animations.Behaviors"/>
-
-<interactivity:Interaction.Behaviors>
-    <interactivity:BehaviorCollection>
-        <behaviors:Blur Value="10" Duration="2500" AutomaticallyStart="True"/>
-        <behaviors:Scale ScaleX="2" ScaleY="2" Duration="2500" AutomaticallyStart="True"/>
-        <!-- Others -->
-    </interactivity:BehaviorCollection>
-</interactivity:Interaction.Behaviors> 
+<!--A simple animation using default animation types-->
+<Button Content="Click me!">
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="FadeInAnimation">
+            <animations:OpacityAnimation From="0" To="1"/>
+            <animations:TranslationAnimation From="-20,0,0" To="0"/>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
 ```
 
-```csharp
-var anim = MyUIElement.Light(5).Offset(offsetX: 100, offsetY: 100).Saturation(0.5).Scale(scaleX: 2, scaleY: 2);
-anim.SetDurationForAll(2500);
-anim.SetDelay(250);
-anim.Start();
+By default, animations target the [Composition layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer) as it provides the best performance possible. It is also possible to explicitly target the XAML layer too though, which can enable things such as animating the color of a brush used to display some text in a `Button`. Here is an example where we use this functionality, together with explicit keyframes to have more fine-grained control over the animation to run:
+
+```xaml
+<!--An animation set using a scope and explicit keyframes-->
+<Button Content="Click me!" Foreground="White">
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="FadeInAnimation">
+            <animations:AnimationScope Duration="0:0:1" EasingType="Sine">
+                <animations:OpacityAnimation From="0" To="1"/>
+                <animations:ColorAnimation Target="(Button.Foreground).(SolidColorBrush.Color)" Layer="Xaml">
+                    <animations:ColorKeyFrame Key="0.0" Value="White"/>
+                    <animations:ColorKeyFrame Key="0.5" Value="Orange"/>
+                    <animations:ColorKeyFrame Key="0.8" Value="Green" EasingType="Linear"/>
+                    <animations:ColorKeyFrame Key="1.0" Value="White" EasingType="Cubic" EasingMode="EaseOut"/>
+                </animations:ColorAnimation>
+            </animations:AnimationScope>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
 ```
 
-```vb
-Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
-anim.SetDurationForAll(2500)
-anim.SetDelay(250)
-anim.Start()
+Keyframes (both when declared in C# and in XAML) can also use an [expression animation](https://docs.microsoft.com/uwp/api/windows.ui.composition.expressionanimation) when they are being used in an animation targeting the Composition layer. This provides additional control over the animation values and allows consumers to create dynamic animations that can adapt to the current state of the target element. Here is an example:
+
+```xaml
+<!--Keyframes can use expressions as well (on the Composition layer)-->
+<Button Content="Click me!">
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="RotationAnimation">
+            <animations:RotationInDegreesAnimation>
+                <animations:ScalarKeyFrame Key="0.0" Value="0"/>
+                <animations:ScalarKeyFrame Key="1.0" Expression="Lerp(-180, 180, this.Target.Opacity)"/>
+            </animations:RotationInDegreesAnimation>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
 ```
 
-## Sample Output
+## Sequential mode
 
-![AnimationSet animations](../resources/images/Animations/Chaining-Animations-Light-Offset-Saturation-Scale.gif)
+Another feature of the `AnimationSet` type is the `IsSequential` property which configures the way top-level elements (animations, activities, and scopes) within the animation are handled. 
 
-## Properties
+When this property is set to `true` each top-level node will be executed sequentially and only move to the following one when the previous completes (and the animation has not been cancelled). This can be used in conjunction with the various `IActivity` objects to create custom animation schedules that combine multiple animations running on different UI elements, with all the synchronization still done entirely from XAML. It is also helpful when combined with an [`AnimationScope`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationScope) in order to more easily parse the timeline of events within an animation when creating and modifying them.
 
-| Property | Type | Description |
-| -- | -- | -- |
-| Element | UIElement | Gets the UIElement |
-| State | [AnimationSetState](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetstate) | Gets the current state of the AnimationSet |
-| UseComposition | Boolean | Gets or sets a value indicating whether composition must be use even on SDK > 10586 |
-| Visual | Visual | Gets the Visual object that backs the XAML element |
+Here is an example that showcases both the sequential mode for animations as well as the ability to combine animations and activities in the same schedule, and how different animations (even on different UI elements) can be combined and interleaved by using the available APIs:
 
-### EasingType
+```xaml
+<!--This set first runs a scope with three animations and waits for its completion.
+    Then, an activity is used to trigger another animation on its attached parent.
+    When that completes as well, the last animation in this set will be executed.-->
+<Button Content="Click me!" Foreground="White">
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="SequentialAnimation" IsSequential="True">
+            <animations:AnimationScope>
+                <animations:ScaleAnimation From="1" To="1.2"/>
+                <animations:TranslationAnimation From="-20,0,0" To="0"/>
+                <animations:OpacityAnimation From="0" To="1"/>
+            </animations:AnimationScope>
+            <animations:StartAnimationActivity Animation="{x:Bind AnotherAnimation}"/>
+            <animations:ScaleAnimation To="1"/>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
 
-You can change the way how the animation interpolates between keyframes by defining the EasingType.
+<!--This rectangle will wiggle left and right when the activity is reached in the
+    sequential animation schedule for the button above. When this animation set
+    completes, the one that invoked it will resume playing normally.-->
+<Rectangle Height="80" Width="120" Fill="Green">
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="AnotherAnimation">
+            <animations:TranslationAnimation Duration="0:0:1" From="0" To="0">
+                <animations:Vector3KeyFrame Key="0.3" Value="-20,0,0"/>
+                <animations:Vector3KeyFrame Key="0.6" Value="20,0,0"/>
+            </animations:TranslationAnimation>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Rectangle>
+```
 
-| EasingType | Explanation                                                                                                | Graphical Explanation                      |
-| ---------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
-| Default    | Creates an animation that accelerates with the default EasingType which is specified in AnimationExtensions.DefaultEasingType which is by default Cubic |                                                                                                                           |
-| Linear     | Creates an animation that accelerates or decelerates linear                                                                                             |                                                                                                                           |
-| Back       | Retracts the motion of an animation slightly before it begins to animate in the path indicated                                                          | ![BackEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/backease-graph.png)           |
-| Bounce     | Creates a bouncing effect                                                                                                                               | ![BounceEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/bounceease-graph.png)       |
-| Circle     | Creates an animation that accelerates or decelerates using a circular function                                                                          | ![CircleEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/circleease-graph.png)       |
-| Cubic      | Creates an animation that accelerates or decelerates using the formula f(t) = t3                                                                        | ![CubicEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/cubicease-graph.png)         |
-| Elastic    | Creates an animation that resembles a spring oscillating back and forth until it comes to rest                                                          | ![ElasticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/elasticease-graph.png)     |
-| Quadratic  | Creates an animation that accelerates or decelerates using the formula f(t) = t2                                                                        | ![QuadraticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quadraticease-graph.png) |
-| Quartic    | Creates an animation that accelerates or decelerates using the formula f(t) = t4                                                                        | ![QuarticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quarticease-graph.png)     |
-| Quintic    | Create an animation that accelerates or decelerates using the formula f(t) = t5                                                                         | ![QuinticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quinticease-graph.png)     |
-| Sine       | Creates an animation that accelerates or decelerates using a sine formula                                                                               | ![SineEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/sineease-graph.png)           |
+The same functionality with respect to cancellation applies to `AnimationSet` as well: each individual invocation on an UI element internally gets its own cancellation token, which can be used to stop a running animation by invoking the `Stop()` method or one of its overloads. The same token is also forwarded to all invoked activities in the schedule, so stopping an animation set will also automatically stop all linked animations and activities as well.
 
-## Methods
+Here's an example of how all these various explicit animations can be combined together (including some of the new effect animations too):
 
-| Methods | Description |
-| -- | -- |
-| AddCompositionAnimation(String, CompositionAnimation) | Adds a composition animation to be run on StartAsync() |
-| AddCompositionDirectPropertyChange(String, Object) | Adds a composition property that will change instantaneously |
-| AddCompositionEffectAnimation(CompositionObject, CompositionAnimation, String) | Adds a composition effect animation to be run on backing Visual |
-| AddStoryboardAnimation(String, Timeline) | Adds a storyboard animation to be run |
-| Dispose() | Dispose resources |
-| RemoveCompositionAnimation(String) | Removes a composition animation from being run on Visual property |
-| RemoveCompositionDirectPropertyChange(String) | Removes a composition property change |
-| SetDelay(Double) | Overwrites the delay time on all animations after last Then() to the specified value |
-| SetDelay(TimeSpan) | Overwrites the delay time on all animations after last Then() to the specified value |
-| SetDelayForAll(Double)| Overwrites the delay time on all animations to the specified value |
-| SetDelayForAll(TimeSpan) | Overwrites the delay time on all animations to the specified value |
-| SetDuration(Double) | Overwrites the duration on all animations after last Then() to the specified value |
-| SetDuration(TimeSpan) | Overwrites the duration on all animations after last Then() to the specified value |
-| SetDurationForAll(Double) | Overwrites the duration on all animations to the specified value |
-| SetDurationForAll(TimeSpan) | Overwrites the duration on all animations to the specified value |
-| Start() | Starts all animations. This method is not awaitable. |
-| StartAsync() | Starts all animations and returns an awaitable task |
-| Stop() | Stops all animations |
-| Then() | Wait for existing animations to complete before running new animations |
+![AnimationSet in sequential mode and with combined animations](../resources/images/AnimationSet.gif)
 
-## Events
+## Behaviors
 
-| Events | Description |
-| -- | -- |
-| Completed | Occurs when all animations have completed |
+If you are also referencing the `Microsoft.Toolkit.Uwp.UI.Behaviors` package, it will be possible to also use behaviors and actions to better support the new APIs, such as by automatically triggering an animation when a given event is raised, entirely from XAML. There are four main types being introduced in this package that interoperate with the Animation APIs:
+
+- [`AnimationStartedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationStartedTriggerBehavior) and [`AnimationCompletedTriggerBehavior`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.AnimationCompletedTriggerBehavior): these are custom triggers that can be used to execute `IAction`-s when an `AnimationSet` starts or completes. All the built-in `IAction` objects can be used from the Behaviors package, as well as custom ones as well.
+- [`StartAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StartAnimationAction): an `IAction` object that can be used within behaviors to easily start a target animation, either with an attached UI element or with an explicit target to animate.
+- [`StopAnimationAction`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.StopAnimationAction): an `IAction` object that can be used within behaviors to easily stop a target animation, either with an attached UI element or with an explicit target to animate.
+
+Here is an example that shows how these new APIs can be used together:
+
+```xaml
+<Button>
+    <!--Use StartAnimationAction to trigger the animation on click-->
+    <Interactivity:Interaction.Behaviors>
+        <Interactions:EventTriggerBehavior EventName="Click">
+            <behaviors:StartAnimationAction Animation="{x:Bind ScaleAnimation}" />
+        </Interactions:EventTriggerBehavior>
+    </Interactivity:Interaction.Behaviors>
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="ScaleAnimation">
+            <animations:ScaleAnimation From="1" To="1.2"/>
+
+            <!--Use AnimationEndBehavior to invoke a command when the animation ends-->
+            <Interactivity:Interaction.Behaviors>
+                <behaviors:AnimationEndBehavior>
+                    <Interactions:InvokeCommandAction Command="{x:Bind ViewModel.MyCommand}"/>
+                </behaviors:AnimationEndBehavior>
+            </Interactivity:Interaction.Behaviors>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+</Button>
+```
+
+This makes it possible to also not having to name the target UI element, to register the event handler in code behind, and in many cases to even name the `AnimationSet` instance at all, if it doesn't need to be referenced by other animations at all. The resulting code is all in XAML, with no need for code behind at all!
+
+## Effect animations
+
+Lastly, the `AnimationSet` class can also directly animate Composition/Win2D effects. To gain access to this feature, you will need to also reference the `Microsoft.Toolkit.Uwp.UI.Media`. This package includes some special animation types that can be plugged in into an `AnimationSet` instance and used to animate individual effects within a custom effects graph. This can then be used either from a [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) or from an inline graph attached to a UI element through the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type. All these effect animations are powered by the same `AnimationBuilder` type behind the scenes, and can facilitate creating complex animations on specific effects within a graph.
+
+Here is an example of how the new `PipelineVisualFactory` type can be combined with these effect animations:
+
+```xaml
+<Button>
+    <!--Behavior to trigger the animation on click-->
+    <Interactivity:Interaction.Behaviors>
+        <Interactions:EventTriggerBehavior EventName="Click">
+            <behaviors:StartAnimationAction Animation="{x:Bind MyAnimationSet}" />
+        </Interactions:EventTriggerBehavior>
+    </Interactivity:Interaction.Behaviors>
+
+    <!--VisualFactory to create and attach a custom Win2D/Composition pipeline-->
+    <media:UIElementExtensions.VisualFactory>
+        <media:PipelineVisualFactory Source="{media:BackdropSource}">
+            <media:BlurEffect x:Name="ImageBlurEffect" Amount="32" IsAnimatable="True"/>
+            <media:SaturationEffect x:Name="ImageSaturationEffect" Value="0" IsAnimatable="True"/>
+            <media:ExposureEffect x:Name="ImageExposureEffect" Amount="0" IsAnimatable="True"/>
+        </media:PipelineVisualFactory>
+    </media:UIElementExtensions.VisualFactory>
+
+    <!--AnimationSet mixing UI element animations and effect animations-->
+    <animations:Explicit.Animations>
+        <animations:AnimationSet x:Name="MyAnimationSet">
+            <animations:AnimationScope Duration="0:0:5" EasingMode="EaseOut">
+                <animations:ScaleAnimation From="1.1" To="1"/>
+                <animations:BlurEffectAnimation From="32" To="0" Target="{x:Bind ImageBlurEffect}"/>
+                <animations:SaturationEffectAnimation From="0" To="1" Target="{x:Bind ImageSaturationEffect}"/>
+                <animations:ExposureEffectAnimation From="1" To="0" Target="{x:Bind ImageExposureEffect}"/>
+            </animations:AnimationScope>
+        </animations:AnimationSet>
+    </animations:Explicit.Animations>
+    
+    <!--Button content here...-->
+</Button>
+```
+
+Here we are setting the `IsAnimatable` property for the effects we want to animate after creating the brush. This is necessary because Win2D/Composition effects do not support animation by default, and additional setup is required when creating a Composition brush to enable this functionality. Effects in a pipeline are not just all configured as being animatable by default both in order to reduce the overhead, and because there is a limit on the number of effects that can be animated in a single brush. Making this more advanced functionality opt-in for users ensures that it will still be possible to animate effects even within very large pipelines, without incurring into issues due to this limit.
+
+And here is the final result from the code above, with an image and some text as content:
+
+![AnimationSet used to animate effects in a custom pipeline](../resources/images/EffectAnimations.gif)
 
 ## Examples
 
-- AnimationSet has endless possibility. Here is an example of creating popup effect
-
-    **Sample Code**
-
-    ```csharp
-    FrameworkElement preElement = null;
-    private void MyUIElement_PointerEntered(object sender, PointerRoutedEventArgs e)
-    {
-        preElement = sender as FrameworkElement;
-        preElement.Blur(value: 0).Fade(value: 1).Scale(centerX: 100, centerY: 100, easingType: EasingType.Sine)
-                .SetDurationForAll(500)
-                .Start();
-    }
-
-    private void MyUIElement_PointerExited(object sender, PointerRoutedEventArgs e)
-    {
-        if (preElement != null)
-        {
-            preElement.Blur(value: 0).Fade(value: 0.1f).Scale(scaleX: 0.5f, scaleY: 0.5f, centerX: 100, centerY: 100, easingType: EasingType.Sine)
-                    .SetDurationForAll(500)
-                    .Start();
-        }
-    }
-    ```
-
-    ```vb
-    Private Sub MyUIElement_PointerEntered(ByVal sender As Object, ByVal e As PointerRoutedEventArgs)
-        preElement = TryCast(sender, FrameworkElement)
-        preElement.Blur(value:=0).Fade(value:=1).Scale(centerX:=100, centerY:=100, easingType:=EasingType.Sine).SetDurationForAll(500).Start()
-    End Sub
-
-    Private Sub MyUIElement_PointerExited(ByVal sender As Object, ByVal e As PointerRoutedEventArgs)
-        If preElement IsNot Nothing Then
-            preElement.Blur(value:=0).Fade(value:=0.1F).Scale(scaleX:=0.5F, scaleY:=0.5F, centerX:=100, centerY:=100, easingType:=EasingType.Sine).SetDurationForAll(500).Start()
-        End If
-    End Sub
-    ```
-
-    **Sample Output**
-
-    ![Use Case 1 Output](../resources/images/Animations/AnimationSet/Use-Case-1.gif)
-- Use `Then()` to create a successive animation
-
-    **Sample Code**
-
-    ```csharp
-    MyUIElement.Blur(value: 10).Fade(value: 0.5f)
-               .Then()
-               .Fade(value: 1).Scale(scaleX: 2, scaleY: 2, centerX: 100, centerY: 100, easingType: EasingType.Sine)
-               .SetDurationForAll(2500)
-               .Start();
-    ```
-
-    ```vb
-    MyUIElement.Blur(value:=10) _
-               .Fade(value:=0.5F) _
-               .[Then]() _
-               .Fade(value:=1) _
-               .Scale(scaleX:=2, scaleY:=2, centerX:=100, centerY:=100, easingType:=EasingType.Sine) _
-               .SetDurationForAll(2500) _
-               .Start()
-    ```
-
-    **Sample Output**
-
-    ![Use Case 2 Output](../resources/images/Animations/AnimationSet/Use-Case-2.gif)
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher   |
-| ---------------------------------------------------------------- | ----------------------------------- |
-| Namespace                                                        | Microsoft.Toolkit.Uwp.UI.Animations |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI.Animations](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Animations/) |
-
-## API
-
-- [AnimationSet source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations)
-
-## Related
-
-- [AnimationSetCompletedEventArgs](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationsetcompletedeventargs)
-
-- [AnimationExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions)
+You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp).

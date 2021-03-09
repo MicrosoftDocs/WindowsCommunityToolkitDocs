@@ -9,7 +9,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 The [DataGrid](../datagrid.md) control supports the option to automatically generate columns based on the collection data bound through the **ItemsSource** property.
 
-```xml
+```xaml
 <controls:DataGrid AutoGenerateColumns="True"/>
 <!-- Autogenerates column headers and columns based on the Data model provided -->
 ```
@@ -31,7 +31,7 @@ You can handle the DataGrid's **AutoGeneratingColumn** event to modify, replace,
 
 2. Add the event handler to the DataGrid instances events.
 
-   ```xml
+   ```xaml
    <controls:DataGrid x:Name="dataGrid1"
             AutoGenerateColumns="True"
             AutoGeneratingColumn="dataGrid1_AutoGeneratingColumn"/>

@@ -65,8 +65,6 @@ _Available CommonButtons:_
 
 Example of adding Add/Remove Buttons
 
-**XAML**
-
 ```xaml
 <controls:TextToolbar x:Name="Toolbar" Editor="{x:Bind Editor}">
     <controls:TextToolbar.ButtonModifications>
@@ -84,8 +82,6 @@ Example of adding Add/Remove Buttons
 </controls:TextToolbar>
 <RichEditBox x:Name="Editor" PlaceholderText="Enter Text Here" />
 ```
-
-**C#**
 
 ```csharp
 var button = Toolbar.GetDefaultButton(ButtonType.Headers);

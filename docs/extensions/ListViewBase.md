@@ -8,6 +8,8 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, ListViewBase, ext
 
 # ListViewBase extentions
 
+> [!WARNING]
+> This docs page is outdated, please refer to the new one for the [`ListViewExtensions`](ListViewExtensions.md) type.
 ListViewBase extensions provide a lightweight way to extend every control that inherits the <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase" target="_blank">ListViewBase</a> class with attached properties.
 
 ## AlternateColor
@@ -42,7 +44,6 @@ The AlternateItemTemplate property provides a way to assign an alternate <a href
             <TextBlock Text="{Binding }" Foreground="Orange"></TextBlock>
         </DataTemplate>
     </Page.Resources>
-
     <ListView
         ItemTemplate="{StaticResource NormalTemplate}"
         extensions:ListViewBase.AlternateItemTemplate="{StaticResource AlternateTemplate}"
