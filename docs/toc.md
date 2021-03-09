@@ -285,9 +285,9 @@
 
 ## [WeakEventListener](helpers/WeakEventListener.md)
 
-## [Win2d Path Mini Language Parser](parsers/CanvasPathGeometry.md)
+## [Win2D Path Mini Language Parser](parsers/CanvasPathGeometry.md)
 
-## [Win2d Path Mini Language](parsers/Win2d_Path_Mini_Language.md)
+## [Win2D Path Mini Language](parsers/Win2D_Path_Mini_Language.md)
 
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 

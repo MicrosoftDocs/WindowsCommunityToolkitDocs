@@ -1,85 +1,17 @@
 ---
-title:
+title: Win2D Path Mini Language
 author: ratishphilip
-description: describe your control in one sentence
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, win2d, win2d path mini language
+description: The Win2D Path Mini Language is a powerful language based on the SVG Path language specification.
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Win2D, Win2D path mini language
 dev_langs:
   - csharp
 ---
 
-- [Introduction](#introduction)
-  - [Requirements](#requirements)
-- [Win2d Path Mini Language](#win2d-path-mini-language)
-  - [Path Mini Language](#path-mini-language)
-    - [Fill Behavior](#fill-behavior)
-    - [MoveTo](#moveto)
-    - [LineTo](#lineto)
-    - [Horizontal LineTo](#horizontal-lineto)
-    - [Vertical LineTo](#vertical-lineto)
-    - [Cubic Bézier](#cubic-bézier)
-    - [Smooth Cubic Bézier](#smooth-cubic-bézier)
-    - [Quadratic Bézier](#quadratic-bézier)
-    - [Smooth Quadratic Bézier](#smooth-quadratic-bézier)
-    - [Arc](#arc)
-    - [Close Path](#close-path)
-    - [Ellipse Figure](#ellipse-figure)
-    - [Polygon Figure](#polygon-figure)
-    - [Rectangle Figure](#rectangle-figure)
-    - [RoundedRectangle Figure](#roundedrectangle-figure)
-  - [CanvasBrush Mini Language](#canvasbrush-mini-language)
-    - [ICanvasBrush Attribute Commands](#icanvasbrush-attribute-commands)
-      - [Start Point](#start-point)
-      - [End Point](#end-point)
-      - [Opacity](#opacity)
-      - [Alpha Mode](#alpha-mode)
-      - [Buffer Precision](#buffer-precision)
-      - [Edge Behavior](#edge-behavior)
-      - [Pre Interpolation Color Space](#pre-interpolation-color-space)
-      - [Post Interpolation Color Space](#post-interpolation-color-space)
-      - [Origin Offset](#origin-offset)
-      - [GradientStop](#gradientstop)
-      - [GradientStopHdr](#gradientstophdr)
-    - [SolidColorBrush](#solidcolorbrush)
-    - [LinearGradientBrush](#lineargradientbrush)
-    - [LinearGradientBrush with GradientStopHdr](#lineargradientbrush-with-gradientstophdr)
-    - [RadialGradientBrush](#radialgradientbrush)
-    - [RadialGradientBrush with GradientStopHdr](#radialgradientbrush-with-gradientstophdr)
-  - [CanvasStrokeStyle Mini Language](#canvasstrokestyle-mini-language)
-    - [CanvasStrokeStyle Attributes](#canvasstrokestyle-attributes)
-      - [Dash Style](#dash-style)
-      - [Line Join](#line-join)
-      - [Miter Limit](#miter-limit)
-      - [Dash Offset](#dash-offset)
-      - [Start Cap](#start-cap)
-      - [End Cap](#end-cap)
-      - [Dash Cap](#dash-cap)
-      - [Transform Behavior](#transform-behavior)
-      - [Custom Dash Style](#custom-dash-style)
-    - [Defining the CanvasStrokeStyle](#defining-the-canvasstrokestyle)
-  - [CanvasStroke Mini Language](#canvasstroke-mini-language)
-    - [ICanvasStroke interface and CanvasStroke class](#icanvasstroke-interface-and-canvasstroke-class)
-- [Creating Geometries, Brushes, Strokes and StrokeStyles](#creating-geometries-brushes-strokes-and-strokestyles)
-
 # Introduction
 
-The `CanvasGeometry` class (in the `Microsoft.Graphics.Canvas.Geometry` namespace) facilitates the drawing and manipulation of complex geometrical shapes. These shapes can be outlined with a stroke and filled with a brush (which can be a solid color, a bitmap pattern or a gradient).
+The _Win2D Path Mini Language_ is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes and stroke styles in a more compact manner.
 
-While the `CanvasGeometry` class provides various static methods to create predefined shapes like Circle, Ellipse, Rectangle, RoundedRectangle, the `CanvasPathBuilder` class provides several methods to create freeform CanvasGeometry objects.
-
-Creation of a complex freeform geometric shape may involve invoking of several CanvasPathBuilder commands. For example, the following code shows how to create a triangle geometry using `CanvasPathBuilder`
-
-```cs
-CanvasPathBuilder pathBuilder = new CanvasPathBuilder(device);
-pathBuilder.BeginFigure(1, 1);
-pathBuilder.AddLine(300, 300);
-pathBuilder.AddLine(1, 300);
-pathBuilder.EndFigure(CanvasFigureLoop.Closed);
-CanvasGeometry triangleGeometry = CanvasGeometry.CreatePath(pathBuilder);
-```
-
-`Win2d Path Mini Language` is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes and stroke styles in a more compact manner.
-
-Using Win2d Path Mini Language, the geometry in above example can be created in the following way
+Using the Win2D Path Mini Language, the geometry from the initial [CanvasPathGeometry](CanvasPathGeometry.md) example can be created in the following way:
 
 ```cs
 string pathData = “M 1 1 300 300 1 300 Z”;
@@ -93,9 +25,64 @@ CanvasGeometry triangleGeometry = CanvasPathGeometry.CreateGeometry(device, path
 | Namespace     | Microsoft.Toolkit.Uwp.UI.Media.Geometry                                                          |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Media](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Media/) |
 
-# Win2d Path Mini Language
+## Table of Contents
 
-Win2d Path Mini Language syntax derives from the SVG path syntax. It is a prefix notation (i.e., commands followed by parameters). In order to ensure that the data, specified in Win2d Path Mini Language, is concise the following rules must be followed
+- [Introduction](#introduction)
+  - [Requirements](#requirements)
+- [Win2D Path Mini Language](#Win2D-path-mini-language)
+- [Path Mini Language](#path-mini-language)
+  - [Fill Behavior](#fill-behavior)
+  - [MoveTo](#moveto)
+  - [LineTo](#lineto)
+  - [Horizontal LineTo](#horizontal-lineto)
+  - [Vertical LineTo](#vertical-lineto)
+  - [Cubic Bézier](#cubic-bézier)
+  - [Smooth Cubic Bézier](#smooth-cubic-bézier)
+  - [Quadratic Bézier](#quadratic-bézier)
+  - [Smooth Quadratic Bézier](#smooth-quadratic-bézier)
+  - [Arc](#arc)
+  - [Close Path](#close-path)
+  - [Ellipse Figure](#ellipse-figure)
+  - [Polygon Figure](#polygon-figure)
+  - [Rectangle Figure](#rectangle-figure)
+  - [RoundedRectangle Figure](#roundedrectangle-figure)
+- [CanvasBrush Mini Language](#canvasbrush-mini-language)
+  - [ICanvasBrush Attribute Commands](#icanvasbrush-attribute-commands)
+    - [Start Point](#start-point)
+    - [End Point](#end-point)
+    - [Opacity](#opacity)
+    - [Alpha Mode](#alpha-mode)
+    - [Buffer Precision](#buffer-precision)
+    - [Edge Behavior](#edge-behavior)
+    - [Pre Interpolation Color Space](#pre-interpolation-color-space)
+    - [Post Interpolation Color Space](#post-interpolation-color-space)
+    - [Origin Offset](#origin-offset)
+    - [GradientStop](#gradientstop)
+    - [GradientStopHdr](#gradientstophdr)
+  - [SolidColorBrush](#solidcolorbrush)
+  - [LinearGradientBrush](#lineargradientbrush)
+  - [LinearGradientBrush with GradientStopHdr](#lineargradientbrush-with-gradientstophdr)
+  - [RadialGradientBrush](#radialgradientbrush)
+  - [RadialGradientBrush with GradientStopHdr](#radialgradientbrush-with-gradientstophdr)
+- [CanvasStrokeStyle Mini Language](#canvasstrokestyle-mini-language)
+  - [CanvasStrokeStyle Attributes](#canvasstrokestyle-attributes)
+    - [Dash Style](#dash-style)
+    - [Line Join](#line-join)
+    - [Miter Limit](#miter-limit)
+    - [Dash Offset](#dash-offset)
+    - [Start Cap](#start-cap)
+    - [End Cap](#end-cap)
+    - [Dash Cap](#dash-cap)
+    - [Transform Behavior](#transform-behavior)
+    - [Custom Dash Style](#custom-dash-style)
+  - [Defining the CanvasStrokeStyle](#defining-the-canvasstrokestyle)
+- [CanvasStroke Mini Language](#canvasstroke-mini-language)
+  - [ICanvasStroke interface and CanvasStroke class](#icanvasstroke-interface-and-canvasstroke-class)
+- [Creating Geometries, Brushes, Strokes and StrokeStyles](#creating-geometries-brushes-strokes-and-strokestyles)
+
+## Win2D Path Mini Language
+
+Win2D Path Mini Language syntax derives from the SVG path syntax. It is a prefix notation (i.e., commands followed by parameters). In order to ensure that the data, specified in Win2D Path Mini Language, is concise the following rules must be followed
 
 - The commands are can be expressed as `one` , `two` or `three` characters (e.g., a `Move` command is expressed as an `M` , a LinearGradientBrush command is expressed as `LG` ).
 - Superfluous white space and separators such as commas can be eliminated (e.g., `M 100 100 L 200` `200` contains unnecessary spaces and could be expressed more compactly as `M100 100L200 200` ).
@@ -341,13 +328,13 @@ Adds a RoundedRectangle to the path. ( `x y` ) denotes the top left corner of th
 
 ## CanvasBrush Mini Language
 
-This section describes in detail how a Win2d brush can be defined as a string and an instance created from it. Using the CanvasBrush Mini Language the following Win2d brushes can be created (they all implement the `ICanvasBrush` interface)
+This section describes in detail how a Win2D brush can be defined as a string and an instance created from it. Using the CanvasBrush Mini Language the following Win2D brushes can be created (they all implement the `ICanvasBrush` interface)
 
 - `SolidColorBrush`
 - `CanvasLinearGradientBrush`
 - `CanvasRadialGradientBrush`
 
-The Win2d Path Mini Language uses the following syntax to define a brush and its attributes
+The Win2D Path Mini Language uses the following syntax to define a brush and its attributes
 
 | Format                                                                     |
 | -------------------------------------------------------------------------- |
@@ -389,7 +376,7 @@ Denotes the opacity of the brush. The `opacity` parameter should have a value in
 | --------- |
 | `A` [012] |
 
-Specifies the way in which an alpha channel affects color channels. This attribute corresponds to the [CanvasAlphaMode](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasAlphaMode.htm) enumeration. Default is `0` ( `Premultiplied` ).
+Specifies the way in which an alpha channel affects color channels. This attribute corresponds to the [CanvasAlphaMode](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasAlphaMode.htm) enumeration. Default is `0` ( `Premultiplied` ).
 
 | Member          |     | Description                                                                                                                                                                                                                                                     |
 | --------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -404,7 +391,7 @@ Specifies the way in which an alpha channel affects color channels. This attribu
 | `B` [01234] |
 
 Specifies the bit depth used for graphical computations. This attribute corresponds to the
-[CanvasBufferPrecision](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasBufferPrecision.htm|) | enumeration |. Default is `0` ( |`Precision8UIntNormalized` ).
+[CanvasBufferPrecision](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasBufferPrecision.htm|) | enumeration |. Default is `0` ( |`Precision8UIntNormalized` ).
 
 | Value                          | Member | Description                                                 |
 | ------------------------------ | ------ | ----------------------------------------------------------- |
@@ -420,7 +407,7 @@ Specifies the bit depth used for graphical computations. This attribute correspo
 | --------- |
 | `E` [012] |
 
-Specifies the behavior for pixels which fall outside of the gradient's typical rendering area. This attribute corresponds to the [CanvasEdgeBehavior](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasEdgeBehavior.htm) enumeration. Default is `0` ( `Clamp` ).
+Specifies the behavior for pixels which fall outside of the gradient's typical rendering area. This attribute corresponds to the [CanvasEdgeBehavior](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasEdgeBehavior.htm) enumeration. Default is `0` ( `Clamp` ).
 
 | Member | Value | Description                                                 |
 | ------ | ----- | ----------------------------------------------------------- |
@@ -651,7 +638,7 @@ The stroke style describes whether the line comprises of dashes, dots, or solid 
 
 This section describes in detail how a `CanvasStrokeStyle` can be defined as a string and a `CanvasStrokeStyle` instance created from it.
 
-The Win2d Path Mini Language uses the following format to define a CanvasStrokeStyle and its attributes
+The Win2D Path Mini Language uses the following format to define a CanvasStrokeStyle and its attributes
 
 | Format                                                                     |
 | -------------------------------------------------------------------------- |
@@ -671,7 +658,7 @@ This section describes the various stroke attributes that are used to define and
 | `DS` [01234] |
 
 Describes the sequence of dashes, dots, and gaps in a stroke style. This attribute is ignored if the
-`CustomDashStyle` attribute is set. This attribute corresponds to the [CanvasDashStyle](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasDashStyle.htm) enumeration. Default
+`CustomDashStyle` attribute is set. This attribute corresponds to the [CanvasDashStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasDashStyle.htm) enumeration. Default
 value is `0` ( `Solid` ).
 
 | Member     | Value | Description                                                                                                                                                                      |
@@ -688,7 +675,7 @@ value is `0` ( `Solid` ).
 | ----------- |
 | `LJ` [0123] |
 
-Describes the shape that joins two lines or segments. This attribute corresponds to the [CanvasLineJoin](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasLineJoin.htm)
+Describes the shape that joins two lines or segments. This attribute corresponds to the [CanvasLineJoin](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasLineJoin.htm)
 enumeration. Default value is `0` (`Miter`).
 
 | Member       | Value | Description                                                                                                |
@@ -721,7 +708,7 @@ Describes how far into the dash sequence the stroke will start.
 | `SC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
 
 | Member   | Value | Description                                                                                   |
 | -------- | ----- | --------------------------------------------------------------------------------------------- |
@@ -737,7 +724,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | `EC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
 
 | Member   | Value | Description                                                                                   |
 | -------- | ----- | --------------------------------------------------------------------------------------------- |
@@ -753,7 +740,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | `DC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` ( `Flat` ).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` ( `Flat` ).
 
 | Member   | Value | Description                                                                                                                                    |
 | -------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -768,7 +755,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | ---------- |
 | `TB` [012] |
 
-Describes how the world transforms, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
+Describes how the world transforms, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
 
 | Member   | Value | Description                                                                                                                   |
 | -------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -784,7 +771,8 @@ Describes how the world transforms, dots per inch (DPI), and stroke width affect
 
 Describes an array describing a custom dash pattern. The array elements specify the length of each dash and space in the pattern. The first element sets the length of a dash, the second element sets the length of a space, and the third element sets the length of a dash, and so on. The length of each dash and space in the dash pattern is the product of the element value in the array and the stroke width.
 
-**Note**: This overrides the `DashStyle` property, which is only used when `CustomDashStyle` is set to null.
+> [!NOTE]
+> This overrides the `DashStyle` property, which is only used when `CustomDashStyle` is set to null.
 
 **This array must contain an even number of elements.**
 
@@ -804,7 +792,8 @@ Using the attributes defined in the previous section the CanvasStrokeStyle can b
 
 All the attributes of `CanvasStrokeStyle` are optional. If none of the attributes is specified in the `CanvasStrokeStyle` definition string, then the default `CanvasStrokeStyle` object is created.
 
-**Note**: While specifying the attributes, the order of the attributes must be maintained.
+> [!NOTE]
+> While specifying the attributes, the order of the attributes must be maintained.
 
 Example:
 
@@ -818,7 +807,7 @@ Example:
 
 ### ICanvasStroke interface and CanvasStroke class
 
-In Win2d, the stroke, that is used to render an outline to a CanvasGeometry, is comprised of three components
+In Win2D, the stroke, that is used to render an outline to a CanvasGeometry, is comprised of three components
 
 - Stroke Width – defines the width of the stroke.
 - Stroke Brush – defines the `ICanvasBrush` that will be used to render the stroke.
@@ -865,8 +854,10 @@ Example:
 “ST 2 SC #ff0000”
 ```
 
-# Creating Geometries, Brushes, Strokes and StrokeStyles
+## Creating Geometries, Brushes, Strokes and StrokeStyles
 
 To create instances of CanvasGeomety, Brushes, CanvasStrokes, and CanvasStrokeStyles you can use the `CanvasPathGeometry` class in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
 
-[More details about `CanvasPathGeometry` class here.](https://raw.githubusercontent.com/MicrosoftDocs/WindowsCommunityToolkitDocs/master/docs/parsers/CanvasPathGeometry.md)
+## Related Topics
+
+* [More details about `CanvasPathGeometry` class here.](CanvasPathGeometry.md)

@@ -1,8 +1,8 @@
 ---
-title:
+title: CanvasPathGeometry Drawing
 author: ratishphilip
-description: describe your control in one sentence
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, win2d, win2d path mini language
+description: The CanvasPathGeometry class facilitates the drawing and manipulation of complex geometrical shapes.
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Win2D, Win2D path mini language
 dev_langs:
   - csharp
 ---
@@ -24,37 +24,12 @@ pathBuilder.EndFigure(CanvasFigureLoop.Closed);
 CanvasGeometry triangleGeometry = CanvasGeometry.CreatePath(pathBuilder);
 ```
 
-**Win2d Path Mini Language** is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes, and stroke styles in a more compact manner.
+The `CanvasPathGeometry` class provides several static methods that parse the [Win2D Mini Language](Win2D_Path_Mini_Language.md) and instantiate the complex geometries, color, brushes, strokes, and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
 
-[More details about Win2d Path Mini Language](https://raw.githubusercontent.com/MicrosoftDocs/WindowsCommunityToolkitDocs/master/docs/parsers/Win2d_Path_Mini_Language.md)
+> [!div class="nextstepaction"]
+> [try it in the sample app](uwpct://Helpers?sample=CanvasPathGeometryPage)
 
-The `CanvasPathGeometry` class provides several static methods that parse the Win2d Mini Language and instantiate the complex geometries, color, brushes, strokes, and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
-
-Using Win2d Path Mini Language, the geometry in the above example can be created in the following way
-
-```cs
-string pathData = “M 1 1 300 300 1 300 Z”;
-CanvasGeometry triangleGeometry = CanvasPathGeometry.CreateGeometry(device, pathData);
-```
-
-> [!div class="nextstepaction"][try it in the sample app](uwpct://Helpers?sample=CanvasPathGeometryPage)
-
-## Sample Project
-
-<!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-
-[CanvasPathGeometry Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CanvasPathGeometry/CanvasPathGeometryPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=CanvasPathGeometryPage) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
-
-## Requirements
-
-| Device family | Universal, MinVersion or higher                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------ |
-| Namespace     | Microsoft.Toolkit.Uwp.UI.Media.Geometry                                                          |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI.Media](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Media/) |
-
-## API
-
-- [CanvasPathGeometry](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Geometry/CanvasPathGeometry.cs)
+## Examples
 
 ### Creating CanvasGeometry with CanvasPathGeometry
 
@@ -206,7 +181,7 @@ A [Squircle](https://en.wikipedia.org/wiki/Squircle) is an intermediate shape be
 
 ![Squircle Demo](../resources/images/Squircle.gif)
 
-The following extension methods help to create a Squircle in Composition layer or using Win2d.
+The following extension methods help to create a Squircle in Composition layer or using Win2D.
 
 ```cs
 // CanvasPathGeometry
@@ -221,3 +196,20 @@ public static void FillSquircle(this CanvasDrawingSession session, float x, floa
 public static void FillSquircle(this CanvasDrawingSession session, float x, float y, float w, float h, float radiusX, float radiusY, Vector2 offset, Color color);
 public static void FillSquircle(this CanvasDrawingSession session, float x, float y, float w, float h, float radiusX, float radiusY, Vector2 offset, ICanvasBrush brush);
 ```
+
+## Sample Project
+
+<!-- Link to the sample page in the Windows Community Toolkit Sample App -->
+
+[CanvasPathGeometry Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CanvasPathGeometry/CanvasPathGeometryPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=CanvasPathGeometryPage) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+
+## Requirements
+
+| Device family | Universal, MinVersion or higher                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------ |
+| Namespace     | Microsoft.Toolkit.Uwp.UI.Media.Geometry                                                          |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI.Media](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Media/) |
+
+## API
+
+- [CanvasPathGeometry Source Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Geometry/CanvasPathGeometry.cs)
