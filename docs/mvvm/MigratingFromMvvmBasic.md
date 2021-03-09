@@ -12,6 +12,8 @@ dev_langs:
 
 This article explains how to migrate apps built with the [MVVM](https://github.com/microsoft/WindowsTemplateStudio/blob/dev/docs/UWP/frameworks/mvvmbasic.md) Basic option in [Windows Template Studio](https://marketplace.visualstudio.com/items?itemName=WASTeamAccount.WindowsTemplateStudio) to use the Toolkit MVVM library instead. It applies to both UWP and WPF apps created with Windows Template Studio.
 
+> **Platform APIs:** [`ObservableObject`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.mvvm.componentmodel.ObservableObject), [`RelayCommand`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.mvvm.input.RelayCommand)
+
 This article focuses exclusively on migration and does not cover how to use the additional functionality that the library provides.
 
 ## Installing the WCT MVVM Toolkit
@@ -21,13 +23,13 @@ To use the Windows Community Toolkit MVVM framework, you must install the NuGet 
 ### Install via .NET CLI
 
 ```
-dotnet add package Microsoft.Toolkit.Mvvm --version x.x.x
+dotnet add package Microsoft.Toolkit.Mvvm --version 7.0.0
 ```
 
 ### Install via PackageReference
 
-```
-<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="x.x.x" />
+```xml
+<PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.0.0" />
 ```
 
 ## Updating a project
@@ -56,9 +58,9 @@ Delete both of these files.
 
 If you try and build the project at this point you will see lots of errors. These can be useful for identifying files that require changes.
 
-### 2. Replace Use of `Observable`
+### 2. Replace use of `Observable`
 
-The `Observable` class was used as a base class for ViewModels. The MVVM Toolkit contains a similar class with additional functionality that is called `ObservableObject`.
+The `Observable` class was used as a base class for ViewModels. The MVVM Toolkit contains a similar class with additional functionality that is called [`ObservableObject`](ObservableObject.md).
 
 Change all classes that previously inherited from `Observable` to inherit from `ObservableObject`.
 
@@ -84,7 +86,7 @@ will become
 
 ### 3. Add new namespace references
 
-Add a reference to the `Microsoft.Toolkit.Mvvm.ComponentMode` namespace in all files where there is a reference to `ObservableObject`.
+Add a reference to the `Microsoft.Toolkit.Mvvm.ComponentModel` namespace in all files where there is a reference to `ObservableObject`.
 
 You can either add the appropriate directive manually, of move the cursor to the `ObservableObject` and press `Ctrl+.` to access the Quick Action menu to add this for you.
 
@@ -95,7 +97,7 @@ using Microsoft.Toolkit.Mvvm.ComponentModel;
 Imports Microsoft.Toolkit.Mvvm.ComponentModel
 ```
 
-Add a reference to the `Microsoft.Toolkit.Mvvm.Input` namespace in all files where there is a reference to `RelayCommand`.
+Add a reference to the `Microsoft.Toolkit.Mvvm.Input` namespace in all files where there is a reference to [`RelayCommand`](RelayCommand.md).
 
 You can either add the appropriate directive manually, of move the cursor to the `RelayCommand` and press `Ctrl+.` to access the Quick Action menu to add this for you.
 
