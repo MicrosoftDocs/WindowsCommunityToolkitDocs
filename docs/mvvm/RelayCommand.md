@@ -70,4 +70,4 @@ The `Button` binds to the `ICommand` in the viewmodel, which wraps the private `
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.Shared/Mvvm).
+You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm).
