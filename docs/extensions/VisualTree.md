@@ -1,7 +1,7 @@
 ---
 title: Visual Tree Extensions
 author: nmetulev
-description: The VisualTree extensions provide a collection of extensions methods for UI controls. It provides DependencyObject extensions to aid in using the VisualTreeHelper class.
+description: The VisualTree extensions provide a collection of extensions methods for UI controls. It provides DependencyObject extensions to aid in using the VisualTreeHelper class (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Visual Tree, extentions
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Visual Tree Extensions
+
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`DependencyObjectExtensions`](DependencyObjectExtensions.md) type instead.
 
 The [VisualTree extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.visualtree) provide a collection of extensions methods for UI controls.
 

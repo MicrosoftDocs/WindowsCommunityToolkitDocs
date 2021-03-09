@@ -1,7 +1,7 @@
 ---
 title: Logical Tree Extensions
 author: nmetulev
-description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures.
+description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Logical Tree, extentions
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Logical Tree Extensions
+
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type instead.
 
 The [LogicalTree](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
 
