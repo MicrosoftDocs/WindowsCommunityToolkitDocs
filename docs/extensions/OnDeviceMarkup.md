@@ -13,6 +13,7 @@ The [OnDevice Markup Extension](https://docs.microsoft.com/dotnet/api/microsoft.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=OnDevice)
+
 ## Syntax
 
 **XAML**

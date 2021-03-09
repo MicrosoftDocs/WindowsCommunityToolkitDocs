@@ -203,6 +203,8 @@
 
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 
+## [Matrix Extensions](extensions/MatrixExtensions.md)
+
 ## [NullableBoolExtension](extensions/NullableBoolExtension.md)
 
 ## [OnDeviceExtension](extensions/OnDeviceExtension.md)
@@ -362,8 +364,6 @@
 ### [ArrayExtensions](extensions/ArrayExtensions.md)
 
 ### [Logical Tree](extensions/LogicalTree.md)
-
-### [Matrix Extensions](extensions/MatrixExtensions.md)
 
 ### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
 

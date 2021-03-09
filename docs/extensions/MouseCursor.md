@@ -13,6 +13,7 @@ The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/micro
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=Mouse)
+
 ## Syntax
 
 ```xaml
@@ -46,6 +47,7 @@ Here is a example of setting Mouse.Cursor
 
 > [!NOTE]
 > Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
+
 ## Limitations
 
 Because the UWP framework does not support metadata on Attached Properties, specifically the [FrameworkPropertyMetadata.Inherits](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the Mouse.Cursor might not work properly in some very specific XAML layout scenarios when combining nested FrameworkElements with different Mouse.Cursor values set on them.
