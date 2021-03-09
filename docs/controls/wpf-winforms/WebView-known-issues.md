@@ -54,7 +54,6 @@ The **WebView** control implements these events of the [IWebViewControl](https:/
 
   To workaround this issue, see the [Enable the WebView control to appear properly on high DPI displays](WebView.md#high-dpi) section of the [WebView](WebView.md) guide.
 
-
 ## Performance
 
 * **WebView** controls in WPF applications have longer load times than Windows Forms applications.

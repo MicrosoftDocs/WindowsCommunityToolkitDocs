@@ -34,7 +34,7 @@ The [BackdropSaturationBrush](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[BackdropSaturationBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSaturationBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSaturationBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BackdropSaturationBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSaturationBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSaturationBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

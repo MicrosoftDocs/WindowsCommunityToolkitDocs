@@ -1,7 +1,7 @@
 ---
 title: Logical Tree Extensions
 author: nmetulev
-description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures.
+description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Logical Tree, extentions
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Logical Tree Extensions
+
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type instead.
 
 The [LogicalTree](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
 
@@ -33,7 +36,7 @@ control = uiElement.FindChild<ListView>();
 // Find all logical child controls of the specified type.
 foreach (var child in uiElement.FindChildren<ListViewItem>())
 {
-	// ...
+    // ...
 }
 
 // Find first logical parent using its name.
@@ -45,6 +48,7 @@ control = uiElement.FindParent<Grid>();
 // Retrieves the Content for the specified control from whatever its 'Content' Property may be.
 var content = uiElement.GetContentControl();
 ```
+
 ```vb
 ' Include namespace to access extensions.
 Imports Microsoft.Toolkit.Uwp.UI.Extensions
@@ -74,10 +78,10 @@ Dim content = uiElement.GetContentControl()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| FindChild<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical child control of a specified type |
+| FindChild\<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical child control of a specified type |
 | FindChildByName(this FrameworkElement, String) | FrameworkElement | Find logical child control using its name |
-| FindChildren<T>(this FrameworkElement) | IEnumerable<T> where T : FrameworkElement | Find all logical child controls of the specified type |
-| FindParent<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical parent control of a specified type |
+| FindChildren\<T>(this FrameworkElement) | IEnumerable\<T> where T : FrameworkElement | Find all logical child controls of the specified type |
+| FindParent\<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical parent control of a specified type |
 | FindParentByName(this FrameworkElement, String) | FrameworkElement | Finds the logical parent element with the given name or returns null |
 | GetContentControl(this FrameworkElement) | UIElement | Retrieves the Content control of this element as defined by the ContentPropertyAttribute |
 
@@ -94,4 +98,4 @@ Dim content = uiElement.GetContentControl()
 
 ## Related Topics
 
-- [VisualTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/visualtree)
+* [VisualTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/visualtree)

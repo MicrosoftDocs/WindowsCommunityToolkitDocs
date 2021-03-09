@@ -34,7 +34,7 @@ The [BackdropBlurBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[BackdropBlurBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropBlurBrush). You can [see this in action](uwpct://Brushes?sample=BackdropBlurBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BackdropBlurBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropBlurBrush). You can [see this in action](uwpct://Brushes?sample=BackdropBlurBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

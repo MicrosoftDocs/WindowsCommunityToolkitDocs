@@ -21,8 +21,8 @@ You can show or hide this content by interacting with the Header.
 
 <controls:Expander Header="Header of the expander" Foreground="White"
                    Background="Gray" IsExpanded="True">
-	<!-- Expander content -->
-</controls:Expander>       
+  <!-- Expander content -->
+</controls:Expander>
 ```
 
 ## Sample Output
@@ -94,7 +94,7 @@ For instance to remove the header entirely from the Expander:
 
 ## Sample Project
 
-[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -109,9 +109,9 @@ For instance to remove the header entirely from the Expander:
 
 ## API
 
-* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander)
+* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander)
 
 ## Related Topics
 
 * [HeaderedControlControl](HeaderedContentControl.md)
-* [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)
+* [ToggleButton](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)

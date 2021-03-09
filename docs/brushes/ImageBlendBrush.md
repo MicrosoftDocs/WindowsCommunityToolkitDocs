@@ -39,7 +39,7 @@ The [ImageBlendBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## Sample Project
 
-[ImageBlendBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageBlendBrush). You can [see this in action](uwpct://Brushes?sample=ImageBlendBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ImageBlendBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageBlendBrush). You can [see this in action](uwpct://Brushes?sample=ImageBlendBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

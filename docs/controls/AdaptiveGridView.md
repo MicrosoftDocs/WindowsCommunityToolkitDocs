@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# AdaptiveGridView XAML Control 
+# AdaptiveGridView XAML Control
 
 The [AdaptiveGridView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
 
@@ -106,6 +106,7 @@ There are 3 ways to use this Control:
             }
         }
         ```
+
         ```vb
         Public Class AspectContentControl
             Inherits ContentControl
@@ -142,7 +143,7 @@ There are 3 ways to use this Control:
 
 ## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -153,7 +154,7 @@ There are 3 ways to use this Control:
 
 ## API
 
-- [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/AdaptiveGridView)
+- [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
 
 ## Related Topics
 

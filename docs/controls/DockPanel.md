@@ -42,7 +42,7 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 
 ## Sample Project
 
-[DockPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can [see this in action](uwpct://Controls?sample=DockPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[DockPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can [see this in action](uwpct://Controls?sample=DockPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -53,4 +53,4 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 
 ## API Source Code
 
-* [DockPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DockPanel)
+* [DockPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/DockPanel)

@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # LayoutTransformControl
 
-The [LayoutTransformControl](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.uwp.ui.controls.layouttransformcontrol) is a control that applies Matrix transformations on any `FrameworkElement` of your application.
+The [LayoutTransformControl](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.layouttransformcontrol) is a control that applies Matrix transformations on any `FrameworkElement` of your application.
 
 The transformations that can be applied are one of the following:
 
@@ -21,8 +21,6 @@ The transformations that can be applied are one of the following:
 > [Try it in the sample app](uwpct://Controls?sample=LayoutTransformControl)
 
 ## Syntax
-
-**XAML**
 
 ```xaml
 <controls:LayoutTransformControl Background="Black" 
@@ -53,18 +51,18 @@ The transformations that can be applied are one of the following:
 
 ## Sample Project
 
-[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370#device-families) | Universal, 10.0.16299.0 or higher   |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370#device-families) | Universal, 10.0.16299.0 or higher   |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
 
 ## API
 
-*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/LayoutTransformControl)
+*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
 
 ## Related Topics
 

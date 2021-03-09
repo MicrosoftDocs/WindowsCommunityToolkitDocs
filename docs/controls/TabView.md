@@ -8,6 +8,7 @@ dev_langs:
 ---
 
 # TabView XAML Control
+
 The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 > [!div class="nextstepaction"]
@@ -71,6 +72,7 @@ The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.con
 | TabDraggedOutside | Fires when a Tab is dragged outside of the Tab bar. |
 
 ### TabViewItem Events
+
 | Events | Description |
 | -- | -- |
 | TabClosing | Fires when a Tab's closed button is clicked. |
@@ -124,11 +126,11 @@ The TabView supports data binding as well.  The following example shows binding 
 ```
 
 > [!NOTE]
-> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
 
 ## Sample Project
 
-[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -143,10 +145,10 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## API
 
-- [TabView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView)
+- [TabView source code](https://github.com/microsoft/microsoft-ui-xaml/tree/master/dev/TabView)
 
 ## Related Topics
 
-- [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
-- [IconElement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.IconElement)
-- [TabControl (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tabcontrol)
+- [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1)
+- [IconElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.IconElement)
+- [TabControl (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.controls.tabcontrol)

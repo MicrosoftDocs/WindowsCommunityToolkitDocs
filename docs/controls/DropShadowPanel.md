@@ -53,6 +53,7 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
         // Change something to counter the lack of drop shadow
     }
     ```
+
     ```vb
     If Not DropShadowPanel.IsSupported Then
         ' Change something to counter the lack of drop shadow
@@ -61,7 +62,7 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -76,4 +77,4 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## API
 
-* [DropShadowPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel)
+- [DropShadowPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel)

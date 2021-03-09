@@ -13,7 +13,7 @@ dev_langs:
 The [DeepLinkParser Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.deeplinkparser) provides a way to create, from `IActivatedEventArgs` a `Dictionary<string,string>`-inheriting object that provides an additional `.Root` property to pull the base path of the URI (eg: in `MainPage/Options?option1=value1`, `.Root` would be `MainPage/Options`.
 Once you have an instance, simply saying `instance["optionName"]` will pull the value from the querystring for that option.
 
-### Properties
+## Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
@@ -48,6 +48,7 @@ if (e.PrelaunchActivated == false)
         }
 ...
 ```
+
 ```vb
 If e.PrelaunchActivated = False Then
     If rootFrame.Content Is Nothing Then
@@ -87,6 +88,7 @@ if (e.PrelaunchActivated == false)
         }
 ...
 ```
+
 ```vb
 If e.PrelaunchActivated = False Then
     If rootFrame.Content Is Nothing Then
@@ -112,15 +114,16 @@ The [QueryParameterCollection](https://docs.microsoft.com/dotnet/api/microsoft.t
 ### Example
 
 ```csharp
-var myUrl = "http://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
+var myUrl = "https://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
 var paramCollection = new QueryParameterCollection(myUrl);
 foreach (var pair in paramCollection)
 {
     Console.WriteLine($"{pair.Key} - {pair.Value}");
 }
 ```
+
 ```vb
-Dim myUrl = "http://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
+Dim myUrl = "https://microsoft.com/?user=fooUser&email=fooUser@outlook.com&firstName=John&lastName=Doe"
 Dim paramCollection = New QueryParameterCollection(myUrl)
 For Each pair In paramCollection
     Console.WriteLine($"{pair.Key} - {pair.Value}")

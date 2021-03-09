@@ -19,11 +19,11 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
 <controls:RotatorTile x:Name="Tile1"
-	Background="LightGray"
-	Direction="Up" 
-	Width="400"
-	Height="200"
-	Margin="20"/>
+    Background="LightGray"
+    Direction="Up"
+    Width="400"
+    Height="200"
+    Margin="20"/>
 ```
 
 ## Example Image
@@ -43,7 +43,7 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Project
 
-[RotatorTile Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can [see this in action](uwpct://Controls?sample=RotatorTile) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RotatorTile Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can [see this in action](uwpct://Controls?sample=RotatorTile) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -58,4 +58,4 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## API
 
-* [RotatorTile source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile)
+* [RotatorTile source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile)

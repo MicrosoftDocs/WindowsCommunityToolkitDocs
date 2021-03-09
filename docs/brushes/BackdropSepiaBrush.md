@@ -34,7 +34,7 @@ The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## Sample Project
 
-[BackdropSepiaBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSepiaBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSepiaBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BackdropSepiaBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSepiaBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSepiaBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

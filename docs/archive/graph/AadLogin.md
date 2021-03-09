@@ -1,11 +1,14 @@
 ---
 title: AadLogin Control
 author: OGcanviz
-description: The AadLogin Control leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph.
+description: The AadLogin Control leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, AadLogin Control
 ---
 
 # AadLogin Control
+
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [LoginButton](../../graph/controls/LoginButton.md) control.)
 
 The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.aadlogin) leverages existing .NET login libraries to support basic AAD sign-in processes for Microsoft Graph, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
@@ -54,9 +57,9 @@ The [AadLogin Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.u
 
 ## Sample Code
 
-First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
+First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
-```c#
+```csharp
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;
 
 MicrosoftGraphService.Instance.Initialize(
@@ -66,7 +69,7 @@ MicrosoftGraphService.Instance.Initialize(
 );
 ```
 
-[AadLogin Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AadLogin). You can [see this in action](uwpct://Controls?sample=AadLogin) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AadLogin Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AadLogin). You can [see this in action](uwpct://Controls?sample=AadLogin) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
@@ -78,7 +81,3 @@ MicrosoftGraphService.Instance.Initialize(
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
-
-## API
-
-* [AadLogin source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/AadLogin)

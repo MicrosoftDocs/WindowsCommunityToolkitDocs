@@ -1,0 +1,318 @@
+<Type Name="MemoryOwner&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class MemoryOwner&lt;T&gt; : IDisposable, System.Buffers.IMemoryOwner&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MemoryOwner`1&lt;T&gt; extends System.Object implements class System.Buffers.IMemoryOwner`1&lt;!T&gt;, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryOwner(Of T)&#xA;Implements IDisposable, IMemoryOwner(Of T)" />
+  <TypeSignature Language="F#" Value="type MemoryOwner&lt;'T&gt; = class&#xA;    interface IMemoryOwner&lt;'T&gt;&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Buffers.IMemoryOwner&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerDisplay("{ToString(),raw}")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryOwnerDebugView`1))</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items to store in the current instance.</typeparam>
+    <summary>
+            An <see cref="T:System.Buffers.IMemoryOwner`1" /> implementation with an embedded length and a fast <see cref="T:System.Span`1" /> accessor.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt; Allocate (int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1&lt;!T&gt; Allocate(int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Allocate(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer) As MemoryOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int -&gt; Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Allocate size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt; Allocate (int size, Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1&lt;!T&gt; Allocate(int32 size, valuetype Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Allocate(System.Int32,Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, mode As AllocationMode) As MemoryOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode -&gt; Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Allocate (size, mode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="mode" Type="Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="mode">Indicates the allocation mode to use for the new buffer to rent.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReference">
+      <MemberSignature Language="C#" Value="public ref T DangerousGetReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.DangerousGetReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetReference () As T" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetReference : unit -&gt; 'T" Usage="memoryOwner.DangerousGetReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a reference to the first element within the current instance, with no bounds check.
+            </summary>
+        <returns>A reference to the first element within the current instance.</returns>
+        <remarks>
+            This method does not perform bounds checks on the underlying buffer, but does check whether
+            the buffer itself has been disposed or not. This check should not be removed, and it's also
+            the reason why the method to get a reference at a specified offset is not present.
+            </remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown when the buffer in use has already been disposed.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryOwner.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt; Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As MemoryOwner(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an empty <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~MemoryOwner ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="memoryOwner.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Finalizes an instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of items in the current instance
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Memory">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Memory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; Memory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Memory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Memory As Memory(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Memory : Memory&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Memory" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Buffers.IMemoryOwner`1.Memory</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt; Slice (int start, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1&lt;!T&gt; Slice(int32 start, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Slice(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (start As Integer, length As Integer) As MemoryOwner(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int -&gt; Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;" Usage="memoryOwner.Slice (start, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="start">The starting offset within the current buffer.</param>
+        <param name="length">The length of the buffer to use.</param>
+        <summary>
+            Slices the buffer currently in use and returns a new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance using the target range of items.</returns>
+        <remarks>
+            Using this method will dispose the current instance, and should only be used when an oversized
+            buffer is rented and then adjusted in size, to avoid having to rent a new buffer of the new
+            size and copy the previous items into the new one, or needing an additional variable/field
+            to manually handle to track the used range within a given <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1" /> instance.
+            </remarks>
+        <exception cref="T:System.ObjectDisposedException">Thrown when the buffer in use has already been disposed.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="start" /> or <paramref name="length" /> are not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Span">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; Span { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Span`1&lt;!T&gt; Span" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.Span" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Span As Span(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Span : Span&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner&lt;'T&gt;.Span" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a <see cref="T:System.Span`1" /> wrapping the memory belonging to the current instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.MemoryOwner`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="memoryOwner.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

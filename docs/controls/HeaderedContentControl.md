@@ -28,7 +28,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## Sample Output
 
-![HeaderedContentControl](../resources/images/Controls/HeaderedContentControl.jpg)
+![HeaderedContentControl Sample](../resources/images/Controls/HeaderedContentControl.jpg)
 
 ## Properties
 
@@ -43,14 +43,14 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 - The `Header` property can be set to a string, or any xaml elements. If binding the `Header` to an object that is not a string, use the `HeaderTemplate` to control how the content is rendered.
 
     *Sample Code*
-    
+
     ```xaml
     <controls:HeaderedContentControl Header="This is the header!"/>
     
     <controls:HeaderedContentControl>
         <controls:HeaderedContentControl.Header>
             <Border Background="Gray">
-                <TextBlock Text="This is the header!" FontSize="16">
+                <TextBlock Text="This is the header!" FontSize="16" />
             </Border>
         </controls:HeaderedContentControl.Header>
     </<controls:HeaderedContentControl>
@@ -62,7 +62,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
     <controls:HeaderedContentControl Header="{Binding CustomObject}">
         <controls:HeaderedContentControl.HeaderTemplate>
             <DataTemplate>
-                <TextBlock Text="{Binding Title}">
+                <TextBlock Text="{Binding Title}" />
             </DataTemplate>
         </controls:HeaderedContentControl.HeaderTemplate>
     </<controls:HeaderedContentControl>
@@ -70,7 +70,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## Sample Project
 
-[HeaderedContentControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedContentControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -85,4 +85,4 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## API
 
-* [HeaderedContentControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl)
+- [HeaderedContentControl source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl)

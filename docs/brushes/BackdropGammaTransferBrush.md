@@ -1,7 +1,7 @@
 ---
 title: BackdropGammaTransferBrush
 author: michael-hawker
-description: The BackdropBlurBrush is a Brush that blurs whatever is behind it in the application.
+description: The BackdropGammaTransferBrush is a Brush which modifies the color values of whatever is behind it in the application.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, gamma, color
 ---
 
@@ -36,7 +36,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## Sample Code
 
-[BackdropGammaTransferBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BackdropGammaTransferBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

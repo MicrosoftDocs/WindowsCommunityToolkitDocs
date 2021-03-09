@@ -1,7 +1,7 @@
 ---
 title: GraphLogin Component
 author: AdamBraden
-description: Windows Forms component to authenticate with Azure AD v2 and the Microsoft Graph
+description: Windows Forms component to authenticate with Azure AD v2 and the Microsoft Graph (outdated docs).
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Windows Forms, GraphLogin 
 dev_langs:
   - csharp
@@ -9,25 +9,29 @@ dev_langs:
 ---
 
 # GraphLogin Component
+
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [LoginButton](../graph/controls/LoginButton.md) control.)
+
 <!-- Describe your control -->
 The GraphLogin component is a Windows Forms component that provides an easy to use experience for authenticating with Azure AD and the Microsoft Graph.  This component is being provided for Windows Forms developers that need a Microsoft Graph authentication solution on Windows 10 builds 1803 and earlier and on Windows 7.
 
 This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use Login experience.  The control then provides read-only properties about the logged on user and an instance of the **GraphServiceClient** which can be used for additional calls with the Microsoft Graph SDK.
 
 > [!IMPORTANT]
-> Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration.
-
+> Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see <https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration>.
 
 ## Syntax
+
 To use this sample code in a Windows Forms application, install the Microsoft.Toolkit.Win32.UI.Controls nuget package, and add a button, 2 labels, and a picturebox on the form.  Then drag a GraphLogin component from the toolbox on to the form, and enter the following code:
 
 ```csharp
 
-	using Microsoft.Toolkit.Services.Services.MicrosoftGraph;
+    using Microsoft.Toolkit.Services.Services.MicrosoftGraph;
 
 
-	// Instance of Microsoft Graph 
-	private GraphServiceClient graphClient = null;
+    // Instance of Microsoft Graph 
+    private GraphServiceClient graphClient = null;
 
         public Form1()
         {
@@ -54,6 +58,7 @@ To use this sample code in a Windows Forms application, install the Microsoft.To
             graphClient = graphLoginComponent1.GraphServiceClient;
         }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Services.Services.MicrosoftGraph
 
@@ -99,7 +104,6 @@ End Sub
 | Photo | System.Drawing.Image | Profile picture for the logged on user from the Microsoft Graph |
 | GraphServiceClient | Microsoft.Graph.GraphServiceClient | The GraphServiceClient instance for the logged on user from the Microsoft Graph |
 
-
 <!-- Use <remarks> tag in C# to give more info about a propertie. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks -->
 
 ## Methods
@@ -109,7 +113,6 @@ End Sub
 | Methods | Return Type | Description |
 | -- | -- | -- |
 | LoginAsync | bool | Returns true of success, false otherwise |
-
 
 ## Requirements
 

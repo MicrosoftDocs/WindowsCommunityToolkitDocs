@@ -77,6 +77,7 @@ person.Name = "Zaphod"; // Now a re-sort is triggered and person will be last in
 // AdvancedCollectionView can be bound to anything that uses collections. 
 YourListView.ItemsSource = acv;
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp.UI
 
@@ -132,11 +133,11 @@ YourListView.ItemsSource = acv
 |----------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 |      CanFilter       |                                                   bool                                                   |     Gets a value indicating whether this CollectionView can filter its items      |
 |       CanSort        |                                                   bool                                                   |      Gets a value indicating whether this CollectionView can sort its items       |
-|   CollectionGroups   |                                        IObservableVector<object>                                         |                           Gets the groups in collection                           |
+|   CollectionGroups   |                                        IObservableVector\<object>                                         |                           Gets the groups in collection                           |
 |        Count         |                                                   int                                                    |                              Get the count of items                               |
 |     CurrentItem      |                                                  object                                                  |                           Gets or sets the current item                           |
 |   CurrentPosition    |                                                   int                                                    |                         Gets the position of current item                         |
-|        Filter        |                                            Predicate<object>                                             |            Gets or sets the predicate used to filter the visible items            |
+|        Filter        |                                            Predicate\<object>                                             |            Gets or sets the predicate used to filter the visible items            |
 |     HasMoreItems     |                                                   bool                                                   |             Gets a value indicating whether the source has more items             |
 |  IsCurrentAfterLast  |                                                   bool                                                   |  Gets a value indicating whether the current item is after the last visible item  |
 | IsCurrentBeforeFirst |                                                   bool                                                   | Gets a value indicating whether the current item is before the first visible item |
@@ -196,6 +197,7 @@ using (acv.DeferRefresh())
     }
 } // acv.Refresh() gets called here
 ```
+
 ```vb
 Using acv.DeferRefresh()
     For i = 0 To 500 - 1
@@ -206,7 +208,7 @@ End Using ' acv.Refresh() gets called here
 
 ## Sample Project
 
-[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdvancedCollectionView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

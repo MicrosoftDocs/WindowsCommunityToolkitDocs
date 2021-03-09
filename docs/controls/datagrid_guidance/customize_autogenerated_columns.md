@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Customize Auto-Generated Columns in the DataGrid Control
 
-The [DataGrid](../datagrid.md) control supports the option to automatically generate columns based on the collection data bound through the **ItemsSource** property. 
+The [DataGrid](../datagrid.md) control supports the option to automatically generate columns based on the collection data bound through the **ItemsSource** property.
 
-```xml
+```xaml
 <controls:DataGrid AutoGenerateColumns="True"/>
 <!-- Autogenerates column headers and columns based on the Data model provided -->
 ```
@@ -21,7 +21,8 @@ You can handle the DataGrid's **AutoGeneratingColumn** event to modify, replace,
 ## To handle the AutoGeneratingColumn event
 
 1. Create an event handler for the DataGrid's **AutoGeneratingColumn** event.
-   ```C#
+
+   ```csharp
    private void dataGrid1_AutoGeneratingColumn(object sender, DataGridAutoGeneratingColumnEventArgs e)
    {
     //...
@@ -29,7 +30,8 @@ You can handle the DataGrid's **AutoGeneratingColumn** event to modify, replace,
    ```
 
 2. Add the event handler to the DataGrid instances events.
-   ```xml
+
+   ```xaml
    <controls:DataGrid x:Name="dataGrid1"
             AutoGenerateColumns="True"
             AutoGeneratingColumn="dataGrid1_AutoGeneratingColumn"/>
@@ -38,7 +40,8 @@ You can handle the DataGrid's **AutoGeneratingColumn** event to modify, replace,
 ## To modify a generated column
 
 In the AutoGeneratingColumn event handler, access the DataGridColumn properties by referencing the **DataGridAutoGeneratingColumnEventArgs.Column** property.
-```C#
+
+```csharp
 //Modify the header of the "Name" column
 if (e.Column.Header.ToString() == "Name")
 {
@@ -49,9 +52,10 @@ if (e.Column.Header.ToString() == "Name")
 ## To replace a generated column
 
 1. In the AutoGeneratingColumn event handler, create a new **DataGridColumn**.
-   ```C#
+
+   ```csharp
    //Replace the DueDate column with a custom template column.
-   if (e.PropertyName = "DueDate")
+   if (e.PropertyName == "DueDate")
    {
     //Create a new template column.
     var templateColumn = new DataGridTemplateColumn();
@@ -61,7 +65,8 @@ if (e.Column.Header.ToString() == "Name")
    ```
 
 2. Replace the column from the **DataGridAutoGeneratingColumnEventArgs.Column** property with the new **DataGridColumn** instance.
-   ```C#
+
+   ```csharp
    //Replace the auto-generated column with the templateColumn.
    e.Column = templateColumn;
    ```
@@ -69,7 +74,8 @@ if (e.Column.Header.ToString() == "Name")
 ## To cancel generation of a column
 
 Set the **Cancel** property to true.
-```C#
+
+```csharp
 //Cancel AutoGeneration of all boolean columns.
 if (e.PropertyType == GetType(Boolean))
 {
@@ -82,4 +88,4 @@ if (e.PropertyType == GetType(Boolean))
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
 * [Sizing options in the DataGrid control](sizing_options.md)
-* [DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid) 
+* [DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)

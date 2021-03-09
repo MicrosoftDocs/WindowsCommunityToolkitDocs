@@ -5,7 +5,7 @@ description: The MarkdownTextBlock control provides full markdown parsing and re
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, MarkdownTextBlock, xaml, xaml control
 ---
 
-# MarkdownTextBlock XAML Control 
+# MarkdownTextBlock XAML Control
 
 The [MarkdownTextBlock control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock) provides full markdown parsing and rendering for Universal Windows Apps. Originally created for the open source reddit app Baconit, the control was engineered to be simple to use and very efficient. One of the main design considerations for the control was it needed to be performant enough to provide a great user experience in virtualized lists. With the custom markdown parser and efficient XAML rendering, we were able to achieve excellent performance; providing a smooth UI experience even with complex Markdown on low end hardware.
 
@@ -129,7 +129,7 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 
 Use this event to handle clicking on links for Markdown, by default the MarkdownTextBlock does not handle Clicking on Links.
 
-```c#
+```csharp
 private async void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs e)
 {
     if (Uri.TryCreate(e.Link, UriKind.Absolute, out Uri link))
@@ -143,7 +143,7 @@ private async void MarkdownText_LinkClicked(object sender, LinkClickedEventArgs 
 
 Use this event to handle clicking on images for Markdown, by default the MarkdownTextBlock does not handle Clicking on Images.
 
-```c#
+```csharp
 private async void MarkdownText_ImageClicked(object sender, LinkClickedEventArgs e)
 {
     if (Uri.TryCreate(e.Link, UriKind.Absolute, out Uri link))
@@ -160,7 +160,7 @@ Use this event to customize how images in the markdown document are resolved.
 Set the ImageResolvingEventArgs.Image property to the image that should be shown in the rendered markdown document.  
 Also don't forget to set the ImageResolvingEventArgs.Handled flag to true, otherwise your custom image will not be used.
 
-```c#
+```csharp
 private void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArgs e)
 {
     // This is basically the default implementation
@@ -172,7 +172,7 @@ private void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArg
 This event also supports loading the image in an asynchronous way.  
 Just request a Deferral which you complete when you're done.
 
-```c#
+```csharp
 private async void MarkdownText_OnImageResolving(object sender, ImageResolvingEventArgs e)
 {
     var deferral = e.GetDeferral();
@@ -190,7 +190,7 @@ Use this event to customise how Code Block text is rendered, this is useful for 
 
 Manipulate the Inline Collection, and then set e.Handled to true, otherwise the changes won't be processed.
 
-```c#
+```csharp
 private void MarkdownText_CodeBlockResolving(object sender, CodeBlockResolvingEventArgs e)
 {
     if (e.CodeLanguage == "CUSTOM")
@@ -205,19 +205,19 @@ private void MarkdownText_CodeBlockResolving(object sender, CodeBlockResolvingEv
 
 You can customise the rendering of the **MarkdownTextBlock**, by inheriting from `MarkdownRenderer` and setting it as the renderer:
 
-```c#
+```csharp
 var block = new MarkdownTextBlock();
 block.SetRenderer<InheritedMarkdownRenderer>();
 ```
 
 This will likely require intimate knowledge of the implementation of the `MarkdownRenderer`, take a look at the following:
 
-* [MarkdownRenderer and Helpers](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/Render)
-* [Sample App custom markdown renderer](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
+- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
+- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
 
 ## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -232,8 +232,8 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## API
 
-* [MarkdownTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock)
+- [MarkdownTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
 
 ## Related Topics
 
-* [Markdown Parser](https://docs.microsoft.com/en-us/windows/communitytoolkit/parsers/markdownparser)
+- [Markdown Parser](/windows/communitytoolkit/parsers/markdownparser)

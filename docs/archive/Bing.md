@@ -1,7 +1,7 @@
 ---
 title: Bing Service
 author: nmetulev
-description: The Bing Service allows you to retrieve Bing results. Bing can return web and news results in your language, images, and videos for many countries/regions around the world.
+description: The Bing Service allows you to retrieve Bing results. Bing can return web and news results in your language, images, and videos for many countries/regions around the world (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, bing
 dev_langs:
   - csharp
@@ -39,6 +39,7 @@ var searchConfig = new BingSearchConfig
 
 ListView.ItemsSource = await BingService.Instance.RequestAsync(searchConfig, 50);
 ```
+
 ```vb
 Imports using Microsoft.Toolkit.Services.Bing
 
@@ -59,7 +60,7 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 |                        Methods                        |                                               Return Type                                               |                        Description                        |
 |-------------------------------------------------------|---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| GetDataAsync(BingSearchConfig, Int32, Int32, IParser) |                                       Task<IEnumerable<TSchema>>                                        |      Wrapper around REST API for making data request      |
+| GetDataAsync(BingSearchConfig, Int32, Int32, IParser) |                                       Task<IEnumerable\<TSchema>>                                        |      Wrapper around REST API for making data request      |
 |          GetDefaultParser(BingSearchConfig)           | IParser<[BingResult](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.services.bing.bingresult)> | Returns parser implementation for specified configuration |
 
 ## BingParser Class
@@ -114,8 +115,8 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| GetPagedItemsAsync(Int32, Int32, CancellationToken) | Task<IEnumerable<BingResult>> | Retrieves items based on `pageIndex` and `pageSize` arguments |
-| RequestAsync(BingSearchConfig, Int32, Int32) | Task<List<BingResult>> | Request list data from service provider based upon a given config / query |
+| GetPagedItemsAsync(Int32, Int32, CancellationToken) | Task<IEnumerable\<BingResult>> | Retrieves items based on `pageIndex` and `pageSize` arguments |
+| RequestAsync(BingSearchConfig, Int32, Int32) | Task<List\<BingResult>> | Request list data from service provider based upon a given config / query |
 
 ## Sample Code
 
@@ -127,7 +128,3 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Services |
 | NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [Bing Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/rel/4.0.0/Microsoft.Toolkit.Services/Services/Bing)

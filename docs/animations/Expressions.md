@@ -8,69 +8,69 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # ExpressionBuilder
 
 - [Quick Start](#quick-start)
-    - [Setting up the ExpressionBuilder classes with your app](#setting-up-the-expressionbuilder-classes-with-your-app)
-    - [Getting started with ExpressionBuilder classes](#getting-started-with-expressionbuilder-classes)
-        - [ExpressionAnimation Overview](#expressionAnimation-overview)
-    - [Using the ExpressionBuilder classes](#using-the-expressionbuilder-classes)
-        - [Extension Methods](#extension-methods)
-        - [How to template with ExpressionBuilder](#how-to-template-with-expressionbuilder)
-        - [E2E Example](#e2e-example)
-        - [Things to Note](#things-to-note)
+  - [Setting up the ExpressionBuilder classes with your app](#setting-up-the-expressionbuilder-classes-with-your-app)
+  - [Getting started with ExpressionBuilder classes](#getting-started-with-expressionbuilder-classes)
+    - [ExpressionAnimation Overview](#expressionAnimation-overview)
+  - [Using the ExpressionBuilder classes](#using-the-expressionbuilder-classes)
+    - [Extension Methods](#extension-methods)
+    - [How to template with ExpressionBuilder](#how-to-template-with-expressionbuilder)
+    - [E2E Example](#e2e-example)
+    - [Things to Note](#things-to-note)
 - [Intro](#intro)
-    - [What are Expressions?](#what-are-expressions)
-    - [Why ExpressionBuilder?](#why-expressionbuilder)
+  - [What are Expressions?](#what-are-expressions)
+  - [Why ExpressionBuilder?](#why-expressionbuilder)
 - [How to: Build Core Components of Expressions](#how-to-build-core-components-of-expressions)
-    - [General Construction](#general-construction)
-        - [Interacting with ExpressionNodes via Static Methods](#interacting-with-expressionnodes-via-static-methods)
-        - [Implicit Conversion to ExpressionNodes](#implicit-conversion-to-expressionnodes)
-        - [Using ExpressionNodes with StartAnimation](#using-expressionnodes-with-startanimation)
-        - [Using ExpressionNodes with ExpressionKeyFrames](#using-expressionnodes-with-expressionkeyframes)
-        - [Using ExpressionNodes in other places](#using-expressionnodes-in-other-places)
-    - [Parameters](#parameters)
-        - [Definitions: Constants vs. References](#definitions-constants-vs-references)
-        - [Definitions: Dynamic vs. Static Parameters](#definitions-dynamic-vs-static-parameters)
-        - [Creating Constant Parameters](#creating-constant-parameters)
-        - [Creating Reference Parameters](#creating-reference-parameters)
-        - [Subchanneling (Swizzling)](#subchanneling-swizzling)
-        - [Templating](#templating)
-        - [Keywords](#expressions-keywords)
-    - [Math shortcuts & basic operators](#math-shortcuts-basic-operators)
-        - [Basic Operators](#basic-operators)
-        - [Math Shortcuts (Functions)](#math-shortcuts-functions)
-    - [Advanced Operations](#advanced-operations)
-        - [Comparison Operators](#comparison-operators)
-        - [Conditional Operation](#conditional-operation)
-    - [Tips and Tricks for using Classes](#tips-and-tricks-for-using-classes)
-        - [Shortening Class Names](#shortening-class-names)
+  - [General Construction](#general-construction)
+    - [Interacting with ExpressionNodes via Static Methods](#interacting-with-expressionnodes-via-static-methods)
+    - [Implicit Conversion to ExpressionNodes](#implicit-conversion-to-expressionnodes)
+    - [Using ExpressionNodes with StartAnimation](#using-expressionnodes-with-startanimation)
+    - [Using ExpressionNodes with ExpressionKeyFrames](#using-expressionnodes-with-expressionkeyframes)
+    - [Using ExpressionNodes in other places](#using-expressionnodes-in-other-places)
+  - [Parameters](#parameters)
+    - [Definitions: Constants vs. References](#definitions-constants-vs-references)
+    - [Definitions: Dynamic vs. Static Parameters](#definitions-dynamic-vs-static-parameters)
+    - [Creating Constant Parameters](#creating-constant-parameters)
+    - [Creating Reference Parameters](#creating-reference-parameters)
+    - [Subchanneling (Swizzling)](#subchanneling-swizzling)
+    - [Templating](#templating)
+    - [Keywords](#expressions-keywords)
+  - [Math shortcuts & basic operators](#math-shortcuts-basic-operators)
+    - [Basic Operators](#basic-operators)
+    - [Math Shortcuts (Functions)](#math-shortcuts-functions)
+  - [Advanced Operations](#advanced-operations)
+    - [Comparison Operators](#comparison-operators)
+    - [Conditional Operation](#conditional-operation)
+  - [Tips and Tricks for using Classes](#tips-and-tricks-for-using-classes)
+    - [Shortening Class Names](#shortening-class-names)
 - [Translating Old World to New](#translating-old-world-to-new)
-    - [Creating an Expression](#creating-an-expression)
-    - [Defining Constant Parameters](#defining-constant-parameters)
-    - [Building Constants](#building-constants)
-    - [Defining Reference Parameters](#defining-reference-parameters)
-    - [Using Math Functions & Math Operators](#using-math-functions-math-operators)
-    - [Using Ternary and Conditional Operators](#using-ternary-and-conditional-operators)
-    - [Keywords](#new-world-keywords)
-    - [Starting an Expression on a CompositionObject](#starting-an-expression-on-a-compositionobject)
+  - [Creating an Expression](#creating-an-expression)
+  - [Defining Constant Parameters](#defining-constant-parameters)
+  - [Building Constants](#building-constants)
+  - [Defining Reference Parameters](#defining-reference-parameters)
+  - [Using Math Functions & Math Operators](#using-math-functions-math-operators)
+  - [Using Ternary and Conditional Operators](#using-ternary-and-conditional-operators)
+  - [Keywords](#new-world-keywords)
+  - [Starting an Expression on a CompositionObject](#starting-an-expression-on-a-compositionobject)
 - [E2E Building Examples](#e2e-building-examples)
-    - [Parallaxing Listing Items](#parallaxing-listing-items)
-        - [Old Expression](#parallaxing-old-expression)
-        - [Summary of Expression definition](#parallaxing-summary-of-expression-definition)
-        - [Building with ExpressionNodes](#parallaxing-building-with-expressionnodes)
-        - [Final code snippet](#parallaxing-final-code-snippet)
-    - [PropertySets](#propertysets)
-        - [Old Expression](#propertysets-old-expression)
-        - [Summary of Expression definition](#propertysets-summary-of-expression-definition)
-        - [Building with ExpressionNodes](#propertysets-building-with-expressionnodes)
-        - [Final code snippet](#propertysets-final-code-snippet)
-    - [Curtain](#curtain)
-        - [Old Expression](#curtain-old-expression)
-        - [Summary Expression Definition](#curtain-summary-expression-definition)
-        - [Building with ExpressionNodes](#curtain-building-with-expressionnodes)
-        - [Final code snippet](#curtain-final-code-snippet)
+  - [Parallaxing Listing Items](#parallaxing-listing-items)
+    - [Old Expression](#parallaxing-old-expression)
+    - [Summary of Expression definition](#parallaxing-summary-of-expression-definition)
+    - [Building with ExpressionNodes](#parallaxing-building-with-expressionnodes)
+    - [Final code snippet](#parallaxing-final-code-snippet)
+  - [PropertySets](#propertysets)
+    - [Old Expression](#propertysets-old-expression)
+    - [Summary of Expression definition](#propertysets-summary-of-expression-definition)
+    - [Building with ExpressionNodes](#propertysets-building-with-expressionnodes)
+    - [Final code snippet](#propertysets-final-code-snippet)
+  - [Curtain](#curtain)
+    - [Old Expression](#curtain-old-expression)
+    - [Summary Expression Definition](#curtain-summary-expression-definition)
+    - [Building with ExpressionNodes](#curtain-building-with-expressionnodes)
+    - [Final code snippet](#curtain-final-code-snippet)
 - [Requirements](#requirements)
 - [API](#api)
 
-## <a name="quick-start"></a>Quick Start 
+## <a name="quick-start"></a>Quick Start
 
 Welcome to the ExpressionBuilder classes! The ExpressionBuilder classes are a C#-only alternative to building Expressions with type safety. Below is a quick introduction to using the ExpressionBuilder classes with your application. Complete documentation and walkthroughs will start from [Intro](#intro) section.
 
@@ -80,7 +80,7 @@ To use the ExpressionBuilder in your app, add the Microsoft.Toolkit.Uwp.UI.Anima
 
 ```csharp
 using Microsoft.Toolkit.Uwp.UI.Animations.Expressions;
-``` 
+```
 
 Once you have the nuget package added to your project, you are all set to start using the ExpressionBuilder classes!
 
@@ -90,9 +90,9 @@ Once you have the nuget package added to your project, you are all set to start 
 
 A brief recap of ExpressionAnimations:
 
-- ExpressionAnimations are a type of CompositionAnimations used to create mathematical relationships between Composition Objects. Simple examples include making a relationship such that one object will move relative to another. 
+- ExpressionAnimations are a type of CompositionAnimations used to create mathematical relationships between Composition Objects. Simple examples include making a relationship such that one object will move relative to another.
 
-- Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations). 
+- Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations).
 
 - For more information on ExpressionAnimations, [please check our documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
 
@@ -100,9 +100,9 @@ ExpressionAnimations can create some very powerful and unique experiences, but c
 
 ```csharp
 _parallaxExpression = compositor.CreateExpressionAnimation(
-	"(ScrollManipulation.Translation.Y + StartOffset) * ParallaxValue - 
-	(ScrollManipulation.Translation.Y + StartOffset)");
-``` 
+     "(ScrollManipulation.Translation.Y + StartOffset) * ParallaxValue - " +
+    "(ScrollManipulation.Translation.Y + StartOffset)");
+```
 
 This creates a series of challenges when authoring Expressions in this manner:
 
@@ -126,7 +126,7 @@ Before we highlight how to use the classes, let's reiterate the core components 
 
 - Keywords: a set of known phrases to the Expression language to provide specific behaviors (referencing the CurrentValue, etc.)
 
-- Operators: The glue that brings together all the components of an equation. Your typical mathematical operators (+, -, *, /) 
+- Operators: The glue that brings together all the components of an equation. Your typical mathematical operators (+, -, *, /)
 
 On the surface, the ExpressionBuilder classes provide three major components to build Expressions with:
 
@@ -147,11 +147,13 @@ var expression = _compositor.CreateExpressionAnimation("visualA.Offset.X + 50");
 expression.SetReferenceParameter("visualA", _visualA);
 _visualB.StartAnimation("Offset.X", expression);
 ```
+
 With ExpressionBuilder, you can use the GetReference() extension method that performs this same behavior if you don't need to template, but in a type safe manner:
 
 ```csharp
 _visualB.StartAnimation("Offset.X", _visualA.GetReference().Offset.X + 50f);
 ```
+
 Also notice in the above code snippet, the CompositionObject.StartAnimation() extension method  was used to pass in an ExpressionNode instead of an ExpressionAnimation.
 
 ### <a name="how-to-template-with-expressionbuilder"></a>How to template with ExpressionBuilder
@@ -202,7 +204,7 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
 - The "And" and "Or" operators (“&&” and “||”) are now represented by the & and | operators.
 
-- If using ExpressionBuilder to create expressions for use with InteractionTracker’s InertiaModifiers, the following extensions methods are available:
+- If using ExpressionBuilder to create expressions for use with InteractionTracker’s InertiaModifiers or CompositionConditionalValues, the following extensions methods are available:
 
   - InteractionTrackerInertiaRestingValue.SetCondition
 
@@ -212,16 +214,20 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
   - InteractionTrackerInertiaMotion.SetMotion
 
+  - CompositionConditionalValue.SetCondition
+
+  - CompositionConditionalValue.SetValue
+
   - Referencing ExpressionValues and ExpressionFunctions in your code can be a bit verbose, so you can define shortened versions in the Using section of your app:
 
-	```csharp
-	using EF = ExpressionBuilder.ExpressionFunctions;
-	using EV = ExpressionBuilder.ExpressionValues;
+    ```csharp
+    using EF = ExpressionBuilder.ExpressionFunctions;
+    using EV = ExpressionBuilder.ExpressionValues;
     ```
 
-# <a name="intro"></a>Intro
+## <a name="intro"></a>Intro
 
-## <a name="what-are-expressions">What are Expressions?
+### <a name="what-are-expressions">What are Expressions?
 
 ExpressionAnimations (or Expressions, for short) are a new type of animation introduced to Windows App developers in Windows 10 to provide a more expressive animation model than what is provided from traditional KeyFrameAnimations and
 XAML Storyboards.
@@ -238,7 +244,7 @@ The documentation below assumes you are familiar with the Composition and Compos
 
 - [ExpressionAnimation MSDN Documentation](https://msdn.microsoft.com/library/windows/apps/windows.ui.composition.expressionanimation.aspx)
 
-## <a name="why-expressionbuilder">Why ExpressionBuilder?
+### <a name="why-expressionbuilder">Why ExpressionBuilder?
 
 To use ExpressionAnimations today, developers are required to write their mathematical equation/relationship in a string (example shown below).
 
@@ -260,20 +266,20 @@ This experience presents a series of challenges for developers:
 To improve the Expression authoring experience, the team put together the ExpressionBuilder classes, which act as a series of “helper classes” to bring
 type safety, Intellisense, and compile-time errors to the Expression-building experience. The classes can be used as an alternative experience to building Expressions than what is available today.
 
-# <a name="how-to-build-core-components-of-expressions"></a>How to: Build Core Components of Expressions
+## <a name="how-to-build-core-components-of-expressions"></a>How to: Build Core Components of Expressions
 
 The following sections will cover how the classes work to create the core
 components of an Expression.
 
 **Note:** Each section will provide short code lines that implement the Expression Builder syntax to demonstrate the core concept. These are not meant to be E2E working samples - E2E walkthroughs using the Expression Builder Classes are provided in Section [E2E Building Examples](#e2e-building-examples).
 
-## <a name="general-construction"></a>General Construction
+### <a name="general-construction"></a>General Construction
 
 What is the general model for building Expressions with the classes? How do the classes plug into existing entry points for CompositionAnimations? (StartAnimation, ExpressionKeyFrames)
 
 Before talking about the core components of Expressions and how the ExpressionBuilder classes achieve them, let’s first discuss how to think about these classes, their general architecture and how to integrate into your existing app code.
 
-### <a name="interacting-with-expressionnodes-via-static-methods"></a>Interacting with ExpressionNodes via Static Methods
+#### <a name="interacting-with-expressionnodes-via-static-methods"></a>Interacting with ExpressionNodes via Static Methods
 
 To start, let’s talk about how Expressions are represented in the Helper Class. When using the Expression Builder Classes, developers will be generating ExpressionNodes – a single node, or a combination of nodes, can be used to define an Expression. It is important to note that you do not need to “new-up” ExpressionNodes; instead, there are a series of static methods to create typed Expression nodes such as:
 
@@ -320,7 +326,7 @@ Vector3Node vec3Sum = ExpressionFunctions.Vector3(1.0f, 2.0f, 3.0f) +
                       ExpressionFunctions.Vector3(4.0f, 5.0f, 6.0f);
 ```
 
-### <a name="implicit-conversion-to-expressionnodes"></a>Implicit Conversion to ExpressionNodes
+#### <a name="implicit-conversion-to-expressionnodes"></a>Implicit Conversion to ExpressionNodes
 
 In addition to using the static methods to generate ExpressionNodes, the classes will also handle implicit conversion of numerical values (e.g. System.Numerics) to the appropriate ExpressionNode type. This is done so you do not need to explicitly create new nodes for existing Numerics objects you have already defined.
 
@@ -338,7 +344,7 @@ When building your Expression with ExpressionNodes, you can use a numerics type 
 var quatLength = ExpressionFunctions.Length(new Quaternion(new Vector3(1), 1f));
 ```
 
-### <a name="using-expressionnodes-with-startanimation"></a>Using ExpressionNodes with StartAnimation
+#### <a name="using-expressionnodes-with-startanimation"></a>Using ExpressionNodes with StartAnimation
 
 Once you’ve created an ExpressionNode using the ExpressionBuilder classes, you need to connect the ExpressionNode to a target (CompositionObject). The ExpressionBuilder classes include an extension method that mimics the publicly available StartAnimation(…) API, but instead of taking in a CompositionAnimation, it takes in an ExpressionNode. This extension method is defined in CompositionExtension.StartAnimation(…), and is accessible via CompositionObject.StartAnimation(…).
 
@@ -353,7 +359,7 @@ Vector3Node vec3Sum = vec3NodeA + numericsVec3;
 _visualA.StartAnimation("Offset", vec3Sum);
 ```
 
-### <a name="using-expressionnodes-with-expressionkeyframes"></a>Using ExpressionNodes with ExpressionKeyFrames
+#### <a name="using-expressionnodes-with-expressionkeyframes"></a>Using ExpressionNodes with ExpressionKeyFrames
 
 In the existing CompositionAnimation API, you can also use Expressions with KeyFrameAnimations. This is done by using an ExpressionKeyFrame where you define the progression point and a string representing the equation (the Expression provided is used by the system to evaluate the keyframe value each frame).
 
@@ -374,29 +380,29 @@ _visual.StartAnimation("Offset", kfa);
 
 **Note:** In the above example, the Expression only consists of constant parameters for example purposes. Your Expression should always contain at least one reference; an Expression made up of only constant parameters is wasteful as it can be equivalently accomplished with a direct property set via the API .
 
-### <a name="using-expressionnodes-in-other-places"></a>Using ExpressionNodes in other places
+#### <a name="using-expressionnodes-in-other-places"></a>Using ExpressionNodes in other places
 
 Using ExpressionNodes with StartAnimation and ExpressionKeyFrames will be the most common places you will utilize Expressions. However, there are other places that Expressions are used today – for each of the cases below, extension methods are provided that will take in an ExpressionNode instead of a string:
 
 - InteractionTrackerInertiaMotion Extension Methods
 
-    - SetCondition
+  - SetCondition
 
-    - SetMotion
+  - SetMotion
 
 - InteractionTrackerInertiaRestingValue ExtensionMethods
 
-    - SetCondition
+  - SetCondition
 
-    - SetMotion
+  - SetMotion
 
-## <a name="parameters"></a>Parameters
+### <a name="parameters"></a>Parameters
 
 The big value prop to use ExpressionAnimations is that you can define equations and mathematical relationships that utilize constants and reference values from other objects. These objects are often other CompositionObjects or variables that make the mathematical relationship more meaningful. For example, you can use a parameter to create an equation that references another’s object’s x Offset.
 
 There are two types of Parameters: Constants and References. Both Constants and References can be described as either a dynamic or static Parameter - this defines whether you can change what they refer to. These topics will be discussed in more detail in the next sections.
 
-### <a name="definitions-constants-vs-references"></a>Definitions: Constants vs. References
+#### <a name="definitions-constants-vs-references"></a>Definitions: Constants vs. References
 
 There are two types of Parameters that can be used in an Expression. Moving forward, we’ll use the following definitions to distinguish Constants vs References:
 
@@ -408,13 +414,13 @@ var extraOffset = new Vector3(50f, 50f, 0f);
 
 - **Reference:** A CompositionObject (Visual, Clip, InteractionTracker, etc.), whose properties will be evaluated each frame the Expression is processed in the Compositor.
 
-    - The usefulness of including a Reference Parameter in an Expression is to reference properties off it (e.g. referencing the Offset property of a Visual).
+  - The usefulness of including a Reference Parameter in an Expression is to reference properties off it (e.g. referencing the Offset property of a Visual).
 
 ```csharp
 var redVisual = _compositor.CreateSpriteVisual();
 ```
 
-### <a name="definitions-dynamic-vs-static-parameters"></a>Definitions: Dynamic vs. Static Parameters
+#### <a name="definitions-dynamic-vs-static-parameters"></a>Definitions: Dynamic vs. Static Parameters
 
 Templating, which is discussed in more detail in section [Templating](#templating) refers to the reuse of an Expression while changing the values of dynamic parameters. Unless you are in a templating scenario, you will only need static parameters.
 
@@ -424,7 +430,7 @@ Templating, which is discussed in more detail in section [Templating](#templatin
 
 How to create static and dynamic parameters for both Constants and References will be discussed in the next two sections.
 
-### <a name="creating-constant-parameters"></a>Creating Constant Parameters
+#### <a name="creating-constant-parameters"></a>Creating Constant Parameters
 
 **How to create static Constant Parameters:**
 
@@ -470,7 +476,7 @@ newPosition.SetVector3Parameter("delta", new Vector3(75f, 85f, 0f));
 _visualB.StartAnimation("Offset", newPosition);
 ```
 
-### <a name="creating-reference-parameters"></a>Creating Reference Parameters
+#### <a name="creating-reference-parameters"></a>Creating Reference Parameters
 
 **How to create static Reference Parameters:**
 
@@ -492,7 +498,7 @@ Thus, as the Offset value of \_redBall changes (via direct property set or anima
 
 - Create a Parameter using the static methods off the ExpressionValues.Reference class
 
-    - The value of the parameter can be set via the SetReferenceParameter function
+  - The value of the parameter can be set via the SetReferenceParameter function
 
 In the example below, we further expand on the above code such that instead of using a static reference to the redBall visual, we use a named one, so that we can change the parameter to refer to a blueBall Visual later.
 
@@ -520,13 +526,14 @@ _propSet.InsertScalarProperty("delta", new Vector3(10));
 
 // Create a static Reference Parameter to a PropertySet and a property inside it
 var newPosition = _redBall.GetReference().Offset +
-	           _propSet.GetReference().GetVector3Property("delta");
+                _propSet.GetReference().GetVector3Property("delta");
 _visual.StartAnimation("Offset", newPosition);
 ```
 
-### <a name="subchanneling-swizzling"></a>Subchanneling (Swizzling)
+#### <a name="subchanneling-swizzling"></a>Subchanneling (Swizzling)
 
-*[Also known as “dotting into things”]*
+> [!NOTE]
+> This is also known as “dotting into things”.
 
 When using a vector or matrix node type in your equations, you also can access a subchannel of (or “dot into”) the parameter to use an individual component property. For example, when using a Vector3 Constant, developers can dot into its X, Y, or Z component:
 
@@ -554,10 +561,10 @@ In the example below, the developer wants to grab a subchannel reference to an X
 
 ```csharp
 Vector2Node xYChannel = _visual.GetReference().Offset.Subchannels(
-	                 Vector3Node.Subchannel.X, Vector3Node.Subchannel.Y);
+                        Vector3Node.Subchannel.X, Vector3Node.Subchannel.Y);
 ```
 
-### <a name="templating"></a>Templating
+#### <a name="templating"></a>Templating
 
 There are times where you want to use a generic Expression across different parts of your app to animate multiple CompositionObjects. However, depending on which target the Expression is connected to, different values for parameters in the equation may be desired.
 
@@ -570,8 +577,8 @@ In the example below, we create a generic Expression and attach to two different
 ```csharp
 // Define the Expression template
 var delta = new Vector3(50.0f);
-var deltaExpression = 
-	ExpressionValues.Reference.CreateVisualReference("visual").Offset + delta;
+var deltaExpression =
+    ExpressionValues.Reference.CreateVisualReference("visual").Offset + delta;
 
 // [Later on in code  ...]
 // Set value of "visual" to be a reference to _redBall
@@ -588,7 +595,7 @@ A real-world example that demonstrates the need for changing the value of a Para
 
 We can extend this concept by imagining a real-world scenario in which a common equation is needed across many targets: list items. A list is typically comprised of homogeneous items, each with a unique ID indicating its position in the list. Each item needs to be behave very similarly, with slight differences based on its position. For this example, a single Expression could be designed that gives a consistent behavior across all items, but is customized by using the list item ID as a Constant Parameter. When connecting this Expression template to each list item, the ID Parameter is set using SetScalarParameter(…) with the ID of the current list item.
 
-### <a name="expressions-keywords"></a>Keywords
+#### <a name="expressions-keywords"></a>Keywords
 
 In Expressions, there are several certain keywords that can be used as shortcuts when defining the equation. These keywords are available off of the
 ExpressionValues object:
@@ -597,23 +604,23 @@ ExpressionValues object:
 
 - **ExpressionValues.StartingValue** – This keyword defines a reference to the property the Expression targets, sampled at the first frame of execution. **Note**: if the Expression is connected to a subchannel of a property (e.*g. “Offset.X”), then StartingValue will be of the same data type as the subchannel (e.g. ScalarStartingValue for “Offset.X”).
 
-- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. <em>Note: if the Expression is connected to a subchannel of a property (e.</em>g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”).
-
-In the example below, we create an Expression using the Target keyword:
+- **ExpressionValues.CurrentValue** – This keyword defines a frame-accurate reference to the property the Expression targets. Note: .
+    > [!NOTE]
+    > if the Expression is connected to a subchannel of a property (e.g. “Offset.X”), then CurrentValue will be of the same data type as the subchannel (e.g. ScalarCurrentValue for “Offset.X”)
 
 ```csharp
 // windowWidth defined earlier
 // Target creates a reference to _visual
-var opacityExpression = 
-	ExpressionValues.Target.CreateVisualTarget().Offset.X / windowWidth;
+var opacityExpression =
+    ExpressionValues.Target.CreateVisualTarget().Offset.X / windowWidth;
 _visual.StartAnimation("Opacity", opacityExpression);
 ```
 
  The usage of the Target keyword here is a shortcut to a Reference Parameter that references the CompositionObject being targeted by the Expression. In this example, that would be \_visual, but will always refer to the object StartAnimation(…) is called on.
 
-## <a name="math-shortcuts-basic-operators"></a>Math shortcuts & basic operators
+### <a name="math-shortcuts-basic-operators"></a>Math shortcuts & basic operators
 
-### <a name="basic-operators"></a>Basic Operators
+#### <a name="basic-operators"></a>Basic Operators
 
 As mentioned earlier, you define an Expression by a single ExpressionNode or multiple – when defined by multiple, they are combined using operators. The basic supported operators are:
 
@@ -636,7 +643,7 @@ var numericsVec2 = new Vector2(1f, 2f);
 var expNodeSum = _visual.GetReference().Offset + numericsVec2;
 ```
 
-### <a name="math-shortcuts-functions"></a>Math Shortcuts (Functions)
+#### <a name="math-shortcuts-functions"></a>Math Shortcuts (Functions)
 
 To build more complex equations, more advanced mathematical operations are needed. Some operations are tedious to perform manually, so helper functions (a subset of System.Numerics functions, e.g. Min, Max, etc.) are available in the ExpressionFunctions class. The following example creates an Expression that calculates the length of a Quaternion:
 
@@ -645,9 +652,9 @@ var targetVisual = _visual.GetReference();
 var quatLength = ExpressionFunctions.Length(targetVisual.Orientation);
 ```
 
-## <a name="advanced-operations"></a>Advanced Operations
+### <a name="advanced-operations"></a>Advanced Operations
 
-### <a name="comparison-operators"></a>Comparison Operators
+#### <a name="comparison-operators"></a>Comparison Operators
 
 In addition to the basic mathematical operations (+, -, /, etc.), you can also create Expressions that use comparison operators:
 
@@ -673,7 +680,7 @@ BooleanNode equalLength = ExpressionFunctions.Length(visAReference.Orientation) 
                   ExpressionFunctions.Length(visBReference.Orientation);
 ```
 
-### <a name="conditional-operation"></a>Conditional Operation
+#### <a name="conditional-operation"></a>Conditional Operation
 
 Finally, you can make some of the most powerful Expressions using a Conditional operation. This enables developers to define different behaviors for an Expression depending on a condition. This operation is defined by the ExpressionFunctions.Conditional method and contains three parts to mimic the standard *condition ? true: false* ternary operator:
 
@@ -701,11 +708,11 @@ var ternary = ExpressionFunctions.Conditional(condition, trueCase, falseCase);
 _visual.StartAnimation("Orientation", ternary);
 ```
 
-## <a name="tips-and-tricks-for-using-classes"></a>Tips and Tricks for using Classes
+### <a name="tips-and-tricks-for-using-classes"></a>Tips and Tricks for using Classes
 
 Below are some tips and tricks that can be used for interacting with the classes
 
-### <a name="shortening-class-names"></a>Shortening Class Names
+#### <a name="shortening-class-names"></a>Shortening Class Names
 
 One of the challenges with this class model is an ExpressionNode can get very verbose and lengthy because the needing to “dot into” a class object to access the static method. If you run into this yourself, you can shorten the naming of the classes by defining a shortened version via the “using” syntax at the top of your file:
 
@@ -715,11 +722,11 @@ using EF = HelperClasses.ExpressionFunctions;
 var test = EF.Abs(_visual.GetReference().Offset.X);
 ```
 
-# <a name="translating-old-world-to-new"></a>Translating Old World to New
+## <a name="translating-old-world-to-new"></a>Translating Old World to New
 
 If you’re familiar with building Expressions in the old world by writing the equation as a string, the following sections outlines how the creation of an Expression compares between the old and new way.
 
-## <a name="creating-an-expression"></a>Creating an Expression
+### <a name="creating-an-expression"></a>Creating an Expression
 
 In the old world, you use the CreateExpressionAnimation() method off the Compositor. In the new one, you simply assign the variable an ExpressionNode (output from static methods of ExpressionValue, ExpressionFunctions or extension methods)
 
@@ -732,7 +739,7 @@ expOldWorld.SetReferenceParameter("visB", _visualB);
 var expNewWorld = _visualB.GetReference().Offset;
 ```
 
-## <a name="defining-constant-parameters"></a>Defining Constant Parameters
+### <a name="defining-constant-parameters"></a>Defining Constant Parameters
 
 In the old world for both Constants and References, whether you intended them to be static or dynamic, you were required to define a string name and set the parameter value separately. In the new world, you only need to set the parameter if you want to template the Expression and later change what the parameter points to. Otherwise, you simply include the value directly in the equation.
 
@@ -752,25 +759,25 @@ var expNewWorldTemplate = _visualB.GetReference().Offset +
 expNewWorldTemplate.SetVector3Parameter("extraOffset", extraOffset);
 ```
 
-## <a name="building-constants"></a>Building Constants
+### <a name="building-constants"></a>Building Constants
 
 In the old world, you could construct constant types within the string equation. In the new world, you use the static methods off the ExpressionFunction class.
 
 ```csharp
 // Old way
-var expOldWorld = 
-	_compositor.CreateExpressionAnimation("visB.Offset + Vector3(50f, 50f, 0f)");
+var expOldWorld =
+    _compositor.CreateExpressionAnimation("visB.Offset + Vector3(50f, 50f, 0f)");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 
 // New Way (Option 1)
-var expNewWorldTemplate = 
-	_visualB.GetReference().Offset + ExpressionFunctions.Vector3(50f, 50f, 50f);
+var expNewWorldTemplate =
+    _visualB.GetReference().Offset + ExpressionFunctions.Vector3(50f, 50f, 50f);
 // New Way (Option 2)
-var expNewWorldTemplate = 
-	_visualB.GetReference().Offset + new System.Numerics.Vector3(50, 50, 50);
+var expNewWorldTemplate =
+    _visualB.GetReference().Offset + new System.Numerics.Vector3(50, 50, 50);
 ```
 
-## <a name="defining-reference-parameters"></a>Defining Reference Parameters
+### <a name="defining-reference-parameters"></a>Defining Reference Parameters
 
 In the old world, if you wanted to create a reference to a CompositionObject, it needed to have the parameter set for the string name in the equation. In the new world, you can either *get* the reference using the extension method off the CompositionObject, or create one using static methods off ExpressionValue.
 
@@ -786,11 +793,11 @@ var expNewWorld = _visualB.GetReference().Offset;
 // New Way (2)
 // "Create" a reference and assign the value
 var expNewWorldTemplate = 
-	ExpressionValues.Reference.CreateVisualReference("visB").Offset;
+ ExpressionValues.Reference.CreateVisualReference("visB").Offset;
 expNewWorldTemplate.SetReferenceParameter("visB", _visualB);
 ```
 
-## <a name="using-math-functions-math-operators"></a>Using Math Functions & Math Operators
+### <a name="using-math-functions-math-operators"></a>Using Math Functions & Math Operators
 
 In the old world, you would include the function name inside the string equation. This presented problems with misspelling, knowing what parameters to provide and type safety on the output. In the new world, you get this through Intellisense as all the available Math functions are available off the ExpressionFunction class.
 
@@ -800,16 +807,16 @@ For operators, they were simply included in the string in the old world. In the 
 // Old way
 var extraOffset = new Vector3(50f);
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"Lerp(0f, 1f, visB.Offset.X / windowWidth");
+    "Lerp(0f, 1f, visB.Offset.X / windowWidth");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 expOldWorld.SetScalarParameter("windowWidth", windowWidth);
 
 // New Way
-var expNewWorld = 
-	ExpressionFunctions.Lerp(0f, 1f, _visualB.GetReference().Offset.X / windowWidth);
+var expNewWorld =
+    ExpressionFunctions.Lerp(0f, 1f, _visualB.GetReference().Offset.X / windowWidth);
 ```
 
-## <a name="using-ternary-and-conditional-operators"></a>Using Ternary and Conditional Operators
+### <a name="using-ternary-and-conditional-operators"></a>Using Ternary and Conditional Operators
 
 In the old world you would use the *Condition ? ifTrue : ifFalse* format for the ternary operation, using the appropriate conditional operators in the condition portion of the string. In the new world, the Ternary operator behavior is found off the Conditional function under the ExpressionFunctions class. All the same comparison operators are supported and can be used in the same format like the basic math operators.
 
@@ -818,7 +825,7 @@ In the old world you would use the *Condition ? ifTrue : ifFalse* format for the
 
 // Old way
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"(visA.Orientation == visB.Orientation) ? rotBy30 : rotby45");
+    "(visA.Orientation == visB.Orientation) ? rotBy30 : rotby45");
 expOldWorld.SetReferenceParameter("visB", _visualB);
 expOldWorld.SetReferenceParameter("visA", _visualA);
 expOldWorld.SetQuaternionParameter("rotBy30", rotateBy30);
@@ -830,7 +837,7 @@ var condition = ExpressionFunctions.Length(_visualA.GetReference().Orientation) 
 var expNewWorld = ExpressionFunctions.Conditional(condition, rotateBy30, rotateBy45);
 ```
 
-## <a name="new-world-keywords"></a>Keywords
+### <a name="new-world-keywords"></a>Keywords
 
 In the old world, there were reserved string keywords that can be used to achieve specific behavior:
 
@@ -851,7 +858,7 @@ In the new world, the StartingValue/CurrentValue/Target keywords are made availa
 ```csharp
 // Old way
 var expOldWorld = _compositor.CreateExpressionAnimation(
-	"visA.RotationAngle <= Pi ? this.StartingValue : fullSize");
+    "visA.RotationAngle <= Pi ? this.StartingValue : fullSize");
 expOldWorld.SetReferenceParameter("visA", _visualA);
 expOldWorld.SetVector2Parameter("fullSize", fullSize);
 
@@ -864,19 +871,19 @@ var expNewWorld = ExpressionFunctions.Conditional(condition, ExpressionValues.St
 
 In the old world, developers utilized the StartAnimation() method off of CompositionObject that passed in two values: the string name of the property animate and the ExpressionAnimation defined by a string. In the new world, there is an extension method that takes in an ExpressionNode instead an ExpressionAnimation.
 
-# <a name="e2e-building-examples"></a>E2E Building Examples
+## <a name="e2e-building-examples"></a>E2E Building Examples
 
 This section is dedicated to walking through building a few different Expressions using the Expression Builder Classes. Each of the examples will start with an Expression (and any needed supporting code) and break down how these can be re-written using the new classes. All the examples will be pulled from samples on the [Windows UI Dev Labs Github Project](https://github.com/Microsoft/WindowsUIDevLabs).
 
 There is an assumption that the reader has a general understanding of what Expressions are and how the ExpressionBuilder classes work. If not, it is recommended to read the [Intro](#intro) and [How to: Build Core Components of Expressions](#how-to-build-core-components-of-expressions) first.
 
-## <a name="parallaxing-listing-items"></a>Parallaxing Listing Items
+### <a name="parallaxing-listing-items"></a>Parallaxing Listing Items
 
 ([Github Link](https://github.com/Microsoft/WindowsUIDevLabs/tree/master/SampleGallery/Samples/SDK%2010586/ParallaxingListItems))
 
 The first example we will walk through is the Parallaxing List Item sample found on the Windows UI Dev Labs Github Sample Gallery project. In this sample, we want to create a UI experience such that the background image for each list item parallax as the user scrolls through the list.
 
-### <a name="parallaxing-old-expression"></a>Old Expression
+#### <a name="parallaxing-old-expression"></a>Old Expression
 
 Let’s first look at the relevant code for how the Expression is built today using strings:
 
@@ -889,36 +896,36 @@ _parallaxExpression.SetReferenceParameter("ScrollManipulation", _scrollPropertie
 _parallaxExpression.Expression = "(ScrollManipulation.Translation.Y + StartOffset - (0.5 * ItemHeight)) * ParallaxValue - (ScrollManipulation.Translation.Y + StartOffset - (0.5 * ItemHeight))";
 //[Later in the code …]
 _parallaxExpression.SetScalarParameter(
-	"StartOffset", (float)args.ItemIndex * visual.Size.Y / 4.0f);
+    "StartOffset", (float)args.ItemIndex * visual.Size.Y / 4.0f);
 visual.StartAnimation("Offset.Y", _parallaxExpression);
 ```
 
-### <a name="parallaxing-summary-of-expression-definition"></a>Summary of Expression definition
+#### <a name="parallaxing-summary-of-expression-definition"></a>Summary of Expression definition
 
 - The core of this Expression is uses a ScrollManipulationPropertySet, a CompositionPropertySet that contains information about the XAML ScrollViewer that manages the item in the XAML ListView.
 
-    - Specifically, we are looking at the Translation.Y property. When building our Expression, we will need to grab a reference to this property.
+  - Specifically, we are looking at the Translation.Y property. When building our Expression, we will need to grab a reference to this property.
 
 - There are three other scalar parameters that comprise the remainder of this equation (StartOffset, ParallaxValue and ItemHeight). Note, that in this sample, the intent was to make this Expression a template, meaning that these values may need to be changed later.
 
-    - If the intent was not to template, the Expression would have been created differently, with the values being written directly into the string.
+  - If the intent was not to template, the Expression would have been created differently, with the values being written directly into the string.
 
 - Finally, the equation itself has a common component (we’ll denote it “A”) that gives it the form A\*Parallax – A.
 
-    - In this case “A” is:  
-        "(ScrollManipulation.Translation.Y + StartOffset - (0.5 \* ItemHeight))”
+  - In this case “A” is:
+    "(ScrollManipulation.Translation.Y + StartOffset - (0.5 \* ItemHeight))"
 
-### <a name="parallaxing-building-with-expressionnodes"></a>Building with ExpressionNodes
+#### <a name="parallaxing-building-with-expressionnodes"></a>Building with ExpressionNodes
 
 So let’s get started building this Expression into an ExpressionNode. To start, we’ll make three variables to keep track of the three Scalar Parameters and specifically for templating purposes:
 
 ```csharp
-var startOffset = 
-	ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
-var parallaxValue = 
-	ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
-var itemHeight = 
-	ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
+var startOffset =
+    ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
+var parallaxValue =
+    ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
+var itemHeight =
+    ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
 ```
 
 Next, let’s get a reference to that ManipulationPropertySet (specifically, the Translation.Y property). To do that, we need to:
@@ -954,16 +961,16 @@ var parallaxExpression = parallax * parallaxValue - parallax;
 visual.StartAnimation("Offset.Y", parallaxExpression);
 ```
 
-### <a name="parallaxing-final-code-snippet"></a>Final code snippet
+#### <a name="parallaxing-final-code-snippet"></a>Final code snippet
 
 ```csharp
 // Not necessary to define as variables, could put directly into parallax variable
-var startOffset = 
-	ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
-var parallaxValue = 
-	ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
-var itemHeight = 
-	ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
+var startOffset =
+    ExpressionValues.Constant.CreateConstantScalar("startOffset", 0.0f);
+var parallaxValue =
+    ExpressionValues.Constant.CreateConstantScalar("parallaxValue", 0.5f);
+var itemHeight =
+    ExpressionValues.Constant.CreateConstantScalar("itemHeight", 0.0f);
 // Not necessary to define into variable, could put directly into parallax variable
 var yTranslation =
 _scrollProperties.GetSpecializedReference<ManipulationPropertySetReferenceNode>()
@@ -989,7 +996,9 @@ Let’s first look at the relevant code for how the Expression is built today us
 ```csharp
 ExpressionAnimation expressionAnimation = 
 compositor.CreateExpressionAnimation(
-	"visual.Offset + propertySet.CenterPointOffset + " + 	"Vector3(cos(ToRadians(propertySet.Rotation)) * 150," +                                                                                            	"sin(ToRadians(propertySet.Rotation)) * 75, 0)");
+    "visual.Offset + propertySet.CenterPointOffset + " +
+    "Vector3(cos(ToRadians(propertySet.Rotation)) * 150," +
+    "sin(ToRadians(propertySet.Rotation)) * 75, 0)");
 
 expressionAnimation.SetReferenceParameter("propertySet", propertySet);
 expressionAnimation.SetReferenceParameter("visual", redSprite);
@@ -997,17 +1006,17 @@ expressionAnimation.SetReferenceParameter("visual", redSprite);
 blueSprite.StartAnimation("Offset", expressionAnimation);
 ```
 
-### <a name="propertysets-summary-of-expression-definition"></a>Summary of Expression definition
+#### <a name="propertysets-summary-of-expression-definition"></a>Summary of Expression definition
 
 - At a high level, this Expression is simply the sum of three components: A Visual reference, a CompositionPropertySet reference and a Vector3 object construction.
 
 - A scalar property in a CompositionPropertySet named “Rotation” that is being animated by a separate KeyFrameAnimation dictates the core behavior of this Expression.
 
-    - This property “Rotation”, and another property  “CenterPointOffset, will need to be referenced in the equation.
+  - This property “Rotation”, and another property  “CenterPointOffset, will need to be referenced in the equation.
 
 - The Expression also constructs a Vector3 that takes the Cosine of the Radians-converted property “Rotation” in the CompositionPropertySet
 
-### <a name="propertysets-building-with-expressionnodes"></a>Building with ExpressionNodes
+#### <a name="propertysets-building-with-expressionnodes"></a>Building with ExpressionNodes
 
 Note that, as mentioned earlier in the Tips and Tricks section of the doc, this walkthrough uses a shorthand to refer to the ExpressionFunctionClass as EF:
 
@@ -1018,35 +1027,35 @@ using EF = HelperClasses.ExpressionFunctions;
 First, we get a reference to the PropertySet and its Rotation and CenterPointOffset properties:
 
 ```csharp
-var rotation = 
-	propertySet.GetReference().GetScalarProperty("Rotation");
-var centerPointOffset = 	propertySet.GetReference().GetVector3Property("CenterPointOffset");
+var rotation =
+    propertySet.GetReference().GetScalarProperty("Rotation");
+var centerPointOffset = propertySet.GetReference().GetVector3Property("CenterPointOffset");
 ```
 
 Now we are ready to put together the full Expression:
 
 ```csharp
 var orbitExp = visual.GetReference().Offset + centerPointOffset +
-               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150, 	
+               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150,  
                           EF.Sin(EF.ToRadians(rotation)) * 75, 
                           0f);
 ```
 
-### <a name="propertysets-final-code-snippet"></a>Final code snippet
+#### <a name="propertysets-final-code-snippet"></a>Final code snippet
 
 ```csharp
 using EF = HelperClasses.ExpressionFunctions;
 
-var rotation = 
-	propertySet.GetReference().GetScalarProperty("Rotation");
-var centerPointOffset = 	propertySet.GetReference().GetVector3Property("CenterPointOffset");
+var rotation =
+    propertySet.GetReference().GetScalarProperty("Rotation");
+var centerPointOffset = propertySet.GetReference().GetVector3Property("CenterPointOffset");
 var orbitExp = visual.GetReference().Offset + centerPointOffset +
-               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150, 	
-                          EF.Sin(EF.ToRadians(rotation)) * 75, 
+               EF.Vector3(EF.Cos(EF.ToRadians(rotation)) * 150,
+                          EF.Sin(EF.ToRadians(rotation)) * 75,
                           0f);
 ```
 
-## <a name="curtain"></a>Curtain
+### <a name="curtain"></a>Curtain
 
 ([Github Project](https://github.com/Microsoft/WindowsUIDevLabs/tree/master/SampleGallery/Samples/SDK%2014393/Curtain))
 
@@ -1067,26 +1076,26 @@ modifier.Condition = _compositor.CreateExpressionAnimation("true");
 
 // Define a spring-like force, anchored at position 0.
 modifier.Motion = _compositor.CreateExpressionAnimation(
-	@"(-(this.target.Position.Y) * springConstant) - (dampingConstant * 	this.target.PositionVelocityInPixelsPerSecond.Y)");
+    @"(-(this.target.Position.Y) * springConstant) - (dampingConstant * this.target.PositionVelocityInPixelsPerSecond.Y)");
 
 modifier.Motion.SetScalarParameter("dampingConstant", dampingConstant);
 modifier.Motion.SetScalarParameter("springConstant", springConstant);
 
 _tracker.ConfigurePositionYInertiaModifiers(
-	new InteractionTrackerInertiaModifier[] { modifier });
+    new InteractionTrackerInertiaModifier[] { modifier });
 ```
 
-### <a name="curtain-summary-expression-definition"></a>Summary Expression Definition
+#### <a name="curtain-summary-expression-definition"></a>Summary Expression Definition
 
 - The equation for this Expression is leveraging the force equation used for damped harmonic oscillators: kx – cv, where k is the Spring Constant, x is the displacement of the spring, c is the damping constant and v is the velocity of the spring.
 
 - The main component of this equation is an InteractionTracker and the associated properties of it to drive the damped harmonic oscillator equation.
 
-    - In particular, the properties Position.Y and PositionVelocityInPixelsPerSecond.Y
+  - In particular, the properties Position.Y and PositionVelocityInPixelsPerSecond.Y
 
 - Because this Expression is getting properties from the same InteractionTracker it is animating, the Target keyword will be used here.
 
-### <a name="curtain-building-with-expressionnodes"></a>Building with ExpressionNodes
+#### <a name="curtain-building-with-expressionnodes"></a>Building with ExpressionNodes
 
 We’ll start with defining out the first Expression, which is the Condition portion of the InertiaMotion Modifier. This is done by using the CompositionExtensions.SetCondition(…) extension method, which is accessed via InteractionTrackerInertiaMotion.SetCondition(…).
 
@@ -1103,12 +1112,12 @@ var target = ExpressionValues.Target.CreateInteractionTrackerTarget();
 At this point, we are ready to build out the rest of the Expression and set the Motion component of the InertiaModifier, using another extension method CompositionExtensions.SetMotion(…):
 
 ```csharp
-var motion = (-target.Position.Y * springConstant) - 
-	(dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
+var motion = (-target.Position.Y * springConstant) -
+    (dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
 modifier.SetMotion(motion);
 ```
 
-### <a name="curtain-final-code-snippet"></a>Final code snippet
+#### <a name="curtain-final-code-snippet"></a>Final code snippet
 
 ```csharp
 var dampingConstant = 5;
@@ -1120,12 +1129,12 @@ var modifier = InteractionTrackerInertiaMotion.Create(_compositor);
 modifier.SetCondition(true);
 
 var target = ExpressionValues.Target.CreateInteractionTrackerTarget();
-var motion = (-target.Position.Y * springConstant) - 
-	(dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
+var motion = (-target.Position.Y * springConstant) -
+    (dampingConstant * target.PositionVelocityInPixelsPerSecond.Y);
 modifier.SetMotion(motion);
 
 _tracker.ConfigurePositionYInertiaModifiers(
-	new InteractionTrackerInertiaModifier[] { modifier });
+    new InteractionTrackerInertiaModifier[] { modifier });
 ```
 
 ## <a name="requirements"></a>Requirements
@@ -1137,4 +1146,4 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 ## <a name="api"></a>API
 
-* [Expressions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)
+- [Expressions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)

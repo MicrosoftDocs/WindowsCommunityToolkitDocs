@@ -24,8 +24,8 @@ The control uses the same dependency properties as the standard Progress Bar, wi
      xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
 <controls:RadialProgressBar x:Name="RadialProgressBarControl"
-	Value="70" Minimum="0" Maximum="180"
-	Thickness="4" Outline="Gray" Foreground="Red">
+    Value="70" Minimum="0" Maximum="180"
+    Thickness="4" Outline="Gray" Foreground="Red">
 </controls:RadialProgressBar>
 ```
 
@@ -42,7 +42,7 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## Sample Project
 
-[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 
@@ -57,4 +57,4 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## API
 
-* [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar)
+- [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar)
