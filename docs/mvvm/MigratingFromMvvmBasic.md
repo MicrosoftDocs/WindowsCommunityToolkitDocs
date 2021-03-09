@@ -12,7 +12,7 @@ dev_langs:
 
 This article explains how to migrate apps built with the [MVVM](https://github.com/microsoft/WindowsTemplateStudio/blob/dev/docs/UWP/frameworks/mvvmbasic.md) Basic option in [Windows Template Studio](https://marketplace.visualstudio.com/items?itemName=WASTeamAccount.WindowsTemplateStudio) to use the Toolkit MVVM library instead. It applies to both UWP and WPF apps created with Windows Template Studio.
 
-> **Platform APIs:** [`ObservableObject`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.mvvm.componentmodel.ObservableObject), [`RelayCommand`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.mvvm.input.RelayCommand)
+> **Platform APIs:** [`ObservableObject`](/dotnet/api/microsoft.toolkit.mvvm.componentmodel.ObservableObject), [`RelayCommand`](/dotnet/api/microsoft.toolkit.mvvm.input.RelayCommand)
 
 This article focuses exclusively on migration and does not cover how to use the additional functionality that the library provides.
 

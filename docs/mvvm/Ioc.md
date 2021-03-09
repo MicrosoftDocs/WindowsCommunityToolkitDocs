@@ -147,7 +147,7 @@ public ContactsView()
 
 ## More docs
 
-For more info about `Microsoft.Extensions.DependencyInjection`, see [here](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection).
+For more info about `Microsoft.Extensions.DependencyInjection`, see [here](/aspnet/core/fundamentals/dependency-injection).
 
 ## Examples
 
