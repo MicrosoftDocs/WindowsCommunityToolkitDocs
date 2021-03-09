@@ -111,6 +111,8 @@
 
 ## [SwitchPresenter](controls/SwitchPresenter.md)
 
+## [TabbedCommandBar](controls/TabbedCommandBar.md)
+
 ## [TabView](controls/TabView.md)
 
 ## [TextToolbar](controls/TextToolbar.md)
