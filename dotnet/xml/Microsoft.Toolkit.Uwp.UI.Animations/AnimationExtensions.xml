@@ -384,7 +384,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double distance = 0, double duration = 500, double delay = 0, Windows.UI.Color? color = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (animationSet As AnimationSet, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = null, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (animationSet As AnimationSet, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = Nothing, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
       <MemberSignature Language="F#" Value="static member Light : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (animationSet, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -395,7 +395,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -432,7 +433,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Windows.UI.Xaml.FrameworkElement associatedObject, double distance = 0, double duration = 500, double delay = 0, Windows.UI.Color? color = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (associatedObject As FrameworkElement, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = null, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (associatedObject As FrameworkElement, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = Nothing, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
       <MemberSignature Language="F#" Value="static member Light : Windows.UI.Xaml.FrameworkElement * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (associatedObject, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -443,7 +444,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

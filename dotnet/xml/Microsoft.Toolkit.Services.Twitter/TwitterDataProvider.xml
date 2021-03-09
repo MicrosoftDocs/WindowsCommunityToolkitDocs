@@ -157,7 +157,7 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Twitter.TwitterUser&gt; GetUserAsync (string screenName = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.Twitter.TwitterUser&gt; GetUserAsync(string screenName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.Twitter.TwitterDataProvider.GetUserAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserAsync (Optional screenName As String = null) As Task(Of TwitterUser)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserAsync (Optional screenName As String = Nothing) As Task(Of TwitterUser)" />
       <MemberSignature Language="F#" Value="member this.GetUserAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.Twitter.TwitterUser&gt;" Usage="twitterDataProvider.GetUserAsync screenName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -285,7 +285,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Logout is deprecated, please use LogoutAsync instead.", true)</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Logout is deprecated, please use LogoutAsync instead.", true)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Logout is deprecated, please use LogoutAsync instead.", true)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -439,7 +440,8 @@
         <Parameter Name="pictures" Type="System.IO.Stream[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -475,7 +477,8 @@
         <Parameter Name="pictures" Type="System.IO.Stream[]">
           <Attributes>
             <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>

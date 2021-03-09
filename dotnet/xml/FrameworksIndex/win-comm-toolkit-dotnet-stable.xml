@@ -5,14 +5,15 @@
     <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Forms.UI.XamlHost" Version="6.1.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Graph.Controls" Version="6.1.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Graph" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Graph.Controls" Version="7.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Graph" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.HighPerformance" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Parsers" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Services" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.DeveloperTools" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction" Version="255.255.255.255" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Notifications" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Services" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Animations" Version="6.1.0.0" />
@@ -21,14 +22,13 @@
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="6.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Layout" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Media" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost.Managed" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost" Version="255.255.255.255" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.1.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction" Version="255.255.255.255" />
-    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
-    <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost" Version="255.255.255.255" />
   </Assemblies>
   <Namespace Name="Microsoft.Toolkit.Collections">
     <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
@@ -797,6 +797,15 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Graph.Controls">
+    <Type Name="Microsoft.Toolkit.Graph.Controls.GraphPresenter" Id="T:Microsoft.Toolkit.Graph.Controls.GraphPresenter">
+      <Member Id="F:Microsoft.Toolkit.Graph.Controls.GraphPresenter.RequestBuilderProperty" />
+      <Member Id="M:Microsoft.Toolkit.Graph.Controls.GraphPresenter.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.GraphPresenter.IsCollection" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.GraphPresenter.OrderBy" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.GraphPresenter.QueryOptions" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.GraphPresenter.RequestBuilder" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.GraphPresenter.ResponseType" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Graph.Controls.LoginButton" Id="T:Microsoft.Toolkit.Graph.Controls.LoginButton">
       <Member Id="E:Microsoft.Toolkit.Graph.Controls.LoginButton.LoginCompleted" />
       <Member Id="E:Microsoft.Toolkit.Graph.Controls.LoginButton.LoginFailed" />
@@ -841,6 +850,12 @@
       <Member Id="P:Microsoft.Toolkit.Graph.Controls.PersonView.ShowName" />
       <Member Id="P:Microsoft.Toolkit.Graph.Controls.PersonView.UserId" />
       <Member Id="P:Microsoft.Toolkit.Graph.Controls.PersonView.UserPhoto" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Graph.Controls.QueryOption" Id="T:Microsoft.Toolkit.Graph.Controls.QueryOption">
+      <Member Id="M:Microsoft.Toolkit.Graph.Controls.QueryOption.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Graph.Controls.QueryOption.op_Implicit(Microsoft.Toolkit.Graph.Controls.QueryOption)~Microsoft.Graph.QueryOption" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.QueryOption.Name" />
+      <Member Id="P:Microsoft.Toolkit.Graph.Controls.QueryOption.Value" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Graph.Controls.Microsoft_Toolkit_Graph_Controls_XamlTypeInfo">
@@ -915,6 +930,7 @@
       <Member Id="P:Microsoft.Toolkit.Graph.Providers.MsalProvider.State" />
     </Type>
     <Type Name="Microsoft.Toolkit.Graph.Providers.ProviderManager" Id="T:Microsoft.Toolkit.Graph.Providers.ProviderManager">
+      <Member Id="E:Microsoft.Toolkit.Graph.Providers.ProviderManager.PropertyChanged" />
       <Member Id="E:Microsoft.Toolkit.Graph.Providers.ProviderManager.ProviderUpdated" />
       <Member Id="F:Microsoft.Toolkit.Graph.Providers.ProviderManager.ClientName" />
       <Member Id="P:Microsoft.Toolkit.Graph.Providers.ProviderManager.GlobalProvider" />
@@ -3029,22 +3045,32 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetRepeatDelayDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetThresholdDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadius" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadiusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDurationProperty" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackCompleteBrush" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackEnterBrush" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackProgressBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDurationProperty" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellStrokeThickness" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElement" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElementProperty" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Interaction" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.InteractionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisible" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisibleProperty" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabled" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCount" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCountProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDuration" />
       <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDurationProperty" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer">
@@ -10011,6 +10037,7 @@
     <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions">
       <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.GetWrapper(Windows.UI.Xaml.UIElement)" />
       <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.SetWrapper(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.Wrapper" />
     </Type>
     <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost">
       <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.#ctor" />

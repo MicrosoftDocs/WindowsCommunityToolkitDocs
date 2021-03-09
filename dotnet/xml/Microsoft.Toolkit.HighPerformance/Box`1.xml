@@ -23,7 +23,8 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{ToString(),raw}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -85,7 +86,7 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
@@ -230,7 +231,7 @@
       </Docs>
     </Member>
     <Member MemberName="TryGetFrom">
-      <MemberSignature Language="C#" Value="public static bool TryGetFrom (object obj, out Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; box);" />
+      <MemberSignature Language="C#" Value="public static bool TryGetFrom (object obj, out Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;? box);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFrom(object obj, [out] class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt;&amp; box) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.TryGetFrom(System.Object,Microsoft.Toolkit.HighPerformance.Box{`0}@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetFrom (obj As Object, ByRef box As Box(Of T)) As Boolean" />

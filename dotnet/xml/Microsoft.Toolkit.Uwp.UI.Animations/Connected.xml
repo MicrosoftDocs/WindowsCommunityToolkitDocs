@@ -332,7 +332,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterElementForConnectedAnimation (this Windows.UI.Xaml.Controls.Page page, string key, Windows.UI.Xaml.UIElement element, System.Collections.Generic.IEnumerable&lt;Windows.UI.Xaml.UIElement&gt; anchors = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterElementForConnectedAnimation(class Windows.UI.Xaml.Controls.Page page, string key, class Windows.UI.Xaml.UIElement element, class System.Collections.Generic.IEnumerable`1&lt;class Windows.UI.Xaml.UIElement&gt; anchors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Connected.RegisterElementForConnectedAnimation(Windows.UI.Xaml.Controls.Page,System.String,Windows.UI.Xaml.UIElement,System.Collections.Generic.IEnumerable{Windows.UI.Xaml.UIElement})" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub RegisterElementForConnectedAnimation (page As Page, key As String, element As UIElement, Optional anchors As IEnumerable(Of UIElement) = null)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub RegisterElementForConnectedAnimation (page As Page, key As String, element As UIElement, Optional anchors As IEnumerable(Of UIElement) = Nothing)" />
       <MemberSignature Language="F#" Value="static member RegisterElementForConnectedAnimation : Windows.UI.Xaml.Controls.Page * string * Windows.UI.Xaml.UIElement * seq&lt;Windows.UI.Xaml.UIElement&gt; -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Connected.RegisterElementForConnectedAnimation (page, key, element, anchors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -532,7 +532,8 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Obsolete("Method is replaced by SetListDataItemForNextConnectedAnimation")</AttributeName>
+          <AttributeName Language="C#">[System.Obsolete("Method is replaced by SetListDataItemForNextConnectedAnimation")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Method is replaced by SetListDataItemForNextConnectedAnimation")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
