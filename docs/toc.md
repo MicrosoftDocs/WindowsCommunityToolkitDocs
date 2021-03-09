@@ -175,6 +175,8 @@
 
 ## [PipelineBrush](brushes/PipelineBrush.md)
 
+## [PipelineVisualFactory](brushes/PipelineVisualFactory.md)
+
 ## [RadialGradientBrush](brushes/RadialGradientBrush.md)
 
 ## [TilesBrush](brushes/TilesBrush.md)
