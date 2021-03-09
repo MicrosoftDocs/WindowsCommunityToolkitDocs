@@ -532,7 +532,8 @@ _visual.StartAnimation("Offset", newPosition);
 
 #### <a name="subchanneling-swizzling"></a>Subchanneling (Swizzling)
 
-*[Also known as “dotting into things”]*
+> [!NOTE]
+> This is also known as “dotting into things”.
 
 When using a vector or matrix node type in your equations, you also can access a subchannel of (or “dot into”) the parameter to use an individual component property. For example, when using a Vector3 Constant, developers can dot into its X, Y, or Z component:
 
