@@ -103,4 +103,4 @@ Here the `SetPropertyAndNotifyOnCompletion<T>(ref TaskNotifier<T>, Task<T>, stri
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.Shared/Mvvm).
