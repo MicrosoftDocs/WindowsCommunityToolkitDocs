@@ -86,4 +86,4 @@ The following example of adding WrapPanel Control.
 
 ## API
 
-* [WrapPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/WrapPanel)
+* [WrapPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/WrapPanel)

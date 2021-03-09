@@ -130,4 +130,4 @@ if(availableFrameSourceGroups != null)
 
 ## API
 
-* [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/CameraPreview)
+* [CameraPreview source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/CameraPreview)

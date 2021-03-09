@@ -57,4 +57,4 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## API
 
-- [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar)
+- [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar)

@@ -148,4 +148,4 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## API
 
-* [OrbitView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView)
+* [OrbitView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/OrbitView)

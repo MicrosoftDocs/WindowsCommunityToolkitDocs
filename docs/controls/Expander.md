@@ -109,7 +109,7 @@ For instance to remove the header entirely from the Expander:
 
 ## API
 
-* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander)
+* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander)
 
 ## Related Topics
 
