@@ -2,7 +2,7 @@
 title: PipelineBrush
 author: Sergio0694
 description: A composition brush that can render any custom Win2D/Composition effects chain.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, win2d, composition
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, Win2D, composition
 ---
 
 # PipelineBrush

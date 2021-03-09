@@ -285,6 +285,10 @@
 
 ## [WeakEventListener](helpers/WeakEventListener.md)
 
+## [Win2D Path Mini Language Parser](parsers/CanvasPathGeometry.md)
+
+## [Win2D Path Mini Language](parsers/Win2D_Path_Mini_Language.md)
+
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
 # High performance
@@ -322,8 +326,6 @@
 # [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
 # [Notifications](notifications/NotificationsOverview.md)
-
-# [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 # Archive
 
@@ -390,6 +392,8 @@
 ### [HttpHelperRequest](helpers/HttpHelperRequest.md)
 
 ### [HttpHelperResponse](helpers/HttpHelperResponse.md)
+
+### [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 ## Microsoft Graph Controls
 

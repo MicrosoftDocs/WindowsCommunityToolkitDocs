@@ -2,7 +2,7 @@
 title: TilesBrush
 author: Sergio0694
 description: A composition brush that displays a tiled image.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, win2d, composition
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, Win2D, composition
 ---
 
 # TilesBrush

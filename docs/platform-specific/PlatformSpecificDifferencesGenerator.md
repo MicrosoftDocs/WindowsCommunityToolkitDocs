@@ -1,13 +1,16 @@
 ---
 title: UWP Platform Specific Differences Generator
 author: hermitdave
-description: Given the min and max SDK versions, the generator loads the appropriate Windows.Foundation.UniversalApiContract.winmd and builds differences in terms of new types and new members.
+description: Given the min and max SDK versions, the generator loads the appropriate Windows.Foundation.UniversalApiContract.winmd and builds differences in terms of new types and new members (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, platform specific, platform specific differences, platform specific differences generator
 dev_langs:
   - csharp
 ---
 
 # Platform Specific Differences Generator
+
+> [!WARNING]
+> This docs page is outdated and the Platform Specific Analyzers have been removed. Improvements are continually being made to the Visual Studio development experience, so please ensure you are on the latest version.
 
 A Platform Specific Analyzer would require to know the differences between various versions of UWP SDK. The Differences Generator provides a means of generating a differences dataset that can then be embedded in the analyzer.
 
