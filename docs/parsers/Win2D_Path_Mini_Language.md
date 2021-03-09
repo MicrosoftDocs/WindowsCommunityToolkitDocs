@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# Introduction
+# Win2D Path Mini Language
 
 The _Win2D Path Mini Language_ is a powerful and sophisticated language based on the [SVG Path language](https://www.w3.org/TR/SVG11/paths.html) specification. It facilitates specifying complex geometries, color, brushes, strokes and stroke styles in a more compact manner.
 
@@ -27,9 +27,9 @@ CanvasGeometry triangleGeometry = CanvasPathGeometry.CreateGeometry(device, path
 
 ## Table of Contents
 
-- [Introduction](#introduction)
+- [Introduction](#win2d-path-mini-language)
   - [Requirements](#requirements)
-- [Win2D Path Mini Language](#Win2D-path-mini-language)
+- [Win2D Path Mini Language](#win2d-path-mini-language-overview)
 - [Path Mini Language](#path-mini-language)
   - [Fill Behavior](#fill-behavior)
   - [MoveTo](#moveto)
@@ -80,7 +80,7 @@ CanvasGeometry triangleGeometry = CanvasPathGeometry.CreateGeometry(device, path
   - [ICanvasStroke interface and CanvasStroke class](#icanvasstroke-interface-and-canvasstroke-class)
 - [Creating Geometries, Brushes, Strokes and StrokeStyles](#creating-geometries-brushes-strokes-and-strokestyles)
 
-## Win2D Path Mini Language
+## Win2D Path Mini Language Overview
 
 Win2D Path Mini Language syntax derives from the SVG path syntax. It is a prefix notation (i.e., commands followed by parameters). In order to ensure that the data, specified in Win2D Path Mini Language, is concise the following rules must be followed
 
@@ -860,4 +860,4 @@ To create instances of CanvasGeomety, Brushes, CanvasStrokes, and CanvasStrokeSt
 
 ## Related Topics
 
-* [More details about `CanvasPathGeometry` class here.](CanvasPathGeometry.md)
+- [More details about `CanvasPathGeometry` class here.](CanvasPathGeometry.md)

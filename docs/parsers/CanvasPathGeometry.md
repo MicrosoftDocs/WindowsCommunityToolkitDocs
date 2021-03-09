@@ -24,7 +24,7 @@ pathBuilder.EndFigure(CanvasFigureLoop.Closed);
 CanvasGeometry triangleGeometry = CanvasGeometry.CreatePath(pathBuilder);
 ```
 
-The `CanvasPathGeometry` class provides several static methods that parse the [Win2D Mini Language](Win2D_Path_Mini_Language.md) and instantiate the complex geometries, color, brushes, strokes, and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
+The [`CanvasPathGeometry`](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometry.canvaspathgeometry) class provides several static methods that parse the [Win2D Mini Language](Win2D_Path_Mini_Language.md) and instantiate the complex geometries, color, brushes, strokes, and stroke styles. This class is available in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
 
 > [!div class="nextstepaction"]
 > [try it in the sample app](uwpct://Helpers?sample=CanvasPathGeometryPage)

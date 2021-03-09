@@ -30,14 +30,14 @@ The analyzer is available both as a nuget package
 The analyzer automatically kicks in when code is opened in Visual Studio and supports both C# and Visual Basic
 
 C#
-![Code Analysis](../resources/images/CodeAnalysis.png)
+![Code Analysis Underlined](../resources/images/CodeAnalysis.png)
 
-![Code Analysis](../resources/images/CodeFixSuggestion.png)
+![Code Analysis Suggestion](../resources/images/CodeFixSuggestion.png)
 
 Visual Basic
-![Code Analysis](../resources/images/CodeAnalysisVB.png)
+![Code Analysis Underlined in VB](../resources/images/CodeAnalysisVB.png)
 
-![Code Analysis](../resources/images/CodeFixSuggestionVB.png)
+![Code Analysis Suggestion in VB](../resources/images/CodeFixSuggestionVB.png)
 
 ## Sample Project
 
