@@ -111,6 +111,8 @@
 
 ## [SwitchPresenter](controls/SwitchPresenter.md)
 
+## [TabbedCommandBar](controls/TabbedCommandBar.md)
+
 ## [TabView](controls/TabView.md)
 
 ## [TextToolbar](controls/TextToolbar.md)
@@ -155,7 +157,17 @@
 
 ### [Handling Failure and Down-level](animations/lottie-scenarios/fallback.md)
 
-## [ItemsReorderAnimation](animations/ItemsReorderAnimation.md)
+## [Offset](animations/Offset.md)
+
+## [ReorderGridAnimation](animations/ReorderGrid.md)
+
+## [Rotate](animations/Rotate.md)
+
+## [Saturation](animations/Saturation.md)
+
+## [Scale](animations/Scale.md)
+
+## [ScrollViewerExtensions](animations/ScrollViewerExtensions.md)
 
 # Brushes
 
@@ -181,11 +193,11 @@
 
 # Extensions
 
-## [ArrayExtensions](extensions/ArrayExtensions.md)
-
 ## [Composition Visual Layer Extensions](extensions/VisualExtensions.md)
 
 ## [FrameworkElementExtensions](extensions/FrameworkElementExtensions.md)
+
+## [DependencyObjectExtensions](extensions/DependencyObjectExtensions.md)
 
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
 
@@ -193,33 +205,17 @@
 
 ## [ListViewExtensions](extensions/ListViewExtensions.md)
 
-## [Logical Tree](extensions/LogicalTree.md)
+## [NullableBoolExtension](extensions/NullableBoolExtension.md)
 
-## [Matrix Extensions](extensions/MatrixExtensions.md)
-
-### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
-
-### [Transform Extensions](extensions/TransformExtensions.md)
-
-## [Mouse Cursor](extensions/MouseCursor.md)
-
-## [NullableBoolMarkup](extensions/NullableBoolMarkup.md)
+## [OnDeviceExtension](extensions/OnDeviceExtension.md)
 
 ## [ScrollViewerExtensions](extensions/ScrollViewerExtensions.md)
 
-## [StringExtensions](extensions/StringExtensions.md)
-
-## [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
-
-## [TextBoxMask](extensions/TextBoxMask.md)
-
-## [TextBoxRegex](extensions/TextBoxRegex.md)
+## [TextBoxExtensions](extensions/TextBoxExtensions.md)
 
 ## [UIElementExtensions](extensions/UIElementExtensions.md)
 
 ## [ViewExtensions](extensions/ViewExtensions.md)
-
-## [Visual Tree](extensions/VisualTree.md)
 
 ## [WebViewExtensions](extensions/WebViewExtensions.md)
 
@@ -362,6 +358,30 @@
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 
 ### [SlidableListItem](archive/SlidableListItem.md)
+
+## Extensions
+
+### [ArrayExtensions](extensions/ArrayExtensions.md)
+
+### [Logical Tree](extensions/LogicalTree.md)
+
+### [Matrix Extensions](extensions/MatrixExtensions.md)
+
+### [Extra Matrix Helpers](extensions/MatrixHelperEx.md)
+
+### [Transform Extensions](extensions/TransformExtensions.md)
+
+### [Mouse Cursor](extensions/MouseCursor.md)
+
+### [Visual Tree](extensions/VisualTree.md)
+
+### [VisualEx](extensions/VisualEx.md)
+
+### [SurfaceDialTextboxHelper](extensions/SurfaceDialTextboxHelper.md)
+
+### [TextBoxMask](extensions/TextBoxMask.md)
+
+### [TextBoxRegex](extensions/TextBoxRegex.md)
 
 ## Helpers
 

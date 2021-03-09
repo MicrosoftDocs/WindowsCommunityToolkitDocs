@@ -7,6 +7,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Mouse.Cursor attached property
 
+> [!WARNING]
+> This docs page is outdated, please refer to the new one for the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type.
 The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.mouse.cursor) enables you to easily change the mouse cursor over specific Framework elements.
 
 > [!div class="nextstepaction"]
@@ -17,7 +19,6 @@ The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/micro
 ```xaml
 <Page ...
      xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
 <UIElement extensions:Mouse.Cursor="Hand"/>
 ```
 
@@ -36,7 +37,6 @@ Here is a example of setting Mouse.Cursor
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border extensions:Mouse.Cursor="Hand"
             Width="220" Height="120" Background="DeepSkyBlue"

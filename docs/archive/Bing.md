@@ -1,7 +1,7 @@
 ---
 title: Bing Service
 author: nmetulev
-description: The Bing Service allows you to retrieve Bing results. Bing can return web and news results in your language, images, and videos for many countries/regions around the world.
+description: The Bing Service allows you to retrieve Bing results. Bing can return web and news results in your language, images, and videos for many countries/regions around the world (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, bing
 dev_langs:
   - csharp

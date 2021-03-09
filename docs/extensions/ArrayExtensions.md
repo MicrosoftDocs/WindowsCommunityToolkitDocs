@@ -7,6 +7,9 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 
 # Array Extensions
 
+> [!WARNING]
+> These extensions have been partially moved to the `Microsoft.Toolkit.HighPerformance` package. Please refer to the .NET API browser for a comprehensive list of available APIs.
+
 Provides a few helpers for dealing with multidimensional and jagged arrays. Also, provides string helpers for debug output.
 
 ## Syntax

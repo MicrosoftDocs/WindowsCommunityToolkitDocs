@@ -1,7 +1,7 @@
 ---
 title: PeoplePicker Control
 author: OGcanviz
-description: The PeoplePicker Control is a simple control that allows for selection of one or more users from an organizational AD.
+description: The PeoplePicker Control is a simple control that allows for selection of one or more users from an organizational AD (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, PeoplePicker Control
 ---
 

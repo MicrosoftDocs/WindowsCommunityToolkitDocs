@@ -1,7 +1,7 @@
 ---
 title: RSS Parser
 author: michael-hawker
-description: The RSS Parser allows you to parse an RSS content String into an RSS Schema.
+description: The RSS Parser allows you to parse an RSS content String into an RSS Schema (outdated docs).
 keywords: windows community toolkit, uwp community toolkit, uwp toolkit, microsoft community toolkit, microsoft toolkit, rss, rss parsing, parser
 dev_langs:
   - csharp
