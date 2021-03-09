@@ -10,7 +10,7 @@ dev_langs:
 
 # FadeHeader
 
-The [FadeHeader](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.behaviors.fadeheaderbehavior) fades a ListView or GridView Header UIElement when the user scrolls. The UIElement fades out to 0 opacity when the edge of the Header reaches the edge of the visible bounds of the ListElement.
+The [FadeHeader](/dotnet/api/microsoft.toolkit.uwp.ui.animations.behaviors.fadeheaderbehavior) fades a ListView or GridView Header UIElement when the user scrolls. The UIElement fades out to 0 opacity when the edge of the Header reaches the edge of the visible bounds of the ListElement.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=FadeHeader)
