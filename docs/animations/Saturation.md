@@ -134,7 +134,6 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 - [Saturation source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Animations/SaturationEffectAnimation.cs)
 
-
 ## Related Topics
 
 - [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
