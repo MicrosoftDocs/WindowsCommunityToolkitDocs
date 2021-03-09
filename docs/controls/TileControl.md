@@ -15,8 +15,8 @@ The [Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 ## Syntax
 
 ```xaml
-<controls:TileControl x:Name="Tile1" OffsetX="-10" OffsetY="10" IsAnimated="True" 
-	ScrollViewerContainer="{x:Bind FlipView}" ParallaxSpeedRatio="1.2"/>
+<controls:TileControl x:Name="Tile1" OffsetX="-10" OffsetY="10" IsAnimated="True"
+    ScrollViewerContainer="{x:Bind FlipView}" ParallaxSpeedRatio="1.2"/>
 ```
 
 ## Sample Output
@@ -48,7 +48,7 @@ The [Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.u
 
 ## Sample Project
 
-[TileControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TileControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

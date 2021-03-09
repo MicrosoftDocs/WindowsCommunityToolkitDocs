@@ -1,7 +1,7 @@
 ---
 title: Saturation animation behavior
 author: nmetulev
-description: The Saturation animation behavior selectively saturates a XAML element.
+description: The Saturation animation behavior selectively saturates a XAML element (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, saturation animation, saturation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Saturation
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
 
 The [Saturation animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.saturation) selectively saturates a XAML element. Saturation animation is applied to all the XAML elements in its parent control/panel. Saturation animation doesn't affect the functionality of the control.
 
@@ -36,6 +39,7 @@ The [Saturation animation](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 MyUIElement.Saturation(value: 0.5, duration: 500, delay: 250).Start();
 await MyUIElement.Saturation(value: 0.5, duration: 500, delay: 250).StartAsync();  //Saturation animation can be awaited
 ```
+
 ```vb
 ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 ```
@@ -76,6 +80,7 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
         MyUIElement.Saturation(value: 0).Start();
     }
     ```
+
     ```vb
     Private Sub MyUIElement_PointerEntered(sender As Object, e As PointerRoutedEventArgs)
         MyUIElement.Saturation(value:=1).Start()
@@ -101,6 +106,7 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)
@@ -115,7 +121,7 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## Sample Project
 
-[Saturation Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Saturation). You can [see this in action](uwpct://Animations?sample=Saturation) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Saturation Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Saturation). You can [see this in action](uwpct://Animations?sample=Saturation) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -126,9 +132,9 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## API
 
-* [Saturation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Saturation.cs)
+- [Saturation source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Saturation.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [SaturationEffect Class](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [SaturationEffect Class](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)

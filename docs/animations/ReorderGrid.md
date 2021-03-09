@@ -1,7 +1,7 @@
 ---
 title: ReorderGridAnimation
 author: nmetulev
-description: The ReorderGridAnimation class allows your GridView controls to animate items into position when the size of the GridView changes.
+description: The ReorderGridAnimation class allows your GridView controls to animate items into position when the size of the GridView changes (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ReorderGridAnimation
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # ReorderGridAnimation
+
+> [!WARNING]
+> The `ReorderGridAnimation` type has been renamed, please see [`ItemsReorderAnimation`](ItemsReorderAnimation.md).
 
 The [ReorderGridAnimation class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.reordergridanimation) allows your GridView controls to animate items into position when the size of the GridView changes.
 
@@ -27,6 +30,7 @@ The [ReorderGridAnimation class](https://docs.microsoft.com/dotnet/api/microsoft
 ```csharp
 MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250);
 ```
+
 ```vb
 MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250)
 ```
@@ -43,7 +47,7 @@ MyGridView.SetValue(ReorderGridAnimation.DurationProperty, 250)
 
 ## Sample Project
 
-[ReorderGridAnimation Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ReorderGridAnimation). You can [see this in action](uwpct://Animations?sample=ReorderGridAnimation) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ReorderGridAnimation Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ReorderGridAnimation). You can [see this in action](uwpct://Animations?sample=ReorderGridAnimation) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

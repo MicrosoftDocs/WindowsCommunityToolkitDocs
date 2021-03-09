@@ -26,7 +26,7 @@ You can also Remove Default Buttons from any format, or Add Custom buttons to an
 
 ## Sample Output
 
-![TextToolbar](../resources/images/Controls/TextToolbar.png)
+![TextToolbar Sample](../resources/images/Controls/TextToolbar.png)
 
 ## Properties
 
@@ -45,6 +45,7 @@ You can also Remove Default Buttons from any format, or Add Custom buttons to an
 | UseURIChecker | bool | Gets or sets a value indicating whether to enable use of URI Checker for Link Creator. This allows you to verify Absolute URIs, before creating the Link |
 
 ## Create a Custom Formatter
+
 In order to create your own Formatter, you need to Inherit from the **Formatter** Class. Then on the TextToolbar, Set the `Format` property to `Custom` and then Set the `Formatter` property with your instantiated Custom Formatter.
 
 When you create the Class, you will need to override the `DefaultButtons` Property. This will allow you to define what buttons you want your Format to display on the **Toolbar**.
@@ -64,8 +65,6 @@ _Available CommonButtons:_
 
 Example of adding Add/Remove Buttons
 
-**XAML**
-
 ```xaml
 <controls:TextToolbar x:Name="Toolbar" Editor="{x:Bind Editor}">
     <controls:TextToolbar.ButtonModifications>
@@ -74,7 +73,7 @@ Example of adding Add/Remove Buttons
     <controls:TextToolbar.CustomButtons>
         <buttons:ToolbarButton
             Name="CustomButton"
-			Icon="ReportHacked"
+            Icon="ReportHacked"
             Position="1"
             Activation="{x:Bind System.Action<ToolbarButton>}"
             ShortcutKey="H" />
@@ -83,8 +82,6 @@ Example of adding Add/Remove Buttons
 </controls:TextToolbar>
 <RichEditBox x:Name="Editor" PlaceholderText="Enter Text Here" />
 ```
-
-**C#**
 
 ```csharp
 var button = Toolbar.GetDefaultButton(ButtonType.Headers);
@@ -99,6 +96,7 @@ Toolbar.CustomButtons.Add(new ToolbarButton
 });
 Toolbar.CustomButtons.Add(new ToolbarSeparator { Position = 2 });
 ```
+
 ```vb
 Dim button = Toolbar.GetDefaultButton(ButtonType.Headers)
 button.Visibility = Windows.UI.Xaml.Visibility.Collapsed
@@ -113,7 +111,7 @@ Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 
 ## Sample Project
 
-[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TextToolbar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

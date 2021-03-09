@@ -81,10 +81,10 @@ The following properties wrap corresponding [properties](https://docs.microsoft.
 
 ## API
 
-- [MediaPlayerElement (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
-- [MediaPlayerElement (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
+* [MediaPlayerElement (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
+* [MediaPlayerElement (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
 
 ## Related topics
 
-- [MediaPlayerElement (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement)
-- [Media playback](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/media-playback)
+* [MediaPlayerElement (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement)
+* [Media playback](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/media-playback)

@@ -1,7 +1,7 @@
 ---
 title: Scale animation behavior
 author: nmetulev
-description: The Scale animation behavior allows you to change a control's scale by increasing or decreasing the control through animation. 
+description: The Scale animation behavior allows you to change a control's scale by increasing or decreasing the control through animation (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, scale animation, scale
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Scale
+
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
 The [Scale animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.scale) allows you to change a control's scale by increasing or decreasing the control through animation. Scale animation is applied to all the XAML elements in its parent control/panel. Scale animation doesn't affect the functionality of the control.
 
@@ -34,6 +37,7 @@ The [Scale animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 ```csharp
 MyUIElement.Scale(scaleX: 2, scaleY: 2, centerX: 0, centerY: 0, duration: 2500, delay: 250, easingType: EasingType.Default).Start();
 ```
+
 ```vb
 MyUIElement.Scale(scaleX:=2, scaleY:=2, centerX:=0, centerY:=0, duration:=2500, delay:=250, easingType:=EasingType.[Default]).Start()
 ```
@@ -99,6 +103,7 @@ You can change the way how the animation interpolates between keyframes by defin
         lastTapped.Scale(scaleX: 2, scaleY: 2, centerX: 50, centerY: 50).Start();
     }
     ```
+
     ```vb
     Private lastTapped As UIElement = Nothing
 
@@ -113,6 +118,7 @@ You can change the way how the animation interpolates between keyframes by defin
         lastTapped.Scale(scaleX:=2, scaleY:=2, centerX:=50, centerY:=50).Start()
     End Sub
     ```
+
     **Sample Output**
 
     ![Use Case 1 Output](../resources/images/Animations/Scale/Sample-Output.gif)
@@ -128,6 +134,7 @@ You can change the way how the animation interpolates between keyframes by defin
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Light(5).Offset(offsetX:=100, offsetY:=100).Saturation(0.5).Scale(scaleX:=2, scaleY:=2)
     anim.SetDurationForAll(2500)
@@ -142,7 +149,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Scale Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Scale). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Scale Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Scale). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -153,9 +160,9 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-* [Scale source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
+- [Scale source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
+- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

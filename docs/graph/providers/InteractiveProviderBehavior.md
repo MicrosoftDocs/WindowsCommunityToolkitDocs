@@ -15,7 +15,7 @@ The [InteractiveProviderBehavior](https://docs.microsoft.com/dotnet/api/microsof
 Add this behavior to your application's main page. It only needs to be added to a single page to bootstrap all the other Graph enabled XAML controls.
 
 > [!IMPORTANT]
-> Be sure to Register Client Id in Azure first following the guidance here: https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app
+> Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
 >
 > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and check the "https://login.microsoftonline.com/common/oauth2/nativeclient" checkbox on that page. Then click "Save".
 
@@ -30,7 +30,7 @@ Add this behavior to your application's main page. It only needs to be added to 
 ## WPF
 
 > [!IMPORTANT]
-> This provider must be initialized in your WPF app when using the XAML Graph controls from [XAML Islands](https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/xaml-islands). The same syntax above is used; however, you must include the [Microsoft.Toolkit.Wpf.Graph.Providers](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.Graph.Providers) NuGet package instead.
+> This provider must be initialized in your WPF app when using the XAML Graph controls from [XAML Islands](https://docs.microsoft.com/windows/apps/desktop/modernize/xaml-islands). The same syntax above is used; however, you must include the [Microsoft.Toolkit.Wpf.Graph.Providers](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.Graph.Providers) NuGet package instead.
 
 ## Properties
 
@@ -55,4 +55,4 @@ Add this behavior to your application's main page. It only needs to be added to 
 ## Related Topics
 
 * [Graph SDK Authentication Providers](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth)
-* [App Registration Quick-Start for Client Id](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
+* [App Registration Quick-Start for Client Id](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)

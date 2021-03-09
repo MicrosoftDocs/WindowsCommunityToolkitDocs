@@ -1,0 +1,54 @@
+<Type Name="MemoryExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.MemoryExtensions">
+  <TypeSignature Language="C#" Value="public static class MemoryExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MemoryExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.MemoryExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module MemoryExtensions" />
+  <TypeSignature Language="F#" Value="type MemoryExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Memory`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this Memory&lt;byte&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(valuetype System.Memory`1&lt;unsigned int8&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.MemoryExtensions.AsStream(System.Memory{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (memory As Memory(Of Byte)) As Stream" />
+      <MemberSignature Language="F#" Value="static member AsStream : Memory&lt;byte&gt; -&gt; System.IO.Stream" Usage="Microsoft.Toolkit.HighPerformance.Extensions.MemoryExtensions.AsStream memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;System.Byte&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="memory">The input <see cref="T:System.Memory`1" /> of <see cref="T:System.Byte" /> instance.</param>
+        <summary>
+            Returns a <see cref="T:System.IO.Stream" /> wrapping the contents of the given <see cref="T:System.Memory`1" /> of <see cref="T:System.Byte" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.IO.Stream" /> wrapping the data within <paramref name="memory" />.</returns>
+        <remarks>
+            Since this method only receives a <see cref="T:System.Memory`1" /> instance, which does not track
+            the lifetime of its underlying buffer, it is responsability of the caller to manage that.
+            In particular, the caller must ensure that the target buffer is not disposed as long
+            as the returned <see cref="T:System.IO.Stream" /> is in use, to avoid unexpected issues.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

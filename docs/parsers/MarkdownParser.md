@@ -10,7 +10,10 @@ dev_langs:
 
 # Markdown Parser
 
-The [MarkdownDocument](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.markdown.markdowndocument) class allows you to parse a Markdown String into a Markdown Document, and then Render it with a Markdown Renderer.
+> [!WARNING]
+> (This API is will be removed in the future. Please consider using [Markdig](https://github.com/lunet-io/markdig) for Markdown document parsing.
+
+The [MarkdownDocument](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.parsers.markdown.markdowndocument) class allows you to parse a Markdown String into a Markdown Document, and then Render it with a Markdown Renderer.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Markdown%20Parser)
@@ -31,6 +34,7 @@ foreach (var element in document.Blocks)
     }
 }
 ```
+
 ```vb
 Dim md As String = "This is **Markdown**"
 Dim document As MarkdownDocument = New MarkdownDocument()
@@ -68,7 +72,7 @@ End Sub
 
 ## Create a Markdown Renderer
 
-In order to create a Markdown Renderer, you can either implement your own, or inherit from `MarkdownRenderBase`, this class already has all the required methods, and some assistive code to make implementing a Renderer easy, all you have to do is implement the Block and Inline Rendering, and the output.
+In order to create a Markdown Renderer, you can either implement your own, or inherit from `MarkdownRendererBase`, this class already has all the required methods, and some assistive code to make implementing a Renderer easy, all you have to do is implement the Block and Inline Rendering, and the output.
 
 This requires an inherited `IRenderContext`, which allows you to keep track of the Context of the rendering.
 
@@ -76,7 +80,7 @@ The best way to figure out how to create a Renderer, is to look at the [implemen
 
 ## Sample Project
 
-[Markdown Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Markdown Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

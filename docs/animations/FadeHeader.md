@@ -58,6 +58,7 @@ The [FadeHeader](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.
 ```csharp
 Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(new FadeHeaderBehavior());
 ```
+
 ```vb
 Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(New FadeHeaderBehavior())
 ```
@@ -67,6 +68,7 @@ Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(New FadeHe
 ```csharp
 Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(new FadeHeaderBehavior { HeaderElement = MyHeaderGrid });
 ```
+
 ```vb
 Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(New FadeHeaderBehavior With {.HeaderElement = MyHeaderGrid})
 ```
@@ -83,7 +85,7 @@ Microsoft.Xaml.Interactivity.Interaction.GetBehaviors(MyListView).Add(New FadeHe
 
 ## Sample Project
 
-[FadeHeader Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FadeHeader). You can [see this in action](uwpct://Animations?sample=FadeHeader) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[FadeHeader Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FadeHeader). You can [see this in action](uwpct://Animations?sample=FadeHeader) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

@@ -11,7 +11,7 @@ dev_langs:
 # WebView control for Windows Forms and WPF
 
 > [!NOTE]
-> WebView will eventually be replaced by [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/hosting/webview2) (currently in preview). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
+> WebView will eventually be replaced by [WebView2](https://docs.microsoft.com/microsoft-edge/hosting/webview2) (currently in preview). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
 
 The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
 
@@ -98,7 +98,7 @@ For guidance, see [Configuring your Windows Forms app for high DPI support](http
 
 Add the following XML to your application manifest file:
 
-```XML
+```xaml
 <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Windows 10 -->
@@ -106,9 +106,10 @@ Add the following XML to your application manifest file:
     </application>
   </compatibility>
 ```
+
 Add the following XML to your application configuration file:
 
-```XML
+```xaml
 <application xmlns="urn:schemas-microsoft-com:asm.v3">
    <windowsSettings>
      <!-- The combination of below two tags have the following effect :
@@ -151,6 +152,7 @@ private void WebView_Loaded(object sender, RoutedEventArgs e)
     webView1.Navigate("http://www.contoso.com");
 }
 ```
+
 ```vb
 webView1.Navigate("http://www.contoso.com")
 ```
@@ -182,6 +184,7 @@ private void webView1_NavigationStarting(object sender, WebViewControlNavigation
         args.Cancel = true;
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT
 
@@ -207,6 +210,7 @@ private void webView1_ContentLoading(WebView sender, WebViewControlContentLoadin
     }
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Wpf.UI.Controls
 
@@ -233,6 +237,7 @@ private void webView1_DOMContentLoaded(WebView sender, WebViewControlDOMContentL
     }
 }
 ```
+
 ```vb
 AddHandler webView1.DOMContentLoaded, AddressOf webView1_DOMContentLoaded
 
@@ -261,6 +266,7 @@ private void webView1_NavigationCompleted(WebView sender, WebViewControlNavigati
     }
 }
 ```
+
 ```vb
 AddHandler webView1.NavigationCompleted, AddressOf webView1_NavigationCompleted
 
@@ -321,6 +327,7 @@ private void webView_ContainsFullScreenElementChanged(object sender, object args
     }
 }
 ```
+
 ```vb
 ' Assume webView1 is defined in XAML
 AddHandler webView1.ContainsFullScreenElementChanged, AddressOf webView1_ContainsFullScreenElementChanged
@@ -362,6 +369,7 @@ private void webView_PermissionRequested(WebView sender, WebViewControlPermissio
     }
 }
 ```
+
 ```vb
 AddHandler webView1.PermissionRequested, AddressOf webView1_PermissionRequested
 
@@ -386,6 +394,7 @@ For example, if the content of a web view named `webView1` contains a function n
 string[] args = {"January", "1", "2000"};
 string returnValue = await webView1.InvokeScriptAsync("setDate", args);
 ```
+
 ```vb
 Dim args As String() = {"January", "1", "2000"}
 Dim returnValue As String = Await webView1.InvokeScriptAsync("setDate", args)
@@ -402,6 +411,7 @@ private async void Button_Click(object sender, RoutedEventArgs e)
     await webView1.InvokeScriptAsync("eval", new string[] { functionString });
 }
 ```
+
 ```vb
 Private Async Sub Button_Click(sender As Object, e As RoutedEventArgs)
     Dim functionString As String = String.Format("document.getElementById('nameDiv').innerText = 'Hello, {0}';", nameTextBox.Text)
@@ -423,7 +433,6 @@ By default, the **WebView** is hosted outside of your application's process in a
 
 For example, if through the designer a **WebView** named `webView1` is on `Form1`, you can create a new **WebView** that shares the same process and state with `webView1` like this.
 
-**Form1.cs**
 ```csharp
 public partial class Form1 : Form
 {
@@ -441,6 +450,7 @@ public partial class Form1 : Form
     }
 }
 ```
+
 ```vb
 Private Class Form1
 
@@ -462,7 +472,7 @@ End Class
 
 Similar to the Windows Forms example, if through the designer a **WebView** is created named `WebView1` on the `Window`, you can create a new **WebView** that shares the same process and state with `WebView1` like this.
 
-**MainWindow.xaml**
+MainWindow.xaml
 
 ```xaml
 <Window
@@ -489,7 +499,7 @@ Similar to the Windows Forms example, if through the designer a **WebView** is c
 </Window>
 ```
 
-**MainWindow.xaml.cs**
+MainWindow.xaml.cs
 
 ```csharp
 public partial class MainWindow : Window
@@ -512,6 +522,9 @@ public partial class MainWindow : Window
     }
 }
 ```
+
+MainWindow.xaml.vb
+
 ```vb
 Class MainWindow
     Private Sub WebView_Loaded(sender As Object, e As RoutedEventArgs)
@@ -531,18 +544,18 @@ End Class
 
 ### There’s *WebBrowser*, *WebView*, and *WebViewControl*. What’s the difference?
 
-When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.webbrowser?view=netframework-4.7.2) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/en-us/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
+When people refer to a “web view” they either refer to the [WebBrowser](https://docs.microsoft.com/dotnet/api/system.windows.controls.webbrowser) control in .NET, which uses the legacy Internet Explorer "Trident" (MSHTML) engine, the Universal Windows Platform (UWP) [WebView](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview ) which uses the Microsoft Edge (EdgeHTML) engine on some versions of Windows and Trident on others, or the [WebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol), which is a subset of the UWP WebView available for use in Windows Forms, WPF and other desktop (Win32) applications.
 
 ### Is *WebViewControl* available on Windows Server?
 
-No. [Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#long-term-servicing-channel) versions of Windows, including *Windows Server*, don't include Microsoft Edge or many other UWP applications. These apps and their required services are frequently updated with new functionality and cannot be supported on systems running a LTSC operating system.
+No. [Long-Term Servicing Channel (LTSC)](https://docs.microsoft.com/windows/deployment/update/waas-overview#long-term-servicing-channel) versions of Windows, including *Windows Server*, don't include Microsoft Edge or many other UWP applications. These apps and their required services are frequently updated with new functionality and cannot be supported on systems running a LTSC operating system.
 
-A future workaround might be to use [Windows Virtual Desktop](https://azure.microsoft.com/en-us/services/virtual-desktop/) to run your WebViewControl application through a virtualized desktop on Windows 7, Windows 10 LTSC versions, and other environments where Microsoft Edge (and the WebViewControl) wouldn't otherwise be supported.
+A future workaround might be to use [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) to run your WebViewControl application through a virtualized desktop on Windows 7, Windows 10 LTSC versions, and other environments where Microsoft Edge (and the WebViewControl) wouldn't otherwise be supported.
 
 ### Are there samples?
 
-Yes! Samples are available for Windows Forms, Windows Presentation Foundation, and C++ here: 
-https://github.com/rjmurillo/webview-samples
+Yes! Samples are available for Windows Forms, Windows Presentation Foundation, and C++ here:
+<https://github.com/rjmurillo/webview-samples>
 
 ### Can I simply swap out the Internet Explorer *WebBrowser* for Microsoft Edge *WebViewControl* in my application?
 
@@ -550,7 +563,7 @@ No, the APIs differ significantly, as the *WebViewControl* represents several ge
 
 ### Can I inject native objects into my WebViewControl content?
 
-No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround 
+No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: <https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround>
 
 ### Can I host the UWP WebView in WPF or Windows Forms using XAML islands?
 
@@ -558,11 +571,11 @@ No. It is not possible to host the (full-featured) UWP WebView using XAML island
 
 ### How do I debug WebViewControl?
 
-To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](https://docs.microsoft.com/en-us/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
+To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](https://docs.microsoft.com/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
 
 ## Sample Project
 
-You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

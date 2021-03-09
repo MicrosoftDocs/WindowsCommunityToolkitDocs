@@ -10,6 +10,9 @@ dev_langs:
 
 # Weibo Service
 
+> [!WARNING]
+> (This API will be removed in the future.)
+
 The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [https://open.weibo.com](https://open.weibo.com) to create a new app or manage existing apps.
 
 > [!div class="nextstepaction"]
@@ -28,8 +31,8 @@ Copy this from the *应用基本信息*(basic information) section on your appli
 **Secure Domains**
 Due to the restriction by Weibo API, a status you post must include a url which starts with "http"/"https". You can add a url to the list of secure domains in the *应用基本信息*(basic information) section on your application page.
 
-**Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar. 
-*Example*: http://myapp.company.com - (this does not have to be a working URL)
+**Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar.
+*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
 
 ## Syntax
 
@@ -56,6 +59,7 @@ await WeiboService.Instance.PostStatusAsync(StatusText.Text);
 await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream);
 
 ```
+
 ```vb
 
 ' Initialize service
@@ -93,7 +97,7 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## Sample Project
 
-[Weibo Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Weibo Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 

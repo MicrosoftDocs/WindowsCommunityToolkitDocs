@@ -21,10 +21,10 @@ The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.tool
 <Page ...
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
-<controls:RangeSelector x:Name="RangeSelectorControl" 
-	Minimum="10" 
-	Maximum="100"
-	StepFrequency="2">
+<controls:RangeSelector x:Name="RangeSelectorControl"
+    Minimum="10"
+    Maximum="100"
+    StepFrequency="2">
 </controls:RangeSelector>
 ```
 
@@ -57,31 +57,32 @@ Here is an example of using RangeSelector within a ScrollViewer
 ```csharp
 private void Selector_OnDragStarted(object sender, DragStartedEventArgs e)
 {
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled;
-	ScrollViewer.VerticalScrollMode = ScrollMode.Disabled;
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled;
+ ScrollViewer.VerticalScrollMode = ScrollMode.Disabled;
 }
 
 private void Selector_OnDragCompleted(object sender, DragCompletedEventArgs e)
 {
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Auto;
-	ScrollViewer.VerticalScrollMode = ScrollMode.Auto;
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Auto;
+ ScrollViewer.VerticalScrollMode = ScrollMode.Auto;
 }
 ```
+
 ```vb
 Private Sub Selector_OnDragStarted(ByVal sender As Object, ByVal e As DragStartedEventArgs)
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled
-	ScrollViewer.VerticalScrollMode = ScrollMode.Disabled
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled
+ ScrollViewer.VerticalScrollMode = ScrollMode.Disabled
 End Sub
 
 Private Sub Selector_OnDragCompleted(ByVal sender As Object, ByVal e As DragCompletedEventArgs)
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Auto
-	ScrollViewer.VerticalScrollMode = ScrollMode.Auto
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Auto
+ ScrollViewer.VerticalScrollMode = ScrollMode.Auto
 End Sub
 ```
 
 ## Sample Project
 
-[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Default Template
 

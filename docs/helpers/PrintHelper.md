@@ -18,7 +18,7 @@ Please note that controls cannot be linked to a visual tree. This means that the
 If you want to use a control from your current XAML page, you can disconnect it before sending it to print (by removing it from its container) or you can create just create a new one from scratch.
 
 Please check the sample app code to see how to disconnect/reconnect a control that you want to print:
-https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper/PrintHelperPage.xaml.cs
+<https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper/PrintHelperPage.xaml.cs>
 
 Several events are available to control the printing process:
 
@@ -45,6 +45,7 @@ printHelper.AddFrameworkElementToPrint(frameworkElement);
 
 await printHelper.ShowPrintUIAsync("Title");
 ```
+
 ```vb
 Dim printHelper = New PrintHelper(container)
 
@@ -113,6 +114,7 @@ private async void PrintHelper_OnPrintFailed()
   await dialog.ShowAsync();
 }
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to host printable control. 
@@ -154,6 +156,7 @@ var printHelper = new PrintHelper(container);
 // Start printing process
 await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", true);
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to get the list of printable controls. 
@@ -179,6 +182,7 @@ defaultPrintHelperOptions.Orientation = PrintOrientation.Landscape;
 // "container" is a XAML panel that will be used to get the list of printable controls.
 var printHelper = new PrintHelper(container, defaultPrintHelperOptions);
 ```
+
 ```vb
 ' Create a new PrintHelperOptions instance
 Dim defaultPrintHelperOptions = New PrintHelperOptions()
@@ -214,6 +218,7 @@ printHelperOptions.Orientation = PrintOrientation.Landscape;
 // Start printing process
 await _printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", printHelperOptions);
 ```
+
 ```vb
 ' Create a new PrintHelper instance
 ' "container" is a XAML panel that will be used to get the list of printable controls.
@@ -273,6 +278,7 @@ foreach (var item in PrintSampleItems)
 // Start printing process
 await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", printHelperOptions);
 ```
+
 ```vb
   Dim printHelper = New PrintHelper(container)
   Dim pageNumber = 0
@@ -301,7 +307,7 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
 ## Sample Project
 
-[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 

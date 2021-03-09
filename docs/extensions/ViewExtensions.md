@@ -1,18 +1,19 @@
 ---
-title: ViewExtensions
+title: View extensions
 author: nmetulev
-description: The ApplicationViewExtensions, StatusBarExtensions & TitleBarExtensions provide a declarative way of setting AppView, StatusBar & TitleBar properties from XAML.
+description: The ApplicationViewExtensions and TitleBarExtensions types provide a declarative way of setting ApplicationView, CoreApplicationView and ApplicationViewTitleBar properties from XAML.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ViewExtensions, ApplicationViewExtensions, StatusBarExtensions, TitleBarExtensions, statusbar, titlebar, xaml
 ---
 
-# ViewExtensions
+# View extensions
 
-The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.applicationview), [StatusBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.statusbar) & [TitleBarExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.titlebar) provide a declarative way of setting AppView, StatusBar & TitleBar properties from XAML.
+The [`ApplicationViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.applicationviewextensions) and [`TitleBarExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.titlebarextensions) provide a declarative way of setting [`ApplicationView`](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview), [`CoreApplicationView`](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.coreapplicationview) and [`ApplicationViewTitleBar`](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewtitlebar) properties from XAML.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Extensions?sample=ViewExtensions)
+> **Platform APIs:** [`ApplicationViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.applicationviewextensions), [`TitleBarExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.titlebarextensions)
 
 ## Example
+
+These attached properties all target a [`Page`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.page) element, so they can be used directly from XAML when declaring a control of this type in an application:
 
 ```xaml
 <Page x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.ViewExtensionsPage"
@@ -21,57 +22,21 @@ The [ApplicationViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="using:Microsoft.Toolkit.Uwp.SampleApp.SamplePages"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions"
-      extensions:ApplicationViewExtensions.Title="View Extensions"
-      extensions:StatusBarExtensions.BackgroundColor="Blue"
-      extensions:StatusBarExtensions.BackgroundOpacity="0.8"
-      extensions:StatusBarExtensions.ForegroundColor="White"
-      extensions:StatusBarExtensions.IsVisible="True"
-      extensions:TitleBarExtensions.BackgroundColor="Blue"
-      extensions:TitleBarExtensions.ForegroundColor="White"
+      xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+      ui:ApplicationViewExtensions.Title="View Extensions"
+      ui:ApplicationViewExtensions.ExtendViewIntoTitleBar="True"
+      ui:TitleBarExtensions.BackgroundColor="Gray"
+      ui:TitleBarExtensions.ButtonBackgroundColor="Orange"
+      ui:TitleBarExtensions.ButtonForegroundColor="Black"
+      ui:TitleBarExtensions.ButtonHoverBackgroundColor="DarkOrange"
+      ui:TitleBarExtensions.ButtonHoverForegroundColor="Gray"
+      ui:TitleBarExtensions.ButtonPressedForegroundColor="DarkGray"
       mc:Ignorable="d">
 
-    <Grid Background="{StaticResource Brush-Grey-05}" />
+    <!-- Page content here -->
 </Page>
 ```
 
-## Properties
+## Examples
 
-### ApplicationViewExtensions Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Title | string | Set application title |
-
-### StatusBarExtensions Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| BackgroundColor | Color | Set background color of status bar |
-| BackgroundOpacity | double | Set background color opacity of status bar |
-| ForegroundColor | Color | Set foreground color of status bar |
-| IsVisible | bool | Set visibility of status bar |
-
-### TitleBarExtensions Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| BackgroundColor | Color | Set background color of title bar |
-| ForegroundColor | Color | Set foreground color of title bar |
-
-## Sample Project
-
-[ViewExtensions Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ViewExtensions). You can [see this in action](uwpct://Extensions?sample=ViewExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
-
-## API
-
-* [ApplicationViewExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/ApplicationView/ApplicationViewExtensions.cs)
-* [StatusBarExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/StatusBar/StatusBarExtensions.cs)
-* [TitleBarExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/TitleBar/TitleBarExtensions.cs)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).

@@ -21,7 +21,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |         Property          |                       Type                        |                                 Description                                 |
 |---------------------------|---------------------------------------------------|-----------------------------------------------------------------------------|
-|    BluetoothLeDevices     | ObservableCollection<ObservableBluetoothLEDevice> |                Gets the list of available bluetooth devices                 |
+|    BluetoothLeDevices     | ObservableCollection\<ObservableBluetoothLEDevice> |                Gets the list of available bluetooth devices                 |
 |       IsEnumerating       |                       bool                        |        Gets a value indicating whether app is currently enumerating         |
 | IsPeripheralRoleSupported |                       bool                        | Gets a value indicating whether peripheral mode is supported by this device |
 |  IsCentralRoleSupported   |                       bool                        |  Gets a value indicating whether central role is supported by this device   |
@@ -55,7 +55,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 |         IsPaired         |                                                 bool                                                  |    Gets a value indicating whether this device is paired    |
 |           Name           |                                                string                                                 |                Gets the name of this device                 |
 |           RSSI           |                                                  int                                                  |             Gets the RSSI value of this device              |
-|         Services         |                           ObservableCollection<ObservableGattDeviceService>                           |           Gets the services this device supports            |
+|         Services         |                           ObservableCollection\<ObservableGattDeviceService>                           |           Gets the services this device supports            |
 |       ServiceCount       |                                                  int                                                  |     Gets or sets the number of services this device has     |
 
 ### Methods
@@ -73,7 +73,7 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |    Property     |                        Type                         |                 Description                  |
 |-----------------|-----------------------------------------------------|----------------------------------------------|
-| Characteristics | ObservableCollection<ObservableGattCharacteristics> | Gets all the characteristics of this service |
+| Characteristics | ObservableCollection\<ObservableGattCharacteristics> | Gets all the characteristics of this service |
 |      Name       |                       string                        |        Gets the name of this service         |
 |      UUID       |                       string                        |        Gets the UUID of this service         |
 |     Service     |                  GattDeviceService                  |      Gets the service this class wraps       |
@@ -97,11 +97,11 @@ The BluetoothLEHelper class provides functionality to easily enumerate, connect 
 
 |       Methods       | Return Type  |              Description              |
 |---------------------|--------------|---------------------------------------|
-|  ReadValueAsync()   | Task<string> | Reads the value of the Characteristic |
-| SetIndicateAsync()  |  Task<bool>  |     Set's the indicate descriptor     |
-| StopIndicateAsync() |  Task<bool>  |     Unset the indicate descriptor     |
-|  SetNotifyAsync()   |  Task<bool>  |    Sets the notify characteristic     |
-|  StopNotifyAsync()  |  Task<bool>  |     Unsets the notify descriptor      |
+|  ReadValueAsync()   | Task\<string> | Reads the value of the Characteristic |
+| SetIndicateAsync()  |  Task\<bool>  |     Set's the indicate descriptor     |
+| StopIndicateAsync() |  Task\<bool>  |     Unset the indicate descriptor     |
+|  SetNotifyAsync()   |  Task\<bool>  |    Sets the notify characteristic     |
+|  StopNotifyAsync()  |  Task\<bool>  |     Unsets the notify descriptor      |
 
 ## Example
 
@@ -113,22 +113,23 @@ BluetoothLEHelper bluetoothLEHelper = BluetoothLEHelper.Context;
 if (BluetoothLEHelper.IsBluetoothLESupported)
 {
     // Start the Enumeration
-	bluetoothLEHelper.StartEnumeration();
+    bluetoothLEHelper.StartEnumeration();
 
-	// At this point the user needs to select a device they want to connect to. This can be done by
-	// creating a ListView and binding the bluetoothLEHelper collection to it. Once a device is found, 
-	// the Connect() method can be called to connect to the device and start interacting with its services
+    // At this point the user needs to select a device they want to connect to. This can be done by
+    // creating a ListView and binding the bluetoothLEHelper collection to it. Once a device is found, 
+    // the Connect() method can be called to connect to the device and start interacting with its services
 
-	// Connect to a device if your choice
-	ObservableBluetoothLEDevice device = bluetoothLEHelper.BluetoothLeDevices[<Device you choose>];
-	await device.ConnectAsync();
+    // Connect to a device if your choice
+    ObservableBluetoothLEDevice device = bluetoothLEHelper.BluetoothLeDevices[<Device you choose>];
+    await device.ConnectAsync();
 
-	// At this point the device is connected and the Services property is populated.
+    // At this point the device is connected and the Services property is populated.
 
-	// See all the services
-	var services = device.Services;
+    // See all the services
+    var services = device.Services;
 }
 ```
+
 ```vb
 ' Get a local copy of the context for easier reading
 Dim bluetoothLEHelper As BluetoothLEHelper = BluetoothLEHelper.Context
@@ -136,26 +137,26 @@ Dim bluetoothLEHelper As BluetoothLEHelper = BluetoothLEHelper.Context
 ' check if BluetoothLE APIs are available
 If BluetoothLEHelper.IsBluetoothLESupported Then
     ' Start the Enumeration
-	bluetoothLEHelper.StartEnumeration()
+    bluetoothLEHelper.StartEnumeration()
 
-	' At this point the user needs to select a device they want to connect to. This can be done by
-	' creating a ListView and binding the bluetoothLEHelper collection to it. Once a device is found, 
-	' the Connect() method can be called to connect to the device and start interacting with its services
+    ' At this point the user needs to select a device they want to connect to. This can be done by
+    ' creating a ListView and binding the bluetoothLEHelper collection to it. Once a device is found, 
+    ' the Connect() method can be called to connect to the device and start interacting with its services
 
-	' Connect to a device if your choice
-	Dim device As ObservableBluetoothLEDevice = bluetoothLEHelper.BluetoothLeDevices(<Device you choose>)
-	Await device.ConnectAsync()
+    ' Connect to a device if your choice
+    Dim device As ObservableBluetoothLEDevice = bluetoothLEHelper.BluetoothLeDevices(<Device you choose>)
+    Await device.ConnectAsync()
 
-	' At this point the device is connected and the Services property is populated.
+    ' At this point the device is connected and the Services property is populated.
 
-	' See all the services
-	Dim services = device.Services
+    ' See all the services
+    Dim services = device.Services
 End If
 ```
 
 ## Sample Project
 
-[BluetoothLE Helper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BluetoothLEHelper). You can [see this in action](uwpct://Helpers?sample=BluetoothLEHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BluetoothLE Helper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BluetoothLEHelper). You can [see this in action](uwpct://Helpers?sample=BluetoothLEHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
