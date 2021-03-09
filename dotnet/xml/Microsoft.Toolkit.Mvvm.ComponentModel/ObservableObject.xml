@@ -1,0 +1,782 @@
+<Type Name="ObservableObject" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject">
+  <TypeSignature Language="C#" Value="public abstract class ObservableObject : System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObservableObject extends System.Object implements class System.ComponentModel.INotifyPropertyChanged, class System.ComponentModel.INotifyPropertyChanging" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObservableObject&#xA;Implements INotifyPropertyChanged, INotifyPropertyChanging" />
+  <TypeSignature Language="F#" Value="type ObservableObject = class&#xA;    interface INotifyPropertyChanged&#xA;    interface INotifyPropertyChanging" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanging</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A base class for objects of which the properties must be observable.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableObject ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="observableObject.OnPropertyChanged e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The input <see cref="T:System.ComponentModel.PropertyChangedEventArgs" /> instance.</param>
+        <summary>
+            Raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected void OnPropertyChanged (string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnPropertyChanged (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.OnPropertyChanged : string -&gt; unit" Usage="observableObject.OnPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanging">
+      <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanging (System.ComponentModel.PropertyChangingEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanging(class System.ComponentModel.PropertyChangingEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanging (e As PropertyChangingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanging : System.ComponentModel.PropertyChangingEventArgs -&gt; unit&#xA;override this.OnPropertyChanging : System.ComponentModel.PropertyChangingEventArgs -&gt; unit" Usage="observableObject.OnPropertyChanging e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.ComponentModel.PropertyChangingEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">The input <see cref="T:System.ComponentModel.PropertyChangingEventArgs" /> instance.</param>
+        <summary>
+            Raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanging">
+      <MemberSignature Language="C#" Value="protected void OnPropertyChanging (string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnPropertyChanging(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnPropertyChanging (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.OnPropertyChanging : string -&gt; unit" Usage="observableObject.OnPropertyChanging propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanged">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler? PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyChanging">
+      <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangingEventHandler? PropertyChanging;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangingEventHandler PropertyChanging" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanging As PropertyChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " Usage="member this.PropertyChanging : System.ComponentModel.PropertyChangingEventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanging.PropertyChanging</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangingEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * string -&gt; bool" Usage="observableObject.SetProperty (field, newValue, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with the new
+            value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised
+            if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, Action&lt;T&gt; callback, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Action`1&lt;!!T&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, callback As Action(Of T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * Action&lt;'T&gt; * string -&gt; bool" Usage="observableObject.SetProperty (oldValue, newValue, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with the new
+            value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            This overload is much less efficient than <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" /> and it
+            should only be used when the former is not viable (eg. when the target property being
+            updated does not directly expose a backing field that can be passed by reference).
+            For performance reasons, it is recommended to use a stateful callback if possible through
+            the <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" /> whenever possible
+            instead of this overload, as that will allow the C# compiler to cache the input callback and
+            reduce the memory allocations. More info on that overload are available in the related XML
+            docs. This overload is here for completeness and in cases where that is not applicable.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised
+            if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, comparer As IEqualityComparer(Of T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * string -&gt; bool" Usage="observableObject.SetProperty (field, newValue, comparer, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with the new
+            value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, Action&lt;T&gt; callback, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, class System.Action`1&lt;!!T&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), callback As Action(Of T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * Action&lt;'T&gt; * string -&gt; bool" Usage="observableObject.SetProperty (oldValue, newValue, comparer, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with the new
+            value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, TModel model, Action&lt;TModel,T&gt; callback, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, model As TModel, callback As Action(Of TModel, T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * string -&gt; bool (requires 'Model : null)" Usage="observableObject.SetProperty (oldValue, newValue, model, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="model">The model containing the property being updated.</param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+             Compares the current and new values for a given nested property. If the value has changed,
+             raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+             <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />,
+             with the difference being that this method is used to relay properties from a wrapped model in the
+             current instance. This type is useful when creating wrapping, bindable objects that operate over
+             models that lack support for notification (eg. for CRUD operations).
+             Suppose we have this model (eg. for a database row in a table):
+             <code>
+             public class Person
+             {
+                 public string Name { get; set; }
+             }
+             </code>
+             We can then use a property to wrap instances of this type into our observable model (which supports
+             notifications), injecting the notification to the properties of that model, like so:
+             <code>
+             public class BindablePerson : ObservableObject
+             {
+                 public Model { get; }
+            
+                 public BindablePerson(Person model)
+                 {
+                     Model = model;
+                 }
+            
+                 public string Name
+                 {
+                     get =&gt; Model.Name;
+                     set =&gt; Set(Model.Name, value, Model, (model, name) =&gt; model.Name = name);
+                 }
+             }
+             </code>
+             This way we can then use the wrapping object in our application, and all those "proxy" properties will
+             also raise notifications when changed. Note that this method is not meant to be a replacement for
+             <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />, and it should only be used when relaying properties to a model that
+             doesn't support notifications, and only if you can't implement notifications to that model directly (eg. by having
+             it inherit from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />). The syntax relies on passing the target model and a stateless callback
+             to allow the C# compiler to cache the function, which results in much better performance and no memory usage.
+             </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+             The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not
+             raised if the current and new value for the target property are the same.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, TModel model, Action&lt;TModel,T&gt; callback, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), model As TModel, callback As Action(Of TModel, T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * string -&gt; bool (requires 'Model : null)" Usage="observableObject.SetProperty (oldValue, newValue, comparer, model, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="model">The model containing the property being updated.</param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given nested property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+            <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />,
+            with the difference being that this method is used to relay properties from a wrapped model in the
+            current instance. See additional notes about this overload in <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyAndNotifyOnCompletion">
+      <MemberSignature Language="C#" Value="protected bool SetPropertyAndNotifyOnCompletion (ref Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier? taskNotifier, System.Threading.Tasks.Task? newValue, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetPropertyAndNotifyOnCompletion(class Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier&amp; taskNotifier, class System.Threading.Tasks.Task newValue, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyAndNotifyOnCompletion (ByRef taskNotifier As ObservableObject.TaskNotifier, newValue As Task, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyAndNotifyOnCompletion : TaskNotifier * System.Threading.Tasks.Task * string -&gt; bool" Usage="observableObject.SetPropertyAndNotifyOnCompletion (taskNotifier, newValue, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskNotifier" Type="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject+TaskNotifier" RefType="ref" />
+        <Parameter Name="newValue" Type="System.Threading.Tasks.Task" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="taskNotifier">The field notifier to modify.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+             Compares the current and new values for a given field (which should be the backing
+             field for a property). If the value has changed, raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+             event, updates the field and then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+             The behavior mirrors that of <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />, with the difference being that
+             this method will also monitor the new value of the property (a generic <see cref="T:System.Threading.Tasks.Task" />) and will also
+             raise the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> again for the target property when it completes.
+             This can be used to update bindings observing that <see cref="T:System.Threading.Tasks.Task" /> or any of its properties.
+             This method and its overload specifically rely on the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier" /> type, which needs
+             to be used in the backing field for the target <see cref="T:System.Threading.Tasks.Task" /> property. The field doesn't need to be
+             initialized, as this method will take care of doing that automatically. The <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier" />
+             type also includes an implicit operator, so it can be assigned to any <see cref="T:System.Threading.Tasks.Task" /> instance directly.
+             Here is a sample property declaration using this method:
+             <code>
+             private TaskNotifier myTask;
+            
+             public Task MyTask
+             {
+                 get =&gt; myTask;
+                 private set =&gt; SetAndNotifyOnCompletion(ref myTask, value);
+             }
+             </code></summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+             The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised if the current
+             and new value for the target property are the same. The return value being <see langword="true" /> only
+             indicates that the new value being assigned to <paramref name="taskNotifier" /> is different than the previous one,
+             and it does not mean the new <see cref="T:System.Threading.Tasks.Task" /> instance passed as argument is in any particular state.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyAndNotifyOnCompletion">
+      <MemberSignature Language="C#" Value="protected bool SetPropertyAndNotifyOnCompletion (ref Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier? taskNotifier, System.Threading.Tasks.Task? newValue, Action&lt;System.Threading.Tasks.Task?&gt; callback, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetPropertyAndNotifyOnCompletion(class Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier&amp; taskNotifier, class System.Threading.Tasks.Task newValue, class System.Action`1&lt;class System.Threading.Tasks.Task&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyAndNotifyOnCompletion (ByRef taskNotifier As ObservableObject.TaskNotifier, newValue As Task, callback As Action(Of Task), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyAndNotifyOnCompletion : TaskNotifier * System.Threading.Tasks.Task * Action&lt;System.Threading.Tasks.Task&gt; * string -&gt; bool" Usage="observableObject.SetPropertyAndNotifyOnCompletion (taskNotifier, newValue, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="taskNotifier" Type="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject+TaskNotifier" RefType="ref" />
+        <Parameter Name="newValue" Type="System.Threading.Tasks.Task" />
+        <Parameter Name="callback" Type="System.Action&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="taskNotifier">The field notifier to modify.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given field (which should be the backing
+            field for a property). If the value has changed, raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+            event, updates the field and then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            This method is just like <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)" />,
+            with the difference being an extra <see cref="T:System.Action`1" /> parameter with a callback being invoked
+            either immediately, if the new task has already completed or is <see langword="null" />, or upon completion.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised
+            if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyAndNotifyOnCompletion&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetPropertyAndNotifyOnCompletion&lt;T&gt; (ref Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier&lt;T&gt;? taskNotifier, System.Threading.Tasks.Task&lt;T&gt;? newValue, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetPropertyAndNotifyOnCompletion&lt;T&gt;(class Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier`1&lt;!!T&gt;&amp; taskNotifier, class System.Threading.Tasks.Task`1&lt;!!T&gt; newValue, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyAndNotifyOnCompletion(Of T) (ByRef taskNotifier As ObservableObject.TaskNotifier(Of T), newValue As Task(Of T), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyAndNotifyOnCompletion : TaskNotifier * System.Threading.Tasks.Task&lt;'T&gt; * string -&gt; bool" Usage="observableObject.SetPropertyAndNotifyOnCompletion (taskNotifier, newValue, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="taskNotifier" Type="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject+TaskNotifier&lt;T&gt;" RefType="ref" />
+        <Parameter Name="newValue" Type="System.Threading.Tasks.Task&lt;T&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of result for the <see cref="T:System.Threading.Tasks.Task`1" /> to set and monitor.</typeparam>
+        <param name="taskNotifier">The field notifier to modify.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+             Compares the current and new values for a given field (which should be the backing
+             field for a property). If the value has changed, raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+             event, updates the field and then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+             The behavior mirrors that of <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />, with the difference being that
+             this method will also monitor the new value of the property (a generic <see cref="T:System.Threading.Tasks.Task" />) and will also
+             raise the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> again for the target property when it completes.
+             This can be used to update bindings observing that <see cref="T:System.Threading.Tasks.Task" /> or any of its properties.
+             This method and its overload specifically rely on the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1" /> type, which needs
+             to be used in the backing field for the target <see cref="T:System.Threading.Tasks.Task" /> property. The field doesn't need to be
+             initialized, as this method will take care of doing that automatically. The <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1" />
+             type also includes an implicit operator, so it can be assigned to any <see cref="T:System.Threading.Tasks.Task" /> instance directly.
+             Here is a sample property declaration using this method:
+             <code>
+             private TaskNotifier&lt;int&gt; myTask;
+            
+             public Task&lt;int&gt; MyTask
+             {
+                 get =&gt; myTask;
+                 private set =&gt; SetAndNotifyOnCompletion(ref myTask, value);
+             }
+             </code></summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+             The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised if the current
+             and new value for the target property are the same. The return value being <see langword="true" /> only
+             indicates that the new value being assigned to <paramref name="taskNotifier" /> is different than the previous one,
+             and it does not mean the new <see cref="T:System.Threading.Tasks.Task`1" /> instance passed as argument is in any particular state.
+             </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPropertyAndNotifyOnCompletion&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetPropertyAndNotifyOnCompletion&lt;T&gt; (ref Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier&lt;T&gt;? taskNotifier, System.Threading.Tasks.Task&lt;T&gt;? newValue, Action&lt;System.Threading.Tasks.Task&lt;T&gt;?&gt; callback, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetPropertyAndNotifyOnCompletion&lt;T&gt;(class Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier`1&lt;!!T&gt;&amp; taskNotifier, class System.Threading.Tasks.Task`1&lt;!!T&gt; newValue, class System.Action`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; callback, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetPropertyAndNotifyOnCompletion(Of T) (ByRef taskNotifier As ObservableObject.TaskNotifier(Of T), newValue As Task(Of T), callback As Action(Of Task(Of T)), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyAndNotifyOnCompletion : TaskNotifier * System.Threading.Tasks.Task&lt;'T&gt; * Action&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; * string -&gt; bool" Usage="observableObject.SetPropertyAndNotifyOnCompletion (taskNotifier, newValue, callback, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="taskNotifier" Type="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject+TaskNotifier&lt;T&gt;" RefType="ref" />
+        <Parameter Name="newValue" Type="System.Threading.Tasks.Task&lt;T&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of result for the <see cref="T:System.Threading.Tasks.Task`1" /> to set and monitor.</typeparam>
+        <param name="taskNotifier">The field notifier to modify.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given field (which should be the backing
+            field for a property). If the value has changed, raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+            event, updates the field and then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            This method is just like <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)" />,
+            with the difference being an extra <see cref="T:System.Action`1" /> parameter with a callback being invoked
+            either immediately, if the new task has already completed or is <see langword="null" />, or upon completion.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            The <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events are not raised
+            if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

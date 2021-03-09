@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Framework Name="win-comm-toolkit-dotnet-stable">
   <Assemblies>
+    <Assembly Name="Microsoft.Toolkit.Diagnostics" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Forms.UI.Controls.WebView" Version="6.1.0.0" />
@@ -8,6 +9,7 @@
     <Assembly Name="Microsoft.Toolkit.Graph.Controls" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Graph" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.HighPerformance" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Mvvm" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Parsers" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Services" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="6.1.0.0" />
@@ -17,10 +19,16 @@
     <Assembly Name="Microsoft.Toolkit.Uwp.Notifications" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Services" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Animations" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Behaviors" Version="7.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Core" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="6.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Input" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Layout" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown" Version="7.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Media" Version="7.0.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives" Version="7.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Media" Version="6.1.0.0" />
@@ -171,11 +179,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Byte,System.Byte,System.Byte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Char,System.Char,System.Char,System.String)" />
@@ -184,17 +194,20 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsBitwiseEqualTo``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCanceled(System.Threading.Tasks.Task,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.Double,System.Double,System.Double,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.Int32,System.Int32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.Int64,System.Int64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.IntPtr,System.IntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCompleted(System.Threading.Tasks.Task,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsCompletedSuccessfully(System.Threading.Tasks.Task,System.String)" />
@@ -215,11 +228,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsFalse(System.Boolean,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsFalse(System.Boolean,System.String,System.String)" />
@@ -231,11 +246,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Byte,System.Byte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Char,System.Char,System.String)" />
@@ -244,11 +261,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Byte,System.Byte,System.Byte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Char,System.Char,System.Char,System.String)" />
@@ -257,11 +276,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRangeFor(System.Int32,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRangeFor``1(System.Int32,``0[],System.String)" />
@@ -279,11 +300,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Byte,System.Byte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Char,System.Char,System.String)" />
@@ -292,11 +315,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotAssignableToType(System.Object,System.Type,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotAssignableToType``1(System.Object,System.String)" />
@@ -307,11 +332,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Byte,System.Byte,System.Byte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Char,System.Char,System.Char,System.String)" />
@@ -320,16 +347,19 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCanceled(System.Threading.Tasks.Task,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.Double,System.Double,System.Double,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.Int32,System.Int32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.Int64,System.Int64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.IntPtr,System.IntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCompleted(System.Threading.Tasks.Task,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCompletedSuccessfully(System.Threading.Tasks.Task,System.String)" />
@@ -350,11 +380,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo``1(``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotFaulted(System.Threading.Tasks.Task,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.Byte,System.Byte,System.Byte,System.String)" />
@@ -364,11 +396,13 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.Int16,System.Int16,System.Int16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.Int32,System.Int32,System.Int32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.Int64,System.Int64,System.Int64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.SByte,System.SByte,System.SByte,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.Single,System.Single,System.Single,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.UInt16,System.UInt16,System.UInt16,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.UInt32,System.UInt32,System.UInt32,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.UInt64,System.UInt64,System.UInt64,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange``1(``0,``0,``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRangeFor(System.Int32,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRangeFor``1(System.Int32,``0[],System.String)" />
@@ -383,13 +417,16 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotNull``1(System.Nullable{``0},System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotNullOrEmpty(System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotNullOrWhitespace(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotNullOrWhiteSpace(System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotOfType(System.Object,System.Type,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotOfType``1(System.Object,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotWhitespace(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotWhiteSpace(System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNull``1(``0,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNull``1(System.Nullable{``0},System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNullOrEmpty(System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNullOrWhitespace(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsNullOrWhiteSpace(System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsOfType(System.Object,System.Type,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsOfType``1(System.Object,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsReferenceEqualTo``1(``0,``0,System.String)" />
@@ -397,6 +434,177 @@
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsTrue(System.Boolean,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsTrue(System.Boolean,System.String,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsWhitespace(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.Guard.IsWhiteSpace(System.String,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Diagnostics.ThrowHelper" Id="T:Microsoft.Toolkit.Diagnostics.ThrowHelper">
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException(System.String,System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentException``1(System.String,System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentNullException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException(System.String,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException``1(System.String,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArgumentOutOfRangeException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowArrayTypeMismatchException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowCOMException``1(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowExternalException``1(System.String,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowFormatException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInsufficientMemoryException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidDataException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowInvalidOperationException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowLockRecursionException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingFieldException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMemberException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowMissingMethodException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowNotSupportedException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowObjectDisposedException``1(System.String,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException(System.String,System.Exception,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1(System.String,System.Exception,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1(System.String,System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowOperationCanceledException``1(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowPlatformNotSupportedException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowSynchronizationLockException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowTimeoutException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowUnauthorizedAccessException``1(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception(System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception(System.String,System.Exception)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception``1" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception``1(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception``1(System.Int32,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception``1(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ThrowHelper.ThrowWin32Exception``1(System.String,System.Exception)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Diagnostics.TypeExtensions" Id="T:Microsoft.Toolkit.Diagnostics.TypeExtensions">
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.TypeExtensions.ToTypeString(System.Type)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Diagnostics.ValueTypeExtensions" Id="T:Microsoft.Toolkit.Diagnostics.ValueTypeExtensions">
+      <Member Id="M:Microsoft.Toolkit.Diagnostics.ValueTypeExtensions.ToHexString``1(``0)" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Extensions">
@@ -1289,6 +1497,254 @@
       <Member Id="M:Microsoft.Toolkit.HighPerformance.Helpers.ParallelHelper.ForEach``2(System.ReadOnlyMemory{``0},``1@)" />
       <Member Id="M:Microsoft.Toolkit.HighPerformance.Helpers.ParallelHelper.ForEach``2(System.ReadOnlyMemory{``0},``1@,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.HighPerformance.Helpers.ParallelHelper.ForEach``2(System.ReadOnlyMemory{``0},System.Int32)" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Mvvm.ComponentModel">
+    <Type Name="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" Id="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" />
+      <Member Id="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.ComponentModel.PropertyChangingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.Action{System.Threading.Tasks.Task},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier@,System.Threading.Tasks.Task,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.Action{System.Threading.Tasks.Task{``0}},System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetPropertyAndNotifyOnCompletion``1(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{``0}@,System.Threading.Tasks.Task{``0},System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier" Id="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier.op_Implicit(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier)~System.Threading.Tasks.Task" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject/TaskNotifier`1" Id="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier`1.op_Implicit(Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.TaskNotifier{`0})~System.Threading.Tasks.Task{`0}" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" Id="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.#ctor(Microsoft.Toolkit.Mvvm.Messaging.IMessenger)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.OnActivated" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.OnDeactivated" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.IsActive" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.Messenger" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" Id="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ErrorsChanged" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.IServiceProvider,System.Collections.Generic.IDictionary{System.Object,System.Object})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ClearErrors(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.GetErrors(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.System#ComponentModel#INotifyDataErrorInfo#GetErrors(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0,``0,System.Action{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0@,``0,System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ValidateAllProperties" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ValidateProperty(System.Object,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.HasErrors" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Mvvm.DependencyInjection">
+    <Type Name="Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" Id="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.ConfigureServices(System.IServiceProvider)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetRequiredService``1" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetService(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetService``1" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.Default" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Mvvm.Input">
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" Id="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanExecuteChanged" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.Cancel" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanExecute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.Execute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecuteAsync(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.NotifyCanExecuteChanged" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanBeCanceled" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecutionTask" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsCancellationRequested" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsRunning" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1" Id="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.CanExecuteChanged" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Predicate{`0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Predicate{`0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.Cancel" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.CanExecute(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.CanExecute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.Execute(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.Execute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.ExecuteAsync(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.ExecuteAsync(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.NotifyCanExecuteChanged" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.CanBeCanceled" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.ExecutionTask" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.IsCancellationRequested" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1.IsRunning" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand" Id="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.Cancel" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.ExecuteAsync(System.Object)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.CanBeCanceled" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.ExecutionTask" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.IsCancellationRequested" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.IsRunning" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1" Id="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1.ExecuteAsync(`0)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.IRelayCommand" Id="T:Microsoft.Toolkit.Mvvm.Input.IRelayCommand">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IRelayCommand.NotifyCanExecuteChanged" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1" Id="T:Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1.CanExecute(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1.Execute(`0)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.RelayCommand" Id="T:Microsoft.Toolkit.Mvvm.Input.RelayCommand">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.Input.RelayCommand.CanExecuteChanged" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand.#ctor(System.Action)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand.#ctor(System.Action,System.Func{System.Boolean})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand.CanExecute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand.Execute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand.NotifyCanExecuteChanged" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Input.RelayCommand`1" Id="T:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1">
+      <Member Id="E:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.CanExecuteChanged" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.#ctor(System.Action{`0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.CanExecute(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.CanExecute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.Execute(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.Execute(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1.NotifyCanExecuteChanged" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Mvvm.Messaging">
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.IMessenger" Id="T:Microsoft.Toolkit.Mvvm.Messaging.IMessenger">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.Cleanup" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.IsRegistered``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.Register``3(``0,``2,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.Send``2(``0,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.Unregister``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.UnregisterAll(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessenger.UnregisterAll``1(System.Object,``0)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions" Id="T:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.IsRegistered``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Register``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,Microsoft.Toolkit.Mvvm.Messaging.IRecipient{``0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Register``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{System.Object,``0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,``0,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,Microsoft.Toolkit.Mvvm.Messaging.IRecipient{``0},``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object,``1,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{System.Object,``0})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object,``0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,``0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Send``2(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IMessengerExtensions.Unregister``1(Microsoft.Toolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.IRecipient`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.IRecipient`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.IRecipient`1.Receive(`0)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.MessageHandler`2" Id="T:Microsoft.Toolkit.Mvvm.Messaging.MessageHandler`2" />
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger" Id="T:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.IsRegistered``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Microsoft#Toolkit#Mvvm#Messaging#IMessenger#Cleanup" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Register``3(``0,``2,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Send``2(``0,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Unregister``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll``1(System.Object,``0)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.StrongReferenceMessenger.Default" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger" Id="T:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Cleanup" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.IsRegistered``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Register``3(``0,``2,Microsoft.Toolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Send``2(``0,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Unregister``2(System.Object,``1)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.UnregisterAll(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.UnregisterAll``1(System.Object,``0)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Default" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Mvvm.Messaging.Messages">
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.GetAsyncEnumerator(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.GetResponsesAsync(System.Threading.CancellationToken)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.Reply(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.Reply(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task{`0}})" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.Reply(System.Threading.Tasks.Task{`0})" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncCollectionRequestMessage`1.CancellationToken" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.GetAwaiter" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Reply(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Reply(System.Threading.Tasks.Task{`0})" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.HasReceivedResponse" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Response" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1.GetEnumerator" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1.Reply(`0)" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.CollectionRequestMessage`1.Responses" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1.#ctor(System.Object,System.String,`0,`0)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1.NewValue" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1.OldValue" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1.PropertyName" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1.Sender" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.op_Implicit(Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage{`0})~`0" />
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.Reply(`0)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.HasReceivedResponse" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.Response" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Mvvm.Messaging.Messages.ValueChangedMessage`1" Id="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.ValueChangedMessage`1">
+      <Member Id="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.ValueChangedMessage`1.#ctor(`0)" />
+      <Member Id="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.ValueChangedMessage`1.Value" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Parsers.Core">
@@ -4068,6 +4524,12 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.HideAnimations" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.ShowAnimations" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity.ActionsProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity.InvokeAsync(Windows.UI.Xaml.UIElement,System.Threading.CancellationToken)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.InvokeActionsActivity.Actions" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame" Id="T:Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame.KeyProperty" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Animations.KeyFrame.#ctor" />
@@ -5030,6 +5492,20 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Behaviors">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationCompletedTriggerBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationCompletedTriggerBehavior">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationCompletedTriggerBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationCompletedTriggerBehavior.OnAttached" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationCompletedTriggerBehavior.OnDetaching" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationStartedTriggerBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationStartedTriggerBehavior">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationStartedTriggerBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationStartedTriggerBehavior.OnAttached" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AnimationStartedTriggerBehavior.OnDetaching" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.AutoFocusBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.AutoFocusBehavior">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AutoFocusBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.AutoFocusBehavior.OnAssociatedObjectLoaded" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.Initialize" />
@@ -5039,6 +5515,62 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.OnDetaching" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.Uninitialize" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.IsAttached" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior.HeaderElementProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior.Initialize" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior.Uninitialize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FadeHeaderBehavior.HeaderElement" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeoutProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.TargetsProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.OnAssociatedObjectLoaded" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.OnDetaching" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeout" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTarget" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTarget">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTarget.ControlProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTarget.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTarget.Control" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.HeaderElementProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.Initialize" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.Show" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.Uninitialize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.QuickReturnHeaderBehavior.HeaderElement" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.AnimationProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.TargetObjectProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.Execute(System.Object,System.Object)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.Animation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.StartAnimationAction.TargetObject" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.HeaderElementProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.Initialize" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.Show" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.Uninitialize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.StickyHeaderBehavior.HeaderElement" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.AnimationProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.TargetObjectProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.Execute(System.Object,System.Object)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.Animation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Behaviors.StopAnimationAction.TargetObject" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.ViewportBehavior" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.ViewportBehavior">
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Behaviors.ViewportBehavior.EnteredViewport" />
@@ -5179,11 +5711,72 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CarouselPanel.MeasureOverride(Windows.Foundation.Size)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CarouselPanel.Carousel" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Case" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Case">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Case.ValueChanged" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Case.ContentProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Case.IsDefaultProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Case.ValueProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Case.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Case.Content" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Case.IsDefault" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Case.Value" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.CaseCollectionChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Add(Microsoft.Toolkit.Uwp.UI.Controls.Case)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Clear" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Contains(Microsoft.Toolkit.Uwp.UI.Controls.Case)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.CopyTo(Microsoft.Toolkit.Uwp.UI.Controls.Case[],System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.GetEnumerator" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.IndexOf(Microsoft.Toolkit.Uwp.UI.Controls.Case)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Insert(System.Int32,Microsoft.Toolkit.Uwp.UI.Controls.Case)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Remove(Microsoft.Toolkit.Uwp.UI.Controls.Case)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.RemoveAt(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Count" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.IsReadOnly" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CaseCollection.Item(System.Int32)" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs">
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.CodeLanguage" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.Handled" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.InlineCollection" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.CodeBlockResolvingEventArgs.Text" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel.Alpha" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel.Channel1" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel.Channel2" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorChannel.Channel3" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPaletteColorsProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPaletteColumnCountProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPaletteProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.IsColorPaletteVisibleProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.Finalize" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPalette" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPaletteColors" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.CustomPaletteColumnCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPicker.IsColorPaletteVisible" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.ColorPickerStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.FlyoutPresenterStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.SelectedColorProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.ColorPicker" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.ColorPickerStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.FlyoutPresenterStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerButton.SelectedColor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorRepresentation" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorRepresentation">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorRepresentation.Hsva" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ColorRepresentation.Rgba" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.CropShape" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.CropShape">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Circular" />
@@ -5736,6 +6329,13 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.EyedropperToolButton.EyedropperStyle" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.EyedropperToolButton.TargetElement" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.DefaultShadeIndex" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.GetColor(System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ColorCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ShadeCount" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.CursorBehaviorProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.GridSplitter.ElementProperty" />
@@ -5830,6 +6430,11 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedTextBlock.Text" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.HeaderedTextBlock.TextStyle" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.GetColor(System.Int32,System.Int32)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.ColorCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.ShadeCount" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment.Bottom" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageAlignment.Left" />
@@ -5890,6 +6495,7 @@
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.EnableLazyLoadingProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.FailedState" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsCacheEnabledProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.LazyLoadingThresholdProperty" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.LoadedState" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.LoadingState" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.PartImage" />
@@ -5905,7 +6511,10 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.AttachImageOpened(Windows.UI.Xaml.RoutedEventHandler)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.GetAlphaMask" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.OnImageFailed(System.Object,Windows.UI.Xaml.ExceptionRoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.OnImageOpened(System.Object,Windows.UI.Xaml.RoutedEventArgs)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.OnPlaceholderSourceChanged(Windows.UI.Xaml.DependencyPropertyChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.ProvideCachedResourceAsync(System.Uri,System.Threading.CancellationToken)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.RemoveImageFailed(Windows.UI.Xaml.ExceptionRoutedEventHandler)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.RemoveImageOpened(Windows.UI.Xaml.RoutedEventHandler)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.CachingStrategy" />
@@ -5918,6 +6527,7 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsCacheEnabled" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsInitialized" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.IsLazyLoadingSupported" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.LazyLoadingThreshold" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.LockObj" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.PlaceholderSource" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ImageExBase.PlaceholderStretch" />
@@ -5963,6 +6573,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.OnApplyTemplate" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.SetKeyFrameDuration(Windows.UI.Xaml.DependencyObject,System.TimeSpan)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(System.Object,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(System.String,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(Windows.UI.Xaml.DataTemplate,System.Int32)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Show(Windows.UI.Xaml.UIElement,System.Int32)" />
@@ -6291,6 +6902,8 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Menu.TooltipStyle" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.MenuItem" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.HeaderProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.HeaderTemplateProperty" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.HideMenu" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.OnApplyTemplate" />
@@ -6298,6 +6911,8 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.OnHeaderChanged(System.Object,System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.OnTapped(Windows.UI.Xaml.Input.TappedRoutedEventArgs)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.ShowMenu" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.Header" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.HeaderTemplate" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.MenuItem.IsOpened" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.OrbitView" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.OrbitView">
@@ -6444,6 +7059,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.GetChildrenCore" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.GetNameCore" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.RaiseValueChangedEvent(System.Double,System.Double)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.SetValue(System.Double)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.IsReadOnly" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.RadialGaugeAutomationPeer.LargeChange" />
@@ -6585,6 +7201,42 @@
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.StretchChild" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.StretchChild">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.StretchChild.Last" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.StretchChild.None" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.CurrentCaseProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.DataTypeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.SwitchCasesProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.ValueProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.CurrentCase" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.IsVisualTreeDisconnectedOnChange" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.SwitchCases" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.TargetType" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.SwitchPresenter.Value" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBar" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBar">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBar.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBar.OnApplyTemplate" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.CommandAlignmentProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.HeaderProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.IsContextualProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.OverflowButtonAlignmentProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.CommandAlignment" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.Header" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.IsContextual" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItem.OverflowButtonAlignment" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector.SelectTemplateCore(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector.SelectTemplateCore(System.Object,Windows.UI.Xaml.DependencyObject)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector.Contextual" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TabbedCommandBarItemTemplateSelector.Normal" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TabClosingEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TabClosingEventArgs">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TabClosingEventArgs.#ctor(System.Object,Microsoft.Toolkit.Uwp.UI.Controls.TabViewItem)" />
@@ -6830,6 +7482,32 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.WrapPanel.VerticalSpacing" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToColorShadeConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToColorShadeConverter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToColorShadeConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToColorShadeConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToColorShadeConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.AlphaThreshold" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Core.Microsoft_Toolkit_Uwp_UI_Controls_Core_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin">
       <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInCompleted" />
@@ -6981,6 +7659,14 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Input.Microsoft_Toolkit_Uwp_UI_Controls_Input_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver.ParseSyntax(Windows.UI.Xaml.Documents.InlineCollection,System.String,System.String)" />
@@ -7120,12 +7806,28 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.UIElementCollectionRenderContext.BlockUIElementCollection" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Media.Microsoft_Toolkit_Uwp_UI_Controls_Media_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_Markdown_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo">
@@ -7137,6 +7839,27 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.ColorChannelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.ColorProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.ColorRepresentationProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.DefaultForegroundProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.HsvColorProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsAlphaMaxForcedProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsAutoUpdatingEnabledProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsSaturationValueMaxForcedProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.UpdateColors" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.Color" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.ColorChannel" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.ColorRepresentation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.DefaultForeground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.HsvColor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsAlphaMaxForced" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsAutoUpdatingEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.ColorPickerSlider.IsSaturationValueMaxForced" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter.ArrangeOverride(Windows.Foundation.Size)" />
@@ -7271,6 +7994,7 @@
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.Return" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.EnsureAtNewLine" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.EnsureAtStartOfCurrentLine" />
@@ -7279,6 +8003,8 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.GetLines" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.Model_EditorChanged(System.Object,Microsoft.Toolkit.Uwp.UI.Controls.EditorChangedArgs)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.OnSelectionChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.SetModel(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.UnsetModel(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.ButtonActions" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.DefaultButtons" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.Formatter.Model" />
@@ -7299,6 +8025,7 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownButtonActions.Formatter" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineInlineWrapListReverse(System.Func{System.String})" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DetermineListReverse(System.Func{System.String},System.Boolean)" />
@@ -7307,6 +8034,7 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.FormatCode(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.FormatQuote(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.SetList(System.Func{System.String},Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.SetModel(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.SetSelection(System.String,System.String,System.Boolean,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.StyleHeader(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons.ToolbarButton)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.MarkDown.MarkDownFormatter.DefaultButtons" />
@@ -7329,8 +8057,10 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextButtonActions.Formatter" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.OnSelectionChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.SetModel(Microsoft.Toolkit.Uwp.UI.Controls.TextToolbar)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.DefaultButtons" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.NewLineChars" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarFormats.RichText.RichTextFormatter.SelectionFormat" />
