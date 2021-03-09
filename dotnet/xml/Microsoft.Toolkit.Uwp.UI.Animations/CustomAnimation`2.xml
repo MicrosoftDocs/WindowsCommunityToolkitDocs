@@ -1,0 +1,157 @@
+<Type Name="CustomAnimation&lt;TValue,TKeyFrame&gt;" FullName="Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;TValue,TKeyFrame&gt;">
+  <TypeSignature Language="C#" Value="public abstract class CustomAnimation&lt;TValue,TKeyFrame&gt; : Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation&lt;TValue,TKeyFrame&gt; where TKeyFrame : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CustomAnimation`2&lt;TValue, struct .ctor (class System.ValueType) TKeyFrame&gt; extends Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2&lt;!TValue, !TKeyFrame&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CustomAnimation(Of TValue, TKeyFrame)&#xA;Inherits ImplicitAnimation(Of TValue, TKeyFrame)" />
+  <TypeSignature Language="F#" Value="type CustomAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt; = class&#xA;    inherit ImplicitAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+    <TypeParameter Name="TKeyFrame">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation&lt;TValue,TKeyFrame&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TValue">TValue</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TKeyFrame">TKeyFrame</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TValue">
+            The type to use for the public <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> properties.
+            This can differ from <typeparamref name="TKeyFrame" /> to facilitate XAML parsing.
+            </typeparam>
+    <typeparam name="TKeyFrame">The actual type of keyframe values in use.</typeparam>
+    <summary>
+            A base model representing a typed animation that can be used in XAML.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CustomAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public override Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, TimeSpan? delayHint, TimeSpan? durationHint, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AppendToBuilder (builder As AnimationBuilder, delayHint As Nullable(Of TimeSpan), durationHint As Nullable(Of TimeSpan), easingTypeHint As Nullable(Of EasingType), easingModeHint As Nullable(Of EasingMode)) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" Usage="customAnimation.AppendToBuilder (builder, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="delayHint">To be added.</param>
+        <param name="durationHint">To be added.</param>
+        <param name="easingTypeHint">To be added.</param>
+        <param name="easingModeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExplicitTarget">
+      <MemberSignature Language="C#" Value="protected override string ExplicitTarget { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExplicitTarget" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2.ExplicitTarget" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ExplicitTarget As String" />
+      <MemberSignature Language="F#" Value="member this.ExplicitTarget : string" Usage="Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.ExplicitTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Layer">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.FrameworkLayer Layer { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Animations.FrameworkLayer Layer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2.Layer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Layer As FrameworkLayer" />
+      <MemberSignature Language="F#" Value="member this.Layer : Microsoft.Toolkit.Uwp.UI.Animations.FrameworkLayer with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.Layer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.FrameworkLayer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the target framework layer for the animation. This is only supported
+            for a set of animation types (see the docs for more on this). Furthermore, this is
+            ignored when the animation is being used as an implicit composition animation.
+            The default value is <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.FrameworkLayer.Composition" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public string? Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the target property for the animation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

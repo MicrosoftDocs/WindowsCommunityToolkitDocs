@@ -9,6 +9,7 @@
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Parsers.SchemaBase</BaseTypeName>
@@ -36,6 +37,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,15 +57,24 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonConverter(typeof(Microsoft.Toolkit.Services.Twitter.TwitterCoordinatesConverter))]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonConverter(typeof(Microsoft.Toolkit.Services.Twitter.TwitterCoordinatesConverter))&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("coordinates")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("coordinates")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonConverter(typeof(Microsoft.Toolkit.Services.Twitter.TwitterCoordinatesConverter))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonConverter(typeof(Microsoft.Toolkit.Services.Twitter.TwitterCoordinatesConverter))&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("coordinates")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("coordinates")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -71,7 +82,7 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets geo coordinates (latitude and logitude) returned by Twitter for some locations
+            Gets or sets geo coordinates (latitude and longitude) returned by Twitter for some locations
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -89,11 +100,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("created_at")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("created_at")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("created_at")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("created_at")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -119,6 +135,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -143,11 +160,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("display_text_range")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("display_text_range")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("display_text_range")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("display_text_range")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,11 +195,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("entities")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("entities")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("entities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("entities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -203,11 +230,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("extended_entities")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("extended_entities")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("extended_entities")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("extended_entities")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -233,11 +265,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("favorite_count")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("favorite_count")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("favorite_count")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("favorite_count")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -263,11 +300,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("favorited")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("favorited")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("favorited")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("favorited")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,11 +335,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("filter_level")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("filter_level")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("filter_level")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("filter_level")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,11 +370,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("id_str")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("id_str")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("id_str")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("id_str")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -353,11 +405,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("in_reply_to_screen_name")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("in_reply_to_screen_name")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("in_reply_to_screen_name")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("in_reply_to_screen_name")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -383,11 +440,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("in_reply_to_status_id_str")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("in_reply_to_status_id_str")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("in_reply_to_status_id_str")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("in_reply_to_status_id_str")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,11 +475,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("in_reply_to_user_id_str")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("in_reply_to_user_id_str")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("in_reply_to_user_id_str")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("in_reply_to_user_id_str")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -443,11 +510,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("truncated")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("truncated")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("truncated")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("truncated")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -475,11 +547,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("lang")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("lang")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("lang")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("lang")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -505,11 +582,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("place")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("place")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("place")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("place")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,11 +617,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("quote_count")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("quote_count")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("quote_count")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("quote_count")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -565,11 +652,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("quoted_status")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("quoted_status")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("quoted_status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("quoted_status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -595,11 +687,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("quoted_status_id_str")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("quoted_status_id_str")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("quoted_status_id_str")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("quoted_status_id_str")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -625,11 +722,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("quoted_status_permalink")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("quoted_status_permalink")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("quoted_status_permalink")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("quoted_status_permalink")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -655,11 +757,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("reply_count")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("reply_count")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("reply_count")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("reply_count")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -687,11 +794,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("retweet_count")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("retweet_count")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("retweet_count")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("retweet_count")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -717,11 +829,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("retweeted")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("retweeted")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("retweeted")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("retweeted")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -747,11 +864,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("retweeted_status")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("retweeted_status")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("retweeted_status")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("retweeted_status")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -777,11 +899,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("possibly_sensitive")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("possibly_sensitive")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("possibly_sensitive")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("possibly_sensitive")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -807,11 +934,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("source")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("source")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("source")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("source")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -837,11 +969,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("text")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("text")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("text")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("text")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -867,11 +1004,16 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Newtonsoft.Json.JsonProperty("user")]</AttributeName>
           <AttributeName Language="F#">[&lt;Newtonsoft.Json.JsonProperty("user")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[System.Text.Json.Serialization.JsonPropertyName("user")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Text.Json.Serialization.JsonPropertyName("user")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

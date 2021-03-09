@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Windows.UI.Xaml.Media.XamlCompositionBrushBase</BaseTypeName>
@@ -14,7 +15,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            A custom <see cref="T:Windows.UI.Xaml.Media.XamlCompositionBrushBase" /><see langword="class" /> that's ready to be used with a custom <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline
+            A custom <see cref="T:Windows.UI.Xaml.Media.XamlCompositionBrushBase" /><see langword="class" /> that's ready to be used with a custom <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -45,13 +47,14 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets a value indicating whether the current brush is using the provided pipeline, or the fallback color
+            Gets or sets a value indicating whether the current brush is using the provided pipeline, or the fallback color.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -81,6 +84,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OnCompositionBrushUpdated">
+      <MemberSignature Language="C#" Value="protected virtual void OnCompositionBrushUpdated ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCompositionBrushUpdated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnCompositionBrushUpdated" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCompositionBrushUpdated ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCompositionBrushUpdated : unit -&gt; unit&#xA;override this.OnCompositionBrushUpdated : unit -&gt; unit" Usage="xamlCompositionEffectBrushBase.OnCompositionBrushUpdated " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Invoked whenever the <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" /> property is updated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OnConnected">
       <MemberSignature Language="C#" Value="protected override void OnConnected ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnConnected() cil managed" />
@@ -91,6 +116,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -111,6 +137,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -131,6 +158,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -139,10 +167,35 @@
         <Parameter Name="value" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="value">The new value being set to the <see cref="P:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.IsEnabled" /> property</param>
+        <param name="value">The new value being set to the <see cref="P:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.IsEnabled" /> property.</param>
         <summary>
-            Updates the <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" /> property depending on the input value
+            Updates the <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" /> property depending on the input value.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPipelineRequested">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnPipelineRequested ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder OnPipelineRequested() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionEffectBrushBase.OnPipelineRequested" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnPipelineRequested () As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="abstract member OnPipelineRequested : unit -&gt; Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" Usage="xamlCompositionEffectBrushBase.OnPipelineRequested " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            A method that builds and returns the <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> pipeline to use in the current instance.<para />
+            This method can also be used to store any needed <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectSetter`1" /> or <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.EffectAnimation`1" />
+            instances in local fields, for later use (they will need to be called upon <see cref="P:Windows.UI.Xaml.Media.XamlCompositionBrushBase.CompositionBrush" />).
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> instance to create the brush to display.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

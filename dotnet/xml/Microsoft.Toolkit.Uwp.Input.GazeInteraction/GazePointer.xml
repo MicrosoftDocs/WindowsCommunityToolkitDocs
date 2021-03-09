@@ -1,49 +1,59 @@
 <Type Name="GazePointer" FullName="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer">
-  <TypeSignature Language="C#" Value="public sealed class GazePointer : Windows.Foundation.IClosable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GazePointer extends System.Object implements class Windows.Foundation.IClosable" />
+  <TypeSignature Language="C#" Value="public sealed class GazePointer : Windows.Foundation.IClosable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GazePointer extends System.Object implements class Windows.Foundation.IClosable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GazePointer&#xA;Implements IClosable" />
-  <TypeSignature Language="F#" Value="type GazePointer = class&#xA;    interface IClosable" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GazePointer&#xA;Implements IClosable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="F#" Value="type GazePointer = class&#xA;    interface IClosable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="C#" Value="public class GazePointer" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GazePointer extends System.Object" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+  <TypeSignature Language="VB.NET" Value="Public Class GazePointer" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+  <TypeSignature Language="F#" Value="type GazePointer = class" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
     <AssemblyVersion>255.255.255.255</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <InterfaceName>Windows.Foundation.IClosable</InterfaceName>
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <AttributeName Language="C#">[Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.MarshalingBehavior(Windows.Foundation.Metadata.MarshalingType.Agile)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <AttributeName Language="C#">[Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Threading(Windows.Foundation.Metadata.ThreadingModel.Both)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <AttributeName Language="C#">[Windows.Foundation.Metadata.Version(1)]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Version(1)&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            Class of singleton object coordinating gaze input.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="Click">
       <MemberSignature Language="C#" Value="public void Click ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Click() runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Click() runtime managed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Click" />
       <MemberSignature Language="VB.NET" Value="Public Sub Click ()" />
-      <MemberSignature Language="F#" Value="abstract member Click : unit -&gt; unit&#xA;override this.Click : unit -&gt; unit" Usage="gazePointer.Click " />
+      <MemberSignature Language="F#" Value="abstract member Click : unit -&gt; unit&#xA;override this.Click : unit -&gt; unit" Usage="gazePointer.Click " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Click() cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.Click : unit -&gt; unit" Usage="gazePointer.Click " FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,7 +61,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            When in switch mode, will issue a click on the currently fixated element
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -83,37 +95,70 @@
       <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.UIElement CursorElement" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.CursorElement" />
       <MemberSignature Language="VB.NET" Value="Public Property CursorElement As UIElement" />
-      <MemberSignature Language="F#" Value="member this.CursorElement : Windows.UI.Xaml.UIElement with get, set" Usage="CursorElement" />
+      <MemberSignature Language="F#" Value="member this.CursorElement : Windows.UI.Xaml.UIElement with get, set" Usage="CursorElement" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="member this.CursorElement : Windows.UI.Xaml.UIElement with get, set" Usage="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.CursorElement" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.UIElement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets the UIElement representing the cursor.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~GazePointer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="gazePointer.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Finalizes an instance of the <see cref="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GazeEvent">
-      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent;" />
-      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent" />
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.GazeEvent" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event GazeEvent As EventHandler(Of GazeEventArgs) " />
-      <MemberSignature Language="F#" Value="member this.GazeEvent : Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " Usage="member this.GazeEvent : Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " />
+      <MemberSignature Language="F#" Value="member this.GazeEvent : Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " Usage="member this.GazeEvent : Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent;" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; GazeEvent" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.GazeEvent : EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " Usage="member this.GazeEvent : System.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt; " FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-6.1">Windows.Foundation.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-stable">System.EventHandler&lt;Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Event handler for Gaze related events, of with a <see cref="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -122,30 +167,37 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAlwaysActivated" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.IsAlwaysActivated" />
       <MemberSignature Language="VB.NET" Value="Public Property IsAlwaysActivated As Boolean" />
-      <MemberSignature Language="F#" Value="member this.IsAlwaysActivated : bool with get, set" Usage="IsAlwaysActivated" />
+      <MemberSignature Language="F#" Value="member this.IsAlwaysActivated : bool with get, set" Usage="IsAlwaysActivated" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="member this.IsAlwaysActivated : bool with get, set" Usage="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.IsAlwaysActivated" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets or sets a value indicating whether this GazePointer should always be activated or not.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="LoadSettings">
       <MemberSignature Language="C#" Value="public void LoadSettings (Windows.Foundation.Collections.ValueSet settings);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadSettings([in]class Windows.Foundation.Collections.ValueSet settings) runtime managed" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadSettings([in]class Windows.Foundation.Collections.ValueSet settings) runtime managed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadSettings (settings As ValueSet)" />
-      <MemberSignature Language="F#" Value="abstract member LoadSettings : Windows.Foundation.Collections.ValueSet -&gt; unit&#xA;override this.LoadSettings : Windows.Foundation.Collections.ValueSet -&gt; unit" Usage="gazePointer.LoadSettings settings" />
+      <MemberSignature Language="F#" Value="abstract member LoadSettings : Windows.Foundation.Collections.ValueSet -&gt; unit&#xA;override this.LoadSettings : Windows.Foundation.Collections.ValueSet -&gt; unit" Usage="gazePointer.LoadSettings settings" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadSettings(class Windows.Foundation.Collections.ValueSet settings) cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.LoadSettings : Windows.Foundation.Collections.ValueSet -&gt; unit" Usage="gazePointer.LoadSettings settings" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,28 +208,38 @@
       </Parameters>
       <Docs>
         <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Loads a settings collection into GazePointer.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="RequestCalibrationAsync">
-      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;bool&gt; RequestCalibrationAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; RequestCalibrationAsync() runtime managed" />
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncOperation&lt;bool&gt; RequestCalibrationAsync ();" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncOperation`1&lt;bool&gt; RequestCalibrationAsync() runtime managed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.RequestCalibrationAsync" />
-      <MemberSignature Language="VB.NET" Value="Public Function RequestCalibrationAsync () As IAsyncOperation(Of Boolean)" />
-      <MemberSignature Language="F#" Value="abstract member RequestCalibrationAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;&#xA;override this.RequestCalibrationAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;" Usage="gazePointer.RequestCalibrationAsync " />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestCalibrationAsync () As IAsyncOperation(Of Boolean)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="abstract member RequestCalibrationAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;&#xA;override this.RequestCalibrationAsync : unit -&gt; Windows.Foundation.IAsyncOperation&lt;bool&gt;" Usage="gazePointer.RequestCalibrationAsync " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; RequestCalibrationAsync ();" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; RequestCalibrationAsync() cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestCalibrationAsync () As Task(Of Boolean)" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      <MemberSignature Language="F#" Value="member this.RequestCalibrationAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="gazePointer.RequestCalibrationAsync " FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Input.GazeInteraction</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>255.255.255.255</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>Windows.Foundation.IAsyncOperation&lt;System.Boolean&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-6.1">Windows.Foundation.IAsyncOperation&lt;System.Boolean&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-stable">System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Run device calibration.
+            </summary>
+        <returns>Task that returns true, if calibration completes successfully; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

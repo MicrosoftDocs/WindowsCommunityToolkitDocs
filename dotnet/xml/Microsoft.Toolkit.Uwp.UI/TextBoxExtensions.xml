@@ -1,0 +1,788 @@
+<Type Name="TextBoxExtensions" FullName="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions">
+  <TypeSignature Language="C#" Value="public static class TextBoxExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TextBoxExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextBoxExtensions" />
+  <TypeSignature Language="F#" Value="type TextBoxExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Controller">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Input.RadialController Controller { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Windows.UI.Input.RadialController Controller" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.Controller" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Controller As RadialController" />
+      <MemberSignature Language="F#" Value="member this.Controller : Windows.UI.Input.RadialController with get, set" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.Controller" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Input.RadialController</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the controller for the Surface Dial.
+            The <see cref="T:Windows.UI.Input.RadialController" /> can be set from your app logic in case you use Surface Dial in other custom cases than on a <see cref="T:Windows.UI.Xaml.Controls.TextBox" />.
+            This helper class will do everything for you, but if you want to control the Menu Items and/or wish to use the same Surface Dial instance
+            This is the property for the static controller so you can access it if needed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomMask">
+      <MemberSignature Language="C#" Value="see GetCustomMask, and SetCustomMask" />
+      <MemberSignature Language="ILAsm" Value="see GetCustomMask, and SetCustomMask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.CustomMask" />
+      <MemberSignature Language="VB.NET" Value="see GetCustomMask, and SetCustomMask" />
+      <MemberSignature Language="F#" Value="see GetCustomMask, and SetCustomMask" Usage="see GetCustomMask, and SetCustomMask" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomMaskProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty CustomMaskProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty CustomMaskProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.CustomMaskProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomMaskProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomMaskProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.CustomMaskProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Represents the custom mask that the user can create to add his own variable characters based on regex expression
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCustomMask">
+      <MemberSignature Language="C#" Value="public static string GetCustomMask (Windows.UI.Xaml.Controls.TextBox obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCustomMask(class Windows.UI.Xaml.Controls.TextBox obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetCustomMask(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCustomMask (obj As TextBox) As String" />
+      <MemberSignature Language="F#" Value="static member GetCustomMask : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetCustomMask obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox control</param>
+        <summary>
+            Gets CustomMask value
+            </summary>
+        <returns>CustomMask value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIsValid">
+      <MemberSignature Language="C#" Value="public static bool GetIsValid (Windows.UI.Xaml.Controls.TextBox textBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsValid(class Windows.UI.Xaml.Controls.TextBox textBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetIsValid(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsValid (textBox As TextBox) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsValid : Windows.UI.Xaml.Controls.TextBox -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetIsValid textBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to be validated.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.IsValid XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox regular expression validation result</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMask">
+      <MemberSignature Language="C#" Value="public static string GetMask (Windows.UI.Xaml.Controls.TextBox obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMask(class Windows.UI.Xaml.Controls.TextBox obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetMask(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMask (obj As TextBox) As String" />
+      <MemberSignature Language="F#" Value="static member GetMask : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetMask obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox control</param>
+        <summary>
+            Gets mask value
+            </summary>
+        <returns>mask value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPlaceHolder">
+      <MemberSignature Language="C#" Value="public static string GetPlaceHolder (Windows.UI.Xaml.Controls.TextBox obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlaceHolder(class Windows.UI.Xaml.Controls.TextBox obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetPlaceHolder(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlaceHolder (obj As TextBox) As String" />
+      <MemberSignature Language="F#" Value="static member GetPlaceHolder : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetPlaceHolder obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox control</param>
+        <summary>
+            Gets placeholder value
+            </summary>
+        <returns>placeholder value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRegex">
+      <MemberSignature Language="C#" Value="public static string GetRegex (Windows.UI.Xaml.Controls.TextBox textBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetRegex(class Windows.UI.Xaml.Controls.TextBox textBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetRegex(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRegex (textBox As TextBox) As String" />
+      <MemberSignature Language="F#" Value="static member GetRegex : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetRegex textBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to get Regex property from.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.Regex XAML attached property from the specified TextBox.
+            </summary>
+        <returns>The regular expression assigned to the TextBox</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSurfaceDialOptions">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions? GetSurfaceDialOptions (Windows.UI.Xaml.Controls.TextBox textBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions GetSurfaceDialOptions(class Windows.UI.Xaml.Controls.TextBox textBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetSurfaceDialOptions(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSurfaceDialOptions (textBox As TextBox) As SurfaceDialOptions" />
+      <MemberSignature Language="F#" Value="static member GetSurfaceDialOptions : Windows.UI.Xaml.Controls.TextBox -&gt; Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetSurfaceDialOptions textBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">The target <see cref="T:Windows.UI.Xaml.Controls.TextBox" /> control.</param>
+        <summary>
+            Gets the value for <see cref="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptionsProperty" />.
+            </summary>
+        <returns>The value of <see cref="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptionsProperty" /> for <paramref name="textBox" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidationMode">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode GetValidationMode (Windows.UI.Xaml.Controls.TextBox textBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.Uwp.UI.TextBoxExtensions/ValidationMode GetValidationMode(class Windows.UI.Xaml.Controls.TextBox textBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetValidationMode(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidationMode (textBox As TextBox) As TextBoxExtensions.ValidationMode" />
+      <MemberSignature Language="F#" Value="static member GetValidationMode : Windows.UI.Xaml.Controls.TextBox -&gt; Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetValidationMode textBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.TextBoxExtensions+ValidationMode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to get the <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" /> from</param>
+        <summary>
+            Gets the value of the TextBoxRegex.ValidationMode XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" /> value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValidationType">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType GetValidationType (Windows.UI.Xaml.Controls.TextBox textBox);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.Uwp.UI.TextBoxExtensions/ValidationType GetValidationType(class Windows.UI.Xaml.Controls.TextBox textBox) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetValidationType(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetValidationType (textBox As TextBox) As TextBoxExtensions.ValidationType" />
+      <MemberSignature Language="F#" Value="static member GetValidationType : Windows.UI.Xaml.Controls.TextBox -&gt; Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetValidationType textBox" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.TextBoxExtensions+ValidationType</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to get <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" /> from.</param>
+        <summary>
+            Gets the value of the TextBoxRegex.ValidationType XAML attached property from the specified TextBox.
+            </summary>
+        <returns>TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" /> Value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSurfaceDialOptionsSupported">
+      <MemberSignature Language="C#" Value="public static bool IsSurfaceDialOptionsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool IsSurfaceDialOptionsSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.IsSurfaceDialOptionsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSurfaceDialOptionsSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSurfaceDialOptionsSupported : bool" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.IsSurfaceDialOptionsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this attached proeprty is supported.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="see GetIsValid, and SetIsValid" />
+      <MemberSignature Language="ILAsm" Value="see GetIsValid, and SetIsValid" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.IsValid" />
+      <MemberSignature Language="VB.NET" Value="see GetIsValid, and SetIsValid" />
+      <MemberSignature Language="F#" Value="see GetIsValid, and SetIsValid" Usage="see GetIsValid, and SetIsValid" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty IsValidProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty IsValidProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.IsValidProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsValidProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsValidProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.IsValidProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the IsValid attached dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mask">
+      <MemberSignature Language="C#" Value="see GetMask, and SetMask" />
+      <MemberSignature Language="ILAsm" Value="see GetMask, and SetMask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.Mask" />
+      <MemberSignature Language="VB.NET" Value="see GetMask, and SetMask" />
+      <MemberSignature Language="F#" Value="see GetMask, and SetMask" Usage="see GetMask, and SetMask" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaskProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaskProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.MaskProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaskProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaskProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.MaskProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Represents a mask/format for the textbox that the user must follow
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceHolder">
+      <MemberSignature Language="C#" Value="see GetPlaceHolder, and SetPlaceHolder" />
+      <MemberSignature Language="ILAsm" Value="see GetPlaceHolder, and SetPlaceHolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolder" />
+      <MemberSignature Language="VB.NET" Value="see GetPlaceHolder, and SetPlaceHolder" />
+      <MemberSignature Language="F#" Value="see GetPlaceHolder, and SetPlaceHolder" Usage="see GetPlaceHolder, and SetPlaceHolder" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceHolderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PlaceHolderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PlaceHolderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlaceHolderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceHolderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Represents the mask place holder which represents the variable character that the user can edit in the textbox
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Regex">
+      <MemberSignature Language="C#" Value="see GetRegex, and SetRegex" />
+      <MemberSignature Language="ILAsm" Value="see GetRegex, and SetRegex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.Regex" />
+      <MemberSignature Language="VB.NET" Value="see GetRegex, and SetRegex" />
+      <MemberSignature Language="F#" Value="see GetRegex, and SetRegex" Usage="see GetRegex, and SetRegex" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegexProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty RegexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty RegexProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.RegexProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RegexProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RegexProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.RegexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Regex attached dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetCustomMask">
+      <MemberSignature Language="C#" Value="public static void SetCustomMask (Windows.UI.Xaml.Controls.TextBox obj, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCustomMask(class Windows.UI.Xaml.Controls.TextBox obj, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetCustomMask(Windows.UI.Xaml.Controls.TextBox,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCustomMask (obj As TextBox, value As String)" />
+      <MemberSignature Language="F#" Value="static member SetCustomMask : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetCustomMask (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox Control</param>
+        <param name="value">CustomMask Value</param>
+        <summary>
+            Sets CustomMask property which represents the custom mask that the user can create to add his own variable characters based on certain regex expression
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetIsValid">
+      <MemberSignature Language="C#" Value="public static void SetIsValid (Windows.UI.Xaml.Controls.TextBox textBox, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsValid(class Windows.UI.Xaml.Controls.TextBox textBox, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetIsValid(Windows.UI.Xaml.Controls.TextBox,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsValid (textBox As TextBox, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsValid : Windows.UI.Xaml.Controls.TextBox * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetIsValid (textBox, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to be assigned the property</param>
+        <param name="value">A value indicating if the Text is valid according to the Regex property.</param>
+        <summary>
+            Sets the value of the TextBoxRegex.IsValid XAML attached property for a target TextBox.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetMask">
+      <MemberSignature Language="C#" Value="public static void SetMask (Windows.UI.Xaml.Controls.TextBox obj, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMask(class Windows.UI.Xaml.Controls.TextBox obj, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetMask(Windows.UI.Xaml.Controls.TextBox,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMask (obj As TextBox, value As String)" />
+      <MemberSignature Language="F#" Value="static member SetMask : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetMask (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox Control</param>
+        <param name="value">Mask Value</param>
+        <summary>
+            Sets textbox mask property which represents mask/format for the textbox that the user must follow
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPlaceHolder">
+      <MemberSignature Language="C#" Value="public static void SetPlaceHolder (Windows.UI.Xaml.Controls.TextBox obj, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPlaceHolder(class Windows.UI.Xaml.Controls.TextBox obj, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetPlaceHolder(Windows.UI.Xaml.Controls.TextBox,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlaceHolder (obj As TextBox, value As String)" />
+      <MemberSignature Language="F#" Value="static member SetPlaceHolder : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetPlaceHolder (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="obj">TextBox Control</param>
+        <param name="value">placeholder Value</param>
+        <summary>
+            Sets placeholder property which represents the variable character that the user can edit in the textbox
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRegex">
+      <MemberSignature Language="C#" Value="public static void SetRegex (Windows.UI.Xaml.Controls.TextBox textBox, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRegex(class Windows.UI.Xaml.Controls.TextBox textBox, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetRegex(Windows.UI.Xaml.Controls.TextBox,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRegex (textBox As TextBox, value As String)" />
+      <MemberSignature Language="F#" Value="static member SetRegex : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetRegex (textBox, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">The TextBox to set the regular expression on</param>
+        <param name="value">Regex value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.Regex XAML attached property for a target TextBox.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSurfaceDialOptions">
+      <MemberSignature Language="C#" Value="public static void SetSurfaceDialOptions (Windows.UI.Xaml.Controls.TextBox textBox, Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSurfaceDialOptions(class Windows.UI.Xaml.Controls.TextBox textBox, class Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetSurfaceDialOptions(Windows.UI.Xaml.Controls.TextBox,Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSurfaceDialOptions (textBox As TextBox, value As SurfaceDialOptions)" />
+      <MemberSignature Language="F#" Value="static member SetSurfaceDialOptions : Windows.UI.Xaml.Controls.TextBox * Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetSurfaceDialOptions (textBox, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">The target <see cref="T:Windows.UI.Xaml.Controls.TextBox" /> control.</param>
+        <param name="value">The value to set the property to.</param>
+        <summary>
+            Sets the value for <see cref="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptionsProperty" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValidationMode">
+      <MemberSignature Language="C#" Value="public static void SetValidationMode (Windows.UI.Xaml.Controls.TextBox textBox, Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetValidationMode(class Windows.UI.Xaml.Controls.TextBox textBox, valuetype Microsoft.Toolkit.Uwp.UI.TextBoxExtensions/ValidationMode value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetValidationMode(Windows.UI.Xaml.Controls.TextBox,Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValidationMode (textBox As TextBox, value As TextBoxExtensions.ValidationMode)" />
+      <MemberSignature Language="F#" Value="static member SetValidationMode : Windows.UI.Xaml.Controls.TextBox * Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetValidationMode (textBox, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions+ValidationMode" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to set the <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" /> on.</param>
+        <param name="value">TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" /> value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.ValidationMode XAML attached property for a target TextBox.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValidationType">
+      <MemberSignature Language="C#" Value="public static void SetValidationType (Windows.UI.Xaml.Controls.TextBox textBox, Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetValidationType(class Windows.UI.Xaml.Controls.TextBox textBox, valuetype Microsoft.Toolkit.Uwp.UI.TextBoxExtensions/ValidationType value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetValidationType(Windows.UI.Xaml.Controls.TextBox,Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetValidationType (textBox As TextBox, value As TextBoxExtensions.ValidationType)" />
+      <MemberSignature Language="F#" Value="static member SetValidationType : Windows.UI.Xaml.Controls.TextBox * Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetValidationType (textBox, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBox" Type="Windows.UI.Xaml.Controls.TextBox" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions+ValidationType" />
+      </Parameters>
+      <Docs>
+        <param name="textBox">TextBox to set the <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" /> on.</param>
+        <param name="value">TextBox <see cref="T:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" /> value</param>
+        <summary>
+            Sets the value of the TextBoxRegex.ValidationType XAML attached property for a target TextBox.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurfaceDialOptions">
+      <MemberSignature Language="C#" Value="see GetSurfaceDialOptions, and SetSurfaceDialOptions" />
+      <MemberSignature Language="ILAsm" Value="see GetSurfaceDialOptions, and SetSurfaceDialOptions" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptions" />
+      <MemberSignature Language="VB.NET" Value="see GetSurfaceDialOptions, and SetSurfaceDialOptions" />
+      <MemberSignature Language="F#" Value="see GetSurfaceDialOptions, and SetSurfaceDialOptions" Usage="see GetSurfaceDialOptions, and SetSurfaceDialOptions" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SurfaceDialOptionsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SurfaceDialOptionsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SurfaceDialOptionsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptionsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SurfaceDialOptionsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SurfaceDialOptionsProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SurfaceDialOptionsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The <see cref="T:Microsoft.Toolkit.Uwp.UI.SurfaceDialOptions" /> instance containing properties to configure the Surface Dial support for a <see cref="T:Windows.UI.Xaml.Controls.TextBox" />.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationMode">
+      <MemberSignature Language="C#" Value="see GetValidationMode, and SetValidationMode" />
+      <MemberSignature Language="ILAsm" Value="see GetValidationMode, and SetValidationMode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationMode" />
+      <MemberSignature Language="VB.NET" Value="see GetValidationMode, and SetValidationMode" />
+      <MemberSignature Language="F#" Value="see GetValidationMode, and SetValidationMode" Usage="see GetValidationMode, and SetValidationMode" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationModeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ValidationModeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ValidationModeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidationModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValidationModeProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationModeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ValidationMode attached dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationType">
+      <MemberSignature Language="C#" Value="see GetValidationType, and SetValidationType" />
+      <MemberSignature Language="ILAsm" Value="see GetValidationType, and SetValidationType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationType" />
+      <MemberSignature Language="VB.NET" Value="see GetValidationType, and SetValidationType" />
+      <MemberSignature Language="F#" Value="see GetValidationType, and SetValidationType" Usage="see GetValidationType, and SetValidationType" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidationTypeProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ValidationTypeProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ValidationTypeProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValidationTypeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValidationTypeProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.ValidationTypeProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the ValidationType attached dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,49 @@
+<Type Name="ArrayPoolBufferWriterExtensions" FullName="Microsoft.Toolkit.HighPerformance.ArrayPoolBufferWriterExtensions">
+  <TypeSignature Language="C#" Value="public static class ArrayPoolBufferWriterExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ArrayPoolBufferWriterExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ArrayPoolBufferWriterExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ArrayPoolBufferWriterExtensions" />
+  <TypeSignature Language="F#" Value="type ArrayPoolBufferWriterExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;byte&gt; writer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(class Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1&lt;unsigned int8&gt; writer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ArrayPoolBufferWriterExtensions.AsStream(Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (writer As ArrayPoolBufferWriter(Of Byte)) As Stream" />
+      <MemberSignature Language="F#" Value="static member AsStream : Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;byte&gt; -&gt; System.IO.Stream" Usage="Microsoft.Toolkit.HighPerformance.ArrayPoolBufferWriterExtensions.AsStream writer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="writer" Type="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;System.Byte&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="writer">The target <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> instance.</param>
+        <summary>
+            Returns a <see cref="T:System.IO.Stream" /> that can be used to write to a target an <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> of <see cref="T:System.Byte" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.IO.Stream" /> wrapping <paramref name="writer" /> and writing data to its underlying buffer.</returns>
+        <remarks>The returned <see cref="T:System.IO.Stream" /> can only be written to and does not support seeking.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

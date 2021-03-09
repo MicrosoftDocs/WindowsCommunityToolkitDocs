@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -34,13 +35,42 @@
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="action" Type="System.Action" />
+        <Parameter Name="action" Type="System.Action" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="action">Action to be executed after render pass</param>
         <summary>
             Provides a method to execute code after the rendering pass is completed.
             <seealso href="https://github.com/microsoft/microsoft-ui-xaml/blob/c045cde57c5c754683d674634a0baccda34d58c4/dev/dll/SharedHelpers.cpp#L399" /></summary>
+        <returns>Awaitable Task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAfterCompositionRenderingAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;bool&gt; ExecuteAfterCompositionRenderingAsync (Action action, System.Threading.Tasks.TaskCreationOptions? options = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;bool&gt; ExecuteAfterCompositionRenderingAsync(class System.Action action, valuetype System.Nullable`1&lt;valuetype System.Threading.Tasks.TaskCreationOptions&gt; options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Helpers.CompositionTargetHelper.ExecuteAfterCompositionRenderingAsync(System.Action,System.Nullable{System.Threading.Tasks.TaskCreationOptions})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExecuteAfterCompositionRenderingAsync (action As Action, Optional options As Nullable(Of TaskCreationOptions) = Nothing) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member ExecuteAfterCompositionRenderingAsync : Action * Nullable&lt;System.Threading.Tasks.TaskCreationOptions&gt; -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Helpers.CompositionTargetHelper.ExecuteAfterCompositionRenderingAsync (action, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="action" Type="System.Action" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="options" Type="System.Nullable&lt;System.Threading.Tasks.TaskCreationOptions&gt;" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="action">Action to be executed after render pass</param>
+        <param name="options">
+          <see cref="T:System.Threading.Tasks.TaskCreationOptions" /> for how to handle async calls with <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</param>
+        <summary>
+            Provides a method to execute code after the rendering pass is completed.
+            <seealso href="https://github.com/microsoft/microsoft-ui-xaml/blob/c045cde57c5c754683d674634a0baccda34d58c4/dev/dll/SharedHelpers.cpp#L399" /><seealso href="https://devblogs.microsoft.com/premier-developer/the-danger-of-taskcompletionsourcet-class/" /></summary>
         <returns>Awaitable Task</returns>
         <remarks>To be added.</remarks>
       </Docs>

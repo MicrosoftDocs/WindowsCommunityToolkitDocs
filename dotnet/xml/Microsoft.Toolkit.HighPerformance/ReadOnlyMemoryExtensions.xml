@@ -1,0 +1,224 @@
+<Type Name="ReadOnlyMemoryExtensions" FullName="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions">
+  <TypeSignature Language="C#" Value="public static class ReadOnlyMemoryExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ReadOnlyMemoryExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ReadOnlyMemoryExtensions" />
+  <TypeSignature Language="F#" Value="type ReadOnlyMemoryExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.ReadOnlyMemory`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsBytes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;byte&gt; AsBytes&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; AsBytes&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsBytes``1(System.ReadOnlyMemory{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsBytes(Of T As Structure) (memory As ReadOnlyMemory(Of T)) As ReadOnlyMemory(Of Byte)" />
+      <MemberSignature Language="F#" Value="static member AsBytes : ReadOnlyMemory&lt;'T (requires 'T : struct)&gt; -&gt; ReadOnlyMemory&lt;byte&gt; (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsBytes memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type if items in the source <see cref="T:System.ReadOnlyMemory`1" />.</typeparam>
+        <param name="memory">The source <see cref="T:System.ReadOnlyMemory`1" />, of type <typeparamref name="T" />.</param>
+        <summary>
+            Casts a <see cref="T:System.ReadOnlyMemory`1" /> of one primitive type <typeparamref name="T" /> to <see cref="T:System.ReadOnlyMemory`1" /> of bytes.
+            </summary>
+        <returns>A <see cref="T:System.ReadOnlyMemory`1" /> of bytes.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.OverflowException">
+            Thrown if the <see cref="P:System.ReadOnlyMemory`1.Length" /> property of the new <see cref="T:System.ReadOnlyMemory`1" /> would exceed <see cref="F:System.Int32.MaxValue" />.
+            </exception>
+        <exception cref="T:System.ArgumentException">Thrown when the data store of <paramref name="memory" /> is not supported.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMemory2D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; AsMemory2D&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!!T&gt; AsMemory2D&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsMemory2D``1(System.ReadOnlyMemory{``0},System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory2D(Of T) (memory As ReadOnlyMemory(Of T), height As Integer, width As Integer) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member AsMemory2D : ReadOnlyMemory&lt;'T&gt; * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsMemory2D (memory, height, width)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.ReadOnlyMemory`1" /> instance.</typeparam>
+        <param name="memory">The input <see cref="T:System.ReadOnlyMemory`1" /> instance.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <summary>
+            Returns a <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance wrapping the underlying data for the given <see cref="T:System.ReadOnlyMemory`1" /> instance.
+            </summary>
+        <returns>The resulting <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="memory" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsMemory2D&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; AsMemory2D&lt;T&gt; (this ReadOnlyMemory&lt;T&gt; memory, int offset, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!!T&gt; AsMemory2D&lt;T&gt;(valuetype System.ReadOnlyMemory`1&lt;!!T&gt; memory, int32 offset, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsMemory2D``1(System.ReadOnlyMemory{``0},System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory2D(Of T) (memory As ReadOnlyMemory(Of T), offset As Integer, height As Integer, width As Integer, pitch As Integer) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member AsMemory2D : ReadOnlyMemory&lt;'T&gt; * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsMemory2D (memory, offset, height, width, pitch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="this" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.ReadOnlyMemory`1" /> instance.</typeparam>
+        <param name="memory">The input <see cref="T:System.ReadOnlyMemory`1" /> instance.</param>
+        <param name="offset">The initial offset within <paramref name="memory" />.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <param name="pitch">The pitch in the resulting 2D area.</param>
+        <summary>
+            Returns a <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance wrapping the underlying data for the given <see cref="T:System.ReadOnlyMemory`1" /> instance.
+            </summary>
+        <returns>The resulting <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="memory" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="AsStream">
+      <MemberSignature Language="C#" Value="public static System.IO.Stream AsStream (this ReadOnlyMemory&lt;byte&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream AsStream(valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsStream(System.ReadOnlyMemory{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsStream (memory As ReadOnlyMemory(Of Byte)) As Stream" />
+      <MemberSignature Language="F#" Value="static member AsStream : ReadOnlyMemory&lt;byte&gt; -&gt; System.IO.Stream" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.AsStream memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IO.Stream</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="memory">The input <see cref="T:System.ReadOnlyMemory`1" /> of <see cref="T:System.Byte" /> instance.</param>
+        <summary>
+            Returns a <see cref="T:System.IO.Stream" /> wrapping the contents of the given <see cref="T:System.ReadOnlyMemory`1" /> of <see cref="T:System.Byte" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.IO.Stream" /> wrapping the data within <paramref name="memory" />.</returns>
+        <remarks>
+            Since this method only receives a <see cref="T:System.Memory`1" /> instance, which does not track
+            the lifetime of its underlying buffer, it is responsibility of the caller to manage that.
+            In particular, the caller must ensure that the target buffer is not disposed as long
+            as the returned <see cref="T:System.IO.Stream" /> is in use, to avoid unexpected issues.
+            </remarks>
+        <exception cref="T:System.ArgumentException">Thrown when <paramref name="memory" /> has an invalid data store.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast&lt;TFrom,TTo&gt;">
+      <MemberSignature Language="C#" Value="public static ReadOnlyMemory&lt;TTo&gt; Cast&lt;TFrom,TTo&gt; (this ReadOnlyMemory&lt;TFrom&gt; memory) where TFrom : struct where TTo : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ReadOnlyMemory`1&lt;!!TTo&gt; Cast&lt;struct .ctor (class System.ValueType) TFrom, struct .ctor (class System.ValueType) TTo&gt;(valuetype System.ReadOnlyMemory`1&lt;!!TFrom&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.Cast``2(System.ReadOnlyMemory{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Cast(Of TFrom As Structure, TTo As Structure) (memory As ReadOnlyMemory(Of TFrom)) As ReadOnlyMemory(Of TTo)" />
+      <MemberSignature Language="F#" Value="static member Cast : ReadOnlyMemory&lt;'From (requires 'From : struct)&gt; -&gt; ReadOnlyMemory&lt;'o (requires 'o : struct)&gt; (requires 'From : struct and 'o : struct)" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemoryExtensions.Cast memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;TTo&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFrom">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TTo">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;TFrom&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFrom">The type of items in the source <see cref="T:System.ReadOnlyMemory`1" />.</typeparam>
+        <typeparam name="TTo">The type of items in the destination <see cref="T:System.ReadOnlyMemory`1" />.</typeparam>
+        <param name="memory">The source <see cref="T:System.ReadOnlyMemory`1" />, of type <typeparamref name="TFrom" />.</param>
+        <summary>
+            Casts a <see cref="T:System.ReadOnlyMemory`1" /> of one primitive type <typeparamref name="TFrom" /> to another primitive type <typeparamref name="TTo" />.
+            </summary>
+        <returns>A <see cref="T:System.ReadOnlyMemory`1" /> of type <typeparamref name="TTo" /></returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">Thrown when the data store of <paramref name="memory" /> is not supported.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

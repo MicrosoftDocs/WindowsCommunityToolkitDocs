@@ -9,6 +9,7 @@
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -39,12 +40,38 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="characteristic" Type="Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic" />
-        <Parameter Name="parent" Type="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService" />
+        <Parameter Name="characteristic" Type="Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="parent" Type="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="characteristic">The characteristic.</param>
         <param name="parent">The parent.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObservableGattCharacteristics (Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic characteristic, Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService parent, Windows.System.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic characteristic, class Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService parent, class Windows.System.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.#ctor(Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic,Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService,Windows.System.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (characteristic As GattCharacteristic, parent As ObservableGattDeviceService, Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics : Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic * Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService * Windows.System.DispatcherQueue -&gt; Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics" Usage="new Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics (characteristic, parent, dispatcherQueue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Connectivity</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="characteristic" Type="Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="parent" Type="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="dispatcherQueue" Type="Windows.System.DispatcherQueue" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="characteristic">The characteristic.</param>
+        <param name="parent">The parent.</param>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates, or null if this is being called from the UI thread.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics" /> class.
             </summary>
@@ -63,6 +90,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic</ReturnType>
@@ -70,6 +98,28 @@
       <Docs>
         <summary>
             Gets or sets the characteristic this class wraps
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherQueue">
+      <MemberSignature Language="C#" Value="public Windows.System.DispatcherQueue DispatcherQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.System.DispatcherQueue DispatcherQueue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DispatcherQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispatcherQueue As DispatcherQueue" />
+      <MemberSignature Language="F#" Value="member this.DispatcherQueue : Windows.System.DispatcherQueue with get, set" Usage="Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics.DispatcherQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Connectivity</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.DispatcherQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets which DispatcherQueue is used to dispatch UI updates.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -87,6 +137,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.Connectivity.ObservableGattCharacteristics+DisplayTypes</ReturnType>
@@ -111,6 +162,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -135,6 +187,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -159,6 +212,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -183,6 +237,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -190,7 +245,7 @@
       <Parameters>
         <Parameter Name="propertyName" Type="System.String">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
               <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
             </Attribute>
@@ -217,6 +272,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService</ReturnType>
@@ -244,6 +300,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
@@ -267,6 +324,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -292,6 +350,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -317,6 +376,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -342,6 +402,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -367,6 +428,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -392,6 +454,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -416,6 +479,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

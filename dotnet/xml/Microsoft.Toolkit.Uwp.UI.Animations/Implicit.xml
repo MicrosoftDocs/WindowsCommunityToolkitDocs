@@ -1,14 +1,17 @@
 <Type Name="Implicit" FullName="Microsoft.Toolkit.Uwp.UI.Animations.Implicit">
-  <TypeSignature Language="C#" Value="public class Implicit" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Implicit extends System.Object" />
+  <TypeSignature Language="C#" Value="public class Implicit" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Implicit extends System.Object" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.Implicit" />
   <TypeSignature Language="VB.NET" Value="Public Class Implicit" />
   <TypeSignature Language="F#" Value="type Implicit = class" />
+  <TypeSignature Language="C#" Value="public static class Implicit" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Implicit extends System.Object" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            Attached Properties to enable Implicit Animations through XAML
+            Attached properties to support implicitly triggered animations for <see cref="T:Windows.UI.Xaml.UIElement" /> instances.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -51,6 +54,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>To be added.</summary>
@@ -69,13 +73,14 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Identifies the Implicit.Animations XAML attached property
+            The attached "Animations" property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -97,7 +102,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to get the value from</param>
@@ -107,6 +112,32 @@
         <returns>
           <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
         </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAnimations">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetAnimations (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetAnimations(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetAnimations(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAnimations (element As UIElement) As ImplicitAnimationSet" />
+      <MemberSignature Language="F#" Value="static member GetAnimations : Windows.UI.Xaml.UIElement -&gt; Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetAnimations element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to get the value for.</param>
+        <summary>
+            Gets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.AnimationsProperty" /> property.
+            </summary>
+        <returns>The retrieved <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -127,7 +158,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to get the value from</param>
@@ -137,6 +168,32 @@
         <returns>
           <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
         </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHideAnimations">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetHideAnimations (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetHideAnimations(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetHideAnimations(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetHideAnimations (element As UIElement) As ImplicitAnimationSet" />
+      <MemberSignature Language="F#" Value="static member GetHideAnimations : Windows.UI.Xaml.UIElement -&gt; Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetHideAnimations element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to get the value for.</param>
+        <summary>
+            Gets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.HideAnimationsProperty" /> property.
+            </summary>
+        <returns>The retrieved <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -157,7 +214,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to get the value from</param>
@@ -167,6 +224,32 @@
         <returns>
           <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
         </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShowAnimations">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetShowAnimations (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet GetShowAnimations(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetShowAnimations(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetShowAnimations (element As UIElement) As ImplicitAnimationSet" />
+      <MemberSignature Language="F#" Value="static member GetShowAnimations : Windows.UI.Xaml.UIElement -&gt; Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.GetShowAnimations element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to get the value for.</param>
+        <summary>
+            Gets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.ShowAnimationsProperty" /> property.
+            </summary>
+        <returns>The retrieved <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -182,6 +265,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>To be added.</summary>
@@ -200,13 +284,14 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Identifies the Implicit.HideAnimations XAML attached property
+            The attached "HideAnimations" property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -228,14 +313,41 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
-        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to set the value</param>
         <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" /> to set</param>
         <summary>
             Sets the value of the Implicit.Animations XAML attached property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAnimations">
+      <MemberSignature Language="C#" Value="public static void SetAnimations (Windows.UI.Xaml.UIElement element, Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetAnimations(class Windows.UI.Xaml.UIElement element, class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetAnimations(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetAnimations (element As UIElement, value As ImplicitAnimationSet)" />
+      <MemberSignature Language="F#" Value="static member SetAnimations : Windows.UI.Xaml.UIElement * Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetAnimations (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to set the value for.</param>
+        <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" /> value to set.</param>
+        <summary>
+            Sets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.AnimationsProperty" /> property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -257,14 +369,41 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
-        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to set the value</param>
         <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" /> to set</param>
         <summary>
             Sets the value of the Implicit.HideAnimations XAML attached property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHideAnimations">
+      <MemberSignature Language="C#" Value="public static void SetHideAnimations (Windows.UI.Xaml.UIElement element, Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetHideAnimations(class Windows.UI.Xaml.UIElement element, class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetHideAnimations(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetHideAnimations (element As UIElement, value As ImplicitAnimationSet)" />
+      <MemberSignature Language="F#" Value="static member SetHideAnimations : Windows.UI.Xaml.UIElement * Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetHideAnimations (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to set the value for.</param>
+        <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> value to set.</param>
+        <summary>
+            Sets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.HideAnimationsProperty" /> property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,14 +425,41 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" />
-        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" />
+        <Parameter Name="obj" Type="Windows.UI.Xaml.DependencyObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="obj">The <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to set the value</param>
         <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationCollection" /> to set</param>
         <summary>
             Sets the value of the Implicit.ShowAnimations XAML attached property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetShowAnimations">
+      <MemberSignature Language="C#" Value="public static void SetShowAnimations (Windows.UI.Xaml.UIElement element, Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetShowAnimations(class Windows.UI.Xaml.UIElement element, class Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetShowAnimations(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetShowAnimations (element As UIElement, value As ImplicitAnimationSet)" />
+      <MemberSignature Language="F#" Value="static member SetShowAnimations : Windows.UI.Xaml.UIElement * Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Implicit.SetShowAnimations (element, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="value" Type="Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="element">The <see cref="T:Windows.UI.Xaml.UIElement" /> to set the value for.</param>
+        <param name="value">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> value to set.</param>
+        <summary>
+            Sets the value of the <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.ShowAnimationsProperty" /> property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -310,6 +476,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>To be added.</summary>
@@ -328,13 +495,14 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Identifies the Implicit.ShowAnimations XAML attached property
+            The attached "ShowAnimations" property.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

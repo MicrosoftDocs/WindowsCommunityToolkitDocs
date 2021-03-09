@@ -27,7 +27,7 @@
       <AttributeName Language="C#">[Windows.Foundation.Metadata.Activatable(0)]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Activatable(0)&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <AttributeName Language="C#">[Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Toolkit.Uwp.UI.Lottie.ILottieVisualSourceFactory), 0)]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Activatable(typeof(Microsoft.Toolkit.Uwp.UI.Lottie.ILottieVisualSourceFactory), 0)&gt;]</AttributeName>
     </Attribute>
@@ -81,7 +81,7 @@
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="storageFile" Type="Windows.Storage.StorageFile" />
+        <Parameter Name="storageFile" Type="Windows.Storage.StorageFile" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="storageFile">To be added.</param>
@@ -90,11 +90,12 @@
       </Docs>
     </Member>
     <Member MemberName="AnimatedVisualInvalidated">
-      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource,object&gt; AnimatedVisualInvalidated;" />
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource,object&gt; AnimatedVisualInvalidated;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource, object&gt; AnimatedVisualInvalidated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.AnimatedVisualInvalidated" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event AnimatedVisualInvalidated As TypedEventHandler(Of IDynamicAnimatedVisualSource, Object) " />
       <MemberSignature Language="F#" Value="member this.AnimatedVisualInvalidated : Windows.Foundation.TypedEventHandler&lt;Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource, obj&gt; " Usage="member this.AnimatedVisualInvalidated : Windows.Foundation.TypedEventHandler&lt;Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource, System.obj&gt; " />
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource?,object?&gt; AnimatedVisualInvalidated;" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Event</MemberType>
       <Implements>
         <InterfaceMember>E:Microsoft.UI.Xaml.Controls.IDynamicAnimatedVisualSource.AnimatedVisualInvalidated</InterfaceMember>
@@ -112,11 +113,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFromString">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource CreateFromString (string uri);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource CreateFromString (string uri);" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource CreateFromString([in]string uri) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.CreateFromString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromString (uri As String) As LottieVisualSource" />
       <MemberSignature Language="F#" Value="static member CreateFromString : string -&gt; Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource" Usage="Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.CreateFromString uri" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource? CreateFromString (string uri);" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Lottie</AssemblyName>
@@ -175,6 +177,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="SetImageAssetHandler">
+      <MemberSignature Language="C#" Value="public void SetImageAssetHandler (Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler? imageAssetHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetImageAssetHandler([in]class Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler imageAssetHandler) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetImageAssetHandler(Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetImageAssetHandler (imageAssetHandler As ImageAssetHandler)" />
+      <MemberSignature Language="F#" Value="abstract member SetImageAssetHandler : Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler -&gt; unit&#xA;override this.SetImageAssetHandler : Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler -&gt; unit" Usage="lottieVisualSource.SetImageAssetHandler imageAssetHandler" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Lottie</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageAssetHandler" Type="Microsoft.Toolkit.Uwp.UI.Lottie.ImageAssetHandler" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="imageAssetHandler">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetSourceAsync">
       <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetSourceAsync (Windows.Foundation.Uri sourceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetSourceAsync([in]class Windows.Foundation.Uri sourceUri) runtime managed" />
@@ -187,9 +212,17 @@
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Windows.Foundation.Metadata.Overload("SetSourceAsync1")]</AttributeName>
           <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Overload("SetSourceAsync1")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.DefaultOverload]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.DefaultOverload&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Overload("SetSourceUriAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Overload("SetSourceUriAsync")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,13 +250,17 @@
         <AssemblyVersion>0.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Windows.Foundation.Metadata.DefaultOverload]</AttributeName>
           <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.DefaultOverload&gt;]</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
           <AttributeName Language="C#">[Windows.Foundation.Metadata.Overload("SetSourceAsync2")]</AttributeName>
           <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Overload("SetSourceAsync2")&gt;]</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Overload("SetSourceFileAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Overload("SetSourceFileAsync")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -234,6 +271,36 @@
       </Parameters>
       <Docs>
         <param name="file">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSourceAsync">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.IAsyncAction SetSourceAsync (Windows.Storage.Streams.IInputStream stream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.Foundation.IAsyncAction SetSourceAsync([in]class Windows.Storage.Streams.IInputStream stream) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.SetSourceAsync(Windows.Storage.Streams.IInputStream)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSourceAsync (stream As IInputStream) As IAsyncAction" />
+      <MemberSignature Language="F#" Value="abstract member SetSourceAsync : Windows.Storage.Streams.IInputStream -&gt; Windows.Foundation.IAsyncAction&#xA;override this.SetSourceAsync : Windows.Storage.Streams.IInputStream -&gt; Windows.Foundation.IAsyncAction" Usage="lottieVisualSource.SetSourceAsync stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Lottie</AssemblyName>
+        <AssemblyVersion>0.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Overload("SetSourceStreamAsync")]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Overload("SetSourceStreamAsync")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.IAsyncAction</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="Windows.Storage.Streams.IInputStream" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
@@ -264,11 +331,12 @@
       </Docs>
     </Member>
     <Member MemberName="TryCreateAnimatedVisual">
-      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Controls.IAnimatedVisual TryCreateAnimatedVisual (Windows.UI.Composition.Compositor compositor, out object diagnostics);" />
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Controls.IAnimatedVisual TryCreateAnimatedVisual (Windows.UI.Composition.Compositor compositor, out object diagnostics);" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.UI.Xaml.Controls.IAnimatedVisual TryCreateAnimatedVisual([in]class Windows.UI.Composition.Compositor compositor, [out] object&amp; diagnostics) runtime managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Lottie.LottieVisualSource.TryCreateAnimatedVisual(Windows.UI.Composition.Compositor,System.Object@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryCreateAnimatedVisual (compositor As Compositor, ByRef diagnostics As Object) As IAnimatedVisual" />
       <MemberSignature Language="F#" Value="abstract member TryCreateAnimatedVisual : Windows.UI.Composition.Compositor * obj -&gt; Microsoft.UI.Xaml.Controls.IAnimatedVisual&#xA;override this.TryCreateAnimatedVisual : Windows.UI.Composition.Compositor * obj -&gt; Microsoft.UI.Xaml.Controls.IAnimatedVisual" Usage="lottieVisualSource.TryCreateAnimatedVisual (compositor, diagnostics)" />
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Controls.IAnimatedVisual? TryCreateAnimatedVisual (Windows.UI.Composition.Compositor compositor, out object? diagnostics);" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:Microsoft.UI.Xaml.Controls.IAnimatedVisualSource.TryCreateAnimatedVisual(Windows.UI.Composition.Compositor,System.Object@)</InterfaceMember>

@@ -23,6 +23,10 @@
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="Image", Type=typeof(System.Object))]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="Image", Type=typeof(System.Object))&gt;]</AttributeName>
     </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="Progress", Type=typeof(Windows.UI.Xaml.Controls.ProgressRing))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="Progress", Type=typeof(Windows.UI.Xaml.Controls.ProgressRing))&gt;]</AttributeName>
+    </Attribute>
     <Attribute>
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Loading")]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Loading")&gt;]</AttributeName>
@@ -88,7 +92,7 @@
         <ReturnType>Windows.Foundation.Size</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="finalSize" Type="Windows.Foundation.Size" />
+        <Parameter Name="finalSize" Type="Windows.Foundation.Size" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="finalSize">To be added.</param>
@@ -122,7 +126,7 @@
         <Parameter Name="handler" Type="Windows.UI.Xaml.ExceptionRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">Excpetion Routed Event Handler</param>
+        <param name="handler">Exception Routed Event Handler</param>
         <summary>
             Attach image failed event handler
             </summary>
@@ -936,8 +940,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
-        <Parameter Name="e" Type="Windows.UI.Xaml.ExceptionRoutedEventArgs" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="e" Type="Windows.UI.Xaml.ExceptionRoutedEventArgs" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="sender">Image</param>
@@ -963,8 +967,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
-        <Parameter Name="e" Type="Windows.UI.Xaml.RoutedEventArgs" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="e" Type="Windows.UI.Xaml.RoutedEventArgs" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="sender">Image</param>
@@ -1209,8 +1213,8 @@
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.UI.Xaml.Media.ImageSource&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="imageUri" Type="System.Uri" />
-        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+        <Parameter Name="imageUri" Type="System.Uri" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="imageUri">
@@ -1278,7 +1282,7 @@
         <Parameter Name="handler" Type="Windows.UI.Xaml.ExceptionRoutedEventHandler" />
       </Parameters>
       <Docs>
-        <param name="handler">Excpetion Routed Event Handler</param>
+        <param name="handler">Exception Routed Event Handler</param>
         <summary>
             Remove Image Failed handler
             </summary>

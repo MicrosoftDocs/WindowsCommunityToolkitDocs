@@ -1,0 +1,933 @@
+<Type Name="ReadOnlyMemory2D&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ReadOnlyMemory2D&lt;T&gt; : IEquatable&lt;Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlyMemory2D`1&lt;T&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt;&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlyMemory2D(Of T)&#xA;Implements IEquatable(Of ReadOnlyMemory2D(Of T))" />
+  <TypeSignature Language="F#" Value="type ReadOnlyMemory2D&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Memory.Views.MemoryDebugView2D`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Memory.Views.MemoryDebugView2D`1))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items in the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.</typeparam>
+    <summary>
+            A readonly version of <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[,]? array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[,] -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; array" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 2D array to wrap.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct wrapping a 2D array.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[,,] array, int depth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,,] array, int32 depth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[0:,0:,0:],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,,), depth As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[,,] * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (array, depth)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" />
+        <Parameter Name="depth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 3D array to wrap.</param>
+        <param name="depth">The target layer to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct wrapping a layer in a 3D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (System.Buffers.MemoryManager&lt;T&gt; memoryManager, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.MemoryManager`1&lt;!T&gt; memoryManager, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(System.Buffers.MemoryManager{`0},System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memoryManager As MemoryManager(Of T), height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : System.Buffers.MemoryManager&lt;'T&gt; * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (memoryManager, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memoryManager" Type="System.Buffers.MemoryManager&lt;T&gt;" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="memoryManager">The target <see cref="T:System.Buffers.MemoryManager`1" /> to wrap.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>The total area must match the length of <paramref name="memoryManager" />.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" /> or <paramref name="width" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (string text, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : string * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (text, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">The target <see cref="T:System.String" /> to wrap.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>The total area must match the length of <paramref name="text" />.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" /> or <paramref name="width" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[] array, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[] * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (array, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to wrap.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>The total area must match the length of <paramref name="array" />.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" /> or <paramref name="width" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (System.Buffers.MemoryManager&lt;T&gt; memoryManager, int offset, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.MemoryManager`1&lt;!T&gt; memoryManager, int32 offset, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(System.Buffers.MemoryManager{`0},System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memoryManager As MemoryManager(Of T), offset As Integer, height As Integer, width As Integer, pitch As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : System.Buffers.MemoryManager&lt;'T&gt; * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (memoryManager, offset, height, width, pitch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memoryManager" Type="System.Buffers.MemoryManager&lt;T&gt;" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="memoryManager">The target <see cref="T:System.Buffers.MemoryManager`1" /> to wrap.</param>
+        <param name="offset">The initial offset within <paramref name="memoryManager" />.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <param name="pitch">The pitch in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="memoryManager" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (string text, int offset, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 offset, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, offset As Integer, height As Integer, width As Integer, pitch As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : string * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (text, offset, height, width, pitch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="text">The target <see cref="T:System.String" /> to wrap.</param>
+        <param name="offset">The initial offset within <paramref name="text" />.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <param name="pitch">The pitch in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="text" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[,]? array, int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,] array, int32 row, int32 column, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,), row As Integer, column As Integer, height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[,] * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (array, row, column, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 2D array to wrap.</param>
+        <param name="row">The target row to map within <paramref name="array" />.</param>
+        <param name="column">The target column to map within <paramref name="array" />.</param>
+        <param name="height">The height to map within <paramref name="array" />.</param>
+        <param name="width">The width to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct wrapping a 2D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when either <paramref name="height" />, <paramref name="width" /> or <paramref name="height" />
+            are negative or not within the bounds that are valid for <paramref name="array" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[] array, int offset, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 offset, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), offset As Integer, height As Integer, width As Integer, pitch As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[] * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (array, offset, height, width, pitch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to wrap.</param>
+        <param name="offset">The initial offset within <paramref name="array" />.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <param name="pitch">The pitch in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="array" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory2D (T[,,] array, int depth, int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,,] array, int32 depth, int32 row, int32 column, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.#ctor(`0[0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,,), depth As Integer, row As Integer, column As Integer, height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; : 'T[,,] * int * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; (array, depth, row, column, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" />
+        <Parameter Name="depth" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 3D array to wrap.</param>
+        <param name="depth">The target layer to map within <paramref name="array" />.</param>
+        <param name="row">The target row to map within <paramref name="array" />.</param>
+        <param name="column">The target column to map within <paramref name="array" />.</param>
+        <param name="height">The height to map within <paramref name="array" />.</param>
+        <param name="width">The width to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> struct wrapping a layer in a 3D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype Microsoft.Toolkit.HighPerformance.Memory2D`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.CopyTo(Microsoft.Toolkit.HighPerformance.Memory2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Memory2D(Of T))" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Microsoft.Toolkit.HighPerformance.Memory2D&lt;'T&gt; -&gt; unit" Usage="readOnlyMemory2D.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The destination <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" /> instance.</param>
+        <summary>
+            Copies the contents of this <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> into a destination <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" /> instance.
+            For this API to succeed, the target <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" /> has to have the same shape as the current one.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="destination" /> is shorter than the source <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Memory&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.Memory`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.CopyTo(System.Memory{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Memory(Of T))" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Memory&lt;'T&gt; -&gt; unit" Usage="readOnlyMemory2D.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> instance.</param>
+        <summary>
+            Copies the contents of this <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> into a destination <see cref="T:System.Memory`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="destination" /> is shorter than the source <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousCreate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; DangerousCreate (object instance, ref T value, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; DangerousCreate(object instance, !T&amp; value, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.DangerousCreate(System.Object,`0@,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousCreate (instance As Object, ByRef value As T, height As Integer, width As Integer, pitch As Integer) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member DangerousCreate : obj * 'T * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.DangerousCreate (instance, value, height, width, pitch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="value" Type="T" RefType="ref" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="instance">The <see cref="T:System.Object" /> instance holding the data to map.</param>
+        <param name="value">The target reference to point to (it must be within <paramref name="instance" />).</param>
+        <param name="height">The height of the 2D memory area to map.</param>
+        <param name="width">The width of the 2D memory area to map.</param>
+        <param name="pitch">The pitch of the 2D memory area to map.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance from an arbitrary object.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance with the specified parameters.</returns>
+        <remarks>The <paramref name="value" /> parameter is not validated, and it's responsability of the caller to ensure it's valid.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an empty <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; other) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Equals(Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ReadOnlyMemory2D(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt; -&gt; bool" Usage="readOnlyMemory2D.Equals other" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="readOnlyMemory2D.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance. </param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>true if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, false. </returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="readOnlyMemory2D.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the height of the underlying 2D memory area.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance is empty.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; this[Range rows, Range columns] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; Item(valuetype System.Range, valuetype System.Range)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Item(System.Range,System.Range)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(rows As Range, columns As Range) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Item(Range * Range) : Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rows" Type="System.Range" />
+        <Parameter Name="columns" Type="System.Range" />
+      </Parameters>
+      <Docs>
+        <param name="rows">The target range of rows to select.</param>
+        <param name="columns">The target range of columns to select.</param>
+        <summary>
+            Slices the current instance with the specified parameters.
+            </summary>
+        <value>A new <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance representing a slice of the current one.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="rows" /> or <paramref name="columns" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public IntPtr Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Length : nativeint" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the length of the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; (Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; op_Implicit(valuetype Microsoft.Toolkit.HighPerformance.Memory2D`1&lt;!T&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.op_Implicit(Microsoft.Toolkit.HighPerformance.Memory2D{`0})~Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (memory As Memory2D(Of T)) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Toolkit.HighPerformance.Memory2D&lt;'T&gt; -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.op_Implicit memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="memory">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; (T[,]? array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; op_Implicit(!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.op_Implicit(`0[0:,0:])~Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T(,)) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T[,] -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.op_Implicit array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pin">
+      <MemberSignature Language="C#" Value="public System.Buffers.MemoryHandle Pin ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Buffers.MemoryHandle Pin() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Pin" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pin () As MemoryHandle" />
+      <MemberSignature Language="F#" Value="member this.Pin : unit -&gt; System.Buffers.MemoryHandle" Usage="readOnlyMemory2D.Pin " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Buffers.MemoryHandle</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a handle for the memory.
+            The GC will not move the memory until the returned <see cref="T:System.Buffers.MemoryHandle" />
+            is disposed, enabling taking and using the memory's address.
+            </summary>
+        <returns>A <see cref="T:System.Buffers.MemoryHandle" /> instance wrapping the pinned handle.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            An instance with nonprimitive (non-blittable) members cannot be pinned.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt; Slice (int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; Slice(int32 row, int32 column, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Slice(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (row As Integer, column As Integer, height As Integer, width As Integer) As ReadOnlyMemory2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="readOnlyMemory2D.Slice (row, column, height, width)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The target row to map within the current instance.</param>
+        <param name="column">The target column to map within the current instance.</param>
+        <param name="height">The height to map within the current instance.</param>
+        <param name="width">The width to map within the current instance.</param>
+        <summary>
+            Slices the current instance with the specified parameters.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance representing a slice of the current one.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" />, <paramref name="width" /> or <paramref name="height" />
+            are negative or not within the bounds that are valid for the current instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Span">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; Span { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Span" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Span" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Span As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Span : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Span" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance from the current memory.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public T[,] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[,] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T(,)" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[,]" Usage="readOnlyMemory2D.ToArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Copies the contents of the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance into a new 2D array.
+            </summary>
+        <returns>A 2D array containing the data in the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="readOnlyMemory2D.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype Microsoft.Toolkit.HighPerformance.Memory2D`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.TryCopyTo(Microsoft.Toolkit.HighPerformance.Memory2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Memory2D(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Microsoft.Toolkit.HighPerformance.Memory2D&lt;'T&gt; -&gt; bool" Usage="readOnlyMemory2D.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="Microsoft.Toolkit.HighPerformance.Memory2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The target <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" /> of the copy operation.</param>
+        <summary>
+            Attempts to copy the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance to a destination <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" />.
+            For this API to succeed, the target <see cref="T:Microsoft.Toolkit.HighPerformance.Memory2D`1" /> has to have the same shape as the current one.
+            </summary>
+        <returns>Whether or not the operation was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Memory&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype System.Memory`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.TryCopyTo(System.Memory{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Memory(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Memory&lt;'T&gt; -&gt; bool" Usage="readOnlyMemory2D.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The target <see cref="T:System.Memory`1" /> of the copy operation.</param>
+        <summary>
+            Attempts to copy the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" /> instance to a destination <see cref="T:System.Memory`1" />.
+            </summary>
+        <returns>Whether or not the operation was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetMemory">
+      <MemberSignature Language="C#" Value="public bool TryGetMemory (out ReadOnlyMemory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetMemory([out] valuetype System.ReadOnlyMemory`1&lt;!T&gt;&amp; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.TryGetMemory(System.ReadOnlyMemory{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetMemory (ByRef memory As ReadOnlyMemory(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetMemory : ReadOnlyMemory -&gt; bool" Usage="readOnlyMemory2D.TryGetMemory memory" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="memory">The resulting <see cref="T:System.ReadOnlyMemory`1" />, in case of success.</param>
+        <summary>
+            Tries to get a <see cref="T:System.ReadOnlyMemory`1" /> instance, if the underlying buffer is contiguous and small enough.
+            </summary>
+        <returns>Whether or not <paramref name="memory" /> was correctly assigned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Width" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the width of the underlying 2D memory area.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

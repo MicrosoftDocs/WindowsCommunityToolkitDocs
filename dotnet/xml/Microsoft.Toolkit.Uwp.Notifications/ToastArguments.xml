@@ -1,0 +1,729 @@
+<Type Name="ToastArguments" FullName="Microsoft.Toolkit.Uwp.Notifications.ToastArguments">
+  <TypeSignature Language="C#" Value="public sealed class ToastArguments : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToastArguments extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt;, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToastArguments&#xA;Implements IEnumerable(Of KeyValuePair(Of String, String))" />
+  <TypeSignature Language="F#" Value="type ToastArguments = class&#xA;    interface seq&lt;KeyValuePair&lt;string, string&gt;&gt;&#xA;    interface IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class that supports serializing simple key/value pairs into a format that's friendly for being used within toast notifications. The serialized format is similar to a query string, however optimized for being placed within an XML property (uses semicolons instead of ampersands since those don't need to be XML-escaped, doesn't url-encode all special characters since not being used within a URL, etc).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToastArguments ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>
+            Adds a key. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Boolean) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * bool -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The value of the key.</param>
+        <summary>
+            Adds a key and value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Double) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * double -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The value of the key.</param>
+        <summary>
+            Adds a key and value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, Enum value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, class System.Enum value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.Enum)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Enum) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Enum -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Enum" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The value of the key. Note that the enums are stored using their numeric value, so be aware that changing your enum number values might break existing activation of toasts currently in Action Center.</param>
+        <summary>
+            Adds a key and value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Integer) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * int -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The value of the key.</param>
+        <summary>
+            Adds a key and value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As Single) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * single -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The value of the key.</param>
+        <summary>
+            Adds a key and value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Add(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (key As String, value As String) As ToastArguments" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="toastArguments.Add (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <param name="value">The optional value of the key.</param>
+        <summary>
+            Adds a key and optional value. If there is an existing key, it is replaced.
+            </summary>
+        <returns>The current <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="toastArguments.Contains key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to look for.</param>
+        <summary>
+            Determines if the specified key is present.
+            </summary>
+        <returns>True if the key is present, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Contains(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (key As String, value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string * string -&gt; bool" Usage="toastArguments.Contains (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to look for.</param>
+        <param name="value">The value to look for when the key has been matched.</param>
+        <summary>
+            Determines if specified key and value are present.
+            </summary>
+        <returns>True if the key and value were found, else false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of key/value pairs contained in the toast arguments.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Get">
+      <MemberSignature Language="C#" Value="public string Get (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string Get(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; string" Usage="toastArguments.Get key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetBool">
+      <MemberSignature Language="C#" Value="public bool GetBool (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetBool(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetBool(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBool (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GetBool : string -&gt; bool" Usage="toastArguments.GetBool key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetByte">
+      <MemberSignature Language="C#" Value="public byte GetByte (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8 GetByte(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetByte(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetByte (key As String) As Byte" />
+      <MemberSignature Language="F#" Value="member this.GetByte : string -&gt; byte" Usage="toastArguments.GetByte key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDouble">
+      <MemberSignature Language="C#" Value="public double GetDouble (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDouble(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetDouble(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDouble (key As String) As Double" />
+      <MemberSignature Language="F#" Value="member this.GetDouble : string -&gt; double" Usage="toastArguments.GetDouble key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnum&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetEnum&lt;T&gt; (string key) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetEnum&lt;struct .ctor (class System.Enum, class System.ValueType) T&gt;(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetEnum``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnum(Of T As Structure) (key As String) As T" />
+      <MemberSignature Language="F#" Value="member this.GetEnum : string -&gt; 'T (requires 'T : struct)" Usage="toastArguments.GetEnum key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.Enum</BaseTypeName>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The enum to parse.</typeparam>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,string&gt;&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt;&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, String))" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, string&gt;&gt;" Usage="toastArguments.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.String&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets an enumerator to enumerate the arguments. Note that order of the arguments is NOT preserved.
+            </summary>
+        <returns>An enumeartor of the key/value pairs.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFloat">
+      <MemberSignature Language="C#" Value="public float GetFloat (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetFloat(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetFloat(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFloat (key As String) As Single" />
+      <MemberSignature Language="F#" Value="member this.GetFloat : string -&gt; single" Usage="toastArguments.GetFloat key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInt">
+      <MemberSignature Language="C#" Value="public int GetInt (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetInt(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.GetInt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInt (key As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetInt : string -&gt; int" Usage="toastArguments.GetInt key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to get.</param>
+        <summary>
+            Gets the value of the specified key, or throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if key didn't exist.
+            </summary>
+        <returns>The value of the key.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public string this[string key] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to find.</param>
+        <summary>
+            Gets the value of the specified key. Throws <see cref="T:System.Collections.Generic.KeyNotFoundException" /> if the key could not be found.
+            </summary>
+        <value>The value of the specified key.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parse">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Notifications.ToastArguments Parse (string toastArgumentsStr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Notifications.ToastArguments Parse(string toastArgumentsStr) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (toastArgumentsStr As String) As ToastArguments" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastArguments" Usage="Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Parse toastArgumentsStr" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastArguments</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="toastArgumentsStr" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="toastArgumentsStr">The toast arguments string to deserialize.</param>
+        <summary>
+            Parses a string that was generated using ToastArguments into a <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastArguments" /> object.
+            </summary>
+        <returns>The parsed toast arguments.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public bool Remove (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; bool" Usage="toastArguments.Remove key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to remove.</param>
+        <summary>
+            Removes the specified key and its associated value.
+            </summary>
+        <returns>True if the key was removed, else false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.System.Collections.IEnumerable.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="toastArguments.System.Collections.IEnumerable.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets an enumerator to enumerate the query string parameters.
+            </summary>
+        <returns>An enumeartor of the key/value pairs.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override sealed string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toastArguments.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Serializes the key-value pairs into a string that can be used within a toast notification.
+            </summary>
+        <returns>A string that can be used within a toast notification.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue">
+      <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue(string key, [out] string&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.TryGetValue(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As String, ByRef value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : string * string -&gt; bool" Usage="toastArguments.TryGetValue (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key to find.</param>
+        <param name="value">The key's value will be written here if found.</param>
+        <summary>
+            Attempts to get the value of the specified key. If no key exists, returns false.
+            </summary>
+        <returns>True if found the key and set the value, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetValue&lt;T&gt; (string key, out T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetValue&lt;struct .ctor (class System.Enum, class System.ValueType) T&gt;(string key, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastArguments.TryGetValue``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue(Of T As Structure) (key As String, ByRef value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetValue : string * 'T -&gt; bool (requires 'T : struct)" Usage="toastArguments.TryGetValue (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.Enum</BaseTypeName>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The enum to parse.</typeparam>
+        <param name="key">The key to find.</param>
+        <param name="value">The key's value will be written here if found.</param>
+        <summary>
+            Attempts to get the value of the specified key. If no key exists, returns false.
+            </summary>
+        <returns>True if found the key and set the value, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

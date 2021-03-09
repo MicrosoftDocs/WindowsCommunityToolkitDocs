@@ -1,0 +1,324 @@
+<Type Name="StringExtensions" FullName="Microsoft.Toolkit.StringExtensions">
+  <TypeSignature Language="C#" Value="public static class StringExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.StringExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StringExtensions" />
+  <TypeSignature Language="F#" Value="type StringExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with strings and string representations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsFormat">
+      <MemberSignature Language="C#" Value="public static string AsFormat (this string format, params object[] args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string AsFormat(string format, object[] args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.AsFormat(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsFormat (format As String, ParamArray args As Object()) As String" />
+      <MemberSignature Language="F#" Value="static member AsFormat : string * obj[] -&gt; string" Usage="Microsoft.Toolkit.StringExtensions.AsFormat (format, args)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="format" Type="System.String" RefType="this" />
+        <Parameter Name="args" Type="System.Object[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="format">The format of the string being linked.</param>
+        <param name="args">The object which will receive the linked String.</param>
+        <summary>
+            Provide better linking for resourced strings.
+            </summary>
+        <returns>Truncated string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DecodeHtml">
+      <MemberSignature Language="C#" Value="public static string? DecodeHtml (this string? htmlText);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string DecodeHtml(string htmlText) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.DecodeHtml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DecodeHtml (htmlText As String) As String" />
+      <MemberSignature Language="F#" Value="static member DecodeHtml : string -&gt; string" Usage="Microsoft.Toolkit.StringExtensions.DecodeHtml htmlText" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullIfNotNull("htmlText")]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullIfNotNull("htmlText")&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="htmlText" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="htmlText">HTML string.</param>
+        <summary>
+            Returns a string with HTML comments, scripts, styles, and tags removed.
+            </summary>
+        <returns>Decoded HTML string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FixHtml">
+      <MemberSignature Language="C#" Value="public static string FixHtml (this string html);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string FixHtml(string html) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.FixHtml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FixHtml (html As String) As String" />
+      <MemberSignature Language="F#" Value="static member FixHtml : string -&gt; string" Usage="Microsoft.Toolkit.StringExtensions.FixHtml html" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="html" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="html">HTML string to fix.</param>
+        <summary>
+            Returns a string with HTML comments, scripts, and styles removed.
+            </summary>
+        <returns>Fixed HTML string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCharacterString">
+      <MemberSignature Language="C#" Value="public static bool IsCharacterString (this string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCharacterString(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.IsCharacterString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCharacterString (str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCharacterString : string -&gt; bool" Usage="Microsoft.Toolkit.StringExtensions.IsCharacterString str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to test.</param>
+        <summary>
+            Determines whether a string contains only letters.
+            </summary>
+        <returns>
+          <c>true</c> if the string contains only letters; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsDecimal">
+      <MemberSignature Language="C#" Value="public static bool IsDecimal (this string? str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDecimal(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.IsDecimal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsDecimal (str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsDecimal : string -&gt; bool" Usage="Microsoft.Toolkit.StringExtensions.IsDecimal str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="str">The string to test.</param>
+        <summary>
+            Determines whether a string is a valid decimal number.
+            </summary>
+        <returns>
+          <c>true</c> for a valid decimal number; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmail">
+      <MemberSignature Language="C#" Value="public static bool IsEmail (this string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEmail(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.IsEmail(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsEmail (str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsEmail : string -&gt; bool" Usage="Microsoft.Toolkit.StringExtensions.IsEmail str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to test.</param>
+        <summary>
+            Determines whether a string is a valid email address.
+            </summary>
+        <returns>
+          <c>true</c> for a valid email address; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNumeric">
+      <MemberSignature Language="C#" Value="public static bool IsNumeric (this string? str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsNumeric(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.IsNumeric(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsNumeric (str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsNumeric : string -&gt; bool" Usage="Microsoft.Toolkit.StringExtensions.IsNumeric str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="str">The string to test.</param>
+        <summary>
+            Determines whether a string is a valid integer.
+            </summary>
+        <returns>
+          <c>true</c> for a valid integer; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsPhoneNumber">
+      <MemberSignature Language="C#" Value="public static bool IsPhoneNumber (this string str);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPhoneNumber(string str) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.IsPhoneNumber(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsPhoneNumber (str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsPhoneNumber : string -&gt; bool" Usage="Microsoft.Toolkit.StringExtensions.IsPhoneNumber str" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="str" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="str">The string to test.</param>
+        <summary>
+            Determines whether a string is a valid phone number.
+            </summary>
+        <returns>
+          <c>true</c> for a valid phone number; otherwise, <c>false</c>.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static string Truncate (this string? value, int length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Truncate(string value, int32 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.Truncate(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Truncate (value As String, length As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member Truncate : string * int -&gt; string" Usage="Microsoft.Toolkit.StringExtensions.Truncate (value, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" RefType="this" />
+        <Parameter Name="length" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to be truncated.</param>
+        <param name="length">The maximum length.</param>
+        <summary>
+            Truncates a string to the specified length.
+            </summary>
+        <returns>Truncated string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Truncate">
+      <MemberSignature Language="C#" Value="public static string Truncate (this string? value, int length, bool ellipsis);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Truncate(string value, int32 length, bool ellipsis) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.StringExtensions.Truncate(System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Truncate (value As String, length As Integer, ellipsis As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member Truncate : string * int * bool -&gt; string" Usage="Microsoft.Toolkit.StringExtensions.Truncate (value, length, ellipsis)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" RefType="this" />
+        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="ellipsis" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The string to be truncated.</param>
+        <param name="length">The maximum length.</param>
+        <param name="ellipsis">
+          <c>true</c> to add ellipsis to the truncated text; otherwise, <c>false</c>.</param>
+        <summary>
+            Truncates a string to the specified length.
+            </summary>
+        <returns>Truncated string.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

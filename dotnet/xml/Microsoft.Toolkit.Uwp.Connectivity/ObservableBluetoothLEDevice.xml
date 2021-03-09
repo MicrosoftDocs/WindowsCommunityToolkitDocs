@@ -9,6 +9,7 @@
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -26,8 +27,8 @@
             Wrapper around <see cref="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.BluetoothLEDevice" /> to make it bindable.
             </summary>
     <remarks>To be added.</remarks>
-    <altmember cref="T:System.IEquatable`1" />
     <altmember cref="T:System.ComponentModel.INotifyPropertyChanged" />
+    <altmember cref="T:System.IEquatable`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,10 +45,34 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="deviceInfo" Type="Windows.Devices.Enumeration.DeviceInformation" />
+        <Parameter Name="deviceInfo" Type="Windows.Devices.Enumeration.DeviceInformation" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="deviceInfo">The device information.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObservableBluetoothLEDevice (Windows.Devices.Enumeration.DeviceInformation deviceInfo, Windows.System.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.Devices.Enumeration.DeviceInformation deviceInfo, class Windows.System.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.#ctor(Windows.Devices.Enumeration.DeviceInformation,Windows.System.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (deviceInfo As DeviceInformation, Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice : Windows.Devices.Enumeration.DeviceInformation * Windows.System.DispatcherQueue -&gt; Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice" Usage="new Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice (deviceInfo, dispatcherQueue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Connectivity</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="deviceInfo" Type="Windows.Devices.Enumeration.DeviceInformation" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="dispatcherQueue" Type="Windows.System.DispatcherQueue" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+      </Parameters>
+      <Docs>
+        <param name="deviceInfo">The device information.</param>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates for this BluetoothLE Device, or null if this is being called from the UI thread.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice" /> class.
             </summary>
@@ -66,6 +91,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -90,6 +116,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -114,6 +141,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Devices.Bluetooth.BluetoothLEDevice</ReturnType>
@@ -138,6 +166,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -149,7 +178,7 @@
             </summary>
         <returns>Connection task</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.Exception">Thorws Exception when no permission to access device</exception>
+        <exception cref="T:System.Exception">Throws Exception when no permission to access device</exception>
       </Docs>
     </Member>
     <Member MemberName="DeviceInfo">
@@ -164,6 +193,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Devices.Enumeration.DeviceInformation</ReturnType>
@@ -173,6 +203,28 @@
             Gets the device information for the device this class wraps
             </summary>
         <value>The device information.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherQueue">
+      <MemberSignature Language="C#" Value="public Windows.System.DispatcherQueue DispatcherQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.System.DispatcherQueue DispatcherQueue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.DispatcherQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispatcherQueue As DispatcherQueue" />
+      <MemberSignature Language="F#" Value="member this.DispatcherQueue : Windows.System.DispatcherQueue with get, set" Usage="Microsoft.Toolkit.Uwp.Connectivity.ObservableBluetoothLEDevice.DispatcherQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Connectivity</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.DispatcherQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets which DispatcherQueue is used to dispatch UI updates.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,6 +240,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -214,6 +267,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -238,6 +292,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.Imaging.BitmapImage</ReturnType>
@@ -262,6 +317,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -287,6 +343,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -312,6 +369,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -336,6 +394,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -343,7 +402,7 @@
       <Parameters>
         <Parameter Name="propertyName" Type="System.String">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
               <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
             </Attribute>
@@ -373,6 +432,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
@@ -396,6 +456,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -420,6 +481,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -444,6 +506,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;Microsoft.Toolkit.Uwp.Connectivity.ObservableGattDeviceService&gt;</ReturnType>
@@ -471,6 +534,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -499,6 +563,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -524,6 +589,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

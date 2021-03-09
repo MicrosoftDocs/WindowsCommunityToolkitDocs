@@ -24,16 +24,16 @@
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="PART_DismissButton", Type=typeof(Windows.UI.Xaml.Controls.Button))&gt;]</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
-      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
-    </Attribute>
-    <Attribute>
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Visible")]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Visible")&gt;]</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Collapsed")]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Collapsed")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -480,7 +480,7 @@
       <Docs>
         <param name="duration">Displayed duration of the notification in ms (less or equal 0 means infinite duration)</param>
         <summary>
-            Show notification using the current template
+            Show notification using the current content.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -500,8 +500,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.Object" />
-        <Parameter Name="duration" Type="System.Int32" />
+        <Parameter Name="content" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="duration" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
       </Parameters>
       <Docs>
         <param name="content">The content of the notification</param>
@@ -574,7 +574,7 @@
         <param name="dataTemplate">DataTemplate used as the content of the notification</param>
         <param name="duration">Displayed duration of the notification in ms (less or equal 0 means infinite duration)</param>
         <summary>
-            Show notification using DataTemplate as the content of the notification
+            Show notification using <paramref name="dataTemplate" /> as the content of the notification
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
