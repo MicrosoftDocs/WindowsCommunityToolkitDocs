@@ -28,7 +28,7 @@ The [HeaderedItemsControl](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Sample Output
 
-![HeaderedItemsControl](../resources/images/Controls/HeaderedItemsControl.jpg)
+![HeaderedItemsControl Sample](../resources/images/Controls/HeaderedItemsControl.jpg)
 
 ## Properties
 

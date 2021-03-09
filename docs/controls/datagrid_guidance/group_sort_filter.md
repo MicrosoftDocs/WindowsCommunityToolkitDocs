@@ -129,7 +129,7 @@ The following walk-through shows how to implement sorting in the DataGrid contro
     </controls:DataGrid>
     ```
 
-2. Handle the Sorting event to implement logic for sorting 
+2. Handle the Sorting event to implement logic for sorting
 
     ```csharp
     private void dg_Sorting(object sender, DataGridColumnEventArgs e)

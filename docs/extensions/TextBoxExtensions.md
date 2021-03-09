@@ -82,7 +82,7 @@ The developer adds a regular expression to validate the TextBox Text against the
 The validation has 3 modes ([`TextBoxExtensions.ValidationMode`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationMode)):
 
 1) `Normal` (Default): this mode will set the `IsValid` attached property to `false` or `true` whether the `TextBox` text is a valid or not against the `Regex` property.
-2) `Forced`: this mode sets the `IsValid` property and removes the `TextBox` text if not valid when the `TextBox` loses focus. 
+2) `Forced`: this mode sets the `IsValid` property and removes the `TextBox` text if not valid when the `TextBox` loses focus.
 3) `Dynamic`: this mode extends `Normal` and if is the newest input of the `TextBox` is invalid, the character which is invalid will be deleted. Note that the [`TextBoxExtensions.ValidationType`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationType) values `Email` and `PhoneNumber` don't support this validation mode. If you set the validation mode to `Dynamic`, `Normal` is selected automatically instead.
 
 ### Syntax

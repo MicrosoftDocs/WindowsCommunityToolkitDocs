@@ -1,8 +1,8 @@
 ---
 title: StaggeredLayout
 author: skendrot
-description: Arranges child elements into a staggered grid pattern.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, StaggeredLayout, layout
+description: Arranges child elements into a staggered grid pattern for ItemsRepeater.
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, StaggeredLayout, layout, itemsrepeater
 ---
 
 # StaggeredLayout
