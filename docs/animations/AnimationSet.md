@@ -17,7 +17,7 @@ The [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 
 Each set can contain any number of animation scopes and individual nodes, which can be either animations or "activities":
 
-- **Animation types** are a mapping in XAML for the various APIs exposed by the `AnimationBuilder` class. They are available as both "default" animations that are ready to use and "custom" animations that can be fully configured. Each animation type also supports using keyframes in addition to just defining the starting and final values. 
+- **Animation types** are a mapping in XAML for the various APIs exposed by the `AnimationBuilder` class. They are available as both "default" animations that are ready to use and "custom" animations that can be fully configured. Each animation type also supports using keyframes in addition to just defining the starting and final values.
 - **Activites** on the other hand are a way to interleave an animation schedule with all sorts of custom logic, such as triggering other animations or running arbitrary code (eg. to update a visual state while an animation is running).
 
 These two types of animation nodes implement several interfaces (such as [`ITimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline) and [`IActivity`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity)) which make this system extremely customizable and extensible for users as well for their own scenarios.
@@ -75,7 +75,7 @@ Keyframes (both when declared in C# and in XAML) can also use an [expression ani
 
 ## Sequential mode
 
-Another feature of the `AnimationSet` type is the `IsSequential` property which configures the way top-level elements (animations, activities, and scopes) within the animation are handled. 
+Another feature of the `AnimationSet` type is the `IsSequential` property which configures the way top-level elements (animations, activities, and scopes) within the animation are handled.
 
 When this property is set to `true` each top-level node will be executed sequentially and only move to the following one when the previous completes (and the animation has not been cancelled). This can be used in conjunction with the various `IActivity` objects to create custom animation schedules that combine multiple animations running on different UI elements, with all the synchronization still done entirely from XAML. It is also helpful when combined with an [`AnimationScope`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationScope) in order to more easily parse the timeline of events within an animation when creating and modifying them.
 

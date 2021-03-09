@@ -15,7 +15,7 @@ The [`AnimationBuilder`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## Default animations
 
-These are "ready to use" APIs that create specific animations for commonly used properties. They require little setup on the user side, with no need to deal with explicit property paths to animate. Examples of these are animations such as `Opacity`, `Offset` and `Translation`. Each of these default animation APIs also expose a number of overloads that can be used to easily customize how the animation is constructed. For instance by specifying a single translation axis to animate only using a single `double` value to indicate the initial and ending value for the animation: 
+These are "ready to use" APIs that create specific animations for commonly used properties. They require little setup on the user side, with no need to deal with explicit property paths to animate. Examples of these are animations such as `Opacity`, `Offset` and `Translation`. Each of these default animation APIs also expose a number of overloads that can be used to easily customize how the animation is constructed. For instance by specifying a single translation axis to animate only using a single `double` value to indicate the initial and ending value for the animation:
 
 ```csharp
 // Here we're creating a schedule with 3 different default animations.
