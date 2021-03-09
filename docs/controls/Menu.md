@@ -160,4 +160,4 @@ internal class NewProjectCommand : ICommand
 
 ## API
 
-* [Menu source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Menu)
+* [Menu source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/Menu)

@@ -53,4 +53,4 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 
 ## API Source Code
 
-* [DockPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/DockPanel)
+* [DockPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/DockPanel)

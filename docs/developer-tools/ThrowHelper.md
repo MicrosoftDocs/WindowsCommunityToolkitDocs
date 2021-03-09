@@ -9,7 +9,7 @@ dev_langs:
 
 # ThrowHelper
 
-The [ThrowHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.ThrowHelper) class is a helper type that can be used to efficiently throw exceptions. It is meant to support the [Guard](Guard.md) APIs, and it should primarily be used in situations where developers need fine-grained controls over the exception types being thrown, or over the exact exception message to include.
+The [ThrowHelper](/dotnet/api/microsoft.toolkit.diagnostics.ThrowHelper) class is a helper type that can be used to efficiently throw exceptions. It is meant to support the [Guard](Guard.md) APIs, and it should primarily be used in situations where developers need fine-grained controls over the exception types being thrown, or over the exact exception message to include.
 
 ## Syntax
 
@@ -45,28 +45,28 @@ Here we're using `ThrowHelper` within an expression that requires a return type 
 
 There are lots of different methods and overloads in the `ThrowHelper` class, providing access to the following exceptions (and mapping all their public constructors):
 
-- [ArrayTypeMismatchException](https://docs.microsoft.com/dotnet/api/system.ArrayTypeMismatchException)
-- [ArgumentException](https://docs.microsoft.com/dotnet/api/system.ArgumentException)
-- [ArgumentNullException](https://docs.microsoft.com/dotnet/api/system.ArgumentNullException)
-- [ArgumentOutOfRangeException](https://docs.microsoft.com/dotnet/api/system.ArgumentOutOfRangeException)
-- [COMException](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.COMException)
-- [ExternalException](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.ExternalException)
-- [FormatException](https://docs.microsoft.com/dotnet/api/system.FormatException)
-- [InsufficientMemoryException](https://docs.microsoft.com/dotnet/api/system.InsufficientMemoryException)
-- [InvalidDataException](https://docs.microsoft.com/dotnet/api/system.io.InvalidDataException)
-- [InvalidOperationException](https://docs.microsoft.com/dotnet/api/system.InvalidOperationException)
-- [LockRecursionException](https://docs.microsoft.com/dotnet/api/system.threading.LockRecursionException)
-- [MissingFieldException](https://docs.microsoft.com/dotnet/api/system.MissingFieldException)
-- [MissingMemberException](https://docs.microsoft.com/dotnet/api/system.MissingMemberException)
-- [MissingMethodException](https://docs.microsoft.com/dotnet/api/system.MissingMethodException)
-- [NotSupportedException](https://docs.microsoft.com/dotnet/api/system.NotSupportedException)
-- [ObjectDisposedException](https://docs.microsoft.com/dotnet/api/system.ObjectDisposedException)
-- [OperationCanceledException](https://docs.microsoft.com/dotnet/api/system.OperationCanceledException)
-- [PlatformNotSupportedException](https://docs.microsoft.com/dotnet/api/system.PlatformNotSupportedException)
-- [SynchronizationLockException](https://docs.microsoft.com/dotnet/api/system.threading.SynchronizationLockException)
-- [TimeoutException](https://docs.microsoft.com/dotnet/api/system.TimeoutException)
-- [UnauthorizedAccessException](https://docs.microsoft.com/dotnet/api/system.UnauthorizedAccessException)
-- [Win32Exception](https://docs.microsoft.com/dotnet/api/system.componentmodel.Win32Exception)
+- [ArrayTypeMismatchException](/dotnet/api/system.ArrayTypeMismatchException)
+- [ArgumentException](/dotnet/api/system.ArgumentException)
+- [ArgumentNullException](/dotnet/api/system.ArgumentNullException)
+- [ArgumentOutOfRangeException](/dotnet/api/system.ArgumentOutOfRangeException)
+- [COMException](/dotnet/api/system.runtime.interopservices.COMException)
+- [ExternalException](/dotnet/api/system.runtime.interopservices.ExternalException)
+- [FormatException](/dotnet/api/system.FormatException)
+- [InsufficientMemoryException](/dotnet/api/system.InsufficientMemoryException)
+- [InvalidDataException](/dotnet/api/system.io.InvalidDataException)
+- [InvalidOperationException](/dotnet/api/system.InvalidOperationException)
+- [LockRecursionException](/dotnet/api/system.threading.LockRecursionException)
+- [MissingFieldException](/dotnet/api/system.MissingFieldException)
+- [MissingMemberException](/dotnet/api/system.MissingMemberException)
+- [MissingMethodException](/dotnet/api/system.MissingMethodException)
+- [NotSupportedException](/dotnet/api/system.NotSupportedException)
+- [ObjectDisposedException](/dotnet/api/system.ObjectDisposedException)
+- [OperationCanceledException](/dotnet/api/system.OperationCanceledException)
+- [PlatformNotSupportedException](/dotnet/api/system.PlatformNotSupportedException)
+- [SynchronizationLockException](/dotnet/api/system.threading.SynchronizationLockException)
+- [TimeoutException](/dotnet/api/system.TimeoutException)
+- [UnauthorizedAccessException](/dotnet/api/system.UnauthorizedAccessException)
+- [Win32Exception](/dotnet/api/system.componentmodel.Win32Exception)
 
 You can see the available constructors for each of these exception types from the linked docs - the respective `ThrowHelper` APIs will simply offer a series of overloads corresponding to the existing constructors for that specified type. Each API is simply named "Throw" + the exception type.
 
@@ -158,8 +158,8 @@ The ThrowHelper class supports .NET Standard
 
 ## API
 
-- [ThrowHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit/Diagnostics/ThrowHelper.ThrowExceptions.cs)
+- [ThrowHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Diagnostics/ThrowHelper.cs)
 
 ## Related Topics
 
-- [Guard](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.guard)
+- [Guard](/dotnet/api/microsoft.toolkit.diagnostics.guard)

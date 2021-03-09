@@ -81,7 +81,3 @@ MicrosoftGraphService.Instance.Initialize(
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
-
-## API
-
-* [AadLogin source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/AadLogin)

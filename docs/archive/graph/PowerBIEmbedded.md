@@ -84,7 +84,3 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
-
-## API
-
-* [PowerBIEmbedded source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded)

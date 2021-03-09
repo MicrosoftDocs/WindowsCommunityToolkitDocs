@@ -93,4 +93,4 @@ This table shows the resources used by the [RadialGauge](https://docs.microsoft.
 
 ## API
 
-* [RadialGauge source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialGauge)
+* [RadialGauge source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Input/RadialGauge)

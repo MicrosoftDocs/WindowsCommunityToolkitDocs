@@ -66,7 +66,7 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## API
 
-* [RemoteDevicePicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker)
+* [RemoteDevicePicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker)
 
 ## Related Topics
 

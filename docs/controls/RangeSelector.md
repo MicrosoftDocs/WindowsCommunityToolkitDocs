@@ -97,4 +97,4 @@ End Sub
 
 ## API
 
-* [RangeSelector source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector)
+* [RangeSelector source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector)

@@ -11,9 +11,9 @@ dev_langs:
 # HamburgerMenu XAML Control
 
 > [!WARNING]
-> The HamburgerMenu is no longer available in the Windows Community Toolkit. Please use the [NavigationView](https://docs.microsoft.com/windows/uwp/controls-and-patterns/navigationview). Read the [Moving to NavigationView](#navview) section for more info.
+> The HamburgerMenu is no longer available in the Windows Community Toolkit. Please use the [NavigationView](/windows/uwp/controls-and-patterns/navigationview). Read the [Moving to NavigationView](#navview) section for more info.
 
-The [HamburgerMenu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.hamburgermenu) provides an easy-to-use, side-bar menu which users can show or hide by using a Hamburger button. By  tapping the icon, it opens up a side menu with a selection of options or additional pages.
+The [HamburgerMenu Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.hamburgermenu) provides an easy-to-use, side-bar menu which users can show or hide by using a Hamburger button. By  tapping the icon, it opens up a side menu with a selection of options or additional pages.
 
 The 3-line menu icon, which resembles a Hamburger, allows developers to pack more features into their apps or navigation. The tiny icon takes up a minimal amount of screen real estate and creates a clean, minimalist look.
 
@@ -265,12 +265,12 @@ There are several HamburgerMenu properties that have no effect when the Hamburge
 
 ## Sample Code
 
-[HamburgerMenu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HamburgerMenu)
+[HamburgerMenu Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HamburgerMenu)
 . You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Default Template
 
-[HamburgerMenu XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu/HamburgerMenu.xaml) is the XAML template used in the toolkit for the default styling.
+[HamburgerMenu XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu/HamburgerMenu.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -281,4 +281,4 @@ There are several HamburgerMenu properties that have no effect when the Hamburge
 
 ## API
 
-- [HamburgerMenu source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)
+- [HamburgerMenu source code archive](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HamburgerMenu)

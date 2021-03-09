@@ -59,4 +59,4 @@ The [StaggeredPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 
 ## API
 
-- [StaggeredPanel](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel)
+- [StaggeredPanel](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/StaggeredPanel)

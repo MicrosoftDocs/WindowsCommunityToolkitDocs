@@ -212,8 +212,8 @@ block.SetRenderer<InheritedMarkdownRenderer>();
 
 This will likely require intimate knowledge of the implementation of the `MarkdownRenderer`, take a look at the following:
 
-- [MarkdownRenderer and Helpers](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/Render)
-- [Sample App custom markdown renderer](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
+- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
+- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
 
 ## Sample Project
 
@@ -232,8 +232,8 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## API
 
-- [MarkdownTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock)
+- [MarkdownTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
 
 ## Related Topics
 
-- [Markdown Parser](https://docs.microsoft.com/windows/communitytoolkit/parsers/markdownparser)
+- [Markdown Parser](/windows/communitytoolkit/parsers/markdownparser)

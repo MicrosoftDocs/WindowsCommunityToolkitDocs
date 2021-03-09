@@ -187,7 +187,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 ## API
 
-- [UniformGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/UniformGrid.cs)
+- [UniformGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/UniformGrid)
 
 ## Related Topics
 

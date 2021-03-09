@@ -58,4 +58,4 @@ The [Rotator Tile Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## API
 
-* [RotatorTile source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile)
+* [RotatorTile source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile)

@@ -82,4 +82,4 @@ The following sample demonstrates how to add InfiniteCanvas Control
 
 ## API
 
-* [InfiniteCanvas source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas)
+* [InfiniteCanvas source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Media/InfiniteCanvas)
