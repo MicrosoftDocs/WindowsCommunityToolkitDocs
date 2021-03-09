@@ -49,6 +49,7 @@ MVVM Basic is comprised of two files
 \Helpers\Observable.cs
 \Helpers\RelayCommand.cs
 ```
+
 ```vb
 \Helpers\Observable.vb
 \Helpers\RelayCommand.vb
@@ -69,6 +70,7 @@ For example
 ```csharp
     public class MainViewModel : Observable
 ```
+
 ```vb
     Public Class MainViewModel
         Inherits Observable
@@ -79,6 +81,7 @@ will become
 ```csharp
     public class MainViewModel : ObservableObject
 ```
+
 ```vb
     Public Class MainViewModel
         Inherits ObservableObject
@@ -93,6 +96,7 @@ You can either add the appropriate directive manually, of move the cursor to the
 ```csharp
 using Microsoft.Toolkit.Mvvm.ComponentModel;
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Mvvm.ComponentModel
 ```
@@ -104,6 +108,7 @@ You can either add the appropriate directive manually, of move the cursor to the
 ```csharp
 using Microsoft.Toolkit.Mvvm.Input;
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Mvvm.Input
 ```
@@ -119,6 +124,7 @@ So,
 ```csharp
     set { Set(ref _elementTheme, value); }
 ```
+
 ```vb
     Set
         [Set](_elementTheme, Value)
@@ -130,6 +136,7 @@ will become
 ```csharp
     set { SetProperty(ref _elementTheme, value); }
 ```
+
 ```vb
     Set
         SetProperty(_elementTheme, Value)
@@ -143,6 +150,7 @@ So,
 ```csharp
     (UndoCommand as RelayCommand)?.OnCanExecuteChanged();
 ```
+
 ```vb
     Dim undo = TryCast(UndoCommand, RelayCommand)
     undo?.OnCanExecuteChanged()
@@ -153,6 +161,7 @@ will become
 ```csharp
     (UndoCommand as RelayCommand)?.NotifyCanExecuteChanged();
 ```
+
 ```vb
     Dim undo = TryCast(UndoCommand, RelayCommand)
     undo?.NotifyCanExecuteChanged()

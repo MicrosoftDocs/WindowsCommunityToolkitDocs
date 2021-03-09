@@ -30,6 +30,7 @@ To install the package from within Visual Studio:
     ```c#
     using Microsoft.Toolkit.Mvvm;
     ```
+
     ```vb
     Imports Microsoft.Toolkit.Mvvm
     ```

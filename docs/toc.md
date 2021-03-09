@@ -307,9 +307,9 @@
 
 ## Input
 
-### [RelayCommand and RelayCommand<T>](mvvm/RelayCommand.md)
+### [RelayCommand and RelayCommand\<T>](mvvm/RelayCommand.md)
 
-### [AsyncRelayCommand and AsyncRelayCommand<T>](mvvm/AsyncRelayCommand.md)
+### [AsyncRelayCommand and AsyncRelayCommand\<T>](mvvm/AsyncRelayCommand.md)
 
 ## [Messenger](mvvm/Messenger.md)
 
