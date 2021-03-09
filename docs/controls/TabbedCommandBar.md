@@ -17,6 +17,7 @@ The [TabbedCommandBar](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabbedcomma
 ## Remarks
 
 The TabbedCommandBar automatically applies styles to known common controls inside an `AppBarElementContainer`. The following elements have styles:
+
 - ComboBox
 - SplitButton
 
