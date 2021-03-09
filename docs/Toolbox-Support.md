@@ -12,7 +12,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 Add the Windows Community Toolkit controls into the Visual Studio toolbox by following these steps:
 
-1) Add the *Microsoft.Toolkit.Uwp.UI.Controls* NuGet package to your application. 
+1) Add the *Microsoft.Toolkit.Uwp.UI.Controls* NuGet package to your application.
 
 2) Open any XAML page and select the Toolbox on the left side of Visual Studio.
 

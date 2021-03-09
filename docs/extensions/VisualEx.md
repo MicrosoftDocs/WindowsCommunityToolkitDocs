@@ -11,7 +11,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Visual, compositi
 > [!WARNING]
 > This docs page is outdated and the `VisualEx` type has been removed from the Windows Community Toolkit, please refer to the docs for the [`VisualExtensions`](VisualExtensions.md) type.
 
-The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML. 
+The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML.
 
 ## Example
 
@@ -44,11 +44,11 @@ The point on the visual to be positioned at the visual's offset. Value is normal
 
 ### CenterPoint (Vector3)
 
-The point about which rotation or scaling occurs. 
+The point about which rotation or scaling occurs.
 
 ### Offset (Vector3)
 
-The offset of the visual relative to its parent or for a root visual the offset relative to the upper-left corner of the windows that hosts the visual. 
+The offset of the visual relative to its parent or for a root visual the offset relative to the upper-left corner of the windows that hosts the visual.
 
 ### Opacity (double)
 
@@ -64,7 +64,7 @@ The rotation angle of the visual in degrees.
 
 ### RotationAxis (Vector3)
 
-The axis to rotate the visual around. 
+The axis to rotate the visual around.
 
 ### Scale (Vector3)
 

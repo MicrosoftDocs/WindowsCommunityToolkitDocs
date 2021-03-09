@@ -10,7 +10,7 @@ dev_langs:
 
 # CameraHelper
 
-The **CameraHelper** provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps. The helper currently shows camera frame sources that support color video preview or video record streams. 
+The **CameraHelper** provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps. The helper currently shows camera frame sources that support color video preview or video record streams.
 
 > [!IMPORTANT]
 > Make sure you have the [webcam capability](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.

@@ -11,10 +11,10 @@ dev_langs:
 # HttpHelperResponse
 
 > [!WARNING]
-> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx) 
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx)
 > or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
-[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers. 
+[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
 
 ## Sample
 
@@ -59,7 +59,7 @@ The **HttpHelperResponse** class has these constructors.
 
 ## Remarks
 
-The **HttpHelperResponse** class contains headers and potentially data. 
+The **HttpHelperResponse** class contains headers and potentially data.
 An app receives an instance of **HttpHelperResponse** when it creates an instance of **HttpHelperRequest** and passes it to the **HttpHelper.SendRequestAsync** method.
 
 ## Example

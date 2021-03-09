@@ -75,7 +75,7 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 - Use this to create chaining animations with other animations. Visit the [AnimationSet](AnimationSet.md) documentation for more information.
 
     **Sample Code**
-    
+
     ```csharp
     var anim = MyUIElement.Light(5).Offset(offsetX: 100, offsetY: 100).Saturation(0.5).Scale(scaleX: 2, scaleY: 2);
     anim.SetDurationForAll(2500);

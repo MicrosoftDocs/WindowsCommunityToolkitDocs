@@ -67,7 +67,7 @@ If the XAML page is enabled for gaze based interactions, the visibility and size
 | Property | Type | Description |
 | -- | -- | -- |
 | IsDeviceAvailable | bool | Returns whether a compatible eye tracker is connected. When this property changes an `IsDeviceAvailableChanged` event is fired. |
-| Interaction | enum | Gets or sets the status of gaze interaction over that particular XAML element.  There are three options: <br /> <ul> <li>**Enabled.**  Gaze interaction is enabled on this element and all its children </li> <li> **Disabled** Gaze interaction is disabled on this element and all its children <li> **Inherited** Gaze interaction status is inherited from the nearest ancestor </ul>| 
+| Interaction | enum | Gets or sets the status of gaze interaction over that particular XAML element.  There are three options: <br /> <ul> <li>**Enabled.**  Gaze interaction is enabled on this element and all its children </li> <li> **Disabled** Gaze interaction is disabled on this element and all its children <li> **Inherited** Gaze interaction status is inherited from the nearest ancestor </ul>|
 | CursorVisible | bool | The gaze cursor shows where the user is looking at on the screen. This boolean property shows the gaze cursor when set to `true` and hides it when set to `false`. The default value is `false`|
 |CursorRadius|int| Gets or sets the size of the gaze cursor radius. The default value is X|
 | ThresholdDuration | TimeSpan | This duration controls when the PointerState moves to either the `Enter` state or the `Exit` state. When this duration has elapsed after the user's gaze first enters a control, the `PointerState` is set to `Enter`. And when this duration has elapsed after the user's gaze has left the control, the `PointerState` is set to `Exit`. In both cases, a `StateChanged` event is fired. The default value is 50ms. |
@@ -142,7 +142,7 @@ For e.g.
 
 ### To enable gaze interactions on a portion of the page
 
-Gaze interaction can also be enabled only on a portion of the page by adding the same attributes to any XAML element on the page. 
+Gaze interaction can also be enabled only on a portion of the page by adding the same attributes to any XAML element on the page.
 
 To enable only a subset of the page, e.g. just one Grid on the page:
 

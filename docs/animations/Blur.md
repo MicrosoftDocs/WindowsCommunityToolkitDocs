@@ -69,7 +69,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 - Use this to shift the focus to foreground controls.
 
     **Sample Code**
-    
+
     ```xaml
     <Grid>
         <Grid>

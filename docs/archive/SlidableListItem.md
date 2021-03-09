@@ -176,7 +176,7 @@ There are several SlidableListItem properties that have no effect when the Slida
 
 [SlidableListItem Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/rel/4.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SlidableListItem). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
-## Default Template 
+## Default Template
 
 [SlidableListItem XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xaml) is the XAML template used in the toolkit for the default styling.
 

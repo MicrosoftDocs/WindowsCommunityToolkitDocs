@@ -37,7 +37,7 @@ The toolkit is available as NuGet packages that can be added to any existing or 
        </controls:DataGrid>
        ```
 
-5. Alternatively, you can add the DataGrid control directly in C# in your page code behind. **Important** You would either add it to the XAML directly or the code behind, not both. 
+5. Alternatively, you can add the DataGrid control directly in C# in your page code behind. **Important** You would either add it to the XAML directly or the code behind, not both.
 
     * Add the namespaces to the toolkit
 
@@ -238,7 +238,7 @@ public sealed partial class MainPage : Page
 
 The DataGridTemplateColumn type enables you to create your own column types by specifying the cell templates used to display values and enable editing. Set the **CellTemplate** property to specify the contents of cells that display values, but do not allow editing. Set the **CellEditingTemplate** property to specify the contents of cells in editing mode. If you set the column's **IsReadOnly** property to true, the CellEditingTemplate property value is never used.
 
-The following code example demonstrates how to specify and configure a DataGridTemplateColumn in XAML. 
+The following code example demonstrates how to specify and configure a DataGridTemplateColumn in XAML.
 
 ```xaml
 <controls:DataGrid x:Name="dataGrid1" 

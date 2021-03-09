@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Customize Auto-Generated Columns in the DataGrid Control
 
-The [DataGrid](../datagrid.md) control supports the option to automatically generate columns based on the collection data bound through the **ItemsSource** property. 
+The [DataGrid](../datagrid.md) control supports the option to automatically generate columns based on the collection data bound through the **ItemsSource** property.
 
 ```xaml
 <controls:DataGrid AutoGenerateColumns="True"/>
@@ -88,4 +88,4 @@ if (e.PropertyType == GetType(Boolean))
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
 * [Sizing options in the DataGrid control](sizing_options.md)
-* [DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid) 
+* [DataGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)

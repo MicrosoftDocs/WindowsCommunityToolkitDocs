@@ -25,9 +25,9 @@ Differences-5.0.0.0.gz
 
 ## Data format
 
-All types are fully qualified 
+All types are fully qualified
 
-### Namespace.Type 
+### Namespace.Type
 
 `Windows.Management.Update.PreviewBuildsState`
 

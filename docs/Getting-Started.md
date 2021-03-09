@@ -34,12 +34,12 @@ The toolkit is available as NuGet packages that can be added to any existing or 
         using Microsoft.Toolkit.Uwp;
         ```
 
-5. You can copy and paste code snippets for each feature from the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp). 
+5. You can copy and paste code snippets for each feature from the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
 
-## Other Resources 
+## Other Resources
 
 Download the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp) from the Windows store to see the controls in an actual app.
 
-We recommend developers who are new to UWP to visit the [Getting Started with UWP Development](https://developer.microsoft.com/en-us/windows/getstarted) pages on the Developer portal. 
+We recommend developers who are new to UWP to visit the [Getting Started with UWP Development](https://developer.microsoft.com/en-us/windows/getstarted) pages on the Developer portal.
 
 Visit the [Windows Community Toolkit Github Repository](https://aka.ms/uwptoolkit) to see the current source code, what is coming next, and clone the repository.  Community contributions are welcome!

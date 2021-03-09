@@ -90,7 +90,7 @@ Drag a column header cell | If the DataGrid.CanUserReorderColumns property is tr
 Drag a column header separator | If the DataGrid.CanUserResizeColumns property is true and the DataGridColumn.CanUserResize property is true for the current column, resizes the column.
 Tap a column header | If the DataGrid.CanUserSortColumns property is true and the DataGridColumn.CanUserSort property is true for the current column, sorts the column. Tapping the header of a column that is already sorted will reverse the sort direction of that column.
 CTRL+tap a row | If SelectionMode is set to Extended, modifies a non-contiguous multi-row selection. If the row is already selected, deselects the row.
-SHIFT+tap a row | If SelectionMode is set to Extended, modifies a contiguous multi-row selection. 
+SHIFT+tap a row | If SelectionMode is set to Extended, modifies a contiguous multi-row selection.
 Tap a row group header expander button | Expands or collapses the group.
 Double-tap a row group header | Expands or collapses the group.
 
