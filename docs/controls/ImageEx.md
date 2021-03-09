@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ImageEx XAML Control
 
-The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) downloads images asynchronously, while showing a loading indicator. Source images are then stored in the application's local cache to preserve resources and load time. ImageEx also extends the default *Image* and *ImageBrush* Platform controls respectively to improve performance through caching. You can also use a placeholder image that will be displayed while loading the main image.
+The [ImageEx Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) downloads images asynchronously, while showing a loading indicator. Source images are then stored in the application's local cache to preserve resources and load time. ImageEx also extends the default *Image* and *ImageBrush* Platform controls respectively to improve performance through caching. You can also use a placeholder image that will be displayed while loading the main image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=ImageEx)
@@ -37,15 +37,15 @@ The [ImageEx Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uw
 
 ## Sample Project
 
-[ImageExControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageEx). You can [see this in action](uwpct://Controls?sample=ImageEx) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[ImageExControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageEx). You can [see this in action](uwpct://Controls?sample=ImageEx) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
 ImageEx control supports use of Progress Indicator. This can be enabled by adding ImageEx template from previous release of the control.
 
-- [ImageEx Control with Progress Indicator XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/2.2.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml) is the XAML template used in v2.2.0.0 of toolkit.
+- [ImageEx Control with Progress Indicator XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml) is the XAML template used in v.7.0.0 of toolkit.
 
-- [ImageEx Control XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml) is the XAML template used in the toolkit for the default styling.
+- [ImageEx Control XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageEx/ImageEx.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -57,4 +57,3 @@ ImageEx control supports use of Progress Indicator. This can be enabled by addin
 ## API
 
 - [ImageEx source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/ImageEx)
-
