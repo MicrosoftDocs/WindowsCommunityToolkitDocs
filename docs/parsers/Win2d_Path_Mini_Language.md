@@ -101,12 +101,12 @@ Win2d Path Mini Language syntax derives from the SVG path syntax. It is a prefix
 - Superfluous white space and separators such as commas can be eliminated (e.g., `M 100 100 L 200` `200` contains unnecessary spaces and could be expressed more compactly as `M100 100L200 200` ).
 - The command letter can be eliminated on subsequent commands if the same command is used multiple times in a row (e.g., you can drop the second "L" in "M 100 200 L 200 100 L - 100 -200" and use "M 100 200 L 200 100 -100 -200" instead).
 - Relative versions of all commands are available (uppercase means absolute coordinates, lowercase means relative coordinates).
-- Most of the parameters are either integer or floating point values. The only allowable decimal point is a Unicode U+0046 FULL STOP (".") character (also referred to in Unicode as PERIOD, dot and decimal point) and no other delimiter characters are allowed [UNICODE]. (For example, the following is an invalid numeric value in a path data stream: "13,000.56". Instead, say: "13000.56".)
+- Most of the parameters are either integer or floating-point values. The only allowable decimal point is a Unicode U+0046 FULL STOP (".") character (also referred to in Unicode as PERIOD, dot, and decimal point) and no other delimiter characters are allowed [UNICODE]. (For example, the following is an invalid numeric value in a path data stream: "13,000.56". Instead, say: "13000.56".)
 - For the relative versions of the commands, all coordinate values are relative to the current point at the start of the command.
 
 In the following sections, the following notation is used:
 
-- `()` indicates grouping of parameters.
+- `()` indicates the grouping of parameters.
 - `+` indicates one or more of the given parameter(s) is required.
 - `[]` indicates any one of the values specified within the square brackets. For e.g. [01] means either 0 or 1.
 - `?` denotes an optional parameter
@@ -134,7 +134,7 @@ The parameter value `0` indicates `CanvasFilledRegionDetermination.Alternate` wh
 
 The parameter value `1` indicates `CanvasFilledRegionDetermination.Winding` which determines whether a point is in the fill region of the path by drawing a ray from that point to infinity in any direction, and then examining the places where a segment of the shape crosses the ray. Starting with a count of zero, add one each time a segment crosses the ray from left to right and subtract one each time a path segment crosses the ray from right to left, as long as left and right are seen from the perspective of the ray. After counting the crossings, if the result is zero, then the point is outside the path. Otherwise, it is inside the path.
 
-> Each Path data should have only one Fill Behavior specified. Otherwise an exception will be raised.
+> Each Path data should have only one Fill Behavior specified. Otherwise, an exception will be raised.
 
 `CanvasPathGeometry` invokes the `CanvasPathBuilder.SetFilledRegionDetermination()` API for this command.
 
@@ -474,7 +474,7 @@ Specifies a displacement from Center, used to form the brush's radial gradient.
 
 Specifies one or more gradient stops (using Hexadecimal Color) in a gradient brush.
 
-The parameter `offset` refers to the position of the gradient stop and should be a floating point number between 0 and 1, inclusive.
+The parameter `offset` refers to the position of the gradient stop and should be a floating-point number between 0 and 1, inclusive.
 
 The parameter `hexColor` denotes the color specified in `#RRGGBB` or `#AARRGGBB` format.
 
@@ -493,7 +493,7 @@ Example:
 
 Specifies one or more high dynamic range gradient stops in a gradient brush.
 
-The parameter `offset` refers to the position of the gradient stop and it should be a floating point number between 0 and 1, inclusive.
+The parameter `offset` refers to the position of the gradient stop and it should be a floating-point number between 0 and 1, inclusive.
 
 The parameters `x, y, z` and `w` denote the components of the high dynamic range color.
 
@@ -515,7 +515,7 @@ The SolidColorBrush is defined by the `SC` command. It has two attributes - `Col
 
 The `Color` attribute is specified as either a Hexadecimal Color or a High Dynamic Range Color.
 
-The `Opacity` attribute is optional and can be specified with the `O` attribute command and a opacity value in the range [0, 1].
+The `Opacity` attribute is optional and can be specified with the `O` attribute command and an opacity value in the range [0, 1].
 
 Example:
 
@@ -647,7 +647,7 @@ Example:
 ## CanvasStrokeStyle Mini Language
 
 The `Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle` class defines a stroke style for drawing lines.
-The stroke style describes whether the line comprises of dashes, dots or solid line, how to join line segments, how to cap the ends etc.
+The stroke style describes whether the line comprises of dashes, dots, or solid line, how to join line segments, how to cap the ends, etc.
 
 This section describes in detail how a `CanvasStrokeStyle` can be defined as a string and a `CanvasStrokeStyle` instance created from it.
 
@@ -768,7 +768,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | ---------- |
 | `TB` [012] |
 
-Describes how the world transform, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
+Describes how the world transforms, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
 
 | Member   | Value | Description                                                                                                                   |
 | -------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
@@ -804,7 +804,7 @@ Using the attributes defined in the previous section the CanvasStrokeStyle can b
 
 All the attributes of `CanvasStrokeStyle` are optional. If none of the attributes is specified in the `CanvasStrokeStyle` definition string, then the default `CanvasStrokeStyle` object is created.
 
-**Note**: While specifiying the attributes, the order of the attributes must be maintained.
+**Note**: While specifying the attributes, the order of the attributes must be maintained.
 
 Example:
 
@@ -867,6 +867,6 @@ Example:
 
 # Creating Geometries, Brushes, Strokes and StrokeStyles
 
-To create instances of CanvasGeomety, Brushes, CanvasStrokes and CanvasStrokeStyles you can use the `CanvasPathGeometry` class in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
+To create instances of CanvasGeomety, Brushes, CanvasStrokes, and CanvasStrokeStyles you can use the `CanvasPathGeometry` class in the `Microsoft.Toolkit.Uwp.UI.Media.Geometry` namespace.
 
 [More details about `CanvasPathGeometry` class here.](https://raw.githubusercontent.com/MicrosoftDocs/WindowsCommunityToolkitDocs/master/docs/parsers/CanvasPathGeometry.md)

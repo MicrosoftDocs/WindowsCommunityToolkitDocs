@@ -65,7 +65,7 @@ public static CanvasGeometry CreateGeometry(ICanvasResourceCreator resourceCreat
 public static CanvasGeometry CreateGeometry(string pathData, StringBuilder logger = null);
 ```
 
-The **logger** parameter in this method is an option argument of type **StringBuilder** that can be used to obtain the **CanvasPathBuilder** commands in text format. It is mainly intended for information/debugging purpose only.
+The **logger** parameter in this method is an option argument of type **StringBuilder** that can be used to obtain the **CanvasPathBuilder** commands in text format. It is mainly intended for information/debugging purposes only.
 
 ### Creating Color
 
