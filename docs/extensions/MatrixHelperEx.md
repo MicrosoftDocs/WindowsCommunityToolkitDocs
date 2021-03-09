@@ -9,6 +9,9 @@ dev_langs:
 
 # MatrixHelperEx
 
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
+
 [MatrixHelperEx](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
 ## Methods
