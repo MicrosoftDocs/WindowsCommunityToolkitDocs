@@ -1,7 +1,7 @@
 ---
 title: Saturation animation behavior
 author: nmetulev
-description: The Saturation animation behavior selectively saturates a XAML element.
+description: The Saturation animation behavior selectively saturates a XAML element (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, saturation animation, saturation
 dev_langs:
   - csharp
