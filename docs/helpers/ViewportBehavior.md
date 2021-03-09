@@ -66,4 +66,3 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 ## API
 
 - [ViewportBehavior source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Behaviors/Viewport/ViewportBehavior.cs)
-
