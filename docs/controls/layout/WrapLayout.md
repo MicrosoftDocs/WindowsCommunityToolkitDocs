@@ -1,8 +1,8 @@
 ---
 title: WrapLayout XAML Layout Panel
 author: skendrot
-description: The WrapLayout layout panel Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WrapLayout, XAML Control, xaml, layout
+description: The WrapLayout layout panel Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box for ItemsRepeater.
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WrapLayout, XAML Control, xaml, layout, itemsrepeater
 ---
 
 # WrapLayout XAML Layout Panel

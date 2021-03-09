@@ -28,7 +28,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## Sample Output
 
-![HeaderedContentControl](../resources/images/Controls/HeaderedContentControl.jpg)
+![HeaderedContentControl Sample](../resources/images/Controls/HeaderedContentControl.jpg)
 
 ## Properties
 

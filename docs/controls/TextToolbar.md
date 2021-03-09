@@ -26,7 +26,7 @@ You can also Remove Default Buttons from any format, or Add Custom buttons to an
 
 ## Sample Output
 
-![TextToolbar](../resources/images/Controls/TextToolbar.png)
+![TextToolbar Sample](../resources/images/Controls/TextToolbar.png)
 
 ## Properties
 
