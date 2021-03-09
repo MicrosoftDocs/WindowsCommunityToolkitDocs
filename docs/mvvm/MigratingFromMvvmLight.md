@@ -379,7 +379,7 @@ command.NotifyCanExecuteChanged();
 
 The following steps focus on migrating your existing components which take advantage of the `RelayCommand<T>` of the MvvmLight Toolkit.
 
-The Windows Community Toolkit MVVM framework provides a [`RelayCommand<T>`](RelayCommand/md) type that provides like-for-like functionality taking advantage of the `ICommand` System interface.
+The Windows Community Toolkit MVVM framework provides a [`RelayCommand<T>`](RelayCommand.md) type that provides like-for-like functionality taking advantage of the `ICommand` System interface.
 
 Below are a list of migrations that will need to be performed if being used in your current solution. Where a method or property isn't listed, there is a direct replacement with the same name in the MVVM Toolkit and there is no change required.
 
