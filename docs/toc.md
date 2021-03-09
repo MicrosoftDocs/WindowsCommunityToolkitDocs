@@ -327,8 +327,6 @@
 
 # [Notifications](notifications/NotificationsOverview.md)
 
-# [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
-
 # Archive
 
 ## Animations
@@ -394,6 +392,8 @@
 ### [HttpHelperRequest](helpers/HttpHelperRequest.md)
 
 ### [HttpHelperResponse](helpers/HttpHelperResponse.md)
+
+### [Platform Specific Analyzer](platform-specific/PlatformSpecificAnalyzer.md)
 
 ## Microsoft Graph Controls
 
