@@ -263,6 +263,8 @@
 
 ## [DeepLinkParser](helpers/DeepLinkParsers.md)
 
+## [Focus Behaviors](behaviors/FocusBehaviors.md)
+
 ## [ImageCache](helpers/ImageCache.md)
 
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
