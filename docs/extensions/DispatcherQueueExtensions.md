@@ -2,7 +2,7 @@
 title: DispatcherQueueExtensions
 author: Sergio0694
 description: Helpers for executing code on a specific UI thread through a DispatcherQueue instance.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, DispatcherHelper
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, extensions, winui3, xaml islands, dispatcher, dispatcherqueue, DispatcherHelper, DispatcherQueueExtensions
 dev_langs:
   - csharp
 ---
@@ -50,7 +50,7 @@ int someOtherValue = await dispatcherQueue.EnqueueAsync(async () =>
 
 ## Migrating from [`DispatcherHelper`](..\helpers\DispatcherHelper.md)
 
-The [`CoreDispatcher`](https://docs.microsoft.com/uwp/api/windows.ui.core.coredispatcher) is being deprecated (and it will no longer work on WinUI 3) and should no longer be used, as it had a number of limitations. Specifically, it relied on the assumption that each window had its own UI thread tied to it, which is not always the case. The new `DispatcherQueue` instead can be used going forwards, and it requires some changes in code that was previously relying on `CoreDispatcher` and `DispatcherHelper`. Specifically, a background thread can no longer retrieve the `CoreDispatcher` by just accessing the dispatcher associated to the "main window" for the application, because this concept does not apply anymore. Instead, a `DispatcherQueue` instance needs to be retrieved on the UI thread and cached for later use in a background thread.
+The [`CoreDispatcher`](/uwp/api/windows.ui.core.coredispatcher) is being deprecated (and it will no longer work with XAML Islands or WinUI 3) and should no longer be used, as it had a number of limitations. Specifically, it relied on the assumption that each window had its own UI thread tied to it, which is not always the case. The new `DispatcherQueue` instead can be used going forwards, and it requires some changes in code that was previously relying on `CoreDispatcher` and `DispatcherHelper`. Specifically, a background thread can no longer retrieve the `CoreDispatcher` by just accessing the dispatcher associated to the "main window" for the application, because this concept does not apply anymore. Instead, a `DispatcherQueue` instance needs to be retrieved on the UI thread and cached for later use in a background thread.
 
 If you were using `DispatcherHelper` on the UI thread, apply the following change (here we're using `Task.Run` to simulate some work being done in a background thread and accessing some UI component, and we're assuming for this example that there is a `TextBlock` control in our page called "MyTextBlock"):
 
