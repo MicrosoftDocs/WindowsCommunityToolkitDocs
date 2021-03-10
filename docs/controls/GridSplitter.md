@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # GridSplitter XAML Control
 
-The [GridSplitter Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter) provides an easy-to-use Splitter that redistributes space between columns or rows of a Grid Control. By dragging the control, the control will resize the targeted columns or rows.
+The [GridSplitter Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter) provides an easy-to-use Splitter that redistributes space between columns or rows of a Grid Control. By dragging the control, the control will resize the targeted columns or rows.
 
 The control automatically detects the targeted columns/rows to resize, while dragging the control it starts to resize the columns/rows and redistributes space between columns/rows, you can manually specify the Resize Direction Auto, Column, Row and the Resize Behavior to select which columns/rows to resize.
 
@@ -43,14 +43,14 @@ The control automatically detects the targeted columns/rows to resize, while dra
 
 | Property | Type | Description |
 | -- | -- | -- |
-| CursorBehavior | [GridSplitter.SplitterCursorBehavior](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.splittercursorbehavior) | Gets or sets splitter cursor on hover behavior |
+| CursorBehavior | [GridSplitter.SplitterCursorBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.splittercursorbehavior) | Gets or sets splitter cursor on hover behavior |
 | Element | UIElement | Gets or sets the visual content of this Grid Splitter |
-| GripperCursor | [GridSplitter.GripperCursorType](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.grippercursortype) | Gets or sets the gripper Cursor type |
+| GripperCursor | [GridSplitter.GripperCursorType](/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.grippercursortype) | Gets or sets the gripper Cursor type |
 | GripperCustomCursorResource | int | Gets or sets the gripper Custom Cursor resource number |
 | GripperForeground | Brush | Gets or sets the foreground color of grid splitter grip |
 | ParentLevel | int | Gets or sets the level of the parent grid to resize |
-| ResizeBehavior | [GridSplitter.GridResizeBehavior](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.gridresizebehavior) | Gets or sets which Columns or Rows the Splitter resizes |
-| ResizeDirection | [GridSplitter.GridResizeDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.gridresizedirection) | Gets or sets whether the Splitter resizes the Columns, Rows, or Both |
+| ResizeBehavior | [GridSplitter.GridResizeBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.gridresizebehavior) | Gets or sets which Columns or Rows the Splitter resizes |
+| ResizeDirection | [GridSplitter.GridResizeDirection](/dotnet/api/microsoft.toolkit.uwp.ui.controls.gridsplitter.gridresizedirection) | Gets or sets whether the Splitter resizes the Columns, Rows, or Both |
 
 ## Examples
 
@@ -101,11 +101,11 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Sample Code
 
-[GridSplitter Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[GridSplitter Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[GridSplitter XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
+[GridSplitter XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -116,4 +116,4 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## API
 
-* [GridSplitter source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter)
+* [GridSplitter source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter)
