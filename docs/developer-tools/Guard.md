@@ -9,7 +9,7 @@ dev_langs:
 
 # Guard
 
-The [Guard](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.diagnostics.guard) can be used to validate method arguments in a streamlined manner, which is also faster, less verbose, more expressive and less error prone than manually writing checks and throwing exceptions.
+The [Guard](/dotnet/api/microsoft.toolkit.diagnostics.guard) can be used to validate method arguments in a streamlined manner, which is also faster, less verbose, more expressive and less error prone than manually writing checks and throwing exceptions.
 
 ## How it works
 
@@ -120,7 +120,7 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/Diagnostics/Test_Guard.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/Diagnostics/Test_Guard.cs)
 
 ## Requirements
 
@@ -133,4 +133,4 @@ The Guard class supports .NET Standard
 
 ## API
 
-- [Guard source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Diagnostics)
+- [Guard source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Diagnostics)
