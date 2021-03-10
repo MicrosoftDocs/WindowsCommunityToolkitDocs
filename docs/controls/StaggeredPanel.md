@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # StaggeredPanel
 
-The [StaggeredPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.staggeredpanel) allows for layout of items in a column approach where an item will be added to whichever column has used the least amount of space.
+The [StaggeredPanel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.staggeredpanel) allows for layout of items in a column approach where an item will be added to whichever column has used the least amount of space.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=StaggeredPanel)
@@ -44,11 +44,11 @@ The [StaggeredPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 
 ## Sample Project
 
-[StaggeredPanel Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can [see this in action](uwpct://Controls?sample=StaggeredPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[StaggeredPanel Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredPanel). You can [see this in action](uwpct://Controls?sample=StaggeredPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[StaggeredPanel XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel/StaggeredPanel.xaml) is the XAML template used in the toolkit for the default styling.
+[StaggeredPanel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel/StaggeredPanel.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -59,4 +59,4 @@ The [StaggeredPanel](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 
 ## API
 
-- [StaggeredPanel](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/StaggeredPanel)
+- [StaggeredPanel](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/StaggeredPanel)
