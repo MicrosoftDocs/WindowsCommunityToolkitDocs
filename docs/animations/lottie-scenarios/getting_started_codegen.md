@@ -11,7 +11,7 @@ Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standa
 
 ## Generating a C# or C++ class from JSON
 
-To generate a C# or C++ file from JSON use the [LottieGen](https://aka.ms/lottiegen) command-line tool. 
+To generate a C# or C++ file from JSON use the [LottieGen](https://aka.ms/lottiegen) command-line tool.
 
 1. In your command-line interface, install the LottieGen tool from nuget:
 
