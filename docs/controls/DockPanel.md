@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # DockPanel XAML Control
 
-The [DockPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.dockpanel) defines an area where you can arrange child elements either horizontally or vertically, relative to each other.
+The [DockPanel Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.dockpanel) defines an area where you can arrange child elements either horizontally or vertically, relative to each other.
 
 The DockPanel position child controls based on the child Dock property, you have 4 options to Dock, left (Default), right, top, bottom.
 You can set DockPanel LastChildFill property to true if you want the last item added to the DockPanel to fill the rest empty space.
@@ -42,7 +42,7 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 
 ## Sample Project
 
-[DockPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can [see this in action](uwpct://Controls?sample=DockPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[DockPanel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DockPanel). You can [see this in action](uwpct://Controls?sample=DockPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -53,4 +53,4 @@ You can set DockPanel LastChildFill property to true if you want the last item a
 
 ## API Source Code
 
-* [DockPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/DockPanel)
+* [DockPanel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/DockPanel)
