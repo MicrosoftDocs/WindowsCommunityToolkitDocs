@@ -11,9 +11,7 @@ Consuming [Bodymovin](https://aescripts.com/bodymovin/) JSON files is the standa
 
 ## Generating a C# or C++ class from JSON
 
-To generate a C# or C++ file, you may either use the [LottieGen](https://aka.ms/lottiegen) command-line tool or the [Lottie Viewer](https://aka.ms/lottieviewer) application.
-
-### LottieGen CLI
+To generate a C# or C++ file from JSON use the [LottieGen](https://aka.ms/lottiegen) command-line tool.
 
 1. In your command-line interface, install the LottieGen tool from nuget:
 
@@ -28,14 +26,6 @@ To generate a C# or C++ file, you may either use the [LottieGen](https://aka.ms/
     ```
 
 For additional information about additional options including optimizations, use `LottieGen -Help`.
-
-### Lottie Viewer GUI
-
-1. Install the [Lottie Viewer](https://aka.ms/lottieviewer) application from the Store. Drag and drop your JSON file, or use the the “Pick a Lottie file” icon in the top left to open local files or URIs.
-
-2. Click the “Save Lottie as Code” icon in the top-right corner to generate C# or C++ classes. In the resulting Save As explorer window, select your destination folder, filename, and desired language.
-
-    <img src="../../resources/images/Animations/Lottie/LottieDocs_LottieViewer.png" alt="LottieViewerCodegen" width="600"/>
 
 ## Using the Codegen File
 

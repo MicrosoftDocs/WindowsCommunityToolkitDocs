@@ -201,7 +201,11 @@
 
 ## [DependencyObjectExtensions](extensions/DependencyObjectExtensions.md)
 
+## [DispatcherQueueExtensions](extensions/DispatcherQueueExtensions.md)
+
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
+
+## [EnumValuesExtensions](extensions/EnumValuesExtension.md)
 
 ## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 
@@ -259,7 +263,7 @@
 
 ## [DeepLinkParser](helpers/DeepLinkParsers.md)
 
-## [DispatcherHelper](helpers/DispatcherHelper.md)
+## [Focus Behaviors](behaviors/FocusBehaviors.md)
 
 ## [ImageCache](helpers/ImageCache.md)
 
@@ -418,6 +422,8 @@
 ### [TextBoxRegex](extensions/TextBoxRegex.md)
 
 ## Helpers
+
+### [DispatcherHelper](helpers/DispatcherHelper.md)
 
 ### [HttpHelper](helpers/HttpHelper.md)
 
