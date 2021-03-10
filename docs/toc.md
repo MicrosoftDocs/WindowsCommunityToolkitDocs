@@ -205,7 +205,7 @@
 
 ## [HyperlinkExtensions](extensions/HyperlinkExtensions.md)
 
-## [EnumValuesExtensions](extensions/EnumValuesExtensions.md)
+## [EnumValuesExtensions](extensions/EnumValuesExtension.md)
 
 ## [IconMarkupExtensions](extensions/IconMarkupExtensions.md)
 
