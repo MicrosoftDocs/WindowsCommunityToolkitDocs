@@ -10,11 +10,11 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 > [!NOTE]
 > This control will be removed in a future major release.
 
-The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) defines a menu of choices for users to invoke, it is inheriting from `ItemsControl`. The default ItemsPanel for the menu control is `WrapPanel` and it only supports MenuItem as an item\children.
+The [Menu Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) defines a menu of choices for users to invoke, it is inheriting from `ItemsControl`. The default ItemsPanel for the menu control is `WrapPanel` and it only supports MenuItem as an item\children.
 
-The [Menu Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) positions it's items the way the WrapPanel does based on the selected orientation Virtical\Horizontal (Developers can change the control ItemsPanel). The Menu items must be of type MenuItem, each MenuItem can be opened using keyboard or pointer.
+The [Menu Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) positions it's items the way the WrapPanel does based on the selected orientation Virtical\Horizontal (Developers can change the control ItemsPanel). The Menu items must be of type MenuItem, each MenuItem can be opened using keyboard or pointer.
 
-[MenuItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.menuitem) is inheriting from `ItemsControl` and the allowed controls must be derived from `MenuFlyoutItemBase` like `MenuFlyoutSubItem`, `MenuFlyoutItem`, etc...
+[MenuItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.menuitem) is inheriting from `ItemsControl` and the allowed controls must be derived from `MenuFlyoutItemBase` like `MenuFlyoutSubItem`, `MenuFlyoutItem`, etc...
 
 To invoke any command on any Menu, MenuItem or MenuFlyoutItem you must use property `InputGestureText`
 
@@ -54,12 +54,12 @@ If the tooltip is allowed on the Menu control when clicking Alt a tooltip with t
 
 | Property | Type | Description |
 | -- | -- | -- |
-| FlyoutPlacement | [FlyoutPlacementMode](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode) | Gets or sets the placement of the flyoutMenu (Auto, Top, Bottom, Left, Right and Full) |
+| FlyoutPlacement | [FlyoutPlacementMode](/uwp/api/Windows.UI.Xaml.Controls.Primitives.FlyoutPlacementMode) | Gets or sets the placement of the flyoutMenu (Auto, Top, Bottom, Left, Right and Full) |
 | IsOpened | bool | Gets a value indicating whether the menu is opened or not |
 | MenuFlyoutStyle | Style | Gets or sets the menu style for MenuItem |
 | Orientation | Orientation | Gets or sets the orientation of the Menu, Horizontal or vertical means that child controls will be added horizontally until the width of the panel can't fit more control then a new row is added to fit new horizontal added child controls, vertical means that child will be added vertically until the height of the panel is received then a new column is added |
 | SelectedMenuItem | MenuItem | Gets the current selected menu header item |
-| TooltipPlacement | [PlacementMode](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.Primitives.PlacementMode) | Gets or sets the tooltip placement on menu |
+| TooltipPlacement | [PlacementMode](/uwp/api/Windows.UI.Xaml.Controls.Primitives.PlacementMode) | Gets or sets the tooltip placement on menu |
 | TooltipStyle | Style | Gets or sets the tooltip styles for menu |
 
 ### External Properties
@@ -145,11 +145,11 @@ internal class NewProjectCommand : ICommand
 
 ## Sample Project
 
-[Menu Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Menu Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Menu). You can [see this in action](uwpct://Controls?sample=Menu) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Menu XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xaml) is the XAML template used in the toolkit for the default styling.
+[Menu XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/Menu/Menu.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -160,4 +160,4 @@ internal class NewProjectCommand : ICommand
 
 ## API
 
-* [Menu source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/Menu)
+* [Menu source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/Menu)

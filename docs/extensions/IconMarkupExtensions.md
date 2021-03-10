@@ -7,9 +7,9 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, nullable bool, de
 
 # IconMarkupExtensions
 
-The icon extensions are a group of markup extensions meant to simplify the creation of various icon types (specifically [`BitmapIcon`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.BitmapIcon), [`BitmapIconSource`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.BitmapIconSource), [`FontIcon`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.FontIcon), [`FontIconSource`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.FontIconSource), [`SymbolIcon`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SymbolIcon), and [`SymbolIconSource`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.SymbolIconSource)) used across a variety of XAML controls. Using these extensions doesn't enable new capabilities per se, but it greatly simplifies the XAML syntax needed to create instances of these icon types.
+The icon extensions are a group of markup extensions meant to simplify the creation of various icon types (specifically [`BitmapIcon`](/uwp/api/Windows.UI.Xaml.Controls.BitmapIcon), [`BitmapIconSource`](/uwp/api/Windows.UI.Xaml.Controls.BitmapIconSource), [`FontIcon`](/uwp/api/Windows.UI.Xaml.Controls.FontIcon), [`FontIconSource`](/uwp/api/Windows.UI.Xaml.Controls.FontIconSource), [`SymbolIcon`](/uwp/api/Windows.UI.Xaml.Controls.SymbolIcon), and [`SymbolIconSource`](/uwp/api/Windows.UI.Xaml.Controls.SymbolIconSource)) used across a variety of XAML controls. Using these extensions doesn't enable new capabilities per se, but it greatly simplifies the XAML syntax needed to create instances of these icon types.
 
-> **Platform APIs:** [`BitmapIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconextension), [`BitmapIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconsourceextension), [`FontIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.fonticonextension), [`FontIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.fonticonsourceextension), [`SymbolIconExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.symboliconextension) and [`SymbolIconSourceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.symboliconsourceextension)
+> **Platform APIs:** [`BitmapIconExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconextension), [`BitmapIconSourceExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.bitmapiconsourceextension), [`FontIconExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.fonticonextension), [`FontIconSourceExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.fonticonsourceextension), [`SymbolIconExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.symboliconextension) and [`SymbolIconSourceExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.symboliconsourceextension)
 
 ## BitmapIconExtension
 
@@ -86,7 +86,7 @@ The `FontIconSourceExtension` class mirrors the `FontIconExtension` type, but pr
 
 ## SymbolIconExtension
 
-The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets". Here is how it can be used:
+The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the main difference being that it uses a [`Symbol`](/uwp/api/windows.ui.xaml.controls.symbol) value to specify the icon. All the other properties from `FontIconExtension` are available, with the exception of the font family, which is always set to "Segoe MDL2 Assets". Here is how it can be used:
 
 ```xaml
 <CommandBar xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
@@ -108,7 +108,7 @@ The `SymbolIconExtension` type mirrors the `FontIcon` markup extension, with the
 
 ## SymbolIconSource
 
-The `SymbolIconSourceExtension` type is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.fonticonsource) instance:
+The `SymbolIconSourceExtension` type is an alternative for `FontIconSourceExtension` that takes a `Symbol` value instead of a text, and displays the icon with the "Segoe MDL2 Assets". It's equivalent to the `SymbolIconExtension` type, except for the fact that it returns a [`FontIconSource`](/uwp/api/windows.ui.xaml.controls.fonticonsource) instance:
 
 ```xaml
 <SwipeItems
@@ -124,4 +124,4 @@ All the values returned by these markup extensions belong to the `Windows.UI.Xam
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

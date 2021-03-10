@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # AlignmentGrid XAML Control
 
-The [AlignmentGrid Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.developertools.alignmentgrid) can be used to display a grid to help with aligning controls.
+The [AlignmentGrid Control](/dotnet/api/microsoft.toolkit.uwp.developertools.alignmentgrid) can be used to display a grid to help with aligning controls.
 
 You can control the grid's steps with `HorizontalStep` and `VerticalStep` properties. Line color can be defined with `LineBrush` property.
 
@@ -35,7 +35,7 @@ You can control the grid's steps with `HorizontalStep` and `VerticalStep` proper
 
 ## Sample Project
 
-[AlignmentGrid Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AlignmentGrid). You can [see this in action](uwpct://Controls?sample=AlignmentGrid) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[AlignmentGrid Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AlignmentGrid). You can [see this in action](uwpct://Controls?sample=AlignmentGrid) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -46,4 +46,4 @@ You can control the grid's steps with `HorizontalStep` and `VerticalStep` proper
 
 ## API
 
-* [AlignmentGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.DeveloperTools/AlignmentGrid)
+* [AlignmentGrid source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.DeveloperTools/AlignmentGrid)

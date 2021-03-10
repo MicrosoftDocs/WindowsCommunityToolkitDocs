@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > This behavior is no longer available in the Windows Community Toolkit. Please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types instead.
 
-The [Scale animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.scale) allows you to change a control's scale by increasing or decreasing the control through animation. Scale animation is applied to all the XAML elements in its parent control/panel. Scale animation doesn't affect the functionality of the control.
+The [Scale animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.scale) allows you to change a control's scale by increasing or decreasing the control through animation. Scale animation is applied to all the XAML elements in its parent control/panel. Scale animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Scale)
@@ -66,15 +66,15 @@ You can change the way how the animation interpolates between keyframes by defin
 | ---------- | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
 | Default    | Creates an animation that accelerates with the default EasingType which is specified in AnimationExtensions.DefaultEasingType which is by default Cubic |                                                                                                                           |
 | Linear     | Creates an animation that accelerates or decelerates linear                                                                                             |                                                                                                                           |
-| Back       | Retracts the motion of an animation slightly before it begins to animate in the path indicated                                                          | ![BackEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/backease-graph.png)           |
-| Bounce     | Creates a bouncing effect                                                                                                                               | ![BounceEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/bounceease-graph.png)       |
-| Circle     | Creates an animation that accelerates or decelerates using a circular function                                                                          | ![CircleEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/circleease-graph.png)       |
-| Cubic      | Creates an animation that accelerates or decelerates using the formula f(t) = t3                                                                        | ![CubicEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/cubicease-graph.png)         |
-| Elastic    | Creates an animation that resembles a spring oscillating back and forth until it comes to rest                                                          | ![ElasticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/elasticease-graph.png)     |
-| Quadratic  | Creates an animation that accelerates or decelerates using the formula f(t) = t2                                                                        | ![QuadraticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quadraticease-graph.png) |
-| Quartic    | Creates an animation that accelerates or decelerates using the formula f(t) = t4                                                                        | ![QuarticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quarticease-graph.png)     |
-| Quintic    | Create an animation that accelerates or decelerates using the formula f(t) = t5                                                                         | ![QuinticEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/quinticease-graph.png)     |
-| Sine       | Creates an animation that accelerates or decelerates using a sine formula                                                                               | ![SineEase](https://docs.microsoft.com/dotnet/framework/wpf/graphics-multimedia/media/sineease-graph.png)           |
+| Back       | Retracts the motion of an animation slightly before it begins to animate in the path indicated                                                          | ![BackEase](/dotnet/framework/wpf/graphics-multimedia/media/backease-graph.png)           |
+| Bounce     | Creates a bouncing effect                                                                                                                               | ![BounceEase](/dotnet/framework/wpf/graphics-multimedia/media/bounceease-graph.png)       |
+| Circle     | Creates an animation that accelerates or decelerates using a circular function                                                                          | ![CircleEase](/dotnet/framework/wpf/graphics-multimedia/media/circleease-graph.png)       |
+| Cubic      | Creates an animation that accelerates or decelerates using the formula f(t) = t3                                                                        | ![CubicEase](/dotnet/framework/wpf/graphics-multimedia/media/cubicease-graph.png)         |
+| Elastic    | Creates an animation that resembles a spring oscillating back and forth until it comes to rest                                                          | ![ElasticEase](/dotnet/framework/wpf/graphics-multimedia/media/elasticease-graph.png)     |
+| Quadratic  | Creates an animation that accelerates or decelerates using the formula f(t) = t2                                                                        | ![QuadraticEase](/dotnet/framework/wpf/graphics-multimedia/media/quadraticease-graph.png) |
+| Quartic    | Creates an animation that accelerates or decelerates using the formula f(t) = t4                                                                        | ![QuarticEase](/dotnet/framework/wpf/graphics-multimedia/media/quarticease-graph.png)     |
+| Quintic    | Create an animation that accelerates or decelerates using the formula f(t) = t5                                                                         | ![QuinticEase](/dotnet/framework/wpf/graphics-multimedia/media/quinticease-graph.png)     |
+| Sine       | Creates an animation that accelerates or decelerates using a sine formula                                                                               | ![SineEase](/dotnet/framework/wpf/graphics-multimedia/media/sineease-graph.png)           |
 
 ## Methods
 
@@ -149,7 +149,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Scale Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Scale). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Scale Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Scale). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -160,9 +160,9 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Scale source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
+- [Scale source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
 
 ## Related Topics
 
-- [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-- [Storyboard Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)
+- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
+- [Storyboard Class](/uwp/api/Windows.UI.Xaml.Media.Animation.Storyboard)

@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropBlurBrush
 
-The [BackdropBlurBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropblurbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
+The [BackdropBlurBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropblurbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropBlurBrush)
@@ -34,7 +34,7 @@ The [BackdropBlurBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[BackdropBlurBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropBlurBrush). You can [see this in action](uwpct://Brushes?sample=BackdropBlurBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[BackdropBlurBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropBlurBrush). You can [see this in action](uwpct://Brushes?sample=BackdropBlurBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -45,9 +45,9 @@ The [BackdropBlurBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API
 
-* [BackdropBlurBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropBlurBrush.cs)
+* [BackdropBlurBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropBlurBrush.cs)
 
 ## Related Topics
 
 * [Win2D GaussianBlurEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
-* [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
+* [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)

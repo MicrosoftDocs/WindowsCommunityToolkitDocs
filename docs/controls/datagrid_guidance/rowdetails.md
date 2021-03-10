@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, windows toolkit, DataGrid,
 
 # How to: Display and Configure Row Details in the DataGrid Control
 
-Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
+Each row in the [DataGrid](../datagrid.md) control can be expanded to display a row details section. The row details section is defined by a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that specifies the appearance of the section and the data to be displayed.
 
 ![Sample row details UI](../../resources/images/Controls/DataGrid/rowdetails.png)
 
@@ -15,7 +15,7 @@ The row details section can be displayed for selected rows, displayed for all ro
 
 ## To display a row details section using inline XAML
 
-1. Create a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
+1. Create a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
 2. Place the DataTemplate inside the <DataGrid.RowDetailsTemplate> tags.
 
 ```xaml
@@ -36,8 +36,8 @@ The row details section can be displayed for selected rows, displayed for all ro
 
 ## To display a row details section using a DataTemplate resource
 
-1. Create a [DataTemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
-2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](https://docs.microsoft.com/windows/uwp/xaml-platform/x-key-attribute).
+1. Create a [DataTemplate](/uwp/api/windows.ui.xaml.datatemplate) that defines the appearance of the row details section.
+2. Identify the DataTemplate by assigning a value to the [x:Key Attribute](/windows/uwp/xaml-platform/x-key-attribute).
 3. Bind the DataTemplate to the DataGrid's **RowDetailsTemplate** property.
 
 ```xaml
@@ -96,4 +96,4 @@ Set the **AreRowDetailsFrozen** property to true.
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
 * [Sizing options in the DataGrid control](sizing_options.md)
-* [DataGrid Sample](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
+* [DataGrid Sample](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).

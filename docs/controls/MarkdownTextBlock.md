@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # MarkdownTextBlock XAML Control
 
-The [MarkdownTextBlock control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock) provides full markdown parsing and rendering for Universal Windows Apps. Originally created for the open source reddit app Baconit, the control was engineered to be simple to use and very efficient. One of the main design considerations for the control was it needed to be performant enough to provide a great user experience in virtualized lists. With the custom markdown parser and efficient XAML rendering, we were able to achieve excellent performance; providing a smooth UI experience even with complex Markdown on low end hardware.
+The [MarkdownTextBlock control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock) provides full markdown parsing and rendering for Universal Windows Apps. Originally created for the open source reddit app Baconit, the control was engineered to be simple to use and very efficient. One of the main design considerations for the control was it needed to be performant enough to provide a great user experience in virtualized lists. With the custom markdown parser and efficient XAML rendering, we were able to achieve excellent performance; providing a smooth UI experience even with complex Markdown on low end hardware.
 
 Under the hood, the control uses XAML sub elements to build the visual rendering tree for the Markdown input. We chose to use full XAML elements over using the RichEditTextBlock control because the RichEditTextBlock isn't flexible enough to correctly render all of the standard Markdown styles.
 
@@ -97,18 +97,18 @@ The MarkdownTextBlock control is highly customizable to blend with any theme. Cu
 | ParagraphMargin | Thickness | Gets or sets the margin used for paragraphs |
 | ParagraphLineHeight | int | Gets or sets the line hegiht used for paragraphs. |
 | QuoteBackground | Brush | Gets or sets the brush used to fill the background of a quote block |
-| QuoteBorderBrush | Brush | Gets or sets the brush used to render a quote border. If this is null, then [QuoteBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.quoteborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_QuoteBorderBrush) is used |
+| QuoteBorderBrush | Brush | Gets or sets the brush used to render a quote border. If this is null, then [QuoteBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.quoteborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_QuoteBorderBrush) is used |
 | QuoteBorderThickness | Thickness | Gets or sets the thickness of quote borders. |
 | QuoteForeground | Brush | Gets or sets the brush used to render the text inside a quote block. If this is `null`, then Foreground is used |
 | QuoteMargin | Thickness | Gets or sets the space outside of quote borders |
 | QuotePadding | Thickness | Gets or sets the space between the quote border and the text |
 | SchemeList | string(separated by comma) | Gets or sets the custom SchemeList to render a URL. |
-| TableBorderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| TableBorderBrush | Brush | Gets or sets the brush used to render table borders. If this is null, then [TableBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | TableBorderThickness | double | Gets or sets the thickness of any table borders |
 | TableCellPadding | Thickness | Gets or sets the padding inside each cell |
 | TableMargin | Thickness | Gets or sets the margin used by tables |
 | YamlBoderThickness | Thickness | Gets or sets the thickness of any yaml header borders. |
-| YamlBoderBrush | Brush | Gets or sets the brush used to render yaml heade borders. If this is null, then [TableBorderBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
+| YamlBoderBrush | Brush | Gets or sets the brush used to render yaml heade borders. If this is null, then [TableBorderBrush](/dotnet/api/microsoft.toolkit.uwp.ui.controls.markdowntextblock.tableborderbrush#Microsoft_Toolkit_Uwp_UI_Controls_MarkdownTextBlock_TableBorderBrush) is used |
 | Text | string | Gets or sets the markdown text to display |
 | TextWrapping | TextWrapping | Gets or sets the word wrapping behavior |
 | UriPrefix | string | Gets or sets the Prefix of Uri |
@@ -212,16 +212,16 @@ block.SetRenderer<InheritedMarkdownRenderer>();
 
 This will likely require intimate knowledge of the implementation of the `MarkdownRenderer`, take a look at the following:
 
-- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
-- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
+- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
+- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
 
 ## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[MarkdownTextBlock Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[MarkdownTextBlock XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
+[MarkdownTextBlock XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -232,7 +232,7 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## API
 
-- [MarkdownTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
+- [MarkdownTextBlock source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
 
 ## Related Topics
 

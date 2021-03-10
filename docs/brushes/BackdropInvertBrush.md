@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropInvertBrush
 
-The [BackdropInvertBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinvertbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that inverts whatever is behind it in the application.
+The [BackdropInvertBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinvertbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that inverts whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropInvertBrush)
@@ -28,7 +28,7 @@ The [BackdropInvertBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 ## Sample Project
 
-[BackdropInvertBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropInvertBrush). You can [see this in action](uwpct://Brushes?sample=BackdropInvertBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[BackdropInvertBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropInvertBrush). You can [see this in action](uwpct://Brushes?sample=BackdropInvertBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -39,7 +39,7 @@ The [BackdropInvertBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolki
 
 ## API
 
-* [BackdropInvertBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropInvertBrush.cs)
+* [BackdropInvertBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropInvertBrush.cs)
 
 ## Related Topics
 

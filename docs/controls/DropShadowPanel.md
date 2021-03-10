@@ -10,7 +10,7 @@ dev_langs:
 
 # DropShadowPanel XAML Control
 
-The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
+The [DropShadowPanel Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=DropShadowPanel)
@@ -62,11 +62,11 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[DropShadowPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[DropShadowPanel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DropShadowPanel). You can [see this in action](uwpct://Controls?sample=DropShadowPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[DropShadowPanel XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml) is the XAML template used in the toolkit for the default styling.
+[DropShadowPanel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/DropShadowPanel/DropShadowPanel.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -77,4 +77,4 @@ The [DropShadowPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## API
 
-- [DropShadowPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel)
+- [DropShadowPanel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel)

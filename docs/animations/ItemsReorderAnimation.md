@@ -9,9 +9,9 @@ dev_langs:
 
 # ItemsReorderAnimation
 
-The [`ItemsReorderAnimation`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ItemsReorderAnimation) type allows your [`ListViewBase`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase) controls (such as [`ListView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.ListView) and [`GridView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.GridView)) to animate items into position when the size of the container changes.
+The [`ItemsReorderAnimation`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.ItemsReorderAnimation) type allows your [`ListViewBase`](/uwp/api/windows.ui.xaml.controls.listviewbase) controls (such as [`ListView`](/uwp/api/windows.ui.xaml.controls.ListView) and [`GridView`](/uwp/api/windows.ui.xaml.controls.GridView)) to animate items into position when the size of the container changes.
 
-> **Platform APIs:** [`ItemsReorderAnimation`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ItemsReorderAnimation)
+> **Platform APIs:** [`ItemsReorderAnimation`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.ItemsReorderAnimation)
 
 ## Syntax
 
@@ -38,4 +38,4 @@ Here is the visual result when using a `GridView` to display some images in a wi
 
 ## Examples
 
-You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp).
+You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp).

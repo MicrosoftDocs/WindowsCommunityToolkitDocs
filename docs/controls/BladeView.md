@@ -10,7 +10,7 @@ dev_langs:
 
 # BladeView XAML Control
 
-The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
+The [BladeView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=BladeView)
@@ -42,9 +42,9 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 |          Property          |                                                 Type                                                  |                                               Description                                               |
 |----------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-|        ActiveBlades        | IList<[BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
+|        ActiveBlades        | IList<[BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
 | AutoCollapseCountThreshold |                                                  int                                                  | Gets or sets a value indicating what the overflow amount should be to start auto collapsing blade items |
-|         BladeMode          |    [BladeMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
+|         BladeMode          |    [BladeMode](/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
 
 ### BladeItem Properties
 
@@ -95,7 +95,7 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[BladeView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
@@ -110,4 +110,4 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API
 
-- [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView)
+- [BladeView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView)

@@ -9,10 +9,10 @@ dev_langs:
 
 # RemoteDevicePicker Control
 
-The [RemoteDevicePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
+The [RemoteDevicePicker](/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
 > [!IMPORTANT]
-> Make sure you enable the [RemoteSystem capability](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
+> Make sure you enable the [RemoteSystem capability](/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RemoteDevicePicker)
@@ -51,11 +51,11 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## Sample Project
 
-[RemoteDevicePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can [see this in action](uwpct://Controls?sample=RemoteDevicePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[RemoteDevicePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDevicePicker). You can [see this in action](uwpct://Controls?sample=RemoteDevicePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[RemoteDevicePicker XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
+[RemoteDevicePicker XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -66,12 +66,12 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## API
 
-* [RemoteDevicePicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker)
+* [RemoteDevicePicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker)
 
 ## Related Topics
 
 * [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
 * [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
-* [Connected apps and devices (Project Rome)](https://docs.microsoft.com/windows/uwp/launch-resume/connected-apps-and-devices)
-* [Communicate with a remote app service](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Connected apps and devices (Project Rome)](/windows/uwp/launch-resume/connected-apps-and-devices)
+* [Communicate with a remote app service](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
 * [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)

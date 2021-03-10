@@ -7,16 +7,16 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Configuring Animation Playback
 
-The [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) XAML element is responsible for controlling the playback of its Lottie animation source through the following properties and methods:
+The [AnimatedVisualPlayer](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) XAML element is responsible for controlling the playback of its Lottie animation source through the following properties and methods:
 
-* [AutoPlay](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.autoplay) plays a Lottie animation as soon as it is loaded.
-* [IsPlaying](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.isplaying) indicates whether a play is currently underway.
-* [PlaybackRate](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playbackrate) is a live property that modifies the rate of the animation; negative values change the direction of playback.
-* [PlayAsync(Double, Double, Boolean)](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) plays a Lottie animation asynchronously between two specified progress values, looping or once.
-* [Pause()](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.pause) pauses the animation.
-* [Resume()](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.resume) resumes a paused animation.
-* [Stop()](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.stop) stops and completes the current play.
-* [SetProgress(Double)](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.setprogress) moves the animation to the specified progress value.
+* [AutoPlay](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.autoplay) plays a Lottie animation as soon as it is loaded.
+* [IsPlaying](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.isplaying) indicates whether a play is currently underway.
+* [PlaybackRate](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playbackrate) is a live property that modifies the rate of the animation; negative values change the direction of playback.
+* [PlayAsync(Double, Double, Boolean)](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) plays a Lottie animation asynchronously between two specified progress values, looping or once.
+* [Pause()](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.pause) pauses the animation.
+* [Resume()](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.resume) resumes a paused animation.
+* [Stop()](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.stop) stops and completes the current play.
+* [SetProgress(Double)](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.setprogress) moves the animation to the specified progress value.
 
 Let’s set up a Lottie animation that plays in response to an event, for instance on ButtonClicked. Load the AnimatedVisualPlayer and configure its Source as before, but disable AutoPlay:
 
@@ -30,7 +30,7 @@ Let’s set up a Lottie animation that plays in response to an event, for instan
     </Border>
 ```
 
-Next, let’s configure the PlayAsync method with the from and to progress values and no looping enabled. We won’t `await` the PlayAsync because we don’t want to wait until the animation has finished playing. Since we’re intentionally ignoring the IAsyncAction returned from PlayAsync in this case, we assign the result to a [C# 7 discard](https://docs.microsoft.com/dotnet/csharp/discards#a-standalone-discard) to avoid a CS1998 compiler warning.
+Next, let’s configure the PlayAsync method with the from and to progress values and no looping enabled. We won’t `await` the PlayAsync because we don’t want to wait until the animation has finished playing. Since we’re intentionally ignoring the IAsyncAction returned from PlayAsync in this case, we assign the result to a [C# 7 discard](/dotnet/csharp/discards#a-standalone-discard) to avoid a CS1998 compiler warning.
 
 ```csharp
     private void PlayButton_Click(object sender, RoutedEventArgs e)
@@ -102,5 +102,5 @@ Now, let's introduce Pause, Stop, and Reverse Buttons and update the method abov
 
 * [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/PlaybackPage.xaml.cs) for sample: configuring animation playback
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
-* [AnimatedVisualPlayer](https://docs.microsoft.com/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
+* [AnimatedVisualPlayer](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) API reference
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

@@ -7,13 +7,13 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, observable, group
 
 # Observable Groups
 
-Provides helper class to easily create grouped collections that can be used in [ListView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ListView) or [GridView](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.GridView) controls to display grouped items.
+Provides helper class to easily create grouped collections that can be used in [ListView](/uwp/api/Windows.UI.Xaml.Controls.ListView) or [GridView](/uwp/api/Windows.UI.Xaml.Controls.GridView) controls to display grouped items.
 
 ## ObservableGroup<TKey, TValue>
 
 A group of `TValue` objects with a key of type `TKey`.
 
-It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection\<TValue>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
+It is an implementation of [IGrouping<Tkey, TValue>](/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection\<TValue>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the groups.
 
 | Property | Type | Description |
@@ -22,10 +22,10 @@ It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the group
 
 ## ObservableGroupedCollection<TKey, TValue>
 
-A list of groups that can be used by a [CollectionViewSource](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource) to display groups in a `ListView` or `GridView`.
+A list of groups that can be used by a [CollectionViewSource](/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource) to display groups in a `ListView` or `GridView`.
 Each group inside the collection has an observable `TKey` key and contains `TValue` values.
 
-It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection\<T>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
+It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection\<T>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
 
 ```csharp
 // Grab a sample type
@@ -82,7 +82,7 @@ If changes are made to the underlying collection, the `ReadOnlyObservableGrouped
 
 This interface allows us to use `x:Bind` with `ObservableGroup{TKey, TValue}` and `ReadOnlyObservableGroup{TKey, TValue}` by providing
 a non-generic type that we can declare using `x:DataType`.
-It extends [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged?view=netstandard-2.0).
+It extends [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypropertychanged?view=netstandard-2.0).
 
 ```xaml
 <DataTemplate x:Key="GroupDataTemplate"
@@ -106,9 +106,9 @@ It extends [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system
 
 ## Sample Project
 
-[Observable group Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ObservableGroup).
+[Observable group Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ObservableGroup).
 
-You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -119,12 +119,12 @@ You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Win
 
 ## API
 
-* [Observable group source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Collections)
+* [Observable group source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Collections)
 
 ## Related Topics
 
-* [CollectionViewSource](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource)
-* [ListView and GridView](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/listview-and-gridview)
-* [ObservableCollection\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
-* [ReadOnlyObservableCollection\<T\>](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
-* [IGrouping\<TKey,TElement\>](https://docs.microsoft.com/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)
+* [CollectionViewSource](/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource)
+* [ListView and GridView](/windows/uwp/design/controls-and-patterns/listview-and-gridview)
+* [ObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
+* [ReadOnlyObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
+* [IGrouping\<TKey,TElement\>](/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)
