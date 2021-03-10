@@ -1,7 +1,7 @@
 ---
 title: DispatcherHelper
 author: nmetulev
-description: The DispatcherHelper class enables easy interaction with CoreDispatcher, mainly in the case of executing a block of code on the UI thread from a non-UI thread.
+description: The DispatcherHelper class enables easy interaction with CoreDispatcher, mainly in the case of executing a block of code on the UI thread from a non-UI thread (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, DispatcherHelper
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # DispatcherHelper
+
+> [!WARNING]
+> This type has been deprecated and it will be removed from the Windows Community Toolkit, please refer to the [`DispatcherQueueExtensions`](..\extensions\DispatcherQueueExtensions.md) type.
 
 The DispatcherHelper class enables easy interaction with [CoreDispatcher](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.coredispatcher.aspx), mainly in the case of executing a block of code on the UI thread from a non-UI thread.
 
