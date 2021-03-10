@@ -10,7 +10,7 @@ dev_langs:
 
 # InAppNotification
 
-The [InAppNotification](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
+The [InAppNotification](/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
 
 The control should be placed where you want your notification to be displayed in the page, generally in the root grid.
 
@@ -238,14 +238,14 @@ You can change this behavior with one of these values:
 
 If you want to add styles to the Toolkit, please follow these steps :
 
-1. Create a `ResourceDictionary` file in [Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles) folder
+1. Create a `ResourceDictionary` file in [Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles) folder
 2. Create a new `Style` with `TargetType="local:InAppNotification"`
 3. Create a new `ControlTemplate` with `TargetType="local:InAppNotification"` and add a `ContentPresenter` inside the Template
 4. Do not forget to set the `Template` property inside your `Style` resource
 
 ## Sample Project
 
-[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[InAppNotification Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
@@ -260,4 +260,4 @@ If you want to add styles to the Toolkit, please follow these steps :
 
 ## API
 
-- [InAppNotification source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification)
+- [InAppNotification source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification)
