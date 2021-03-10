@@ -11,9 +11,9 @@ dev_langs:
 # Light
 
 > [!NOTE]
-> The Light effect has been removed from the Windows Community Toolkit. Please use [XAML lighting](https://docs.microsoft.com/windows/uwp/composition/xaml-lighting) instead.
+> The Light effect has been removed from the Windows Community Toolkit. Please use [XAML lighting](/windows/uwp/composition/xaml-lighting) instead.
 
-The [Light animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.light) behavior performs a point light (A point source of light that emits light in all directions) in the middle of a given UIElement. You set the distance property of the light to determine how bright the light will be. The closer the light source, the darker the UI element will be.
+The [Light animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.light) behavior performs a point light (A point source of light that emits light in all directions) in the middle of a given UIElement. You set the distance property of the light to determine how bright the light will be. The closer the light source, the darker the UI element will be.
 
 > [!NOTE]
 > Heavy usage of effects may have a negative impact on the performance of your application.
@@ -98,7 +98,7 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 
 ## Sample Project
 
-[Light Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Light Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Light). You can [see this in action](uwpct://Animations?sample=Light) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -109,8 +109,8 @@ Await MyUIElement.Light(distance:=5, duration:=2500, delay:=250, color:=Colors.R
 
 ## API
 
-- [Light source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Light.cs)
+- [Light source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Light.cs)
 
 ## Related Topics
 
-- [SceneLightingEffect Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Effects.SceneLightingEffect)
+- [SceneLightingEffect Class](/uwp/api/Windows.UI.Composition.Effects.SceneLightingEffect)
