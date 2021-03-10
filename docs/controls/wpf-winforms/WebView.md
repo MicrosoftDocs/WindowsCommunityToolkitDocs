@@ -587,5 +587,5 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in t
 
 ## API
 
-- [WebView (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Forms.UI.Controls.WebView)
-- [WebView (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Wpf.UI.Controls.WebView)
+- [WebView (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls.WebView)
+- [WebView (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls.WebView)

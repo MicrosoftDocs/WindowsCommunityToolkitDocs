@@ -81,8 +81,8 @@ The following properties wrap corresponding [properties](/uwp/api/Windows.UI.Xam
 
 ## API
 
-* [MediaPlayerElement (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
-* [MediaPlayerElement (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
+* [MediaPlayerElement (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls/MediaPlayerElement)
+* [MediaPlayerElement (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls/MediaPlayerElement)
 
 ## Related topics
 

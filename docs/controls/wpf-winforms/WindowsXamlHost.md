@@ -282,5 +282,5 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WindowsXamlHo
 
 ## API source code
 
-* [WindowsXamlHost (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Forms.UI.XamlHost)
-* [WindowsXamlHost (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Wpf.UI.XamlHost)
+* [WindowsXamlHost (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.XamlHost)
+* [WindowsXamlHost (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.XamlHost)

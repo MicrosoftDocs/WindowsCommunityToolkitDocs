@@ -189,7 +189,7 @@ The following events wrap corresponding [events](/uwp/api/windows.ui.xaml.contro
 
 ## API
 
-- [MapControl (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Forms.UI.Controls/MapControl)
+- [MapControl (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls/MapControl)
 - [MapControl (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/MapControl)
 
 ## Related topics

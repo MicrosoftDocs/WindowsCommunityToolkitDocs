@@ -257,5 +257,5 @@ Dim returnValue As String = Await webViewCompatible1.InvokeScript("myScript")
 
 ## API
 
-* [WebViewCompatible (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Forms.UI.Controls.WebView)
-* [WebViewCompatible (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/7.0.0/Microsoft.Toolkit.Wpf.UI.Controls.WebView)
+* [WebViewCompatible (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls.WebView)
+* [WebViewCompatible (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls.WebView)
