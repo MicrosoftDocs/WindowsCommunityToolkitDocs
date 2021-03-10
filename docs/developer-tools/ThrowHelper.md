@@ -158,7 +158,7 @@ The ThrowHelper class supports .NET Standard
 
 ## API
 
-- [ThrowHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Diagnostics/ThrowHelper.cs)
+- [ThrowHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Diagnostics/ThrowHelper.cs)
 
 ## Related Topics
 
