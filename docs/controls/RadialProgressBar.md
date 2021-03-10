@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # RadialProgressBar XAML Control
 
-The [Radial Progress Bar Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+The [Radial Progress Bar Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
 
 The control uses the same dependency properties as the standard Progress Bar, with the addition of:
 
@@ -42,11 +42,11 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## Sample Project
 
-[RadialProgressBar Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[RadialProgressBar Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialProgressBar). You can [see this in action](uwpct://Controls?sample=RadialProgressBar) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[RadialProgressBar XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml) is the XAML template used in the toolkit for the default styling.
+[RadialProgressBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -57,4 +57,4 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## API
 
-- [RadialProgressBar source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar)
+- [RadialProgressBar source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar)
