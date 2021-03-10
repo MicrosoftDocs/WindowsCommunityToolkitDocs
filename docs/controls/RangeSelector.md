@@ -10,7 +10,7 @@ dev_langs:
 
 # RangeSelector XAML Control
 
-The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
+The [RangeSelector Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RangeSelector)
@@ -82,11 +82,11 @@ End Sub
 
 ## Sample Project
 
-[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[RangeSelector Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[RangeSelector XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
+[RangeSelector XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -97,4 +97,4 @@ End Sub
 
 ## API
 
-* [RangeSelector source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector)
+* [RangeSelector source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector)

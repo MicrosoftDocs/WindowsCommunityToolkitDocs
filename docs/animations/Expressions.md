@@ -94,7 +94,7 @@ A brief recap of ExpressionAnimations:
 
 - Like other CompositionAnimations, ExpressionAnimations are templates, meaning you can create an Expression and use it to animate multiple objects. You can also change aspects of the animation and have those changes take effect the next time you animate an object (without affecting any previously connected animations).
 
-- For more information on ExpressionAnimations, [please check our documentation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
+- For more information on ExpressionAnimations, [please check our documentation](/uwp/api/Windows.UI.Composition.ExpressionAnimation).
 
 ExpressionAnimations can create some very powerful and unique experiences, but can be a bit cumbersome to author. One of the big pain points with ExpressionAnimations is that the equation or mathematical relationship that defines the animation is written as a string, e.g.:
 
@@ -1146,4 +1146,4 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 ## <a name="api"></a>API
 
-- [Expressions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)
+- [Expressions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)

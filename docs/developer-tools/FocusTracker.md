@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # FocusTracker XAML Control
 
-The [FocusTracker Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.developertools.focustracker) can be used to display information about the current focused XAML element (if any).
+The [FocusTracker Control](/dotnet/api/microsoft.toolkit.uwp.developertools.focustracker) can be used to display information about the current focused XAML element (if any).
 
 FocusTracker will display the following information (when available) about the current focused XAML element:
 
@@ -37,7 +37,7 @@ FocusTracker will display the following information (when available) about the c
 
 ## Sample Project
 
-[FocusTracker Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can [see this in action](uwpct://Controls?sample=FocusTracker) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[FocusTracker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusTracker). You can [see this in action](uwpct://Controls?sample=FocusTracker) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -48,4 +48,4 @@ FocusTracker will display the following information (when available) about the c
 
 ## API
 
-- [FocusTracker source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.DeveloperTools/FocusTracker)
+- [FocusTracker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.DeveloperTools/FocusTracker)

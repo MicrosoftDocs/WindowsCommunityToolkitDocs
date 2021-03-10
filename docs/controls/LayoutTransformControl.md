@@ -7,15 +7,15 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # LayoutTransformControl
 
-The [LayoutTransformControl](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.layouttransformcontrol) is a control that applies Matrix transformations on any `FrameworkElement` of your application.
+The [LayoutTransformControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.layouttransformcontrol) is a control that applies Matrix transformations on any `FrameworkElement` of your application.
 
 The transformations that can be applied are one of the following:
 
-* [RotateTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.rotatetransform)
-* [ScaleTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.scaletransform)
-* [SkewTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.skewtransform)
-* [MatrixTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrixtransform)
-* [TransformGroup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.transformgroup)
+* [RotateTransform](/uwp/api/windows.ui.xaml.media.rotatetransform)
+* [ScaleTransform](/uwp/api/windows.ui.xaml.media.scaletransform)
+* [SkewTransform](/uwp/api/windows.ui.xaml.media.skewtransform)
+* [MatrixTransform](/uwp/api/windows.ui.xaml.media.matrixtransform)
+* [TransformGroup](/uwp/api/windows.ui.xaml.media.transformgroup)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=LayoutTransformControl)
@@ -51,7 +51,7 @@ The transformations that can be applied are one of the following:
 
 ## Sample Project
 
-[LayoutTransformControl Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[LayoutTransformControl Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -62,13 +62,13 @@ The transformations that can be applied are one of the following:
 
 ## API
 
-*-* [LayoutTransformControl](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
+*-* [LayoutTransformControl](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
 
 ## Related Topics
 
 * [Expander](Expander.md)
-* [MatrixTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.matrixtransform)
-* [TransformGroup](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.transformgroup)
-* [RotateTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.rotatetransform)
-* [ScaleTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.scaletransform)
-* [SkewTransform](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.skewtransform)
+* [MatrixTransform](/uwp/api/windows.ui.xaml.media.matrixtransform)
+* [TransformGroup](/uwp/api/windows.ui.xaml.media.transformgroup)
+* [RotateTransform](/uwp/api/windows.ui.xaml.media.rotatetransform)
+* [ScaleTransform](/uwp/api/windows.ui.xaml.media.scaletransform)
+* [SkewTransform](/uwp/api/windows.ui.xaml.media.skewtransform)

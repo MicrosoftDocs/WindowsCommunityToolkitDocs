@@ -9,9 +9,9 @@ dev_langs:
 
 # ImplicitAnimationSet
 
-The [`ImplicitAnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ImplicitAnimationSet) type is the equivalent of [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet) in the context of implicit [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation). It represents a set of implicit animations that can only run on the [Composition layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer) and that are available in three categories: show, hide, and implicit animations. `ImplicitAnimationSet` restricts the type of contained animations to objects implementing the [`IImplicitTimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IImplicitTimeline) interface to offer an additional level of build-time safety when constructing animations from XAML. Similar to the other interfaces used for explicit animations this architecture is also extensible in that users can also easily plug in their custom types implementing this interface into an `ImplicitAnimationSet` collection.
+The [`ImplicitAnimationSet`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.ImplicitAnimationSet) type is the equivalent of [`AnimationSet`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet) in the context of implicit [Composition animations](/windows/uwp/composition/composition-animation). It represents a set of implicit animations that can only run on the [Composition layer](/windows/uwp/composition/visual-layer) and that are available in three categories: show, hide, and implicit animations. `ImplicitAnimationSet` restricts the type of contained animations to objects implementing the [`IImplicitTimeline`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.IImplicitTimeline) interface to offer an additional level of build-time safety when constructing animations from XAML. Similar to the other interfaces used for explicit animations this architecture is also extensible in that users can also easily plug in their custom types implementing this interface into an `ImplicitAnimationSet` collection.
 
-> **Platform APIs:** [`ImplicitAnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.ImplicitAnimationSet), [`AnimationSet`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet), [`IImplicitTimeline`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.IImplicitTimeline), [`Implicit`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.Implicit)
+> **Platform APIs:** [`ImplicitAnimationSet`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.ImplicitAnimationSet), [`AnimationSet`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSet), [`IImplicitTimeline`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.IImplicitTimeline), [`Implicit`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.Implicit)
 
 ## How it works
 
@@ -53,4 +53,4 @@ This code results in the following, when tested in one of the sample pages in th
 
 ## Examples
 
-You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp).
+You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp).

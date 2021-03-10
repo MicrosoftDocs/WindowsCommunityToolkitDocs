@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ScrollViewerExtensions (animations)
 
-The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions) type from the `Microsoft.Toolkit.Uwp.UI.Animations` package provides helper methods to handle expression animations on [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) controls.
+The [`ScrollViewerExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions) type from the `Microsoft.Toolkit.Uwp.UI.Animations` package provides helper methods to handle expression animations on [`ScrollViewer`](/uwp/api/windows.ui.xaml.controls.scrollviewer) controls.
 
-> **Platform APIs:** [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions)
+> **Platform APIs:** [`ScrollViewerExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.scrollviewerextensions)
 
 ## Expression animations
 
@@ -69,4 +69,4 @@ listScrollViewer.StartExpressionAnimation(shapesPanel, Axis.X, Axis.Y, VisualPro
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

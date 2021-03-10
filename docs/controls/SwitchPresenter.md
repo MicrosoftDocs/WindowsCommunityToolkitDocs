@@ -54,7 +54,7 @@ Unlike traditional approaches of showing/hiding components within a page, the `S
 ## Sample Project
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-[SwitchPresenter sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Primitives/SwitchPresenter.bind). You can [see this in action](uwpct://Controls?sample=SwitchPresenter) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[SwitchPresenter sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Primitives/SwitchPresenter.bind). You can [see this in action](uwpct://Controls?sample=SwitchPresenter) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -65,7 +65,7 @@ Unlike traditional approaches of showing/hiding components within a page, the `S
 
 ## API
 
-* [SwitchPresenter source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/SwitchPresenter)
+* [SwitchPresenter source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/SwitchPresenter)
 
 ## Related Topics
 

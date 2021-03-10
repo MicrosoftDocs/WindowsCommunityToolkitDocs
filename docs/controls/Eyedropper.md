@@ -10,10 +10,10 @@ dev_langs:
 
 # Eyedropper XAML Control
 
-The [Eyedropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.eyedropper) can pick up a color from anywhere in your application.
+The [Eyedropper Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.eyedropper) can pick up a color from anywhere in your application.
 
 > [!NOTE]
-> The Eyedropper Control uses [RenderTargetBitmap](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
+> The Eyedropper Control uses [RenderTargetBitmap](/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap) to get a screenshot of your app. In some cases RenderTargetBitmap may render incorrectly, which will cause eyedropper not to get the correct color value. Please make sure your xaml layout is reasonable, see [here](/uwp/api/windows.ui.xaml.media.imaging.rendertargetbitmap#xaml-visuals-and-rendertargetbitmap-capture-capabilities) for details.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=Eyedropper)
@@ -107,11 +107,11 @@ Dim color = Await eyedropper.Open()
 
 ## Sample Project
 
-[Eyedropper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Eyedropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Eyedropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
+[Eyedropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -122,4 +122,4 @@ Dim color = Await eyedropper.Open()
 
 ## API
 
-- [Eyedropper source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper)
+- [Eyedropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper)

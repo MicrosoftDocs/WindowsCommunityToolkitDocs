@@ -10,15 +10,15 @@ dev_langs:
 
 # FrameworkElement Extensions
 
-[`FrameworkElementExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.frameworkelementextensions) provides a collection of attached dependency properties, helpers and extension methods to work with [`FrameworkElement`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.frameworkelement) objects. In particular, it also includes a series of extension methods to explore the logical tree from a given UI element and find child or parent objects.
+[`FrameworkElementExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.frameworkelementextensions) provides a collection of attached dependency properties, helpers and extension methods to work with [`FrameworkElement`](/uwp/api/windows.ui.xaml.frameworkelement) objects. In particular, it also includes a series of extension methods to explore the logical tree from a given UI element and find child or parent objects.
 
-> **Platform APIs:** [`FrameworkElementExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.frameworkelementextensions), [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
+> **Platform APIs:** [`FrameworkElementExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.frameworkelementextensions), [`DependencyObjectExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
 
 ## Logical tree extensions
 
 The `FindChild` and `FindParent` methods (and their overloads) provide an easy way to explore the logical tree starting from a given `FrameworkElement` instance and find other controls connected to it.
 
-These APIs differ from the *visual tree* extensions (in the [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) class) where extra containers and styles can wrap other elements. The logical tree instead defines how controls are directly connected through construction. These methods can also be used on controls that aren't yet connected or rendered in the visual tree.
+These APIs differ from the *visual tree* extensions (in the [`DependencyObjectExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) class) where extra containers and styles can wrap other elements. The logical tree instead defines how controls are directly connected through construction. These methods can also be used on controls that aren't yet connected or rendered in the visual tree.
 
 Here are some examples of how these extensions can be used:
 
@@ -93,7 +93,7 @@ Here is an example of how the `ActualWidth` attached property can be used in a b
 
 ## AncestorType
 
-The `AncestorType` attached property will walk the visual tree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [`FindAncestor`](https://docs.microsoft.com/dotnet/api/system.windows.data.relativesourcemode) mode to [`RelativeSource`](https://docs.microsoft.com/dotnet/desktop/wpf/advanced/relativesource-markupextension) data binding in WPF.
+The `AncestorType` attached property will walk the visual tree from the attached element for another element of the specified type.  That value will be stored in the attached element's `Ancestor` property.  This can then be used for binding to properties on the parent element.  This is similar to the [`FindAncestor`](/dotnet/api/system.windows.data.relativesourcemode) mode to [`RelativeSource`](/dotnet/desktop/wpf/advanced/relativesource-markupextension) data binding in WPF.
 
 Here is an example of how this can be used:
 
@@ -105,7 +105,7 @@ Here is an example of how this can be used:
 
 ## Cursor
 
-The `Cursor` attached property enables you to easily change the mouse cursor over specific Framework elements. Values of this property are values from the [`CoreCursorType`](https://docs.microsoft.com/uwp/api/windows.ui.core.corecursortype) type.
+The `Cursor` attached property enables you to easily change the mouse cursor over specific Framework elements. Values of this property are values from the [`CoreCursorType`](/uwp/api/windows.ui.core.corecursortype) type.
 
 Here is how you can easily set a custom cursor type for a target `FrameworkElement` instance:
 
@@ -126,11 +126,11 @@ Here is how you can easily set a custom cursor type for a target `FrameworkEleme
 ```
 
 > [!NOTE]
-> Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
+> Even though Microsoft recommends in [UWP Design guidelines](/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
 
 > [!WARNING]
 > Because the UWP framework does not support metadata on attached properties, specifically the [`FrameworkPropertyMetadata.Inherits`](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the `Cursor` property might not work properly in some very specific XAML layout scenarios when combining nested `FrameworkElement`-s with different `CoreCursorType` values set on them.
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

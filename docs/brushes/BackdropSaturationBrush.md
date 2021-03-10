@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropSaturationBrush
 
-The [BackdropSaturationBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsaturationbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
+The [BackdropSaturationBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsaturationbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropSaturationBrush)
@@ -34,7 +34,7 @@ The [BackdropSaturationBrush](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Project
 
-[BackdropSaturationBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSaturationBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSaturationBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[BackdropSaturationBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSaturationBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSaturationBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -45,7 +45,7 @@ The [BackdropSaturationBrush](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## API
 
-* [BackdropSaturationBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropSaturationBrush.cs)
+* [BackdropSaturationBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropSaturationBrush.cs)
 
 ## Related Topics
 

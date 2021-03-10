@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # PipelineVisualFactory
 
-The [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) is a helper type that can be used to create sprite visuals with custom Win2D/Composition effects chains and attach them to UI elements. It can create the same visual brushes as the [`PipelineBrush`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) type, but it can attach them directly on the underlying [`Visual`](https://docs.microsoft.com/uwp/api/windows.ui.composition.visual) instance backing a UI element. This can make the XAML code less verbose and more efficient, as there is no need to insert additional elements just so that a brush can be applied to them.
+The [`PipelineVisualFactory`](/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) is a helper type that can be used to create sprite visuals with custom Win2D/Composition effects chains and attach them to UI elements. It can create the same visual brushes as the [`PipelineBrush`](/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) type, but it can attach them directly on the underlying [`Visual`](/uwp/api/windows.ui.composition.visual) instance backing a UI element. This can make the XAML code less verbose and more efficient, as there is no need to insert additional elements just so that a brush can be applied to them.
 
-> **Platform APIs:** [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory), [`PipelineBrush`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush)
+> **Platform APIs:** [`PipelineVisualFactory`](/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory), [`PipelineBrush`](/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush)
 
 ## Syntax
 
@@ -44,4 +44,4 @@ The [`PipelineVisualFactory`](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Examples
 
-You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp).
+You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp).

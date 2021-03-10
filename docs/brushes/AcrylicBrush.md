@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # AcrylicBrush
 
-The [AcrylicBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.acrylicbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that implements an acrylic effect with customizable parameters.
+The [AcrylicBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.acrylicbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that implements an acrylic effect with customizable parameters.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=AcrylicBrush)
@@ -55,7 +55,7 @@ Brush brush = PipelineBuilder.FromBackdropAcrylic(
 
 ## Sample Project
 
-[AcrylicBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[AcrylicBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -66,10 +66,10 @@ Brush brush = PipelineBuilder.FromBackdropAcrylic(
 
 ## API
 
-* [AcrylicBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/AcrylicBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [AcrylicBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/AcrylicBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 
 * [Win2D GaussianBlurEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
-* [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
+* [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)

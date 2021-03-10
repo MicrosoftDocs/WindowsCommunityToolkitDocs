@@ -9,7 +9,7 @@ dev_langs:
 
 # TabView XAML Control
 
-The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
+The [TabView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TabView)
@@ -126,15 +126,15 @@ The TabView supports data binding as well.  The following example shows binding 
 ```
 
 > [!NOTE]
-> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+> It's recommended to use an [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
 
 ## Sample Project
 
-[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[TabView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml) is the XAML template used in the toolkit for the default styling.
+[TabView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -149,6 +149,6 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## Related Topics
 
-- [ObservableCollection](https://docs.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1)
-- [IconElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.IconElement)
-- [TabControl (WPF)](https://docs.microsoft.com/dotnet/api/system.windows.controls.tabcontrol)
+- [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1)
+- [IconElement](/uwp/api/Windows.UI.Xaml.Controls.IconElement)
+- [TabControl (WPF)](/dotnet/api/system.windows.controls.tabcontrol)
