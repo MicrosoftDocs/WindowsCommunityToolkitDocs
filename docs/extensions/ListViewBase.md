@@ -72,4 +72,4 @@ The StretchItemContainerDirection property provides a way to stretch the ItemCon
 
 ## API
 
-* [ListViewBase source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
+* [ListViewBase source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
