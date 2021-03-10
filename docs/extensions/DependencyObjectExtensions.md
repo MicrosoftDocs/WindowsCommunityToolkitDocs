@@ -10,9 +10,9 @@ dev_langs:
 
 # DependencyObjectExtensions
 
-The [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) type provides a collection of extensions methods for [`DependencyObject`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.dependencyobject) objects. This class exposes several APIs to aid in using the [`VisualTreeHelper`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. There are a number of reasons why walking the visual tree might be useful, which are mentioned [in the docs](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.visualtreehelper?#traversing-a-visual-tree).
+The [`DependencyObjectExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions) type provides a collection of extensions methods for [`DependencyObject`](/uwp/api/windows.ui.xaml.dependencyobject) objects. This class exposes several APIs to aid in using the [`VisualTreeHelper`](/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. There are a number of reasons why walking the visual tree might be useful, which are mentioned [in the docs](/uwp/api/windows.ui.xaml.media.visualtreehelper?#traversing-a-visual-tree).
 
-> **Platform APIs:** [`DependencyObjectExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
+> **Platform APIs:** [`DependencyObjectExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
 
 ## Syntax
 
@@ -66,4 +66,4 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
