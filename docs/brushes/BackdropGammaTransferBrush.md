@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropGammaTransferBrush
 
-The [BackdropGammaTransferBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropgammatransferbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) which modifies the color values of whatever is behind it in the application.
+The [BackdropGammaTransferBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropgammatransferbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) which modifies the color values of whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropGammaTransferBrush)
@@ -36,7 +36,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## Sample Code
 
-[BackdropGammaTransferBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[BackdropGammaTransferBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -47,7 +47,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## API
 
-* [BackdropGammaTransferBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropGammaTransferBrush.cs)
+* [BackdropGammaTransferBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropGammaTransferBrush.cs)
 
 ## Related Topics
 
