@@ -128,4 +128,3 @@ You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Win
 - [ObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
 - [ReadOnlyObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
 - [IGrouping\<TKey,TElement\>](/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)
-
