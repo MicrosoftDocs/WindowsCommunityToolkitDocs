@@ -1,7 +1,7 @@
 ---
 title: Logical Tree Extensions
 author: nmetulev
-description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures.
+description: The LogicalTree extensions provide a collection of extensions methods for UI controls. It provides FrameworkElement extensions to aid in walking the logical tree of control structures (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Logical Tree, extentions
 dev_langs:
   - csharp
@@ -10,9 +10,12 @@ dev_langs:
 
 # Logical Tree Extensions
 
-The [LogicalTree](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type instead.
 
-It provides [FrameworkElement](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.FrameworkElement) extensions to aid in walking the logical tree of control structures.
+The [LogicalTree](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.logicaltree) extensions provide a collection of extensions methods for UI controls.
+
+It provides [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement) extensions to aid in walking the logical tree of control structures.
 
 This differs from the *Visual Tree* where extra containers and styles can wrap other elements.
 The Logical Tree instead defines how controls are directly connected through construction.
@@ -33,7 +36,7 @@ control = uiElement.FindChild<ListView>();
 // Find all logical child controls of the specified type.
 foreach (var child in uiElement.FindChildren<ListViewItem>())
 {
-	// ...
+    // ...
 }
 
 // Find first logical parent using its name.
@@ -45,6 +48,7 @@ control = uiElement.FindParent<Grid>();
 // Retrieves the Content for the specified control from whatever its 'Content' Property may be.
 var content = uiElement.GetContentControl();
 ```
+
 ```vb
 ' Include namespace to access extensions.
 Imports Microsoft.Toolkit.Uwp.UI.Extensions
@@ -74,10 +78,10 @@ Dim content = uiElement.GetContentControl()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| FindChild<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical child control of a specified type |
+| FindChild\<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical child control of a specified type |
 | FindChildByName(this FrameworkElement, String) | FrameworkElement | Find logical child control using its name |
-| FindChildren<T>(this FrameworkElement) | IEnumerable<T> where T : FrameworkElement | Find all logical child controls of the specified type |
-| FindParent<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical parent control of a specified type |
+| FindChildren\<T>(this FrameworkElement) | IEnumerable\<T> where T : FrameworkElement | Find all logical child controls of the specified type |
+| FindParent\<T>(this FrameworkElement) | T where T : FrameworkElement | Find first logical parent control of a specified type |
 | FindParentByName(this FrameworkElement, String) | FrameworkElement | Finds the logical parent element with the given name or returns null |
 | GetContentControl(this FrameworkElement) | UIElement | Retrieves the Content control of this element as defined by the ContentPropertyAttribute |
 
@@ -90,8 +94,8 @@ Dim content = uiElement.GetContentControl()
 
 ## API
 
-* [LogicalTree extensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/LogicalTree.cs)
+* [LogicalTree extensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/LogicalTree.cs)
 
 ## Related Topics
 
-- [VisualTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/visualtree)
+* [VisualTree Extensions](/windows/communitytoolkit/extensions/visualtree)

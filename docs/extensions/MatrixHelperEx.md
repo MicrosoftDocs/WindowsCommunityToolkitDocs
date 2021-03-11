@@ -1,14 +1,18 @@
 ---
 title: MatrixHelperEx
 author: michael-hawker
-description: Extra UWP MatrixHelper-like methods
+description: Extra UWP MatrixHelper-like methods (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix, MatrixHelper, Multiply, round, Rect, Transform
 dev_langs:
   - csharp
 ---
 
 # MatrixHelperEx
-[MatrixHelperEx](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
+
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
+
+[MatrixHelperEx](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
 ## Methods
 
@@ -20,18 +24,18 @@ dev_langs:
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
 ## API Source Code
 
-- [MatrixHelperEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/Media/MatrixHelperEx.cs)
+- [MatrixHelperEx source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/Media/MatrixHelperEx.cs)
 
 ## Related Topics
 
-- [Windows.UI.Xaml.Media.Matrix](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Media.Matrix)
-- [Windows.Foundation.Rect](https://docs.microsoft.com/en-us/uwp/api/Windows.Foundation.Rect)
-- [System.Windows.Media.Matrix](https://msdn.microsoft.com/en-us/library/system.windows.media.matrix(v=vs.110).aspx)
-- [System.Windows.Rect](https://msdn.microsoft.com/en-us/library/system.windows.rect(v=vs.110).aspx)
+- [Windows.UI.Xaml.Media.Matrix](/uwp/api/Windows.UI.Xaml.Media.Matrix)
+- [Windows.Foundation.Rect](/uwp/api/Windows.Foundation.Rect)
+- [System.Windows.Media.Matrix](https://msdn.microsoft.com/library/system.windows.media.matrix(v=vs.110).aspx)
+- [System.Windows.Rect](https://msdn.microsoft.com/library/system.windows.rect(v=vs.110).aspx)

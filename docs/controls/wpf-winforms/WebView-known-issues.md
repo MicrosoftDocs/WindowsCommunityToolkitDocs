@@ -13,35 +13,35 @@ Answers to a number of [*Frequently Asked Questions on WebView*](./WebView.md#fr
 
 ## WebView control members
 
-The **WebView** control does not implement these methods of the [IWebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol).
+The **WebView** control does not implement these methods of the [IWebViewControl](/uwp/api/windows.web.ui.iwebviewcontrol).
 
-* [NavigateToLocalStreamUri](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.navigatetolocalstreamuri). Instead use `NavigateToLocal`.
+* [NavigateToLocalStreamUri](/uwp/api/windows.web.ui.iwebviewcontrol.navigatetolocalstreamuri). Instead use `NavigateToLocal`.
 
-* [NavigateWithHttpRequestMessage](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.navigatewithhttprequestmessage)
+* [NavigateWithHttpRequestMessage](/uwp/api/windows.web.ui.iwebviewcontrol.navigatewithhttprequestmessage)
 
-* [CapturePreviewToStreamAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.capturepreviewtostreamasync)
+* [CapturePreviewToStreamAsync](/uwp/api/windows.web.ui.iwebviewcontrol.capturepreviewtostreamasync)
 
-* [CaptureSelectedContentToDataPackageAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.captureselectedcontenttodatapackageasync)
+* [CaptureSelectedContentToDataPackageAsync](/uwp/api/windows.web.ui.iwebviewcontrol.captureselectedcontenttodatapackageasync)
 
-* [BuildLocalStreamUri](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri)
+* [BuildLocalStreamUri](/uwp/api/windows.web.ui.iwebviewcontrol.buildlocalstreamuri)
 
-The **WebView** control implements these events of the [IWebViewControl](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol), but they don't work as expected.
+The **WebView** control implements these events of the [IWebViewControl](/uwp/api/windows.web.ui.iwebviewcontrol), but they don't work as expected.
 
-* [LongRunningScriptDetected](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.longrunningscriptdetected)
+* [LongRunningScriptDetected](/uwp/api/windows.web.ui.iwebviewcontrol.longrunningscriptdetected)
 
-* [UnsafeContentWarningDisplaying](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.unsafecontentwarningdisplaying)
+* [UnsafeContentWarningDisplaying](/uwp/api/windows.web.ui.iwebviewcontrol.unsafecontentwarningdisplaying)
 
-* [UnsupportedUriSchemeIdentified](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.unsupportedurischemeidentified)
+* [UnsupportedUriSchemeIdentified](/uwp/api/windows.web.ui.iwebviewcontrol.unsupportedurischemeidentified)
 
-* [UnviewableContentIdentified](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.unviewablecontentidentified)
+* [UnviewableContentIdentified](/uwp/api/windows.web.ui.iwebviewcontrol.unviewablecontentidentified)
 
-* [NewWindowRequested](https://docs.microsoft.com/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested)
+* [NewWindowRequested](/uwp/api/windows.web.ui.iwebviewcontrol.newwindowrequested)
 
 ### InvokeScriptAsync
 
-* Contrary to its name, the [WebViewControl.InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method is not actually asynchrounous, as the Win32 application and WebView share the same input queue.
+* Contrary to its name, the [WebViewControl.InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method is not actually asynchrounous, as the Win32 application and WebView share the same input queue.
 
-* [WebViewControl.InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) only returns strings. For example, `WebView.InvokeScriptAsync("eval", "1==1")` returns an empty string rather than *true*, unless you use *toString*:
+* [WebViewControl.InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) only returns strings. For example, `WebView.InvokeScriptAsync("eval", "1==1")` returns an empty string rather than *true*, unless you use *toString*:
 `WebView.InvokeScriptAsync("eval", "(1==1).toString()")`
 
 ## Rendering and layout
@@ -53,7 +53,6 @@ The **WebView** control implements these events of the [IWebViewControl](https:/
 * The **WebView** control doesn't appear at the correct scale when users move the host application between monitors that have different screen resolutions.
 
   To workaround this issue, see the [Enable the WebView control to appear properly on high DPI displays](WebView.md#high-dpi) section of the [WebView](WebView.md) guide.
-
 
 ## Performance
 
@@ -107,9 +106,9 @@ The **WebView** control implements these events of the [IWebViewControl](https:/
 
 ## WebView browser
 
-* The [WebBrower.ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property and [WebView.AddWebAllowedObject(String, Object)](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) are not supported.
+* The [WebBrower.ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property and [WebView.AddWebAllowedObject(String, Object)](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) are not supported.
 
-  Instead, use the [WebViewControl.InvokeScriptAsync](https://docs.microsoft.com/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method.
+  Instead, use the [WebViewControl.InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method.
 
 * You can't programmatically navigate by using a new window.
 

@@ -7,14 +7,14 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # BackdropSepiaBrush
 
-The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsepiabrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
+The [BackdropSepiaBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsepiabrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that blurs whatever is behind it in the application.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=BackdropSepiaBrush)
 
 ## Syntax
 
-```xml
+```xaml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <media:BackdropSepiaBrush Intensity="0.75" />
@@ -34,7 +34,7 @@ The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## Sample Project
 
-[BackdropSepiaBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSepiaBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSepiaBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BackdropSepiaBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropSepiaBrush). You can [see this in action](uwpct://Brushes?sample=BackdropSepiaBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -45,8 +45,8 @@ The [BackdropSepiaBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit
 
 ## API
 
-* [BackdropSepiaBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropSepiaBrush.cs)
+* [BackdropSepiaBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropSepiaBrush.cs)
 
 ## Related Topics
 
-* [Win2D SepiaEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SepiaEffect.htm)
+* [Win2D SepiaEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SepiaEffect.htm)

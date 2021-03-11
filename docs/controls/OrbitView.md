@@ -1,15 +1,15 @@
 ---
-title: OrbitView XAML Control
+title: OrbitView
 author: nmetulev
 description: The OrbitView is an ItemsControl where all items are arranged in circle around a center element
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, OrbitView, xaml control, xaml
 ---
 
-# OrbitView XAML Control
+# OrbitView
 
-The [OrbitView control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) provides a new control, inherited from the `ItemsControl`. All items are arranged in circle around a center element
+The [OrbitView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) control provides a new control, inherited from the `ItemsControl`. All items are arranged in circle around a center element
 
-[OrbitViewDataItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
+[OrbitViewDataItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitviewdataitem) is a helper class used for specifying size and distance of each item of the `OrbitView`. To work properly, the `ItemSource` of the `OrbitView` should be set to en `IEnumerable<OrbitViewDataItem>`. Objects extending OrbitViewDataItem will also work. Alternatively, OrbitViewDataItem has the `Item` object property that can be used to store additional objects and properties.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=OrbitView)
@@ -74,7 +74,7 @@ The [OrbitView control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | Distance | double | Gets or sets a value indicating the distance from the center. Expected value betweeen 0 and 1 |
 | Image | ImageSource | Gets or sets a value indicating the image of the item |
 | Item | object | Gets or sets a value of an object that can be used to store model data |
-| Label | string | Gets or sets a value indicating the name of the item. Used for [AutomationProperties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Automation.AutomationProperties) |
+| Label | string | Gets or sets a value indicating the name of the item. Used for [AutomationProperties](/uwp/api/Windows.UI.Xaml.Automation.AutomationProperties) |
 
 ## Events
 
@@ -133,11 +133,11 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## Sample Project
 
-[Carousel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Carousel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[OrbitView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml) is the XAML template used in the toolkit for the default styling.
+[OrbitView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -148,4 +148,4 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## API
 
-* [OrbitView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView)
+* [OrbitView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/OrbitView)

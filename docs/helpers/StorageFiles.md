@@ -10,7 +10,7 @@ dev_langs:
 
 # StorageFileHelper
 
-The [StorageFileHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.storagefilehelper) is a static utility class that provides functions to help with reading and writing of text and bytes to the disk.  These functions are all wrapped into Async tasks.
+The [StorageFileHelper](/dotnet/api/microsoft.toolkit.uwp.helpers.storagefilehelper) is a static utility class that provides functions to help with reading and writing of text and bytes to the disk.  These functions are all wrapped into Async tasks.
 
 ## Syntax
 
@@ -22,13 +22,13 @@ StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
 // Save some text to a file named appFilename.txt (in the local cache folder)
 var storageFile = await StorageFileHelper.WriteTextToLocalCacheFileAsync(myText, "appFilename.txt");
 
-// Load some text from a file named appFilename.txt in the local cache folder	
+// Load some text from a file named appFilename.txt in the local cache folder 
 string loadedText = await StorageFileHelper.ReadTextFromLocalCacheFileAsync("appFilename.txt");
 
 // Save some text to a file named appFilename.txt (in the local folder)
 storageFile = await StorageFileHelper.WriteTextToLocalFileAsync(myText, "appFilename.txt");
 
-// Load some text from a file named appFilename.txt in the local folder	
+// Load some text from a file named appFilename.txt in the local folder 
 loadedText = await StorageFileHelper.ReadTextFromLocalFileAsync("appFilename.txt");
 
 // Check if a file exists in a specific folder
@@ -43,6 +43,7 @@ bool isFileNameValid = StorageFileHelper.IsFileNameValid("appFilename.txt");
 // Check if a file path is valid or not
 bool isFilePathValid = StorageFileHelper.IsFilePathValid("folder/appFilename.txt");
 ```
+
 ```vb
 ' NOTE This must be used from an async function
 Dim myText As String = "Great information that the users wants to keep"
@@ -51,13 +52,13 @@ Dim localFolder As StorageFolder = Windows.Storage.ApplicationData.Current.Local
 ' Save some text to a file named appFilename.txt (in the local cache folder)
 Dim storageFile = Await StorageFileHelper.WriteTextToLocalCacheFileAsync(myText, "appFilename.txt")
 
-' Load some text from a file named appFilename.txt in the local cache folder	
+' Load some text from a file named appFilename.txt in the local cache folder 
 Dim loadedText As String = Await StorageFileHelper.ReadTextFromLocalCacheFileAsync("appFilename.txt")
 
 ' Save some text to a file named appFilename.txt (in the local folder)
 storageFile = Await StorageFileHelper.WriteTextToLocalFileAsync(myText, "appFilename.txt")
 
-' Load some text from a file named appFilename.txt in the local folder	
+' Load some text from a file named appFilename.txt in the local folder 
 loadedText = Await StorageFileHelper.ReadTextFromLocalFileAsync("appFilename.txt")
 
 ' Check if a file exists in a specific folder
@@ -102,7 +103,7 @@ Dim isFilePathValid As Boolean = StorageFileHelper.IsFilePathValid("folder/appFi
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.UWP/Helpers/Test_StorageFileHelper.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Helpers/Test_StorageFileHelper.cs)
 
 ## Requirements
 
@@ -113,4 +114,4 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## API
 
-* [Storage File Helper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs)
+* [Storage File Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/StorageFileHelper.cs)

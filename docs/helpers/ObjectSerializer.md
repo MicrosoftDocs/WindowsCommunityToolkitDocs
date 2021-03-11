@@ -16,8 +16,8 @@ You should implement IObjectSerializer when you need to write data using this to
 
 | Methods | Return Type | Description |
 |---------|-------------|-------------|
-| Serialize<T>(T)        | string | Serialize an object of type T into a string. |
-| Deserialize<T>(string) | T      | Deserialize a string to an object of type T. |
+| Serialize\<T>(T)        | string | Serialize an object of type T into a string. |
+| Deserialize\<T>(string) | T      | Deserialize a string to an object of type T. |
 
 ## Examples
 
@@ -90,8 +90,8 @@ namespace Contoso.Helpers
 
 ## API
 
-* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
+* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
 
 ## Related topics
 
-* [ObjectStorage](https://docs.microsoft.com/en-us/windows/communitytoolkit/helpers/objectstorage)
+* [ObjectStorage](/windows/communitytoolkit/helpers/objectstorage)

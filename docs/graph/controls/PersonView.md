@@ -9,7 +9,7 @@ dev_langs:
 
 # PersonView XAML Control
 
-The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
+The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PersonView)
@@ -39,7 +39,7 @@ The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.c
 
 ## Sample Project
 
-[PersonView sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PersonView). You can [see this in action](uwpct://Controls?sample=PersonView) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PersonView sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PersonView). You can [see this in action](uwpct://Controls?sample=PersonView) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -50,9 +50,9 @@ The [PersonView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.c
 
 ## API
 
-* [PersonView source code](https://github.com/windows-toolkit/Graph-Controls/tree/master/Microsoft.Toolkit.Graph.Controls/Controls/PersonView)
+* [PersonView source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/PersonView)
 
 ## Related Topics
 
-* [Person Graph API](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-beta)
-* [MGT Person Component](https://docs.microsoft.com/graph/toolkit/components/person)
+* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [MGT Person Component](/graph/toolkit/components/person)

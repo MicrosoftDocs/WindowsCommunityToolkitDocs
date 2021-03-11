@@ -1,13 +1,13 @@
 ---
-title: DataGrid XAML Control
+title: DataGrid
 author: harinikmsft
 description: The DataGrid Control presents data in a customizable table of rows and columns.
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, DataGrid, xaml control, xaml
 ---
 
-# DataGrid XAML control
+# DataGrid
 
-The DataGrid control provides a flexible way to display a collection of data in rows and columns. 
+The DataGrid control provides a flexible way to display a collection of data in rows and columns.
 
 ![DataGrid control](../resources/images/Controls/DataGrid/DataGrid.gif)
 
@@ -15,7 +15,7 @@ The built-in column types include a text column, a check box column, a combobox 
 
 The DataGrid control supports common table formatting options, such as alternating row backgrounds and foregrounds and the ability to show or hide headers, grid lines, and scroll bars. Additionally, the control provides several style and template properties that you can use to completely change the appearance of the control and its rows, columns, cells, and row or column headers.
 
-The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns. 
+The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=DataGrid)
@@ -23,6 +23,7 @@ The DataGrid has built-in support for Narrator and Touch Narrator to help blind 
 ## How-Tos
 
 The following guidance sections describe the additional concepts and techniques that you can use to build DataGrid control features into your applications:
+
 * [Add a DataGrid control to a page](datagrid_guidance/datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](datagrid_guidance/styling_formatting_options.md)
 * [Sizing options in the DataGrid control](datagrid_guidance/sizing_options.md)
@@ -34,12 +35,13 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Sample Project
 
-See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp)**.
+See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp)**.
 
-Here's the [DataGrid sample source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
+Here's the [DataGrid sample source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
 
 If you have the **XAML Controls Gallery** app installed, [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
-- [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+
+* [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
 
 ## Requirements
 
@@ -50,5 +52,5 @@ If you have the **XAML Controls Gallery** app installed, [open the app and see t
 
 ## API
 
-* [DataGrid source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid)
-* [Silverlight DataGrid API](https://docs.microsoft.com/en-us/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))
+* [DataGrid source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DataGrid)
+* [Silverlight DataGrid API](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189753(v=vs.95))

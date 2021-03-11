@@ -1,5 +1,5 @@
 ---
-title: TokenizingTextBox XAML Control
+title: TokenizingTextBox
 author: michael-hawker
 description: A text input control that auto-suggests and displays token items.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TokenizingTextBox
@@ -7,9 +7,9 @@ dev_langs:
   - csharp
 ---
 
-# TokenizingTextBox XAML Control
+# TokenizingTextBox
 
-The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tokenizingtextbox) is an advanced [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox) which will display selected items as tokens within the textbox. A user can easily see the picked items or remove them easily.
+The [TokenizingTextBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tokenizingtextbox) is an advanced [AutoSuggestBox](/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox) which will display selected items as tokens within the textbox. A user can easily see the picked items or remove them easily.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TokenizingTextBox)
@@ -34,7 +34,7 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 | AutoSuggestBoxStyle | Style | Inner AutoSuggestBox style |
 | AutoSuggestBoxTextBoxStyle | Style | Inner TextBox style of the AutoSuggestBox |
 | PlaceholderText | string | Placeholder text to display when there's no text in the textbox |
-| QueryIcon | IconSource | 
+| QueryIcon | IconSource |
 | QueryText | string | Gets or sets the text query of the AutoSuggestBox |
 | SelectedItems | IList&lt;object&gt; | Collection of items selected by the user |
 | SelectedTokenText | string | Complete set of text for any selection in the control |
@@ -72,7 +72,7 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[TokenizingTextBox sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TokenizingTextBox). You can [see this in action](uwpct://Controls?sample=TokenizingTextBox) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TokenizingTextBox sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TokenizingTextBox). You can [see this in action](uwpct://Controls?sample=TokenizingTextBox) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -83,9 +83,9 @@ The [TokenizingTextBox](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API
 
-* [TokenizingTextBox source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TokenizingTextBox)
+* [TokenizingTextBox source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/TokenizingTextBox)
 
 ## Related Topics
 
-* [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox)
-* [IconSource](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.iconsource)
+* [AutoSuggestBox](/uwp/api/Windows.UI.Xaml.Controls.AutoSuggestBox)
+* [IconSource](/uwp/api/windows.ui.xaml.controls.iconsource)

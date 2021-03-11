@@ -1,17 +1,20 @@
 ---
 title: Array Extensions
 author: michael-hawker
-description: Array extension methods from toolkit
+description: Learn about array extension methods from the community toolkit. See code examples and view requirements.
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Extensions, array
 ---
 
-### Array Extensions
+# Array Extensions
+
+> [!WARNING]
+> These extensions have been partially moved to the `Microsoft.Toolkit.HighPerformance` package. Please refer to the .NET API browser for a comprehensive list of available APIs.
 
 Provides a few helpers for dealing with multidimensional and jagged arrays. Also, provides string helpers for debug output.
 
 ## Syntax
 
-```c#
+```csharp
 using Microsoft.Toolkit.Extensions;
 
 bool[,] inside = new bool[4, 5];
@@ -23,10 +26,10 @@ Debug.WriteLine(inside.ToArrayString());
 
 /*
 Output:
-[[False,	False,	False,	False,	False],
- [False,	True,	True,	True,	False],
- [False,	True,	True,	True,	False],
- [False,	False,	False,	False,	False]]
+[[False, False, False, False, False],
+ [False, True,  True,  True,  False],
+ [False, True,  True,  True,  False],
+ [False, False, False, False, False]]
  */
 ```
 
@@ -41,7 +44,7 @@ Output:
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit |
 | NuGet package | [Microsoft.Toolkit](https://www.nuget.org/packages/Microsoft.Toolkit/) |
@@ -50,4 +53,4 @@ The Array Extensions supports .NET Standard
 
 ## API
 
-* [ArrayExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)
+* [ArrayExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)

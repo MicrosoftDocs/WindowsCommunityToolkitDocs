@@ -1,5 +1,5 @@
 ---
-title: InAppNotification XAML Control
+title: InAppNotification
 author: nmetulev
 description: The InAppNotification control offers the ability to show local notifications in your application.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InAppNotification, in app notification, xaml control, xaml
@@ -10,7 +10,7 @@ dev_langs:
 
 # InAppNotification
 
-The [InAppNotification](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
+The [InAppNotification](/dotnet/api/microsoft.toolkit.uwp.ui.controls.inappnotification) control offers the ability to show local notifications in your application.
 
 The control should be placed where you want your notification to be displayed in the page, generally in the root grid.
 
@@ -62,6 +62,7 @@ You can change this behavior with one of these values:
 | Show(String, int) | void | Show notification using text as the content of the notification with a display duration |
 | Show(DataTemplate, int) | void | Show notification using DataTemplate as the content of the notification with a display duration |
 | Show(UIElement, int) | void | Show notification using UIElement as the content of the notification with a display duration |
+| Show(object, int) | void | Show notification using object as the content of the notification with a display duration. Object will be displayed using the `InAppNotification.ContentTemplate` data template. |
 
 ## Events
 
@@ -76,64 +77,87 @@ You can change this behavior with one of these values:
 
 - You have multiple options to show an in-app notification.
 
-    - By simply displaying the notification using the current template
+  - By simply displaying the notification using the current template
 
-        ```csharp
-        ExampleInAppNotification.Show();
-        ```
-        ```vb
-        ExampleInAppNotification.Show()
-        ```
+    ```csharp
+    ExampleInAppNotification.Show();
+    ```
 
-    - By using a simple text content.
+    ```vb
+    ExampleInAppNotification.Show()
+    ```
 
-        ```csharp
-        ExampleInAppNotification.Show("Some text.");
-        ```
-        ```vb
-        ExampleInAppNotification.Show("Some text.")
-        ```
+  - By using a simple text content.
 
-    - By using a UIElement (with a container as parent, ex: Grid)
+    ```csharp
+    ExampleInAppNotification.Show("Some text.");
+    ```
 
-        ```csharp
-        var grid = new Grid();
+    ```vb
+    ExampleInAppNotification.Show("Some text.")
+    ```
 
-        // TODO : Construct the Grid in C#
-        ExampleInAppNotification.Show(grid);
-        ```
-        ```vb
-        Dim grid = New Grid()
+  - By using a UIElement (with a container as parent, ex: Grid)
 
-        ' TODO : Construct the Grid in code
-        ExampleInAppNotification.Show(grid)
-        ```
+    ```csharp
+    var grid = new Grid();
 
-    - By using a DataTemplate
+    // TODO : Construct the Grid in C#
+    ExampleInAppNotification.Show(grid);
+    ```
 
-        ```csharp
-        object inAppNotificationWithButtonsTemplate;
-        bool isTemplatePresent = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", out inAppNotificationWithButtonsTemplate);
+    ```vb
+    Dim grid = New Grid()
 
-        if (isTemplatePresent && inAppNotificationWithButtonsTemplate is DataTemplate)
-        {
-            ExampleInAppNotification.Show(inAppNotificationWithButtonsTemplate as DataTemplate);
-        }
-        ```
-        ```vb
-        Dim inAppNotificationWithButtonsTemplate As Object
-        Dim isTemplatePresent As Boolean = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", inAppNotificationWithButtonsTemplate)
+    ' TODO : Construct the Grid in code
+    ExampleInAppNotification.Show(grid)
+    ```
 
-        If isTemplatePresent AndAlso TypeOf inAppNotificationWithButtonsTemplate Is DataTemplate Then
-            ExampleInAppNotification.Show(TryCast(inAppNotificationWithButtonsTemplate, DataTemplate))
-        End If
-        ```
+  - By using a DataTemplate
+
+    ```csharp
+    object inAppNotificationWithButtonsTemplate;
+    bool isTemplatePresent = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", out inAppNotificationWithButtonsTemplate);
+
+    if (isTemplatePresent && inAppNotificationWithButtonsTemplate is DataTemplate)
+    {
+        ExampleInAppNotification.Show(inAppNotificationWithButtonsTemplate as DataTemplate);
+    }
+    ```
+
+    ```vb
+    Dim inAppNotificationWithButtonsTemplate As Object
+    Dim isTemplatePresent As Boolean = Resources.TryGetValue("InAppNotificationWithButtonsTemplate", inAppNotificationWithButtonsTemplate)
+
+    If isTemplatePresent AndAlso TypeOf inAppNotificationWithButtonsTemplate Is DataTemplate Then
+        ExampleInAppNotification.Show(TryCast(inAppNotificationWithButtonsTemplate, DataTemplate))
+    End If
+    ```
+
+  - By using a `DataTemplate` and an object
+
+    ```xaml
+    <controls:InAppNotification
+        x:Name="ExampleInAppNotification"
+        ContentTemplate="{StaticResource MyNotificationDataTemplate}" />
+    ```
+
+    ```csharp
+    var notificationData = new MyNotificationData("Title", "Message");
+    ExampleInAppNotification.Show(notificationData, duration: 2000);
+    ```
+
+    ```vb
+    Dim notificationData As New MyNotificationData("Title", "Message");
+    ExampleInAppNotification.Show(notificationData, duration: 2000);
+    ```
 
 - By passing a second argument to the `Show()` method, you can set the duration of the notification (in milliseconds).
 
     ```csharp
     ExampleInAppNotification.Show("Some text.", 2000); // the notification will appear for 2 seconds
     ```
+
     ```vb
     ExampleInAppNotification.Show("Some text.", 2000)  ' The notification will appear for 2 seconds
     ```
@@ -143,6 +167,7 @@ You can change this behavior with one of these values:
     ```csharp
     ExampleInAppNotification.Dismiss();
     ```
+
     ```vb
     ExampleInAppNotification.Dismiss()
     ```
@@ -162,6 +187,7 @@ You can change this behavior with one of these values:
         }
     }
     ```
+
     ```vb
     Private Sub InAppNotification_OnClosing(ByVal sender As Object, ByVal e As InAppNotificationDismissingEventArgs)
         If e.DismissKind = InAppNotificationDismissKind.User Then
@@ -178,11 +204,11 @@ You can change this behavior with one of these values:
 
     Here is the list of existing styles :
 
-  - [Microsoft Edge notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/MSEdgeNotificationStyle.xaml)
+  - [Microsoft Edge notification style](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/Styles/MSEdgeNotificationStyle.xaml)
 
       ![Microsoft Edge notification style](../resources/images/Controls/InAppNotification/MicrosoftEdge-Notification-Style.png)
 
-  - [Visual Studio Code notification style](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/VSCodeNotificationStyle.xaml)
+  - [Visual Studio Code notification style](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/Styles/VSCodeNotificationStyle.xaml)
 
       ![Visual Studio Code notification style](../resources/images/Controls/InAppNotification/VisualStudioCode-Notification-style.png)
 
@@ -212,18 +238,18 @@ You can change this behavior with one of these values:
 
 If you want to add styles to the Toolkit, please follow these steps :
 
-1. Create a `ResourceDictionary` file in [Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles) folder
+1. Create a `ResourceDictionary` file in [Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles) folder
 2. Create a new `Style` with `TargetType="local:InAppNotification"`
 3. Create a new `ControlTemplate` with `TargetType="local:InAppNotification"` and add a `ContentPresenter` inside the Template
 4. Do not forget to set the `Template` property inside your `Style` resource
 
 ## Sample Project
 
-[InAppNotification Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[InAppNotification Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InAppNotification). You can [see this in action](uwpct://Controls?sample=InAppNotification) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[InAppNotification XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/InAppNotification.xaml) is the XAML template used in the toolkit for the default styling.
+[InAppNotification XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification/InAppNotification.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -234,4 +260,4 @@ If you want to add styles to the Toolkit, please follow these steps :
 
 ## API
 
-* [InAppNotification source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification)
+- [InAppNotification source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/InAppNotification)

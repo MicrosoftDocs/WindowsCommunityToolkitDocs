@@ -9,15 +9,17 @@ dev_langs:
 
 # ParallelHelper
 
-The [ParallelHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute paralell operations over a given data set or iteration range or area.
+The [`ParallelHelper`](/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper) contains high performance APIs to work with parallel code. It contains performance oriented methods that can be used to quickly setup and execute parallel operations over a given data set or iteration range or area.
+
+> **Platform APIs:** [`ParallelHelper`](/dotnet/api/microsoft.toolkit.highperformance.helpers.parallelhelper), [`IAction`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IAction), [`IAction2D`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IAction2D), [`IRefAction<T>`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IRefAction-1), [`IInAction<T><T>`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IInAction-1)
 
 ## How it works
 
-`ParallelHelper` is built around three main concepts:
+`ParallelHelper` type is built around three main concepts:
 
 - It performs automatic batching over the target iteration range. This means that it automatically schedules the right number of working units based on the number of available CPU cores. This is done to reduce the overhead of invoking the parallel callback once for every single parallel iteration.
-- It heavily leverages the way generic types are implemented in C#, and uses `struct` types implementing specific interfaces instead of delegates like `Action<T>`. This is done so that the JIT compiler will be able to "see" each individual callback type being used, which allows it to inline the callback entirely, when possible. This can greatly reduce the overhead of each parallel iteration, especially when using very small callbacks, which would have a trivial cost with respect to the delegate invocation alone. Additionally, using a `struct` type as callback requires developers to manually handle variables that are being captured in the closure, which prevents accidental captures of the `this` pointer from instance methods and other values that could considerably slowdown each callback invocation. This is the same approach that is used in other performance-oriented libraries such as [`ImageSharp`](https://github.com/SixLabors/ImageSharp).
-- It exposes 4 types of APIs that represent 4 different types of iterations: 1D and 2D loops, items iteration with side effect and items iteration without side effect. Each type of action has a corresponding `interface` type that needs to be applied to the `struct` callbacks being passed to the `ParallelHelper` APIs: these are `IAction`, `IAction2D`, `IRefAction<T>` and `IInAction<T>`. This helps developers to write code that is clearer regarding its intent, and allows the APIs to perform further optimizations internally.
+- It heavily leverages the way generic types are implemented in C#, and uses `struct` types implementing specific interfaces instead of delegates like [`Action<T>`](/dotnet/api/system.action-1). This is done so that the JIT compiler will be able to "see" each individual callback type being used, which allows it to inline the callback entirely, when possible. This can greatly reduce the overhead of each parallel iteration, especially when using very small callbacks, which would have a trivial cost with respect to the delegate invocation alone. Additionally, using a `struct` type as callback requires developers to manually handle variables that are being captured in the closure, which prevents accidental captures of the `this` pointer from instance methods and other values that could considerably slowdown each callback invocation. This is the same approach that is used in other performance-oriented libraries such as [`ImageSharp`](https://github.com/SixLabors/ImageSharp).
+- It exposes 4 types of APIs that represent 4 different types of iterations: 1D and 2D loops, items iteration with side effect and items iteration without side effect. Each type of action has a corresponding `interface` type that needs to be applied to the `struct` callbacks being passed to the `ParallelHelper` APIs: these are [`IAction`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IAction), [`IAction2D`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IAction2D), [`IRefAction<T>`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IRefAction-1) and [`IInAction<T><T>`](/dotnet/api/microsoft.toolkit.highperformance.helpers.IInAction-1). This helps developers to write code that is clearer regarding its intent, and allows the APIs to perform further optimizations internally.
 
 ## Syntax
 
@@ -71,15 +73,15 @@ Here is another example, this time using the `For` API to initialize all the ite
 public readonly struct ArrayInitializer : IAction
 {
     private int[] array;
-    
+
     public ArrayInitializer(int[] array)
     {
         this.array = array;
     }
-    
+
     public void Invoke(int i)
     {
-    	this.array[i] = i;
+        this.array[i] = i;
     }
 }
 
@@ -93,26 +95,8 @@ ParallelHelper.For(0, array.Length, new ArrayInitializer(array));
 
 ## Methods
 
-These are the 4 main APIs exposed by `ParallelHelper`, corresponding to the `IAction`, `IAction2D`, `IRefAction<T>` and `IInAction<T>` interfaces. The `ParallelHelper` type also exposes a number of overloads for these methods, that offer a number of ways to specify the iteration range(s), or the type of input callback.
+These are the 4 main APIs exposed by `ParallelHelper`, corresponding to the `IAction`, `IAction2D`, `IRefAction<T>` and `IInAction<T>` interfaces. The `ParallelHelper` type also exposes a number of overloads for these methods, that offer a number of ways to specify the iteration range(s), or the type of input callback. `For` and `For2D` work on `IAction` and `IAction2D` instances, and they are meant to be used when some parallel work needs to be done that doesn't necessary map to an underlying collection that can be directly accessed with the indices of each parallel iteration. The `ForEach` overloads instead wotk on `IRefAction<T>` and `IInAction<T>` instances, and they can be used when the parallel iterations directly map to items in a collection that can be indexed directly. In this case they also abstract away the indexing logic, so that each parallel invocation only has to worry on the input item to work on, and not on how to retrieve that item as well.
 
-| Method | Return Type | Description |
-| -- | -- | -- |
-| For&lt;TAction>(int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
-| For2D&lt;TAction>(int, int, int, int, in TAction) | void | Executes a specified action in an optimized parallel loop |
-| ForEach&lt;TItem,TAction>(Memory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
-| ForEach&lt;TItem,TAction>(ReadOnlyMemory<TItem>, in TAction) | void | Executes a specified action in an optimized parallel loop over the input data |
+## Examples
 
-## Sample Code
-
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared/Helpers)
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.HighPerformance |
-| NuGet package | [Microsoft.Toolkit.HighPerformance](https://www.nuget.org/packages/Microsoft.Toolkit.HighPerformance/) |
-
-## API
-
-* [ParallelHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.HighPerformance/Helpers)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared/Helpers).

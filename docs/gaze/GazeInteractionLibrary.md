@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community
 
 # Gaze Interaction Library
 
-Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
+Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
 
 This Gaze Interaction Library is built on top of the Windows Gaze Input APIs and provides a set of developer helper classes to more easily enable UWP applications to respond to where the user is looking on the screen. This library is intended to abstract away some of the complexities of dealing with the raw stream of gaze input coming from the eye tracking device exposed through the Windows APIs.
 
@@ -23,7 +23,7 @@ In order to use the Windows 10 Gaze Input APIs or this Gaze Interaction Library,
 
 To use the gaze input APIs, you must register the gazeInput capability in the app manifest. Add the following DeviceCapability to the Capabilities node in the Package.appxmanifest file of your project (you can do this by checking Gaze Input in the Capabilities tab in Visual Studio when you have Package.appxmanifest open in the App Manifest Designer):
 
-```xml
+```xaml
 <Capabilities>
    <DeviceCapability Name="gazeInput" />
 </Capabilities>
@@ -67,7 +67,7 @@ If the XAML page is enabled for gaze based interactions, the visibility and size
 | Property | Type | Description |
 | -- | -- | -- |
 | IsDeviceAvailable | bool | Returns whether a compatible eye tracker is connected. When this property changes an `IsDeviceAvailableChanged` event is fired. |
-| Interaction | enum | Gets or sets the status of gaze interaction over that particular XAML element.  There are three options: <br /> <ul> <li>**Enabled.**  Gaze interaction is enabled on this element and all its children </li> <li> **Disabled** Gaze interaction is disabled on this element and all its children <li> **Inherited** Gaze interaction status is inherited from the nearest ancestor </ul>| 
+| Interaction | enum | Gets or sets the status of gaze interaction over that particular XAML element.  There are three options: <br /> <ul> <li>**Enabled.**  Gaze interaction is enabled on this element and all its children </li> <li> **Disabled** Gaze interaction is disabled on this element and all its children <li> **Inherited** Gaze interaction status is inherited from the nearest ancestor </ul>|
 | CursorVisible | bool | The gaze cursor shows where the user is looking at on the screen. This boolean property shows the gaze cursor when set to `true` and hides it when set to `false`. The default value is `false`|
 |CursorRadius|int| Gets or sets the size of the gaze cursor radius. The default value is X|
 | ThresholdDuration | TimeSpan | This duration controls when the PointerState moves to either the `Enter` state or the `Exit` state. When this duration has elapsed after the user's gaze first enters a control, the `PointerState` is set to `Enter`. And when this duration has elapsed after the user's gaze has left the control, the `PointerState` is set to `Exit`. In both cases, a `StateChanged` event is fired. The default value is 50ms. |
@@ -131,10 +131,10 @@ For e.g.
 ```xaml
     <Page
     x:Class="UwpApp.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="https://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="https://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:gaze="using:Microsoft.Toolkit.Uwp.Input.GazeInteraction"
     gaze:GazeInput.Interaction="Enabled"
     mc:Ignorable="d">
@@ -142,7 +142,7 @@ For e.g.
 
 ### To enable gaze interactions on a portion of the page
 
-Gaze interaction can also be enabled only on a portion of the page by adding the same attributes to any XAML element on the page. 
+Gaze interaction can also be enabled only on a portion of the page by adding the same attributes to any XAML element on the page.
 
 To enable only a subset of the page, e.g. just one Grid on the page:
 
@@ -166,6 +166,7 @@ The code below sets the Dwell time duration for the button to be 500ms. This mea
 ### Animations
 
 This library provides a default animation of a shriniking rectangle over the control to indicate progress towards a dwell event. The style of animation can be customized in two ways:
+
 * If you wish to retain the animation style, but change the colors used:
   * Set the `GazeInput.DwellFeedbackEnterBrush` property to add a rectangle over controls immediately gaze is detected on them
   * Change the `GazeInput.DwellFeedbackProgressBrush` property to change the color of the progress rectangle
@@ -180,7 +181,7 @@ This library provides a default animation of a shriniking rectangle over the con
 </Button>
 ```
 
-```c#
+```csharp
 private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 {
     e.Handled = true;
@@ -188,12 +189,12 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 ```
 
 <!-- All control/helper must at least have an example to show the use of Properties and Methods in your control/helper with the output -->
-<!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/xmldoc/example -->
-<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/en-us/windows/communitytoolkit/animations/animationset#examples  -->
+<!-- Use <example> and <code> tags in C# to create a Propertie/method specific examples. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/example -->
+<!-- Optional: Codes to achieve real-world use case with the output. For eg: Check https://docs.microsoft.com/windows/communitytoolkit/animations/animationset#examples  -->
 
 ## Sample Project
 
-[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[GazeInteractionPage](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -204,8 +205,8 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## API
 
-* [Gaze Interaction Library source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
+* [Gaze Interaction Library source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
 
 ## Related Topics
 
-* [Windows 10 Gaze Input APIs](https://docs.microsoft.com/en-us/uwp/api/windows.devices.input.preview)
+* [Windows 10 Gaze Input APIs](/uwp/api/windows.devices.input.preview)

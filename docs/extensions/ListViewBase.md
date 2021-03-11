@@ -8,13 +8,15 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, ListViewBase, ext
 
 # ListViewBase extentions
 
-ListViewBase extensions provide a lightweight way to extend every control that inherits the <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase" target="_blank">ListViewBase</a> class with attached properties.
+> [!WARNING]
+> This docs page is outdated, please refer to the new one for the [`ListViewExtensions`](ListViewExtensions.md) type.
+ListViewBase extensions provide a lightweight way to extend every control that inherits the <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase" target="_blank">ListViewBase</a> class with attached properties.
 
 ## AlternateColor
 
 The AlternateColor property provides a way to assign a background color to every other item.
 
-> The <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid. 
+> The <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid.
 
 ### Example
 
@@ -26,9 +28,9 @@ The AlternateColor property provides a way to assign a background color to every
 
 ## AlternateItemTemplate
 
-The AlternateItemTemplate property provides a way to assign an alternate <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.datatemplate" target="_blank">datatemplate</a> to every other item. It is also possible to combine with the AlternateColor property.
+The AlternateItemTemplate property provides a way to assign an alternate <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate" target="_blank">datatemplate</a> to every other item. It is also possible to combine with the AlternateColor property.
 
-> The <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid. 
+> The <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid.
 
 ### Example
 
@@ -42,7 +44,6 @@ The AlternateItemTemplate property provides a way to assign an alternate <a href
             <TextBlock Text="{Binding }" Foreground="Orange"></TextBlock>
         </DataTemplate>
     </Page.Resources>
-
     <ListView
         ItemTemplate="{StaticResource NormalTemplate}"
         extensions:ListViewBase.AlternateItemTemplate="{StaticResource AlternateTemplate}"
@@ -53,7 +54,7 @@ The AlternateItemTemplate property provides a way to assign an alternate <a href
 
 The StretchItemContainerDirection property provides a way to stretch the ItemContainer in horizontal, vertical or both ways. Possible values for this property are **Horizontal**, **Vertical** and **Both**.
 
-> The <a href="https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid. 
+> The <a href="https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging" target="_blank">ContainerContentChanging</a> event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid.
 
 ### Example
 
@@ -65,11 +66,10 @@ The StretchItemContainerDirection property provides a way to stretch the ItemCon
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.14393.0 or higher |
+| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.14393.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
 
 ## API
 
-* [ListViewBase source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
-
+* [ListViewBase source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)

@@ -2,19 +2,19 @@
 title: PipelineBrush
 author: Sergio0694
 description: A composition brush that can render any custom Win2D/Composition effects chain.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, win2d, composition
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, Win2D, composition
 ---
 
 # PipelineBrush
 
-The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) which can render any custom Win2D/Composition effects chain.
+The [PipelineBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.pipelinebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) which can render any custom Win2D/Composition effects chain.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=PipelineBrush)
 
 ## Syntax
 
-```xml
+```xaml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <media:PipelineBrush Source="{effects:BackdropSource}">
@@ -43,7 +43,7 @@ The [PipelineBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.
 | Property | Type | Description |
 | -- | -- | -- |
 | Source | PipelineBuilder | The source for the current pipeline |
-| Effects | IList<IPipelineEffect> | The collection of effects to use in the current pipeline. |
+| Effects | IList\<IPipelineEffect> | The collection of effects to use in the current pipeline. |
 
 ## Code behind support
 
@@ -69,7 +69,7 @@ Brush brush =
 
 ## Sample Project
 
-[PipelineBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PipelineBrush). You can [see this in action](uwpct://Brushes?sample=PipelineBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PipelineBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PipelineBrush). You can [see this in action](uwpct://Brushes?sample=PipelineBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -80,10 +80,10 @@ Brush brush =
 
 ## API
 
-* [PipelineBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/PipelineBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [PipelineBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/PipelineBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 
-* [Win2D GaussianBlurEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
-* [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
+* [Win2D GaussianBlurEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
+* [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)

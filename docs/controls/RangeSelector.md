@@ -1,5 +1,5 @@
 ---
-title: RangeSelector XAML Control
+title: RangeSelector
 author: nmetulev
 description: The RangeSelector Control is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, RangeSelector, XAML Control, xaml, double slider
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# RangeSelector XAML Control
+# RangeSelector
 
-The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
+The [RangeSelector](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) control is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RangeSelector)
@@ -21,10 +21,10 @@ The [RangeSelector Control](https://docs.microsoft.com/dotnet/api/microsoft.tool
 <Page ...
     xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"/>
 
-<controls:RangeSelector x:Name="RangeSelectorControl" 
-	Minimum="10" 
-	Maximum="100"
-	StepFrequency="2">
+<controls:RangeSelector x:Name="RangeSelectorControl"
+    Minimum="10"
+    Maximum="100"
+    StepFrequency="2">
 </controls:RangeSelector>
 ```
 
@@ -57,35 +57,36 @@ Here is an example of using RangeSelector within a ScrollViewer
 ```csharp
 private void Selector_OnDragStarted(object sender, DragStartedEventArgs e)
 {
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled;
-	ScrollViewer.VerticalScrollMode = ScrollMode.Disabled;
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled;
+ ScrollViewer.VerticalScrollMode = ScrollMode.Disabled;
 }
 
 private void Selector_OnDragCompleted(object sender, DragCompletedEventArgs e)
 {
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Auto;
-	ScrollViewer.VerticalScrollMode = ScrollMode.Auto;
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Auto;
+ ScrollViewer.VerticalScrollMode = ScrollMode.Auto;
 }
 ```
+
 ```vb
 Private Sub Selector_OnDragStarted(ByVal sender As Object, ByVal e As DragStartedEventArgs)
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled
-	ScrollViewer.VerticalScrollMode = ScrollMode.Disabled
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Disabled
+ ScrollViewer.VerticalScrollMode = ScrollMode.Disabled
 End Sub
 
 Private Sub Selector_OnDragCompleted(ByVal sender As Object, ByVal e As DragCompletedEventArgs)
-	ScrollViewer.HorizontalScrollMode = ScrollMode.Auto
-	ScrollViewer.VerticalScrollMode = ScrollMode.Auto
+ ScrollViewer.HorizontalScrollMode = ScrollMode.Auto
+ ScrollViewer.VerticalScrollMode = ScrollMode.Auto
 End Sub
 ```
 
 ## Sample Project
 
-[RangeSelector Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RangeSelector Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RangeSelector). You can [see this in action](uwpct://Controls?sample=RangeSelector) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[RangeSelector XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
+[RangeSelector XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -96,4 +97,4 @@ End Sub
 
 ## API
 
-* [RangeSelector source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector)
+* [RangeSelector source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector)

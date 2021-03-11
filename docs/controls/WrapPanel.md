@@ -1,15 +1,15 @@
 ---
-title: WrapPanel XAML Control
+title: WrapPanel
 author: nmetulev
 description: The WrapPanel Control Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WrapPanel, XAML Control, xaml
 ---
 
-# WrapPanel XAML Control
+# WrapPanel
 
-The [WrapPanel Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.wrappanel) Positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering happens sequentially from top to bottom or from right to left, depending on the value of the Orientation property.
+The [WrapPanel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.wrappanel) control positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering happens sequentially from top to bottom or from right to left, depending on the value of the Orientation property.
 
-The WrapPanel position child controls based on orientation, horizontal orientation (default) positions controls from left to right and vertical orientation positions controls from top to bottom, and once the max width or height is reached the control automatically create row or column based on the orientation. 
+The WrapPanel position child controls based on orientation, horizontal orientation (default) positions controls from left to right and vertical orientation positions controls from top to bottom, and once the max width or height is reached the control automatically create row or column based on the orientation.
 
 Spacing can be automatically added between items using the HorizontalSpacing and VerticalSpacing properties. When the Orientation is Horizontal, HorizontalSpacing adds uniform horizontal spacing between each individual item, and VerticalSpacing adds uniform spacing between each row of items.
 
@@ -75,7 +75,7 @@ The following example of adding WrapPanel Control.
 
 ## Sample Project
 
-[WrapPanel Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can [see this in action](uwpct://Controls?sample=WrapPanel) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[WrapPanel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can [see this in action](uwpct://Controls?sample=WrapPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -86,4 +86,4 @@ The following example of adding WrapPanel Control.
 
 ## API
 
-* [WrapPanel source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/WrapPanel)
+* [WrapPanel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/WrapPanel)

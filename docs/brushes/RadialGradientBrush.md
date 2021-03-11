@@ -7,7 +7,10 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # RadialGradientBrush
 
-The [RadialGradientBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.radialgradientbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that fills an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.  It is a drop-in replacement for the [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx).  However, the `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.
+> [!WARNING]
+> This control has been deprecated in the Windows Community Toolkit. Please use the [`RadialGradientBrush`](/windows/winui/api/microsoft.ui.xaml.media.radialgradientbrush) from WinUI instead.
+
+The [RadialGradientBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.radialgradientbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that fills an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.  It is a drop-in replacement for the [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx).  However, the `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=RadialGradientBrush)
@@ -22,7 +25,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## Syntax
 
-```xml
+```xaml
 <Rectangle Width="300" Height="300" Stroke="Black" StrokeThickness="2">
   <Rectangle.Fill>
     <media:RadialGradientBrush 
@@ -47,16 +50,16 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 | Property | Type | Description |
 | -- | -- | -- |
-| AlphaMode | [AlphaMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.alphamode) | Specifies how the alpha channel affects color channels.  The default is `Straight` for compatibility with WPF; however, the `Premultiplied` value may provide a more natural transition to transparent values.
+| AlphaMode | [AlphaMode](/dotnet/api/microsoft.toolkit.uwp.ui.media.alphamode) | Specifies how the alpha channel affects color channels.  The default is `Straight` for compatibility with WPF; however, the `Premultiplied` value may provide a more natural transition to transparent values.
 | Center | Windows.Foundation.Point | The center of the outermost circle of the radial gradient.  The default is `0.5,0.5`. |
-| ColorInterpolationMode | [ColorInteropolationMode](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.ColorInterpolationMode) | Specifies how the gradient's colors are interpolated.  The default is `SRgbLinearInterpolation`. |
+| ColorInterpolationMode | [ColorInteropolationMode](/uwp/api/Windows.UI.Xaml.Media.ColorInterpolationMode) | Specifies how the gradient's colors are interpolated.  The default is `SRgbLinearInterpolation`. |
 | FallbackColor | Windows.UI.Color | The color to use for rendering in case the CompositionBrush can't be rendered. |
 | GradientOrigin | Windows.Foundation.Point | The location of the two-dimensional focal point that defines the beginning of the gradient.  The default is `0.5,0.5`. |
 | GradientStops | Windows.UI.Xaml.Media.GradientStopCollection | The brush's gradient stops.  *Individual GradientStop's `Offset` and `Color` properties can't be bound or animated.* |
 | Opacity | double | Gets or sets the degree of opacity of a Brush. |
 | RadiusX | double | The horizontal radius of the outermost circle of the radial gradient. The default is `0.5`. |
 | RadiusY | double | The vertical radius of the outermost circle of the radial gradient.  The default is `0.5`. |
-| SpreadMethod | [GradientSpreadMethod](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.GradientSpreadMethod) | The type of spread method that specifies how to draw a gradient that starts or ends inside the bounds of the object to be painted.  The default is `Pad`.
+| SpreadMethod | [GradientSpreadMethod](/uwp/api/Windows.UI.Xaml.Media.GradientSpreadMethod) | The type of spread method that specifies how to draw a gradient that starts or ends inside the bounds of the object to be painted.  The default is `Pad`.
 
 > [!NOTE]
 > The `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.  
@@ -64,7 +67,7 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## Sample Project
 
-[RadialGradientBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGradientBrush). You can [see this in action](uwpct://Brushes?sample=RadialGradientBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RadialGradientBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RadialGradientBrush). You can [see this in action](uwpct://Brushes?sample=RadialGradientBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -75,10 +78,10 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 ## API
 
-- [RadialGradientBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/RadialGradientBrush.cs)
+- [RadialGradientBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/RadialGradientBrush.cs)
 
 ## Related Topics
 
-- [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush)
+- [Brush](/uwp/api/windows.ui.xaml.media.brush)
 - [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx)
-- [Win2D CanvasRadialGradientBrush reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Brushes_CanvasRadialGradientBrush.htm)
+- [Win2D CanvasRadialGradientBrush reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Brushes_CanvasRadialGradientBrush.htm)

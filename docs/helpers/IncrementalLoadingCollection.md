@@ -14,8 +14,8 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 
 | Helper | Purpose |
 | --- | --- |
-|[IIncrementalSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
-|[IncrementalLoadingCollection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
+|[IIncrementalSource](/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
+|[IncrementalLoadingCollection](/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Incremental%20Loading%20Collection)
@@ -29,15 +29,15 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 |    IsLoading     |                                   bool                                    |                                   Gets a value indicating whether new items are being loaded                                   |
 |   ItemsPerPage   |                                    int                                    |                    Gets a value indicating how many items that must be retrieved for each incremental call                     |
 |   OnEndLoading   | [Action](https://msdn.microsoft.com/library/system.action(v=vs.110).aspx) |                             Gets or sets an Action that is called when a retrieval operation ends                              |
-|     OnError      |                             Action<Exception>                             | Gets or sets an Action that is called if an error occours during data retrieval. The actual Exception is passed as an argument |
+|     OnError      |                             Action\<Exception>                             | Gets or sets an Action that is called if an error occours during data retrieval. The actual Exception is passed as an argument |
 |  OnStartLoading  |                                  Action                                   |                            Gets or sets an Action that is called when a retrieval operation begins                             |
 
 ## IncrementalLoadingCollection Methods
 
 |             Methods              |             Return Type              |                                             Description                                              |
 |----------------------------------|--------------------------------------|------------------------------------------------------------------------------------------------------|
-| LoadDataAsync(CancellationToken) |       Task<IEnumerable<IType>>       |                              Actually performs the incremental loading                               |
-|    LoadMoreItemsAsync(UInt32)    | IAsyncOperation<LoadMoreItemsResult> |                            Initializes incremental loading from the view                             |
+| LoadDataAsync(CancellationToken) |       Task<IEnumerable\<IType>>       |                              Actually performs the incremental loading                               |
+|    LoadMoreItemsAsync(UInt32)    | IAsyncOperation\<LoadMoreItemsResult> |                            Initializes incremental loading from the view                             |
 |            Refresh()             |                 void                 | Clears the collection and resets the page index which triggers an automatic reload of the first page |
 |          RefreshAsync()          |                 Task                 |                        Clears the collection and reloads data from the source                        |
 
@@ -83,6 +83,7 @@ public class PeopleSource : IIncrementalSource<Person>
     }
 }
 ```
+
 ```vb
 ' Be sure to include the using at the top of the file:
 'Imports Microsoft.Toolkit.Uwp
@@ -125,6 +126,7 @@ The *GetPagedItemsAsync* method is invoked everytime the view need to show more 
 var collection = new IncrementalLoadingCollection<PeopleSource, Person>();
 PeopleListView.ItemsSource = collection;
 ```
+
 ```vb
 Dim collection = New IncrementalLoadingCollection(Of PeopleSource, Person)()
 PeopleListView.ItemsSource = collection
@@ -132,7 +134,7 @@ PeopleListView.ItemsSource = collection
 
 ## Sample Project
 
-[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -143,4 +145,4 @@ PeopleListView.ItemsSource = collection
 
 ## API
 
-* [IncrementalLoadingCollection source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)
+* [IncrementalLoadingCollection source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)

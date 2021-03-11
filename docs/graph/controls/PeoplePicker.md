@@ -9,7 +9,7 @@ dev_langs:
 
 # PeoplePicker XAML Control
 
-The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
+The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PeoplePicker)
@@ -28,12 +28,12 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 | Property | Type | Description |
 | -- | -- | -- |
-| PickedPeople | ObservableCollection<Person> | Gets the set of Person objects chosen by the user. |
-| SuggestedPeople | ObservableCollection<Person> | Gets or sets collection of people suggested by the graph from the user's query. |
+| PickedPeople | ObservableCollection\<Person> | Gets the set of Person objects chosen by the user. |
+| SuggestedPeople | ObservableCollection\<Person> | Gets or sets collection of people suggested by the graph from the user's query. |
 
 ## Sample Project
 
-[PeoplePicker sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PeoplePicker sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -44,9 +44,9 @@ The [PeoplePicker](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph
 
 ## API
 
-* [PeoplePicker source code](https://github.com/windows-toolkit/Graph-Controls/tree/master/Microsoft.Toolkit.Graph.Controls/Controls/PeoplePicker)
+* [PeoplePicker source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/PeoplePicker)
 
 ## Related Topics
 
-* [Person Graph API](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-beta)
-* [MGT PeoplePicker Component](https://docs.microsoft.com/graph/toolkit/components/people-picker)
+* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [MGT PeoplePicker Component](/graph/toolkit/components/people-picker)

@@ -6,17 +6,20 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 dev_langs:
   - csharp
 ---
+# Ref&lt;T> and ReadOnlyRef&lt;T>
 
-# Ref&lt;T>
+## Ref&lt;T>
 
-The [Ref&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
+The [`Ref&<T>`](/dotnet/api/microsoft.toolkit.highperformance.ref-1) is a stack-only type that can store a reference to a value of a specified type. It is semantically equivalent to a `ref T` value, with the difference that it can also be used as a type of field in another stack-only `struct` type. It can be used in place of proper `ref T` fields, which are currently not supported in C#.
 
-## How it works
+> **Platform APIs:** [`Ref&<T>`](/dotnet/api/microsoft.toolkit.highperformance.ref-1), [`ReadOnlyRef<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1)
+
+### How it works
 
 > [!NOTE]
 > Due to how it's implemented on different .NET Standard contracts, the `Ref<T>` has some minor differences on .NET Standard 1.4 and .NET Standard 2.1 (and equivalent .NET Core runtimes). In particular, on .NET Standard 1.4 it can only be used to reference fields _within an object_, instead of arbitrary values pointed by a managed reference. This is because the underlying APIs being used on .NET Standard 1.4 don't have built-in support for the `Span<T>` type.
 
-### `Ref<T>` on .NET Standard 1.4
+#### `Ref<T>` on .NET Standard 1.4
 
 As mentioned before, on .NET Standard 1.4, `Ref<T>` can only point to locations within a given `object`. Consider the following code:
 
@@ -44,7 +47,7 @@ Console.WriteLine(model.Number); // Prints 43!
 > [!WARNING]
 > The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object. Failing to do so might cause the `Ref<T>.Value` property to return an invalid reference.
 
-### `Ref<T>` on .NET Standard 2.1
+#### `Ref<T>` on .NET Standard 2.1
 
 On .NET Standard 2.1, `Ref<T>` can point to any `ref T` value:
 
@@ -79,34 +82,10 @@ This will compile and run fine, but the returned `ref int` will be invalid (as i
 > [!NOTE]
 > Although it is possible to create a `Ref<T>` value wrapping a `null` reference, by using the `default(Ref<T>)` expression, the `Ref<T>` type is not designed to be used with nullable references and does not include proper features to validate the internal reference. If you need to return a reference that can be set to `null`, use the `NullableRef<T>` and `NullableReadOnlyRef<T>` types.
 
-## Properties
+## ReadOnlyRef&lt;T>
 
-| Property | Return Type | Description |
-| -- | -- | -- |
-| Value | ref T | Gets the `T` reference represented by the current `Ref{T}` instance |
+The [`ReadOnlyRef<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`.
 
-# ReadOnlyRef&lt;T>
+### Examples
 
-The [ReadOnlyRef&lt;T>](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyref-1) is a stack-only type that mirrors `Ref<T>`, with the exception that its constructor takes an `in T` parameter (a readonly reference), instead of a `ref T` one. Similarly, its `Value` property has a `ref readonly T` return type instead of `ref T`. 
-
-## Properties
-
-| Property | Return Type | Description |
-| -- | -- | -- |
-| Value | ref readonly T | Gets the `T` reference represented by the current `ReadOnlyRef{T}` instance |
-
-## Sample Code
-
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared)
-
-## Requirements
-
-| Device family | Universal, 10.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.HighPerformance |
-| NuGet package | [Microsoft.Toolkit.HighPerformance](https://www.nuget.org/packages/Microsoft.Toolkit.HighPerformance/) |
-
-## API
-
-* [Ref&lt;T> source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.HighPerformance)
-* [ReadOnlyRef&lt;T> source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.HighPerformance)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared).

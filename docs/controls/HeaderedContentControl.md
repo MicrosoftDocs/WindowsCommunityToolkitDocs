@@ -1,13 +1,13 @@
 ---
-title: HeaderedContentControl XAML Control
+title: HeaderedContentControl
 author: skendrot
 description: The HeaderedContentControl allows content to be displayed with a specified header.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HeaderedContentControl, XAML Control, xaml
 ---
 
-# HeaderedContentControl XAML Control
+# HeaderedContentControl
 
-The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) is a UI control that allows content to be displayed with a specified header. The `Header` property can be any object and you can use the `HeaderTemplate` to specify a custom look to the header. Content for the HeaderedContentControl will align to the top left. This is to maintain the same functionality as the ContentControl.
+The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) is a UI control that allows content to be displayed with a specified header. The `Header` property can be any object and you can use the `HeaderTemplate` to specify a custom look to the header. Content for the HeaderedContentControl will align to the top left. This is to maintain the same functionality as the ContentControl.
 
 > [!NOTE]
 > Setting the `Background`, `BorderBrush` and `BorderThickness` properties will not have any effect on the HeaderedContentControl. This is to maintain the same functionality as the ContentControl.
@@ -23,12 +23,12 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 <controls:HeaderedContentControl>
     <!-- Header content or HeaderTemplate content -->
-</<controls:HeaderedContentControl>
+</controls:HeaderedContentControl>
 ```
 
 ## Sample Output
 
-![HeaderedContentControl](../resources/images/Controls/HeaderedContentControl.jpg)
+![HeaderedContentControl Sample](../resources/images/Controls/HeaderedContentControl.jpg)
 
 ## Properties
 
@@ -43,7 +43,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 - The `Header` property can be set to a string, or any xaml elements. If binding the `Header` to an object that is not a string, use the `HeaderTemplate` to control how the content is rendered.
 
     *Sample Code*
-    
+
     ```xaml
     <controls:HeaderedContentControl Header="This is the header!"/>
     
@@ -53,7 +53,7 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
                 <TextBlock Text="This is the header!" FontSize="16" />
             </Border>
         </controls:HeaderedContentControl.Header>
-    </<controls:HeaderedContentControl>
+    </controls:HeaderedContentControl>
     ```
 
 - Used to control the look of the header. The default value for the `HeaderTemplate` will display the string representation of the `Header`. Set this property if you need to bind the `Header` to an object.
@@ -65,16 +65,16 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
                 <TextBlock Text="{Binding Title}" />
             </DataTemplate>
         </controls:HeaderedContentControl.HeaderTemplate>
-    </<controls:HeaderedContentControl>
+    </controls:HeaderedContentControl>
     ```
 
 ## Sample Project
 
-[HeaderedContentControl Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedContentControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[HeaderedContentControl XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
+[HeaderedContentControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -85,4 +85,4 @@ The [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.too
 
 ## API
 
-* [HeaderedContentControl source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl)
+- [HeaderedContentControl source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl)

@@ -7,7 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Mouse.Cursor attached property
 
-The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.mouse.cursor) enables you to easily change the mouse cursor over specific Framework elements.
+> [!WARNING]
+> This docs page is outdated, please refer to the new one for the [`FrameworkElementExtensions`](FrameworkElementExtensions.md) type.
+The [Mouse.Cursor attached property](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.mouse.cursor) enables you to easily change the mouse cursor over specific Framework elements.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=Mouse)
@@ -17,7 +19,6 @@ The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/micro
 ```xaml
 <Page ...
      xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
 <UIElement extensions:Mouse.Cursor="Hand"/>
 ```
 
@@ -25,7 +26,7 @@ The [Mouse.Cursor attached property](https://docs.microsoft.com/dotnet/api/micro
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Mouse.Cursor | [CoreCursorType](https://docs.microsoft.com/uwp/api/Windows.UI.Core.CoreCursorType) | Set cursor type when mouse cursor over a Framework elements |
+| Mouse.Cursor | [CoreCursorType](/uwp/api/Windows.UI.Core.CoreCursorType) | Set cursor type when mouse cursor over a Framework elements |
 
 ## Example
 
@@ -33,10 +34,9 @@ Here is a example of setting Mouse.Cursor
 
 ```xaml
 <Page x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MouseCursorPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Border extensions:Mouse.Cursor="Hand"
             Width="220" Height="120" Background="DeepSkyBlue"
@@ -46,7 +46,7 @@ Here is a example of setting Mouse.Cursor
 ```
 
 > [!NOTE]
-> Even though Microsoft recommends in [UWP Design guidelines](https://docs.microsoft.com/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
+> Even though Microsoft recommends in [UWP Design guidelines](/windows/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
 
 ## Limitations
 
@@ -54,7 +54,7 @@ Because the UWP framework does not support metadata on Attached Properties, spec
 
 ## Sample Project
 
-[Mouse Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can [see this in action](uwpct://Extensions?sample=Mouse) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Mouse Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Mouse). You can [see this in action](uwpct://Extensions?sample=Mouse) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -65,4 +65,4 @@ Because the UWP framework does not support metadata on Attached Properties, spec
 
 ## API
 
-* [Mouse.Cursor source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Mouse)
+* [Mouse.Cursor source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Mouse)

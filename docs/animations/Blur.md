@@ -1,7 +1,7 @@
 ---
 title: Blur animation behavior
 author: nmetulev
-description: The Windows Community Toolkit Blur animation behavior selectively blurs a XAML element by increasing or decreasing pixel size
+description: The Windows Community Toolkit Blur animation behavior selectively blurs a XAML element by increasing or decreasing pixel size (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, blur, blur animation
 dev_langs:
   - csharp
@@ -10,7 +10,10 @@ dev_langs:
 
 # Blur
 
-The [Blur animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.blur) blurs a XAML element by increasing or decreasing pixel size. Blur animation is applied to all the XAML elements in its parent control/panel. Blur animation doesn't affect the functionality of the control.
+> [!WARNING]
+> This behavior is no longer available in the Windows Community Toolkit. Please use the effects from the `Microsoft.Toolkit.Uwp.UI.Media` package and the helpers such as the [`PipelineVisualFactory`](/dotnet/api/microsoft.toolkit.uwp.ui.media.PipelineVisualFactory) type.
+
+The [Blur animation](/dotnet/api/microsoft.toolkit.uwp.ui.animations.animationextensions.blur) blurs a XAML element by increasing or decreasing pixel size. Blur animation is applied to all the XAML elements in its parent control/panel. Blur animation doesn't affect the functionality of the control.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Blur)
@@ -36,6 +39,7 @@ The [Blur animation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp
 MyUIElement.Blur(value: 5, duration: 2500, delay: 250).Start();
 await MyUIElement.Blur(value: 5, duration: 2500, delay: 250).StartAsync();  // Blur animation can be awaited
 ```
+
 ```vb
 MyUIElement.Blur(value:=5, duration:=2500, delay:=250).Start()
 Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' Blur animation can be awaited
@@ -65,7 +69,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 - Use this to shift the focus to foreground controls.
 
     **Sample Code**
-    
+
     ```xaml
     <Grid>
         <Grid>
@@ -94,6 +98,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
     anim.Completed += animation_completed;
     anim.Start();
     ```
+
     ```vb
     Dim anim = MyUIElement.Blur(5).Fade(0.5F).Rotate(30)
     anim.SetDurationForAll(2500)
@@ -108,7 +113,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## Sample Project
 
-[Blur Behavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Blur). You can [see this in action](uwpct://Animations?sample=Blur) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Blur Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Blur). You can [see this in action](uwpct://Animations?sample=Blur) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -119,9 +124,9 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## API
 
-* [Blur source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Blur.cs)
+- [Blur source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Animations/BlurEffectAnimation.cs)
 
 ## Related Topics
 
-* [AnimationSet Class](https://docs.microsoft.com/windows/communitytoolkit/animations/animationset)
-* [CompositionEffectBrush Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.CompositionEffectBrush)
+- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
+- [CompositionEffectBrush Class](/uwp/api/Windows.UI.Composition.CompositionEffectBrush)

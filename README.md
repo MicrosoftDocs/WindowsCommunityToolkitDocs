@@ -3,6 +3,7 @@
 The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building apps for Windows 10.
 
 ## Contributing
+
 Do you want to contribute or update the docs? Read the [contribution guidelines](CONTRIBUTING.md)
 
 When opening a PR, start by forking this repository. Then, based on the type of change you're making you'll need to create a new branch from either the `master` or `live` branches:
@@ -14,9 +15,11 @@ When opening a PR, start by forking this repository. Then, based on the type of 
 We will periodically merge updates from the live branch to master to keep master in-sync with the published docs.  When we make a new release, we will push master to the live branch in order to publish documentation for new features.
 
 ## Documentation Links
-- [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/?branch=master)
-- [Live site from 'live' branch](https://docs.microsoft.com/en-us/windows/uwpcommunitytoolkit)
+
+- [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/uwpcommunitytoolkit/?branch=master)
+- [Live site from 'live' branch](/windows/uwpcommunitytoolkit)
 
 ## Microsoft Open Source Code of Conduct
+
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.

@@ -2,19 +2,19 @@
 title: TilesBrush
 author: Sergio0694
 description: A composition brush that displays a tiled image.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, win2d, composition
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, backdrop, blur, Win2D, composition
 ---
 
 # TilesBrush
 
-The [TilesBrush](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.tilesbrush) is a [Brush](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.brush) that that displays a tiled image.
+The [TilesBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.tilesbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that that displays a tiled image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=TilesBrush)
 
 ## Syntax
 
-```xml
+```xaml
 <Border BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Center" Width="400" Height="400">
   <Border.Background>
     <brushes:TilesBrush TextureUri="ms-appx:///Assets/BrushAssets/TileTexture.png"/>
@@ -43,7 +43,7 @@ Brush brush = PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png".T
 
 ## Sample Project
 
-[TilesBrush sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TilesBrush). You can [see this in action](uwpct://Brushes?sample=TilesBrush) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TilesBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TilesBrush). You can [see this in action](uwpct://Brushes?sample=TilesBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -54,9 +54,9 @@ Brush brush = PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png".T
 
 ## API
 
-* [TilesBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Brushes/TilesBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [TilesBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/TilesBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 
-* [XamlCompositionBrushBase Examples](https://docs.microsoft.com/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
+* [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)
