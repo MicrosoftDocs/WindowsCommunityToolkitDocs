@@ -10,7 +10,7 @@ dev_langs:
 # TabView
 
 > [!WARNING]
-> This control has been deprecated in the Windows Community Toolkit. Please use the [`TabView`](/windows/winui/api/microsoft.ui.xaml.controls.tabview) control from WinUI instead.
+> This control has been removed from the Windows Community Toolkit. Please use the [`TabView`](/windows/winui/api/microsoft.ui.xaml.controls.tabview) control from WinUI instead.
 
 The [TabView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
