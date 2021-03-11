@@ -7,9 +7,9 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Lottie
 
-Lottie-Windows is a library for rendering [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) animations natively in your applications. This project adds Windows to the [Lottie](http://airbnb.io/lottie/) family of tools also targeting [Android](https://github.com/airbnb/lottie-android), [iOS](https://github.com/airbnb/lottie-ios), and [Web](https://github.com/airbnb/lottie-web).
+Lottie-Windows is a library for rendering [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) animations natively in your applications. This project adds Windows to the [Lottie](https://airbnb.io/lottie/) family of tools also targeting [Android](https://github.com/airbnb/lottie-android), [iOS](https://github.com/airbnb/lottie-ios), and [Web](https://github.com/airbnb/lottie-web).
 
-Lottie simplifies the design-to-code workflow for bringing engaging, interactive vector animations to your Windows applications, with significant improvements in terms of performance, quality, and engineering efficiency over traditional approaches such as gifs, manually coded animations, etc. Lottie-Windows uses the [Windows.UI.Composition APIs](https://docs.microsoft.com/windows/uwp/composition/visual-layer) to provide smooth, 60 fps animations and resolution-independent vector graphics.
+Lottie simplifies the design-to-code workflow for bringing engaging, interactive vector animations to your Windows applications, with significant improvements in terms of performance, quality, and engineering efficiency over traditional approaches such as gifs, manually coded animations, etc. Lottie-Windows uses the [Windows.UI.Composition APIs](/windows/uwp/composition/visual-layer) to provide smooth, 60 fps animations and resolution-independent vector graphics.
 
 ![Lottie Gif](../resources/images/Animations/Lottie/LottieDocs_Intro.gif)
 
@@ -38,7 +38,7 @@ The following documents help you get started with Lottie-Windows and provide sim
 
 ## Sample Code
 
-* [Code Samples for Lottie-Windows](https://github.com/windows-toolkit/Lottie-Windows/tree/master/samples)
+* [Code Samples for Lottie-Windows](https://github.com/windows-toolkit/Lottie-Windows/tree/rel/7.0.0/samples)
 * [Lottie Samples application](https://aka.ms/lottiesamples)
 
 ## Requirements
@@ -57,6 +57,6 @@ The following documents help you get started with Lottie-Windows and provide sim
 
 * [Lottie-Windows library](https://github.com/windows-toolkit/Lottie-Windows) on github
 * [Lottie Viewer application](https://aka.ms/lottieviewer) in the Store
-* [Lottie by Airbnb](http://airbnb.io/lottie/)
+* [Lottie by Airbnb](https://airbnb.io/lottie/)
 * [Bodymovin exporter](https://aescripts.com/bodymovin/) for Adobe AfterEffects
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

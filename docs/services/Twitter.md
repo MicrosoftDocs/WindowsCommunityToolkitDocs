@@ -31,7 +31,7 @@ Copy this from the *Keys and Access Tokens* tab on your application page.
 Copy this from the *Keys and Access Tokens* tab on your application page.
 
 **Callback URI** Enter a unique URI for your application.  This must match the *Callback URL* field on the *Application Details* tab in Twitter.
-*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
+*Example*: `https://myapp.company.com` - (this does not have to be a working URL)
 
 ## Overview
 
@@ -207,7 +207,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Sample Project
 
-[Twitter Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Twitter Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -218,4 +218,4 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## API
 
-* [Twitter Service source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Services/Services/Twitter)
+* [Twitter Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/Twitter)

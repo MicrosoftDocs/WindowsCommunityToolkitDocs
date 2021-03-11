@@ -7,7 +7,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community
 
 # Gaze Interaction Library
 
-Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](https://docs.microsoft.com/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
+Microsoft announced native support for eye tracking in Windows in the [Windows 10 Fall Creators Update](https://blogs.msdn.microsoft.com/accessibility/2017/08/01/from-hack-to-product-microsoft-empowers-people-with-eye-control-for-windows-10/). In the Windows 10 April 2018 update, Microsoft added developer support by releasing [Windows Gaze Input APIs](/uwp/api/windows.devices.input.preview) to build UWP applications that can interact with gaze input and eye trackers.
 
 This Gaze Interaction Library is built on top of the Windows Gaze Input APIs and provides a set of developer helper classes to more easily enable UWP applications to respond to where the user is looking on the screen. This library is intended to abstract away some of the complexities of dealing with the raw stream of gaze input coming from the eye tracking device exposed through the Windows APIs.
 
@@ -131,10 +131,10 @@ For e.g.
 ```xaml
     <Page
     x:Class="UwpApp.MainPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="https://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="https://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:gaze="using:Microsoft.Toolkit.Uwp.Input.GazeInteraction"
     gaze:GazeInput.Interaction="Enabled"
     mc:Ignorable="d">
@@ -194,7 +194,7 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## Sample Project
 
-[GazeInteractionPage](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[GazeInteractionPage](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -205,8 +205,8 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## API
 
-* [Gaze Interaction Library source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
+* [Gaze Interaction Library source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
 
 ## Related Topics
 
-* [Windows 10 Gaze Input APIs](https://docs.microsoft.com/uwp/api/windows.devices.input.preview)
+* [Windows 10 Gaze Input APIs](/uwp/api/windows.devices.input.preview)

@@ -57,7 +57,7 @@ To demonstrate this, we use two AnimatedVisualPlayer instances with _LightBulb.j
 
 ```
 
-If your scenario doesn’t require you to `await` the completion of PlayAsync, you may simply start the play and not keep track of it. In order to avoid a Visual Studio CS1998 compiler warning, we intentionally ignore the IAsyncAction returned from the PlayAsync method by using a [C# 7 discard](https://docs.microsoft.com/dotnet/csharp/discards#a-standalone-discard) as follows:
+If your scenario doesn’t require you to `await` the completion of PlayAsync, you may simply start the play and not keep track of it. In order to avoid a Visual Studio CS1998 compiler warning, we intentionally ignore the IAsyncAction returned from the PlayAsync method by using a [C# 7 discard](/dotnet/csharp/discards#a-standalone-discard) as follows:
 
 ```csharp
     // Play the animation once.
@@ -66,7 +66,7 @@ If your scenario doesn’t require you to `await` the completion of PlayAsync, y
 
 ## Resources
 
-* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/AsyncPage.xaml.cs) for sample: the asynchronous play method
+* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.0.0/samples/LottieSamples/Scenarios/AsyncPage.xaml.cs) for sample: the asynchronous play method
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [PlayAsync](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.playasync) method
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

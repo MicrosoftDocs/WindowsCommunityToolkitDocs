@@ -7,16 +7,16 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ListViewExtensions
 
-The [`ListViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions) class provide a lightweight way to extend every control that inherits the [`ListViewBase`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties. This means that all the extensions in this class can apply to both [`ListView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listview), [`GridView`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.gridview) and other controls.
+The [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions) class provide a lightweight way to extend every control that inherits the [`ListViewBase`](/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties. This means that all the extensions in this class can apply to both [`ListView`](/uwp/api/windows.ui.xaml.controls.listview), [`GridView`](/uwp/api/windows.ui.xaml.controls.gridview) and other controls.
 
-> **Platform APIs:** [`ListViewExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions), [`ItemContainerStretchDirection`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.ItemContainerStretchDirection)
+> **Platform APIs:** [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions), [`ItemContainerStretchDirection`](/dotnet/api/microsoft.toolkit.uwp.ui.ItemContainerStretchDirection)
 
 ## AlternateColor
 
 The `AlternateColor` property provides a way to assign a background color to every other item.
 
 > [!WARNING]
-> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
 Here is how this property can be used in XAML:
 
@@ -31,10 +31,10 @@ Here is how this property can be used in XAML:
 
 ## AlternateItemTemplate
 
-The `AlternateItemTemplate` property provides a way to assign an alternate [`DataTemplate`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the `AlternateColor` property.
+The `AlternateItemTemplate` property provides a way to assign an alternate [`DataTemplate`](/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the `AlternateColor` property.
 
 > [!WARNING]
-> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
 Here is how this property can be used in XAML:
 
@@ -60,10 +60,10 @@ Here is how this property can be used in XAML:
 
 ## Command
 
-`ListViewExtensions` provides extension method that allow attaching an [`ICommand`](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle `ListViewBase` item interaction by means of [`ItemClick`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
+`ListViewExtensions` provides extension method that allow attaching an [`ICommand`](/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle `ListViewBase` item interaction by means of [`ItemClick`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
 
 > [!IMPORTANT]
-> ListViewBase [`IsItemClickEnabled`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`.
+> ListViewBase [`IsItemClickEnabled`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`.
 
 Here is how this property can be used in XAML:
 
@@ -83,7 +83,7 @@ Here is how this property can be used in XAML:
 The `ItemContainerStretchDirection` property provides a way to stretch the `ItemContainer` in horizontal, vertical or both ways. The allowed values are items from the `ItemContainerStretchDirection` type.
 
 > [!WARNING]
-> The [`ContainerContentChanging`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
 Here is how this property can be used from XAML:
 
@@ -98,4 +98,4 @@ Here is how this property can be used from XAML:
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

@@ -10,7 +10,7 @@ dev_langs:
 
 # RSS Parser
 
-The Toolkit RssParser has been removed. Code should be migrated to use the [System.ServiceModel.Syndication](https://docs.microsoft.com/dotnet/api/system.servicemodel.syndication) API instead.
+The Toolkit RssParser has been removed. Code should be migrated to use the [System.ServiceModel.Syndication](/dotnet/api/system.servicemodel.syndication) API instead.
 
 This document will show you how to migrate over to the .NET Standard library API.
 
@@ -124,4 +124,4 @@ End Sub
 
 ## Related Topics
 
-* [SyndicationFeed Class](https://docs.microsoft.com/dotnet/api/system.servicemodel.syndication.syndicationfeed)
+* [SyndicationFeed Class](/dotnet/api/system.servicemodel.syndication.syndicationfeed)

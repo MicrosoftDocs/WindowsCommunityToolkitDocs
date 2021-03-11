@@ -45,7 +45,7 @@ Read the [getting Started with the Windows Community Toolkit](getting-started.md
 
 ## Windows 10 Store App
 
-Want to see the controls and animations in action before jumping into the code?  We have published the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp) to the Windows 10 store.  Download the app and play with the controls live to see what they do before ever writing a line of code.
+Want to see the controls and animations in action before jumping into the code?  We have published the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp) to the Windows 10 store.  Download the app and play with the controls live to see what they do before ever writing a line of code.
 
 ## GitHub Repository
 

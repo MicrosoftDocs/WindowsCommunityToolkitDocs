@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Composition Visual Attached Properties Extension
 
-The [`VisualExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.VisualExtensions) type allows developers to modify common properties of the [`Visual`](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Visual) object of an element directly in XAML.
+The [`VisualExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.VisualExtensions) type allows developers to modify common properties of the [`Visual`](/uwp/api/Windows.UI.Composition.Visual) object of an element directly in XAML.
 
-> **Platform APIs:** [`VisualExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.VisualExtensions)
+> **Platform APIs:** [`VisualExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.VisualExtensions)
 
 ## Syntax
 
@@ -31,8 +31,8 @@ Here is an example of how the `VisualExtensions` type can be used to directly se
 ```
 
 > [!NOTE]
-> The `NormalizedCenterPoint` will also use a [Composition Expression animation](https://docs.microsoft.com/uwp/api/windows.ui.composition.expressionanimation) behind the scenes to ensure the center point value being set is kept in sync with the size of the associated `Visual` object. As with all composition animations, this animation runs on the compositor thread and doesn't add any load to the UI thread of the application.
+> The `NormalizedCenterPoint` will also use a [Composition Expression animation](/uwp/api/windows.ui.composition.expressionanimation) behind the scenes to ensure the center point value being set is kept in sync with the size of the associated `Visual` object. As with all composition animations, this animation runs on the compositor thread and doesn't add any load to the UI thread of the application.
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

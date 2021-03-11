@@ -42,7 +42,7 @@ The [OnDevice Markup Extension](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.
 
 ## API
 
-* [OnDevice source code](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/OnDeviceExtension.cs)
+* [OnDevice source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/OnDeviceExtension.cs)
 
 ## Related Topics
 

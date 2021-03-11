@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 > [!WARNING]
 > (This API has been removed. For the latest guidance on using the Microsoft Graph see the [InteractiveProviderBehavior](../../graph/providers/InteractiveProviderBehavior.md).)
 
-The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
+The [PowerBIEmbedded Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
 
 ## Syntax
 
@@ -61,22 +61,22 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
       ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
 
-2. Follow this [article](https://docs.microsoft.com/power-bi/developer/embedding-content) to do the primary tasks below.
+2. Follow this [article](/power-bi/developer/embedding-content) to do the primary tasks below.
 
    * Create Power BI Pro user account
    * Create app workspaces
    * Create Power BI Embedded capacity
    * Create and publish reports
 
-3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](https://docs.microsoft.com/power-bi/desktop-create-phone-report).
+3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](/power-bi/desktop-create-phone-report).
 
 ## Sample Project
 
-[PowerBIEmbedded Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[PowerBIEmbedded Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[PowerBIEmbedded XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded/PowerBIEmbedded.xaml) is the XAML template used in the toolkit for the default styling.
+[PowerBIEmbedded XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded/PowerBIEmbedded.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

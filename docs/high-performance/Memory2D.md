@@ -9,9 +9,9 @@ dev_langs:
 
 # Memory2D&lt;T>
 
-The [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory2d-1) is a type that mirrors the functionality of the [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D, and 3D arrays) or `Memory<T>` instances. This type is meant to be used together with the [`Span2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory.span2d-1) type, in the same way that `Memory<T>` is used along with [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1). For more info on the key differences and use case scenarios of these two types, you can read [this docs page](https://docs.microsoft.com/dotnet/standard/memory-and-spans/memory-t-usage-guidelines).
+The [`Memory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.memory2d-1) is a type that mirrors the functionality of the [`Memory<T>`](/dotnet/api/system.memory-1) type, with the difference being that it can be used to represent 2D memory locations. It is extremely flexible and is capable of wrapping a number of different types, including ND arrays (with explicit support for 1D, 2D, and 3D arrays) or `Memory<T>` instances. This type is meant to be used together with the [`Span2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.memory.span2d-1) type, in the same way that `Memory<T>` is used along with [`Span<T>`](/dotnet/api/system.span-1). For more info on the key differences and use case scenarios of these two types, you can read [this docs page](/dotnet/standard/memory-and-spans/memory-t-usage-guidelines).
 
-> **Platform APIs:** [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory2d-1), [`Span2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.span2d-1), [`ReadOnlyMemory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlymemory2d-1)
+> **Platform APIs:** [`Memory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.memory2d-1), [`Span2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.span2d-1), [`ReadOnlyMemory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlymemory2d-1)
 
 ## How it works
 
@@ -85,8 +85,8 @@ Span2D<int> span = memory.Span;
 
 ## ReadOnlyMemory2D&lt;T>
 
-The [`ReadOnlyMemory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlymemory2d-1) is to the `Memory2D<T>` type what `ReadOnlyMemory<T>` is to `Memory<T>`. It exposes the same exact functionalities (minus the APIs that involve modifying the contents of the wrapped memory area) and provides a read-only view to arbitrary 2D memory locations. For more info on how this type works, you can refer to the paragraph on the `Memory2D<T>` type above.
+The [`ReadOnlyMemory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlymemory2d-1) is to the `Memory2D<T>` type what `ReadOnlyMemory<T>` is to `Memory<T>`. It exposes the same exact functionalities (minus the APIs that involve modifying the contents of the wrapped memory area) and provides a read-only view to arbitrary 2D memory locations. For more info on how this type works, you can refer to the paragraph on the `Memory2D<T>` type above.
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared).

@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > This docs page is outdated and the Platform Specific Analyzers have been removed. Improvements are continually being made to the Visual Studio development experience, so please ensure you are on the latest version.
 
-When writing [version](https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
+When writing [version](/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
 The platform specific analyzer is a Roslyn Analyzer that can parse through code and suggest fixes where appropriate.
 
 > [!div class="nextstepaction"]
@@ -41,7 +41,7 @@ Visual Basic
 
 ## Sample Project
 
-You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -52,8 +52,8 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## API
 
-* [Platform Specific Analyzer](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
+* [Platform Specific Analyzer](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
 
 ## Related Topics
 
-* [Platform Specific Differences Generator](https://docs.microsoft.com/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)

@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # String Extensions
 
-The [`StringExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.StringExtensions) type contains helpers and extensions for `string` objects, including validation methods for common scenarios.
+The [`StringExtensions`](/dotnet/api/microsoft.toolkit.StringExtensions) type contains helpers and extensions for `string` objects, including validation methods for common scenarios.
 
-> **Platform APIs:** [`StringExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.StringExtensions)
+> **Platform APIs:** [`StringExtensions`](/dotnet/api/microsoft.toolkit.StringExtensions)
 
 ## Syntax
 
@@ -39,4 +39,4 @@ bool isvalid = str.IsDecimal();  //Returns false
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

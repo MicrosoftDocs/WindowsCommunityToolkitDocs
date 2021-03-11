@@ -10,7 +10,7 @@ dev_langs:
 
 # DeepLinkParser
 
-The [DeepLinkParser Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.deeplinkparser) provides a way to create, from `IActivatedEventArgs` a `Dictionary<string,string>`-inheriting object that provides an additional `.Root` property to pull the base path of the URI (eg: in `MainPage/Options?option1=value1`, `.Root` would be `MainPage/Options`.
+The [DeepLinkParser Class](/dotnet/api/microsoft.toolkit.uwp.helpers.deeplinkparser) provides a way to create, from `IActivatedEventArgs` a `Dictionary<string,string>`-inheriting object that provides an additional `.Root` property to pull the base path of the URI (eg: in `MainPage/Options?option1=value1`, `.Root` would be `MainPage/Options`.
 Once you have an instance, simply saying `instance["optionName"]` will pull the value from the querystring for that option.
 
 ## Properties
@@ -25,7 +25,7 @@ Once you have an instance, simply saying `instance["optionName"]` will pull the 
 | -- | -- | -- |
 | Create(String) | DeepLinkParser | Creates an instance of `DeepLinkParser` for the given `string` |
 | Create(Uri) | DeepLinkParser | Creates an instance of DeepLinkParser for the given Uri |
-| Create(IActivatedEventArgs) | DeepLinkParser | Creates an instance of DeepLinkParser for the given [IActivatedEventArgs](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Activation.IActivatedEventArgs) |
+| Create(IActivatedEventArgs) | DeepLinkParser | Creates an instance of DeepLinkParser for the given [IActivatedEventArgs](/uwp/api/Windows.ApplicationModel.Activation.IActivatedEventArgs) |
 | ValidateSourceUri(String) | Uri | Validates the source URI |
 
 ### Example
@@ -65,7 +65,7 @@ If e.PrelaunchActivated = False Then
 
 ## CollectionFormingDeepLinkParser
 
-The [CollectionFormingDeepLinkParser Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.collectionformingdeeplinkparser) will to be able to do something like `?pref=this&pref=that&pref=theOther` and have a pull of `pref` come back with `this,that,theOther` as its value. This derivative of `DeepLinkParser` provides this functionality.
+The [CollectionFormingDeepLinkParser Class](/dotnet/api/microsoft.toolkit.uwp.helpers.collectionformingdeeplinkparser) will to be able to do something like `?pref=this&pref=that&pref=theOther` and have a pull of `pref` come back with `this,that,theOther` as its value. This derivative of `DeepLinkParser` provides this functionality.
 
 ### Example
 
@@ -109,7 +109,7 @@ The method that does the heavy lifting of parsing in to the `Dictionary<string,s
 
 ## QueryParameterCollection
 
-The [QueryParameterCollection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.queryparametercollection) helper class aids in the creation of a `Collection<KeyValuePair<string,string>>` populated with they key-value pairs of all parameters in a query string.
+The [QueryParameterCollection](/dotnet/api/microsoft.toolkit.uwp.helpers.queryparametercollection) helper class aids in the creation of a `Collection<KeyValuePair<string,string>>` populated with they key-value pairs of all parameters in a query string.
 
 ### Example
 
@@ -148,4 +148,4 @@ lastName - Doe
 
 ### API
 
-* [DeepLinkParser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser)
+* [DeepLinkParser source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/DeepLinkParser)

@@ -8,7 +8,7 @@ We will periodically merge updates from the live branch to master to keep master
 
 Documentation Links
 **This link is currently only available for Microsoft Employees** - [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/communitytoolkit/?branch=master)
-- [Live site from 'live' branch](https://docs.microsoft.com/windows/communitytoolkit) -->
+- [Live site from 'live' branch](/windows/communitytoolkit) -->
 
 ## Fixes # <!-- Link to a relevant issue # in this docs repository (if any, otherwise remove this line) -->
 ## Docs for Toolkit PR [#](https://github.com/windows-toolkit/WindowsCommunityToolkit/pull/#) <!-- Link to relevant issue or Feature PR # of the Windows Community Toolkit repo which will create a reference to the associated issue and PR once it is created, remove if not tied to an issue or feature -->
@@ -21,8 +21,8 @@ Documentation Links
 Please check if your PR fulfills the following requirements:
 
 - [ ] Correctly picked the right branch to base the change off (`master` for new features, `live` for typos/improvements)
-- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/.template.md)
-- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md)
+- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/rel/7.0.0/docs/.template.md)
+- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/rel/7.0.0/docs/toc.md)
 - [ ] Ran against a spell and grammar checker 
 - [ ] Contains **NO** breaking changes
 

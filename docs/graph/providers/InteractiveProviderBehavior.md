@@ -10,7 +10,7 @@ dev_langs:
 # InteractiveProviderBehavior XAML Behavior
 
 <!-- Describe your control -->
-The [InteractiveProviderBehavior](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.providers.interactiveproviderbehavior) provides a quick and easy way to connect to the Microsoft Identity platform and Microsoft Graph.  It is built on top of the Graph SDK's authentication providers, but allows usage from XAML.
+The [InteractiveProviderBehavior](/dotnet/api/microsoft.toolkit.graph.providers.interactiveproviderbehavior) provides a quick and easy way to connect to the Microsoft Identity platform and Microsoft Graph.  It is built on top of the Graph SDK's authentication providers, but allows usage from XAML.
 
 Add this behavior to your application's main page. It only needs to be added to a single page to bootstrap all the other Graph enabled XAML controls.
 
@@ -30,7 +30,7 @@ Add this behavior to your application's main page. It only needs to be added to 
 ## WPF
 
 > [!IMPORTANT]
-> This provider must be initialized in your WPF app when using the XAML Graph controls from [XAML Islands](https://docs.microsoft.com/windows/apps/desktop/modernize/xaml-islands). The same syntax above is used; however, you must include the [Microsoft.Toolkit.Wpf.Graph.Providers](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.Graph.Providers) NuGet package instead.
+> This provider must be initialized in your WPF app when using the XAML Graph controls from [XAML Islands](/windows/apps/desktop/modernize/xaml-islands). The same syntax above is used; however, you must include the [Microsoft.Toolkit.Wpf.Graph.Providers](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.Graph.Providers) NuGet package instead.
 
 ## Properties
 
@@ -49,10 +49,10 @@ Add this behavior to your application's main page. It only needs to be added to 
 
 ## API
 
-* [InteractiveProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/master/Microsoft.Toolkit.Graph.Controls/Providers/InteractiveProviderBehavior.cs)
-* [InteractiveProviderBehavior usage in XAML Islands Sample](https://github.com/windows-toolkit/Graph-Controls/blob/master/Samples/XAML%20Islands/WPF-Core-GraphApp/MainWindow.xaml)
+* [InteractiveProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Providers/InteractiveProviderBehavior.cs)
+* [InteractiveProviderBehavior usage in XAML Islands Sample](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.0.0/Samples/XAML%20Islands/WPF-Core-GraphApp/MainWindow.xaml)
 
 ## Related Topics
 
 * [Graph SDK Authentication Providers](https://github.com/microsoftgraph/msgraph-sdk-dotnet-auth)
-* [App Registration Quick-Start for Client Id](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+* [App Registration Quick-Start for Client Id](/azure/active-directory/develop/quickstart-register-app)

@@ -9,11 +9,11 @@ dev_langs:
 
 # Span2D&lt;T>
 
-The [`Span2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.span2d-1) is a type that mirrors the functionality of the [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1) type, but it supports 2D memory regions. Just like [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.memory2d-1), it is extremely flexible and can wrap a number of different objects, as well as native pointers or GC references.
+The [`Span2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.span2d-1) is a type that mirrors the functionality of the [`Span<T>`](/dotnet/api/system.span-1) type, but it supports 2D memory regions. Just like [`Memory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.memory2d-1), it is extremely flexible and can wrap a number of different objects, as well as native pointers or GC references.
 
-The internal layout is similar to that used by the [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.Memory2D-1) type, including a pitch parameter that is used to enable support for discontiguous memory buffers. You can read more info on this in the `Memory2D<T>` docs.
+The internal layout is similar to that used by the [`Memory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.Memory2D-1) type, including a pitch parameter that is used to enable support for discontiguous memory buffers. You can read more info on this in the `Memory2D<T>` docs.
 
-> **Platform APIs:** [`Span2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.span2d-1), [`Memory2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.Memory2D-1), [`ReadOnlySpan2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyspan2d-1)
+> **Platform APIs:** [`Span2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.span2d-1), [`Memory2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.Memory2D-1), [`ReadOnlySpan2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlyspan2d-1)
 
 ## Syntax
 
@@ -109,8 +109,8 @@ int[] array = span.GetRow(1).ToArray();
 
 ## ReadOnlySpan2D&lt;T>
 
-The [`ReadOnlySpan2D<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.readonlyspan2d-1) is to the `Span2D<T>` type what `ReadOnlySpan<T>` is to `Span<T>`. It exposes a similar set of APIs but provides no way to directly modify the contents of the underlying memory area.
+The [`ReadOnlySpan2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonlyspan2d-1) is to the `Span2D<T>` type what `ReadOnlySpan<T>` is to `Span<T>`. It exposes a similar set of APIs but provides no way to directly modify the contents of the underlying memory area.
 
 ## Sample Code
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared).

@@ -8,9 +8,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # PullToRefreshListView XAML Control
 
 > [!NOTE]
-> The PullToRefreshListView is no longer available in the Windows Community Toolkit. Please use the [RefreshContainer](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/pull-to-refresh). Read the [Moving to RefreshContainer](#refreshcontainer) section for more info.
+> The PullToRefreshListView is no longer available in the Windows Community Toolkit. Please use the [RefreshContainer](/windows/uwp/design/controls-and-patterns/pull-to-refresh). Read the [Moving to RefreshContainer](#refreshcontainer) section for more info.
 
-The [PullToRefreshListView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.pulltorefreshlistview), is derived from the built-in List View in XAML. It lets the user pull down beyond the top limit on the listview to trigger a refresh of the content. This control can create rich, animations, and is easy to use.
+The [PullToRefreshListView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.pulltorefreshlistview), is derived from the built-in List View in XAML. It lets the user pull down beyond the top limit on the listview to trigger a refresh of the content. This control can create rich, animations, and is easy to use.
 
 This control is very common on mobile devices, where the user can pull from the top to force a content refresh in applications like Twitter.
 
@@ -72,11 +72,11 @@ be raised and the *RefreshIntentCanceledCommand*, if any, will be executed.
 
 ## Sample Code
 
-[PullToRefreshListView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/rel/4.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PullToRefreshListView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[PullToRefreshListView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PullToRefreshListView). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## <a name="refreshcontainer"></a> Moving to RefreshContainer
 
-The 1803 version of Windows now includes its own implementation of [pull-to-refresh](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/pull-to-refresh) controls, having [RefreshContainer](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.refreshcontainer) as the main control.
+The 1803 version of Windows now includes its own implementation of [pull-to-refresh](/windows/uwp/design/controls-and-patterns/pull-to-refresh) controls, having [RefreshContainer](/uwp/api/windows.ui.xaml.controls.refreshcontainer) as the main control.
 
 The PullToRefreshListView and the RefreshContainer share the same concepts and provide mostly the same functionality, with the caveat that the RefreshContainer works only with a touch interface.
 
@@ -84,7 +84,7 @@ The PullToRefreshListView and the RefreshContainer share the same concepts and p
 
 * **XAML:** The RefreshContainer is very simple to use. Unlike the PullToRefreshListView, the RefreshContainer isn't based on the ListView control, so to use it you just need to add the XAML element as a parent of the element you'll use as your item container, like a ListView or a ScrollViewer.
 
-* **Code behind:** The RefreshContainer invokes the RefreshRequested event whenever a refresh is triggered. Unlike most event handlers, it has the peculiarity of coming with a [Deferral](https://docs.microsoft.com/uwp/api/windows.foundation.deferral) object, that you can get from the [RefreshRequestedEventArgs](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.refreshrequestedeventargs) by calling [GetDeferral](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.refreshrequestedeventargs.getdeferral#Windows_UI_Xaml_Controls_RefreshRequestedEventArgs_GetDeferral).
+* **Code behind:** The RefreshContainer invokes the RefreshRequested event whenever a refresh is triggered. Unlike most event handlers, it has the peculiarity of coming with a [Deferral](/uwp/api/windows.foundation.deferral) object, that you can get from the [RefreshRequestedEventArgs](/uwp/api/windows.ui.xaml.controls.refreshrequestedeventargs) by calling [GetDeferral](/uwp/api/windows.ui.xaml.controls.refreshrequestedeventargs.getdeferral#Windows_UI_Xaml_Controls_RefreshRequestedEventArgs_GetDeferral).
 To notify that your refresh code has completed, you can mark the deferral as completed by calling its Complete method or wrap your refresh code with a using statement of the deferral.
 
 > [!NOTE]
@@ -112,7 +112,7 @@ There are several PullToRefreshListView properties that have no effect when the 
 
 ## Default Template
 
-[PullToRefreshListView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/rel/4.0.0/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView/PullToRefreshListView.xaml) is the XAML template used in the toolkit for the default styling.
+[PullToRefreshListView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/PullToRefreshListView/PullToRefreshListView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

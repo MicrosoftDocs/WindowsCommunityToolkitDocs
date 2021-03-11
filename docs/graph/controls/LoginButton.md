@@ -9,7 +9,7 @@ dev_langs:
 
 # LoginButton XAML Control
 
-The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
+The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 
 * When the user is not signed in, the control is a simple button to initiate the sign in process.
 * When the user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
@@ -46,7 +46,7 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## Sample Project
 
-[LoginButton sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[LoginButton sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -57,9 +57,9 @@ The [LoginButton](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.graph.
 
 ## API
 
-* [LoginButton source code](https://github.com/windows-toolkit/Graph-Controls/tree/master/Microsoft.Toolkit.Graph.Controls/Controls/LoginButton)
+* [LoginButton source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/LoginButton)
 
 ## Related Topics
 
-* [User Graph API](https://docs.microsoft.com/graph/api/resources/user?view=graph-rest-beta)
-* [MGT Login Component](https://docs.microsoft.com/graph/toolkit/components/login)
+* [User Graph API](/graph/api/resources/user?view=graph-rest-beta)
+* [MGT Login Component](/graph/toolkit/components/login)

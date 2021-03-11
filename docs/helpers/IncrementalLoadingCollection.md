@@ -14,8 +14,8 @@ The **IncrementalLoadingCollection** helpers greatly simplify the definition and
 
 | Helper | Purpose |
 | --- | --- |
-|[IIncrementalSource](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
-|[IncrementalLoadingCollection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
+|[IIncrementalSource](/dotnet/api/microsoft.toolkit.collections.iincrementalsource-1) | An interface that represents a data source whose items can be loaded incrementally. |
+|[IncrementalLoadingCollection](/dotnet/api/microsoft.toolkit.uwp.incrementalloadingcollection-2) | An extension of [ObservableCollection](https://msdn.microsoft.com/library/ms668604.aspx) such that its items are loaded only when needed. |
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Incremental%20Loading%20Collection)
@@ -134,7 +134,7 @@ PeopleListView.ItemsSource = collection
 
 ## Sample Project
 
-[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -145,4 +145,4 @@ PeopleListView.ItemsSource = collection
 
 ## API
 
-* [IncrementalLoadingCollection source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)
+* [IncrementalLoadingCollection source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)
