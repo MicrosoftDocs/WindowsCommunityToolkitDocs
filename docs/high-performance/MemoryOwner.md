@@ -9,15 +9,15 @@ dev_langs:
 
 # MemoryOwner&lt;T>
 
-The [`MemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1) is a buffer type implementing [`IMemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.imemoryowner-1), an embedded length property and a series of performance oriented APIs. It is essentially a lightweight wrapper around the [`ArrayPool<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.arraypool-1) type, with some additional helper utilities.
+The [`MemoryOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1) is a buffer type implementing [`IMemoryOwner<T>`](/dotnet/api/system.buffers.imemoryowner-1), an embedded length property and a series of performance oriented APIs. It is essentially a lightweight wrapper around the [`ArrayPool<T>`](/dotnet/api/system.buffers.arraypool-1) type, with some additional helper utilities.
 
-> **Platform APIs:** [`MemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1), [`AllocationMode`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.allocationmode)
+> **Platform APIs:** [`MemoryOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1), [`AllocationMode`](/dotnet/api/microsoft.toolkit.highperformance.buffers.allocationmode)
 
 ## How it works
 
 `MemoryOwner<T>` has the following main features:
 
-- One of the main issues of arrays returned by the `ArrayPool<T>` APIs and of the `IMemoryOwner<T>` instances returned by the [`MemoryPool<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.memorypool-1) APIs is that the size specified by the user is only being used as a _minum_ size: the actual size of the returned buffers might actually be greater. `MemoryOwner<T>` solves this by also storing the original requested size, so that [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) and [`Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1) instances retrieved from it will never need to be manually sliced.
+- One of the main issues of arrays returned by the `ArrayPool<T>` APIs and of the `IMemoryOwner<T>` instances returned by the [`MemoryPool<T>`](/dotnet/api/system.buffers.memorypool-1) APIs is that the size specified by the user is only being used as a _minum_ size: the actual size of the returned buffers might actually be greater. `MemoryOwner<T>` solves this by also storing the original requested size, so that [`Memory<T>`](/dotnet/api/system.memory-1) and [`Span<T>`](/dotnet/api/system.span-1) instances retrieved from it will never need to be manually sliced.
 - When using `IMemoryOwner<T>`, getting a `Span<T>` for the underlying buffer requires first to get a `Memory<T>` instance, and then a `Span<T>`. This is fairly expensive, and often unnecessary, as the intermediate `Memory<T>` might actually not be needed at all. `MemoryOwner<T>` instead has an additional `Span` property which is extremely lightweight, as it directly wraps the internal `T[]` array being rented from the pool.
 - Buffers rented from the pool are not cleared by default, which means that if they were not cleared when being previous returned to the pool, they might contain garbage data. Normally, users are required to clear these rented buffers manually, which can be verbose especially when done frequently. `MemoryOwner<T>` has a more flexible approach to this, through the `Allocate(int, AllocationMode)` API. This method not only allocates a new instance of exactly the requested size, but can also be used to specify which allocation mode to use: either the same one as `ArrayPool<T>`, or one that automatically clears the rented buffer.
 - There are cases where a buffer might be rented with a greater size than what is actually needed, and then resized afterwards. This would normally require users to rent a new buffer and copy the region of interest from the old buffer. Instead, `MemoryOwner<T>` exposes a `Slice(int, int)` API that simply return a new instance wrapping the specified area of interest. This allows to skip renting a new buffer and copying the items entirely.
@@ -99,8 +99,8 @@ public static MemoryOwner<byte> GetBytesFromFile(string path)
 }
 ```
 
-The returned `IMemoryOwner<byte>` instance will take care of disposing the underlying buffer and returning it to the pool when its [`IDisposable.Dispose`](https://docs.microsoft.com/dotnet/api/system.idisposable.dispose) method is invoked. We can use it to get a `Memory<T>` or `Span<T>` instance to interact with the loaded data, and then dispose the instance when we no longer need it. Additionally, all the `MemoryOwner<T>` properties (like `MemoryOwner<T>.Span`) respect the initial requested size we used, so we no longer need to manually keep track of the effective size within the rented buffer.
+The returned `IMemoryOwner<byte>` instance will take care of disposing the underlying buffer and returning it to the pool when its [`IDisposable.Dispose`](/dotnet/api/system.idisposable.dispose) method is invoked. We can use it to get a `Memory<T>` or `Span<T>` instance to interact with the loaded data, and then dispose the instance when we no longer need it. Additionally, all the `MemoryOwner<T>` properties (like `MemoryOwner<T>.Span`) respect the initial requested size we used, so we no longer need to manually keep track of the effective size within the rented buffer.
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared/Buffers).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared/Buffers).

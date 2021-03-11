@@ -9,13 +9,13 @@ dev_langs:
 
 # SpanOwner&lt;T>
 
-The [`SpanOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1) is a stack-only buffer type that rents buffers from a shared memory pool. It essentially mirrors the functionality of [`MemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1), but as a `ref struct` type. This is particularly useful for short-lived buffers that are only used in synchronous code (that don't require [`Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1) instances), as well as code running in a tight loop, as creating `SpanOwner<T>` values will not require memory allocations at all.
+The [`SpanOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1) is a stack-only buffer type that rents buffers from a shared memory pool. It essentially mirrors the functionality of [`MemoryOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1), but as a `ref struct` type. This is particularly useful for short-lived buffers that are only used in synchronous code (that don't require [`Memory<T>`](/dotnet/api/system.memory-1) instances), as well as code running in a tight loop, as creating `SpanOwner<T>` values will not require memory allocations at all.
 
-> **Platform APIs:** [`SpanOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1), [`MemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1)
+> **Platform APIs:** [`SpanOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.spanowner-1), [`MemoryOwner<T>`](/dotnet/api/microsoft.toolkit.highperformance.buffers.memoryowner-1)
 
 ## Syntax
 
-The same core features of `MemoryOwner<T>` apply to this type as well, with the exception of it being a stack-only `struct`, and the fact that it lacks the [`IMemoryOwner<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.imemoryowner-1) `interface` implementation, as well as the `Memory<T>` property. The syntax is virtually identical to that used with `MemoryOwner<T>` as well, except for the differences mentioned above.
+The same core features of `MemoryOwner<T>` apply to this type as well, with the exception of it being a stack-only `struct`, and the fact that it lacks the [`IMemoryOwner<T>`](/dotnet/api/system.buffers.imemoryowner-1) `interface` implementation, as well as the `Memory<T>` property. The syntax is virtually identical to that used with `MemoryOwner<T>` as well, except for the differences mentioned above.
 
 As an example, suppose we have a method where we need to allocate a temporary buffer of a specified size (let's call this value `length`), and then use it to perform some work. A first, inefficient version might look like this:
 
@@ -25,7 +25,7 @@ byte[] buffer = new byte[length];
 // Use buffer here
 ```
 
-This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.arraypool-1):
+This is not ideal, as we're allocating a new buffer every time this code is used, and then throwing it away immediately (as mentioned in the `MemoryOwner<T>` docs as well), which puts more pressure on the garbage collector. We can optimize the code above by using [`ArrayPool<T>`](/dotnet/api/system.buffers.arraypool-1):
 
 ```csharp
 // Using directive to access the ArrayPool<T> type
@@ -66,4 +66,4 @@ The `SpanOwner<T>` instance will internally rent an array, and will take care of
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/UnitTests.HighPerformance.Shared/Buffers).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared/Buffers).

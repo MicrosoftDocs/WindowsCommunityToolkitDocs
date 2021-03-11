@@ -49,4 +49,4 @@ The [BackdropSepiaBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropsepi
 
 ## Related Topics
 
-* [Win2D SepiaEffect reference](http://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SepiaEffect.htm)
+* [Win2D SepiaEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SepiaEffect.htm)

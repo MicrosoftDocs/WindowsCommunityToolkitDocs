@@ -76,11 +76,11 @@ In order to create a Markdown Renderer, you can either implement your own, or in
 
 This requires an inherited `IRenderContext`, which allows you to keep track of the Context of the rendering.
 
-The best way to figure out how to create a Renderer, is to look at the [implementation](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/Render) for the UWP MarkdownTextBlock control.
+The best way to figure out how to create a Renderer, is to look at the [implementation](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/Render) for the UWP MarkdownTextBlock control.
 
 ## Sample Project
 
-[Markdown Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/rel/7.0.0/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Markdown Parser Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/rel/7.0.0/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownParser/MarkdownParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=Markdown%20Parser) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -91,4 +91,4 @@ The best way to figure out how to create a Renderer, is to look at the [implemen
 
 ## API
 
-* [Markdown Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/Parsers/Markdown)
+* [Markdown Parser source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/Parsers/Markdown)

@@ -111,8 +111,8 @@ Add the following XML to your application configuration file:
      <!-- The combination of below two tags have the following effect :
      1) Per-Monitor for >= Windows 10 Anniversary Update
      2) System < Windows 10 Anniversary Update -->
-     <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitor</dpiAwareness>
-     <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
+     <dpiAwareness xmlns="https://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitor</dpiAwareness>
+     <dpiAware xmlns="https://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
    </windowsSettings>
  </application>
 ```
@@ -135,11 +135,11 @@ The **WebViewCompatible** control has several APIs for basic navigation:  [GoBac
 To set the initial content of the **WebViewCompatible** control, you can set the [Source](/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
 
 ```csharp
-webViewCompatible1.Navigate("http://www.contoso.com");
+webViewCompatible1.Navigate("https://www.contoso.com");
 ```
 
 ```vb
-webViewCompatible1.Navigate("http://www.contoso.com")
+webViewCompatible1.Navigate("https://www.contoso.com")
 ```
 
 ## Respond to navigation events

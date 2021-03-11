@@ -10,9 +10,9 @@ dev_langs:
 # MatrixHelperEx
 
 > [!WARNING]
-> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
+> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
 
-[MatrixHelperEx](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
+[MatrixHelperEx](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
 ## Methods
 
@@ -31,11 +31,11 @@ dev_langs:
 
 ## API Source Code
 
-- [MatrixHelperEx source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/Media/MatrixHelperEx.cs)
+- [MatrixHelperEx source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/Media/MatrixHelperEx.cs)
 
 ## Related Topics
 
-- [Windows.UI.Xaml.Media.Matrix](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.Matrix)
-- [Windows.Foundation.Rect](https://docs.microsoft.com/uwp/api/Windows.Foundation.Rect)
+- [Windows.UI.Xaml.Media.Matrix](/uwp/api/Windows.UI.Xaml.Media.Matrix)
+- [Windows.Foundation.Rect](/uwp/api/Windows.Foundation.Rect)
 - [System.Windows.Media.Matrix](https://msdn.microsoft.com/library/system.windows.media.matrix(v=vs.110).aspx)
 - [System.Windows.Rect](https://msdn.microsoft.com/library/system.windows.rect(v=vs.110).aspx)

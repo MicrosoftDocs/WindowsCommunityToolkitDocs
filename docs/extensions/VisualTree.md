@@ -13,9 +13,9 @@ dev_langs:
 > [!WARNING]
 > This type has been removed from the Windows Community Toolkit, please use the [`DependencyObjectExtensions`](DependencyObjectExtensions.md) type instead.
 
-The [VisualTree extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.visualtree) provide a collection of extensions methods for UI controls.
+The [VisualTree extensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.visualtree) provide a collection of extensions methods for UI controls.
 
-It provides [DependencyObject](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.DependencyObject) extensions to aid in using the [VisualTreeHelper](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. The official [VisualTreeHelper](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) documentation best explains reasons for walking the Visual Tree.
+It provides [DependencyObject](/uwp/api/Windows.UI.Xaml.DependencyObject) extensions to aid in using the [VisualTreeHelper](/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. The official [VisualTreeHelper](/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) documentation best explains reasons for walking the Visual Tree.
 
 ## Syntax
 
@@ -82,8 +82,8 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 ## API
 
-* [VisualTree extensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/VisualTree.cs)
+* [VisualTree extensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/VisualTree.cs)
 
 ## Related Topics
 
-* [LogicalTree Extensions](https://docs.microsoft.com/windows/communitytoolkit/extensions/logicaltree)
+* [LogicalTree Extensions](/windows/communitytoolkit/extensions/logicaltree)

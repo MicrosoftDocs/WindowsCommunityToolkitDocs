@@ -18,7 +18,7 @@ Please note that controls cannot be linked to a visual tree. This means that the
 If you want to use a control from your current XAML page, you can disconnect it before sending it to print (by removing it from its container) or you can create just create a new one from scratch.
 
 Please check the sample app code to see how to disconnect/reconnect a control that you want to print:
-<https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper/PrintHelperPage.xaml.cs>
+<https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper/PrintHelperPage.xaml.cs>
 
 Several events are available to control the printing process:
 
@@ -307,7 +307,7 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
 ## Sample Project
 
-[PrintHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[PrintHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PrintHelper). You can [see this in action](uwpct://Helpers?sample=PrintHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -318,4 +318,4 @@ await printHelper.ShowPrintUIAsync("Windows Community Toolkit Sample App", print
 
 ## API
 
-* [Print Helper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/PrintHelper/)
+* [Print Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/PrintHelper/)

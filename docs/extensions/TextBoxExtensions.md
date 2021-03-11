@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # TextBoxExtensions
 
-The [`TextBoxExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions) type provides additional features for the [`TextBox`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.textbox) control through extension methods and attached properties.
+The [`TextBoxExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions) type provides additional features for the [`TextBox`](/uwp/api/windows.ui.xaml.controls.textbox) control through extension methods and attached properties.
 
-> **Platform APIs:** [`TextBoxExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions), [`TextBoxExtensions.ValidationMode`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationMode), [`TextBoxExtensions.ValidationType`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationType), [`SurfaceDialOptions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.SurfaceDialOptions)
+> **Platform APIs:** [`TextBoxExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions), [`TextBoxExtensions.ValidationMode`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationMode), [`TextBoxExtensions.ValidationType`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationType), [`SurfaceDialOptions`](/dotnet/api/microsoft.toolkit.uwp.ui.SurfaceDialOptions)
 
 ## Text mask
 
@@ -79,11 +79,11 @@ The `Regex` attached property allows text validation using a regular expression 
 
 The developer adds a regular expression to validate the TextBox Text against the regular expression throw Regex property or from selecting ValidationType property on the TextBox.
 
-The validation has 3 modes ([`TextBoxExtensions.ValidationMode`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationMode)):
+The validation has 3 modes ([`TextBoxExtensions.ValidationMode`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationMode)):
 
 1) `Normal` (Default): this mode will set the `IsValid` attached property to `false` or `true` whether the `TextBox` text is a valid or not against the `Regex` property.
 2) `Forced`: this mode sets the `IsValid` property and removes the `TextBox` text if not valid when the `TextBox` loses focus.
-3) `Dynamic`: this mode extends `Normal` and if is the newest input of the `TextBox` is invalid, the character which is invalid will be deleted. Note that the [`TextBoxExtensions.ValidationType`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationType) values `Email` and `PhoneNumber` don't support this validation mode. If you set the validation mode to `Dynamic`, `Normal` is selected automatically instead.
+3) `Dynamic`: this mode extends `Normal` and if is the newest input of the `TextBox` is invalid, the character which is invalid will be deleted. Note that the [`TextBoxExtensions.ValidationType`](/dotnet/api/microsoft.toolkit.uwp.ui.TextBoxExtensions.ValidationType) values `Email` and `PhoneNumber` don't support this validation mode. If you set the validation mode to `Dynamic`, `Normal` is selected automatically instead.
 
 ### Syntax
 
@@ -116,7 +116,7 @@ Here is a `TextBox` with `ValidationType="Email"`, with the validation occurring
 
 ## Surface Dial support
 
-The `SurfaceDialOptions` property adds features from the Surface Dial control to a numeric `TextBox`. This enables you to modify the content of the `TextBox` when rotating the Surface Dial (increasing or decreasing the value) and optionally go to the next focus element by tapping the Surface Dial click button. The various options are set through the [`SurfaceDialOptions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.SurfaceDialOptions) type, which is declared in XAML and used to set all the values to use for a given `TextBox` from a single place.
+The `SurfaceDialOptions` property adds features from the Surface Dial control to a numeric `TextBox`. This enables you to modify the content of the `TextBox` when rotating the Surface Dial (increasing or decreasing the value) and optionally go to the next focus element by tapping the Surface Dial click button. The various options are set through the [`SurfaceDialOptions`](/dotnet/api/microsoft.toolkit.uwp.ui.SurfaceDialOptions) type, which is declared in XAML and used to set all the values to use for a given `TextBox` from a single place.
 
 ### Syntax
 
@@ -152,4 +152,4 @@ Here is an example of the visual result when scrolling on a Surface Dial over a 
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

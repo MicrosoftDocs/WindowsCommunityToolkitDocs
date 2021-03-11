@@ -7,9 +7,9 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, device family, ma
 
 # OnDeviceExtension
 
-The [`OnDeviceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.ondeviceextension) type allows you to customize UI appearance on a per-DeviceFamily basis. It is inspired on the [OnPlatform](https://github.com/xamarin/Xamarin.Forms/issues/2608) markup extensions from Xamarin.Forms 3.2
+The [`OnDeviceExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.ondeviceextension) type allows you to customize UI appearance on a per-DeviceFamily basis. It is inspired on the [OnPlatform](https://github.com/xamarin/Xamarin.Forms/issues/2608) markup extensions from Xamarin.Forms 3.2
 
-> **Platform APIs:** [`OnDeviceExtension`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.ondeviceextension)
+> **Platform APIs:** [`OnDeviceExtension`](/dotnet/api/microsoft.toolkit.uwp.ui.ondeviceextension)
 
 Here is how the property can be used in XAML:
 
@@ -22,4 +22,4 @@ Here is how the property can be used in XAML:
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

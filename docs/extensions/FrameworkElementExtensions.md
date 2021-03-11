@@ -112,8 +112,8 @@ Here is how you can easily set a custom cursor type for a target `FrameworkEleme
 ```xaml
 <Page
     x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.MouseCursorPage"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">

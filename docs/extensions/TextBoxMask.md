@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 > [!WARNING]
 > These extensions have been moved to a different class and refactored with breaking changes, please refer to docs page for the [`TextBoxExtensions`](TextBoxExtensions.md) type.
 
-The [TextBoxMask Property](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.textboxmask) allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format, ex: phone number, postal code.
+The [TextBoxMask Property](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.textboxmask) allows a user to more easily enter fixed width text in TextBox control where you would like them to enter the data in a certain format, ex: phone number, postal code.
 
 The developer adds the mask property to prevent end user to enter any other format but the required one, ex postal code aaa-9999
 
@@ -140,7 +140,7 @@ The following sample demonstrates how to add TextBoxMask property.
 
 ## Sample Code
 
-[TextBoxMask Sample Page](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can [see this in action](uwpct://Extensions?sample=TextBoxMask) in the [Windows Community Toolkit Sample App](https://aka.ms/uwptoolkitapp).
+[TextBoxMask Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextBoxMask). You can [see this in action](uwpct://Extensions?sample=TextBoxMask) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -151,4 +151,4 @@ The following sample demonstrates how to add TextBoxMask property.
 
 ## API
 
-* [TextBoxMask source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/TextBoxMask)
+* [TextBoxMask source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBoxMask)

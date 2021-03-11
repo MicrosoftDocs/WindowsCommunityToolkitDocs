@@ -38,7 +38,7 @@ Follow these steps to install the High Performance package:
     using Microsoft.Toolkit.HighPerformance;
     ```
 
-4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests/UnitTests.HighPerformance.Shared) for the project.
+4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared) for the project.
 
 ## When should I use this package?
 
@@ -46,12 +46,12 @@ As the name suggests, the High Performance package contains a set of APIs that a
 
 This package makes heavy use of APIs such as:
 
-- [`System.Span<T>`](https://docs.microsoft.com/dotnet/api/system.span-1)
-- [`System.Memory<T>`](https://docs.microsoft.com/dotnet/api/system.memory-1)
-- [`System.Buffers.ArrayPool<T>`](https://docs.microsoft.com/dotnet/api/system.buffers.arraypool-1)
-- [`System.Runtime.CompilerServices.Unsafe`](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.unsafe)
-- [`System.Runtime.InteropServices.MemoryMarshal`](https://docs.microsoft.com/dotnet/api/system.runtime.interopservices.memorymarshal)
-- [`System.Threading.Tasks.Parallel`](https://docs.microsoft.com/dotnet/api/system.threading.tasks.parallel)
+- [`System.Span<T>`](/dotnet/api/system.span-1)
+- [`System.Memory<T>`](/dotnet/api/system.memory-1)
+- [`System.Buffers.ArrayPool<T>`](/dotnet/api/system.buffers.arraypool-1)
+- [`System.Runtime.CompilerServices.Unsafe`](/dotnet/api/system.runtime.compilerservices.unsafe)
+- [`System.Runtime.InteropServices.MemoryMarshal`](/dotnet/api/system.runtime.interopservices.memorymarshal)
+- [`System.Threading.Tasks.Parallel`](/dotnet/api/system.threading.tasks.parallel)
 
 If you are already familiar with these APIs or even if you're just getting started with writing high performance code in C# and want a set of well tested helpers to use in your own projects, have a look at what's included in this package to see how you can use it in your own projects!
 

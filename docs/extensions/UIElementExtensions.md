@@ -7,9 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # UIElementExtensions
 
-The [`UIElementExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions) provide helpers and attached properties for the [`UIElement`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.uielement) class.
+The [`UIElementExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions) provide helpers and attached properties for the [`UIElement`](/uwp/api/windows.ui.xaml.uielement) class.
 
-> **Platform APIs:** [`UIElementExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions)
+> **Platform APIs:** [`UIElementExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.uielementextensions)
 
 ## ClipToBounds
 
@@ -39,4 +39,4 @@ The `ClipToBounds` property allows you to indicate whether to clip the content o
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

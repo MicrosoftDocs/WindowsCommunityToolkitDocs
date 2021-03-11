@@ -16,8 +16,8 @@ We will periodically merge updates from the live branch to master to keep master
 
 ## Documentation Links
 
-- [Staging review from 'master' branch](https://review.docs.microsoft.com/en-us/windows/uwpcommunitytoolkit/?branch=master)
-- [Live site from 'live' branch](https://docs.microsoft.com/windows/uwpcommunitytoolkit)
+- [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/uwpcommunitytoolkit/?branch=master)
+- [Live site from 'live' branch](/windows/uwpcommunitytoolkit)
 
 ## Microsoft Open Source Code of Conduct
 

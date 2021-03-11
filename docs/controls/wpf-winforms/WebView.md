@@ -115,8 +115,8 @@ Add the following XML to your application configuration file:
      <!-- The combination of below two tags have the following effect :
      1) Per-Monitor for >= Windows 10 Anniversary Update
      2) System < Windows 10 Anniversary Update -->
-     <dpiAwareness xmlns="http://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitor</dpiAwareness>
-     <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
+     <dpiAwareness xmlns="https://schemas.microsoft.com/SMI/2016/WindowsSettings">PerMonitor</dpiAwareness>
+     <dpiAware xmlns="https://schemas.microsoft.com/SMI/2005/WindowsSettings">true/PM</dpiAware>
    </windowsSettings>
  </application>
 ```
@@ -149,12 +149,12 @@ To set the initial content of the the **WebView** control, you can set the [Sour
 ```csharp
 private void WebView_Loaded(object sender, RoutedEventArgs e)
 {
-    webView1.Navigate("http://www.contoso.com");
+    webView1.Navigate("https://www.contoso.com");
 }
 ```
 
 ```vb
-webView1.Navigate("http://www.contoso.com")
+webView1.Navigate("https://www.contoso.com")
 ```
 
 > [!IMPORTANT]
@@ -476,10 +476,10 @@ MainWindow.xaml
 
 ```xaml
 <Window
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="https://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="https://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:WPF="clr-namespace:Microsoft.Toolkit.Wpf.UI.Controls;assembly=Microsoft.Toolkit.Wpf.UI.Controls.WebView"
     Title="MainWindow"
     Width="800"

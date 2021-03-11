@@ -20,7 +20,7 @@ In the example below, we use an Image as fallback for the Lottie animation:
     <controls:AnimatedVisualPlayer x:Name="player">
         <!-- LottieVisualSource with invalid UriSource to cause fallback -->
         <lottie:LottieVisualSource x:Name="JsonSource "
-                                    UriSource="http://notarealuri.microsoft.com/notarealfile.json" />
+                                    UriSource="https://notarealuri.microsoft.com/notarealfile.json" />
         <!-- Fallback Content: Custom XAML content that is rendered if Source fails to load, or if app runs on Windows 10 verion < 1809. -->
         <controls:AnimatedVisualPlayer.FallbackContent>
             <DataTemplate>
@@ -35,7 +35,7 @@ In the example below, we use an Image as fallback for the Lottie animation:
 
 ## Resources
 
-* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/master/samples/LottieSamples/Scenarios/FallbackPage.xaml) for sample: handling failure and down-level
+* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.0.0/samples/LottieSamples/Scenarios/FallbackPage.xaml) for sample: handling failure and down-level
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [FallbackContent](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.fallbackcontent) property
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

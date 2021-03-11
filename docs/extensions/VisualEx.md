@@ -11,7 +11,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Visual, compositi
 > [!WARNING]
 > This docs page is outdated and the `VisualEx` type has been removed from the Windows Community Toolkit, please refer to the docs for the [`VisualExtensions`](VisualExtensions.md) type.
 
-The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML.
+The Composition Visual Attached Properties allow developers to modify common properties of the [object visual](/uwp/api/Windows.UI.Composition.Visual) of an element directly in XAML.
 
 ## Example
 
@@ -87,4 +87,4 @@ The point about which rotation or scaling occurs, normalized between the values 
 
 ## API
 
-* [Visual extensions source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Visual/VisualEx.cs)
+* [Visual extensions source code](https://github.com/Microsoft/UWPCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Visual/VisualEx.cs)

@@ -12,9 +12,9 @@ dev_langs:
 
 > [!WARNING]
 > (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx)
-> or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
+> or [Windows.Web.Http.HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
-[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
+[HttpHelperResponse](/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
 
 ## Sample
 
@@ -91,4 +91,4 @@ End Using
 
 ## API
 
-* [HttpHelperResponse source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)
+* [HttpHelperResponse source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)

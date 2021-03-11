@@ -70,8 +70,8 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## Related Topics
 
-* [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
-* [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
+* [Project Rome](https://developer.microsoft.com/windows/project-rome)
+* [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.0.0/Samples/RemoteSystems)
 * [Connected apps and devices (Project Rome)](/windows/uwp/launch-resume/connected-apps-and-devices)
 * [Communicate with a remote app service](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)
+* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.0.0/Samples/AppServices)

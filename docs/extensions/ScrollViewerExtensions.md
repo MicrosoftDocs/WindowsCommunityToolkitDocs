@@ -7,13 +7,13 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ScrollViewerExtensions
 
-The [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions) type provides extension methods to improve your [`ScrollViewer`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.scrollviewer) implementation.
+The [`ScrollViewerExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions) type provides extension methods to improve your [`ScrollViewer`](/uwp/api/windows.ui.xaml.controls.scrollviewer) implementation.
 
-> **Platform APIs:** [`ScrollViewerExtensions`](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions)
+> **Platform APIs:** [`ScrollViewerExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.scrollviewerextensions)
 
 ## ScrollBarMargin
 
-The `ScrollBarMargin` property provides a way to assign a [`Thickness`](https://docs.microsoft.com/dotnet/api/system.windows.thickness) to the vertical/horizontal [`ScrollBar`](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.primitives.scrollbar) of your container.
+The `ScrollBarMargin` property provides a way to assign a [`Thickness`](/dotnet/api/system.windows.thickness) to the vertical/horizontal [`ScrollBar`](/uwp/api/windows.ui.xaml.controls.primitives.scrollbar) of your container.
 
 Here is how this property can be used in XAML:
 
@@ -111,7 +111,7 @@ This code results in the following UI:
 
 #### Using Existing Resource File
 
-1. Download [MiddleClickScrolling-CursorType.res](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer/MiddleClickScrolling-CursorType.res) file
+1. Download [MiddleClickScrolling-CursorType.res](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer/MiddleClickScrolling-CursorType.res) file
 2. Move this file into your project's folder
 3. Open .csproj file of your project in [Visual Studio Code](https://code.visualstudio.com/) or in any other code editor
 4. Add `<Win32Resource>MiddleClickScrolling-CursorType.res</Win32Resource>` in the first `<PropertyGroup>`
@@ -127,4 +127,4 @@ You can easily edit the existing resource file to customize the cursor depending
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

@@ -201,7 +201,7 @@ public static void FillSquircle(this CanvasDrawingSession session, float x, floa
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
 
-[CanvasPathGeometry Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CanvasPathGeometry/CanvasPathGeometryPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=CanvasPathGeometryPage) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[CanvasPathGeometry Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CanvasPathGeometry/CanvasPathGeometryPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=CanvasPathGeometryPage) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -212,4 +212,4 @@ public static void FillSquircle(this CanvasDrawingSession session, float x, floa
 
 ## API
 
-- [CanvasPathGeometry Source Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Media/Geometry/CanvasPathGeometry.cs)
+- [CanvasPathGeometry Source Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Geometry/CanvasPathGeometry.cs)

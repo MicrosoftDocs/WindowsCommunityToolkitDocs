@@ -20,7 +20,7 @@ The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [
 
 ## App Setup
 
-Go to [我的应用(my apps)](http://open.weibo.com/apps) and select your app. Then click the *应用信息*(app info) tab on the left sidebar you will be able to find the following fields:
+Go to [我的应用(my apps)](https://open.weibo.com/apps) and select your app. Then click the *应用信息*(app info) tab on the left sidebar you will be able to find the following fields:
 
 **App Key**
 Copy this from the *应用基本信息*(basic information) section on your application page.
@@ -32,7 +32,7 @@ Copy this from the *应用基本信息*(basic information) section on your appli
 Due to the restriction by Weibo API, a status you post must include a url which starts with "http"/"https". You can add a url to the list of secure domains in the *应用基本信息*(basic information) section on your application page.
 
 **Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar.
-*Example*: `http://myapp.company.com` - (this does not have to be a working URL)
+*Example*: `https://myapp.company.com` - (this does not have to be a working URL)
 
 ## Syntax
 
@@ -97,7 +97,7 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## Sample Project
 
-[Weibo Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Weibo Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -108,4 +108,4 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## API
 
-* [Weibo Service source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Services/Services/Weibo)
+* [Weibo Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/Weibo)
