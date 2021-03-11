@@ -89,8 +89,6 @@
 
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 
-## [Menu](controls/Menu.md)
-
 ## [OrbitView](controls/OrbitView.md)
 
 ## [RadialGauge](controls/RadialGauge.md)
@@ -108,8 +106,6 @@
 ## [SwitchPresenter](controls/SwitchPresenter.md)
 
 ## [TabbedCommandBar](controls/TabbedCommandBar.md)
-
-## [TabView](controls/TabView.md)
 
 ## [TextToolbar](controls/TextToolbar.md)
 
@@ -184,8 +180,6 @@
 ## [PipelineBrush](brushes/PipelineBrush.md)
 
 ## [PipelineVisualFactory](brushes/PipelineVisualFactory.md)
-
-## [RadialGradientBrush](brushes/RadialGradientBrush.md)
 
 ## [TilesBrush](brushes/TilesBrush.md)
 
@@ -385,9 +379,15 @@
 
 ### [Scale](animations/Scale.md)
 
+## Brushes
+
+### [RadialGradientBrush](brushes/RadialGradientBrush.md)
+
 ## Controls
 
 ### [HamburgerMenu](archive/HamburgerMenu.md)
+
+### [Menu](controls/Menu.md)
 
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 
@@ -396,6 +396,8 @@
 ### [ScrollHeader](controls/ScrollHeader.md)
 
 ### [SlidableListItem](archive/SlidableListItem.md)
+
+### [TabView](controls/TabView.md)
 
 ## Extensions
 
