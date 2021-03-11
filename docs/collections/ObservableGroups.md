@@ -13,7 +13,7 @@ Provides helper class to easily create grouped collections that can be used in [
 
 A group of `TValue` objects with a key of type `TKey`.
 
-It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0) based on [ObservableCollection<TValue>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
+It is an implementation of [IGrouping<Tkey, TValue>](https://docs.microsoft.com/en-us/dotnet/api/system.linq.igrouping-2) based on [ObservableCollection<TValue>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1).
 It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the groups.
 
 
@@ -26,7 +26,7 @@ It is used by `ObservableGroupedCollection<TKey, TValue>` to represent the group
 A list of groups that can be used by a [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource) to display groups in a `ListView` or `GridView`.
 Each group inside the collection has an immutable `TKey` key and contains `TValue` values.
 
-It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0).
+It is an `ObservableCollection<ObservableGroup<TKey, TValue>>` so groups can be added to the collection using the regular methods of [ObservableCollection<T>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1).
 
 
 ```csharp
@@ -85,7 +85,7 @@ If changes are made to the underlying collection, the `ReadOnlyObservableGrouped
 
 This interface allows us to use `x:Bind` with `ObservableGroup{TKey, TValue}` and `ReadOnlyObservableGroup{TKey, TValue}` by providing
 a non-generic type that we can declare using `x:DataType`.
-It extends [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=netstandard-2.0).
+It extends [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged).
 
 ```xaml
 <DataTemplate x:Key="GroupDataTemplate"
@@ -128,6 +128,6 @@ You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Win
 
 * [CollectionViewSource](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource)
 * [ListView and GridView](https://docs.microsoft.com/en-us/windows/uwp/design/controls-and-patterns/listview-and-gridview)
-* [ObservableCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
-* [ReadOnlyObservableCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
-* [IGrouping\<TKey,TElement\>](https://docs.microsoft.com/en-us/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)
+* [ObservableCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
+* [ReadOnlyObservableCollection\<T\>](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1)
+* [IGrouping\<TKey,TElement\>](https://docs.microsoft.com/en-us/dotnet/api/system.linq.igrouping-2)
