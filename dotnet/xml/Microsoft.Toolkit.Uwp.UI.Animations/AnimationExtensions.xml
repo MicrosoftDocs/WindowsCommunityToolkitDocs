@@ -2,13 +2,15 @@
   <TypeSignature Language="C#" Value="public static class AnimationExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AnimationExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions" />
-  <TypeSignature Language="VB.NET" Value="Public Module AnimationExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module AnimationExtensions" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="F#" Value="type AnimationExtensions = class" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnimationExtensions" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -16,7 +18,7 @@
   <Interfaces />
   <Docs>
     <summary>
-            These extension methods perform animation on UIElements
+            Common properties related to extensions.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -38,7 +40,7 @@
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="storyboard" Type="Windows.UI.Xaml.Media.Animation.Storyboard" RefType="this" />
+        <Parameter Name="storyboard" Type="Windows.UI.Xaml.Media.Animation.Storyboard" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
       </Parameters>
       <Docs>
         <param name="storyboard">The storyboard to be started</param>
@@ -67,12 +69,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -108,12 +110,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -158,6 +160,116 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="DefaultDelay">
+      <MemberSignature Language="C#" Value="public static TimeSpan DefaultDelay { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultDelay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultDelay As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultDelay : TimeSpan" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDelay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default delay of animations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDelayBehavior">
+      <MemberSignature Language="C#" Value="public const Windows.UI.Composition.AnimationDelayBehavior DefaultDelayBehavior = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Composition.AnimationDelayBehavior DefaultDelayBehavior = (1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDelayBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultDelayBehavior As AnimationDelayBehavior  = 1" />
+      <MemberSignature Language="F#" Value="val mutable DefaultDelayBehavior : Windows.UI.Composition.AnimationDelayBehavior" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDelayBehavior" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.AnimationDelayBehavior</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>
+            The default <see cref="T:Windows.UI.Composition.AnimationDelayBehavior" /> value used for animations (only applies to composition animations).
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultDuration">
+      <MemberSignature Language="C#" Value="public static TimeSpan DefaultDuration { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype System.TimeSpan DefaultDuration" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultDuration As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultDuration : TimeSpan" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultDuration" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default duration of animations.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultEasingMode">
+      <MemberSignature Language="C#" Value="public const Windows.UI.Xaml.Media.Animation.EasingMode DefaultEasingMode = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Windows.UI.Xaml.Media.Animation.EasingMode DefaultEasingMode = (2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultEasingMode" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultEasingMode As EasingMode  = 2" />
+      <MemberSignature Language="F#" Value="val mutable DefaultEasingMode : Windows.UI.Xaml.Media.Animation.EasingMode" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultEasingMode" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.EasingMode</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>
+            The default <see cref="T:Windows.UI.Xaml.Media.Animation.EasingMode" /> value used for animations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultEasingType">
+      <MemberSignature Language="C#" Value="public const Microsoft.Toolkit.Uwp.UI.Animations.EasingType DefaultEasingType = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType DefaultEasingType = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultEasingType" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultEasingType As EasingType  = 0" />
+      <MemberSignature Language="F#" Value="val mutable DefaultEasingType : Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.DefaultEasingType" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.EasingType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            The default <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType" /> value used for animations.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DefaultEasingType">
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.EasingType DefaultEasingType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType DefaultEasingType" />
@@ -199,12 +311,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="value" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -239,12 +351,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" RefType="this" />
-        <Parameter Name="value" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The UI Element to change the opacity of.</param>
@@ -279,9 +391,9 @@
         <ReturnType>Windows.UI.Composition.CompositionEasingFunction</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="compositor" Type="Windows.UI.Composition.Compositor" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="compositor" Type="Windows.UI.Composition.Compositor" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="easingType">The <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.EasingType" /> used to generate the CompositionEasingFunction</param>
@@ -313,8 +425,8 @@
         <ReturnType>Windows.UI.Xaml.Media.Animation.EasingFunctionBase</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="easingType">The EasingType used to determine the EasingFunction</param>
@@ -384,7 +496,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, double distance = 0, double duration = 500, double delay = 0, Windows.UI.Color? color = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet animationSet, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (animationSet As AnimationSet, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = null, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (animationSet As AnimationSet, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = Nothing, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
       <MemberSignature Language="F#" Value="static member Light : Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (animationSet, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -394,21 +506,22 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")</AttributeName>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+          <AttributeName Language="C#">[System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="distance" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="distance" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -432,7 +545,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light (this Windows.UI.Xaml.FrameworkElement associatedObject, double distance = 0, double duration = 500, double delay = 0, Windows.UI.Color? color = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet Light(class Windows.UI.Xaml.FrameworkElement associatedObject, float64 distance, float64 duration, float64 delay, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; color, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light(Windows.UI.Xaml.FrameworkElement,System.Double,System.Double,System.Double,System.Nullable{Windows.UI.Color},Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
-      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (associatedObject As FrameworkElement, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = null, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Light (associatedObject As FrameworkElement, Optional distance As Double = 0, Optional duration As Double = 500, Optional delay As Double = 0, Optional color As Nullable(Of Color) = Nothing, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseOut) As AnimationSet" />
       <MemberSignature Language="F#" Value="static member Light : Windows.UI.Xaml.FrameworkElement * double * double * double * Nullable&lt;Windows.UI.Color&gt; * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationExtensions.Light (associatedObject, distance, duration, delay, color, easingType, easingMode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -442,21 +555,22 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")</AttributeName>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+          <AttributeName Language="C#">[System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("The Light effect will be removed in a future major release. Please use XamlLight instead")&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
-        <Parameter Name="distance" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="distance" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="color" Type="System.Nullable&lt;Windows.UI.Color&gt;" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -490,13 +604,13 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="offsetX" Type="System.Single" />
-        <Parameter Name="offsetY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="offsetX" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="offsetY" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -532,13 +646,13 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" RefType="this" />
-        <Parameter Name="offsetX" Type="System.Single" />
-        <Parameter Name="offsetY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="offsetX" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="offsetY" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The specified UI Element.</param>
@@ -574,14 +688,14 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="value" Type="System.Single" />
-        <Parameter Name="centerX" Type="System.Single" />
-        <Parameter Name="centerY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerX" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerY" Type="System.Single" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="7" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -618,14 +732,14 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" RefType="this" />
-        <Parameter Name="value" Type="System.Single" />
-        <Parameter Name="centerX" Type="System.Single" />
-        <Parameter Name="centerY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerX" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerY" Type="System.Single" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="7" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The UI Element to rotate.</param>
@@ -662,12 +776,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animation set.</param>
@@ -700,12 +814,12 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
-        <Parameter Name="value" Type="System.Double" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.FrameworkElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated object.</param>
@@ -764,15 +878,15 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" RefType="this" />
-        <Parameter Name="scaleX" Type="System.Single" />
-        <Parameter Name="scaleY" Type="System.Single" />
-        <Parameter Name="centerX" Type="System.Single" />
-        <Parameter Name="centerY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="animationSet" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="scaleX" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="scaleY" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerX" Type="System.Single" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerY" Type="System.Single" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="7" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="8" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animationSet">The animationSet object.</param>
@@ -810,15 +924,15 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" RefType="this" />
-        <Parameter Name="scaleX" Type="System.Single" />
-        <Parameter Name="scaleY" Type="System.Single" />
-        <Parameter Name="centerX" Type="System.Single" />
-        <Parameter Name="centerY" Type="System.Single" />
-        <Parameter Name="duration" Type="System.Double" />
-        <Parameter Name="delay" Type="System.Double" />
-        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
-        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+        <Parameter Name="associatedObject" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
+        <Parameter Name="scaleX" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="scaleY" Type="System.Single" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerX" Type="System.Single" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="centerY" Type="System.Single" Index="4" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="duration" Type="System.Double" Index="5" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="delay" Type="System.Double" Index="6" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" Index="7" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" Index="8" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="associatedObject">The associated UIElement.</param>

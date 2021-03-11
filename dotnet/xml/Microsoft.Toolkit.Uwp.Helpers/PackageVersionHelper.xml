@@ -9,6 +9,7 @@
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -33,12 +34,13 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="packageVersion" Type="Windows.ApplicationModel.PackageVersion" RefType="this" />
+        <Parameter Name="packageVersion" Type="Windows.ApplicationModel.PackageVersion" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" RefType="this" />
       </Parameters>
       <Docs>
         <param name="packageVersion">The <see cref="T:Windows.ApplicationModel.PackageVersion" /> to convert to a string</param>
@@ -47,6 +49,37 @@
             </summary>
         <returns>Version string of the format 'Major.Minor.Build.Revision'</returns>
         <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToFormattedString">
+      <MemberSignature Language="C#" Value="public static string ToFormattedString (this Windows.ApplicationModel.PackageVersion packageVersion, int significance = 4);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToFormattedString(valuetype Windows.ApplicationModel.PackageVersion packageVersion, int32 significance) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PackageVersionHelper.ToFormattedString(Windows.ApplicationModel.PackageVersion,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToFormattedString (packageVersion As PackageVersion, Optional significance As Integer = 4) As String" />
+      <MemberSignature Language="F#" Value="static member ToFormattedString : Windows.ApplicationModel.PackageVersion * int -&gt; string" Usage="Microsoft.Toolkit.Uwp.Helpers.PackageVersionHelper.ToFormattedString (packageVersion, significance)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="packageVersion" Type="Windows.ApplicationModel.PackageVersion" RefType="this" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="significance" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="packageVersion">The <see cref="T:Windows.ApplicationModel.PackageVersion" /> to convert to a string</param>
+        <param name="significance">The number of version numbers to return, default is 4 for the full version number.</param>
+        <summary>
+            Returns a string representation of a version with the format 'Major.Minor.Build.Revision'.
+            </summary>
+        <returns>Version string of the format 'Major.Minor.Build.Revision'</returns>
+        <remarks>To be added.</remarks>
+        <example>
+            Package.Current.Id.Version.ToFormattedString(2); // Returns "7.0" for instance.
+            </example>
       </Docs>
     </Member>
     <Member MemberName="ToPackageVersion">
@@ -61,6 +94,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.ApplicationModel.PackageVersion</ReturnType>

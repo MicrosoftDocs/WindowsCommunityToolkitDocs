@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -17,7 +18,16 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsByRefLike]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsByRefLike&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,13 +49,37 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="span" Type="System.Span&lt;T&gt;" />
-        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="span">To be added.</param>
         <param name="index">To be added.</param>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Item (ref T value, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T&amp; value, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Enumerables.SpanEnumerable`1.Item.#ctor(`0@,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ByRef value As T, index As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Enumerables.SpanEnumerable&lt;'T&gt;.Item : 'T * int -&gt; Microsoft.Toolkit.HighPerformance.Enumerables.SpanEnumerable&lt;'T&gt;.Item" Usage="new Microsoft.Toolkit.HighPerformance.Enumerables.SpanEnumerable&lt;'T&gt;.Item (value, index)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="value" Type="T" RefType="ref" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="index" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">A reference to the target value.</param>
+        <param name="index">The index of the target value.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.SpanEnumerable`1.Item" /> struct.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -59,6 +93,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -81,8 +116,9 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
+      <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>

@@ -1,0 +1,104 @@
+<Type Name="StreamExtensions" FullName="Microsoft.Toolkit.HighPerformance.StreamExtensions">
+  <TypeSignature Language="C#" Value="public static class StreamExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.StreamExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StreamExtensions" />
+  <TypeSignature Language="F#" Value="type StreamExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.IO.Stream" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (this System.IO.Stream stream) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;struct .ctor (class System.ValueType) T&gt;(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.StreamExtensions.Read``1(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Read(Of T As Structure) (stream As Stream) As T" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream -&gt; 'T (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.StreamExtensions.Read stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to read.</typeparam>
+        <param name="stream">The source <see cref="T:System.IO.Stream" /> instance to read from.</param>
+        <summary>
+            Reads a value of a specified type from a source <see cref="T:System.IO.Stream" /> instance.
+            </summary>
+        <returns>The <typeparamref name="T" /> value read from <paramref name="stream" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if <paramref name="stream" /> reaches the end.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.IO.Stream stream, ref T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;struct .ctor (class System.ValueType) T&gt;(class System.IO.Stream stream, [in]!!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.StreamExtensions.Write``1(System.IO.Stream,``0@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T As Structure) (stream As Stream, ByRef value As T)" />
+      <MemberSignature Language="F#" Value="static member Write : System.IO.Stream * 'T -&gt; unit (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.StreamExtensions.Write (stream, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="value" Type="T" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to write.</typeparam>
+        <param name="stream">The target <see cref="T:System.IO.Stream" /> instance to write to.</param>
+        <param name="value">The input value to write to <paramref name="stream" />.</param>
+        <summary>
+            Writes a value of a specified type into a target <see cref="T:System.IO.Stream" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

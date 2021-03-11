@@ -1,0 +1,59 @@
+<Type Name="ListExtensions" FullName="Microsoft.Toolkit.HighPerformance.ListExtensions">
+  <TypeSignature Language="C#" Value="public static class ListExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ListExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ListExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ListExtensions" />
+  <TypeSignature Language="F#" Value="type ListExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Collections.Generic.List`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsSpan&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;T&gt; AsSpan&lt;T&gt; (this System.Collections.Generic.List&lt;T&gt;? list);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!T&gt; AsSpan&lt;T&gt;(class System.Collections.Generic.List`1&lt;!!T&gt; list) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ListExtensions.AsSpan``1(System.Collections.Generic.List{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (list As List(Of T)) As Span(Of T)" />
+      <MemberSignature Language="F#" Value="static member AsSpan : System.Collections.Generic.List&lt;'T&gt; -&gt; Span&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ListExtensions.AsSpan list" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="list" Type="System.Collections.Generic.List&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements in the input <see cref="T:System.Collections.Generic.List`1" /> instance.</typeparam>
+        <param name="list">The input <see cref="T:System.Collections.Generic.List`1" /> instance.</param>
+        <summary>
+            Creates a new <see cref="T:System.Span`1" /> over an input <see cref="T:System.Collections.Generic.List`1" /> instance.
+            </summary>
+        <returns>A <see cref="T:System.Span`1" /> instance with the values of <paramref name="list" />.</returns>
+        <remarks>
+            Note that the returned <see cref="T:System.Span`1" /> is only guaranteed to be valid as long as the items within
+            <paramref name="list" /> are not modified. Doing so might cause the <see cref="T:System.Collections.Generic.List`1" /> to swap its
+            internal buffer, causing the returned <see cref="T:System.Span`1" /> to become out of date. That means that in this
+            scenario, the <see cref="T:System.Span`1" /> would end up wrapping an array no longer in use. Always make sure to use
+            the returned <see cref="T:System.Span`1" /> while the target <see cref="T:System.Collections.Generic.List`1" /> is not modified.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

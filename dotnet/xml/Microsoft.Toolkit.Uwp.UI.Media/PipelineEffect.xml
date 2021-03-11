@@ -1,0 +1,144 @@
+<Type Name="PipelineEffect" FullName="Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect">
+  <TypeSignature Language="C#" Value="public abstract class PipelineEffect : Windows.UI.Xaml.DependencyObject, Microsoft.Toolkit.Uwp.UI.Media.IPipelineEffect" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipelineEffect extends Windows.UI.Xaml.DependencyObject implements class Microsoft.Toolkit.Uwp.UI.Media.IPipelineEffect" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipelineEffect&#xA;Inherits DependencyObject&#xA;Implements IPipelineEffect" />
+  <TypeSignature Language="F#" Value="type PipelineEffect = class&#xA;    inherit DependencyObject&#xA;    interface IPipelineEffect" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.UI.Media.IPipelineEffect</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A base pipeline effect.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipelineEffect ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public abstract Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AppendToBuilder (builder As PipelineBuilder) As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="abstract member AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder -&gt; Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" Usage="pipelineEffect.AppendToBuilder builder" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Media.IPipelineEffect.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The source <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> instance to add the effect to.</param>
+        <summary>
+            Appends the current effect to the input <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> instance.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.Pipelines.PipelineBuilder" /> with the new effects added to it.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Brush">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.CompositionBrush? Brush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.CompositionBrush Brush" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.Brush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Brush As CompositionBrush" />
+      <MemberSignature Language="F#" Value="member this.Brush : Windows.UI.Composition.CompositionBrush" Usage="Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.Brush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.CompositionBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current <see cref="T:Windows.UI.Composition.CompositionBrush" /> instance, if one is in use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAnimatable">
+      <MemberSignature Language="C#" Value="public bool IsAnimatable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAnimatable" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.IsAnimatable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAnimatable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAnimatable : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.IsAnimatable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the effect can be animated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyCompositionBrushInUse">
+      <MemberSignature Language="C#" Value="public virtual void NotifyCompositionBrushInUse (Windows.UI.Composition.CompositionBrush brush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyCompositionBrushInUse(class Windows.UI.Composition.CompositionBrush brush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.PipelineEffect.NotifyCompositionBrushInUse(Windows.UI.Composition.CompositionBrush)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NotifyCompositionBrushInUse (brush As CompositionBrush)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyCompositionBrushInUse : Windows.UI.Composition.CompositionBrush -&gt; unit&#xA;override this.NotifyCompositionBrushInUse : Windows.UI.Composition.CompositionBrush -&gt; unit" Usage="pipelineEffect.NotifyCompositionBrushInUse brush" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Media.IPipelineEffect.NotifyCompositionBrushInUse(Windows.UI.Composition.CompositionBrush)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="brush" Type="Windows.UI.Composition.CompositionBrush" />
+      </Parameters>
+      <Docs>
+        <param name="brush">The <see cref="T:Windows.UI.Composition.CompositionBrush" /> in use.</param>
+        <summary>
+            Notifies that a given <see cref="T:Windows.UI.Composition.CompositionBrush" /> is now in use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

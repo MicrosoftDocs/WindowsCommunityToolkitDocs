@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -17,10 +18,24 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerDisplay("{ToString(),raw}")</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
     </Attribute>
-    <Attribute>
-      <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.SpanOwnerDebugView`1))</AttributeName>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.SpanOwnerDebugView`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.SpanOwnerDebugView`1))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsByRefLike]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsByRefLike&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,6 +71,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
@@ -83,6 +99,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
@@ -102,6 +119,94 @@
         <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size, System.Buffers.ArrayPool&lt;T&gt; pool);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size, class System.Buffers.ArrayPool`1&lt;!T&gt; pool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32,System.Buffers.ArrayPool{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, pool As ArrayPool(Of T)) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * System.Buffers.ArrayPool&lt;'T&gt; -&gt; Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate (size, pool)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size, System.Buffers.ArrayPool&lt;T&gt; pool, Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size, class System.Buffers.ArrayPool`1&lt;!T&gt; pool, valuetype Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32,System.Buffers.ArrayPool{`0},Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, pool As ArrayPool(Of T), mode As AllocationMode) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * System.Buffers.ArrayPool&lt;'T&gt; * Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode -&gt; Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate (size, pool, mode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="mode" Type="Microsoft.Toolkit.HighPerformance.Buffers.AllocationMode" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <param name="mode">Indicates the allocation mode to use for the new buffer to rent.</param>
+        <summary>
+            Creates a new <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetArray">
+      <MemberSignature Language="C#" Value="public ArraySegment&lt;T&gt; DangerousGetArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; DangerousGetArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1.DangerousGetArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetArray () As ArraySegment(Of T)" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetArray : unit -&gt; ArraySegment&lt;'T&gt;" Usage="spanOwner.DangerousGetArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ArraySegment&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets an <see cref="T:System.ArraySegment`1" /> instance wrapping the underlying <typeparamref name="T" /> array in use.
+            </summary>
+        <returns>An <see cref="T:System.ArraySegment`1" /> instance wrapping the underlying <typeparamref name="T" /> array in use.</returns>
+        <remarks>
+            This method is meant to be used when working with APIs that only accept an array as input, and should be used with caution.
+            In particular, the returned array is rented from an array pool, and it is responsibility of the caller to ensure that it's
+            not used after the current <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance is disposed. Doing so is considered undefined behavior,
+            as the same array might be in use within another <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner`1" /> instance.
+            </remarks>
+      </Docs>
+    </Member>
     <Member MemberName="DangerousGetReference">
       <MemberSignature Language="C#" Value="public ref T DangerousGetReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetReference() cil managed" />
@@ -112,8 +217,9 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <ReturnValue>
+      <ReturnValue RefType="Ref">
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Parameters />
@@ -135,6 +241,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -157,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
@@ -179,6 +287,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -201,6 +310,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -223,6 +333,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

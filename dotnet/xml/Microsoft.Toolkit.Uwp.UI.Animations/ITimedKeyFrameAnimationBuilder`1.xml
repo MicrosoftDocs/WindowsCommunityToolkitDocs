@@ -1,0 +1,94 @@
+<Type Name="ITimedKeyFrameAnimationBuilder&lt;T&gt;" FullName="Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface ITimedKeyFrameAnimationBuilder&lt;in T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITimedKeyFrameAnimationBuilder`1&lt;- T&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITimedKeyFrameAnimationBuilder(Of In T)" />
+  <TypeSignature Language="F#" Value="type ITimedKeyFrameAnimationBuilder&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of values being set by the animation being constructed.</typeparam>
+    <summary>
+            An interface for an animation builder using timed keyframes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExpressionKeyFrame">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;in T&gt; ExpressionKeyFrame (TimeSpan progress, string expression, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder`1&lt;!T&gt; ExpressionKeyFrame(valuetype System.TimeSpan progress, string expression, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder`1.ExpressionKeyFrame(System.TimeSpan,System.String,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpressionKeyFrame (progress As TimeSpan, expression As String, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut) As ITimedKeyFrameAnimationBuilder(Of In T)" />
+      <MemberSignature Language="F#" Value="abstract member ExpressionKeyFrame : TimeSpan * string * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;'T&gt;" Usage="iTimedKeyFrameAnimationBuilder.ExpressionKeyFrame (progress, expression, easingType, easingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progress" Type="System.TimeSpan" />
+        <Parameter Name="expression" Type="System.String" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+      </Parameters>
+      <Docs>
+        <param name="progress">The timed progress for the keyframe, relative to the start of the animation.</param>
+        <param name="expression">The expression for the new keyframe to add.</param>
+        <param name="easingType">The easing type to use to reach the new keyframe.</param>
+        <param name="easingMode">The easing mode to use to reach the new keyframe.</param>
+        <summary>
+            Adds a new timed expressionkeyframe to the builder in use.
+            This method can only be used when the animation being built targets the composition layer.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1" /> instance that the method was invoked upon.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when the animation being built targets the XAML layer.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFrame">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;in T&gt; KeyFrame (TimeSpan progress, T value, Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Windows.UI.Xaml.Media.Animation.EasingMode easingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder`1&lt;!T&gt; KeyFrame(valuetype System.TimeSpan progress, !T value, valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType easingType, valuetype Windows.UI.Xaml.Media.Animation.EasingMode easingMode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder`1.KeyFrame(System.TimeSpan,`0,Microsoft.Toolkit.Uwp.UI.Animations.EasingType,Windows.UI.Xaml.Media.Animation.EasingMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function KeyFrame (progress As TimeSpan, value As T, Optional easingType As EasingType = Microsoft.Toolkit.Uwp.UI.Animations.EasingType.Default, Optional easingMode As EasingMode = Windows.UI.Xaml.Media.Animation.EasingMode.EaseInOut) As ITimedKeyFrameAnimationBuilder(Of In T)" />
+      <MemberSignature Language="F#" Value="abstract member KeyFrame : TimeSpan * 'T * Microsoft.Toolkit.Uwp.UI.Animations.EasingType * Windows.UI.Xaml.Media.Animation.EasingMode -&gt; Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;'T&gt;" Usage="iTimedKeyFrameAnimationBuilder.KeyFrame (progress, value, easingType, easingMode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="progress" Type="System.TimeSpan" />
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="easingType" Type="Microsoft.Toolkit.Uwp.UI.Animations.EasingType" />
+        <Parameter Name="easingMode" Type="Windows.UI.Xaml.Media.Animation.EasingMode" />
+      </Parameters>
+      <Docs>
+        <param name="progress">The timed progress for the keyframe, relative to the start of the animation.</param>
+        <param name="value">The value for the new keyframe to add.</param>
+        <param name="easingType">The easing type to use to reach the new keyframe.</param>
+        <param name="easingMode">The easing mode to use to reach the new keyframe.</param>
+        <summary>
+            Adds a new timed keyframe to the builder in use.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1" /> instance that the method was invoked upon.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

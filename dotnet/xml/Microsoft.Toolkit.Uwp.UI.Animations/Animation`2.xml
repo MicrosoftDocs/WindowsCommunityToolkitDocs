@@ -1,0 +1,307 @@
+<Type Name="Animation&lt;TValue,TKeyFrame&gt;" FullName="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;">
+  <TypeSignature Language="C#" Value="public abstract class Animation&lt;TValue,TKeyFrame&gt; : Microsoft.Toolkit.Uwp.UI.Animations.Animation where TKeyFrame : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Animation`2&lt;TValue, struct .ctor (class System.ValueType) TKeyFrame&gt; extends Microsoft.Toolkit.Uwp.UI.Animations.Animation" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Animation(Of TValue, TKeyFrame)&#xA;Inherits Animation" />
+  <TypeSignature Language="F#" Value="type Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt; = class&#xA;    inherit Animation" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+    <TypeParameter Name="TKeyFrame">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Animations.Animation</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.Markup.ContentProperty(Name="KeyFrames")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.Markup.ContentProperty(Name="KeyFrames")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="TValue">
+            The type to use for the public <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> properties.
+            This can differ from <typeparamref name="TKeyFrame" /> to facilitate XAML parsing.
+            </typeparam>
+    <typeparam name="TKeyFrame">The actual type of keyframe values in use.</typeparam>
+    <summary>
+            A base model representing a typed animation that can be used in XAML.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Animation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="protected Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;TKeyFrame&gt; AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;TKeyFrame&gt; builder, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1&lt;!TKeyFrame&gt; AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1&lt;!TKeyFrame&gt; builder, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder{`1},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Protected Function AppendToBuilder (builder As INormalizedKeyFrameAnimationBuilder(Of TKeyFrame), easingTypeHint As Nullable(Of EasingType), easingModeHint As Nullable(Of EasingMode)) As INormalizedKeyFrameAnimationBuilder(Of TKeyFrame)" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;'KeyFrame (requires 'KeyFrame : struct)&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;'KeyFrame (requires 'KeyFrame : struct)&gt;" Usage="animation.AppendToBuilder (builder, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;TKeyFrame&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;TKeyFrame&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1" /> instance to add the keyframe to.</param>
+        <param name="easingTypeHint">A hint for the easing type, if present.</param>
+        <param name="easingModeHint">A hint for the easing mode, if present.</param>
+        <summary>
+            Appends the current keyframe values to a target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1" /> instance.
+            This method will also automatically generate keyframes for <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" />.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.INormalizedKeyFrameAnimationBuilder`1" /> instance as <paramref name="builder" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public override Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, TimeSpan? delayHint, TimeSpan? durationHint, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AppendToBuilder (builder As AnimationBuilder, delayHint As Nullable(Of TimeSpan), durationHint As Nullable(Of TimeSpan), easingTypeHint As Nullable(Of EasingType), easingModeHint As Nullable(Of EasingMode)) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" Usage="animation.AppendToBuilder (builder, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance to schedule the animation on.</param>
+        <param name="delayHint">A hint for the animation delay, if present.</param>
+        <param name="durationHint">A hint for the animation duration, if present.</param>
+        <param name="easingTypeHint">A hint for the easing type, if present.</param>
+        <param name="easingModeHint">A hint for the easing mode, if present.</param>
+        <summary>
+            Appens the current animation to a target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            This method is used when the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ITimeline" /> instance is explicitly triggered.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance as <paramref name="builder" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExplicitTarget">
+      <MemberSignature Language="C#" Value="protected abstract string ExplicitTarget { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ExplicitTarget" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.ExplicitTarget" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ExplicitTarget As String" />
+      <MemberSignature Language="F#" Value="member this.ExplicitTarget : string" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.ExplicitTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the explicit target for the animation. This is the primary target property that is animated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="From">
+      <MemberSignature Language="C#" Value="public TValue? From { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue From" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As TValue" />
+      <MemberSignature Language="F#" Value="member this.From : 'Value with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.From" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the optional starting value for the animation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty FromProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty FromProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.FromProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FromProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.FromProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetParsedValues">
+      <MemberSignature Language="C#" Value="protected abstract (TKeyFrame?,TKeyFrame?) GetParsedValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.ValueTuple`2&lt;valuetype System.Nullable`1&lt;!TKeyFrame&gt;, valuetype System.Nullable`1&lt;!TKeyFrame&gt;&gt; GetParsedValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.GetParsedValues" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParsedValues () As ValueTuple(Of Nullable(Of TKeyFrame), Nullable(Of TKeyFrame))" />
+      <MemberSignature Language="F#" Value="abstract member GetParsedValues : unit -&gt; ValueTuple&lt;Nullable&lt;'KeyFrame&gt;, Nullable&lt;'KeyFrame&gt;&gt;" Usage="animation.GetParsedValues " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;System.Nullable&lt;TKeyFrame&gt;,System.Nullable&lt;TKeyFrame&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "To", "From" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "To", "From" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets the parsed <typeparamref name="TKeyFrame" /> values from <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2" />.
+            </summary>
+        <returns>The parsed animation values as <typeparamref name="TKeyFrame" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFrames">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.Animations.IKeyFrame&lt;TKeyFrame&gt;&gt; KeyFrames { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Microsoft.Toolkit.Uwp.UI.Animations.IKeyFrame`1&lt;!TKeyFrame&gt;&gt; KeyFrames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.KeyFrames" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyFrames As IList(Of IKeyFrame(Of TKeyFrame))" />
+      <MemberSignature Language="F#" Value="member this.KeyFrames : System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.Animations.IKeyFrame&lt;'KeyFrame&gt;&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.KeyFrames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Microsoft.Toolkit.Uwp.UI.Animations.IKeyFrame&lt;TKeyFrame&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the optional keyframe collection for the current animation.
+            Setting this will overwrite the <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> values.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyFramesProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty KeyFramesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty KeyFramesProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.KeyFramesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyFramesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyFramesProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.KeyFramesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.KeyFrames" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="To">
+      <MemberSignature Language="C#" Value="public TValue? To { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TValue To" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" />
+      <MemberSignature Language="VB.NET" Value="Public Property To As TValue" />
+      <MemberSignature Language="F#" Value="member this.To : 'Value with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.To" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the final value for the animation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ToProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ToProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.ToProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.ToProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

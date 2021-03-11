@@ -1,0 +1,141 @@
+<Type Name="RequestMessage&lt;T&gt;" FullName="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class RequestMessage&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestMessage`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestMessage(Of T)" />
+  <TypeSignature Language="F#" Value="type RequestMessage&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of request to make.</typeparam>
+    <summary>
+            A <see langword="class" /> for request messages, which can either be used directly or through derived classes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RequestMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasReceivedResponse">
+      <MemberSignature Language="C#" Value="public bool HasReceivedResponse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasReceivedResponse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.HasReceivedResponse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasReceivedResponse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasReceivedResponse : bool" Usage="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;'T&gt;.HasReceivedResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether a response has already been assigned to this instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator T (Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;T&gt; message);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !T op_Implicit(class Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1&lt;!T&gt; message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.op_Implicit(Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage{`0})~`0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (message As RequestMessage(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;'T&gt; -&gt; 'T" Usage="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;'T&gt;.op_Implicit message" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="message" Type="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="message">The input <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1" /> instance.</param>
+        <summary>
+            Implicitly gets the response from a given <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when <see cref="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.HasReceivedResponse" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="public void Reply (T response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reply(!T response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.Reply(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reply (response As T)" />
+      <MemberSignature Language="F#" Value="member this.Reply : 'T -&gt; unit" Usage="requestMessage.Reply response" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="response">The response to use to reply to the request message.</param>
+        <summary>
+            Replies to the current request message.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if <see cref="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.Response" /> has already been set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public T Response { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Response" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As T" />
+      <MemberSignature Language="F#" Value="member this.Response : 'T" Usage="Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage&lt;'T&gt;.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the message response.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when <see cref="P:Microsoft.Toolkit.Mvvm.Messaging.Messages.RequestMessage`1.HasReceivedResponse" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

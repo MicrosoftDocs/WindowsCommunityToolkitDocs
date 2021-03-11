@@ -1,0 +1,280 @@
+<Type Name="StringPool" FullName="Microsoft.Toolkit.HighPerformance.Buffers.StringPool">
+  <TypeSignature Language="C#" Value="public sealed class StringPool" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StringPool extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringPool" />
+  <TypeSignature Language="F#" Value="type StringPool = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A configurable pool for <see cref="T:System.String" /> instances. This can be used to minimize allocations
+            when creating multiple <see cref="T:System.String" /> instances from buffers of <see cref="T:System.Char" /> values.
+            The <see cref="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.GetOrAdd(System.ReadOnlySpan{System.Char})" /> method provides a best-effort alternative to just creating
+            a new <see cref="T:System.String" /> instance every time, in order to minimize the number of duplicated instances.
+            The <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> type will internally manage a highly efficient priority queue for the
+            cached <see cref="T:System.String" /> instances, so that when the full capacity is reached, the least frequently
+            used values will be automatically discarded to leave room for new values to cache.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringPool ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public StringPool (int minimumSize);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minimumSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (minimumSize As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Buffers.StringPool : int -&gt; Microsoft.Toolkit.HighPerformance.Buffers.StringPool" Usage="new Microsoft.Toolkit.HighPerformance.Buffers.StringPool minimumSize" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="minimumSize" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="minimumSize">The minimum size for the pool to create.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public void Add (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As String)" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; unit" Usage="stringPool.Add value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.String" /> instance to cache.</param>
+        <summary>
+            Stores a <see cref="T:System.String" /> instance in the internal cache.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAdd">
+      <MemberSignature Language="C#" Value="public string GetOrAdd (ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetOrAdd(valuetype System.ReadOnlySpan`1&lt;char&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.GetOrAdd(System.ReadOnlySpan{System.Char})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (span As ReadOnlySpan(Of Char)) As String" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : ReadOnlySpan&lt;char&gt; -&gt; string" Usage="stringPool.GetOrAdd span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="span">The input <see cref="T:System.ReadOnlySpan`1" /> with the contents to use.</param>
+        <summary>
+            Gets a cached <see cref="T:System.String" /> instance matching the input content, or creates a new one.
+            </summary>
+        <returns>A <see cref="T:System.String" /> instance with the contents of <paramref name="span" />, cached if possible.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAdd">
+      <MemberSignature Language="C#" Value="public string GetOrAdd (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetOrAdd(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.GetOrAdd(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (value As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : string -&gt; string" Usage="stringPool.GetOrAdd value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.String" /> instance with the contents to use.</param>
+        <summary>
+            Gets a cached <see cref="T:System.String" /> instance matching the input content, or stores the input one.
+            </summary>
+        <returns>A <see cref="T:System.String" /> instance with the contents of <paramref name="value" />, cached if possible.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOrAdd">
+      <MemberSignature Language="C#" Value="public string GetOrAdd (ReadOnlySpan&lt;byte&gt; span, System.Text.Encoding encoding);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetOrAdd(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; span, class System.Text.Encoding encoding) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.GetOrAdd(System.ReadOnlySpan{System.Byte},System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (span As ReadOnlySpan(Of Byte), encoding As Encoding) As String" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : ReadOnlySpan&lt;byte&gt; * System.Text.Encoding -&gt; string" Usage="stringPool.GetOrAdd (span, encoding)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+        <Parameter Name="encoding" Type="System.Text.Encoding" />
+      </Parameters>
+      <Docs>
+        <param name="span">The input <see cref="T:System.ReadOnlySpan`1" /> with the contents to use, in a specified encoding.</param>
+        <param name="encoding">The <see cref="T:System.Text.Encoding" /> instance to use to decode the contents of <paramref name="span" />.</param>
+        <summary>
+            Gets a cached <see cref="T:System.String" /> instance matching the input content (converted to Unicode), or creates a new one.
+            </summary>
+        <returns>A <see cref="T:System.String" /> instance with the contents of <paramref name="span" />, cached if possible.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="stringPool.Reset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Resets the current instance and its associated maps.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shared">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Buffers.StringPool Shared { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.HighPerformance.Buffers.StringPool Shared" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Shared" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Shared As StringPool" />
+      <MemberSignature Language="F#" Value="member this.Shared : Microsoft.Toolkit.HighPerformance.Buffers.StringPool" Usage="Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Shared" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Buffers.StringPool</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the shared <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            The shared pool provides a singleton, reusable <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> instance that
+            can be accessed directly, and that pools <see cref="T:System.String" /> instances for the entire
+            process. Since <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.StringPool" /> is thread-safe, the shared instance can be used
+            concurrently by multiple threads without the need for manual synchronization.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Size">
+      <MemberSignature Language="C#" Value="public int Size { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="Microsoft.Toolkit.HighPerformance.Buffers.StringPool.Size" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total number of <see cref="T:System.String" /> that can be stored in the current instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGet">
+      <MemberSignature Language="C#" Value="public bool TryGet (ReadOnlySpan&lt;char&gt; span, out string? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGet(valuetype System.ReadOnlySpan`1&lt;char&gt; span, [out] string&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.StringPool.TryGet(System.ReadOnlySpan{System.Char},System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGet (span As ReadOnlySpan(Of Char), ByRef value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGet : ReadOnlySpan&lt;char&gt; * string -&gt; bool" Usage="stringPool.TryGet (span, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
+        <Parameter Name="value" Type="System.String" RefType="out">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Diagnostics.CodeAnalysis.NotNullWhen(true)]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Diagnostics.CodeAnalysis.NotNullWhen(true)&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="span">The input <see cref="T:System.ReadOnlySpan`1" /> with the contents to use.</param>
+        <param name="value">The resulting cached <see cref="T:System.String" /> instance, if present</param>
+        <summary>
+            Tries to get a cached <see cref="T:System.String" /> instance matching the input content, if present.
+            </summary>
+        <returns>Whether or not the target <see cref="T:System.String" /> instance was found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

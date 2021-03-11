@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -65,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -91,6 +94,66 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="HasByteEqualTo">
+      <MemberSignature Language="C#" Value="public static bool HasByteEqualTo (uint value, byte target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasByteEqualTo(unsigned int32 value, unsigned int8 target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasByteEqualTo (value As UInteger, target As Byte) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasByteEqualTo : uint32 * byte -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo (value, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="target" Type="System.Byte" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <param name="target">The target byte to look for.</param>
+        <summary>
+            Checks whether a byte in the input <see cref="T:System.UInt32" /> value matches a target value.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to <paramref name="target" />.</returns>
+        <remarks>
+            This method contains no branches.
+            For more info, see <see href="https://graphics.stanford.edu/~seander/bithacks.html#ZeroInWord" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasByteEqualTo">
+      <MemberSignature Language="C#" Value="public static bool HasByteEqualTo (ulong value, byte target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasByteEqualTo(unsigned int64 value, unsigned int8 target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt64,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasByteEqualTo (value As ULong, target As Byte) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasByteEqualTo : uint64 * byte -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo (value, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="target" Type="System.Byte" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <param name="target">The target byte to look for.</param>
+        <summary>
+            Checks whether a byte in the input <see cref="T:System.UInt32" /> value matches a target value.
+            This method mirrors <see cref="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt32,System.Byte)" />, but with <see cref="T:System.UInt64" /> values.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to <paramref name="target" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="HasFlag">
       <MemberSignature Language="C#" Value="public static bool HasFlag (uint value, int n);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasFlag(unsigned int32 value, int32 n) cil managed" />
@@ -101,6 +164,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -133,6 +197,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -165,6 +230,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -189,7 +255,7 @@
             decrement the input parameter <paramref name="x" /> to ensure that the range of accepted
             values fits within the available 32 bits of the lookup table in use.
             For more info on this optimization technique, see <see href="https://egorbo.com/llvm-range-checks.html" />.
-            Here is how the code from the lik above would be implemented using this method:
+            Here is how the code from the link above would be implemented using this method:
             <code>
             bool IsReservedCharacter(char c)
             {
@@ -216,6 +282,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -240,6 +307,64 @@
             </remarks>
       </Docs>
     </Member>
+    <Member MemberName="HasZeroByte">
+      <MemberSignature Language="C#" Value="public static bool HasZeroByte (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasZeroByte(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasZeroByte (value As UInteger) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasZeroByte : uint32 -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasZeroByte value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <summary>
+            Checks whether the given value has any bytes that are set to 0.
+            That is, given a <see cref="T:System.UInt32" /> value, which has a total of 4 bytes,
+            it checks whether any of those have all the bits set to 0.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to 0.</returns>
+        <remarks>
+            This method contains no branches.
+            For more background on this subject, see <see href="https://graphics.stanford.edu/~seander/bithacks.html#ZeroInWord" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasZeroByte">
+      <MemberSignature Language="C#" Value="public static bool HasZeroByte (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasZeroByte(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasZeroByte (value As ULong) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasZeroByte : uint64 -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasZeroByte value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <summary>
+            Checks whether the given value has any bytes that are set to 0.
+            This method mirrors <see cref="M:Microsoft.Toolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt32)" />, but with <see cref="T:System.UInt64" /> values.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SetFlag">
       <MemberSignature Language="C#" Value="public static uint SetFlag (uint value, int n, bool flag);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 SetFlag(unsigned int32 value, int32 n, bool flag) cil managed" />
@@ -250,6 +375,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -283,6 +409,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -315,6 +442,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -348,6 +476,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -380,6 +509,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt32</ReturnType>
@@ -415,6 +545,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -449,6 +580,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.UInt64</ReturnType>
@@ -484,6 +616,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

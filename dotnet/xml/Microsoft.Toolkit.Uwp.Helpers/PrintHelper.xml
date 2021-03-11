@@ -9,6 +9,7 @@
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,7 +31,7 @@
       <MemberSignature Language="C#" Value="public PrintHelper (Windows.UI.Xaml.Controls.Panel canvasContainer, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Controls.Panel canvasContainer, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -40,12 +41,38 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="canvasContainer" Type="Windows.UI.Xaml.Controls.Panel" />
-        <Parameter Name="defaultPrintHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" />
+        <Parameter Name="canvasContainer" Type="Windows.UI.Xaml.Controls.Panel" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="defaultPrintHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="canvasContainer">XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance</param>
         <param name="defaultPrintHelperOptions">Default settings for the print tasks</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintHelper (Windows.UI.Xaml.Controls.Panel canvasContainer, Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions = default, Windows.System.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Controls.Panel canvasContainer, class Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions defaultPrintHelperOptions, class Windows.System.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.#ctor(Windows.UI.Xaml.Controls.Panel,Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions,Windows.System.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = Nothing, Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper : Windows.UI.Xaml.Controls.Panel * Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions * Windows.System.DispatcherQueue -&gt; Microsoft.Toolkit.Uwp.Helpers.PrintHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions, dispatcherQueue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="canvasContainer" Type="Windows.UI.Xaml.Controls.Panel" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="defaultPrintHelperOptions" Type="Microsoft.Toolkit.Uwp.Helpers.PrintHelperOptions" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="dispatcherQueue" Type="Windows.System.DispatcherQueue" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="canvasContainer">XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance</param>
+        <param name="defaultPrintHelperOptions">Default settings for the print tasks</param>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates, or null if this is being called from the UI thread.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.PrintHelper" /> class.
             </summary>
@@ -64,6 +91,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -91,6 +119,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -115,6 +144,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -139,6 +169,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -148,6 +179,28 @@
         <summary>
             Removes all elements from the list of elements to print.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherQueue">
+      <MemberSignature Language="C#" Value="public Windows.System.DispatcherQueue DispatcherQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.System.DispatcherQueue DispatcherQueue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.PrintHelper.DispatcherQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispatcherQueue As DispatcherQueue" />
+      <MemberSignature Language="F#" Value="member this.DispatcherQueue : Windows.System.DispatcherQueue with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.PrintHelper.DispatcherQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.DispatcherQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets which DispatcherQueue is used to dispatch UI updates.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -166,6 +219,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -190,6 +244,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action&lt;System.Collections.Generic.List&lt;Windows.UI.Xaml.FrameworkElement&gt;&gt;</ReturnType>
@@ -215,6 +270,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -238,6 +294,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -261,6 +318,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -284,6 +342,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -311,6 +370,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -341,6 +401,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

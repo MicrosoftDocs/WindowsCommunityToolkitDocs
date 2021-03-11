@@ -1,0 +1,880 @@
+<Type Name="ListDetailsView" FullName="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView">
+  <TypeSignature Language="C#" Value="public class ListDetailsView : Windows.UI.Xaml.Controls.ItemsControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListDetailsView extends Windows.UI.Xaml.Controls.ItemsControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListDetailsView&#xA;Inherits ItemsControl" />
+  <TypeSignature Language="F#" Value="type ListDetailsView = class&#xA;    inherit ItemsControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.ItemsControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="DetailsPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="DetailsPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="DetailsPanel", Type=typeof(Windows.UI.Xaml.FrameworkElement))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="DetailsPanel", Type=typeof(Windows.UI.Xaml.FrameworkElement))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="NoSelectionNarrow")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="NoSelectionNarrow")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="NoSelectionWide")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="NoSelectionWide")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionWide")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionWide")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionNarrow")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="SelectionStates", Name="HasSelectionNarrow")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="WidthStates", Name="NarrowState")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="WidthStates", Name="NarrowState")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="WidthStates", Name="WideState")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="WidthStates", Name="WideState")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Panel that allows for a List/Details pattern.
+            </summary>
+    <remarks>To be added.</remarks>
+    <altmember cref="T:Windows.UI.Xaml.Controls.ItemsControl" />
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ListDetailsView ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackButtonBehavior">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior BackButtonBehavior { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior BackButtonBehavior" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.BackButtonBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackButtonBehavior As BackButtonBehavior" />
+      <MemberSignature Language="F#" Value="member this.BackButtonBehavior : Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.BackButtonBehavior" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.BackButtonBehavior</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the behavior to use for the back button
+            </summary>
+        <value>The current BackButtonBehavior. The default is System.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackButtonBehaviorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty BackButtonBehaviorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty BackButtonBehaviorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.BackButtonBehaviorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackButtonBehaviorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackButtonBehaviorProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.BackButtonBehaviorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.BackButtonBehavior" /> dependency property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompactModeThresholdWidth">
+      <MemberSignature Language="C#" Value="public double CompactModeThresholdWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CompactModeThresholdWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.CompactModeThresholdWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompactModeThresholdWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.CompactModeThresholdWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.CompactModeThresholdWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Threshold width that will trigger the control to go into compact mode
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CompactModeThresholdWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty CompactModeThresholdWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty CompactModeThresholdWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.CompactModeThresholdWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CompactModeThresholdWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CompactModeThresholdWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.CompactModeThresholdWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.CompactModeThresholdWidth" /> dependency property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsCommandBar">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.CommandBar DetailsCommandBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.CommandBar DetailsCommandBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsCommandBar As CommandBar" />
+      <MemberSignature Language="F#" Value="member this.DetailsCommandBar : Windows.UI.Xaml.Controls.CommandBar with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.CommandBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Controls.CommandBar" /> for the details section.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsCommandBarProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DetailsCommandBarProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DetailsCommandBarProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBarProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsCommandBarProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsCommandBarProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBarProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBar" /> dependency property
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsCommandBar" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsHeader">
+      <MemberSignature Language="C#" Value="public object DetailsHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object DetailsHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsHeader As Object" />
+      <MemberSignature Language="F#" Value="member this.DetailsHeader : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content for the details pane's header
+            </summary>
+        <value>
+            The content of the details pane's header. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsHeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DetailsHeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DetailsHeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsHeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsHeaderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeader" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeader" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsHeaderTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate DetailsHeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate DetailsHeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsHeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.DetailsHeaderTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the DataTemplate used to display the content of the details pane's header.
+            </summary>
+        <value>
+            The template that specifies the visualization of the details pane header object. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsHeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DetailsHeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DetailsHeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsHeaderTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsHeaderTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplate" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsHeaderTemplate" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate DetailsTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate DetailsTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.DetailsTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the DataTemplate used to display the details.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DetailsTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DetailsTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplate" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.DetailsTemplate" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCommandBar">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.CommandBar ListCommandBar { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.CommandBar ListCommandBar" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBar" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListCommandBar As CommandBar" />
+      <MemberSignature Language="F#" Value="member this.ListCommandBar : Windows.UI.Xaml.Controls.CommandBar with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBar" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.CommandBar</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.Controls.CommandBar" /> for the list section.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListCommandBarProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ListCommandBarProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ListCommandBarProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBarProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListCommandBarProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListCommandBarProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBarProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBar" /> dependency property
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListCommandBar" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHeader">
+      <MemberSignature Language="C#" Value="public object ListHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object ListHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListHeader As Object" />
+      <MemberSignature Language="F#" Value="member this.ListHeader : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content for the list pane's header
+            </summary>
+        <value>
+            The content of the list pane's header. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ListHeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ListHeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListHeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListHeaderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeader" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeader" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHeaderTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate ListHeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate ListHeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListHeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.ListHeaderTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the DataTemplate used to display the content of the list pane's header.
+            </summary>
+        <value>
+            The template that specifies the visualization of the list pane header object. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListHeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ListHeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ListHeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListHeaderTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListHeaderTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplate" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListHeaderTemplate" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPaneBackground">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.Brush ListPaneBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.Brush ListPaneBackground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListPaneBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.ListPaneBackground : Windows.UI.Xaml.Media.Brush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Brush to apply to the background of the list area of the control.
+            </summary>
+        <value>The Brush to apply to the background of the list area of the control.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPaneBackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ListPaneBackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ListPaneBackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListPaneBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListPaneBackgroundProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackground" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneBackground" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPaneWidth">
+      <MemberSignature Language="C#" Value="public double ListPaneWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ListPaneWidth" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListPaneWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ListPaneWidth : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the width of the list pane when the view is expanded.
+            </summary>
+        <value>
+            The width of the SplitView pane when it's fully expanded. The default is 320
+            device-independent pixel (DIP).
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListPaneWidthProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ListPaneWidthProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ListPaneWidthProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListPaneWidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListPaneWidthProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidthProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidth" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ListPaneWidth" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapDetails">
+      <MemberSignature Language="C#" Value="public Func&lt;object,object&gt; MapDetails { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;object, object&gt; MapDetails" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.MapDetails" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapDetails As Func(Of Object, Object)" />
+      <MemberSignature Language="F#" Value="member this.MapDetails : Func&lt;obj, obj&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.MapDetails" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Func&lt;System.Object,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a function for mapping the selected item to a different model.
+            This new model will be the DataContext of the Details area.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSelectionContent">
+      <MemberSignature Language="C#" Value="public object NoSelectionContent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object NoSelectionContent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoSelectionContent As Object" />
+      <MemberSignature Language="F#" Value="member this.NoSelectionContent : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content to dsiplay when there is no item selected in the list list.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSelectionContentProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NoSelectionContentProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NoSelectionContentProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoSelectionContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NoSelectionContentProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContent" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContent" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSelectionContentTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate NoSelectionContentTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate NoSelectionContentTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property NoSelectionContentTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.NoSelectionContentTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the DataTemplate used to display the content when there is no selection.
+            </summary>
+        <value>
+            The template that specifies the visualization of the content when there is no
+            selection. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NoSelectionContentTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty NoSelectionContentTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty NoSelectionContentTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NoSelectionContentTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NoSelectionContentTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplate" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.NoSelectionContentTemplate" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="listDetailsView.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Invoked whenever application code or internal processes (such as a rebuilding layout pass) call
+            ApplyTemplate. In simplest terms, this means the method is called just before a UI element displays
+            in your app. Override this method to influence the default post-template logic of a class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndex">
+      <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the index of the current selection.
+            </summary>
+        <value>The index of the current selection, or -1 if the selection is empty.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedIndexProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SelectedIndexProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SelectedIndexProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedIndexProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedIndexProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedIndexProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedIndexProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the SelectedIndex dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItem">
+      <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedItem As Object" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the selected item.
+            </summary>
+        <value>The selected item. The default is null.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedItemProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SelectedItemProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SelectedItemProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItemProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectedItemProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectedItemProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItemProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItem" /> dependency property.
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectedItem" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event Windows.UI.Xaml.Controls.SelectionChangedEventHandler SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.UI.Xaml.Controls.SelectionChangedEventHandler SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanged As SelectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : Windows.UI.Xaml.Controls.SelectionChangedEventHandler " Usage="member this.SelectionChanged : Windows.UI.Xaml.Controls.SelectionChangedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.SelectionChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when the currently selected item changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewState">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState ViewState { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState ViewState" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewState As ListDetailsViewState" />
+      <MemberSignature Language="F#" Value="member this.ViewState : Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewState" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current visual state of the control
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState&gt; ViewStateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState&gt; ViewStateChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewStateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ViewStateChanged As EventHandler(Of ListDetailsViewState) " />
+      <MemberSignature Language="F#" Value="member this.ViewStateChanged : EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState&gt; " Usage="member this.ViewStateChanged : System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsViewState&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when the view state changes
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ViewStateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ViewStateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ViewStateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewStateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewStateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewStateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewState" /> dependency property
+            </summary>
+        <returns>The identifier for the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.ListDetailsView.ViewState" /> dependency property.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

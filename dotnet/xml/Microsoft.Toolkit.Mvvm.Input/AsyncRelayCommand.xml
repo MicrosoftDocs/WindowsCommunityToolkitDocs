@@ -1,0 +1,387 @@
+<Type Name="AsyncRelayCommand" FullName="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand">
+  <TypeSignature Language="C#" Value="public sealed class AsyncRelayCommand : Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject, Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand, System.ComponentModel.INotifyPropertyChanged, System.Windows.Input.ICommand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AsyncRelayCommand extends Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject implements class Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand, class Microsoft.Toolkit.Mvvm.Input.IRelayCommand, class System.ComponentModel.INotifyPropertyChanged, class System.Windows.Input.ICommand" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AsyncRelayCommand&#xA;Inherits ObservableObject&#xA;Implements IAsyncRelayCommand, ICommand, INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type AsyncRelayCommand = class&#xA;    inherit ObservableObject&#xA;    interface IAsyncRelayCommand&#xA;    interface IRelayCommand&#xA;    interface ICommand&#xA;    interface INotifyPropertyChanged" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Mvvm.Input.IRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommand</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A command that mirrors the functionality of <see cref="T:Microsoft.Toolkit.Mvvm.Input.RelayCommand" />, with the addition of
+            accepting a <see cref="T:System.Func`1" /> returning a <see cref="T:System.Threading.Tasks.Task" /> as the execute
+            action, and providing an <see cref="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecutionTask" /> property that notifies changes when
+            <see cref="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecuteAsync(System.Object)" /> is invoked and when the returned <see cref="T:System.Threading.Tasks.Task" /> completes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncRelayCommand (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; cancelableExecute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task&gt; cancelableExecute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cancelableExecute As Func(Of CancellationToken, Task))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt; -&gt; Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" Usage="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand cancelableExecute" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cancelableExecute" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="cancelableExecute">The cancelable execution logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" /> class that can always execute.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncRelayCommand (Func&lt;System.Threading.Tasks.Task&gt; execute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; execute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (execute As Func(Of Task))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand : Func&lt;System.Threading.Tasks.Task&gt; -&gt; Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" Usage="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand execute" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="execute" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="execute">The execution logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" /> class that can always execute.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncRelayCommand (Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; cancelableExecute, Func&lt;bool&gt; canExecute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;valuetype System.Threading.CancellationToken, class System.Threading.Tasks.Task&gt; cancelableExecute, class System.Func`1&lt;bool&gt; canExecute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cancelableExecute As Func(Of CancellationToken, Task), canExecute As Func(Of Boolean))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand : Func&lt;System.Threading.CancellationToken, System.Threading.Tasks.Task&gt; * Func&lt;bool&gt; -&gt; Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" Usage="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand (cancelableExecute, canExecute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="cancelableExecute" Type="System.Func&lt;System.Threading.CancellationToken,System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="canExecute" Type="System.Func&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="cancelableExecute">The cancelable execution logic.</param>
+        <param name="canExecute">The execution status logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncRelayCommand (Func&lt;System.Threading.Tasks.Task&gt; execute, Func&lt;bool&gt; canExecute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;class System.Threading.Tasks.Task&gt; execute, class System.Func`1&lt;bool&gt; canExecute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (execute As Func(Of Task), canExecute As Func(Of Boolean))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand : Func&lt;System.Threading.Tasks.Task&gt; * Func&lt;bool&gt; -&gt; Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" Usage="new Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand (execute, canExecute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="execute" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="canExecute" Type="System.Func&lt;System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="execute">The execution logic.</param>
+        <param name="canExecute">The execution status logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanBeCanceled">
+      <MemberSignature Language="C#" Value="public bool CanBeCanceled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanBeCanceled" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanBeCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanBeCanceled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanBeCanceled : bool" Usage="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanBeCanceled" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.CanBeCanceled</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether running operations for this command can be canceled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cancel">
+      <MemberSignature Language="C#" Value="public void Cancel ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit&#xA;override this.Cancel : unit -&gt; unit" Usage="asyncRelayCommand.Cancel " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.Cancel</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Communicates a request for cancelation.
+            </summary>
+        <remarks>
+            If the underlying command is not running, or if it does not support cancelation, this method will perform no action.
+            Note that even with a successful cancelation, the completion of the current operation might not be immediate.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public bool CanExecute (object? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanExecute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool&#xA;override this.CanExecute : obj -&gt; bool" Usage="asyncRelayCommand.CanExecute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecuteChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler? CanExecuteChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanExecuteChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.CanExecuteChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CanExecuteChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (object? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.Execute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit&#xA;override this.Execute : obj -&gt; unit" Usage="asyncRelayCommand.Execute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ExecuteAsync (object? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ExecuteAsync(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecuteAsync(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteAsync (parameter As Object) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAsync : obj -&gt; System.Threading.Tasks.Task&#xA;override this.ExecuteAsync : obj -&gt; System.Threading.Tasks.Task" Usage="asyncRelayCommand.ExecuteAsync parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.ExecuteAsync(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The input parameter.</param>
+        <summary>
+            Provides a more specific version of <see cref="M:System.Windows.Input.ICommand.Execute(System.Object)" />,
+            also returning the <see cref="T:System.Threading.Tasks.Task" /> representing the async operation being executed.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.Task" /> representing the async operation being executed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExecutionTask">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task? ExecutionTask { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task ExecutionTask" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecutionTask" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExecutionTask As Task" />
+      <MemberSignature Language="F#" Value="member this.ExecutionTask : System.Threading.Tasks.Task" Usage="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.ExecutionTask" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the last scheduled <see cref="T:System.Threading.Tasks.Task" />, if available.
+            This property notifies a change when the <see cref="T:System.Threading.Tasks.Task" /> completes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCancellationRequested">
+      <MemberSignature Language="C#" Value="public bool IsCancellationRequested { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsCancellationRequested" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsCancellationRequested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCancellationRequested As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCancellationRequested : bool" Usage="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsCancellationRequested" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.IsCancellationRequested</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether a cancelation request has been issued for the current operation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRunning">
+      <MemberSignature Language="C#" Value="public bool IsRunning { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRunning" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsRunning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunning As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRunning : bool" Usage="Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.IsRunning" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.IsRunning</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the command currently has a pending operation being executed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyCanExecuteChanged">
+      <MemberSignature Language="C#" Value="public void NotifyCanExecuteChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyCanExecuteChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand.NotifyCanExecuteChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyCanExecuteChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member NotifyCanExecuteChanged : unit -&gt; unit&#xA;override this.NotifyCanExecuteChanged : unit -&gt; unit" Usage="asyncRelayCommand.NotifyCanExecuteChanged " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Mvvm.Input.IRelayCommand.NotifyCanExecuteChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Notifies that the <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" /> property has changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -29,6 +30,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -65,6 +67,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -101,6 +104,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -114,8 +118,9 @@
         <Parameter Name="key" Type="TKey" />
         <Parameter Name="collection" Type="TValue[]">
           <Attributes>
-            <Attribute>
-              <AttributeName>System.ParamArray</AttributeName>
+            <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
@@ -143,6 +148,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -180,6 +186,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -210,15 +217,17 @@
       </Docs>
     </Member>
     <Member MemberName="ElementAtOrDefault&lt;TKey,TValue&gt;">
-      <MemberSignature Language="C#" Value="public static TValue ElementAtOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;TKey,TValue&gt; source, TKey key, int index);" />
+      <MemberSignature Language="C#" Value="public static TValue ElementAtOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;TKey,TValue&gt; source, TKey key, int index);" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TValue ElementAtOrDefault&lt;TKey, TValue&gt;(class Microsoft.Toolkit.Collections.ObservableGroupedCollection`2&lt;!!TKey, !!TValue&gt; source, !!TKey key, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Collections.ObservableGroupedCollectionExtensions.ElementAtOrDefault``2(Microsoft.Toolkit.Collections.ObservableGroupedCollection{``0,``1},``0,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ElementAtOrDefault(Of TKey, TValue) (source As ObservableGroupedCollection(Of TKey, TValue), key As TKey, index As Integer) As TValue" />
       <MemberSignature Language="F#" Value="static member ElementAtOrDefault : Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;'Key, 'Value&gt; * 'Key * int -&gt; 'Value" Usage="Microsoft.Toolkit.Collections.ObservableGroupedCollectionExtensions.ElementAtOrDefault (source, key, index)" />
+      <MemberSignature Language="C#" Value="public static TValue? ElementAtOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;TKey,TValue&gt; source, TKey key, int index);" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -255,6 +264,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -281,7 +291,7 @@
       </Docs>
     </Member>
     <Member MemberName="FirstOrDefault&lt;TKey,TValue&gt;">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt; FirstOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;TKey,TValue&gt; source, TKey key);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;? FirstOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Collections.ObservableGroupedCollection&lt;TKey,TValue&gt; source, TKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Collections.ObservableGroup`2&lt;!!TKey, !!TValue&gt; FirstOrDefault&lt;TKey, TValue&gt;(class Microsoft.Toolkit.Collections.ObservableGroupedCollection`2&lt;!!TKey, !!TValue&gt; source, !!TKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Collections.ObservableGroupedCollectionExtensions.FirstOrDefault``2(Microsoft.Toolkit.Collections.ObservableGroupedCollection{``0,``1},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FirstOrDefault(Of TKey, TValue) (source As ObservableGroupedCollection(Of TKey, TValue), key As TKey) As ObservableGroup(Of TKey, TValue)" />
@@ -290,6 +300,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -324,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>
@@ -365,6 +377,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -399,6 +412,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -437,6 +451,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -477,6 +492,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Collections.ObservableGroup&lt;TKey,TValue&gt;</ReturnType>

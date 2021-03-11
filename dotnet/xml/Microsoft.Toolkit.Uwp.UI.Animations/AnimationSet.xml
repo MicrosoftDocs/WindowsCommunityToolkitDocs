@@ -1,30 +1,53 @@
 <Type Name="AnimationSet" FullName="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet">
-  <TypeSignature Language="C#" Value="public class AnimationSet : IDisposable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnimationSet extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="C#" Value="public class AnimationSet : IDisposable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnimationSet extends System.Object implements class System.IDisposable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet" />
-  <TypeSignature Language="VB.NET" Value="Public Class AnimationSet&#xA;Implements IDisposable" />
-  <TypeSignature Language="F#" Value="type AnimationSet = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnimationSet&#xA;Implements IDisposable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="F#" Value="type AnimationSet = class&#xA;    interface IDisposable" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="C#" Value="public sealed class AnimationSet : Windows.UI.Xaml.DependencyObjectCollection" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnimationSet extends Windows.UI.Xaml.DependencyObjectCollection" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnimationSet&#xA;Inherits DependencyObjectCollection" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="F#" Value="type AnimationSet = class&#xA;    inherit DependencyObjectCollection" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="win-comm-toolkit-dotnet-7.0">Windows.UI.Xaml.DependencyObjectCollection</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface>
+    <Interface FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
       <InterfaceName>System.IDisposable</InterfaceName>
     </Interface>
   </Interfaces>
   <Docs>
     <summary>
-            Defines an object for storing and managing CompositionAnimations for an element
+            A collection of animations that can be grouped together. This type represents a composite animation
+            (such as <see cref="T:Windows.UI.Xaml.Media.Animation.Storyboard" />) that can be executed on a given element.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnimationSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnimationSet (Windows.UI.Xaml.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.UIElement element) cil managed" />
@@ -39,7 +62,7 @@
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="element">The associated element</param>
@@ -66,8 +89,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="propertyName">The property to be animated on the backing Visual</param>
@@ -94,8 +117,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="propertyName">The property to be animated on the backing Visual</param>
@@ -123,9 +146,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="effectBrush" Type="Windows.UI.Composition.CompositionObject" />
-        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" />
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="effectBrush" Type="Windows.UI.Composition.CompositionObject" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="animation" Type="Windows.UI.Composition.CompositionAnimation" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="propertyName" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="effectBrush">The <see cref="T:Windows.UI.Composition.CompositionEffectBrush" /> that will have a property animated</param>
@@ -153,8 +176,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyPath" Type="System.String" />
-        <Parameter Name="timeline" Type="Windows.UI.Xaml.Media.Animation.Timeline" />
+        <Parameter Name="propertyPath" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="timeline" Type="Windows.UI.Xaml.Media.Animation.Timeline" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="propertyPath">The property to be animated with Storyboards</param>
@@ -166,24 +189,30 @@
       </Docs>
     </Member>
     <Member MemberName="Completed">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed" />
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; Completed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Completed" />
-      <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler(Of AnimationSetCompletedEventArgs) " />
-      <MemberSignature Language="F#" Value="member this.Completed : EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " Usage="member this.Completed : System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " />
+      <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler(Of AnimationSetCompletedEventArgs) " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " Usage="member this.Completed : System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt; " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="C#" Value="public event EventHandler? Completed;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Completed" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler " FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-6.1">System.EventHandler&lt;Microsoft.Toolkit.Uwp.UI.Animations.AnimationSetCompletedEventArgs&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-7.0">System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Occurs when all animations have completed
+            Raised whenever the current animation completes.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -238,6 +267,40 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsSequential">
+      <MemberSignature Language="C#" Value="public bool IsSequential { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSequential" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.IsSequential" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSequential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSequential : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.IsSequential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether top level animation nodes in this collection are invoked
+            sequentially. This applies to both <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationScope" /> nodes (which will still trigger
+            contained animations at the same time), and other top level animation nodes. The default value
+            is <see langword="false" />, which means that all contained animations will start at the same time.
+            <para>
+            Note that this property will also cause a change in behavior for the animation. With the default
+            configuration, with all animations starting at the same time, it's not possible to use multiple
+            animations targeting the same property (as they'll cause a conflict and be ignored when on the
+            composition layer, or cause a crash when on the XAML layer). When animations are started sequentially
+            instead, each sequential block will be able to share target properties with animations from other
+            sequential blocks, without issues. Note that especially for simple scenarios (eg. an opacity animation
+            that just transitions to a state and then back, or between two states), it is recommended to use a single
+            keyframe animation instead, which will result in less overhead when creating and starting the animation.
+            </para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RemoveCompositionAnimation">
       <MemberSignature Language="C#" Value="public void RemoveCompositionAnimation (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveCompositionAnimation(string propertyName) cil managed" />
@@ -255,7 +318,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="propertyName">The property that no longer needs to be animated</param>
@@ -282,7 +345,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="propertyName">The property that no longer needs to be changed</param>
@@ -309,7 +372,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delayTime" Type="System.Double" />
+        <Parameter Name="delayTime" Type="System.Double" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="delayTime">The delay time in milliseconds</param>
@@ -338,7 +401,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delayTime" Type="System.TimeSpan" />
+        <Parameter Name="delayTime" Type="System.TimeSpan" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="delayTime">
@@ -368,7 +431,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delayTime" Type="System.Double" />
+        <Parameter Name="delayTime" Type="System.Double" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="delayTime">The delay time in milliseconds</param>
@@ -396,7 +459,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="delayTime" Type="System.TimeSpan" />
+        <Parameter Name="delayTime" Type="System.TimeSpan" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="delayTime">
@@ -425,7 +488,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="duration" Type="System.Double" />
+        <Parameter Name="duration" Type="System.Double" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="duration">The duration in milliseconds</param>
@@ -454,7 +517,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="duration" Type="System.TimeSpan" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="duration">
@@ -484,7 +547,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="duration" Type="System.Double" />
+        <Parameter Name="duration" Type="System.Double" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="duration">The duration in milliseconds</param>
@@ -512,7 +575,7 @@
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="duration" Type="System.TimeSpan" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="duration">
@@ -536,6 +599,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -546,23 +610,79 @@
             Stats all animations. This method is not awaitable.
             </summary>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Start(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (token As CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.Start : System.Threading.CancellationToken -&gt; unit" Usage="animationSet.Start token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Start(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (element As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.Start : Windows.UI.Xaml.UIElement -&gt; unit" Usage="animationSet.Start element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="StartAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; StartAsync ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; StartAsync() cil managed" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; StartAsync ();" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; StartAsync() cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync" />
-      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task(Of Boolean)" />
-      <MemberSignature Language="F#" Value="member this.StartAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="animationSet.StartAsync " />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task(Of Boolean)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="animationSet.StartAsync " FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync ();" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync() cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : unit -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync " FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-6.1">System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-7.0">System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
@@ -570,6 +690,107 @@
             Starts all animations and returns an awaitable task.
             </summary>
         <returns>A <see cref="T:System.Threading.Tasks.Task" /> that can be awaited until all animations have completed</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (element As UIElement) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : Windows.UI.Xaml.UIElement -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (Windows.UI.Xaml.UIElement element, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(class Windows.UI.Xaml.UIElement element, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.StartAsync(Windows.UI.Xaml.UIElement,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (element As UIElement, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : Windows.UI.Xaml.UIElement * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync (element, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="public event EventHandler? Started;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Started" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Started" />
+      <MemberSignature Language="VB.NET" Value="Public Event Started As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Started : EventHandler " Usage="member this.Started : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised whenever the current animation is started.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -609,6 +830,7 @@
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -616,7 +838,33 @@
       <Parameters />
       <Docs>
         <summary>
-            Stops all animations.
+            Cancels the current animation on the attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Windows.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.AnimationSet.Stop(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop (element As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.Stop : Windows.UI.Xaml.UIElement -&gt; unit" Usage="animationSet.Stop element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> instance to stop the animation for.</param>
+        <summary>
+             Cancels the current animation for a target <see cref="T:Windows.UI.Xaml.UIElement" /> instance.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

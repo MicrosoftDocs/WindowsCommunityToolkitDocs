@@ -1,0 +1,70 @@
+<Type Name="IAsyncRelayCommand&lt;T&gt;" FullName="Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IAsyncRelayCommand&lt;in T&gt; : Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand, Microsoft.Toolkit.Mvvm.Input.IRelayCommand&lt;in T&gt;, System.ComponentModel.INotifyPropertyChanged, System.Windows.Input.ICommand" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncRelayCommand`1&lt;- T&gt; implements class Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand, class Microsoft.Toolkit.Mvvm.Input.IRelayCommand, class Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1&lt;!T&gt;, class System.ComponentModel.INotifyPropertyChanged, class System.Windows.Input.ICommand" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAsyncRelayCommand(Of In T)&#xA;Implements IAsyncRelayCommand, ICommand, INotifyPropertyChanged, IRelayCommand(Of In T)" />
+  <TypeSignature Language="F#" Value="type IAsyncRelayCommand&lt;'T&gt; = interface&#xA;    interface IAsyncRelayCommand&#xA;    interface IRelayCommand&#xA;    interface ICommand&#xA;    interface INotifyPropertyChanged&#xA;    interface IRelayCommand&lt;'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Mvvm.Input.IRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Mvvm.Input.IRelayCommand&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyPropertyChanged</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommand</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type used as argument for the interface methods.</typeparam>
+    <summary>
+            A generic interface representing a more specific version of <see cref="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand" />.
+            </summary>
+    <remarks>This interface is needed to solve the diamond problem with base classes.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExecuteAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ExecuteAsync (T? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ExecuteAsync(!T parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1.ExecuteAsync(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteAsync (parameter As T) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ExecuteAsync : 'T -&gt; System.Threading.Tasks.Task" Usage="iAsyncRelayCommand.ExecuteAsync parameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The input parameter.</param>
+        <summary>
+            Provides a strongly-typed variant of <see cref="M:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand.ExecuteAsync(System.Object)" />.
+            </summary>
+        <returns>The <see cref="T:System.Threading.Tasks.Task" /> representing the async operation being executed.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
