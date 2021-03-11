@@ -1,14 +1,14 @@
 ---
-title: Menu Control
+title: Menu
 author: nmetulev
 description: The Windows Community Toolkit Menu control defines a top level menu for commands, options, properties and much more within your UWP apps.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Menu, xaml, xaml control
 ---
 
-# Menu Control
+# Menu
 
-> [!NOTE]
-> This control will be removed in a future major release.
+> [!WARNING]
+> This control has been deprecated in the Windows Community Toolkit. Please use the [`MenuBar`](/windows/winui/api/microsoft.ui.xaml.controls.menubar) control from WinUI instead.
 
 The [Menu Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.menu) defines a menu of choices for users to invoke, it is inheriting from `ItemsControl`. The default ItemsPanel for the menu control is `WrapPanel` and it only supports MenuItem as an item\children.
 

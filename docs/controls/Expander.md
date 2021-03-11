@@ -1,13 +1,14 @@
 ---
-title: Expander Control
+title: Expander
 author: nmetulev
 description: The Expander Control provides an expandable container to host any content.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Expander, xaml Control, xaml
 ---
 
-# Expander Control
+# Expander
 
-The [Expander Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
+The [Expander](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) control provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
+
 You can show or hide this content by interacting with the Header.
 
 > [!div class="nextstepaction"]

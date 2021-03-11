@@ -46,7 +46,7 @@ The Connected Animations XAML Attached Properties enable connected animations to
 
 ### Connected.Key
 
-Registers element with the [ConnectedAnimationsService](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.animation.connectedanimation.aspx). For the animation to work, the same key must be registered on two different pages when navigating
+Registers element with the [ConnectedAnimationsService](/uwp/api/Windows.UI.Xaml.Media.Animation.ConnectedAnimation). For the animation to work, the same key must be registered on two different pages when navigating
 
 ### Connected.AnchorElement
 

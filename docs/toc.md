@@ -59,9 +59,9 @@
 
 ## [DockPanel](controls/DockPanel.md)
 
-## [DropShadowPanel Control](controls/DropShadowPanel.md)
+## [DropShadowPanel](controls/DropShadowPanel.md)
 
-## [Expander Control](controls/Expander.md)
+## [Expander](controls/Expander.md)
 
 ## [Eyedropper](controls/Eyedropper.md)
 
@@ -89,21 +89,15 @@
 
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 
-## [Menu Control](controls/Menu.md)
-
 ## [OrbitView](controls/OrbitView.md)
 
 ## [RadialGauge](controls/RadialGauge.md)
-
-## [RadialProgressBar](controls/RadialProgressBar.md)
 
 ## [RangeSelector](controls/RangeSelector.md)
 
 ## [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 
 ## [RotatorTile](controls/RotatorTile.md)
-
-## [ScrollHeader](controls/ScrollHeader.md)
 
 ## [StaggeredLayout](controls/layout/StaggeredLayout.md)
 
@@ -112,8 +106,6 @@
 ## [SwitchPresenter](controls/SwitchPresenter.md)
 
 ## [TabbedCommandBar](controls/TabbedCommandBar.md)
-
-## [TabView](controls/TabView.md)
 
 ## [TextToolbar](controls/TextToolbar.md)
 
@@ -188,8 +180,6 @@
 ## [PipelineBrush](brushes/PipelineBrush.md)
 
 ## [PipelineVisualFactory](brushes/PipelineVisualFactory.md)
-
-## [RadialGradientBrush](brushes/RadialGradientBrush.md)
 
 ## [TilesBrush](brushes/TilesBrush.md)
 
@@ -389,13 +379,25 @@
 
 ### [Scale](animations/Scale.md)
 
+## Brushes
+
+### [RadialGradientBrush](brushes/RadialGradientBrush.md)
+
 ## Controls
 
 ### [HamburgerMenu](archive/HamburgerMenu.md)
 
+### [Menu](controls/Menu.md)
+
 ### [PullToRefreshListView](archive/PullToRefreshListview.md)
 
+### [RadialProgressBar](controls/RadialProgressBar.md)
+
+### [ScrollHeader](controls/ScrollHeader.md)
+
 ### [SlidableListItem](archive/SlidableListItem.md)
+
+### [TabView](controls/TabView.md)
 
 ## Extensions
 

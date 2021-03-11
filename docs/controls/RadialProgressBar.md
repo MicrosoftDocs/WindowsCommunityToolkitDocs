@@ -1,13 +1,16 @@
 ---
-title: RadialProgressBar XAML Control
+title: RadialProgressBar
 author: nmetulev
-description: The Radial Progress Bar Control displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+description: The Radial Progress Bar Control displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring. (outdated docs)
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Radial Progress Bar, RadialProgressBar, xaml control, xaml
 ---
 
-# RadialProgressBar XAML Control
+# RadialProgressBar
 
-The [Radial Progress Bar Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
+> [!WARNING]
+> This control has been deprecated in the Windows Community Toolkit. Please use the [`ProgressRing`](/windows/winui/api/microsoft.ui.xaml.controls.progressring) control from WinUI instead with `IsIndeterminate` set to `false`.
+
+The [Radial Progress Bar](/dotnet/api/microsoft.toolkit.uwp.ui.controls.radialprogressbar) control displays a value in a certain range using a cicular sector that grows clockwise until it becomes a full ring.
 
 The control uses the same dependency properties as the standard Progress Bar, with the addition of:
 

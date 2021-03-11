@@ -1,13 +1,13 @@
 ---
-title: ListDetailsView XAML Control
+title: ListDetailsView
 author: nmetulev
 description: The ListDetailsView Control presents items in a list/details pattern.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ListDetailsView, XAML Control, xaml
 ---
 
-# ListDetailsView XAML Control
+# ListDetailsView
 
-The [ListDetailsView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsview) presents items in a list/details pattern. It shows a collection of items within the "list panel" and the details for that item within the "details panel". The ListDetailsView reacts to the width it is given to determine if it should show both the list and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
+The [ListDetailsView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsview) control presents items in a list/details pattern. It shows a collection of items within the "list panel" and the details for that item within the "details panel". The ListDetailsView reacts to the width it is given to determine if it should show both the list and details or just one of the two. There is a dependency property `ViewState` or an event `ViewStateChanged` that can be used to track which state the control is in.
 
 > **Platform APIs:** [`ListDetailsView`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsview), [`ListDetailsViewState`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsviewstate)
 

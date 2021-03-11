@@ -1,5 +1,5 @@
 ---
-title: TabView XAML Control
+title: TabView
 author: michael-hawker
 description: TabView is a control for displaying a set of tabs and their content.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TabView, TabControl
@@ -7,7 +7,10 @@ dev_langs:
   - csharp
 ---
 
-# TabView XAML Control
+# TabView
+
+> [!WARNING]
+> This control has been removed from the Windows Community Toolkit. Please use the [`TabView`](/windows/winui/api/microsoft.ui.xaml.controls.tabview) control from WinUI instead.
 
 The [TabView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 

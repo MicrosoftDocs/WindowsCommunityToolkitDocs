@@ -1,13 +1,13 @@
 ---
-title: InfiniteCanvas XAML Control
+title: InfiniteCanvas
 author: IbraheemOsama
 description: InfiniteCanvas is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, InfiniteCanvas, XAML Control, xaml
 ---
 
-# InfiniteCanvas XAML Control
+# InfiniteCanvas
 
-The [InfiniteCanvas Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.infinitecanvas) is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
+The [InfiniteCanvas](/dotnet/api/microsoft.toolkit.uwp.ui.controls.infinitecanvas) control is a canvas that supports Infinite Scrolling, Ink, Text, Format Text, Zoom in/out, Redo, Undo, Export canvas data, Import canvas data.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=InfiniteCanvas)

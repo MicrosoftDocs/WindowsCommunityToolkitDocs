@@ -1,5 +1,5 @@
 ---
-title: AdaptiveGridView XAML Control
+title: AdaptiveGridView
 author: nmetulev
 description: The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, AdaptiveGridView, xaml control, xaml
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# AdaptiveGridView XAML Control
+# AdaptiveGridView
 
-The [AdaptiveGridView Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
+The [AdaptiveGridView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) control presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
 
 There are 3 ways to use this Control:
 

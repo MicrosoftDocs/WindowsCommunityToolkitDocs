@@ -1,11 +1,11 @@
 ---
-title: DataGrid XAML Control
+title: DataGrid
 author: harinikmsft
 description: The DataGrid Control presents data in a customizable table of rows and columns.
 keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, DataGrid, xaml control, xaml
 ---
 
-# DataGrid XAML control
+# DataGrid
 
 The DataGrid control provides a flexible way to display a collection of data in rows and columns.
 

@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # RadialGradientBrush
 
+> [!WARNING]
+> This control has been deprecated in the Windows Community Toolkit. Please use the [`RadialGradientBrush`](/windows/winui/api/microsoft.ui.xaml.media.radialgradientbrush) from WinUI instead.
+
 The [RadialGradientBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.radialgradientbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that fills an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.  It is a drop-in replacement for the [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx).  However, the `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.
 
 > [!div class="nextstepaction"]

@@ -203,4 +203,4 @@ And here is the final result from the code above, with an image and some text as
 
 ## Examples
 
-You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0//Microsoft.Toolkit.Uwp.SampleApp).
+You can find more examples in the [sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp).

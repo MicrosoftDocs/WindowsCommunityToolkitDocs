@@ -119,12 +119,12 @@ You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Win
 
 ## API
 
-* [Observable group source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Collections)
+- [Observable group source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Collections)
 
 ## Related Topics
 
-* [CollectionViewSource](/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource)
-* [ListView and GridView](/windows/uwp/design/controls-and-patterns/listview-and-gridview)
-* [ObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
-* [ReadOnlyObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
-* [IGrouping\<TKey,TElement\>](/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)
+- [CollectionViewSource](/uwp/api/Windows.UI.Xaml.Data.CollectionViewSource)
+- [ListView and GridView](/windows/uwp/design/controls-and-patterns/listview-and-gridview)
+- [ObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.observablecollection-1?view=netstandard-2.0)
+- [ReadOnlyObservableCollection\<T\>](/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1?view=netstandard-2.0)
+- [IGrouping\<TKey,TElement\>](/dotnet/api/system.linq.igrouping-2?view=netstandard-2.0)

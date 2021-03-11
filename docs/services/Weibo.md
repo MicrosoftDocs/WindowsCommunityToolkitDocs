@@ -1,7 +1,7 @@
 ---
 title: Weibo service
 author: validvoid
-description: The Weibo Service allows users to retrieve or publish data to Weibo.
+description: Learn about the Weibo Service, which allows users to retrieve or publish data to Weibo. See app setup instructions, syntax examples, and requirements.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Weibo
 dev_langs:
   - csharp

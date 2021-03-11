@@ -1,5 +1,5 @@
 ---
-title: RemoteDevicePicker Control
+title: RemoteDevicePicker
 author: avknaidu
 description: The RemoteDevicePicker control helps you to pick a device that you can use to Remote Launch Apps, Services.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, RemoteDevicePicker, picker
@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# RemoteDevicePicker Control
+# RemoteDevicePicker
 
 The [RemoteDevicePicker](/dotnet/api/microsoft.toolkit.uwp.ui.controls.remotedevicepicker) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
