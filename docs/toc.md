@@ -59,9 +59,9 @@
 
 ## [DockPanel](controls/DockPanel.md)
 
-## [DropShadowPanel Control](controls/DropShadowPanel.md)
+## [DropShadowPanel](controls/DropShadowPanel.md)
 
-## [Expander Control](controls/Expander.md)
+## [Expander](controls/Expander.md)
 
 ## [Eyedropper](controls/Eyedropper.md)
 
@@ -89,7 +89,7 @@
 
 ## [MasterDetailsView](controls/MasterDetailsView.md)
 
-## [Menu Control](controls/Menu.md)
+## [Menu](controls/Menu.md)
 
 ## [OrbitView](controls/OrbitView.md)
 
