@@ -1,7 +1,7 @@
 ---
 title: Matrix Extensions
 author: michael-hawker
-description: UWP Matrix extensions methods
+description: Learn about Matrix extensions, which provide methods to transform a Matrix. These methods are similar to methods from the System.Windows.Media.Matrix class.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix
 dev_langs:
   - csharp
