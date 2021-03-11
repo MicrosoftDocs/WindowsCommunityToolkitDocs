@@ -19,10 +19,16 @@
     <BaseTypeName>Microsoft.Toolkit.Parsers.Markdown.Inlines.MarkdownInline</BaseTypeName>
   </Base>
   <Interfaces>
-    <Interface FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+    <Interface>
       <InterfaceName>Microsoft.Toolkit.Parsers.Markdown.Inlines.IInlineContainer</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Obsolete("Parsing code has been deprecated, we suggest using Markdig. See https://github.com/windows-toolkit/WindowsCommunityToolkit/issues/3200 for more info.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Parsing code has been deprecated, we suggest using Markdig. See https://github.com/windows-toolkit/WindowsCommunityToolkit/issues/3200 for more info.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Represents a span that contains bold text.

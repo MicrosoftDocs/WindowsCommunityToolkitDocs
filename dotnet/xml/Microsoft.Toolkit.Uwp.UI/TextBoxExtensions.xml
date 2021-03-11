@@ -157,12 +157,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="GetPlaceHolder">
-      <MemberSignature Language="C#" Value="public static string GetPlaceHolder (Windows.UI.Xaml.Controls.TextBox obj);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPlaceHolder(class Windows.UI.Xaml.Controls.TextBox obj) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetPlaceHolder(Windows.UI.Xaml.Controls.TextBox)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPlaceHolder (obj As TextBox) As String" />
-      <MemberSignature Language="F#" Value="static member GetPlaceHolder : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetPlaceHolder obj" />
+    <Member MemberName="GetMaskPlaceholder">
+      <MemberSignature Language="C#" Value="public static string GetMaskPlaceholder (Windows.UI.Xaml.Controls.TextBox obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMaskPlaceholder(class Windows.UI.Xaml.Controls.TextBox obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetMaskPlaceholder(Windows.UI.Xaml.Controls.TextBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMaskPlaceholder (obj As TextBox) As String" />
+      <MemberSignature Language="F#" Value="static member GetMaskPlaceholder : Windows.UI.Xaml.Controls.TextBox -&gt; string" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.GetMaskPlaceholder obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
@@ -362,6 +362,43 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="MaskPlaceholder">
+      <MemberSignature Language="C#" Value="see GetMaskPlaceholder, and SetMaskPlaceholder" />
+      <MemberSignature Language="ILAsm" Value="see GetMaskPlaceholder, and SetMaskPlaceholder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.MaskPlaceholder" />
+      <MemberSignature Language="VB.NET" Value="see GetMaskPlaceholder, and SetMaskPlaceholder" />
+      <MemberSignature Language="F#" Value="see GetMaskPlaceholder, and SetMaskPlaceholder" Usage="see GetMaskPlaceholder, and SetMaskPlaceholder" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaskPlaceholderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaskPlaceholderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaskPlaceholderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.MaskPlaceholderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaskPlaceholderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaskPlaceholderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.MaskPlaceholderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Represents the mask place holder which represents the variable character that the user can edit in the textbox
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="MaskProperty">
       <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty MaskProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty MaskProperty" />
@@ -379,43 +416,6 @@
       <Docs>
         <summary>
             Represents a mask/format for the textbox that the user must follow
-            </summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PlaceHolder">
-      <MemberSignature Language="C#" Value="see GetPlaceHolder, and SetPlaceHolder" />
-      <MemberSignature Language="ILAsm" Value="see GetPlaceHolder, and SetPlaceHolder" />
-      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolder" />
-      <MemberSignature Language="VB.NET" Value="see GetPlaceHolder, and SetPlaceHolder" />
-      <MemberSignature Language="F#" Value="see GetPlaceHolder, and SetPlaceHolder" Usage="see GetPlaceHolder, and SetPlaceHolder" />
-      <MemberType>AttachedProperty</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="PlaceHolderProperty">
-      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PlaceHolderProperty;" />
-      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PlaceHolderProperty" />
-      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolderProperty" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlaceHolderProperty As DependencyProperty " />
-      <MemberSignature Language="F#" Value=" staticval mutable PlaceHolderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.PlaceHolderProperty" />
-      <MemberType>Field</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>
-            Represents the mask place holder which represents the variable character that the user can edit in the textbox
             </summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -538,12 +538,12 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <Member MemberName="SetPlaceHolder">
-      <MemberSignature Language="C#" Value="public static void SetPlaceHolder (Windows.UI.Xaml.Controls.TextBox obj, string value);" />
-      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPlaceHolder(class Windows.UI.Xaml.Controls.TextBox obj, string value) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetPlaceHolder(Windows.UI.Xaml.Controls.TextBox,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPlaceHolder (obj As TextBox, value As String)" />
-      <MemberSignature Language="F#" Value="static member SetPlaceHolder : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetPlaceHolder (obj, value)" />
+    <Member MemberName="SetMaskPlaceholder">
+      <MemberSignature Language="C#" Value="public static void SetMaskPlaceholder (Windows.UI.Xaml.Controls.TextBox obj, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetMaskPlaceholder(class Windows.UI.Xaml.Controls.TextBox obj, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetMaskPlaceholder(Windows.UI.Xaml.Controls.TextBox,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetMaskPlaceholder (obj As TextBox, value As String)" />
+      <MemberSignature Language="F#" Value="static member SetMaskPlaceholder : Windows.UI.Xaml.Controls.TextBox * string -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.TextBoxExtensions.SetMaskPlaceholder (obj, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>

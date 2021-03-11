@@ -31,7 +31,7 @@
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Collapsed")]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplateVisualState(GroupName="State", Name="Collapsed")&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-stable">
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
       <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
       <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="PART_Presenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
     </Attribute>
@@ -198,6 +198,31 @@
       </ReturnValue>
       <Parameters />
       <Docs>
+        <summary>
+            Dismiss the notification
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dismiss">
+      <MemberSignature Language="C#" Value="public void Dismiss (bool dismissAll = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dismiss(bool dismissAll) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.InAppNotification.Dismiss(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dismiss (Optional dismissAll As Boolean = false)" />
+      <MemberSignature Language="F#" Value="member this.Dismiss : bool -&gt; unit" Usage="inAppNotification.Dismiss dismissAll" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dismissAll" Type="System.Boolean" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="dismissAll">To be added.</param>
         <summary>
             Dismiss the notification
             </summary>
@@ -500,8 +525,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="content" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
-        <Parameter Name="duration" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable" />
+        <Parameter Name="content" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="duration" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
       </Parameters>
       <Docs>
         <param name="content">The content of the notification</param>

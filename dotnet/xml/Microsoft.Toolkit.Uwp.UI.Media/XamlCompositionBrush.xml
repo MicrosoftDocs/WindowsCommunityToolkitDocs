@@ -139,9 +139,12 @@
       <Parameters />
       <Docs>
         <summary>
-            Clones the current instance by rebuilding the source <see cref="T:Windows.UI.Xaml.Media.Brush" />. Use this method to reuse the same effects pipeline on a different <see cref="T:Windows.UI.Core.CoreDispatcher" /></summary>
+            Clones the current instance by rebuilding the source <see cref="T:Windows.UI.Xaml.Media.Brush" />. Use this method to reuse the same effects pipeline on a different <see cref="T:Windows.System.DispatcherQueue" /></summary>
         <returns>A <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.XamlCompositionBrush" /> instance using the current effects pipeline</returns>
-        <remarks>To be added.</remarks>
+        <remarks>
+            If your code is already on the same thread, you can just assign this brush to an arbitrary number of controls and it will still work correctly.
+            This method is only meant to be used to create a new instance of this brush using the same pipeline, on threads that can't access the current instance, for example in secondary app windows.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="OnBrushRequested">
