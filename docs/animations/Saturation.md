@@ -136,5 +136,5 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## Related Topics
 
-- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
+- [AnimationSet Class](./animationset.md)
 - [SaturationEffect Class](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)

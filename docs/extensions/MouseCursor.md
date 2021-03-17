@@ -50,7 +50,7 @@ Here is a example of setting Mouse.Cursor
 
 ## Limitations
 
-Because the UWP framework does not support metadata on Attached Properties, specifically the [FrameworkPropertyMetadata.Inherits](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the Mouse.Cursor might not work properly in some very specific XAML layout scenarios when combining nested FrameworkElements with different Mouse.Cursor values set on them.
+Because the UWP framework does not support metadata on Attached Properties, specifically the [FrameworkPropertyMetadata.Inherits](/dotnet/api/system.windows.frameworkpropertymetadata.-ctor) flag, the Mouse.Cursor might not work properly in some very specific XAML layout scenarios when combining nested FrameworkElements with different Mouse.Cursor values set on them.
 
 ## Sample Project
 

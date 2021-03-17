@@ -10,7 +10,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 > [!WARNING]
 > This control has been deprecated in the Windows Community Toolkit. Please use the [`RadialGradientBrush`](/windows/winui/api/microsoft.ui.xaml.media.radialgradientbrush) from WinUI instead.
 
-The [RadialGradientBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.radialgradientbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that fills an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.  It is a drop-in replacement for the [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx).  However, the `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.
+The [RadialGradientBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.radialgradientbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that fills an area with a radial gradient. A focal point defines the beginning of the gradient, and a circle defines the end point of the gradient.  It is a drop-in replacement for the [System.Windows.Media.RadialGradientBrush](/dotnet/api/system.windows.media.radialgradientbrush).  However, the `Transform`, `RenderTransform`, and `MappingMode` properties aren't supported.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=RadialGradientBrush)
@@ -83,5 +83,5 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 ## Related Topics
 
 - [Brush](/uwp/api/windows.ui.xaml.media.brush)
-- [System.Windows.Media.RadialGradientBrush](https://msdn.microsoft.com/library/system.windows.media.radialgradientbrush(v=vs.110).aspx)
+- [System.Windows.Media.RadialGradientBrush](/dotnet/api/system.windows.media.radialgradientbrush)
 - [Win2D CanvasRadialGradientBrush reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Brushes_CanvasRadialGradientBrush.htm)

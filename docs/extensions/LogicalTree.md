@@ -98,4 +98,4 @@ Dim content = uiElement.GetContentControl()
 
 ## Related Topics
 
-* [VisualTree Extensions](/windows/communitytoolkit/extensions/visualtree)
+* [VisualTree Extensions](./visualtree.md)

@@ -236,4 +236,4 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## Related Topics
 
-- [Markdown Parser](/windows/communitytoolkit/parsers/markdownparser)
+- [Markdown Parser](../parsers/markdownparser.md)

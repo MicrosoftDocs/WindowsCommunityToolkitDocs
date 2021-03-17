@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > (This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit start with the [InteractiveProviderBehavior](../graph/providers/InteractiveProviderBehavior.md).)
 
-The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
+The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](/onedrive/developer/) that uses the [Microsoft Graph](/graph/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
 
 * Initialize and authenticate with a common set of objects
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code

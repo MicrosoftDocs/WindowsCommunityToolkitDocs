@@ -129,7 +129,7 @@ Here is how you can easily set a custom cursor type for a target `FrameworkEleme
 > Even though Microsoft recommends in [UWP Design guidelines](/uwp/input-and-devices/mouse-interactions#cursors) hover effects instead of custom cursors over interactive elements, custom cursors can be useful in some specific scenarios.
 
 > [!WARNING]
-> Because the UWP framework does not support metadata on attached properties, specifically the [`FrameworkPropertyMetadata.Inherits`](https://msdn.microsoft.com/library/ms557301%28v=vs.110%29.aspx) flag, the `Cursor` property might not work properly in some very specific XAML layout scenarios when combining nested `FrameworkElement`-s with different `CoreCursorType` values set on them.
+> Because the UWP framework does not support metadata on attached properties, specifically the [`FrameworkPropertyMetadata.Inherits`](/dotnet/api/system.windows.frameworkpropertymetadata.-ctor) flag, the `Cursor` property might not work properly in some very specific XAML layout scenarios when combining nested `FrameworkElement`-s with different `CoreCursorType` values set on them.
 
 ## Examples
 

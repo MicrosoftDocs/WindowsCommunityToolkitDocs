@@ -563,7 +563,7 @@ No, the APIs differ significantly, as the *WebViewControl* represents several ge
 
 ### Can I inject native objects into my WebViewControl content?
 
-No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property nor the WebView (UWP) [AddWebAllowedObject](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: <https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround>
+No. Neither the WebBrower (Internet Explorer) [ObjectForScripting](/dotnet/api/system.windows.controls.webbrowser.objectforscripting) property nor the WebView (UWP) [AddWebAllowedObject](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) method are supported in WebViewControl. As a workaround, you can use `window.external.notify`/ `ScriptNotify` and JavaScript execution to communicate between the layers, for example: <https://github.com/rjmurillo/WebView_AddAllowedWebObjectWorkaround>
 
 ### Can I host the UWP WebView in WPF or Windows Forms using XAML islands?
 

@@ -13,7 +13,7 @@ If no value for `Rows` and `Columns` are provided, the UniformGrid will create a
 
 If a fixed size is provided for `Rows` and `Columns` then additional children that can't fit in the number of cells provided won't be displayed.
 
-It differs from the [AdaptiveGridView](/windows/communitytoolkit/controls/adaptivegridview) which dictates
+It differs from the [AdaptiveGridView](./adaptivegridview.md) which dictates
 its layout based on item sizes to where as the UniformGrid maintains the specified number of Rows and/or Columns.
 In addition, UniformGrid is a `Panel` instead of an `ItemsControl`.  As such, it could be used as a Panel in such ItemsControls.
 
@@ -180,7 +180,7 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls/) |
@@ -193,5 +193,5 @@ In addition to `FlowDirection` to layout items from Right-to-Left.  The UWP Unif
 
 - [Grid Class](/uwp/api/Windows.UI.Xaml.Controls.Grid)
 - [Layouts with XAML](/windows/uwp/design/layout/layouts-with-xaml)
-- [System.Windows.Controls.Primitives.UniformGrid](https://msdn.microsoft.com/library/system.windows.controls.primitives.uniformgrid(v=vs.110).aspx)
+- [System.Windows.Controls.Primitives.UniformGrid](/dotnet/api/system.windows.controls.primitives.uniformgrid)
 - [NullableBool Markup Extension](../extensions/NullableBoolMarkup.md)
