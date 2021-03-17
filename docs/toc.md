@@ -39,6 +39,8 @@
 
 ## [Carousel](controls/Carousel.md)
 
+## [ColorPicker](controls/ColorPicker.md)
+
 ## [ColorPickerButton](controls/ColorPicker.md)
 
 ## [DataGrid](controls/DataGrid.md)
