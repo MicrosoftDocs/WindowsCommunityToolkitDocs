@@ -65,7 +65,7 @@ Before getting started, follow these instructions to install the necessary NuGet
 
     **WPF**
 
-    ![InitialTypeName property in Properties Window](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf.png)
+    ![InitialTypeName property in Properties WPF](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf.png)
 
     **Windows Forms**
 
@@ -75,7 +75,7 @@ Before getting started, follow these instructions to install the necessary NuGet
 
     **WPF**
 
-    ![WindowsXamlHost control in the toolbox](../../resources/images/Controls/WindowsXAMLHost/xaml-content-updated-event-wpf.png)
+    ![WindowsXamlHost control in the toolbox WPF](../../resources/images/Controls/WindowsXAMLHost/xaml-content-updated-event-wpf.png)
 
     **Windows Forms**
 
@@ -274,9 +274,8 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WindowsXamlHo
 
 ## Requirements
 
-|        |        |
-|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|--------|--------|
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.XamlHost <br/> WPF: Microsoft.Toolkit.Wpf.UI.XamlHost |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.XamlHost)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) |
 
