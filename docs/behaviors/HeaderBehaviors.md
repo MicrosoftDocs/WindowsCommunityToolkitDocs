@@ -8,11 +8,12 @@ dev_langs:
 ---
 
 # Header Behaviors
+
 The
 [FadeHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.fadeheaderbehavior),
 [QuickReturnHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.quickreturnheaderbehavior), and
 [StickyHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.stickyheaderbehavior)
-apply behaviors to ListView and GridView Headers. 
+apply behaviors to ListView and GridView Headers.
 
 The [FadeHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.fadeheaderbehavior) causes the Header of a ListView or GridView to fade in and out as the user scrolls to the top of the ListView or GridView.
 
@@ -20,7 +21,7 @@ The [QuickReturnHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.q
 
 The [StickyHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.stickyheaderbehavior) causes the Header of a ListView or GridView to stay in view as the user scrolls up and down in the ListView or GridView.
 
-> **Platform APIs:** 
+> **Platform APIs:**
 [FadeHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.fadeheaderbehavior),
 [QuickReturnHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.quickreturnheaderbehavior),
 [StickyHeaderBehavior](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.stickyheaderbehavior)
@@ -77,7 +78,6 @@ This is an example using the `FadeHeaderBehavior` the header will fade in and ou
 ## Example Output
 
 ![FadeHeaderBehavior example](../resources/images/Behaviors/Animations-FadeHeaderBehavior.gif)
-
 
 ## Sample Project
 
