@@ -20,7 +20,7 @@ You can use the **WindowsXamlHost** control to add any Universal Windows Platfor
 This is a general-purpose control for hosting *XAML Islands* in your WPF or Windows Forms application. For certain features such as Ink, maps, and playing media content, you might prefer to use other wrapped controls provided by the Windows Community Toolkit that have a simpler development experience. For more information, see [Host UWP XAML controls in desktop apps (XAML Islands)](/windows/apps/desktop/modernize/xaml-islands).
 
 > [!NOTE]
-> This control is currently available as a developer preview for Windows 10, version 1903, and later. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. For more information, see the [XAML Islands feature roadmap](/windows/uwp/xaml-platform/xaml-host-controls#feature-roadmap). If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=WindowsXamlHost)
@@ -31,7 +31,7 @@ See our list of [known issues](https://github.com/windows-toolkit/Microsoft.Tool
 
 ## Host a custom UWP control
 
-You can use the **WindowsXamlHost** control to host any custom UWP control. To do this, you must have the source code for the custom control so you can compile it with your application, and you must make several updates to your project. For a walkthrough that demonstrates how to do this, see [Host a custom UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands).
+You can use the **WindowsXamlHost** control to host any custom UWP control. To do this, you must have the source code for the custom control so you can compile it with your application, and you must make several updates to your project.
 
 ## Host a first-party UWP control
 
@@ -59,7 +59,7 @@ Before getting started, follow these instructions to install the necessary NuGet
 
 To create and host a first-party UWP control at design time, you must add a **WindowsXamlHost** control to a parent UI element (for example, a grid) in the XAML editor. Dragging a **WindowsXamlHost** from the **Toolbox** to the designer is not supported.
 
-For a walkthrough that demonstrates how to use the **WindowsXamlHost** control to host a UWP control in a WPF app, see [Host a standard UWP control in a WPF app](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
+For a walkthrough that demonstrates how to use the **WindowsXamlHost** control to host a first-party UWP control at design time, see [Host a standard UWP control in a WPF app](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
 ### Create and host UWP controls dynamically at run time
 

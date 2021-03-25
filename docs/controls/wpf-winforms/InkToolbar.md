@@ -23,7 +23,7 @@ This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkToolbar](
 
 For a walkthrough that demonstrates how to host an **InkToolbar** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
-## Requirements
+## Prerequisites
 
 Before you can use this control, you must follow [these instructions](/windows/apps/desktop/modernize/xaml-islands#requirements) to configure your project to support XAML Islands.
 
