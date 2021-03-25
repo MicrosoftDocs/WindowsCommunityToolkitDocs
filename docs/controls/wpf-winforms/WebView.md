@@ -579,7 +579,7 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in t
 
 ## Requirements
 
-|        |        |
+| Requirement   |  Value      |
 |--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
