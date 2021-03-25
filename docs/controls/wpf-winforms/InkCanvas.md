@@ -12,7 +12,7 @@ The **InkCanvas** control provides a surface for Windows Ink-based user interact
 ![InkCanvas example](../../resources/images/Controls/InkCanvas.png)
 
 > [!NOTE]
-> This control is currently available as a developer preview for Windows 10, version 1903, and later. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. For more information, see the [XAML Islands feature roadmap](/windows/uwp/xaml-platform/xaml-host-controls#feature-roadmap). If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=InkCanvas)
@@ -25,7 +25,7 @@ For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control
 
 ## Requirements
 
-Before you can use this control, you must follow [these instructions](/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
+Before you can use this control, you must follow [these instructions](/windows/apps/desktop/modernize/xaml-islands#requirements) to configure your project to support XAML Islands.
 
 ## Known issues and limitations
 
