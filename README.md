@@ -14,7 +14,6 @@ When opening a PR, start by forking this repository. Then, based on the type of 
 
 We will merge updates from the current dev branch to 'master' to keep master in-sync with the live branch. When we make a new release, we will push the live branch in order to publish documentation for new features.
 
-
 ## Documentation Links
 
 - [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/uwpcommunitytoolkit/?branch=master)
