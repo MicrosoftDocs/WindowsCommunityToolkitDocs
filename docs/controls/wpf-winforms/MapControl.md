@@ -17,7 +17,7 @@ This control shows rich and customizable map data including road maps, aerial, 3
 ![MapControl example](../../resources/images/Controls/MapControl.png)
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=MapControl)

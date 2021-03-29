@@ -12,7 +12,7 @@ The **MediaPlayerElement** control embeds a view that streams and renders media 
 ![MediaPlayterElement example](../../resources/images/Controls/MediaPlayerElement.png)
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=MediaPlayerElement)
