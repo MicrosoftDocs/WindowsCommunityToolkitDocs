@@ -14,10 +14,27 @@
   <Interfaces />
   <Docs>
     <summary>
-            A collection of implicit animations that can be grouped together. This type represents a composite animation
-            (such as <see cref="T:Windows.UI.Xaml.Media.Animation.Storyboard" />) that is executed on a given element.
-            </summary>
-    <remarks>To be added.</remarks>
+            A collection of implicit animations that can be assigned to a <see cref="T:Windows.UI.Xaml.UIElement" /> and configured to be run automatically
+            when the element is either shown or hidden (through <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.ShowAnimationsProperty" /> and <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.HideAnimationsProperty" />),
+            or whenever one of the targeted properties on the underlying <see cref="T:Windows.UI.Composition.Visual" /> element changes (through <see cref="F:Microsoft.Toolkit.Uwp.UI.Animations.Implicit.AnimationsProperty" />).
+            <para>
+            Animations within an <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> should be objects implementing the <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline" /> interface, such as
+            types inheriting from <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2" /> (eg. <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.OpacityAnimation" />, <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.TranslationAnimation" />,
+            <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.OffsetAnimation" /> and <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ScaleAnimation" />, or custom ones such as <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ScalarAnimation" /> and <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.Vector3Animation" />).
+            Adding incompatible elements cannot be validated at build-time, but will result in a runtime crash.
+            </para><para>
+            Animations will monitor for changes in real-time to any of their public properties. For instance, if a binding is used to dynamically update the
+            <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> or <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> properties, the entire animation set will be
+            initialized again and assigned to the underlying <see cref="T:Windows.UI.Composition.Visual" /> object for the targeted <see cref="T:Windows.UI.Xaml.UIElement" />. This does not currently apply
+            to changes to the <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.KeyFrames" /> property though (other than the entire property being reassigned). To achieve
+            dynamic updates to animation sets in that case, either leverage expression keyframes or just use code-behind to manually reinitialize the animations.
+            </para></summary>
+    <remarks>
+            An <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> instance can only be used on a single <see cref="T:Windows.UI.Xaml.UIElement" /> target, and it cannot be shared across multiple
+            elements. Attempting to do so will result in a runtime crash. Furthermore, it is recommended not to move <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline" /> instances from
+            one <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> to another, and doing so will add unnecessary runtime overhead over time. If you want to apply the same animations
+            to multiple elements, simply create another <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> instance and another set of animations with the same properties within it.
+            </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,7 +49,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimationSet" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
