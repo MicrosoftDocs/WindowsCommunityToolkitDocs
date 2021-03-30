@@ -255,6 +255,8 @@
 
 ## [Focus Behaviors](behaviors/FocusBehaviors.md)
 
+## [Header Behaviors](behaviors/HeaderBehaviors.md)
+
 ## [ImageCache](helpers/ImageCache.md)
 
 ## [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
