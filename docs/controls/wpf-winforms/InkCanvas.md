@@ -12,7 +12,7 @@ The **InkCanvas** control provides a surface for Windows Ink-based user interact
 ![InkCanvas example](../../resources/images/Controls/InkCanvas.png)
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
+> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=InkCanvas)
