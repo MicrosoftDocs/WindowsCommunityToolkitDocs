@@ -15,8 +15,8 @@ You can use the **WindowsXamlHost** control to add any Universal Windows Platfor
 * Any first-party UWP control provided by the Windows SDK or WinUI library.
 * Any custom UWP control. You must have the source code for the custom control so you can compile it with your application.
     > [!IMPORTANT]
-    > Using the [WindowsXamlHost]() control to host custom UWP controls is supported only in apps that target .NET Core 3. This scenario is not supported in apps that target the .NET Framework.
-    
+    > Using the WindowsXamlHost control to host custom UWP controls is supported only in apps that target .NET Core 3. This scenario is not supported in apps that target the .NET Framework.
+
 This is a general-purpose control for hosting *XAML Islands* in your WPF or Windows Forms application. For certain features such as Ink, maps, and playing media content, you might prefer to use other wrapped controls provided by the Windows Community Toolkit that have a simpler development experience. For more information, see [Host UWP XAML controls in desktop apps (XAML Islands)](/windows/apps/desktop/modernize/xaml-islands).
 
 > [!NOTE]
