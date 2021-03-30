@@ -130,4 +130,4 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Related Topics
 
-- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
+- [AnimationSet Class](./animationset.md)

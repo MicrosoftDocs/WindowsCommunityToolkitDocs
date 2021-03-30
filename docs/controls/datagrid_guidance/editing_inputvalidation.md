@@ -19,7 +19,7 @@ The [DataGrid](../datagrid.md) control supports cell and row editing functionali
 
 A cell-level edit is committed when you move to another cell in the same row. All edits in a row are committed when you press ENTER or move to another row.
 
-To guarantee that edits can be committed and canceled correctly, the objects in the DataGrid must implement the [IEditableObject](https://msdn.microsoft.com/library/system.componentmodel.ieditableobject(v=vs.110).aspx) interface.
+To guarantee that edits can be committed and canceled correctly, the objects in the DataGrid must implement the [IEditableObject](/dotnet/api/system.componentmodel.ieditableobject) interface.
 
 ### Editing methods and events
 

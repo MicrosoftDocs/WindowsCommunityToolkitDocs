@@ -128,5 +128,5 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## Related Topics
 
-- [AnimationSet Class](/windows/communitytoolkit/animations/animationset)
+- [AnimationSet Class](./animationset.md)
 - [CompositionEffectBrush Class](/uwp/api/Windows.UI.Composition.CompositionEffectBrush)

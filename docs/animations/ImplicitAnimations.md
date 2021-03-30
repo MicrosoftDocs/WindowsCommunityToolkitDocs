@@ -12,11 +12,11 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 Implicit Animations are Composition Animations that are used to describe how and when animations occur as a response to direct property changes, such as Opacity or Offset. Show and Hide animations describe the animation to be applied to an element when the Visibility is changed, or the element is added/removed to the visual tree.
 
-**Prerequisites** - [Composition Animation in XAML](/windows/communitytoolkit/animations/compositionanimations)
+**Prerequisites** - [Composition Animation in XAML](./compositionanimations.md)
 
-The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code by using the [Composition Animation](/windows/communitytoolkit/animations/compositionanimations) XAML objects. This allows animations to be defined directly on the element, or defined as XAML resources and applied to any XAML element.
+The Implicit Animations Attached Properties enable implicit animations to be defined in your XAML code by using the [Composition Animation](./compositionanimations.md) XAML objects. This allows animations to be defined directly on the element, or defined as XAML resources and applied to any XAML element.
 
-The Implicit Animations Attached Properties can be used in combination with the [VisualExtensions](/windows/communitytoolkit/extensions/visualex). This works well when used in Storyboards.
+The Implicit Animations Attached Properties can be used in combination with the [VisualExtensions](../extensions/visualex.md). This works well when used in Storyboards.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Animations?sample=Implicit%20Animations)
@@ -61,11 +61,11 @@ The Implicit Animations Attached Properties can be used in combination with the 
 
 ### Implicit.Animations
 
-Specifies an [Composition Animation](/windows/communitytoolkit/animations/compositionanimations) with animations to run when properties are modified.
+Specifies an [Composition Animation](./compositionanimations.md) with animations to run when properties are modified.
 
 ### Implicit.ShowAnimations and Implicit.HideAnimations
 
-Specifies an [Composition Animation](/windows/communitytoolkit/animations/compositionanimations) with animations to run when an element is added or removed from the visual tree respectively (including when Visibility on an element is changed).
+Specifies an [Composition Animation](./compositionanimations.md) with animations to run when an element is added or removed from the visual tree respectively (including when Visibility on an element is changed).
 
 ## Examples
 

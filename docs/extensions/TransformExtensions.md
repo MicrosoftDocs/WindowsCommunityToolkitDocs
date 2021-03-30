@@ -9,7 +9,7 @@ dev_langs:
 
 # Transform Extensions
 
-The Transform Extensions ([RotateTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.rotatetransformextensions), [ScaleTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.scaletransformextensions), [SkewTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.skewtransformextensions), and [TranslateTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.translatetransformextensions)) provide the ability to retrieve the Matrix of the transform.  This is similar to the `Value` property on the [System.Windows.Media.Transform](https://msdn.microsoft.com/library/system.windows.media.transform(v=vs.110).aspx) class.
+The Transform Extensions ([RotateTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.rotatetransformextensions), [ScaleTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.scaletransformextensions), [SkewTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.skewtransformextensions), and [TranslateTransformExtensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.translatetransformextensions)) provide the ability to retrieve the Matrix of the transform.  This is similar to the `Value` property on the [System.Windows.Media.Transform](/dotnet/api/system.windows.media.transform) class.
 
 ## Methods
 
@@ -19,7 +19,7 @@ The Transform Extensions ([RotateTransformExtensions](/dotnet/api/microsoft.tool
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
@@ -37,4 +37,4 @@ The Transform Extensions ([RotateTransformExtensions](/dotnet/api/microsoft.tool
 - [Windows.UI.Xaml.Media.ScaleTransform](/uwp/api/Windows.UI.Xaml.Media.ScaleTransform)
 - [Windows.UI.Xaml.Media.SkewTransform](/uwp/api/Windows.UI.Xaml.Media.SkewTransform)
 - [Windows.UI.Xaml.Media.TranslateTransform](/uwp/api/Windows.UI.Xaml.Media.TranslateTransform)
-- [System.Windows.Media.Transform](https://msdn.microsoft.com/library/system.windows.media.transform(v=vs.110).aspx)
+- [System.Windows.Media.Transform](/dotnet/api/system.windows.media.transform)
