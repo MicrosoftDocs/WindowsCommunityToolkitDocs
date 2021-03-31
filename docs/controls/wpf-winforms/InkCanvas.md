@@ -23,7 +23,7 @@ This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](/
 
 For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
-## Important Requirements
+## Requirements
 
 Before you can use this control, you must follow [these instructions](/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
 
@@ -52,8 +52,9 @@ See also our list of [known issues](https://github.com/windows-toolkit/Microsoft
 
 ## Requirements
 
-| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|        |        |
 |--------|--------|
+| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 

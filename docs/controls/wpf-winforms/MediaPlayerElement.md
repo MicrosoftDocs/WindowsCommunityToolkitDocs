@@ -21,7 +21,7 @@ The **MediaPlayerElement** control embeds a view that streams and renders media 
 
 This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.MediaPlayerElement](/uwp/api/Windows.UI.Xaml.Controls.MediaPlayerElement) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-## Important Requirements
+## Requirements
 
 Before you can use this control, you must follow [these instructions](/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
 
@@ -73,8 +73,9 @@ The following properties wrap corresponding [properties](/uwp/api/Windows.UI.Xam
 
 ## Requirements
 
-| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|        |        |
 |--------|--------|
+| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 

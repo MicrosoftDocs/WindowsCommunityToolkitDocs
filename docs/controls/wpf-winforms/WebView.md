@@ -29,7 +29,7 @@ This control uses the Microsoft Edge rendering engine (EdgeHTML) to embed a view
 
 Here's where to find the *Windows Forms* and *Windows Presentation Foundation* (WPF) versions of the Microsoft Edge WebView control:
 
-| Framework | NuGet Package | Namespace |
+| | NuGet Package | Namespace |
 |--------|--------| ---------|
 | Windows Forms | Microsoft.Toolkit.Forms.UI.Controls.WebView | Microsoft.Toolkit.Forms.UI.Controls |
 | WPF | Microsoft.Toolkit.Wpf.UI.Controls.WebView | Microsoft.Toolkit.Wpf.UI.Controls
@@ -579,8 +579,9 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in t
 
 ## Requirements
 
-| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
+|        |        |
 |--------|--------|
+| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) |
 
