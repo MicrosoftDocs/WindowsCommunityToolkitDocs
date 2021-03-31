@@ -23,6 +23,8 @@ This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](/
 
 For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
+## Important Requirements
+
 Before you can use this control, you must follow [these instructions](/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
 
 ## Known issues and limitations
