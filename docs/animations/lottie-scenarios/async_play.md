@@ -1,7 +1,7 @@
 ---
 title: The Asynchronous Play Method
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: Sample of the asynchronous play method for Lottie-Windows.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 

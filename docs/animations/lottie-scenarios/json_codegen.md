@@ -1,7 +1,7 @@
 ---
 title: JSON versus Codegen
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: Tradeoffs between JSON and Codegen in Lottie-Windows.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 
