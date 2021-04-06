@@ -1,7 +1,7 @@
 ---
 title: Handling Failure and Down-level
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: How to handle failure and down-level using the FallbackContent property in AnimatedVisualPlayer.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 

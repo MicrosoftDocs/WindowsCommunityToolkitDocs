@@ -1,7 +1,7 @@
 ---
 title: Configuring Animation Playback
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: Sample of configuring animation playback in Lottie-Windows.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 
