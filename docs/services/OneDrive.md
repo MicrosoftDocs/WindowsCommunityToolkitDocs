@@ -19,9 +19,6 @@ The **OneDrive** Service provides an easy to use service helper for the [OneDriv
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code
 * Perform CRUD operations on OneDrive resources
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Services?sample=OneDrive%20Service)
-
 ## Getting Started
 
 To use the OneDrive API, you need to have an access token that authenticates your app to a particular set of permissions for a user. In this section, you'll learn how to:
@@ -63,7 +60,7 @@ Authentication, sign-in and permission scopes are discussed in more detail in th
 
 Registering your application creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
 
-## Syntax
+## Example Syntax
 
 ### Initialization
 
@@ -319,18 +316,3 @@ End Using
 This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when using the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
 
 As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is caught, or else, manually checking previously if the file exists.
-
-## Sample Project
-
-[OneDrive Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Services |
-| NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [OneDrive Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/OneDrive)
