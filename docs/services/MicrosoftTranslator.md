@@ -11,12 +11,9 @@ dev_langs:
 # Microsoft Translator Service
 
 > [!WARNING]
-> (This API will be removed in the future. Please refer to the [Microsoft Translator](/azure/cognitive-services/translator/) documentation instead.)
+> (This API has been removed and the Microsoft Translator Service is no longer available in the Windows Community Toolkit. Please refer to the [Microsoft Translator](/azure/cognitive-services/translator/) documentation instead.)
 
 The **Microsoft Translator Service** allows you to translate text to various supported languages.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Services?sample=Microsoft%20Translator%20Service)
 
 ## Set up Microsoft Translator Service
 
@@ -59,18 +56,3 @@ Dim detectedLanguageConfidence = detectResult.Score
 Dim translationResult = Await TranslatorService.Instance.TranslateWithResponseAsync("Hello everyone!", "it")
 Dim translatedText = translationResult.Translation.Text
 ```
-
-## Sample Project
-
-[Microsoft Translator Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Translator%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Translator%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Services |
-| NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [Microsoft Translator Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/MicrosoftTranslator)
