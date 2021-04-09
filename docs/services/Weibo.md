@@ -11,12 +11,9 @@ dev_langs:
 # Weibo Service
 
 > [!WARNING]
-> (This API will be removed in the future.)
+> The API has been removed and the Weibo Service is no longer available in the Windows Community Toolkit.
 
 The **Weibo Service** allows users to retrieve or publish data to Weibo. Visit [https://open.weibo.com](https://open.weibo.com) to create a new app or manage existing apps.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Services?sample=Weibo%20Service)
 
 ## App Setup
 
@@ -34,7 +31,7 @@ Due to the restriction by Weibo API, a status you post must include a url which 
 **Redirect URI** Enter a unique URI for your application.  This must match the *Redirect URL* field in the *OAuth2.0 授权设置*(OAuth 2.0 Authorization Settings) section on the *高级信息*(advanced Info) page. You can visit the page by clicking on the left sidebar.
 *Example*: `https://myapp.company.com` - (this does not have to be a working URL)
 
-## Syntax
+## Example Syntax
 
 ```csharp
 // Initialize service
@@ -83,29 +80,3 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text)
 Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
   
 ```
-
-## Methods
-
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| Initialize(string, string, string, IAuthenticationBroker, IPasswordManager, IStorageManager) | bool | Initialize underlying provider with relevant token information. |
-| LoginAsync() | Task&lt;bool&gt; |  Log user in to Weibo. |
-| GetUserAsync(string) | Task&lt;WeiboUser&gt; |  Retrieve user data. |
-| GetUserTimeLineAsync(string, int) | Task&lt;IEnumerable&lt;WeiboStatus&gt;&gt; |  Retrieve user timeline data. |
-| PostStatusAsync(string) | Task&lt;WeiboStatus&gt; |  Post a status. |
-| PostStatusAsync(string, Stream) | Task&lt;WeiboStatus&gt; |  Post a status with a picture. |
-
-## Sample Project
-
-[Weibo Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp.Services |
-| NuGet package | [Microsoft.Toolkit.Uwp.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Services/) |
-
-## API
-
-* [Weibo Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/Weibo)
