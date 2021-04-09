@@ -361,14 +361,3 @@ End If
 ## Sample Project
 
 [MicrosoftGraph Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Services |
-| NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [MicrosoftGraph Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph)
