@@ -21,7 +21,7 @@ This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use 
 > [!IMPORTANT]
 > Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see <https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration>.
 
-## Syntax
+## How It Works
 
 To use this sample code in a Windows Forms application, install the Microsoft.Toolkit.Win32.UI.Controls nuget package, and add a button, 2 labels, and a picturebox on the form.  Then drag a GraphLogin component from the toolbox on to the form, and enter the following code:
 
@@ -91,36 +91,3 @@ End Sub
 <!-- ## Sample Output -->
 
 <!-- Image/Text can show the output of the control/helper -->
-
-## Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| ClientId | string| The ClientId of the application as registered with Azure AD v2 |
-| Scopes | string[]| An array of scopes requested for the Microsoft Graph.  Use values from the MicrosoftGraphScope enum |
-| DisplayName | string | Display name for the logged on user from the Microsoft Graph |
-| JobTitle | string | Job title for the logged on user from the Microsoft Graph |
-| Email | string | Email address (UPN) for the logged on user from the Microsoft Graph |
-| Photo | System.Drawing.Image | Profile picture for the logged on user from the Microsoft Graph |
-| GraphServiceClient | Microsoft.Graph.GraphServiceClient | The GraphServiceClient instance for the logged on user from the Microsoft Graph |
-
-<!-- Use <remarks> tag in C# to give more info about a propertie. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks -->
-
-## Methods
-
-<!-- Explain all methods in a table format -->
-
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| LoginAsync | bool | Returns true of success, false otherwise |
-
-## Requirements
-
-| Device family | .NetFramework 4.6.1 or higher   |
-| -- | -- |
-| Namespace | Microsoft.Toolkit.Services.WinForms |
-| NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services) |
-
-## API Source Code
-
-- [WinForms.GraphLogin](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph/WinForms)
