@@ -11,16 +11,13 @@ dev_langs:
 # Twitter Service
 
 > [!WARNING]
-> (This API will be removed in the future.)
+> The API has been removed and the Twitter Service is no longer available in the Windows Community Toolkit.
 
 The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
 [Twitter Developer Site](https://dev.twitter.com) is the main content site for all Twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.
 
 [Create new Twitter App](https://apps.twitter.com/app) can be used to create a new app within the Twitter portal.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Services?sample=Twitter%20Service)
 
 ## App Setup
 
@@ -46,7 +43,7 @@ In the code section below the GetUserTimeLineAsync method returns some Tweet obj
 | **User** | TwitterUser | A class containing the user ID, Name, ScreenName, and ProfileImageUrl |
 | **RetweetedStatus** | Tweet | if this tweet is a retweet, this object will contain the original tweet |
 
-## Syntax
+## Example Syntax
 
 ```csharp
 // Initialize service
@@ -204,18 +201,3 @@ The Set method receives a string key and a string value.
 Finally, the ISignatureManager will provide a GetSignature method, to sign an OAuth request. This method receives a baseString, a secret string and an append boolean. In return, you'll get the signed baseString. In case the append boolean is true, the final string will have a `&amp` at the end.
 
 The toolkit has implementations of each of them for UWP. You can find them as UwpAuthenticationBroker, UwpPasswordManager, UwpStorageManager and UwpSignatureManager.
-
-## Sample Project
-
-[Twitter Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp.Services |
-| NuGet package | [Microsoft.Toolkit.Uwp.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Services/) |
-
-## API
-
-* [Twitter Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/Twitter)
