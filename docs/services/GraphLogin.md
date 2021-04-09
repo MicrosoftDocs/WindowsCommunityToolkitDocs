@@ -87,7 +87,3 @@ Private Async Sub button1_Click(ByVal sender As Object, ByVal e As EventArgs)
     graphClient = graphLoginComponent1.GraphServiceClient
 End Sub
 ```
-
-<!-- ## Sample Output -->
-
-<!-- Image/Text can show the output of the control/helper -->
