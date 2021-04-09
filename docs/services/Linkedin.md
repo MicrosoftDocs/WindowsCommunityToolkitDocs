@@ -11,12 +11,9 @@ dev_langs:
 # LinkedIn Service
 
 > [!WARNING]
-> (This API will be removed in the future.)
+> The API has been removed and the LinkedIn Service is no longer available in the Windows Community Toolkit.
 
 The **LinkedIn Service** allows you to retrieve or publish data to the LinkedIn graph. Examples of the types of objects you can work with are User profile data and sharing Activity.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Services?sample=LinkedIn%20Service)
 
 ## Creating a new Application on LinkedIn Developer Site
 
@@ -63,8 +60,6 @@ Await LinkedInService.Instance.GetUserProfileAsync()
 Await LinkedInService.Instance.ShareActivityAsync(ShareText.Text)
 ```
 
-[LinkedIn Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
-
 ## Using the service on non-UWP platforms
 
 This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
@@ -92,18 +87,3 @@ The Get method receives a string key and returns the saved string.
 The Set method receives a string key and a string value.
 
 The toolkit has implementations of each of them for UWP. You can find them as UwpAuthenticationBroker, UwpPasswordManager and UwpStorageManager.
-
-## Sample Project
-
-[LinkedIn Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Services |
-| NuGet package | [Microsoft.Toolkit.Services](https://www.nuget.org/packages/Microsoft.Toolkit.Services/) |
-
-## API
-
-* [LinkedIn Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/LinkedIn)
