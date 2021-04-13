@@ -7,6 +7,9 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # Known Issues of the WebView control for Windows Forms and WPF applications
 
+> [!NOTE]
+> **WebView** is now deprecated. Use [WebView2](/microsoft-edge/hosting/webview2) instead.
+
 This document describes issues and limitations in this release of the **WebView** control.
 
 Answers to a number of [*Frequently Asked Questions on WebView*](./WebView.md#frequently-asked-questions-faqs)  for Windows Forms and WPF applications are also available.
