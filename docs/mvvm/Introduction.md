@@ -75,3 +75,8 @@ The included types are:
   - [`ValueChangedMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.ValueChangedMessage-1)
 
 This package aims to offer as much flexibility as possible, so developers are free to choose which components to use.  All types are loosely-coupled, so that it's only necessary to include what you use. There is no requirement to go "all-in" with a specific series of all-encompassing APIs, nor is there a set of mandatory patterns that need to be followed when building apps using these helpers. Combine these building blocks in a way that best fits your needs.
+
+## Additional resources
+
+- Check out the [sample app](https://github.com/windows-toolkit/MVVM-Samples) (for multiple UI frameworks) to see the MVVM Toolkit in action.
+- You can also find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm).
