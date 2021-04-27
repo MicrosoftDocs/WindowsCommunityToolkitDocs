@@ -12,7 +12,7 @@ The **InkToolbar** control provides an interface to manage an [InkCanvas](InkCan
 ![InkToolbar example](../../resources/images/Controls/InkCanvas.png)
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
+> If you have feedback about this control, create a new issue in the [microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=InkToolbar)

@@ -20,7 +20,7 @@ The **WebView** control shows web content in your Windows Forms or WPF desktop a
 This control uses the Microsoft Edge rendering engine (EdgeHTML) to embed a view that renders richly formatted HTML5 content from a remote web server, dynamically generated code, or content files.
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there.
+> If you have feedback about this control, create a new issue in the [microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=WebView)
