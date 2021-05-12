@@ -15,7 +15,7 @@ You can use the **WindowsXamlHost** control to add any Universal Windows Platfor
 * Any first-party UWP control provided by the Windows SDK or WinUI library.
 * Any custom UWP control. You must have the source code for the custom control so you can compile it with your application.
     > [!IMPORTANT]
-    > Using the [WindowsXamlHost](/windows/communitytoolkit/controls/wpf-winforms/windowsxamlhost) control to host custom UWP controls is supported only in apps that target .NET Core 3. This scenario is not supported in apps that target the .NET Framework.
+    > Using the WindowsXamlHost control to host custom UWP controls is supported only in apps that target .NET Core 3. This scenario is not supported in apps that target the .NET Framework.
 
 This is a general-purpose control for hosting *XAML Islands* in your WPF or Windows Forms application. For certain features such as Ink, maps, and playing media content, you might prefer to use other wrapped controls provided by the Windows Community Toolkit that have a simpler development experience. For more information, see [Host UWP XAML controls in desktop apps (XAML Islands)](/windows/apps/desktop/modernize/xaml-islands).
 
@@ -65,7 +65,7 @@ Before getting started, follow these instructions to install the necessary NuGet
 
     **WPF**
 
-    ![InitialTypeName property in Properties Window](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf.png)
+    ![InitialTypeName property in Properties WPF](../../resources/images/Controls/WindowsXAMLHost/type-name-property-wpf.png)
 
     **Windows Forms**
 
@@ -75,7 +75,7 @@ Before getting started, follow these instructions to install the necessary NuGet
 
     **WPF**
 
-    ![WindowsXamlHost control in the toolbox](../../resources/images/Controls/WindowsXAMLHost/xaml-content-updated-event-wpf.png)
+    ![WindowsXamlHost control in the toolbox - WPF](../../resources/images/Controls/WindowsXAMLHost/xaml-content-updated-event-wpf.png)
 
     **Windows Forms**
 
@@ -274,9 +274,8 @@ You can [see this in action](uwpct://WPFandWinFormsControls?sample=WindowsXamlHo
 
 ## Requirements
 
-|        |        |
-|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|--------|--------|
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.XamlHost <br/> WPF: Microsoft.Toolkit.Wpf.UI.XamlHost |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.XamlHost)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.XamlHost](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.XamlHost) |
 
