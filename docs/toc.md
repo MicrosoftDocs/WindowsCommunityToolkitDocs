@@ -11,25 +11,9 @@
 
 ## [Known Issues](knownissues.md)
 
-# Controls
+# Universal Windows Platform (UWP)
 
-## Controls for WPF and Windows Forms
-
-### [InkCanvas](controls/wpf-winforms/InkCanvas.md)
-
-### [InkToolbar](controls/wpf-winforms/InkToolbar.md)
-
-### [MapControl](controls/wpf-winforms/MapControl.md)
-
-### [MediaPlayerElement](controls/wpf-winforms/MediaPlayerElement.md)
-
-### [WebView](controls/wpf-winforms/WebView.md)
-
-#### [WebView known issues](controls/wpf-winforms/WebView-known-issues.md)
-
-### [WebViewCompatible](controls/wpf-winforms/WebViewCompatible.md)
-
-### [WindowsXamlHost](controls/wpf-winforms/WindowsXamlHost.md)
+## Controls
 
 ## [AdaptiveGridView](controls/AdaptiveGridView.md)
 
@@ -289,7 +273,19 @@
 
 ## [ViewportBehavior](helpers/ViewportBehavior.md)
 
-# MVVM
+# Developer tools
+
+## [AlignmentGrid](developer-tools/AlignmentGrid.md)
+
+## [FocusTracker](developer-tools/FocusTracker.md)
+
+# [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
+
+# [Notifications](notifications/NotificationsOverview.md)
+
+# .NET Standard
+
+## MVVM
 
 ## [Introduction](mvvm/Introduction.md)
 
@@ -343,17 +339,9 @@
 
 # Developer tools
 
-## [AlignmentGrid](developer-tools/AlignmentGrid.md)
-
-## [FocusTracker](developer-tools/FocusTracker.md)
-
 ## [Guard](developer-tools/Guard.md)
 
 ## [ThrowHelper](developer-tools/ThrowHelper.md)
-
-# [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
-
-# [Notifications](notifications/NotificationsOverview.md)
 
 # Archive
 
@@ -400,6 +388,24 @@
 ### [SlidableListItem](archive/SlidableListItem.md)
 
 ### [TabView](controls/TabView.md)
+
+## Controls for WPF and Windows Forms
+
+### [InkCanvas](controls/wpf-winforms/InkCanvas.md)
+
+### [InkToolbar](controls/wpf-winforms/InkToolbar.md)
+
+### [MapControl](controls/wpf-winforms/MapControl.md)
+
+### [MediaPlayerElement](controls/wpf-winforms/MediaPlayerElement.md)
+
+### [WebView](controls/wpf-winforms/WebView.md)
+
+#### [WebView known issues](controls/wpf-winforms/WebView-known-issues.md)
+
+### [WebViewCompatible](controls/wpf-winforms/WebViewCompatible.md)
+
+### [WindowsXamlHost](controls/wpf-winforms/WindowsXamlHost.md)
 
 ## Extensions
 
