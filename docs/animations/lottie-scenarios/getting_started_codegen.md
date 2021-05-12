@@ -1,7 +1,7 @@
 ---
 title: Using Codegen
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: How to use codegen in Lottie-Windows.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 

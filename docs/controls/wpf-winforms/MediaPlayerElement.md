@@ -73,9 +73,8 @@ The following properties wrap corresponding [properties](/uwp/api/Windows.UI.Xam
 
 ## Requirements
 
-| Requirement   |  Value      |
-|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|--------|--------|
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
