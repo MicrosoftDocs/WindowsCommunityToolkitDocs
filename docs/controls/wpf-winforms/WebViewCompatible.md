@@ -23,7 +23,7 @@ Unlike [WebView](WebView.md), **WebViewCompatible** uses one of two rendering en
 > The Edge runtime does not at the moment work when the process is elevated as an administrator. Therefore **WebViewCompatible** will fall back to use the [System.Windows.Controls.WebBrowser](/dotnet/api/system.windows.controls.webbrowser) when it detects that the process is running as administrator.
 
 > [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
+> WebView has been replaced by [WebView2](/microsoft-edge/hosting/webview2). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=WebViewCompatible)
