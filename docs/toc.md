@@ -39,6 +39,12 @@
 
 ## Migrating to the MVVM Toolkit
 
+### [ColorPicker](controls/ColorPicker.md)
+
+### [ColorPickerButton](controls/ColorPicker.md)
+
+### [DataGrid](controls/DataGrid.md)
+
 ### [Migrating from MvvmLight](mvvm/MigratingFromMvvmLight.md)
 
 ### [Migrating from MvvmBasic](mvvm/MigratingFromMvvmBasic.md)
@@ -156,6 +162,8 @@
 ### [CameraPreview](controls/CameraPreview.md)
 
 ### [Carousel](controls/Carousel.md)
+
+### [ItemsReorderAnimation](animations/ItemsReorderAnimation.md)
 
 ### [DataGrid](controls/DataGrid.md)
 

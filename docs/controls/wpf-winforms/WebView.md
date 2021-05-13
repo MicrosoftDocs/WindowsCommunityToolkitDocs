@@ -11,7 +11,7 @@ dev_langs:
 # WebView control for Windows Forms and WPF
 
 > [!NOTE]
-> WebView will eventually be replaced by [WebView2](/microsoft-edge/hosting/webview2) (currently in preview). Thus, the WebView has been deprecated within the Toolkit, but we are working on conveying requirements to the WebView2 team. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
+> WebView has been replaced by [WebView2](/microsoft-edge/hosting/webview2); therefore, you are advised to now use WebView2 instead. If you would like to give feedback directly for WebView2, you can do so [here on the Edge repository](https://github.com/MicrosoftEdge/WebViewFeedback).
 
 The **WebView** control shows web content in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications. For more information, see [UWP controls in desktop applications](/windows/uwp/xaml-platform/xaml-host-controls).
 
@@ -19,17 +19,11 @@ The **WebView** control shows web content in your Windows Forms or WPF desktop a
 
 This control uses the Microsoft Edge rendering engine (EdgeHTML) to embed a view that renders richly formatted HTML5 content from a remote web server, dynamically generated code, or content files.
 
-> [!NOTE]
-> If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com. Your insights and scenarios are critically important to us.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=WebView)
-
 ## About WebView controls
 
 Here's where to find the *Windows Forms* and *Windows Presentation Foundation* (WPF) versions of the Microsoft Edge WebView control:
 
-| | NuGet Package | Namespace |
+| Framework | NuGet Package | Namespace |
 |--------|--------| ---------|
 | Windows Forms | Microsoft.Toolkit.Forms.UI.Controls.WebView | Microsoft.Toolkit.Forms.UI.Controls |
 | WPF | Microsoft.Toolkit.Wpf.UI.Controls.WebView | Microsoft.Toolkit.Wpf.UI.Controls
@@ -573,19 +567,7 @@ No. It is not possible to host the (full-featured) UWP WebView using XAML island
 
 To debug WebViewControl, download and install the standalone [Microsoft Edge DevTools Preview](https://www.microsoft.com/store/productId/9MZBFRMZ0MNJ) app from the Microsoft Store. Once launched, the [*Local*](/microsoft-edge/devtools-guide#microsoft-store-app) panel of the chooser will display all active EdgeHTML content processes, including open Edge browser tabs, Windows 10 web apps (WWAHost.exe processes), and webview controls.
 
-## Sample Project
-
-You can [see this in action](uwpct://WPFandWinFormsControls?sample=WebView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
-## Requirements
-
-|        |        |
-|--------|--------|
-| Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17110.0) |
-| Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
-| NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls.WebView) <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls.WebView](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls.WebView) |
-
-## API
+## Source Code
 
 - [WebView (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls.WebView)
 - [WebView (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls.WebView)

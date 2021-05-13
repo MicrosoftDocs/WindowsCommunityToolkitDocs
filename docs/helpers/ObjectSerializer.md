@@ -21,6 +21,23 @@ You should implement IObjectSerializer when you need to write data using this to
 
 ## Examples
 
+### System.Text.Json
+
+```cs
+using Microsoft.Toolkit.Uwp.Helpers;
+using System.Text.Json;
+
+namespace Contoso.Helpers
+{
+    public class SystemTextJsonObjectSerializer : IObjectSerializer
+    {
+        public object Serialize<T>(T value) => JsonSerializer.Serialize(value);
+
+        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>(value.ToString());
+    }
+}
+```
+
 ### Json.NET
 
 ```csharp
