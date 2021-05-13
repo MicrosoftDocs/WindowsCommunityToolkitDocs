@@ -1,3 +1,12 @@
+---
+title: Authentication Providers Overview
+author: shweaver-MSFT
+description: Authentication providers that enable easy access to Microsoft Graph APIs.
+keywords: uwp, wpf, netstandard, windows, community, toolkit, graph, login, authentication, provider, providers, identity, msa, wam
+dev_langs:
+  - csharp
+---
+
 # Authentication Providers Overview
 
 Authentication is always the first step to working with Microsoft Graph. 
