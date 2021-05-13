@@ -12,6 +12,42 @@ dev_langs:
 The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows. 
 It extends IProvider and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
+
+## Prerequisite Windows Store Association in Visual Studio
+To get valid tokens and complete sign in, the app will need to be associated with the Microsoft Store. This will enable your app to authenticate consumer MSA accounts without any additional configuration.
+
+1. In Visual Studio Solution Explorer, right-click the UWP project, then select **Store -> Associate App with the Store...**
+
+2. In the wizard, click **Next**, sign in with your Windows developer account, type a name for your app in **Reserve a new app name**, then click **Reserve**.
+
+3. After completing the app registration, select the new app name, click **Next**, and then click **Associate**. This adds the required Windows Store registration information to the application manifest.
+
+> [!NOTE]
+> You must have a Windows Developer account to use the WindowsProvider in your UWP app. You can [register a Microsoft developer account](https://developer.microsoft.com/store/register) if you don't already have one.
+
+
+<!-- Uncomment this when AAD account support becomes available.
+## Prerequisite Configure Client Id in Partner Center
+
+If your product integrates with Azure AD and calls APIs that request either application permissions or delegated permissions that require administrator consent, you will also need to enter your Azure AD Client ID in Partner Center:
+
+https://partner.microsoft.com/en-us/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
+
+This lets administrators who acquire the app for their organization grant consent for your product to act on behalf of all users in the tenant.
+
+> [!NOTE]
+> You only need to specify the client id if you need admin consent for delegated permissions from your AAD app registration. Simple authentication for public accounts does not require a client id or any additional configuration.
+
+> [!IMPORTANT]
+> Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
+>
+> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`. 
+> 
+> You'll also want to set the toggle to true for "Allow public client flows".
+> 
+> Then click "Save".
+-->
+
 ## Syntax 
 
 The Windows Provider can be used in just one line of code:
@@ -57,41 +93,6 @@ bool autoSignIn = false;
 // Set the GlobalProvider with the extra configuration
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSettingsPaneConfig, webAccountProviderConfig, autoSignIn);
 ```
-
-## Prerequisite Windows Store Association in Visual Studio
-To get valid tokens and complete sign in, the app will need to be associated with the Microsoft Store. This will enable your app to authenticate consumer MSA accounts without any additional configuration.
-
-1. In Visual Studio Solution Explorer, right-click the UWP project, then select **Store -> Associate App with the Store...**
-
-2. In the wizard, click **Next**, sign in with your Windows developer account, type a name for your app in **Reserve a new app name**, then click **Reserve**.
-
-3. After completing the app registration, select the new app name, click **Next**, and then click **Associate**. This adds the required Windows Store registration information to the application manifest.
-
-> [!NOTE]
-> You must have a Windows Developer account to use the WindowsProvider in your UWP app. You can [register a Microsoft developer account](https://developer.microsoft.com/store/register) if you don't already have one.
-
-
-<!-- Uncomment this when AAD account support becomes available.
-## Prerequisite Configure Client Id in Partner Center
-
-If your product integrates with Azure AD and calls APIs that request either application permissions or delegated permissions that require administrator consent, you will also need to enter your Azure AD Client ID in Partner Center:
-
-https://partner.microsoft.com/en-us/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
-
-This lets administrators who acquire the app for their organization grant consent for your product to act on behalf of all users in the tenant.
-
-> [!NOTE]
-> You only need to specify the client id if you need admin consent for delegated permissions from your AAD app registration. Simple authentication for public accounts does not require a client id or any additional configuration.
-
-> [!IMPORTANT]
-> Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
->
-> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`. 
-> 
-> You'll also want to set the toggle to true for "Allow public client flows".
-> 
-> Then click "Save".
--->
 
 ## Properties
 
