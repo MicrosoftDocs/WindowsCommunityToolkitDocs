@@ -1,7 +1,7 @@
 ---
 title: Interactive Segments on an Animation Timeline
 author: sohchatt
-description: Lottie-Windows renders AfterEffects animations natively in Windows applications.
+description: Sample of interactive segments on an animation timeline in Lottie-Windows.
 keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects, windows 10, uwp, uwp community toolkit
 ---
 
