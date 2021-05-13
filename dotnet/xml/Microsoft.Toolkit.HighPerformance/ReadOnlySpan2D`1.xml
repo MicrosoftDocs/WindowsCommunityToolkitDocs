@@ -894,11 +894,11 @@
       </Docs>
     </Member>
     <Member MemberName="Slice">
-      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; Slice (int row, int column, int width, int height);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Slice(int32 row, int32 column, int32 width, int32 height) cil managed" />
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; Slice (int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Slice(int32 row, int32 column, int32 height, int32 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Slice(System.Int32,System.Int32,System.Int32,System.Int32)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Slice (row As Integer, column As Integer, width As Integer, height As Integer) As ReadOnlySpan2D(Of T)" />
-      <MemberSignature Language="F#" Value="member this.Slice : int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="readOnlySpan2D.Slice (row, column, width, height)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (row As Integer, column As Integer, height As Integer, width As Integer) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="readOnlySpan2D.Slice (row, column, height, width)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
@@ -910,14 +910,14 @@
       <Parameters>
         <Parameter Name="row" Type="System.Int32" />
         <Parameter Name="column" Type="System.Int32" />
-        <Parameter Name="width" Type="System.Int32" />
         <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="row">The target row to map within the current instance.</param>
         <param name="column">The target column to map within the current instance.</param>
-        <param name="width">The width to map within the current instance.</param>
         <param name="height">The height to map within the current instance.</param>
+        <param name="width">The width to map within the current instance.</param>
         <summary>
             Slices the current instance with the specified parameters.
             </summary>
