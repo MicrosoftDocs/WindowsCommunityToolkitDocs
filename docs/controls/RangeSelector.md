@@ -12,7 +12,7 @@ dev_langs:
 
 The [RangeSelector](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector) control is a Double Slider control that allows the user to select a sub-range of values from a larger range of possible values.  The user can slide from the left or right of the range.
 
-> **Platform APIs:** [`RangeSelector`](dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector)
+> **Platform APIs:** [`RangeSelector`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rangeselector)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=RangeSelector)
