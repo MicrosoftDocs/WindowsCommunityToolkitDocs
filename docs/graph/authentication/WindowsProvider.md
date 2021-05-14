@@ -99,6 +99,7 @@ See IProvider for a full list of supported properties.
 
 | Property | Type | Description |
 | -- | -- | -- |
+| State | ProviderState | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
 | WebAccountsProviderConfig | WebAccountsProviderConfig | configuration values for determining the available web account providers. |
 | AccountsSettingsPaneConfig | AccountsSettingsPaneConfig | Configuration values for the AccountsSettingsPane, shown during authentication. |
@@ -116,7 +117,7 @@ See IProvider for a full list of supported properties.
 | Property | Type | Description |
 | -- | -- | -- |
 | HeaderText | string | Gets or sets the header text for the accounts settings pane. |
-| Commands | IList<SettingsCommand> | Gets or sets the SettingsCommand collection for the account settings pane. |
+| Commands | IList&lt;SettingsCommand&gt; | Gets or sets the SettingsCommand collection for the account settings pane. |
 
 ## Enums
 
@@ -126,11 +127,18 @@ See IProvider for a full list of supported properties.
 | -- | -- |
 | MSA | Enable authentication of public/consumer MSA accounts. |
 
-## Methods
+## Events
 
-See IProvider for a full list of supported methods.
+| Event | Type | Description |
+| -- | -- | -- |
+| StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the provider state changes. |
+
+## Methods
 
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |
-| GetTokenAsync | bool silentOnly = true | Task | Retrieve a token for the authenticated user. |
-| TrySilentSignInAsync | | Task<bool> | Try logging in silently, without prompts. |
+| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
+| AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
+| SignInAsync | | Task | Sign in a user. |
+| SignOutAsync | | Task | Sign out the current user. |
+| TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |

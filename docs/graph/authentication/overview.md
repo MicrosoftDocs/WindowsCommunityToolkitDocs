@@ -52,7 +52,7 @@ void OnProviderChanged (object sender, ProviderUpdatedEventArgs args)
 An `IProvider` implementation built on a set of readonly, fake Graph data. 
 Used for prototyping and demonstration purposes.
 
-Available in the `CommunityToolkit.Uwp.Authentication` package.
+Available in the `CommunityToolkit.Net.Authentication` package.
 
 ### MsalProvider
 An `IProvider` implementation built on the official Microsoft Authentication Library (MSAL). 
@@ -69,6 +69,8 @@ Available in the `CommunityToolkit.Uwp.Authentication` package.
 ## Call Microsoft Graph APIs
 Once authenticated, you can now make API calls to Microsoft Graph using a preconfigured GraphServiceClient. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
 
+See [ProviderExtensions]() for more details. 
+
 ```csharp
 using CommunityToolkit.Net.Authentication;
 using CommunityToolkit.Net.Graph.Extensions;
@@ -77,33 +79,4 @@ IProvider provider = ProviderManager.Instance.GlobalProvider;
 GraphServiceClient graphClient = provider.GetClient();
 
 var me = await graphClient.Me.Request().GetAsync();
-```
-
-You can also get access to a beta version of the client by calling `GetBetaClient()`. 
-It won't return types from the Beta SDK, but it does enable access to some beta only content like user photos.
-
-```csharp
-using CommunityToolkit.Net.Authentication;
-using CommunityToolkit.Net.Graph.Extensions;
-
-public ImageSource GetMyPhoto()
-{
-    IProvider provider = ProviderManager.Instance.GlobalProvider;
-    GraphServiceClient betaGraphClient = provider?.GetBetaClient();
-
-    try
-    {
-        var photoStream = await betaGraphClient.Me.Photo.Content.Request().GetAsync();
-
-        using var ras = photoStream.AsRandomAccessStream();
-        var bitmap = new BitmapImage();
-        await bitmap.SetSourceAsync(ras);
-
-        return bitmap;
-    }
-    catch
-    {
-        return null;
-    }
-}
 ```
