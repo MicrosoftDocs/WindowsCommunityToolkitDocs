@@ -5,7 +5,7 @@
 
 ## [Getting Started with the Windows Community Toolkit](Getting-Started.md)
 
-## [Windows Community Toolkit Nuget Packages](Nuget-Packages.md)
+## [Windows Community Toolkit NuGet Packages](Nuget-Packages.md)
 
 ## [Adding the Windows Community Toolkit to your Visual Studio Toolbox](Toolbox-Support.md)
 
