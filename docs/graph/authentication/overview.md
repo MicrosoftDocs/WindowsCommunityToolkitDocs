@@ -18,17 +18,17 @@ The `ProviderManager` is the singleton that stores the globally accessible `IPro
 Set the `GlobalProvider` property at app startup and any other Graph based code will respond to any changes as users login and logout.
 
 ```csharp
-using CommunityToolkit.Net.Authentication;
+using CommunityToolkit.Authentication;
 
 // Set the GlobalProvider to an IProvider implementation.
-ProviderManager.Instance.GlobalProvider = new MockProvider();
+ProviderManager.Instance.GlobalProvider = new WindowsPRovider();
 ```
 
 Invoke the ProviderManager anywhere you need to make Graph calls. 
 Listen for State changes on the GlobalProvider using the `ProviderChanged` event.  
 
 ```csharp
-using CommunityToolkit.Net.Authentication;
+using CommunityToolkit.Authentication;
 
 ProviderManager.Instance.GlobalProvider.ProviderChanged += OnProviderChanged;
 
@@ -52,13 +52,13 @@ void OnProviderChanged (object sender, ProviderUpdatedEventArgs args)
 An `IProvider` implementation built on the official Microsoft Authentication Library (MSAL). 
 The `MsalProvider` is NetStandard and supports any NetStandard 2.0 applications.
 
-Available in the `CommunityToolkit.Net.Authentication.Msal` package.
+Available in the `CommunityToolkit.Authentication.Msal` package.
 
 ### WindowsProvider
 A lightweight `IProvider` implementation built directly on the native Windows Account Manager (WAM) APIs.
 This provider enables authentication of consumer MSA accounts without any Azure AAD config and only requires a Microsoft Store App registration to use.
 
-Available in the `CommunityToolkit.Uwp.Authentication` package.
+Available in the `CommunityToolkit.Authentication.Uwp` package.
 
 ## Call Microsoft Graph APIs
 Once authenticated, you can now make API calls to Microsoft Graph using a preconfigured GraphServiceClient. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.

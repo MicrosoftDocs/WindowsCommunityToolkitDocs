@@ -2,7 +2,7 @@
 title: WindowsProvider
 author: shweaver-MSFT
 description: Lightweight IProvider implementation that enables authentication using native Windows Account Manager APIs (WAM).
-keywords: uwp, wpf, netstandard, windows, community, toolkit, graph, login, authentication, provider, providers, identity, wam, msa
+keywords: uwp, netstandard, windows, community, toolkit, graph, login, authentication, provider, providers, identity, wam, msa
 dev_langs:
   - csharp
 ---
@@ -96,8 +96,6 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 ## Properties
 
-See IProvider for a full list of supported properties.
-
 | Property | Type | Description |
 | -- | -- | -- |
 | State | ProviderState | Gets the current authentication state of the provider. |
@@ -138,8 +136,8 @@ See IProvider for a full list of supported properties.
 
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |
-| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
 | AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
+| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
