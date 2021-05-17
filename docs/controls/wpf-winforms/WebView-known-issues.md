@@ -46,7 +46,7 @@ The **WebView** control implements these events of the [IWebViewControl](/uwp/ap
 
 ## Rendering and layout
 
-* The [Control.Bounds](https://msdn.microsoft.com/library/system.windows.forms.control.bounds.aspx) property is not supported.
+* The [Control.Bounds](/dotnet/api/system.windows.forms.control.bounds#System_Windows_Forms_Control_Bounds) property is not supported.
 
 * The **WebView** control doesn't appear as expected on some high-resolution displays.
 
@@ -106,7 +106,7 @@ The **WebView** control implements these events of the [IWebViewControl](/uwp/ap
 
 ## WebView browser
 
-* The [WebBrower.ObjectForScripting](https://msdn.microsoft.com/library/system.windows.controls.webbrowser.objectforscripting.aspx) property and [WebView.AddWebAllowedObject(String, Object)](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) are not supported.
+* The [WebBrower.ObjectForScripting](/dotnet/api/system.windows.controls.webbrowser.objectforscripting#System_Windows_Controls_WebBrowser_ObjectForScripting) property and [WebView.AddWebAllowedObject(String, Object)](/uwp/api/windows.ui.xaml.controls.webview.addweballowedobject) are not supported.
 
   Instead, use the [WebViewControl.InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontrol.invokescriptasync) method.
 

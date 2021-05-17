@@ -56,4 +56,4 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## Related Topics
 
-* [Platform Specific Differences Generator](/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](./platformspecificdifferencesgenerator.md)

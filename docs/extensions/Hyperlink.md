@@ -11,7 +11,7 @@ keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, Hyperlink, extens
 > [!WARNING]
 > This docs page is outdated, please refer to the new one for the [`HyperlinkExtensions`](HyperlinkExtensions.md) type.
 
-The **Hyperlink extension** allows for a Hyperlink element to invoke the execute method on a bound [ICommand](https://msdn.microsoft.com/library/system.windows.input.icommand.aspx) instance when clicked.
+The **Hyperlink extension** allows for a Hyperlink element to invoke the execute method on a bound [ICommand](/dotnet/api/system.windows.input.icommand) instance when clicked.
 
 ## Example
 
@@ -29,7 +29,7 @@ The **Hyperlink extension** allows for a Hyperlink element to invoke the execute
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.14393.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.14393.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.Extensions |
 

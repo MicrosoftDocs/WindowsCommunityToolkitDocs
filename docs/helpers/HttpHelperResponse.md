@@ -11,7 +11,7 @@ dev_langs:
 # HttpHelperResponse
 
 > [!WARNING]
-> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx)
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage)
 > or [Windows.Web.Http.HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
 [HttpHelperResponse](/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
@@ -37,7 +37,7 @@ The **HttpHelperResponse** class has these constructors.
 
 | Constructor | Description |
 | ----------  | ----------- |
-| HttpHelperResponse([HttpResponseMessage](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpresponsemessage.aspx))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
+| HttpHelperResponse([HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
 
 ## Properties
 
