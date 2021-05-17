@@ -48,15 +48,9 @@ void OnProviderChanged (object sender, ProviderUpdatedEventArgs args)
 }
 ```
 
-### MockProvider
-An `IProvider` implementation built on a set of readonly, fake Graph data. 
-Used for prototyping and demonstration purposes.
-
-Available in the `CommunityToolkit.Net.Authentication` package.
-
 ### MsalProvider
 An `IProvider` implementation built on the official Microsoft Authentication Library (MSAL). 
-The `MsalProvider` is NetStandard and supports both UWP and WPF applications.
+The `MsalProvider` is NetStandard and supports any NetStandard 2.0 applications.
 
 Available in the `CommunityToolkit.Net.Authentication.Msal` package.
 
