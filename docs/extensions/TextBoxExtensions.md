@@ -44,25 +44,25 @@ In case you want to add a custom variable character you can use the `CustomMask`
     <StackPanel>
 
         <!-- Mask = "9a9a-a9a*" (9 means [0-9], a means [a-Z], * allows both)-->
-        <TextBox ui:TextBoxMask.Mask="9a9a-a9a*"/>
+        <TextBox ui:TextBoxExtensions.Mask="9a9a-a9a*"/>
 
         <!-- A mask of "+1999-9999" and an empty space as placeholder. That is,
              characters not yet filled in by the user will just be blank spaces. -->
         <TextBox
-            ui:TextBoxMask.Mask="+1999-9999"
-            ui:TextBoxMask.MaskPlaceholder=" "/>
+            ui:TextBoxExtensions.Mask="+1999-9999"
+            ui:TextBoxExtensions.MaskPlaceholder=" "/>
 
         <!-- Mask = "+964 799 999 9999" (note the escape fore the first 9) -->
-        <TextBox ui:TextBoxMask.Mask="+\964 799 999 9999"/>
+        <TextBox ui:TextBoxExtensions.Mask="+\964 799 999 9999"/>
 
         <!-- Mask = "99\99\9999" (a backslash can be escaped with another backslash) -->
-        <TextBox ui:TextBoxMask.Mask="99\\99\\9999"/>
+        <TextBox ui:TextBoxExtensions.Mask="99\\99\\9999"/>
 
         <!-- Custom mask with some user-defined special characters. In this case,
              we define 5 to mean [1-5], and c to mean [a-c]. The mask is "a5c-5c*9" -->
         <TextBox
-            ui:TextBoxMask.CustomMask="5:[1-5],c:[a-c]"
-            ui:TextBoxMask.Mask="a5c-5c*9"/>
+            ui:TextBoxExtensions.CustomMask="5:[1-5],c:[a-c]"
+            ui:TextBoxExtensions.Mask="a5c-5c*9"/>
     </StackPanel>
 </Page>
 ```
@@ -90,22 +90,22 @@ The validation has 3 modes ([`TextBoxExtensions.ValidationMode`](/dotnet/api/mic
 ```xaml
 <TextBox
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
-    ui:TextBoxRegex.Regex="^\s*\+?\s*([0-9][\s-]*){9,}$" />
+    ui:TextBoxExtensions.Regex="^\s*\+?\s*([0-9][\s-]*){9,}$" />
 
 <TextBox
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
-    ui:TextBoxRegex.ValidationMode="Forced"
-    ui:TextBoxRegex.ValidationType="PhoneNumber"
+    ui:TextBoxExtensions.ValidationMode="Forced"
+    ui:TextBoxExtensions.ValidationType="PhoneNumber"
     Text="+61616161611" />
 
 <TextBox
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
-    ui:TextBoxRegex.ValidationType="Email"   />
+    ui:TextBoxExtensions.ValidationType="Email"   />
 
 <TextBox
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
-    ui:TextBoxRegex.ValidationMode="Forced"
-    ui:TextBoxRegex.ValidationType="Decimal" />
+    ui:TextBoxExtensions.ValidationMode="Forced"
+    ui:TextBoxExtensions.ValidationType="Decimal" />
 ```
 
 ### Sample output
