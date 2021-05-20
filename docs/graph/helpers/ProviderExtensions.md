@@ -9,15 +9,15 @@ dev_langs:
 
 # ProviderExtensions
 
-The `ProviderExtensions` static class is available in the `CommunityToolkit.Net.Graph` package. These extensions help you make calls to various Graph APIs.
+The `ProviderExtensions` static class is available in the `CommunityToolkit.Graph` package. These extensions help you make calls to various Graph APIs.
 
 ## Call Microsoft Graph APIs
 
 Once authenticated, you can make API calls to Microsoft Graph using a preconfigured GraphServiceClient instance. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
 
 ```csharp
-using CommunityToolkit.Net.Authentication;
-using CommunityToolkit.Net.Graph.Extensions;
+using CommunityToolkit.Authentication;
+using CommunityToolkit.Graph.Extensions;
 
 IProvider provider = ProviderManager.Instance.GlobalProvider;
 
@@ -37,8 +37,8 @@ You can also get access to a beta version of the client by calling `GetBetaClien
 It won't return types from the Beta SDK, but it does enable access to some beta only content like user photos.
 
 ```csharp
-using CommunityToolkit.Net.Authentication;
-using CommunityToolkit.Net.Graph.Extensions;
+using CommunityToolkit.Authentication;
+using CommunityToolkit.Graph.Extensions;
 
 public ImageSource GetMyPhoto()
 {

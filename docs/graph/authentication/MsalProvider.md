@@ -11,9 +11,10 @@ dev_langs:
 
 The MsalPRovider is an IProvider implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
 
+> Available in the `CommunityToolkit.Authentication.Msal` package.
+
 ```csharp
-using CommunityToolkit.Net.Authentication;
-using CommunityToolkit.Net.Authentication.Msal;
+using CommunityToolkit.Authentication;
 
 string clientId = "YOUR-CLIENT-ID-HERE";
 string[] scopes = new string[] { "User.Read" };

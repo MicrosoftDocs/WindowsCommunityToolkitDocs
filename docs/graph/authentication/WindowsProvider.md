@@ -12,7 +12,6 @@ dev_langs:
 The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows. 
 It extends IProvider and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
-
 ## Prerequisite Windows Store Association in Visual Studio
 To get valid tokens and complete sign in, the app will need to be associated with the Microsoft Store. This will enable your app to authenticate consumer MSA accounts without any additional configuration.
 
@@ -52,7 +51,9 @@ This lets administrators who acquire the app for their organization grant consen
 
 The Windows Provider can be used in just one line of code:
 
-```
+```csharp
+using CommunityToolkit.Authentication;
+
 // Easily create a new WindowsProvider instance and set the GlobalProvider.
 // Don't forget to associate your app with the Microsoft Store before attempting sign in. 
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Task.ReadWrite" });
@@ -63,6 +64,8 @@ Additional configuration for account types will be available via the `WebAccount
 Currently only consumer MSA accounts are supported.
 
 ```CSharp
+using CommunityToolkit.Authentication;
+
 // Provider config
 string[] scopes = { "User.Read", "People.Read", "Calendars.Read", "Mail.Read" };
 

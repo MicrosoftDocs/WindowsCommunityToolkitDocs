@@ -28,13 +28,21 @@ if (provider?.State == ProviderState.SignedIn)
 | -- | -- | -- |
 | State | ProviderState | Gets the current authentication state of the provider. |
 
+### ProviderState Enum
+
+| Name | Description |
+| -- | -- |
+| Loading | The user's status is not known. |
+| SignedOut | The user is signed-out. |
+| SignedIn | The user is signed-in. |
+
 ## Events
 
 | Event | Type | Description |
 | -- | -- | -- |
 | StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | An event that is called whenever the login state changes. 
 
-### ProviderStateChangedEventArgs
+### ProviderStateChangedEventArgs : EventArgs
 
 | Property | Type | Description |
 | -- | -- | -- |

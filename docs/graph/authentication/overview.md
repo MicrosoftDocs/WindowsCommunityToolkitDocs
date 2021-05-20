@@ -66,8 +66,8 @@ Once authenticated, you can now make API calls to Microsoft Graph using a precon
 See [ProviderExtensions]() for more details. 
 
 ```csharp
-using CommunityToolkit.Net.Authentication;
-using CommunityToolkit.Net.Graph.Extensions;
+using CommunityToolkit.Authentication;
+using CommunityToolkit.Graph.Extensions;
 
 IProvider provider = ProviderManager.Instance.GlobalProvider;
 GraphServiceClient graphClient = provider.GetClient();
