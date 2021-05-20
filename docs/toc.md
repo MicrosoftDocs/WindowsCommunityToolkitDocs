@@ -107,7 +107,9 @@
 
 ### [ColorPickerButton](controls/ColorPicker.md)
 
-### [DataGrid](controls/DataGrid.md)
+### DataGrid
+
+#### [Introduction](controls/DataGrid.md)
 
 #### [How to: Add a DataGrid control to a page](controls/datagrid_guidance/datagrid_basics.md)
 
