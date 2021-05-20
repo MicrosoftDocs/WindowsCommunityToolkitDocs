@@ -1,5 +1,5 @@
 ---
-title: PuttingThingsTogether
+title: Putting things together
 author: Sergio0694
 description: An overview of how to combine different features of the MVVM Toolkit into a practical example
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, mvvm, service, messenger, messaging, net core, net standard
