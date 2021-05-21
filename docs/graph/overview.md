@@ -48,7 +48,7 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
 
 1. Register your app in Azure AAD
     
-    Before requesting data from [Microsoft Graph](https://graph.microsoft.com), you will need to [register your application](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app) to get a **ClientID**.
+    Before requesting data from [Microsoft Graph](https://graph.microsoft.com), you will need to [register your application](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to get a **ClientID**.
 
     > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI", then "Add a platform", and then on "Mobile and desktop applications". Check the `https://login.microsoftonline.com/common/oauth2/nativeclient` checkbox on that page. Then click "Configure".
 

@@ -1,13 +1,13 @@
 ---
-title: ProviderState
+title: WebAccountProviderConfig
 author: shweaver-MSFT
-description: ProviderState represents the current authentication state of the session for a given IProvider.
+description: Configuration values for what type of authentication providers to enable via the WindowsProvider.
 keywords: netstandard, windows, community, toolkit, graph, login, authentication, provider, providers, identity
 dev_langs:
   - csharp
 ---
 
-### WebAccountProviderConfig
+# WebAccountProviderConfig
 
 Configuration values for what type of authentication providers to  enable via the [WindowsProvider](./WindowsProvider.md).
 

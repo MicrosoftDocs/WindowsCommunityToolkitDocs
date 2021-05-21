@@ -52,13 +52,6 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 | -- | -- | -- |
 | ProviderUpdated | EventHandler&lt;[ProviderUpdatedEventArgs](./ProviderUpdatedEventArgs.md)&gt; | Event called when the IProvider changes. |
 
-### ProviderManagerChangedState Enum
-
-| Name | Description |
-| -- | -- |
-| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
-| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |
-
 ## Methods
 
 | Method | Arguments | Returns | Description |

@@ -81,6 +81,8 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
+### [ProviderManagerChangedState](graph/authentication/ProviderManagerChangedState.md)
+
 ### [ProviderState](graph/authentication/ProviderState.md)
 
 ### [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
