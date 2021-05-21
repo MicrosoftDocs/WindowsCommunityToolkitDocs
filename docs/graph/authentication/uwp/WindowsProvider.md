@@ -107,13 +107,6 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | AccountsSettingsPaneConfig | [AccountsSettingsPaneConfig](./AccountsSettingsPaneConfig.md) | Configuration values for the AccountsSettingsPane, shown during authentication. |
 | RedirectUri | string | Static getter for retrieving a customized redirect uri to put in the Azure app registration. |
 
-### AccountsSettingsPaneConfig
-
-| Property | Type | Description |
-| -- | -- | -- |
-| HeaderText | string | Gets or sets the header text for the accounts settings pane. |
-| Commands | IList&lt;SettingsCommand&gt; | Gets or sets the SettingsCommand collection for the account settings pane. |
-
 ## Events
 
 | Event | Type | Description |

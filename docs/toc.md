@@ -221,17 +221,17 @@
 
 ## Authentication
 
-## [Authentication Overview](graph/authentication/overview.md)
+### [Authentication Overview](graph/authentication/overview.md)
 
-## [IProvider](graph/authentication/IProvider.md)
+### [IProvider](graph/authentication/IProvider.md)
 
-## [ProviderManager](graph/authentication/ProviderManager.md)
+### [ProviderManager](graph/authentication/ProviderManager.md)
 
-## [ProviderState](graph/authentication/ProviderState.md)
+### [ProviderState](graph/authentication/ProviderState.md)
 
-## [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
+### [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
 
-## [ProviderUpdatedEventsArgs](graph/authentication/ProviderUpdatedEventsArgs.md)
+### [ProviderUpdatedEventsArgs](graph/authentication/ProviderUpdatedEventsArgs.md)
 
 ### MSAL
 
