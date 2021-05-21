@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# LoginButton XAML Control
+# (Preview) LoginButton XAML Control
 
 The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 

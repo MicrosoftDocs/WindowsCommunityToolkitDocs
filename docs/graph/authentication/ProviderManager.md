@@ -9,7 +9,7 @@ dev_langs:
 
 # ProviderManager
 
-The ProviderManager manages access to the globally configured IProvider instance and any state change events as users sign in and out.
+The ProviderManager manages access to the globally configured [IProvider](./IProvider.md) instance and any state change events as users sign in and out.
 
 ### Set the GlobalProvider
 
@@ -50,20 +50,14 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 
 | Event | Type | Description |
 | -- | -- | -- |
-| ProviderUpdated | EventHandler&lt;ProviderUpdatedEventArgs&gt; | Event called when the IProvider changes. |
-
-### ProviderUpdatedEventArgs : EventArgs
-
-| Property | Type | Description |
-| -- | -- | -- |
-| Reason | ProviderManagerChangedState | Gets the reason for the provider update. |
+| ProviderUpdated | EventHandler&lt;[ProviderUpdatedEventArgs](./ProviderUpdatedEventArgs.md)&gt; | Event called when the IProvider changes. |
 
 ### ProviderManagerChangedState Enum
 
 | Name | Description |
 | -- | -- |
-| ProviderStateChanged | The IProvider state has changed.|
-| ProviderUpdated | The IProvider itself has changed. |
+| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
+| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |
 
 ## Methods
 

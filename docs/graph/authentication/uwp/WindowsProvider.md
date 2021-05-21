@@ -10,7 +10,7 @@ dev_langs:
 # WindowsProvider
 
 The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows. 
-It extends IProvider and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
+It extends [IProvider](../IProvider.md) and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
 ## Prerequisite Windows Store Association in Visual Studio
 To get valid tokens and complete sign in, the app will need to be associated with the Microsoft Store. This will enable your app to authenticate consumer MSA accounts without any additional configuration.
@@ -49,7 +49,7 @@ This lets administrators who acquire the app for their organization grant consen
 
 ## Syntax 
 
-The Windows Provider can be used in just one line of code:
+The WindowsProvider can be used in just one line of code:
 
 ```csharp
 using CommunityToolkit.Authentication;
@@ -101,18 +101,11 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | ProviderState | Gets the current authentication state of the provider. |
+| State | [ProviderState](../ProviderState.md) | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
-| WebAccountsProviderConfig | WebAccountsProviderConfig | configuration values for determining the available web account providers. |
-| AccountsSettingsPaneConfig | AccountsSettingsPaneConfig | Configuration values for the AccountsSettingsPane, shown during authentication. |
+| WebAccountsProviderConfig | [WebAccountsProviderConfig](./WebAccountsProviderConfig.md) | configuration values for determining the available web account providers. |
+| AccountsSettingsPaneConfig | [AccountsSettingsPaneConfig](./AccountsSettingsPaneConfig.md) | Configuration values for the AccountsSettingsPane, shown during authentication. |
 | RedirectUri | string | Static getter for retrieving a customized redirect uri to put in the Azure app registration. |
-
-### WebAccountProviderConfig
-
-| Property | Type | Description |
-| -- | -- | -- |
-| ClientId | string | Client Id obtained from Azure registration. |
-| WebAccountsProviderType | WebAccountsProviderType | The types of accounts providers that should be available to the user. |
 
 ### AccountsSettingsPaneConfig
 
@@ -121,19 +114,11 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | HeaderText | string | Gets or sets the header text for the accounts settings pane. |
 | Commands | IList&lt;SettingsCommand&gt; | Gets or sets the SettingsCommand collection for the account settings pane. |
 
-## Enums
-
-### WebAccountProviderType
-
-| Value | Description |
-| -- | -- |
-| MSA | Enable authentication of public/consumer MSA accounts. |
-
 ## Events
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the provider state changes. |
+| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](../ProviderStateChangedEventArgs.md)&gt; | Event called when the provider state changes. |
 
 ## Methods
 

@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# PersonView XAML Control
+# (Preview) PersonView XAML Control
 
 The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
 

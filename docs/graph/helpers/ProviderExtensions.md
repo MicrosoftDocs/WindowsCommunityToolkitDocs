@@ -13,7 +13,7 @@ The `ProviderExtensions` static class is available in the `CommunityToolkit.Grap
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can make API calls to Microsoft Graph using a preconfigured GraphServiceClient instance. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
+Once authenticated, you can make API calls to Microsoft Graph using a preconfigured GraphServiceClient instance. Access to the client is enabled through an extension method on [IProvider](./IProvider.md) called, `GetClient()`.
 
 ```csharp
 using CommunityToolkit.Authentication;
