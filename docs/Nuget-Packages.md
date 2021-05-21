@@ -1,11 +1,11 @@
 ---
-title: Windows Community Toolkit Nuget Packages
+title: Windows Community Toolkit NuGet Packages
 author: nmetulev
 description: The Windows Community Toolkit is updated regularly with new controls, services, APIs, and more importantly, bug fixes. Make sure to regularly update your nuget packages
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, nuget, visual studio
 ---
 
-# Windows Community Toolkit Nuget Packages
+# Windows Community Toolkit NuGet Packages
 
 NuGet is a standard package manager for .Net applications that is built into Visual Studio. From your open solution choose the *Tools* menu, *NuGet Package Manager*, *Manage NuGet packages for solution...* to open the UI.  Enter one of the package names below to search for it online.
 
@@ -35,7 +35,7 @@ Searching in Visual Studio package manager you should see a list similar to the 
 
 ![NuGet packages](resources/images/NugetPackages.png "Nuget Packages")
 
-## Update Nuget Packages
+## Update NuGet Packages
 
 The Windows Community Toolkit is updated regularly with new controls, services, APIs, and more importantly, bug fixes. To make sure you are on the latest version, open your project in Visual Studio, choose the **Tools** menu, select **NuGet Package Manager** -> **Manage NuGet Packages for Solution...** and select the *Updates* tab. Select the package you want to update and click Instal to update to the latest version.
 

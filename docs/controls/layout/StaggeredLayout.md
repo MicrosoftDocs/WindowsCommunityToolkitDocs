@@ -46,7 +46,7 @@ The [StaggeredLayout](/dotnet/api/microsoft.toolkit.uwp.ui.controls.StaggeredLay
 
 ## Requirements
 
-| [Device family](https://go.microsoft.com/fwlink/p/?LinkID=526370#device-families) | Universal, 10.0.17134.0 or higher   |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide#device-families) | Universal, 10.0.17134.0 or higher   |
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Layout](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Layout/) |
