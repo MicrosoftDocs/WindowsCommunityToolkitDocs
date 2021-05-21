@@ -14,4 +14,4 @@ Configuration values for what type of authentication providers to  enable via th
 | Property | Type | Description |
 | -- | -- | -- |
 | ClientId | string | Client Id obtained from Azure registration. |
-| WebAccountsProviderType | WebAccountsProviderType | The types of accounts providers that should be available to the user. |
+| WebAccountProviderType | [WebAccountProviderType](./WebAccountProviderType.md) | The types of accounts providers that should be available to the user. |
