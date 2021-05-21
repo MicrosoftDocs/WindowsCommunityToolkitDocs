@@ -217,13 +217,11 @@
 
 # Microsoft Graph
 
-## Authentication
-
 ## [Overview](graph/overview.md)
 
 ## Authentication
 
-## [Authenticaiton Overview](graph/authentication/overview.md)
+## [Authentication Overview](graph/authentication/overview.md)
 
 ## [IProvider](graph/authentication/IProvider.md)
 
