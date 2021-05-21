@@ -71,6 +71,8 @@
 
 ### [ThrowHelper](developer-tools/ThrowHelper.md)
 
+# Microsoft Graph
+
 ## [Overview](graph/overview.md)
 
 ## Authentication
