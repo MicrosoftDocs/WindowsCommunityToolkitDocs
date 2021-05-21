@@ -85,25 +85,25 @@
 
 ### [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
 
-### [ProviderUpdatedEventsArgs](graph/authentication/ProviderUpdatedEventsArgs.md)
+### [ProviderUpdatedEventArgs](graph/authentication/ProviderUpdatedEventArgs.md)
 
 ### MSAL
 
-#### [MsalProvider](graph/authentication/msal/MsalProvider.md)]
+#### [MsalProvider](graph/authentication/msal/MsalProvider.md)
 
 ### UWP
 
-#### [AccountsSettingsPaneConfig](graph/authentication/uwp/AccountsSettingsPaneConfig.md)]
+#### [AccountsSettingsPaneConfig](graph/authentication/uwp/AccountsSettingsPaneConfig.md)
 
-#### [WebAccountProviderConfig](graph/authentication/uwp/WebAccountProviderConfig.md)]
+#### [WebAccountProviderConfig](graph/authentication/uwp/WebAccountProviderConfig.md)
 
-#### [WebAccountProviderType](graph/authentication/uwp/WebAccountProviderType.md)]
+#### [WebAccountProviderType](graph/authentication/uwp/WebAccountProviderType.md)
 
-#### [WindowsProvider](graph/authentication/uwp/WindowsProvider.md)]
+#### [WindowsProvider](graph/authentication/uwp/WindowsProvider.md)
 
 ## Helpers
 
-### [WindowsProvider](graph/helpers/ProviderExtensions.md)]
+### [WindowsProvider](graph/helpers/ProviderExtensions.md)
 
 ### RoamingSettingsHelper (Coming soon!)
 
