@@ -8,7 +8,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 # PowerBIEmbedded Control
 
 > [!WARNING]
-> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [InteractiveProviderBehavior](../../graph/providers/InteractiveProviderBehavior.md).)
+> (This API has been removed. For the latest guidance on using the Microsoft Graph check out the [Windows Community Toolkit - Graph Helpers and Controls](../../graph/overview.md).)
 
 The [PowerBIEmbedded Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
 
@@ -80,7 +80,7 @@ The [PowerBIEmbedded Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.grap
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher |
+| Device family | Universal, 10.0.17763.0 or higher |
 | -- | -- |
-| Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
+| Namespace | CommunityToolkit.Graph.Uwp |
+| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp/) |

@@ -61,5 +61,5 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 
 ## Related Topics
 
-* [User Graph API](/graph/api/resources/user?view=graph-rest-beta)
+* [User Graph API](/graph/api/resources/user)
 * [MGT Login Component](/graph/toolkit/components/login)

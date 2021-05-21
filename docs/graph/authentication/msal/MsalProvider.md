@@ -26,7 +26,7 @@ ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
 
 If your product integrates with Azure AD and calls APIs that request either application permissions or delegated permissions that require administrator consent, you will also need to enter your Azure AD Client ID in Partner Center:
 
-https://partner.microsoft.com/en-us/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
+https://partner.microsoft.com/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
 
 This lets administrators who acquire the app for their organization grant consent for your product to act on behalf of all users in the tenant.
 

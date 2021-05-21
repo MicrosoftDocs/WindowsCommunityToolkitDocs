@@ -48,5 +48,5 @@ The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) se
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT PeoplePicker Component](/graph/toolkit/components/people-picker)

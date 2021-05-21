@@ -54,5 +54,5 @@ The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is use
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT Person Component](/graph/toolkit/components/person)
