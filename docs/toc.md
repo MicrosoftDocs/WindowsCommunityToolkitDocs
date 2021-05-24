@@ -67,6 +67,8 @@
 
 ## Diagnostics
 
+### [Introduction](diagnostics/Introduction.md)
+
 ### [Guard](developer-tools/Guard.md)
 
 ### [ThrowHelper](developer-tools/ThrowHelper.md)

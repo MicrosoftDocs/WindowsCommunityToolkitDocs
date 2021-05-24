@@ -1,7 +1,7 @@
 ---
 title: Introduction to the High Performance package
 author: Sergio0694
-description: An overview of how to get started with High Performance package and to the APIs it contains
+description: An overview of how to get started with the High Performance package and to the APIs it contains
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, get started, visual studio, high performance, net core, net standard
 ---
 
