@@ -113,7 +113,7 @@
 
 ## Controls
 
-### GraphPresenter(Coming soon!)
+### GraphPresenter (Coming soon!)
 
 ### [LoginButton (Preview)](graph/controls/LoginButton.md)
 
