@@ -26,7 +26,7 @@ if (provider?.State == ProviderState.SignedIn)
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](./ProviderState.md) | Gets the current authentication state of the provider. |
+| State | [ProviderState](./IProvider.md) | Gets the current authentication state of the provider. |
 
 ## Events
 

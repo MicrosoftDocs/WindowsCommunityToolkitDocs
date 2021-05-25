@@ -46,7 +46,7 @@ This lets administrators who acquire the app for their organization grant consen
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](../ProviderState.md) | Gets the current authentication state of the provider. |
+| State | [ProviderState](../IProvider.md) | Gets the current authentication state of the provider. |
 
 ## Events
 
