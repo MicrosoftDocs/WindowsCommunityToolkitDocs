@@ -40,7 +40,7 @@ For more info on our roadmap, check out the current [Release Plan](https://githu
 
 To get started using Graph data in your application, you'll first need to enable authentication.
 
-The nuget packages metioned below are not yet released, and can be accessed from using our dedicated Nuget feed: [WindowsCommunityToolkit-MainLatest](https://pkgs.dev.azure.com/dotnet/WindowsCommunityToolkit/_packaging/WindowsCommunityToolkit-MainLatest/nuget/v3/index.json):
+The NuGet packages mentioned below are not yet released, and can be accessed from using our dedicated Nuget feed: [WindowsCommunityToolkit-MainLatest](https://pkgs.dev.azure.com/dotnet/WindowsCommunityToolkit/_packaging/WindowsCommunityToolkit-MainLatest/nuget/v3/index.json):
 
 ### 1A. Setup authentication with MSAL
 
