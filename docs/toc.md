@@ -83,10 +83,6 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [ProviderManagerChangedState](graph/authentication/ProviderManagerChangedState.md)
-
-### [ProviderState](graph/authentication/ProviderState.md)
-
 ### [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
 
 ### [ProviderUpdatedEventArgs](graph/authentication/ProviderUpdatedEventArgs.md)
@@ -100,8 +96,6 @@
 #### [AccountsSettingsPaneConfig](graph/authentication/uwp/AccountsSettingsPaneConfig.md)
 
 #### [WebAccountProviderConfig](graph/authentication/uwp/WebAccountProviderConfig.md)
-
-#### [WebAccountProviderType](graph/authentication/uwp/WebAccountProviderType.md)
 
 #### [WindowsProvider](graph/authentication/uwp/WindowsProvider.md)
 
