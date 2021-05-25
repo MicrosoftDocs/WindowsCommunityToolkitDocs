@@ -499,6 +499,10 @@
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
 
+### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+
+### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
+
 ## Parsers
 
 ### [MarkdownParser](parsers/MarkdownParser.md)
