@@ -11,7 +11,7 @@
 
 ## [Known Issues](knownissues.md)
 
-# .NET Standard 2.0
+# .NET
 
 ## MVVM
 
@@ -65,7 +65,9 @@
 
 ### [Ref\<T> and ReadOnlyRef\<T>](high-performance/Ref.md)
 
-## Developer tools
+## Diagnostics
+
+### [Introduction](diagnostics/Introduction.md)
 
 ### [Guard](developer-tools/Guard.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Introduction to the MVVM Toolkit
 author: Sergio0694
-description: An overview of how to get started with MVVM Toolkit and to the APIs it contains
+description: An overview of how to get started with the MVVM Toolkit and to the APIs it contains
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, get started, visual studio, MVVM, net core, net standard
 dev_langs:
   - csharp
