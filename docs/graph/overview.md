@@ -19,7 +19,7 @@ If you need similar controls for the Web, please use the [Microsoft Graph Toolki
 
 We've overhauled our approach and introduced some big improvements:
 
-- The new WindowsProvivder enables basic consumer login without AAD configuration 🎊
+- The new WindowsProvider enables basic consumer login without AAD configuration 🎊
 - Authentication packages are now split per provider 🎉
 - Access to the GraphServiceClient now lives in a separate package. This means no dependency on the Graph SDK for simple auth scenarios and apps that perform Graph requests manually (sans SDK) 🥳
 - Removed Beta Graph SDK, but enabled access with V1 SDK types. This is so our controls and helpers can be based on the stable Graph endpoint, while also allowing for requests to the beta endpoint in some circumstances (Such as retrieving a user's photo) 🎈
