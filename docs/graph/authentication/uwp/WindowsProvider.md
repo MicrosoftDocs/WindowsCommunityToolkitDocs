@@ -9,10 +9,11 @@ dev_langs:
 
 # WindowsProvider
 
-The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows. 
+The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows.
 It extends [IProvider](../IProvider.md) and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
 ## Prerequisite Windows Store Association in Visual Studio
+
 To get valid tokens and complete sign in, the app will need to be associated with the Microsoft Store. This will enable your app to authenticate consumer MSA accounts without any additional configuration.
 
 1. In Visual Studio Solution Explorer, right-click the UWP project, then select **Store -> Associate App with the Store...**
@@ -40,14 +41,14 @@ This lets administrators who acquire the app for their organization grant consen
 > [!IMPORTANT]
 > Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
 >
-> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`. 
-> 
+> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`.
+>
 > You'll also want to set the toggle to true for "Allow public client flows".
-> 
+>
 > Then click "Save".
 -->
 
-## Syntax 
+## Syntax
 
 The WindowsProvider can be used in just one line of code:
 
@@ -55,11 +56,11 @@ The WindowsProvider can be used in just one line of code:
 using CommunityToolkit.Authentication;
 
 // Easily create a new WindowsProvider instance and set the GlobalProvider.
-// Don't forget to associate your app with the Microsoft Store before attempting sign in. 
+// Don't forget to associate your app with the Microsoft Store before attempting sign in.
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Task.ReadWrite" });
 ```
 
-The WindowsProvider can also be configured to disabled auto-signin or show custom content in the `AccountsSettingsPane`. 
+The WindowsProvider can also be configured to disabled auto-signin or show custom content in the `AccountsSettingsPane`.
 Additional configuration for account types will be available via the `WebAccountProviderConfig` object in the future.
 Currently only consumer MSA accounts are supported.
 
@@ -83,7 +84,7 @@ var webAccountProviderConfig = new WebAccountProviderConfig(WebAccountProviderTy
 
 // Configure details to present in the AccountsSettingsPane, such as custom header text and links.
 var accountsSettingsPaneConfig = new AccountsSettingsPaneConfig(
-    headerText: "Custom header text", 
+    headerText: "Custom header text",
     commands: new List<SettingsCommand>()
     {
         new SettingsCommand(settingsCommandId: settingsCommandId, label: "Click me!", handler: OnSettingsCommandInvoked)

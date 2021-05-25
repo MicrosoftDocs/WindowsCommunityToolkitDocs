@@ -36,10 +36,10 @@ This lets administrators who acquire the app for their organization grant consen
 > [!IMPORTANT]
 > Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
 >
-> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`. 
-> 
+> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`.
+>
 > You'll also want to set the toggle to true for "Allow public client flows".
-> 
+>
 > Then click "Save".
 
 ## Properties

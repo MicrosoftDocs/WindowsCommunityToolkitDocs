@@ -33,7 +33,7 @@ if (provider?.State == ProviderState.SignedIn)
 
 ## Make Beta API calls
 
-You can also get access to a beta version of the client by calling `GetBetaClient()`. 
+You can also get access to a beta version of the client by calling `GetBetaClient()`.
 It won't return types from the Beta SDK, but it does enable access to some beta only content like user photos.
 
 ```csharp
@@ -43,7 +43,7 @@ using CommunityToolkit.Graph.Extensions;
 public ImageSource GetMyPhoto()
 {
     IProvider provider = ProviderManager.Instance.GlobalProvider;
-    
+
     if (provider?.State == ProviderState.SignedIn)
     {
         // Get the beta client

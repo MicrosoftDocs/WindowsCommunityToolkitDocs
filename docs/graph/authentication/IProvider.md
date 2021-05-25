@@ -9,12 +9,12 @@ dev_langs:
 
 # IProvider
 
-The IProvider is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit. 
+The IProvider is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit.
 
 ```csharp
 using CommunityToolkit.Authentication;
 
-IProvider provider = ProviderManager.Instance.GlobalProvider; 
+IProvider provider = ProviderManager.Instance.GlobalProvider;
 
 if (provider?.State == ProviderState.SignedIn)
 {
@@ -32,7 +32,7 @@ if (provider?.State == ProviderState.SignedIn)
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](./ProviderStateChangedEventArgs.md)&gt; | An event that is called whenever the login state changes. 
+| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](./ProviderStateChangedEventArgs.md)&gt; | An event that is called whenever the login state changes.
 
 ## Methods
 
