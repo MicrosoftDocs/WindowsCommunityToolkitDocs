@@ -63,6 +63,8 @@ Available in the `CommunityToolkit.Authentication.Uwp` package.
 ## Call Microsoft Graph APIs
 Once authenticated, you can now make API calls to Microsoft Graph using a preconfigured GraphServiceClient. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
 
+Available in the `CommunityToolkit.Graph` package.
+
 See [ProviderExtensions]() for more details. 
 
 ```csharp
