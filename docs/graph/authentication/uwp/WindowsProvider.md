@@ -62,7 +62,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "Us
 
 The WindowsProvider can also be configured to disabled auto-signin or show custom content in the `AccountsSettingsPane`.
 Additional configuration for account types will be available via the `WebAccountProviderConfig` object in the future.
-Currently only consumer MSA accounts are supported.
+Currently, only consumer MSA accounts are supported.
 
 ```CSharp
 using CommunityToolkit.Authentication;
