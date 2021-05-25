@@ -9,7 +9,7 @@ dev_langs:
 
 # Windows Community Toolkit - Graph Helpers and Controls
 
-Welcome to the Windows Graph Toolkit! A sub-project of the [Windows Community Toolkit](https://aka.ms/wct) focused on [Microsoft Graph](https://developer.microsoft.com/en-us/graph/) and providing a set of Authentication providers and Graph powered Helpers/Controls that make it easy to work with Microsoft Graph APIs.
+The Graph helpers and controls are a sub-project of the [Windows Community Toolkit](https://aka.ms/wct) focused on [Microsoft Graph](https://developer.microsoft.com/en-us/graph/) and providing a set of Authentication providers and Graph powered Helpers/Controls that make it easy to work with Microsoft Graph APIs.
 
 Note: This new library replaces the `Microsoft.Toolkit.Uwp.UI.Controls.Graph` package; however, it is not backwards compatible nor does it provide all the same features at this time.
 

@@ -43,3 +43,13 @@ if (provider?.State == ProviderState.SignedIn)
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
+
+## Enums
+
+### ProviderState
+
+| Name | Description |
+| -- | -- |
+| Loading | The user's status is not known. |
+| SignedOut | The user is signed-out. |
+| SignedIn | The user is signed-in. |

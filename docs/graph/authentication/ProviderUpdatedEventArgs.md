@@ -11,6 +11,19 @@ dev_langs:
 
 EventsArgs class for the [ProviderManager](./ProviderManager.md).ProviderUpdated event.
 
+## Properties
+
 | Property | Type | Description |
 | -- | -- | -- |
 | Reason | [ProviderManagerChangedState](./ProviderManagerChangedState.md) | Gets the reason for the provider update. |
+
+## Enums
+
+### ProviderManagerChangedState
+
+Enumeration of potential reasons for a provider state change.
+
+| Name | Description |
+| -- | -- |
+| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
+| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |
