@@ -275,6 +275,8 @@
 
 ### [DeepLinkParser](helpers/DeepLinkParsers.md)
 
+### [AutoSelect Behavior](behaviors/AutoSelectBehavior.md)
+
 ### [Focus Behaviors](behaviors/FocusBehaviors.md)
 
 ### [Header Behaviors](behaviors/HeaderBehaviors.md)
