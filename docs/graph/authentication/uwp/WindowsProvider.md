@@ -102,7 +102,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](../ProviderState.md) | Gets the current authentication state of the provider. |
+| State | [ProviderState](../IProvider.md) | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
 | WebAccountsProviderConfig | [WebAccountProviderConfig](./WebAccountProviderConfig.md) | configuration values for determining the available web account providers. |
 | AccountsSettingsPaneConfig | [AccountsSettingsPaneConfig](./AccountsSettingsPaneConfig.md) | Configuration values for the AccountsSettingsPane, shown during authentication. |

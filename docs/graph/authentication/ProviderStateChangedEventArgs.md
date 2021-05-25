@@ -13,5 +13,5 @@ EventArgs for the [IProvider](./IProvider.md).StateChanged event.
 
 | Property | Type | Description |
 | -- | -- | -- |
-| OldState | [ProviderState](./ProviderState.md) | Gets the previous state of the [IProvider](./IProvider.md).
-| NewState | [ProviderState](./ProviderState.md) | Gets the new state of the [IProvider](./IProvider.md).
+| OldState | [ProviderState](./IProvider.md) | Gets the previous state of the [IProvider](./IProvider.md).
+| NewState | [ProviderState](./IProvider.md) | Gets the new state of the [IProvider](./IProvider.md).

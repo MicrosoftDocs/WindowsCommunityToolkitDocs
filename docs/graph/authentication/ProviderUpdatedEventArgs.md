@@ -15,7 +15,7 @@ EventsArgs class for the [ProviderManager](./ProviderManager.md).ProviderUpdated
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Reason | [ProviderManagerChangedState](./ProviderManagerChangedState.md) | Gets the reason for the provider update. |
+| Reason | ProviderManagerChangedState | Gets the reason for the provider update. |
 
 ## Enums
 
