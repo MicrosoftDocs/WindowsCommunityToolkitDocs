@@ -83,19 +83,11 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [ProviderStateChangedEventArgs](graph/authentication/ProviderStateChangedEventArgs.md)
-
-### [ProviderUpdatedEventArgs](graph/authentication/ProviderUpdatedEventArgs.md)
-
 ### MSAL
 
 #### [MsalProvider](graph/authentication/msal/MsalProvider.md)
 
 ### UWP
-
-#### [AccountsSettingsPaneConfig](graph/authentication/uwp/AccountsSettingsPaneConfig.md)
-
-#### [WebAccountProviderConfig](graph/authentication/uwp/WebAccountProviderConfig.md)
 
 #### [WindowsProvider](graph/authentication/uwp/WindowsProvider.md)
 

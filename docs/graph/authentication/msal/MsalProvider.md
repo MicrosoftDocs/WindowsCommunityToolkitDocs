@@ -52,7 +52,7 @@ This lets administrators who acquire the app for their organization grant consen
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](../ProviderStateChangedEventArgs.md)&gt; | Event called when the provider state changes. |
+| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](../IProvider.md)&gt; | Event called when the provider state changes. |
 
 ## Methods
 

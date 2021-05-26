@@ -104,7 +104,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | -- | -- | -- |
 | State | [ProviderState](../IProvider.md) | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
-| WebAccountsProviderConfig | [WebAccountProviderConfig](./WebAccountProviderConfig.md) | configuration values for determining the available web account providers. |
+| WebAccountsProviderConfig | WebAccountProviderConfig | configuration values for determining the available web account providers. |
 | AccountsSettingsPaneConfig | AccountsSettingsPaneConfig | Configuration values for the AccountsSettingsPane, shown during authentication. |
 | RedirectUri | string | Static getter for retrieving a customized redirect uri to put in the Azure app registration. |
 
@@ -112,7 +112,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](../ProviderStateChangedEventArgs.md)&gt; | Event called when the provider state changes. |
+| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](../IProvider.md)&gt; | Event called when the provider state changes. |
 
 ## Methods
 
