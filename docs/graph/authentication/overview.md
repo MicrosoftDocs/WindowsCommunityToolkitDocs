@@ -12,6 +12,9 @@ dev_langs:
 Authentication is always the first step to working with Microsoft Graph.
 The toolkit offers a lightweight system for authenticating users, managing access tokens, and making Graph calls.
 
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ## ProviderManager and the GlobalProvider
 
 The [ProviderManager](./ProviderManager.md) is the singleton that stores the globally accessible [IProvider](./IProvider.md) implementation and signals events in response to authentication state changes.
@@ -69,7 +72,6 @@ Access to the client is enabled through an extension method on IProvider called,
 See [ProviderExtensions](../helpers/ProviderExtensions.md) for more details.
 
 Available in the `CommunityToolkit.Graph` package.
-
 
 ```csharp
 using CommunityToolkit.Authentication;

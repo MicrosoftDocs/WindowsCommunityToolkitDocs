@@ -11,6 +11,11 @@ dev_langs:
 
 The IProvider is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit.
 
+> Available in the `CommunityToolkit.Authentication` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ```csharp
 using CommunityToolkit.Authentication;
 

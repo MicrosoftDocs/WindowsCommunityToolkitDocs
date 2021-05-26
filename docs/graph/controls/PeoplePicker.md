@@ -14,6 +14,11 @@ The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) se
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PeoplePicker)
 
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ## Syntax
 
 ```xaml

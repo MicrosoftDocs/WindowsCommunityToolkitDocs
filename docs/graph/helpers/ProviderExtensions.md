@@ -11,6 +11,11 @@ dev_langs:
 
 The `ProviderExtensions` static class is available in the `CommunityToolkit.Graph` package. These extensions help you make calls to various Graph APIs.
 
+> Available in the `CommunityToolkit.Graph` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ## Call Microsoft Graph APIs
 
 Once authenticated, you can make API calls to Microsoft Graph using a preconfigured GraphServiceClient instance. Access to the client is enabled through an extension method on [IProvider](../authentication/IProvider.md) called, `GetClient()`.

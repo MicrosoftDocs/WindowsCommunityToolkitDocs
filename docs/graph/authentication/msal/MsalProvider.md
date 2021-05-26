@@ -13,6 +13,9 @@ The MsalPRovider is an [IProvider](../IProvider.md) implementation built on the 
 
 > Available in the `CommunityToolkit.Authentication.Msal` package.
 
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ```csharp
 using CommunityToolkit.Authentication;
 

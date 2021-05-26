@@ -11,6 +11,11 @@ dev_langs:
 
 The ProviderManager manages access to the globally configured [IProvider](./IProvider.md) instance and any state change events as users sign in and out.
 
+> Available in the `CommunityToolkit.Authentication` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+
 ### Set the GlobalProvider
 
 ```csharp

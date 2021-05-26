@@ -10,7 +10,7 @@ dev_langs:
 # InteractiveProviderBehavior XAML Behavior
 
 > [!WARNING]
-> (This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../overview.md).)
+> This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../overview.md).
 
 The [InteractiveProviderBehavior](/dotnet/api/microsoft.toolkit.graph.providers.interactiveproviderbehavior) provides a quick and easy way to connect to the Microsoft Identity platform and Microsoft Graph.  It is built on top of the Graph SDK's authentication providers, but allows usage from XAML.
 
