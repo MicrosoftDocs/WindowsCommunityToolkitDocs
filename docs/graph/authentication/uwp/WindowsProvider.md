@@ -105,7 +105,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | State | [ProviderState](../IProvider.md) | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
 | WebAccountsProviderConfig | [WebAccountProviderConfig](./WebAccountProviderConfig.md) | configuration values for determining the available web account providers. |
-| AccountsSettingsPaneConfig | [AccountsSettingsPaneConfig](./AccountsSettingsPaneConfig.md) | Configuration values for the AccountsSettingsPane, shown during authentication. |
+| AccountsSettingsPaneConfig | AccountsSettingsPaneConfig | Configuration values for the AccountsSettingsPane, shown during authentication. |
 | RedirectUri | string | Static getter for retrieving a customized redirect uri to put in the Azure app registration. |
 
 ## Events
@@ -123,3 +123,24 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
+
+## AccountsSettingsPaneConfig Object
+
+| Property | Type | Description |
+| -- | -- | -- |
+| HeaderText | string | Gets or sets the header text for the accounts settings pane. |
+| Commands | IList&lt;SettingsCommand&gt; | Gets or sets the SettingsCommand collection for the account settings pane. |
+
+## WebAccountProviderConfig Object
+
+| Property | Type | Description |
+| -- | -- | -- |
+| ClientId | string | Client Id obtained from Azure registration. |
+| WebAccountProviderType | WebAccountProviderType | The types of accounts providers that should be available to the user. |
+
+### WebAccountProviderType Enum
+
+| Name | Description |
+| -- | -- |
+| All | Enable authentication of all available account types. |
+| MSA | Enable authentication of public/consumer MSA accounts. |

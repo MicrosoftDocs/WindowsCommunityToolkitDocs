@@ -50,7 +50,7 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 
 | Event | Type | Description |
 | -- | -- | -- |
-| ProviderUpdated | EventHandler&lt;[ProviderUpdatedEventArgs](./ProviderUpdatedEventArgs.md)&gt; | Event called when the IProvider changes. |
+| ProviderUpdated | EventHandler&lt;ProviderUpdatedEventArgs&gt; | Event called when the IProvider changes. |
 
 ## Methods
 
@@ -61,3 +61,16 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
+
+## ProviderUpdatedEventArgs Object
+
+| Property | Type | Description |
+| -- | -- | -- |
+| Reason | ProviderManagerChangedState | Gets the reason for the provider update. |
+
+## ProviderManagerChangedState Enum
+
+| Name | Description |
+| -- | -- |
+| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
+| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |

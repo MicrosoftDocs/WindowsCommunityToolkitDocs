@@ -26,13 +26,13 @@ if (provider?.State == ProviderState.SignedIn)
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](./IProvider.md) | Gets the current authentication state of the provider. |
+| State | ProviderState | Gets the current authentication state of the provider. |
 
 ## Events
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](./ProviderStateChangedEventArgs.md)&gt; | An event that is called whenever the login state changes.
+| StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | An event that is called whenever the login state changes.
 
 ## Methods
 
@@ -44,9 +44,14 @@ if (provider?.State == ProviderState.SignedIn)
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
 
-## Enums
+## ProviderStateChangedEventArgs Object
 
-### ProviderState
+| Property | Type | Description |
+| -- | -- | -- |
+| OldState | ProviderState | Gets the previous state of the IProvider.
+| NewState | ProviderState | Gets the new state of the IProvider.
+
+## ProviderState Enum
 
 | Name | Description |
 | -- | -- |

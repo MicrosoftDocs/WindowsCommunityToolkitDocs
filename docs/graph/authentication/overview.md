@@ -14,7 +14,7 @@ The toolkit offers a lightweight system for authenticating users, managing acces
 
 ## ProviderManager and the GlobalProvider
 
-The `ProviderManager` is the singleton that stores the globally accessible `IProvider` implementation and signals events in response to authentication state changes.
+The [ProviderManager](./ProviderManager.md) is the singleton that stores the globally accessible [IProvider](./IProvider.md) implementation and signals events in response to authentication state changes.
 Set the `GlobalProvider` property at app startup and any other Graph based code will respond to any changes as users login and logout.
 
 ```csharp
@@ -50,25 +50,26 @@ void OnProviderChanged (object sender, ProviderUpdatedEventArgs args)
 
 ### MsalProvider
 
-An `IProvider` implementation built on the official Microsoft Authentication Library (MSAL).
-The `MsalProvider` is NetStandard and supports any NetStandard 2.0 applications.
+An [IProvider](./IProvider.md) implementation built on the official Microsoft Authentication Library (MSAL).
+The [MsalProvider](./msal/MsalProvider.md)  is NetStandard and supports any NetStandard 2.0 applications.
 
 Available in the `CommunityToolkit.Authentication.Msal` package.
 
 ### WindowsProvider
 
-A lightweight `IProvider` implementation built directly on the native Windows Account Manager (WAM) APIs.
-This provider enables authentication of consumer MSA accounts without any Azure AAD config and only requires a Microsoft Store App registration to use.
+A lightweight [IProvider](./IProvider.md) implementation built directly on the native Windows Account Manager (WAM) APIs.
+The [WindowsProvider](./uwp/WindowsProvider.md) enables authentication of consumer MSA accounts without any Azure AAD config and only requires a Microsoft Store App registration to use.
 
 Available in the `CommunityToolkit.Authentication.Uwp` package.
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can now make API calls to Microsoft Graph using a preconfigured GraphServiceClient. Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
+Once authenticated, you can now make API calls to Microsoft Graph using a preconfigured GraphServiceClient.
+Access to the client is enabled through an extension method on IProvider called, `GetClient()`.
+See [ProviderExtensions](../helpers/ProviderExtensions.md) for more details.
 
 Available in the `CommunityToolkit.Graph` package.
 
-See [ProviderExtensions](../helpers/ProviderExtensions.md) for more details.
 
 ```csharp
 using CommunityToolkit.Authentication;
