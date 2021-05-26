@@ -10,7 +10,7 @@ dev_langs:
 # MockProviderBehavior XAML Behavior
 
 > [!WARNING]
-> This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../overview.md).
+> This API has been removed. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../overview.md).
 
 <!-- Describe your control -->
 The [MockProviderBehavior](/dotnet/api/microsoft.toolkit.graph.providers.mockproviderbehavior) provides sample data from the Microsoft Graph for demonstration and learning purposes only.
