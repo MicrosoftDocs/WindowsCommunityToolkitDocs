@@ -17,7 +17,6 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=LoginButton)
 
-
 > Available in the `CommunityToolkit.Graph.Uwp` package.
 
 > [!IMPORTANT]

@@ -52,9 +52,8 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
     Before requesting data from [Microsoft Graph](https://graph.microsoft.com), you will need to [register your application](/azure/active-directory/develop/quickstart-register-app) to get a **ClientID**.
 
     > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI", then "Add a platform", and then on "Mobile and desktop applications". Check the `https://login.microsoftonline.com/common/oauth2/nativeclient` checkbox on that page. Then click "Configure".
-
-3. Install the `CommunityToolkit.Authentication.Msal` package.
-4. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [MsalProvider](./authentication/msal/MsalProvider.md) with clientId and pre-configured scopes:
+1. Install the `CommunityToolkit.Authentication.Msal` package.
+1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [MsalProvider](./authentication/msal/MsalProvider.md) with clientId and pre-configured scopes:
 
     ```csharp
     using CommunityToolkit.Authentication;

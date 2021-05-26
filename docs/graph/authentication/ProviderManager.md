@@ -16,7 +16,7 @@ The ProviderManager manages access to the globally configured [IProvider](./IPro
 > [!IMPORTANT]
 > Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
 
-### Set the GlobalProvider
+## Set the GlobalProvider
 
 ```csharp
 using CommunityToolkit.Authentication;
@@ -24,7 +24,7 @@ using CommunityToolkit.Authentication;
 ProviderManager.Instance.GlobalProvider = new WindowsProvider();
 ```
 
-### Listen for changes to the GlobalProvider
+## Listen for changes to the GlobalProvider
 
 ```csharp
 using CommunityToolkit.Authentication;

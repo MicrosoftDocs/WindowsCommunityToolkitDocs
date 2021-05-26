@@ -30,7 +30,6 @@ To get valid tokens and complete sign in, the app will need to be associated wit
 > [!NOTE]
 > You must have a Windows Developer account to use the WindowsProvider in your UWP app. You can [register a Microsoft developer account](https://developer.microsoft.com/store/register) if you don't already have one.
 
-
 <!-- Uncomment this when AAD account support becomes available.
 ## Prerequisite Configure Client Id in Partner Center
 
