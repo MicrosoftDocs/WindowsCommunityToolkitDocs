@@ -18,7 +18,7 @@ The [`AnimationSet`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.AnimationSe
 Each set can contain any number of animation scopes and individual nodes, which can be either animations or "activities":
 
 - **Animation types** are a mapping in XAML for the various APIs exposed by the `AnimationBuilder` class. They are available as both "default" animations that are ready to use and "custom" animations that can be fully configured. Each animation type also supports using keyframes in addition to just defining the starting and final values.
-- **Activites** on the other hand are a way to interleave an animation schedule with all sorts of custom logic, such as triggering other animations or running arbitrary code (eg. to update a visual state while an animation is running).
+- **Activities** on the other hand are a way to interleave an animation schedule with all sorts of custom logic, such as triggering other animations or running arbitrary code (eg. to update a visual state while an animation is running).
 
 These two types of animation nodes implement several interfaces (such as [`ITimeline`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.ITimeline) and [`IActivity`](/dotnet/api/microsoft.toolkit.uwp.ui.animations.IActivity)) which make this system extremely customizable and extensible for users as well for their own scenarios.
 
