@@ -9,7 +9,7 @@ dev_langs:
 
 # MsalProvider
 
-The MsalPRovider is an [IProvider](./IProvider.md) implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
+The MsalProvider is an [IProvider](./IProvider.md) implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
 
 > Available in the `CommunityToolkit.Authentication.Msal` package.
 
