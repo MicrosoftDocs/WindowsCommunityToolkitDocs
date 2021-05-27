@@ -14,7 +14,7 @@ The `ProviderExtensions` static class is available in the `CommunityToolkit.Grap
 > Available in the `CommunityToolkit.Graph` package.
 
 > [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Call Microsoft Graph APIs
 

@@ -15,7 +15,7 @@ It extends [IProvider](../IProvider.md) and uses the native Windows AccountManag
 > Available in the `CommunityToolkit.Authentication.Uwp` package.
 
 > [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Prerequisite Windows Store Association in Visual Studio
 

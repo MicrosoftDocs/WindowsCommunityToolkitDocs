@@ -13,7 +13,7 @@ Authentication is always the first step to working with Microsoft Graph.
 The toolkit offers a lightweight system for authenticating users, managing access tokens, and making Graph calls.
 
 > [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit: https://aka.ms/wct/wiki/previewpackages
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## ProviderManager and the GlobalProvider
 
