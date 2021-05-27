@@ -7,12 +7,17 @@ dev_langs:
   - csharp
 ---
 
-# PeoplePicker XAML Control
+# (Preview) PeoplePicker XAML Control
 
 The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PeoplePicker)
+
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Syntax
 
@@ -48,5 +53,5 @@ The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) se
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT PeoplePicker Component](/graph/toolkit/components/people-picker)

@@ -7,12 +7,17 @@ dev_langs:
   - csharp
 ---
 
-# PersonView XAML Control
+# (Preview) PersonView XAML Control
 
 The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=PersonView)
+
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Syntax
 
@@ -54,5 +59,5 @@ The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is use
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT Person Component](/graph/toolkit/components/person)

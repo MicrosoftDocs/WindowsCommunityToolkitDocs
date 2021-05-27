@@ -9,13 +9,15 @@ dev_langs:
 
 # InteractiveProviderBehavior XAML Behavior
 
-<!-- Describe your control -->
+> [!WARNING]
+> This API has been removed. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../overview.md).
+
 The [InteractiveProviderBehavior](/dotnet/api/microsoft.toolkit.graph.providers.interactiveproviderbehavior) provides a quick and easy way to connect to the Microsoft Identity platform and Microsoft Graph.  It is built on top of the Graph SDK's authentication providers, but allows usage from XAML.
 
 Add this behavior to your application's main page. It only needs to be added to a single page to bootstrap all the other Graph enabled XAML controls.
 
 > [!IMPORTANT]
-> Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
+> Be sure to Register Client Id in Azure first following the guidance here: [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 >
 > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and check the "https://login.microsoftonline.com/common/oauth2/nativeclient" checkbox on that page. Then click "Save".
 

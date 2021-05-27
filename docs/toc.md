@@ -75,19 +75,35 @@
 
 # Microsoft Graph
 
+## [Overview](graph/overview.md)
+
+## Authentication
+
+### [Authentication Overview](graph/authentication/overview.md)
+
+### [IProvider](graph/authentication/IProvider.md)
+
+### [ProviderManager](graph/authentication/ProviderManager.md)
+
+### [MsalProvider](graph/authentication/MsalProvider.md)
+
+### [WindowsProvider](graph/authentication/WindowsProvider.md)
+
+## Helpers
+
+### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
+
+### RoamingSettingsHelper (Coming soon!)
+
 ## Controls
 
-### [LoginButton](graph/controls/LoginButton.md)
+### GraphPresenter (Coming soon!)
 
-### [PersonView](graph/controls/PersonView.md)
+### [LoginButton (Preview)](graph/controls/LoginButton.md)
 
-### [PeoplePicker](graph/controls/PeoplePicker.md)
+### [PersonView (Preview)](graph/controls/PersonView.md)
 
-## Providers
-
-### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
-
-### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
+### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
 
 # WinUI 3
 
@@ -472,6 +488,10 @@
 ### [ProfileCard](archive/graph/ProfileCard.md)
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
+
+### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+
+### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
 
 ## Parsers
 

@@ -7,7 +7,7 @@ dev_langs:
   - csharp
 ---
 
-# LoginButton XAML Control
+# (Preview) LoginButton XAML Control
 
 The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 
@@ -16,6 +16,11 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=LoginButton)
+
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Syntax
 
@@ -61,5 +66,5 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 
 ## Related Topics
 
-* [User Graph API](/graph/api/resources/user?view=graph-rest-beta)
+* [User Graph API](/graph/api/resources/user)
 * [MGT Login Component](/graph/toolkit/components/login)
