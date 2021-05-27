@@ -72,7 +72,7 @@ Try out the [WindowsProvider](./authentication/WindowsProvider.md) to enable aut
 
 1. Associate your app with the Microsoft Store. The app association will act as our minimal app registration for authenticating consumer MSAs. See the [WindowsProvider docs](https://github.com/windows-toolkit/Graph-Controls/edit/main/Docs/WindowsProvider.md) for more details.
 1. Install the `CommunityToolkit.Authentication.Uwp` package
-1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [WindowsProvider](./authentication/uwp/WindowsProvider.md) with pre-configured scopes:
+1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [WindowsProvider](./authentication/WindowsProvider.md) with pre-configured scopes:
 
     ```csharp
     using CommunityToolkit.Authentication;
