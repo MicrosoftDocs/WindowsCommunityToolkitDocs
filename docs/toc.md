@@ -83,17 +83,13 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### MSAL
+#### [MsalProvider](graph/authentication/MsalProvider.md)
 
-#### [MsalProvider](graph/authentication/msal/MsalProvider.md)
-
-### UWP
-
-#### [WindowsProvider](graph/authentication/uwp/WindowsProvider.md)
+#### [WindowsProvider](graph/authentication/WindowsProvider.md)
 
 ## Helpers
 
-### [WindowsProvider](graph/helpers/ProviderExtensions.md)
+### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
 
 ### RoamingSettingsHelper (Coming soon!)
 
