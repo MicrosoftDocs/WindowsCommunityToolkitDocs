@@ -83,9 +83,9 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-#### [MsalProvider](graph/authentication/MsalProvider.md)
+### [MsalProvider](graph/authentication/MsalProvider.md)
 
-#### [WindowsProvider](graph/authentication/WindowsProvider.md)
+### [WindowsProvider](graph/authentication/WindowsProvider.md)
 
 ## Helpers
 
