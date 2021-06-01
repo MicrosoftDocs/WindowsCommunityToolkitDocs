@@ -93,7 +93,7 @@
 
 ### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
 
-### RoamingSettingsHelper (Coming soon!)
+<!-- ### RoamingSettingsHelper (Coming soon!)
 
 ## Controls
 
@@ -103,7 +103,7 @@
 
 ### [PersonView (Preview)](graph/controls/PersonView.md)
 
-### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
+### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md) -->
 
 # WinUI 3
 
