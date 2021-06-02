@@ -36,103 +36,20 @@ For more info on our roadmap, check out the current [Release Plan](https://githu
 | `CommunityTookit.Graph` | NetStandard 2.0 |
 | `CommunityToolkit.Graph.Uwp` | UWP Windows 10 17763 |
 
-## <a name="documentation"></a> Getting Started
+## Getting Started
 
-To get started using Graph data in your application, you'll first need to enable authentication.
+Check out the [Getting Started](./getting-started.md) guide for details on how to get authenticated and start calling Graph APIs.
 
-> [!IMPORTANT]
-> These packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
+## Learn More
 
-### 1A. Setup authentication with MSAL
+**Authentication Providers**
 
-Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in any NetStandard application.
+Hook into a lightweight framework for authenticating users and responding to login state changes: [Authentication Providers Overview](./authentication/overview.md)
 
-1. Register your app in Azure AAD
+**Graph Helpers**
 
-    Before requesting data from [Microsoft Graph](https://graph.microsoft.com), you will need to [register your application](/azure/active-directory/develop/quickstart-register-app) to get a **ClientID**.
+See [ProviderExtensions](./helpers/ProviderExtensions.md) to learn how to get access to a preconfigured GraphServiceClient and make adhoc API calls using the Graph SDK.
 
-    > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI", then "Add a platform", and then on "Mobile and desktop applications". Check the `https://login.microsoftonline.com/common/oauth2/nativeclient` checkbox on that page. Then click "Configure".
-1. Install the `CommunityToolkit.Authentication.Msal` package.
-1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [MsalProvider](./authentication/MsalProvider.md) with clientId and pre-configured scopes:
+**Graph Controls**
 
-    ```csharp
-    using CommunityToolkit.Authentication;
-
-    string clientId = "YOUR-CLIENT-ID-HERE";
-    string[] scopes = new string[] { "User.Read" };
-
-    ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
-    ```
-
-> Note: You can use the `Scopes` property to preemptively request permissions from the user of your app for data your app needs to access from Microsoft Graph.
-
-### 1B. Setup authentication with WindowsProvider
-
-Try out the [WindowsProvider](./authentication/WindowsProvider.md) to enable authentication based on the native Windows Account Manager (WAM) APIs in your UWP apps, without requiring a dependency on MSAL.
-
-1. Associate your app with the Microsoft Store. The app association will act as our minimal app registration for authenticating consumer MSAs. See the [WindowsProvider docs](https://github.com/windows-toolkit/Graph-Controls/edit/main/Docs/WindowsProvider.md) for more details.
-1. Install the `CommunityToolkit.Authentication.Uwp` package
-1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [WindowsProvider](./authentication/WindowsProvider.md) with pre-configured scopes:
-
-    ```csharp
-    using CommunityToolkit.Authentication;
-
-    string[] scopes = new string[] { "User.Read" };
-
-    ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes);
-    ```
-
-### 2. Make a Graph call
-
-Once you are authenticated, you can then make requests to the Graph using the GraphServiceClient instance via [ProviderExtensions](./helpers/ProviderExtensions.md).
-
-> Install the `CommunityToolkit.Graph` package.
-
-```
-using CommunityToolkit.Authentication;
-using CommunityToolkit.Graph.Extensions;
-
-var provider = ProviderManager.Instance.GlobalProvider;
-
-if (provider != null && provider.State == ProviderState.SignedIn)
-{
-    var graphClient = provider.GetClient();
-    var me = await graphClient.Me.Request().GetAsync();
-}
-```
-
-**That's all you need to get started!**
-
-You can use the `ProviderManager.Instance` to listen to changes in authentication status with the `ProviderUpdated` event or get direct access to the [.NET Graph Beta API](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) through `ProviderManager.Instance.GlobalProvider.GetBetaClient()`, just be sure to check if the `GlobalProvider` has been set first and its `State` is `SignedIn`:
-
-```csharp
-using CommunityToolkit.Authentication;
-using CommunityToolkit.Graph.Extensions;
-
-public ImageSource GetMyPhoto()
-{
-    IProvider provider = ProviderManager.Instance.GlobalProvider;
-
-    if (provider?.State == ProviderState.SignedIn)
-    {
-        // Get the beta client
-        GraphServiceClient betaGraphClient = provider.GetBetaClient();
-
-        try
-        {
-            // Make a request to the beta endpoint for the current user's photo.
-            var photoStream = await betaGraphClient.Me.Photo.Content.Request().GetAsync();
-
-            using var ras = photoStream.AsRandomAccessStream();
-            var bitmap = new BitmapImage();
-            await bitmap.SetSourceAsync(ras);
-
-            return bitmap;
-        }
-        catch
-        {
-            return null;
-        }
-    }
-}
-```
+Build Graph experiences with XAML controls and helpers made for UWP, such as [LoginButton](./controls/LoginButton.md) or [PersonView](./controls/PersonView.md).

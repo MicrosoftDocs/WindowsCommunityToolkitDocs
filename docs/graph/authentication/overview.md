@@ -54,7 +54,9 @@ void OnProviderChanged (object sender, ProviderUpdatedEventArgs args)
 ### MsalProvider
 
 An [IProvider](./IProvider.md) implementation built on the official Microsoft Authentication Library (MSAL).
-The [MsalProvider](./MsalProvider.md)  is NetStandard and supports any NetStandard 2.0 applications.
+The [MsalProvider](./MsalProvider.md) is NetStandard and supports any NetStandard 2.0 applications.
+
+Use the [MsalProvider](./MsalProvider.md) in NetStandard 2.0 applications and anywhere [MSAL for .NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) is supported.
 
 Available in the `CommunityToolkit.Authentication.Msal` package.
 
@@ -62,6 +64,8 @@ Available in the `CommunityToolkit.Authentication.Msal` package.
 
 A lightweight [IProvider](./IProvider.md) implementation built directly on the native Windows Account Manager (WAM) APIs.
 The [WindowsProvider](./WindowsProvider.md) enables authentication of consumer MSA accounts without any Azure AAD config and only requires a Microsoft Store App registration to use.
+
+Use the [WindowsProvider](./WindowsProvider.md) when working in UWP for a simple native solution that leaves out the [MSAL for .NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet) SDK to minimize package size.
 
 Available in the `CommunityToolkit.Authentication.Uwp` package.
 

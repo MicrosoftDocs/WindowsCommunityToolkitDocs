@@ -57,16 +57,6 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 | -- | -- | -- |
 | ProviderUpdated | EventHandler&lt;ProviderUpdatedEventArgs&gt; | Event called when the IProvider changes. |
 
-## Methods
-
-| Method | Arguments | Returns | Description |
-| -- | -- | -- | -- |
-| AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
-| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
-| SignInAsync | | Task | Sign in a user. |
-| SignOutAsync | | Task | Sign out the current user. |
-| TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
-
 ## ProviderUpdatedEventArgs Object
 
 | Property | Type | Description |

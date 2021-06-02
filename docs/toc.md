@@ -77,6 +77,8 @@
 
 ## [Overview](graph/overview.md)
 
+## [Getting Started](graph/getting-started.md)
+
 ## Authentication
 
 ### [Authentication Overview](graph/authentication/overview.md)
@@ -93,17 +95,17 @@
 
 ### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
 
-<!-- ### RoamingSettingsHelper (Coming soon!)
+<!-- ### RoamingSettingsHelper -->
 
 ## Controls
 
-### GraphPresenter (Coming soon!)
+<!-- ### GraphPresenter -->
 
 ### [LoginButton (Preview)](graph/controls/LoginButton.md)
 
 ### [PersonView (Preview)](graph/controls/PersonView.md)
 
-### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md) -->
+### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
 
 # WinUI 3
 
