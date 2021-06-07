@@ -93,7 +93,7 @@
 
 ## Helpers
 
-### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
+### [Microsoft Graph Extensions](graph/helpers/extensions.md)
 
 <!-- ### RoamingSettingsHelper -->
 

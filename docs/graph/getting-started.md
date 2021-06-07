@@ -73,7 +73,7 @@ You can also use the [LoginButton](./controls/LoginButton.md) control in UWP XAM
 
 ## 3. Make a Graph call
 
-Once you are authenticated, you can then make requests to the Graph using the GraphServiceClient instance via [ProviderExtensions](./helpers/ProviderExtensions.md).
+Once you are authenticated, you can then make requests to the Graph using the GraphServiceClient instance via [extensions](./helpers/extensions.md).
 
 > Install the `CommunityToolkit.Graph` package.
 

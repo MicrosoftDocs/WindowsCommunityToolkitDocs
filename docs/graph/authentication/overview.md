@@ -120,7 +120,7 @@ Once authenticated, you can now make API calls to Microsoft Graph using the Grap
 ### Use the Graph SDK 
 
 Access APIs using the Graph SDK through a preconfigured `GraphServiceClient` available through an extension method on `IProvider` called, `GetClient()`.
-See [ProviderExtensions](../helpers/ProviderExtensions.md) for more details.
+See [Microsoft Graph Extensions](../helpers/extensions.md) for more details.
 
 This is the easiest way to get started because all of the Graph types are available and the `GraphServiceClient` offers a convenient way of building requests.
 

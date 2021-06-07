@@ -102,6 +102,15 @@ bool autoSignIn = false;
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSettingsPaneConfig, webAccountProviderConfig, autoSignIn);
 ```
 
+## Constructor
+
+| Parameter | Type | Default | Description |
+| -- | -- | -- | -- |
+| scopes | string[] | null | List of scopes to initially request. |
+| webAccountProviderConfig | WebAccountProviderConfig? | null | Configuration value for determining the available web account providers. |
+| accountsSettingsPaneConfig | AccountsSettingsPaneConfig? | null | Configuration values for the AccountsSettingsPane. |
+| autoSignIn | bool | true | Determines whether the provider attempts to silently log in upon instantiation. |
+
 ## Properties
 
 | Property | Type | Description |
