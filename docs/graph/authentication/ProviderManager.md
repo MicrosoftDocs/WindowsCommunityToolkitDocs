@@ -9,7 +9,7 @@ dev_langs:
 
 # ProviderManager
 
-The ProviderManager manages access to the globally configured [IProvider](./IProvider.md) instance and any state change events as users sign in and out.
+The ProviderManager manages access to the globally configured [IProvider](./custom.md) instance and any state change events as users sign in and out.
 
 > Available in the `CommunityToolkit.Authentication` package.
 
@@ -38,5 +38,5 @@ The ProviderManager manages access to the globally configured [IProvider](./IPro
 
 | Name | Description |
 | -- | -- |
-| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
-| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |
+| ProviderStateChanged | The IProvider state has changed.|
+| ProviderUpdated | The IProvider instance itself has changed. |

@@ -9,7 +9,7 @@ dev_langs:
 
 # IProvider
 
-The IProvider is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit.
+The `IProvider` is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit. Handle authenticaiton with one of our premade `IProvider` implementations or create your own.
 
 > Available in the `CommunityToolkit.Authentication` package.
 

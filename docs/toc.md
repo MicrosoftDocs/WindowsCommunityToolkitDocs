@@ -83,13 +83,13 @@
 
 ### [Authentication Overview](graph/authentication/overview.md)
 
-### [IProvider](graph/authentication/IProvider.md)
-
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [MsalProvider](graph/authentication/MsalProvider.md)
+### [MSAL provider](graph/authentication/msal.md)
 
-### [WindowsProvider](graph/authentication/WindowsProvider.md)
+### [Windows provider](graph/authentication/windows.md)
+
+### [Custom provider](graph/authentication/custom.md)
 
 ## Helpers
 

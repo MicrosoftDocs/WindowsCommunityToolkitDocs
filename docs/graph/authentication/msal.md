@@ -9,7 +9,7 @@ dev_langs:
 
 # MsalProvider
 
-The MsalProvider is an [IProvider](./IProvider.md) implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
+The MsalProvider is an [IProvider](./custom.md) implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
 
 > Available in the `CommunityToolkit.Authentication.Msal` package.
 
@@ -49,13 +49,13 @@ This lets administrators who acquire the app for their organization grant consen
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](./IProvider.md) | Gets the current authentication state of the provider. |
+| State | ProviderState | Gets the current authentication state of the provider. |
 
 ## Events
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](./IProvider.md)&gt; | Event called when the provider state changes. |
+| StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the provider state changes. |
 
 ## Methods
 

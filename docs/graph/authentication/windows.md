@@ -10,7 +10,7 @@ dev_langs:
 # WindowsProvider
 
 The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows.
-It extends [IProvider](./IProvider.md) and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
+It extends [IProvider](./custom.md) and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
 > Available in the `CommunityToolkit.Authentication.Uwp` package.
 
@@ -61,7 +61,7 @@ using CommunityToolkit.Authentication;
 
 // Easily create a new WindowsProvider instance and set the GlobalProvider.
 // Don't forget to associate your app with the Microsoft Store before attempting sign in.
-ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Task.ReadWrite" });
+ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Tasks.ReadWrite" });
 ```
 
 The WindowsProvider can also be configured to disabled auto-signin or show custom content in the `AccountsSettingsPane`.
@@ -106,7 +106,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 | Property | Type | Description |
 | -- | -- | -- |
-| State | [ProviderState](./IProvider.md) | Gets the current authentication state of the provider. |
+| State | ProviderState | Gets the current authentication state of the provider. |
 | Scopes | string[] | List of scopes to pre-authorize on the user during authentication. |
 | WebAccountsProviderConfig | WebAccountProviderConfig | configuration values for determining the available web account providers. |
 | AccountsSettingsPaneConfig | AccountsSettingsPaneConfig | Configuration values for the AccountsSettingsPane, shown during authentication. |
@@ -116,7 +116,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 
 | Event | Type | Description |
 | -- | -- | -- |
-| StateChanged | EventHandler&lt;[ProviderStateChangedEventArgs](./IProvider.md)&gt; | Event called when the provider state changes. |
+| StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the provider state changes. |
 
 ## Methods
 
