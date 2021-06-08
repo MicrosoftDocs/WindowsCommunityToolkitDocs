@@ -48,7 +48,7 @@ Hook into a lightweight framework for authenticating users and responding to log
 
 **Graph Helpers**
 
-See [Microsoft Graph Extensions](./helpers/wextensions.md) to learn how to get access to a preconfigured GraphServiceClient and make adhoc API calls using the Graph SDK.
+See [Microsoft Graph Extensions](./helpers/extensions.md) to learn how to get access to a preconfigured GraphServiceClient and make adhoc API calls using the Graph SDK.
 
 **Graph Controls**
 
