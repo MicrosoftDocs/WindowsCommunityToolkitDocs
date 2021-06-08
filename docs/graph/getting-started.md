@@ -16,7 +16,7 @@ To get started using Graph data in your application, you'll first need to enable
 
 ## 1A. Setup authentication with MSAL
 
-Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in NetStandard 2.0 applications using [MsalProvider](./authentication/msal.md). 
+Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in NetStandard 2.0 applications using [MsalProvider](./authentication/msal.md).
 
 1. Register your app in Azure AAD
 

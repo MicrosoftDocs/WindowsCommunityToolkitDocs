@@ -42,14 +42,14 @@ Check out the [Getting Started](./getting-started.md) guide for details on how t
 
 ## Learn More
 
-**Authentication Providers**
+### Authentication Providers
 
 Hook into a lightweight framework for authenticating users and responding to login state changes: [Authentication Providers Overview](./authentication/overview.md)
 
-**Graph Helpers**
+### Graph Helpers
 
 See [Microsoft Graph Extensions](./helpers/extensions.md) to learn how to get access to a preconfigured GraphServiceClient and make adhoc API calls using the Graph SDK.
 
-**Graph Controls**
+### Graph Controls
 
 Build Graph experiences with XAML controls and helpers made for UWP, such as [LoginButton](./controls/LoginButton.md) or [PersonView](./controls/PersonView.md).

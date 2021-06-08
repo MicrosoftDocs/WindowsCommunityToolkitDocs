@@ -115,9 +115,9 @@ string token = await provider.GetTokenAsync(silentOnly: false);
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can now make API calls to Microsoft Graph using the Graph SDK or without. 
+Once authenticated, you can now make API calls to Microsoft Graph using the Graph SDK or without.
 
-### Use the Graph SDK 
+### Use the Graph SDK
 
 Access APIs using the Graph SDK through a preconfigured `GraphServiceClient` available through an extension method on `IProvider` called, `GetClient()`.
 See [Microsoft Graph Extensions](../helpers/extensions.md) for more details.

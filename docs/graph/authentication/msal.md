@@ -37,7 +37,7 @@ ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
 | Parameter | Type | Default | Description |
 | -- | -- | -- | -- |
 | clientId | string | | Registered client id. |
-| scopes | string[] | null | Listof scopes to initially request. | 
+| scopes | string[] | null | Listof scopes to initially request. |
 | redirectUri | string | `https://login.microsoftonline.com/common/oauth2/nativeclient` | Redirect URI for authentication response. |
 | autoSignIn | bool | true | Determines whether the provider attempts to silently log in upon instantiation. |
 
