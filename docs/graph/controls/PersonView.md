@@ -20,7 +20,7 @@ The PersonView control is used to display a person or contact by using their pho
 
 ```xml
 <Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
-    <controls:PersonView PersonQuery="me" PersonViewType="TwoLines" />
+    <controls:PersonView PersonQuery="me" PersonViewType="OneLine" />
 </Grid>
 ```
 
@@ -36,7 +36,7 @@ The PersonView control is used to display a person or contact by using their pho
 | IsLargeImage | bool | Value indicating if the image/circle size should be larger. |
 | PersonDetails | Person | Details about this person retrieved from the graph or provided by the developer. |
 | PersonQuery | string | Automatically retrieve data on the specified query from the graph.  Use 'me' to retrieve info about the current user.  Otherwise, it's best to use an e-mail address as a query. |
-| PersonViewType | PersonViewType | Value indicating what type of details should be displayed. |
+| PersonViewType | PersonViewType | Value indicating what type of details should be displayed: `Avatar`, `OneLine`, `TwoLine` |
 | UserId | string | Gets or sets the UserId of the displayed person. |
 | UserPhoto | BitmapImage | Gets or sets the displayed photo. |
 

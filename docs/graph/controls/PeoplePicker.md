@@ -20,7 +20,7 @@ The PeoplePicker searches for people and renders the list of results from Micros
 
 ```xml
 <Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
-    <controls:PeoplePicker/>
+    <controls:PeoplePicker />
 </Grid>
 ```
 
