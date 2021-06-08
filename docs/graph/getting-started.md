@@ -14,7 +14,9 @@ To get started using Graph data in your application, you'll first need to enable
 > [!IMPORTANT]
 > These packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
-## 1A. Setup authentication with MSAL
+## Set the global authentication provider
+
+### Authenticate with MSAL
 
 Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in NetStandard 2.0 applications using [MsalProvider](./authentication/msal.md).
 
@@ -37,7 +39,7 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
 
 > Note: You can use the `Scopes` property to preemptively request permissions from the user of your app for data your app needs to access from Microsoft Graph.
 
-## 1B. Setup authentication with WindowsProvider
+### Authenticate with WindowsProvider
 
 Try out the [WindowsProvider](./authentication/windows.md) to enable authentication based on the native Windows Account Manager (WAM) APIs in your UWP apps, without requiring a dependency on MSAL.
 
@@ -53,7 +55,7 @@ Try out the [WindowsProvider](./authentication/windows.md) to enable authenticat
     ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes);
     ```
 
-## 2. Sign in a user
+## Sign in a user
 
 Call `SignInAsync` to initiate the login process. This will prompt the user to specify an account or provide credentials.
 
@@ -71,7 +73,7 @@ You can also use the [LoginButton](./controls/LoginButton.md) control in UWP XAM
 </Grid>
 ```
 
-## 3. Make a Graph call
+## Make a Graph call
 
 Once you are authenticated, you can then make requests to the Graph using the GraphServiceClient instance via [extensions](./helpers/extensions.md).
 
