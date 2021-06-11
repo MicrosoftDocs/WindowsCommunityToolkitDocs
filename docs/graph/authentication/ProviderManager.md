@@ -26,17 +26,20 @@ The ProviderManager manages access to the globally configured [IProvider](./cust
 
 | Event | Type | Description |
 | -- | -- | -- |
-| ProviderUpdated | EventHandler&lt;ProviderUpdatedEventArgs&gt; | Event called when the IProvider changes. |
+| ProviderUpdated | EventHandler&lt;IProvider&gt; | Event called when the IProvider changes. |
+| ProviderStateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the IProvider changes. |
 
-## ProviderUpdatedEventArgs Object
+## ProviderStateChangedEventArgs Object
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Reason | ProviderManagerChangedState | Gets the reason for the provider update. |
+| OldState | ProviderState | Gets the previous state of the IProvider.
+| NewState | ProviderState | Gets the new state of the IProvider.
 
-## ProviderManagerChangedState Enum
+## ProviderState Enum
 
 | Name | Description |
 | -- | -- |
-| ProviderStateChanged | The IProvider state has changed.|
-| ProviderUpdated | The IProvider instance itself has changed. |
+| Loading | The user's status is not known. |
+| SignedOut | The user is signed-out. |
+| SignedIn | The user is signed-in. |

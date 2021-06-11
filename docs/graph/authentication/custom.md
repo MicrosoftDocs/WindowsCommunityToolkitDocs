@@ -7,9 +7,13 @@ dev_langs:
   - csharp
 ---
 
-# IProvider
+# Custom provider
 
-The `IProvider` is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit. Handle authenticaiton with one of our premade `IProvider` implementations or create your own.
+If you have existing authentication code in your application, you can create a custom provider to enable authentication and access to Microsoft Graph for the toolkit's Graph based controls and helpers. To bring your own authentication provider logic, start by extending `IProvider`.
+
+## IProvider
+
+`IProvider` is the base interface for creating authentication providers that work with the various controls and helpers in the toolkit. Handle authenticaiton with one of our premade `IProvider` implementations or create your own.
 
 > Available in the `CommunityToolkit.Authentication` package.
 
@@ -19,47 +23,31 @@ The `IProvider` is the base interface for creating authentication providers that
 ```csharp
 using CommunityToolkit.Authentication;
 
-IProvider provider = ProviderManager.Instance.GlobalProvider;
+// Create an instance of your custom IProvider implementation.
+IProvider customProvider = new CustomProvider(); 
 
-if (provider?.State == ProviderState.SignedIn)
-{
-    // You are now signed in and can request access tokens.
-}
+// Set the global provider using the custom instance.
+ProviderManager.Instance.GlobalProvider = customProvider;
 ```
 
-## Properties
+### Properties
 
 | Property | Type | Description |
 | -- | -- | -- |
 | State | ProviderState | Gets the current authentication state of the provider. |
 
-## Events
+### Events
 
 | Event | Type | Description |
 | -- | -- | -- |
 | StateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | An event that is called whenever the login state changes.
 
-## Methods
+### Methods
 
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |
 | AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
-| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
+| GetTokenAsync | bool silentOnly = false, string[] scopes = null | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
-
-## ProviderStateChangedEventArgs Object
-
-| Property | Type | Description |
-| -- | -- | -- |
-| OldState | ProviderState | Gets the previous state of the IProvider.
-| NewState | ProviderState | Gets the new state of the IProvider.
-
-## ProviderState Enum
-
-| Name | Description |
-| -- | -- |
-| Loading | The user's status is not known. |
-| SignedOut | The user is signed-out. |
-| SignedIn | The user is signed-in. |

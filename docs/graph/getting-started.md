@@ -83,11 +83,10 @@ Once you are authenticated, you can then make requests to the Graph using the Gr
 using CommunityToolkit.Authentication;
 using CommunityToolkit.Graph.Extensions;
 
-ProviderManager.Instance.ProviderUpdated += (s, e)
+ProviderManager.Instance.ProviderStateChanged += (s, e)
 {
     IProvider provider = ProviderManager.Instance.GlobalProvider;
-    if (e.Reason == ProviderManagerChangedState.ProviderStateChanged &&
-        provider?.State == ProviderState.SignedIn)
+    if (provider?.State == ProviderState.SignedIn)
     {
         var graphClient = provider.GetClient();
         var me = await graphClient.Me.Request().GetAsync();

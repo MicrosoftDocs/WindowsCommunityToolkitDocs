@@ -79,24 +79,22 @@ if (ProviderManager.Instance.GlobalProvider?.State === ProviderState.SignedIn) {
 }
 ```
 
-You can also use the `ProviderUpdated` event to get notified whenever the state of the provider changes.
+You can also use the `ProviderUpdated` and `ProviderStateChanged` events to get notified whenever provider is set or changes state.
 
 ```csharp
 using CommunityToolkit.Authentication;
 
 ProviderManager.Instance.ProviderUpdated += OnProviderUpdated;
+ProviderManager.Instance.ProviderStateChanged += OnProviderStateChanged;
 
-void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
+void OnProviderUpdated(object sender, IProvider provider)
 {
-    if (e.Reason == ProviderManagerChangedState.ProviderUpdated)
-    {
-        // The GlobalProvider has been set or unset.
-    }
+    // The global provider has been set.
+}
 
-    if (e.Reason == ProviderManagerChangedState.ProviderStateChanged)
-    {
-        // The GlobalProvider state has changed.
-    }
+void OnProviderStateChanged(object sender, ProviderUpdatedEventArgs args)
+{
+    // The state of the global provider has changed.
 }
 ```
 
