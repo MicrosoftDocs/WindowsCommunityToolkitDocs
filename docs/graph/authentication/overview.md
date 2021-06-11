@@ -18,7 +18,7 @@ You can use the providers on their own, without components, to quickly implement
 
 The providers are required when using the Microsoft Graph Toolkit helpers and controls so they can access Microsoft Graph APIs. If you already have your own authentication and want to use the helpers and controls, you can use a [custom provider](./custom.md) instead.
 
-The tookit includes the following providers:
+The toolkit includes the following providers:
 
 | Providers | Description |
 | -- | -- |
