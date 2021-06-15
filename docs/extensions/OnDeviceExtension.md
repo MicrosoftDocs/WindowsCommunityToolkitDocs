@@ -19,7 +19,3 @@ Here is how the property can be used in XAML:
    Text="{ui:OnDevice Default=Hi, Desktop=Hello, Xbox=World}"/>
 
 ```
-
-## Examples
-
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
