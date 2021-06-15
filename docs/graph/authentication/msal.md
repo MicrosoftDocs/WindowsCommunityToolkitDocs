@@ -28,7 +28,7 @@ ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
 ## Prerequisite Configure Client Id in Partner Center
 
 > [!IMPORTANT]
-> To obtain a Client Id, first register your app in Azure following the guidance here: Quickstart: Register an application with the Microsoft identity platform
+> To obtain a Client Id, first register your app in Azure following the guidance here: [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 >
 > After finishing the initial registration, you will also need to add an additional redirect URI. Click on "Authentication -> Add a Platform", select "Mobile and desktop applications", and check the "https://login.microsoftonline.com/common/oauth2/nativeclient" checkbox on that page. Then click "Configure".
 
