@@ -1,24 +1,22 @@
 ---
-title: ProviderExtensions
+title: Microsoft Graph Extensions
 author: shweaver-MSFT
-description: Extension methods on IProvider that enable access to the pre-configured GraphServiceClient instance.
+description: Extension methods that enable Graph API calls using the global authentication provider.
 keywords: uwp, wpf, netstandard, windows, community, toolkit, graph, provider, providers, extensions
 dev_langs:
   - csharp
 ---
 
-# ProviderExtensions
+# Microsoft Graph Extensions
 
-The `ProviderExtensions` static class is available in the `CommunityToolkit.Graph` package. These extensions help you make calls to various Graph APIs.
-
-> Available in the `CommunityToolkit.Graph` package.
+Use toolkit extensions to help you make calls to Graph APIs using the global authentication provider. Available in the `CommunityToolkit.Graph` package, `CommunityToolkit.Graph.Extensions` namespace.
 
 > [!IMPORTANT]
 > Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can make API calls to Microsoft Graph using a preconfigured GraphServiceClient instance. Access to the client is enabled through an extension method on [IProvider](../authentication/IProvider.md) called, `GetClient()`.
+Once authenticated, you can make API calls to Microsoft Graph using a preconfigured `GraphServiceClient` instance. Access to the client is enabled through an extension method on [IProvider](../authentication/custom.md) called, `GetClient()`.
 
 ```csharp
 using CommunityToolkit.Authentication;
@@ -73,7 +71,9 @@ public ImageSource GetMyPhoto()
 }
 ```
 
-## Methods
+## Extension methods
+
+The following extension methods are available on `IProvider` via the `CommunityToolkit.Graph.Extensions` namespace.
 
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |

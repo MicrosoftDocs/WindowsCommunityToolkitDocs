@@ -9,41 +9,12 @@ dev_langs:
 
 # ProviderManager
 
-The ProviderManager manages access to the globally configured [IProvider](./IProvider.md) instance and any state change events as users sign in and out.
+The ProviderManager manages access to the globally configured [IProvider](./custom.md) instance and any state change events as users sign in and out.
 
 > Available in the `CommunityToolkit.Authentication` package.
 
 > [!IMPORTANT]
 > Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
-
-## Set the GlobalProvider
-
-```csharp
-using CommunityToolkit.Authentication;
-
-ProviderManager.Instance.GlobalProvider = new WindowsProvider();
-```
-
-## Listen for changes to the GlobalProvider
-
-```csharp
-using CommunityToolkit.Authentication;
-
-ProviderManager.Instance.ProviderUpdated += OnProviderUpdated;
-
-void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
-{
-    if (e.Reason == ProviderManagerChangedState.ProviderUpdated)
-    {
-        // The GlobalProvider has been set.
-    }
-
-    if (e.Reason == ProviderManagerChangedState.ProviderStateChanged)
-    {
-        // The GlobalProvider state has changed.
-    }
-}
-```
 
 ## Properties
 
@@ -55,27 +26,20 @@ void OnProviderUpdated(object sender, ProviderUpdatedEventArgs e)
 
 | Event | Type | Description |
 | -- | -- | -- |
-| ProviderUpdated | EventHandler&lt;ProviderUpdatedEventArgs&gt; | Event called when the IProvider changes. |
+| ProviderUpdated | EventHandler&lt;IProvider&gt; | Event called when the IProvider changes. |
+| ProviderStateChanged | EventHandler&lt;ProviderStateChangedEventArgs&gt; | Event called when the IProvider changes. |
 
-## Methods
-
-| Method | Arguments | Returns | Description |
-| -- | -- | -- | -- |
-| AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
-| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
-| SignInAsync | | Task | Sign in a user. |
-| SignOutAsync | | Task | Sign out the current user. |
-| TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
-
-## ProviderUpdatedEventArgs Object
+## ProviderStateChangedEventArgs Object
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Reason | ProviderManagerChangedState | Gets the reason for the provider update. |
+| OldState | ProviderState | Gets the previous state of the IProvider.
+| NewState | ProviderState | Gets the new state of the IProvider.
 
-## ProviderManagerChangedState Enum
+## ProviderState Enum
 
 | Name | Description |
 | -- | -- |
-| ProviderStateChanged | The [IProvider](./IProvider.md) state has changed.|
-| ProviderUpdated | The [IProvider](./IProvider.md) itself has changed. |
+| Loading | The user's status is not known. |
+| SignedOut | The user is signed-out. |
+| SignedIn | The user is signed-in. |

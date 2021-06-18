@@ -77,27 +77,29 @@
 
 ## [Overview](graph/overview.md)
 
+## [Getting Started](graph/getting-started.md)
+
 ## Authentication
 
 ### [Authentication Overview](graph/authentication/overview.md)
 
-### [IProvider](graph/authentication/IProvider.md)
-
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [MsalProvider](graph/authentication/MsalProvider.md)
+### [MSAL provider](graph/authentication/msal.md)
 
-### [WindowsProvider](graph/authentication/WindowsProvider.md)
+### [Windows provider](graph/authentication/windows.md)
+
+### [Custom provider](graph/authentication/custom.md)
 
 ## Helpers
 
-### [ProviderExtensions](graph/helpers/ProviderExtensions.md)
+### [Microsoft Graph Extensions](graph/helpers/extensions.md)
 
-### RoamingSettingsHelper (Coming soon!)
+<!-- ### RoamingSettingsHelper -->
 
 ## Controls
 
-### GraphPresenter (Coming soon!)
+<!-- ### GraphPresenter -->
 
 ### [LoginButton (Preview)](graph/controls/LoginButton.md)
 
@@ -489,9 +491,9 @@
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
 
-### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
+### [InteractiveProviderBehavior](archive/graph/providers/InteractiveProviderBehavior.md)
 
-### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
+### [MockProviderBehavior](archive/graph/providers/MockProviderBehavior.md)
 
 ## Parsers
 

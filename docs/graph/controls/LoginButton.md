@@ -9,13 +9,10 @@ dev_langs:
 
 # (Preview) LoginButton XAML Control
 
-The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
+The LoginButton is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 
 * When the user is not signed in, the control is a simple button to initiate the sign in process.
 * When the user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://controls?sample=LoginButton)
 
 > Available in the `CommunityToolkit.Graph.Uwp` package.
 
@@ -24,8 +21,10 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 
 ## Syntax
 
-```xaml
-  <wgt:LoginButton/>
+```xml
+<Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
+    <controls:LoginButton />
+</Grid>
 ```
 
 ## Sample Output
@@ -49,20 +48,16 @@ The [LoginButton](/dotnet/api/microsoft.toolkit.graph.controls.loginbutton) is b
 | LogoutInitiated | The user started to logout. |
 | LogoutCompleted | The user signed out. |
 
-## Sample Project
-
-[LoginButton sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LoginButton). You can [see this in action](uwpct://Controls?sample=LoginButton) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
-
 ## Requirements
 
 | Device family | Universal, MinVersion or higher |
 | -- | -- |
-| Namespace | Microsoft.Toolkit.Graph.Controls |
-| NuGet package | [Microsoft.Toolkit.Graph.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Graph.Controls) |
+| Namespace | CommunityToolkit.Graph.Uwp.Controls |
+| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |
 
 ## API
 
-* [LoginButton source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/LoginButton)
+* [LoginButton source code](https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/LoginButton)
 
 ## Related Topics
 
