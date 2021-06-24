@@ -179,6 +179,8 @@
 
 ### [MasterDetailsView](controls/MasterDetailsView.md)
 
+### [MetadataControl](controls/MetadataControl.md)
+
 ### [OrbitView](controls/OrbitView.md)
 
 ### [RadialGauge](controls/RadialGauge.md)
