@@ -2,18 +2,20 @@
 title: Gaze Controls
 author: harishsk
 description: The Gaze Controls library contains a set of reusable controls to make it easier to build gaze enabled apps. This library is built on top of the Gaze Interaction Library that is also part of the toolkit.
-keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community toolkit, gaze, eye gaze, gaze input, gaze interaction, eye tracking, eye tracker
+keywords: windows 10, uwp, uwp community toolkit, uwp toolkit, windows community toolkit, gaze, eye gaze, gaze input, gaze interaction, eye tracking, eye tracker, gaze controls
+dev_langs:
+  - csharp
 ---
 
 # Gaze Controls
 Eye gaze as a form of input is similar to mouse, pen and touch in the sense that it provides a stream of coordinates that the user is looking at. But when it is actually used for input and interaction in applications, the design considerations are significantly different. 
 
-Eye gaze is less precise than pen, touch and mouse. The measurement errors are larger due to lighting and environmental conditions. There is a larger variance among user populations. There is a diversity in the quality and calibration accuracy among different trackers. When these factors are taken into account, it becomes apparent that a user interface designed for mouse, pen or touch cannot be directly used for effective eye gaze interaction. Just as user interfaces originally designed for mouse were modified to suit touch interaction, we need to modify the existing user interfaces to be compatible with eye gaze input. 
+Eye gaze is less precise than pen, touch and mouse. The measurement errors are larger due to lighting and environmental conditions. There is a larger variance among user populations. There is a diversity in the quality and calibration accuracy among different trackers. When these factors are considered, it becomes apparent that a user interface designed for mouse, pen or touch cannot be directly used for effective eye gaze interaction. Just as user interfaces originally designed for mouse were modified to suit touch interaction, we need to modify the existing user interfaces to be compatible with eye gaze input. 
 
 The GazeControls library, built on the [GazeInteraction Library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md),  includes a set of user controls that can be reused in different applications with eye gaze input. Instead of trying to design controls for all forms of input simultaneously these set of controls are designed primarily for eye gaze input. 
 
 # Prerequisites
-Since the GazeControls library is built on top of the GazeInteraction library, the first set of prerequisites are the same as the [prerequsites for the GazeInteraction library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md#prerequisites).
+Since the GazeControls library is built on top of the GazeInteraction library, the first set of prerequisites are the same as the [prerequisites for the GazeInteraction library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md#prerequisites).
 
 There are additional prerequisites for each of the controls and they are listed below in the context of the documentation for the specific control. 
 
@@ -23,10 +25,10 @@ The library currently supports the following user controls.
 * GazeFilePicker
 
 ## GazeKeyboard
-One of the most common uses of eye gaze input is by users with mobility impairments. And the most common task in such scenarios is text input, especially if the user also has a speech impairment, like in the case of users with ALS. Text input with eye gaze is particularly challenging for an assorted set of users. One aspect of that challenge is that it is impossible to design an optimal keyboard layout that works for all users in all occassions. The GazeKeyboard control in this library is intended to address this problem by making it easy to define new keyboard layouts and include them in your gaze application.
+One of the most common uses of eye gaze input is by users with mobility impairments. And the most common task in such scenarios is text input, especially if the user also has a speech impairment, like in the case of users with ALS. Text input with eye gaze is particularly challenging for an assorted set of users. One aspect of that challenge is that it is impossible to design an optimal keyboard layout that works for all users in all occasions. The GazeKeyboard control in this library is intended to address this problem by making it easy to define new keyboard layouts and include them in your gaze application.
 
 ### Prerequsites
-The GazeKeyboard control provides a way to define custom keyboard layouts (including styling) and injects the specific key the user dwells on into the application. In order to perform the key injection, it relies on the `inputInjectionCapability`. Please make sure to add this capability to your application's `Package.appxmanifest` as follows:
+The GazeKeyboard control provides a way to define custom keyboard layouts (including styling) and injects the specific key the user dwells on into the application. To perform the key injection, it relies on the `inputInjectionCapability`. Please make sure to add this capability to your application's `Package.appxmanifest` as follows:
 <Capabilities>
    <DeviceCapability Name="inputInjectionCapability" />
 </Capabilities>
@@ -41,7 +43,7 @@ The `GazeKeyboard` control comes built in with three layouts.
 
 (In the source code, you will see a fourth keyboard layout named `FilenameEntry`. This layout is for use by the `GazeFilePicker` dialog.)
 
-In order to use any of the above layouts, please do the following:
+To use any of the above layouts, please do the following:
 
 * Add the library namespace to the XAML page as follows:
   ```
@@ -71,15 +73,15 @@ You can also define your own custom layouts, include it in your application and 
 Custom layouts are specified directly using XAML and a few attached properties that dictate their behavior. The best way to create new layouts, is to use one of the built-in layouts as a starting point and copy and modify them to your own needs. 
 
 The behavior of the button when it is clicked is governed by a few rules:
-* The top level element must be a `Grid`. (In the simple case, having a name for the `Grid` is optional.)
+* The top-level element must be a `Grid`. (In the simple case, having a name for the `Grid` is optional.)
 * All the styling for the buttons must be contained within the same XAML file in one of the `Resources` sections.
 * All the layout elements must be subclasses of `ButtonBase`. 
-* If a button only has the `Content` property defined, then the content string is injected into the application. E.g. if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.) 
+* If a button only has the `Content` property defined, then the content string is injected into the application. E.g., if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.) 
 * If a button also has a `VK` property defined, then the `Content` property only determines the appearance of the button. The integer value of the `VK` property is injected when the button is pressed. In the example below, a backspace key is injected when the button is pressed.
   ```
   <Button Style="{StaticResource Symbol}" Content="&#xE750;" k:GazeKeyboard.VK="8"/>
   ```
-* If a button has the `VKList` property, the control expects a set of virtual key codes as `Int32` values and injects those list of keys in sequence. E.g. in `MinAAC.xaml` you can see the `VKList` property assigned for clearing the textbox as follows.
+* If a button has the `VKList` property, the control expects a set of virtual key codes as `Int32` values and injects that list of keys in sequence. E.g. in `MinAAC.xaml` you can see the `VKList` property assigned for clearing the textbox as follows.
   ```
     <Button Grid.Row="2" Grid.Column="9" Style="{StaticResource Symbol}" Content="&#xE74D;">
         <k:GazeKeyboard.VKList>
@@ -125,7 +127,7 @@ When the number of keys in the layout is larger than what the application can di
   ```
   <Button Style="{StaticResource Symbol}" Content="&#xE752;" k:GazeKeyboard.PageContainer="FullKeyboard" k:GazeKeyboard.TemporaryPage="UppercasePage" />
   ```
-* **Unicode keys**. If a unicode character is to be injected, the button should specify the `GazeKeyboard.Unicode` property and set its value to the unicode character to inject as shown in the example below.
+* **Unicode keys**. If a unicode character is to be injected, the button should specify the `GazeKeyboard.Unicode` property and set its value to the Unicode character to inject as shown in the example below.
   ```
   <Button Style="{StaticResource Alpha}" Content="&#x1f600;" k:GazeKeyboard.Unicode="&#x1f600;"/>
   ```
