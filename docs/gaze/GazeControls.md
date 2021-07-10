@@ -46,8 +46,9 @@ The application should also add a reference to the [GazeInteraction library nuge
 
 ### Builtin layouts
 
-The `GazeKeyboard` control comes built in with three layouts. 
-* **MinAAC.** This layout defines the minimal possible English layout to enable an AAC (Augmentative and Assistive Communication) application. It simply contains English alphabet and a few editing keys. 
+The `GazeKeyboard` control comes built in with three layouts.
+
+* **MinAAC.** This layout defines the minimal possible English layout to enable an AAC (Augmentative and Assistive Communication) application. It simply contains English alphabet and a few editing keys.
 * **FullKeyboard.** This layout supports all the keys for a full hardware keyboard and also some features found on a software only keyboard, like emojis. It short it is an example of all the features supported by the `GazeKeyboard` control.
 * **TwoStageKeyboard.** This unique feature shows off a way to still support text entry even when the gaze accuracy is extraordinarily low. It takes a minimum of two button presses to enter one alphabet. But it shows how to define a custom layout and support text entry as long as the user can reliably gaze on a four by four grid of buttons on the screen.
 
@@ -90,7 +91,7 @@ The behavior of the button when it is clicked is governed by a few rules:
 * The top-level element must be a `Grid`. (In the simple case, having a name for the `Grid` is optional.)
 * All the styling for the buttons must be contained within the same XAML file in one of the `Resources` sections.
 * All the layout elements must be subclasses of `ButtonBase`. 
-* If a button only has the `Content` property defined, then the content string is injected into the application. E.g., if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.) 
+* If a button only has the `Content` property defined, then the content string is injected into the application. E.g., if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.)
 * If a button also has a `VK` property defined, then the `Content` property only determines the appearance of the button. The integer value of the `VK` property is injected when the button is pressed. In the example below, a backspace key is injected when the button is pressed.
 
   ```
@@ -164,10 +165,10 @@ When the number of keys in the layout is larger than what the application can di
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Target | TextBox | Gets or sets the target text box for injecting keys | 
-| PredictionLanguage | string | Gets or sets the text prediction language | 
+| Target | TextBox | Gets or sets the target text box for injecting keys |
+| PredictionLanguage | string | Gets or sets the text prediction language |
 | LayoutUri | Uri | Gets or sets the URI of the layout file for the keyboard |
-| PredictionTargets | Button[] | Gets or sets the prediction targets buttons. When text prediction is available, the content of the buttons it set to the prediction text. |  
+| PredictionTargets | Button[] | Gets or sets the prediction targets buttons. When text prediction is available, the content of the buttons it set to the prediction text. |
 
 ## GazeFilePicker
 
@@ -182,6 +183,7 @@ The GazeFilePicker provides a gaze optimized subset of the features of the full 
 ### Features
 
 The GazeFilePicker dialog supports the following features:
+
 * Enumerate files and folders in the directories the application has permission to access and display them in a gaze friendly large icon view.
 * Ability to navigate folders using gaze or gaze + switch.
 * Ability to set the file filter type to show only the files matching a specific set of extensions.
