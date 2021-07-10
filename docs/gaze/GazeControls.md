@@ -8,26 +8,30 @@ dev_langs:
 ---
 
 # Gaze Controls
-Eye gaze as a form of input is similar to mouse, pen and touch in the sense that it provides a stream of coordinates that the user is looking at. But when it is actually used for input and interaction in applications, the design considerations are significantly different. 
 
-Eye gaze is less precise than pen, touch and mouse. The measurement errors are larger due to lighting and environmental conditions. There is a larger variance among user populations. There is a diversity in the quality and calibration accuracy among different trackers. When these factors are considered, it becomes apparent that a user interface designed for mouse, pen or touch cannot be directly used for effective eye gaze interaction. Just as user interfaces originally designed for mouse were modified to suit touch interaction, we need to modify the existing user interfaces to be compatible with eye gaze input. 
+Eye gaze as a form of input is similar to mouse, pen and touch in the sense that it provides a stream of coordinates that the user is looking at. But when it is actually used for input and interaction in applications, the design considerations are significantly different.
 
-The GazeControls library, built on the [GazeInteraction Library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md),  includes a set of user controls that can be reused in different applications with eye gaze input. Instead of trying to design controls for all forms of input simultaneously these set of controls are designed primarily for eye gaze input. 
+Eye gaze is less precise than pen, touch and mouse. The measurement errors are larger due to lighting and environmental conditions. There is a larger variance among user populations. There is a diversity in the quality and calibration accuracy among different trackers. When these factors are considered, it becomes apparent that a user interface designed for mouse, pen or touch cannot be directly used for effective eye gaze interaction. Just as user interfaces originally designed for mouse were modified to suit touch interaction, we need to modify the existing user interfaces to be compatible with eye gaze input.
 
-# Prerequisites
+The GazeControls library, built on the [GazeInteraction Library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md),  includes a set of user controls that can be reused in different applications with eye gaze input. Instead of trying to design controls for all forms of input simultaneously these set of controls are designed primarily for eye gaze input.
+
+## Prerequisites
 Since the GazeControls library is built on top of the GazeInteraction library, the first set of prerequisites are the same as the [prerequisites for the GazeInteraction library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md#prerequisites).
 
-There are additional prerequisites for each of the controls and they are listed below in the context of the documentation for the specific control. 
+There are additional prerequisites for each of the controls and they are listed below in the context of the documentation for the specific control.
 
-# Supported controls
-The library currently supports the following user controls. 
+## Supported controls
+The library currently supports the following user controls.
+
 * GazeKeyboard
 * GazeFilePicker
 
 ## GazeKeyboard
+
 One of the most common uses of eye gaze input is by users with mobility impairments. And the most common task in such scenarios is text input, especially if the user also has a speech impairment, like in the case of users with ALS. Text input with eye gaze is particularly challenging for an assorted set of users. One aspect of that challenge is that it is impossible to design an optimal keyboard layout that works for all users in all occasions. The GazeKeyboard control in this library is intended to address this problem by making it easy to define new keyboard layouts and include them in your gaze application.
 
-### Prerequsites
+### GazeKeyboard Prerequsites
+
 The GazeKeyboard control provides a way to define custom keyboard layouts (including styling) and injects the specific key the user dwells on into the application. To perform the key injection, it relies on the `inputInjectionCapability`. Please make sure to add this capability to your application's `Package.appxmanifest` as follows:
 <Capabilities>
    <DeviceCapability Name="inputInjectionCapability" />
@@ -36,6 +40,7 @@ The GazeKeyboard control provides a way to define custom keyboard layouts (inclu
 The application should also add a reference to the [GazeInteraction library nuget](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Input.GazeInteraction/).
 
 ### Builtin layouts
+
 The `GazeKeyboard` control comes built in with three layouts. 
 * **MinAAC.** This layout defines the minimal possible English layout to enable an AAC (Augmentative and Assistive Communication) application. It simply contains English alphabet and a few editing keys. 
 * **FullKeyboard.** This layout supports all the keys for a full hardware keyboard and also some features found on a software only keyboard, like emojis. It short it is an example of all the features supported by the `GazeKeyboard` control.
@@ -54,7 +59,7 @@ To use any of the above layouts, please do the following:
     >
   ```
 
-* Reserve a space in your layout for the gaze keyboard and instantiate the keyboard there. 
+* Reserve a space in your layout for the gaze keyboard and instantiate the keyboard there.
   ```
     <Grid>
         <Grid.RowDefinitions>
@@ -68,11 +73,13 @@ To use any of the above layouts, please do the following:
   ```
 
 ### Custom layouts - Simple
+
 You can also define your own custom layouts, include it in your application and change the layouts on the fly by assigning the `LayoutUri` property of the keyboard control to the URI of your custom keyboard layout as shown above.
 
-Custom layouts are specified directly using XAML and a few attached properties that dictate their behavior. The best way to create new layouts, is to use one of the built-in layouts as a starting point and copy and modify them to your own needs. 
+Custom layouts are specified directly using XAML and a few attached properties that dictate their behavior. The best way to create new layouts, is to use one of the built-in layouts as a starting point and copy and modify them to your own needs.
 
 The behavior of the button when it is clicked is governed by a few rules:
+
 * The top-level element must be a `Grid`. (In the simple case, having a name for the `Grid` is optional.)
 * All the styling for the buttons must be contained within the same XAML file in one of the `Resources` sections.
 * All the layout elements must be subclasses of `ButtonBase`. 
@@ -95,6 +102,7 @@ The behavior of the button when it is clicked is governed by a few rules:
     </Button>
   ```
   In the above example, when this button is pressed, it injects the following sequence of keys:
+
   * Control key down
   * A key down
   * Backspace key down
@@ -104,8 +112,10 @@ The behavior of the button when it is clicked is governed by a few rules:
 
   As you can see, if a key occurs twice in the list, the first is interpreted as a down key, and the second as an up key.
 
-### Custom layouts - Advanced  
+### Custom layouts - Advanced
+
 When the number of keys in the layout is larger than what the application can display (and still have space left over for the actual application needs), it can choose to split up the layout into multiple pages. When this is done, the XAML layout for the custom layout should follow the rules below:
+
 * The top level `Grid` should have a name specified with `x:Name` property.
 * There should be a `GazeKeyboard.PageList` in the layout. This node should include a list of strings that specify the names of other `Grid` notes, which define the separate pages in the layout. The example below is taken from `FullKeyboard.xaml`
   ```
@@ -133,6 +143,7 @@ When the number of keys in the layout is larger than what the application can di
   ```
 
 ### GazeKeyboard Properties
+
 | Property | Type | Description |
 | -- | -- | -- |
 | Target | TextBox | Gets or sets the target text box for injecting keys | 
@@ -141,6 +152,7 @@ When the number of keys in the layout is larger than what the application can di
 | PredictionTargets | Button[] | Gets or sets the prediction targets buttons. When text prediction is available, the content of the buttons it set to the prediction text. |  
 
 ## GazeFilePicker
+
 The GazeFilePicker provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`. 
 ```
 <Capabilities>
@@ -148,6 +160,7 @@ The GazeFilePicker provides a gaze optimized subset of the features of the full 
 </Capabilities>
 ```
 ### Features
+
 The GazeFilePicker dialog supports the following features:
 * Enumerate files and folders in the directories the application has permission to access and display them in a gaze friendly large icon view.
 * Ability to navigate folders using gaze or gaze + switch.
@@ -157,6 +170,7 @@ The GazeFilePicker dialog supports the following features:
 * When the GazeFilePicker is used in save mode, it supports creating new folders and allows specifying a new filename using a gaze friendly keyboard.
 
 ### Sample Code
+
 The following sample code illustrates how to use the GazeFilePicker dialog for file-open and file-save operations.
 
 ```
@@ -186,6 +200,7 @@ private async Task<StorageFile> ShowFilePicker(bool saveMode)
 ```
 
 ### GazeFilePicker Properties
+
 | Property | Type | Description |
 | -- | -- | -- |
 | CurrentFolder | StorageFolder | Gets or sets the current folder for the file picker dialog |
