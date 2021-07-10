@@ -355,6 +355,8 @@
 
 ## [GazeInteractionLibrary](gaze/GazeInteractionLibrary.md)
 
+## [GazeControls](gaze/GazeControls.md)
+
 ## [Notifications](notifications/NotificationsOverview.md)
 
 # Archive
