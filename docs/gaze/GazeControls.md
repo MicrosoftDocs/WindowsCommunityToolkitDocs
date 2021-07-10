@@ -90,7 +90,7 @@ The behavior of the button when it is clicked is governed by a few rules:
 
 * The top-level element must be a `Grid`. (In the simple case, having a name for the `Grid` is optional.)
 * All the styling for the buttons must be contained within the same XAML file in one of the `Resources` sections.
-* All the layout elements must be subclasses of `ButtonBase`. 
+* All the layout elements must be subclasses of `ButtonBase`.
 * If a button only has the `Content` property defined, then the content string is injected into the application. E.g., if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.)
 * If a button also has a `VK` property defined, then the `Content` property only determines the appearance of the button. The integer value of the `VK` property is injected when the button is pressed. In the example below, a backspace key is injected when the button is pressed.
 
@@ -172,7 +172,7 @@ When the number of keys in the layout is larger than what the application can di
 
 ## GazeFilePicker
 
-The GazeFilePicker provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`. 
+The GazeFilePicker provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`.
 
 ```
 <Capabilities>
