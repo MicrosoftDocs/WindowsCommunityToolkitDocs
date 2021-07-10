@@ -16,11 +16,13 @@ Eye gaze is less precise than pen, touch and mouse. The measurement errors are l
 The GazeControls library, built on the [GazeInteraction Library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md),  includes a set of user controls that can be reused in different applications with eye gaze input. Instead of trying to design controls for all forms of input simultaneously these set of controls are designed primarily for eye gaze input.
 
 ## Prerequisites
+
 Since the GazeControls library is built on top of the GazeInteraction library, the first set of prerequisites are the same as the [prerequisites for the GazeInteraction library](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/gaze/GazeInteractionLibrary.md#prerequisites).
 
 There are additional prerequisites for each of the controls and they are listed below in the context of the documentation for the specific control.
 
 ## Supported controls
+
 The library currently supports the following user controls.
 
 * GazeKeyboard
@@ -33,9 +35,12 @@ One of the most common uses of eye gaze input is by users with mobility impairme
 ### GazeKeyboard Prerequsites
 
 The GazeKeyboard control provides a way to define custom keyboard layouts (including styling) and injects the specific key the user dwells on into the application. To perform the key injection, it relies on the `inputInjectionCapability`. Please make sure to add this capability to your application's `Package.appxmanifest` as follows:
+
+```
 <Capabilities>
    <DeviceCapability Name="inputInjectionCapability" />
 </Capabilities>
+```
 
 The application should also add a reference to the [GazeInteraction library nuget](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.Input.GazeInteraction/).
 
@@ -51,6 +56,7 @@ The `GazeKeyboard` control comes built in with three layouts.
 To use any of the above layouts, please do the following:
 
 * Add the library namespace to the XAML page as follows:
+
   ```
   <Page
     ...
@@ -60,6 +66,7 @@ To use any of the above layouts, please do the following:
   ```
 
 * Reserve a space in your layout for the gaze keyboard and instantiate the keyboard there.
+
   ```
     <Grid>
         <Grid.RowDefinitions>
@@ -85,10 +92,13 @@ The behavior of the button when it is clicked is governed by a few rules:
 * All the layout elements must be subclasses of `ButtonBase`. 
 * If a button only has the `Content` property defined, then the content string is injected into the application. E.g., if you have a button defined as `<Button Content="p" />` the `p` key injected when the button is pressed. (This example has been shortened for brevity. In principle, you can add any other `Button` related property like `Grid.Row`, `Style` etc.) 
 * If a button also has a `VK` property defined, then the `Content` property only determines the appearance of the button. The integer value of the `VK` property is injected when the button is pressed. In the example below, a backspace key is injected when the button is pressed.
+
   ```
   <Button Style="{StaticResource Symbol}" Content="&#xE750;" k:GazeKeyboard.VK="8"/>
   ```
+
 * If a button has the `VKList` property, the control expects a set of virtual key codes as `Int32` values and injects that list of keys in sequence. E.g. in `MinAAC.xaml` you can see the `VKList` property assigned for clearing the textbox as follows.
+
   ```
     <Button Grid.Row="2" Grid.Column="9" Style="{StaticResource Symbol}" Content="&#xE74D;">
         <k:GazeKeyboard.VKList>
@@ -101,6 +111,7 @@ The behavior of the button when it is clicked is governed by a few rules:
         </k:GazeKeyboard.VKList>
     </Button>
   ```
+
   In the above example, when this button is pressed, it injects the following sequence of keys:
 
   * Control key down
@@ -118,6 +129,7 @@ When the number of keys in the layout is larger than what the application can di
 
 * The top level `Grid` should have a name specified with `x:Name` property.
 * There should be a `GazeKeyboard.PageList` in the layout. This node should include a list of strings that specify the names of other `Grid` notes, which define the separate pages in the layout. The example below is taken from `FullKeyboard.xaml`
+
   ```
     <k:GazeKeyboard.PageList>
         <x:String>MainPage</x:String>
@@ -126,18 +138,24 @@ When the number of keys in the layout is larger than what the application can di
         <x:String>EmojiPage</x:String>    
     </k:GazeKeyboard.PageList>
   ```
+
   The layout parser now expects to find four different `Grid` nodes with the names of `MainPage`, `UppercasePage`, `NumbersPage` and `EmojiPage`.
 * Only the main layout grid should have its `Visibility` property set to `Visible` and all the other pages should have it set to `Collapsed`.
   
 * **Changing pages**. In order to load a new layout when a particular button on the current layout is pressed, the button should include the `GazeKeyboard.NewPage` property and set the value to the name of one of pages specified in the `PageList` property.  In the following example, keyboard layout changes to the `NumbersPage` when the button is pressed.
+
   ```
   <Button Content="123" k:GazeKeyboard.PageContainer="FullKeyboard" k:GazeKeyboard.NewPage="NumbersPage"/>
   ```
+
 * **TemporaryPages**. The `GazeKeyboard`'s layout engine supports the notion of temporary pages. A temporary page takes over the layout when a button defines `GazeKeyboard.TemporaryPage` property and sets the value to one of the pages found the in the `PageList` property. When any button is pressed even once on the temporary page, the visible page layout immediately transitions back to the previous layout. This mechanism is used to support changing the keyboard layout to upper case when the `Shift` key is pressed and to also support two stage keyboard layouts. When a button defines a `GazeKeyboard.TemporaryPage` property it also needs to define `GazeKeyboard.PageContainer` property to inform the layout engine as to which page layout to load back. The example below, illustrates this.
+
   ```
   <Button Style="{StaticResource Symbol}" Content="&#xE752;" k:GazeKeyboard.PageContainer="FullKeyboard" k:GazeKeyboard.TemporaryPage="UppercasePage" />
   ```
+
 * **Unicode keys**. If a unicode character is to be injected, the button should specify the `GazeKeyboard.Unicode` property and set its value to the Unicode character to inject as shown in the example below.
+
   ```
   <Button Style="{StaticResource Alpha}" Content="&#x1f600;" k:GazeKeyboard.Unicode="&#x1f600;"/>
   ```
@@ -154,11 +172,13 @@ When the number of keys in the layout is larger than what the application can di
 ## GazeFilePicker
 
 The GazeFilePicker provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`. 
+
 ```
 <Capabilities>
   <DeviceCapability Name="documentsLibrary"/>
 </Capabilities>
 ```
+
 ### Features
 
 The GazeFilePicker dialog supports the following features:
@@ -209,7 +229,6 @@ private async Task<StorageFile> ShowFilePicker(bool saveMode)
 | SaveMode | bool | Gets or sets a value indicating whether this is FileSave dialog or a FileOpen dialog |
 | SelectedItem | StorageFile | Gets the currently selected file in the dialog as a StorageFile |
 
-
 ## Sample Project
 
 [GazeControlsPage](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeControls/). You can [see this in action](uwpct://Gaze?sample=GazeControls) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
@@ -228,7 +247,3 @@ private async Task<StorageFile> ShowFilePicker(bool saveMode)
 ## Related Topics
 
 * [Windows 10 Gaze Input APIs](/uwp/api/windows.devices.input.preview)
-
-
-
-
