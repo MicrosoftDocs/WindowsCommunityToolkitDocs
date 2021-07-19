@@ -132,7 +132,7 @@ ProviderManager.Instance.GlobalProvider = new WindowsProvider(scopes, accountsSe
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |
 | AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
-| GetTokenAsync | bool silentOnly = true, string[] scopes = null | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
+| GetTokenAsync | bool silentOnly = true | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
 | TrySilentSignInAsync | | Task&lt;bool&gt; | Try signing in silently, without prompts. |
