@@ -183,6 +183,7 @@ The file picker controls provides a gaze optimized subset of the features of the
 ```
 
 ### Features
+
 Both dialogs support a common set of features:
 
 * Enumerate files and folders in the directories the application has permission to access and display them in a gaze friendly large icon view.
@@ -192,10 +193,13 @@ Both dialogs support a common set of features:
 * A gaze friendly scroll bar.
 
 ### GazeFileOpenPicker
+
 `GazeFileOpenPicker` supports the selection and opening of existing files and does not support creation of new folders or files.
 
 ### GazeFileSavePicker
+
 `GazeFileSavePicker` supports the following additional capabilities:
+
 * Creation of new folders
 * Ability to choose a new filename in a keyboard layout that is optimized for entering file names with gaze
 * An additional warning dialog is displayed when an existing file is about to be overwritten.
@@ -205,6 +209,7 @@ Both dialogs support a common set of features:
 The following sample code illustrates how to use the GazeFilePicker dialog for file-open and file-save operations.
 
 ```
+
 private async void OnFileOpen(object sender, RoutedEventArgs e)
 {
     var picker = new GazeFileSavePicker();
@@ -253,6 +258,7 @@ In order to use the `GazeScrollbar` please make the following changes to your co
 ### Add the GazeScrollbar to your XAML page
 
 The first step is to the add `GazeScrollbar` control to your XAML page as follows.
+
 ```
 <gc:GazeScrollbar Grid.Row="0" Grid.Column="1" x:Name="CurrentFolderScrollbar" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 ```
@@ -263,9 +269,11 @@ While the scrollbar can be placed anywhere on the page independent of the attach
 ### Attach the ScrollViewer to GazeScrollbar
 
 Next the scrollbar needs to be attached to the ScrollViewer as follows in a relevant event handler after the visual tree has been loaded.
+
 ```
 GazeScrollbar.Attach(scrollViewer);
 ```
+
 > NB: In some cases the scroll viewer is part of a larger control template and is not directly accessible, e.g. `GridView`. In such cases, you can access the embedded `ScrollViewer` by subclassing the `GridView` (or similar control), overriding `OnApplyTemplate` and extracting the templated `ScrollViewer` by calling `GetTemplateChild`. You can follow the example in the `ScrollGridView` class in the GazeControls library
 
 ### Set the line height for the GazeScrollbar
@@ -279,8 +287,6 @@ The GazeScrollbar has two pairs of buttons for each direction of scrolling. E.g.
 | Orientation | Orientation | Gets or sets the orientation of the scrollbar |
 | LineWidth | double | Gets or sets the distance to scroll horizontally when a line-left or line-right button is pressed |
 | LineHeight | double | Gets or sets the distance to scroll vertically when a line-up or line-down button is pressed |
-
-
 
 ## Sample Project
 
