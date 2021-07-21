@@ -26,7 +26,9 @@ There are additional prerequisites for each of the controls and they are listed 
 The library currently supports the following user controls.
 
 * GazeKeyboard
-* GazeFilePicker
+* GazeFileOpenPicker
+* GazeFileSavePicker
+* GazeScrollbar
 
 ## GazeKeyboard
 
@@ -74,9 +76,9 @@ To use any of the above layouts, please do the following:
             <RowDefinition />
             <RowDefinition />
         </Grid.RowDefinitions>
-    <gc:GazeKeyboard x:Name="GazeKeyboard" Grid.Row="1"  
+    <gc:GazeKeyboard x:Name="GazeKeyboard" Grid.Row="1"
                      LayoutUri="ms-appx:///Microsoft.Toolkit.Uwp.Input.GazeControls/KeyboardLayouts/MinAAC.xaml" />
-        
+
     </Grid>
   ```
 
@@ -136,13 +138,13 @@ When the number of keys in the layout is larger than what the application can di
         <x:String>MainPage</x:String>
         <x:String>UppercasePage</x:String>
         <x:String>NumbersPage</x:String>
-        <x:String>EmojiPage</x:String>    
+        <x:String>EmojiPage</x:String>
     </k:GazeKeyboard.PageList>
   ```
 
   The layout parser now expects to find four different `Grid` nodes with the names of `MainPage`, `UppercasePage`, `NumbersPage` and `EmojiPage`.
 * Only the main layout grid should have its `Visibility` property set to `Visible` and all the other pages should have it set to `Collapsed`.
-  
+
 * **Changing pages**. In order to load a new layout when a particular button on the current layout is pressed, the button should include the `GazeKeyboard.NewPage` property and set the value to the name of one of pages specified in the `PageList` property.  In the following example, keyboard layout changes to the `NumbersPage` when the button is pressed.
 
   ```
@@ -170,9 +172,9 @@ When the number of keys in the layout is larger than what the application can di
 | LayoutUri | Uri | Gets or sets the URI of the layout file for the keyboard |
 | PredictionTargets | Button[] | Gets or sets the prediction targets buttons. When text prediction is available, the content of the buttons it set to the prediction text. |
 
-## GazeFilePicker
+## GazeFileOpenPicker and GazeFileSavePicker
 
-The GazeFilePicker provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`.
+The file picker controls provides a gaze optimized subset of the features of the full OS native file picker dialog. Since this control needs to enumerate the file system, appropriate capabilities need to be declared in the `Package.appxmanifest` file in the application that uses this control. E.g. if an application is going to access the documents folders, then the application needs to add the following line to the `<Capabilities>` sectioni of `Package.appxmanifest`.
 
 ```
 <Capabilities>
@@ -181,15 +183,22 @@ The GazeFilePicker provides a gaze optimized subset of the features of the full 
 ```
 
 ### Features
-
-The GazeFilePicker dialog supports the following features:
+Both dialogs support a common set of features:
 
 * Enumerate files and folders in the directories the application has permission to access and display them in a gaze friendly large icon view.
 * Ability to navigate folders using gaze or gaze + switch.
 * Ability to set the file filter type to show only the files matching a specific set of extensions.
 * Ability to define a set of folders as "favorite" starting points for the application
 * A gaze friendly scroll bar.
-* When the GazeFilePicker is used in save mode, it supports creating new folders and allows specifying a new filename using a gaze friendly keyboard.
+
+### GazeFileOpenPicker
+`GazeFileOpenPicker` supports the selection and opening of existing files and does not support creation of new folders or files.
+
+### GazeFileSavePicker
+`GazeFileSavePicker` supports the following additional capabilities:
+* Creation of new folders
+* Ability to choose a new filename in a keyboard layout that is optimized for entering file names with gaze
+* An additional warning dialog is displayed when an existing file is about to be overwritten.
 
 ### Sample Code
 
@@ -198,19 +207,19 @@ The following sample code illustrates how to use the GazeFilePicker dialog for f
 ```
 private async void OnFileOpen(object sender, RoutedEventArgs e)
 {
-    var file = await ShowFilePicker(false);
-    _textControl.Text = await FileIO.ReadTextAsync(file);
+    var picker = new GazeFileSavePicker();
+    var library = await StorageLibrary.GetLibraryAsync(KnownLibraryId.Documents);
+    picker.CurrentFolder = library.SaveFolder;
+    picker.FileTypeFilter.Add(".txt");
+    picker.FileTypeFilter.Add(".log");
+    picker.SaveMode = saveMode;
+    await picker.ShowAsync();
+    _textControl.Text = await FileIO.ReadTextAsync(picker.SelectedItem);
 }
 
 private async void OnFileSave(object sender, RoutedEventArgs e)
 {
-    var file = await ShowFilePicker(true);
-    await FileIO.WriteTextAsync(file, _textControl.Text);
-}
-
-private async Task<StorageFile> ShowFilePicker(bool saveMode)
-{
-    var picker = new GazeFilePicker();
+    var picker = new GazeFileSavePicker();
     var library = await StorageLibrary.GetLibraryAsync(KnownLibraryId.Documents);
     picker.CurrentFolder = library.SaveFolder;
     picker.FileTypeFilter.Add(".txt");
@@ -218,6 +227,7 @@ private async Task<StorageFile> ShowFilePicker(bool saveMode)
     picker.SaveMode = saveMode;
     await picker.ShowAsync();
     return picker.SelectedItem;
+    await FileIO.WriteTextAsync(picker.SelectedItem, _textControl.Text);
 }
 ```
 
@@ -230,6 +240,41 @@ private async Task<StorageFile> ShowFilePicker(bool saveMode)
 | FileTypeFilter | List\<string\> | Gets or sets the collection of file types that the file open picker displays. |
 | SaveMode | bool | Gets or sets a value indicating whether this is FileSave dialog or a FileOpen dialog |
 | SelectedItem | StorageFile | Gets the currently selected file in the dialog as a StorageFile |
+
+## GazeScrollbar
+The builtin scrollbar control that is attached to ScrollViewers is difficult to use with eye gaze because
+the scroll buttons are too small and not easily targetable with eye gaze. In theory it is possible to re-template the built-in scrollbar and make the scroll buttons and the whole scroll bar larger. But these scroll buttons are not returned as valid elements from hit testing and hence these buttons are not accessible via eye gaze. Therefore, this library supports the functionality of a scroll bar as a standalone control that can be attached to any `ScrollViewer`.
+
+### Usage
+In order to use the `GazeScrollbar` please make the following changes to your code.
+
+### Add the GazeScrollbar to your XAML page
+The first step is to the add `GazeScrollbar` control to your XAML page as follows.
+```
+<gc:GazeScrollbar Grid.Row="0" Grid.Column="1" x:Name="CurrentFolderScrollbar" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+```
+
+The important property above is `Orientation` which determines whether it is a horizontal or vertical scrollbar.
+While the scrollbar can be placed anywhere on the page independent of the attached scrollview, it is best positioned in a grid next to the scrollview it is controlling.
+
+### Attach the ScrollViewer to GazeScrollbar
+Next the scrollbar needs to be attached to the ScrollViewer as follows in a relevant event handler after the visual tree has been loaded.
+```
+GazeScrollbar.Attach(scrollViewer);
+```
+> NB: In some cases the scroll viewer is part of a larger control template and is not directly accessible, e.g. `GridView`. In such cases, you can access the embedded `ScrollViewer` by subclassing the `GridView` (or similar control), overriding `OnApplyTemplate` and extracting the templated `ScrollViewer` by calling `GetTemplateChild`. You can follow the example in the `ScrollGridView` class in the GazeControls library
+
+### Set the line height for the GazeScrollbar
+The GazeScrollbar has two pairs of buttons for each direction of scrolling. E.g. to scroll down, it has a button for scrolling one line at a time, and another for scrolling a page at a time. The page size is automatically determined by the size of the viewport and the size of the content in the `ScrollViewer`. However, the size of the line is scenario dependent. E.g. in the case of text it is the height of the line and in the case of a list view, it is dependent on the height of each item. The GazeScrollbar supports `LineHeight` and `LineWidth` properties that can be used to control the distance to scroll when one of the line scrolling buttons are pressed.
+
+### GazeScrollbar properties
+| Property | Type | Description |
+| -- | -- | -- |
+| Orientation | Orientation | Gets or sets the orientation of the scrollbar |
+| LineWidth | double | Gets or sets the distance to scroll horizontally when a line-left or line-right button is pressed |
+| LineHeight | double | Gets or sets the distance to scroll vertically when a line-up or line-down button is pressed |
+
+
 
 ## Sample Project
 
