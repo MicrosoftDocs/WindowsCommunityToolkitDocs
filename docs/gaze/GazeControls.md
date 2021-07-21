@@ -242,13 +242,16 @@ private async void OnFileSave(object sender, RoutedEventArgs e)
 | SelectedItem | StorageFile | Gets the currently selected file in the dialog as a StorageFile |
 
 ## GazeScrollbar
+
 The builtin scrollbar control that is attached to ScrollViewers is difficult to use with eye gaze because
 the scroll buttons are too small and not easily targetable with eye gaze. In theory it is possible to re-template the built-in scrollbar and make the scroll buttons and the whole scroll bar larger. But these scroll buttons are not returned as valid elements from hit testing and hence these buttons are not accessible via eye gaze. Therefore, this library supports the functionality of a scroll bar as a standalone control that can be attached to any `ScrollViewer`.
 
 ### Usage
+
 In order to use the `GazeScrollbar` please make the following changes to your code.
 
 ### Add the GazeScrollbar to your XAML page
+
 The first step is to the add `GazeScrollbar` control to your XAML page as follows.
 ```
 <gc:GazeScrollbar Grid.Row="0" Grid.Column="1" x:Name="CurrentFolderScrollbar" Orientation="Vertical" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
@@ -258,6 +261,7 @@ The important property above is `Orientation` which determines whether it is a h
 While the scrollbar can be placed anywhere on the page independent of the attached scrollview, it is best positioned in a grid next to the scrollview it is controlling.
 
 ### Attach the ScrollViewer to GazeScrollbar
+
 Next the scrollbar needs to be attached to the ScrollViewer as follows in a relevant event handler after the visual tree has been loaded.
 ```
 GazeScrollbar.Attach(scrollViewer);
@@ -265,9 +269,11 @@ GazeScrollbar.Attach(scrollViewer);
 > NB: In some cases the scroll viewer is part of a larger control template and is not directly accessible, e.g. `GridView`. In such cases, you can access the embedded `ScrollViewer` by subclassing the `GridView` (or similar control), overriding `OnApplyTemplate` and extracting the templated `ScrollViewer` by calling `GetTemplateChild`. You can follow the example in the `ScrollGridView` class in the GazeControls library
 
 ### Set the line height for the GazeScrollbar
+
 The GazeScrollbar has two pairs of buttons for each direction of scrolling. E.g. to scroll down, it has a button for scrolling one line at a time, and another for scrolling a page at a time. The page size is automatically determined by the size of the viewport and the size of the content in the `ScrollViewer`. However, the size of the line is scenario dependent. E.g. in the case of text it is the height of the line and in the case of a list view, it is dependent on the height of each item. The GazeScrollbar supports `LineHeight` and `LineWidth` properties that can be used to control the distance to scroll when one of the line scrolling buttons are pressed.
 
 ### GazeScrollbar properties
+
 | Property | Type | Description |
 | -- | -- | -- |
 | Orientation | Orientation | Gets or sets the orientation of the scrollbar |
