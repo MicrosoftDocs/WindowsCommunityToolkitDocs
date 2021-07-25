@@ -139,17 +139,17 @@ Use SmoothScrollIntoView helps to scroll the item into the view with animation. 
 
 ```csharp
 // Scrolling with index
-await MyGridView.SmoothScrollIntoViewWithIndex(index: int, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
+await MyGridView.SmoothScrollIntoViewWithIndexAsync(index: int, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
 
 // Scrolling with item
-await MyGridView.SmoothScrollIntoViewWithItem(item: object, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
+await MyGridView.SmoothScrollIntoViewWithItemAsync(item: object, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
 ```
 ```vb
 ' Scrolling with index
-Await MyGridView.SmoothScrollIntoViewWithItem(index:=Integer, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
+Await MyGridView.SmoothScrollIntoViewWithItemAsync(index:=Integer, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
 
 ' Scrolling with item
-Await MyGridView.SmoothScrollIntoViewWithItem(item:=Object, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
+Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
 ```
 
 ## Sample Output
@@ -160,19 +160,16 @@ Await MyGridView.SmoothScrollIntoViewWithItem(item:=Object, itemPlacement:=ItemP
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| SmoothScrollIntoViewWithIndex(int, ItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With index number |
-| SmoothScrollIntoViewWithItem(object, ItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With item object |
-
-> [!NOTE]
-> Even though this return `Task`, it will not wait until the scrolling completes
+| SmoothScrollIntoViewWithIndexAsync(int, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With index number |
+| SmoothScrollIntoViewWithItemAsync(object, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With item object |
 
 ## Method params
 
 | Properties | Type | Description |
 |------------|------|-------------|
-| intex      | int  | Intex of the item to be scrolled |
+| intex      | int  | Intex of the item to be scrolled. Index can be negative |
 | item      | int  | Intex of the item to be scrolled |
-| itemPosition | Enum | Specify the position of the Item after scrolling |
+| itemPosition | ScrollItemPlacement | Specify the position of the Item after scrolling |
 | disableAnimation | bool | To disable the scrolling animation |
 | scrollIfVisibile | bool | Set `true` to scroll even if the scroll to item is visible so that the item will be aligned depend upon `itemPosition` |
 | additionalHorizontalOffset | bool | Give addition horizontal offset |
@@ -180,7 +177,7 @@ Await MyGridView.SmoothScrollIntoViewWithItem(item:=Object, itemPlacement:=ItemP
 
 ### ItemPosition
 
-| ItemPosition | Description |
+| ScrollItemPlacement | Description |
 |--------------|-------------|
 | Default | If visible then it will not scroll, if not then item will be aligned to the nearest edge |
 | Left | Aligned left |
