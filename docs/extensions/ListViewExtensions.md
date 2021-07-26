@@ -113,8 +113,6 @@ Use SmoothScrollIntoView helps to scroll the item into the view with animation. 
 
 ### Syntax
 
-**C#**
-
 ```csharp
 // Scrolling with index
 await MyGridView.SmoothScrollIntoViewWithIndexAsync(index: int, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
@@ -122,6 +120,7 @@ await MyGridView.SmoothScrollIntoViewWithIndexAsync(index: int, itemPlacement: I
 // Scrolling with item
 await MyGridView.SmoothScrollIntoViewWithItemAsync(item: object, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
 ```
+
 ```vb
 ' Scrolling with index
 Await MyGridView.SmoothScrollIntoViewWithItemAsync(index:=Integer, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
@@ -169,7 +168,7 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 - We can use this extension to make the selected item always centered.
 
     **Sample Code**
-    
+
     ```xaml
     <ListView ItemsSource="{x:Bind itemSources}" SelectionChanged="ListView_SelectionChanged">
         <ListView.ItemTemplate>
@@ -192,6 +191,7 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
         await listView.SmoothScrollIntoViewWithIndex(listView.SelectedIndex, ItemPlacement.Centre, false, true);
     }
     ```
+
     ```vb
     Private Async Sub ListView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
         Dim listView = (TryCast(sender, ListView))
@@ -214,4 +214,4 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 
 ## API
 
-* [ListViewExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
+- [ListViewExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
