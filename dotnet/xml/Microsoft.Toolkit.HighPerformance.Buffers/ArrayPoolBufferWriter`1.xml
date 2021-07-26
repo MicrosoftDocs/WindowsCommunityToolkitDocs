@@ -1,0 +1,478 @@
+<Type Name="ArrayPoolBufferWriter&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class ArrayPoolBufferWriter&lt;T&gt; : IDisposable, Microsoft.Toolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;, System.Buffers.IBufferWriter&lt;T&gt;, System.Buffers.IMemoryOwner&lt;T&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArrayPoolBufferWriter`1&lt;T&gt; extends System.Object implements class Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1&lt;!T&gt;, class System.Buffers.IBufferWriter`1&lt;!T&gt;, class System.Buffers.IMemoryOwner`1&lt;!T&gt;, class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayPoolBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T), IDisposable, IMemoryOwner(Of T)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="F#" Value="type ArrayPoolBufferWriter&lt;'T&gt; = class&#xA;    interface IBuffer&lt;'T&gt;&#xA;    interface IBufferWriter&lt;'T&gt;&#xA;    interface IMemoryOwner&lt;'T&gt;&#xA;    interface IDisposable" />
+  <TypeSignature Language="C#" Value="public sealed class ArrayPoolBufferWriter&lt;T&gt; : Microsoft.Toolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;, System.Buffers.IBufferWriter&lt;T&gt;, System.Buffers.IMemoryOwner&lt;T&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayPoolBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T), IMemoryOwner(Of T)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Buffers.IBufferWriter&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Buffers.IMemoryOwner&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView`1))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items to write to the current instance.</typeparam>
+    <summary>
+            Represents a heap-based, array-backed output sink into which <typeparamref name="T" /> data can be written.
+            </summary>
+    <remarks>
+            This is a custom <see cref="T:System.Buffers.IBufferWriter`1" /> implementation that replicates the
+            functionality and API surface of the array-based buffer writer available in
+            .NET Standard 2.1, with the main difference being the fact that in this case
+            the arrays in use are rented from the shared <see cref="T:System.Buffers.ArrayPool`1" /> instance,
+            and that <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> is also available on .NET Standard 2.0.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayPoolBufferWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayPoolBufferWriter (System.Buffers.ArrayPool&lt;T&gt; pool);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.ArrayPool`1&lt;!T&gt; pool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.#ctor(System.Buffers.ArrayPool{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pool As ArrayPool(Of T))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; : System.Buffers.ArrayPool&lt;'T&gt; -&gt; Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; pool" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayPoolBufferWriter (int initialCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCapacity As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; : int -&gt; Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; initialCapacity" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="initialCapacity" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="initialCapacity">The minimum capacity with which to initialize the underlying buffer.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="initialCapacity" /> is not positive (i.e. less than or equal to 0).
+            </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="initialCapacity" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ArrayPoolBufferWriter (System.Buffers.ArrayPool&lt;T&gt; pool, int initialCapacity);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Buffers.ArrayPool`1&lt;!T&gt; pool, int32 initialCapacity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.#ctor(System.Buffers.ArrayPool{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pool As ArrayPool(Of T), initialCapacity As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; : System.Buffers.ArrayPool&lt;'T&gt; * int -&gt; Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt; (pool, initialCapacity)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="initialCapacity" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <param name="initialCapacity">The minimum capacity with which to initialize the underlying buffer.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="initialCapacity" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Advance">
+      <MemberSignature Language="C#" Value="public void Advance (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Advance(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.Advance(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Advance (count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Advance : int -&gt; unit&#xA;override this.Advance : int -&gt; unit" Usage="arrayPoolBufferWriter.Advance count" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.Advance(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public int Capacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Integer" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int" Usage="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;.Capacity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.Capacity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="arrayPoolBufferWriter.Clear " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="arrayPoolBufferWriter.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</summary>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~ArrayPoolBufferWriter ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="arrayPoolBufferWriter.Finalize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Finalizes an instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeCapacity">
+      <MemberSignature Language="C#" Value="public int FreeCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FreeCapacity" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.FreeCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FreeCapacity As Integer" />
+      <MemberSignature Language="F#" Value="member this.FreeCapacity : int" Usage="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;.FreeCapacity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.FreeCapacity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; GetMemory (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Memory`1&lt;!T&gt; GetMemory(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.GetMemory(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemory (Optional sizeHint As Integer = 0) As Memory(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemory : int -&gt; Memory&lt;'T&gt;&#xA;override this.GetMemory : int -&gt; Memory&lt;'T&gt;" Usage="arrayPoolBufferWriter.GetMemory sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetMemory(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpan">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; GetSpan (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Span`1&lt;!T&gt; GetSpan(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.GetSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpan (Optional sizeHint As Integer = 0) As Span(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpan : int -&gt; Span&lt;'T&gt;&#xA;override this.GetSpan : int -&gt; Span&lt;'T&gt;" Usage="arrayPoolBufferWriter.GetSpan sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Buffers.IMemoryOwner&lt;T&gt;.Memory">
+      <MemberSignature Language="C#" Value="Memory&lt;T&gt; System.Buffers.IMemoryOwner&lt;T&gt;.Memory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; System.Buffers.IMemoryOwner&lt;T&gt;.Memory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.System#Buffers#IMemoryOwner&lt;T&gt;#Memory" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Memory As Memory(Of T) Implements IMemoryOwner(Of T).Memory" />
+      <MemberSignature Language="F#" Value="member this.System.Buffers.IMemoryOwner&lt;T&gt;.Memory : Memory&lt;'T&gt;" Usage="System.Buffers.IMemoryOwner&lt;T&gt;.Memory" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Buffers.IMemoryOwner`1.Memory</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="arrayPoolBufferWriter.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenCount">
+      <MemberSignature Language="C#" Value="public int WrittenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WrittenCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.WrittenCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.WrittenCount : int" Usage="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;.WrittenCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.WrittenCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenMemory">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;T&gt; WrittenMemory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; WrittenMemory" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.WrittenMemory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenMemory As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="F#" Value="member this.WrittenMemory : ReadOnlyMemory&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;.WrittenMemory" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.WrittenMemory</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; WrittenSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; WrittenSpan" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1.WrittenSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="F#" Value="member this.WrittenSpan : ReadOnlySpan&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter&lt;'T&gt;.WrittenSpan" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.HighPerformance.Buffers.IBuffer`1.WrittenSpan</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

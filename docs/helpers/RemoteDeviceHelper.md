@@ -9,17 +9,17 @@ dev_langs:
 
 # RemoteDeviceHelper
 
-The [RemoteDeviceHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicehelper) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
+The [RemoteDeviceHelper](/dotnet/api/microsoft.toolkit.uwp.helpers.remotedevicehelper) gives you a list of Remote Systems. All the systems must be signed in with the same Microsoft Account (MSA)
 
 > [!IMPORTANT]
-> Make sure you enable the [RemoteSystem capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
+> Make sure you enable the [RemoteSystem capability](/windows/uwp/packaging/app-capability-declarations#general-use-capabilities) in your app's `package.appxmanifest` to access remote system information.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=RemoteDeviceHelper)
 
 ## Syntax
 
-```c#
+```csharp
 
 RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
 
@@ -27,7 +27,7 @@ RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
 
 You can also use default filter types for initializing. Like Below.
 
-```c#
+```csharp
 
 var filters = new List<IRemoteSystemFilter>
 {
@@ -41,7 +41,7 @@ RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper(filters);
 
 ## Example
 
-```c#
+```csharp
 // without filters
 
 RemoteDeviceHelper _remoteDeviceHelper = new RemoteDeviceHelper();
@@ -67,14 +67,14 @@ DevicesList.DataContext = _remoteDeviceHelper;
 <ListView ItemsSource="{Binding RemoteSystems}" x:Name="DevicesList">
   <ListView.ItemTemplate>
     <DataTemplate>
-	  <Grid>
-		<Grid.RowDefinitions>
-		  <RowDefinition Height="*"/>
-		  <RowDefinition Height="*"/>
-		</Grid.RowDefinitions>
-		<TextBlock Text="{Binding DisplayName}" Tag="{Binding }" Grid.Row="0" />
-		<TextBlock Text="{Binding ModelDisplayName}" Tag="{Binding }" Grid.Row="1" />
-	  </Grid>
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding DisplayName}" Tag="{Binding }" Grid.Row="0" />
+        <TextBlock Text="{Binding ModelDisplayName}" Tag="{Binding }" Grid.Row="1" />
+      </Grid>
     </DataTemplate>
   </ListView.ItemTemplate>
 </ListView>
@@ -83,7 +83,7 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ## Sample Project
 
-[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can [see this in action](uwpct://Helpers?sample=RemoteDeviceHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[RemoteDeviceHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RemoteDeviceHelper). You can [see this in action](uwpct://Helpers?sample=RemoteDeviceHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -94,12 +94,12 @@ DevicesList.DataContext = _remoteDeviceHelper;
 
 ## API
 
-* [RemoteDeviceHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp/Helpers/RemoteDeviceHelper)
+* [RemoteDeviceHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/RemoteDeviceHelper)
 
 ## Related Topics
 
-* [Project Rome](https://developer.microsoft.com/en-us/windows/project-rome)
-* [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems)
-* [Connected apps and devices (Project Rome)](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/connected-apps-and-devices)
-* [Communicate with a remote app service](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/AppServices)
+* [Project Rome](https://developer.microsoft.com/windows/project-rome)
+* [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.0.0/Samples/RemoteSystems)
+* [Connected apps and devices (Project Rome)](/windows/uwp/launch-resume/connected-apps-and-devices)
+* [Communicate with a remote app service](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.0.0/Samples/AppServices)

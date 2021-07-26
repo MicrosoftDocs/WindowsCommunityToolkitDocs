@@ -1,13 +1,16 @@
 ---
 title: PowerBIEmbedded Control
 author: OGcanviz
-description: The PowerBIEmbedded control is a simple wrapper to an IFRAME for a PowerBI embed.
+description: The PowerBIEmbedded control is a simple wrapper to an IFRAME for a PowerBI embed (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, PowerBIEmbedded Control
 ---
 
 # PowerBIEmbedded Control
 
-The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph check out the [Windows Community Toolkit - Graph Helpers and Controls](../../graph/overview.md).)
+
+The [PowerBIEmbedded Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.powerbiembedded) is a simple wrapper to an IFRAME for a PowerBI embed.
 
 ## Syntax
 
@@ -39,50 +42,45 @@ The [PowerBIEmbedded Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 [MicrosoftGraphService](../../services/MicrosoftGraph.md#register-the-app-to-use-azure-ad-v1-endpoint) to create Azure AD app registration (v1), and grant the permissions below.
 
    * Microsoft Graph
-      - Sign in and read user profile
-      - Read all users' basic profiles
-      - Sign users in
+      * Sign in and read user profile
+      * Read all users' basic profiles
+      * Sign users in
 
    * Windows Azure Active Directory
-      - Sign in and read user profile
+      * Sign in and read user profile
 
    * Power BI Service (Microsoft.Azure.AnalysisServices)
 
-      - View all datapools
-      - View users Groups
-      - View all Groups
-      - View all Reports
-      - View all Datasets
-      - View all Dashboards
-      - View all workspaces
-        ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
+      * View all datapools
+      * View users Groups
+      * View all Groups
+      * View all Reports
+      * View all Datasets
+      * View all Dashboards
+      * View all workspaces
 
-<!-- workaround for bullets styling -->
-2. Follow this [article](https://docs.microsoft.com/en-us/power-bi/developer/embedding-content) to do the primary tasks below.
+      ![PowerBIEmbedded Permissions](../../resources/images/Graph/PowerBIEmbedded-Permissions.png)
+
+2. Follow this [article](/power-bi/developer/embedding-content) to do the primary tasks below.
 
    * Create Power BI Pro user account
    * Create app workspaces
    * Create Power BI Embedded capacity
    * Create and publish reports
 
-<!-- workaround for bullets styling -->
-3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](https://docs.microsoft.com/en-us/power-bi/desktop-create-phone-report).
+3. For better report experience in mobile, that's recommended to [design phone layout for mobile portrait view in PowerBI desktop](/power-bi/desktop-create-phone-report).
 
 ## Sample Project
 
-[PowerBIEmbedded Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PowerBIEmbedded Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PowerBIEmbedded). You can [see this in action](uwpct://Controls?sample=PowerBIEmbedded) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[PowerBIEmbedded XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded/PowerBIEmbedded.xaml) is the XAML template used in the toolkit for the default styling.
+[PowerBIEmbedded XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded/PowerBIEmbedded.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
-| Device family | Universal, 10.0.16299.0 or higher |
+| Device family | Universal, 10.0.17763.0 or higher |
 | -- | -- |
-| Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
-
-## API
-
-* [PowerBIEmbedded source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PowerBIEmbedded)
+| Namespace | CommunityToolkit.Graph.Uwp |
+| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp/) |

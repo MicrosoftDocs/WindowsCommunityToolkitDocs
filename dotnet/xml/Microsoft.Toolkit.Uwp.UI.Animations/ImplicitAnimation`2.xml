@@ -1,0 +1,119 @@
+<Type Name="ImplicitAnimation&lt;TValue,TKeyFrame&gt;" FullName="Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation&lt;TValue,TKeyFrame&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ImplicitAnimation&lt;TValue,TKeyFrame&gt; : Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;, Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline where TKeyFrame : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ImplicitAnimation`2&lt;TValue, struct .ctor (class System.ValueType) TKeyFrame&gt; extends Microsoft.Toolkit.Uwp.UI.Animations.Animation`2&lt;!TValue, !TKeyFrame&gt; implements class Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ImplicitAnimation(Of TValue, TKeyFrame)&#xA;Inherits Animation(Of TValue, TKeyFrame)&#xA;Implements IImplicitTimeline" />
+  <TypeSignature Language="F#" Value="type ImplicitAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt; = class&#xA;    inherit Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;&#xA;    interface IImplicitTimeline" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+    <TypeParameter Name="TKeyFrame">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TValue">TValue</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TKeyFrame">TKeyFrame</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">
+            The type to use for the public <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" /> properties.
+            This can differ from <typeparamref name="TKeyFrame" /> to facilitate XAML parsing.
+            </typeparam>
+    <typeparam name="TKeyFrame">The actual type of keyframe values in use.</typeparam>
+    <summary>
+            A base model representing a typed animation that can be used in XAML.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ImplicitAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAnimation">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.CompositionAnimation GetAnimation (Windows.UI.Xaml.UIElement element, out string? target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.UI.Composition.CompositionAnimation GetAnimation(class Windows.UI.Xaml.UIElement element, [out] string&amp; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2.GetAnimation(Windows.UI.Xaml.UIElement,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnimation (element As UIElement, ByRef target As String) As CompositionAnimation" />
+      <MemberSignature Language="F#" Value="abstract member GetAnimation : Windows.UI.Xaml.UIElement * string -&gt; Windows.UI.Composition.CompositionAnimation&#xA;override this.GetAnimation : Windows.UI.Xaml.UIElement * string -&gt; Windows.UI.Composition.CompositionAnimation" Usage="implicitAnimation.GetAnimation (element, target)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline.GetAnimation(Windows.UI.Xaml.UIElement,System.String@)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.CompositionAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="target" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> the animation will be applied to.</param>
+        <param name="target">
+            The optional target property for the animation. This might be used for direct implicit
+            animations that target a property but want to be triggered according to a separate property.
+            </param>
+        <summary>
+            Gets a <see cref="T:Windows.UI.Composition.CompositionAnimation" /> from the current node. This animation might
+            be used either as an implicit show/hide animation, or as a direct implicit animation.
+            </summary>
+        <returns>A new <see cref="T:Windows.UI.Composition.CompositionAnimation" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImplicitTarget">
+      <MemberSignature Language="C#" Value="public string? ImplicitTarget { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ImplicitTarget" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation`2.ImplicitTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImplicitTarget As String" />
+      <MemberSignature Language="F#" Value="member this.ImplicitTarget : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.ImplicitAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.ImplicitTarget" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the optional implicit target for the animation. This can act as a trigger property for the animation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

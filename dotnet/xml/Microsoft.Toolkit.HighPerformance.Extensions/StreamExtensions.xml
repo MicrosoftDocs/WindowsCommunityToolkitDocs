@@ -1,0 +1,204 @@
+<Type Name="StreamExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions">
+  <TypeSignature Language="C#" Value="public static class StreamExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StreamExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StreamExtensions" />
+  <TypeSignature Language="F#" Value="type StreamExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.IO.Stream" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Read">
+      <MemberSignature Language="C#" Value="public static int Read (this System.IO.Stream stream, Span&lt;byte&gt; buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Read(class System.IO.Stream stream, valuetype System.Span`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Read(System.IO.Stream,System.Span{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Read (stream As Stream, buffer As Span(Of Byte)) As Integer" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream * Span&lt;byte&gt; -&gt; int" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Read (stream, buffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="buffer" Type="System.Span&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Read&lt;T&gt; (this System.IO.Stream stream) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Read&lt;struct .ctor (class System.ValueType) T&gt;(class System.IO.Stream stream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Read``1(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Read(Of T As Structure) (stream As Stream) As T" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream -&gt; 'T (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Read stream" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to read.</typeparam>
+        <param name="stream">The source <see cref="T:System.IO.Stream" /> instance to read from.</param>
+        <summary>
+            Reads a value of a specified type from a source <see cref="T:System.IO.Stream" /> instance.
+            </summary>
+        <returns>The <typeparamref name="T" /> value read from <paramref name="stream" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if <paramref name="stream" /> reaches the end.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (this System.IO.Stream stream, Memory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(class System.IO.Stream stream, valuetype System.Memory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.ReadAsync(System.IO.Stream,System.Memory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReadAsync (stream As Stream, buffer As Memory(Of Byte), Optional cancellationToken As CancellationToken = Nothing) As ValueTask(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member ReadAsync : System.IO.Stream * Memory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.ReadAsync (stream, buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="buffer" Type="System.Memory&lt;System.Byte&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write">
+      <MemberSignature Language="C#" Value="public static void Write (this System.IO.Stream stream, ReadOnlySpan&lt;byte&gt; buffer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(class System.IO.Stream stream, valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; buffer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Write(System.IO.Stream,System.ReadOnlySpan{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write (stream As Stream, buffer As ReadOnlySpan(Of Byte))" />
+      <MemberSignature Language="F#" Value="static member Write : System.IO.Stream * ReadOnlySpan&lt;byte&gt; -&gt; unit" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Write (stream, buffer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="buffer" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Write&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Write&lt;T&gt; (this System.IO.Stream stream, ref T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write&lt;struct .ctor (class System.ValueType) T&gt;(class System.IO.Stream stream, [in]!!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Write``1(System.IO.Stream,``0@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Write(Of T As Structure) (stream As Stream, ByRef value As T)" />
+      <MemberSignature Language="F#" Value="static member Write : System.IO.Stream * 'T -&gt; unit (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.Write (stream, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="value" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to write.</typeparam>
+        <param name="stream">The target <see cref="T:System.IO.Stream" /> instance to write to.</param>
+        <param name="value">The input value to write to <paramref name="stream" />.</param>
+        <summary>
+            Writes a value of a specified type into a target <see cref="T:System.IO.Stream" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WriteAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.ValueTask WriteAsync (this System.IO.Stream stream, ReadOnlyMemory&lt;byte&gt; buffer, System.Threading.CancellationToken cancellationToken = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ValueTask WriteAsync(class System.IO.Stream stream, valuetype System.ReadOnlyMemory`1&lt;unsigned int8&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.WriteAsync(System.IO.Stream,System.ReadOnlyMemory{System.Byte},System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function WriteAsync (stream As Stream, buffer As ReadOnlyMemory(Of Byte), Optional cancellationToken As CancellationToken = Nothing) As ValueTask" />
+      <MemberSignature Language="F#" Value="static member WriteAsync : System.IO.Stream * ReadOnlyMemory&lt;byte&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask" Usage="Microsoft.Toolkit.HighPerformance.Extensions.StreamExtensions.WriteAsync (stream, buffer, cancellationToken)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stream" Type="System.IO.Stream" RefType="this" />
+        <Parameter Name="buffer" Type="System.ReadOnlyMemory&lt;System.Byte&gt;" />
+        <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="stream">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="cancellationToken">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

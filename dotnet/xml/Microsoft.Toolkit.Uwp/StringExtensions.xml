@@ -1,0 +1,111 @@
+<Type Name="StringExtensions" FullName="Microsoft.Toolkit.Uwp.StringExtensions">
+  <TypeSignature Language="C#" Value="public static class StringExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed StringExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.StringExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StringExtensions" />
+  <TypeSignature Language="F#" Value="type StringExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            UWP specific helpers for working with strings.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetLocalized">
+      <MemberSignature Language="C#" Value="public static string GetLocalized (this string resourceKey, string resourcePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetLocalized(string resourceKey, string resourcePath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.StringExtensions.GetLocalized(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLocalized (resourceKey As String, resourcePath As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetLocalized : string * string -&gt; string" Usage="Microsoft.Toolkit.Uwp.StringExtensions.GetLocalized (resourceKey, resourcePath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" RefType="this" />
+        <Parameter Name="resourcePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">Resource key to retrieve.</param>
+        <param name="resourcePath">Resource path to fall back to in case resourceKey not found in app resources.</param>
+        <summary>
+            Retrieves the provided resource for the given key for use independent of the UI thread. First looks up resource at the application level, before falling back to provided resourcePath. This allows for easily overridable resources within a library.
+            </summary>
+        <returns>string value for given resource or empty string if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalized">
+      <MemberSignature Language="C#" Value="public static string GetLocalized (this string resourceKey, Windows.UI.UIContext uiContext = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetLocalized(string resourceKey, class Windows.UI.UIContext uiContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.StringExtensions.GetLocalized(System.String,Windows.UI.UIContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetLocalized (resourceKey As String, Optional uiContext As UIContext = Nothing) As String" />
+      <MemberSignature Language="F#" Value="static member GetLocalized : string * Windows.UI.UIContext -&gt; string" Usage="Microsoft.Toolkit.Uwp.StringExtensions.GetLocalized (resourceKey, uiContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" RefType="this" />
+        <Parameter Name="uiContext" Type="Windows.UI.UIContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">Resource key to retrieve.</param>
+        <param name="uiContext">
+          <see cref="T:Windows.UI.UIContext" /> to be used to get the <paramref name="resourceKey" /> from.
+            You can retrieve this from a <see cref="P:Windows.UI.Xaml.UIElement.UIContext" />, <see cref="P:Windows.UI.Xaml.XamlRoot.UIContext" /> (XamlIslands), or <see cref="P:Windows.UI.Xaml.Window.UIContext" />.</param>
+        <summary>
+            Retrieves the provided resource for the given key for use independent of the UI thread.
+            </summary>
+        <returns>string value for given resource or empty string if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetViewLocalized">
+      <MemberSignature Language="C#" Value="public static string GetViewLocalized (this string resourceKey, Windows.UI.UIContext uiContext = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetViewLocalized(string resourceKey, class Windows.UI.UIContext uiContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.StringExtensions.GetViewLocalized(System.String,Windows.UI.UIContext)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetViewLocalized (resourceKey As String, Optional uiContext As UIContext = Nothing) As String" />
+      <MemberSignature Language="F#" Value="static member GetViewLocalized : string * Windows.UI.UIContext -&gt; string" Usage="Microsoft.Toolkit.Uwp.StringExtensions.GetViewLocalized (resourceKey, uiContext)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceKey" Type="System.String" RefType="this" />
+        <Parameter Name="uiContext" Type="Windows.UI.UIContext" />
+      </Parameters>
+      <Docs>
+        <param name="resourceKey">Resource key to retrieve.</param>
+        <param name="uiContext">
+          <see cref="T:Windows.UI.UIContext" /> to be used to get the <paramref name="resourceKey" /> from.
+            You can retrieve this from a <see cref="P:Windows.UI.Xaml.UIElement.UIContext" />, <see cref="P:Windows.UI.Xaml.XamlRoot.UIContext" /> (XamlIslands), or <see cref="P:Windows.UI.Xaml.Window.UIContext" />.</param>
+        <summary>
+            Retrieves the provided resource for the current view context.
+            </summary>
+        <returns>string value for given resource or empty string if not found.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

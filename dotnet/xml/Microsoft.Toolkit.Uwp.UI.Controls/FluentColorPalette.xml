@@ -1,0 +1,153 @@
+<Type Name="FluentColorPalette" FullName="Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette">
+  <TypeSignature Language="C#" Value="public class FluentColorPalette : Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FluentColorPalette extends System.Object implements class Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette" />
+  <TypeSignature Language="VB.NET" Value="Public Class FluentColorPalette&#xA;Implements IColorPalette" />
+  <TypeSignature Language="F#" Value="type FluentColorPalette = class&#xA;    interface IColorPalette" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Implements the standard Windows 10 color palette.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FluentColorPalette ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ColorCount">
+      <MemberSignature Language="C#" Value="public int ColorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColorCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ColorCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColorCount : int" Usage="Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ColorCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.ColorCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total number of colors in this palette.
+            A color is not necessarily a single value and may be composed of several shades.
+            This has little meaning in this palette as colors are not strictly separated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultShadeIndex">
+      <MemberSignature Language="C#" Value="public const int DefaultShadeIndex = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultShadeIndex = (0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.DefaultShadeIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultShadeIndex As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable DefaultShadeIndex : int" Usage="Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.DefaultShadeIndex" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>
+            Gets the index of the default shade of colors in this palette.
+            This has little meaning in this palette as colors are not strictly separated by shade.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColor">
+      <MemberSignature Language="C#" Value="public Windows.UI.Color GetColor (int colorIndex, int shadeIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Windows.UI.Color GetColor(int32 colorIndex, int32 shadeIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.GetColor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColor (colorIndex As Integer, shadeIndex As Integer) As Color" />
+      <MemberSignature Language="F#" Value="abstract member GetColor : int * int -&gt; Windows.UI.Color&#xA;override this.GetColor : int * int -&gt; Windows.UI.Color" Usage="fluentColorPalette.GetColor (colorIndex, shadeIndex)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.GetColor(System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorIndex" Type="System.Int32" />
+        <Parameter Name="shadeIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="colorIndex">The index of the color in the palette.
+            The index must be between zero and <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ColorCount" />.</param>
+        <param name="shadeIndex">The index of the color shade in the palette.
+            The index must be between zero and <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ShadeCount" />.</param>
+        <summary>
+            Gets a color in the palette by index.
+            </summary>
+        <returns>The color at the specified index or an exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadeCount">
+      <MemberSignature Language="C#" Value="public int ShadeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadeCount" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ShadeCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShadeCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ShadeCount : int" Usage="Microsoft.Toolkit.Uwp.UI.Controls.FluentColorPalette.ShadeCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Toolkit.Uwp.UI.Controls.IColorPalette.ShadeCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total number of shades for each color in this palette.
+            Shades are usually a variation of the color lightening or darkening it.
+            This has little meaning in this palette as colors are not strictly separated by shade.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

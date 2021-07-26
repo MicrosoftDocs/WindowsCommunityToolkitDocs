@@ -1,0 +1,117 @@
+<Type Name="Activity" FullName="Microsoft.Toolkit.Uwp.UI.Animations.Activity">
+  <TypeSignature Language="C#" Value="public abstract class Activity : Windows.UI.Xaml.DependencyObject, Microsoft.Toolkit.Uwp.UI.Animations.IActivity" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Activity extends Windows.UI.Xaml.DependencyObject implements class Microsoft.Toolkit.Uwp.UI.Animations.IActivity" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.Activity" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Activity&#xA;Inherits DependencyObject&#xA;Implements IActivity" />
+  <TypeSignature Language="F#" Value="type Activity = class&#xA;    inherit DependencyObject&#xA;    interface IActivity" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.UI.Animations.IActivity</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Base class to use when creating activities which accept a <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Activity.Delay" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Activity ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Activity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay">
+      <MemberSignature Language="C#" Value="public TimeSpan? Delay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; Delay" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.Activity.Delay" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delay As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Delay : Nullable&lt;TimeSpan&gt; with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Activity.Delay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;System.TimeSpan&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:System.TimeSpan" /> to wait before running the activity.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DelayProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DelayProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DelayProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.Activity.DelayProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DelayProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DelayProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.Activity.DelayProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Activity.Delay" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InvokeAsync">
+      <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task InvokeAsync (Windows.UI.Xaml.UIElement element, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task InvokeAsync(class Windows.UI.Xaml.UIElement element, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.Activity.InvokeAsync(Windows.UI.Xaml.UIElement,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InvokeAsync (element As UIElement, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="abstract member InvokeAsync : Windows.UI.Xaml.UIElement * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.InvokeAsync : Windows.UI.Xaml.UIElement * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="activity.InvokeAsync (element, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Animations.IActivity.InvokeAsync(Windows.UI.Xaml.UIElement,System.Threading.CancellationToken)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> to invoke the activity for.</param>
+        <param name="token">A cancellation token to cancel the activity before it completes.</param>
+        <summary>
+            Invokes the current activity.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that indicates when the activity has completed its execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

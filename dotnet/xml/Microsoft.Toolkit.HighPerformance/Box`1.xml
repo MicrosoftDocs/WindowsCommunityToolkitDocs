@@ -1,0 +1,272 @@
+<Type Name="Box&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class Box&lt;T&gt; where T : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Box`1&lt;struct .ctor (class System.ValueType) T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Box`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Box(Of T)" />
+  <TypeSignature Language="F#" Value="type Box&lt;'T (requires 'T : struct)&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of value being boxed.</typeparam>
+    <summary>
+             A <see langword="class" /> that represents a boxed <typeparamref name="T" /> value on the managed heap.
+             This is a "shadow" type that can be used in place of a non-generic <see cref="T:System.Object" /> reference to a
+             boxed value type, to make the code more expressive and reduce the chances of errors.
+             Consider this example:
+             <code>
+             object obj = 42;
+            
+             // Manual, error prone unboxing
+             int sum = (int)obj + 1;
+             </code>
+             In this example, it is not possible to know in advance what type is actually being boxed in a given
+             <see cref="T:System.Object" /> instance, making the code less robust at build time. The <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" />
+             type can be used as a drop-in replacement in this case, like so:
+             <code>
+             Box&lt;int&gt; box = 42;
+            
+             // Build-time validation, automatic unboxing
+             int sum = box.Value + 1;
+             </code>
+             This type can also be useful when dealing with large custom value types that are also boxed, as
+             it allows to retrieve a mutable reference to the boxing value. This means that a given boxed
+             value can be mutated in-place, instead of having to allocate a new updated boxed instance.
+             </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DangerousGetFrom">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; DangerousGetFrom (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt; DangerousGetFrom(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.DangerousGetFrom(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousGetFrom (obj As Object) As Box(Of T)" />
+      <MemberSignature Language="F#" Value="static member DangerousGetFrom : obj -&gt; Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;" Usage="Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;.DangerousGetFrom obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The input <see cref="T:System.Object" /> instance, representing a boxed <typeparamref name="T" /> value.</param>
+        <summary>
+            Returns a <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference from the input <see cref="T:System.Object" /> instance.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference pointing to <paramref name="obj" />.</returns>
+        <remarks>
+            This method doesn't check the actual type of <paramref name="obj" />, so it is responsibility of the caller
+            to ensure it actually represents a boxed <typeparamref name="T" /> value and not some other instance.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="box.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current object. </param>
+        <summary>Determines whether the specified object is equal to the current object.</summary>
+        <returns>true if the specified object  is equal to the current object; otherwise, false.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFrom">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; GetFrom (object obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt; GetFrom(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.GetFrom(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFrom (obj As Object) As Box(Of T)" />
+      <MemberSignature Language="F#" Value="static member GetFrom : obj -&gt; Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;" Usage="Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;.GetFrom obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The input <see cref="T:System.Object" /> instance, representing a boxed <typeparamref name="T" /> value.</param>
+        <summary>
+            Returns a <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference from the input <see cref="T:System.Object" /> instance.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference pointing to <paramref name="obj" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="box.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Serves as the default hash function. </summary>
+        <returns>A hash code for the current object.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator T (Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; box);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !T op_Implicit(class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt; box) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.op_Implicit(Microsoft.Toolkit.HighPerformance.Box{`0})~`0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (box As Box(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt; -&gt; 'T" Usage="Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;.op_Implicit box" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="box" Type="Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="box">The input <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> instance.</param>
+        <summary>
+            Implicitly gets the <typeparamref name="T" /> value from a given <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Toolkit.HighPerformance.Box&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt; op_Implicit(!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.op_Implicit(`0)~Microsoft.Toolkit.HighPerformance.Box{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As T) As Box(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T -&gt; Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;" Usage="Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;.op_Implicit value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="box.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetFrom">
+      <MemberSignature Language="C#" Value="public static bool TryGetFrom (object obj, out Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;? box);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetFrom(object obj, [out] class Microsoft.Toolkit.HighPerformance.Box`1&lt;!T&gt;&amp; box) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Box`1.TryGetFrom(System.Object,Microsoft.Toolkit.HighPerformance.Box{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetFrom (obj As Object, ByRef box As Box(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGetFrom : obj * Box -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.Box&lt;'T (requires 'T : struct)&gt;.TryGetFrom (obj, box)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="box" Type="Microsoft.Toolkit.HighPerformance.Box&lt;T&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The input <see cref="T:System.Object" /> instance to check.</param>
+        <param name="box">The resulting <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference, if <paramref name="obj" /> was a boxed <typeparamref name="T" /> value.</param>
+        <summary>
+            Tries to get a <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> reference from an input <see cref="T:System.Object" /> representing a boxed <typeparamref name="T" /> value.
+            </summary>
+        <returns>
+          <see langword="true" /> if a <see cref="T:Microsoft.Toolkit.HighPerformance.Box`1" /> instance was retrieved correctly, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

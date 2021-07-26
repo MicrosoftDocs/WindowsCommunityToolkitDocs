@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -30,6 +32,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,15 +53,84 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="filter" Type="System.Collections.Generic.List&lt;Windows.System.RemoteSystems.IRemoteSystemFilter&gt;" />
+        <Parameter Name="filter" Type="System.Collections.Generic.List&lt;Windows.System.RemoteSystems.IRemoteSystemFilter&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="filter">To be added.</param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" /> class.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemoteDeviceHelper (Windows.System.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.System.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.#ctor(Windows.System.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper : Windows.System.DispatcherQueue -&gt; Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper dispatcherQueue" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="dispatcherQueue" Type="Windows.System.DispatcherQueue" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates, or null if this is being called from the UI thread.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RemoteDeviceHelper (System.Collections.Generic.List&lt;Windows.System.RemoteSystems.IRemoteSystemFilter&gt; filter, Windows.System.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;class Windows.System.RemoteSystems.IRemoteSystemFilter&gt; filter, class Windows.System.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.#ctor(System.Collections.Generic.List{Windows.System.RemoteSystems.IRemoteSystemFilter},Windows.System.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter As List(Of IRemoteSystemFilter), Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper : System.Collections.Generic.List&lt;Windows.System.RemoteSystems.IRemoteSystemFilter&gt; * Windows.System.DispatcherQueue -&gt; Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper (filter, dispatcherQueue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="filter" Type="System.Collections.Generic.List&lt;Windows.System.RemoteSystems.IRemoteSystemFilter&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="dispatcherQueue" Type="Windows.System.DispatcherQueue" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="filter">Initiate Enumeration with specific RemoteSystemKind with Filters</param>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates, or null if this is being called from the UI thread.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherQueue">
+      <MemberSignature Language="C#" Value="public Windows.System.DispatcherQueue DispatcherQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.System.DispatcherQueue DispatcherQueue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.DispatcherQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispatcherQueue As DispatcherQueue" />
+      <MemberSignature Language="F#" Value="member this.DispatcherQueue : Windows.System.DispatcherQueue with get, set" Usage="Microsoft.Toolkit.Uwp.Helpers.RemoteDeviceHelper.DispatcherQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.DispatcherQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets which DispatcherQueue is used to dispatch UI updates.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,6 +145,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -96,6 +170,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.ObjectModel.ObservableCollection&lt;Windows.System.RemoteSystems.RemoteSystem&gt;</ReturnType>

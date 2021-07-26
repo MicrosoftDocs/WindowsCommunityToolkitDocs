@@ -1,0 +1,940 @@
+<Type Name="ObservableValidator" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator">
+  <TypeSignature Language="C#" Value="public abstract class ObservableValidator : Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject, System.ComponentModel.INotifyDataErrorInfo" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObservableValidator extends Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject implements class System.ComponentModel.INotifyDataErrorInfo" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObservableValidator&#xA;Inherits ObservableObject&#xA;Implements INotifyDataErrorInfo" />
+  <TypeSignature Language="F#" Value="type ObservableValidator = class&#xA;    inherit ObservableObject&#xA;    interface INotifyDataErrorInfo" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.ComponentModel.INotifyDataErrorInfo</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A base class for objects implementing the <see cref="T:System.ComponentModel.INotifyDataErrorInfo" /> interface. This class
+            also inherits from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" />, so it can be used for observable items too.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableValidator ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> class.
+            This constructor will create a new <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> that will
+            be used to validate all properties, which will reference the current instance
+            and no additional services or validation properties and settings.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableValidator (System.Collections.Generic.IDictionary&lt;object,object?&gt;? items);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;object, object&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.Collections.Generic.IDictionary{System.Object,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (items As IDictionary(Of Object, Object))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator : System.Collections.Generic.IDictionary&lt;obj, obj&gt; -&gt; Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" Usage="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator items" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="items" Type="System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="items">A set of key/value pairs to make available to consumers.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> class.
+            This constructor will create a new <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> that will
+            be used to validate all properties, which will reference the current instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableValidator (System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (validationContext As ValidationContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator : System.ComponentModel.DataAnnotations.ValidationContext -&gt; Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" Usage="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator validationContext" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="validationContext" Type="System.ComponentModel.DataAnnotations.ValidationContext" />
+      </Parameters>
+      <Docs>
+        <param name="validationContext">
+            The <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> instance to use to validate properties.
+            <para>
+            This instance will be passed to all <see cref="M:System.ComponentModel.DataAnnotations.Validator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})" />
+            calls executed by the current viewmodel, and its <see cref="P:System.ComponentModel.DataAnnotations.ValidationContext.MemberName" /> property will be updated every time
+            before the call is made to set the name of the property being validated. The property name will not be reset after that, so the
+            value of <see cref="P:System.ComponentModel.DataAnnotations.ValidationContext.MemberName" /> will always indicate the name of the last property that was validated, if any.
+            </para></param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> class.
+            This constructor will store the input <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> instance,
+            and it will use it to validate all properties for the current viewmodel.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableValidator (IServiceProvider? serviceProvider, System.Collections.Generic.IDictionary&lt;object,object?&gt;? items);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.IServiceProvider serviceProvider, class System.Collections.Generic.IDictionary`2&lt;object, object&gt; items) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.#ctor(System.IServiceProvider,System.Collections.Generic.IDictionary{System.Object,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (serviceProvider As IServiceProvider, items As IDictionary(Of Object, Object))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator : IServiceProvider * System.Collections.Generic.IDictionary&lt;obj, obj&gt; -&gt; Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" Usage="new Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator (serviceProvider, items)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+        <Parameter Name="items" Type="System.Collections.Generic.IDictionary&lt;System.Object,System.Object&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> instance to make available during validation.</param>
+        <param name="items">A set of key/value pairs to make available to consumers.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> class.
+            This constructor will create a new <see cref="T:System.ComponentModel.DataAnnotations.ValidationContext" /> that will
+            be used to validate all properties, which will reference the current instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearErrors">
+      <MemberSignature Language="C#" Value="protected void ClearErrors (string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ClearErrors(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ClearErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ClearErrors (Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.ClearErrors : string -&gt; unit" Usage="observableValidator.ClearErrors propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">
+            The name of the property to clear validation errors for.
+            If a <see langword="null" /> or empty name is used, all entity-level errors will be cleared.
+            </param>
+        <summary>
+            Clears the validation errors for a specified property or for the entire entity.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorsChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt;? ErrorsChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.DataErrorsChangedEventArgs&gt; ErrorsChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ErrorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ErrorsChanged As EventHandler(Of DataErrorsChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ErrorsChanged : EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; " Usage="member this.ErrorsChanged : System.EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyDataErrorInfo.ErrorsChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.ComponentModel.DataErrorsChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetErrors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; GetErrors (string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; GetErrors(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.GetErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetErrors (Optional propertyName As String = Nothing) As IEnumerable(Of ValidationResult)" />
+      <MemberSignature Language="F#" Value="member this.GetErrors : string -&gt; seq&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" Usage="observableValidator.GetErrors propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasErrors">
+      <MemberSignature Language="C#" Value="public bool HasErrors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.HasErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.HasErrors" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.INotifyDataErrorInfo.HasErrors</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, bool validate, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * bool * string -&gt; bool" Usage="observableValidator.SetProperty (field, newValue, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            This method is just like <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />, just with the addition
+            of the <paramref name="validate" /> parameter. If that is set to <see langword="true" />, the new value will be
+            validated and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ErrorsChanged" /> will be raised if needed. Following the behavior of the base method,
+            the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events
+            are not raised if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, Action&lt;T&gt; callback, bool validate, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Action`1&lt;!!T&gt; callback, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, callback As Action(Of T), validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * Action&lt;'T&gt; * bool * string -&gt; bool" Usage="observableValidator.SetProperty (oldValue, newValue, callback, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. Similarly to
+            the <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" /> method, this overload should only be
+            used when <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" /> can't be used directly.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            This method is just like <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" />, just with the addition
+            of the <paramref name="validate" /> parameter. As such, following the behavior of the base method,
+            the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events
+            are not raised if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, bool validate, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, comparer As IEqualityComparer(Of T), validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * bool * string -&gt; bool" Usage="observableValidator.SetProperty (field, newValue, comparer, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Boolean,System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, Action&lt;T&gt; callback, bool validate, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, class System.Action`1&lt;!!T&gt; callback, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), callback As Action(Of T), validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * Action&lt;'T&gt; * bool * string -&gt; bool" Usage="observableValidator.SetProperty (oldValue, newValue, comparer, callback, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, TModel model, Action&lt;TModel,T&gt; callback, bool validate, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, model As TModel, callback As Action(Of TModel, T), validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * bool * string -&gt; bool (requires 'Model : null)" Usage="observableValidator.SetProperty (oldValue, newValue, model, callback, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given nested property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+            <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />, with the difference being that this
+            method is used to relay properties from a wrapped model in the current instance. For more info, see the docs for
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, TModel model, Action&lt;TModel,T&gt; callback, bool validate, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, bool validate, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), model As TModel, callback As Action(Of TModel, T), validate As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * bool * string -&gt; bool (requires 'Model : null)" Usage="observableValidator.SetProperty (oldValue, newValue, comparer, model, callback, validate, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="validate" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="validate">If <see langword="true" />, <paramref name="newValue" /> will also be validated.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given nested property. If the value has changed,
+            raises the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+            <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />,
+            with the difference being that this method is used to relay properties from a wrapped model in the
+            current instance. For more info, see the docs for
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ComponentModel.INotifyDataErrorInfo.GetErrors">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerable INotifyDataErrorInfo.GetErrors (string? propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerable System.ComponentModel.INotifyDataErrorInfo.GetErrors(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.System#ComponentModel#INotifyDataErrorInfo#GetErrors(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetErrors (propertyName As String) As IEnumerable Implements INotifyDataErrorInfo.GetErrors" />
+      <MemberSignature Language="F#" Value="abstract member System.ComponentModel.INotifyDataErrorInfo.GetErrors : string -&gt; System.Collections.IEnumerable&#xA;override this.System.ComponentModel.INotifyDataErrorInfo.GetErrors : string -&gt; System.Collections.IEnumerable" Usage="observableValidator.System.ComponentModel.INotifyDataErrorInfo.GetErrors propertyName" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.INotifyDataErrorInfo.GetErrors(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;T&gt; (ref T field, T newValue, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0@,``0,System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of T) (ByRef field As T, newValue As T, ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * IReadOnlyCollection * string -&gt; bool" Usage="observableValidator.TrySetProperty (field, newValue, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;T&gt; (T oldValue, T newValue, Action&lt;T&gt; callback, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Action`1&lt;!!T&gt; callback, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0,``0,System.Action{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of T) (oldValue As T, newValue As T, callback As Action(Of T), ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * Action&lt;'T&gt; * IReadOnlyCollection * string -&gt; bool" Usage="observableValidator.TrySetProperty (oldValue, newValue, callback, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;T&gt; (ref T field, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of T) (ByRef field As T, newValue As T, comparer As IEqualityComparer(Of T), ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * IReadOnlyCollection * string -&gt; bool" Usage="observableValidator.TrySetProperty (field, newValue, comparer, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, Action&lt;T&gt; callback, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, class System.Action`1&lt;!!T&gt; callback, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of T) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), callback As Action(Of T), ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * Action&lt;'T&gt; * IReadOnlyCollection * string -&gt; bool" Usage="observableValidator.TrySetProperty (oldValue, newValue, comparer, callback, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;TModel,T&gt; (T oldValue, T newValue, TModel model, Action&lt;TModel,T&gt; callback, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, model As TModel, callback As Action(Of TModel, T), ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * IReadOnlyCollection * string -&gt; bool (requires 'Model : null)" Usage="observableValidator.TrySetProperty (oldValue, newValue, model, callback, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool TrySetProperty&lt;TModel,T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, TModel model, Action&lt;TModel,T&gt; callback, out System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; errors, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool TrySetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, [out] class System.Collections.Generic.IReadOnlyCollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt;&amp; errors, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.TrySetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Collections.Generic.IReadOnlyCollection{System.ComponentModel.DataAnnotations.ValidationResult}@,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function TrySetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), model As TModel, callback As Action(Of TModel, T), ByRef errors As IReadOnlyCollection(Of ValidationResult), Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * IReadOnlyCollection * string -&gt; bool (requires 'Model : null)" Usage="observableValidator.TrySetProperty (oldValue, newValue, comparer, model, callback, errors, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="errors" Type="System.Collections.Generic.IReadOnlyCollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt;" RefType="out" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="errors">The resulting validation errors, if any.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Tries to validate a new value for a specified property. If the validation is successful,
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" /> is called, otherwise no state change is performed.
+            </summary>
+        <returns>Whether the validation was successful and the property value changed as well.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAllProperties">
+      <MemberSignature Language="C#" Value="protected void ValidateAllProperties ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ValidateAllProperties() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ValidateAllProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ValidateAllProperties ()" />
+      <MemberSignature Language="F#" Value="member this.ValidateAllProperties : unit -&gt; unit" Usage="observableValidator.ValidateAllProperties " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Validates all the properties in the current instance and updates all the tracked errors.
+            If any changes are detected, the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ErrorsChanged" /> event will be raised.
+            </summary>
+        <remarks>
+            Only public instance properties (excluding custom indexers) that have at least one
+            <see cref="T:System.ComponentModel.DataAnnotations.ValidationAttribute" /> applied to them will be validated. All other
+            members in the current instance will be ignored. None of the processed properties
+            will be modified - they will only be used to retrieve their values and validate them.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateProperty">
+      <MemberSignature Language="C#" Value="protected void ValidateProperty (object? value, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ValidateProperty(object value, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ValidateProperty(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ValidateProperty (value As Object, Optional propertyName As String = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.ValidateProperty : obj * string -&gt; unit" Usage="observableValidator.ValidateProperty (value, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="value">The value to test for the specified property.</param>
+        <param name="propertyName">The name of the property to validate.</param>
+        <summary>
+            Validates a property with a specified name and a given input value.
+            If any changes are detected, the <see cref="E:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.ErrorsChanged" /> event will be raised.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown when <paramref name="propertyName" /> is <see langword="null" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

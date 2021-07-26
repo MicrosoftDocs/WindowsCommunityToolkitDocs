@@ -1,0 +1,192 @@
+<Type Name="ObjectMarshal" FullName="Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal">
+  <TypeSignature Language="C#" Value="public static class ObjectMarshal" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ObjectMarshal extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal" />
+  <TypeSignature Language="VB.NET" Value="Public Module ObjectMarshal" />
+  <TypeSignature Language="F#" Value="type ObjectMarshal = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with <see cref="T:System.Object" /> instances.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DangerousGetObjectDataByteOffset&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr DangerousGetObjectDataByteOffset&lt;T&gt; (object obj, ref T data);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int DangerousGetObjectDataByteOffset&lt;T&gt;(object obj, !!T&amp; data) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousGetObjectDataByteOffset``1(System.Object,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetObjectDataByteOffset(Of T) (obj As Object, ByRef data As T) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member DangerousGetObjectDataByteOffset : obj * 'T -&gt; nativeint" Usage="Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousGetObjectDataByteOffset (obj, data)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="data" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of field being referenced.</typeparam>
+        <param name="obj">The input <see cref="T:System.Object" /> hosting the target field.</param>
+        <param name="data">A reference to a target field of type <typeparamref name="T" /> within <paramref name="obj" />.</param>
+        <summary>
+            Calculates the byte offset to a specific field within a given <see cref="T:System.Object" />.
+            </summary>
+        <returns>
+            The <see cref="T:System.IntPtr" /> value representing the offset to the target field from the start of the object data
+            for the parameter <paramref name="obj" />. The offset is in relation to the first usable byte after the method table.
+            </returns>
+        <remarks>The input parameters are not validated, and it's responsibility of the caller to ensure that
+            the <paramref name="data" /> reference is actually pointing to a memory location within <paramref name="obj" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetObjectDataReferenceAt&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetObjectDataReferenceAt&lt;T&gt; (object obj, IntPtr offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetObjectDataReferenceAt&lt;T&gt;(object obj, native int offset) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousGetObjectDataReferenceAt``1(System.Object,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetObjectDataReferenceAt(Of T) (obj As Object, offset As IntPtr) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousGetObjectDataReferenceAt : obj * nativeint -&gt; 'T" Usage="Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousGetObjectDataReferenceAt (obj, offset)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="offset" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of reference to retrieve.</typeparam>
+        <param name="obj">The input <see cref="T:System.Object" /> hosting the target field.</param>
+        <param name="offset">The input byte offset for the <typeparamref name="T" /> reference to retrieve.</param>
+        <summary>
+            Gets a <typeparamref name="T" /> reference to data within a given <see cref="T:System.Object" /> at a specified offset.
+            </summary>
+        <returns>A <typeparamref name="T" /> reference at a specified offset within <paramref name="obj" />.</returns>
+        <remarks>
+            None of the input arguments is validated, and it is responsibility of the caller to ensure they are valid.
+            In particular, using an invalid offset might cause the retrieved reference to be misaligned with the
+            desired data, which would break the type system. Or, if the offset causes the retrieved reference to point
+            to a memory location outside of the input <see cref="T:System.Object" /> instance, that might lead to runtime crashes.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousUnbox&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousUnbox&lt;T&gt; (object obj) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousUnbox&lt;struct .ctor (class System.ValueType) T&gt;(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousUnbox``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousUnbox(Of T As Structure) (obj As Object) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousUnbox : obj -&gt; 'T (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.DangerousUnbox obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to unbox.</typeparam>
+        <param name="obj">The input <see cref="T:System.Object" /> instance, representing a boxed <typeparamref name="T" /> value.</param>
+        <summary>
+            Unboxes a <typeparamref name="T" /> value from an input <see cref="T:System.Object" /> instance.
+            </summary>
+        <returns>The <typeparamref name="T" /> value boxed in <paramref name="obj" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidCastException">Thrown when <paramref name="obj" /> is not of type <typeparamref name="T" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="TryUnbox&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryUnbox&lt;T&gt; (this object obj, out T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryUnbox&lt;struct .ctor (class System.ValueType) T&gt;(object obj, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.TryUnbox``1(System.Object,``0@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryUnbox(Of T As Structure) (obj As Object, ByRef value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryUnbox : obj * 'T -&gt; bool (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Helpers.ObjectMarshal.TryUnbox (obj, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" RefType="this" />
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of value to try to unbox.</typeparam>
+        <param name="obj">The input <see cref="T:System.Object" /> instance to check.</param>
+        <param name="value">The resulting <typeparamref name="T" /> value, if <paramref name="obj" /> was in fact a boxed <typeparamref name="T" /> value.</param>
+        <summary>
+             Tries to get a boxed <typeparamref name="T" /> value from an input <see cref="T:System.Object" /> instance.
+             </summary>
+        <returns>
+          <see langword="true" /> if a <typeparamref name="T" /> value was retrieved correctly, <see langword="false" /> otherwise.</returns>
+        <remarks>
+             This extension behaves just like the following method:
+             <code>
+             public static bool TryUnbox&lt;T&gt;(object obj, out T value)
+             {
+                 if (obj is T)
+                 {
+                     value = (T)obj;
+            
+                     return true;
+                 }
+            
+                 value = default;
+            
+                 return false;
+             }
+             </code>
+             But in a more efficient way, and with the ability to also assign the unboxed value
+             directly on an existing T variable, which is not possible with the code above.
+             </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

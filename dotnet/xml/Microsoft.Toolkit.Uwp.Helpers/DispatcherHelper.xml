@@ -8,11 +8,19 @@
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+      <AttributeName Language="C#">[System.Obsolete("Replace calls to APIs in this class with extensions for the Windows.System.DispatcherQueue type (see https://docs.microsoft.com/uwp/api/windows.system.dispatcherqueue).")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Replace calls to APIs in this class with extensions for the Windows.System.DispatcherQueue type (see https://docs.microsoft.com/uwp/api/windows.system.dispatcherqueue).")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             This class provides static methods helper for executing code in UI thread of the main window.
@@ -31,7 +39,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -41,14 +57,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
-        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" />.</param>
+        <param name="function"> Function to be executed on the given dispatcher.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            Extension method for <see cref="T:Windows.UI.Core.CoreDispatcher" />. Offering an actual awaitable <see cref="T:System.Threading.Tasks.Task" /> with optional result that will be executed on the given dispatcher.
             </summary>
-        <returns>Awaitable Task</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AwaitableRunAsync">
@@ -62,7 +78,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -72,14 +96,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
-        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" />.</param>
+        <param name="function">Asynchronous function to be executed on the given dispatcher.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            Extension method for <see cref="T:Windows.UI.Core.CoreDispatcher" />. Offering an actual awaitable <see cref="T:System.Threading.Tasks.Task" /> with optional result that will be executed on the given dispatcher.
             </summary>
-        <returns>Awaitable Task</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AwaitableRunAsync&lt;T&gt;">
@@ -93,7 +117,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -106,15 +138,15 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
-        <param name="function">Asynchrounous function to be executed asynchrounously on the given dispatcher</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" />.</param>
+        <param name="function">Asynchronous function to be executed asynchronously on the given dispatcher.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            Extension method for <see cref="T:Windows.UI.Core.CoreDispatcher" />. Offering an actual awaitable <see cref="T:System.Threading.Tasks.Task`1" /> with optional result that will be executed on the given dispatcher.
             </summary>
-        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task`1" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="AwaitableRunAsync&lt;T&gt;">
@@ -128,7 +160,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority). A queue can be retrieved with DispatcherQueue.GetForCurrentThread().")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -141,15 +181,15 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" /></param>
-        <param name="function"> Function to be executed asynchrounously on the given dispatcher</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="dispatcher">Dispatcher of a thread to run <paramref name="function" />.</param>
+        <param name="function"> Function to be executed on the given dispatcher.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Extension method for CoreDispatcher. Offering an actual awaitable Task with optional result that will be executed on the given dispatcher
+            Extension method for <see cref="T:Windows.UI.Core.CoreDispatcher" />. Offering an actual awaitable <see cref="T:System.Threading.Tasks.Task`1" /> with optional result that will be executed on the given dispatcher.
             </summary>
-        <returns>Awaitable Task</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task`1" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync">
@@ -163,7 +203,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -172,13 +220,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <param name="function">Synchronous function to be executed on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on the main view's UI thread.
             </summary>
-        <returns>Awaitable Task/&gt;</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync">
@@ -192,7 +240,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -201,12 +257,13 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on UI thread of the main view.
+            Executes the given <see cref="T:System.Threading.Tasks.Task" />-returning function on the main view's UI thread and returns either that <see cref="T:System.Threading.Tasks.Task" />
+            or a proxy <see cref="T:System.Threading.Tasks.Task" /> that completes when the one produced by the given function completes.
             </summary>
-        <returns>Awaitable Task</returns>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,7 +278,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -231,14 +296,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
+        <param name="viewToExecuteOn">View for the <paramref name="function" /> to be executed on.</param>
+        <param name="function">Synchronous function to be executed on UI thread.</param>
         <param name="priority">Dispatcher execution priority, default is normal</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on a given view's UI thread.
             </summary>
-        <returns>Awaitable Task/&gt;</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync">
@@ -252,7 +317,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
       </ReturnValue>
@@ -262,14 +335,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <param name="viewToExecuteOn">View for the <paramref name="function" /> to be executed on.</param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on a given view's UI thread.
             </summary>
-        <returns>Awaitable Task</returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
@@ -283,7 +356,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -295,13 +376,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on UI thread of the main view.
+            Executes the given <see cref="T:System.Threading.Tasks.Task`1" />-returning function on the main view's UI thread and returns either that <see cref="T:System.Threading.Tasks.Task`1" />
+            or a proxy <see cref="T:System.Threading.Tasks.Task`1" /> that completes when the one produced by the given function completes.
             </summary>
-        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task`1" /> for the operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +398,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with dispatcherQueue.EnqueueAsync(function, priority), where dispatcherQueue is a DispatcherQueue instance that was retrieved from the UI thread and stored for later use.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -328,14 +418,14 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="function">Synchronous function to be executed on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="function">Synchronous function to be executed on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on the main view's UI thread and returns its result.
             </summary>
-        <returns>Awaitable Task </returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task`1" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
@@ -349,7 +439,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -362,15 +460,15 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
-        <param name="function">Asynchronous function to be executed asynchronously on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on.</param>
+        <param name="function">Asynchronous function to be executed asynchronously on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on a given view's UI thread.
             </summary>
-        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
     <Member MemberName="ExecuteOnUIThreadAsync&lt;T&gt;">
@@ -384,7 +482,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+          <AttributeName Language="C#">[System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This method should be replaced with viewToExecuteOn.DispatcherQueue.EnqueueAsync(function, priority).")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -397,15 +503,15 @@
         <Parameter Name="priority" Type="Windows.UI.Core.CoreDispatcherPriority" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Returned data type of the function</typeparam>
-        <param name="viewToExecuteOn">View for the <paramref name="function" />  to be executed on </param>
-        <param name="function">Synchronous function with return type <typeparamref name="T" /> to be executed on UI thread</param>
-        <param name="priority">Dispatcher execution priority, default is normal</param>
+        <typeparam name="T">Returned data type of the function.</typeparam>
+        <param name="viewToExecuteOn">View for the <paramref name="function" /> to be executed on.</param>
+        <param name="function">Synchronous function with return type <typeparamref name="T" /> to be executed on UI thread.</param>
+        <param name="priority">Dispatcher execution priority, default is normal.</param>
         <summary>
-            Executes the given function asynchronously on given view's UI thread. Default view is the main view.
+            Executes the given function on a given view's UI thread.
             </summary>
-        <returns>Awaitable Task with type <typeparamref name="T" /></returns>
-        <remarks>To be added.</remarks>
+        <returns>An awaitable <see cref="T:System.Threading.Tasks.Task`1" /> for the operation.</returns>
+        <remarks>If the current thread has UI access, <paramref name="function" /> will be invoked directly.</remarks>
       </Docs>
     </Member>
   </Members>

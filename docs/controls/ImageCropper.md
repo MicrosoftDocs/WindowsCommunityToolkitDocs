@@ -1,16 +1,16 @@
 ---
 title: ImageCropper
 author: HHChaos
-description: ImageCropper control allows user to crop image freely.
+description: Learn how to use the ImageCropper XAML control. This control allows the user to freely crop an image.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, ImageCropper
 dev_langs:
   - csharp
   - vb
 ---
 
-# ImageCropper XAML Control
+# ImageCropper
 
-The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagecropper) allows user to crop image freely.
+The [ImageCropper Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imagecropper) allows user to freely crop an image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=ImageCropper)
@@ -30,7 +30,6 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 
 ## Properties
 
-
 | Property              | Type            | Description                                                  |
 | --------------------- | --------------- | ------------------------------------------------------------ |
 | MinCroppedPixelLength | double          | Gets or sets the minimum cropped length(in pixel).           |
@@ -44,7 +43,6 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | SecondaryThumbStyle   | Style           | Gets or sets a value for the style to use for the secondary thumbs of the ImageCropper. |
 | ThumbPlacement        | ThumbPlacement  | Gets or sets a value for thumb placement.                    |
 
-
 ## Methods
 
 | Methods                                              | Return Type | Description                                                  |
@@ -54,10 +52,10 @@ The [ImageCropper Control](https://docs.microsoft.com/dotnet/api/microsoft.toolk
 | Reset()                                              | void        | Reset the cropped area.                                      |
 | TrySetCroppedRegion(Rect rect)                       | bool        | Tries to set a new value for the cropped region, returns true if it succeeded, false if the region is invalid  |
 
-
 ## Examples
 
 ### Use ImageCropper
+
 You can set the cropped image source by using the `LoadImageFromFile(StorageFile)` method or setting the `Source` property.
 
 ```csharp
@@ -73,7 +71,8 @@ using (var fileStream = await someFile.OpenAsync(FileAccessMode.ReadWrite, Stora
     await _imageCropper.SaveAsync(fileStream, BitmapFileFormat.Png);
 }
 ```
-``vb
+
+```vb
 ' Load an image.
 Await ImageCropper.LoadImageFromFile(file)
 
@@ -87,22 +86,26 @@ End Using
 ```
 
 ### Use Circular ImageCropper
+
 You can set `CropShape` property to use the circular ImageCropper.
 
 ```csharp
 ImageCropper.CropShape = CropShape.Circular;
 ```
-``vb
+
+```vb
 ImageCropper.CropShape = CropShape.Circular
 ```
 
 ### Change Aspect Ratio
+
 You can set `AspectRatio` property to change the aspect ratio of the cropped image.
 
 ```csharp
 ImageCropper.AspectRatio = 16d / 9d;
 ```
-``vb
+
+```vb
 ImageCropper.AspectRatio = 16R / 9R
 ```
 
@@ -111,17 +114,18 @@ Or you can crop image without aspect ratio.
 ```csharp
 ImageCropper.AspectRatio = null;
 ```
-``vb
+
+```vb
 ImageCropper.AspectRatio = Nothing
 ```
 
 ## Sample Project
 
-[ImageCropper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCropper). You can [see this in action](uwpct://Controls?sample=ImageCropper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[ImageCropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCropper). You can [see this in action](uwpct://Controls?sample=ImageCropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[ImageCropper XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
+[ImageCropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -132,4 +136,4 @@ ImageCropper.AspectRatio = Nothing
 
 ## API
 
-* [ImageCropper source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper)
+* [ImageCropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper)

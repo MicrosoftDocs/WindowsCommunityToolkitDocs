@@ -1,14 +1,17 @@
 ---
 title: Matrix Extensions
 author: michael-hawker
-description: UWP Matrix extensions methods
+description: Learn about Matrix extensions, which provide methods to transform a Matrix. These methods are similar to methods from the System.Windows.Media.Matrix class.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Extensions, matrix
 dev_langs:
   - csharp
 ---
 
 # Matrix Extensions
-The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixextensions) provide methods to transform a [Matrix](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...).  These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](https://msdn.microsoft.com/en-us/library/system.windows.media.matrix(v=vs.110).aspx) class.
+
+The [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.matrixextensions) type provides methods to transform a [`Matrix`](/uwp/api/Windows.UI.Xaml.Media.Matrix) (Rotate, Scale, Translate, etc...). These are a similar subset of methods originally provided in the [System.Windows.Media.Matrix](/dotnet/api/system.windows.media.matrix) class.
+
+> **Platform APIs:** [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.matrixextensions)
 
 ## Methods
 
@@ -25,16 +28,16 @@ The [Matrix Extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Requirements (Windows 10 Device Family)
 
-| [Device family](http://go.microsoft.com/fwlink/p/?LinkID=526370) | Universal, 10.0.16299.0 or higher |
+| [Device family](/windows/uwp/get-started/universal-application-platform-guide) | Universal, 10.0.16299.0 or higher |
 | --- | --- |
 | Namespace | Microsoft.Toolkit.Uwp.UI |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
 
 ## API Source Code
 
-- [MatrixExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit/Extensions/Media/MatrixExtensions.cs)
+- [MatrixExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/Media/MatrixExtensions.cs)
 
 ## Related Topics
 
-- [Windows.UI.Xaml.Media.Matrix](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Media.Matrix)
-- [System.Windows.Media.Matrix](https://msdn.microsoft.com/en-us/library/system.windows.media.matrix(v=vs.110).aspx)
+- [Windows.UI.Xaml.Media.Matrix](/uwp/api/Windows.UI.Xaml.Media.Matrix)
+- [System.Windows.Media.Matrix](/dotnet/api/system.windows.media.matrix)

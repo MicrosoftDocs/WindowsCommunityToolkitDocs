@@ -1,13 +1,16 @@
 ---
 title: PlannerTaskList Control
 author: OGcanviz
-description: The PlannerTaskList Control displays a simple list of Planner tasks.
+description: The PlannerTaskList Control displays a simple list of Planner tasks (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, PlannerTaskList Control
 ---
 
 # PlannerTaskList Control
 
-The [PlannerTaskList Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.plannertasklist) displays a simple list of Planner tasks, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
+> [!WARNING]
+> (This API has been removed. For the latest guidance on using the Microsoft Graph check out the [Windows Community Toolkit - Graph Helpers and Controls](../../graph/overview.md).)
+
+The [PlannerTaskList Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.plannertasklist) displays a simple list of Planner tasks, it relies on the [MicrosoftGraphService](../../services/MicrosoftGraph.md) for authentication.
 
 ## Syntax
 
@@ -35,12 +38,12 @@ The [PlannerTaskList Control](https://docs.microsoft.com/dotnet/api/microsoft.to
 
 ## Sample Code
 
-First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
+First of all, initialize the [MicrosoftGraphService](../../services/MicrosoftGraph.md) with your [Azure AD v2.0 app](/azure/active-directory/develop/active-directory-v2-app-registration), this should be done globally with the combined and unique [delegate permissions](/azure/active-directory/develop/active-directory-v2-scopes) required by all Graph controls and services used in your app.
 
-> Note: The permission `Group.ReadWrite.All` used in this control requires [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-scopes#request-the-permissions-from-a-directory-admin), which could be done by opening URL like this in browser and sign in with your organization's admin.
+> Note: The permission `Group.ReadWrite.All` used in this control requires [admin consent](/azure/active-directory/develop/active-directory-v2-scopes#request-the-permissions-from-a-directory-admin), which could be done by opening a URL like this in the browser and sign in with your organization's admin.
 > `https://login.microsoftonline.com/common/adminconsent?client_id=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx&state=12345`
 
-```c#
+```csharp
 MicrosoftGraphService.Instance.AuthenticationModel = MicrosoftGraphEnums.AuthenticationModel.V2;
 
 MicrosoftGraphService.Instance.Initialize(
@@ -52,15 +55,15 @@ MicrosoftGraphService.Instance.Initialize(
 
 The sign in will be processed by the [AadLogin](AadLogin.md) control, however, you could do sign in with the following alternatively.
 
-```c#
+```csharp
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[PlannerTaskList Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PlannerTaskList). You can [see this in action](uwpct://Controls?sample=PlannerTaskList) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[PlannerTaskList Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PlannerTaskList). You can [see this in action](uwpct://Controls?sample=PlannerTaskList) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[PlannerTaskList XAML File](https://github.com/Microsoft/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PlannerTaskList/PlannerTaskList.xaml) is the XAML template used in the toolkit for the default styling.
+[PlannerTaskList XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PlannerTaskList/PlannerTaskList.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -68,7 +71,3 @@ await MicrosoftGraphService.Instance.LoginAsync();
 | -- | -- |
 | Namespace | Microsoft.Toolkit.Uwp.UI.Controls.Graph |
 | NuGet package | [Microsoft.Toolkit.Uwp.UI.Controls.Graph](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI.Controls.Graph/) |
-
-## API
-
-* [PlannerTaskList source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PlannerTaskList)

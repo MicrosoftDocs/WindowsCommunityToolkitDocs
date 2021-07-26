@@ -1,0 +1,1078 @@
+<Type Name="ReadOnlySpan2D&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ReadOnlySpan2D&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlySpan2D`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlySpan2D(Of T)" />
+  <TypeSignature Language="F#" Value="type ReadOnlySpan2D&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Memory.Views.MemoryDebugView2D`1))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Memory.Views.MemoryDebugView2D`1))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsByRefLike]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsByRefLike&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[,]? array);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,))" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[,] -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; array" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 2D array to wrap.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct wrapping a 2D array.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[,,] array, int depth);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,,] array, int32 depth) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[0:,0:,0:],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,,), depth As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[,,] * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (array, depth)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" />
+        <Parameter Name="depth" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 3D array to wrap.</param>
+        <param name="depth">The target layer to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct wrapping a layer in a 3D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[] array, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[] * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (array, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to wrap.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct.
+            </summary>
+        <remarks>The total area must match the length of <paramref name="array" />.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" /> or <paramref name="width" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (void* pointer, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* pointer, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(System.Void*,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : nativeptr&lt;unit&gt; * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (pointer, height, width, pitch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="pointer" Type="System.Void*" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pointer">The pointer to the first <typeparamref name="T" /> item to map.</param>
+        <param name="height">The height of the 2D memory area to map.</param>
+        <param name="width">The width of the 2D memory area to map.</param>
+        <param name="pitch">The pitch of the 2D memory area to map (the distance between each row).</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct with the specified parameters.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when one of the parameters are negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[,]? array, int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,] array, int32 row, int32 column, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,), row As Integer, column As Integer, height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[,] * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (array, row, column, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 2D array to wrap.</param>
+        <param name="row">The target row to map within <paramref name="array" />.</param>
+        <param name="column">The target column to map within <paramref name="array" />.</param>
+        <param name="height">The height to map within <paramref name="array" />.</param>
+        <param name="width">The width to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct wrapping a 2D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when either <paramref name="height" />, <paramref name="width" /> or <paramref name="height" />
+            are negative or not within the bounds that are valid for <paramref name="array" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[] array, int offset, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[] array, int32 offset, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(), offset As Integer, height As Integer, width As Integer, pitch As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[] * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (array, offset, height, width, pitch)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="offset" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The target array to wrap.</param>
+        <param name="offset">The initial offset within <paramref name="array" />.</param>
+        <param name="height">The height of the resulting 2D area.</param>
+        <param name="width">The width of each row in the resulting 2D area.</param>
+        <param name="pitch">The pitch in the resulting 2D area.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+            Thrown when one of the input parameters is out of range.
+            </exception>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the requested area is outside of bounds for <paramref name="array" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan2D (T[,,] array, int depth, int row, int column, int height, int width);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,,] array, int32 depth, int32 row, int32 column, int32 height, int32 width) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.#ctor(`0[0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,,), depth As Integer, row As Integer, column As Integer, height As Integer, width As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; : 'T[,,] * int * int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; (array, depth, row, column, height, width)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,,]" />
+        <Parameter Name="depth" Type="System.Int32" />
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The given 3D array to wrap.</param>
+        <param name="depth">The target layer to map within <paramref name="array" />.</param>
+        <param name="row">The target row to map within <paramref name="array" />.</param>
+        <param name="column">The target column to map within <paramref name="array" />.</param>
+        <param name="height">The height to map within <paramref name="array" />.</param>
+        <param name="width">The width to map within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct wrapping a layer in a 3D array.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when a parameter is invalid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype Microsoft.Toolkit.HighPerformance.Span2D`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.CopyTo(Microsoft.Toolkit.HighPerformance.Span2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Span2D(Of T))" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Microsoft.Toolkit.HighPerformance.Span2D&lt;'T&gt; -&gt; unit" Usage="readOnlySpan2D.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The destination <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> instance.</param>
+        <summary>
+            Copies the contents of this <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> into a destination <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> instance.
+            For this API to succeed, the target <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> has to have the same shape as the current one.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="destination" /> is shorter than the source <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(valuetype System.Span`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.CopyTo(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Span(Of T))" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : Span&lt;'T&gt; -&gt; unit" Usage="readOnlySpan2D.CopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The destination <see cref="T:System.Span`1" /> instance.</param>
+        <summary>
+            Copies the contents of this <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> into a destination <see cref="T:System.Span`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when <paramref name="destination" /> is shorter than the source <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousCreate">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; DangerousCreate (ref T value, int height, int width, int pitch);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; DangerousCreate([in]!T&amp; value, int32 height, int32 width, int32 pitch) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.DangerousCreate(`0@,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousCreate (ByRef value As T, height As Integer, width As Integer, pitch As Integer) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member DangerousCreate : 'T * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.DangerousCreate (value, height, width, pitch)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="T" RefType="ref">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="height" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="pitch" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The reference to the first <typeparamref name="T" /> item to map.</param>
+        <param name="height">The height of the 2D memory area to map.</param>
+        <param name="width">The width of the 2D memory area to map.</param>
+        <param name="pitch">The pitch of the 2D memory area to map (the distance between each row).</param>
+        <summary>
+            Creates a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> struct with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance with the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when one of the parameters are negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReference">
+      <MemberSignature Language="C#" Value="public ref T DangerousGetReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.DangerousGetReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetReference () As T" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetReference : unit -&gt; 'T" Usage="readOnlySpan2D.DangerousGetReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a reference to the first element within the current instance, with no bounds check.
+            </summary>
+        <returns>A reference to the first element within the current instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReferenceAt">
+      <MemberSignature Language="C#" Value="public ref T DangerousGetReferenceAt (int i, int j);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetReferenceAt(int32 i, int32 j) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.DangerousGetReferenceAt(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetReferenceAt (i As Integer, j As Integer) As T" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetReferenceAt : int * int -&gt; 'T" Usage="readOnlySpan2D.DangerousGetReferenceAt (i, j)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+        <Parameter Name="j" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">The target row to get the element from.</param>
+        <param name="j">The target column to get the element from.</param>
+        <summary>
+            Returns a reference to a specified element within the current instance, with no bounds check.
+            </summary>
+        <returns>A reference to the element at the specified indices.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an empty <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object? obj);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="readOnlySpan2D.Equals obj" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("Equals() on Span will always throw an exception. Use == instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("Equals() on Span will always throw an exception. Use == instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="obj" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="obj">The object to compare with the current instance. </param>
+        <summary>Indicates whether this instance and a specified object are equal.</summary>
+        <returns>true if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, false. </returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumn">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;T&gt; GetColumn (int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1&lt;!T&gt; GetColumn(int32 column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetColumn(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumn (column As Integer) As ReadOnlyRefEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetColumn : int -&gt; Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;'T&gt;" Usage="readOnlySpan2D.GetColumn column" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="column">The target column to enumerate within the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.</param>
+        <summary>
+            Gets an enumerable that traverses items in a specified column.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1" /> with target items to enumerate.</returns>
+        <remarks>The returned <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1" /> value shouldn't be used directly: use this extension in a <see langword="foreach" /> loop.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As ReadOnlySpan2D(Of T).Enumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Enumerator" Usage="readOnlySpan2D.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns an enumerator for the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.
+            </summary>
+        <returns>
+            An enumerator that can be used to traverse the items in the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="readOnlySpan2D.GetHashCode " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("GetHashCode() on Span will always throw an exception.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("GetHashCode() on Span will always throw an exception.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>A 32-bit signed integer that is the hash code for this instance.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPinnableReference">
+      <MemberSignature Language="C#" Value="public ref T GetPinnableReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T GetPinnableReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetPinnableReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPinnableReference () As T" />
+      <MemberSignature Language="F#" Value="member this.GetPinnableReference : unit -&gt; 'T" Usage="readOnlySpan2D.GetPinnableReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a reference to the 0th element of the <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance. If the current
+            instance is empty, returns a <see langword="null" /> reference. It can be used for pinning
+            and is required to support the use of span within a fixed statement.
+            </summary>
+        <returns>A reference to the 0th element, or a <see langword="null" /> reference.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRow">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;T&gt; GetRow (int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1&lt;!T&gt; GetRow(int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetRow(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRow (row As Integer) As ReadOnlyRefEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetRow : int -&gt; Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;'T&gt;" Usage="readOnlySpan2D.GetRow row" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The target row to enumerate within the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.</param>
+        <summary>
+            Gets an enumerable that traverses items in a specified row.
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1" /> with target items to enumerate.</returns>
+        <remarks>The returned <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.ReadOnlyRefEnumerable`1" /> value shouldn't be used directly: use this extension in a <see langword="foreach" /> loop.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; GetRowSpan (int row);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ReadOnlySpan`1&lt;!T&gt; GetRowSpan(int32 row) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.GetRowSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRowSpan (row As Integer) As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetRowSpan : int -&gt; ReadOnlySpan&lt;'T&gt;" Usage="readOnlySpan2D.GetRowSpan row" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The index of the target row to retrieve.</param>
+        <summary>
+            Gets a <see cref="T:System.ReadOnlySpan`1" /> for a specified row.
+            </summary>
+        <returns>The resulting row <see cref="T:System.ReadOnlySpan`1" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Throw when <paramref name="row" /> is out of range.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Height">
+      <MemberSignature Language="C#" Value="public int Height { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Height" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the height of the underlying 2D memory area.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEmpty">
+      <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.IsEmpty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance is empty.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[Index row, Index column] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(valuetype System.Index, valuetype System.Index)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Item(System.Index,System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(row As Index, column As Index) As T" />
+      <MemberSignature Language="F#" Value="member this.Item(Index * Index) : 'T" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Index" />
+        <Parameter Name="column" Type="System.Index" />
+      </Parameters>
+      <Docs>
+        <param name="row">The target row to get the element from.</param>
+        <param name="column">The target column to get the element from.</param>
+        <summary>
+            Gets the element at the specified zero-based indices.
+            </summary>
+        <value>A reference to the element at the specified indices.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+            Thrown when either <paramref name="row" /> or <paramref name="column" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public T this[int row, int column] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32, int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Item(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(row As Integer, column As Integer) As T" />
+      <MemberSignature Language="F#" Value="member this.Item(int * int) : 'T" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The target row to get the element from.</param>
+        <param name="column">The target column to get the element from.</param>
+        <summary>
+            Gets the element at the specified zero-based indices.
+            </summary>
+        <value>A reference to the element at the specified indices.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+            Thrown when either <paramref name="row" /> or <paramref name="column" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; this[Range rows, Range columns] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Item(valuetype System.Range, valuetype System.Range)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Item(System.Range,System.Range)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(rows As Range, columns As Range) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Item(Range * Range) : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rows" Type="System.Range" />
+        <Parameter Name="columns" Type="System.Range" />
+      </Parameters>
+      <Docs>
+        <param name="rows">The target range of rows to select.</param>
+        <param name="columns">The target range of columns to select.</param>
+        <summary>
+            Slices the current instance with the specified parameters.
+            </summary>
+        <value>A new <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance representing a slice of the current one.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="rows" /> or <paramref name="columns" /> are invalid.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public IntPtr Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance native int Length" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Length : nativeint" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the length of the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool operator == (Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; left, Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; left, valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.op_Equality(Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0},Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ReadOnlySpan2D(Of T), right As ReadOnlySpan2D(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; * Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; -&gt; bool" Usage="left = right" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;" />
+        <Parameter Name="right" Type="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to compare.</param>
+        <param name="right">The second <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to compare.</param>
+        <summary>
+            Checks whether two <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instances are equal.
+            </summary>
+        <returns>Whether or not <paramref name="left" /> and <paramref name="right" /> are equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; (Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; op_Implicit(valuetype Microsoft.Toolkit.HighPerformance.Span2D`1&lt;!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.op_Implicit(Microsoft.Toolkit.HighPerformance.Span2D{`0})~Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (span As Span2D(Of T)) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : Microsoft.Toolkit.HighPerformance.Span2D&lt;'T&gt; -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.op_Implicit span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="span">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; (T[,]? array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; op_Implicit(!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.op_Implicit(`0[0:,0:])~Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (array As T(,)) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'T[,] -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.op_Implicit array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool operator != (Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; left, Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; right);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; left, valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; right) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.op_Inequality(Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0},Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ReadOnlySpan2D(Of T), right As ReadOnlySpan2D(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; * Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt; -&gt; bool" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.op_Inequality (left, right)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="left" Type="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;" />
+        <Parameter Name="right" Type="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="left">The first <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to compare.</param>
+        <param name="right">The second <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to compare.</param>
+        <summary>
+            Checks whether two <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instances are not equal.
+            </summary>
+        <returns>Whether or not <paramref name="left" /> and <paramref name="right" /> are not equal.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; Slice (int row, int column, int width, int height);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Slice(int32 row, int32 column, int32 width, int32 height) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Slice(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (row As Integer, column As Integer, width As Integer, height As Integer) As ReadOnlySpan2D(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Slice : int * int * int * int -&gt; Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="readOnlySpan2D.Slice (row, column, width, height)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="row" Type="System.Int32" />
+        <Parameter Name="column" Type="System.Int32" />
+        <Parameter Name="width" Type="System.Int32" />
+        <Parameter Name="height" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="row">The target row to map within the current instance.</param>
+        <param name="column">The target column to map within the current instance.</param>
+        <param name="width">The width to map within the current instance.</param>
+        <param name="height">The height to map within the current instance.</param>
+        <summary>
+            Slices the current instance with the specified parameters.
+            </summary>
+        <returns>A new <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance representing a slice of the current one.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when either <paramref name="height" />, <paramref name="width" /> or <paramref name="height" />
+            are negative or not within the bounds that are valid for the current instance.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public T[,] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[,] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T(,)" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[,]" Usage="readOnlySpan2D.ToArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Copies the contents of the current <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> instance into a new 2D array.
+            </summary>
+        <returns>A 2D array containing the data in the current <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="readOnlySpan2D.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype Microsoft.Toolkit.HighPerformance.Span2D`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.TryCopyTo(Microsoft.Toolkit.HighPerformance.Span2D{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Span2D(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Microsoft.Toolkit.HighPerformance.Span2D&lt;'T&gt; -&gt; bool" Usage="readOnlySpan2D.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="Microsoft.Toolkit.HighPerformance.Span2D&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The target <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" /> of the copy operation.</param>
+        <summary>
+            Attempts to copy the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to a destination <see cref="T:Microsoft.Toolkit.HighPerformance.Span2D`1" />.
+            </summary>
+        <returns>Whether or not the operation was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo">
+      <MemberSignature Language="C#" Value="public bool TryCopyTo (Span&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryCopyTo(valuetype System.Span`1&lt;!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.TryCopyTo(System.Span{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryCopyTo (destination As Span(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryCopyTo : Span&lt;'T&gt; -&gt; bool" Usage="readOnlySpan2D.TryCopyTo destination" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="destination" Type="System.Span&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="destination">The target <see cref="T:System.Span`1" /> of the copy operation.</param>
+        <summary>
+            Attempts to copy the current <see cref="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" /> instance to a destination <see cref="T:System.Span`1" />.
+            </summary>
+        <returns>Whether or not the operation was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetSpan">
+      <MemberSignature Language="C#" Value="public bool TryGetSpan (out ReadOnlySpan&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetSpan([out] valuetype System.ReadOnlySpan`1&lt;!T&gt;&amp; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.TryGetSpan(System.ReadOnlySpan{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetSpan (ByRef span As ReadOnlySpan(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetSpan : ReadOnlySpan -&gt; bool" Usage="readOnlySpan2D.TryGetSpan span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="span">The resulting <see cref="T:System.ReadOnlySpan`1" />, in case of success.</param>
+        <summary>
+            Tries to get a <see cref="T:System.ReadOnlySpan`1" /> instance, if the underlying buffer is contiguous and small enough.
+            </summary>
+        <returns>Whether or not <paramref name="span" /> was correctly assigned.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public int Width { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Width" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the width of the underlying 2D memory area.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

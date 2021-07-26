@@ -10,7 +10,7 @@ dev_langs:
 
 # Background Task Helper
 
-The [Background Task Helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner.
+The [Background Task Helper](/dotnet/api/microsoft.toolkit.uwp.helpers.backgroundtaskhelper) helps users interact with background tasks in an easier manner.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=BackgroundTaskHelper)
@@ -23,6 +23,7 @@ using Microsoft.Toolkit.Uwp;
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register(typeof(BackgroundTaskClass), new TimeTrigger(15, true));
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", new TimeTrigger(15, true));
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp
 
@@ -34,11 +35,11 @@ Dim registered As BackgroundTaskRegistration = BackgroundTaskHelper.Register("Ta
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| GetBackgroundTask(String) | [IBackgroundTaskRegistration](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.IBackgroundTaskRegistration) | Get the registered background task of the given type |
+| GetBackgroundTask(String) | [IBackgroundTaskRegistration](/uwp/api/Windows.ApplicationModel.Background.IBackgroundTaskRegistration) | Get the registered background task of the given type |
 | GetBackgroundTask(Type) | IBackgroundTaskRegistration | Get the registered background task of the given type |
 | IsBackgroundTaskRegistered(String) | bool | Check if a background task is registered |
 | IsBackgroundTaskRegistered(Type) | bool | Check if a background task is registered |
-| Register(String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | [BackgroundTaskRegistration](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) | Registers under the Single Process Model |
+| Register(String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | [BackgroundTaskRegistration](/uwp/api/Windows.ApplicationModel.Background.BackgroundTaskRegistration) | Registers under the Single Process Model |
 | Register(Type, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | BackgroundTaskRegistration | Register a background task with conditions |
 | Register(String, String, IBackgroundTrigger, Boolean, Boolean, IBackgroundCondition[]) | BackgroundTaskRegistration | Register a background task with conditions |
 | Unregister(String, Boolean) | void | Unregister a background task |
@@ -63,7 +64,7 @@ Once it is done, you can register your Background Tasks.
 using Microsoft.Toolkit.Uwp;
 using Windows.ApplicationModel.Background;
 
-// Register a normal, seperate process, background task
+// Register a normal, separate process, background task
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", new TimeTrigger(15, true));
 
 // This can also be written using the overload of Register with Type parameter.
@@ -84,12 +85,13 @@ BackgroundTaskRegistration registered =
                                     new SystemCondition(SystemConditionType.InternetAvailable), 
                                     new SystemCondition(SystemConditionType.UserPresent));
 ```
+
 ```vb
 ' Be sure to include the Imports at the top of the file:
 Imports Microsoft.Toolkit.Uwp
 Imports Windows.ApplicationModel.Background
 
-' Register a normal, seperate process, background task
+' Register a normal, separate process, background task
 Dim registered As BackgroundTaskRegistration = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", New TimeTrigger(15, True))
 
 ' This can also be written using the overload of Register with Type parameter.
@@ -129,6 +131,7 @@ using Windows.ApplicationModel.Background;
 // Register a single process background task (Anniversary Update and later ONLY)
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("Name of the Background Task", new TimeTrigger(15, true));
 ```
+
 ```vb
 ' Be sure to include the imports at the top of the file:
 Imports Microsoft.Toolkit.Uwp
@@ -159,6 +162,7 @@ protected override void OnBackgroundActivated(BackgroundActivatedEventArgs args)
     deferral.Complete();
 }
 ```
+
 ```vb
 Protected Overrides Sub OnBackgroundActivated(ByVal args As BackgroundActivatedEventArgs)
     MyBase.OnBackgroundActivated(args)
@@ -176,7 +180,7 @@ End Sub
 
 ## Sample Project
 
-[Background Task Helper](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can [see this in action](uwpct://Helpers?sample=BackgroundTaskHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Background Task Helper](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can [see this in action](uwpct://Helpers?sample=BackgroundTaskHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -187,4 +191,4 @@ End Sub
 
 ## API
 
-* [Background Task source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/BackgroundTaskHelper.cs)
+* [Background Task source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/BackgroundTaskHelper.cs)

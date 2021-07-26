@@ -1,7 +1,7 @@
 ---
 title: Facebook Service 
 author: nmetulev
-description: The Facebook Service allows you to retrieve or publish data to the Facebook graph. Examples of the types of objects you can work with are Posts, Tagged Objects, and the primary user feed.
+description: The Facebook Service allows you to retrieve or publish data to the Facebook graph. Examples of the types of objects you can work with are Posts, Tagged Objects, and the primary user feed (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Facebook Service 
 dev_langs:
   - csharp
@@ -9,6 +9,9 @@ dev_langs:
 ---
 
 # Facebook Service
+
+> [!WARNING]
+> The Facebook Service is no longer available in the Windows Community Toolkit. The underlying dependent library was no longer maintained.
 
 The Facebook Service allows you to retrieve or publish data to the Facebook graph. Examples of the types of objects you can work with are Posts, Tagged Objects, and the primary user feed.
 
@@ -23,9 +26,10 @@ The Windows Store SID is a unique value per application generated, and it not ti
 // Put the following code in your mainform loaded event
 // Note that this will not work in the App.xaml.cs Loaded
 #if DEBUG
-	System.Diagnostics.Debug.WriteLine("Windows Store SID = " + Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance.WindowsStoreId);
+    System.Diagnostics.Debug.WriteLine("Windows Store SID = " + Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance.WindowsStoreId);
 #endif
 ```
+
 ```vb
 ' Put the following code in your mainform loaded event
 ' Note that this will not work in the App.xaml.cs Loaded
@@ -47,13 +51,13 @@ When entering the value into the Facebook Developer site you must strip the ms-a
 
 ## Creating a new Application on Facebook Developer Site
 
-1. To get a **Facebook.WindowsStoreID**, go to: https://developers.facebook.com/apps. 
-2. Select **Create a New App ID**, to start integration Facebook into your app or website. 
+1. To get a **Facebook.WindowsStoreID**, go to: <https://developers.facebook.com/apps>.
+2. Select **Create a New App ID**, to start integration Facebook into your app or website.
 3. Click, **Create a New App**
 4. From the app Dashboard choose the **Settings** item on the left.  It should select the *Basic* item under it by default.
 5. **+Add Platform** choose Windows App.  Leave the *Namespace* and *App Domains* entries blank.
 6. Enter the **Windows Store SID** from within your app (see *Getting Windows Store SID* section)
-7. From left side menu choose **+Add Product** Click to add *Facebook Login*.  Ensure you set the following options in the UI: 
+7. From left side menu choose **+Add Product** Click to add *Facebook Login*.  Ensure you set the following options in the UI:
 
 | Setting | Value |
 |----------|------:|
@@ -91,6 +95,7 @@ await FacebookService.Instance.GetUserAlbumsAsync();
 // Get current user's photos by album Id
 await FacebookService.Instance.GetUserPhotosByAlbumIdAsync(addedItem.Id);
 ```
+
 ```vb
 ' Initialize service
 FacebookService.Instance.Initialize(AppIDText.Text)
@@ -224,7 +229,7 @@ Holds facebook post data
 | Link | string | Gets or sets a link to the entity instance |
 | Full_Picture | string | Gets or sets a link to the accompanying image |
 
-## FacebookRequestSource<T> Class
+## FacebookRequestSource\<T> Class
 
 Type to handle paged requests to Facebook Graph
 
@@ -238,7 +243,7 @@ Type to handle paged requests to Facebook Graph
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| GetPagedItemsAsync(int, int, CancellationToken) | Task<IEnumerable<T>> | Returns strong typed page of data |
+| GetPagedItemsAsync(int, int, CancellationToken) | Task\<IEnumerable\<T>> | Returns strong typed page of data |
 
 ## FacebookService Class
 
@@ -260,23 +265,23 @@ Class for connecting to Facebook
 |                        Methods                        |                                       Return Type                                       |                                    Description                                    |
 |-------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Initialize(FacebookOAuthTokens, FacebookPermissions)  |                                          bool                                           |          Initialize underlying provider with relevant token information           |
-|                     LoginAsync()                      |                                       Task<bool>                                        |                  Login with set of required requiredPermissions                   |
+|                     LoginAsync()                      |                                       Task\<bool>                                        |                  Login with set of required requiredPermissions                   |
 |                     LogoutAsync()                     |                                          Task                                           |                    Log out of the underlying service instance                     |
-|         RequestAsync(FacebookDataConfig, int)         |                                Task<List<FacebookPost>>                                 |     Request list data from service provider based upon a given config / query     |
-|   RequestAsync<T>(FacebookDataConfig, int, string)    |                                      Task<List<T>>                                      |     Request list data from service provider based upon a given config / query     |
-|      RequestAsync(FacebookDataConfig, int, int)       |  Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPost>, FacebookPost>>  |     Request list data from service provider based upon a given config / query     |
-| RequestAsync<T>(FacebookDataConfig, int, int, string) |             Task<IncrementalLoadingCollection<FacebookRequestSource<T>, T>>             | Request generic list data from service provider based upon a given config / query |
-|               GetUserPictureInfoAsync()               |                                  Task<FacebookPicture>                                  |       Returns the `FacebookPicture` object associated with the logged user        |
-|            GetUserAlbumsAsync(int, string)            |                                Task<List<FacebookAlbum>>                                |                        Retrieves list of user photo albums                        |
-|         GetUserAlbumsAsync(int, int, string)          | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookAlbum>, FacebookAlbum>> |                        Retrieves list of user photo albums                        |
-|   GetUserPhotosByAlbumIdAsync(string, int, string)    |                                Task<List<FacebookPhoto>>                                |                     Retrieves list of user photos by album id                     |
-| GetUserPhotosByAlbumIdAsync(string, int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource<FacebookPhoto>, FacebookPhoto>> |                     Retrieves list of user photos by album id                     |
-|            GetPhotoByPhotoIdAsync(string)             |                                   Task<FacebookPhoto>                                   |                              Retrieves a photo by id                              |
-|           PostToFeedWithDialogAsync(string)           |                                       Task<bool>                                        |            Enables posting data to the timeline using Facebook dialog             |
+|         RequestAsync(FacebookDataConfig, int)         |                                Task<List\<FacebookPost>>                                 |     Request list data from service provider based upon a given config / query     |
+|   RequestAsync\<T>(FacebookDataConfig, int, string)    |                                      Task<List\<T>>                                      |     Request list data from service provider based upon a given config / query     |
+|      RequestAsync(FacebookDataConfig, int, int)       |  Task<IncrementalLoadingCollection<FacebookRequestSource\<FacebookPost>, FacebookPost>>  |     Request list data from service provider based upon a given config / query     |
+| RequestAsync\<T>(FacebookDataConfig, int, int, string) |             Task<IncrementalLoadingCollection<FacebookRequestSource\<T>, T>>             | Request generic list data from service provider based upon a given config / query |
+|               GetUserPictureInfoAsync()               |                                  Task\<FacebookPicture>                                  |       Returns the `FacebookPicture` object associated with the logged user        |
+|            GetUserAlbumsAsync(int, string)            |                                Task<List\<FacebookAlbum>>                                |                        Retrieves list of user photo albums                        |
+|         GetUserAlbumsAsync(int, int, string)          | Task<IncrementalLoadingCollection<FacebookRequestSource\<FacebookAlbum>, FacebookAlbum>> |                        Retrieves list of user photo albums                        |
+|   GetUserPhotosByAlbumIdAsync(string, int, string)    |                                Task<List\<FacebookPhoto>>                                |                     Retrieves list of user photos by album id                     |
+| GetUserPhotosByAlbumIdAsync(string, int, int, string) | Task<IncrementalLoadingCollection<FacebookRequestSource\<FacebookPhoto>, FacebookPhoto>> |                     Retrieves list of user photos by album id                     |
+|            GetPhotoByPhotoIdAsync(string)             |                                   Task\<FacebookPhoto>                                   |                              Retrieves a photo by id                              |
+|           PostToFeedWithDialogAsync(string)           |                                       Task\<bool>                                        |            Enables posting data to the timeline using Facebook dialog             |
 
 ## Sample Project
 
-[Facebook Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Facebook Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -287,4 +292,4 @@ Class for connecting to Facebook
 
 ## API
 
-* [Facebook Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.Services/Services/Facebook)
+* [Facebook Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.Services/Services/Facebook)

@@ -10,9 +10,9 @@ dev_langs:
 
 # NetworkHelper
 
-The [NetworkHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.networkhelper) class provides functionality to monitor changes in network connection and allows users to query for network information without additional lookups.
+The [NetworkHelper](/dotnet/api/microsoft.toolkit.uwp.connectivity.networkhelper) class provides functionality to monitor changes in network connection and allows users to query for network information without additional lookups.
 
-It exposes network information though a property called ConnectionInformation. The [ConnectionInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) holds information about ConnectionType, ConnectivityLevel, ConnectionCost, SignalStrength, Internet Connectivity and more.
+It exposes network information though a property called ConnectionInformation. The [ConnectionInformation](/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) holds information about ConnectionType, ConnectivityLevel, ConnectionCost, SignalStrength, Internet Connectivity and more.
 
 **_What is a metered connection?_**
 A metered connection is an Internet connection that has a data limit or cost associated with it. Cellular data connections are set as metered by default. Wi-Fi network connections can be set to metered, but aren't by default. Application developers should take metered nature of connection into account and reduce data usage.
@@ -24,20 +24,20 @@ A metered connection is an Internet connection that has a data limit or cost ass
 
 | Property | Type | Description |
 | -- | -- | -- |
-| ConnectionInformation | [ConnectionInformation](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) | Gets instance of ConnectionInformation |
+| ConnectionInformation | [ConnectionInformation](/dotnet/api/microsoft.toolkit.uwp.connectivity.connectioninformation) | Gets instance of ConnectionInformation |
 | Instance | NetworkHelper | Gets public singleton property |
 
 ## ConnectionInformation Properties
 
 |           Property            |                                                          Type                                                           |                                  Description                                  |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        ConnectionCost         |           [ConnectionCost](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.ConnectionCost)           |       Gets connection cost for the current Internet Connection Profile        |
-|        ConnectionType         |       [ConnectionType](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.connectivity.connectiontype)        |       Gets connection type for the current Internet Connection Profile        |
-|       ConnectivityLevel       | [NetworkConnectivityLevel](https://docs.microsoft.com/uwp/api/Windows.Networking.Connectivity.NetworkConnectivityLevel) |      Gets connectivity level for the current Internet Connection Profile      |
+|        ConnectionCost         |           [ConnectionCost](/uwp/api/Windows.Networking.Connectivity.ConnectionCost)           |       Gets connection cost for the current Internet Connection Profile        |
+|        ConnectionType         |       [ConnectionType](/dotnet/api/microsoft.toolkit.uwp.connectivity.connectiontype)        |       Gets connection type for the current Internet Connection Profile        |
+|       ConnectivityLevel       | [NetworkConnectivityLevel](/uwp/api/Windows.Networking.Connectivity.NetworkConnectivityLevel) |      Gets connectivity level for the current Internet Connection Profile      |
 |      IsInternetAvailable      |                                                          bool                                                           | Gets a value indicating whether internet is available across all connections  |
 | IsInternetOnMeteredConnection |                                                          bool                                                           | Gets a value indicating whether if the current internet connection is metered |
-|         NetworkNames          |                                                  IReadOnlyList<string>                                                  |       Gets signal strength for the current Internet Connection Profile        |
-|        SignalStrength         |                                                     Nullable<Byte>                                                      |       Gets signal strength for the current Internet Connection Profile        |
+|         NetworkNames          |                                                  IReadOnlyList\<string>                                                  |       Gets signal strength for the current Internet Connection Profile        |
+|        SignalStrength         |                                                     Nullable\<Byte>                                                      |       Gets signal strength for the current Internet Connection Profile        |
 
 ## ConnectionInformation Methods
 
@@ -81,6 +81,7 @@ switch(NetworkHelper.Instance.ConnectionInformation.ConnectionType)
         break;
 }
 ```
+
 ```vb
 ' Detect if Internet can be reached
 If NetworkHelper.Instance.ConnectionInformation.IsInternetAvailable Then
@@ -107,7 +108,7 @@ End Select
 
 ## Sample Project
 
-[NetworkHelper sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can [see this in action](uwpct://Helpers?sample=NetworkHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[NetworkHelper sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/NetworkHelper). You can [see this in action](uwpct://Helpers?sample=NetworkHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -118,4 +119,4 @@ End Select
 
 ## API
 
-* [NetworkHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.Connectivity/Network/NetworkHelper.cs)
+* [NetworkHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.Connectivity/Network/NetworkHelper.cs)

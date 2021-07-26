@@ -1,0 +1,123 @@
+<Type Name="DeferredEventArgs" FullName="Microsoft.Toolkit.Deferred.DeferredEventArgs">
+  <TypeSignature Language="C#" Value="public class DeferredEventArgs : EventArgs" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeferredEventArgs extends System.EventArgs" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Deferred.DeferredEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeferredEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DeferredEventArgs = class&#xA;    inherit EventArgs" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.EventArgs</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+      <see cref="T:System.EventArgs" /> which can retrieve a <see cref="T:Microsoft.Toolkit.Deferred.EventDeferral" /> in order to process data asynchronously before an <see cref="T:System.EventHandler" /> completes and returns to the calling control.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeferredEventArgs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Deferred.DeferredEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Deferred.DeferredEventArgs Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Deferred.DeferredEventArgs Empty" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Deferred.DeferredEventArgs.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As DeferredEventArgs" />
+      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.Deferred.DeferredEventArgs" Usage="Microsoft.Toolkit.Deferred.DeferredEventArgs.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Deferred.DeferredEventArgs</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a new <see cref="T:Microsoft.Toolkit.Deferred.DeferredEventArgs" /> to use in cases where no <see cref="T:System.EventArgs" /> wish to be provided.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrentDeferralAndReset">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Deferred.EventDeferral? GetCurrentDeferralAndReset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Deferred.EventDeferral GetCurrentDeferralAndReset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Deferred.DeferredEventArgs.GetCurrentDeferralAndReset" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentDeferralAndReset () As EventDeferral" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentDeferralAndReset : unit -&gt; Microsoft.Toolkit.Deferred.EventDeferral" Usage="deferredEventArgs.GetCurrentDeferralAndReset " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.Browsable(false)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.Browsable(false)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName Language="C#">[System.Obsolete("This is an internal only method to be used by EventHandler extension classes, public callers should call GetDeferral() instead.")]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Obsolete("This is an internal only method to be used by EventHandler extension classes, public callers should call GetDeferral() instead.")&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Deferred.EventDeferral</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            DO NOT USE - This is a support method used by <see cref="T:Microsoft.Toolkit.Deferred.EventHandlerExtensions" />. It is public only for
+            additional usage within extensions for the UWP based TypedEventHandler extensions.
+            </summary>
+        <returns>Internal EventDeferral reference</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDeferral">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Deferred.EventDeferral GetDeferral ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Deferred.EventDeferral GetDeferral() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Deferred.DeferredEventArgs.GetDeferral" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeferral () As EventDeferral" />
+      <MemberSignature Language="F#" Value="member this.GetDeferral : unit -&gt; Microsoft.Toolkit.Deferred.EventDeferral" Usage="deferredEventArgs.GetDeferral " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Deferred.EventDeferral</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns an <see cref="T:Microsoft.Toolkit.Deferred.EventDeferral" /> which can be completed when deferred event is ready to continue.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Toolkit.Deferred.EventDeferral" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

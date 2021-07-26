@@ -1,0 +1,64 @@
+<Type Name="NullableExtensions" FullName="Microsoft.Toolkit.HighPerformance.Extensions.NullableExtensions">
+  <TypeSignature Language="C#" Value="public static class NullableExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit NullableExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Extensions.NullableExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module NullableExtensions" />
+  <TypeSignature Language="F#" Value="type NullableExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Nullable`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="DangerousGetValueOrDefaultReference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetValueOrDefaultReference&lt;T&gt; (this ref T? value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetValueOrDefaultReference&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt;&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Extensions.NullableExtensions.DangerousGetValueOrDefaultReference``1(System.Nullable{``0}@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DangerousGetValueOrDefaultReference(Of T As Structure) (ByRef value As Nullable(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousGetValueOrDefaultReference : Nullable -&gt; 'T (requires 'T : struct)" Usage="Microsoft.Toolkit.HighPerformance.Extensions.NullableExtensions.DangerousGetValueOrDefaultReference value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="System.Nullable&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the underlying value</typeparam>
+        <param name="value">The <see cref="T:System.Nullable`1" /></param>
+        <summary>
+            Returns a reference to the value of the input <see cref="T:System.Nullable`1" /> instance, regardless of whether
+            the <see cref="P:System.Nullable`1.HasValue" /> property is returning <see langword="true" /> or not. If that is not
+            the case, this method will still return a reference to the underlying <see langword="default" /> value.
+            </summary>
+        <returns>A reference to the underlying value from the input <see cref="T:System.Nullable`1" /> instance.</returns>
+        <remarks>
+            Note that attempting to mutate the returned reference will not change the value returned by <see cref="P:System.Nullable`1.HasValue" />.
+            That means that reassigning the value of an empty instance will not make <see cref="P:System.Nullable`1.HasValue" /> return <see langword="true" />.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,8 +1,8 @@
 ---
 title: Visual Tree Extensions
 author: nmetulev
-description: The VisualTree extensions provide a collection of extensions methods for UI controls. It provides DependencyObject extensions to aid in using the VisualTreeHelper class.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Visual Tree, extentions
+description: The VisualTree extensions provide a collection of extensions methods for UI controls. It provides DependencyObject extensions to aid in using the VisualTreeHelper class (outdated docs).
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Visual Tree, extensions
 dev_langs:
   - csharp
   - vb
@@ -10,9 +10,12 @@ dev_langs:
 
 # Visual Tree Extensions
 
-The [VisualTree extensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.visualtree) provide a collection of extensions methods for UI controls.
+> [!WARNING]
+> This type has been removed from the Windows Community Toolkit, please use the [`DependencyObjectExtensions`](DependencyObjectExtensions.md) type instead.
 
-It provides [DependencyObject](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.DependencyObject) extensions to aid in using the [VisualTreeHelper](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. The official [VisualTreeHelper](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) documentation best explains reasons for walking the Visual Tree.
+The [VisualTree extensions](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.visualtree) provide a collection of extensions methods for UI controls.
+
+It provides [DependencyObject](/uwp/api/Windows.UI.Xaml.DependencyObject) extensions to aid in using the [VisualTreeHelper](/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) class. The official [VisualTreeHelper](/uwp/api/Windows.UI.Xaml.Media.VisualTreeHelper) documentation best explains reasons for walking the Visual Tree.
 
 ## Syntax
 
@@ -29,7 +32,7 @@ control = uiElement.FindDescendant<ListView>();
 // Find all visual descendant controls of the specified type.
 foreach (var child in uiElement.FindDescendants<ListViewItem>())
 {
-	// ...
+    // ...
 }
 
 // Find first visual ascendant control using its name.
@@ -38,6 +41,7 @@ control = uiElement.FindAscendantByName("MyScrollViewer");
 // Find first visual ascendant control of a specified type.
 control = uiElement.FindAscendant<ScrollViewer>();
 ```
+
 ```vb
 ' Include namespace to access extensions.
 Imports Microsoft.Toolkit.Uwp.UI.Extensions
@@ -63,11 +67,11 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| FindAscendant<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
+| FindAscendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first visual ascendant control of a specified type |
 | FindAscendantByName(this DependencyObject, String) | FrameworkElement | Find visual ascendant `FrameworkElement` control using its name |
-| FindDescendant<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
+| FindDescendant\<T>(this DependencyObject) | T where T : DependencyObject | Find first descendant control of a specified type |
 | FindDescendantByName(this DependencyObject, String) | FrameworkElement | Find descendant `FrameworkElement` control using its name |
-| FindDescendants<T>(this DependencyObject) | IEnumerable<T> where T : DependencyObject | Find all descendant controls of the specified type |
+| FindDescendants\<T>(this DependencyObject) | IEnumerable\<T> where T : DependencyObject | Find all descendant controls of the specified type |
 
 ## Requirements
 
@@ -78,8 +82,8 @@ control = uiElement.FindAscendant(Of ScrollViewer)()
 
 ## API
 
-* [VisualTree extensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/VisualTree.cs)
+* [VisualTree extensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Tree/VisualTree.cs)
 
 ## Related Topics
 
-- [LogicalTree Extensions](https://docs.microsoft.com/en-us/windows/communitytoolkit/extensions/logicaltree)
+* [LogicalTree Extensions](./logicaltree.md)

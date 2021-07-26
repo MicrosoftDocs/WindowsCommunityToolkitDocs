@@ -1,0 +1,142 @@
+<Type Name="StringExtensions" FullName="Microsoft.Toolkit.Uwp.UI.StringExtensions">
+  <TypeSignature Language="C#" Value="public static class StringExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.StringExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StringExtensions" />
+  <TypeSignature Language="F#" Value="type StringExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods for the <see cref="T:System.String" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToQuaternion">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Quaternion ToQuaternion (this string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Quaternion ToQuaternion(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.StringExtensions.ToQuaternion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToQuaternion (text As String) As Quaternion" />
+      <MemberSignature Language="F#" Value="static member ToQuaternion : string -&gt; System.Numerics.Quaternion" Usage="Microsoft.Toolkit.Uwp.UI.StringExtensions.ToQuaternion text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Quaternion</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="text">A <see cref="T:System.String" /> with the values to parse.</param>
+        <summary>
+            Converts a <see cref="T:System.String" /> value to a <see cref="T:System.Numerics.Quaternion" /> value.
+            This method always assumes the invariant culture for parsing values (',' separates numbers, '.' is the decimal separator).
+            Additionally, the format "&lt;float, float, float, float&gt;" is also allowed (though less efficient to parse).
+            </summary>
+        <returns>The parsed <see cref="T:System.Numerics.Quaternion" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown when <paramref name="text" /> doesn't represent a valid <see cref="T:System.Numerics.Quaternion" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector2">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 ToVector2 (this string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 ToVector2(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector2(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector2 (text As String) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ToVector2 : string -&gt; System.Numerics.Vector2" Usage="Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector2 text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="text">A <see cref="T:System.String" /> with the values to parse.</param>
+        <summary>
+            Converts a <see cref="T:System.String" /> value to a <see cref="T:System.Numerics.Vector2" /> value.
+            This method always assumes the invariant culture for parsing values (',' separates numbers, '.' is the decimal separator).
+            The input text can either represents a single number (mapped to <see cref="M:System.Numerics.Vector2.#ctor(System.Single)" />, or multiple components.
+            Additionally, the format "&lt;float, float&gt;" is also allowed (though less efficient to parse).
+            </summary>
+        <returns>The parsed <see cref="T:System.Numerics.Vector2" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown when <paramref name="text" /> doesn't represent a valid <see cref="T:System.Numerics.Vector2" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector3">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 ToVector3 (this string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector3 ToVector3(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector3(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector3 (text As String) As Vector3" />
+      <MemberSignature Language="F#" Value="static member ToVector3 : string -&gt; System.Numerics.Vector3" Usage="Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector3 text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="text">A <see cref="T:System.String" /> with the values to parse.</param>
+        <summary>
+            Converts a <see cref="T:System.String" /> value to a <see cref="T:System.Numerics.Vector3" /> value.
+            This method always assumes the invariant culture for parsing values (',' separates numbers, '.' is the decimal separator).
+            The input text can either represents a single number (mapped to <see cref="M:System.Numerics.Vector3.#ctor(System.Single)" />, or multiple components.
+            Additionally, the format "&lt;float, float, float&gt;" is also allowed (though less efficient to parse).
+            </summary>
+        <returns>The parsed <see cref="T:System.Numerics.Vector3" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown when <paramref name="text" /> doesn't represent a valid <see cref="T:System.Numerics.Vector3" /> value.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector4">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector4 ToVector4 (this string text);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector4 ToVector4(string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector4(System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector4 (text As String) As Vector4" />
+      <MemberSignature Language="F#" Value="static member ToVector4 : string -&gt; System.Numerics.Vector4" Usage="Microsoft.Toolkit.Uwp.UI.StringExtensions.ToVector4 text" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="text" Type="System.String" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="text">A <see cref="T:System.String" /> with the values to parse.</param>
+        <summary>
+            Converts a <see cref="T:System.String" /> value to a <see cref="T:System.Numerics.Vector4" /> value.
+            This method always assumes the invariant culture for parsing values (',' separates numbers, '.' is the decimal separator).
+            The input text can either represents a single number (mapped to <see cref="M:System.Numerics.Vector4.#ctor(System.Single)" />, or multiple components.
+            Additionally, the format "&lt;float, float, float, float&gt;" is also allowed (though less efficient to parse).
+            </summary>
+        <returns>The parsed <see cref="T:System.Numerics.Vector4" /> value.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.FormatException">Thrown when <paramref name="text" /> doesn't represent a valid <see cref="T:System.Numerics.Vector4" /> value.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

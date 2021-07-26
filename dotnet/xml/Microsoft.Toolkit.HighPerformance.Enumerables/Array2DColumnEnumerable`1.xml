@@ -1,0 +1,106 @@
+<Type Name="Array2DColumnEnumerable&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct Array2DColumnEnumerable&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Array2DColumnEnumerable`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Array2DColumnEnumerable(Of T)" />
+  <TypeSignature Language="F#" Value="type Array2DColumnEnumerable&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items to enumerate.</typeparam>
+    <summary>
+            A <see langword="ref" /><see langword="struct" /> that iterates a column in a given 2D <typeparamref name="T" /> array instance.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Array2DColumnEnumerable (T[,] array, int column);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T[,] array, int32 column) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1.#ctor(`0[0:,0:],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As T(,), column As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;'T&gt; : 'T[,] * int -&gt; Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;'T&gt;" Usage="new Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;'T&gt; (array, column)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+        <Parameter Name="column" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="array">The source 2D <typeparamref name="T" /> array instance.</param>
+        <param name="column">The target column to iterate within <paramref name="array" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1" /> struct.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;T&gt;.Enumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As Array2DColumnEnumerable(Of T).Enumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;'T&gt;.Enumerator" Usage="array2DColumnEnumerable.GetEnumerator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable&lt;T&gt;+Enumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Implements the duck-typed <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" /> method.
+            </summary>
+        <returns>An <see cref="T:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1.Enumerator" /> instance targeting the current 2D <typeparamref name="T" /> array instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray">
+      <MemberSignature Language="C#" Value="public T[] ToArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T[] ToArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.Enumerables.Array2DColumnEnumerable`1.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToArray () As T()" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; 'T[]" Usage="array2DColumnEnumerable.ToArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a <typeparamref name="T" /> array with the values in the target column.
+            </summary>
+        <returns>A <typeparamref name="T" /> array with the values in the target column.</returns>
+        <remarks>
+            This method will allocate a new <typeparamref name="T" /> array, so only
+            use it if you really need to copy the target items in a new memory location.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

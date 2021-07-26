@@ -1,7 +1,7 @@
 ---
 title: HttpHelper
 author: nmetulev
-description: HttpHelper is a Windows Community Toolkit helper class used to assist in common http and networking scenarios.
+description: HttpHelper is a Windows Community Toolkit helper class used to assist in common http and networking scenarios (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HttpHelper
 dev_langs:
   - csharp
@@ -11,9 +11,9 @@ dev_langs:
 # HttpHelper
 
 > [!WARNING]
-> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpClient](https://msdn.microsoft.com/library/system.net.http.httpclient(v=vs.110).aspx) or [Windows.Web.Http.HttpClient](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpClient) directly)
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpClient](/dotnet/api/system.net.http.httpclient) or [Windows.Web.Http.HttpClient](/uwp/api/Windows.Web.Http.HttpClient) directly)
 
-The [HttpHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelper) represents an HTTP request message including headers.
+The [HttpHelper](/dotnet/api/microsoft.toolkit.uwp.httphelper) represents an HTTP request message including headers.
 
 ## Syntax
 
@@ -22,6 +22,7 @@ var request = new HttpHelperRequest(new Uri("URI"), HttpMethod.Post);
 
 var response = await HttpHelper.Instance.SendRequestAsync(request);
 ```
+
 ```vb
 Private request = New HttpHelperRequest(New Uri("URI"), HttpMethod.Post)
 
@@ -62,6 +63,7 @@ using (var request = new HttpHelperRequest(new Uri(twitterUrl), HttpMethod.Post)
     }
 }
 ```
+
 ```vb
 Using request = New HttpHelperRequest(New Uri(twitterUrl), HttpMethod.Post)
     Using response = Await HttpHelper.Instance.SendRequestAsync(request)
@@ -79,4 +81,4 @@ End Using
 
 ## API
 
-* [HttpHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs)
+* [HttpHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs)

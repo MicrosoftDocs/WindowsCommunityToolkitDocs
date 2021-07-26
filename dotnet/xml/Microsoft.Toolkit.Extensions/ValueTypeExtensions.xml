@@ -1,0 +1,68 @@
+<Type Name="ValueTypeExtensions" FullName="Microsoft.Toolkit.Extensions.ValueTypeExtensions">
+  <TypeSignature Language="C#" Value="public static class ValueTypeExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ValueTypeExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Extensions.ValueTypeExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ValueTypeExtensions" />
+  <TypeSignature Language="F#" Value="type ValueTypeExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with value types.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ToHexString&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static string ToHexString&lt;T&gt; (this T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToHexString&lt;struct .ctor (class System.ValueType) T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.ValueTypeExtensions.ToHexString``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToHexString(Of T As Structure) (value As T) As String" />
+      <MemberSignature Language="F#" Value="static member ToHexString : 'T -&gt; string (requires 'T : struct)" Usage="Microsoft.Toolkit.Extensions.ValueTypeExtensions.ToHexString value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The input type to format to <see cref="T:System.String" />.</typeparam>
+        <param name="value">The input value to format to <see cref="T:System.String" />.</param>
+        <summary>
+            Returns a hexadecimal <see cref="T:System.String" /> representation of a given <typeparamref name="T" /> value, left-padded and ordered as big-endian.
+            </summary>
+        <returns>
+            The hexadecimal representation of <paramref name="value" /> (with the '0x' prefix), left-padded to byte boundaries and ordered as big-endian.
+            </returns>
+        <remarks>
+            As a byte (8 bits) is represented by two hexadecimal digits (each representing a group of 4 bytes), each <see cref="T:System.String" />
+            representation will always contain an even number of digits. For instance:
+            <code>
+            Console.WriteLine(1.ToHexString()); // "0x01"
+            Console.WriteLine(((byte)255).ToHexString()); // "0xFF"
+            Console.WriteLine((-1).ToHexString()); // "0xFFFFFFFF"
+            </code></remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

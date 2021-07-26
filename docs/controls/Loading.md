@@ -1,5 +1,5 @@
 ---
-title: Loading XAML Control 
+title: Loading
 author: nmetulev
 description: The loading control is for showing an animation with some content when the user should wait in some tasks of the app.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Loading, XAML Control , xaml
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# Loading XAML Control 
+# Loading
 
-The [loading control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) is for showing an animation with some content when the user should wait in some tasks of the app.
+The [Loading](/dotnet/api/microsoft.toolkit.uwp.ui.controls.loading) control is for showing an animation with some content when the user should wait in some tasks of the app.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=Loading)
@@ -61,17 +61,18 @@ Finally that the loading control appears, we must set the `IsLoading` property t
 ```csharp
 LoadingControl.IsLoading = true;
 ```
+
 ```vb
 LoadingControl.IsLoading = true
 ```
 
 ## Sample Project
 
-[Loading Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Loading). You can [see this in action](uwpct://Controls?sample=Loading) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Loading Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Loading). You can [see this in action](uwpct://Controls?sample=Loading) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Loading XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml) is the XAML template used in the toolkit for the default styling.
+[Loading XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -82,4 +83,4 @@ LoadingControl.IsLoading = true
 
 ## API
 
-* [Loading source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Loading)
+- [Loading source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/Loading)

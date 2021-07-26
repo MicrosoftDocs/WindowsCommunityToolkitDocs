@@ -10,7 +10,7 @@ dev_langs:
 
 # ImageCache
 
-The [ImageCache](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.imagecache) provides methods and tools to cache images in a temporary local folder. ImageCache also supports optional in-memory layer of caching, that provides better performance when same images are requested multiple times (like in long virtualized lists of images). This type of caching is disabled by default, but can be enabled by setting MaxMemoryCacheSize to desired size. For example: setting MaxMemoryCacheSize to 100 means that 100 last requested images will be held in memory to be instantly available, without disk reads.
+The [ImageCache](/dotnet/api/microsoft.toolkit.uwp.ui.imagecache) provides methods and tools to cache images in a temporary local folder. ImageCache also supports optional in-memory layer of caching, that provides better performance when same images are requested multiple times (like in long virtualized lists of images). This type of caching is disabled by default, but can be enabled by setting MaxMemoryCacheSize to desired size. For example: setting MaxMemoryCacheSize to 100 means that 100 last requested images will be held in memory to be instantly available, without disk reads.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=ImageCache)
@@ -24,14 +24,15 @@ ImageCache.Instance.CacheDuration = TimeSpan.FromHours(24);
 // Enable in-memory caching
 ImageCache.Instance.MaxMemoryCacheCount = 100;
 
-var distantUri = new Uri("http://www.myserver.com/image.jpg");
+var distantUri = new Uri("https://www.myserver.com/image.jpg");
 
 // Load a specific image from the cache. If the image is not in the cache, ImageCache will try to download and store it
 var bitmapImage = await ImageCache.Instance.GetFromCacheAsync(distantUri);
 
 // Clear the cache. Please note that you can provide a parameter to define a timespan from now to select cache entries to delete.
-await ImageCache.Instance.ClearAsync();	
+await ImageCache.Instance.ClearAsync(); 
 ```
+
 ```vb
 ' Set cache duration
 ImageCache.Instance.CacheDuration = TimeSpan.FromHours(24)
@@ -39,7 +40,7 @@ ImageCache.Instance.CacheDuration = TimeSpan.FromHours(24)
 ' Enable in-memory caching
 ImageCache.Instance.MaxMemoryCacheCount = 100
 
-Dim distantUri = New Uri("http://www.myserver.com/image.jpg")
+Dim distantUri = New Uri("https://www.myserver.com/image.jpg")
 
 ' Load a specific image from the cache. If the image is not in the cache, ImageCache will try to download and store it
 Dim bitmapImage = Await ImageCache.Instance.GetFromCacheAsync(distantUri)
@@ -65,8 +66,8 @@ Await ImageCache.Instance.ClearAsync()
 |----------------------------------------------------------------------------------------|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                      ClearAsync()                                      |       Task        |                                                                              Clears all files in the cache                                                                               |
 |                                  ClearAsync(TimeSpan)                                  |       Task        |                                                                              Clears file if it has expired                                                                               |
-|                               GetFileFromCacheAsync(Uri)                               | Task<StorageFile> |                                                                Gets the StorageFile containing cached item for given Uri                                                                 |
-| GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<string, object>>) |      Task<T>      |              Retrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller              |
+|                               GetFileFromCacheAsync(Uri)                               | Task\<StorageFile> |                                                                Gets the StorageFile containing cached item for given Uri                                                                 |
+| GetFromCacheAsync(Uri, Boolean, CancellationToken, List<KeyValuePair<string, object>>) |      Task\<T>      |              Retrieves item represented by Uri from the cache. If the item is not found in the cache, it will try to downloaded and saved before returning it to the caller              |
 |                                GetFromMemoryCache(Uri)                                 |         T         | Retrieves item represented by Uri from the in-memory cache if it exists and is not out of date. If item is not found or is out of date, default instance of the generic type is returned |
 |                PreCacheAsync(Uri, Boolean, Boolean, CancellationToken)                 |       Task        |                                                                      Assures that item represented by Uri is cached                                                                      |
 |                                RemoveAsync(IEnumerable)                                |       Task        |                                                                          Removed items based on uri list passed                                                                          |
@@ -74,7 +75,7 @@ Await ImageCache.Instance.ClearAsync()
 
 ## Sample Project
 
-[Image Cache Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCache). You can [see this in action](uwpct://Helpers?sample=ImageCache) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Image Cache Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCache). You can [see this in action](uwpct://Helpers?sample=ImageCache) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -85,4 +86,4 @@ Await ImageCache.Instance.ClearAsync()
 
 ## API
 
-* [ImageCache source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI/Cache/ImageCache.cs)
+* [ImageCache source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Cache/ImageCache.cs)

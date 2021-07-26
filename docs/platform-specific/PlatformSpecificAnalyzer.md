@@ -1,7 +1,7 @@
 ---
 title: UWP Platform Specific Analyzer
 author: hermitdave
-description: Platform Specific Analyzer is a Roslyn analyzer that analyzes and suggests code fixes to ensure that any version / platform specific API are guarded by correct runtime checks
+description: Platform Specific Analyzer is a Roslyn analyzer that analyzes and suggests code fixes to ensure that any version / platform specific API are guarded by correct runtime checks (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, platform specific, platform specific analyzer, roslyn analyzer
 dev_langs:
   - csharp
@@ -10,7 +10,10 @@ dev_langs:
 
 # Platform Specific Analyzer
 
-When writing [version](https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
+> [!WARNING]
+> This docs page is outdated and the Platform Specific Analyzers have been removed. Improvements are continually being made to the Visual Studio development experience, so please ensure you are on the latest version.
+
+When writing [version](/windows/uwp/debug-test-perf/version-adaptive-code) or platform adaptive code, the developers should ensure that code checks for presence of API before calling it.
 The platform specific analyzer is a Roslyn Analyzer that can parse through code and suggest fixes where appropriate.
 
 > [!div class="nextstepaction"]
@@ -27,18 +30,18 @@ The analyzer is available both as a nuget package
 The analyzer automatically kicks in when code is opened in Visual Studio and supports both C# and Visual Basic
 
 C#
-![Code Analysis](../resources/images/CodeAnalysis.png)
+![Code Analysis Underlined](../resources/images/CodeAnalysis.png)
 
-![Code Analysis](../resources/images/CodeFixSuggestion.png)
+![Code Analysis Suggestion](../resources/images/CodeFixSuggestion.png)
 
 Visual Basic
-![Code Analysis](../resources/images/CodeAnalysisVB.png)
+![Code Analysis Underlined in VB](../resources/images/CodeAnalysisVB.png)
 
-![Code Analysis](../resources/images/CodeFixSuggestionVB.png)
+![Code Analysis Suggestion in VB](../resources/images/CodeFixSuggestionVB.png)
 
 ## Sample Project
 
-You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -49,8 +52,8 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## API
 
-* [Platform Specific Analyzer](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
+* [Platform Specific Analyzer](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
 
 ## Related Topics
 
-* [Platform Specific Differences Generator](https://docs.microsoft.com/en-us/windows/communitytoolkit/platform-specific/platformspecificdifferencesgenerator)
+* [Platform Specific Differences Generator](./platformspecificdifferencesgenerator.md)

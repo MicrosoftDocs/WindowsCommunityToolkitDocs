@@ -1,25 +1,32 @@
 <Type Name="ScalarAnimation" FullName="Microsoft.Toolkit.Uwp.UI.Animations.ScalarAnimation">
-  <TypeSignature Language="C#" Value="public class ScalarAnimation : Microsoft.Toolkit.Uwp.UI.Animations.TypedAnimationBase&lt;Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame,double&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScalarAnimation extends Microsoft.Toolkit.Uwp.UI.Animations.TypedAnimationBase`2&lt;class Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame, float64&gt;" />
+  <TypeSignature Language="C#" Value="public class ScalarAnimation : Microsoft.Toolkit.Uwp.UI.Animations.TypedAnimationBase&lt;Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame,double&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScalarAnimation extends Microsoft.Toolkit.Uwp.UI.Animations.TypedAnimationBase`2&lt;class Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame, float64&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.ScalarAnimation" />
-  <TypeSignature Language="VB.NET" Value="Public Class ScalarAnimation&#xA;Inherits TypedAnimationBase(Of ScalarKeyFrame, Double)" />
-  <TypeSignature Language="F#" Value="type ScalarAnimation = class&#xA;    inherit TypedAnimationBase&lt;ScalarKeyFrame, double&gt;" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScalarAnimation&#xA;Inherits TypedAnimationBase(Of ScalarKeyFrame, Double)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="F#" Value="type ScalarAnimation = class&#xA;    inherit TypedAnimationBase&lt;ScalarKeyFrame, double&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+  <TypeSignature Language="C#" Value="public sealed class ScalarAnimation : Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;double?,double&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScalarAnimation extends Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation`2&lt;valuetype System.Nullable`1&lt;float64&gt;, float64&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScalarAnimation&#xA;Inherits CustomAnimation(Of Nullable(Of Double), Double)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="F#" Value="type ScalarAnimation = class&#xA;    inherit CustomAnimation&lt;Nullable&lt;double&gt;, double&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Animations.TypedAnimationBase&lt;Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame,System.Double&gt;</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="win-comm-toolkit-dotnet-7.0">Microsoft.Toolkit.Uwp.UI.Animations.CustomAnimation&lt;System.Nullable&lt;System.Double&gt;,System.Double&gt;</BaseTypeName>
     <BaseTypeArguments>
-      <BaseTypeArgument TypeParamName="TKeyFrame">Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame</BaseTypeArgument>
-      <BaseTypeArgument TypeParamName="U">System.Double</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TValue">System.Nullable&lt;System.Double&gt;</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TKeyFrame">System.Double</BaseTypeArgument>
     </BaseTypeArguments>
   </Base>
   <Interfaces />
   <Docs>
     <summary>
-            Animation that animates a value of type float
+            A custom scalar animation.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
@@ -34,6 +41,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -41,22 +50,45 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="GetParsedValues">
+      <MemberSignature Language="C#" Value="protected override (double?,double?) GetParsedValues ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.ValueTuple`2&lt;valuetype System.Nullable`1&lt;float64&gt;, valuetype System.Nullable`1&lt;float64&gt;&gt; GetParsedValues() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ScalarAnimation.GetParsedValues" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParsedValues () As ValueTuple(Of Nullable(Of Double), Nullable(Of Double))" />
+      <MemberSignature Language="F#" Value="override this.GetParsedValues : unit -&gt; ValueTuple&lt;Nullable&lt;double&gt;, Nullable&lt;double&gt;&gt;" Usage="scalarAnimation.GetParsedValues " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ValueTuple&lt;System.Nullable&lt;System.Double&gt;,System.Nullable&lt;System.Double&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetTypedAnimationFromCompositor">
       <MemberSignature Language="C#" Value="protected override Windows.UI.Composition.KeyFrameAnimation GetTypedAnimationFromCompositor (Windows.UI.Composition.Compositor compositor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Composition.KeyFrameAnimation GetTypedAnimationFromCompositor(class Windows.UI.Composition.Compositor compositor) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ScalarAnimation.GetTypedAnimationFromCompositor(Windows.UI.Composition.Compositor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetTypedAnimationFromCompositor (compositor As Compositor) As KeyFrameAnimation" />
       <MemberSignature Language="F#" Value="override this.GetTypedAnimationFromCompositor : Windows.UI.Composition.Compositor -&gt; Windows.UI.Composition.KeyFrameAnimation" Usage="scalarAnimation.GetTypedAnimationFromCompositor compositor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Composition.KeyFrameAnimation</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="compositor" Type="Windows.UI.Composition.Compositor" />
+        <Parameter Name="compositor" Type="Windows.UI.Composition.Compositor" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="compositor">To be added.</param>
@@ -76,13 +108,14 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="animation" Type="Windows.UI.Composition.KeyFrameAnimation" />
-        <Parameter Name="keyFrame" Type="Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame" />
+        <Parameter Name="animation" Type="Windows.UI.Composition.KeyFrameAnimation" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+        <Parameter Name="keyFrame" Type="Microsoft.Toolkit.Uwp.UI.Animations.ScalarKeyFrame" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       </Parameters>
       <Docs>
         <param name="animation">To be added.</param>

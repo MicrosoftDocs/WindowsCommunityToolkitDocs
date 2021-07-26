@@ -1,5 +1,5 @@
 ---
-title: TabView XAML Control
+title: TabView
 author: michael-hawker
 description: TabView is a control for displaying a set of tabs and their content.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, TabView, TabControl
@@ -7,8 +7,12 @@ dev_langs:
   - csharp
 ---
 
-# TabView XAML Control
-The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
+# TabView
+
+> [!WARNING]
+> This control has been removed from the Windows Community Toolkit. Please use the [`TabView`](/windows/winui/api/microsoft.ui.xaml.controls.tabview) control from WinUI instead.
+
+The [TabView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabview) displays a set of [TabViewItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tabviewitem) in a shared container.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=TabView)
@@ -71,6 +75,7 @@ The [TabView](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.con
 | TabDraggedOutside | Fires when a Tab is dragged outside of the Tab bar. |
 
 ### TabViewItem Events
+
 | Events | Description |
 | -- | -- |
 | TabClosing | Fires when a Tab's closed button is clicked. |
@@ -124,15 +129,15 @@ The TabView supports data binding as well.  The following example shows binding 
 ```
 
 > [!NOTE]
-> It's recommended to use an [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
+> It's recommended to use an [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1) when working with the TabView.
 
 ## Sample Project
 
-[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[TabView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml) is the XAML template used in the toolkit for the default styling.
+[TabView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -143,10 +148,10 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## API
 
-- [TabView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/TabView)
+- [TabView source code](https://github.com/microsoft/microsoft-ui-xaml/tree/rel/7.0.0/dev/TabView)
 
 ## Related Topics
 
-- [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1)
-- [IconElement](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.IconElement)
-- [TabControl (WPF)](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.tabcontrol)
+- [ObservableCollection](/dotnet/api/system.collections.objectmodel.observablecollection-1)
+- [IconElement](/uwp/api/Windows.UI.Xaml.Controls.IconElement)
+- [TabControl (WPF)](/dotnet/api/system.windows.controls.tabcontrol)

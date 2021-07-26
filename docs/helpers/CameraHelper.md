@@ -10,10 +10,10 @@ dev_langs:
 
 # CameraHelper
 
-The **CameraHelper** provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps. The helper currently shows camera frame sources that support color video preview or video record streams. 
+The **CameraHelper** provides helper methods to easily use the available camera frame sources to preview video, capture video frames and software bitmaps. The helper currently shows camera frame sources that support color video preview or video record streams.
 
 > [!IMPORTANT]
-> Make sure you have the [webcam capability](https://docs.microsoft.com/en-us/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
+> Make sure you have the [webcam capability](/windows/uwp/packaging/app-capability-declarations#device-capabilities) enabled for your app to access the device's camera.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=CameraHelper)
@@ -48,6 +48,7 @@ private void CameraHelper_FrameArrived(object sender, FrameEventArgs e)
   SoftwareBitmap softwareBitmap = currentVideoFrame.SoftwareBitmap;
 }
 ```
+
 ```vb
 ' Creates a Camera Helper and gets video frames from an available frame source.
 Imports Microsoft.Toolkit.Uwp.Helpers
@@ -78,9 +79,9 @@ End Sub
 
 As a developer, you will need to make sure the CameraHelper resources are cleaned up when appropriate. For example, if the CameraHelper is only used on one page, make sure to clean up the CameraHelper when navigating away from the page.
 
-Likewise, make sure to handle app [suspending](https://docs.microsoft.com/windows/uwp/launch-resume/suspend-an-app) and [resuming](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/resume-an-app) - CameraHelper should be cleaned up when suspending and re-initialized when resuming.
+Likewise, make sure to handle app [suspending](/windows/uwp/launch-resume/suspend-an-app) and [resuming](/windows/uwp/launch-resume/resume-an-app) - CameraHelper should be cleaned up when suspending and re-initialized when resuming.
 
-Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [CameraHelper sample page in the sample app](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper) for full example.
+Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [CameraHelper sample page in the sample app](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper) for full example.
 
 ## Properties
 
@@ -93,8 +94,8 @@ Call `CameraHelper.CleanupAsync()` to clean up all internal resources. See the [
 
 |             Methods              |                Return Type                 |                                                Description                                                |
 |----------------------------------|--------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-|   GetFrameSourceGroupsAsync()    | Task<IReadOnlyList<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams. |
-| InitializeAndStartCaptureAsync() |          Task<CameraHelperResult>          |       Initializes Media Capture and Frame Reader for video preview and capture frames in real time.       |
+|   GetFrameSourceGroupsAsync()    | Task<IReadOnlyList\<MediaFrameSourceGroup>> | Gets a read only list of MediaFrameSourceGroups that support color video record or video preview streams. |
+| InitializeAndStartCaptureAsync() |          Task\<CameraHelperResult>          |       Initializes Media Capture and Frame Reader for video preview and capture frames in real time.       |
 |          CleanUpAsync()          |                    Task                    |                      Use this asynchronous method to dispose Camera Helper resources                      |
 |            Dispose()             |                    void                    |                            Use this method to dispose Camera Helper resources                             |
 
@@ -133,6 +134,7 @@ if(availableFrameSourceGroups != null)
   }
 }
 ```
+
 ```vb
 Imports Microsoft.Toolkit.Uwp.Helpers
 
@@ -157,7 +159,7 @@ End If
 
 ## Sample Project
 
-[CameraHelper Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[CameraHelper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraHelper). You can [see this in action](uwpct://Helpers?sample=CameraHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -168,4 +170,4 @@ End If
 
 ## API
 
-* [CameraHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)
+* [CameraHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/CameraHelper)

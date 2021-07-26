@@ -1,13 +1,14 @@
 ---
-title: Expander Control
+title: Expander
 author: nmetulev
 description: The Expander Control provides an expandable container to host any content.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Expander, xaml Control, xaml
 ---
 
-# Expander Control
+# Expander
 
-The [Expander Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
+The [Expander](/dotnet/api/microsoft.toolkit.uwp.ui.controls.expander) control provides an expandable container to host any content.  It is a specialized form of a [HeaderedContentControl](HeaderedContentControl.md)
+
 You can show or hide this content by interacting with the Header.
 
 > [!div class="nextstepaction"]
@@ -21,8 +22,8 @@ You can show or hide this content by interacting with the Header.
 
 <controls:Expander Header="Header of the expander" Foreground="White"
                    Background="Gray" IsExpanded="True">
-	<!-- Expander content -->
-</controls:Expander>       
+  <!-- Expander content -->
+</controls:Expander>
 ```
 
 ## Sample Output
@@ -34,7 +35,7 @@ You can show or hide this content by interacting with the Header.
 | Property | Type | Description |
 | -- | -- | -- |
 | ContentOverlay | UIElement | Specifies alternate content to show when the Expander is collapsed. |
-| ExpandDirection | [ExpandDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.expanddirection) | Specifies the direction of where expanded content should be displayed in relation to the header. |
+| ExpandDirection | [ExpandDirection](/dotnet/api/microsoft.toolkit.uwp.ui.controls.expanddirection) | Specifies the direction of where expanded content should be displayed in relation to the header. |
 | HeaderStyle | Style | Specifies an alternate style template for the `ToggleButton` header control. |
 | IsExpanded | bool | Indicates if the Expander is currently open or closed.  The default is `False`. |
 
@@ -94,11 +95,11 @@ For instance to remove the header entirely from the Expander:
 
 ## Sample Project
 
-[Expander Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Expander Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Expander). You can [see this in action](uwpct://Controls?sample=Expander) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Expander XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml) is the XAML template used in the toolkit for the default styling.
+[Expander XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/Expander/Expander.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -109,9 +110,9 @@ For instance to remove the header entirely from the Expander:
 
 ## API
 
-* [Expander source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/Expander)
+* [Expander source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander)
 
 ## Related Topics
 
 * [HeaderedControlControl](HeaderedContentControl.md)
-* [ToggleButton](https://docs.microsoft.com/en-us/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)
+* [ToggleButton](/uwp/api/Windows.UI.Xaml.Controls.Primitives.ToggleButton)

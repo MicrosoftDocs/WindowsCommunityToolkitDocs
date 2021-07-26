@@ -1,7 +1,7 @@
 ---
 title: OneDrive Service
 author: tgoodhew
-description: The OneDrive Service provides a simple way to access resources on either OneDrive or OneDrive for Business (Office 365).
+description: The OneDrive Service provides a simple way to access resources on either OneDrive or OneDrive for Business (Office 365) (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, OneDrive
 dev_langs:
   - csharp
@@ -10,7 +10,10 @@ dev_langs:
 
 # OneDrive Service
 
-The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](https://docs.microsoft.com/en-us/onedrive/developer/) that uses the [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
+> [!WARNING]
+> (This API has been removed. Please use the official [Microsoft Graph SDK](https://github.com/microsoftgraph/msgraph-sdk-dotnet) directly. For the latest guidance on using the Microsoft Graph in the Toolkit check out the [Windows Community Toolkit - Graph Helpers and Controls](../graph/overview.md).)
+
+The **OneDrive** Service provides an easy to use service helper for the [OneDrive Developer Platform](/onedrive/developer/) that uses the [Microsoft Graph](/graph/overview). The new OneDrive API is REST API that brings together both personal and work accounts in a single authentication model. The OneDrive Service helps you:
 
 * Initialize and authenticate with a common set of objects
 * Access OneDrive, OneDrive for Business, SharePoint document libraries, and Office Groups, to allow your app the flexibility to read and store content in any of these locations with the same code
@@ -52,13 +55,13 @@ You will need to add:
 
 < Capability Name="privateNetworkClientServer" />
 
-to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
+to your application manifest to enable AAD authentication. Capabilities in the manifest are described in more detail in this document [Capability](/uwp/schemas/appxpackage/appxmanifestschema/element-capability)
 
-Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/graph-oauth)
+Authentication, sign-in and permission scopes are discussed in more detail in this document, [Authorization and sign-in for OneDrive in Microsoft Graph](/onedrive/developer/rest-api/getting-started/graph-oauth)
 
 ### Testing access to the OneDrive API
 
-Registering your applicatioin creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
+Registering your application creates an App ID/Client and you can simply paste that into the Client Id field inside of the OneDrive services page.  
 
 ## Syntax
 
@@ -74,6 +77,7 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize
      null, 
      null);
 ```
+
 ```vb
 ' Using the new converged authentication of the Microsoft Graph we can simply
 ' call the Initialize method on the OneDriveService singleton when initializing
@@ -82,7 +86,8 @@ Microsoft.Toolkit.Services.OneDrive.OneDriveService.Instance.Initialize(appClien
 ```
 
 ### Defining scopes
-More information on scopes can be found in this document [Authentication scopes](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
+
+More information on scopes can be found in this document [Authentication scopes](/onedrive/developer/rest-api/getting-started/msa-oauth#authentication-scopes)
 
 ```csharp
 // If the user hasn't selected a scope then set it to FilesReadAll
@@ -91,6 +96,7 @@ if (scopes == null)
     scopes = new string[] { MicrosoftGraphScope.FilesReadAll };
 }
 ```
+
 ```vb
 ' If the user hasn't selected a scope then set it to FilesReadAll
 If scopes Is Nothing Then
@@ -99,6 +105,7 @@ End If
 ```
 
 ### Login
+
 ```csharp
 // Login
 if (!await OneDriveService.Instance.LoginAsync())
@@ -106,6 +113,7 @@ if (!await OneDriveService.Instance.LoginAsync())
     throw new Exception("Unable to sign in");
 }
 ```
+
 ```vb
 ' Login
 If Not Await OneDriveService.Instance.LoginAsync() Then
@@ -118,6 +126,7 @@ End If
 ```csharp
 var folder = await OneDriveService.Instance.RootFolderForMeAsync();
 ```
+
 ```vb
 Dim folder = Await OneDriveService.Instance.RootFolderForMeAsync()
 ```
@@ -135,6 +144,7 @@ do
 }
 while (OneDriveItems != null);
 ```
+
 ```vb
 ' Once you have a reference to the Root Folder you can get a list of all items
 ' List the Items from the current folder
@@ -156,6 +166,7 @@ if (!string.IsNullOrEmpty(newFolderName))
     await folder.StorageFolderPlatformService.CreateFolderAsync(newFolderName, CreationCollisionOption.GenerateUniqueName);
 }
 ```
+
 ```vb
 ' Then from there you can play with folders and files
 ' Create Folder
@@ -172,6 +183,7 @@ var currentFolder = await _graphCurrentFolder.GetFolderAsync(item.Name);
 OneDriveItemsList.ItemsSource = await currentFolder.GetItemsAsync(20);
 _graphCurrentFolder = currentFolder;
 ```
+
 ```vb
 Dim currentFolder = Await _graphCurrentFolder.GetFolderAsync(item.Name)
 OneDriveItemsList.ItemsSource = Await currentFolder.GetItemsAsync(20)
@@ -191,6 +203,7 @@ await _onedriveStorageItem.CopyAsync(targetonedriveStorageFolder);
 // Rename Folder
 await _onedriveStorageItem.RenameAsync("NewLevel3");
 ```
+
 ```vb
 ' OneDrive API treats all items the same whether file, folder, etc.
 ' Move Folder
@@ -216,6 +229,7 @@ if (selectedFile != null)
     }
 }
 ```
+
 ```vb
 ' Open the local file or create a local file if brand new
 Dim selectedFile = Await OpenLocalFileAsync()
@@ -242,6 +256,7 @@ if (selectedFile != null)
     }
 }
 ```
+
 ```vb
 Dim selectedFile = Await OpenLocalFileAsync()
 If selectedFile IsNot Nothing Then
@@ -266,6 +281,7 @@ using (var remoteStream = (await oneDriveFile.StorageFilePlatformService.OpenAsy
     await SaveToLocalFolder(remoteStream, oneDriveFile.Name);
 }
 ```
+
 ```vb
 ' Download a file and save the content in a local file
 ' Convert the storage item to a storage file
@@ -286,6 +302,7 @@ using (var stream = (await file.StorageItemPlatformService.GetThumbnailAsync(Too
     await OneDriveSampleHelpers.DisplayThumbnail(stream, "thumbnail");
 }
 ```
+
 ```vb
 Dim file = CType((CType(e.OriginalSource, AppBarButton)).DataContext, Toolkit.Services.OneDrive.OneDriveStorageItem)
 Using stream = TryCast((Await file.StorageItemPlatformService.GetThumbnailAsync(Toolkit.Services.MicrosoftGraph.MicrosoftGraphEnums.ThumbnailSize.Large)), IRandomAccessStream)
@@ -297,15 +314,15 @@ End Using
 ## Known issues and limitations
 
 > [!IMPORTANT]
-> Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception. 
+> Creating a File using the _OpenIfExists_ CollisionOption is not supported for the time being and returns an argument Exception.
 
 This is because OneDrive's API doesn't offer the same level of collision options (or ConflictBehavior) as the ones provided by _Windows.Storage.CreationCollisionOption_ which is used for file managing. Therefore, when using the method CreateFileAsync with the parameter _OpenIfExists_, it's set to return an ArgumentException from the OneDriveHelper _TransformCollisionOptionToConflictBehavior_ method.
 
-As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is catched, or else, manually checking previously if the file exists.
+As a workaround, the recommended path is using _CreateCollisionOption.FailIfExists_ within a try/catch statement and opening the file whenever the error is caught, or else, manually checking previously if the file exists.
 
 ## Sample Project
 
-[OneDrive Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[OneDrive Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -316,4 +333,4 @@ As a workaround, the recommended path is using _CreateCollisionOption.FailIfExis
 
 ## API
 
-* [OneDrive Service source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Services/Services/OneDrive)
+* [OneDrive Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/OneDrive)

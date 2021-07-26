@@ -7,55 +7,51 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # ListViewExtensions
 
-[ListViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.listviewextensions) provide a lightweight way to extend every control that inherits the [ListViewBase](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties.
+The [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions) class provide a lightweight way to extend every control that inherits the [`ListViewBase`](/uwp/api/Windows.UI.Xaml.Controls.ListViewBase) class with attached properties. This means that all the extensions in this class can apply to both [`ListView`](/uwp/api/windows.ui.xaml.controls.listview), [`GridView`](/uwp/api/windows.ui.xaml.controls.gridview) and other controls.
+
+> **Platform APIs:** [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions), [`ItemContainerStretchDirection`](/dotnet/api/microsoft.toolkit.uwp.ui.ItemContainerStretchDirection)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=ListViewExtensions)
 
 ## ListViewBase Extentions
 
-- [AlternateColor Extentions](#alternatecolor-extentions)
-- [AlternateItemTemplate Extentions](#alternateitemtemplate-extentions)
-- [Command Extentions](#command-extentions)
-- [StretchItemContainerDirection Extentions](#stretchitemcontainerdirection-extentions)
-- [SmoothScrollIntoView Helper](#smoothscrollintoview-helper)
+- [AlternateColor](#alternatecolor)
+- [AlternateItemTemplate](#alternateitemtemplate)
+- [Command](#command)
+- [StretchItemContainerDirection](#stretchitemcontainerdirection)
+- [SmoothScrollIntoView](#smoothscrollintoview)
 
-## AlternateColor extentions
+## AlternateColor
 
-The AlternateColor property provides a way to assign a background color to every other item.
+The `AlternateColor` property provides a way to assign a background color to every other item.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid. 
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used in XAML:
 
 ```xaml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <ListView
-    extensions:ListViewExtensions.AlternateColor="Silver"
+    ui:ListViewExtensions.AlternateColor="Silver"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
+## AlternateItemTemplate
 
-| Property | Description |
-| --| -- |
-| AlternateColor | Attached `DependencyProperty` for binding a `Brush` as an alternate background color to a `ListViewBase` |
-
-## AlternateItemTemplate extentions
-
-The AlternateItemTemplate property provides a way to assign an alternate [datatemplate](https://docs.microsoft.com/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the AlternateColor property.
+The `AlternateItemTemplate` property provides a way to assign an alternate [`DataTemplate`](/uwp/api/windows.ui.xaml.datatemplate) to every other item. It is also possible to combine with the `AlternateColor` property.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than ItemsStackPanel or ItemsWrapGrid.
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used in XAML:
 
 ```xaml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <Page.Resources>
     <DataTemplate x:Name="NormalTemplate">
@@ -69,71 +65,53 @@ The AlternateItemTemplate property provides a way to assign an alternate [datate
 
 <ListView
     ItemTemplate="{StaticResource NormalTemplate}"
-    extensions:ListViewExtensions.AlternateItemTemplate="{StaticResource AlternateTemplate}"
+    ui:ListViewExtensions.AlternateItemTemplate="{StaticResource AlternateTemplate}"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
+## Command
 
-| Property | Description |
-| --| -- |
-| AlternateItemTemplate | Attached `DependencyProperty` for binding a `DataTemplate` as an alternate template to a `ListViewBase` |
-
-## Command extentions
-
-ListViewExtensions provides extension method that allow attaching [ICommand](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle ListViewBase Item interaction by means of [ItemClick](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
+`ListViewExtensions` provides extension method that allow attaching an [`ICommand`](/uwp/api/Windows.UI.Xaml.Input.ICommand) to handle `ListViewBase` item interaction by means of [`ItemClick`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ItemClick) event.
 
 > [!IMPORTANT]
-> ListViewBase [IsItemClickEnabled](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`
+> ListViewBase [`IsItemClickEnabled`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_IsItemClickEnabled) must be set to `true`.
 
-### Syntax
+Here is how this property can be used in XAML:
 
 ```xaml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
      
 <ListView
-    extensions:ListViewExtensions.Command="{x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay}"
+    ui:ListViewExtensions.Command="{x:Bind MainViewModel.ItemSelectedCommand, Mode=OneWay}"
     IsItemClickEnabled="True"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}"
     SelectionMode="None" />
 ```
 
-### Properties
+## StretchItemContainerDirection
 
-| Property | Description |
-| --| -- |
-| Command | Attached `DependencyProperty` for binding an `ICommand` instance to a `ListViewBase` |
-
-## StretchItemContainerDirection extentions
-
-The StretchItemContainerDirection property provides a way to stretch the ItemContainer in horizontal, vertical or both ways. Possible values for this property are *Horizontal*, *Vertical* and *Both*.
+The `ItemContainerStretchDirection` property provides a way to stretch the `ItemContainer` in horizontal, vertical or both ways. The allowed values are items from the `ItemContainerStretchDirection` type.
 
 > [!WARNING]
-> The [ContainerContentChanging](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the ItemsPanel is replaced with another type of panel than `ItemsStackPanel` or `ItemsWrapGrid`.
+> The [`ContainerContentChanging`](/uwp/api/windows.ui.xaml.controls.listviewbase#Windows_UI_Xaml_Controls_ListViewBase_ContainerContentChanging) event used for this extension to work, will not be raised when the [`ItemsPanel`](/uwp/api/windows.ui.xaml.controls.itemscontrol.itemspanel) is replaced with another type of panel than [`ItemsStackPanel`](/uwp/api/windows.ui.xaml.controls.itemsstackpanel) or [`ItemsWrapGrid`](/uwp/api/windows.ui.xaml.controls.itemswrapgrid).
 
-### Syntax
+Here is how this property can be used from XAML:
 
 ```xaml
 <Page ...
-     xmlns:extensions="using:Microsoft.Toolkit.Uwp.UI.Extensions">
+     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI">
 
 <ListView
-    extensions:ListViewExtensions.StretchItemContainerDirection="Horizontal"
+    ui:ListViewExtensions.StretchItemContainerDirection="Horizontal"
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-### Properties
-
-| Property | Type | Description |
-| --| -- | -- |
-| StretchItemContainerDirection | [ListViewBase.StretchDirection](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.extensions.listviewbase.stretchdirection) | Attached `DependencyProperty` for setting the container content stretch direction on the `ListViewBase` |
-
-# SmoothScrollIntoView Helper
+## SmoothScrollIntoView
 
 Use SmoothScrollIntoView helps to scroll the item into the view with animation. Specify the ItemPosition property to align the item.
 
-## Syntax
+### Syntax
 
 **C#**
 
@@ -152,18 +130,18 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(index:=Integer, itemPlacement
 Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
 ```
 
-## Sample Output
+### Sample Output
 
 ![SmoothScrollIntoView Helper](../resources/images/Extensions/SmoothScrollIntoView.gif)
 
-## Methods
+### Methods
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
 | SmoothScrollIntoViewWithIndexAsync(int, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With index number |
 | SmoothScrollIntoViewWithItemAsync(object, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With item object |
 
-## Method params
+### Method params
 
 | Properties | Type | Description |
 |------------|------|-------------|
@@ -186,7 +164,7 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 | Right | Aligned right |
 | Bottom | Aligned bottom |
 
-## Examples
+### Examples
 
 - We can use this extension to make the selected item always centered.
 
@@ -214,16 +192,18 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
         await listView.SmoothScrollIntoViewWithIndex(listView.SelectedIndex, ItemPlacement.Centre, false, true);
     }
     ```
+    ```vb
+    Private Async Sub ListView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+        Dim listView = (TryCast(sender, ListView))
+        Await listView.SmoothScrollIntoViewWithIndex(listView.SelectedIndex, ItemPlacement.Centre, False, True)
+    End Sub
+    ```
 
     **Sample Output**
 
     ![Use Case 1 Output](../resources/images/Extensions/SmoothScrollIntoView-CenterSelected.gif)
 
     For PopUp effect see [GridView selectedItem Popup](https://stackoverflow.com/a/44707177/7331395)
-
-## Sample Project
-
-[ListViewExtensions](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ListViewExtensions). You can [see this in action](uwpct://Extensions?sample=ListViewExtensions) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
 
 ## Requirements
 
@@ -234,4 +214,4 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 
 ## API
 
-* [ListViewExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)
+* [ListViewExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)

@@ -11,6 +11,8 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Media.CanvasBrushBase</BaseTypeName>
@@ -18,7 +20,12 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>Windows.UI.Xaml.Markup.ContentProperty(Name="GradientStops")</AttributeName>
+      <AttributeName Language="C#">[System.Obsolete("Please migrate to the RadialGradientBrush control from WinUI, this control will be removed in a future release. https://aka.ms/winui")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Please migrate to the RadialGradientBrush control from WinUI, this control will be removed in a future release. https://aka.ms/winui")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.Markup.ContentProperty(Name="GradientStops")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.Markup.ContentProperty(Name="GradientStops")&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,6 +49,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -55,6 +64,7 @@
       <MemberSignature Language="C#" Value="public RadialGradientBrush (Windows.UI.Xaml.Media.GradientStopCollection gradientStopCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.UI.Xaml.Media.GradientStopCollection gradientStopCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.RadialGradientBrush.#ctor(Windows.UI.Xaml.Media.GradientStopCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (gradientStopCollection As GradientStopCollection)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.UI.Media.RadialGradientBrush : Windows.UI.Xaml.Media.GradientStopCollection -&gt; Microsoft.Toolkit.Uwp.UI.Media.RadialGradientBrush" Usage="new Microsoft.Toolkit.Uwp.UI.Media.RadialGradientBrush gradientStopCollection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
@@ -64,6 +74,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="gradientStopCollection" Type="Windows.UI.Xaml.Media.GradientStopCollection" />
@@ -90,6 +102,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="startColor" Type="Windows.UI.Color" />
@@ -100,7 +114,7 @@
         <param name="endColor"> The Color at offset 1.0. </param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Media.RadialGradientBrush" /> class
-            with with two colors specified for GradientStops at
+            with two colors specified for GradientStops at
             offsets 0.0 and 1.0.
             </summary>
         <remarks>To be added.</remarks>
@@ -120,6 +134,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.UI.Media.AlphaMode</ReturnType>
@@ -146,6 +162,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -171,6 +189,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.Point</ReturnType>
@@ -197,6 +217,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -222,6 +244,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.ColorInterpolationMode</ReturnType>
@@ -248,6 +272,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -273,6 +299,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.Point</ReturnType>
@@ -299,6 +327,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -324,6 +354,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.GradientStopCollection</ReturnType>
@@ -350,6 +382,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -375,6 +409,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -409,6 +445,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -435,6 +473,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -460,6 +500,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -486,6 +528,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -511,6 +555,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.Media.GradientSpreadMethod</ReturnType>
@@ -537,6 +583,8 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>

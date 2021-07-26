@@ -1,5 +1,5 @@
 ---
-title: AdaptiveGridView XAML Control
+title: AdaptiveGridView
 author: nmetulev
 description: The AdaptiveGridView Control presents items in a evenly-spaced set of columns to fill the total available display space.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, AdaptiveGridView, xaml control, xaml
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# AdaptiveGridView XAML Control 
+# AdaptiveGridView
 
-The [AdaptiveGridView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
+The [AdaptiveGridView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.adaptivegridview) control presents items in a evenly-spaced set of columns to fill the total available display space. It reacts to changes in the layout as well as the content so it can adapt to different form factors automatically.
 
 There are 3 ways to use this Control:
 
@@ -106,6 +106,7 @@ There are 3 ways to use this Control:
             }
         }
         ```
+
         ```vb
         Public Class AspectContentControl
             Inherits ContentControl
@@ -142,7 +143,7 @@ There are 3 ways to use this Control:
 
 ## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[AdaptiveGridView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -153,8 +154,8 @@ There are 3 ways to use this Control:
 
 ## API
 
-- [AdaptiveGridView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/AdaptiveGridView)
+- [AdaptiveGridView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
 
 ## Related Topics
 
-- [GridView Class](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.GridView)
+- [GridView Class](/uwp/api/Windows.UI.Xaml.Controls.GridView)

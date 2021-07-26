@@ -1,38 +1,35 @@
 ---
 title: WebViewExtensions
 author: nmetulev
-description: The Windows Community Toolkit WebView extensions allow attaching HTML content to WebView through XAML directly or through Binding
+description: The WebViewExtensions class allows attaching HTML content to a WebView control through XAML directly or through a binding
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, WebViewExtensions, webview, extensions
 ---
 
 # WebViewExtensions
 
-The [WebViewExtensions](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.webviewextensions?view=win-comm-toolkit-dotnet-stable) allows attaching HTML content to WebView.
+The [`WebViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.webviewextensions) allows attaching HTML content to [`WebView`](/uwp/api/windows.ui.xaml.controls.webview).
+
+> **Platform APIs:** [`WebViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.webviewextensions)
 
 ## Syntax
 
-```xaml
-// Attach HTML content directly to WebView
-<WebView extensions:WebViewExtensions.Content="{Binding HtmlContent}" />
+Here is how the `WebViewExtensions` properties can be used in XAML:
 
-// Attach Uri directly to WebView
-<WebView extensions:WebViewExtensions.ContentUri="{Binding ContentUri}" />
+```xaml
+<!-- Attach HTML content directly to a WebView -->
+<WebView
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"   
+    ui:WebViewExtensions.Content="{Binding HtmlContent}" />
+
+<!-- Attach a Uri directly to a WebView -->
+<WebView
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+    ui:WebViewExtensions.ContentUri="{Binding ContentUri}" />
 ```
 
-## Attached Properties
+> [!NOTE]
+> In this example, the classic binding syntax is used, but the faster `{x:Bind}` syntax is supported as well. You're free to pick which one to use depending on your use case scenario.
 
-| Property | Type | Description |
-| -- | -- | -- |
-| Content | string | Get or set HTML from the WebView through string |
-| ContentUri | Uri | Get or set HTML from the WebView through Uri |
+## Examples
 
-## Requirements
-
-| Device family | Universal, 10.0.16299.0 or higher |
-| --- | --- |
-| Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
-| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
-
-## API
-
-* [WebViewExtensions source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI/Extensions/WebView)
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).

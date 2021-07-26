@@ -8,6 +8,7 @@
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +32,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -66,6 +68,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
@@ -95,10 +98,12 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree/&lt;FindChildren&gt;d__2`1))</AttributeName>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree/&lt;FindChildren&gt;d__2`1))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree/&lt;FindChildren&gt;d__2`1))&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -135,6 +140,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -170,6 +176,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
@@ -199,6 +206,7 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.UIElement</ReturnType>
@@ -212,6 +220,37 @@
             Retrieves the Content control of this element as defined by the ContentPropertyAttribute.
             </summary>
         <returns>Child Content control or null if not available.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFindResource">
+      <MemberSignature Language="C#" Value="public static object TryFindResource (this Windows.UI.Xaml.FrameworkElement start, object resourceKey);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object TryFindResource(class Windows.UI.Xaml.FrameworkElement start, object resourceKey) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.TryFindResource(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryFindResource (start As FrameworkElement, resourceKey As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member TryFindResource : Windows.UI.Xaml.FrameworkElement * obj -&gt; obj" Usage="Microsoft.Toolkit.Uwp.UI.Extensions.LogicalTree.TryFindResource (start, resourceKey)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="Windows.UI.Xaml.FrameworkElement" RefType="this" />
+        <Parameter Name="resourceKey" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="start">
+          <see cref="T:Windows.UI.Xaml.FrameworkElement" /> to start searching for Resource.</param>
+        <param name="resourceKey">Key to search for.</param>
+        <summary>
+            Provides a WPF compatible version of TryFindResource to provide a static resource lookup.
+            If the key is not found in the current element's resources, the logical tree is then searched element-by-element to look for the resource in each element's resources.
+            If none of the elements contain the resource, the Application's resources are then searched.
+            <seealso href="https://docs.microsoft.com/dotnet/api/system.windows.frameworkelement.tryfindresource" /><seealso href="https://docs.microsoft.com/dotnet/desktop-wpf/fundamentals/xaml-resources-define#static-resource-lookup-behavior" /></summary>
+        <returns>Requested resource or null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

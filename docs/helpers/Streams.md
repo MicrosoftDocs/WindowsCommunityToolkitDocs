@@ -10,7 +10,7 @@ dev_langs:
 
 # Streams Helper
 
-There are several operations that apps need commonly to do against their APPX, or from the Internet that are not easy.  [Streams helper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.streamhelper) class wraps up some of the most common operations we need in multiple apps.
+There are several operations that apps need commonly to do against their APPX, or from the Internet that are not easy.  [Streams helper](/dotnet/api/microsoft.toolkit.uwp.helpers.streamhelper) class wraps up some of the most common operations we need in multiple apps.
 
 ## Some common scenarios
 
@@ -24,18 +24,18 @@ There are several operations that apps need commonly to do against their APPX, o
 
 |                               Methods                                |        Return Type        |                                    Description                                     |
 |----------------------------------------------------------------------|---------------------------|------------------------------------------------------------------------------------|
-|              GetHttpStreamAsync(Uri, CancellationToken)              | Task<IRandomAccessStream> |               Get the response stream returned by a HTTP get request               |
+|              GetHttpStreamAsync(Uri, CancellationToken)              | Task\<IRandomAccessStream> |               Get the response stream returned by a HTTP get request               |
 |          GetHttpStreamToStorageFileAsync(Uri, StorageFile)           |           Task            | Get the response stream returned by a HTTP get request and save it to a local file |
-| GetKnowFoldersFileStreamAsync(KnownFolderId, String, FileAccessMode) | Task<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
-|         GetLocalCacheFileStreamAsync(String, FileAccessMode)         | Task<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
-|           GetLocalFileStreamAsync(String, FileAccessMode)            | Task<IRandomAccessStream> |       Return a stream to a specified file from the application local folder        |
-|          GetPackagedFileStreamAsync(String, FileAccessMode)          | Task<IRandomAccessStream> |          Return a stream to a specified file from the installation folder          |
-|               IsFileExistsAsync(StorageFolder, String)               |        Task<bool>         |               Test if a file exists in the application local folder                |
-|         IsKnownFolderFileExistsAsync(KnownFolderId, String)          |        Task<bool>         |            Test if a file exists in the application local cache folder             |
-|                 IsLocalCacheFileExistsAsync(String)                  |        Task<bool>         |            Test if a file exists in the application local cache folder             |
-|                    IsLocalFileExistsAsync(String)                    |        Task<bool>         |               Test if a file exists in the application local folder                |
-|                  IsPackagedFileExistsAsync(String)                   |        Task<bool>         |            Test if a file exists in the application installation folder            |
-|             ReadTextAsync(IRandomAccessStream, Encoding)             |       Task<string>        |                          Read stream content as a string                           |
+| GetKnowFoldersFileStreamAsync(KnownFolderId, String, FileAccessMode) | Task\<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
+|         GetLocalCacheFileStreamAsync(String, FileAccessMode)         | Task\<IRandomAccessStream> |    Return a stream to a specified file from the application local cache folder     |
+|           GetLocalFileStreamAsync(String, FileAccessMode)            | Task\<IRandomAccessStream> |       Return a stream to a specified file from the application local folder        |
+|          GetPackagedFileStreamAsync(String, FileAccessMode)          | Task\<IRandomAccessStream> |          Return a stream to a specified file from the installation folder          |
+|               IsFileExistsAsync(StorageFolder, String)               |        Task\<bool>         |               Test if a file exists in the application local folder                |
+|         IsKnownFolderFileExistsAsync(KnownFolderId, String)          |        Task\<bool>         |            Test if a file exists in the application local cache folder             |
+|                 IsLocalCacheFileExistsAsync(String)                  |        Task\<bool>         |            Test if a file exists in the application local cache folder             |
+|                    IsLocalFileExistsAsync(String)                    |        Task\<bool>         |               Test if a file exists in the application local folder                |
+|                  IsPackagedFileExistsAsync(String)                   |        Task\<bool>         |            Test if a file exists in the application installation folder            |
+|             ReadTextAsync(IRandomAccessStream, Encoding)             |       Task\<string>        |                          Read stream content as a string                           |
 
 ## Example
 
@@ -48,11 +48,12 @@ using (var stream = await StreamHelper.GetPackagedFileStreamAsync("Assets/Sub/te
 }
 
 // Get access to a HTTP resource
-using (var stream = await StreamHelper.GetHttpStreamAsync(new Uri("http://dev.windows.com")))
+using (var stream = await StreamHelper.GetHttpStreamAsync(new Uri("https://dev.windows.com")))
 {
     ...
 }
 ```
+
 ```vb
 ' Get access to a text file that was included in solution as Content | do not copy local
 Using stream = Await StreamHelper.GetPackagedFileStreamAsync("Assets/Sub/test.txt")
@@ -62,14 +63,14 @@ Using stream = Await StreamHelper.GetPackagedFileStreamAsync("Assets/Sub/test.tx
 End Using
 
 ' // Get access to a HTTP resource
-Using stream = Await StreamHelper.GetHttpStreamAsync(New Uri("http://dev.windows.com"))
+Using stream = Await StreamHelper.GetHttpStreamAsync(New Uri("https://dev.windows.com"))
     ...
 End Using
 ```
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/UnitTests/Helpers/Test_StreamHelper.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Helpers/Test_StreamHelper.cs)
 
 ## Requirements
 
@@ -80,4 +81,4 @@ You can find more examples in our [unit tests](https://github.com/Microsoft/Wind
 
 ## API Source Code
 
-* [Stream Helper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/StreamHelper.cs)
+* [Stream Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/StreamHelper.cs)

@@ -7,25 +7,25 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # InkCanvas control for Windows Forms and WPF
 
-The **InkCanvas** control provides a surface for Windows Ink-based user interaction in your Windows Forms or WPF desktop application. This control embeds a panel that receives and displays all pen input as either an ink stroke or an erase stroke. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications as part of a feature called *XAML Islands*. For more information, see [UWP controls in desktop applications (XAML Islands)](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
+The **InkCanvas** control provides a surface for Windows Ink-based user interaction in your Windows Forms or WPF desktop application. This control embeds a panel that receives and displays all pen input as either an ink stroke or an erase stroke. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications as part of a feature called *XAML Islands*. For more information, see [UWP controls in desktop applications (XAML Islands)](/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![InkCanvas example](../../resources/images/Controls/InkCanvas.png)
 
 > [!NOTE]
-> This control is currently available as a developer preview for Windows 10, version 1903, and later. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. For more information, see the [XAML Islands feature roadmap](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#feature-roadmap). If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=InkCanvas)
 
 ## About InkCanvas control
 
-This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkCanvas](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](https://docs.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
+For a walkthrough that demonstrates how to host an **InkCanvas** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
-## Requirements
+## Prerequisites
 
-Before you can use this control, you must follow [these instructions](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
+Before you can use this control, you must follow [these instructions](/windows/apps/desktop/modernize/xaml-islands#requirements) to configure your project to support XAML Islands.
 
 ## Known issues and limitations
 
@@ -48,22 +48,21 @@ See also our list of [known issues](https://github.com/windows-toolkit/Microsoft
 
 | Property | Type | Description |
 | -- | -- | -- |
-| InkPresenter | InkPresenter | Wraps the [InkPresenter](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. |
+| InkPresenter | InkPresenter | Wraps the [InkPresenter](/uwp/api/windows.ui.xaml.controls.inkcanvas.inkpresenter) property of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. |
 
 ## Requirements
 
-|        |        |
-|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|--------|--------|
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
 ## API
 
-- [InkCanvas (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/InkCanvas)
-- [InkCanvas (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/InkCanvas)
+- [InkCanvas (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls/InkCanvas)
+- [InkCanvas (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls/InkCanvas)
 
 ## Related topics
 
-- [InkCanvas (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
-- [Pen and Windows Ink](https://docs.microsoft.com/windows/uwp/design/input/pen-and-stylus-interactions)
+- [InkCanvas (UWP)](/uwp/api/Windows.UI.Xaml.Controls.InkCanvas)
+- [Pen and Windows Ink](/windows/uwp/design/input/pen-and-stylus-interactions)
