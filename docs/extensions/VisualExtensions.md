@@ -27,7 +27,7 @@ Here is an example of how the `VisualExtensions` type can be used to directly se
     ui:VisualExtensions.Opacity="0.5"
     ui:VisualExtensions.RotationAngleInDegrees="80"
     ui:VisualExtensions.Scale="2, 0.5, 1"
-    ui:VisualExtensions.NormalizedCenterPoint="0.5, 0.5, 0" />
+    ui:VisualExtensions.NormalizedCenterPoint="0.5, 0.5" />
 ```
 
 > [!NOTE]
