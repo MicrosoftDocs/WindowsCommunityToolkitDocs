@@ -11,7 +11,7 @@ dev_langs:
 # MicrosoftGraph Service
 
 > [!WARNING]
-> (This API has been removed. For the latest guidance on using the Microsoft Graph see the [InteractiveProviderBehavior](../graph/providers/InteractiveProviderBehavior.md).)
+> (This API has been removed. For the latest guidance on using the Microsoft Graph check out the [Windows Community Toolkit - Graph Helpers and Controls](../graph/overview.md).)
 
 The **MicrosoftGraph** Service allows easy access to the Microsoft Graph in order to:
 

@@ -57,7 +57,7 @@ The Windows Gaze Input APIs delivers a stream of timestamped gaze point coordina
 | -- | -- | -- |
 |Enter | enum | A user's gaze has entered the control |
 |Fixation | enum | A user eye's are focused on the control. |
-|Dwell | enum | A user is conciously dwelling on the control and has exceeded the dwell time. This is interpreted as the user's intent to activate or invoke the control, e.g. click a button|
+|Dwell | enum | A user is consciously dwelling on the control and has exceeded the dwell time. This is interpreted as the user's intent to activate or invoke the control, e.g. click a button|
 |Exit | enum | A user's gaze is no longer within the control|
 
 ## GazeInput Properties

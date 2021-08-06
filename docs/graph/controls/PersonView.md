@@ -7,17 +7,21 @@ dev_langs:
   - csharp
 ---
 
-# PersonView XAML Control
+# (Preview) PersonView XAML Control
 
-The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is used to display a person or contact by using their photo, name, and/or email address.
+The PersonView control is used to display a person or contact by using their photo, name, and/or email address.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://controls?sample=PersonView)
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Syntax
 
-```xaml
-  <wgt:PersonView PersonQuery="me" ShowEmail="True"/>
+```xml
+<Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
+    <controls:PersonView PersonQuery="me" PersonViewType="OneLine" />
+</Grid>
 ```
 
 ## Sample Output
@@ -32,27 +36,22 @@ The [PersonView](/dotnet/api/microsoft.toolkit.graph.controls.personview) is use
 | IsLargeImage | bool | Value indicating if the image/circle size should be larger. |
 | PersonDetails | Person | Details about this person retrieved from the graph or provided by the developer. |
 | PersonQuery | string | Automatically retrieve data on the specified query from the graph.  Use 'me' to retrieve info about the current user.  Otherwise, it's best to use an e-mail address as a query. |
-| ShowEmail | bool | Value indicating whether the user's email address should be displayed. |
-| ShowName | bool | Value indicating whether the user's name should be displayed. |
+| PersonViewType | PersonViewType | Value indicating what type of details should be displayed: `Avatar`, `OneLine`, `TwoLine` |
 | UserId | string | Gets or sets the UserId of the displayed person. |
 | UserPhoto | BitmapImage | Gets or sets the displayed photo. |
-
-## Sample Project
-
-[PersonView sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PersonView). You can [see this in action](uwpct://Controls?sample=PersonView) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
 | Device family | Universal, MinVersion or higher |
 | -- | -- |
-| Namespace | Microsoft.Toolkit.Graph.Controls |
-| NuGet package | [Microsoft.Toolkit.Graph.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Graph.Controls) |
+| Namespace | CommunityToolkit.Graph.Uwp.Controls |
+| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |
 
 ## API
 
-* [PersonView source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/PersonView)
+* [PersonView source code](https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/PersonView)
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT Person Component](/graph/toolkit/components/person)

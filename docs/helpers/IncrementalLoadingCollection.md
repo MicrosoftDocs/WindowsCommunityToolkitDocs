@@ -118,7 +118,7 @@ Public Class PeopleSource
 End Class
 ```
 
-The *GetPagedItemsAsync* method is invoked everytime the view need to show more items.
+The *GetPagedItemsAsync* method is invoked every time the view need to show more items.
 
 `IncrementalLoadingCollection` can then be bound to a [ListView](/uwp/api/Windows.UI.Xaml.Controls.ListView) or a [GridView-like](/uwp/api/Windows.UI.Xaml.Controls.GridView) control:
 

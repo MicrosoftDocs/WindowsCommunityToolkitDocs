@@ -2,7 +2,7 @@
 title: DependencyObjectExtensions
 author: Sergio0694
 description: The DependencyObjectExtensions type provides a collection of extensions methods for DependencyObject objects to aid in using the VisualTreeHelper class.
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Visual Tree, extentions
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, Visual Tree, extensions
 dev_langs:
   - csharp
   - vb

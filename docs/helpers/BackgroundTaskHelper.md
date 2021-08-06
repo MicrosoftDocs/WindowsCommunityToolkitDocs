@@ -64,7 +64,7 @@ Once it is done, you can register your Background Tasks.
 using Microsoft.Toolkit.Uwp;
 using Windows.ApplicationModel.Background;
 
-// Register a normal, seperate process, background task
+// Register a normal, separate process, background task
 BackgroundTaskRegistration registered = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", new TimeTrigger(15, true));
 
 // This can also be written using the overload of Register with Type parameter.
@@ -91,7 +91,7 @@ BackgroundTaskRegistration registered =
 Imports Microsoft.Toolkit.Uwp
 Imports Windows.ApplicationModel.Background
 
-' Register a normal, seperate process, background task
+' Register a normal, separate process, background task
 Dim registered As BackgroundTaskRegistration = BackgroundTaskHelper.Register("TaskName", "TaskEntryPoint", New TimeTrigger(15, True))
 
 ' This can also be written using the overload of Register with Type parameter.

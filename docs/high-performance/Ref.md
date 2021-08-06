@@ -45,7 +45,7 @@ Console.WriteLine(model.Number); // Prints 43!
 ```
 
 > [!WARNING]
-> The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsability to pass a valid `object` and a reference to a field within that object. Failing to do so might cause the `Ref<T>.Value` property to return an invalid reference.
+> The `Ref<T>` constructor doesn't validate the input arguments, meaning that it is your responsibility to pass a valid `object` and a reference to a field within that object. Failing to do so might cause the `Ref<T>.Value` property to return an invalid reference.
 
 #### `Ref<T>` on .NET Standard 2.1
 
@@ -77,7 +77,7 @@ public static ref int GetDummyReference()
 }
 ```
 
-This will compile and run fine, but the returned `ref int` will be invalid (as in, it will not point to a valid location) and could cause crashes if it's dereferenced. It is your responsability to track the lifetime of values being referenced by new `Ref<T>` values.
+This will compile and run fine, but the returned `ref int` will be invalid (as in, it will not point to a valid location) and could cause crashes if it's dereferenced. It is your responsibility to track the lifetime of values being referenced by new `Ref<T>` values.
 
 > [!NOTE]
 > Although it is possible to create a `Ref<T>` value wrapping a `null` reference, by using the `default(Ref<T>)` expression, the `Ref<T>` type is not designed to be used with nullable references and does not include proper features to validate the internal reference. If you need to return a reference that can be set to `null`, use the `NullableRef<T>` and `NullableReadOnlyRef<T>` types.

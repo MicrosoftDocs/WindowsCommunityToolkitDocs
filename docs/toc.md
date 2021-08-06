@@ -11,7 +11,7 @@
 
 ## [Known Issues](knownissues.md)
 
-# .NET Standard 2.0
+# .NET
 
 ## MVVM
 
@@ -65,7 +65,9 @@
 
 ### [Ref\<T> and ReadOnlyRef\<T>](high-performance/Ref.md)
 
-## Developer tools
+## Diagnostics
+
+### [Introduction](diagnostics/Introduction.md)
 
 ### [Guard](developer-tools/Guard.md)
 
@@ -73,19 +75,37 @@
 
 # Microsoft Graph
 
+## [Overview](graph/overview.md)
+
+## [Getting Started](graph/getting-started.md)
+
+## Authentication
+
+### [Authentication Overview](graph/authentication/overview.md)
+
+### [ProviderManager](graph/authentication/ProviderManager.md)
+
+### [MSAL provider](graph/authentication/msal.md)
+
+### [Windows provider](graph/authentication/windows.md)
+
+### [Custom provider](graph/authentication/custom.md)
+
+## Helpers
+
+### [Microsoft Graph Extensions](graph/helpers/extensions.md)
+
+<!-- ### RoamingSettingsHelper -->
+
 ## Controls
 
-### [LoginButton](graph/controls/LoginButton.md)
+<!-- ### GraphPresenter -->
 
-### [PersonView](graph/controls/PersonView.md)
+### [LoginButton (Preview)](graph/controls/LoginButton.md)
 
-### [PeoplePicker](graph/controls/PeoplePicker.md)
+### [PersonView (Preview)](graph/controls/PersonView.md)
 
-## Providers
-
-### [InteractiveProviderBehavior](graph/providers/InteractiveProviderBehavior.md)
-
-### [MockProviderBehavior](graph/providers/MockProviderBehavior.md)
+### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
 
 # WinUI 3
 
@@ -279,6 +299,8 @@
 
 ### [Header Behaviors](behaviors/HeaderBehaviors.md)
 
+### [Key Down Trigger Behavior](behaviors/KeyDownTriggerBehavior.md)
+
 ### [ImageCache](helpers/ImageCache.md)
 
 ### [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
@@ -470,6 +492,10 @@
 ### [ProfileCard](archive/graph/ProfileCard.md)
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
+
+### [InteractiveProviderBehavior](archive/graph/providers/InteractiveProviderBehavior.md)
+
+### [MockProviderBehavior](archive/graph/providers/MockProviderBehavior.md)
 
 ## Parsers
 

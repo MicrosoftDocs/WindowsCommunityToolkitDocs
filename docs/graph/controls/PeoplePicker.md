@@ -7,17 +7,21 @@ dev_langs:
   - csharp
 ---
 
-# PeoplePicker XAML Control
+# (Preview) PeoplePicker XAML Control
 
-The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
+The PeoplePicker searches for people and renders the list of results from Microsoft Graph. By default, the component will search across all people.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://controls?sample=PeoplePicker)
+> Available in the `CommunityToolkit.Graph.Uwp` package.
+
+> [!IMPORTANT]
+> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Syntax
 
-```xaml
-  <wgt:PeoplePicker/>
+```xml
+<Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
+    <controls:PeoplePicker />
+</Grid>
 ```
 
 ## Sample Output
@@ -28,25 +32,21 @@ The [PeoplePicker](/dotnet/api/microsoft.toolkit.graph.controls.peoplepicker) se
 
 | Property | Type | Description |
 | -- | -- | -- |
-| PickedPeople | ObservableCollection\<Person> | Gets the set of Person objects chosen by the user. |
-| SuggestedPeople | ObservableCollection\<Person> | Gets or sets collection of people suggested by the graph from the user's query. |
-
-## Sample Project
-
-[PeoplePicker sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+| PickedPeople | ObservableCollection&lt;Person&gt; | Gets the set of Person objects chosen by the user. |
+| SuggestedPeople | ObservableCollection&lt;Person&gt; | Gets or sets collection of people suggested by the graph from the user's query. |
 
 ## Requirements
 
 | Device family | Universal, MinVersion or higher |
 | -- | -- |
-| Namespace | Microsoft.Toolkit.Graph.Controls |
-| NuGet package | [Microsoft.Toolkit.Graph.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Graph.Controls) |
+| Namespace | CommunityToolkit.Graph.Uwp.Controls |
+| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |
 
 ## API
 
-* [PeoplePicker source code](https://github.com/windows-toolkit/Graph-Controls/tree/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Controls/PeoplePicker)
+* [PeoplePicker source code](https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/PeoplePicker)
 
 ## Related Topics
 
-* [Person Graph API](/graph/api/resources/person?view=graph-rest-beta)
+* [Person Graph API](/graph/api/resources/person)
 * [MGT PeoplePicker Component](/graph/toolkit/components/people-picker)

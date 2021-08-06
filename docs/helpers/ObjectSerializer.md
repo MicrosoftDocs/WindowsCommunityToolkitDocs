@@ -16,8 +16,8 @@ You should implement IObjectSerializer when you need to write data using this to
 
 | Methods | Return Type | Description |
 |---------|-------------|-------------|
-| Serialize\<T>(T)        | string | Serialize an object of type T into a string. |
-| Deserialize\<T>(string) | T      | Deserialize a string to an object of type T. |
+| Serialize\<T>(T)        | object | Serialize an object of type T into a object. |
+| Deserialize\<T>(object) | T      | Deserialize a object to an object of type T. |
 
 ## Examples
 
@@ -33,7 +33,7 @@ namespace Contoso.Helpers
     {
         public object Serialize<T>(T value) => JsonSerializer.Serialize(value);
 
-        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>(value.ToString());
+        public T Deserialize<T>(object value) => JsonSerializer.Deserialize<T>((string)value);
     }
 }
 ```
@@ -51,9 +51,9 @@ namespace Contoso.Helpers
         // Specify your serialization settings
         private readonly JsonSerializerSettings settings = new JsonSerializerSettings();
 
-        public string Serialize<T>(T value) => JsonConvert.SerializeObject(value, typeof(T), Formatting.Indented, settings);
+        public object Serialize<T>(T value) => JsonConvert.SerializeObject(value, typeof(T), Formatting.Indented , settings);
 
-        public T Deserialize<T>(string value) => JsonConvert.DeserializeObject<T>(value, settings);
+        public T Deserialize<T>(object value) => JsonConvert.DeserializeObject<T>((string)value, settings);
     }
 }
 ```
@@ -61,6 +61,7 @@ namespace Contoso.Helpers
 ### DataContract
 
 ```csharp
+using Microsoft.Toolkit.Uwp.Helpers;
 using System.IO;
 using System.Runtime.Serialization;
 using System.Xml;
@@ -72,7 +73,7 @@ namespace Contoso.Helpers
         // Specify your serialization settings
         private readonly DataContractSerializerSettings settings = new DataContractSerializerSettings();
 
-        public string Serialize<T>(T value)
+        public object Serialize<T>(T value)
         {
             var serializer = new DataContractSerializer(typeof(T), settings);
 
@@ -84,14 +85,14 @@ namespace Contoso.Helpers
             }
         }
 
-        public T Deserialize<T>(string value)
+        public T Deserialize<T>(object value)
         {
             var serializer = new DataContractSerializer(typeof(T), settings);
 
-            using (var stringReader = new StringReader(value))
+            using (var stringReader = new StringReader((string)value))
             using (var xmlReader = XmlReader.Create(stringReader))
             {
-                return serializer.ReadObject(xmlReader) as T;
+                return (T)serializer.ReadObject(xmlReader);
             }
         }
     }
