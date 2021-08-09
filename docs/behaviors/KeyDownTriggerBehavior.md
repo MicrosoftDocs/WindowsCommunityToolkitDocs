@@ -11,7 +11,7 @@ dev_langs:
 
 Add a new behavior that listens to a key press event on the associated UIElement and triggers the set of actions.
 
-> **Platform APIs:** [`KeyDownTriggerBehavior`](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors.keydowntriggerbehavior)
+> **Platform APIs:** [`Behaviors`](/dotnet/api/microsoft.toolkit.uwp.ui.behaviors)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=KeyDownTriggerBehavior)
