@@ -18,7 +18,7 @@ Add a new behavior that listens to a key press event on the associated UIElement
 
 ## Example
 
-In this example setting up the `KeyDownTriggerBehavior` to start the animation on another object named MoveAnimation:
+In this example setting up the `KeyDownTriggerBehavior` to start the animation:
 
 ```xaml
   <TextBox
