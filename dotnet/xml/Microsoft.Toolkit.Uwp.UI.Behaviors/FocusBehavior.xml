@@ -1,0 +1,180 @@
+<Type Name="FocusBehavior" FullName="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior">
+  <TypeSignature Language="C#" Value="public sealed class FocusBehavior : Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase&lt;Windows.UI.Xaml.UIElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FocusBehavior extends Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1&lt;class Windows.UI.Xaml.UIElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FocusBehavior&#xA;Inherits BehaviorBase(Of UIElement)" />
+  <TypeSignature Language="F#" Value="type FocusBehavior = class&#xA;    inherit BehaviorBase&lt;UIElement&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase&lt;Windows.UI.Xaml.UIElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Windows.UI.Xaml.UIElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.Markup.ContentProperty(Name="Targets")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.Markup.ContentProperty(Name="Targets")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            This behavior sets the focus on the first control of <see cref="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" /> which accepts it.
+            The focus will be set following the <see cref="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" /> order. The first control being ready
+            and accepting the focus will receive it.
+            The focus can be set to another control with a higher priority if it loads before <see cref="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeout" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FocusBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusEngagementTimeout">
+      <MemberSignature Language="C#" Value="public TimeSpan FocusEngagementTimeout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan FocusEngagementTimeout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusEngagementTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.FocusEngagementTimeout : TimeSpan with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeout" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the timeout before the <see cref="T:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior" /> stops trying to set the focus to a control with
+            a higher priority.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FocusEngagementTimeoutProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty FocusEngagementTimeoutProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty FocusEngagementTimeoutProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeoutProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusEngagementTimeoutProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusEngagementTimeoutProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeoutProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The DP to store the <see cref="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.FocusEngagementTimeout" /> property value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnAssociatedObjectLoaded">
+      <MemberSignature Language="C#" Value="protected override void OnAssociatedObjectLoaded ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnAssociatedObjectLoaded() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.OnAssociatedObjectLoaded" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnAssociatedObjectLoaded ()" />
+      <MemberSignature Language="F#" Value="override this.OnAssociatedObjectLoaded : unit -&gt; unit" Usage="focusBehavior.OnAssociatedObjectLoaded " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDetaching">
+      <MemberSignature Language="C#" Value="protected override void OnDetaching ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDetaching() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.OnDetaching" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDetaching ()" />
+      <MemberSignature Language="F#" Value="override this.OnDetaching : unit -&gt; unit" Usage="focusBehavior.OnDetaching " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Targets">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList Targets { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList Targets" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" />
+      <MemberSignature Language="VB.NET" Value="Public Property Targets As FocusTargetList" />
+      <MemberSignature Language="F#" Value="member this.Targets : Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Behaviors.FocusTargetList</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the ordered list of controls which should receive the focus when the associated object is loaded.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TargetsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TargetsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.TargetsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetsProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.TargetsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The DP to store the <see cref="P:Microsoft.Toolkit.Uwp.UI.Behaviors.FocusBehavior.Targets" /> property value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

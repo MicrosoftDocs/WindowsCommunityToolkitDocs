@@ -1,0 +1,52 @@
+<Type Name="IImplicitTimeline" FullName="Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline">
+  <TypeSignature Language="C#" Value="public interface IImplicitTimeline" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImplicitTimeline" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImplicitTimeline" />
+  <TypeSignature Language="F#" Value="type IImplicitTimeline = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An interface representing a XAML model for a custom implicit composition animation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetAnimation">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.CompositionAnimation GetAnimation (Windows.UI.Xaml.UIElement element, out string? target);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Windows.UI.Composition.CompositionAnimation GetAnimation(class Windows.UI.Xaml.UIElement element, [out] string&amp; target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.IImplicitTimeline.GetAnimation(Windows.UI.Xaml.UIElement,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAnimation (element As UIElement, ByRef target As String) As CompositionAnimation" />
+      <MemberSignature Language="F#" Value="abstract member GetAnimation : Windows.UI.Xaml.UIElement * string -&gt; Windows.UI.Composition.CompositionAnimation" Usage="iImplicitTimeline.GetAnimation (element, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.CompositionAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="target" Type="System.String" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> the animation will be applied to.</param>
+        <param name="target">
+            The optional target property for the animation. This might be used for direct implicit
+            animations that target a property but want to be triggered according to a separate property.
+            </param>
+        <summary>
+            Gets a <see cref="T:Windows.UI.Composition.CompositionAnimation" /> from the current node. This animation might
+            be used either as an implicit show/hide animation, or as a direct implicit animation.
+            </summary>
+        <returns>A new <see cref="T:Windows.UI.Composition.CompositionAnimation" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

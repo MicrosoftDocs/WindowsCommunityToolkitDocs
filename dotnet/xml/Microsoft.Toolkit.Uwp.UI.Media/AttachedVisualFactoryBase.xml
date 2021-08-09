@@ -1,0 +1,65 @@
+<Type Name="AttachedVisualFactoryBase" FullName="Microsoft.Toolkit.Uwp.UI.Media.AttachedVisualFactoryBase">
+  <TypeSignature Language="C#" Value="public abstract class AttachedVisualFactoryBase : Windows.UI.Xaml.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AttachedVisualFactoryBase extends Windows.UI.Xaml.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.AttachedVisualFactoryBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AttachedVisualFactoryBase&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type AttachedVisualFactoryBase = class&#xA;    inherit DependencyObject" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A type responsible for creating <see cref="T:Windows.UI.Composition.Visual" /> instances to attach to target elements.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected AttachedVisualFactoryBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedVisualFactoryBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttachedVisualAsync">
+      <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.ValueTask&lt;Windows.UI.Composition.Visual&gt; GetAttachedVisualAsync (Windows.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Windows.UI.Composition.Visual&gt; GetAttachedVisualAsync(class Windows.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedVisualFactoryBase.GetAttachedVisualAsync(Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAttachedVisualAsync (element As UIElement) As ValueTask(Of Visual)" />
+      <MemberSignature Language="F#" Value="abstract member GetAttachedVisualAsync : Windows.UI.Xaml.UIElement -&gt; System.Threading.Tasks.ValueTask&lt;Windows.UI.Composition.Visual&gt;" Usage="attachedVisualFactoryBase.GetAttachedVisualAsync element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Windows.UI.Composition.Visual&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Windows.UI.Xaml.UIElement" /> the visual will be attached to.</param>
+        <summary>
+            Creates a <see cref="T:Windows.UI.Composition.Visual" /> to attach to the target element.
+            </summary>
+        <returns>A <see cref="T:Windows.UI.Composition.Visual" /> instance that the caller will attach to the target element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

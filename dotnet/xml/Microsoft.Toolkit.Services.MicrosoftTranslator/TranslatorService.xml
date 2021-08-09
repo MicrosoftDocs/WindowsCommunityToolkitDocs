@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -41,6 +43,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -59,6 +63,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-detect.
             </para>
         </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -66,8 +72,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
       </Docs>
     </Member>
     <Member MemberName="DetectLanguagesWithResponseAsync">
@@ -84,6 +88,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;&gt;</ReturnType>
@@ -102,6 +108,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-detect.
             </para>
         </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
         <exception cref="T:System.ArgumentException">
           <list type="bullet">
             <term>The <paramref name="input" /> parameter doesn't contain any element.</term>
@@ -115,8 +123,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
       </Docs>
     </Member>
     <Member MemberName="DetectLanguageWithResponseAsync">
@@ -133,6 +139,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.DetectedLanguageResponse&gt;</ReturnType>
@@ -151,6 +159,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-detect.
             </para>
         </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -158,15 +168,13 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguageNamesAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt; GetLanguageNamesAsync (string language = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt; GetLanguageNamesAsync (string language = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt; GetLanguageNamesAsync(string language) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService.GetLanguageNamesAsync(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetLanguageNamesAsync (Optional language As String = null) As Task(Of IEnumerable(Of ServiceLanguage))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLanguageNamesAsync (Optional language As String = Nothing) As Task(Of IEnumerable(Of ServiceLanguage))" />
       <MemberSignature Language="F#" Value="abstract member GetLanguageNamesAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt;&#xA;override this.GetLanguageNamesAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt;" Usage="translatorService.GetLanguageNamesAsync language" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -176,6 +184,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.ServiceLanguage&gt;&gt;</ReturnType>
@@ -194,9 +204,9 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-languages.
             </para>
         </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="GetLanguagesAsync">
@@ -213,6 +223,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.String&gt;&gt;</ReturnType>
@@ -228,9 +240,9 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-languages.
             </para>
         </remarks>
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)" />
         <exception cref="T:System.ArgumentNullException">The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguageNamesAsync(System.String)" />
       </Docs>
     </Member>
     <Member MemberName="InitializeAsync">
@@ -247,6 +259,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -263,10 +277,10 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task InitializeAsync (string subscriptionKey, string language = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task InitializeAsync (string subscriptionKey, string language = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task InitializeAsync(string subscriptionKey, string language) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService.InitializeAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function InitializeAsync (subscriptionKey As String, Optional language As String = null) As Task" />
+      <MemberSignature Language="VB.NET" Value="Public Function InitializeAsync (subscriptionKey As String, Optional language As String = Nothing) As Task" />
       <MemberSignature Language="F#" Value="abstract member InitializeAsync : string * string -&gt; System.Threading.Tasks.Task&#xA;override this.InitializeAsync : string * string -&gt; System.Threading.Tasks.Task" Usage="translatorService.InitializeAsync (subscriptionKey, language)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -276,6 +290,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -310,6 +326,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService</ReturnType>
@@ -336,6 +354,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -360,6 +380,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -386,6 +408,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -401,10 +425,10 @@
       </Docs>
     </Member>
     <Member MemberName="TranslateAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; TranslateAsync (string input, string to = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; TranslateAsync (string input, string to = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; TranslateAsync(string input, string to) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService.TranslateAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function TranslateAsync (input As String, Optional to As String = null) As Task(Of String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TranslateAsync (input As String, Optional to As String = Nothing) As Task(Of String)" />
       <MemberSignature Language="F#" Value="abstract member TranslateAsync : string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;&#xA;override this.TranslateAsync : string * string -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="translatorService.TranslateAsync (input, to)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -414,6 +438,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -434,6 +460,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -442,8 +470,6 @@
         </exception>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> parameter is longer than 1000 characters.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateAsync">
@@ -460,6 +486,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
@@ -482,6 +510,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -490,15 +520,13 @@
         </exception>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> parameter is longer than 1000 characters.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt; TranslateWithResponseAsync (System.Collections.Generic.IEnumerable&lt;string&gt; input, System.Collections.Generic.IEnumerable&lt;string&gt; to = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt; TranslateWithResponseAsync (System.Collections.Generic.IEnumerable&lt;string&gt; input, System.Collections.Generic.IEnumerable&lt;string&gt; to = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt; TranslateWithResponseAsync(class System.Collections.Generic.IEnumerable`1&lt;string&gt; input, class System.Collections.Generic.IEnumerable`1&lt;string&gt; to) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService.TranslateWithResponseAsync(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})" />
-      <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As IEnumerable(Of String), Optional to As IEnumerable(Of String) = null) As Task(Of IEnumerable(Of TranslationResponse))" />
+      <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As IEnumerable(Of String), Optional to As IEnumerable(Of String) = Nothing) As Task(Of IEnumerable(Of TranslationResponse))" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : seq&lt;string&gt; * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;&#xA;override this.TranslateWithResponseAsync : seq&lt;string&gt; * seq&lt;string&gt; -&gt; System.Threading.Tasks.Task&lt;seq&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;" Usage="translatorService.TranslateWithResponseAsync (input, to)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -508,6 +536,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -528,6 +558,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -541,8 +573,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
@@ -559,6 +589,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -579,6 +611,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -592,15 +626,13 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt; TranslateWithResponseAsync (string input, string to = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt; TranslateWithResponseAsync (string input, string to = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt; TranslateWithResponseAsync(string input, string to) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorService.TranslateWithResponseAsync(System.String,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As String, Optional to As String = null) As Task(Of TranslationResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TranslateWithResponseAsync (input As String, Optional to As String = Nothing) As Task(Of TranslationResponse)" />
       <MemberSignature Language="F#" Value="abstract member TranslateWithResponseAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&#xA;override this.TranslateWithResponseAsync : string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;" Usage="translatorService.TranslateWithResponseAsync (input, to)" />
       <MemberType>Method</MemberType>
       <Implements>
@@ -610,6 +642,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -630,6 +664,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -638,8 +674,6 @@
         </exception>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> parameter is longer than 1000 characters.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
@@ -656,6 +690,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -678,6 +714,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -691,8 +729,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
@@ -709,6 +745,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;&gt;</ReturnType>
@@ -731,6 +769,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -744,8 +784,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
@@ -762,6 +800,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -784,6 +824,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -797,8 +839,6 @@
           </list>
         </exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
     <Member MemberName="TranslateWithResponseAsync">
@@ -815,6 +855,8 @@
         <AssemblyName>Microsoft.Toolkit.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Services.MicrosoftTranslator.TranslationResponse&gt;</ReturnType>
@@ -837,6 +879,8 @@
           <para>For more information, go to https://docs.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate.
             </para>
         </remarks>
+        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
+        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
         <exception cref="T:System.ArgumentNullException">
           <list type="bullet">
             <term>The <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> property hasn't been set.</term>
@@ -845,8 +889,6 @@
         </exception>
         <exception cref="T:System.ArgumentException">The <paramref name="input" /> parameter is longer than 1000 characters.</exception>
         <exception cref="T:Microsoft.Toolkit.Services.MicrosoftTranslator.TranslatorServiceException">The provided <see cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.SubscriptionKey" /> isn't valid or has expired.</exception>
-        <altmember cref="P:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.Language" />
-        <altmember cref="M:Microsoft.Toolkit.Services.MicrosoftTranslator.ITranslatorService.GetLanguagesAsync" />
       </Docs>
     </Member>
   </Members>

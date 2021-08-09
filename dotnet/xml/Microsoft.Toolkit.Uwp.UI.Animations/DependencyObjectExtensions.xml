@@ -1,0 +1,159 @@
+<Type Name="DependencyObjectExtensions" FullName="Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions">
+  <TypeSignature Language="C#" Value="public static class DependencyObjectExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DependencyObjectExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DependencyObjectExtensions" />
+  <TypeSignature Language="F#" Value="type DependencyObjectExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An extension <see langword="class" /> for the <see cref="T:Windows.UI.Xaml.DependencyObject" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateColorAnimation">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.ColorAnimation CreateColorAnimation (this Windows.UI.Xaml.DependencyObject target, string property, Windows.UI.Color to, Windows.UI.Color? from, TimeSpan? delay, TimeSpan duration, Windows.UI.Xaml.Media.Animation.EasingFunctionBase? easing = default, Windows.UI.Xaml.Media.Animation.RepeatBehavior? repeatBehavior = default, Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, bool autoReverse = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Xaml.Media.Animation.ColorAnimation CreateColorAnimation(class Windows.UI.Xaml.DependencyObject target, string property, valuetype Windows.UI.Color to, valuetype System.Nullable`1&lt;valuetype Windows.UI.Color&gt; from, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.TimeSpan duration, class Windows.UI.Xaml.Media.Animation.EasingFunctionBase easing, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; repeatBehavior, valuetype Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior, bool autoReverse) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreateColorAnimation(Windows.UI.Xaml.DependencyObject,System.String,Windows.UI.Color,System.Nullable{Windows.UI.Color},System.Nullable{System.TimeSpan},System.TimeSpan,Windows.UI.Xaml.Media.Animation.EasingFunctionBase,System.Nullable{Windows.UI.Xaml.Media.Animation.RepeatBehavior},Windows.UI.Xaml.Media.Animation.FillBehavior,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateColorAnimation (target As DependencyObject, property As String, to As Color, from As Nullable(Of Color), delay As Nullable(Of TimeSpan), duration As TimeSpan, Optional easing As EasingFunctionBase = Nothing, Optional repeatBehavior As Nullable(Of RepeatBehavior) = Nothing, Optional fillBehavior As FillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, Optional autoReverse As Boolean = false) As ColorAnimation" />
+      <MemberSignature Language="F#" Value="static member CreateColorAnimation : Windows.UI.Xaml.DependencyObject * string * Windows.UI.Color * Nullable&lt;Windows.UI.Color&gt; * Nullable&lt;TimeSpan&gt; * TimeSpan * Windows.UI.Xaml.Media.Animation.EasingFunctionBase * Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; * Windows.UI.Xaml.Media.Animation.FillBehavior * bool -&gt; Windows.UI.Xaml.Media.Animation.ColorAnimation" Usage="Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreateColorAnimation (target, property, to, from, delay, duration, easing, repeatBehavior, fillBehavior, autoReverse)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.ColorAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="to" Type="Windows.UI.Color" />
+        <Parameter Name="from" Type="System.Nullable&lt;Windows.UI.Color&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="easing" Type="Windows.UI.Xaml.Media.Animation.EasingFunctionBase" />
+        <Parameter Name="repeatBehavior" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt;" />
+        <Parameter Name="fillBehavior" Type="Windows.UI.Xaml.Media.Animation.FillBehavior" />
+        <Parameter Name="autoReverse" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target <see cref="T:Windows.UI.Xaml.DependencyObject" /> to animate.</param>
+        <param name="property">The property to animate inside the target <see cref="T:Windows.UI.Xaml.DependencyObject" />.</param>
+        <param name="to">The final property value.</param>
+        <param name="from">The optional initial property value.</param>
+        <param name="delay">The optional delay for the animation.</param>
+        <param name="duration">The duration of the <see cref="T:Windows.UI.Xaml.Media.Animation.ColorAnimation" />.</param>
+        <param name="easing">The easing function to use inside the <see cref="T:Windows.UI.Xaml.Media.Animation.ColorAnimation" />.</param>
+        <param name="repeatBehavior">The repeat behavior for the animation (defaults to one iteration).</param>
+        <param name="fillBehavior">The behavior to use when the animation reaches the end of its schedule.</param>
+        <param name="autoReverse">Indicates whether the animation plays in reverse after each forward iteration.</param>
+        <summary>
+            Prepares a <see cref="T:Windows.UI.Xaml.Media.Animation.ColorAnimation" /> with the given info.
+            </summary>
+        <returns>A <see cref="T:Windows.UI.Xaml.Media.Animation.ColorAnimation" /> instance with the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateDoubleAnimation">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.DoubleAnimation CreateDoubleAnimation (this Windows.UI.Xaml.DependencyObject target, string property, double to, double? from, TimeSpan? delay, TimeSpan duration, Windows.UI.Xaml.Media.Animation.EasingFunctionBase? easing = default, Windows.UI.Xaml.Media.Animation.RepeatBehavior? repeatBehavior = default, Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, bool autoReverse = false, bool enableDependecyAnimations = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Xaml.Media.Animation.DoubleAnimation CreateDoubleAnimation(class Windows.UI.Xaml.DependencyObject target, string property, float64 to, valuetype System.Nullable`1&lt;float64&gt; from, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.TimeSpan duration, class Windows.UI.Xaml.Media.Animation.EasingFunctionBase easing, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; repeatBehavior, valuetype Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior, bool autoReverse, bool enableDependecyAnimations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreateDoubleAnimation(Windows.UI.Xaml.DependencyObject,System.String,System.Double,System.Nullable{System.Double},System.Nullable{System.TimeSpan},System.TimeSpan,Windows.UI.Xaml.Media.Animation.EasingFunctionBase,System.Nullable{Windows.UI.Xaml.Media.Animation.RepeatBehavior},Windows.UI.Xaml.Media.Animation.FillBehavior,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateDoubleAnimation (target As DependencyObject, property As String, to As Double, from As Nullable(Of Double), delay As Nullable(Of TimeSpan), duration As TimeSpan, Optional easing As EasingFunctionBase = Nothing, Optional repeatBehavior As Nullable(Of RepeatBehavior) = Nothing, Optional fillBehavior As FillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, Optional autoReverse As Boolean = false, Optional enableDependecyAnimations As Boolean = false) As DoubleAnimation" />
+      <MemberSignature Language="F#" Value="static member CreateDoubleAnimation : Windows.UI.Xaml.DependencyObject * string * double * Nullable&lt;double&gt; * Nullable&lt;TimeSpan&gt; * TimeSpan * Windows.UI.Xaml.Media.Animation.EasingFunctionBase * Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; * Windows.UI.Xaml.Media.Animation.FillBehavior * bool * bool -&gt; Windows.UI.Xaml.Media.Animation.DoubleAnimation" Usage="Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreateDoubleAnimation (target, property, to, from, delay, duration, easing, repeatBehavior, fillBehavior, autoReverse, enableDependecyAnimations)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.DoubleAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="to" Type="System.Double" />
+        <Parameter Name="from" Type="System.Nullable&lt;System.Double&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="easing" Type="Windows.UI.Xaml.Media.Animation.EasingFunctionBase" />
+        <Parameter Name="repeatBehavior" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt;" />
+        <Parameter Name="fillBehavior" Type="Windows.UI.Xaml.Media.Animation.FillBehavior" />
+        <Parameter Name="autoReverse" Type="System.Boolean" />
+        <Parameter Name="enableDependecyAnimations" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target <see cref="T:Windows.UI.Xaml.DependencyObject" /> to animate.</param>
+        <param name="property">The property to animate inside the target <see cref="T:Windows.UI.Xaml.DependencyObject" />.</param>
+        <param name="to">The final property value.</param>
+        <param name="from">The optional initial property value.</param>
+        <param name="delay">The optional delay for the animation.</param>
+        <param name="duration">The duration of the <see cref="T:Windows.UI.Xaml.Media.Animation.DoubleAnimation" />.</param>
+        <param name="easing">The easing function to use inside the <see cref="T:Windows.UI.Xaml.Media.Animation.DoubleAnimation" />.</param>
+        <param name="repeatBehavior">The repeat behavior for the animation (defaults to one iteration).</param>
+        <param name="fillBehavior">The behavior to use when the animation reaches the end of its schedule.</param>
+        <param name="autoReverse">Indicates whether the animation plays in reverse after each forward iteration.</param>
+        <param name="enableDependecyAnimations">Indicates whether or not to apply this animation to elements that need the visual tree to be rearranged.</param>
+        <summary>
+            Prepares a <see cref="T:Windows.UI.Xaml.Media.Animation.DoubleAnimation" /> with the given info.
+            </summary>
+        <returns>A <see cref="T:Windows.UI.Xaml.Media.Animation.DoubleAnimation" /> instance with the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePointAnimation">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Xaml.Media.Animation.PointAnimation CreatePointAnimation (this Windows.UI.Xaml.DependencyObject target, string property, Windows.Foundation.Point to, Windows.Foundation.Point? from, TimeSpan? delay, TimeSpan duration, Windows.UI.Xaml.Media.Animation.EasingFunctionBase? easing = default, Windows.UI.Xaml.Media.Animation.RepeatBehavior? repeatBehavior = default, Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, bool autoReverse = false, bool enableDependecyAnimations = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Xaml.Media.Animation.PointAnimation CreatePointAnimation(class Windows.UI.Xaml.DependencyObject target, string property, valuetype Windows.Foundation.Point to, valuetype System.Nullable`1&lt;valuetype Windows.Foundation.Point&gt; from, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.TimeSpan duration, class Windows.UI.Xaml.Media.Animation.EasingFunctionBase easing, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; repeatBehavior, valuetype Windows.UI.Xaml.Media.Animation.FillBehavior fillBehavior, bool autoReverse, bool enableDependecyAnimations) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreatePointAnimation(Windows.UI.Xaml.DependencyObject,System.String,Windows.Foundation.Point,System.Nullable{Windows.Foundation.Point},System.Nullable{System.TimeSpan},System.TimeSpan,Windows.UI.Xaml.Media.Animation.EasingFunctionBase,System.Nullable{Windows.UI.Xaml.Media.Animation.RepeatBehavior},Windows.UI.Xaml.Media.Animation.FillBehavior,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreatePointAnimation (target As DependencyObject, property As String, to As Point, from As Nullable(Of Point), delay As Nullable(Of TimeSpan), duration As TimeSpan, Optional easing As EasingFunctionBase = Nothing, Optional repeatBehavior As Nullable(Of RepeatBehavior) = Nothing, Optional fillBehavior As FillBehavior = Windows.UI.Xaml.Media.Animation.FillBehavior.HoldEnd, Optional autoReverse As Boolean = false, Optional enableDependecyAnimations As Boolean = false) As PointAnimation" />
+      <MemberSignature Language="F#" Value="static member CreatePointAnimation : Windows.UI.Xaml.DependencyObject * string * Windows.Foundation.Point * Nullable&lt;Windows.Foundation.Point&gt; * Nullable&lt;TimeSpan&gt; * TimeSpan * Windows.UI.Xaml.Media.Animation.EasingFunctionBase * Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt; * Windows.UI.Xaml.Media.Animation.FillBehavior * bool * bool -&gt; Windows.UI.Xaml.Media.Animation.PointAnimation" Usage="Microsoft.Toolkit.Uwp.UI.Animations.DependencyObjectExtensions.CreatePointAnimation (target, property, to, from, delay, duration, easing, repeatBehavior, fillBehavior, autoReverse, enableDependecyAnimations)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.Animation.PointAnimation</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Windows.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="property" Type="System.String" />
+        <Parameter Name="to" Type="Windows.Foundation.Point" />
+        <Parameter Name="from" Type="System.Nullable&lt;Windows.Foundation.Point&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.TimeSpan" />
+        <Parameter Name="easing" Type="Windows.UI.Xaml.Media.Animation.EasingFunctionBase" />
+        <Parameter Name="repeatBehavior" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.RepeatBehavior&gt;" />
+        <Parameter Name="fillBehavior" Type="Windows.UI.Xaml.Media.Animation.FillBehavior" />
+        <Parameter Name="autoReverse" Type="System.Boolean" />
+        <Parameter Name="enableDependecyAnimations" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="target">The target <see cref="T:Windows.UI.Xaml.DependencyObject" /> to animate.</param>
+        <param name="property">The property to animate inside the target <see cref="T:Windows.UI.Xaml.DependencyObject" />.</param>
+        <param name="to">The final property value.</param>
+        <param name="from">The optional initial property value.</param>
+        <param name="delay">The optional delay for the animation.</param>
+        <param name="duration">The duration of the <see cref="T:Windows.UI.Xaml.Media.Animation.PointAnimation" />.</param>
+        <param name="easing">The easing function to use inside the <see cref="T:Windows.UI.Xaml.Media.Animation.PointAnimation" />.</param>
+        <param name="repeatBehavior">The repeat behavior for the animation (defaults to one iteration).</param>
+        <param name="fillBehavior">The behavior to use when the animation reaches the end of its schedule.</param>
+        <param name="autoReverse">Indicates whether the animation plays in reverse after each forward iteration.</param>
+        <param name="enableDependecyAnimations">Indicates whether or not to apply this animation to elements that need the visual tree to be rearranged.</param>
+        <summary>
+            Prepares a <see cref="T:Windows.UI.Xaml.Media.Animation.PointAnimation" /> with the given info.
+            </summary>
+        <returns>A <see cref="T:Windows.UI.Xaml.Media.Animation.PointAnimation" /> instance with the specified parameters.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

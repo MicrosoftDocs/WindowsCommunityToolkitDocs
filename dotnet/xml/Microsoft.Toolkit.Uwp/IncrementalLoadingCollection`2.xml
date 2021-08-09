@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TSource">
@@ -39,21 +41,23 @@
             This class represents an <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> whose items can be loaded incrementally.
             </summary>
     <remarks>To be added.</remarks>
-    <altmember cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
     <altmember cref="T:Windows.UI.Xaml.Data.ISupportIncrementalLoading" />
+    <altmember cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" />
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (int itemsPerPage = 20, Action onStartLoading = default, Action onEndLoading = default, Action&lt;Exception&gt; onError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = Nothing, Optional onEndLoading As Action = Nothing, Optional onError As Action(Of Exception) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; : int * Action * Action * Action&lt;Exception&gt; -&gt; Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;" Usage="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; (itemsPerPage, onStartLoading, onEndLoading, onError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="itemsPerPage" Type="System.Int32" />
@@ -72,7 +76,7 @@
             An <see cref="T:System.Action" /> that is called when a retrieval operation ends.
             </param>
         <param name="onError">
-            An <see cref="T:System.Action" /> that is called if an error occours during data retrieval.
+            An <see cref="T:System.Action" /> that is called if an error occurs during data retrieval.
             </param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class optionally specifying how many items to load for each data page.
@@ -82,16 +86,18 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (TSource source, int itemsPerPage = 20, Action onStartLoading = null, Action onEndLoading = null, Action&lt;Exception&gt; onError = null);" />
+      <MemberSignature Language="C#" Value="public IncrementalLoadingCollection (TSource source, int itemsPerPage = 20, Action onStartLoading = default, Action onEndLoading = default, Action&lt;Exception&gt; onError = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSource source, int32 itemsPerPage, class System.Action onStartLoading, class System.Action onEndLoading, class System.Action`1&lt;class System.Exception&gt; onError) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.#ctor(`0,System.Int32,System.Action,System.Action,System.Action{System.Exception})" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (source As TSource, Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = null, Optional onEndLoading As Action = null, Optional onError As Action(Of Exception) = null)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As TSource, Optional itemsPerPage As Integer = 20, Optional onStartLoading As Action = Nothing, Optional onEndLoading As Action = Nothing, Optional onError As Action(Of Exception) = Nothing)" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; : 'Source * int * Action * Action * Action&lt;Exception&gt; -&gt; Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt;" Usage="new Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;'Source, 'IType (requires 'Source :&gt; Microsoft.Toolkit.Collections.IIncrementalSource&lt;'IType&gt;)&gt; (source, itemsPerPage, onStartLoading, onEndLoading, onError)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="source" Type="TSource" />
@@ -114,7 +120,7 @@
             An <see cref="T:System.Action" /> that is called when a retrieval operation ends.
             </param>
         <param name="onError">
-            An <see cref="T:System.Action" /> that is called if an error occours during data retrieval.
+            An <see cref="T:System.Action" /> that is called if an error occurs during data retrieval.
             </param>
         <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2" /> class using the specified <see cref="T:Microsoft.Toolkit.Collections.IIncrementalSource`1" /> implementation and, optionally, how many items to load for each data page.
@@ -134,6 +140,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -157,6 +165,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -180,6 +190,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -203,6 +215,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -219,12 +233,15 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt; LoadDataAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;!IType&gt;&gt; LoadDataAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.LoadDataAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadDataAsync (cancellationToken As CancellationToken) As Task(Of IEnumerable(Of IType))" />
       <MemberSignature Language="F#" Value="abstract member LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;&#xA;override this.LoadDataAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;seq&lt;'IType&gt;&gt;" Usage="incrementalLoadingCollection.LoadDataAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;IType&gt;&gt;</ReturnType>
@@ -259,6 +276,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.Foundation.IAsyncOperation&lt;Windows.UI.Xaml.Data.LoadMoreItemsResult&gt;</ReturnType>
@@ -290,6 +309,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -313,13 +334,15 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action&lt;System.Exception&gt;</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>
-            Gets or sets an <see cref="T:System.Action" /> that is called if an error occours during data retrieval. The actual <see cref="T:System.Exception" /> is passed as an argument.
+            Gets or sets an <see cref="T:System.Action" /> that is called if an error occurs during data retrieval. The actual <see cref="T:System.Exception" /> is passed as an argument.
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
@@ -336,6 +359,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Action</ReturnType>
@@ -359,6 +384,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -383,6 +410,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TSource</ReturnType>

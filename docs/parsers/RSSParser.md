@@ -1,7 +1,7 @@
 ---
 title: RSS Parser
-author: williamabradley
-description: The RSS Parser allows you to parse an RSS content String into an RSS Schema.
+author: michael-hawker
+description: The RSS Parser allows you to parse an RSS content String into an RSS Schema (outdated docs).
 keywords: windows community toolkit, uwp community toolkit, uwp toolkit, microsoft community toolkit, microsoft toolkit, rss, rss parsing, parser
 dev_langs:
   - csharp
@@ -10,12 +10,22 @@ dev_langs:
 
 # RSS Parser
 
-The [RssParser](https://docs.microsoft.com/en-us/dotnet/api/microsoft.toolkit.parsers.rss.rssparser) class allows you to parse an RSS content String into an RSS Schema.
+The Toolkit RssParser has been removed. Code should be migrated to use the [System.ServiceModel.Syndication](/dotnet/api/system.servicemodel.syndication) API instead.
 
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Helpers?sample=RSS%20Parser)
+This document will show you how to migrate over to the .NET Standard library API.
 
-## Example
+## Migration Steps
+
+1. Remove the `Microsoft.Toolkit.Parsers` package.
+2. Add the `System.ServiceModel.Syndication` package.
+3. Replace `HttpClient` + `GetStringAsync` with `XmlReader.Create`.
+4. Replace `RssParser` + `Parse` with `SyndicationFeed.Load`.
+5. Append `.Text` to any element properties retrieved.
+
+> [!WARNING]
+> If updating a UWP based project, Visual Studio will recommend the `Windows.Web.Syndication` namespace by default. Be sure to ignore this suggestion and instead include the `System.ServiceModel.Syndication` NuGet package and namespace.
+
+## Toolkit Example
 
 ```csharp
 public async void ParseRSS()
@@ -28,7 +38,7 @@ public async void ParseRSS()
         {
             feed = await client.GetStringAsync("https://visualstudiomagazine.com/rss-feeds/news.aspx");
         }
-        catch { }
+        catch { } // TODO: Deal with unavailable resource.
     }
 
     if (feed != null)
@@ -44,6 +54,7 @@ public async void ParseRSS()
     }
 }
 ```
+
 ```vb
 Public Async Sub ParseRSS()
     Dim feed As String = Nothing
@@ -65,32 +76,52 @@ Public Async Sub ParseRSS()
 End Sub
 ```
 
-## Classes
+## .NET Example
 
-| Class | Purpose |
-| --- | --- |
-| **Microsoft.Toolkit.Parsers.Rss.RssParser** | Parser for Parsing RSS Strings into RSS Schema. |
-| **Microsoft.Toolkit.Parsers.Rss.RssSchema** | Schema for Parsing RSS. |
+```csharp
+public void ParseRSSdotnet()
+{
+    SyndicationFeed feed = null;
 
-### RssParser
+    try
+    {
+        using (var reader = XmlReader.Create("https://visualstudiomagazine.com/rss-feeds/news.aspx"))
+        {
+            feed = SyndicationFeed.Load(reader);
+        }
+    }
+    catch { } // TODO: Deal with unavailable resource.
 
-#### Methods
+    if (feed != null)
+    {
+        foreach (var element in feed.Items)
+        {
+            Console.WriteLine($"Title: {element.Title.Text}");
+            Console.WriteLine($"Summary: {element.Summary.Text}");
+        }
+    }
+}
+```
 
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| Parse(string) | IEnumerable\<RssSchema\> | Parse an RSS content string into RSS Schema. |
+```vb
+Public Sub ParseRSSdotnet()
+    Dim feed As SyndicationFeed = Nothing
+    Try
+        Using reader = XmlReader.Create("https://visualstudiomagazine.com/rss-feeds/news.aspx")
+            feed = SyndicationFeed.Load(reader)
+        End Using
+    Catch
+    End Try
+    
+    If feed IsNot Nothing Then
+        For Each element In feed.Items
+            Console.WriteLine($"Title: {element.Title.Text}")
+            Console.WriteLine($"Summary: {element.Summary.Text}")
+        Next
+    End If
+End Sub
+```
 
-## Sample Project
+## Related Topics
 
-[RSS Parser Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RssParser/RssParserPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=RSS%20Parser) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
-
-## Requirements
-
-| Implementation | .NET Standard 1.4. |
-| -- | -- |
-| Namespace | Microsoft.Toolkit.Parsers |
-| NuGet package | [Microsoft.Toolkit.Parsers](https://www.nuget.org/packages/Microsoft.Toolkit.Parsers/)  |
-
-## API Source Code
-
-* [RSS Parser source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Parsers/Rss)
+* [SyndicationFeed Class](/dotnet/api/system.servicemodel.syndication.syndicationfeed)

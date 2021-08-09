@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Graph.Controls</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -14,25 +15,27 @@
   <Interfaces />
   <Docs>
     <summary>
-            Helper class for XAML Islands to easily initialize provider from just ClientId from within WPF context.
+            Helper class to easily initialize provider from just ClientId.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName="CreateMsalProviderAsync">
-      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync (string clientid, string redirectUri = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, string[] scopes = null);" />
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync (string clientid, string redirectUri = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, string[] scopes = default);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Graph.Providers.MsalProvider&gt; CreateMsalProviderAsync(string clientid, string redirectUri, string[] scopes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Graph.Providers.QuickCreate.CreateMsalProviderAsync(System.String,System.String,System.String[])" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMsalProviderAsync (clientid As String, Optional redirectUri As String = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, Optional scopes As String() = null) As Task(Of MsalProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMsalProviderAsync (clientid As String, Optional redirectUri As String = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, Optional scopes As String() = Nothing) As Task(Of MsalProvider)" />
       <MemberSignature Language="F#" Value="static member CreateMsalProviderAsync : string * string * string[] -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Graph.Providers.MsalProvider&gt;" Usage="Microsoft.Toolkit.Graph.Providers.QuickCreate.CreateMsalProviderAsync (clientid, redirectUri, scopes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Graph.Controls</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Diagnostics.DebuggerStepThrough</AttributeName>
+          <AttributeName Language="C#">[System.Diagnostics.DebuggerStepThrough]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerStepThrough&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -44,7 +47,7 @@
         <Parameter Name="scopes" Type="System.String[]" />
       </Parameters>
       <Docs>
-        <param name="clientid">Registered ClientId</param>
+        <param name="clientid">Registered ClientId.</param>
         <param name="redirectUri">RedirectUri for auth response.</param>
         <param name="scopes">List of Scopes to initially request.</param>
         <summary>

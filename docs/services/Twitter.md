@@ -10,9 +10,12 @@ dev_langs:
 
 # Twitter Service
 
+> [!WARNING]
+> (This API will be removed in the future.)
+
 The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
-[Twitter Developer Site](https://dev.twitter.com) is the main content site for all twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.
+[Twitter Developer Site](https://dev.twitter.com) is the main content site for all Twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.
 
 [Create new Twitter App](https://apps.twitter.com/app) can be used to create a new app within the Twitter portal.
 
@@ -28,7 +31,7 @@ Copy this from the *Keys and Access Tokens* tab on your application page.
 Copy this from the *Keys and Access Tokens* tab on your application page.
 
 **Callback URI** Enter a unique URI for your application.  This must match the *Callback URL* field on the *Application Details* tab in Twitter.
-*Example*: http://myapp.company.com - (this does not have to be a working URL)
+*Example*: `https://myapp.company.com` - (this does not have to be a working URL)
 
 ## Overview
 
@@ -66,19 +69,19 @@ ListView.ItemsSource = await TwitterService.Instance.GetUserTimeLineAsync(user.S
 await TwitterService.Instance.TweetStatusAsync(TweetText.Text);
 
 var status = new TwitterStatus
-			{
-				Message = TweetText.Text,
+    {
+        Message = TweetText.Text,
 
-				// Optional parameters defined by the Twitter "update" API (they may all be null or false)
+        // Optional parameters defined by the Twitter "update" API (they may all be null or false)
 
-				DisplayCoordinates = true,
-				InReplyToStatusId = "@ValidAccount",
-				Latitude = validLatitude,
-				Longitude = validLongitude,
-				PlaceId = "df51dec6f4ee2b2c",	// As defined by Twitter
-				PossiblySensitive = true,		// As defined by Twitter (nudity, violence, or medical procedures)
-				TrimUser = true
-			}
+        DisplayCoordinates = true,
+        InReplyToStatusId = "@ValidAccount",
+        Latitude = validLatitude,
+        Longitude = validLongitude,
+        PlaceId = "df51dec6f4ee2b2c", // As defined by Twitter
+        PossiblySensitive = true,  // As defined by Twitter (nudity, violence, or medical procedures)
+        TrimUser = true
+    }
 
 await TwitterService.Instance.TweetStatusAsync(status);
 
@@ -98,7 +101,7 @@ await TwitterService.Instance.StartUserStreamAsync(async tweet =>
     {
         if (tweet != null)
         {
-		_tweets.Insert(0, tweet);
+            _tweets.Insert(0, tweet);
         }
     });
 });
@@ -106,6 +109,7 @@ await TwitterService.Instance.StartUserStreamAsync(async tweet =>
 // Stop receiving live tweets and events
 TwitterService.Instance.StopUserStream();
 ```
+
 ```vb
 ' Initialize service
 TwitterService.Instance.Initialize(ConsumerKey.Text, ConsumerSecret.Text, CallbackUri.Text)
@@ -173,11 +177,11 @@ If you are posting from your app and never seeing them show up in the timeline c
 
 This service has built-in UWP and .NET Framework support. To use the service outside of UWP and .NET Framework platform, you'll need to implement some interfaces. These interfaces are the IAuthenticationBroker, IPasswordManager and IStorageManager.
 
-**IAuthenticationBroker**
+### IAuthenticationBroker
 
 The IAuthenticationBroker only has the Authenticate method. This method receives a request uri and a callback uri, which you'll use to authenticate with the API. The method returns an AuthenticationResult that tells the service the authentication result.
 
-**IPasswordManager**
+### IPasswordManager
 
 The IPasswordManager will allow the service to manage passwords. The methods you'll have to implement are Get, Store and Remove.
 
@@ -187,7 +191,7 @@ The Store method receives a string resource and a PasswordCredential.
 
 The Remove method receives a string key.
 
-**IStorageManager**
+### IStorageManager
 
 The IStorageManager will allow the service to store application data. The methods you'll have to implement are Get and Set.
 
@@ -195,7 +199,7 @@ The Get method receives a string key and returns the saved string.
 
 The Set method receives a string key and a string value.
 
-**ISignatureManager**
+### ISignatureManager
 
 Finally, the ISignatureManager will provide a GetSignature method, to sign an OAuth request. This method receives a baseString, a secret string and an append boolean. In return, you'll get the signed baseString. In case the append boolean is true, the final string will have a `&amp` at the end.
 
@@ -203,7 +207,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Sample Project
 
-[Twitter Service Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Twitter Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -214,4 +218,4 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## API
 
-* [Twitter Service source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Services/Services/Twitter)
+* [Twitter Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/Twitter)

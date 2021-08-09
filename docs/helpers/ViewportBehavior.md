@@ -54,7 +54,7 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 
 ## Sample Code
 
-[ViewportBehavior Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ViewportBehavior). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[ViewportBehavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ViewportBehavior). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Requirements
 
@@ -65,5 +65,4 @@ This behavior allows you to listen an element enter or exit the ScrollViewer vie
 
 ## API
 
-* [ViewportBehavior source code](https://github.com/Microsoft/WindowsCommunityToolkit/tree/master/Microsoft.Toolkit.Uwp.UI/Behaviors/ViewportBehavior.cs)
-
+- [ViewportBehavior source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Viewport/ViewportBehavior.cs)

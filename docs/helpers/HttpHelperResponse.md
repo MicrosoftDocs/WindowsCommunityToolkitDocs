@@ -1,7 +1,7 @@
 ---
 title: HttpHelperResponse
 author: nmetulev
-description: HttpHelperResponse is a Windows Community Toolkit helper class used with the HttpHelper class to read http responses.
+description: HttpHelperResponse is a Windows Community Toolkit helper class used with the HttpHelper class to read http responses (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HttpHelperResponse
 dev_langs:
   - csharp
@@ -11,12 +11,12 @@ dev_langs:
 # HttpHelperResponse
 
 > [!WARNING]
-> (This API is obsolete and will be removed in the future. Please use [System.Net.Http.HttpResponseMessage](https://msdn.microsoft.com/library/system.net.http.httpresponsemessage(v=vs.110).aspx) 
-> or [Windows.Web.Http.HttpResponseMessage](https://docs.microsoft.com/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
+> (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage)
+> or [Windows.Web.Http.HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
-[HttpHelperResponse](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers. 
+[HttpHelperResponse](/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
 
-## Example
+## Sample
 
 ```csharp
 using (HttpHelperResponse response = await HttpHelper.Instance.SendRequestAsync(request))
@@ -24,6 +24,7 @@ using (HttpHelperResponse response = await HttpHelper.Instance.SendRequestAsync(
     await response.GetTextResultAsync();
 }
 ```
+
 ```vb
 Using response = Await HttpHelper.Instance.SendRequestAsync(request)
     Await response.GetTextResultAsync()
@@ -36,7 +37,7 @@ The **HttpHelperResponse** class has these constructors.
 
 | Constructor | Description |
 | ----------  | ----------- |
-| HttpHelperResponse([HttpResponseMessage](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpresponsemessage.aspx))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
+| HttpHelperResponse([HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage))  | Initializes an instance of the HttpHelperRequest class with supplied HttpHelperResponse. |
 
 ## Properties
 
@@ -52,13 +53,13 @@ The **HttpHelperResponse** class has these constructors.
 |        Methods         |    Return Type     |                                     Description                                     |
 |------------------------|--------------------|-------------------------------------------------------------------------------------|
 |       Dispose()        |        void        | Performs tasks associated with freeing, releasing, or resetting unmanaged resources |
-| GetStreamResultAsync() | Task<IInputStream> |              Reads the Content as stream and returns it to the caller               |
-|  GetTextResultAsync()  |    Task<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
+| GetStreamResultAsync() | Task\<IInputStream> |              Reads the Content as stream and returns it to the caller               |
+|  GetTextResultAsync()  |    Task\<string>    |         Serialize the HTTP content to a String as an asynchronous operation         |
 |       ToString()       |       string       |       Returns a string that represents the current HttpHelperResponse object        |
 
 ## Remarks
 
-The **HttpHelperResponse** class contains headers and potentially data. 
+The **HttpHelperResponse** class contains headers and potentially data.
 An app receives an instance of **HttpHelperResponse** when it creates an instance of **HttpHelperRequest** and passes it to the **HttpHelper.SendRequestAsync** method.
 
 ## Example
@@ -72,6 +73,7 @@ using (var request = new HttpHelperRequest(new Uri(twitterUrl), HttpMethod.Post)
     }
 }
 ```
+
 ```vb
 Using request = New HttpHelperRequest(New Uri(twitterUrl), HttpMethod.Post)
     Using response = Await HttpHelper.Instance.SendRequestAsync(request)
@@ -89,4 +91,4 @@ End Using
 
 ## API
 
-* [HttpHelperResponse source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)
+* [HttpHelperResponse source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)

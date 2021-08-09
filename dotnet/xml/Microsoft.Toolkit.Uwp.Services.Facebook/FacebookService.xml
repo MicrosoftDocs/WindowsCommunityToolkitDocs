@@ -8,11 +8,19 @@
     <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("The underlying library, winsdkfb, which the FacebookService relies on is not currently maintained.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("The underlying library, winsdkfb, which the FacebookService relies on is not currently maintained.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Class for connecting to Facebook.
@@ -30,6 +38,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -50,6 +60,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;</ReturnType>
@@ -67,16 +79,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserAlbumsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int maxRecords = 20, string fields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int maxRecords = 20, string fields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync(int32 maxRecords, string fields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (Optional maxRecords As Integer = 20, Optional fields As String = null) As Task(Of List(Of FacebookAlbum))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (Optional maxRecords As Integer = 20, Optional fields As String = Nothing) As Task(Of List(Of FacebookAlbum))" />
       <MemberSignature Language="F#" Value="member this.GetUserAlbumsAsync : int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;" Usage="facebookService.GetUserAlbumsAsync (maxRecords, fields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;</ReturnType>
@@ -96,16 +110,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserAlbumsAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int pageSize, int maxPages, string fields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int pageSize, int maxPages, string fields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;, class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync(int32 pageSize, int32 maxPages, string fields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (pageSize As Integer, maxPages As Integer, Optional fields As String = null) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookAlbum), FacebookAlbum))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (pageSize As Integer, maxPages As Integer, Optional fields As String = Nothing) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookAlbum), FacebookAlbum))" />
       <MemberSignature Language="F#" Value="member this.GetUserAlbumsAsync : int * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;" Usage="facebookService.GetUserAlbumsAsync (pageSize, maxPages, fields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;</ReturnType>
@@ -127,16 +143,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserPhotosByAlbumIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int maxRecords = 20, string fields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int maxRecords = 20, string fields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync(string albumId, int32 maxRecords, string fields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, Optional maxRecords As Integer = 20, Optional fields As String = null) As Task(Of List(Of FacebookPhoto))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, Optional maxRecords As Integer = 20, Optional fields As String = Nothing) As Task(Of List(Of FacebookPhoto))" />
       <MemberSignature Language="F#" Value="member this.GetUserPhotosByAlbumIdAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;" Usage="facebookService.GetUserPhotosByAlbumIdAsync (albumId, maxRecords, fields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;</ReturnType>
@@ -158,16 +176,18 @@
       </Docs>
     </Member>
     <Member MemberName="GetUserPhotosByAlbumIdAsync">
-      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int pageSize, int maxPages, string fields = null);" />
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int pageSize, int maxPages, string fields = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;, class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync(string albumId, int32 pageSize, int32 maxPages, string fields) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.Int32,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, pageSize As Integer, maxPages As Integer, Optional fields As String = null) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookPhoto), FacebookPhoto))" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, pageSize As Integer, maxPages As Integer, Optional fields As String = Nothing) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookPhoto), FacebookPhoto))" />
       <MemberSignature Language="F#" Value="member this.GetUserPhotosByAlbumIdAsync : string * int * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;" Usage="facebookService.GetUserPhotosByAlbumIdAsync (albumId, pageSize, maxPages, fields)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;</ReturnType>
@@ -201,6 +221,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture&gt;</ReturnType>
@@ -225,6 +247,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -244,16 +268,18 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="public bool Initialize (string appId, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, string windowsStoreId = null);" />
+      <MemberSignature Language="C#" Value="public bool Initialize (string appId, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, string windowsStoreId = default);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appId, valuetype Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions, string windowsStoreId) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Initialize(System.String,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions,System.String)" />
-      <MemberSignature Language="VB.NET" Value="Public Function Initialize (appId As String, Optional requiredPermissions As FacebookPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, Optional windowsStoreId As String = null) As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (appId As String, Optional requiredPermissions As FacebookPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, Optional windowsStoreId As String = Nothing) As Boolean" />
       <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions * string -&gt; bool" Usage="facebookService.Initialize (appId, requiredPermissions, windowsStoreId)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -285,6 +311,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService</ReturnType>
@@ -308,6 +336,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -331,6 +361,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -355,6 +387,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -379,10 +413,13 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)</AttributeName>
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -415,10 +452,13 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)</AttributeName>
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)&gt;]</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -447,6 +487,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -474,6 +516,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>winsdkfb.FBSession</ReturnType>
@@ -497,6 +541,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;</ReturnType>
@@ -526,6 +572,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;</ReturnType>
@@ -557,6 +605,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt;</ReturnType>
@@ -592,6 +642,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;T&gt;,T&gt;&gt;</ReturnType>
@@ -629,6 +681,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

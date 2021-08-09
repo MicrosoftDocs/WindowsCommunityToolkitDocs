@@ -8,6 +8,8 @@
     <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
     <AssemblyVersion>5.1.0.0</AssemblyVersion>
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -25,6 +27,24 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ToastButton ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToastButton (string content, string arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content, string arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.#ctor(System.String,System.String)" />
@@ -35,6 +55,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="content" Type="System.String" />
@@ -60,6 +82,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastActivationOptions</ReturnType>
@@ -83,6 +107,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastActivationType</ReturnType>
@@ -92,6 +118,200 @@
             Gets or sets what type of activation this button will use when clicked. Defaults to Foreground.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key.</param>
+        <summary>
+            Adds a key (without value) to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, bool value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, bool value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As Boolean) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * bool -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * bool -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.Boolean" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As Double) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * double -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * double -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.Double" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, Enum value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, class System.Enum value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.Enum)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As Enum) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * Enum -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * Enum -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.Enum" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself. Note that the enums are stored using their numeric value, so be aware that changing your enum number values might break existing activation of toasts currently in Action Center.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, int value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As Integer) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * int -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * int -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As Single) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * single -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * single -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.Single" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddArgument">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument (string key, string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton AddArgument(string key, string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.AddArgument(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddArgument (key As String, value As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member AddArgument : string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.AddArgument : string * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.AddArgument (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="key">The key for this value.</param>
+        <param name="value">The value itself.</param>
+        <summary>
+            Adds a key/value to the activation arguments that will be returned when the toast notification or its buttons are clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,6 +326,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -130,6 +352,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -156,6 +380,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -184,6 +410,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -193,6 +421,285 @@
             Gets or sets an optional image icon for the button to display (required for buttons adjacent to inputs like quick reply).
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAfterActivationBehavior">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetAfterActivationBehavior (Microsoft.Toolkit.Uwp.Notifications.ToastAfterActivationBehavior afterActivationBehavior);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetAfterActivationBehavior(valuetype Microsoft.Toolkit.Uwp.Notifications.ToastAfterActivationBehavior afterActivationBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetAfterActivationBehavior(Microsoft.Toolkit.Uwp.Notifications.ToastAfterActivationBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetAfterActivationBehavior (afterActivationBehavior As ToastAfterActivationBehavior) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetAfterActivationBehavior : Microsoft.Toolkit.Uwp.Notifications.ToastAfterActivationBehavior -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetAfterActivationBehavior afterActivationBehavior" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="afterActivationBehavior" Type="Microsoft.Toolkit.Uwp.Notifications.ToastAfterActivationBehavior" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="afterActivationBehavior">The behavior that the toast should use when the user invokes this button.</param>
+        <summary>
+            Sets the behavior that the toast should use when the user invokes this button. Desktop-only, supported in builds 16251 or higher. New in Fall Creators Update.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetBackgroundActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetBackgroundActivation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetBackgroundActivation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetBackgroundActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetBackgroundActivation () As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member SetBackgroundActivation : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.SetBackgroundActivation : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetBackgroundActivation " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Configures the button to use background activation when the button is clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetContent">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetContent (string content);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetContent(string content) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetContent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetContent (content As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetContent : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetContent content" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="content" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="content">The text to display on the button.</param>
+        <summary>
+            Sets the text to display on the button.
+            </summary>
+        <returns>The current instance of the <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDismissActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetDismissActivation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetDismissActivation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetDismissActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetDismissActivation () As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetDismissActivation : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetDismissActivation " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Configures the button to use system dismiss activation when the button is clicked (the toast will simply dismiss rather than activating).
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetHintActionId">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetHintActionId (string actionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetHintActionId(string actionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetHintActionId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetHintActionId (actionId As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetHintActionId : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetHintActionId actionId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="actionId" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="actionId">An identifier used in telemetry to identify your category of action.</param>
+        <summary>
+            Sets an identifier used in telemetry to identify your category of action. This should be something like "Delete", "Reply", or "Archive". In the upcoming toast telemetry dashboard in Dev Center, you will be able to view how frequently your actions are being clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetImageUri">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetImageUri (Uri imageUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetImageUri(class System.Uri imageUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetImageUri(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetImageUri (imageUri As Uri) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetImageUri : Uri -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetImageUri imageUri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="imageUri" Type="System.Uri" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="imageUri">An optional image icon for the button to display.</param>
+        <summary>
+            Sets an optional image icon for the button to display (required for buttons adjacent to inputs like quick reply).
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProtocolActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetProtocolActivation (Uri protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetProtocolActivation(class System.Uri protocol) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetProtocolActivation(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetProtocolActivation (protocol As Uri) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member SetProtocolActivation : Uri -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.SetProtocolActivation : Uri -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetProtocolActivation protocol" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protocol" Type="System.Uri" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="protocol">The protocol to launch.</param>
+        <summary>
+            Configures the button to launch the specified url when the button is clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProtocolActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetProtocolActivation (Uri protocol, string targetApplicationPfn);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetProtocolActivation(class System.Uri protocol, string targetApplicationPfn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetProtocolActivation(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetProtocolActivation (protocol As Uri, targetApplicationPfn As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="abstract member SetProtocolActivation : Uri * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton&#xA;override this.SetProtocolActivation : Uri * string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetProtocolActivation (protocol, targetApplicationPfn)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="protocol" Type="System.Uri" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="targetApplicationPfn" Type="System.String" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="protocol">The protocol to launch.</param>
+        <param name="targetApplicationPfn">New in Creators Update: The target PFN, so that regardless of whether multiple apps are registered to handle the same protocol uri, your desired app will always be launched.</param>
+        <summary>
+            Configures the button to launch the specified url when the button is clicked.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSnoozeActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetSnoozeActivation ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetSnoozeActivation() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetSnoozeActivation" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSnoozeActivation () As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetSnoozeActivation : unit -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetSnoozeActivation " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Configures the button to use system snooze activation when the button is clicked, using the default system snooze time.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetSnoozeActivation">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetSnoozeActivation (string selectionBoxId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetSnoozeActivation(string selectionBoxId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetSnoozeActivation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetSnoozeActivation (selectionBoxId As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetSnoozeActivation : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetSnoozeActivation selectionBoxId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="selectionBoxId" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="selectionBoxId">The ID of an existing <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBox" /> which allows the user to pick a custom snooze time. The ID's of the <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastSelectionBoxItem" />s inside the selection box must represent the snooze interval in minutes. For example, if the user selects an item that has an ID of "120", then the notification will be snoozed for 2 hours. When the user clicks this button, if you specified a SelectionBoxId, the system will parse the ID of the selected item and snooze by that amount of minutes.</param>
+        <summary>
+            Configures the button to use system snooze activation when the button is clicked, with a snooze time defined by the specified selection box.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetTextBoxId">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.Notifications.ToastButton SetTextBoxId (string textBoxId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Toolkit.Uwp.Notifications.ToastButton SetTextBoxId(string textBoxId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.ToastButton.SetTextBoxId(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetTextBoxId (textBoxId As String) As ToastButton" />
+      <MemberSignature Language="F#" Value="member this.SetTextBoxId : string -&gt; Microsoft.Toolkit.Uwp.Notifications.ToastButton" Usage="toastButton.SetTextBoxId textBoxId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Notifications.ToastButton</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="textBoxId" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <param name="textBoxId">The ID of an existing <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastTextBox" />.</param>
+        <summary>
+            Sets the ID of an existing <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastTextBox" /> in order to have this button display to the right of the input, achieving a quick reply scenario.
+            </summary>
+        <returns>The current instance of <see cref="T:Microsoft.Toolkit.Uwp.Notifications.ToastButton" /></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -207,6 +714,8 @@
         <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
         <AssemblyVersion>5.1.0.0</AssemblyVersion>
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

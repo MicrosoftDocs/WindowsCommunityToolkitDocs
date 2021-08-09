@@ -1,5 +1,5 @@
 ---
-title: BladeView XAML Control
+title: BladeView
 author: nmetulev
 description: The BladeView provides a container to host blades as extra detail pages in, for example, a master-detail scenario.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, BladeView, XAML Control, xaml
@@ -8,9 +8,9 @@ dev_langs:
   - vb
 ---
 
-# BladeView XAML Control 
+# BladeView
 
-The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) provides a container to host [BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
+The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control provides a container to host [BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=BladeView)
@@ -42,9 +42,9 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 |          Property          |                                                 Type                                                  |                                               Description                                               |
 |----------------------------|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-|        ActiveBlades        | IList<[BladeItem](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
+|        ActiveBlades        | IList<[BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem)> |                                               Description                                               |
 | AutoCollapseCountThreshold |                                                  int                                                  | Gets or sets a value indicating what the overflow amount should be to start auto collapsing blade items |
-|         BladeMode          |    [BladeMode](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
+|         BladeMode          |    [BladeMode](/dotnet/api/microsoft.toolkit.uwp.ui.controls.blademode)     |     Gets or sets a value indicating whether blade mode (ex: whether blades are full screen or not)      |
 
 ### BladeItem Properties
 
@@ -79,7 +79,7 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
     For example: if you set `AutoCollapseCountThreshold` to 3, the BladeView will start counting all BladeItems that are open in the BladeView and have their `TitleBarVisibility` property set to Visible. When the n+1 BladeItem, in our case the 4th one, is being added, the BladeView will auto collapse all n BladeItems except for the last one. All additional BladeItems that are added afterwards will trigger the same effect; collapse all BladeItems except for the last open one.
 
     *Sample Code*
-    
+
     ```xaml
     <controls:BladeView AutoCollapseCountThreshold="3">
         <controls:BladeItem>
@@ -95,11 +95,11 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## Sample Project
 
-[BladeView Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[BladeView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[BladeView XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
+[BladeView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -110,4 +110,4 @@ The [BladeView Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.
 
 ## API
 
-* [BladeView source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/BladeView)
+- [BladeView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView)

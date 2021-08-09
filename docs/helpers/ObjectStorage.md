@@ -12,11 +12,19 @@ dev_langs:
 
 The Object Storage Helper will help you handle storage of generic objects within UWP applications, both locally and across all devices (roaming).
 
-- [LocalObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
-- [RoamingObjectStorageHelper Class](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
+- [LocalObjectStorageHelper Class](/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper) store data in the Local environment (only on the current device)
+- [RoamingObjectStorageHelper Class](/dotnet/api/microsoft.toolkit.uwp.helpers.roamingobjectstoragehelper)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=Object%20Storage)
+
+## Constructors
+
+LocalObjectStorageHelper and RoamingObjectStorageHelper have the same constructor with an optional parameter:
+
+| Constructor | Description |
+|-------------|-------------|
+| ObjectStorageHelper(IObjectSerializer = null) | Initializes a new instance of the ObjectStorageHelper class with the provided [IObjectSerializer](ObjectSerializer.md), that will be used when serializing and deserializing data in Settings or in Storage; if no serializer is provided, a default JSON serializer will be used. |
 
 ## Properties
 
@@ -29,21 +37,21 @@ The Object Storage Helper will help you handle storage of generic objects within
 
 |          Methods          |    Return Type    |                                                                                                                                               Description                                                                                                                                               |
 |---------------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  FileExistsAsync(String)  |    Task<bool>     |                                                                                                                                     Detect if a file already exists                                                                                                                                     |
+|  FileExistsAsync(String)  |    Task\<bool>     |                                                                                                                                     Detect if a file already exists                                                                                                                                     |
 |     KeyExists(String)     |       bool        |                                                                                                                                   Detect if a setting already exists                                                                                                                                    |
 | KeyExists(String, String) |       bool        |                                                                                                                             Detect if a setting already exists in composite                                                                                                                             |
 |      Read(String, T)      |         T         |                                                                                                                                     Retrieve single item by its key                                                                                                                                     |
 |  Read(String, String, T)  |         T         |                                                                                                                              Retrieve single item by its key in composite                                                                                                                               |
-| ReadFileAsync(String, T)  |      Task<T>      |                                                                                                                                        Retrieve object from file                                                                                                                                        |
-| Save(String, IDictionary) |       void        | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
-|      Save(String, T)      |       void        |                                             Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync<T>(String, T) for complex/large objects)                                              |
-| SaveFileAsync(String, T)  | Task<StorageFile> |                                                                                       Save object inside file. There is no limitation to use this method (refers to Save<T>(String, T) method for simple objects)                                                                                       |
+| ReadFileAsync(String, T)  |      Task\<T>      |                                                                                                                                        Retrieve object from file                                                                                                                                        |
+| Save(String, IDictionary) |       void        | Save a group of items by its key in a composite. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync\<T>(String, T) for complex/large objects) and for groups of settings which need to be treated in an atomic way |
+|      Save(String, T)      |       void        |                                             Save single item by its key. This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application (refers to SaveFileAsync\<T>(String, T) for complex/large objects)                                              |
+| SaveFileAsync(String, T)  | Task\<StorageFile> |                                                                                       Save object inside file. There is no limitation to use this method (refers to Save\<T>(String, T) method for simple objects)                                                                                       |
 
 ## Example
 
 ### Local Storage
 
-If you need to handle local saves of any object (generic), you can use [LocalObjectStorageHelper](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper).
+If you need to handle local saves of any object (generic), you can use [LocalObjectStorageHelper](/dotnet/api/microsoft.toolkit.uwp.helpers.localobjectstoragehelper).
 
 ```csharp
 var helper = new LocalObjectStorageHelper();
@@ -85,6 +93,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New LocalObjectStorageHelper()
 
@@ -167,6 +176,7 @@ var o = new MyLargeObject
 };
 await helper.SaveFileAsync(keySimpleObject, o);
 ```
+
 ```vb
 Dim helper = New RoamingObjectStorageHelper()
 
@@ -206,7 +216,7 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## Sample Project
 
-[Object Storage sample page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[Object Storage sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -217,5 +227,6 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## API
 
-* [LocalObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
-* [RoamingObjectStorageHelper source code](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+- [LocalObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
+- [RoamingObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+- [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)

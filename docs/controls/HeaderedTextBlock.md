@@ -1,16 +1,16 @@
 ---
-title: HeaderedTextBlock XAML Control
+title: HeaderedTextBlock
 author: nmetulev
 description: The HeaderedTextBlock Control provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, HeaderedTextBlock, XAML Control, xaml
 ---
 
-# HeaderedTextBlock XAML Control
+# HeaderedTextBlock
 
-The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredtextblock) provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type. 
+The [HeaderedTextBlock](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredtextblock) control provides a header for read-only text. This control is useful for displaying read-only forms, content, or a collection of items depending on the type.
 
-> [!NOTE] 
-> The HeaderedTextBlock control will be removed in a future major release. Please use [HeaderedContentControl](https://docs.microsoft.com/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) instead.
+> [!NOTE]
+> The HeaderedTextBlock control will be removed in a future major release. Please use [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredcontentcontrol) instead.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=HeaderedTextBlock)
@@ -39,11 +39,11 @@ The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## Sample Project
 
-[HeaderedTextBlock Sample Page Source](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](http://aka.ms/uwptoolkitapp).
+[HeaderedTextBlock Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[HeaderedTextBlock XAML File](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
+[HeaderedTextBlock XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -54,4 +54,4 @@ The [HeaderedTextBlock Control](https://docs.microsoft.com/dotnet/api/microsoft.
 
 ## API
 
-* [HeaderedTextBlock source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock)
+* [HeaderedTextBlock source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock)

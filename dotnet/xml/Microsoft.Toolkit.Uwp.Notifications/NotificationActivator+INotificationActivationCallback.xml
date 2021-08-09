@@ -1,0 +1,65 @@
+<Type Name="NotificationActivator+INotificationActivationCallback" FullName="Microsoft.Toolkit.Uwp.Notifications.NotificationActivator+INotificationActivationCallback">
+  <TypeSignature Language="C#" Value="public interface NotificationActivator.INotificationActivationCallback" />
+  <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract NotificationActivator/INotificationActivationCallback" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Notifications.NotificationActivator.INotificationActivationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Interface NotificationActivator.INotificationActivationCallback" />
+  <TypeSignature Language="F#" Value="type NotificationActivator.INotificationActivationCallback = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.ComVisible(true)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.ComVisible(true)&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.Guid("53E31837-6600-4A81-9395-75CFFE746F94")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.Guid("53E31837-6600-4A81-9395-75CFFE746F94")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The COM callback that is triggered when your notification is clicked.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Activate">
+      <MemberSignature Language="C#" Value="public void Activate (string appUserModelId, string invokedArgs, Microsoft.Toolkit.Uwp.Notifications.NotificationActivator.NOTIFICATION_USER_INPUT_DATA[] data, uint dataCount);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Activate([in]string appUserModelId, [in]string invokedArgs, [in]valuetype Microsoft.Toolkit.Uwp.Notifications.NotificationActivator/NOTIFICATION_USER_INPUT_DATA[] data, [in]unsigned int32 dataCount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Notifications.NotificationActivator.INotificationActivationCallback.Activate(System.String,System.String,Microsoft.Toolkit.Uwp.Notifications.NotificationActivator.NOTIFICATION_USER_INPUT_DATA[],System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Activate (appUserModelId As String, invokedArgs As String, data As NotificationActivator.NOTIFICATION_USER_INPUT_DATA(), dataCount As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member Activate : string * string * Microsoft.Toolkit.Uwp.Notifications.NotificationActivator.NOTIFICATION_USER_INPUT_DATA[] * uint32 -&gt; unit" Usage="iNotificationActivationCallback.Activate (appUserModelId, invokedArgs, data, dataCount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appUserModelId" Type="System.String" />
+        <Parameter Name="invokedArgs" Type="System.String" />
+        <Parameter Name="data" Type="Microsoft.Toolkit.Uwp.Notifications.NotificationActivator+NOTIFICATION_USER_INPUT_DATA[]" />
+        <Parameter Name="dataCount" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="appUserModelId">The app id of the app that sent the toast.</param>
+        <param name="invokedArgs">The activation arguments from the toast.</param>
+        <param name="data">The user input from the toast.</param>
+        <param name="dataCount">The number of user inputs.</param>
+        <summary>
+            The method called when your notification is clicked.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,83 @@
+<Type Name="TaskExtensions" FullName="Microsoft.Toolkit.TaskExtensions">
+  <TypeSignature Language="C#" Value="public static class TaskExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit TaskExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.TaskExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module TaskExtensions" />
+  <TypeSignature Language="F#" Value="type TaskExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with tasks.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="GetResultOrDefault">
+      <MemberSignature Language="C#" Value="public static object? GetResultOrDefault (this System.Threading.Tasks.Task task);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetResultOrDefault(class System.Threading.Tasks.Task task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.TaskExtensions.GetResultOrDefault(System.Threading.Tasks.Task)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResultOrDefault (task As Task) As Object" />
+      <MemberSignature Language="F#" Value="static member GetResultOrDefault : System.Threading.Tasks.Task -&gt; obj" Usage="Microsoft.Toolkit.TaskExtensions.GetResultOrDefault task" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="task">The input <see cref="T:System.Threading.Tasks.Task" /> instance to get the result for.</param>
+        <summary>
+            Gets the result of a <see cref="T:System.Threading.Tasks.Task" /> if available, or <see langword="null" /> otherwise.
+            </summary>
+        <returns>The result of <paramref name="task" /> if completed successfully, or <see langword="default" /> otherwise.</returns>
+        <remarks>
+            This method does not block if <paramref name="task" /> has not completed yet. Furthermore, it is not generic
+            and uses reflection to access the <see cref="P:System.Threading.Tasks.Task`1.Result" /> property and boxes the result if it's
+            a value type, which adds overhead. It should only be used when using generics is not possible.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResultOrDefault&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? GetResultOrDefault&lt;T&gt; (this System.Threading.Tasks.Task&lt;T?&gt; task);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T GetResultOrDefault&lt;T&gt;(class System.Threading.Tasks.Task`1&lt;!!T&gt; task) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.TaskExtensions.GetResultOrDefault``1(System.Threading.Tasks.Task{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetResultOrDefault(Of T) (task As Task(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member GetResultOrDefault : System.Threading.Tasks.Task&lt;'T&gt; -&gt; 'T" Usage="Microsoft.Toolkit.TaskExtensions.GetResultOrDefault task" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="task" Type="System.Threading.Tasks.Task&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of <see cref="T:System.Threading.Tasks.Task`1" /> to get the result for.</typeparam>
+        <param name="task">The input <see cref="T:System.Threading.Tasks.Task`1" /> instance to get the result for.</param>
+        <summary>
+            Gets the result of a <see cref="T:System.Threading.Tasks.Task`1" /> if available, or <see langword="default" /> otherwise.
+            </summary>
+        <returns>The result of <paramref name="task" /> if completed successfully, or <see langword="default" /> otherwise.</returns>
+        <remarks>This method does not block if <paramref name="task" /> has not completed yet.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

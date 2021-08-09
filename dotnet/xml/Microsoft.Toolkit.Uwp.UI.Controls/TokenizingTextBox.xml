@@ -1,0 +1,1234 @@
+<Type Name="TokenizingTextBox" FullName="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox">
+  <TypeSignature Language="C#" Value="public class TokenizingTextBox : Windows.UI.Xaml.Controls.ListViewBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TokenizingTextBox extends Windows.UI.Xaml.Controls.ListViewBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class TokenizingTextBox&#xA;Inherits ListViewBase" />
+  <TypeSignature Language="F#" Value="type TokenizingTextBox = class&#xA;    inherit ListViewBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.ListViewBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="Normal", Type=typeof(Windows.UI.Xaml.VisualState))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="Normal", Type=typeof(Windows.UI.Xaml.VisualState))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="PointerOver", Type=typeof(Windows.UI.Xaml.VisualState))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="PointerOver", Type=typeof(Windows.UI.Xaml.VisualState))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="Focused", Type=typeof(Windows.UI.Xaml.VisualState))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="Focused", Type=typeof(Windows.UI.Xaml.VisualState))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="Unfocused", Type=typeof(Windows.UI.Xaml.VisualState))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="Unfocused", Type=typeof(Windows.UI.Xaml.VisualState))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A text input control that auto-suggests and displays token items.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TokenizingTextBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTokenItem">
+      <MemberSignature Language="C#" Value="public void AddTokenItem (object data, bool atEnd = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTokenItem(object data, bool atEnd) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AddTokenItem(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddTokenItem (data As Object, Optional atEnd As Boolean = false)" />
+      <MemberSignature Language="F#" Value="member this.AddTokenItem : obj * bool -&gt; unit" Usage="tokenizingTextBox.AddTokenItem (data, atEnd)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="atEnd" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="data">Item to add as a token.</param>
+        <param name="atEnd">Flag to indicate if the item should be inserted in the last used textbox (inserted) or placed at end of the token list.</param>
+        <summary>
+            Adds the specified data item as a new token to the collection, will raise the <see cref="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemAdding" /> event asynchronously still for confirmation.
+            </summary>
+        <remarks>
+            The <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox" /> will automatically handle adding items for you, or you can add items to your backing <see cref="P:Windows.UI.Xaml.Controls.ItemsControl.ItemsSource" /> collection. This method is provide for other cases where you may need to drive inserting a new token item to where the user is currently inserting text between tokens.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSuggestBoxStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style AutoSuggestBoxStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style AutoSuggestBoxStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSuggestBoxStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.AutoSuggestBoxStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Style for the contained AutoSuggestBox template part.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSuggestBoxStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty AutoSuggestBoxStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty AutoSuggestBoxStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoSuggestBoxStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoSuggestBoxStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxStyle" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSuggestBoxTextBoxStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style AutoSuggestBoxTextBoxStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style AutoSuggestBoxTextBoxStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxTextBoxStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSuggestBoxTextBoxStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.AutoSuggestBoxTextBoxStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxTextBoxStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the Style for the TextBox part of the AutoSuggestBox template part.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AutoSuggestBoxTextBoxStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty AutoSuggestBoxTextBoxStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty AutoSuggestBoxTextBoxStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxTextBoxStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AutoSuggestBoxTextBoxStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AutoSuggestBoxTextBoxStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxTextBoxStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.AutoSuggestBoxTextBoxStyle" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ClearAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ClearAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.ClearAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ClearAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.ClearAsync : unit -&gt; System.Threading.Tasks.Task" Usage="tokenizingTextBox.ClearAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clears the whole collection, will raise the <see cref="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemRemoving" /> event asynchronously for each item.
+            </summary>
+        <returns>async task</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override Windows.UI.Xaml.DependencyObject GetContainerForItemOverride ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Xaml.DependencyObject GetContainerForItemOverride() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.GetContainerForItemOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; Windows.UI.Xaml.DependencyObject" Usage="tokenizingTextBox.GetContainerForItemOverride " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="IsItemItsOwnContainerOverride">
+      <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="tokenizingTextBox.IsItemItsOwnContainerOverride item" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="tokenizingTextBox.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderText">
+      <MemberSignature Language="C#" Value="public string PlaceholderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PlaceholderText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PlaceholderText" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlaceholderText As String" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PlaceholderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the PlaceholderText for the AutoSuggestBox template part.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PlaceholderTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PlaceholderTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PlaceholderTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlaceholderTextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceholderTextProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PlaceholderTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PlaceholderText" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareContainerForItemOverride">
+      <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (Windows.UI.Xaml.DependencyObject element, object item);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class Windows.UI.Xaml.DependencyObject element, object item) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.PrepareContainerForItemOverride(Windows.UI.Xaml.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : Windows.UI.Xaml.DependencyObject * obj -&gt; unit" Usage="tokenizingTextBox.PrepareContainerForItemOverride (element, item)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Windows.UI.Xaml.DependencyObject" />
+        <Parameter Name="item" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIcon">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.IconSource QueryIcon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.IconSource QueryIcon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QueryIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryIcon As IconSource" />
+      <MemberSignature Language="F#" Value="member this.QueryIcon : Windows.UI.Xaml.Controls.IconSource with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QueryIcon" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.IconSource</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the icon to display in the AutoSuggestBox template part.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QueryIconProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty QueryIconProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty QueryIconProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QueryIconProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QueryIconProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable QueryIconProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QueryIconProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QueryIcon" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuerySubmitted">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs&gt; QuerySubmitted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Windows.UI.Xaml.Controls.AutoSuggestBox, class Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs&gt; QuerySubmitted" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.QuerySubmitted" />
+      <MemberSignature Language="VB.NET" Value="Public Event QuerySubmitted As TypedEventHandler(Of AutoSuggestBox, AutoSuggestBoxQuerySubmittedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.QuerySubmitted : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs&gt; " Usage="member this.QuerySubmitted : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxQuerySubmittedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the user submits the text query.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectedTokenText">
+      <MemberSignature Language="C#" Value="public string SelectedTokenText { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string SelectedTokenText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SelectedTokenText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedTokenText As String" />
+      <MemberSignature Language="F#" Value="member this.SelectedTokenText : string" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SelectedTokenText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the complete text value of any selection in the control. The result is the same text as would be copied to the clipboard.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemContainerStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style SuggestedItemContainerStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style SuggestedItemContainerStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemContainerStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedItemContainerStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.SuggestedItemContainerStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemContainerStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the item container style for displaying suggested tokens.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemContainerStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SuggestedItemContainerStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SuggestedItemContainerStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemContainerStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SuggestedItemContainerStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SuggestedItemContainerStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemContainerStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemContainerStyle" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemsSource">
+      <MemberSignature Language="C#" Value="public object SuggestedItemsSource { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object SuggestedItemsSource" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemsSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedItemsSource As Object" />
+      <MemberSignature Language="F#" Value="member this.SuggestedItemsSource : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemsSource" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the items source for token suggestions.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemsSourceProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SuggestedItemsSourceProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SuggestedItemsSourceProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemsSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SuggestedItemsSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SuggestedItemsSourceProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemsSourceProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemsSource" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate SuggestedItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate SuggestedItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedItemTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.SuggestedItemTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template for displaying suggested tokens.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SuggestedItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SuggestedItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SuggestedItemTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SuggestedItemTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplate" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.DataTemplateSelector SuggestedItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.DataTemplateSelector SuggestedItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuggestedItemTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.SuggestedItemTemplateSelector : Windows.UI.Xaml.Controls.DataTemplateSelector with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template selector for displaying suggested tokens.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestedItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty SuggestedItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty SuggestedItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SuggestedItemTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SuggestedItemTemplateSelectorProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestedItemTemplateSelector" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestionChosen">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs&gt; SuggestionChosen;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Windows.UI.Xaml.Controls.AutoSuggestBox, class Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs&gt; SuggestionChosen" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.SuggestionChosen" />
+      <MemberSignature Language="VB.NET" Value="Public Event SuggestionChosen As TypedEventHandler(Of AutoSuggestBox, AutoSuggestBoxSuggestionChosenEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SuggestionChosen : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs&gt; " Usage="member this.SuggestionChosen : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxSuggestionChosenEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when a suggested item is chosen by the user.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabNavigateBackOnArrow">
+      <MemberSignature Language="C#" Value="public bool TabNavigateBackOnArrow { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TabNavigateBackOnArrow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TabNavigateBackOnArrow" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabNavigateBackOnArrow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TabNavigateBackOnArrow : bool with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TabNavigateBackOnArrow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the control will move focus to the previous
+            control when an arrow key is pressed and selection is at one of the limits in the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TabNavigateBackOnArrowProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TabNavigateBackOnArrowProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TabNavigateBackOnArrowProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TabNavigateBackOnArrowProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabNavigateBackOnArrowProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TabNavigateBackOnArrowProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TabNavigateBackOnArrowProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TabNavigateBackOnArrow" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.Text" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the input text of the currently active text edit.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs&gt; TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Windows.UI.Xaml.Controls.AutoSuggestBox, class Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs&gt; TextChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TextChanged As TypedEventHandler(Of AutoSuggestBox, AutoSuggestBoxTextChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs&gt; " Usage="member this.TextChanged : Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox, Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Windows.UI.Xaml.Controls.AutoSuggestBox,Windows.UI.Xaml.Controls.AutoSuggestBoxTextChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the text input value has changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMemberPath">
+      <MemberSignature Language="C#" Value="public string TextMemberPath { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextMemberPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextMemberPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextMemberPath As String" />
+      <MemberSignature Language="F#" Value="member this.TextMemberPath : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextMemberPath" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the TextMemberPath of the AutoSuggestBox template part.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextMemberPathProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TextMemberPathProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TextMemberPathProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextMemberPathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextMemberPathProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextMemberPathProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextMemberPathProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextMemberPath" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.Text" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenDelimiter">
+      <MemberSignature Language="C#" Value="public string TokenDelimiter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TokenDelimiter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenDelimiter" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenDelimiter As String" />
+      <MemberSignature Language="F#" Value="member this.TokenDelimiter : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenDelimiter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets delimiter used to determine when to process text input as a new token item.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenDelimiterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenDelimiterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenDelimiterProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenDelimiterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenDelimiterProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenDelimiterProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenDelimiterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenDelimiter" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemAdded">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,object&gt; TokenItemAdded;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, object&gt; TokenItemAdded" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenItemAdded As TypedEventHandler(Of TokenizingTextBox, Object) " />
+      <MemberSignature Language="F#" Value="member this.TokenItemAdded : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, obj&gt; " Usage="member this.TokenItemAdded : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, System.obj&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when a new token item has been added.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemAdding">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,Microsoft.Toolkit.Uwp.UI.Controls.TokenItemAddingEventArgs&gt; TokenItemAdding;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, class Microsoft.Toolkit.Uwp.UI.Controls.TokenItemAddingEventArgs&gt; TokenItemAdding" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemAdding" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenItemAdding As TypedEventHandler(Of TokenizingTextBox, TokenItemAddingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TokenItemAdding : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, Microsoft.Toolkit.Uwp.UI.Controls.TokenItemAddingEventArgs&gt; " Usage="member this.TokenItemAdding : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, Microsoft.Toolkit.Uwp.UI.Controls.TokenItemAddingEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,Microsoft.Toolkit.Uwp.UI.Controls.TokenItemAddingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised before a new token item is created from a string, can be used to transform data type from text user entered.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemRemoved">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,object&gt; TokenItemRemoved;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, object&gt; TokenItemRemoved" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenItemRemoved As TypedEventHandler(Of TokenizingTextBox, Object) " />
+      <MemberSignature Language="F#" Value="member this.TokenItemRemoved : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, obj&gt; " Usage="member this.TokenItemRemoved : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, System.obj&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,System.Object&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised after a token has been removed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemRemoving">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,Microsoft.Toolkit.Uwp.UI.Controls.TokenItemRemovingEventArgs&gt; TokenItemRemoving;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, class Microsoft.Toolkit.Uwp.UI.Controls.TokenItemRemovingEventArgs&gt; TokenItemRemoving" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemRemoving" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenItemRemoving As TypedEventHandler(Of TokenizingTextBox, TokenItemRemovingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TokenItemRemoving : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, Microsoft.Toolkit.Uwp.UI.Controls.TokenItemRemovingEventArgs&gt; " Usage="member this.TokenItemRemoving : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox, Microsoft.Toolkit.Uwp.UI.Controls.TokenItemRemovingEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox,Microsoft.Toolkit.Uwp.UI.Controls.TokenItemRemovingEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when a token item is about to be removed. Can be canceled to prevent removal of a token.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate TokenItemTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate TokenItemTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenItemTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.TokenItemTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template for token items.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenItemTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenItemTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenItemTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenItemTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplate" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemTemplateSelector">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.DataTemplateSelector TokenItemTemplateSelector { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Controls.DataTemplateSelector TokenItemTemplateSelector" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenItemTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.TokenItemTemplateSelector : Windows.UI.Xaml.Controls.DataTemplateSelector with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateSelector" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.DataTemplateSelector</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template selector for token items.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenItemTemplateSelectorProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenItemTemplateSelectorProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenItemTemplateSelectorProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenItemTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenItemTemplateSelectorProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateSelectorProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenItemTemplateSelector" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenSpacing">
+      <MemberSignature Language="C#" Value="public double TokenSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TokenSpacing" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenSpacing As Double" />
+      <MemberSignature Language="F#" Value="member this.TokenSpacing : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the spacing value used to separate token items.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenSpacingProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenSpacingProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenSpacingProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenSpacingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenSpacingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenSpacingProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenSpacingProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.TokenSpacing" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateCurrentTextEdit">
+      <MemberSignature Language="C#" Value="protected void UpdateCurrentTextEdit (Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer edit);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateCurrentTextEdit(class Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer edit) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.TokenizingTextBox.UpdateCurrentTextEdit(Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub UpdateCurrentTextEdit (edit As ITokenStringContainer)" />
+      <MemberSignature Language="F#" Value="member this.UpdateCurrentTextEdit : Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer -&gt; unit" Usage="tokenizingTextBox.UpdateCurrentTextEdit edit" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="edit" Type="Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer" />
+      </Parameters>
+      <Docs>
+        <param name="edit">
+          <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.ITokenStringContainer" /> element which is now the main edited text.</param>
+        <summary>
+            Helper to change out the currently focused text element in the control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

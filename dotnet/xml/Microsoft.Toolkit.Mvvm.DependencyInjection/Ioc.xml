@@ -1,0 +1,212 @@
+<Type Name="Ioc" FullName="Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc">
+  <TypeSignature Language="C#" Value="public sealed class Ioc : IServiceProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Ioc extends System.Object implements class System.IServiceProvider" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Ioc&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="F#" Value="type Ioc = class&#xA;    interface IServiceProvider" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IServiceProvider</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A type that facilitates the use of the <see cref="T:System.IServiceProvider" /> type.
+            The <see cref="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" /> provides the ability to configure services in a singleton, thread-safe
+            service provider instance, which can then be used to resolve service instances.
+            The first step to use this feature is to declare some services, for instance:
+            <code>
+            public interface ILogger
+            {
+                void Log(string text);
+            }
+            </code><code>
+            public class ConsoleLogger : ILogger
+            {
+                void Log(string text) =&gt; Console.WriteLine(text);
+            }
+            </code>
+            Then the services configuration should then be done at startup, by calling the <see cref="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.ConfigureServices(System.IServiceProvider)" />
+            method and passing an <see cref="T:System.IServiceProvider" /> instance with the services to use. That instance can
+            be from any library offering dependency injection functionality, such as Microsoft.Extensions.DependencyInjection.
+            For instance, using that library, <see cref="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.ConfigureServices(System.IServiceProvider)" /> can be used as follows in this example:
+            <code>
+            Ioc.Default.ConfigureServices(
+                new ServiceCollection()
+                .AddSingleton&lt;ILogger, Logger&gt;()
+                .BuildServiceProvider());
+            </code>
+            Finally, you can use the <see cref="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" /> instance (which implements <see cref="T:System.IServiceProvider" />)
+            to retrieve the service instances from anywhere in your application, by doing as follows:
+            <code>
+            Ioc.Default.GetService&lt;ILogger&gt;().Log("Hello world!");
+            </code></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Ioc ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConfigureServices">
+      <MemberSignature Language="C#" Value="public void ConfigureServices (IServiceProvider serviceProvider);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConfigureServices(class System.IServiceProvider serviceProvider) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.ConfigureServices(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ConfigureServices (serviceProvider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="member this.ConfigureServices : IServiceProvider -&gt; unit" Usage="ioc.ConfigureServices serviceProvider" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceProvider" Type="System.IServiceProvider" />
+      </Parameters>
+      <Docs>
+        <param name="serviceProvider">The input <see cref="T:System.IServiceProvider" /> instance to use.</param>
+        <summary>
+            Initializes the shared <see cref="T:System.IServiceProvider" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc Default" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Ioc" />
+      <MemberSignature Language="F#" Value="member this.Default : Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" Usage="Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default <see cref="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRequiredService&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetRequiredService&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetRequiredService&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetRequiredService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequiredService(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredService : unit -&gt; 'T (requires 'T : null)" Usage="ioc.GetRequiredService " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of service to resolve.</typeparam>
+        <summary>
+            Resolves an instance of a specified service type.
+            </summary>
+        <returns>An instance of the specified service, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">
+            Throw if the current <see cref="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" /> instance has not been initialized, or if the
+            requested service type was not registered in the service provider currently in use.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService">
+      <MemberSignature Language="C#" Value="public object? GetService (Type serviceType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="ioc.GetService serviceType" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IServiceProvider.GetService(System.Type)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="serviceType" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="serviceType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetService&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T? GetService&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetService&lt;class T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc.GetService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetService : unit -&gt; 'T (requires 'T : null)" Usage="ioc.GetService " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">The type of service to resolve.</typeparam>
+        <summary>
+            Tries to resolve an instance of a specified service type.
+            </summary>
+        <returns>An instance of the specified service, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Throw if the current <see cref="T:Microsoft.Toolkit.Mvvm.DependencyInjection.Ioc" /> instance has not been initialized.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

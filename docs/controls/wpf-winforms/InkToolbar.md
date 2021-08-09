@@ -7,25 +7,25 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # InkToolbar control for Windows Forms and WPF
 
-The **InkToolbar** control provides an interface to manage an [InkCanvas](InkCanvas.md) for Windows Ink-based user interaction in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications as part of a feature called *XAML Islands*. For more information, see [UWP controls in desktop applications (XAML Islands)](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls).
+The **InkToolbar** control provides an interface to manage an [InkCanvas](InkCanvas.md) for Windows Ink-based user interaction in your Windows Forms or WPF desktop application. This is one of several wrapped Universal Windows Platform controls that are available for Windows Forms and WPF applications as part of a feature called *XAML Islands*. For more information, see [UWP controls in desktop applications (XAML Islands)](/windows/uwp/xaml-platform/xaml-host-controls).
 
 ![InkToolbar example](../../resources/images/Controls/InkCanvas.png)
 
 > [!NOTE]
-> This control is currently available as a developer preview for Windows 10, version 1903, and later. Although we encourage you to try out this control in your own prototype code now, we do not recommend that you use it in production code at this time. For more information, see the [XAML Islands feature roadmap](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#feature-roadmap). If you have feedback about this control, create a new issue in the [Microsoft.Toolkit.Win32 repo](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/issues) and leave your comments there. If you prefer to submit your feedback privately, you can send it to XamlIslandsFeedback@microsoft.com.
+> If you have feedback about this control, create a new issue in the [microsoft-ui-xaml repo](https://github.com/microsoft/microsoft-ui-xaml/issues) and leave your comments there.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://WPFandWinFormsControls?sample=InkToolbar)
 
 ## About InkToolbar control
 
-This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
+This control wraps an instance of the UWP [Windows.UI.Xaml.Controls.InkToolbar](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) control. The WPF version of this control is located in the **Microsoft.Toolkit.Wpf.UI.Controls** namespace. The Windows Forms version is located in the **Microsoft.Toolkit.Forms.UI.Controls** namespace. You can find additional related types (such as enums and event args classes) in the **Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT** namespace.
 
-For a walkthrough that demonstrates how to host an **InkToolbar** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](https://docs.microsoft.com/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
+For a walkthrough that demonstrates how to host an **InkToolbar** wrapped control in a WPF app, see [Host a standard UWP control in a WPF app using XAML Islands](/windows/apps/desktop/modernize/host-standard-control-with-xaml-islands).
 
-## Requirements
+## Prerequisites
 
-Before you can use this control, you must follow [these instructions](https://docs.microsoft.com/windows/uwp/xaml-platform/xaml-host-controls#requirements) to configure your project to support XAML Islands.
+Before you can use this control, you must follow [these instructions](/windows/apps/desktop/modernize/xaml-islands#requirements) to configure your project to support XAML Islands.
 
 ## Known issues and limitations
 
@@ -49,53 +49,52 @@ See our list of [known issues](https://github.com/windows-toolkit/Microsoft.Tool
 
 ## Properties
 
-The following properties wrap corresponding [properties](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#properties) of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
+The following properties wrap corresponding [properties](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#properties) of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
 
 | Property | Type | Description |
 | -- | -- | -- |
-| ActiveTool | WindowsXamlHostBaseExt | Wraps the [ActiveTool](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetool) property. |
+| ActiveTool | WindowsXamlHostBaseExt | Wraps the [ActiveTool](/uwp/api/windows.ui.xaml.controls.inktoolbar.activetool) property. |
 | ActiveToolProperty | DependencyProperty | Dependency property for the **ActiveTool** property. |
-| ButtonFlyoutPlacement | InkToolbarButtonFlyoutPlacement | Wraps the [ButtonFlyoutPlacement](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.buttonflyoutplacement) property. |
+| ButtonFlyoutPlacement | InkToolbarButtonFlyoutPlacement | Wraps the [ButtonFlyoutPlacement](/uwp/api/windows.ui.xaml.controls.inktoolbar.buttonflyoutplacement) property. |
 | ButtonFlyoutPlacementProperty | DependencyProperty | Dependency property for the **ButtonFlyoutPlacement** property. |
-| Children | ObservableCollection&lt;DependencyObject&gt; | Wraps the [Children](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.children) property. |
-| InitialControls | InkToolbarInitialControls  | Wraps the [InitialControls](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.initialcontrols) property. |
+| Children | ObservableCollection&lt;DependencyObject&gt; | Wraps the [Children](/uwp/api/windows.ui.xaml.controls.inktoolbar.children) property. |
+| InitialControls | InkToolbarInitialControls  | Wraps the [InitialControls](/uwp/api/windows.ui.xaml.controls.inktoolbar.initialcontrols) property. |
 | InitialControlsProperty | DependencyProperty | Dependency property for the **InitialControls** property. |
-| InkDrawingAttributes | InkDrawingAttributes | Wraps the [InkDrawingAttributes](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.inkdrawingattributes) property.  |
+| InkDrawingAttributes | InkDrawingAttributes | Wraps the [InkDrawingAttributes](/uwp/api/windows.ui.xaml.controls.inktoolbar.inkdrawingattributes) property.  |
 | InkDrawingAttributesProperty | DependencyProperty | Dependency property for the **InkDrawingAttributes** property. |
-| IsRulerButtonChecked | bool | Wraps the [IsRulerButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttonchecked) property. |
+| IsRulerButtonChecked | bool | Wraps the [IsRulerButtonChecked](/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttonchecked) property. |
 | IsRulerButtonCheckedProperty | DependencyProperty | Dependency property for the **IsRulerButtonChecked** property. |
-| IsStencilButtonChecked | bool | Wraps the [IsStencilButtonChecked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttonchecked) property. |
+| IsStencilButtonChecked | bool | Wraps the [IsStencilButtonChecked](/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttonchecked) property. |
 | IsStencilButtonCheckedProperty | DependencyProperty | Dependency property for the **IsStencilButtonChecked** property. |
-| Orientation | Orientation | Wraps the [Orientation](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.orientation) property. |
+| Orientation | Orientation | Wraps the [Orientation](/uwp/api/windows.ui.xaml.controls.inktoolbar.orientation) property. |
 | OrientationProperty | DependencyProperty | Dependency property for the **Orientation** property. |
-| TargetInkCanvas | InkCanvas | Wraps the [TargetInkCanvas](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.targetinkcanvas) property. |
+| TargetInkCanvas | InkCanvas | Wraps the [TargetInkCanvas](/uwp/api/windows.ui.xaml.controls.inktoolbar.targetinkcanvas) property. |
 | TargetInkCanvasProperty | DependencyProperty | Dependency property for the **TargetInkCanvas** property. |
 
 ## Events
 
-The following events wrap corresponding [events](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#events) of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
+The following events wrap corresponding [events](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar#events) of the wrapped UWP [Windows.UI.Xaml.Controls.InkToolbar](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar) object. See the links in this table for more information about each property.
 
 | Event | Description |
 | -- | -- |
-| ActiveToolChanged | Wraps the [ActiveToolChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.activetoolchanged) event. |
-| EraseAllClicked | Wraps the [EraseAllClicked](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.eraseallclicked) event. |
-| IsRulerButtonCheckedChanged | Wraps the [IsRulerButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttoncheckedchanged) event. |
-| IsStencilButtonCheckedChanged | Wraps the [IsStencilButtonCheckedChanged](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttoncheckedchanged) event. |
+| ActiveToolChanged | Wraps the [ActiveToolChanged](/uwp/api/windows.ui.xaml.controls.inktoolbar.activetoolchanged) event. |
+| EraseAllClicked | Wraps the [EraseAllClicked](/uwp/api/windows.ui.xaml.controls.inktoolbar.eraseallclicked) event. |
+| IsRulerButtonCheckedChanged | Wraps the [IsRulerButtonCheckedChanged](/uwp/api/windows.ui.xaml.controls.inktoolbar.isrulerbuttoncheckedchanged) event. |
+| IsStencilButtonCheckedChanged | Wraps the [IsStencilButtonCheckedChanged](/uwp/api/windows.ui.xaml.controls.inktoolbar.isstencilbuttoncheckedchanged) event. |
 
 ## Requirements
 
-|        |        |
-|--------|--------|
 | Device family | .NET 4.6.2, Windows 10 (introduced v10.0.17709.0) |
+|--------|--------|
 | Namespace | Windows Forms: Microsoft.Toolkit.Forms.UI.Controls <br/> WPF: Microsoft.Toolkit.Wpf.UI.Controls |
 | NuGet package | Windows Forms: [Microsoft.Toolkit.Forms.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Forms.UI.Controls)  <br/> WPF: [Microsoft.Toolkit.Wpf.UI.Controls](https://www.nuget.org/packages/Microsoft.Toolkit.Wpf.UI.Controls) |
 
 ## API
 
-- [InkToolbar (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Forms.UI.Controls/InkToolbar)
-- [InkToolbar (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/master/Microsoft.Toolkit.Wpf.UI.Controls/InkToolbar)
+- [InkToolbar (Windows Forms)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Forms.UI.Controls/InkToolbar)
+- [InkToolbar (WPF)](https://github.com/windows-toolkit/Microsoft.Toolkit.Win32/tree/rel/6.1.2/Microsoft.Toolkit.Wpf.UI.Controls/InkToolbar)
 
 ## Related topics
 
-- [InkToolbar (UWP)](https://docs.microsoft.com/uwp/api/Windows.UI.Xaml.Controls.InkToolbar)
-- [Pen and Windows Ink](https://docs.microsoft.com/windows/uwp/design/input/pen-and-stylus-interactions)
+- [InkToolbar (UWP)](/uwp/api/Windows.UI.Xaml.Controls.InkToolbar)
+- [Pen and Windows Ink](/windows/uwp/design/input/pen-and-stylus-interactions)

@@ -1,0 +1,117 @@
+<Type Name="IObjectSerializer" FullName="Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer">
+  <TypeSignature Language="C#" Value="public interface IObjectSerializer" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObjectSerializer" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IObjectSerializer" />
+  <TypeSignature Language="F#" Value="type IObjectSerializer = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A basic serialization service.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Deserialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Deserialize&lt;T&gt; (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Deserialize&lt;T&gt;(object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer.Deserialize``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize(Of T) (value As Object) As T" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : obj -&gt; 'T" Usage="iObjectSerializer.Deserialize value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the deserialized object.</typeparam>
+        <param name="value">The string to deserialize.</param>
+        <summary>
+            Deserialize a primitive or string into an object of the given type.
+            </summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deserialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T Deserialize&lt;T&gt; (string value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T Deserialize&lt;T&gt;(string value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer.Deserialize``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize(Of T) (value As String) As T" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : string -&gt; 'T" Usage="iObjectSerializer.Deserialize value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="System.String" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the deserialized object.</typeparam>
+        <param name="value">The string to deserialize.</param>
+        <summary>
+            Deserialize a string into an object.
+            </summary>
+        <returns>The deserialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public string Serialize&lt;T&gt; (T value);" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Serialize&lt;T&gt;(!!T value) cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer.Serialize``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Serialize(Of T) (value As T) As String" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : 'T -&gt; string" Usage="iObjectSerializer.Serialize value" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
+      <MemberSignature Language="C#" Value="public object Serialize&lt;T&gt; (T value);" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Serialize&lt;T&gt;(!!T value) cil managed" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="VB.NET" Value="Public Function Serialize(Of T) (value As T) As Object" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : 'T -&gt; obj" Usage="iObjectSerializer.Serialize value" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-6.1">System.String</ReturnType>
+        <ReturnType FrameworkAlternate="win-comm-toolkit-dotnet-7.0">System.Object</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the object to serialize.</typeparam>
+        <param name="value">The object to serialize.</param>
+        <summary>
+            Serialize an object into a string. It is recommended to use strings as the final format for objects if you plan to use the <see cref="M:Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper.SaveFileAsync``1(System.String,``0)" /> method.
+            </summary>
+        <returns>The serialized object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

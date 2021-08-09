@@ -1,13 +1,16 @@
 ---
 title: Composition Animations in XAML
 author: nmetulev
-description: The Composition Animations can be used directly from XAML including with Implicit animations
+description: The Composition Animations can be used directly from XAML including with Implicit animations (outdated docs).
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, composition animations, animation, implicit animations, XAML, implicit, composition
 ---
 
 # Composition Animations in XAML
 
-[Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation) in the universal windows platform provide a powerful and efficient way to run animations in your application UI and have been designed to ensure that your animations run at 60 FPS independent of the UI thread.
+> [!WARNING]
+> These animation types have been updated with some breaking changes, please refer to the docs for the [`AnimationSet`](AnimationSet.md) and [`ImplicitAnimationSet`](ImplicitAnimationSet.md) types. For a comprehensive list of all the available APIs, use the .NET API browser instead.
+
+[Composition animations](/windows/uwp/composition/composition-animation) in the universal windows platform provide a powerful and efficient way to run animations in your application UI and have been designed to ensure that your animations run at 60 FPS independent of the UI thread.
 
 These XAML elements enable developer to specify composition animations directly in their XAML code to enable scenarios such as Implicit animations
 
@@ -30,9 +33,9 @@ These XAML elements enable developer to specify composition animations directly 
 |       Animation Type       |         Accepted KeyFrame type         |                                                                   Description                                                                   |
 |----------------------------|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 |      ScalarAnimation       | ScalarKeyFrame and ExpressionKeyFrame  |                                                 Animation that animates a scalar (double) value                                                 |
-|      Vector2Animation      | Vector2KeyFrame and ExpressionKeyFrame |    Animation that animates a value of type [Vector2](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector2) ("0" or "0, 0")    |
-|      Vector3Animation      | Vector3KeyFrame and ExpressionKeyFrame |  Animation that animates a value of type [Vector3](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector3) ("0" or "0, 0, 0")   |
-|      Vector4Animation      | Vector4KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector4](https://docs.microsoft.com/uwp/api/Windows.Foundation.Numerics.Vector4) ("0" or "0, 0, 0, 0") |
+|      Vector2Animation      | Vector2KeyFrame and ExpressionKeyFrame |    Animation that animates a value of type [Vector2](/uwp/api/Windows.Foundation.Numerics.Vector2) ("0" or "0, 0")    |
+|      Vector3Animation      | Vector3KeyFrame and ExpressionKeyFrame |  Animation that animates a value of type [Vector3](/uwp/api/Windows.Foundation.Numerics.Vector3) ("0" or "0, 0, 0")   |
+|      Vector4Animation      | Vector4KeyFrame and ExpressionKeyFrame | Animation that animates a value of type [Vector4](/uwp/api/Windows.Foundation.Numerics.Vector4) ("0" or "0, 0, 0, 0") |
 |      OpacityAnimation      | ScalarKeyFrame and ExpressionKeyFrame  |                                ScalarAnimation where \`Target = "Opacity". Animates the Visual.Opacity property                                 |
 |     RotationAnimation      | ScalarKeyFrame and ExpressionKeyFrame  |                          ScalarAnimation where \`Target = "RotationAngle". Animates the Visual.RotationAngle property                           |
 | RotationInDegreesAnimation | ScalarKeyFrame and ExpressionKeyFrame  |                 ScalarAnimation where \`Target = "RotationAngleInDegrees". Animates the Visual.RotationAngleInDegrees property                  |
@@ -75,7 +78,7 @@ KeyFrames permit more than one target value that is reached at a point along the
 
 ## AnimationCollection
 
-A collection of animations. 
+A collection of animations.
 
 ### AnimationCollection Properties
 
@@ -92,38 +95,49 @@ A collection of animations.
 ## Examples
 
 > [!NOTE]
-> Use [Implicit Composition Animations in XAML](https://docs.microsoft.com/windows/communitytoolkit/animations/implicitanimations) to run these animations.
+> Use [Implicit Composition Animations in XAML](./implicitanimations.md) to run these animations.
 
 Let's create some plain animation first. Theses animation will run when the `Target` property is changed.
 
 - Creating a `ScalarAnimation`. ScalarAnimation can target Opacity, RotationAngle, RotationAngleInDegrees, Translation.X, Translation.Y, Translation.Z.
+
     ```xaml
     <animations:ScalarAnimation Target="Opacity" Duration="0:0:1" From="0" To="1"/>
     ```
+
 - Creating a `Vector2Animation`. Vector2Animation can target AnchorPoint, RelativeSizeAdjustment, Size.
+
     ```xaml
     <animations:Vector2Animation Target="AnchorPoint" Duration="0:0:1" From="0, 0" To="50, 50"/>
     ```
+
 - Creating a `Vector3Animation`. Vector3Animation can target CenterPoint, Offset, RelativeOffsetAdjustment, RotationAxis, Scale, Translation.
+
     ```xaml
     <animations:Vector3Animation Target="CenterPoint" Duration="0:0:1" From="0, 0, 0" To="50, 50, 50"/>
     ```
+
 - Creating a animation that takes final value as `To` value. If you didn't set From/To value or any KeyFrames then in this case, an ExpressionKeyFrame will be added of `Value="this.FinalValue"`.
+
     ```xaml
     <animations:OffsetAnimations Duration="0:0:1"/>
     ```
+
     > [!NOTE]
     OffsetAnimations is equivalent to setting `Target = "Offset"` in Vector3Animation. So there is no Target property.
 - Creating an animation which runs when another property changes. You can use `ImplicitTarget`. Whenever ImplicitTarget property changes the animation will run. In this example, if Offset changes then the ScaleAnimation will run.
+
     ```xaml
     <animations:ScaleAnimation Duration="0:0:1" To="50, 50, 50" ImplicitTarget="Offset"/>
     ```
+
     > [!NOTE]
     If `ImplicitTarget` is set then the animation will no longer run when `Target` property is changed.
 
 Now we can add KeyFrames
 
 - Creating a blink and disappear animation with OpacityAnimation. To create a blink animation, we need to reduce and increase the opacity.
+
     ```xaml
     <animations:OpacityAnimation Duration="0:0:1" From="1" To="0">
         <animations:ScalarKeyFrame Key="0.2" Value="0.5"/>
@@ -132,9 +146,11 @@ Now we can add KeyFrames
         <animations:ScalarKeyFrame Key="0.8" Value="0.6"/>
     </animations:OpacityAnimation>
     ```
+
     **Sample Output**
     ![Example Output](../resources/images/Animations/CompositionAnimations/Example-Output-1.gif)
-- You can use ExpressionKeyFrame to specify expression to create [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation).
+- You can use ExpressionKeyFrame to specify expression to create [ExpressionAnimation](/uwp/api/Windows.UI.Composition.ExpressionAnimation).
+
     ```xaml
     <animations:OffsetAnimation Duration="0:0:1">
         <animations:ExpressionKeyFrame Key="0.2" Value="This.FinalValue / 2"/>
@@ -143,7 +159,7 @@ Now we can add KeyFrames
 
 ## Sample Code
 
-[Implicit Composition Animations in XAML sample page source](https://github.com/Microsoft/WindowsCommunityToolkit//blob/master/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Implicit%20Animations/ImplicitAnimationsPage.xaml). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[Implicit Composition Animations in XAML sample page source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Implicit%20Animations/ImplicitAnimationsPage.xaml). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Requirements
 
@@ -154,10 +170,10 @@ Now we can add KeyFrames
 
 ## API
 
-* [Composition animations source code](https://github.com/Microsoft/WindowsCommunityToolkit//tree/master/Microsoft.Toolkit.Uwp.UI.Animations/CompositionAnimations)
+- [Composition animations source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/CompositionAnimations)
 
 ## Related Topics
 
-- [Visual layer](https://docs.microsoft.com/windows/uwp/composition/visual-layer)
-- [Composition animations](https://docs.microsoft.com/windows/uwp/composition/composition-animation)
-- [ExpressionAnimation](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.ExpressionAnimation)
+- [Visual layer](/windows/uwp/composition/visual-layer)
+- [Composition animations](/windows/uwp/composition/composition-animation)
+- [ExpressionAnimation](/uwp/api/Windows.UI.Composition.ExpressionAnimation)
