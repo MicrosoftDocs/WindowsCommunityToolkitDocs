@@ -36,7 +36,7 @@ A collection of custom visual [State Triggers](/uwp/api/windows.ui.xaml.statetri
 
 ```xaml
 <VisualState.StateTriggers>
-    <triggers:ControlSizeTrigger TargetElement="{Binding ParentGrid}" MinWidth="400" MaxWidth="500" MinHeight="50" MaxHeight="100"/>
+    <triggers:ControlSizeTrigger TargetElement="{x:Bind ParentGrid}" MinWidth="400" MaxWidth="500" MinHeight="50" MaxHeight="100"/>
 </VisualState.StateTriggers>
 ```
 
