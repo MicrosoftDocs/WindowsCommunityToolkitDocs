@@ -1,6 +1,6 @@
 ---
 title: Key Down Trigger Behavior
-author: 
+author: XAML-Knight
 description: Add a new behavior that listens to a key press event on the associated UIElement and triggers the set of actions.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, textbox, behaviors, interactivity, KeyDownTrigger, key down trigger
 dev_langs:
