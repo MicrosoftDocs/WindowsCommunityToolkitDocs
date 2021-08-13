@@ -39,7 +39,7 @@ In this example setting up the `KeyDownTriggerBehavior` to start the animation:
 
 ## Source Code
 
-- [Key Down Trigger behavior source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Keyboard)
+- [Key Down Trigger behavior source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/main/Microsoft.Toolkit.Uwp.UI.Behaviors/Keyboard)
 
 ## Related Topics
 
