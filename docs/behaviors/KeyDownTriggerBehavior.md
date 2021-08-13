@@ -35,7 +35,7 @@ In this example setting up the `KeyDownTriggerBehavior` to start the animation o
 
 ## Sample Project
 
-[Key Down Trigger behavior sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/KeyDownTriggerBehavior). You can [see this in action](uwpct://Helpers?sample=KeyDownTriggerBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Key Down Trigger behavior sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/main/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/KeyDownTriggerBehavior). You can [see this in action](uwpct://Helpers?sample=KeyDownTriggerBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Source Code
 
