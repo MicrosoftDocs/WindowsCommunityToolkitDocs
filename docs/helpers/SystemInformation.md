@@ -27,6 +27,7 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 | DeviceModel | string | Gets the model of the device as a `string`. The value will be empty if the device model couldn't be determined (ex: when running in a virtual machine). |
 | FirstUseTime | DateTime | Gets the DateTime (in UTC) that the app as first used. |
 | FirstVersionInstalled | [PackageVersion](/uwp/api/Windows.ApplicationModel.PackageVersion) | Gets the first version of the app that was installed. |
+| PreviousVersionInstalled | [PackageVersion](/uwp/api/Windows.ApplicationModel.PackageVersion) | Gets the previous version of the app that was installed. |
 | Instance | SystemInformation | Gets public singleton property. |
 | IsFirstRun | bool | Gets a value indicating whether the app is being used for the first time since it was installed. |
 | IsAppUpdated | bool | Gets a value indicating whether the app is being used for the first time since being upgraded from an older version. |
