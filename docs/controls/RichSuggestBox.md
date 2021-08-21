@@ -67,7 +67,7 @@ with the namespace and the class name. Without any country/region 'en-us' identi
 | PopupHeader | object | Gets or sets the content for the suggestion popup control's header. |
 | PopupHeaderTemplate | DataTemplate | Gets or sets the `DataTemplate` used to display the content of the suggestion popup control's header. |
 | PopupPlacement | SuggestionPopupPlacementMode | Gets or sets suggestion popup placement to either `Floating` or `Attached` to the text box. |
-| Prefixes | string | Gets or sets prefix characters to start a query.<br />Prefix characters must be punctuations (must satisfy [IsPunctuation(Char)](https://docs.microsoft.com/en-us/dotnet/api/system.char.ispunctuation) method). |
+| Prefixes | string | Gets or sets prefix characters to start a query.<br />Prefix characters must be punctuations (must satisfy [IsPunctuation(Char)](https://docs.microsoft.com/dotnet/api/system.char.ispunctuation) method). |
 | RichEditBoxStyle | Style | Gets or sets the style of the underlying `RichEditBox`. |
 | TextDocument | RichEditTextDocument | Gets an object that enables access to the text object model for the text contained in a `RichEditBox`. |
 | TokenBackground | SolidColorBrush | Gets or sets the default brush used to color the suggestion token background. |
@@ -116,6 +116,6 @@ with the namespace and the class name. Without any country/region 'en-us' identi
 
 ## Related Topics
 
-- [AutoSuggestBox](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.autosuggestbox)
-- [RichEditBox](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.richeditbox)
+- [AutoSuggestBox](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.autosuggestbox)
+- [RichEditBox](https://docs.microsoft.com/uwp/api/windows.ui.xaml.controls.richeditbox)
 - [TokenizingTextBox](TokenizingTextBox.md)
