@@ -167,6 +167,8 @@
 
 ### [RemoteDevicePicker](controls/RemoteDevicePicker.md)
 
+### [RichSuggestBox](controls/RichSuggestBox.md)
+
 ### [RotatorTile](controls/RotatorTile.md)
 
 ### [StaggeredLayout](controls/layout/StaggeredLayout.md)
