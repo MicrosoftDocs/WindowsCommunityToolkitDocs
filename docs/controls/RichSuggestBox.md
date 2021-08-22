@@ -9,25 +9,9 @@ dev_langs:
 
 # RichSuggestBox
 
-The [RichSuggestBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.richsuggestbox) is a combination of [AutoSuggestBox](/uwp/api/windows.ui.xaml.controls.autosuggestbox) and [RichEditBox](/uwp/api/windows.ui.xaml.controls.richeditbox) that can provide suggestions based on customizable prefixes. Selected suggestions are then embedded and tracked in the document as tokens.
+The [RichSuggestBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.richsuggestbox) is a combination of [AutoSuggestBox](/uwp/api/windows.ui.xaml.controls.autosuggestbox) and [RichEditBox](/uwp/api/windows.ui.xaml.controls.richeditbox) that can provide suggestions based on customizable prefixes. Selected suggestions are embedded and tracked in the document as tokens.
 
 RichSuggestBox resembles text controls commonly found in social applications where you type "@" to mention people.
-<!-- Your API link will be in a form like: /dotnet/api/microsoft.toolkit.uwp.helpers.printhelper 
-with the namespace and the class name. Without any country/region 'en-us' identifiers, the root domain, or query string views.
--->
-
-
-
-<!-- Use below format to display note
-> [!NOTE]
-> Some note
-
-> [!IMPORTANT]
-> Some important note
-
-> [!WARNING]
-> Some warning note
--->
 
 > **Platform APIs:** [`RichSuggestBox`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.richsuggestbox)
 
