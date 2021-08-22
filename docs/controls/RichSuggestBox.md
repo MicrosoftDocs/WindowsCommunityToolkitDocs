@@ -9,11 +9,9 @@ dev_langs:
 
 # RichSuggestBox
 
-The [RichSuggestBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.richsuggestbox) is a combination of AutoSuggestBox and RichEditBox which provides suggestions when the user types certain customizable prefixes and stores suggested items as tokens in the document.
+The [RichSuggestBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.richsuggestbox) is a combination of [AutoSuggestBox](/uwp/api/windows.ui.xaml.controls.autosuggestbox) and [RichEditBox](/uwp/api/windows.ui.xaml.controls.richeditbox) that can provide suggestions based on customizable prefixes. Selected suggestions are then embedded and tracked in the document as tokens.
 
-RichSuggestBox can operate in Rich Text Format (RTF) mode or plain-text mode. In RTF mode, the user can insert rich text documents that contain formatted text, hyperlinks, and images. In plain-text mode, the user can only insert plain-text as the only formatted texts in the document are tokens.
-
-RichSuggestBox is inspired by text controls commonly found in social applications where you type "@" and the control starts suggesting different people to be included in the text box.
+RichSuggestBox resembles text controls commonly found in social applications where you type "@" to mention people.
 <!-- Your API link will be in a form like: /dotnet/api/microsoft.toolkit.uwp.helpers.printhelper 
 with the namespace and the class name. Without any country/region 'en-us' identifiers, the root domain, or query string views.
 -->
@@ -41,13 +39,30 @@ with the namespace and the class name. Without any country/region 'en-us' identi
 ```xaml
 <controls:RichSuggestBox
   PlaceholderText="Leave a comment"
-  ItemTemplate="{StaticResource EmailTemplate}"
+  ItemTemplate="{StaticResource SuggestionTemplate}"
   Prefixes="@#" />
 ```
 
 ## Example Output
 
 ![RichSuggestBox Example](../resources/images/Controls/RichSuggestBox.gif)
+
+## Remarks
+
+When a suggestion is selected, `RichSuggestBox` assigns the selected item a unique [Guid](/dotnet/api/system.guid) and a display text (provided by the developer) to make up a token. The display text is then padded with [Zero Width Space](https://unicode-table.com/200B/)s (ZWSP) and inserted into the document as a hyperlink using the identifier as the link address. These hyperlinks are tracked and validated on every text change.
+
+The token text inserted into the document has the following layout: ZWSP - Prefix character - Display text - ZWSP.
+
+For example, a token with "@" as the prefix and "John Doe" as the display text is inserted as:
+```cs
+"\u200b@John Doe\u200b"
+```
+
+> [!IMPORTANT]
+> Token text contains [Zero Width Space](https://unicode-table.com/200B/)s, which are Unicode characters.
+
+> [!NOTE]
+> To support Undo/Redo function, `RichSuggestBox` keeps all the tokens in an internal collection even when the token text is deleted from the document. These token are marked as inactive and are not included in the `Tokens` collection. Use `ClearUndoRedoSuggestionHistory()` method to clear inactive tokens or `Clear()` method to clear all tokens.
 
 ## Properties
 
@@ -98,6 +113,54 @@ with the namespace and the class name. Without any country/region 'en-us' identi
 | TokenPointerOver | Event raised when a pointer is hovering over a token. |
 | TokenSelected | Event raised when a token is fully highlighted. |
 
+## Examples
+
+### Handle multiple token types
+
+The example below creates a `RichSuggestBox` that can tokenize both mentions (query starts with `@`) and hashtags (query starts with `#`).
+
+```xaml
+<controls:RichSuggestBox
+  PlaceholderText="Leave a comment"
+  ItemTemplate="{StaticResource SuggestionTemplate}"
+  SuggestionChosen="OnSuggestionChosen"
+  SuggestionRequested="OnSuggestionRequested"
+  Prefixes="@#" />
+```
+
+```cs
+private void OnSuggestionChosen(RichSuggestBox sender, SuggestionChosenEventArgs args)
+{
+  if (args.Prefix == "#")
+  {
+    // User selected a hashtag item
+    args.DisplayText = ((SampleHashtagDataType)args.SelectedItem).Text;
+  }
+  else
+  {
+    // User selected a mention item
+    args.DisplayText = ((SampleEmailDataType)args.SelectedItem).DisplayName;
+  }
+}
+
+private void OnSuggestionRequested(RichSuggestBox sender, SuggestionRequestedEventArgs args)
+{
+  sender.ItemsSource = args.Prefix == "#"
+    ? _hashtags.Where(x => x.Text.Contains(args.QueryText, StringComparison.OrdinalIgnoreCase))
+    : _emails.Where(x => x.DisplayName.Contains(args.QueryText, StringComparison.OrdinalIgnoreCase));
+}
+```
+
+### Plain text only
+
+The example below creates a `RichSuggestBox` that only allows users to enter plain text. The only formatted texts in the document are tokens.
+
+```xaml
+<controls:RichSuggestBox
+  ClipboardCopyFormat="PlainText"
+  ClipboardPasteFormat="PlainText"
+  DisabledFormattingAccelerators="All" />
+```
 
 ## Sample Project
 
