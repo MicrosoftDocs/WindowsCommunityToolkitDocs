@@ -22,12 +22,17 @@ The [ListDetailsView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsv
           ItemTemplate="{StaticResource ListTemplate}"
           DetailsTemplate="{StaticResource DetailsTemplate}"
           NoSelectionContentTemplate="{StaticResource NoSelectionContentTemplate}"
-          CompactModeThresholdWidth="720" />
+          CompactModeThresholdWidth="640" />
 ```
 
 ## Sample Output
 
 ![ListDetailsView animation](../resources/images/Controls/ListDetailsView.gif)
+
+## Multi Screen Devices
+
+This control is spanning-aware and adapts it self for multi screen devices.
+For this internally the [Two-pane view](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/two-pane-view) is used.
 
 ## BackButtonBehavior
 
