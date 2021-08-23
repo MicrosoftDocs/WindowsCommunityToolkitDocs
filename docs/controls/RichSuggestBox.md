@@ -48,54 +48,6 @@ For example, a token with "@" as the prefix and "John Doe" as the display text i
 > [!NOTE]
 > To support Undo/Redo function, `RichSuggestBox` keeps all the tokens in an internal collection even when the token text is deleted from the document. These token are marked as inactive and are not included in the `Tokens` collection. Use `ClearUndoRedoSuggestionHistory()` method to clear inactive tokens or `Clear()` method to clear all tokens.
 
-## Properties
-
-| Property | Type | Description |
-| -- | -- | -- |
-| ClipboardCopyFormat | RichEditClipboardFormat | Gets or sets a value that specifies whether text is copied with all formats, or as plain text only. |
-| ClipboardPasteFormat | RichEditClipboardFormat | Gets or sets a value that specifies whether pasted text preserves all formats, or as plain text only. |
-| Description | object | Gets or sets content that is shown below the control. The content should provide guidance about the input expected by the control. |
-| DisabledFormattingAccelerators | DisabledFormattingAccelerators | Gets or sets a value that indicates which keyboard shortcuts for formatting are disabled. |
-| Header | object | Gets or sets the content for the control's header. |
-| HeaderTemplate | DataTemplate | Gets or sets the `DataTemplate` used to display the content of the control's header. |
-| HorizontalOffset | double | Gets the distance the content has been scrolled horizontally from the underlying `ScrollViewer`. |
-| PlaceholderText | string | Gets or sets the text that is displayed in the control until the value is changed by a user action or some other operation. |
-| PopupCornerRadius | CornerRadius | Gets or sets the radius for the corners of the popup control's border. |
-| PopupFooter | object | Gets or sets the content for the suggestion popup control's footer. |
-| PopupFooterTemplate | DataTemplate | Gets or sets the `DataTemplate` used to display the content of the suggestion popup control's footer. |
-| PopupHeader | object | Gets or sets the content for the suggestion popup control's header. |
-| PopupHeaderTemplate | DataTemplate | Gets or sets the `DataTemplate` used to display the content of the suggestion popup control's header. |
-| PopupPlacement | SuggestionPopupPlacementMode | Gets or sets suggestion popup placement to either `Floating` or `Attached` to the text box. |
-| Prefixes | string | Gets or sets prefix characters to start a query.<br />Prefix characters must be punctuations (must satisfy [IsPunctuation(Char)](/dotnet/api/system.char.ispunctuation) method). |
-| RichEditBoxStyle | Style | Gets or sets the style of the underlying `RichEditBox`. |
-| TextDocument | RichEditTextDocument | Gets an object that enables access to the text object model for the text contained in a `RichEditBox`. |
-| TokenBackground | SolidColorBrush | Gets or sets the default brush used to color the suggestion token background. |
-| TokenForeground | SolidColorBrush | Gets or sets the default brush used to color the suggestion token foreground. |
-| Tokens | ReadOnlyObservableCollection\<RichSuggestToken\> | Gets a collection of suggestion tokens that are present in the document. |
-| VerticalOffset | double | Gets the distance the content has been scrolled vertically from the underlying `ScrollViewer`. |
-
-## Methods
-
-| Methods | Return Type | Description |
-| -- | -- | -- |
-| AddTokens(IEnumerable\<RichSuggestToken\>) | void | Add tokens to be tracked against the document. Duplicate tokens will not be updated. |
-| Clear() | void | Clear the document and token list. This will also clear the undo/redo history. |
-| ClearUndoRedoSuggestionHistory() | void | Clear unused tokens and undo/redo history. |
-| GetRectFromRange(ITextRange) | Rect | Retrieves the bounding rectangle that encompasses the text range with position measured from the top left of the `RichSuggestBox` control. |
-| Load(string, IEnumerable\<RichSuggestToken\>) | void | Populate the `RichSuggestBox` with an existing Rich Text Format (RTF) document and a collection of tokens.<br />This method replaces the current document and token list. |
-| TryGetTokenFromRange(ITextRange, out RichSuggestToken) | bool | Try getting the token associated with a text range. |
-
-## Events
-
-| Events | Description |
-| -- | -- |
-| Paste | Event raised when text is pasted into the control. |
-| SelectionChanged | Event raised when the text selection has changed. |
-| SuggestionChosen | Event raised when user click on a suggestion.<br />This event lets you customize the token appearance in the document. |
-| SuggestionRequested | Event raised when the control needs to show suggestions. |
-| TextChanged | Event raised when text is changed, either by user or by internal formatting. |
-| TokenPointerOver | Event raised when a pointer is hovering over a token. |
-| TokenSelected | Event raised when a token is fully highlighted. |
 
 ## Examples
 
