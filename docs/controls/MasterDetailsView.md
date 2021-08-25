@@ -32,7 +32,7 @@ The [ListDetailsView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsv
 ## Multi Screen Devices
 
 This control is spanning-aware and adapts it self for multi screen devices.
-For this internally the [Two-pane view](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/two-pane-view) is used.
+For this internally the [Two-pane view](/windows/uwp/design/controls-and-patterns/two-pane-view) is used.
 
 ## BackButtonBehavior
 
