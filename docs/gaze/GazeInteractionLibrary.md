@@ -33,7 +33,7 @@ To use the gaze input APIs, you must register the gazeInput capability in the ap
 
 The Gaze Interaction Library currently supports the following features:
 
-* Dwell based activation of XAML controls, like buttons, toggle buttons, check boxes, etc.
+* Dwell based activation of XAML button and toggle button controls
 * Enabling gaze interactions for the entire XAML page or for a portion of it (like a single control)
 * Customizing the dwell times associated with specific controls
 * Controlling repetition of the dwell invocation of controls
