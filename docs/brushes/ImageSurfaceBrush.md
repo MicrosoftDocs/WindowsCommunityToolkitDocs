@@ -5,7 +5,7 @@ description: A composition brush that paints an area using the provided image.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
 ---
 
-# GeometrySurfaceBrush
+# ImageSurfaceBrush
 
 The [ImageSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfacebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that uses a image to paint an area.
 
