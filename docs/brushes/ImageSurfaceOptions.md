@@ -5,7 +5,7 @@ description: A class encapsulating a set of properties which influence the rende
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
 ---
 
-# GeometrySurfaceBrush
+# ImageSurfaceOptions
 
 The [ImageSurfaceOptions](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfaceoptions) class encapsulates a set of properties which influence the rendering of the image on the ImageSurface.
 

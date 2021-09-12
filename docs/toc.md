@@ -1,4 +1,5 @@
 <!--markdownlint-disable MD025 -->
+
 # [Windows Community Toolkit Documentation](index.md)
 
 # Setup
@@ -269,11 +270,33 @@
 
 ### [BackdropSepiaBrush](brushes/BackdropSepiaBrush.md)
 
+### [GeometryMaskSurfaceBrush](brushes/GeometryMaskSurfaceBrush.md)
+
+### [GeometrySurfaceBrush](brushes/GeometrySurfaceBrush.md)
+
 ### [ImageBlendBrush](brushes/ImageBlendBrush.md)
+
+### [ImageSurfaceBrush](brushes/ImageSurfaceBrush.md)
+
+### [ImageMaskSurfaceBrush](brushes/ImageMaskSurfaceBrush.md)
+
+### [ImageSurfaceOptions](brushes/ImageSurfaceOptions.md)
+
+### [LinearGradientCanvasBrush](brushes/LinearGradientCanvasBrush.md)
 
 ### [PipelineBrush](brushes/PipelineBrush.md)
 
 ### [PipelineVisualFactory](brushes/PipelineVisualFactory.md)
+
+### [RadialGradientCanvasBrush](brushes/RadialGradientCanvasBrush.md)
+
+### [RenderCanvasBrushBase](brushes/RenderCanvasBrushBase.md)
+
+### [RenderSurfaces](brushes/RenderSurfaces.md)
+
+### [RenderSurfaceBrushBase](brushes/RenderSurfaceBrushBase.md)
+
+### [SolidColorCanvasBrush](brushes/SolidColorCanvasBrush.md)
 
 ### [TilesBrush](brushes/TilesBrush.md)
 
