@@ -9,7 +9,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ImageSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfacebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that uses a image to paint an area.
 
-> [!div class="nextstepaction"] > [Try it in the sample app](uwpct://Brushes?sample=ImageSurfaceBrush)
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Brushes?sample=ImageSurfaceBrush)
 
 ## Syntax
 

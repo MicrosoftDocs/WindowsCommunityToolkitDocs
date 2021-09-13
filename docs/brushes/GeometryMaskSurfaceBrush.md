@@ -1,7 +1,7 @@
 ---
 title: GeometryMaskSurfaceBrush
 author: ratishphilip
-description: A composition brush that paints an area defined by the provided geometry.
+description: A composition brush that paints an area by creating a mask defined by the provided geometry.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
 ---
 
@@ -9,7 +9,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [GeometryMaskSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometrymasksurfacebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that uses a [CanvasCoreGeometry](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometry.canvascoregeometry) to paint an area.
 
-> [!div class="nextstepaction"] > [Try it in the sample app](uwpct://Brushes?sample=GeometryMaskSurfaceBrush)
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Brushes?sample=GeometryMaskSurfaceBrush)
 
 ## Syntax
 

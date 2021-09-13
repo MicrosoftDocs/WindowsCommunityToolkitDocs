@@ -20,9 +20,9 @@ Here is the interface hierarchy
 
 Most of the APIs to create custom shaped surfaces are provided by the `CompositionGenerator` class.
 
-# Creating a custom shaped Visual
+## Creating a custom shaped Visual
 
-## Using IGeometrySurface
+### Using IGeometrySurface
 
 ![Geometry Surface](../resources/images/Surface/GeometrySurface.jpg 'Rendering using Geometry Surface')
 
@@ -54,7 +54,7 @@ visual.Brush = brush;
 ElementCompositionPreview.SetElementChildVisual(RenderGrid, visual);
 ```
 
-## Using Animated Geometry Surface
+### Using Animated Geometry Surface
 
 ![Animated Geometry Surface](../resources/images/Surface/AnimatedGeometrySurface.gif 'Rendering using Animated Geometry Surface')
 
@@ -109,7 +109,7 @@ private void OnDraw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs a
 }
 ```
 
-## Using IGeometryMaskSurface
+### Using IGeometryMaskSurface
 
 ![Geometry Mask Surface](../resources/images/Surface/GeometryMaskSurface.jpg 'Rendering using Geometry Mask Surface')
 
@@ -165,7 +165,7 @@ container.Children.InsertAtTop(visual);
 ElementCompositionPreview.SetElementChildVisual(RenderGrid, container);
 ```
 
-## Using Animated Geometry Mask Surface
+### Using Animated Geometry Mask Surface
 
 ![Animated Geometry Mask Surface](../resources/images/Surface/AnimatedGeometryMaskSurface.gif 'Rendering using Animated Geometry Mask Surface')
 
@@ -243,7 +243,7 @@ private void OnDraw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs a
 }
 ```
 
-## Masked Backdrop Brush
+### Masked Backdrop Brush
 
 To create a masked backdrop brush, you can use either of the following Compositor extension methods
 
@@ -298,7 +298,7 @@ container.Children.InsertAtTop(visual);
 ElementCompositionPreview.SetElementChildVisual(RenderGrid, container);
 ```
 
-## Animated Masked Backdrop Brush
+### Animated Masked Backdrop Brush
 
 Just like the animated GeometrySurface and animated GeometryMaskSurface, the MaskedBackdropBrush can also be animated.
 
@@ -368,7 +368,7 @@ private void OnDraw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs a
 }
 ```
 
-## Using GaussianMaskSurface
+### Using GaussianMaskSurface
 
 ![Gaussian Mask Surface Brush](../resources/images/Surface/GaussianMaskSurface.gif 'Gaussian Mask Surface Brush')
 
@@ -413,7 +413,7 @@ outputVisual.Brush = maskedBrush;
 ElementCompositionPreview.SetElementChildVisual(OutputGrid, outputVisual);
 ```
 
-## Using ImageSurface
+### Using ImageSurface
 
 ![Image Surface Brush](../resources/images/Surface/ImageSurface.jpg 'Image Surface Brush')
 
@@ -433,7 +433,7 @@ sourceImageVisual.Brush = compositor.CreateSurfaceBrush(sourceImageSurface);
 ElementCompositionPreview.SetElementChildVisual(ImageGrid, sourceImageVisual);
 ```
 
-## Using ImageMaskSurface
+### Using ImageMaskSurface
 
 ![Image Mask Surface Brush](../resources/images/Surface/ImageMaskSurface.gif 'Image Mask Surface Brush')
 

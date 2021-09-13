@@ -9,7 +9,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [GeometrySurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometrysurfacebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that uses a [CanvasCoreGeometry](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometry.canvascoregeometry) to paint an area.
 
-> [!div class="nextstepaction"] > [Try it in the sample app](uwpct://Brushes?sample=GeometrySurfaceBrush)
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Brushes?sample=GeometrySurfaceBrush)
 
 ## Syntax
 
