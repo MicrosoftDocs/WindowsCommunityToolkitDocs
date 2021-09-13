@@ -1,9 +1,11 @@
 ---
-title: RenderSurface
+title: Render Surfaces
 author: ratishphilip
 description: Detailed description about creating custom shaped visuals using various render surfaces.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
 ---
+
+# Render Surfaces
 
 Windows Community Toolkit provides five types of rendering surface interfaces which can be used for rendering custom shapes and images or creating masks from geometric shapes or images.
 
