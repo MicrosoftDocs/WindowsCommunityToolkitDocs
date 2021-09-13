@@ -9,7 +9,8 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 The [ImageMaskSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagemasksurfacebrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that uses an Image to create a mask to be applied on a [RenderSurfaceBrushBase](/dotnet/api/microsoft.toolkit.uwp.ui.media.rendersurfacebrushbase) derivative.
 
-> [!div class="nextstepaction"] > [Try it in the sample app](uwpct://Brushes?sample=ImageMaskSurfaceBrush)
+> [!div class="nextstepaction"] >
+> [Try it in the sample app](uwpct://Brushes?sample=ImageMaskSurfaceBrush)
 
 ## Syntax
 
