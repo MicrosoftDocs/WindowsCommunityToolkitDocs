@@ -42,8 +42,6 @@ The [ImageSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfaceb
 | Source       | object                                                                                | The object representing the image source.                                                                  |
 | ImageOptions | [ImageSurfaceOptions](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfaceoptions) | Additional options to configure the image used to create the brush.                                        |
 
-## Code behind support
-
 ## Sample Project
 
 [ImageSurfaceBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageSurfaceBrush). You can [see this in action](uwpct://Brushes?sample=ImageSurfaceBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).

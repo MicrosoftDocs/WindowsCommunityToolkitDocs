@@ -65,8 +65,6 @@ The [GeometrySurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometrysu
 | RenderStrokeStyle | [StrokeStyle](/dotnet/api/microsoft.toolkit.uwp.ui.media.geometry.strokestyle)]              | The style of the outline of the geometry.                                         |
 | StrokeThickness   | double                                                                                       | The thickness of the outline of the geometry.                                     |
 
-## Code behind support
-
 ## Sample Project
 
 [GeometrySurfaceBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GeometrySurfaceBrush). You can [see this in action](uwpct://Brushes?sample=GeometrySurfaceBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).

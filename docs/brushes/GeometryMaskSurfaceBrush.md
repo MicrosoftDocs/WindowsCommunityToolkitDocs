@@ -51,10 +51,6 @@ The [GeometryMaskSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.geomet
 | OffsetY    | double                                                                                       | The offset on the y-axis from the top left corner of the Brush Surface where the Geometry is rendered. |
 | BlurRadius | double                                                                                       | The radius of the Gaussian blur to be applied on the mask.                                             |
 
-## Code behind support
-
-## Code behind support
-
 ## Sample Project
 
 [GeometryMaskSurfaceBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GeometryMaskSurfaceBrush). You can [see this in action](uwpct://Brushes?sample=GeometryMaskSurfaceBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).

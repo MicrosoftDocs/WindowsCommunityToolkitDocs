@@ -1,3 +1,10 @@
+---
+title: RenderSurface
+author: ratishphilip
+description: Detailed description about creating custom shaped visuals using various render surfaces.
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
+---
+
 Windows Community Toolkit provides five types of rendering surface interfaces which can be used for rendering custom shapes and images or creating masks from geometric shapes or images.
 
 - _`IRenderSurface`_ - This interface acts as the base interface for interfaces which render to the `ICompositionSurface`. It mainly contains references to an `ICompositionGenerator` object and an `ICompositionSurface` object which are the core objects required for rendering any geometry or image onto a `ICompositionSurface`.

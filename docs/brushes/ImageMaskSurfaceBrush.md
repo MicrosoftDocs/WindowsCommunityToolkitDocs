@@ -1,7 +1,7 @@
 ---
 title: ImageMaskSurfaceBrush
 author: ratishphilip
-description: A composition brush that paints an area defined by the provided geometry.
+description: A composition brush that paints an area by creating a mask defined by the provided geometry.
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, brush, Win2D, composition
 ---
 
@@ -80,8 +80,6 @@ The [ImageMaskSurfaceBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagemask
 | Mask         | [RenderCanvasBrushBase](/dotnet/api/microsoft.toolkit.uwp.ui.media.rendercanvasbrushbase) | URI of the image (in string format) which is used to create the mask.                                                                                          |
 | ImageOptions | [ImageSurfaceOptions](/dotnet/api/microsoft.toolkit.uwp.ui.media.imagesurfaceoptions)     | Additional options to configure the image used to create the mask for the brush.                                                                               |
 | Padding      | Thickness                                                                                 | The padding between the outer bounds of the brush and the bounds of the area where the mask, created from the loaded image's alpha values, should be rendered. |
-
-## Code behind support
 
 ## Sample Project
 
