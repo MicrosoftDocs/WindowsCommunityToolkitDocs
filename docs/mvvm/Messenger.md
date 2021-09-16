@@ -41,7 +41,7 @@ public class LoggedInUserChangedMessage : ValueChangedMessage<User>
 WeakReferenceMessenger.Default.Register<LoggedInUserChangedMessage>(this, (r, m) =>
 {
     // Handle the message here, with r being the recipient and m being the
-    // input messenger. Using the recipient passed as input makes it so that
+    // input message. Using the recipient passed as input makes it so that
     // the lambda expression doesn't capture "this", improving performance.
 });
 
