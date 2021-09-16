@@ -41,8 +41,6 @@ The [ImageEx](/dotnet/api/microsoft.toolkit.uwp.ui.controls.imageex) control dow
 
 ## Default Template
 
-ImageEx control supports use of Progress Indicator. This can be enabled by adding ImageEx template from previous release of the control.
-
 - [ImageEx Control XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/ImageEx/ImageEx.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
