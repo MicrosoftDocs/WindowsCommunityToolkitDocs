@@ -38,6 +38,7 @@ When a suggestion is selected, `RichSuggestBox` assigns the selected item a uniq
 The token text inserted into the document has the following layout: ZWSP - Prefix character - Display text - ZWSP.
 
 For example, a token with "@" as the prefix and "John Doe" as the display text is inserted as:
+
 ```cs
 "\u200b@John Doe\u200b"
 ```
