@@ -2,7 +2,7 @@
 title: State Triggers
 author: dotMorten
 description: A collection of custom visual State Triggers
-keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, CompareStateTrigger, FullScreenModeStateTrigger, IsEqualStateTrigger, IsNotEqualStateTrigger, IsNullOrEmptyStateTriggers, NetworkConnectionStateTrigger, RegexStateTrigger, UserHandPreferenceStateTrigger, UserInteractionModeStateTrigger
+keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, CompareStateTrigger, ControlSizeTrigger, FullScreenModeStateTrigger, IsEqualStateTrigger, IsNotEqualStateTrigger, IsNullOrEmptyStateTriggers, NetworkConnectionStateTrigger, RegexStateTrigger, UserHandPreferenceStateTrigger, UserInteractionModeStateTrigger
 
 ---
 
@@ -14,6 +14,7 @@ A collection of custom visual [State Triggers](/uwp/api/windows.ui.xaml.statetri
 | Trigger | Purpose |
 | --- | --- |
 | [CompareStateTrigger](/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.CompareStateTrigger) | Enables a state if the value is equal to, greater than, or less than another value |
+| [ControlSizeTrigger](/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.ControlSizeTrigger) | Enables a state if the target control meets the specified size |
 | [FullScreenModeStateTrigger](/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.FullScreenModeStateTrigger) | Trigger for switching when in full screen mode |
 | [IsEqualStateTrigger](/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsEqualStateTrigger) | Enables a state if the value is equal to another value |
 | [IsNotEqualStateTrigger](/dotnet/api/Microsoft.Toolkit.Uwp.UI.Triggers.IsNotEqualStateTrigger) | Enables a state if the value is not equal to another value |
@@ -28,6 +29,14 @@ A collection of custom visual [State Triggers](/uwp/api/windows.ui.xaml.statetri
 ```xaml
 <VisualState.StateTriggers>
     <triggers:CompareStateTrigger Value="{Binding Value,ElementName=Slider, Mode=OneWay}" Comparison="LessThanOrEqual" To="3"/>
+</VisualState.StateTriggers>
+```
+
+## ControlSizeTrigger Example
+
+```xaml
+<VisualState.StateTriggers>
+    <triggers:ControlSizeTrigger TargetElement="{x:Bind ParentGrid}" MinWidth="400" MaxWidth="500" MinHeight="50" MaxHeight="100"/>
 </VisualState.StateTriggers>
 ```
 
