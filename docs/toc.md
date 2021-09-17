@@ -127,6 +127,8 @@
 
 ### [ColorPickerButton](controls/ColorPicker.md)
 
+### [ConstrainedBox](controls/ConstrainedBox.md)
+
 ### DataGrid
 
 #### [Introduction](controls/DataGrid.md)
