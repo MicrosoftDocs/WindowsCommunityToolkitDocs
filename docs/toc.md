@@ -287,6 +287,8 @@
 
 ### [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
 
+### [Attached Shadows](helpers/AttachedShadows.md)
+
 ### [BackgroundTaskHelper](helpers/BackgroundTaskHelper.md)
 
 ### [BindableValueHolder](helpers/BindableValueHolder.md)

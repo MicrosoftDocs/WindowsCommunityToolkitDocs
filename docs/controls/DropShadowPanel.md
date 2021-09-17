@@ -10,6 +10,9 @@ dev_langs:
 
 # DropShadowPanel
 
+> [!WARNING]
+> This control has been deprecated in the Windows Community Toolkit and will be removed in a future release. Please use the new [Attached Shadow](../Helpers/AttachedShadows.md) helpers instead.
+
 The [DropShadowPanel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpanel) control allows the creation of a drop shadow effect for any Xaml FrameworkElement in the markup.
 
 > [!div class="nextstepaction"]
