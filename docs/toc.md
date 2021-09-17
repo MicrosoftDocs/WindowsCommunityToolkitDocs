@@ -301,6 +301,8 @@
 
 ### [Header Behaviors](behaviors/HeaderBehaviors.md)
 
+### [Key Down Trigger Behavior](behaviors/KeyDownTriggerBehavior.md)
+
 ### [ImageCache](helpers/ImageCache.md)
 
 ### [IncrementalLoadingCollection](helpers/IncrementalLoadingCollection.md)
