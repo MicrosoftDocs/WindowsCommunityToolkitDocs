@@ -159,7 +159,7 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 | Default | If visible then it will not scroll, if not then item will be aligned to the nearest edge |
 | Left | Aligned left |
 | Top | Aligned top |
-| Centre | Aligned centre |
+| Center | Aligned center |
 | Right | Aligned right |
 | Bottom | Aligned bottom |
 
@@ -188,22 +188,20 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
     private async void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
         var listView = (sender as ListView);
-        await listView.SmoothScrollIntoViewWithIndex(listView.SelectedIndex, ItemPlacement.Centre, false, true);
+        await listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, false, true);
     }
     ```
 
     ```vb
     Private Async Sub ListView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
         Dim listView = (TryCast(sender, ListView))
-        Await listView.SmoothScrollIntoViewWithIndex(listView.SelectedIndex, ItemPlacement.Centre, False, True)
+        Await listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, False, True)
     End Sub
     ```
 
     **Sample Output**
 
     ![Use Case 1 Output](../resources/images/Extensions/SmoothScrollIntoView-CenterSelected.gif)
-
-    For PopUp effect see [GridView selectedItem Popup](https://stackoverflow.com/a/44707177/7331395)
 
 ## Requirements
 
