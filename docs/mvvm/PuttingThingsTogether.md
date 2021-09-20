@@ -9,7 +9,7 @@ dev_langs:
 
 # Putting things together
 
-Now that we've outline all the different components that are available through the `Microsoft.Toolkit.Mvvm` package, we can look at a practical example of them all coming together to build a single, larger example. In this case, we want to build a very simple and minimalistic Reddit browser for a select number of subreddits.
+Now that we've outlined all the different components that are available through the `Microsoft.Toolkit.Mvvm` package, we can look at a practical example of them all coming together to build a single, larger example. In this case, we want to build a very simple and minimalistic Reddit browser for a select number of subreddits.
 
 ## What do we want to build
 
