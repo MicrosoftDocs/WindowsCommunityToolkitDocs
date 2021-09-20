@@ -170,5 +170,5 @@ The following example uses a combination of behaviors and animations apis to cre
 
 ## Related Topics
 
-- [Composition Shadows](https://docs.microsoft.com/windows/uwp/composition/composition-shadows)
-- [DropShadow Class](https://docs.microsoft.com/uwp/api/Windows.UI.Composition.DropShadow)
+- [Composition Shadows](/windows/uwp/composition/composition-shadows)
+- [DropShadow Class](/uwp/api/Windows.UI.Composition.DropShadow)
