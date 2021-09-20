@@ -15,7 +15,7 @@ Attached Shadows allow you to more easily create beautiful shadow effects within
 
 ## Introduction
 
-There are two types of attached shadows available today, the `AttachedCardShadow` and the `AttachedDropShadow`. It is recommended to use the `AttachedCardShadow` where possible, if you don't mind the dependency on Win2D. The `AttachedCardShadow` provides an easier to use experience that is more performant and easier to apply across an entire set of elements, assuming those elements are rounded-rectangular in shape. Whereas, the `AttachedDropShadow` provides masking support and can be leveraged in any UWP app without adding an extra dependency.
+There are two types of attached shadows available today, the `AttachedCardShadow` and the `AttachedDropShadow`. It is recommended to use the `AttachedCardShadow` where possible, if you don't mind the dependency on Win2D. The `AttachedCardShadow` provides an easier to use experience that is more performant and easier to apply across an entire set of elements, assuming those elements are rounded-rectangular in shape. The `AttachedDropShadow` provides masking support and can be leveraged in any UWP app without adding an extra dependency.
 
 ### Capability Comparison
 
@@ -41,7 +41,7 @@ The `AttachedCardShadow` is the easiest to use and most performant shadow. It is
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=attachedcardshadow%20%28win2d%29)
 
-The great benefit to the `AttachedCardShadow` is that no extra surface or element is required to add the shadow. This reduces the complexity required on development and allows shadows to easily be added at any point in the development process. It also supports elements which are transparent without seeing the shadow behind them!
+The great benefit to the `AttachedCardShadow` is that no extra surface or element is required to add the shadow. This reduces the complexity required in development and allows shadows to easily be added at any point in the development process. It also supports transparent elements, without displaying the shadow behind them!
 
 ### Example
 
@@ -83,7 +83,7 @@ This makes it a bit more complex to use than the `AttachedCardShadow` and the `D
 
 ### Remarks
 
-While `DropShadowPanel` encapsulated the complexities of adding a shadow, it added a lot of depth and complexity to the visual tree. `AttachedDropShadow` instead requires that you provide the surface where the shadows should be cast, such as a common backdrop element. This means that each shadow can use the same shared surface rather than creating its own backdrop element for each shadow (like `DropShadowPanel` did). This slight trade-off for ease-of-use is gained in performance. However, it does mean it may not be as flexible for certain use cases with manipulation of an element. In those cases we recommend to try and use `AttachedCardShadow` instead or wrapping an element and its backdrop in a custom control.
+While `DropShadowPanel` encapsulated the complexities of adding a shadow, it added a lot of depth and complexity to the visual tree. `AttachedDropShadow` instead requires that you provide the surface where the shadows should be cast, such as a common backdrop element. This means that each shadow can use the same shared surface rather than creating its own backdrop element for each shadow (like `DropShadowPanel` did). This slight trade-off for ease-of-use is a gain in performance. However, it does mean it may not be as flexible for certain use cases with manipulation of an element. In those cases we recommend to try and use `AttachedCardShadow` instead or wrapping an element and its backdrop in a custom control.
 
 ### Example
 
@@ -113,7 +113,7 @@ Either type of Attached Shadow can be easily animated using the Toolkit's [`Anim
 > **Platform APIs:** [`BlurRadiusDropShadowAnimation`](/dotnet.api/microsoft.toolkit.uwp.ui.animations.blurradiusdropshadowanimation), [`ColorDropShadowAnimation`](/dotnet.api/microsoft.toolkit.uwp.ui.animations.colordropshadowanimation), [`OffsetDropShadowAnimation`](/dotnet.api/microsoft.toolkit.uwp.ui.animations.offsetdropshadowanimation), [`OpacityDropShadowAnimation`](/dotnet.api/microsoft.toolkit.uwp.ui.animations.opacitydropshadowanimation)
 
 > [!NOTE]
-> `AttachedCardShadow` has better support for animations which involve translation of the element with the shadow. If animating an `AttachedDropShadow` it is best to only animate the shadow itself vs. moving the element it is attached to. This can cause the shadow and element to be desynchronized.
+> `AttachedCardShadow` has better support for animations which involve translation of the element along with the shadow. If animating an `AttachedDropShadow` it is best to only animate the shadow itself vs. moving the element it is attached to. This can cause the shadow and element to be desynchronized.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://animations?sample=shadow%20animations)

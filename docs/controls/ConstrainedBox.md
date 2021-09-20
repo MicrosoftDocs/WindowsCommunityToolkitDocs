@@ -9,12 +9,12 @@ dev_langs:
 
 # ConstrainedBox
 
-The [ConstrainedBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.constrianedbox) is a simple `FrameworkElement` content decorator control which allows the developer to constrain its child content one or more various properties including aspect ratio, scale, and aligning to a multiple.
+The [ConstrainedBox](/dotnet/api/microsoft.toolkit.uwp.ui.controls.constrainedbox) is a simple `FrameworkElement` content decorator control which allows the developer to constrain its child content by one or more various properties including aspect ratio, scale, and aligning to a multiple boundary.
 
 > [!NOTE]
 > For technical reasons this control inherits from `ContentPresenter`; however, it should be treated as a `FrameworkElement` and its border and template properties should not be used for compatibility in the future when it can inherit from FrameworkElement directly.
 
-> **Platform APIs:** [`ConstrainedBox`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.constrianedbox), [`AspectRatio`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.aspectratio)
+> **Platform APIs:** [`ConstrainedBox`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.constrainedbox), [`AspectRatio`](/dotnet/api/microsoft.toolkit.uwp.ui.controls.aspectratio)
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://controls?sample=constrainedbox)
@@ -25,9 +25,9 @@ The three constraints provided by the `ConstrainedBox` control can be used indiv
 
 2. `MultipleX`/`MultipleY`: The multiple values allow a developer to snap the layout size of the child to a specific multiple value. For instance, by providing a value of 4, you would ensure the child element is closest to the size of 16, 20, 24, etc... The floor is taken so the child element is always smaller within the bounds of its parent. By default this value is not set so that no extra layout rounding occurs.
 
-3. `AspectRatio`: The aspect ratio can be provided by a double value or a colon separated aspect, e.g. "16:9" and will restrict the layout of the child element to that available space. Therefore if you stretch your child element you can ensure it maintains the desired aspect ratio. By default, no aspect ratio constraint is applied.
+3. `AspectRatio`: The aspect ratio can be provided by a double value or a colon separated aspect (e.g. "16:9") and will restrict the layout of the child element to that available space. Therefore if you stretch your child element you can ensure it maintains the desired aspect ratio. By default, no aspect ratio constraint is applied.
 
-If a `ConstrainedBox` is placed in a container which doesn't restrict its size in both the horizontal and vertical directions, it will try and determine its constraints based on the desired size of its child element. If only one direction has infinite size, the control will attempt to use the fixed dimension to measure all constraints against.
+If a `ConstrainedBox` is placed in a container which doesn't restrict its size in both the horizontal and vertical directions, it will try to determine its constraints based on the desired size of its child element. If only one direction has infinite size, the control will attempt to use the fixed dimension to measure all constraints against.
 
 The Min/Max and Alignment properties of the `ConstrainedBox` itself and its child can also be set to provide other constraints on how layout is performed with the control, as with any regular XAML layout.
 
