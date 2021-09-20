@@ -26,7 +26,7 @@ Follow these steps to install the Diagnostics package:
     - .NET Core (>= 1.0)
     - Any other framework supporting .NET Standard 1.4 and up
 
-2. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.HighPerformance** and install it.
+2. In Solution Explorer panel, right click on your project name and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.Diagnostics** and install it.
 
     ![NuGet Packages](../resources/images/ManageNugetPackages.png "Manage NuGet Packages Image")
 
