@@ -127,6 +127,8 @@
 
 ### [ColorPickerButton](controls/ColorPicker.md)
 
+### [ConstrainedBox](controls/ConstrainedBox.md)
+
 ### DataGrid
 
 #### [Introduction](controls/DataGrid.md)
@@ -284,6 +286,8 @@
 ## Helpers
 
 ### [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
+
+### [Attached Shadows](helpers/AttachedShadows.md)
 
 ### [BackgroundTaskHelper](helpers/BackgroundTaskHelper.md)
 
