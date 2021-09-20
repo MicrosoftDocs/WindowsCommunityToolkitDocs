@@ -120,7 +120,7 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/Diagnostics/Test_Guard.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Diagnostics/Test_Guard.cs)
 
 ## Requirements
 
