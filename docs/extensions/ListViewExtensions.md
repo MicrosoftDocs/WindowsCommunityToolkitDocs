@@ -14,7 +14,7 @@ The [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensio
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Extensions?sample=ListViewExtensions)
 
-## ListViewBase Extentions
+## ListViewBase Extensions
 
 - [AlternateColor](#alternatecolor)
 - [AlternateItemTemplate](#alternateitemtemplate)
