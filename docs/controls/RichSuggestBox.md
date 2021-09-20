@@ -49,7 +49,6 @@ For example, a token with "@" as the prefix and "John Doe" as the display text i
 > [!NOTE]
 > To support Undo/Redo function, `RichSuggestBox` keeps all the tokens in an internal collection even when the token text is deleted from the document. These token are marked as inactive and are not included in the `Tokens` collection. Use `ClearUndoRedoSuggestionHistory()` method to clear inactive tokens or `Clear()` method to clear all tokens.
 
-
 ## Examples
 
 ### Handle multiple token types
