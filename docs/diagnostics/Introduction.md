@@ -36,4 +36,4 @@ Follow these steps to install the Diagnostics package:
     using Microsoft.Toolkit.Diagnostics;
     ```
 
-4. If you want so see some code samples, you can either read through the other docs pages for the Diagnostics package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests/UnitTests.Shared/Diagnostics) for the project.
+4. If you want so see some code samples, you can either read through the other docs pages for the Diagnostics package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests/UnitTests.Shared/Diagnostics) for the project.

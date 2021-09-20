@@ -36,7 +36,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## Sample Code
 
-[BackdropGammaTransferBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[BackdropGammaTransferBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropGammaTransferBrush). You can [see this in action](uwpct://Brushes?sample=BackdropGammaTransferBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -47,7 +47,7 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## API
 
-* [BackdropGammaTransferBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropGammaTransferBrush.cs)
+* [BackdropGammaTransferBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropGammaTransferBrush.cs)
 
 ## Related Topics
 

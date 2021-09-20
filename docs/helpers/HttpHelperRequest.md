@@ -80,4 +80,4 @@ request.Headers.Authorization = New Windows.Web.Http.Headers.HttpCredentialsHead
 
 ## API
 
-* [HttpHelperRequest source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperRequest.cs)
+* [HttpHelperRequest source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperRequest.cs)

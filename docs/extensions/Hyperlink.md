@@ -35,4 +35,4 @@ The **Hyperlink extension** allows for a Hyperlink element to invoke the execute
 
 ## API
 
-* [Hyperlink source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Hyperlink)
+* [Hyperlink source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Hyperlink)

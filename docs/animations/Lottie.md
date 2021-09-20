@@ -38,7 +38,7 @@ The following documents help you get started with Lottie-Windows and provide sim
 
 ## Sample Code
 
-* [Code Samples for Lottie-Windows](https://github.com/windows-toolkit/Lottie-Windows/tree/rel/7.0.0/samples)
+* [Code Samples for Lottie-Windows](https://github.com/windows-toolkit/Lottie-Windows/tree/rel/7.1.0/samples)
 * [Lottie Samples application](https://aka.ms/lottiesamples)
 
 ## Requirements

@@ -32,11 +32,11 @@ There is also a `DropDownButton` version of the control named `ColorPickerButton
 ## Sample Project
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-[ColorPicker sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ColorPicker). You can [see this in action](uwpct://Controls?sample=ColorPicker) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ColorPicker sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ColorPicker). You can [see this in action](uwpct://Controls?sample=ColorPicker) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Source Code
 
-- [ColorPicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/ColorPicker)
+- [ColorPicker source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/ColorPicker)
 
 <!-- Optional -->
 

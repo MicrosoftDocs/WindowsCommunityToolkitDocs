@@ -70,7 +70,7 @@ End Using
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Helpers/Test_StreamHelper.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.UWP/Helpers/Test_StreamHelper.cs)
 
 ## Requirements
 
@@ -81,4 +81,4 @@ You can find more examples in our [unit tests](https://github.com/windows-toolki
 
 ## API Source Code
 
-* [Stream Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/StreamHelper.cs)
+* [Stream Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/StreamHelper.cs)

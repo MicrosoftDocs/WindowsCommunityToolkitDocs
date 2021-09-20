@@ -111,7 +111,7 @@ This code results in the following UI:
 
 #### Using Existing Resource File
 
-1. Download [MiddleClickScrolling-CursorType.res](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer/MiddleClickScrolling-CursorType.res) file
+1. Download [MiddleClickScrolling-CursorType.res](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/ScrollViewer/MiddleClickScrolling-CursorType.res) file
 2. Move this file into your project's folder
 3. Open .csproj file of your project in [Visual Studio Code](https://code.visualstudio.com/) or in any other code editor
 4. Add `<Win32Resource>MiddleClickScrolling-CursorType.res</Win32Resource>` in the first `<PropertyGroup>`
@@ -127,4 +127,4 @@ You can easily edit the existing resource file to customize the cursor depending
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).

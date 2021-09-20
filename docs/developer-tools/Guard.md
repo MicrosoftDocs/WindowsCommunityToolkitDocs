@@ -120,7 +120,7 @@ There are dozens of different APIs and overloads in the `Guard` class, here are 
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Diagnostics/Test_Guard.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.Shared/Diagnostics/Test_Guard.cs)
 
 ## Requirements
 
@@ -133,4 +133,4 @@ The Guard class supports .NET Standard
 
 ## API
 
-- [Guard source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Diagnostics)
+- [Guard source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Diagnostics)

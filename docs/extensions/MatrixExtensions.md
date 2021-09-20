@@ -35,7 +35,7 @@ The [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.matrixextensions) 
 
 ## API Source Code
 
-- [MatrixExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/Media/MatrixExtensions.cs)
+- [MatrixExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/MatrixExtensions.cs)
 
 ## Related Topics
 

@@ -52,11 +52,11 @@ The [ScrollHeader](/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheader) c
 
 ## Sample Project
 
-[ScrollHeader Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ScrollHeader Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[ScrollHeader XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml) is the XAML template used in the toolkit for the default styling.
+[ScrollHeader XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader/ScrollHeader.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -67,4 +67,4 @@ The [ScrollHeader](/dotnet/api/microsoft.toolkit.uwp.ui.controls.scrollheader) c
 
 ## API
 
-* [ScrollHeader source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader)
+* [ScrollHeader source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/ScrollHeader)

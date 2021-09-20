@@ -52,12 +52,12 @@ To help with back navigation, The ListDetailsView can handle back button visibil
 
 ## Sample Project
 
-[ListDetailsView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ListDetailsView). You can [see this in action](uwpct://Controls?sample=ListDetailsView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ListDetailsView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ListDetailsView). You can [see this in action](uwpct://Controls?sample=ListDetailsView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[ListDetailsView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView/ListDetailsView.xaml) is the XAML template used in the toolkit for the default styling.
+[ListDetailsView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView/ListDetailsView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## API
 
-- [ListDetailsView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView)
+- [ListDetailsView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/ListDetailsView)

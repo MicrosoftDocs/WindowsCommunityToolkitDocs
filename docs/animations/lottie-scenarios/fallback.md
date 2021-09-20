@@ -35,7 +35,7 @@ In the example below, we use an Image as fallback for the Lottie animation:
 
 ## Resources
 
-* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.0.0/samples/LottieSamples/Scenarios/FallbackPage.xaml) for sample: handling failure and down-level
+* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.1.0/samples/LottieSamples/Scenarios/FallbackPage.xaml) for sample: handling failure and down-level
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [FallbackContent](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.fallbackcontent) property
 * [Help + feedback](https://github.com/windows-toolkit/Lottie-Windows/issues)

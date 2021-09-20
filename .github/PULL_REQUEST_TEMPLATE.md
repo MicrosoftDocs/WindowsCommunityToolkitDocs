@@ -21,8 +21,8 @@ Documentation Links
 Please check if your PR fulfills the following requirements:
 
 - [ ] Correctly picked the right branch to base the change off (`dev` for new features, `master` for typos/improvements)
-- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/rel/7.0.0/docs/.template.md)
-- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/rel/7.0.0/docs/toc.md)
+- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/.template.md)
+- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md)
 - [ ] Ran against a spell and grammar checker 
 - [ ] Contains **NO** breaking changes
 

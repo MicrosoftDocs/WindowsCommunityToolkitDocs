@@ -56,7 +56,7 @@ Dim redColor As Windows.UI.Color = "Red".ToColor()
 
 ## Sample Code
 
-You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Helpers/Test_ColorHelper.cs)
+You can find more examples in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.UWP/Helpers/Test_ColorHelper.cs)
 
 ## Requirements
 
@@ -67,4 +67,4 @@ You can find more examples in our [unit tests](https://github.com/windows-toolki
 
 ## API
 
-* [Color Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs)
+* [Color Helper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/ColorHelper.cs)

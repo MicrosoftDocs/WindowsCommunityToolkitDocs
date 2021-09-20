@@ -45,7 +45,7 @@ If you're developing a non-UWP C# app for Windows, the Windows Community Toolkit
 
 ## API
 
-* [Notifications source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.Notifications)
+* [Notifications source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.Notifications)
 
 ## Related Topics
 
