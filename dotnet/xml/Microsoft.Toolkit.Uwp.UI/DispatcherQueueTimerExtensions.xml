@@ -53,9 +53,9 @@
         <remarks>To be added.</remarks>
         <example>
           <code>
-             private DispatcherQueueTimer _typeTimer = new DispatcherQueueTimer();
-            
-             _typeTimer.Debounce(async () =&gt;
+			 private DispatcherQueueTimer _typeTimer = DispatcherQueue.GetForCurrentThread().CreateTimer();
+
+			 _typeTimer.Debounce(async () =&gt;
                  {
                      // Only executes this code after 0.3 seconds have elapsed since last trigger.
                  }, TimeSpan.FromSeconds(0.3));
