@@ -74,11 +74,11 @@ This is an example using the `FadeHeaderBehavior` the header will fade in and ou
 
 ## Sample Project
 
-[ScrollHeader](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ScrollHeader](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ScrollHeader). You can [see this in action](uwpct://Controls?sample=ScrollHeader) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Source Code
 
-- [Header behaviors source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Headers)
+- [Header behaviors source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Headers)
 
 ## Related Topics
 

@@ -109,7 +109,7 @@ A collection of custom visual [State Triggers](/uwp/api/windows.ui.xaml.statetri
 ## Sample Project
 
 <!-- Link to the sample page in the Windows Community Toolkit Sample App -->
-[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can see this in action in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Triggers sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Triggers). You can see this in action in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -120,4 +120,4 @@ A collection of custom visual [State Triggers](/uwp/api/windows.ui.xaml.statetri
 
 ## API
 
-* [Triggers source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Triggers)
+* [Triggers source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Triggers)

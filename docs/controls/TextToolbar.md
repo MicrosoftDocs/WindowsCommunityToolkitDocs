@@ -53,13 +53,13 @@ When you create the Class, you will need to override the `DefaultButtons` Proper
 If you want to use a Common Button Template, such as Bold, Italics, etc. You can get those by Instantiating a `CommonButtons` Instance in your Formatter Class, however, you will need to implement the **ButtonActions** Class, and Instantiate it in your Formatter's `ButtonActions` property, or replace the `Action`/`Shift Action` Property on each button you use.
 
 _See the MarkDownFormatter Class for reference on how to create a Formatter:_
-[MarkDownFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Formats/MarkDown)
+[MarkDownFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Formats/MarkDown)
 
 _See the Sample Formatter Class from the Sample App:_
-[SampleFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar/SampleFormatter.cs)
+[SampleFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar/SampleFormatter.cs)
 
 _Available CommonButtons:_
-[CommonButton Definitions](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/Common)
+[CommonButton Definitions](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/Common)
 
 ## Examples
 
@@ -111,7 +111,7 @@ Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 
 ## Sample Project
 
-[TextToolbar Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[TextToolbar Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar). You can [see this in action](uwpct://Controls?sample=TextToolbar) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -122,4 +122,4 @@ Toolbar.CustomButtons.Add(New ToolbarSeparator With {.Position = 2})
 
 ## API
 
-* [TextToolbar source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar)
+* [TextToolbar source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar)

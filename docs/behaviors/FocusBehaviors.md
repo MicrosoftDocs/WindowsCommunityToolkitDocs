@@ -30,11 +30,11 @@ In this example using the `AutoFocusBehavior` the button will automatically rece
 
 ## Sample Project
 
-[Focus behavior sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusBehavior). You can [see this in action](uwpct://Helpers?sample=FocusBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Focus behavior sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/FocusBehavior). You can [see this in action](uwpct://Helpers?sample=FocusBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Source Code
 
-- [Focus behaviors source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Focus)
+- [Focus behaviors source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Focus)
 
 ## Related Topics
 

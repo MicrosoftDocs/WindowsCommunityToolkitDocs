@@ -53,11 +53,11 @@ DataGrid control supports input validation through **INotifyDataErrorInfo** in y
 
 ![Sample UI with INotifyDataErrorInfo](../../resources/images/Controls/DataGrid/validation.png)
 
-See [DataGrid Sample](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid) for an example of how to handle input validation in the DataGrid control.
+See [DataGrid Sample](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid) for an example of how to handle input validation in the DataGrid control.
 
 ## See Also
 
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control through UI formatting options](styling_formatting_options.md)
 * [Keyboard navigation and selection](keyboard_navigation_selection.md)
-* [DataGrid Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)
+* [DataGrid Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)

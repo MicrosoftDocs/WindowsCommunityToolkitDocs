@@ -53,4 +53,4 @@ The Array Extensions supports .NET Standard
 
 ## API
 
-* [ArrayExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)
+* [ArrayExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/ArrayExtensions.cs)

@@ -152,7 +152,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Offset Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Offset). You can [see this in action](uwpct://Animations?sample=Offset) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Offset Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Offset). You can [see this in action](uwpct://Animations?sample=Offset) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -163,7 +163,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Offset source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/OffsetAnimation.cs)
+- [Offset source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/OffsetAnimation.cs)
 
 ## Related Topics
 

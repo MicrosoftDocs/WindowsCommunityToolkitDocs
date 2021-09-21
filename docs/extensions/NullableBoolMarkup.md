@@ -49,7 +49,7 @@ The [NullableBool Markup Extension](/dotnet/api/microsoft.toolkit.uwp.ui.extensi
 
 ## API Source Code
 
-- [NullableBool source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/NullableBool.cs)
+- [NullableBool source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Markup/NullableBool.cs)
 
 ## Related Topics
 

@@ -134,7 +134,7 @@ PeopleListView.ItemsSource = collection
 
 ## Sample Project
 
-[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Incremental Loading Collection Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Incremental%20Loading%20Collection). You can [see this in action](uwpct://Helpers?sample=Incremental%20Loading%20Collection) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -145,4 +145,4 @@ PeopleListView.ItemsSource = collection
 
 ## API
 
-* [IncrementalLoadingCollection source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)
+* [IncrementalLoadingCollection source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp/IncrementalLoadingCollection)

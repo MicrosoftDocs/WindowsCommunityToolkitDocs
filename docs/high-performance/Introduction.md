@@ -38,7 +38,7 @@ Follow these steps to install the High Performance package:
     using Microsoft.Toolkit.HighPerformance;
     ```
 
-4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared) for the project.
+4. If you want so see some code samples, you can either read through the other docs pages for the High Performance package, or have a look at the various [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests/UnitTests.HighPerformance.Shared) for the project.
 
 ## When should I use this package?
 

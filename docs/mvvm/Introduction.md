@@ -37,7 +37,7 @@ To install the package from within Visual Studio:
     Imports Microsoft.Toolkit.Mvvm
     ```
 
-3. Code samples are available in the other docs pages for the MVVM Toolkit, and in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm) for the project.
+3. Code samples are available in the other docs pages for the MVVM Toolkit, and in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests/UnitTests.Shared/Mvvm) for the project.
 
 ## When should I use this package?
 
@@ -79,4 +79,4 @@ This package aims to offer as much flexibility as possible, so developers are fr
 ## Additional resources
 
 - Check out the [sample app](https://github.com/windows-toolkit/MVVM-Samples) (for multiple UI frameworks) to see the MVVM Toolkit in action.
-- You can also find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm).
+- You can also find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.Shared/Mvvm).
