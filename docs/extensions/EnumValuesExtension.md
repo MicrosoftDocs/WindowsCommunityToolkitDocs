@@ -50,6 +50,5 @@ public Animal SelectedAnimal
     }
 }
 ```
-&nbsp;
 
 You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).
