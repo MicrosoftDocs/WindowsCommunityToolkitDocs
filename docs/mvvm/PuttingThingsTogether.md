@@ -454,6 +454,10 @@ The last missing piece is the UI for the post widget. As before, we've removed a
 
 Here we just have a header, with a `TextBlock` and an `ImageEx` control binding their `Text` and `Source` properties to the respective properties in our `Post` model, and a simple `TextBlock` inside a `ScrollViewer` that is used to display the (sample) content of the selected post.
 
+## Sample Application
+
+Sample application available [here](https://aka.ms/mvvmtoolkit/samples).
+
 ## Good to go! 🚀
 
 We've now built all our viewmodels, the necessary services, and the UI for our widgets - our simple Reddit browser is completed! This was just meant to be an example of how to build an app following the MVVM pattern and using the APIs from the MVVM Toolkit.
