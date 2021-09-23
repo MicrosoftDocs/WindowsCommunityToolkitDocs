@@ -27,4 +27,28 @@ In this example we're just relying on the default `ComboBox` item template, that
 
 ## Examples
 
+Binding to an enum property can be accomplished like so:
+
+```xaml
+<ComboBox
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+    xmlns:enums="using:MyApplication.Enums"
+    ItemsSource="{ui:EnumValues Type=enums:Animal}"
+    SelectedItem="{x:Bind SelectedAnimal, Mode=OneWay}" />
+```
+
+```csharp
+private Animal selectedAnimal = Animal.Dog;
+
+public Animal SelectedAnimal
+{
+    get => selectedAnimal;
+    set
+    {
+        selectedAnimal = value;
+        OnPropertyChanged(nameof(SelectedAnimal));
+    }
+}
+```
+
 You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).
