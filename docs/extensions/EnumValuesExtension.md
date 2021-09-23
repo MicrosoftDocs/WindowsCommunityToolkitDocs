@@ -34,7 +34,7 @@ Binding to an enum property can be accomplished like so:
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     xmlns:enums="using:MyApplication.Enums"
     ItemsSource="{ui:EnumValues Type=enums:Animal}"
-    SelectedItem="{x:Bind SelectedAnimal}" />
+    SelectedItem="{x:Bind SelectedAnimal, Mode=OneWay}" />
 ```
 
 ```csharp
