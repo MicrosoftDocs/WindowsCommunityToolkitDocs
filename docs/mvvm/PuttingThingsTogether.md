@@ -456,7 +456,7 @@ Here we just have a header, with a `TextBlock` and an `ImageEx` control binding 
 
 ## Sample Application
 
-Sample application available [here](https://aka.ms/mvvmtoolkit).
+Sample application available [here](https://aka.ms/mvvmtoolkit/samples).
 
 ## Good to go! 🚀
 
