@@ -28,7 +28,7 @@ The [BackdropInvertBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinv
 
 ## Sample Project
 
-[BackdropInvertBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropInvertBrush). You can [see this in action](uwpct://Brushes?sample=BackdropInvertBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[BackdropInvertBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackdropInvertBrush). You can [see this in action](uwpct://Brushes?sample=BackdropInvertBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -39,7 +39,7 @@ The [BackdropInvertBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropinv
 
 ## API
 
-* [BackdropInvertBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropInvertBrush.cs)
+* [BackdropInvertBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/BackdropInvertBrush.cs)
 
 ## Related Topics
 

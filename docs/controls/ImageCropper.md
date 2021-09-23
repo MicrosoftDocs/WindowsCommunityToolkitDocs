@@ -121,11 +121,11 @@ ImageCropper.AspectRatio = Nothing
 
 ## Sample Project
 
-[ImageCropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCropper). You can [see this in action](uwpct://Controls?sample=ImageCropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ImageCropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ImageCropper). You can [see this in action](uwpct://Controls?sample=ImageCropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[ImageCropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
+[ImageCropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -136,4 +136,4 @@ ImageCropper.AspectRatio = Nothing
 
 ## API
 
-* [ImageCropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper)
+* [ImageCropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper)

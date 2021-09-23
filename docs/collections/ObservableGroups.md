@@ -106,7 +106,7 @@ It extends [INotifyPropertyChanged](/dotnet/api/system.componentmodel.inotifypro
 
 ## Sample Project
 
-[Observable group Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ObservableGroup).
+[Observable group Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ObservableGroup).
 
 You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
@@ -119,7 +119,7 @@ You can [see this in action](uwpct://Helpers?sample=ObservableGroup) in the [Win
 
 ## API
 
-- [Observable group source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit/Collections)
+- [Observable group source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Collections)
 
 ## Related Topics
 

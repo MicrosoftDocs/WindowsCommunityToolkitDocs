@@ -40,4 +40,4 @@ Add this behavior to your application's main page. It only needs to be added to 
 
 ## API
 
-* [MockProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Providers/MockProviderBehavior.cs)
+* [MockProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.1.0/Microsoft.Toolkit.Graph.Controls/Providers/MockProviderBehavior.cs)

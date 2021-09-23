@@ -69,7 +69,7 @@ Brush brush =
 
 ## Sample Project
 
-[PipelineBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PipelineBrush). You can [see this in action](uwpct://Brushes?sample=PipelineBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[PipelineBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PipelineBrush). You can [see this in action](uwpct://Brushes?sample=PipelineBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -80,8 +80,8 @@ Brush brush =
 
 ## API
 
-* [PipelineBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/PipelineBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [PipelineBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/PipelineBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 

@@ -67,11 +67,11 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 
 ## Sample Project
 
-[Carousel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Carousel). You can [see this in action](uwpct://Controls?sample=Carousel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Carousel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Carousel). You can [see this in action](uwpct://Controls?sample=Carousel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Carousel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml) is the XAML template used in the toolkit for the default styling.
+[Carousel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -82,4 +82,4 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 
 ## API
 
-* [Carousel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Carousel)
+* [Carousel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Carousel)

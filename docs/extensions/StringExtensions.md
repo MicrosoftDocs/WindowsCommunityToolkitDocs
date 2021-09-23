@@ -40,4 +40,4 @@ bool isvalid = str.IsDecimal();  //Returns false
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).

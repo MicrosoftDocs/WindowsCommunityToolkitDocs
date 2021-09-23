@@ -52,7 +52,7 @@ Since the [AutoPlay](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.au
 
 ## Resources
 
-* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.0.0/samples/LottieSamples/Scenarios/JsonPage.xaml) for sample: getting started with a JSON file
+* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.1.0/samples/LottieSamples/Scenarios/JsonPage.xaml) for sample: getting started with a JSON file
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [LottieVisualSource](/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) API reference
 * [Lottie Viewer application](https://aka.ms/lottieviewer) for previewing JSON files

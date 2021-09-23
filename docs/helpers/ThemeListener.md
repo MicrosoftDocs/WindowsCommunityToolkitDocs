@@ -54,7 +54,7 @@ End Sub
 
 ## Sample Project
 
-[Theme Listener Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ThemeListener/ThemeListenerPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=ThemeListener) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Theme Listener Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ThemeListener/ThemeListenerPage.xaml.cs). You can [see this in action](uwpct://Helpers?sample=ThemeListener) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -65,4 +65,4 @@ End Sub
 
 ## API
 
-* [Theme Listener source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Helpers/ThemeListener.cs)
+* [Theme Listener source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Helpers/ThemeListener.cs)

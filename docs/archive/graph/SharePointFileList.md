@@ -33,7 +33,7 @@ The [SharePointFileList Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.g
 | -- | -- | -- |
 | RequiredDelegatedPermissions | String[] | Gets required delegated permissions for Graph API access |
 | DriveUrl | String | Full URL of the Drive being displayed |
-| DetailPane | [DetailPaneDisplayMode](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/SharePointFileList/DetailPaneDisplayMode.cs) | Determines whether file details are displayed, when a file is selected |
+| DetailPane | [DetailPaneDisplayMode](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/SharePointFileList/DetailPaneDisplayMode.cs) | Determines whether file details are displayed, when a file is selected |
 | PageSize | Int | Page size of each request |
 | ShareLinkCopiedMessage | String | The message when share link copied |
 | AllFilesMessage | String | The label of All Files |
@@ -74,11 +74,11 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[SharePointFileList Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SharePointFileList). You can [see this in action](uwpct://Controls?sample=SharePointFileList) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[SharePointFileList Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SharePointFileList). You can [see this in action](uwpct://Controls?sample=SharePointFileList) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[SharePointFileList XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/SharePointFileList/SharePointFileList.xaml) is the XAML template used in the toolkit for the default styling.
+[SharePointFileList XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/SharePointFileList/SharePointFileList.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

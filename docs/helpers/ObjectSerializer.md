@@ -108,7 +108,7 @@ namespace Contoso.Helpers
 
 ## API
 
-* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
+* [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
 
 ## Related topics
 

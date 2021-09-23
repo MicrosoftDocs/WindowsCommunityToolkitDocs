@@ -60,4 +60,4 @@ and switching it like that:
 
 ## API
 
-* [BindableValueHolder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/Helpers/BindableValueHolder.cs)
+* [BindableValueHolder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Helpers/BindableValueHolder.cs)

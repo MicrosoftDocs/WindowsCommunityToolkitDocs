@@ -51,8 +51,8 @@ Add this behavior to your application's main page. It only needs to be added to 
 
 ## API
 
-* [InteractiveProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.0.0/Microsoft.Toolkit.Graph.Controls/Providers/InteractiveProviderBehavior.cs)
-* [InteractiveProviderBehavior usage in XAML Islands Sample](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.0.0/Samples/XAML%20Islands/WPF-Core-GraphApp/MainWindow.xaml)
+* [InteractiveProviderBehavior source code](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.1.0/Microsoft.Toolkit.Graph.Controls/Providers/InteractiveProviderBehavior.cs)
+* [InteractiveProviderBehavior usage in XAML Islands Sample](https://github.com/windows-toolkit/Graph-Controls/blob/rel/7.1.0/Samples/XAML%20Islands/WPF-Core-GraphApp/MainWindow.xaml)
 
 ## Related Topics
 

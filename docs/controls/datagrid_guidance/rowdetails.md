@@ -96,4 +96,4 @@ Set the **AreRowDetailsFrozen** property to true.
 * [Add a DataGrid control to a page](datagrid_basics.md)
 * [Customize the DataGrid control using styling and formatting options](styling_formatting_options.md)
 * [Sizing options in the DataGrid control](sizing_options.md)
-* [DataGrid Sample](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
+* [DataGrid Sample](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).

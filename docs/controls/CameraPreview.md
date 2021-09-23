@@ -119,7 +119,7 @@ if(availableFrameSourceGroups != null)
 
 ## Sample Project
 
-[CameraPreview Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[CameraPreview Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/CameraPreview). You can [see this in action](uwpct://Controls?sample=CameraPreview) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -130,4 +130,4 @@ if(availableFrameSourceGroups != null)
 
 ## API
 
-* [CameraPreview source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/CameraPreview)
+* [CameraPreview source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/CameraPreview)

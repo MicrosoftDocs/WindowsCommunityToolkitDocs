@@ -11,6 +11,17 @@ The [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensio
 
 > **Platform APIs:** [`ListViewExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.listviewextensions), [`ItemContainerStretchDirection`](/dotnet/api/microsoft.toolkit.uwp.ui.ItemContainerStretchDirection)
 
+> [!div class="nextstepaction"]
+> [Try it in the sample app](uwpct://Extensions?sample=ListViewExtensions)
+
+## ListViewBase Extensions
+
+- [AlternateColor](#alternatecolor)
+- [AlternateItemTemplate](#alternateitemtemplate)
+- [Command](#command)
+- [StretchItemContainerDirection](#stretchitemcontainerdirection)
+- [SmoothScrollIntoView](#smoothscrollintoview)
+
 ## AlternateColor
 
 The `AlternateColor` property provides a way to assign a background color to every other item.
@@ -96,6 +107,109 @@ Here is how this property can be used from XAML:
     ItemsSource="{x:Bind MainViewModel.Items, Mode=OneWay}" />
 ```
 
-## Examples
+## SmoothScrollIntoView
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
+Use SmoothScrollIntoView helps to scroll the item into the view with animation. Specify the ItemPosition property to align the item.
+
+### Syntax
+
+```csharp
+// Scrolling with index
+await MyGridView.SmoothScrollIntoViewWithIndexAsync(index: int, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
+
+// Scrolling with item
+await MyGridView.SmoothScrollIntoViewWithItemAsync(item: object, itemPlacement: ItemPlacement, disableAnimation: bool, scrollIfVisibile: bool, additionalHorizontalOffset: int, additionalVerticalOffset: int);
+```
+
+```vb
+' Scrolling with index
+Await MyGridView.SmoothScrollIntoViewWithItemAsync(index:=Integer, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
+
+' Scrolling with item
+Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=ItemPlacement.Bottom, disableAnimation:=Boolean, scrollIfVisibile:=Boolean, additionalHorizontalOffset:=Integer, additionalVerticalOffset:=Integer)
+```
+
+### Sample Output
+
+![SmoothScrollIntoView Helper](../resources/images/Extensions/SmoothScrollIntoView.gif)
+
+### Methods
+
+| Methods | Return Type | Description |
+| -- | -- | -- |
+| SmoothScrollIntoViewWithIndexAsync(int, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With index number |
+| SmoothScrollIntoViewWithItemAsync(object, ScrollItemPlacement, bool, bool, int, int) | Task | Smooth scroll item into view With item object |
+
+### Method params
+
+| Properties | Type | Description |
+|------------|------|-------------|
+| intex      | int  | Intex of the item to be scrolled. Index can be negative |
+| item      | int  | Intex of the item to be scrolled |
+| itemPosition | ScrollItemPlacement | Specify the position of the Item after scrolling |
+| disableAnimation | bool | To disable the scrolling animation |
+| scrollIfVisibile | bool | Set `true` to scroll even if the scroll to item is visible so that the item will be aligned depend upon `itemPosition` |
+| additionalHorizontalOffset | bool | Give addition horizontal offset |
+| additionalVerticalOffset | bool | Give addition vertical offset |
+
+### ItemPosition
+
+| ScrollItemPlacement | Description |
+|--------------|-------------|
+| Default | If visible then it will not scroll, if not then item will be aligned to the nearest edge |
+| Left | Aligned left |
+| Top | Aligned top |
+| Center | Aligned center |
+| Right | Aligned right |
+| Bottom | Aligned bottom |
+
+### Examples
+
+- We can use this extension to make the selected item always centered.
+
+    **Sample Code**
+
+    ```xaml
+    <ListView ItemsSource="{x:Bind itemSources}" SelectionChanged="ListView_SelectionChanged">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <!-- Your Template -->
+            </DataTemplate>
+        </ListView.ItemTemplate>
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <StackPanel Orientation="Horizontal"/>
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+    </ListView>
+    ```
+
+    ```csharp
+    private async void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        var listView = (sender as ListView);
+        await listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, false, true);
+    }
+    ```
+
+    ```vb
+    Private Async Sub ListView_SelectionChanged(ByVal sender As Object, ByVal e As SelectionChangedEventArgs)
+        Dim listView = (TryCast(sender, ListView))
+        Await listView.SmoothScrollIntoViewWithIndexAsync(listView.SelectedIndex, ScrollItemPlacement.Center, False, True)
+    End Sub
+    ```
+
+    **Sample Output**
+
+    ![Use Case 1 Output](../resources/images/Extensions/SmoothScrollIntoView-CenterSelected.gif)
+
+## Requirements
+
+| Device family | Universal, 10.0.16299.0 or higher |
+| --- | --- |
+| Namespace | Microsoft.Toolkit.Uwp.UI.Extensions |
+| NuGet package | [Microsoft.Toolkit.Uwp.UI](https://www.nuget.org/packages/Microsoft.Toolkit.Uwp.UI/) |
+
+## API
+
+- [ListViewExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/ListViewBase)

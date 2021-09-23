@@ -174,11 +174,11 @@ There are several SlidableListItem properties that have no effect when the Slida
 
 ## Sample Code
 
-[SlidableListItem Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SlidableListItem). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[SlidableListItem Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SlidableListItem). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Default Template
 
-[SlidableListItem XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xaml) is the XAML template used in the toolkit for the default styling.
+[SlidableListItem XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/SlidableListItem/SlidableListItem.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

@@ -67,11 +67,11 @@ The following sample demonstrates how to add InfiniteCanvas Control
 
 ## Sample Project
 
-[InfiniteCanvas Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can [see this in action](uwpct://Controls?sample=InfiniteCanvas) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[InfiniteCanvas Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/InfiniteCanvas). You can [see this in action](uwpct://Controls?sample=InfiniteCanvas) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[InfiniteCanvas XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xaml) is the XAML template used in the toolkit for the default styling.
+[InfiniteCanvas XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -82,4 +82,4 @@ The following sample demonstrates how to add InfiniteCanvas Control
 
 ## API
 
-* [InfiniteCanvas source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/InfiniteCanvas)
+* [InfiniteCanvas source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/InfiniteCanvas)

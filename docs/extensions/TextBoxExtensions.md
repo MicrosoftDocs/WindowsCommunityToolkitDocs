@@ -152,4 +152,4 @@ Here is an example of the visual result when scrolling on a Surface Dial over a 
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).

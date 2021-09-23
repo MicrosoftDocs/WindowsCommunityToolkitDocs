@@ -143,7 +143,7 @@ There are 3 ways to use this Control:
 
 ## Sample Project
 
-[AdaptiveGridView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[AdaptiveGridView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdaptiveGridView). You can [see this in action](uwpct://Controls?sample=AdaptiveGridView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -154,7 +154,7 @@ There are 3 ways to use this Control:
 
 ## API
 
-- [AdaptiveGridView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
+- [AdaptiveGridView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/AdaptiveGridView)
 
 ## Related Topics
 

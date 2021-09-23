@@ -48,11 +48,11 @@ The [TileControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tilecontrol) is 
 
 ## Sample Project
 
-[TileControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[TileControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TileControl). You can [see this in action](uwpct://Controls?sample=TileControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[TileControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml) is the XAML template used in the toolkit for the default styling.
+[TileControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -63,4 +63,4 @@ The [TileControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tilecontrol) is 
 
 ## API
 
-* [TileControl source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TileControl)
+* [TileControl source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TileControl)

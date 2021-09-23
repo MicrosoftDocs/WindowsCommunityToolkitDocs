@@ -43,11 +43,11 @@ The [Rotator Tile Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotator
 
 ## Sample Project
 
-[RotatorTile Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can [see this in action](uwpct://Controls?sample=RotatorTile) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[RotatorTile Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/RotatorTile). You can [see this in action](uwpct://Controls?sample=RotatorTile) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[RotatorTile XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml) is the XAML template used in the toolkit for the default styling.
+[RotatorTile XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -58,4 +58,4 @@ The [Rotator Tile Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotator
 
 ## API
 
-* [RotatorTile source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile)
+* [RotatorTile source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile)

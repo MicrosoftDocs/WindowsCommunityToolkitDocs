@@ -57,11 +57,11 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[PeoplePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[PeoplePicker Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/PeoplePicker). You can [see this in action](uwpct://Controls?sample=PeoplePicker) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[PeoplePicker XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PeoplePicker/PeoplePicker.xaml) is the XAML template used in the toolkit for the default styling.
+[PeoplePicker XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/PeoplePicker/PeoplePicker.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

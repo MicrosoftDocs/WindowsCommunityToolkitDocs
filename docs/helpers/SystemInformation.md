@@ -27,6 +27,7 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 | DeviceModel | string | Gets the model of the device as a `string`. The value will be empty if the device model couldn't be determined (ex: when running in a virtual machine). |
 | FirstUseTime | DateTime | Gets the DateTime (in UTC) that the app as first used. |
 | FirstVersionInstalled | [PackageVersion](/uwp/api/Windows.ApplicationModel.PackageVersion) | Gets the first version of the app that was installed. |
+| PreviousVersionInstalled | [PackageVersion](/uwp/api/Windows.ApplicationModel.PackageVersion) | Gets the previous version of the app that was installed. |
 | Instance | SystemInformation | Gets public singleton property. |
 | IsFirstRun | bool | Gets a value indicating whether the app is being used for the first time since it was installed. |
 | IsAppUpdated | bool | Gets a value indicating whether the app is being used for the first time since being upgraded from an older version. |
@@ -50,7 +51,7 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 
 ## Sample Project
 
-[System Information Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[System Information Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -61,4 +62,4 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 
 ## API
 
-* [SystemInformation source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/SystemInformation.cs)
+* [SystemInformation source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/SystemInformation.cs)

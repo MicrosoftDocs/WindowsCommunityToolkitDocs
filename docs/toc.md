@@ -127,6 +127,8 @@
 
 ### [ColorPickerButton](controls/ColorPicker.md)
 
+### [ConstrainedBox](controls/ConstrainedBox.md)
+
 ### DataGrid
 
 #### [Introduction](controls/DataGrid.md)
@@ -179,6 +181,8 @@
 
 ### [MasterDetailsView](controls/MasterDetailsView.md)
 
+### [MetadataControl](controls/MetadataControl.md)
+
 ### [OrbitView](controls/OrbitView.md)
 
 ### [RadialGauge](controls/RadialGauge.md)
@@ -186,6 +190,8 @@
 ### [RangeSelector](controls/RangeSelector.md)
 
 ### [RemoteDevicePicker](controls/RemoteDevicePicker.md)
+
+### [RichSuggestBox](controls/RichSuggestBox.md)
 
 ### [RotatorTile](controls/RotatorTile.md)
 
@@ -281,6 +287,8 @@
 
 ### [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
 
+### [Attached Shadows](helpers/AttachedShadows.md)
+
 ### [BackgroundTaskHelper](helpers/BackgroundTaskHelper.md)
 
 ### [BindableValueHolder](helpers/BindableValueHolder.md)
@@ -295,9 +303,13 @@
 
 ### [DeepLinkParser](helpers/DeepLinkParsers.md)
 
+### [AutoSelect Behavior](behaviors/AutoSelectBehavior.md)
+
 ### [Focus Behaviors](behaviors/FocusBehaviors.md)
 
 ### [Header Behaviors](behaviors/HeaderBehaviors.md)
+
+### [Key Down Trigger Behavior](behaviors/KeyDownTriggerBehavior.md)
 
 ### [ImageCache](helpers/ImageCache.md)
 

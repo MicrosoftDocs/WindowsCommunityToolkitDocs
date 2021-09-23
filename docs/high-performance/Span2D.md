@@ -113,4 +113,4 @@ The [`ReadOnlySpan2D<T>`](/dotnet/api/microsoft.toolkit.highperformance.readonly
 
 ## Sample Code
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.HighPerformance.Shared).

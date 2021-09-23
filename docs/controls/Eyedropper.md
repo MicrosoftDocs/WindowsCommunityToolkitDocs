@@ -107,11 +107,11 @@ Dim color = Await eyedropper.Open()
 
 ## Sample Project
 
-[Eyedropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Eyedropper Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Eyedropper). You can [see this in action](uwpct://Controls?sample=Eyedropper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[Eyedropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
+[Eyedropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper/Eyedropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -122,4 +122,4 @@ Dim color = Await eyedropper.Open()
 
 ## API
 
-- [Eyedropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper)
+- [Eyedropper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/Eyedropper)

@@ -212,16 +212,16 @@ block.SetRenderer<InheritedMarkdownRenderer>();
 
 This will likely require intimate knowledge of the implementation of the `MarkdownRenderer`, take a look at the following:
 
-- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
-- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
+- [MarkdownRenderer and Helpers](https://github.com/windows-toolkit/WindowsCommunityToolit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock/Render)
+- [Sample App custom markdown renderer](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/Controls/SampleAppMarkdownRenderer)
 
 ## Sample Project
 
-[MarkdownTextBlock Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[MarkdownTextBlock Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/MarkdownTextBlock). You can [see this in action](uwpct://Controls?sample=MarkdownTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[MarkdownTextBlock XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
+[MarkdownTextBlock XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/MarkdownTextBlock/MarkdownTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -232,7 +232,7 @@ This will likely require intimate knowledge of the implementation of the `Markdo
 
 ## API
 
-- [MarkdownTextBlock source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
+- [MarkdownTextBlock source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/MarkdownTextBlock)
 
 ## Related Topics
 

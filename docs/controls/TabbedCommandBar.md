@@ -224,11 +224,11 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ## Sample Project
 
-[TabbedCommandBar Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabbedCommandBar). You can [see this in action](uwpct://Controls?sample=TabbedCommandBar) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[TabbedCommandBar Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabbedCommandBar). You can [see this in action](uwpct://Controls?sample=TabbedCommandBar) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[TabbedCommandBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar/TabbedCommandBar.xaml) is the XAML template used in the toolkit for the default styling.
+[TabbedCommandBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar/TabbedCommandBar.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -239,7 +239,7 @@ The following setup demos contextual tabs, and binding to their visibility:
 
 ## API
 
-- [TabbedCommandBar source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar)
+- [TabbedCommandBar source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TabbedCommandBar)
 
 ## Related Topics
 

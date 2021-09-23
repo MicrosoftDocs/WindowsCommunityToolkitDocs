@@ -101,4 +101,4 @@ Double-tap a row group header | Expands or collapses the group.
 * [Sizing options in the DataGrid control](sizing_options.md)
 * [Group, sort and filter data using LINQ and the DataGrid control](group_sort_filter.md)
 * [Editing and input validation in the DataGrid control](editing_inputvalidation.md)
-* [DataGrid Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)
+* [DataGrid Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid)

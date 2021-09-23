@@ -216,7 +216,7 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## Sample Project
 
-[Object Storage sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Object Storage sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Object%20Storage). You can [see this in action](uwpct://Helpers?sample=Object%20Storage) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -227,6 +227,6 @@ Await helper.SaveFileAsync(keySimpleObject, o)
 
 ## API
 
-- [LocalObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
-- [RoamingObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
-- [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)
+- [LocalObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/LocalObjectStorageHelper.cs)
+- [RoamingObjectStorageHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/RoamingObjectStorageHelper.cs)
+- [IObjectSerializer source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/ObjectStorage/IObjectSerializer.cs)

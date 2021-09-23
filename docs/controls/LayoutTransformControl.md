@@ -51,7 +51,7 @@ The transformations that can be applied are one of the following:
 
 ## Sample Project
 
-[LayoutTransformControl Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[LayoutTransformControl Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LayoutTransformControl). You can [see this in action](uwpct://Controls?sample=LayoutTransformControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -62,7 +62,7 @@ The transformations that can be applied are one of the following:
 
 ## API
 
-*-* [LayoutTransformControl](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
+*-* [LayoutTransformControl](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/LayoutTransformControl)
 
 ## Related Topics
 
