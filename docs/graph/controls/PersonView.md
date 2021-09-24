@@ -11,10 +11,7 @@ dev_langs:
 
 The PersonView control is used to display a person or contact by using their photo, name, and/or email address.
 
-> Available in the `CommunityToolkit.Graph.Uwp` package.
-
-> [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
+Available in the `CommunityToolkit.Graph.Uwp` package.
 
 ## Syntax
 

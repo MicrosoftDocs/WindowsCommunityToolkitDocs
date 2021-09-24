@@ -12,10 +12,7 @@ dev_langs:
 The WindowsProvider is an authentication provider for accessing locally configured accounts on Windows.
 It extends [IProvider](./custom.md) and uses the native Windows AccountManager (WAM) APIs and AccountsSettingsPane for sign in.
 
-> Available in the `CommunityToolkit.Authentication.Uwp` package.
-
-> [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
+Available in the `CommunityToolkit.Authentication.Uwp` package.
 
 ## Prerequisite Windows Store Association in Visual Studio
 
@@ -30,7 +27,6 @@ To get valid tokens and complete sign in, the app will need to be associated wit
 > [!NOTE]
 > You must have a Windows Developer account to use the WindowsProvider in your UWP app. You can [register a Microsoft developer account](https://developer.microsoft.com/store/register) if you don't already have one.
 
-<!-- Uncomment this when AAD account support becomes available.
 ## Prerequisite Configure Client Id in Partner Center
 
 If your product integrates with Azure AD and calls APIs that request either application permissions or delegated permissions that require administrator consent, you will also need to enter your Azure AD Client ID in Partner Center:
@@ -40,17 +36,16 @@ https://partner.microsoft.com/en-us/dashboard/products/&lt;YOUR-APP-ID&gt;/admin
 This lets administrators who acquire the app for their organization grant consent for your product to act on behalf of all users in the tenant.
 
 > [!NOTE]
-> You only need to specify the client id if you need admin consent for delegated permissions from your AAD app registration. Simple authentication for public accounts does not require a client id or any additional configuration.
+> You only need to specify the client id if you need admin consent for delegated permissions from your AAD app registration, or need to support more advanced authentication scenarios like SSO. Simple authentication for consumer MSA accounts does not require a client id or any additional configuration in Azure for basic access.
 
 > [!IMPORTANT]
-> Be sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
+> Make sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
 >
-> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri`.
+> After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri` at runtime.
 >
-> You'll also want to set the toggle to true for "Allow public client flows".
+> You'll also want to set the toggle to **true** for "Allow public client flows".
 >
 > Then click "Save".
--->
 
 ## Syntax
 
@@ -64,9 +59,8 @@ using CommunityToolkit.Authentication;
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Tasks.ReadWrite" });
 ```
 
-The WindowsProvider can also be configured to disabled auto-signin or show custom content in the `AccountsSettingsPane`.
-Additional configuration for account types will be available via the `WebAccountProviderConfig` object in the future.
-Currently, only consumer MSA accounts are supported.
+The WindowsProvider can also be configured to disabled auto-login or show custom content in the `AccountsSettingsPane`.
+Configuration for specifying supported account types (such as AAD) is available via the `WebAccountProviderConfig` object.
 
 ```CSharp
 using CommunityToolkit.Authentication;
@@ -82,9 +76,11 @@ void OnSettingsCommandInvoked(IUICommand command)
     System.Diagnostics.Debug.WriteLine("AccountsSettingsPane command invoked: " + command.Id);
 }
 
-// Configure which types accounts should be available to choose from. The default is MSA, but AAD will come in the future.
-// ClientId is only required for approving admin level consent in AAD tenants.
-var webAccountProviderConfig = new WebAccountProviderConfig(WebAccountProviderType.MSA, "YOUR_CLIENT_ID_HERE");
+// Configure which types accounts should be available to choose from. The default is MSA, but AAD is also supported.
+var webAccountProviderConfig = new WebAccountProviderConfig(WebAccountProviderType.Msa);
+
+// ClientId is only required for approving admin level consent in AAD tenants or for supporting advanced authentication scenarios like SSO.
+//var webAccountProviderConfig = new WebAccountProviderConfig(WebAccountProviderType.Aad, "YOUR_CLIENT_ID_HERE");
 
 // Configure details to present in the AccountsSettingsPane, such as custom header text and links.
 var accountsSettingsPaneConfig = new AccountsSettingsPaneConfig(
