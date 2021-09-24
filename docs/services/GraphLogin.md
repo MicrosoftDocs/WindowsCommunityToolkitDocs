@@ -19,7 +19,7 @@ The GraphLogin component is a Windows Forms component that provides an easy to u
 This component wraps the Toolkit's **MicrosoftGraphService** for an easy to use Login experience.  The control then provides read-only properties about the logged on user and an instance of the **GraphServiceClient** which can be used for additional calls with the Microsoft Graph SDK.
 
 > [!IMPORTANT]
-> Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see <https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-app-registration>.
+> Before using this component, the application must be registered in the Azure AD v2 endpoint.  For more information on registering your app see [Azure AD v2.0 app](/azure/active-directory/develop/active-directory-v2-app-registration).
 
 ## Syntax
 
