@@ -1,0 +1,496 @@
+<Type Name="IMessengerExtensions" FullName="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions">
+  <TypeSignature Language="C#" Value="public static class IMessengerExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit IMessengerExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module IMessengerExtensions" />
+  <TypeSignature Language="F#" Value="type IMessengerExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extensions for the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsRegistered&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsRegistered&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient) where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsRegistered&lt;class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.IsRegistered``1(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsRegistered(Of TMessage As Class) (messenger As IMessenger, recipient As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsRegistered : CommunityToolkit.Mvvm.Messaging.IMessenger * obj -&gt; bool (requires 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.IsRegistered (messenger, recipient)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to check for the given recipient.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to check the registration.</param>
+        <param name="recipient">The target recipient to check the registration for.</param>
+        <summary>
+            Checks whether or not a given recipient has already been registered for a message.
+            </summary>
+        <returns>Whether or not <paramref name="recipient" /> has already been registered for the specified message.</returns>
+        <remarks>This method will use the default channel to check for the requested registration.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static void Register&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, CommunityToolkit.Mvvm.Messaging.IRecipient&lt;TMessage&gt; recipient) where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register&lt;class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, class CommunityToolkit.Mvvm.Messaging.IRecipient`1&lt;!!TMessage&gt; recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register``1(CommunityToolkit.Mvvm.Messaging.IMessenger,CommunityToolkit.Mvvm.Messaging.IRecipient{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Register(Of TMessage As Class) (messenger As IMessenger, recipient As IRecipient(Of TMessage))" />
+      <MemberSignature Language="F#" Value="static member Register : CommunityToolkit.Mvvm.Messaging.IMessenger * CommunityToolkit.Mvvm.Messaging.IRecipient&lt;'Message (requires 'Message : null)&gt; -&gt; unit (requires 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register (messenger, recipient)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="CommunityToolkit.Mvvm.Messaging.IRecipient&lt;TMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>This method will use the default channel to perform the requested registration.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static void Register&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;object,TMessage&gt; handler) where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register&lt;class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, class CommunityToolkit.Mvvm.Messaging.MessageHandler`2&lt;object, !!TMessage&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register``1(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object,CommunityToolkit.Mvvm.Messaging.MessageHandler{System.Object,``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Register(Of TMessage As Class) (messenger As IMessenger, recipient As Object, handler As MessageHandler(Of Object, TMessage))" />
+      <MemberSignature Language="F#" Value="static member Register : CommunityToolkit.Mvvm.Messaging.IMessenger * obj * CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;obj, 'Message (requires 'Message : null)&gt; -&gt; unit (requires 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register (messenger, recipient, handler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="handler" Type="CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;System.Object,TMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="handler">The <see cref="T:CommunityToolkit.Mvvm.Messaging.MessageHandler`2" /> to invoke when a message is received.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>This method will use the default channel to perform the requested registration.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public static void Register&lt;TMessage,TToken&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, CommunityToolkit.Mvvm.Messaging.IRecipient&lt;TMessage&gt; recipient, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register&lt;class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, class CommunityToolkit.Mvvm.Messaging.IRecipient`1&lt;!!TMessage&gt; recipient, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(CommunityToolkit.Mvvm.Messaging.IMessenger,CommunityToolkit.Mvvm.Messaging.IRecipient{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Register(Of TMessage As Class, TToken As Class) (messenger As IMessenger, recipient As IRecipient(Of TMessage), token As TToken)" />
+      <MemberSignature Language="F#" Value="static member Register : CommunityToolkit.Mvvm.Messaging.IMessenger * CommunityToolkit.Mvvm.Messaging.IRecipient&lt;'Message (requires 'Message : null)&gt; * 'oken -&gt; unit (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register (messenger, recipient, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="CommunityToolkit.Mvvm.Messaging.IRecipient&lt;TMessage&gt;" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <typeparam name="TToken">The type of token to identify what channel to use to receive messages.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="token">The token indicating what channel to use.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>This method will use the default channel to perform the requested registration.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public static void Register&lt;TMessage,TToken&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, TToken token, CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;object,TMessage&gt; handler) where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register&lt;class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, !!TToken token, class CommunityToolkit.Mvvm.Messaging.MessageHandler`2&lt;object, !!TMessage&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object,``1,CommunityToolkit.Mvvm.Messaging.MessageHandler{System.Object,``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Register(Of TMessage As Class, TToken As Class) (messenger As IMessenger, recipient As Object, token As TToken, handler As MessageHandler(Of Object, TMessage))" />
+      <MemberSignature Language="F#" Value="static member Register : CommunityToolkit.Mvvm.Messaging.IMessenger * obj * 'oken * CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;obj, 'Message (requires 'Message : null)&gt; -&gt; unit (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register (messenger, recipient, token, handler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="token" Type="TToken" />
+        <Parameter Name="handler" Type="CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;System.Object,TMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <typeparam name="TToken">The type of token to use to pick the messages to receive.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="token">A token used to determine the receiving channel to use.</param>
+        <param name="handler">The <see cref="T:CommunityToolkit.Mvvm.Messaging.MessageHandler`2" /> to invoke when a message is received.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TRecipient,TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static void Register&lt;TRecipient,TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, TRecipient recipient, CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;TRecipient,TMessage&gt; handler) where TRecipient : class where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Register&lt;class TRecipient, class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, !!TRecipient recipient, class CommunityToolkit.Mvvm.Messaging.MessageHandler`2&lt;!!TRecipient, !!TMessage&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register``2(CommunityToolkit.Mvvm.Messaging.IMessenger,``0,CommunityToolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Register(Of TRecipient As Class, TMessage As Class) (messenger As IMessenger, recipient As TRecipient, handler As MessageHandler(Of TRecipient, TMessage))" />
+      <MemberSignature Language="F#" Value="static member Register : CommunityToolkit.Mvvm.Messaging.IMessenger * 'Recipient * CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;'Recipient, 'Message (requires 'Recipient : null and 'Message : null)&gt; -&gt; unit (requires 'Recipient : null and 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Register (messenger, recipient, handler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRecipient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="TRecipient" />
+        <Parameter Name="handler" Type="CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;TRecipient,TMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRecipient">The type of recipient for the message.</typeparam>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="handler">The <see cref="T:CommunityToolkit.Mvvm.Messaging.MessageHandler`2" /> to invoke when a message is received.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>This method will use the default channel to perform the requested registration.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAll">
+      <MemberSignature Language="C#" Value="public static void RegisterAll (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAll(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub RegisterAll (messenger As IMessenger, recipient As Object)" />
+      <MemberSignature Language="F#" Value="static member RegisterAll : CommunityToolkit.Mvvm.Messaging.IMessenger * obj -&gt; unit" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll (messenger, recipient)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <summary>
+            Registers all declared message handlers for a given recipient, using the default channel.
+            </summary>
+        <remarks>See notes for <see cref="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll``1(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object,``0)" /> for more info.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAll&lt;TToken&gt;">
+      <MemberSignature Language="C#" Value="public static void RegisterAll&lt;TToken&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, TToken token) where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAll&lt;(class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll``1(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub RegisterAll(Of TToken As IEquatable(Of TToken)) (messenger As IMessenger, recipient As Object, token As TToken)" />
+      <MemberSignature Language="F#" Value="static member RegisterAll : CommunityToolkit.Mvvm.Messaging.IMessenger * obj * 'oken -&gt; unit (requires 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll (messenger, recipient, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TToken">The type of token to identify what channel to use to receive messages.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to register the recipient.</param>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="token">The token indicating what channel to use.</param>
+        <summary>
+            Registers all declared message handlers for a given recipient.
+            </summary>
+        <remarks>
+            This method will register all messages corresponding to the <see cref="T:CommunityToolkit.Mvvm.Messaging.IRecipient`1" /> interfaces
+            being implemented by <paramref name="recipient" />. If none are present, this method will do nothing.
+            Note that unlike all other extensions, this method will use reflection to find the handlers to register.
+            Once the registration is complete though, the performance will be exactly the same as with handlers
+            registered directly through any of the other generic extensions for the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> interface.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static TMessage Send&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger) where TMessage : class, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TMessage Send&lt;class .ctor TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(CommunityToolkit.Mvvm.Messaging.IMessenger)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Send(Of TMessage As {Class, New}) (messenger As IMessenger) As TMessage" />
+      <MemberSignature Language="F#" Value="static member Send : CommunityToolkit.Mvvm.Messaging.IMessenger -&gt; 'Message (requires 'Message : null and 'Message : (new : unit -&gt; 'Message))" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send messenger" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TMessage</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to send.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to send the message.</param>
+        <summary>
+            Sends a message of the specified type to all registered recipients.
+            </summary>
+        <returns>The message that has been sent.</returns>
+        <remarks>
+            This method is a shorthand for <see cref="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(CommunityToolkit.Mvvm.Messaging.IMessenger,``0)" /> when the
+            message type exposes a parameterless constructor: it will automatically create
+            a new <typeparamref name="TMessage" /> instance and send that to its recipients.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static TMessage Send&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, TMessage message) where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TMessage Send&lt;class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, !!TMessage message) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(CommunityToolkit.Mvvm.Messaging.IMessenger,``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Send(Of TMessage As Class) (messenger As IMessenger, message As TMessage) As TMessage" />
+      <MemberSignature Language="F#" Value="static member Send : CommunityToolkit.Mvvm.Messaging.IMessenger * 'Message -&gt; 'Message (requires 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send (messenger, message)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TMessage</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="message" Type="TMessage" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to send.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to send the message.</param>
+        <param name="message">The message to send.</param>
+        <summary>
+            Sends a message of the specified type to all registered recipients.
+            </summary>
+        <returns>The message that was sent (ie. <paramref name="message" />).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public static TMessage Send&lt;TMessage,TToken&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, TToken token) where TMessage : class, new() where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TMessage Send&lt;class .ctor TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send``2(CommunityToolkit.Mvvm.Messaging.IMessenger,``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Send(Of TMessage As {Class, New}, TToken As {Class, New}) (messenger As IMessenger, token As TToken) As TMessage" />
+      <MemberSignature Language="F#" Value="static member Send : CommunityToolkit.Mvvm.Messaging.IMessenger * 'oken -&gt; 'Message (requires 'Message : null and 'Message : (new : unit -&gt; 'Message) and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send (messenger, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TMessage</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to send.</typeparam>
+        <typeparam name="TToken">The type of token to identify what channel to use to send the message.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to send the message.</param>
+        <param name="token">The token indicating what channel to use.</param>
+        <summary>
+            Sends a message of the specified type to all registered recipients.
+            </summary>
+        <returns>The message that has been sen.</returns>
+        <remarks>
+            This method will automatically create a new <typeparamref name="TMessage" /> instance
+            just like <see cref="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Send``1(CommunityToolkit.Mvvm.Messaging.IMessenger)" />, and then send it to the right recipients.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister&lt;TMessage&gt;">
+      <MemberSignature Language="C#" Value="public static void Unregister&lt;TMessage&gt; (this CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient) where TMessage : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister&lt;class TMessage&gt;(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger, object recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Unregister``1(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Unregister(Of TMessage As Class) (messenger As IMessenger, recipient As Object)" />
+      <MemberSignature Language="F#" Value="static member Unregister : CommunityToolkit.Mvvm.Messaging.IMessenger * obj -&gt; unit (requires 'Message : null)" Usage="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.Unregister (messenger, recipient)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" RefType="this" />
+        <Parameter Name="recipient" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to stop receiving.</typeparam>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to unregister the recipient.</param>
+        <param name="recipient">The recipient to unregister.</param>
+        <summary>
+            Unregisters a recipient from messages of a given type.
+            </summary>
+        <remarks>
+            This method will unregister the target recipient only from the default channel.
+            If the recipient has no registered handler, this method does nothing.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

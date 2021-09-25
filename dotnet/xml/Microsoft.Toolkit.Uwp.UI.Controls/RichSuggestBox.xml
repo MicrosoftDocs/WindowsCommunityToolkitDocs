@@ -1,0 +1,1214 @@
+<Type Name="RichSuggestBox" FullName="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox">
+  <TypeSignature Language="C#" Value="public class RichSuggestBox : Windows.UI.Xaml.Controls.ItemsControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RichSuggestBox extends Windows.UI.Xaml.Controls.ItemsControl" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class RichSuggestBox&#xA;Inherits ItemsControl" />
+  <TypeSignature Language="F#" Value="type RichSuggestBox = class&#xA;    inherit ItemsControl" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Windows.UI.Xaml.Controls.ItemsControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="RichEditBox", Type=typeof(Windows.UI.Xaml.Controls.RichEditBox))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="RichEditBox", Type=typeof(Windows.UI.Xaml.Controls.RichEditBox))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="SuggestionsPopup", Type=typeof(Windows.UI.Xaml.Controls.Primitives.Popup))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="SuggestionsPopup", Type=typeof(Windows.UI.Xaml.Controls.Primitives.Popup))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="SuggestionsList", Type=typeof(Windows.UI.Xaml.Controls.ListViewBase))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="SuggestionsList", Type=typeof(Windows.UI.Xaml.Controls.ListViewBase))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="SuggestionsContainer", Type=typeof(Windows.UI.Xaml.Controls.Border))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="SuggestionsContainer", Type=typeof(Windows.UI.Xaml.Controls.Border))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="HeaderContentPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="HeaderContentPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Windows.UI.Xaml.TemplatePart(Name="DescriptionPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Windows.UI.Xaml.TemplatePart(Name="DescriptionPresenter", Type=typeof(Windows.UI.Xaml.Controls.ContentPresenter))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The RichSuggestBox control extends <see cref="T:Windows.UI.Xaml.Controls.RichEditBox" /> control that suggests and embeds custom data in a rich document.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RichSuggestBox ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddTokens">
+      <MemberSignature Language="C#" Value="public void AddTokens (System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; tokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddTokens(class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; tokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.AddTokens(System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddTokens (tokens As IEnumerable(Of RichSuggestToken))" />
+      <MemberSignature Language="F#" Value="member this.AddTokens : seq&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; -&gt; unit" Usage="richSuggestBox.AddTokens tokens" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tokens" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="tokens">The collection of tokens to be tracked.</param>
+        <summary>
+            Add tokens to be tracked against the document. Duplicate tokens will not be updated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="richSuggestBox.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clear the document and token list. This will also clear the undo/redo history.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearUndoRedoSuggestionHistory">
+      <MemberSignature Language="C#" Value="public void ClearUndoRedoSuggestionHistory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearUndoRedoSuggestionHistory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClearUndoRedoSuggestionHistory" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearUndoRedoSuggestionHistory ()" />
+      <MemberSignature Language="F#" Value="member this.ClearUndoRedoSuggestionHistory : unit -&gt; unit" Usage="richSuggestBox.ClearUndoRedoSuggestionHistory " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clear unused tokens and undo/redo history.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipboardCopyFormat">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.RichEditClipboardFormat ClipboardCopyFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Xaml.Controls.RichEditClipboardFormat ClipboardCopyFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardCopyFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClipboardCopyFormat As RichEditClipboardFormat" />
+      <MemberSignature Language="F#" Value="member this.ClipboardCopyFormat : Windows.UI.Xaml.Controls.RichEditClipboardFormat with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardCopyFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.RichEditClipboardFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that specifies whether text is copied with all formats, or as plain text only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipboardCopyFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ClipboardCopyFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ClipboardCopyFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardCopyFormatProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClipboardCopyFormatProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ClipboardCopyFormatProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardCopyFormatProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardCopyFormat" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipboardPasteFormat">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.RichEditClipboardFormat ClipboardPasteFormat { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Xaml.Controls.RichEditClipboardFormat ClipboardPasteFormat" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardPasteFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClipboardPasteFormat As RichEditClipboardFormat" />
+      <MemberSignature Language="F#" Value="member this.ClipboardPasteFormat : Windows.UI.Xaml.Controls.RichEditClipboardFormat with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardPasteFormat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.RichEditClipboardFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that specifies whether pasted text preserves all formats, or as plain text only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipboardPasteFormatProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ClipboardPasteFormatProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ClipboardPasteFormatProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardPasteFormatProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClipboardPasteFormatProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ClipboardPasteFormatProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardPasteFormatProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.ClipboardPasteFormat" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Description">
+      <MemberSignature Language="C#" Value="public object Description { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Description" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As Object" />
+      <MemberSignature Language="F#" Value="member this.Description : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Description" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets content that is shown below the control. The content should provide guidance about the input expected by the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Suggestion popup relies on the actual size of the text control to calculate its placement on the screen.
+            It is recommended to set the description using this property instead of using <see cref="P:Windows.UI.Xaml.Controls.RichEditBox.Description" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DescriptionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DescriptionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DescriptionProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DescriptionProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DescriptionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Description" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledFormattingAccelerators">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Controls.DisabledFormattingAccelerators DisabledFormattingAccelerators { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Xaml.Controls.DisabledFormattingAccelerators DisabledFormattingAccelerators" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DisabledFormattingAccelerators" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisabledFormattingAccelerators As DisabledFormattingAccelerators" />
+      <MemberSignature Language="F#" Value="member this.DisabledFormattingAccelerators : Windows.UI.Xaml.Controls.DisabledFormattingAccelerators with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DisabledFormattingAccelerators" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Controls.DisabledFormattingAccelerators</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that indicates which keyboard shortcuts for formatting are disabled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisabledFormattingAcceleratorsProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty DisabledFormattingAcceleratorsProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty DisabledFormattingAcceleratorsProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DisabledFormattingAcceleratorsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisabledFormattingAcceleratorsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DisabledFormattingAcceleratorsProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DisabledFormattingAcceleratorsProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.DisabledFormattingAccelerators" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRectFromRange">
+      <MemberSignature Language="C#" Value="public Windows.Foundation.Rect GetRectFromRange (Windows.UI.Text.ITextRange range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Windows.Foundation.Rect GetRectFromRange(class Windows.UI.Text.ITextRange range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.GetRectFromRange(Windows.UI.Text.ITextRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRectFromRange (range As ITextRange) As Rect" />
+      <MemberSignature Language="F#" Value="member this.GetRectFromRange : Windows.UI.Text.ITextRange -&gt; Windows.Foundation.Rect" Usage="richSuggestBox.GetRectFromRange range" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="Windows.UI.Text.ITextRange" />
+      </Parameters>
+      <Docs>
+        <param name="range">Text range to retrieve the bounding box from.</param>
+        <summary>
+            Retrieves the bounding rectangle that encompasses the text range
+            with position measured from the top left of the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox" /> control.
+            </summary>
+        <returns>The bounding rectangle.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Header" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content for the control's header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Suggestion popup relies on the actual size of the text control to calculate its placement on the screen.
+            It is recommended to set the header using this property instead of using <see cref="P:Windows.UI.Xaml.Controls.RichEditBox.Header" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty HeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty HeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Header" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate HeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate HeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.DataTemplate" /> used to display the content of the control's header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty HeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty HeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HeaderTemplate" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalOffset">
+      <MemberSignature Language="C#" Value="public double HorizontalOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HorizontalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.HorizontalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the distance the content has been scrolled horizontally from the underlying <see cref="T:Windows.UI.Xaml.Controls.ScrollViewer" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public void Load (string rtf, System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; tokens);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(string rtf, class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; tokens) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Load(System.String,System.Collections.Generic.IEnumerable{Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (rtf As String, tokens As IEnumerable(Of RichSuggestToken))" />
+      <MemberSignature Language="F#" Value="member this.Load : string * seq&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; -&gt; unit" Usage="richSuggestBox.Load (rtf, tokens)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rtf" Type="System.String" />
+        <Parameter Name="tokens" Type="System.Collections.Generic.IEnumerable&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="rtf">The Rich Text Format (RTF) text to be imported.</param>
+        <param name="tokens">The collection of tokens embedded in the document.</param>
+        <summary>
+            Populate the <see cref="T:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox" /> with an existing Rich Text Format (RTF) document and a collection of tokens.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="richSuggestBox.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="Paste">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.Controls.TextControlPasteEventArgs&gt; Paste;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Windows.UI.Xaml.Controls.TextControlPasteEventArgs&gt; Paste" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Event Paste As TypedEventHandler(Of RichSuggestBox, TextControlPasteEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Paste : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.Controls.TextControlPasteEventArgs&gt; " Usage="member this.Paste : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.Controls.TextControlPasteEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.Controls.TextControlPasteEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when text is pasted into the control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderText">
+      <MemberSignature Language="C#" Value="public string PlaceholderText { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string PlaceholderText" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PlaceholderText" />
+      <MemberSignature Language="VB.NET" Value="Public Property PlaceholderText As String" />
+      <MemberSignature Language="F#" Value="member this.PlaceholderText : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PlaceholderText" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the text that is displayed in the control until the value is changed by a user action or some other operation.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PlaceholderTextProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PlaceholderTextProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PlaceholderTextProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PlaceholderTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PlaceholderTextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PlaceholderTextProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PlaceholderTextProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PlaceholderText" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupCornerRadius">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.CornerRadius PopupCornerRadius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Xaml.CornerRadius PopupCornerRadius" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupCornerRadius" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupCornerRadius As CornerRadius" />
+      <MemberSignature Language="F#" Value="member this.PopupCornerRadius : Windows.UI.Xaml.CornerRadius with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupCornerRadius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.CornerRadius</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the radius for the corners of the popup control's border.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupCornerRadiusProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupCornerRadiusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupCornerRadiusProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupCornerRadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupCornerRadiusProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupCornerRadiusProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupCornerRadiusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupCornerRadius" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupFooter">
+      <MemberSignature Language="C#" Value="public object PopupFooter { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PopupFooter" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooter" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupFooter As Object" />
+      <MemberSignature Language="F#" Value="member this.PopupFooter : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooter" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content for the suggestion popup control's footer.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupFooterProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupFooterProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupFooterProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupFooterProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupFooterProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooter" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupFooterTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate PopupFooterTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate PopupFooterTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupFooterTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.PopupFooterTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.DataTemplate" /> used to display the content of the suggestion popup control's footer.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupFooterTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupFooterTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupFooterTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupFooterTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupFooterTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupFooterTemplate" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupHeader">
+      <MemberSignature Language="C#" Value="public object PopupHeader { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object PopupHeader" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupHeader As Object" />
+      <MemberSignature Language="F#" Value="member this.PopupHeader : obj with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeader" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the content for the suggestion popup control's header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupHeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupHeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupHeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupHeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupHeaderProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeader" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupHeaderTemplate">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.DataTemplate PopupHeaderTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.DataTemplate PopupHeaderTemplate" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupHeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.PopupHeaderTemplate : Windows.UI.Xaml.DataTemplate with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="T:Windows.UI.Xaml.DataTemplate" /> used to display the content of the suggestion popup control's header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupHeaderTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupHeaderTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupHeaderTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupHeaderTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupHeaderTemplateProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupHeaderTemplate" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupPlacement">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Controls.SuggestionPopupPlacementMode PopupPlacement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Toolkit.Uwp.UI.Controls.SuggestionPopupPlacementMode PopupPlacement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupPlacement" />
+      <MemberSignature Language="VB.NET" Value="Public Property PopupPlacement As SuggestionPopupPlacementMode" />
+      <MemberSignature Language="F#" Value="member this.PopupPlacement : Microsoft.Toolkit.Uwp.UI.Controls.SuggestionPopupPlacementMode with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupPlacement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Controls.SuggestionPopupPlacementMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets suggestion popup placement to either Floating or Attached to the text box.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PopupPlacementProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PopupPlacementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PopupPlacementProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupPlacementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PopupPlacementProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PopupPlacementProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupPlacementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PopupPlacement" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Prefixes">
+      <MemberSignature Language="C#" Value="public string Prefixes { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Prefixes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Prefixes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prefixes As String" />
+      <MemberSignature Language="F#" Value="member this.Prefixes : string with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Prefixes" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets prefix characters to start a query.
+            </summary>
+        <value>To be added.</value>
+        <remarks>
+            Prefix characters must be punctuations (must satisfy <see cref="M:System.Char.IsPunctuation(System.Char)" /> method).
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrefixesProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty PrefixesProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty PrefixesProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PrefixesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PrefixesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PrefixesProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.PrefixesProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Prefixes" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RichEditBoxStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Style RichEditBoxStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Style RichEditBoxStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.RichEditBoxStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property RichEditBoxStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.RichEditBoxStyle : Windows.UI.Xaml.Style with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.RichEditBoxStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style of the underlying <see cref="T:Windows.UI.Xaml.Controls.RichEditBox" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RichEditBoxStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty RichEditBoxStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty RichEditBoxStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.RichEditBoxStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RichEditBoxStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RichEditBoxStyleProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.RichEditBoxStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.RichEditBoxStyle" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectionChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.RoutedEventArgs&gt; SelectionChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Windows.UI.Xaml.RoutedEventArgs&gt; SelectionChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanged As TypedEventHandler(Of RichSuggestBox, RoutedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.RoutedEventArgs&gt; " Usage="member this.SelectionChanged : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.RoutedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.RoutedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the text selection has changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestionChosen">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.SuggestionChosenEventArgs&gt; SuggestionChosen;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Microsoft.Toolkit.Uwp.UI.Controls.SuggestionChosenEventArgs&gt; SuggestionChosen" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.SuggestionChosen" />
+      <MemberSignature Language="VB.NET" Value="Public Event SuggestionChosen As TypedEventHandler(Of RichSuggestBox, SuggestionChosenEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SuggestionChosen : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.SuggestionChosenEventArgs&gt; " Usage="member this.SuggestionChosen : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.SuggestionChosenEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.SuggestionChosenEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when user click on a suggestion.
+            This event lets you customize the token appearance in the document.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuggestionRequested">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.SuggestionRequestedEventArgs&gt; SuggestionRequested;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Microsoft.Toolkit.Uwp.UI.Controls.SuggestionRequestedEventArgs&gt; SuggestionRequested" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.SuggestionRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event SuggestionRequested As TypedEventHandler(Of RichSuggestBox, SuggestionRequestedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SuggestionRequested : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.SuggestionRequestedEventArgs&gt; " Usage="member this.SuggestionRequested : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.SuggestionRequestedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.SuggestionRequestedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when the control needs to show suggestions.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextChanged">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.RoutedEventArgs&gt; TextChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Windows.UI.Xaml.RoutedEventArgs&gt; TextChanged" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TextChanged As TypedEventHandler(Of RichSuggestBox, RoutedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.RoutedEventArgs&gt; " Usage="member this.TextChanged : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Windows.UI.Xaml.RoutedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Windows.UI.Xaml.RoutedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when text is changed, either by user or by internal formatting.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextDocument">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.RichEditTextDocument TextDocument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Text.RichEditTextDocument TextDocument" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TextDocument" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextDocument As RichEditTextDocument" />
+      <MemberSignature Language="F#" Value="member this.TextDocument : Windows.UI.Text.RichEditTextDocument" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TextDocument" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.RichEditTextDocument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an object that enables access to the text object model for the text contained in a <see cref="T:Windows.UI.Xaml.Controls.RichEditBox" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenBackground">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.SolidColorBrush TokenBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.SolidColorBrush TokenBackground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenBackground As SolidColorBrush" />
+      <MemberSignature Language="F#" Value="member this.TokenBackground : Windows.UI.Xaml.Media.SolidColorBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the default brush used to color the suggestion token background.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenBackgroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenBackgroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenBackgroundProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenBackgroundProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenBackgroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenBackground" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenForeground">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.Media.SolidColorBrush TokenForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.Media.SolidColorBrush TokenForeground" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenForeground As SolidColorBrush" />
+      <MemberSignature Language="F#" Value="member this.TokenForeground : Windows.UI.Xaml.Media.SolidColorBrush with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.Media.SolidColorBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the default brush used to color the suggestion token foreground.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenForegroundProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TokenForegroundProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TokenForegroundProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenForegroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TokenForegroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TokenForegroundProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenForegroundProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenForeground" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenPointerOver">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenPointerOverEventArgs&gt; TokenPointerOver;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenPointerOverEventArgs&gt; TokenPointerOver" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenPointerOver" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenPointerOver As TypedEventHandler(Of RichSuggestBox, RichSuggestTokenPointerOverEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TokenPointerOver : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenPointerOverEventArgs&gt; " Usage="member this.TokenPointerOver : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenPointerOverEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenPointerOverEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when a pointer is hovering over a token.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tokens">
+      <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; Tokens { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyObservableCollection`1&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt; Tokens" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Tokens" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tokens As ReadOnlyObservableCollection(Of RichSuggestToken)" />
+      <MemberSignature Language="F#" Value="member this.Tokens : System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt;" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.Tokens" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.ObjectModel.ReadOnlyObservableCollection&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a collection of suggestion tokens that are present in the document.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TokenSelected">
+      <MemberSignature Language="C#" Value="public event Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenSelectedEventArgs&gt; TokenSelected;" />
+      <MemberSignature Language="ILAsm" Value=".event class Windows.Foundation.TypedEventHandler`2&lt;class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenSelectedEventArgs&gt; TokenSelected" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TokenSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Event TokenSelected As TypedEventHandler(Of RichSuggestBox, RichSuggestTokenSelectedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TokenSelected : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenSelectedEventArgs&gt; " Usage="member this.TokenSelected : Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox, Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenSelectedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.TypedEventHandler&lt;Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox,Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestTokenSelectedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when a token is fully highlighted.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetTokenFromRange">
+      <MemberSignature Language="C#" Value="public bool TryGetTokenFromRange (Windows.UI.Text.ITextRange range, out Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetTokenFromRange(class Windows.UI.Text.ITextRange range, [out] class Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken&amp; token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.TryGetTokenFromRange(Windows.UI.Text.ITextRange,Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetTokenFromRange (range As ITextRange, ByRef token As RichSuggestToken) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetTokenFromRange : Windows.UI.Text.ITextRange * RichSuggestToken -&gt; bool" Usage="richSuggestBox.TryGetTokenFromRange (range, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="Windows.UI.Text.ITextRange" />
+        <Parameter Name="token" Type="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestToken" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="range">The range of the token to get.</param>
+        <param name="token">When this method returns, contains the token associated with the specified range; otherwise, it is null.</param>
+        <summary>
+            Try getting the token associated with a text range.
+            </summary>
+        <returns>true if there is a token associated with the text range; otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VerticalOffset">
+      <MemberSignature Language="C#" Value="public double VerticalOffset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalOffset" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.VerticalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="Microsoft.Toolkit.Uwp.UI.Controls.RichSuggestBox.VerticalOffset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the distance the content has been scrolled vertically from the underlying <see cref="T:Windows.UI.Xaml.Controls.ScrollViewer" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,456 @@
+<Type Name="SpanExtensions" FullName="CommunityToolkit.HighPerformance.SpanExtensions">
+  <TypeSignature Language="C#" Value="public static class SpanExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SpanExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.SpanExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module SpanExtensions" />
+  <TypeSignature Language="F#" Value="type SpanExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Span`1" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AsBytes&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;byte&gt; AsBytes&lt;T&gt; (this Span&lt;T&gt; span) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;unsigned int8&gt; AsBytes&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.AsBytes``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsBytes(Of T As Structure) (span As Span(Of T)) As Span(Of Byte)" />
+      <MemberSignature Language="F#" Value="static member AsBytes : Span&lt;'T (requires 'T : struct)&gt; -&gt; Span&lt;byte&gt; (requires 'T : struct)" Usage="CommunityToolkit.HighPerformance.SpanExtensions.AsBytes span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type if items in the source <see cref="T:System.Span`1" />.</typeparam>
+        <param name="span">The source slice, of type <typeparamref name="T" />.</param>
+        <summary>
+            Casts a <see cref="T:System.Span`1" /> of one primitive type <typeparamref name="T" /> to <see cref="T:System.Span`1" /> of bytes.
+            </summary>
+        <returns>A <see cref="T:System.Span`1" /> of bytes.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.OverflowException">
+            Thrown if the <see cref="P:System.Span`1.Length" /> property of the new <see cref="T:System.Span`1" /> would exceed <see cref="F:System.Int32.MaxValue" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Cast&lt;TFrom,TTo&gt;">
+      <MemberSignature Language="C#" Value="public static Span&lt;TTo&gt; Cast&lt;TFrom,TTo&gt; (this Span&lt;TFrom&gt; span) where TFrom : struct where TTo : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Span`1&lt;!!TTo&gt; Cast&lt;struct .ctor (class System.ValueType) TFrom, struct .ctor (class System.ValueType) TTo&gt;(valuetype System.Span`1&lt;!!TFrom&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.Cast``2(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Cast(Of TFrom As Structure, TTo As Structure) (span As Span(Of TFrom)) As Span(Of TTo)" />
+      <MemberSignature Language="F#" Value="static member Cast : Span&lt;'From (requires 'From : struct)&gt; -&gt; Span&lt;'o (requires 'o : struct)&gt; (requires 'From : struct and 'o : struct)" Usage="CommunityToolkit.HighPerformance.SpanExtensions.Cast span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;TTo&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TFrom">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TTo">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;TFrom&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TFrom">The type of items in the source <see cref="T:System.Span`1" />.</typeparam>
+        <typeparam name="TTo">The type of items in the destination <see cref="T:System.Span`1" />.</typeparam>
+        <param name="span">The source slice, of type <typeparamref name="TFrom" />.</param>
+        <summary>
+            Casts a <see cref="T:System.Span`1" /> of one primitive type <typeparamref name="TFrom" /> to another primitive type <typeparamref name="TTo" />.
+            </summary>
+        <returns>A <see cref="T:System.Span`1" /> of type <typeparamref name="TTo" /></returns>
+        <remarks>
+            Supported only for platforms that support misaligned memory access or when the memory block is aligned by other means.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void CopyTo&lt;T&gt; (this Span&lt;T&gt; span, CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CopyTo&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, valuetype CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1&lt;!!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.CopyTo``1(System.Span{``0},CommunityToolkit.HighPerformance.Enumerables.RefEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo(Of T) (span As Span(Of T), destination As RefEnumerable(Of T))" />
+      <MemberSignature Language="F#" Value="static member CopyTo : Span&lt;'T&gt; * CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;'T&gt; -&gt; unit" Usage="CommunityToolkit.HighPerformance.SpanExtensions.CopyTo (span, destination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="destination" Type="CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <param name="destination">The <see cref="T:CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1" /> instance to copy items into.</param>
+        <summary>
+            Copies the contents of a given <see cref="T:System.Span`1" /> into destination <see cref="T:CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+            Thrown when the destination <see cref="T:CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1" /> is shorter than the source <see cref="T:System.Span`1" />.
+            </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Count&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Count&lt;T&gt; (this Span&lt;T&gt; span, T value) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Count&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; span, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.Count``1(System.Span{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Count(Of T As IEquatable(Of T)) (span As Span(Of T), value As T) As Integer" />
+      <MemberSignature Language="F#" Value="static member Count : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="CommunityToolkit.HighPerformance.SpanExtensions.Count (span, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance to read.</param>
+        <param name="value">The <typeparamref name="T" /> value to look for.</param>
+        <summary>
+            Counts the number of occurrences of a given value into a target <see cref="T:System.Span`1" /> instance.
+            </summary>
+        <returns>The number of occurrences of <paramref name="value" /> in <paramref name="span" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReference&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetReference&lt;T&gt; (this Span&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetReference&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReference``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DangerousGetReference(Of T) (span As Span(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousGetReference : Span&lt;'T&gt; -&gt; 'T" Usage="CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReference span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <summary>
+            Returns a reference to the first element within a given <see cref="T:System.Span`1" />, with no bounds checks.
+            </summary>
+        <returns>A reference to the first element within <paramref name="span" />.</returns>
+        <remarks>This method doesn't do any bounds checks, therefore it is responsibility of the caller to perform checks in case the returned value is dereferenced.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReferenceAt&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetReferenceAt&lt;T&gt; (this Span&lt;T&gt; span, int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetReferenceAt&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReferenceAt``1(System.Span{``0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DangerousGetReferenceAt(Of T) (span As Span(Of T), i As Integer) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousGetReferenceAt : Span&lt;'T&gt; * int -&gt; 'T" Usage="CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReferenceAt (span, i)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <param name="i">The index of the element to retrieve within <paramref name="span" />.</param>
+        <summary>
+            Returns a reference to an element at a specified index within a given <see cref="T:System.Span`1" />, with no bounds checks.
+            </summary>
+        <returns>A reference to the element within <paramref name="span" /> at the index specified by <paramref name="i" />.</returns>
+        <remarks>This method doesn't do any bounds checks, therefore it is responsibility of the caller to ensure the <paramref name="i" /> parameter is valid.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReferenceAt&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetReferenceAt&lt;T&gt; (this Span&lt;T&gt; span, IntPtr i);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetReferenceAt&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, native int i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReferenceAt``1(System.Span{``0},System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DangerousGetReferenceAt(Of T) (span As Span(Of T), i As IntPtr) As T" />
+      <MemberSignature Language="F#" Value="static member DangerousGetReferenceAt : Span&lt;'T&gt; * nativeint -&gt; 'T" Usage="CommunityToolkit.HighPerformance.SpanExtensions.DangerousGetReferenceAt (span, i)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="i" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <param name="i">The index of the element to retrieve within <paramref name="span" />.</param>
+        <summary>
+            Returns a reference to an element at a specified index within a given <see cref="T:System.Span`1" />, with no bounds checks.
+            </summary>
+        <returns>A reference to the element within <paramref name="span" /> at the index specified by <paramref name="i" />.</returns>
+        <remarks>This method doesn't do any bounds checks, therefore it is responsibility of the caller to ensure the <paramref name="i" /> parameter is valid.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enumerate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Enumerables.SpanEnumerable&lt;T&gt; Enumerate&lt;T&gt; (this Span&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Enumerables.SpanEnumerable`1&lt;!!T&gt; Enumerate&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.Enumerate``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Enumerate(Of T) (span As Span(Of T)) As SpanEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="static member Enumerate : Span&lt;'T&gt; -&gt; CommunityToolkit.HighPerformance.Enumerables.SpanEnumerable&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.SpanExtensions.Enumerate span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Enumerables.SpanEnumerable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items to enumerate.</typeparam>
+        <param name="span">The source <see cref="T:System.Span`1" /> to enumerate.</param>
+        <summary>
+             Enumerates the items in the input <see cref="T:System.Span`1" /> instance, as pairs of reference/index values.
+             This extension should be used directly within a <see langword="foreach" /> loop:
+             <code>
+             Span&lt;int&gt; numbers = new[] { 1, 2, 3, 4, 5, 6, 7 };
+            
+             foreach (var item in numbers.Enumerate())
+             {
+                 // Access the index and value of each item here...
+                 int index = item.Index;
+                 ref int value = ref item.Value;
+             }
+             </code>
+             The compiler will take care of properly setting up the <see langword="foreach" /> loop with the type returned from this method.
+             </summary>
+        <returns>A wrapper type that will handle the reference/index enumeration for <paramref name="span" />.</returns>
+        <remarks>The returned <see cref="T:CommunityToolkit.HighPerformance.Enumerables.SpanEnumerable`1" /> value shouldn't be used directly: use this extension in a <see langword="foreach" /> loop.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDjb2HashCode&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int GetDjb2HashCode&lt;T&gt; (this Span&lt;T&gt; span);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetDjb2HashCode&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.GetDjb2HashCode``1(System.Span{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDjb2HashCode(Of T) (span As Span(Of T)) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetDjb2HashCode : Span&lt;'T&gt; -&gt; int" Usage="CommunityToolkit.HighPerformance.SpanExtensions.GetDjb2HashCode span" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <summary>
+            Gets a content hash from the input <see cref="T:System.Span`1" /> instance using the Djb2 algorithm.
+            For more info, see the documentation for <see cref="M:CommunityToolkit.HighPerformance.ReadOnlySpanExtensions.GetDjb2HashCode``1(System.ReadOnlySpan{``0})" />.
+            </summary>
+        <returns>The Djb2 value for the input <see cref="T:System.Span`1" /> instance.</returns>
+        <remarks>The Djb2 hash is fully deterministic and with no random components.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int IndexOf&lt;T&gt; (this Span&lt;T&gt; span, ref T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 IndexOf&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.IndexOf``1(System.Span{``0},``0@)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf(Of T) (span As Span(Of T), ByRef value As T) As Integer" />
+      <MemberSignature Language="F#" Value="static member IndexOf : Span&lt;'T&gt; * 'T -&gt; int" Usage="CommunityToolkit.HighPerformance.SpanExtensions.IndexOf (span, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="value" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type if items in the input <see cref="T:System.Span`1" />.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> to calculate the index for.</param>
+        <param name="value">The reference to the target item to get the index for.</param>
+        <summary>
+            Gets the index of an element of a given <see cref="T:System.Span`1" /> from its reference.
+            </summary>
+        <returns>The index of <paramref name="value" /> within <paramref name="span" />.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown if <paramref name="value" /> does not belong to <paramref name="span" />.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Tokenize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Enumerables.SpanTokenizer&lt;T&gt; Tokenize&lt;T&gt; (this Span&lt;T&gt; span, T separator) where T : IEquatable&lt;T&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Enumerables.SpanTokenizer`1&lt;!!T&gt; Tokenize&lt;(class System.IEquatable`1&lt;!!T&gt;) T&gt;(valuetype System.Span`1&lt;!!T&gt; span, !!T separator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.Tokenize``1(System.Span{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Tokenize(Of T As IEquatable(Of T)) (span As Span(Of T), separator As T) As SpanTokenizer(Of T)" />
+      <MemberSignature Language="F#" Value="static member Tokenize : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; CommunityToolkit.HighPerformance.Enumerables.SpanTokenizer&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="CommunityToolkit.HighPerformance.SpanExtensions.Tokenize (span, separator)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Enumerables.SpanTokenizer&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;T&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="separator" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the <see cref="T:System.Span`1" /> to tokenize.</typeparam>
+        <param name="span">The source <see cref="T:System.Span`1" /> to tokenize.</param>
+        <param name="separator">The separator <typeparamref name="T" /> item to use.</param>
+        <summary>
+             Tokenizes the values in the input <see cref="T:System.Span`1" /> instance using a specified separator.
+             This extension should be used directly within a <see langword="foreach" /> loop:
+             <code>
+             Span&lt;char&gt; text = "Hello, world!".ToCharArray();
+            
+             foreach (var token in text.Tokenize(','))
+             {
+                 // Access the tokens here...
+             }
+             </code>
+             The compiler will take care of properly setting up the <see langword="foreach" /> loop with the type returned from this method.
+             </summary>
+        <returns>A wrapper type that will handle the tokenization for <paramref name="span" />.</returns>
+        <remarks>The returned <see cref="T:CommunityToolkit.HighPerformance.Enumerables.SpanTokenizer`1" /> value shouldn't be used directly: use this extension in a <see langword="foreach" /> loop.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryCopyTo&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryCopyTo&lt;T&gt; (this Span&lt;T&gt; span, CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;T&gt; destination);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryCopyTo&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, valuetype CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1&lt;!!T&gt; destination) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpanExtensions.TryCopyTo``1(System.Span{``0},CommunityToolkit.HighPerformance.Enumerables.RefEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TryCopyTo(Of T) (span As Span(Of T), destination As RefEnumerable(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryCopyTo : Span&lt;'T&gt; * CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;'T&gt; -&gt; bool" Usage="CommunityToolkit.HighPerformance.SpanExtensions.TryCopyTo (span, destination)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
+        <Parameter Name="destination" Type="CommunityToolkit.HighPerformance.Enumerables.RefEnumerable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of items in the input <see cref="T:System.Span`1" /> instance.</typeparam>
+        <param name="span">The input <see cref="T:System.Span`1" /> instance.</param>
+        <param name="destination">The <see cref="T:CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1" /> instance to copy items into.</param>
+        <summary>
+            Attempts to copy the contents of a given <see cref="T:System.Span`1" /> into destination <see cref="T:CommunityToolkit.HighPerformance.Enumerables.RefEnumerable`1" /> instance.
+            </summary>
+        <returns>Whether or not the operation was successful.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

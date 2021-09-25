@@ -1,0 +1,82 @@
+<Type Name="ObservablePropertyAttribute" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.ObservablePropertyAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObservablePropertyAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObservablePropertyAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservablePropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObservablePropertyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ObservablePropertyAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+             An attribute that indicates that a given field should be wrapped by a generated observable property.
+             In order to use this attribute, the containing type has to implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface
+             and expose a method with the same signature as <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" />. If the containing
+             type also implements the <see cref="T:System.ComponentModel.INotifyPropertyChanging" /> interface and exposes a method with the same signature as
+             <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)" />, then this method will be invoked as well by the property setter.
+             <para>
+             This attribute can be used as follows:
+             <code>
+             partial class MyViewModel : ObservableObject
+             {
+                 [ObservableProperty]
+                 private string name;
+            
+                 [ObservableProperty]
+                 private bool isEnabled;
+             }
+             </code></para>
+             And with this, code analogous to this will be generated:
+             <code>
+             partial class MyViewModel
+             {
+                 public string Name
+                 {
+                     get =&gt; name;
+                     set =&gt; SetProperty(ref name, value);
+                 }
+            
+                 public bool IsEnabled
+                 {
+                     get =&gt; name;
+                     set =&gt; SetProperty(ref isEnabled, value);
+                 }
+             }
+             </code></summary>
+    <remarks>
+             The generated properties will automatically use the <c>UpperCamelCase</c> format for their names,
+             which will be derived from the field names. The generator can also recognize fields using either
+             the <c>_lowerCamel</c> or <c>m_lowerCamel</c> naming scheme. Otherwise, the first character in the
+             source field name will be converted to uppercase (eg. <c>isEnabled</c> to <c>IsEnabled</c>).
+             </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObservablePropertyAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservablePropertyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

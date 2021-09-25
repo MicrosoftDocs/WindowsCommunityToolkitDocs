@@ -1,0 +1,329 @@
+<Type Name="SpanOwner&lt;T&gt;" FullName="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct SpanOwner&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SpanOwner`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SpanOwner(Of T)" />
+  <TypeSignature Language="F#" Value="type SpanOwner&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(CommunityToolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(CommunityToolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items to store in the current instance.</typeparam>
+    <summary>
+            A stack-only type with the ability to rent a buffer of a specified length and getting a <see cref="T:System.Span`1" /> from it.
+            This type mirrors <see cref="T:CommunityToolkit.HighPerformance.Buffers.MemoryOwner`1" /> but without allocations and with further optimizations.
+            As this is a stack-only type, it relies on the duck-typed <see cref="T:System.IDisposable" /> pattern introduced with C# 8.
+            It should be used like so:
+            <code>
+            using (SpanOwner&lt;byte&gt; buffer = SpanOwner&lt;byte&gt;.Allocate(1024))
+            {
+                // Use the buffer here...
+            }
+            </code>
+            As soon as the code leaves the scope of that <see langword="using" /> block, the underlying buffer will automatically
+            be disposed. The APIs in <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> rely on this pattern for extra performance, eg. they don't perform
+            the additional checks that are done in <see cref="T:CommunityToolkit.HighPerformance.Buffers.MemoryOwner`1" /> to ensure that the buffer hasn't been disposed
+            before returning a <see cref="T:System.Memory`1" /> or <see cref="T:System.Span`1" /> instance from it.
+            As such, this type should always be used with a <see langword="using" /> block or expression.
+            Not doing so will cause the underlying buffer not to be returned to the shared pool.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int -&gt; CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate size" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <summary>
+            Creates a new <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size, CommunityToolkit.HighPerformance.Buffers.AllocationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size, valuetype CommunityToolkit.HighPerformance.Buffers.AllocationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32,CommunityToolkit.HighPerformance.Buffers.AllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, mode As AllocationMode) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * CommunityToolkit.HighPerformance.Buffers.AllocationMode -&gt; CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate (size, mode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="mode" Type="CommunityToolkit.HighPerformance.Buffers.AllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="mode">Indicates the allocation mode to use for the new buffer to rent.</param>
+        <summary>
+            Creates a new <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size, System.Buffers.ArrayPool&lt;T&gt; pool);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size, class System.Buffers.ArrayPool`1&lt;!T&gt; pool) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32,System.Buffers.ArrayPool{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, pool As ArrayPool(Of T)) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * System.Buffers.ArrayPool&lt;'T&gt; -&gt; CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate (size, pool)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <summary>
+            Creates a new <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Allocate">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Allocate (int size, System.Buffers.ArrayPool&lt;T&gt; pool, CommunityToolkit.HighPerformance.Buffers.AllocationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Allocate(int32 size, class System.Buffers.ArrayPool`1&lt;!T&gt; pool, valuetype CommunityToolkit.HighPerformance.Buffers.AllocationMode mode) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Allocate(System.Int32,System.Buffers.ArrayPool{`0},CommunityToolkit.HighPerformance.Buffers.AllocationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Allocate (size As Integer, pool As ArrayPool(Of T), mode As AllocationMode) As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="static member Allocate : int * System.Buffers.ArrayPool&lt;'T&gt; * CommunityToolkit.HighPerformance.Buffers.AllocationMode -&gt; CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Allocate (size, pool, mode)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size" Type="System.Int32" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" />
+        <Parameter Name="mode" Type="CommunityToolkit.HighPerformance.Buffers.AllocationMode" />
+      </Parameters>
+      <Docs>
+        <param name="size">The length of the new memory buffer to use.</param>
+        <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
+        <param name="mode">Indicates the allocation mode to use for the new buffer to rent.</param>
+        <summary>
+            Creates a new <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance with the specified parameters.
+            </summary>
+        <returns>A <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance of the requested length.</returns>
+        <remarks>This method is just a proxy for the <see langword="private" /> constructor, for clarity.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">Thrown when <paramref name="size" /> is not valid.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetArray">
+      <MemberSignature Language="C#" Value="public ArraySegment&lt;T&gt; DangerousGetArray ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;!T&gt; DangerousGetArray() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.DangerousGetArray" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetArray () As ArraySegment(Of T)" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetArray : unit -&gt; ArraySegment&lt;'T&gt;" Usage="spanOwner.DangerousGetArray " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ArraySegment&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets an <see cref="T:System.ArraySegment`1" /> instance wrapping the underlying <typeparamref name="T" /> array in use.
+            </summary>
+        <returns>An <see cref="T:System.ArraySegment`1" /> instance wrapping the underlying <typeparamref name="T" /> array in use.</returns>
+        <remarks>
+            This method is meant to be used when working with APIs that only accept an array as input, and should be used with caution.
+            In particular, the returned array is rented from an array pool, and it is responsibility of the caller to ensure that it's
+            not used after the current <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance is disposed. Doing so is considered undefined behavior,
+            as the same array might be in use within another <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DangerousGetReference">
+      <MemberSignature Language="C#" Value="public ref T DangerousGetReference ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T DangerousGetReference() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.DangerousGetReference" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetReference () As T" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetReference : unit -&gt; 'T" Usage="spanOwner.DangerousGetReference " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns a reference to the first element within the current instance, with no bounds check.
+            </summary>
+        <returns>A reference to the first element within the current instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="member this.Dispose : unit -&gt; unit" Usage="spanOwner.Dispose " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Implements the duck-typed <see cref="M:System.IDisposable.Dispose" /> method.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt; Empty { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property valuetype CommunityToolkit.HighPerformance.Buffers.SpanOwner`1&lt;!T&gt; Empty" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As SpanOwner(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Empty : CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Empty" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets an empty <see cref="T:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length">
+      <MemberSignature Language="C#" Value="public int Length { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Length" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of items in the current instance
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Span">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; Span { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Span`1&lt;!T&gt; Span" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.Span" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Span As Span(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Span : Span&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.SpanOwner&lt;'T&gt;.Span" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a <see cref="T:System.Span`1" /> wrapping the memory belonging to the current instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.SpanOwner`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="spanOwner.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns the fully qualified type name of this instance.</summary>
+        <returns>A <see cref="T:System.String" /> containing a fully qualified type name.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
