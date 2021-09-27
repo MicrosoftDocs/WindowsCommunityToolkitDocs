@@ -17,7 +17,7 @@ The `OneDriveStorageHelper` is a storage helper for handling files and folders i
 
 Available in the `CommunityToolkit.Uwp.Graph` package.
 
-```
+```csharp
 var filePath = "TestFile.txt";
 var fileContents = "this is a test";
 var fileContents2 = "this is also a test";
@@ -40,9 +40,9 @@ var itemDeleted = await storageHelper.TryDeleteItemAsync(filePath);
 Assert.IsTrue(itemDeleted);
 ```
 
-Subfolders are also supported:
+Sub-folders are also supported:
 
-```
+```csharp
 var folderName = "TestFolder";
 var subfolderName = "TestSubFolder";
 var subfolderPath = $"{folderName}/{subfolderName}";
@@ -85,7 +85,7 @@ The `UserExtensionStorageHelper` is a storage helper that leverages open extensi
 
 Available in the `CommunityToolkit.Uwp.Graph` package.
 
-```
+```csharp
 // Create a new storage helper for the current user.
 var storageHelper = await UserExtensionStorageHelper.CreateForCurrentUserAsync("my-storage-extension-id");
 
@@ -109,7 +109,8 @@ Common sync opportunities:
 There is a known limitation with open extensions that does not allow deletion of a specific key. We suggest using a unique value to represent when a key has been deleted. To truly remove keys, the entire extension must be cleared and synced to delete the extension, then rehydrated with values and synced again.
 
 **Sample 1. Set a default value**
-```
+
+```csharp
 // Create a new storage helper for the current user.
 var storageHelper = await UserExtensionStorageHelper.CreateForCurrentUserAsync("my-storage-extension-id");
 
@@ -134,7 +135,7 @@ if (!storageHelper.TryRead<string>("PreferredTheme", out string preferredTheme) 
 
 **Sample 2. Delete a key**
 
-```
+```csharp
 // Create a new storage helper for the current user.
 var storageHelper = await UserExtensionStorageHelper.CreateForCurrentUserAsync("my-storage-extension-id");
 

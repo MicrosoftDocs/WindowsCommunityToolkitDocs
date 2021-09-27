@@ -16,6 +16,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 ## Syntax
 
 **XAML**
+
 ```xml
 <!-- Display my recent OneDrive files. -->
 <Grid xmlns:controls="using:CommunityToolkit.Graph.Uwp.Controls">
@@ -40,6 +41,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 ```
 
 **Code-behind**
+
 ```csharp
 public IBaseRequestBuilder RecentDriveItemsRequestBuilder { get; set; }
 

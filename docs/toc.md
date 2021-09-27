@@ -99,7 +99,7 @@
 
 ## Controls
 
-### [GraphPresenter (Experimental)](graph/controls/GraphPresenter.md) 
+### [GraphPresenter (Experimental)](graph/controls/GraphPresenter.md)
 
 ### [LoginButton](graph/controls/LoginButton.md)
 
