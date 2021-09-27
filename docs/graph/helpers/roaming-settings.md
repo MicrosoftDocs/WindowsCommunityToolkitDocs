@@ -108,7 +108,7 @@ Common sync opportunities:
 
 There is a known limitation with open extensions that does not allow deletion of a specific key. We suggest using a unique value to represent when a key has been deleted. To truly remove keys, the entire extension must be cleared and synced to delete the extension, then rehydrated with values and synced again.
 
-**Sample 1. Set a default value**
+#### Sample 1. Set a default value
 
 ```csharp
 // Create a new storage helper for the current user.
@@ -133,7 +133,7 @@ if (!storageHelper.TryRead<string>("PreferredTheme", out string preferredTheme) 
 }
 ```
 
-**Sample 2. Delete a key**
+#### Sample 2. Delete a key
 
 ```csharp
 // Create a new storage helper for the current user.

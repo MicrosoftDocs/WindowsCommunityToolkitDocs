@@ -15,7 +15,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 
 ## Syntax
 
-**XAML**
+### XAML
 
 ```xml
 <!-- Display my recent OneDrive files. -->
@@ -40,7 +40,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 </Grid>
 ```
 
-**Code-behind**
+### Code-behind
 
 ```csharp
 public IBaseRequestBuilder RecentDriveItemsRequestBuilder { get; set; }
@@ -81,10 +81,8 @@ private void UpdateRequestBuilder()
 
 ## Requirements
 
-| <!-- --> | <!-- --> |
-| -- | -- |
-| Namespace | CommunityToolkit.Graph.Uwp.Controls |
-| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |
+* **Namespace:** CommunityToolkit.Graph.Uwp.Controls
+* **NuGet package:** [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp)
 
 ## API
 
