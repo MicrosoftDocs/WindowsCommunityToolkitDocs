@@ -79,7 +79,7 @@ private void UpdateRequestBuilder()
 
 ## Requirements
 
-| | |
+| <!-- --> | <!-- --> |
 | -- | -- |
 | Namespace | CommunityToolkit.Graph.Uwp.Controls |
 | NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |

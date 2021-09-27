@@ -31,7 +31,7 @@ To get valid tokens and complete sign in, the app will need to be associated wit
 
 If your product integrates with Azure AD and calls APIs that request either application permissions or delegated permissions that require administrator consent, you will also need to enter your Azure AD Client ID in Partner Center:
 
-https://partner.microsoft.com/en-us/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
+https://partner.microsoft.com/dashboard/products/&lt;YOUR-APP-ID&gt;/administrator-consent
 
 This lets administrators who acquire the app for their organization grant consent for your product to act on behalf of all users in the tenant.
 
@@ -39,7 +39,7 @@ This lets administrators who acquire the app for their organization grant consen
 > You only need to specify the client id if you need admin consent for delegated permissions from your AAD app registration, or need to support more advanced authentication scenarios like SSO. Simple authentication for consumer MSA accounts does not require a client id or any additional configuration in Azure for basic access.
 
 > [!IMPORTANT]
-> Make sure to Register Client Id in Azure first following the guidance here: <https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app>
+> Make sure to Register Client Id in Azure first following the guidance here: [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app)
 >
 > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI" and add the value retrieved from running `WindowsProvider.RedirectUri` at runtime.
 >
