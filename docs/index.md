@@ -17,7 +17,7 @@ The Windows Community Toolkit is available as a Visual Studio NuGet package for 
 
 You can also preview the capabilities of the toolkit by downloading the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp) in the Windows Store.
 
-<script type="module" src="https://getbadgecdn.azureedge.net/ms-store-badge.bundled.js"></script><ms-store-badge productid="9nblggh4tlcq" size="large"></ms-store-badge>
+<iframe frameborder="0" scrolling="no" width="288" height="104" src="https://black-water-0eaf5100f.azurestaticapps.net/iframe.html?productId=9nblggh4tlcq&amp;language=en&amp;size=large&amp;imgUrl=https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png&amp;targetUrl=ms-windows-store://pdp/?ProductId=9nblggh4tlcq"></iframe>
 
 Feel free to browse the documentation using the table of contents on the left side of this page.
 
