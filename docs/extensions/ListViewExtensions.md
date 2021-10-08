@@ -55,7 +55,7 @@ Here is how this property can be used in XAML:
 
 <Page.Resources>
     <DataTemplate x:Name="NormalTemplate">
-        <TextBlock Text="{Binding " Foreground="Green"></TextBlock>
+        <TextBlock Text="{Binding}" Foreground="Green"></TextBlock>
     </DataTemplate>
     
     <DataTemplate x:Name="AlternateTemplate">
