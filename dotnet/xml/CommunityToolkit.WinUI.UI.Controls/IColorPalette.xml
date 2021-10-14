@@ -1,0 +1,96 @@
+<Type Name="IColorPalette" FullName="CommunityToolkit.WinUI.UI.Controls.IColorPalette">
+  <TypeSignature Language="C#" Value="public interface IColorPalette" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColorPalette" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.IColorPalette" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IColorPalette" />
+  <TypeSignature Language="F#" Value="type IColorPalette = interface" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Interface to define a color palette.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ColorCount">
+      <MemberSignature Language="C#" Value="public int ColorCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ColorCount" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.IColorPalette.ColorCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColorCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColorCount : int" Usage="CommunityToolkit.WinUI.UI.Controls.IColorPalette.ColorCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total number of colors in this palette.
+            A color is not necessarily a single value and may be composed of several shades.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColor">
+      <MemberSignature Language="C#" Value="public Windows.UI.Color GetColor (int colorIndex, int shadeIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Windows.UI.Color GetColor(int32 colorIndex, int32 shadeIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.IColorPalette.GetColor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColor (colorIndex As Integer, shadeIndex As Integer) As Color" />
+      <MemberSignature Language="F#" Value="abstract member GetColor : int * int -&gt; Windows.UI.Color" Usage="iColorPalette.GetColor (colorIndex, shadeIndex)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorIndex" Type="System.Int32" />
+        <Parameter Name="shadeIndex" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="colorIndex">The index of the color in the palette.
+            The index must be between zero and <see cref="P:CommunityToolkit.WinUI.UI.Controls.IColorPalette.ColorCount" />.</param>
+        <param name="shadeIndex">The index of the color shade in the palette.
+            The index must be between zero and <see cref="P:CommunityToolkit.WinUI.UI.Controls.IColorPalette.ShadeCount" />.</param>
+        <summary>
+            Gets a color in the palette by index.
+            </summary>
+        <returns>The color at the specified index or an exception.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShadeCount">
+      <MemberSignature Language="C#" Value="public int ShadeCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ShadeCount" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.IColorPalette.ShadeCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ShadeCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ShadeCount : int" Usage="CommunityToolkit.WinUI.UI.Controls.IColorPalette.ShadeCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the total number of shades for each color in this palette.
+            Shades are usually a variation of the color lightening or darkening it.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,140 @@
+<Type Name="EffectAnimation&lt;TEffect,TValue,TKeyFrame&gt;" FullName="CommunityToolkit.WinUI.UI.Animations.EffectAnimation&lt;TEffect,TValue,TKeyFrame&gt;">
+  <TypeSignature Language="C#" Value="public abstract class EffectAnimation&lt;TEffect,TValue,TKeyFrame&gt; : CommunityToolkit.WinUI.UI.Animations.Animation&lt;TValue,TKeyFrame&gt; where TEffect : class, IPipelineEffect where TKeyFrame : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EffectAnimation`3&lt;class (class CommunityToolkit.WinUI.UI.Media.IPipelineEffect) TEffect, TValue, struct .ctor (class System.ValueType) TKeyFrame&gt; extends CommunityToolkit.WinUI.UI.Animations.Animation`2&lt;!TValue, !TKeyFrame&gt;" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EffectAnimation(Of TEffect, TValue, TKeyFrame)&#xA;Inherits Animation(Of TValue, TKeyFrame)" />
+  <TypeSignature Language="F#" Value="type EffectAnimation&lt;'Effect, 'Value, 'KeyFrame (requires 'Effect : null and 'Effect :&gt; IPipelineEffect and 'KeyFrame : struct)&gt; = class&#xA;    inherit Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TEffect">
+      <Constraints>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+        <InterfaceName>CommunityToolkit.WinUI.UI.Media.IPipelineEffect</InterfaceName>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TValue" />
+    <TypeParameter Name="TKeyFrame">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">TValue</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">TKeyFrame</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TEffect">The type of effect to animate.</typeparam>
+    <typeparam name="TValue">
+            The type to use for the public <see cref="P:CommunityToolkit.WinUI.UI.Animations.Animation`2.To" /> and <see cref="P:CommunityToolkit.WinUI.UI.Animations.Animation`2.From" />
+            properties. This can differ from <typeparamref name="TKeyFrame" /> to facilitate XAML parsing.
+            </typeparam>
+    <typeparam name="TKeyFrame">The actual type of keyframe values in use.</typeparam>
+    <summary>
+            A custom animation targeting a property on an <see cref="T:CommunityToolkit.WinUI.UI.Media.IPipelineEffect" /> instance.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected EffectAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public override CommunityToolkit.WinUI.UI.Animations.AnimationBuilder AppendToBuilder (CommunityToolkit.WinUI.UI.Animations.AnimationBuilder builder, TimeSpan? delayHint, TimeSpan? durationHint, CommunityToolkit.WinUI.UI.Animations.EasingType? easingTypeHint, Microsoft.UI.Xaml.Media.Animation.EasingMode? easingModeHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder AppendToBuilder(class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder builder, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Microsoft.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3.AppendToBuilder(CommunityToolkit.WinUI.UI.Animations.AnimationBuilder,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{CommunityToolkit.WinUI.UI.Animations.EasingType},System.Nullable{Microsoft.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AppendToBuilder (builder As AnimationBuilder, delayHint As Nullable(Of TimeSpan), durationHint As Nullable(Of TimeSpan), easingTypeHint As Nullable(Of EasingType), easingModeHint As Nullable(Of EasingMode)) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : CommunityToolkit.WinUI.UI.Animations.AnimationBuilder * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;CommunityToolkit.WinUI.UI.Animations.EasingType&gt; * Nullable&lt;Microsoft.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" Usage="effectAnimation.AppendToBuilder (builder, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;CommunityToolkit.WinUI.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Microsoft.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="delayHint">To be added.</param>
+        <param name="durationHint">To be added.</param>
+        <param name="easingTypeHint">To be added.</param>
+        <param name="easingModeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public TEffect? Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !TEffect Target" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As TEffect" />
+      <MemberSignature Language="F#" Value="member this.Target : 'Effect with get, set" Usage="CommunityToolkit.WinUI.UI.Animations.EffectAnimation&lt;'Effect, 'Value, 'KeyFrame (requires 'Effect : null and 'Effect :&gt; CommunityToolkit.WinUI.UI.Media.IPipelineEffect and 'KeyFrame : struct)&gt;.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TEffect</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the linked <typeparamref name="TEffect" /> instance to animate.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty TargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty TargetProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3.TargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Animations.EffectAnimation&lt;'Effect, 'Value, 'KeyFrame (requires 'Effect : null and 'Effect :&gt; CommunityToolkit.WinUI.UI.Media.IPipelineEffect and 'KeyFrame : struct)&gt;.TargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:CommunityToolkit.WinUI.UI.Animations.EffectAnimation`3.Target" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

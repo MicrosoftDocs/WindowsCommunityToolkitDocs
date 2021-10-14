@@ -1,0 +1,184 @@
+<Type Name="BlendEffect" FullName="CommunityToolkit.WinUI.UI.Media.BlendEffect">
+  <TypeSignature Language="C#" Value="public sealed class BlendEffect : CommunityToolkit.WinUI.UI.Media.PipelineEffect" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BlendEffect extends CommunityToolkit.WinUI.UI.Media.PipelineEffect" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.BlendEffect" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BlendEffect&#xA;Inherits PipelineEffect" />
+  <TypeSignature Language="F#" Value="type BlendEffect = class&#xA;    inherit PipelineEffect" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.UI.Media.PipelineEffect</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.Markup.ContentProperty(Name="Effects")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.Markup.ContentProperty(Name="Effects")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            A blend effect that merges the current builder with an input one
+            </summary>
+    <remarks>This effect maps to the Win2D <see cref="T:Microsoft.Graphics.Canvas.Effects.BlendEffect" /> effect</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public BlendEffect ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.BlendEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public override CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder AppendToBuilder (CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder AppendToBuilder(class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.BlendEffect.AppendToBuilder(CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AppendToBuilder (builder As PipelineBuilder) As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder -&gt; CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" Usage="blendEffect.AppendToBuilder builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The source <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> instance to add the effect to.</param>
+        <summary>
+            Appends the current effect to the input <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> instance.
+            </summary>
+        <returns>A new <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> with the new effects added to it.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Effects">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;CommunityToolkit.WinUI.UI.Media.IPipelineEffect&gt; Effects { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class CommunityToolkit.WinUI.UI.Media.IPipelineEffect&gt; Effects" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Media.BlendEffect.Effects" />
+      <MemberSignature Language="VB.NET" Value="Public Property Effects As List(Of IPipelineEffect)" />
+      <MemberSignature Language="F#" Value="member this.Effects : System.Collections.Generic.List&lt;CommunityToolkit.WinUI.UI.Media.IPipelineEffect&gt; with get, set" Usage="CommunityToolkit.WinUI.UI.Media.BlendEffect.Effects" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.List&lt;CommunityToolkit.WinUI.UI.Media.IPipelineEffect&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the effects to apply to the input to merge with the current instance
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Media.ImageBlendMode Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.WinUI.UI.Media.ImageBlendMode Mode" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Media.BlendEffect.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As ImageBlendMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : CommunityToolkit.WinUI.UI.Media.ImageBlendMode with get, set" Usage="CommunityToolkit.WinUI.UI.Media.BlendEffect.Mode" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.ImageBlendMode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the blending mode to use (the default mode is <see cref="F:CommunityToolkit.WinUI.UI.Media.ImageBlendMode.Multiply" />)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyCompositionBrushInUse">
+      <MemberSignature Language="C#" Value="public override void NotifyCompositionBrushInUse (Microsoft.UI.Composition.CompositionBrush brush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void NotifyCompositionBrushInUse(class Microsoft.UI.Composition.CompositionBrush brush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.BlendEffect.NotifyCompositionBrushInUse(Microsoft.UI.Composition.CompositionBrush)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub NotifyCompositionBrushInUse (brush As CompositionBrush)" />
+      <MemberSignature Language="F#" Value="override this.NotifyCompositionBrushInUse : Microsoft.UI.Composition.CompositionBrush -&gt; unit" Usage="blendEffect.NotifyCompositionBrushInUse brush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="brush" Type="Microsoft.UI.Composition.CompositionBrush" />
+      </Parameters>
+      <Docs>
+        <param name="brush">The <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> in use.</param>
+        <summary>
+            Notifies that a given <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> is now in use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Placement">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Media.Placement Placement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.WinUI.UI.Media.Placement Placement" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Media.BlendEffect.Placement" />
+      <MemberSignature Language="VB.NET" Value="Public Property Placement As Placement" />
+      <MemberSignature Language="F#" Value="member this.Placement : CommunityToolkit.WinUI.UI.Media.Placement with get, set" Usage="CommunityToolkit.WinUI.UI.Media.BlendEffect.Placement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Placement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the placement of the input builder with respect to the current one (the default is <see cref="F:CommunityToolkit.WinUI.UI.Media.Placement.Foreground" />)
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Source">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder? Source { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder Source" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Media.BlendEffect.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="member this.Source : CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder with get, set" Usage="CommunityToolkit.WinUI.UI.Media.BlendEffect.Source" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the input to merge with the current instance (defaults to a <see cref="T:CommunityToolkit.WinUI.UI.Media.BackdropSourceExtension" /> with <see cref="!:Microsoft.UI.Xaml.Media.AcrylicBackgroundSource.Backdrop" /> source).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
