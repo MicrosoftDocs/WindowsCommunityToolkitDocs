@@ -4,12 +4,13 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.Buffers.ArrayPoolBufferWriter`1" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayPoolBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T), IDisposable, IMemoryOwner(Of T)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
   <TypeSignature Language="F#" Value="type ArrayPoolBufferWriter&lt;'T&gt; = class&#xA;    interface IBuffer&lt;'T&gt;&#xA;    interface IBufferWriter&lt;'T&gt;&#xA;    interface IMemoryOwner&lt;'T&gt;&#xA;    interface IDisposable" />
-  <TypeSignature Language="C#" Value="public sealed class ArrayPoolBufferWriter&lt;T&gt; : Microsoft.Toolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;, System.Buffers.IBufferWriter&lt;T&gt;, System.Buffers.IMemoryOwner&lt;T&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayPoolBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T), IMemoryOwner(Of T)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+  <TypeSignature Language="C#" Value="public sealed class ArrayPoolBufferWriter&lt;T&gt; : Microsoft.Toolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;, System.Buffers.IBufferWriter&lt;T&gt;, System.Buffers.IMemoryOwner&lt;T&gt;" FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayPoolBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T), IMemoryOwner(Of T)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
@@ -37,12 +38,12 @@
       <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-6.1">
-      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView`1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView`1))&gt;]</AttributeName>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.ArrayPoolBufferWriterDebugView&lt;&gt;))&gt;]</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
-      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))]</AttributeName>
-      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView`1))&gt;]</AttributeName>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.Toolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))&gt;]</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -69,6 +70,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -88,9 +90,10 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
         <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
@@ -111,6 +114,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialCapacity" Type="System.Int32" />
@@ -137,10 +141,11 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
-        <Parameter Name="initialCapacity" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0" />
+        <Parameter Name="pool" Type="System.Buffers.ArrayPool&lt;T&gt;" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="initialCapacity" Type="System.Int32" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
         <param name="pool">The <see cref="T:System.Buffers.ArrayPool`1" /> instance to use.</param>
@@ -166,6 +171,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -193,6 +199,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -217,6 +224,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -241,6 +249,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -263,6 +272,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -289,6 +299,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -313,6 +324,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -341,6 +353,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -369,6 +382,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -390,6 +404,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -416,6 +431,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -440,6 +456,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
@@ -464,6 +481,7 @@
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>

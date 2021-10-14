@@ -1,0 +1,142 @@
+<Type Name="FadeHeaderBehavior" FullName="CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior">
+  <TypeSignature Language="C#" Value="public class FadeHeaderBehavior : CommunityToolkit.WinUI.UI.Behaviors.BehaviorBase&lt;Microsoft.UI.Xaml.FrameworkElement&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FadeHeaderBehavior extends CommunityToolkit.WinUI.UI.Behaviors.BehaviorBase`1&lt;class Microsoft.UI.Xaml.FrameworkElement&gt;" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Class FadeHeaderBehavior&#xA;Inherits BehaviorBase(Of FrameworkElement)" />
+  <TypeSignature Language="F#" Value="type FadeHeaderBehavior = class&#xA;    inherit BehaviorBase&lt;FrameworkElement&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.UI.Behaviors.BehaviorBase&lt;Microsoft.UI.Xaml.FrameworkElement&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="T">Microsoft.UI.Xaml.FrameworkElement</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Performs an fade animation on a ListView or GridView Header using composition.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FadeHeaderBehavior ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderElement">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.UIElement HeaderElement { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.UIElement HeaderElement" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.HeaderElement" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderElement As UIElement" />
+      <MemberSignature Language="F#" Value="member this.HeaderElement : Microsoft.UI.Xaml.UIElement with get, set" Usage="CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.HeaderElement" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets or sets the target element for the Fading behavior.
+             </summary>
+        <value>To be added.</value>
+        <remarks>
+             Set this using the header of a ListView or GridView. You can use the entire root of the header or an element within the header.
+            
+             Using this example Header:
+             <ListView.Header><Grid Name="MyHeader" /></ListView.Header>
+            
+             The behavior would be implemented like this
+             <FadeHeaderBehavior HeaderElement="{Binding ElementName=HeaderPanel}" /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderElementProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty HeaderElementProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty HeaderElementProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.HeaderElementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderElementProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderElementProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.HeaderElementProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The UIElement that will be faded.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="protected override bool Initialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Initialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Initialize () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; bool" Usage="fadeHeaderBehavior.Initialize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Attaches the behavior to the associated object.
+            </summary>
+        <returns>
+          <c>true</c> if attaching succeeded; otherwise <c>false</c>.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Uninitialize">
+      <MemberSignature Language="C#" Value="protected override bool Uninitialize ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool Uninitialize() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Behaviors.FadeHeaderBehavior.Uninitialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Uninitialize () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Uninitialize : unit -&gt; bool" Usage="fadeHeaderBehavior.Uninitialize " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Behaviors</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Detaches the behavior from the associated object.
+            </summary>
+        <returns>
+          <c>true</c> if detaching succeeded; otherwise <c>false</c>.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

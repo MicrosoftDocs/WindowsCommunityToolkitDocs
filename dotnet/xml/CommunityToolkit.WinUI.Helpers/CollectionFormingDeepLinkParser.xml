@@ -1,0 +1,153 @@
+<Type Name="CollectionFormingDeepLinkParser" FullName="CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser">
+  <TypeSignature Language="C#" Value="public class CollectionFormingDeepLinkParser : CommunityToolkit.WinUI.Helpers.DeepLinkParser" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionFormingDeepLinkParser extends CommunityToolkit.WinUI.Helpers.DeepLinkParser" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionFormingDeepLinkParser&#xA;Inherits DeepLinkParser" />
+  <TypeSignature Language="F#" Value="type CollectionFormingDeepLinkParser = class&#xA;    inherit DeepLinkParser" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.Helpers.DeepLinkParser</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A version of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> which generates a comma-separated-list as the value for any option that is repeated in the query string
+            </summary>
+    <remarks>To be added.</remarks>
+    <example>
+            in OnLaunched of App.xaml.cs:
+            <code lang="c#">
+            if (e.PrelaunchActivated == false)
+            {
+                if (rootFrame.Content == null)
+                {
+                    var parser = CollectionFormingDeepLinkParser.Create(args);
+                    if (parser["username"] == "John Doe")
+                    {
+                        // do work here
+                    }
+                    if (parser.Root == "Signup")
+                    {
+                        var preferences = parser["pref"].Split(',');    // now a string[] of all 'pref' querystring values passed in URI
+                        rootFrame.Navigate(typeof(Signup));
+                    }
+            </code></example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CollectionFormingDeepLinkParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CollectionFormingDeepLinkParser (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser : string -&gt; CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser uri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null, empty, or consists only of whitespace characters</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CollectionFormingDeepLinkParser (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As Uri)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser : Uri -&gt; CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser uri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected CollectionFormingDeepLinkParser (Windows.ApplicationModel.Activation.IActivatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Windows.ApplicationModel.Activation.IActivatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser.#ctor(Windows.ApplicationModel.Activation.IActivatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (args As IActivatedEventArgs)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser : Windows.ApplicationModel.Activation.IActivatedEventArgs -&gt; CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser args" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /> instance containing the event data.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">'args' is not a LaunchActivatedEventArgs instance</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseUriString">
+      <MemberSignature Language="C#" Value="protected override void ParseUriString (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ParseUriString(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.CollectionFormingDeepLinkParser.ParseUriString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ParseUriString (uri As String)" />
+      <MemberSignature Language="F#" Value="override this.ParseUriString : string -&gt; unit" Usage="collectionFormingDeepLinkParser.ParseUriString uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Parses the URI string in to components.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

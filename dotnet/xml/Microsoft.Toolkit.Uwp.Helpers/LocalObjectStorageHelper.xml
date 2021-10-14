@@ -10,11 +10,18 @@
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>Microsoft.Toolkit.Uwp.Helpers.BaseObjectStorageHelper</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.1">
+      <AttributeName Language="C#">[System.Obsolete("LocalObjectStorageHelper is deprecated and has been superceded by the ApplicationDataStorageHelper. To upgrade, simply swap any LocalObjectStorageHelper instances with ApplicationDataStorageHelper.GetCurrent(serializer). The underlying interfaces are nearly identical but now with even more features available, such as deletion and access to user specific data stores!")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("LocalObjectStorageHelper is deprecated and has been superceded by the ApplicationDataStorageHelper. To upgrade, simply swap any LocalObjectStorageHelper instances with ApplicationDataStorageHelper.GetCurrent(serializer). The underlying interfaces are nearly identical but now with even more features available, such as deletion and access to user specific data stores!")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Store data in the Local environment (only on the current device).
@@ -28,13 +35,14 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.LocalObjectStorageHelper.#ctor(Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (Optional objectSerializer As IObjectSerializer = Nothing)" FrameworkAlternate="win-comm-toolkit-dotnet-6.1" />
       <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.LocalObjectStorageHelper : Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer -&gt; Microsoft.Toolkit.Uwp.Helpers.LocalObjectStorageHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.LocalObjectStorageHelper objectSerializer" />
-      <MemberSignature Language="C#" Value="public LocalObjectStorageHelper (Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer);" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (objectSerializer As IObjectSerializer)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0" />
+      <MemberSignature Language="C#" Value="public LocalObjectStorageHelper (Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer objectSerializer);" FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (objectSerializer As IObjectSerializer)" FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />
@@ -45,7 +53,7 @@
             Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.LocalObjectStorageHelper" /> class,
             which can read and write data using the provided <see cref="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" />;
             In 6.1 and older the default Serializer was based on Newtonsoft.Json.
-            To implement an <see cref="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" /> based on System.Text.Json, Newtonsoft.Json, or DataContractJsonSerializer see https://aka.ms/wct/storagehelper-migration
+            To implement an <see cref="T:Microsoft.Toolkit.Uwp.Helpers.IObjectSerializer" /> based on System.Text.Json, Newtonsoft.Json, or DataContractJsonSerializer see https://aka.ms/wct/storagehelper-migration.
             </summary>
         <remarks>To be added.</remarks>
       </Docs>

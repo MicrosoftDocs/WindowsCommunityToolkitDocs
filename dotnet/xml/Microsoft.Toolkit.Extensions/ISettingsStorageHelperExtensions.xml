@@ -1,0 +1,127 @@
+<Type Name="ISettingsStorageHelperExtensions" FullName="Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions">
+  <TypeSignature Language="C#" Value="public static class ISettingsStorageHelperExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ISettingsStorageHelperExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module ISettingsStorageHelperExtensions" />
+  <TypeSignature Language="F#" Value="type ISettingsStorageHelperExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers methods for working with <see cref="T:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1" /> implementations.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Delete&lt;TKey&gt;">
+      <MemberSignature Language="C#" Value="public static void Delete&lt;TKey&gt; (this Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt; storageHelper, TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Delete&lt;TKey&gt;(class Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1&lt;!!TKey&gt; storageHelper, !!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.Delete``1(Microsoft.Toolkit.Helpers.ISettingsStorageHelper{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Delete(Of TKey) (storageHelper As ISettingsStorageHelper(Of TKey), key As TKey)" />
+      <MemberSignature Language="F#" Value="static member Delete : Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;'Key&gt; * 'Key -&gt; unit" Usage="Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.Delete (storageHelper, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="storageHelper" Type="Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">The type of key used to lookup the object.</typeparam>
+        <param name="storageHelper">The storage helper instance to delete from.</param>
+        <param name="key">The key of the target object.</param>
+        <summary>
+            Deletes a key from storage.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Throws when the key is not found in storage.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValueOrDefault&lt;TKey,TValue&gt;">
+      <MemberSignature Language="C#" Value="public static TValue? GetValueOrDefault&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt; storageHelper, TKey key, TValue? fallback = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TValue GetValueOrDefault&lt;TKey, TValue&gt;(class Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1&lt;!!TKey&gt; storageHelper, !!TKey key, !!TValue fallback) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.GetValueOrDefault``2(Microsoft.Toolkit.Helpers.ISettingsStorageHelper{``0},``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetValueOrDefault(Of TKey, TValue) (storageHelper As ISettingsStorageHelper(Of TKey), key As TKey, Optional fallback As TValue = Nothing) As TValue" />
+      <MemberSignature Language="F#" Value="static member GetValueOrDefault : Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;'Key&gt; * 'Key * 'Value -&gt; 'Value" Usage="Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.GetValueOrDefault (storageHelper, key, fallback)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="storageHelper" Type="Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="fallback" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">The type of key used to lookup the object.</typeparam>
+        <typeparam name="TValue">The type of object value expected.</typeparam>
+        <param name="storageHelper">The storage helper instance fo read from.</param>
+        <param name="key">The key of the target object.</param>
+        <param name="fallback">An alternative value returned if the read fails.</param>
+        <summary>
+            Attempts to read the provided key and return the value.
+            If the key is not found, the fallback value will be used instead.
+            </summary>
+        <returns>The value of the target object, or the fallback value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;TKey,TValue&gt;">
+      <MemberSignature Language="C#" Value="public static TValue? Read&lt;TKey,TValue&gt; (this Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt; storageHelper, TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TValue Read&lt;TKey, TValue&gt;(class Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1&lt;!!TKey&gt; storageHelper, !!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.Read``2(Microsoft.Toolkit.Helpers.ISettingsStorageHelper{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Read(Of TKey, TValue) (storageHelper As ISettingsStorageHelper(Of TKey), key As TKey) As TValue" />
+      <MemberSignature Language="F#" Value="static member Read : Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;'Key&gt; * 'Key -&gt; 'Value" Usage="Microsoft.Toolkit.Extensions.ISettingsStorageHelperExtensions.Read (storageHelper, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TValue</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TKey" />
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="storageHelper" Type="Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt;" RefType="this" />
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TKey">The type of key used to lookup the object.</typeparam>
+        <typeparam name="TValue">The type of object value expected.</typeparam>
+        <param name="storageHelper">The storage helper instance fo read from.</param>
+        <param name="key">The key of the target object.</param>
+        <summary>
+            Read the key in the storage helper instance and get the value.
+            </summary>
+        <returns>The value of the target object</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.Collections.Generic.KeyNotFoundException">Throws when the key is not found in storage.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

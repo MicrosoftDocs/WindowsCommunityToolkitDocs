@@ -1,0 +1,771 @@
+<Type Name="DependencyObjectExtensions" FullName="CommunityToolkit.WinUI.UI.DependencyObjectExtensions">
+  <TypeSignature Language="C#" Value="public static class DependencyObjectExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DependencyObjectExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.DependencyObjectExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DependencyObjectExtensions" />
+  <TypeSignature Language="F#" Value="type DependencyObjectExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides attached dependency properties for the <see cref="T:Microsoft.UI.Xaml.DependencyObject" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="FindAscendant">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.DependencyObject? FindAscendant (this Microsoft.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.DependencyObject FindAscendant(class Microsoft.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant(Microsoft.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendant (element As DependencyObject, type As Type) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Microsoft.UI.Xaml.DependencyObject * Type -&gt; Microsoft.UI.Xaml.DependencyObject" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant (element, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">The starting element.</param>
+        <param name="type">The type of element to match.</param>
+        <summary>
+            Find the first ascendant element of a given type.
+            </summary>
+        <returns>The ascendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendant">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.FrameworkElement? FindAscendant (this Microsoft.UI.Xaml.DependencyObject element, string name, StringComparison comparisonType = System.StringComparison.Ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.FrameworkElement FindAscendant(class Microsoft.UI.Xaml.DependencyObject element, string name, valuetype System.StringComparison comparisonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant(Microsoft.UI.Xaml.DependencyObject,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendant (element As DependencyObject, name As String, Optional comparisonType As StringComparison = System.StringComparison.Ordinal) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Microsoft.UI.Xaml.DependencyObject * string * StringComparison -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant (element, name, comparisonType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="element">The starting element.</param>
+        <param name="name">The name of the element to look for.</param>
+        <param name="comparisonType">The comparison type to use to match <paramref name="name" />.</param>
+        <summary>
+            Find the first ascendant of type <see cref="T:Microsoft.UI.Xaml.FrameworkElement" /> with a given name.
+            </summary>
+        <returns>The ascendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendant&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendant&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant``1(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendant(Of T As DependencyObject) (element As DependencyObject) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Microsoft.UI.Xaml.DependencyObject -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The starting element.</param>
+        <summary>
+            Find the first ascendant element of a given type.
+            </summary>
+        <returns>The ascendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendant&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendant&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element, Func&lt;T,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant``1(Microsoft.UI.Xaml.DependencyObject,System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendant(Of T As DependencyObject) (element As DependencyObject, predicate As Func(Of T, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Microsoft.UI.Xaml.DependencyObject * Func&lt;'T, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant (element, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The starting element.</param>
+        <param name="predicate">The predicatee to use to match the ascendant nodes.</param>
+        <summary>
+            Find the first ascendant element matching a given predicate.
+            </summary>
+        <returns>The ascendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendant&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendant&lt;T,TState&gt; (this Microsoft.UI.Xaml.DependencyObject element, TState state, Func&lt;T,TState,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T, TState&gt;(class Microsoft.UI.Xaml.DependencyObject element, !!TState state, class System.Func`3&lt;!!T, !!TState, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant``2(Microsoft.UI.Xaml.DependencyObject,``1,System.Func{``0,``1,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendant(Of T As DependencyObject, TState As DependencyObject) (element As DependencyObject, state As TState, predicate As Func(Of T, TState, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendant : Microsoft.UI.Xaml.DependencyObject * 'State * Func&lt;'T, 'State, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant (element, state, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,TState,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <typeparam name="TState">The type of state to use when matching nodes.</typeparam>
+        <param name="element">The starting element.</param>
+        <param name="state">The state to give as input to <paramref name="predicate" />.</param>
+        <param name="predicate">The predicatee to use to match the ascendant nodes.</param>
+        <summary>
+            Find the first ascendant element matching a given predicate.
+            </summary>
+        <returns>The ascendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendantOrSelf">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.DependencyObject? FindAscendantOrSelf (this Microsoft.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.DependencyObject FindAscendantOrSelf(class Microsoft.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf(Microsoft.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendantOrSelf (element As DependencyObject, type As Type) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member FindAscendantOrSelf : Microsoft.UI.Xaml.DependencyObject * Type -&gt; Microsoft.UI.Xaml.DependencyObject" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf (element, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">The starting element.</param>
+        <param name="type">The type of element to match.</param>
+        <summary>
+            Find the first ascendant (or self) element of a given type.
+            </summary>
+        <returns>The ascendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendantOrSelf">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.FrameworkElement? FindAscendantOrSelf (this Microsoft.UI.Xaml.DependencyObject element, string name, StringComparison comparisonType = System.StringComparison.Ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.FrameworkElement FindAscendantOrSelf(class Microsoft.UI.Xaml.DependencyObject element, string name, valuetype System.StringComparison comparisonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf(Microsoft.UI.Xaml.DependencyObject,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendantOrSelf (element As DependencyObject, name As String, Optional comparisonType As StringComparison = System.StringComparison.Ordinal) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="static member FindAscendantOrSelf : Microsoft.UI.Xaml.DependencyObject * string * StringComparison -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf (element, name, comparisonType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="element">The starting element.</param>
+        <param name="name">The name of the element to look for.</param>
+        <param name="comparisonType">The comparison type to use to match <paramref name="name" />.</param>
+        <summary>
+            Find the first ascendant (or self) of type <see cref="T:Microsoft.UI.Xaml.FrameworkElement" /> with a given name.
+            </summary>
+        <returns>The ascendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendantOrSelf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendantOrSelf&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf``1(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendantOrSelf(Of T As DependencyObject) (element As DependencyObject) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendantOrSelf : Microsoft.UI.Xaml.DependencyObject -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The starting element.</param>
+        <summary>
+            Find the first ascendant (or self) element of a given type.
+            </summary>
+        <returns>The ascendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendantOrSelf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendantOrSelf&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element, Func&lt;T,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf``1(Microsoft.UI.Xaml.DependencyObject,System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendantOrSelf(Of T As DependencyObject) (element As DependencyObject, predicate As Func(Of T, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendantOrSelf : Microsoft.UI.Xaml.DependencyObject * Func&lt;'T, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf (element, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The starting element.</param>
+        <param name="predicate">The predicatee to use to match the ascendant nodes.</param>
+        <summary>
+            Find the first ascendant (or self) element matching a given predicate.
+            </summary>
+        <returns>The ascendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendantOrSelf&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindAscendantOrSelf&lt;T,TState&gt; (this Microsoft.UI.Xaml.DependencyObject element, TState state, Func&lt;T,TState,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindAscendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T, TState&gt;(class Microsoft.UI.Xaml.DependencyObject element, !!TState state, class System.Func`3&lt;!!T, !!TState, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf``2(Microsoft.UI.Xaml.DependencyObject,``1,System.Func{``0,``1,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindAscendantOrSelf(Of T As DependencyObject, TState As DependencyObject) (element As DependencyObject, state As TState, predicate As Func(Of T, TState, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindAscendantOrSelf : Microsoft.UI.Xaml.DependencyObject * 'State * Func&lt;'T, 'State, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendantOrSelf (element, state, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,TState,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <typeparam name="TState">The type of state to use when matching nodes.</typeparam>
+        <param name="element">The starting element.</param>
+        <param name="state">The state to give as input to <paramref name="predicate" />.</param>
+        <param name="predicate">The predicatee to use to match the ascendant nodes.</param>
+        <summary>
+            Find the first ascendant (or self) element matching a given predicate.
+            </summary>
+        <returns>The ascendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindAscendants">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.UI.Xaml.DependencyObject&gt; FindAscendants (this Microsoft.UI.Xaml.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.UI.Xaml.DependencyObject&gt; FindAscendants(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendants(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function FindAscendants (element As DependencyObject) As IEnumerable(Of DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member FindAscendants : Microsoft.UI.Xaml.DependencyObject -&gt; seq&lt;Microsoft.UI.Xaml.DependencyObject&gt;" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendants element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(CommunityToolkit.WinUI.UI.DependencyObjectExtensions+&lt;FindAscendants&gt;d__23))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(CommunityToolkit.WinUI.UI.DependencyObjectExtensions+&lt;FindAscendants&gt;d__23))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.UI.Xaml.DependencyObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <summary>
+            Find all ascendant elements of the specified element. This method can be chained with
+            LINQ calls to add additional filters or projections on top of the returned results.
+            <para>
+            This method is meant to provide extra flexibility in specific scenarios and it should not
+            be used when only the first item is being looked for. In those cases, use one of the
+            available <see cref="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindAscendant``1(Microsoft.UI.Xaml.DependencyObject)" /> overloads instead, which will
+            offer a more compact syntax as well as better performance in those cases.
+            </para></summary>
+        <returns>All the descendant <see cref="T:Microsoft.UI.Xaml.DependencyObject" /> instance from <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.DependencyObject? FindDescendant (this Microsoft.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.DependencyObject FindDescendant(class Microsoft.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant(Microsoft.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendant (element As DependencyObject, type As Type) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Microsoft.UI.Xaml.DependencyObject * Type -&gt; Microsoft.UI.Xaml.DependencyObject" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant (element, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <param name="type">The type of element to match.</param>
+        <summary>
+            Find the first descendant element of a given type, using a depth-first search.
+            </summary>
+        <returns>The descendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.FrameworkElement? FindDescendant (this Microsoft.UI.Xaml.DependencyObject element, string name, StringComparison comparisonType = System.StringComparison.Ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.FrameworkElement FindDescendant(class Microsoft.UI.Xaml.DependencyObject element, string name, valuetype System.StringComparison comparisonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant(Microsoft.UI.Xaml.DependencyObject,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendant (element As DependencyObject, name As String, Optional comparisonType As StringComparison = System.StringComparison.Ordinal) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Microsoft.UI.Xaml.DependencyObject * string * StringComparison -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant (element, name, comparisonType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <param name="name">The name of the element to look for.</param>
+        <param name="comparisonType">The comparison type to use to match <paramref name="name" />.</param>
+        <summary>
+            Find the first descendant of type <see cref="T:Microsoft.UI.Xaml.FrameworkElement" /> with a given name, using a depth-first search.
+            </summary>
+        <returns>The descendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendant&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant``1(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendant(Of T As DependencyObject) (element As DependencyObject) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Microsoft.UI.Xaml.DependencyObject -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The root element.</param>
+        <summary>
+            Find the first descendant element of a given type, using a depth-first search.
+            </summary>
+        <returns>The descendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendant&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element, Func&lt;T,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant``1(Microsoft.UI.Xaml.DependencyObject,System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendant(Of T As DependencyObject) (element As DependencyObject, predicate As Func(Of T, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Microsoft.UI.Xaml.DependencyObject * Func&lt;'T, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant (element, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The root element.</param>
+        <param name="predicate">The predicatee to use to match the descendant nodes.</param>
+        <summary>
+            Find the first descendant element matching a given predicate, using a depth-first search.
+            </summary>
+        <returns>The descendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendant&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendant&lt;T,TState&gt; (this Microsoft.UI.Xaml.DependencyObject element, TState state, Func&lt;T,TState,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendant&lt;(class Microsoft.UI.Xaml.DependencyObject) T, TState&gt;(class Microsoft.UI.Xaml.DependencyObject element, !!TState state, class System.Func`3&lt;!!T, !!TState, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant``2(Microsoft.UI.Xaml.DependencyObject,``1,System.Func{``0,``1,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendant(Of T As DependencyObject, TState As DependencyObject) (element As DependencyObject, state As TState, predicate As Func(Of T, TState, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendant : Microsoft.UI.Xaml.DependencyObject * 'State * Func&lt;'T, 'State, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant (element, state, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,TState,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <typeparam name="TState">The type of state to use when matching nodes.</typeparam>
+        <param name="element">The root element.</param>
+        <param name="state">The state to give as input to <paramref name="predicate" />.</param>
+        <param name="predicate">The predicatee to use to match the descendant nodes.</param>
+        <summary>
+            Find the first descendant element matching a given predicate, using a depth-first search.
+            </summary>
+        <returns>The descendant that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendantOrSelf">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.DependencyObject? FindDescendantOrSelf (this Microsoft.UI.Xaml.DependencyObject element, Type type);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.DependencyObject FindDescendantOrSelf(class Microsoft.UI.Xaml.DependencyObject element, class System.Type type) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf(Microsoft.UI.Xaml.DependencyObject,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendantOrSelf (element As DependencyObject, type As Type) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member FindDescendantOrSelf : Microsoft.UI.Xaml.DependencyObject * Type -&gt; Microsoft.UI.Xaml.DependencyObject" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf (element, type)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyObject</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="type" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <param name="type">The type of element to match.</param>
+        <summary>
+            Find the first descendant (or self) element of a given type, using a depth-first search.
+            </summary>
+        <returns>The descendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendantOrSelf">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.FrameworkElement? FindDescendantOrSelf (this Microsoft.UI.Xaml.DependencyObject element, string name, StringComparison comparisonType = System.StringComparison.Ordinal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.UI.Xaml.FrameworkElement FindDescendantOrSelf(class Microsoft.UI.Xaml.DependencyObject element, string name, valuetype System.StringComparison comparisonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf(Microsoft.UI.Xaml.DependencyObject,System.String,System.StringComparison)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendantOrSelf (element As DependencyObject, name As String, Optional comparisonType As StringComparison = System.StringComparison.Ordinal) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="static member FindDescendantOrSelf : Microsoft.UI.Xaml.DependencyObject * string * StringComparison -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf (element, name, comparisonType)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <param name="name">The name of the element to look for.</param>
+        <param name="comparisonType">The comparison type to use to match <paramref name="name" />.</param>
+        <summary>
+            Find the first descendant (or self) of type <see cref="T:Microsoft.UI.Xaml.FrameworkElement" /> with a given name, using a depth-first search.
+            </summary>
+        <returns>The descendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendantOrSelf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendantOrSelf&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf``1(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendantOrSelf(Of T As DependencyObject) (element As DependencyObject) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendantOrSelf : Microsoft.UI.Xaml.DependencyObject -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The root element.</param>
+        <summary>
+            Find the first descendant (or self) element of a given type, using a depth-first search.
+            </summary>
+        <returns>The descendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendantOrSelf&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendantOrSelf&lt;T&gt; (this Microsoft.UI.Xaml.DependencyObject element, Func&lt;T,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T&gt;(class Microsoft.UI.Xaml.DependencyObject element, class System.Func`2&lt;!!T, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf``1(Microsoft.UI.Xaml.DependencyObject,System.Func{``0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendantOrSelf(Of T As DependencyObject) (element As DependencyObject, predicate As Func(Of T, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendantOrSelf : Microsoft.UI.Xaml.DependencyObject * Func&lt;'T, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf (element, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <param name="element">The root element.</param>
+        <param name="predicate">The predicatee to use to match the descendant nodes.</param>
+        <summary>
+            Find the first descendant (or self) element matching a given predicate, using a depth-first search.
+            </summary>
+        <returns>The descendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendantOrSelf&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static T? FindDescendantOrSelf&lt;T,TState&gt; (this Microsoft.UI.Xaml.DependencyObject element, TState state, Func&lt;T,TState,bool&gt; predicate) where T : Microsoft.UI.Xaml.DependencyObject;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T FindDescendantOrSelf&lt;(class Microsoft.UI.Xaml.DependencyObject) T, TState&gt;(class Microsoft.UI.Xaml.DependencyObject element, !!TState state, class System.Func`3&lt;!!T, !!TState, bool&gt; predicate) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf``2(Microsoft.UI.Xaml.DependencyObject,``1,System.Func{``0,``1,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindDescendantOrSelf(Of T As DependencyObject, TState As DependencyObject) (element As DependencyObject, state As TState, predicate As Func(Of T, TState, Boolean)) As T" />
+      <MemberSignature Language="F#" Value="static member FindDescendantOrSelf : Microsoft.UI.Xaml.DependencyObject * 'State * Func&lt;'T, 'State, bool (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)&gt; -&gt; 'T (requires 'T :&gt; Microsoft.UI.Xaml.DependencyObject)" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendantOrSelf (element, state, predicate)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="predicate" Type="System.Func&lt;T,TState,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of elements to match.</typeparam>
+        <typeparam name="TState">The type of state to use when matching nodes.</typeparam>
+        <param name="element">The root element.</param>
+        <param name="state">The state to give as input to <paramref name="predicate" />.</param>
+        <param name="predicate">The predicatee to use to match the descendant nodes.</param>
+        <summary>
+            Find the first descendant (or self) element matching a given predicate, using a depth-first search.
+            </summary>
+        <returns>The descendant (or self) that was found, or <see langword="null" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindDescendants">
+      <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Microsoft.UI.Xaml.DependencyObject&gt; FindDescendants (this Microsoft.UI.Xaml.DependencyObject element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.UI.Xaml.DependencyObject&gt; FindDescendants(class Microsoft.UI.Xaml.DependencyObject element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendants(Microsoft.UI.Xaml.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Iterator Function FindDescendants (element As DependencyObject) As IEnumerable(Of DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member FindDescendants : Microsoft.UI.Xaml.DependencyObject -&gt; seq&lt;Microsoft.UI.Xaml.DependencyObject&gt;" Usage="CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendants element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.IteratorStateMachine(typeof(CommunityToolkit.WinUI.UI.DependencyObjectExtensions+&lt;FindDescendants&gt;d__11))]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IteratorStateMachine(typeof(CommunityToolkit.WinUI.UI.DependencyObjectExtensions+&lt;FindDescendants&gt;d__11))&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerable&lt;Microsoft.UI.Xaml.DependencyObject&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.DependencyObject" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="element">The root element.</param>
+        <summary>
+            Find all descendant elements of the specified element. This method can be chained with
+            LINQ calls to add additional filters or projections on top of the returned results.
+            <para>
+            This method is meant to provide extra flexibility in specific scenarios and it should not
+            be used when only the first item is being looked for. In those cases, use one of the
+            available <see cref="M:CommunityToolkit.WinUI.UI.DependencyObjectExtensions.FindDescendant``1(Microsoft.UI.Xaml.DependencyObject)" /> overloads instead, which will
+            offer a more compact syntax as well as better performance in those cases.
+            </para></summary>
+        <returns>All the descendant <see cref="T:Microsoft.UI.Xaml.DependencyObject" /> instance from <paramref name="element" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

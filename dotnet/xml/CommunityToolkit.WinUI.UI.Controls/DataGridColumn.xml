@@ -1,0 +1,793 @@
+<Type Name="DataGridColumn" FullName="CommunityToolkit.WinUI.UI.Controls.DataGridColumn">
+  <TypeSignature Language="C#" Value="public abstract class DataGridColumn : Microsoft.UI.Xaml.DependencyObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataGridColumn extends Microsoft.UI.Xaml.DependencyObject" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.DataGridColumn" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataGridColumn&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type DataGridColumn = class&#xA;    inherit DependencyObject" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.UI.Xaml.DependencyObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.StyleTypedProperty(Property="CellStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.DataGridCell))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.StyleTypedProperty(Property="CellStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.DataGridCell))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.StyleTypedProperty(Property="DragIndicatorStyle", StyleTargetType=typeof(Microsoft.UI.Xaml.Controls.ContentControl))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.StyleTypedProperty(Property="DragIndicatorStyle", StyleTargetType=typeof(Microsoft.UI.Xaml.Controls.ContentControl))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.StyleTypedProperty(Property="HeaderStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridColumnHeader))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.StyleTypedProperty(Property="HeaderStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridColumnHeader))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" /> column.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected internal DataGridColumn ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridColumn" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActualWidth">
+      <MemberSignature Language="C#" Value="public double ActualWidth { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ActualWidth" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.ActualWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ActualWidth : double" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.ActualWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the actual visible width after Width, MinWidth, and MaxWidth setting at the Column level and DataGrid level
+            have been taken into account.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelCellEdit">
+      <MemberSignature Language="C#" Value="protected virtual void CancelCellEdit (Microsoft.UI.Xaml.FrameworkElement editingElement, object uneditedValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CancelCellEdit(class Microsoft.UI.Xaml.FrameworkElement editingElement, object uneditedValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CancelCellEdit(Microsoft.UI.Xaml.FrameworkElement,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CancelCellEdit (editingElement As FrameworkElement, uneditedValue As Object)" />
+      <MemberSignature Language="F#" Value="abstract member CancelCellEdit : Microsoft.UI.Xaml.FrameworkElement * obj -&gt; unit&#xA;override this.CancelCellEdit : Microsoft.UI.Xaml.FrameworkElement * obj -&gt; unit" Usage="dataGridColumn.CancelCellEdit (editingElement, uneditedValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingElement" Type="Microsoft.UI.Xaml.FrameworkElement" />
+        <Parameter Name="uneditedValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="editingElement">
+            The element that the column displays for a cell in editing mode.
+            </param>
+        <param name="uneditedValue">
+            The previous, unedited value in the cell being edited.
+            </param>
+        <summary>
+            When overridden in a derived class, causes the column cell being edited to revert to the unedited value.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUserReorder">
+      <MemberSignature Language="C#" Value="public bool CanUserReorder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUserReorder" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserReorder" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanUserReorder As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserReorder : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserReorder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the user can change the column display position by dragging the column header.
+            </summary>
+        <value>
+            true if the user can drag the column header to a new position; otherwise, false. The default is the current <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGrid.CanUserReorderColumns" /> property value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUserResize">
+      <MemberSignature Language="C#" Value="public bool CanUserResize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUserResize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserResize" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanUserResize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserResize : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserResize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the user can adjust the column width using the mouse.
+            </summary>
+        <value>
+            True if the user can resize the column; false if the user cannot resize the column. The default is the current <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGrid.CanUserResizeColumns" /> property value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUserSort">
+      <MemberSignature Language="C#" Value="public bool CanUserSort { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool CanUserSort" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserSort" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanUserSort As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserSort : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CanUserSort" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the user can sort the column by clicking the column header.
+            </summary>
+        <value>
+            True if the user can sort the column; false if the user cannot sort the column. The default is the current <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGrid.CanUserSortColumns" /> property value.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CellStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Style CellStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Style CellStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CellStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.CellStyle : Microsoft.UI.Xaml.Style with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.CellStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style that is used when rendering cells in the column.
+            </summary>
+        <value>
+            The style that is used when rendering cells in the column. The default is null.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClipboardContentBinding">
+      <MemberSignature Language="C#" Value="public virtual Microsoft.UI.Xaml.Data.Binding ClipboardContentBinding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Data.Binding ClipboardContentBinding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.ClipboardContentBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ClipboardContentBinding As Binding" />
+      <MemberSignature Language="F#" Value="member this.ClipboardContentBinding : Microsoft.UI.Xaml.Data.Binding with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.ClipboardContentBinding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Data.Binding</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the binding that will be used to get or set cell content for the clipboard.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DisplayIndex">
+      <MemberSignature Language="C#" Value="public int DisplayIndex { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DisplayIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets or sets the display position of the column relative to the other columns in the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" />.
+             </summary>
+        <value>
+             The zero-based position of the column as it is displayed in the associated <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" />. The default is the index of the corresponding <see cref="P:System.Collections.ObjectModel.Collection`1.Item(System.Int32)" /> in the <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGrid.Columns" /> collection.
+             </value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+             When setting this property, the specified value is less than -1 or equal to <see cref="F:System.Int32.MaxValue" />.
+            
+             -or-
+            
+             When setting this property on a column in a <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" />, the specified value is less than zero or greater than or equal to the number of columns in the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" />.
+             </exception>
+        <exception cref="T:System.InvalidOperationException">
+             When setting this property, the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" /> is already making <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DisplayIndex" /> adjustments. For example, this exception is thrown when you attempt to set <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DisplayIndex" /> in a <see cref="E:System.Windows.Controls.DataGrid.ColumnDisplayIndexChanged" /> event handler.
+            
+             -or-
+            
+             When setting this property, the specified value would result in a frozen column being displayed in the range of unfrozen columns, or an unfrozen column being displayed in the range of frozen columns.
+             </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="DragIndicatorStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Style DragIndicatorStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Style DragIndicatorStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DragIndicatorStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragIndicatorStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.DragIndicatorStyle : Microsoft.UI.Xaml.Style with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.DragIndicatorStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style for the drag indicator.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateEditingElement">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.UI.Xaml.FrameworkElement GenerateEditingElement (CommunityToolkit.WinUI.UI.Controls.DataGridCell cell, object dataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.UI.Xaml.FrameworkElement GenerateEditingElement(class CommunityToolkit.WinUI.UI.Controls.DataGridCell cell, object dataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GenerateEditingElement(CommunityToolkit.WinUI.UI.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateEditingElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="abstract member GenerateEditingElement : CommunityToolkit.WinUI.UI.Controls.DataGridCell * obj -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="dataGridColumn.GenerateEditingElement (cell, dataItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="CommunityToolkit.WinUI.UI.Controls.DataGridCell" />
+        <Parameter Name="dataItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cell">
+            The cell that will contain the generated element.
+            </param>
+        <param name="dataItem">
+            The data item represented by the row that contains the intended cell.
+            </param>
+        <summary>
+            When overridden in a derived class, gets an editing element that is bound to the column's <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn.Binding" /> property value.
+            </summary>
+        <returns>
+            A new editing element that is bound to the column's <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn.Binding" /> property value.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GenerateElement">
+      <MemberSignature Language="C#" Value="protected abstract Microsoft.UI.Xaml.FrameworkElement GenerateElement (CommunityToolkit.WinUI.UI.Controls.DataGridCell cell, object dataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.UI.Xaml.FrameworkElement GenerateElement(class CommunityToolkit.WinUI.UI.Controls.DataGridCell cell, object dataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GenerateElement(CommunityToolkit.WinUI.UI.Controls.DataGridCell,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GenerateElement (cell As DataGridCell, dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="abstract member GenerateElement : CommunityToolkit.WinUI.UI.Controls.DataGridCell * obj -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="dataGridColumn.GenerateElement (cell, dataItem)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="cell" Type="CommunityToolkit.WinUI.UI.Controls.DataGridCell" />
+        <Parameter Name="dataItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="cell">
+            The cell that will contain the generated element.
+            </param>
+        <param name="dataItem">
+            The data item represented by the row that contains the intended cell.
+            </param>
+        <summary>
+            When overridden in a derived class, gets a read-only element that is bound to the column's
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn.Binding" /> property value.
+            </summary>
+        <returns>
+            A new, read-only element that is bound to the column's <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridBoundColumn.Binding" /> property value.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCellContent">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.FrameworkElement GetCellContent (CommunityToolkit.WinUI.UI.Controls.DataGridRow dataGridRow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.UI.Xaml.FrameworkElement GetCellContent(class CommunityToolkit.WinUI.UI.Controls.DataGridRow dataGridRow) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GetCellContent(CommunityToolkit.WinUI.UI.Controls.DataGridRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCellContent (dataGridRow As DataGridRow) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="member this.GetCellContent : CommunityToolkit.WinUI.UI.Controls.DataGridRow -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="dataGridColumn.GetCellContent dataGridRow" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataGridRow" Type="CommunityToolkit.WinUI.UI.Controls.DataGridRow" />
+      </Parameters>
+      <Docs>
+        <param name="dataGridRow">Row to get the content for.</param>
+        <summary>
+            Returns the column's content for the provided row.
+            </summary>
+        <returns>The column's content for the provided row.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCellContent">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.FrameworkElement GetCellContent (object dataItem);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.UI.Xaml.FrameworkElement GetCellContent(object dataItem) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GetCellContent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCellContent (dataItem As Object) As FrameworkElement" />
+      <MemberSignature Language="F#" Value="member this.GetCellContent : obj -&gt; Microsoft.UI.Xaml.FrameworkElement" Usage="dataGridColumn.GetCellContent dataItem" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dataItem" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="dataItem">Row dataItem to get the content for.</param>
+        <summary>
+            Returns the column's content for the provided row dataItem.
+            </summary>
+        <returns>The column's content for the provided row dataItem.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetColumnContainingElement">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.UI.Controls.DataGridColumn GetColumnContainingElement (Microsoft.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.UI.Controls.DataGridColumn GetColumnContainingElement(class Microsoft.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GetColumnContainingElement(Microsoft.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetColumnContainingElement (element As FrameworkElement) As DataGridColumn" />
+      <MemberSignature Language="F#" Value="static member GetColumnContainingElement : Microsoft.UI.Xaml.FrameworkElement -&gt; CommunityToolkit.WinUI.UI.Controls.DataGridColumn" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.GetColumnContainingElement element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.DataGridColumn</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">element contained in a column</param>
+        <summary>
+            Returns the column which contains the given element
+            </summary>
+        <returns>Column that contains the element, or null if not found</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Header" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the header object.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Style HeaderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Style HeaderStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : Microsoft.UI.Xaml.Style with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.HeaderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style for the header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAutoGenerated">
+      <MemberSignature Language="C#" Value="public bool IsAutoGenerated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoGenerated" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsAutoGenerated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoGenerated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAutoGenerated : bool" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsAutoGenerated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this column is autoGenerated.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFrozen">
+      <MemberSignature Language="C#" Value="public bool IsFrozen { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFrozen" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsFrozen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrozen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFrozen : bool" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsFrozen" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether this column is frozen.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsReadOnly">
+      <MemberSignature Language="C#" Value="public bool IsReadOnly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether this column is read-only.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxWidth">
+      <MemberSignature Language="C#" Value="public double MaxWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MaxWidth" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.MaxWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.MaxWidth : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.MaxWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the column's maximum width.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinWidth">
+      <MemberSignature Language="C#" Value="public double MinWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 MinWidth" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.MinWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.MinWidth : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.MinWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the column's minimum width.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyPropertyChanged">
+      <MemberSignature Language="C#" Value="protected void NotifyPropertyChanged (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void NotifyPropertyChanged(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.NotifyPropertyChanged(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub NotifyPropertyChanged (propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.NotifyPropertyChanged : string -&gt; unit" Usage="dataGridColumn.NotifyPropertyChanged propertyName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">Indicates which property changed and caused this call</param>
+        <summary>
+            Called by a specific column type when one of its properties changed,
+            and its current cells need to be updated.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PrepareCellForEdit">
+      <MemberSignature Language="C#" Value="protected abstract object PrepareCellForEdit (Microsoft.UI.Xaml.FrameworkElement editingElement, Microsoft.UI.Xaml.RoutedEventArgs editingEventArgs);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object PrepareCellForEdit(class Microsoft.UI.Xaml.FrameworkElement editingElement, class Microsoft.UI.Xaml.RoutedEventArgs editingEventArgs) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.PrepareCellForEdit(Microsoft.UI.Xaml.FrameworkElement,Microsoft.UI.Xaml.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function PrepareCellForEdit (editingElement As FrameworkElement, editingEventArgs As RoutedEventArgs) As Object" />
+      <MemberSignature Language="F#" Value="abstract member PrepareCellForEdit : Microsoft.UI.Xaml.FrameworkElement * Microsoft.UI.Xaml.RoutedEventArgs -&gt; obj" Usage="dataGridColumn.PrepareCellForEdit (editingElement, editingEventArgs)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="editingElement" Type="Microsoft.UI.Xaml.FrameworkElement" />
+        <Parameter Name="editingEventArgs" Type="Microsoft.UI.Xaml.RoutedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="editingElement">
+            The element that the column displays for a cell in editing mode.
+            </param>
+        <param name="editingEventArgs">
+            Information about the user gesture that is causing a cell to enter editing mode.
+            </param>
+        <summary>
+            When overridden in a derived class, called when a cell in the column enters editing mode.
+            </summary>
+        <returns>
+            The unedited value.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshCellContent">
+      <MemberSignature Language="C#" Value="protected internal virtual void RefreshCellContent (Microsoft.UI.Xaml.FrameworkElement element, Microsoft.UI.Xaml.Media.Brush computedRowForeground, string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RefreshCellContent(class Microsoft.UI.Xaml.FrameworkElement element, class Microsoft.UI.Xaml.Media.Brush computedRowForeground, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.RefreshCellContent(Microsoft.UI.Xaml.FrameworkElement,Microsoft.UI.Xaml.Media.Brush,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RefreshCellContent (element As FrameworkElement, computedRowForeground As Brush, propertyName As String)" />
+      <MemberSignature Language="F#" Value="abstract member RefreshCellContent : Microsoft.UI.Xaml.FrameworkElement * Microsoft.UI.Xaml.Media.Brush * string -&gt; unit&#xA;override this.RefreshCellContent : Microsoft.UI.Xaml.FrameworkElement * Microsoft.UI.Xaml.Media.Brush * string -&gt; unit" Usage="dataGridColumn.RefreshCellContent (element, computedRowForeground, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+        <Parameter Name="computedRowForeground" Type="Microsoft.UI.Xaml.Media.Brush" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="element">Indicates the element that needs to be refreshed</param>
+        <param name="computedRowForeground">Indicates the computed row foreground based on RowForeground and AlternatingRowForeground</param>
+        <param name="propertyName">Indicates which property changed and caused this call</param>
+        <summary>
+            Called by the DataGrid control when a column asked for its
+            elements to be refreshed, typically because one of its properties changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RefreshForeground">
+      <MemberSignature Language="C#" Value="protected internal virtual void RefreshForeground (Microsoft.UI.Xaml.FrameworkElement element, Microsoft.UI.Xaml.Media.Brush computedRowForeground);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void RefreshForeground(class Microsoft.UI.Xaml.FrameworkElement element, class Microsoft.UI.Xaml.Media.Brush computedRowForeground) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.RefreshForeground(Microsoft.UI.Xaml.FrameworkElement,Microsoft.UI.Xaml.Media.Brush)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub RefreshForeground (element As FrameworkElement, computedRowForeground As Brush)" />
+      <MemberSignature Language="F#" Value="abstract member RefreshForeground : Microsoft.UI.Xaml.FrameworkElement * Microsoft.UI.Xaml.Media.Brush -&gt; unit&#xA;override this.RefreshForeground : Microsoft.UI.Xaml.FrameworkElement * Microsoft.UI.Xaml.Media.Brush -&gt; unit" Usage="dataGridColumn.RefreshForeground (element, computedRowForeground)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+        <Parameter Name="computedRowForeground" Type="Microsoft.UI.Xaml.Media.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="computedRowForeground">To be added.</param>
+        <summary>
+            Called when the computed foreground of a row changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SortDirection">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Controls.DataGridSortDirection? SortDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Controls.DataGridSortDirection&gt; SortDirection" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.SortDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortDirection As Nullable(Of DataGridSortDirection)" />
+      <MemberSignature Language="F#" Value="member this.SortDirection : Nullable&lt;CommunityToolkit.WinUI.UI.Controls.DataGridSortDirection&gt; with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.SortDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;CommunityToolkit.WinUI.UI.Controls.DataGridSortDirection&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the column's sort direction. Null indicates no sorting.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tag">
+      <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Tag" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets an object associated with this column.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visibility">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Visibility Visibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Visibility Visibility" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Visibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visibility As Visibility" />
+      <MemberSignature Language="F#" Value="member this.Visibility : Microsoft.UI.Xaml.Visibility with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Visibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Visibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the column's visibility.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Width">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Controls.DataGridLength Width { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.WinUI.UI.Controls.DataGridLength Width" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As DataGridLength" />
+      <MemberSignature Language="F#" Value="member this.Width : CommunityToolkit.WinUI.UI.Controls.DataGridLength with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridColumn.Width" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.DataGridLength</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the column's width.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

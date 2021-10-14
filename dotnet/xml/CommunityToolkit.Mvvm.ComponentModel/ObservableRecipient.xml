@@ -1,0 +1,532 @@
+<Type Name="ObservableRecipient" FullName="CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient">
+  <TypeSignature Language="C#" Value="public abstract class ObservableRecipient : CommunityToolkit.Mvvm.ComponentModel.ObservableObject" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObservableRecipient extends CommunityToolkit.Mvvm.ComponentModel.ObservableObject" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObservableRecipient&#xA;Inherits ObservableObject" />
+  <TypeSignature Language="F#" Value="type ObservableRecipient = class&#xA;    inherit ObservableObject" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.Mvvm.ComponentModel.ObservableObject</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A base class for observable objects that also acts as recipients for messages. This class is an extension of
+            <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservableObject" /> which also provides built-in support to use the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableRecipient ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient" /> class.
+            </summary>
+        <remarks>
+            This constructor will produce an instance that will use the <see cref="P:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Default" /> instance
+            to perform requested operations. It will also be available locally through the <see cref="P:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Messenger" /> property.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ObservableRecipient (CommunityToolkit.Mvvm.Messaging.IMessenger messenger);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class CommunityToolkit.Mvvm.Messaging.IMessenger messenger) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.#ctor(CommunityToolkit.Mvvm.Messaging.IMessenger)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (messenger As IMessenger)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient : CommunityToolkit.Mvvm.Messaging.IMessenger -&gt; CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient" Usage="new CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient messenger" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="messenger" Type="CommunityToolkit.Mvvm.Messaging.IMessenger" />
+      </Parameters>
+      <Docs>
+        <param name="messenger">The <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance to use to send messages.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Broadcast&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected virtual void Broadcast&lt;T&gt; (T oldValue, T newValue, string? propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Broadcast&lt;T&gt;(!!T oldValue, !!T newValue, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Broadcast(Of T) (oldValue As T, newValue As T, propertyName As String)" />
+      <MemberSignature Language="F#" Value="abstract member Broadcast : 'T * 'T * string -&gt; unit&#xA;override this.Broadcast : 'T * 'T * string -&gt; unit" Usage="observableRecipient.Broadcast (oldValue, newValue, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The value of the property before it changed.</param>
+        <param name="newValue">The value of the property after it changed.</param>
+        <param name="propertyName">The name of the property that changed.</param>
+        <summary>
+            Broadcasts a <see cref="T:CommunityToolkit.Mvvm.Messaging.Messages.PropertyChangedMessage`1" /> with the specified
+            parameters, without using any particular token (so using the default channel).
+            </summary>
+        <remarks>
+            You should override this method if you wish to customize the channel being
+            used to send the message (eg. if you need to use a specific token for the channel).
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsActive">
+      <MemberSignature Language="C#" Value="public bool IsActive { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.IsActive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsActive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool with get, set" Usage="CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.IsActive" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the current view model is currently active.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Messenger">
+      <MemberSignature Language="C#" Value="protected CommunityToolkit.Mvvm.Messaging.IMessenger Messenger { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.Mvvm.Messaging.IMessenger Messenger" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Messenger" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Messenger As IMessenger" />
+      <MemberSignature Language="F#" Value="member this.Messenger : CommunityToolkit.Mvvm.Messaging.IMessenger" Usage="CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Messenger" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.Mvvm.Messaging.IMessenger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance in use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnActivated">
+      <MemberSignature Language="C#" Value="protected virtual void OnActivated ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.OnActivated" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivated ()" />
+      <MemberSignature Language="F#" Value="abstract member OnActivated : unit -&gt; unit&#xA;override this.OnActivated : unit -&gt; unit" Usage="observableRecipient.OnActivated " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Raised whenever the <see cref="P:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.IsActive" /> property is set to <see langword="true" />.
+            Use this method to register to messages and do other initialization for this instance.
+            </summary>
+        <remarks>
+            The base implementation registers all messages for this recipients that have been declared
+            explicitly through the <see cref="T:CommunityToolkit.Mvvm.Messaging.IRecipient`1" /> interface, using the default channel.
+            For more details on how this works, see the <see cref="M:CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.RegisterAll(CommunityToolkit.Mvvm.Messaging.IMessenger,System.Object)" /> method.
+            If you need more fine tuned control, want to register messages individually or just prefer
+            the lambda-style syntax for message registration, override this method and register manually.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDeactivated">
+      <MemberSignature Language="C#" Value="protected virtual void OnDeactivated ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeactivated() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.OnDeactivated" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeactivated ()" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivated : unit -&gt; unit&#xA;override this.OnDeactivated : unit -&gt; unit" Usage="observableRecipient.OnDeactivated " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Raised whenever the <see cref="P:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.IsActive" /> property is set to <see langword="false" />.
+            Use this method to unregister from messages and do general cleanup for this instance.
+            </summary>
+        <remarks>
+            The base implementation unregisters all messages for this recipient. It does so by
+            invoking <see cref="M:CommunityToolkit.Mvvm.Messaging.IMessenger.UnregisterAll(System.Object)" />, which removes all registered
+            handlers for a given subscriber, regardless of what token was used to register them.
+            That is, all registered handlers across all subscription channels will be removed.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, bool broadcast, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * bool * string -&gt; bool" Usage="observableRecipient.SetProperty (field, newValue, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            This method is just like <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />, just with the addition
+            of the <paramref name="broadcast" /> parameter. As such, following the behavior of the base method,
+            the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events
+            are not raised if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, Action&lt;T&gt; callback, bool broadcast, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Action`1&lt;!!T&gt; callback, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, callback As Action(Of T), broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * Action&lt;'T&gt; * bool * string -&gt; bool" Usage="observableRecipient.SetProperty (oldValue, newValue, callback, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. Similarly to
+            the <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" /> method, this overload should only be
+            used when <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" /> can't be used directly.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>
+            This method is just like <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0,``0,System.Action{``0},System.String)" />, just with the addition
+            of the <paramref name="broadcast" /> parameter. As such, following the behavior of the base method,
+            the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> and <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> events
+            are not raised if the current and new value for the target property are the same.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (ref T field, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, bool broadcast, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T&amp; field, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Collections.Generic.IEqualityComparer{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (ByRef field As T, newValue As T, comparer As IEqualityComparer(Of T), broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * bool * string -&gt; bool" Usage="observableRecipient.SetProperty (field, newValue, comparer, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="field" Type="T" RefType="ref" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="field">The field storing the property's value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Boolean,System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, Action&lt;T&gt; callback, bool broadcast, string? propertyName = default);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, class System.Action`1&lt;!!T&gt; callback, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0,``0,System.Collections.Generic.IEqualityComparer{``0},System.Action{``0},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of T) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), callback As Action(Of T), broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * Action&lt;'T&gt; * bool * string -&gt; bool" Usage="observableRecipient.SetProperty (oldValue, newValue, comparer, callback, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="callback" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the property that changed.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="callback">A callback to invoke to update the property value.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property with
+            the new value, then raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event.
+            See additional notes about this overload in <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0,``0,System.Action{``0},System.Boolean,System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, TModel model, Action&lt;TModel,T&gt; callback, bool broadcast, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, model As TModel, callback As Action(Of TModel, T), broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * bool * string -&gt; bool (requires 'Model : null)" Usage="observableRecipient.SetProperty (oldValue, newValue, model, callback, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given nested property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+            <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of
+            <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />, with the difference being that this
+            method is used to relay properties from a wrapped model in the current instance. For more info, see the docs for
+            <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,``0,System.Action{``0,``1},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetProperty&lt;TModel,T&gt;">
+      <MemberSignature Language="C#" Value="protected bool SetProperty&lt;TModel,T&gt; (T oldValue, T newValue, System.Collections.Generic.IEqualityComparer&lt;T&gt; comparer, TModel model, Action&lt;TModel,T&gt; callback, bool broadcast, string? propertyName = default) where TModel : class;" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool SetProperty&lt;class TModel, T&gt;(!!T oldValue, !!T newValue, class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; comparer, !!TModel model, class System.Action`2&lt;!!TModel, !!T&gt; callback, bool broadcast, string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SetProperty(Of TModel As Class, T As Class) (oldValue As T, newValue As T, comparer As IEqualityComparer(Of T), model As TModel, callback As Action(Of TModel, T), broadcast As Boolean, Optional propertyName As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SetProperty : 'T * 'T * System.Collections.Generic.IEqualityComparer&lt;'T&gt; * 'Model * Action&lt;'Model, 'T (requires 'Model : null)&gt; * bool * string -&gt; bool (requires 'Model : null)" Usage="observableRecipient.SetProperty (oldValue, newValue, comparer, model, callback, broadcast, propertyName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TModel">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="oldValue" Type="T" />
+        <Parameter Name="newValue" Type="T" />
+        <Parameter Name="comparer" Type="System.Collections.Generic.IEqualityComparer&lt;T&gt;" />
+        <Parameter Name="model" Type="TModel" />
+        <Parameter Name="callback" Type="System.Action&lt;TModel,T&gt;" />
+        <Parameter Name="broadcast" Type="System.Boolean" />
+        <Parameter Name="propertyName" Type="System.String">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.CallerMemberName]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.CallerMemberName&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <typeparam name="TModel">The type of model whose property (or field) to set.</typeparam>
+        <typeparam name="T">The type of property (or field) to set.</typeparam>
+        <param name="oldValue">The current property value.</param>
+        <param name="newValue">The property's value after the change occurred.</param>
+        <param name="comparer">The <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> instance to use to compare the input values.</param>
+        <param name="model">The model </param>
+        <param name="callback">The callback to invoke to set the target property value, if a change has occurred.</param>
+        <param name="broadcast">If <see langword="true" />, <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableRecipient.Broadcast``1(``0,``0,System.String)" /> will also be invoked.</param>
+        <param name="propertyName">(optional) The name of the property that changed.</param>
+        <summary>
+            Compares the current and new values for a given nested property. If the value has changed,
+            raises the <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanging" /> event, updates the property and then raises the
+            <see cref="E:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.PropertyChanged" /> event. The behavior mirrors that of
+            <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />,
+            with the difference being that this method is used to relay properties from a wrapped model in the
+            current instance. For more info, see the docs for
+            <see cref="M:CommunityToolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``2(``1,``1,System.Collections.Generic.IEqualityComparer{``1},``0,System.Action{``0,``1},System.String)" />.
+            </summary>
+        <returns>
+          <see langword="true" /> if the property was changed, <see langword="false" /> otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,172 @@
+<Type Name="IPropertyAnimationBuilder&lt;T&gt;" FullName="CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IPropertyAnimationBuilder&lt;in T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyAnimationBuilder`1&lt;- T&gt;" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPropertyAnimationBuilder(Of In T)" />
+  <TypeSignature Language="F#" Value="type IPropertyAnimationBuilder&lt;'T&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of values being set by the animation being constructed.</typeparam>
+    <summary>
+            An animation for an animation builder using keyframes, targeting a specific property.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="NormalizedKeyFrames">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Animations.AnimationBuilder NormalizedKeyFrames (Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;in T&gt;&gt; build, TimeSpan? delay = default, TimeSpan? duration = default, CommunityToolkit.WinUI.UI.Animations.RepeatOption? repeat = default, Microsoft.UI.Composition.AnimationDelayBehavior? delayBehavior = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder NormalizedKeyFrames(class System.Action`1&lt;class CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder`1&lt;!T&gt;&gt; build, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; duration, valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; repeat, valuetype System.Nullable`1&lt;valuetype Microsoft.UI.Composition.AnimationDelayBehavior&gt; delayBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder`1.NormalizedKeyFrames(System.Action{CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder{`0}},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{CommunityToolkit.WinUI.UI.Animations.RepeatOption},System.Nullable{Microsoft.UI.Composition.AnimationDelayBehavior})" />
+      <MemberSignature Language="VB.NET" Value="Public Function NormalizedKeyFrames (build As Action(Of INormalizedKeyFrameAnimationBuilder(Of In T)), Optional delay As Nullable(Of TimeSpan) = Nothing, Optional duration As Nullable(Of TimeSpan) = Nothing, Optional repeat As Nullable(Of RepeatOption) = Nothing, Optional delayBehavior As Nullable(Of AnimationDelayBehavior) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="abstract member NormalizedKeyFrames : Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;'T&gt;&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; * Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt; -&gt; CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" Usage="iPropertyAnimationBuilder.NormalizedKeyFrames (build, delay, duration, repeat, delayBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="System.Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;T&gt;&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="repeat" Type="System.Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt;" />
+        <Parameter Name="delayBehavior" Type="System.Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="build">The callback to use to construct the custom animation.</param>
+        <param name="delay">The optional initial delay for the animation.</param>
+        <param name="duration">The animation duration.</param>
+        <param name="repeat">The repeat option for the animation (defaults to one iteration).</param>
+        <param name="delayBehavior">The delay behavior to use (ignored if the animation is not being executed on the composition layer).</param>
+        <summary>
+            Adds a custom animation based on normalized keyframes ot the current schedule.
+            </summary>
+        <returns>The current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NormalizedKeyFrames&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Animations.AnimationBuilder NormalizedKeyFrames&lt;TState&gt; (TState state, Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;in T&gt;,TState&gt; build, TimeSpan? delay = default, TimeSpan? duration = default, CommunityToolkit.WinUI.UI.Animations.RepeatOption? repeat = default, Microsoft.UI.Composition.AnimationDelayBehavior? delayBehavior = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder NormalizedKeyFrames&lt;TState&gt;(!!TState state, class System.Action`2&lt;class CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder`1&lt;!T&gt;, !!TState&gt; build, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; duration, valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; repeat, valuetype System.Nullable`1&lt;valuetype Microsoft.UI.Composition.AnimationDelayBehavior&gt; delayBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder`1.NormalizedKeyFrames``1(``0,System.Action{CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder{`0},``0},System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{CommunityToolkit.WinUI.UI.Animations.RepeatOption},System.Nullable{Microsoft.UI.Composition.AnimationDelayBehavior})" />
+      <MemberSignature Language="VB.NET" Value="Public Function NormalizedKeyFrames(Of TState) (state As TState, build As Action(Of INormalizedKeyFrameAnimationBuilder(Of In T), TState), Optional delay As Nullable(Of TimeSpan) = Nothing, Optional duration As Nullable(Of TimeSpan) = Nothing, Optional repeat As Nullable(Of RepeatOption) = Nothing, Optional delayBehavior As Nullable(Of AnimationDelayBehavior) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="abstract member NormalizedKeyFrames : 'State * Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;'T&gt;, 'State&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; * Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt; -&gt; CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" Usage="iPropertyAnimationBuilder.NormalizedKeyFrames (state, build, delay, duration, repeat, delayBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="build" Type="System.Action&lt;CommunityToolkit.WinUI.UI.Animations.INormalizedKeyFrameAnimationBuilder&lt;T&gt;,TState&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="duration" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="repeat" Type="System.Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt;" />
+        <Parameter Name="delayBehavior" Type="System.Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TState">The type of state to pass to the builder.</typeparam>
+        <param name="state">The state to pass to the builder.</param>
+        <param name="build">The callback to use to construct the custom animation.</param>
+        <param name="delay">The optional initial delay for the animation.</param>
+        <param name="duration">The animation duration.</param>
+        <param name="repeat">The repeat option for the animation (defaults to one iteration).</param>
+        <param name="delayBehavior">The delay behavior to use (ignored if the animation is not being executed on the composition layer).</param>
+        <summary>
+            Adds a custom animation based on normalized keyframes ot the current schedule.
+            </summary>
+        <returns>The current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimedKeyFrames">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Animations.AnimationBuilder TimedKeyFrames (Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;in T&gt;&gt; build, TimeSpan? delay = default, CommunityToolkit.WinUI.UI.Animations.RepeatOption? repeat = default, Microsoft.UI.Composition.AnimationDelayBehavior? delayBehavior = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder TimedKeyFrames(class System.Action`1&lt;class CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder`1&lt;!T&gt;&gt; build, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; repeat, valuetype System.Nullable`1&lt;valuetype Microsoft.UI.Composition.AnimationDelayBehavior&gt; delayBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder`1.TimedKeyFrames(System.Action{CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder{`0}},System.Nullable{System.TimeSpan},System.Nullable{CommunityToolkit.WinUI.UI.Animations.RepeatOption},System.Nullable{Microsoft.UI.Composition.AnimationDelayBehavior})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TimedKeyFrames (build As Action(Of ITimedKeyFrameAnimationBuilder(Of In T)), Optional delay As Nullable(Of TimeSpan) = Nothing, Optional repeat As Nullable(Of RepeatOption) = Nothing, Optional delayBehavior As Nullable(Of AnimationDelayBehavior) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="abstract member TimedKeyFrames : Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;'T&gt;&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; * Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt; -&gt; CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" Usage="iPropertyAnimationBuilder.TimedKeyFrames (build, delay, repeat, delayBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="build" Type="System.Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;T&gt;&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="repeat" Type="System.Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt;" />
+        <Parameter Name="delayBehavior" Type="System.Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="build">The callback to use to construct the custom animation.</param>
+        <param name="delay">The optional initial delay for the animation.</param>
+        <param name="repeat">The repeat option for the animation (defaults to one iteration).</param>
+        <param name="delayBehavior">The delay behavior to use (ignored if the animation is not being executed on the composition layer).</param>
+        <summary>
+            Adds a custom animation based on timed keyframes to the current schedule.
+            </summary>
+        <returns>The current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TimedKeyFrames&lt;TState&gt;">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Animations.AnimationBuilder TimedKeyFrames&lt;TState&gt; (TState state, Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;in T&gt;,TState&gt; build, TimeSpan? delay = default, CommunityToolkit.WinUI.UI.Animations.RepeatOption? repeat = default, Microsoft.UI.Composition.AnimationDelayBehavior? delayBehavior = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Animations.AnimationBuilder TimedKeyFrames&lt;TState&gt;(!!TState state, class System.Action`2&lt;class CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder`1&lt;!T&gt;, !!TState&gt; build, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delay, valuetype System.Nullable`1&lt;valuetype CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; repeat, valuetype System.Nullable`1&lt;valuetype Microsoft.UI.Composition.AnimationDelayBehavior&gt; delayBehavior) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.IPropertyAnimationBuilder`1.TimedKeyFrames``1(``0,System.Action{CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder{`0},``0},System.Nullable{System.TimeSpan},System.Nullable{CommunityToolkit.WinUI.UI.Animations.RepeatOption},System.Nullable{Microsoft.UI.Composition.AnimationDelayBehavior})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TimedKeyFrames(Of TState) (state As TState, build As Action(Of ITimedKeyFrameAnimationBuilder(Of In T), TState), Optional delay As Nullable(Of TimeSpan) = Nothing, Optional repeat As Nullable(Of RepeatOption) = Nothing, Optional delayBehavior As Nullable(Of AnimationDelayBehavior) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="abstract member TimedKeyFrames : 'State * Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;'T&gt;, 'State&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt; * Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt; -&gt; CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" Usage="iPropertyAnimationBuilder.TimedKeyFrames (state, build, delay, repeat, delayBehavior)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="build" Type="System.Action&lt;CommunityToolkit.WinUI.UI.Animations.ITimedKeyFrameAnimationBuilder&lt;T&gt;,TState&gt;" />
+        <Parameter Name="delay" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="repeat" Type="System.Nullable&lt;CommunityToolkit.WinUI.UI.Animations.RepeatOption&gt;" />
+        <Parameter Name="delayBehavior" Type="System.Nullable&lt;Microsoft.UI.Composition.AnimationDelayBehavior&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TState">The type of state to pass to the builder.</typeparam>
+        <param name="state">The state to pass to the builder.</param>
+        <param name="build">The callback to use to construct the custom animation.</param>
+        <param name="delay">The optional initial delay for the animation.</param>
+        <param name="repeat">The repeat option for the animation (defaults to one iteration).</param>
+        <param name="delayBehavior">The delay behavior to use (ignored if the animation is not being executed on the composition layer).</param>
+        <summary>
+            Adds a custom animation based on timed keyframes to the current schedule.
+            </summary>
+        <returns>The current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

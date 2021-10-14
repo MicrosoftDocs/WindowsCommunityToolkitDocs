@@ -1,0 +1,82 @@
+<Type Name="INotifyPropertyChangedAttribute" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.INotifyPropertyChangedAttribute">
+  <TypeSignature Language="C#" Value="public sealed class INotifyPropertyChangedAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit INotifyPropertyChangedAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.INotifyPropertyChangedAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class INotifyPropertyChangedAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type INotifyPropertyChangedAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            An attribute that indicates that a given type should implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface and
+            have minimal built-in functionality to support it. This includes exposing the necessary event and having two methods
+            to raise it that mirror <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" /> and
+            <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" />. For more extensive support, use <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObjectAttribute" />.
+            <para>
+            This attribute can be used as follows:
+            <code>
+            [INotifyPropertyChanged]
+            partial class MyViewModel : SomeOtherClass
+            {
+                // Other members here...
+            }
+            </code></para></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public INotifyPropertyChangedAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.INotifyPropertyChangedAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IncludeAdditionalHelperMethods">
+      <MemberSignature Language="C#" Value="public bool IncludeAdditionalHelperMethods { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IncludeAdditionalHelperMethods" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.ComponentModel.INotifyPropertyChangedAttribute.IncludeAdditionalHelperMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeAdditionalHelperMethods As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeAdditionalHelperMethods : bool with get, set" Usage="Microsoft.Toolkit.Mvvm.ComponentModel.INotifyPropertyChangedAttribute.IncludeAdditionalHelperMethods" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether or not to also generate all the additional helper methods that are found
+            in <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" /> as well (eg. <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.SetProperty``1(``0@,``0,System.String)" />.
+            If set to <see langword="false" />, only the <see cref="E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged" /> event and
+            the two <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" /> overloads will be generated.
+            The default value is <see langword="true" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

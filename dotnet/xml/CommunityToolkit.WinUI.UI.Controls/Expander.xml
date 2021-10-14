@@ -1,0 +1,415 @@
+<Type Name="Expander" FullName="CommunityToolkit.WinUI.UI.Controls.Expander">
+  <TypeSignature Language="C#" Value="public class Expander : CommunityToolkit.WinUI.UI.Controls.HeaderedContentControl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Expander extends CommunityToolkit.WinUI.UI.Controls.HeaderedContentControl" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.Expander" />
+  <TypeSignature Language="VB.NET" Value="Public Class Expander&#xA;Inherits HeaderedContentControl" />
+  <TypeSignature Language="F#" Value="type Expander = class&#xA;    inherit HeaderedContentControl" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.UI.Controls.HeaderedContentControl</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.Markup.ContentProperty(Name="Content")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.Markup.ContentProperty(Name="Content")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="PART_RootGrid", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="PART_RootGrid", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="PART_ExpanderToggleButton", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.ToggleButton))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="PART_ExpanderToggleButton", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.ToggleButton))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="PART_LayoutTransformer", Type=typeof(CommunityToolkit.WinUI.UI.Controls.LayoutTransformControl))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="PART_LayoutTransformer", Type=typeof(CommunityToolkit.WinUI.UI.Controls.LayoutTransformControl))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="LeftDirection")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="LeftDirection")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="DownDirection")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="DownDirection")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="RightDirection")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="RightDirection")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="UpDirection")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ExpandDirectionStates", Name="UpDirection")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleLeft")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleLeft")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleDown")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleDown")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleRight")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleRight")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleUp")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="VisibleUp")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedLeft")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedLeft")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedDown")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedDown")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedRight")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedRight")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedUp")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="DisplayModeAndDirectionStates", Name="CollapsedUp")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            The <see cref="T:CommunityToolkit.WinUI.UI.Controls.Expander" /> control allows user to show/hide content based on a boolean state
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public Expander ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Expander.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.Expander" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Collapsed">
+      <MemberSignature Language="C#" Value="public event EventHandler Collapsed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Collapsed" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Controls.Expander.Collapsed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Collapsed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Collapsed : EventHandler " Usage="member this.Collapsed : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fires when the expander is closed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentOverlay">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.UIElement ContentOverlay { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.UIElement ContentOverlay" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Expander.ContentOverlay" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentOverlay As UIElement" />
+      <MemberSignature Language="F#" Value="member this.ContentOverlay : Microsoft.UI.Xaml.UIElement with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.ContentOverlay" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.UIElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the ContentOverlay of the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ContentOverlayProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty ContentOverlayProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty ContentOverlayProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.Expander.ContentOverlayProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentOverlayProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentOverlayProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.ContentOverlayProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.Expander.ContentOverlay" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandDirection">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Controls.ExpandDirection ExpandDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.WinUI.UI.Controls.ExpandDirection ExpandDirection" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Expander.ExpandDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpandDirection As ExpandDirection" />
+      <MemberSignature Language="F#" Value="member this.ExpandDirection : CommunityToolkit.WinUI.UI.Controls.ExpandDirection with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.ExpandDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.ExpandDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the Expand Direction of the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExpandDirectionProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty ExpandDirectionProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty ExpandDirectionProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.Expander.ExpandDirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ExpandDirectionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ExpandDirectionProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.ExpandDirectionProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.Expander.ExpandDirection" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Expanded">
+      <MemberSignature Language="C#" Value="public event EventHandler Expanded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Expanded" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Controls.Expander.Expanded" />
+      <MemberSignature Language="VB.NET" Value="Public Event Expanded As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Expanded : EventHandler " Usage="member this.Expanded : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Fires when the expander is opened
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Style HeaderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Style HeaderStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Expander.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : Microsoft.UI.Xaml.Style with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.HeaderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value for the style to use for the Header of the Expander.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty HeaderStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty HeaderStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.Expander.HeaderStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderStyleProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.HeaderStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.Expander.HeaderStyle" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpanded">
+      <MemberSignature Language="C#" Value="public bool IsExpanded { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsExpanded" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Expander.IsExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsExpanded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExpanded : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.IsExpanded" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether the content of the control is opened/visible or closed/hidden.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsExpandedProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty IsExpandedProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty IsExpandedProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.Expander.IsExpandedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsExpandedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsExpandedProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.Expander.IsExpandedProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.Expander.IsExpanded" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Expander.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="expander.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="OnCollapsed">
+      <MemberSignature Language="C#" Value="protected virtual void OnCollapsed (EventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollapsed(class System.EventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Expander.OnCollapsed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollapsed (args As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCollapsed : EventArgs -&gt; unit&#xA;override this.OnCollapsed : EventArgs -&gt; unit" Usage="expander.OnCollapsed args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">EventArgs</param>
+        <summary>
+            Called when control is collapsed
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override Microsoft.UI.Xaml.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.UI.Xaml.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Expander.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; Microsoft.UI.Xaml.Automation.Peers.AutomationPeer" Usage="expander.OnCreateAutomationPeer " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates AutomationPeer (<see cref="M:Microsoft.UI.Xaml.UIElement.OnCreateAutomationPeer" />)
+            </summary>
+        <returns>An automation peer for this <see cref="T:CommunityToolkit.WinUI.UI.Controls.Expander" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnExpanded">
+      <MemberSignature Language="C#" Value="protected virtual void OnExpanded (EventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExpanded(class System.EventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Expander.OnExpanded(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExpanded (args As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnExpanded : EventArgs -&gt; unit&#xA;override this.OnExpanded : EventArgs -&gt; unit" Usage="expander.OnExpanded args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Layout</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">EventArgs</param>
+        <summary>
+            Called when control is expanded
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

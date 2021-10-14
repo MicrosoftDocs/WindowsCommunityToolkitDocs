@@ -1,0 +1,42 @@
+<Type Name="EffectAnimation&lt;T&gt;" FullName="CommunityToolkit.WinUI.UI.Media.Pipelines.EffectAnimation&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task EffectAnimation&lt;in T&gt;(CompositionBrush brush, T value, TimeSpan duration) where T : struct;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EffectAnimation`1&lt;struct .ctor (class System.ValueType) - T&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.Pipelines.EffectAnimation`1" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function EffectAnimation(Of In T)(brush As CompositionBrush, value As T, duration As TimeSpan) As Task " />
+  <TypeSignature Language="F#" Value="type EffectAnimation&lt;'T (requires 'T : struct)&gt; = delegate of CompositionBrush * 'T * TimeSpan -&gt; Task" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="brush" Type="Microsoft.UI.Composition.CompositionBrush" />
+    <Parameter Name="value" Type="T" />
+    <Parameter Name="duration" Type="System.TimeSpan" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Threading.Tasks.Task</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="T">The type of property value to animate</typeparam>
+    <param name="brush">The target <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> instance to use to start the animation</param>
+    <param name="value">The animation target value</param>
+    <param name="duration">The animation duration</param>
+    <summary>
+            A <see langword="delegate" /> that represents a custom effect property animation that can be applied to a <see cref="T:Microsoft.UI.Composition.CompositionBrush" /></summary>
+    <returns>A <see cref="T:System.Threading.Tasks.Task" /> that completes when the target animation completes</returns>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

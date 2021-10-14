@@ -1,0 +1,238 @@
+<Type Name="AttachedCardShadow" FullName="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow">
+  <TypeSignature Language="C#" Value="public sealed class AttachedCardShadow : Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttachedCardShadow extends Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachedCardShadow&#xA;Inherits AttachedShadowBase" />
+  <TypeSignature Language="F#" Value="type AttachedCardShadow = class&#xA;    inherit AttachedShadowBase" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.AttachedShadowBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A performant rectangular <see cref="T:Windows.UI.Composition.DropShadow" /> which can be attached to any <see cref="T:Windows.UI.Xaml.FrameworkElement" />. It uses Win2D to create a clipped area of the outline of the element such that transparent elements don't see the shadow below them, and the shadow can be attached without having to project to another surface. It is animatable, can be shared via a resource, and used in a <see cref="T:Windows.UI.Xaml.Style" />.
+            </summary>
+    <remarks>
+            This shadow will not work on <see cref="T:Windows.UI.Xaml.FrameworkElement" /> which is directly clipping to its bounds (e.g. a <see cref="T:Windows.UI.Xaml.Controls.Border" /> using a <see cref="P:Windows.UI.Xaml.Controls.Control.CornerRadius" />). An extra <see cref="T:Windows.UI.Xaml.Controls.Border" /> can instead be applied around the clipped border with the Shadow to create the desired effect. Most existing controls due to how they're templated will not encounter this behavior or require this workaround.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachedCardShadow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadius">
+      <MemberSignature Language="C#" Value="public double CornerRadius { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 CornerRadius" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadius" />
+      <MemberSignature Language="VB.NET" Value="Public Property CornerRadius As Double" />
+      <MemberSignature Language="F#" Value="member this.CornerRadius : double with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadius" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the roundness of the shadow's corners.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CornerRadiusProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty CornerRadiusProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty CornerRadiusProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadiusProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CornerRadiusProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CornerRadiusProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadiusProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            The <see cref="T:Windows.UI.Xaml.DependencyProperty" /> for <see cref="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadius" /></summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShadowClip">
+      <MemberSignature Language="C#" Value="protected override Windows.UI.Composition.CompositionClip GetShadowClip (Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Composition.CompositionClip GetShadowClip(class Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.GetShadowClip(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetShadowClip (context As AttachedShadowElementContext) As CompositionClip" />
+      <MemberSignature Language="F#" Value="override this.GetShadowClip : Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext -&gt; Windows.UI.Composition.CompositionClip" Usage="attachedCardShadow.GetShadowClip context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.CompositionClip</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Get the <see cref="T:Windows.UI.Composition.CompositionClip" /> for the shadow's <see cref="T:Windows.UI.Composition.SpriteVisual" /></summary>
+        <returns>A <see cref="T:Windows.UI.Composition.CompositionClip" /> for the extent of the shadowed area.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetShadowMask">
+      <MemberSignature Language="C#" Value="protected override Windows.UI.Composition.CompositionBrush GetShadowMask (Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Windows.UI.Composition.CompositionBrush GetShadowMask(class Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.GetShadowMask(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetShadowMask (context As AttachedShadowElementContext) As CompositionBrush" />
+      <MemberSignature Language="F#" Value="override this.GetShadowMask : Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext -&gt; Windows.UI.Composition.CompositionBrush" Usage="attachedCardShadow.GetShadowMask context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.CompositionBrush</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Get a <see cref="T:Windows.UI.Composition.CompositionBrush" /> in the shape of the element that is casting the shadow.
+            </summary>
+        <returns>A <see cref="T:Windows.UI.Composition.CompositionBrush" /> representing the shape of an element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSupported">
+      <MemberSignature Language="C#" Value="public override bool IsSupported { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.IsSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not this <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" /> implementation is supported on the current platform.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPropertyChanged">
+      <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context, Windows.UI.Xaml.DependencyProperty property, object oldValue, object newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(class Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context, class Windows.UI.Xaml.DependencyProperty property, object oldValue, object newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.OnPropertyChanged(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext,Windows.UI.Xaml.DependencyProperty,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (context As AttachedShadowElementContext, property As DependencyProperty, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext * Windows.UI.Xaml.DependencyProperty * obj * obj -&gt; unit" Usage="attachedCardShadow.OnPropertyChanged (context, property, oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />
+        <Parameter Name="property" Type="Windows.UI.Xaml.DependencyProperty" />
+        <Parameter Name="oldValue" Type="System.Object" />
+        <Parameter Name="newValue" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="property">To be added.</param>
+        <param name="oldValue">To be added.</param>
+        <param name="newValue">To be added.</param>
+        <summary>
+            This method is called when a DependencyProperty is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnSizeChanged">
+      <MemberSignature Language="C#" Value="protected internal override void OnSizeChanged (Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context, Windows.Foundation.Size newSize, Windows.Foundation.Size previousSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnSizeChanged(class Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext context, valuetype Windows.Foundation.Size newSize, valuetype Windows.Foundation.Size previousSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.OnSizeChanged(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext,Windows.Foundation.Size,Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnSizeChanged (context As AttachedShadowElementContext, newSize As Size, previousSize As Size)" />
+      <MemberSignature Language="F#" Value="override this.OnSizeChanged : Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext * Windows.Foundation.Size * Windows.Foundation.Size -&gt; unit" Usage="attachedCardShadow.OnSizeChanged (context, newSize, previousSize)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />
+        <Parameter Name="newSize" Type="Windows.Foundation.Size" />
+        <Parameter Name="previousSize" Type="Windows.Foundation.Size" />
+      </Parameters>
+      <Docs>
+        <param name="context">The <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" /> for the <see cref="T:Windows.UI.Xaml.FrameworkElement" /> firing its SizeChanged event</param>
+        <param name="newSize">The new size of the <see cref="T:Windows.UI.Xaml.FrameworkElement" /></param>
+        <param name="previousSize">The previous size of the <see cref="T:Windows.UI.Xaml.FrameworkElement" /></param>
+        <summary>
+            This method is called when the element size changes, and <see cref="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowBase.SupportsOnSizeChangedEvent" /> = <see cref="T:System.Boolean">true</see>.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SupportsOnSizeChangedEvent">
+      <MemberSignature Language="C#" Value="protected internal override bool SupportsOnSizeChangedEvent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SupportsOnSizeChangedEvent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.SupportsOnSizeChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SupportsOnSizeChangedEvent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsOnSizeChangedEvent : bool" Usage="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.SupportsOnSizeChangedEvent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Media</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not OnSizeChanged should be called when <see cref="E:Windows.UI.Xaml.FrameworkElement.SizeChanged" /> is fired.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -2,11 +2,12 @@
   <TypeSignature Language="C#" Value="public static class UIElementExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UIElementExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.UIElementExtensions" />
-  <TypeSignature Language="VB.NET" Value="Public Class UIElementExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module UIElementExtensions" />
   <TypeSignature Language="F#" Value="type UIElementExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Docs>
         <summary>To be added.</summary>
@@ -38,12 +40,13 @@
       <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty ClipToBoundsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty ClipToBoundsProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.UIElementExtensions.ClipToBoundsProperty" />
-      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClipToBoundsProperty As DependencyProperty " />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly ClipToBoundsProperty As DependencyProperty " />
       <MemberSignature Language="F#" Value=" staticval mutable ClipToBoundsProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.UIElementExtensions.ClipToBoundsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
@@ -55,16 +58,81 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CoordinatesFrom">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Point CoordinatesFrom (this Windows.UI.Xaml.UIElement target, Windows.UI.Xaml.UIElement parent);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Point CoordinatesFrom(class Windows.UI.Xaml.UIElement target, class Windows.UI.Xaml.UIElement parent) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.UIElementExtensions.CoordinatesFrom(Windows.UI.Xaml.UIElement,Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CoordinatesFrom (target As UIElement, parent As UIElement) As Point" />
+      <MemberSignature Language="F#" Value="static member CoordinatesFrom : Windows.UI.Xaml.UIElement * Windows.UI.Xaml.UIElement -&gt; Windows.Foundation.Point" Usage="Microsoft.Toolkit.Uwp.UI.UIElementExtensions.CoordinatesFrom (target, parent)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="target" Type="Windows.UI.Xaml.UIElement" RefType="this" />
+        <Parameter Name="parent" Type="Windows.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="target">Element to measure distance.</param>
+        <param name="parent">Starting parent element to provide coordinates from.</param>
+        <summary>
+            Provides the distance in a <see cref="T:Windows.Foundation.Point" /> from the passed in element to the element being called on.
+            For instance, calling child.CoordinatesFrom(container) will return the position of the child within the container.
+            Helper for <see cref="M:Windows.UI.Xaml.UIElement.TransformToVisual(Windows.UI.Xaml.UIElement)" />.
+            </summary>
+        <returns>
+          <see cref="T:Windows.Foundation.Point" /> containing difference in position of elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CoordinatesTo">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Point CoordinatesTo (this Windows.UI.Xaml.UIElement parent, Windows.UI.Xaml.UIElement target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Point CoordinatesTo(class Windows.UI.Xaml.UIElement parent, class Windows.UI.Xaml.UIElement target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.UIElementExtensions.CoordinatesTo(Windows.UI.Xaml.UIElement,Windows.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CoordinatesTo (parent As UIElement, target As UIElement) As Point" />
+      <MemberSignature Language="F#" Value="static member CoordinatesTo : Windows.UI.Xaml.UIElement * Windows.UI.Xaml.UIElement -&gt; Windows.Foundation.Point" Usage="Microsoft.Toolkit.Uwp.UI.UIElementExtensions.CoordinatesTo (parent, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Point</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Windows.UI.Xaml.UIElement" RefType="this" />
+        <Parameter Name="target" Type="Windows.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="parent">Starting parent element to provide coordinates from.</param>
+        <param name="target">Element to measure distance to.</param>
+        <summary>
+            Provides the distance in a <see cref="T:Windows.Foundation.Point" /> to the passed in element from the element being called on.
+            For instance, calling container.CoordinatesTo(child) will return the position of the child within the container.
+            Helper for <see cref="M:Windows.UI.Xaml.UIElement.TransformToVisual(Windows.UI.Xaml.UIElement)" />.
+            </summary>
+        <returns>
+          <see cref="T:Windows.Foundation.Point" /> containing difference in position of elements.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetClipToBounds">
       <MemberSignature Language="C#" Value="public static bool GetClipToBounds (Windows.UI.Xaml.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetClipToBounds(class Windows.UI.Xaml.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.UIElementExtensions.GetClipToBounds(Windows.UI.Xaml.UIElement)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Function GetClipToBounds (element As UIElement) As Boolean" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetClipToBounds (element As UIElement) As Boolean" />
       <MemberSignature Language="F#" Value="static member GetClipToBounds : Windows.UI.Xaml.UIElement -&gt; bool" Usage="Microsoft.Toolkit.Uwp.UI.UIElementExtensions.GetClipToBounds element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -84,12 +152,13 @@
       <MemberSignature Language="C#" Value="public static void SetClipToBounds (Windows.UI.Xaml.UIElement element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetClipToBounds(class Windows.UI.Xaml.UIElement element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.UIElementExtensions.SetClipToBounds(Windows.UI.Xaml.UIElement,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetClipToBounds (element As UIElement, value As Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetClipToBounds (element As UIElement, value As Boolean)" />
       <MemberSignature Language="F#" Value="static member SetClipToBounds : Windows.UI.Xaml.UIElement * bool -&gt; unit" Usage="Microsoft.Toolkit.Uwp.UI.UIElementExtensions.SetClipToBounds (element, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

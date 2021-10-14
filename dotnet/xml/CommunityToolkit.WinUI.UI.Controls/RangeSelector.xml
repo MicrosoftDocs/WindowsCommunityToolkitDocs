@@ -1,0 +1,478 @@
+<Type Name="RangeSelector" FullName="CommunityToolkit.WinUI.UI.Controls.RangeSelector">
+  <TypeSignature Language="C#" Value="public class RangeSelector : Microsoft.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RangeSelector extends Microsoft.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.RangeSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Class RangeSelector&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type RangeSelector = class&#xA;    inherit Control" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.UI.Xaml.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="OutOfRangeContentContainer", Type=typeof(Microsoft.UI.Xaml.Controls.Border))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="OutOfRangeContentContainer", Type=typeof(Microsoft.UI.Xaml.Controls.Border))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="ActiveRectangle", Type=typeof(Microsoft.UI.Xaml.Shapes.Rectangle))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="ActiveRectangle", Type=typeof(Microsoft.UI.Xaml.Shapes.Rectangle))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="MinThumb", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.Thumb))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="MinThumb", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.Thumb))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="MaxThumb", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.Thumb))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="MaxThumb", Type=typeof(Microsoft.UI.Xaml.Controls.Primitives.Thumb))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="ContainerCanvas", Type=typeof(Microsoft.UI.Xaml.Controls.Canvas))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="ContainerCanvas", Type=typeof(Microsoft.UI.Xaml.Controls.Canvas))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="ControlGrid", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="ControlGrid", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="ToolTip", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="ToolTip", Type=typeof(Microsoft.UI.Xaml.Controls.Grid))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="ToolTipText", Type=typeof(Microsoft.UI.Xaml.Controls.TextBlock))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="ToolTipText", Type=typeof(Microsoft.UI.Xaml.Controls.TextBlock))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Normal")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Normal")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MinPressed")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MinPressed")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MaxPressed")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="MaxPressed")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Disabled")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Disabled")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            RangeSelector is a "double slider" control for range values.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RangeSelector ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RangeSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.RangeSelector" /> class.
+            Create a default range selector control.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Maximum">
+      <MemberSignature Language="C#" Value="public double Maximum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Maximum" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.Maximum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Maximum As Double" />
+      <MemberSignature Language="F#" Value="member this.Maximum : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.Maximum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the absolute maximum value of the range.
+            </summary>
+        <value>
+            The maximum.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaximumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty MaximumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty MaximumProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RangeSelector.MaximumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaximumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaximumProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.MaximumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.Maximum" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Minimum">
+      <MemberSignature Language="C#" Value="public double Minimum { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Minimum" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Public Property Minimum As Double" />
+      <MemberSignature Language="F#" Value="member this.Minimum : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.Minimum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the absolute minimum value of the range.
+            </summary>
+        <value>
+            The minimum.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MinimumProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty MinimumProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty MinimumProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RangeSelector.MinimumProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinimumProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinimumProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.MinimumProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.Minimum" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RangeSelector.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="rangeSelector.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Update the visual state of the control when its template is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnThumbDragCompleted">
+      <MemberSignature Language="C#" Value="protected virtual void OnThumbDragCompleted (Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThumbDragCompleted(class Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RangeSelector.OnThumbDragCompleted(Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThumbDragCompleted (e As DragCompletedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnThumbDragCompleted : Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs -&gt; unit&#xA;override this.OnThumbDragCompleted : Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs -&gt; unit" Usage="rangeSelector.OnThumbDragCompleted e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Event data for the event.</param>
+        <summary>
+            Called before the <see cref="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ThumbDragCompleted" /> event occurs.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnThumbDragStarted">
+      <MemberSignature Language="C#" Value="protected virtual void OnThumbDragStarted (Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThumbDragStarted(class Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RangeSelector.OnThumbDragStarted(Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThumbDragStarted (e As DragStartedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnThumbDragStarted : Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs -&gt; unit&#xA;override this.OnThumbDragStarted : Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs -&gt; unit" Usage="rangeSelector.OnThumbDragStarted e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">Event data for the event.</param>
+        <summary>
+            Called before the <see cref="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ThumbDragStarted" /> event occurs.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValueChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnValueChanged (CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValueChanged(class CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs e) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RangeSelector.OnValueChanged(CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValueChanged (e As RangeChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnValueChanged : CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs -&gt; unit&#xA;override this.OnValueChanged : CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs -&gt; unit" Usage="rangeSelector.OnValueChanged e" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">
+          <see cref="T:CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs" /> event data for the event.</param>
+        <summary>
+            Called before the <see cref="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ValueChanged" /> event occurs.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeEnd">
+      <MemberSignature Language="C#" Value="public double RangeEnd { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RangeEnd" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeEnd As Double" />
+      <MemberSignature Language="F#" Value="member this.RangeEnd : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeEnd" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current selected upper limit value of the range, modifiable by the user.
+            </summary>
+        <value>
+            The current upper limit.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeEndProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty RangeEndProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty RangeEndProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeEndProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RangeEndProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RangeEndProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeEndProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeEnd" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeStart">
+      <MemberSignature Language="C#" Value="public double RangeStart { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 RangeStart" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeStart As Double" />
+      <MemberSignature Language="F#" Value="member this.RangeStart : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeStart" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the current selected lower limit value of the range, modifiable by the user.
+            </summary>
+        <value>
+            The current lower limit.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RangeStartProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty RangeStartProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty RangeStartProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeStartProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RangeStartProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RangeStartProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeStartProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.RangeStart" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepFrequency">
+      <MemberSignature Language="C#" Value="public double StepFrequency { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 StepFrequency" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.StepFrequency" />
+      <MemberSignature Language="VB.NET" Value="Public Property StepFrequency As Double" />
+      <MemberSignature Language="F#" Value="member this.StepFrequency : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.StepFrequency" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the value part of a value range that steps should be created for.
+            </summary>
+        <value>
+            The value part of a value range that steps should be created for.
+            </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StepFrequencyProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty StepFrequencyProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty StepFrequencyProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RangeSelector.StepFrequencyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StepFrequencyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepFrequencyProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RangeSelector.StepFrequencyProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.RangeSelector.StepFrequency" /> property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbDragCompleted">
+      <MemberSignature Language="C#" Value="public event Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventHandler ThumbDragCompleted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventHandler ThumbDragCompleted" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ThumbDragCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ThumbDragCompleted As DragCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ThumbDragCompleted : Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventHandler " Usage="member this.ThumbDragCompleted : Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Controls.Primitives.DragCompletedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range thumbs end being dragged.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThumbDragStarted">
+      <MemberSignature Language="C#" Value="public event Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventHandler ThumbDragStarted;" />
+      <MemberSignature Language="ILAsm" Value=".event class Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventHandler ThumbDragStarted" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ThumbDragStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ThumbDragStarted As DragStartedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ThumbDragStarted : Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventHandler " Usage="member this.ThumbDragStarted : Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Controls.Primitives.DragStartedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range thumbs start being dragged.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs&gt; ValueChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs&gt; ValueChanged" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Controls.RangeSelector.ValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ValueChanged As EventHandler(Of RangeChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ValueChanged : EventHandler&lt;CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs&gt; " Usage="member this.ValueChanged : System.EventHandler&lt;CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Input</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;CommunityToolkit.WinUI.UI.Controls.RangeChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event raised when lower or upper range values are changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

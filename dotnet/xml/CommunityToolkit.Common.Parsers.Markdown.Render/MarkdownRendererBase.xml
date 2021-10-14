@@ -1,0 +1,766 @@
+<Type Name="MarkdownRendererBase" FullName="CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase">
+  <TypeSignature Language="C#" Value="public abstract class MarkdownRendererBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MarkdownRendererBase extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MarkdownRendererBase" />
+  <TypeSignature Language="F#" Value="type MarkdownRendererBase = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Block Rendering Methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MarkdownRendererBase (CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument document);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument document) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.#ctor(CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (document As MarkdownDocument)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase : CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument -&gt; CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase" Usage="new CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase document" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="document" Type="CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument" />
+      </Parameters>
+      <Docs>
+        <param name="document">Markdown Document to Render</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CheckRenderMarkdownLink">
+      <MemberSignature Language="C#" Value="protected void CheckRenderMarkdownLink (CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckRenderMarkdownLink(class CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.CheckRenderMarkdownLink(CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CheckRenderMarkdownLink (element As MarkdownLinkInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="member this.CheckRenderMarkdownLink : CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.CheckRenderMarkdownLink (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Verifies if the link is valid, before processing into a link, or plain text.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollapseWhitespace">
+      <MemberSignature Language="C#" Value="protected string CollapseWhitespace (CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context, string text);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string CollapseWhitespace(class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context, string text) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.CollapseWhitespace(CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CollapseWhitespace (context As IRenderContext, text As String) As String" />
+      <MemberSignature Language="F#" Value="member this.CollapseWhitespace : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext * string -&gt; string" Usage="markdownRendererBase.CollapseWhitespace (context, text)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+        <Parameter Name="text" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <param name="text">To be added.</param>
+        <summary>
+            Removes leading whitespace, but only if this is the first run in the block.
+            </summary>
+        <returns>The corrected string</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Document">
+      <MemberSignature Language="C#" Value="protected CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument Document { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument Document" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.Document" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Document As MarkdownDocument" />
+      <MemberSignature Language="F#" Value="member this.Document : CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument" Usage="CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.Document" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the markdown document that will be rendered.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public virtual void Render (CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Render(class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.Render(CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member Render : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit&#xA;override this.Render : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.Render context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">UI Context</param>
+        <summary>
+            Renders all Content to the Provided Parent UI.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBlock">
+      <MemberSignature Language="C#" Value="protected void RenderBlock (CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderBlock(class CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlock(CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderBlock (element As MarkdownBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="member this.RenderBlock : CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBlock (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Called to render a block element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBlocks">
+      <MemberSignature Language="C#" Value="protected virtual void RenderBlocks (System.Collections.Generic.IEnumerable&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; blockElements, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBlocks(class System.Collections.Generic.IEnumerable`1&lt;class CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; blockElements, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderBlocks(System.Collections.Generic.IEnumerable{CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock},CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBlocks (blockElements As IEnumerable(Of MarkdownBlock), context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderBlocks : seq&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit&#xA;override this.RenderBlocks : seq&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBlocks (blockElements, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blockElements" Type="System.Collections.Generic.IEnumerable&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt;" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="blockElements">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a list of block elements.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBoldRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderBoldRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBoldRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderBoldRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderBoldRun (element As BoldTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderBoldRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderBoldRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a bold run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCode">
+      <MemberSignature Language="C#" Value="protected abstract void RenderCode (CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderCode(class CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderCode(CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderCode (element As CodeBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderCode : CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderCode (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a code element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCodeRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderCodeRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderCodeRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderCodeRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderCodeRun (element As CodeInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderCodeRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderCodeRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a code element
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEmoji">
+      <MemberSignature Language="C#" Value="protected abstract void RenderEmoji (CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderEmoji(class CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderEmoji(CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderEmoji (element As EmojiInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderEmoji : CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderEmoji (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders emoji element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHeader">
+      <MemberSignature Language="C#" Value="protected abstract void RenderHeader (CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderHeader(class CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderHeader(CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHeader (element As HeaderBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderHeader : CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHeader (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a header element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHorizontalRule">
+      <MemberSignature Language="C#" Value="protected abstract void RenderHorizontalRule (CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderHorizontalRule(class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderHorizontalRule(CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHorizontalRule (context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderHorizontalRule : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHorizontalRule context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a horizontal rule element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHyperlink">
+      <MemberSignature Language="C#" Value="protected abstract void RenderHyperlink (CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderHyperlink(class CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderHyperlink(CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderHyperlink (element As HyperlinkInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderHyperlink : CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderHyperlink (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a raw link element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderImage">
+      <MemberSignature Language="C#" Value="protected abstract void RenderImage (CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderImage(class CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderImage(CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderImage (element As ImageInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderImage : CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderImage (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders an image element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderInline">
+      <MemberSignature Language="C#" Value="protected void RenderInline (CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderInline(class CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderInline(CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderInline (element As MarkdownInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="member this.RenderInline : CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderInline (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Called to render an inline element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderInlineChildren">
+      <MemberSignature Language="C#" Value="protected void RenderInlineChildren (System.Collections.Generic.IList&lt;CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline&gt; inlineElements, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderInlineChildren(class System.Collections.Generic.IList`1&lt;class CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline&gt; inlineElements, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderInlineChildren(System.Collections.Generic.IList{CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline},CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderInlineChildren (inlineElements As IList(Of MarkdownInline), context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="member this.RenderInlineChildren : System.Collections.Generic.IList&lt;CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline&gt; * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderInlineChildren (inlineElements, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="inlineElements" Type="System.Collections.Generic.IList&lt;CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownInline&gt;" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="inlineElements"> The parsed inline elements to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders all of the children for the given element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderItalicRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderItalicRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItalicRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderItalicRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderItalicRun (element As ItalicTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderItalicRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderItalicRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a text run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderListElement">
+      <MemberSignature Language="C#" Value="protected abstract void RenderListElement (CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderListElement(class CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderListElement(CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderListElement (element As ListBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderListElement : CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderListElement (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a list element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderMarkdownLink">
+      <MemberSignature Language="C#" Value="protected abstract void RenderMarkdownLink (CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderMarkdownLink(class CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderMarkdownLink(CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderMarkdownLink (element As MarkdownLinkInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderMarkdownLink : CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderMarkdownLink (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a link element
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderParagraph">
+      <MemberSignature Language="C#" Value="protected abstract void RenderParagraph (CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderParagraph(class CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderParagraph(CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderParagraph (element As ParagraphBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderParagraph : CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderParagraph (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a paragraph element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderQuote">
+      <MemberSignature Language="C#" Value="protected abstract void RenderQuote (CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderQuote(class CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderQuote(CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderQuote (element As QuoteBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderQuote : CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderQuote (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a quote element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderStrikethroughRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderStrikethroughRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderStrikethroughRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderStrikethroughRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderStrikethroughRun (element As StrikethroughTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderStrikethroughRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderStrikethroughRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a strikethrough element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSubscriptRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderSubscriptRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderSubscriptRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderSubscriptRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderSubscriptRun (element As SubscriptTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderSubscriptRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderSubscriptRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a subscript element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSuperscriptRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderSuperscriptRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderSuperscriptRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderSuperscriptRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderSuperscriptRun (element As SuperscriptTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderSuperscriptRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderSuperscriptRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a superscript element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTable">
+      <MemberSignature Language="C#" Value="protected abstract void RenderTable (CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderTable(class CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderTable(CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderTable (element As TableBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderTable : CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderTable (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a table element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTextRun">
+      <MemberSignature Language="C#" Value="protected abstract void RenderTextRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderTextRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderTextRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderTextRun (element As TextRunInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderTextRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderTextRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a text run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderYamlHeader">
+      <MemberSignature Language="C#" Value="protected abstract void RenderYamlHeader (CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderYamlHeader(class CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase.RenderYamlHeader(CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub RenderYamlHeader (element As YamlHeaderBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="abstract member RenderYamlHeader : CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRendererBase.RenderYamlHeader (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a yaml header element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

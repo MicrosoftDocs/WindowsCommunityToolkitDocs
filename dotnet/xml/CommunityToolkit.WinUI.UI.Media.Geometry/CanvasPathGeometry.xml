@@ -1,0 +1,271 @@
+<Type Name="CanvasPathGeometry" FullName="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry">
+  <TypeSignature Language="C#" Value="public static class CanvasPathGeometry" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CanvasPathGeometry extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry" />
+  <TypeSignature Language="VB.NET" Value="Public Class CanvasPathGeometry" />
+  <TypeSignature Language="F#" Value="type CanvasPathGeometry = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helper Class for creating Win2d objects.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateBrush">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graphics.Canvas.Brushes.ICanvasBrush CreateBrush (Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string brushData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graphics.Canvas.Brushes.ICanvasBrush CreateBrush(class Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string brushData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateBrush(Microsoft.Graphics.Canvas.ICanvasResourceCreator,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBrush (resourceCreator As ICanvasResourceCreator, brushData As String) As ICanvasBrush" />
+      <MemberSignature Language="F#" Value="static member CreateBrush : Microsoft.Graphics.Canvas.ICanvasResourceCreator * string -&gt; Microsoft.Graphics.Canvas.Brushes.ICanvasBrush" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateBrush (resourceCreator, brushData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graphics.Canvas.Brushes.ICanvasBrush</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceCreator" Type="Microsoft.Graphics.Canvas.ICanvasResourceCreator" />
+        <Parameter Name="brushData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceCreator">ICanvasResourceCreator</param>
+        <param name="brushData">Brush data in string format</param>
+        <summary>
+            Parses the given Brush data string and converts it to ICanvasBrush.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graphics.Canvas.Brushes.ICanvasBrush" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColor">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Color CreateColor (System.Numerics.Vector4 hdrColor);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Color CreateColor(valuetype System.Numerics.Vector4 hdrColor) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateColor(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateColor (hdrColor As Vector4) As Color" />
+      <MemberSignature Language="F#" Value="static member CreateColor : System.Numerics.Vector4 -&gt; Windows.UI.Color" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateColor hdrColor" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hdrColor" Type="System.Numerics.Vector4" />
+      </Parameters>
+      <Docs>
+        <param name="hdrColor">High Dynamic Range Color</param>
+        <summary>
+            Converts a Vector4 High Dynamic Range Color to Color object.
+            Negative components of the Vector4 will be sanitized by taking the absolute
+            value of the component. The HDR Color components should have value in
+            the range between 0 and 1, inclusive. If they are more than 1, they
+            will be clamped at 1.
+            Vector4's X, Y, Z, W components match to Color's R, G, B, A components respectively.
+            </summary>
+        <returns>Color</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateColor">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Color CreateColor (string colorString);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Color CreateColor(string colorString) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateColor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateColor (colorString As String) As Color" />
+      <MemberSignature Language="F#" Value="static member CreateColor : string -&gt; Windows.UI.Color" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateColor colorString" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorString" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="colorString">Color string in Hexadecimal or HDR format</param>
+        <summary>
+            Converts the color string in Hexadecimal or HDR color format to the corresponding Color object.
+            The hexadecimal color string should be in #RRGGBB or #AARRGGBB format.
+            The '#' character is optional.
+            The HDR color string should be in R G B A format.
+            (R, G, B &amp; A should have value in the range between 0 and 1, inclusive)
+            </summary>
+        <returns>Color</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGeometry">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateGeometry (string pathData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateGeometry(string pathData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateGeometry(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateGeometry (pathData As String) As CanvasGeometry" />
+      <MemberSignature Language="F#" Value="static member CreateGeometry : string -&gt; Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateGeometry pathData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graphics.Canvas.Geometry.CanvasGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pathData">Path data</param>
+        <summary>
+            Parses the Path data string and converts it to CanvasGeometry.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateGeometry">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateGeometry (Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string pathData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateGeometry(class Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string pathData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateGeometry(Microsoft.Graphics.Canvas.ICanvasResourceCreator,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateGeometry (resourceCreator As ICanvasResourceCreator, pathData As String) As CanvasGeometry" />
+      <MemberSignature Language="F#" Value="static member CreateGeometry : Microsoft.Graphics.Canvas.ICanvasResourceCreator * string -&gt; Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateGeometry (resourceCreator, pathData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graphics.Canvas.Geometry.CanvasGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceCreator" Type="Microsoft.Graphics.Canvas.ICanvasResourceCreator" />
+        <Parameter Name="pathData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceCreator">
+          <see cref="T:Microsoft.Graphics.Canvas.ICanvasResourceCreator" />
+        </param>
+        <param name="pathData">Path data</param>
+        <summary>
+            Parses the Path data string and converts it to CanvasGeometry.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateSquircle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateSquircle (Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, float x, float y, float width, float height, float radiusX, float radiusY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graphics.Canvas.Geometry.CanvasGeometry CreateSquircle(class Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, float32 x, float32 y, float32 width, float32 height, float32 radiusX, float32 radiusY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateSquircle(Microsoft.Graphics.Canvas.ICanvasResourceCreator,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSquircle (resourceCreator As ICanvasResourceCreator, x As Single, y As Single, width As Single, height As Single, radiusX As Single, radiusY As Single) As CanvasGeometry" />
+      <MemberSignature Language="F#" Value="static member CreateSquircle : Microsoft.Graphics.Canvas.ICanvasResourceCreator * single * single * single * single * single * single -&gt; Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateSquircle (resourceCreator, x, y, width, height, radiusX, radiusY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graphics.Canvas.Geometry.CanvasGeometry</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceCreator" Type="Microsoft.Graphics.Canvas.ICanvasResourceCreator" />
+        <Parameter Name="x" Type="System.Single" />
+        <Parameter Name="y" Type="System.Single" />
+        <Parameter Name="width" Type="System.Single" />
+        <Parameter Name="height" Type="System.Single" />
+        <Parameter Name="radiusX" Type="System.Single" />
+        <Parameter Name="radiusY" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="resourceCreator">Resource creator</param>
+        <param name="x">X offset of the TopLeft corner of the Squircle</param>
+        <param name="y">Y offset of the TopLeft corner of the Squircle</param>
+        <param name="width">Width of the Squircle</param>
+        <param name="height">Height of the Squircle</param>
+        <param name="radiusX">Corner Radius on the x-axis</param>
+        <param name="radiusY">Corner Radius on the y-axis</param>
+        <summary>
+            Creates a Squircle geometry with the specified extents.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graphics.Canvas.Geometry.CanvasGeometry" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStroke">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.UI.Media.Geometry.ICanvasStroke CreateStroke (Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string strokeData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.UI.Media.Geometry.ICanvasStroke CreateStroke(class Microsoft.Graphics.Canvas.ICanvasResourceCreator resourceCreator, string strokeData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateStroke(Microsoft.Graphics.Canvas.ICanvasResourceCreator,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStroke (resourceCreator As ICanvasResourceCreator, strokeData As String) As ICanvasStroke" />
+      <MemberSignature Language="F#" Value="static member CreateStroke : Microsoft.Graphics.Canvas.ICanvasResourceCreator * string -&gt; CommunityToolkit.WinUI.UI.Media.Geometry.ICanvasStroke" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateStroke (resourceCreator, strokeData)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Geometry.ICanvasStroke</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="resourceCreator" Type="Microsoft.Graphics.Canvas.ICanvasResourceCreator" />
+        <Parameter Name="strokeData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="resourceCreator">ICanvasResourceCreator</param>
+        <param name="strokeData">Stroke data in string format</param>
+        <summary>
+            Parses the given Stroke data string and converts it to ICanvasStroke.
+            </summary>
+        <returns>
+          <see cref="T:CommunityToolkit.WinUI.UI.Media.Geometry.ICanvasStroke" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateStrokeStyle">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle CreateStrokeStyle (string styleData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle CreateStrokeStyle(string styleData) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateStrokeStyle(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateStrokeStyle (styleData As String) As CanvasStrokeStyle" />
+      <MemberSignature Language="F#" Value="static member CreateStrokeStyle : string -&gt; Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.CanvasPathGeometry.CreateStrokeStyle styleData" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="styleData" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="styleData">CanvasStrokeStyle data in string format</param>
+        <summary>
+            Parses the give CanvasStrokeStyle data string and converts it to CanvasStrokeStyle.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graphics.Canvas.Geometry.CanvasStrokeStyle" /> object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -7,6 +7,7 @@
   <AssemblyInfo>
     <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -21,9 +22,16 @@
             A class providing a reference implementation for the <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.IMessenger" /> interface.
             </summary>
     <remarks>
+      <para>
             This <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.IMessenger" /> implementation uses weak references to track the registered
             recipients, so it is not necessary to manually unregister them when they're no longer needed.
-            </remarks>
+            </para>
+      <para>
+            The <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger" /> type will automatically perform internal trimming when
+            full GC collections are invoked, so calling <see cref="M:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger.Cleanup" /> manually is not necessary to
+            ensure that on average the internal data structures are as trimmed and compact as possible.
+            </para>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,10 +43,13 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -55,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -80,6 +92,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>Microsoft.Toolkit.Mvvm.Messaging.WeakReferenceMessenger</ReturnType>
@@ -105,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -150,6 +164,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -203,6 +218,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -228,6 +244,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TMessage</ReturnType>
@@ -273,6 +290,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -317,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -349,6 +368,7 @@
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

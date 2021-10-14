@@ -1,0 +1,121 @@
+<Type Name="ReadOnlyRef&lt;T&gt;" FullName="CommunityToolkit.HighPerformance.ReadOnlyRef&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public struct ReadOnlyRef&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlyRef`1&lt;T&gt; extends System.ValueType" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.ReadOnlyRef`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlyRef(Of T)" />
+  <TypeSignature Language="F#" Value="type ReadOnlyRef&lt;'T&gt; = struct" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of value to reference.</typeparam>
+    <summary>
+            A <see langword="struct" /> that can store a readonly reference to a value of a specified type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ReadOnlyRef (object owner, ref T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object owner, [in]!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.ReadOnlyRef`1.#ctor(System.Object,`0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Object, ByRef value As T)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt; : obj * 'T -&gt; CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt;" Usage="new CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt; (owner, value)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Object" />
+        <Parameter Name="value" Type="T" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator T (CommunityToolkit.HighPerformance.ReadOnlyRef&lt;T&gt; reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !T op_Implicit(valuetype CommunityToolkit.HighPerformance.ReadOnlyRef`1&lt;!T&gt; reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.ReadOnlyRef`1.op_Implicit(CommunityToolkit.HighPerformance.ReadOnlyRef{`0})~`0" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (reference As ReadOnlyRef(Of T)) As T" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt; -&gt; 'T" Usage="CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt;.op_Implicit reference" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="CommunityToolkit.HighPerformance.ReadOnlyRef&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="reference">The input <see cref="T:CommunityToolkit.HighPerformance.ReadOnlyRef`1" /> instance.</param>
+        <summary>
+            Implicitly gets the <typeparamref name="T" /> value from a given <see cref="T:CommunityToolkit.HighPerformance.ReadOnlyRef`1" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator CommunityToolkit.HighPerformance.ReadOnlyRef&lt;T&gt; (CommunityToolkit.HighPerformance.Ref&lt;T&gt; reference);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype CommunityToolkit.HighPerformance.ReadOnlyRef`1&lt;!T&gt; op_Implicit(valuetype CommunityToolkit.HighPerformance.Ref`1&lt;!T&gt; reference) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.ReadOnlyRef`1.op_Implicit(CommunityToolkit.HighPerformance.Ref{`0})~CommunityToolkit.HighPerformance.ReadOnlyRef{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (reference As Ref(Of T)) As ReadOnlyRef(Of T)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : CommunityToolkit.HighPerformance.Ref&lt;'T&gt; -&gt; CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt;.op_Implicit reference" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.ReadOnlyRef&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="reference" Type="CommunityToolkit.HighPerformance.Ref&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="reference">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Value">
+      <MemberSignature Language="C#" Value="public T Value { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.ReadOnlyRef`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="CommunityToolkit.HighPerformance.ReadOnlyRef&lt;'T&gt;.Value" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the readonly <typeparamref name="T" /> reference represented by the current <see cref="T:CommunityToolkit.HighPerformance.Ref`1" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
