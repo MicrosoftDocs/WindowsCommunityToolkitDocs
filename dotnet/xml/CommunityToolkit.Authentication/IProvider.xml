@@ -1,0 +1,208 @@
+<Type Name="IProvider" FullName="CommunityToolkit.Authentication.IProvider">
+  <TypeSignature Language="C#" Value="public interface IProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvider" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Authentication.IProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvider" />
+  <TypeSignature Language="F#" Value="type IProvider = interface" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Authentication provider to expose more states around the authentication process for graph controls.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AuthenticateRequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AuthenticateRequestAsync (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task AuthenticateRequestAsync(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.IProvider.AuthenticateRequestAsync(System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthenticateRequestAsync (request As HttpRequestMessage) As Task" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateRequestAsync : System.Net.Http.HttpRequestMessage -&gt; System.Threading.Tasks.Task" Usage="iProvider.AuthenticateRequestAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request">The request to authenticate.</param>
+        <summary>
+            Authenticate an outgoing request.
+            </summary>
+        <returns>A task upon completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentAccountId">
+      <MemberSignature Language="C#" Value="public string CurrentAccountId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentAccountId" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Authentication.IProvider.CurrentAccountId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentAccountId As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentAccountId : string" Usage="CommunityToolkit.Authentication.IProvider.CurrentAccountId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the id of the currently signed in user account.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; GetTokenAsync (bool silentOnly = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetTokenAsync(bool silentOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.IProvider.GetTokenAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTokenAsync (Optional silentOnly As Boolean = false) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="iProvider.GetTokenAsync silentOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="silentOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="silentOnly">Determines if the acquisition should be done without prompts to the user.</param>
+        <summary>
+            Retrieve a token for the authenticated user.
+            </summary>
+        <returns>A token string for the authenticated user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SignInAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SignInAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.IProvider.SignInAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignInAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member SignInAsync : unit -&gt; System.Threading.Tasks.Task" Usage="iProvider.SignInAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sign in the user.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SignOutAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SignOutAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.IProvider.SignOutAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignOutAsync () As Task" />
+      <MemberSignature Language="F#" Value="abstract member SignOutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="iProvider.SignOutAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sign out the user.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.Authentication.ProviderState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.Authentication.ProviderState State" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Authentication.IProvider.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As ProviderState" />
+      <MemberSignature Language="F#" Value="member this.State : CommunityToolkit.Authentication.ProviderState" Usage="CommunityToolkit.Authentication.IProvider.State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.Authentication.ProviderState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current login state of the provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StateChanged">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;CommunityToolkit.Authentication.ProviderStateChangedEventArgs&gt; StateChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class CommunityToolkit.Authentication.ProviderStateChangedEventArgs&gt; StateChanged" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.Authentication.IProvider.StateChanged" />
+      <MemberSignature Language="VB.NET" Value="Event StateChanged As EventHandler(Of ProviderStateChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.StateChanged : EventHandler&lt;CommunityToolkit.Authentication.ProviderStateChangedEventArgs&gt; " Usage="member this.StateChanged : System.EventHandler&lt;CommunityToolkit.Authentication.ProviderStateChangedEventArgs&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;CommunityToolkit.Authentication.ProviderStateChangedEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Event called when the login <see cref="P:CommunityToolkit.Authentication.IProvider.State" /> changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySilentSignInAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TrySilentSignInAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TrySilentSignInAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.IProvider.TrySilentSignInAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySilentSignInAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TrySilentSignInAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iProvider.TrySilentSignInAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tries to check if the user is logged in without prompting to login.
+            </summary>
+        <returns>A boolean indicating success or failure to sign in silently.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

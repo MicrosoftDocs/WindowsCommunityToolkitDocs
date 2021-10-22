@@ -1,0 +1,57 @@
+<Type Name="IAttachedTimeline" FullName="Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline">
+  <TypeSignature Language="C#" Value="public interface IAttachedTimeline" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAttachedTimeline" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAttachedTimeline" />
+  <TypeSignature Language="F#" Value="type IAttachedTimeline = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            An interface representing a XAML model for a custom animation that requires a specific parent <see cref="T:Windows.UI.Xaml.UIElement" /> context.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, Windows.UI.Xaml.UIElement parent, TimeSpan? delayHint = default, TimeSpan? durationHint = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint = default, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, class Windows.UI.Xaml.UIElement parent, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,Windows.UI.Xaml.UIElement,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendToBuilder (builder As AnimationBuilder, parent As UIElement, Optional delayHint As Nullable(Of TimeSpan) = Nothing, Optional durationHint As Nullable(Of TimeSpan) = Nothing, Optional easingTypeHint As Nullable(Of EasingType) = Nothing, Optional easingModeHint As Nullable(Of EasingMode) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="abstract member AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder * Windows.UI.Xaml.UIElement * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" Usage="iAttachedTimeline.AppendToBuilder (builder, parent, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" />
+        <Parameter Name="parent" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance to schedule the animation on.</param>
+        <param name="parent">The parent <see cref="T:Windows.UI.Xaml.UIElement" /> this animation will be started on.</param>
+        <param name="delayHint">A hint for the animation delay, if present.</param>
+        <param name="durationHint">A hint for the animation duration, if present.</param>
+        <param name="easingTypeHint">A hint for the easing type, if present.</param>
+        <param name="easingModeHint">A hint for the easing mode, if present.</param>
+        <summary>
+            Appends the current animation to a target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            This method is used when the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ITimeline" /> instance is explicitly triggered.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance as <paramref name="builder" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

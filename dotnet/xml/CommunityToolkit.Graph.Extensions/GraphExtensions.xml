@@ -1,0 +1,603 @@
+<Type Name="GraphExtensions" FullName="CommunityToolkit.Graph.Extensions.GraphExtensions">
+  <TypeSignature Language="C#" Value="public static class GraphExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GraphExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Graph.Extensions.GraphExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module GraphExtensions" />
+  <TypeSignature Language="F#" Value="type GraphExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Extension methods to the Graph SDK used by the controls and helpers.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateExtension">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt; CreateExtension (this Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.Extension&gt; CreateExtension(class Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.CreateExtension(Microsoft.Graph.GraphServiceClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateExtension (graph As GraphServiceClient, userId As String, extensionId As String) As Task(Of Extension)" />
+      <MemberSignature Language="F#" Value="static member CreateExtension : Microsoft.Graph.GraphServiceClient * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.CreateExtension (graph, userId, extensionId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extensionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The user to access.</param>
+        <param name="extensionId">The id of the new extension.</param>
+        <summary>
+            Create a new extension object on a user.
+            </summary>
+        <returns>The newly created extension.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFolderAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task CreateFolderAsync (this Microsoft.Graph.GraphServiceClient graph, string userId, string folderName, string path = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task CreateFolderAsync(class Microsoft.Graph.GraphServiceClient graph, string userId, string folderName, string path) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.CreateFolderAsync(Microsoft.Graph.GraphServiceClient,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CreateFolderAsync (graph As GraphServiceClient, userId As String, folderName As String, Optional path As String = Nothing) As Task" />
+      <MemberSignature Language="F#" Value="static member CreateFolderAsync : Microsoft.Graph.GraphServiceClient * string * string * string -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.CreateFolderAsync (graph, userId, folderName, path)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="folderName" Type="System.String" />
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="folderName">The name of the new folder.</param>
+        <param name="path">The path to create the new folder in.</param>
+        <summary>
+            Ensure a folder exists by name.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteExtension">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteExtension (this Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteExtension(class Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.DeleteExtension(Microsoft.Graph.GraphServiceClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteExtension (graph As GraphServiceClient, userId As String, extensionId As String) As Task" />
+      <MemberSignature Language="F#" Value="static member DeleteExtension : Microsoft.Graph.GraphServiceClient * string * string -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.DeleteExtension (graph, userId, extensionId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extensionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The user to access.</param>
+        <param name="extensionId">The id of the extension to delete.</param>
+        <summary>
+            Delete a user extension by id.
+            </summary>
+        <returns>A task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeleteItemAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task DeleteItemAsync (this Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task DeleteItemAsync(class Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.DeleteItemAsync(Microsoft.Graph.GraphServiceClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DeleteItemAsync (graph As GraphServiceClient, userId As String, itemPath As String) As Task" />
+      <MemberSignature Language="F#" Value="static member DeleteItemAsync : Microsoft.Graph.GraphServiceClient * string * string -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.DeleteItemAsync (graph, userId, itemPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="itemPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="itemPath">The path of the target item.</param>
+        <summary>
+            Delete the file from the remote.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindPersonAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt; FindPersonAsync (this Microsoft.Graph.GraphServiceClient graph, string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IUserPeopleCollectionPage&gt; FindPersonAsync(class Microsoft.Graph.GraphServiceClient graph, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.FindPersonAsync(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindPersonAsync (graph As GraphServiceClient, query As String) As Task(Of IUserPeopleCollectionPage)" />
+      <MemberSignature Language="F#" Value="static member FindPersonAsync : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.FindPersonAsync (graph, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IUserPeopleCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="query">User to search for.</param>
+        <summary>
+            Shortcut to perform a person query.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graph.IUserPeopleCollectionPage" /> collection of <see cref="T:Microsoft.Graph.Person" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FindUserAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt; FindUserAsync (this Microsoft.Graph.GraphServiceClient graph, string query);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.IGraphServiceUsersCollectionPage&gt; FindUserAsync(class Microsoft.Graph.GraphServiceClient graph, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.FindUserAsync(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function FindUserAsync (graph As GraphServiceClient, query As String) As Task(Of IGraphServiceUsersCollectionPage)" />
+      <MemberSignature Language="F#" Value="static member FindUserAsync : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.FindUserAsync (graph, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.IGraphServiceUsersCollectionPage&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="query">User to search for.</param>
+        <summary>
+            Shortcut to perform a user query.
+            </summary>
+        <returns>
+          <see cref="T:Microsoft.Graph.IGraphServiceUsersCollectionPage" /> collection of <see cref="T:Microsoft.Graph.User" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAllExtensions">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Graph.Extension&gt;&gt; GetAllExtensions (this Microsoft.Graph.GraphServiceClient graph, string userId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IList`1&lt;class Microsoft.Graph.Extension&gt;&gt; GetAllExtensions(class Microsoft.Graph.GraphServiceClient graph, string userId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetAllExtensions(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetAllExtensions (graph As GraphServiceClient, userId As String) As Task(Of IList(Of Extension))" />
+      <MemberSignature Language="F#" Value="static member GetAllExtensions : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Graph.Extension&gt;&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetAllExtensions (graph, userId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Graph.Extension&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The user to access.</param>
+        <summary>
+            Get all extension objects for a user.
+            </summary>
+        <returns>All extension results.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetExtension">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt; GetExtension (this Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.Extension&gt; GetExtension(class Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetExtension(Microsoft.Graph.GraphServiceClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetExtension (graph As GraphServiceClient, userId As String, extensionId As String) As Task(Of Extension)" />
+      <MemberSignature Language="F#" Value="static member GetExtension : Microsoft.Graph.GraphServiceClient * string * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetExtension (graph, userId, extensionId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.Extension&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extensionId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The user to access.</param>
+        <param name="extensionId">The extension to retrieve.</param>
+        <summary>
+            Retrieve an extension object for a user.
+            </summary>
+        <returns>The extension result.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; GetFileAsync&lt;T&gt; (this Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, Microsoft.Toolkit.Helpers.IObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFileAsync&lt;T&gt;(class Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, class Microsoft.Toolkit.Helpers.IObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetFileAsync``1(Microsoft.Graph.GraphServiceClient,System.String,System.String,Microsoft.Toolkit.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetFileAsync(Of T) (graph As GraphServiceClient, userId As String, itemPath As String, serializer As IObjectSerializer) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member GetFileAsync : Microsoft.Graph.GraphServiceClient * string * string * Microsoft.Toolkit.Helpers.IObjectSerializer -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetFileAsync (graph, userId, itemPath, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="serializer" Type="Microsoft.Toolkit.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of object to return.</typeparam>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="itemPath">The path of the target item.</param>
+        <param name="serializer">A serializer for converting stored values.</param>
+        <summary>
+            Get a file from the remote.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMeAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt; GetMeAsync (this Microsoft.Graph.GraphServiceClient graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.User&gt; GetMeAsync(class Microsoft.Graph.GraphServiceClient graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetMeAsync(Microsoft.Graph.GraphServiceClient)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMeAsync (graph As GraphServiceClient) As Task(Of User)" />
+      <MemberSignature Language="F#" Value="static member GetMeAsync : Microsoft.Graph.GraphServiceClient -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetMeAsync graph" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <summary>
+            Retrieve the curernt user.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMyPhotoAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetMyPhotoAsync (this Microsoft.Graph.GraphServiceClient graph);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetMyPhotoAsync(class Microsoft.Graph.GraphServiceClient graph) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetMyPhotoAsync(Microsoft.Graph.GraphServiceClient)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMyPhotoAsync (graph As GraphServiceClient) As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="static member GetMyPhotoAsync : Microsoft.Graph.GraphServiceClient -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetMyPhotoAsync graph" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <summary>
+            Get the photo of the current user.
+            </summary>
+        <returns>Stream with user photo or null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt; GetUserAsync (this Microsoft.Graph.GraphServiceClient graph, string userId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.User&gt; GetUserAsync(class Microsoft.Graph.GraphServiceClient graph, string userId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetUserAsync(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserAsync (graph As GraphServiceClient, userId As String) As Task(Of User)" />
+      <MemberSignature Language="F#" Value="static member GetUserAsync : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetUserAsync (graph, userId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.User&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The is of the user to retrieve.</param>
+        <summary>
+            Retrieve a user by id.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserPhoto">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.IO.Stream&gt; GetUserPhoto (this Microsoft.Graph.GraphServiceClient graph, string userId);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; GetUserPhoto(class Microsoft.Graph.GraphServiceClient graph, string userId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.GetUserPhoto(Microsoft.Graph.GraphServiceClient,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetUserPhoto (graph As GraphServiceClient, userId As String) As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="static member GetUserPhoto : Microsoft.Graph.GraphServiceClient * string -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.GetUserPhoto (graph, userId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.IO.Stream&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">UserID.</param>
+        <summary>
+            Helper to get the photo of a particular user.
+            </summary>
+        <returns>Stream with user photo or null.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFolderAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;(Microsoft.Toolkit.Helpers.DirectoryItemType,string)&gt;&gt; ReadFolderAsync (this Microsoft.Graph.GraphServiceClient graph, string userId, string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.ValueTuple`2&lt;valuetype Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt; ReadFolderAsync(class Microsoft.Graph.GraphServiceClient graph, string userId, string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.ReadFolderAsync(Microsoft.Graph.GraphServiceClient,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ReadFolderAsync (graph As GraphServiceClient, userId As String, folderPath As String) As Task(Of IEnumerable(Of ValueTuple(Of DirectoryItemType, String)))" />
+      <MemberSignature Language="F#" Value="static member ReadFolderAsync : Microsoft.Graph.GraphServiceClient * string * string -&gt; System.Threading.Tasks.Task&lt;seq&lt;ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.ReadFolderAsync (graph, userId, folderPath)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType,System.String&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="folderPath">The path to create the new folder in.</param>
+        <summary>
+            Retrieve a list of directory items with names and types.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> with the directory listings.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenameItemAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task RenameItemAsync (this Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task RenameItemAsync(class Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.RenameItemAsync(Microsoft.Graph.GraphServiceClient,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RenameItemAsync (graph As GraphServiceClient, userId As String, itemPath As String, newName As String) As Task" />
+      <MemberSignature Language="F#" Value="static member RenameItemAsync : Microsoft.Graph.GraphServiceClient * string * string * string -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.RenameItemAsync (graph, userId, itemPath, newName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="itemPath">The path of the target item.</param>
+        <param name="newName">The new name for the item.</param>
+        <summary>
+            Rename an item.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Search&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Search&lt;T&gt; (this T request, string query) where T : Microsoft.Graph.IBaseRequest;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T Search&lt;(class Microsoft.Graph.IBaseRequest) T&gt;(!!T request, string query) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.Search``1(``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Search(Of T As IBaseRequest) (request As T, query As String) As T" />
+      <MemberSignature Language="F#" Value="static member Search : 'T * string -&gt; 'T (requires 'T :&gt; Microsoft.Graph.IBaseRequest)" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.Search (request, query)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>Microsoft.Graph.IBaseRequest</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="request" Type="T" RefType="this" />
+        <Parameter Name="query" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">
+          <see cref="T:Microsoft.Graph.IBaseRequest" /> type.</typeparam>
+        <param name="request">Request chain.</param>
+        <param name="query">Query to add for searching in QueryOptions.</param>
+        <summary>
+            Extension to provider Searching on OData Requests.
+            </summary>
+        <returns>Same type.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt; SetFileAsync&lt;T&gt; (this Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, T fileContents, Microsoft.Toolkit.Helpers.IObjectSerializer serializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Graph.DriveItem&gt; SetFileAsync&lt;T&gt;(class Microsoft.Graph.GraphServiceClient graph, string userId, string itemPath, !!T fileContents, class Microsoft.Toolkit.Helpers.IObjectSerializer serializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.SetFileAsync``1(Microsoft.Graph.GraphServiceClient,System.String,System.String,``0,Microsoft.Toolkit.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetFileAsync(Of T) (graph As GraphServiceClient, userId As String, itemPath As String, fileContents As T, serializer As IObjectSerializer) As Task(Of DriveItem)" />
+      <MemberSignature Language="F#" Value="static member SetFileAsync : Microsoft.Graph.GraphServiceClient * string * string * 'T * Microsoft.Toolkit.Helpers.IObjectSerializer -&gt; System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt;" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.SetFileAsync (graph, userId, itemPath, fileContents, serializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Graph.DriveItem&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="fileContents" Type="T" />
+        <Parameter Name="serializer" Type="Microsoft.Toolkit.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of object to save.</typeparam>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The id of the target Graph user.</param>
+        <param name="itemPath">The path of the target item.</param>
+        <param name="fileContents">The contents to put in the file.</param>
+        <param name="serializer">A serializer for converting stored values.</param>
+        <summary>
+            Updates or create a new file on the remote with the provided content.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetValue">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task SetValue (this Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId, string key, object value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task SetValue(class Microsoft.Graph.GraphServiceClient graph, string userId, string extensionId, string key, object value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.SetValue(Microsoft.Graph.GraphServiceClient,System.String,System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SetValue (graph As GraphServiceClient, userId As String, extensionId As String, key As String, value As Object) As Task" />
+      <MemberSignature Language="F#" Value="static member SetValue : Microsoft.Graph.GraphServiceClient * string * string * string * obj -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.SetValue (graph, userId, extensionId, key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="graph" Type="Microsoft.Graph.GraphServiceClient" RefType="this" />
+        <Parameter Name="userId" Type="System.String" />
+        <Parameter Name="extensionId" Type="System.String" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="graph">Instance of the <see cref="T:Microsoft.Graph.GraphServiceClient" />.</param>
+        <param name="userId">The user to access.</param>
+        <param name="extensionId">The id of the target extension.</param>
+        <param name="key">The key.</param>
+        <param name="value">The value to set.</param>
+        <summary>
+            Sets a user extension value at the specified key.
+            </summary>
+        <returns>A task.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToPerson">
+      <MemberSignature Language="C#" Value="public static Microsoft.Graph.Person ToPerson (this Microsoft.Graph.User user);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Graph.Person ToPerson(class Microsoft.Graph.User user) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Graph.Extensions.GraphExtensions.ToPerson(Microsoft.Graph.User)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToPerson (user As User) As Person" />
+      <MemberSignature Language="F#" Value="static member ToPerson : Microsoft.Graph.User -&gt; Microsoft.Graph.Person" Usage="CommunityToolkit.Graph.Extensions.GraphExtensions.ToPerson user" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Graph</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Graph.Person</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Microsoft.Graph.User" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="user">
+          <see cref="T:Microsoft.Graph.User" /> instance to convert.</param>
+        <summary>
+            Simple method to convert a <see cref="T:Microsoft.Graph.User" /> to a <see cref="T:Microsoft.Graph.Person" /> with basic common properties like <see cref="P:Microsoft.Graph.Entity.Id" />, <see cref="P:Microsoft.Graph.User.DisplayName" />, <see cref="P:Microsoft.Graph.Person.ScoredEmailAddresses" />, <see cref="P:Microsoft.Graph.User.GivenName" />, and <see cref="P:Microsoft.Graph.User.Surname" /> intact.
+            </summary>
+        <returns>A new basic <see cref="T:Microsoft.Graph.Person" /> representation of that user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,630 @@
+<Type Name="BitHelper" FullName="CommunityToolkit.HighPerformance.Helpers.BitHelper">
+  <TypeSignature Language="C#" Value="public static class BitHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit BitHelper extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.Helpers.BitHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class BitHelper" />
+  <TypeSignature Language="F#" Value="type BitHelper = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers to perform bit operations on numeric types.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ExtractRange">
+      <MemberSignature Language="C#" Value="public static uint ExtractRange (uint value, byte start, byte length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 ExtractRange(unsigned int32 value, unsigned int8 start, unsigned int8 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt32,System.Byte,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExtractRange (value As UInteger, start As Byte, length As Byte) As UInteger" />
+      <MemberSignature Language="F#" Value="static member ExtractRange : uint32 * byte * byte -&gt; uint32" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange (value, start, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt32" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 31] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <summary>
+            Extracts a bit field range from a given value.
+            </summary>
+        <returns>The value of the extracted range within <paramref name="value" />.</returns>
+        <remarks>
+            This method doesn't validate <paramref name="start" /> and <paramref name="length" />.
+            If either parameter is not valid, the result will just be inconsistent. The method
+            should not be used to set all the bits at once, and it is not guaranteed to work in
+            that case, which would just be equivalent to assigning the <see cref="T:System.UInt32" /> value.
+            Additionally, no conditional branches are used to retrieve the range.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ExtractRange">
+      <MemberSignature Language="C#" Value="public static ulong ExtractRange (ulong value, byte start, byte length);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 ExtractRange(unsigned int64 value, unsigned int8 start, unsigned int8 length) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt64,System.Byte,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExtractRange (value As ULong, start As Byte, length As Byte) As ULong" />
+      <MemberSignature Language="F#" Value="static member ExtractRange : uint64 * byte * byte -&gt; uint64" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange (value, start, length)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt64" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 63] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <summary>
+            Extracts a bit field range from a given value.
+            </summary>
+        <returns>The value of the extracted range within <paramref name="value" />.</returns>
+        <remarks>
+            This method doesn't validate <paramref name="start" /> and <paramref name="length" />.
+            If either parameter is not valid, the result will just be inconsistent. The method
+            should not be used to set all the bits at once, and it is not guaranteed to work in
+            that case, which would just be equivalent to assigning the <see cref="T:System.UInt64" /> value.
+            Additionally, no conditional branches are used to retrieve the range.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasByteEqualTo">
+      <MemberSignature Language="C#" Value="public static bool HasByteEqualTo (uint value, byte target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasByteEqualTo(unsigned int32 value, unsigned int8 target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt32,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasByteEqualTo (value As UInteger, target As Byte) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasByteEqualTo : uint32 * byte -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo (value, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="target" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <param name="target">The target byte to look for.</param>
+        <summary>
+            Checks whether a byte in the input <see cref="T:System.UInt32" /> value matches a target value.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to <paramref name="target" />.</returns>
+        <remarks>
+            This method contains no branches.
+            For more info, see <see href="https://graphics.stanford.edu/~seander/bithacks.html#ZeroInWord" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasByteEqualTo">
+      <MemberSignature Language="C#" Value="public static bool HasByteEqualTo (ulong value, byte target);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasByteEqualTo(unsigned int64 value, unsigned int8 target) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt64,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasByteEqualTo (value As ULong, target As Byte) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasByteEqualTo : uint64 * byte -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo (value, target)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="target" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <param name="target">The target byte to look for.</param>
+        <summary>
+            Checks whether a byte in the input <see cref="T:System.UInt32" /> value matches a target value.
+            This method mirrors <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasByteEqualTo(System.UInt32,System.Byte)" />, but with <see cref="T:System.UInt64" /> values.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to <paramref name="target" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFlag">
+      <MemberSignature Language="C#" Value="public static bool HasFlag (uint value, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasFlag(unsigned int32 value, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasFlag (value As UInteger, n As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasFlag : uint32 * int -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag (value, n)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt32" /> value.</param>
+        <param name="n">The position of the bit to check (in [0, 31] range).</param>
+        <summary>
+            Checks whether or not a given bit is set.
+            </summary>
+        <returns>Whether or not the n-th bit is set.</returns>
+        <remarks>
+            This method doesn't validate <paramref name="n" /> against the valid range.
+            If the parameter is not valid, the result will just be inconsistent.
+            Additionally, no conditional branches are used to retrieve the flag.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasFlag">
+      <MemberSignature Language="C#" Value="public static bool HasFlag (ulong value, int n);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasFlag(unsigned int64 value, int32 n) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasFlag (value As ULong, n As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasFlag : uint64 * int -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag (value, n)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="n" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt64" /> value.</param>
+        <param name="n">The position of the bit to check (in [0, 63] range).</param>
+        <summary>
+            Checks whether or not a given bit is set.
+            </summary>
+        <returns>Whether or not the n-th bit is set.</returns>
+        <remarks>
+            This method doesn't validate <paramref name="n" /> against the valid range.
+            If the parameter is not valid, the result will just be inconsistent.
+            Additionally, no conditional branches are used to retrieve the flag.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLookupFlag">
+      <MemberSignature Language="C#" Value="public static bool HasLookupFlag (uint table, int x, int min = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasLookupFlag(unsigned int32 table, int32 x, int32 min) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag(System.UInt32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasLookupFlag (table As UInteger, x As Integer, Optional min As Integer = 0) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasLookupFlag : uint32 * int * int -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag (table, x, min)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.UInt32" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="min" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="table">The input lookup table to use.</param>
+        <param name="x">The input value to check.</param>
+        <param name="min">The minimum accepted value for <paramref name="x" /> (defaults to 0).</param>
+        <summary>
+            Checks whether or not a given bit is set in a given bitwise lookup table.
+            This method provides a branchless, register-based (with no memory accesses) way to
+            check whether a given value is valid, according to a precomputed lookup table.
+            It is similar in behavior to <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt32,System.Int32)" />, with the main difference
+            being that this method will also validate the input <paramref name="x" /> parameter, and
+            will always return <see langword="false" /> if it falls outside of the expected interval.
+            Additionally, this method accepts a <paramref name="min" /> parameter, which is used to
+            decrement the input parameter <paramref name="x" /> to ensure that the range of accepted
+            values fits within the available 32 bits of the lookup table in use.
+            For more info on this optimization technique, see <see href="https://egorbo.com/llvm-range-checks.html" />.
+            Here is how the code from the link above would be implemented using this method:
+            <code>
+            bool IsReservedCharacter(char c)
+            {
+                return BitHelper.HasLookupFlag(314575237u, c, 36);
+            }
+            </code>
+            The resulted assembly is virtually identical, with the added optimization that the one
+            produced by <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag(System.UInt32,System.Int32,System.Int32)" /> has no conditional branches at all.
+            </summary>
+        <returns>Whether or not the corresponding flag for <paramref name="x" /> is set in <paramref name="table" />.</returns>
+        <remarks>
+            For best results, as shown in the sample code, both <paramref name="table" /> and <paramref name="min" />
+            should be compile-time constants, so that the JIT compiler will be able to produce more efficient code.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasLookupFlag">
+      <MemberSignature Language="C#" Value="public static bool HasLookupFlag (ulong table, int x, int min = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasLookupFlag(unsigned int64 table, int32 x, int32 min) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag(System.UInt64,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasLookupFlag (table As ULong, x As Integer, Optional min As Integer = 0) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasLookupFlag : uint64 * int * int -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag (table, x, min)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="table" Type="System.UInt64" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="min" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="table">The input lookup table to use.</param>
+        <param name="x">The input value to check.</param>
+        <param name="min">The minimum accepted value for <paramref name="x" /> (defaults to 0).</param>
+        <summary>
+            Checks whether or not a given bit is set in a given bitwise lookup table.
+            For more info, check the XML docs of the <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasLookupFlag(System.UInt32,System.Int32,System.Int32)" /> overload.
+            </summary>
+        <returns>Whether or not the corresponding flag for <paramref name="x" /> is set in <paramref name="table" />.</returns>
+        <remarks>
+            For best results, as shown in the sample code, both <paramref name="table" /> and <paramref name="min" />
+            should be compile-time constants, so that the JIT compiler will be able to produce more efficient code.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasZeroByte">
+      <MemberSignature Language="C#" Value="public static bool HasZeroByte (uint value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasZeroByte(unsigned int32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasZeroByte (value As UInteger) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasZeroByte : uint32 -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasZeroByte value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <summary>
+            Checks whether the given value has any bytes that are set to 0.
+            That is, given a <see cref="T:System.UInt32" /> value, which has a total of 4 bytes,
+            it checks whether any of those have all the bits set to 0.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to 0.</returns>
+        <remarks>
+            This method contains no branches.
+            For more background on this subject, see <see href="https://graphics.stanford.edu/~seander/bithacks.html#ZeroInWord" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasZeroByte">
+      <MemberSignature Language="C#" Value="public static bool HasZeroByte (ulong value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasZeroByte(unsigned int64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HasZeroByte (value As ULong) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasZeroByte : uint64 -&gt; bool" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.HasZeroByte value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input value to check.</param>
+        <summary>
+            Checks whether the given value has any bytes that are set to 0.
+            This method mirrors <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasZeroByte(System.UInt32)" />, but with <see cref="T:System.UInt64" /> values.
+            </summary>
+        <returns>Whether <paramref name="value" /> has any bytes set to 0.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlag">
+      <MemberSignature Language="C#" Value="public static uint SetFlag (uint value, int n, bool flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 SetFlag(unsigned int32 value, int32 n, bool flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag(System.UInt32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetFlag (value As UInteger, n As Integer, flag As Boolean) As UInteger" />
+      <MemberSignature Language="F#" Value="static member SetFlag : uint32 * int * bool -&gt; uint32" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag (value, n, flag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="n" Type="System.Int32" />
+        <Parameter Name="flag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt32" /> value.</param>
+        <param name="n">The position of the bit to set or clear (in [0, 31] range).</param>
+        <param name="flag">The value to assign to the target bit.</param>
+        <summary>
+            Sets a bit to a specified value.
+            </summary>
+        <returns>An <see cref="T:System.UInt32" /> value equal to <paramref name="value" /> except for the <paramref name="n" />-th bit.</returns>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt32,System.Int32)" />, this method doesn't validate <paramref name="n" />
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlag">
+      <MemberSignature Language="C#" Value="public static void SetFlag (ref uint value, int n, bool flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFlag(unsigned int32&amp; value, int32 n, bool flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag(System.UInt32@,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFlag (ByRef value As UInteger, n As Integer, flag As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetFlag : uint32 * int * bool -&gt; unit" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag (value, n, flag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" RefType="ref" />
+        <Parameter Name="n" Type="System.Int32" />
+        <Parameter Name="flag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The target <see cref="T:System.UInt32" /> value.</param>
+        <param name="n">The position of the bit to set or clear (in [0, 31] range).</param>
+        <param name="flag">The value to assign to the target bit.</param>
+        <summary>
+            Sets a bit to a specified value.
+            </summary>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt32,System.Int32)" />, this method doesn't validate <paramref name="n" />
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlag">
+      <MemberSignature Language="C#" Value="public static ulong SetFlag (ulong value, int n, bool flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 SetFlag(unsigned int64 value, int32 n, bool flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag(System.UInt64,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetFlag (value As ULong, n As Integer, flag As Boolean) As ULong" />
+      <MemberSignature Language="F#" Value="static member SetFlag : uint64 * int * bool -&gt; uint64" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag (value, n, flag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="n" Type="System.Int32" />
+        <Parameter Name="flag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The input <see cref="T:System.UInt64" /> value.</param>
+        <param name="n">The position of the bit to set or clear (in [0, 63] range).</param>
+        <param name="flag">The value to assign to the target bit.</param>
+        <summary>
+            Sets a bit to a specified value.
+            </summary>
+        <returns>An <see cref="T:System.UInt64" /> value equal to <paramref name="value" /> except for the <paramref name="n" />-th bit.</returns>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt64,System.Int32)" />, this method doesn't validate <paramref name="n" />
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetFlag">
+      <MemberSignature Language="C#" Value="public static void SetFlag (ref ulong value, int n, bool flag);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetFlag(unsigned int64&amp; value, int32 n, bool flag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag(System.UInt64@,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetFlag (ByRef value As ULong, n As Integer, flag As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetFlag : uint64 * int * bool -&gt; unit" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetFlag (value, n, flag)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" RefType="ref" />
+        <Parameter Name="n" Type="System.Int32" />
+        <Parameter Name="flag" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="value">The target <see cref="T:System.UInt64" /> value.</param>
+        <param name="n">The position of the bit to set or clear (in [0, 63] range).</param>
+        <param name="flag">The value to assign to the target bit.</param>
+        <summary>
+            Sets a bit to a specified value.
+            </summary>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.HasFlag(System.UInt64,System.Int32)" />, this method doesn't validate <paramref name="n" />
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRange">
+      <MemberSignature Language="C#" Value="public static uint SetRange (uint value, byte start, byte length, uint flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 SetRange(unsigned int32 value, unsigned int8 start, unsigned int8 length, unsigned int32 flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange(System.UInt32,System.Byte,System.Byte,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetRange (value As UInteger, start As Byte, length As Byte, flags As UInteger) As UInteger" />
+      <MemberSignature Language="F#" Value="static member SetRange : uint32 * byte * byte * uint32 -&gt; uint32" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange (value, start, length, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+        <Parameter Name="flags" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The initial <see cref="T:System.UInt32" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 31] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <param name="flags">The input flags to insert in the target range.</param>
+        <summary>
+            Sets a bit field range within a target value.
+            </summary>
+        <returns>The updated bit field value after setting the specified range.</returns>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt32,System.Byte,System.Byte)" />, this method doesn't validate the parameters
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRange">
+      <MemberSignature Language="C#" Value="public static void SetRange (ref uint value, byte start, byte length, uint flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRange(unsigned int32&amp; value, unsigned int8 start, unsigned int8 length, unsigned int32 flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange(System.UInt32@,System.Byte,System.Byte,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRange (ByRef value As UInteger, start As Byte, length As Byte, flags As UInteger)" />
+      <MemberSignature Language="F#" Value="static member SetRange : uint32 * byte * byte * uint32 -&gt; unit" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange (value, start, length, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt32" RefType="ref" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+        <Parameter Name="flags" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="value">The target <see cref="T:System.UInt32" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 31] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <param name="flags">The input flags to insert in the target range.</param>
+        <summary>
+            Sets a bit field range within a target value.
+            </summary>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt32,System.Byte,System.Byte)" />, this method doesn't validate the parameters
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRange">
+      <MemberSignature Language="C#" Value="public static ulong SetRange (ulong value, byte start, byte length, ulong flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int64 SetRange(unsigned int64 value, unsigned int8 start, unsigned int8 length, unsigned int64 flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange(System.UInt64,System.Byte,System.Byte,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetRange (value As ULong, start As Byte, length As Byte, flags As ULong) As ULong" />
+      <MemberSignature Language="F#" Value="static member SetRange : uint64 * byte * byte * uint64 -&gt; uint64" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange (value, start, length, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+        <Parameter Name="flags" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The initial <see cref="T:System.UInt64" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 63] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <param name="flags">The input flags to insert in the target range.</param>
+        <summary>
+            Sets a bit field range within a target value.
+            </summary>
+        <returns>The updated bit field value after setting the specified range.</returns>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt64,System.Byte,System.Byte)" />, this method doesn't validate the parameters
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRange">
+      <MemberSignature Language="C#" Value="public static void SetRange (ref ulong value, byte start, byte length, ulong flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRange(unsigned int64&amp; value, unsigned int8 start, unsigned int8 length, unsigned int64 flags) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange(System.UInt64@,System.Byte,System.Byte,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRange (ByRef value As ULong, start As Byte, length As Byte, flags As ULong)" />
+      <MemberSignature Language="F#" Value="static member SetRange : uint64 * byte * byte * uint64 -&gt; unit" Usage="CommunityToolkit.HighPerformance.Helpers.BitHelper.SetRange (value, start, length, flags)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.UInt64" RefType="ref" />
+        <Parameter Name="start" Type="System.Byte" />
+        <Parameter Name="length" Type="System.Byte" />
+        <Parameter Name="flags" Type="System.UInt64" />
+      </Parameters>
+      <Docs>
+        <param name="value">The target <see cref="T:System.UInt64" /> value.</param>
+        <param name="start">The initial index of the range to extract (in [0, 63] range).</param>
+        <param name="length">The length of the range to extract (depends on <paramref name="start" />).</param>
+        <param name="flags">The input flags to insert in the target range.</param>
+        <summary>
+            Sets a bit field range within a target value.
+            </summary>
+        <remarks>
+            Just like <see cref="M:CommunityToolkit.HighPerformance.Helpers.BitHelper.ExtractRange(System.UInt64,System.Byte,System.Byte)" />, this method doesn't validate the parameters
+            and does not contain branching instructions, so it's well suited for use in tight loops as well.
+            </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

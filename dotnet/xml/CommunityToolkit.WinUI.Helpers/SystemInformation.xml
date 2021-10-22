@@ -1,0 +1,598 @@
+<Type Name="SystemInformation" FullName="CommunityToolkit.WinUI.Helpers.SystemInformation">
+  <TypeSignature Language="C#" Value="public sealed class SystemInformation" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemInformation extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Helpers.SystemInformation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemInformation" />
+  <TypeSignature Language="F#" Value="type SystemInformation = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            This class provides info about the app and the system.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddToAppUptime">
+      <MemberSignature Language="C#" Value="public void AddToAppUptime (TimeSpan duration);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddToAppUptime(valuetype System.TimeSpan duration) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.SystemInformation.AddToAppUptime(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddToAppUptime (duration As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.AddToAppUptime : TimeSpan -&gt; unit" Usage="systemInformation.AddToAppUptime duration" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="duration" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="duration">The amount to time to add</param>
+        <summary>
+            Adds to the record of how long the app has been running.
+            Use this to optionally include time spent in background tasks or extended execution.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationName">
+      <MemberSignature Language="C#" Value="public string ApplicationName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.ApplicationName" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the application's name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationVersion">
+      <MemberSignature Language="C#" Value="public Windows.ApplicationModel.PackageVersion ApplicationVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.ApplicationModel.PackageVersion ApplicationVersion" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.ApplicationVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ApplicationVersion As PackageVersion" />
+      <MemberSignature Language="F#" Value="member this.ApplicationVersion : Windows.ApplicationModel.PackageVersion" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.ApplicationVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.PackageVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the application's version.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppUptime">
+      <MemberSignature Language="C#" Value="public TimeSpan AppUptime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AppUptime" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.AppUptime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppUptime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.AppUptime : TimeSpan" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.AppUptime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.TimeSpan</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the length of time this instance of the app has been running.
+            Will be <see cref="F:System.TimeSpan.MinValue" /> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AvailableMemory">
+      <MemberSignature Language="C#" Value="public float AvailableMemory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 AvailableMemory" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.AvailableMemory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableMemory As Single" />
+      <MemberSignature Language="F#" Value="member this.AvailableMemory : single" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.AvailableMemory" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the available memory.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Culture">
+      <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.Culture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Globalization.CultureInfo</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the user's most preferred culture.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceFamily">
+      <MemberSignature Language="C#" Value="public string DeviceFamily { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceFamily" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceFamily As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceFamily : string" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the device's family.
+            <para />
+            Common values include:
+            <list type="bullet"><item><term>"Windows.Desktop"</term></item><item><term>"Windows.Mobile"</term></item><item><term>"Windows.Xbox"</term></item><item><term>"Windows.Holographic"</term></item><item><term>"Windows.Team"</term></item><item><term>"Windows.IoT"</term></item></list><para />
+            Prepare your code for other values.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceManufacturer">
+      <MemberSignature Language="C#" Value="public string DeviceManufacturer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceManufacturer" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceManufacturer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceManufacturer As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceManufacturer : string" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceManufacturer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the device's manufacturer.
+            Will be empty if the manufacturer couldn't be determined (For example: when running in a virtual machine).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceModel">
+      <MemberSignature Language="C#" Value="public string DeviceModel { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string DeviceModel" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceModel As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceModel : string" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.DeviceModel" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the device's model.
+            Will be empty if the model couldn't be determined (For example: when running in a virtual machine).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstUseTime">
+      <MemberSignature Language="C#" Value="public DateTime FirstUseTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime FirstUseTime" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.FirstUseTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstUseTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.FirstUseTime : DateTime" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.FirstUseTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the DateTime (in UTC) when the app was launched for the first time.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstVersionInstalled">
+      <MemberSignature Language="C#" Value="public Windows.ApplicationModel.PackageVersion FirstVersionInstalled { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.ApplicationModel.PackageVersion FirstVersionInstalled" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.FirstVersionInstalled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstVersionInstalled As PackageVersion" />
+      <MemberSignature Language="F#" Value="member this.FirstVersionInstalled : Windows.ApplicationModel.PackageVersion" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.FirstVersionInstalled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.ApplicationModel.PackageVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the first version of the app that was installed.
+            This will be the current version if a previous version of the app was installed before accessing this property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.Helpers.SystemInformation Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class CommunityToolkit.WinUI.Helpers.SystemInformation Instance" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As SystemInformation" />
+      <MemberSignature Language="F#" Value="member this.Instance : CommunityToolkit.WinUI.Helpers.SystemInformation" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Helpers.SystemInformation</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the unique instance of <see cref="T:CommunityToolkit.WinUI.Helpers.SystemInformation" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAppUpdated">
+      <MemberSignature Language="C#" Value="public bool IsAppUpdated { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAppUpdated" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.IsAppUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAppUpdated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAppUpdated : bool" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.IsAppUpdated" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the app is being used for the first time since being upgraded from an older version.
+            Use this to tell if you should display details about what has changed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsFirstRun">
+      <MemberSignature Language="C#" Value="public bool IsFirstRun { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsFirstRun" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.IsFirstRun" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFirstRun As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFirstRun : bool" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.IsFirstRun" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the app is being used for the first time since it was installed.
+            Use this to tell if you should do or display something different for the app's first use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastLaunchTime">
+      <MemberSignature Language="C#" Value="public DateTime LastLaunchTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastLaunchTime" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.LastLaunchTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastLaunchTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastLaunchTime : DateTime" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.LastLaunchTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the DateTime (in UTC) when the app was last launched, not including this instance.
+            Will be <see cref="F:System.DateTime.MinValue" /> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastResetTime">
+      <MemberSignature Language="C#" Value="public DateTime LastResetTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastResetTime" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.LastResetTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastResetTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastResetTime : DateTime" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.LastResetTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the DateTime (in UTC) when the launch count was last reset.
+            Will be <see cref="F:System.DateTime.MinValue" /> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchCount">
+      <MemberSignature Language="C#" Value="public long LaunchCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 LaunchCount" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LaunchCount As Long" />
+      <MemberSignature Language="F#" Value="member this.LaunchCount : int64" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of times the app has been launched.
+            Will be <c>0</c> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchStoreForReviewAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task LaunchStoreForReviewAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task LaunchStoreForReviewAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchStoreForReviewAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LaunchStoreForReviewAsync () As Task" />
+      <MemberSignature Language="F#" Value="static member LaunchStoreForReviewAsync : unit -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchStoreForReviewAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Launches the store app so the user can leave a review.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>This method needs to be called from your UI thread.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LaunchTime">
+      <MemberSignature Language="C#" Value="public DateTime LaunchTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LaunchTime" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LaunchTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LaunchTime : DateTime" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.LaunchTime" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.DateTime</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the DateTime (in UTC) that this instance of the app was launched.
+            Will be <see cref="F:System.DateTime.MinValue" /> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperatingSystem">
+      <MemberSignature Language="C#" Value="public string OperatingSystem { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string OperatingSystem" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperatingSystem As String" />
+      <MemberSignature Language="F#" Value="member this.OperatingSystem : string" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystem" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the operating system's name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperatingSystemArchitecture">
+      <MemberSignature Language="C#" Value="public Windows.System.ProcessorArchitecture OperatingSystemArchitecture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.System.ProcessorArchitecture OperatingSystemArchitecture" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystemArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperatingSystemArchitecture As ProcessorArchitecture" />
+      <MemberSignature Language="F#" Value="member this.OperatingSystemArchitecture : Windows.System.ProcessorArchitecture" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystemArchitecture" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.System.ProcessorArchitecture</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the processor architecture.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OperatingSystemVersion">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.Helpers.OSVersion OperatingSystemVersion { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype CommunityToolkit.WinUI.Helpers.OSVersion OperatingSystemVersion" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystemVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OperatingSystemVersion As OSVersion" />
+      <MemberSignature Language="F#" Value="member this.OperatingSystemVersion : CommunityToolkit.WinUI.Helpers.OSVersion" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.OperatingSystemVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Helpers.OSVersion</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the operating system's version.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetLaunchCount">
+      <MemberSignature Language="C#" Value="public void ResetLaunchCount ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetLaunchCount() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.SystemInformation.ResetLaunchCount" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetLaunchCount ()" />
+      <MemberSignature Language="F#" Value="member this.ResetLaunchCount : unit -&gt; unit" Usage="systemInformation.ResetLaunchCount " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Resets the launch count.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TotalLaunchCount">
+      <MemberSignature Language="C#" Value="public long TotalLaunchCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 TotalLaunchCount" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.SystemInformation.TotalLaunchCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalLaunchCount As Long" />
+      <MemberSignature Language="F#" Value="member this.TotalLaunchCount : int64" Usage="CommunityToolkit.WinUI.Helpers.SystemInformation.TotalLaunchCount" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the number of times the app has been launched.
+            Will be <c>0</c> if <see cref="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" /> has not been called yet.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrackAppUse">
+      <MemberSignature Language="C#" Value="public void TrackAppUse (Windows.ApplicationModel.Activation.IActivatedEventArgs args, Microsoft.UI.Xaml.XamlRoot xamlRoot = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TrackAppUse(class Windows.ApplicationModel.Activation.IActivatedEventArgs args, class Microsoft.UI.Xaml.XamlRoot xamlRoot) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.SystemInformation.TrackAppUse(Windows.ApplicationModel.Activation.IActivatedEventArgs,Microsoft.UI.Xaml.XamlRoot)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TrackAppUse (args As IActivatedEventArgs, Optional xamlRoot As XamlRoot = Nothing)" />
+      <MemberSignature Language="F#" Value="member this.TrackAppUse : Windows.ApplicationModel.Activation.IActivatedEventArgs * Microsoft.UI.Xaml.XamlRoot -&gt; unit" Usage="systemInformation.TrackAppUse (args, xamlRoot)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+        <Parameter Name="xamlRoot" Type="Microsoft.UI.Xaml.XamlRoot" />
+      </Parameters>
+      <Docs>
+        <param name="args">Details about the launch request and process.</param>
+        <param name="xamlRoot">The XamlRoot object from your visual tree.</param>
+        <summary>
+            Tracks information about the app's launch.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

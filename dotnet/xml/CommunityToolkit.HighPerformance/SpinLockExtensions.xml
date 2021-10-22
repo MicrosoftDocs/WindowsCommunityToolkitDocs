@@ -1,0 +1,84 @@
+<Type Name="SpinLockExtensions" FullName="CommunityToolkit.HighPerformance.SpinLockExtensions">
+  <TypeSignature Language="C#" Value="public static class SpinLockExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SpinLockExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.SpinLockExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpinLockExtensions" />
+  <TypeSignature Language="F#" Value="type SpinLockExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for working with the <see cref="T:System.Threading.SpinLock" /> type.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.SpinLockExtensions.UnsafeLock Enter (System.Threading.SpinLock* spinLock);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.SpinLockExtensions/UnsafeLock Enter(valuetype System.Threading.SpinLock* spinLock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpinLockExtensions.Enter(System.Threading.SpinLock*)" />
+      <MemberSignature Language="F#" Value="static member Enter : nativeptr&lt;System.Threading.SpinLock&gt; -&gt; CommunityToolkit.HighPerformance.SpinLockExtensions.UnsafeLock" Usage="CommunityToolkit.HighPerformance.SpinLockExtensions.Enter spinLock" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.SpinLockExtensions+UnsafeLock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="spinLock" Type="System.Threading.SpinLock*" />
+      </Parameters>
+      <Docs>
+        <param name="spinLock">A pointer to the target <see cref="T:System.Threading.SpinLock" /> to use</param>
+        <summary>
+             Enters a specified <see cref="T:System.Threading.SpinLock" /> instance and returns a wrapper to use to release the lock.
+             This extension should be used though a <see langword="using" /> block or statement:
+             <code>
+             SpinLock spinLock = new SpinLock();
+            
+             using (SpinLockExtensions.Enter(&amp;spinLock))
+             {
+                 // Thread-safe code here...
+             }
+             </code>
+             The compiler will take care of releasing the SpinLock when the code goes out of that <see langword="using" /> scope.
+             </summary>
+        <returns>A wrapper type that will release <paramref name="spinLock" /> when its <see cref="M:System.IDisposable.Dispose" /> method is called.</returns>
+        <remarks>The returned <see cref="T:CommunityToolkit.HighPerformance.SpinLockExtensions.UnsafeLock" /> value shouldn't be used directly: use this extension in a <see langword="using" /> block or statement.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enter">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.HighPerformance.SpinLockExtensions.Lock Enter (object owner, ref System.Threading.SpinLock spinLock);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype CommunityToolkit.HighPerformance.SpinLockExtensions/Lock Enter(object owner, valuetype System.Threading.SpinLock&amp; spinLock) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.SpinLockExtensions.Enter(System.Object,System.Threading.SpinLock@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Enter (owner As Object, ByRef spinLock As SpinLock) As SpinLockExtensions.Lock" />
+      <MemberSignature Language="F#" Value="static member Enter : obj * SpinLock -&gt; CommunityToolkit.HighPerformance.SpinLockExtensions.Lock" Usage="CommunityToolkit.HighPerformance.SpinLockExtensions.Enter (owner, spinLock)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.HighPerformance.SpinLockExtensions+Lock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="owner" Type="System.Object" />
+        <Parameter Name="spinLock" Type="System.Threading.SpinLock" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="owner">To be added.</param>
+        <param name="spinLock">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

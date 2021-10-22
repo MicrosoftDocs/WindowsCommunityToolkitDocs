@@ -1,0 +1,311 @@
+<Type Name="MemoryBufferWriter&lt;T&gt;" FullName="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class MemoryBufferWriter&lt;T&gt; : CommunityToolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;, System.Buffers.IBufferWriter&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MemoryBufferWriter`1&lt;T&gt; extends System.Object implements class CommunityToolkit.HighPerformance.Buffers.IBuffer`1&lt;!T&gt;, class System.Buffers.IBufferWriter`1&lt;!T&gt;" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MemoryBufferWriter(Of T)&#xA;Implements IBuffer(Of T), IBufferWriter(Of T)" />
+  <TypeSignature Language="F#" Value="type MemoryBufferWriter&lt;'T&gt; = class&#xA;    interface IBuffer&lt;'T&gt;&#xA;    interface IBufferWriter&lt;'T&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>CommunityToolkit.HighPerformance.Buffers.IBuffer&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Buffers.IBufferWriter&lt;T&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerDisplay("{ToString(),raw}")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerDisplay("{ToString(),raw}")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Diagnostics.DebuggerTypeProxy(typeof(CommunityToolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Diagnostics.DebuggerTypeProxy(typeof(CommunityToolkit.HighPerformance.Buffers.Views.MemoryDebugView&lt;&gt;))&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">The type of items to write to the current instance.</typeparam>
+    <summary>
+            Represents an output sink into which <typeparamref name="T" /> data can be written, backed by a <see cref="T:System.Memory`1" /> instance.
+            </summary>
+    <remarks>
+            This is a custom <see cref="T:System.Buffers.IBufferWriter`1" /> implementation that wraps a <see cref="T:System.Memory`1" /> instance.
+            It can be used to bridge APIs consuming an <see cref="T:System.Buffers.IBufferWriter`1" /> with existing <see cref="T:System.Memory`1" />
+            instances (or objects that can be converted to a <see cref="T:System.Memory`1" />), to ensure the data is written directly
+            to the intended buffer, with no possibility of doing additional allocations or expanding the available capacity.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MemoryBufferWriter (Memory&lt;T&gt; memory);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Memory`1&lt;!T&gt; memory) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.#ctor(System.Memory{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memory As Memory(Of T))" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt; : Memory&lt;'T&gt; -&gt; CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;" Usage="new CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt; memory" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="memory">The target <see cref="T:System.Memory`1" /> instance to write to.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Advance">
+      <MemberSignature Language="C#" Value="public void Advance (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Advance(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.Advance(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Advance (count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Advance : int -&gt; unit&#xA;override this.Advance : int -&gt; unit" Usage="memoryBufferWriter.Advance count" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.Advance(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Capacity">
+      <MemberSignature Language="C#" Value="public int Capacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Capacity As Integer" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int" Usage="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;.Capacity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.Capacity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="memoryBufferWriter.Clear " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FreeCapacity">
+      <MemberSignature Language="C#" Value="public int FreeCapacity { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FreeCapacity" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.FreeCapacity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FreeCapacity As Integer" />
+      <MemberSignature Language="F#" Value="member this.FreeCapacity : int" Usage="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;.FreeCapacity" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.FreeCapacity</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetMemory">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; GetMemory (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Memory`1&lt;!T&gt; GetMemory(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.GetMemory(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemory (Optional sizeHint As Integer = 0) As Memory(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetMemory : int -&gt; Memory&lt;'T&gt;&#xA;override this.GetMemory : int -&gt; Memory&lt;'T&gt;" Usage="memoryBufferWriter.GetMemory sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetMemory(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSpan">
+      <MemberSignature Language="C#" Value="public Span&lt;T&gt; GetSpan (int sizeHint = 0);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Span`1&lt;!T&gt; GetSpan(int32 sizeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.GetSpan(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSpan (Optional sizeHint As Integer = 0) As Span(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetSpan : int -&gt; Span&lt;'T&gt;&#xA;override this.GetSpan : int -&gt; Span&lt;'T&gt;" Usage="memoryBufferWriter.GetSpan sizeHint" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Buffers.IBufferWriter`1.GetSpan(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Span&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="sizeHint" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="sizeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="memoryBufferWriter.ToString " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Returns a string that represents the current object.</summary>
+        <returns>A string that represents the current object.</returns>
+        <remarks>To be added.</remarks>
+        <filterpriority>2</filterpriority>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenCount">
+      <MemberSignature Language="C#" Value="public int WrittenCount { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 WrittenCount" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.WrittenCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.WrittenCount : int" Usage="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;.WrittenCount" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.WrittenCount</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenMemory">
+      <MemberSignature Language="C#" Value="public ReadOnlyMemory&lt;T&gt; WrittenMemory { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlyMemory`1&lt;!T&gt; WrittenMemory" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.WrittenMemory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenMemory As ReadOnlyMemory(Of T)" />
+      <MemberSignature Language="F#" Value="member this.WrittenMemory : ReadOnlyMemory&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;.WrittenMemory" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.WrittenMemory</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrittenSpan">
+      <MemberSignature Language="C#" Value="public ReadOnlySpan&lt;T&gt; WrittenSpan { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ReadOnlySpan`1&lt;!T&gt; WrittenSpan" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter`1.WrittenSpan" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrittenSpan As ReadOnlySpan(Of T)" />
+      <MemberSignature Language="F#" Value="member this.WrittenSpan : ReadOnlySpan&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Buffers.MemoryBufferWriter&lt;'T&gt;.WrittenSpan" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:CommunityToolkit.HighPerformance.Buffers.IBuffer`1.WrittenSpan</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ReadOnlySpan&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

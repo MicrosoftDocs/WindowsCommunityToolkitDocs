@@ -1,0 +1,54 @@
+<Type Name="RoamingObjectStorageHelper" FullName="CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper">
+  <TypeSignature Language="C#" Value="public class RoamingObjectStorageHelper : CommunityToolkit.WinUI.Helpers.BaseObjectStorageHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoamingObjectStorageHelper extends CommunityToolkit.WinUI.Helpers.BaseObjectStorageHelper" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class RoamingObjectStorageHelper&#xA;Inherits BaseObjectStorageHelper" />
+  <TypeSignature Language="F#" Value="type RoamingObjectStorageHelper = class&#xA;    inherit BaseObjectStorageHelper" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.Helpers.BaseObjectStorageHelper</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("Package State Roaming will be removed in a futures Windows Update, see https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features for more information.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("Package State Roaming will be removed in a futures Windows Update, see https://docs.microsoft.com/windows/deployment/planning/windows-10-deprecated-features for more information.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Store data in the Roaming environment (shared across all user devices).
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RoamingObjectStorageHelper (CommunityToolkit.WinUI.Helpers.IObjectSerializer objectSerializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class CommunityToolkit.WinUI.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper.#ctor(CommunityToolkit.WinUI.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (objectSerializer As IObjectSerializer)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper : CommunityToolkit.WinUI.Helpers.IObjectSerializer -&gt; CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper" Usage="new CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper objectSerializer" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="objectSerializer" Type="CommunityToolkit.WinUI.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="objectSerializer">The serializer to use.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.RoamingObjectStorageHelper" /> class,
+            which can read and write data using the provided <see cref="T:CommunityToolkit.WinUI.Helpers.IObjectSerializer" />;
+            In 6.1 and older the default Serializer was based on Newtonsoft.Json.
+            To implement an <see cref="T:CommunityToolkit.WinUI.Helpers.IObjectSerializer" /> based on System.Text.Json, Newtonsoft.Json, or DataContractJsonSerializer see https://aka.ms/wct/storagehelper-migration
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

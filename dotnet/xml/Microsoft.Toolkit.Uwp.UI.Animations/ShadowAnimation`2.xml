@@ -1,0 +1,177 @@
+<Type Name="ShadowAnimation&lt;TValue,TKeyFrame&gt;" FullName="Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation&lt;TValue,TKeyFrame&gt;">
+  <TypeSignature Language="C#" Value="public abstract class ShadowAnimation&lt;TValue,TKeyFrame&gt; : Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;, Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline where TKeyFrame : struct" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ShadowAnimation`2&lt;TValue, struct .ctor (class System.ValueType) TKeyFrame&gt; extends Microsoft.Toolkit.Uwp.UI.Animations.Animation`2&lt;!TValue, !TKeyFrame&gt; implements class Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ShadowAnimation(Of TValue, TKeyFrame)&#xA;Inherits Animation(Of TValue, TKeyFrame)&#xA;Implements IAttachedTimeline" />
+  <TypeSignature Language="F#" Value="type ShadowAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt; = class&#xA;    inherit Animation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;&#xA;    interface IAttachedTimeline" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TValue" />
+    <TypeParameter Name="TKeyFrame">
+      <Constraints>
+        <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+        <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+        <BaseTypeName>System.ValueType</BaseTypeName>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>Microsoft.Toolkit.Uwp.UI.Animations.Animation&lt;TValue,TKeyFrame&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="TValue">TValue</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="TKeyFrame">TKeyFrame</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="TValue">
+            The type to use for the public <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.To" /> and <see cref="P:Microsoft.Toolkit.Uwp.UI.Animations.Animation`2.From" />
+            properties. This can differ from <typeparamref name="TKeyFrame" /> to facilitate XAML parsing.
+            </typeparam>
+    <typeparam name="TKeyFrame">The actual type of keyframe values in use.</typeparam>
+    <summary>
+            A custom animation targeting a property on an <see cref="T:Microsoft.Toolkit.Uwp.UI.IAttachedShadow" /> instance.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ShadowAnimation ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public override Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, TimeSpan? delayHint, TimeSpan? durationHint, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AppendToBuilder (builder As AnimationBuilder, delayHint As Nullable(Of TimeSpan), durationHint As Nullable(Of TimeSpan), easingTypeHint As Nullable(Of EasingType), easingModeHint As Nullable(Of EasingMode)) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" Usage="shadowAnimation.AppendToBuilder (builder, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">To be added.</param>
+        <param name="delayHint">To be added.</param>
+        <param name="durationHint">To be added.</param>
+        <param name="easingTypeHint">To be added.</param>
+        <param name="easingModeHint">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder (Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, Windows.UI.Xaml.UIElement parent, TimeSpan? delayHint = default, TimeSpan? durationHint = default, Microsoft.Toolkit.Uwp.UI.Animations.EasingType? easingTypeHint = default, Windows.UI.Xaml.Media.Animation.EasingMode? easingModeHint = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder AppendToBuilder(class Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder builder, class Windows.UI.Xaml.UIElement parent, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; delayHint, valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; durationHint, valuetype System.Nullable`1&lt;valuetype Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; easingTypeHint, valuetype System.Nullable`1&lt;valuetype Windows.UI.Xaml.Media.Animation.EasingMode&gt; easingModeHint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,Windows.UI.Xaml.UIElement,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendToBuilder (builder As AnimationBuilder, parent As UIElement, Optional delayHint As Nullable(Of TimeSpan) = Nothing, Optional durationHint As Nullable(Of TimeSpan) = Nothing, Optional easingTypeHint As Nullable(Of EasingType) = Nothing, Optional easingModeHint As Nullable(Of EasingMode) = Nothing) As AnimationBuilder" />
+      <MemberSignature Language="F#" Value="override this.AppendToBuilder : Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder * Windows.UI.Xaml.UIElement * Nullable&lt;TimeSpan&gt; * Nullable&lt;TimeSpan&gt; * Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt; * Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt; -&gt; Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" Usage="shadowAnimation.AppendToBuilder (builder, parent, delayHint, durationHint, easingTypeHint, easingModeHint)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Uwp.UI.Animations.IAttachedTimeline.AppendToBuilder(Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder,Windows.UI.Xaml.UIElement,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Nullable{Microsoft.Toolkit.Uwp.UI.Animations.EasingType},System.Nullable{Windows.UI.Xaml.Media.Animation.EasingMode})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" />
+        <Parameter Name="parent" Type="Windows.UI.Xaml.UIElement" />
+        <Parameter Name="delayHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="durationHint" Type="System.Nullable&lt;System.TimeSpan&gt;" />
+        <Parameter Name="easingTypeHint" Type="System.Nullable&lt;Microsoft.Toolkit.Uwp.UI.Animations.EasingType&gt;" />
+        <Parameter Name="easingModeHint" Type="System.Nullable&lt;Windows.UI.Xaml.Media.Animation.EasingMode&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance to schedule the animation on.</param>
+        <param name="parent">The parent <see cref="T:Windows.UI.Xaml.UIElement" /> this animation will be started on.</param>
+        <param name="delayHint">A hint for the animation delay, if present.</param>
+        <param name="durationHint">A hint for the animation duration, if present.</param>
+        <param name="easingTypeHint">A hint for the easing type, if present.</param>
+        <param name="easingModeHint">A hint for the easing mode, if present.</param>
+        <summary>
+            Appends the current animation to a target <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance.
+            This method is used when the current <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.ITimeline" /> instance is explicitly triggered.
+            </summary>
+        <returns>The same <see cref="T:Microsoft.Toolkit.Uwp.UI.Animations.AnimationBuilder" /> instance as <paramref name="builder" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Target">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.IAttachedShadow? Target { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Uwp.UI.IAttachedShadow Target" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As IAttachedShadow" />
+      <MemberSignature Language="F#" Value="member this.Target : Microsoft.Toolkit.Uwp.UI.IAttachedShadow with get, set" Usage="Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.Target" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.IAttachedShadow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the linked <see cref="T:Microsoft.Toolkit.Uwp.UI.IAttachedShadow" /> instance to animate.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TargetProperty">
+      <MemberSignature Language="C#" Value="public static readonly Windows.UI.Xaml.DependencyProperty TargetProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Windows.UI.Xaml.DependencyProperty TargetProperty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.TargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TargetProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TargetProperty : Windows.UI.Xaml.DependencyProperty" Usage="Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation&lt;'Value, 'KeyFrame (requires 'KeyFrame : struct)&gt;.TargetProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <seealso cref="P:Microsoft.Toolkit.Uwp.UI.Animations.ShadowAnimation`2.Target" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,151 @@
+<Type Name="DesktopNotificationHistoryCompat" FullName="CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat">
+  <TypeSignature Language="C#" Value="public sealed class DesktopNotificationHistoryCompat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesktopNotificationHistoryCompat extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesktopNotificationHistoryCompat" />
+  <TypeSignature Language="F#" Value="type DesktopNotificationHistoryCompat = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("We recommend switching to the new ToastNotificationManagerCompat and ToastNotificationHistoryCompat.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("We recommend switching to the new ToastNotificationManagerCompat and ToastNotificationHistoryCompat.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Manages the toast notifications for an app including the ability the clear all toast history and removing individual toasts.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="desktopNotificationHistoryCompat.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Removes all notifications sent by this app from action center.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHistory">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyList&lt;Windows.UI.Notifications.ToastNotification&gt; GetHistory ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IReadOnlyList`1&lt;class Windows.UI.Notifications.ToastNotification&gt; GetHistory() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat.GetHistory" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHistory () As IReadOnlyList(Of ToastNotification)" />
+      <MemberSignature Language="F#" Value="member this.GetHistory : unit -&gt; System.Collections.Generic.IReadOnlyList&lt;Windows.UI.Notifications.ToastNotification&gt;" Usage="desktopNotificationHistoryCompat.GetHistory " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IReadOnlyList&lt;Windows.UI.Notifications.ToastNotification&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Gets all notifications sent by this app that are currently still in Action Center.
+            </summary>
+        <returns>A collection of toasts.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string tag);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string tag) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (tag As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="desktopNotificationHistoryCompat.Remove tag" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag label of the toast notification to be removed.</param>
+        <summary>
+            Removes an individual toast, with the specified tag label, from action center.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Remove">
+      <MemberSignature Language="C#" Value="public void Remove (string tag, string group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string tag, string group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat.Remove(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (tag As String, group As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string * string -&gt; unit" Usage="desktopNotificationHistoryCompat.Remove (tag, group)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="tag" Type="System.String" />
+        <Parameter Name="group" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="tag">The tag label of the toast notification to be removed.</param>
+        <param name="group">The group label of the toast notification to be removed.</param>
+        <summary>
+            Removes a toast notification from the action using the notification's tag and group labels.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveGroup">
+      <MemberSignature Language="C#" Value="public void RemoveGroup (string group);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveGroup(string group) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat.RemoveGroup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveGroup (group As String)" />
+      <MemberSignature Language="F#" Value="member this.RemoveGroup : string -&gt; unit" Usage="desktopNotificationHistoryCompat.RemoveGroup group" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="group" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="group">The group label of the toast notifications to be removed.</param>
+        <summary>
+            Removes a group of toast notifications, identified by the specified group label, from action center.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

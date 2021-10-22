@@ -1,0 +1,378 @@
+<Type Name="WeakReferenceMessenger" FullName="CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger">
+  <TypeSignature Language="C#" Value="public sealed class WeakReferenceMessenger : CommunityToolkit.Mvvm.Messaging.IMessenger" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WeakReferenceMessenger extends System.Object implements class CommunityToolkit.Mvvm.Messaging.IMessenger" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WeakReferenceMessenger&#xA;Implements IMessenger" />
+  <TypeSignature Language="F#" Value="type WeakReferenceMessenger = class&#xA;    interface IMessenger" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>CommunityToolkit.Mvvm.Messaging.IMessenger</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            A class providing a reference implementation for the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> interface.
+            </summary>
+    <remarks>
+            This <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> implementation uses weak references to track the registered
+            recipients, so it is not necessary to manually unregister them when they're no longer needed.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public WeakReferenceMessenger ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Cleanup">
+      <MemberSignature Language="C#" Value="public void Cleanup ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cleanup() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Cleanup" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cleanup ()" />
+      <MemberSignature Language="F#" Value="abstract member Cleanup : unit -&gt; unit&#xA;override this.Cleanup : unit -&gt; unit" Usage="weakReferenceMessenger.Cleanup " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.Cleanup</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Performs a cleanup on the current messenger.
+            Invoking this method does not unregister any of the currently registered
+            recipient, and it can be used to perform cleanup operations such as
+            trimming the internal data structures of a messenger implementation.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Default">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger Default { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger Default" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As WeakReferenceMessenger" />
+      <MemberSignature Language="F#" Value="member this.Default : CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger" Usage="CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Default" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the default <see cref="T:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger" /> instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRegistered&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public bool IsRegistered&lt;TMessage,TToken&gt; (object recipient, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsRegistered&lt;class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(object recipient, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.IsRegistered``2(System.Object,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsRegistered(Of TMessage As Class, TToken As Class) (recipient As Object, token As TToken) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsRegistered : obj * 'oken -&gt; bool (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)&#xA;override this.IsRegistered : obj * 'oken -&gt; bool (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="weakReferenceMessenger.IsRegistered (recipient, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.IsRegistered``2(System.Object,``1)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to check for the given recipient.</typeparam>
+        <typeparam name="TToken">The type of token to check the channel for.</typeparam>
+        <param name="recipient">The target recipient to check the registration for.</param>
+        <param name="token">The token used to identify the target channel to check.</param>
+        <summary>
+            Checks whether or not a given recipient has already been registered for a message.
+            </summary>
+        <returns>Whether or not <paramref name="recipient" /> has already been registered for the specified message.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Register&lt;TRecipient,TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public void Register&lt;TRecipient,TMessage,TToken&gt; (TRecipient recipient, TToken token, CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;TRecipient,TMessage&gt; handler) where TRecipient : class where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Register&lt;class TRecipient, class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(!!TRecipient recipient, !!TToken token, class CommunityToolkit.Mvvm.Messaging.MessageHandler`2&lt;!!TRecipient, !!TMessage&gt; handler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Register``3(``0,``2,CommunityToolkit.Mvvm.Messaging.MessageHandler{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Register(Of TRecipient As Class, TMessage As Class, TToken As Class) (recipient As TRecipient, token As TToken, handler As MessageHandler(Of TRecipient, TMessage))" />
+      <MemberSignature Language="F#" Value="abstract member Register : 'Recipient * 'oken * CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;'Recipient, 'Message (requires 'Recipient : null and 'Message : null)&gt; -&gt; unit (requires 'Recipient : null and 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)&#xA;override this.Register : 'Recipient * 'oken * CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;'Recipient, 'Message (requires 'Recipient : null and 'Message : null)&gt; -&gt; unit (requires 'Recipient : null and 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="weakReferenceMessenger.Register (recipient, token, handler)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.Register``3(``0,``2,CommunityToolkit.Mvvm.Messaging.MessageHandler{``0,``1})</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TRecipient">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="recipient" Type="TRecipient" />
+        <Parameter Name="token" Type="TToken" />
+        <Parameter Name="handler" Type="CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;TRecipient,TMessage&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TRecipient">The type of recipient for the message.</typeparam>
+        <typeparam name="TMessage">The type of message to receive.</typeparam>
+        <typeparam name="TToken">The type of token to use to pick the messages to receive.</typeparam>
+        <param name="recipient">The recipient that will receive the messages.</param>
+        <param name="token">A token used to determine the receiving channel to use.</param>
+        <param name="handler">The <see cref="T:CommunityToolkit.Mvvm.Messaging.MessageHandler`2" /> to invoke when a message is received.</param>
+        <summary>
+            Registers a recipient for a given type of message.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when trying to register the same message twice.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="weakReferenceMessenger.Reset " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.Reset</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Resets the <see cref="T:CommunityToolkit.Mvvm.Messaging.IMessenger" /> instance and unregisters all the existing recipients.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Send&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public TMessage Send&lt;TMessage,TToken&gt; (TMessage message, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!TMessage Send&lt;class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(!!TMessage message, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Send``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Send(Of TMessage As Class, TToken As Class) (message As TMessage, token As TToken) As TMessage" />
+      <MemberSignature Language="F#" Value="abstract member Send : 'Message * 'oken -&gt; 'Message (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)&#xA;override this.Send : 'Message * 'oken -&gt; 'Message (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="weakReferenceMessenger.Send (message, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.Send``2(``0,``1)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>TMessage</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="message" Type="TMessage" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to send.</typeparam>
+        <typeparam name="TToken">The type of token to identify what channel to use to send the message.</typeparam>
+        <param name="message">The message to send.</param>
+        <param name="token">The token indicating what channel to use.</param>
+        <summary>
+            Sends a message of the specified type to all registered recipients.
+            </summary>
+        <returns>The message that was sent (ie. <paramref name="message" />).</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unregister&lt;TMessage,TToken&gt;">
+      <MemberSignature Language="C#" Value="public void Unregister&lt;TMessage,TToken&gt; (object recipient, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unregister&lt;class TMessage, (class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(object recipient, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.Unregister``2(System.Object,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unregister(Of TMessage As Class, TToken As Class) (recipient As Object, token As TToken)" />
+      <MemberSignature Language="F#" Value="abstract member Unregister : obj * 'oken -&gt; unit (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)&#xA;override this.Unregister : obj * 'oken -&gt; unit (requires 'Message : null and 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="weakReferenceMessenger.Unregister (recipient, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.Unregister``2(System.Object,``1)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TMessage">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TMessage">The type of message to stop receiving.</typeparam>
+        <typeparam name="TToken">The type of token to identify what channel to unregister from.</typeparam>
+        <param name="recipient">The recipient to unregister.</param>
+        <param name="token">The token to use to identify which handlers to unregister.</param>
+        <summary>
+            Unregisters a recipient from messages of a given type.
+            </summary>
+        <remarks>If the recipient has no registered handler, this method does nothing.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterAll">
+      <MemberSignature Language="C#" Value="public void UnregisterAll (object recipient);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterAll(object recipient) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.UnregisterAll(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterAll (recipient As Object)" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterAll : obj -&gt; unit&#xA;override this.UnregisterAll : obj -&gt; unit" Usage="weakReferenceMessenger.UnregisterAll recipient" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.UnregisterAll(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="recipient">The recipient to unregister.</param>
+        <summary>
+            Unregisters a recipient from all registered messages.
+            </summary>
+        <remarks>
+            This method will unregister the target recipient across all channels.
+            Use this method as an easy way to lose all references to a target recipient.
+            If the recipient has no registered handler, this method does nothing.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UnregisterAll&lt;TToken&gt;">
+      <MemberSignature Language="C#" Value="public void UnregisterAll&lt;TToken&gt; (object recipient, TToken token) where TToken : IEquatable&lt;TToken&gt;;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterAll&lt;(class System.IEquatable`1&lt;!!TToken&gt;) TToken&gt;(object recipient, !!TToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.WeakReferenceMessenger.UnregisterAll``1(System.Object,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterAll(Of TToken As IEquatable(Of TToken)) (recipient As Object, token As TToken)" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterAll : obj * 'oken -&gt; unit (requires 'oken :&gt; IEquatable&lt;'oken&gt;)&#xA;override this.UnregisterAll : obj * 'oken -&gt; unit (requires 'oken :&gt; IEquatable&lt;'oken&gt;)" Usage="weakReferenceMessenger.UnregisterAll (recipient, token)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Messaging.IMessenger.UnregisterAll``1(System.Object,``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TToken">
+          <Constraints>
+            <InterfaceName>System.IEquatable&lt;TToken&gt;</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="recipient" Type="System.Object" />
+        <Parameter Name="token" Type="TToken" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TToken">The type of token to identify what channel to unregister from.</typeparam>
+        <param name="recipient">The recipient to unregister.</param>
+        <param name="token">The token to use to identify which handlers to unregister.</param>
+        <summary>
+            Unregisters a recipient from all messages on a specific channel.
+            </summary>
+        <remarks>If the recipient has no registered handler, this method does nothing.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

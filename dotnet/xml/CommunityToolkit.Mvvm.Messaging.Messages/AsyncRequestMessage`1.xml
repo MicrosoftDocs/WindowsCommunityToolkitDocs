@@ -1,0 +1,167 @@
+<Type Name="AsyncRequestMessage&lt;T&gt;" FullName="CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public class AsyncRequestMessage&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsyncRequestMessage`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsyncRequestMessage(Of T)" />
+  <TypeSignature Language="F#" Value="type AsyncRequestMessage&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <typeparam name="T">The type of request to make.</typeparam>
+    <summary>
+            A <see langword="class" /> for async request messages, which can either be used directly or through derived classes.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AsyncRequestMessage ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAwaiter">
+      <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.TaskAwaiter&lt;T&gt; GetAwaiter ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.TaskAwaiter`1&lt;!T&gt; GetAwaiter() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As TaskAwaiter(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.TaskAwaiter&lt;'T&gt;" Usage="asyncRequestMessage.GetAwaiter " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Runtime.CompilerServices.TaskAwaiter&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasReceivedResponse">
+      <MemberSignature Language="C#" Value="public bool HasReceivedResponse { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HasReceivedResponse" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.HasReceivedResponse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasReceivedResponse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasReceivedResponse : bool" Usage="CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage&lt;'T&gt;.HasReceivedResponse" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether a response has already been assigned to this instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="public void Reply (System.Threading.Tasks.Task&lt;T&gt; response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reply(class System.Threading.Tasks.Task`1&lt;!T&gt; response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Reply(System.Threading.Tasks.Task{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reply (response As Task(Of T))" />
+      <MemberSignature Language="F#" Value="member this.Reply : System.Threading.Tasks.Task&lt;'T&gt; -&gt; unit" Usage="asyncRequestMessage.Reply response" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="System.Threading.Tasks.Task&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="response">The response to use to reply to the request message.</param>
+        <summary>
+            Replies to the current request message.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if <see cref="P:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Response" /> has already been set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Reply">
+      <MemberSignature Language="C#" Value="public void Reply (T response);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reply(!T response) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Reply(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reply (response As T)" />
+      <MemberSignature Language="F#" Value="member this.Reply : 'T -&gt; unit" Usage="asyncRequestMessage.Reply response" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="response" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="response">The response to use to reply to the request message.</param>
+        <summary>
+            Replies to the current request message.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown if <see cref="P:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Response" /> has already been set.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Response">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; Response { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;!T&gt; Response" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As Task(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Threading.Tasks.Task&lt;'T&gt;" Usage="CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage&lt;'T&gt;.Response" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the message response.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when <see cref="P:CommunityToolkit.Mvvm.Messaging.Messages.AsyncRequestMessage`1.HasReceivedResponse" /> is <see langword="false" />.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
