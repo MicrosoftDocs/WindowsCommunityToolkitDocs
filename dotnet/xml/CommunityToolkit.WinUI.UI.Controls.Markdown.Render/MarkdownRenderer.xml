@@ -1,0 +1,2505 @@
+<Type Name="MarkdownRenderer" FullName="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer">
+  <TypeSignature Language="C#" Value="public class MarkdownRenderer : CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MarkdownRenderer extends CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer" />
+  <TypeSignature Language="VB.NET" Value="Public Class MarkdownRenderer&#xA;Inherits MarkdownRendererBase" />
+  <TypeSignature Language="F#" Value="type MarkdownRenderer = class&#xA;    inherit MarkdownRendererBase" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.Common.Parsers.Markdown.Render.MarkdownRendererBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Block UI Methods for UWP UI Creation.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MarkdownRenderer (CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument document, CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister linkRegister, CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver imageResolver, CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver codeBlockResolver);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument document, class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister linkRegister, class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver imageResolver, class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver codeBlockResolver) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.#ctor(CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument,CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister,CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver,CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (document As MarkdownDocument, linkRegister As ILinkRegister, imageResolver As IImageResolver, codeBlockResolver As ICodeBlockResolver)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer : CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument * CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister * CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver * CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver -&gt; CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer" Usage="new CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer (document, linkRegister, imageResolver, codeBlockResolver)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="document" Type="CommunityToolkit.Common.Parsers.Markdown.MarkdownDocument" />
+        <Parameter Name="linkRegister" Type="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister" />
+        <Parameter Name="imageResolver" Type="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver" />
+        <Parameter Name="codeBlockResolver" Type="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver" />
+      </Parameters>
+      <Docs>
+        <param name="document">The Document to Render.</param>
+        <param name="linkRegister">The LinkRegister, <see cref="T:CommunityToolkit.WinUI.UI.Controls.MarkdownTextBlock" /> will use itself.</param>
+        <param name="imageResolver">The Image Resolver, <see cref="T:CommunityToolkit.WinUI.UI.Controls.MarkdownTextBlock" /> will use itself.</param>
+        <param name="codeBlockResolver">The Code Block Resolver, <see cref="T:CommunityToolkit.WinUI.UI.Controls.MarkdownTextBlock" /> will use itself.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AlterChildRuns">
+      <MemberSignature Language="C#" Value="protected void AlterChildRuns (Microsoft.UI.Xaml.Documents.Span parentSpan, Action&lt;Microsoft.UI.Xaml.Documents.Span,Microsoft.UI.Xaml.Documents.Run&gt; action);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AlterChildRuns(class Microsoft.UI.Xaml.Documents.Span parentSpan, class System.Action`2&lt;class Microsoft.UI.Xaml.Documents.Span, class Microsoft.UI.Xaml.Documents.Run&gt; action) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.AlterChildRuns(Microsoft.UI.Xaml.Documents.Span,System.Action{Microsoft.UI.Xaml.Documents.Span,Microsoft.UI.Xaml.Documents.Run})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AlterChildRuns (parentSpan As Span, action As Action(Of Span, Run))" />
+      <MemberSignature Language="F#" Value="member this.AlterChildRuns : Microsoft.UI.Xaml.Documents.Span * Action&lt;Microsoft.UI.Xaml.Documents.Span, Microsoft.UI.Xaml.Documents.Run&gt; -&gt; unit" Usage="markdownRenderer.AlterChildRuns (parentSpan, action)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parentSpan" Type="Microsoft.UI.Xaml.Documents.Span" />
+        <Parameter Name="action" Type="System.Action&lt;Microsoft.UI.Xaml.Documents.Span,Microsoft.UI.Xaml.Documents.Run&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="parentSpan">To be added.</param>
+        <param name="action">To be added.</param>
+        <summary>
+            Performs an action against any runs that occur within the given span.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Background">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Background { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Background" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="F#" Value="member this.Background : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Background" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a brush that provides the background of the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush BorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush BorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.BorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.BorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.BorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a brush that describes the border fill of a control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BorderThickness">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness BorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness BorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.BorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.BorderThickness : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.BorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the border thickness of a control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CharacterSpacing">
+      <MemberSignature Language="C#" Value="public int CharacterSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 CharacterSpacing" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CharacterSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharacterSpacing As Integer" />
+      <MemberSignature Language="F#" Value="member this.CharacterSpacing : int with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CharacterSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the uniform spacing between characters, in units of 1/1000 of an em.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeBackground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush CodeBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush CodeBackground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.CodeBackground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to fill the background of a code block.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeBlockResolver">
+      <MemberSignature Language="C#" Value="protected CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver CodeBlockResolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver CodeBlockResolver" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBlockResolver" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CodeBlockResolver As ICodeBlockResolver" />
+      <MemberSignature Language="F#" Value="member this.CodeBlockResolver : CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBlockResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ICodeBlockResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Parser to parse code strings into Syntax Highlighted text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeBorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush CodeBorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush CodeBorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.CodeBorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render the border fill of a code block.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeBorderThickness">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness CodeBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness CodeBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeBorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.CodeBorderThickness : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of the border around code blocks.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeFontFamily">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.FontFamily CodeFontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.FontFamily CodeFontFamily" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.CodeFontFamily : Microsoft.UI.Xaml.Media.FontFamily with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeFontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font used to display code.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontFamily" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeForeground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush CodeForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush CodeForeground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeForeground As Brush" />
+      <MemberSignature Language="F#" Value="member this.CodeForeground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render the text inside a code block.  If this is
+            <c>null</c>, then <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodeMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness CodeMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness CodeMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.CodeMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodeMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space outside of code blocks.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CodePadding">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness CodePadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness CodePadding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodePadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodePadding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.CodePadding : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CodePadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space between the code border and the text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateOrReuseRichTextBlock">
+      <MemberSignature Language="C#" Value="protected Microsoft.UI.Xaml.Controls.RichTextBlock CreateOrReuseRichTextBlock (CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.UI.Xaml.Controls.RichTextBlock CreateOrReuseRichTextBlock(class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CreateOrReuseRichTextBlock(CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateOrReuseRichTextBlock (context As IRenderContext) As RichTextBlock" />
+      <MemberSignature Language="F#" Value="member this.CreateOrReuseRichTextBlock : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; Microsoft.UI.Xaml.Controls.RichTextBlock" Usage="markdownRenderer.CreateOrReuseRichTextBlock context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Controls.RichTextBlock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Creates a new RichTextBlock, if the last element of the provided collection isn't already a RichTextBlock.
+            </summary>
+        <returns>The rich text block</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateTextBlock">
+      <MemberSignature Language="C#" Value="protected Microsoft.UI.Xaml.Controls.TextBlock CreateTextBlock (CommunityToolkit.WinUI.UI.Controls.Markdown.Render.RenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.UI.Xaml.Controls.TextBlock CreateTextBlock(class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.RenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.CreateTextBlock(CommunityToolkit.WinUI.UI.Controls.Markdown.Render.RenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreateTextBlock (context As RenderContext) As TextBlock" />
+      <MemberSignature Language="F#" Value="member this.CreateTextBlock : CommunityToolkit.WinUI.UI.Controls.Markdown.Render.RenderContext -&gt; Microsoft.UI.Xaml.Controls.TextBlock" Usage="markdownRenderer.CreateTextBlock context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Controls.TextBlock</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.RenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Creates a new TextBlock, with default settings.
+            </summary>
+        <returns>The created TextBlock</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultEmojiFont">
+      <MemberSignature Language="C#" Value="protected Microsoft.UI.Xaml.Media.FontFamily DefaultEmojiFont { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.FontFamily DefaultEmojiFont" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.DefaultEmojiFont" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property DefaultEmojiFont As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.DefaultEmojiFont : Microsoft.UI.Xaml.Media.FontFamily" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.DefaultEmojiFont" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the Default Emoji Font.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EmojiFontFamily">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.FontFamily EmojiFontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.FontFamily EmojiFontFamily" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.EmojiFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmojiFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.EmojiFontFamily : Microsoft.UI.Xaml.Media.FontFamily with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.EmojiFontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font used to display emojis.  If this is <c>null</c>, then
+            Segoe UI Emoji font is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FlowDirection">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.FlowDirection FlowDirection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.FlowDirection FlowDirection" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : Microsoft.UI.Xaml.FlowDirection with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FlowDirection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.FlowDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FlowDirection" /> of the markdown.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontFamily">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.FontFamily FontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.FontFamily FontFamily" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : Microsoft.UI.Xaml.Media.FontFamily with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font used to display text in the control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontSize">
+      <MemberSignature Language="C#" Value="public double FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the size of the text in this control.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStretch">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontStretch FontStretch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontStretch FontStretch" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontStretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStretch As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.FontStretch : Windows.UI.Text.FontStretch with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontStretch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontStretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the degree to which a font is condensed or expanded on the screen.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontStyle">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontStyle FontStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontStyle FontStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.FontStyle : Windows.UI.Text.FontStyle with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style in which the text is rendered.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of the specified font.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a brush that describes the foreground color.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header1FontSize">
+      <MemberSignature Language="C#" Value="public double Header1FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header1FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header1FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header1FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 1 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header1FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header1FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header1FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header1FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header1FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 1 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header1Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header1Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header1Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header1Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header1Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 1 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header1Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header1Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header1Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header1Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header1Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header1Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 1 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header2FontSize">
+      <MemberSignature Language="C#" Value="public double Header2FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header2FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header2FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header2FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 2 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header2FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header2FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header2FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header2FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header2FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 2 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header2Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header2Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header2Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header2Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header2Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 2 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header2Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header2Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header2Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header2Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header2Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header2Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 2 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header3FontSize">
+      <MemberSignature Language="C#" Value="public double Header3FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header3FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header3FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header3FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 3 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header3FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header3FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header3FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header3FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header3FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 3 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header3Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header3Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header3Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header3Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header3Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 3 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header3Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header3Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header3Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header3Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header3Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header3Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 3 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header4FontSize">
+      <MemberSignature Language="C#" Value="public double Header4FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header4FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header4FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header4FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 4 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header4FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header4FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header4FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header4FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header4FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 4 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header4Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header4Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header4Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header4Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header4Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 4 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header4Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header4Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header4Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header4Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header4Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header4Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 4 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header5FontSize">
+      <MemberSignature Language="C#" Value="public double Header5FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header5FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header5FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header5FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 5 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header5FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header5FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header5FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header5FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header5FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 5 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header5Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header5Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header5Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header5Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header5Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 5 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header5Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header5Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header5Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header5Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header5Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header5Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 5 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header6FontSize">
+      <MemberSignature Language="C#" Value="public double Header6FontSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Header6FontSize" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header6FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.Header6FontSize : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6FontSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font size for level 6 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header6FontWeight">
+      <MemberSignature Language="C#" Value="public Windows.UI.Text.FontWeight Header6FontWeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Windows.UI.Text.FontWeight Header6FontWeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header6FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Header6FontWeight : Windows.UI.Text.FontWeight with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6FontWeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Text.FontWeight</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font weight to use for level 6 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header6Foreground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Header6Foreground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Header6Foreground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6Foreground" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header6Foreground As Brush" />
+      <MemberSignature Language="F#" Value="member this.Header6Foreground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6Foreground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the foreground brush for level 6 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header6Margin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Header6Margin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Header6Margin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6Margin" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header6Margin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Header6Margin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Header6Margin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin for level 6 headers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalRuleBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush HorizontalRuleBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush HorizontalRuleBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalRuleBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.HorizontalRuleBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render a horizontal rule.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalRuleMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness HorizontalRuleMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness HorizontalRuleMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalRuleMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.HorizontalRuleMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin used for horizontal rules.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HorizontalRuleThickness">
+      <MemberSignature Language="C#" Value="public double HorizontalRuleThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalRuleThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalRuleThickness As Double" />
+      <MemberSignature Language="F#" Value="member this.HorizontalRuleThickness : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.HorizontalRuleThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the vertical thickness of the horizontal rule.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMaxHeight">
+      <MemberSignature Language="C#" Value="public double ImageMaxHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ImageMaxHeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageMaxHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageMaxHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ImageMaxHeight : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageMaxHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the MaxHeight for images.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageMaxWidth">
+      <MemberSignature Language="C#" Value="public double ImageMaxWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ImageMaxWidth" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageMaxWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageMaxWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ImageMaxWidth : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageMaxWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the MaxWidth for images.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageResolver">
+      <MemberSignature Language="C#" Value="protected CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver ImageResolver { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver ImageResolver" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageResolver" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ImageResolver As IImageResolver" />
+      <MemberSignature Language="F#" Value="member this.ImageResolver : CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageResolver" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.Markdown.Render.IImageResolver</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the interface that is used to resolve images.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ImageStretch">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Stretch ImageStretch { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Media.Stretch ImageStretch" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageStretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageStretch As Stretch" />
+      <MemberSignature Language="F#" Value="member this.ImageStretch : Microsoft.UI.Xaml.Media.Stretch with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ImageStretch" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Stretch</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the stretch used for images.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeBackground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush InlineCodeBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush InlineCodeBackground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeBackground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to fill the background of inline code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeBorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush InlineCodeBorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush InlineCodeBorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeBorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to fill the border of inline code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeBorderThickness">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness InlineCodeBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness InlineCodeBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeBorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeBorderThickness : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of the border around inline code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeFontFamily">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.FontFamily InlineCodeFontFamily { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.FontFamily InlineCodeFontFamily" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeFontFamily : Microsoft.UI.Xaml.Media.FontFamily with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeFontFamily" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.FontFamily</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the font used to display code.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.FontFamily" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeForeground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush InlineCodeForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush InlineCodeForeground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeForeground As Brush" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeForeground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to fill the foreground of inline code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodeMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness InlineCodeMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness InlineCodeMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodeMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.InlineCodeMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodeMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin of inline code.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InlineCodePadding">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness InlineCodePadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness InlineCodePadding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodePadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property InlineCodePadding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.InlineCodePadding : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.InlineCodePadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space between the code border and the text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsTextSelectionEnabled">
+      <MemberSignature Language="C#" Value="public bool IsTextSelectionEnabled { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsTextSelectionEnabled" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.IsTextSelectionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTextSelectionEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTextSelectionEnabled : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.IsTextSelectionEnabled" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether text selection is enabled.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkForeground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush LinkForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush LinkForeground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.LinkForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkForeground As Brush" />
+      <MemberSignature Language="F#" Value="member this.LinkForeground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.LinkForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render links.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LinkRegister">
+      <MemberSignature Language="C#" Value="protected CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister LinkRegister { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister LinkRegister" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.LinkRegister" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property LinkRegister As ILinkRegister" />
+      <MemberSignature Language="F#" Value="member this.LinkRegister : CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.LinkRegister" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.Markdown.Render.ILinkRegister</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the interface that is used to register hyperlinks.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListBulletSpacing">
+      <MemberSignature Language="C#" Value="public double ListBulletSpacing { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ListBulletSpacing" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListBulletSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListBulletSpacing As Double" />
+      <MemberSignature Language="F#" Value="member this.ListBulletSpacing : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListBulletSpacing" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space between the list item bullets/numbers and the list item content.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListGutterWidth">
+      <MemberSignature Language="C#" Value="public double ListGutterWidth { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ListGutterWidth" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListGutterWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListGutterWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ListGutterWidth : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListGutterWidth" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the width of the space used by list item bullets/numbers.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ListMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness ListMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness ListMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.ListMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ListMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin used by lists.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Padding">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness Padding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness Padding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.Padding : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Padding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the distance between the border and its child object.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphLineHeight">
+      <MemberSignature Language="C#" Value="public int ParagraphLineHeight { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 ParagraphLineHeight" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ParagraphLineHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParagraphLineHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ParagraphLineHeight : int with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ParagraphLineHeight" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the line height used for paragraphs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParagraphMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness ParagraphMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness ParagraphMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ParagraphMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParagraphMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.ParagraphMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.ParagraphMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin used for paragraphs.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteBackground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush QuoteBackground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush QuoteBackground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.QuoteBackground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBackground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to fill the background of a quote block.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteBorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush QuoteBorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush QuoteBorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.QuoteBorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render a quote border.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteBorderThickness">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness QuoteBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness QuoteBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteBorderThickness As Thickness" />
+      <MemberSignature Language="F#" Value="member this.QuoteBorderThickness : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of quote borders.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteForeground">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush QuoteForeground { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush QuoteForeground" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteForeground As Brush" />
+      <MemberSignature Language="F#" Value="member this.QuoteForeground : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteForeground" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render the text inside a quote block.  If this is
+            <c>null</c>, then <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuoteMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness QuoteMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness QuoteMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuoteMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.QuoteMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuoteMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space outside of quote borders.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuotePadding">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness QuotePadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness QuotePadding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuotePadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuotePadding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.QuotePadding : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.QuotePadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the space between the quote border and the text.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Render">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.UIElement Render ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.UI.Xaml.UIElement Render() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Render" />
+      <MemberSignature Language="VB.NET" Value="Public Function Render () As UIElement" />
+      <MemberSignature Language="F#" Value="override this.Render : unit -&gt; Microsoft.UI.Xaml.UIElement" Usage="markdownRenderer.Render " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.UIElement</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Called externally to render markdown to a text block.
+            </summary>
+        <returns> A XAML UI element. </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBlocks">
+      <MemberSignature Language="C#" Value="protected override void RenderBlocks (System.Collections.Generic.IEnumerable&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; blockElements, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBlocks(class System.Collections.Generic.IEnumerable`1&lt;class CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; blockElements, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderBlocks(System.Collections.Generic.IEnumerable{CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock},CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBlocks (blockElements As IEnumerable(Of MarkdownBlock), context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderBlocks : seq&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt; * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderBlocks (blockElements, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="blockElements" Type="System.Collections.Generic.IEnumerable&lt;CommunityToolkit.Common.Parsers.Markdown.Blocks.MarkdownBlock&gt;" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="blockElements">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a list of block elements.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderBoldRun">
+      <MemberSignature Language="C#" Value="protected override void RenderBoldRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBoldRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderBoldRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBoldRun (element As BoldTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderBoldRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderBoldRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.BoldTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a bold run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCode">
+      <MemberSignature Language="C#" Value="protected override void RenderCode (CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderCode(class CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderCode(CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderCode (element As CodeBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderCode : CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderCode (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.CodeBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a code element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderCodeRun">
+      <MemberSignature Language="C#" Value="protected override void RenderCodeRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderCodeRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderCodeRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderCodeRun (element As CodeInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderCodeRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderCodeRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.CodeInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a code element
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderEmoji">
+      <MemberSignature Language="C#" Value="protected override void RenderEmoji (CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderEmoji(class CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderEmoji(CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderEmoji (element As EmojiInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderEmoji : CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderEmoji (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.EmojiInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders emoji element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHeader">
+      <MemberSignature Language="C#" Value="protected override void RenderHeader (CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHeader(class CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderHeader(CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHeader (element As HeaderBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderHeader : CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderHeader (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.HeaderBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a header element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHorizontalRule">
+      <MemberSignature Language="C#" Value="protected override void RenderHorizontalRule (CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHorizontalRule(class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderHorizontalRule(CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHorizontalRule (context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderHorizontalRule : CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderHorizontalRule context" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a horizontal rule element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderHyperlink">
+      <MemberSignature Language="C#" Value="protected override void RenderHyperlink (CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHyperlink(class CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderHyperlink(CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHyperlink (element As HyperlinkInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderHyperlink : CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderHyperlink (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.HyperlinkInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a raw link element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderImage">
+      <MemberSignature Language="C#" Value="protected override void RenderImage (CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderImage(class CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderImage(CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderImage (element As ImageInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderImage : CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderImage (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.ImageInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders an image element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderItalicRun">
+      <MemberSignature Language="C#" Value="protected override void RenderItalicRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderItalicRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderItalicRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderItalicRun (element As ItalicTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderItalicRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderItalicRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.ItalicTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a text run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderListElement">
+      <MemberSignature Language="C#" Value="protected override void RenderListElement (CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderListElement(class CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderListElement(CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderListElement (element As ListBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderListElement : CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderListElement (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.ListBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a list element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderMarkdownLink">
+      <MemberSignature Language="C#" Value="protected override void RenderMarkdownLink (CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderMarkdownLink(class CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderMarkdownLink(CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderMarkdownLink (element As MarkdownLinkInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderMarkdownLink : CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderMarkdownLink (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.MarkdownLinkInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a link element
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderParagraph">
+      <MemberSignature Language="C#" Value="protected override void RenderParagraph (CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderParagraph(class CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderParagraph(CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderParagraph (element As ParagraphBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderParagraph : CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderParagraph (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.ParagraphBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a paragraph element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderQuote">
+      <MemberSignature Language="C#" Value="protected override void RenderQuote (CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderQuote(class CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderQuote(CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderQuote (element As QuoteBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderQuote : CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderQuote (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.QuoteBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a quote element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderStrikethroughRun">
+      <MemberSignature Language="C#" Value="protected override void RenderStrikethroughRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderStrikethroughRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderStrikethroughRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderStrikethroughRun (element As StrikethroughTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderStrikethroughRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderStrikethroughRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.StrikethroughTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a strikethrough element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSubscriptRun">
+      <MemberSignature Language="C#" Value="protected override void RenderSubscriptRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderSubscriptRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderSubscriptRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderSubscriptRun (element As SubscriptTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderSubscriptRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderSubscriptRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.SubscriptTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a subscript element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderSuperscriptRun">
+      <MemberSignature Language="C#" Value="protected override void RenderSuperscriptRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderSuperscriptRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderSuperscriptRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderSuperscriptRun (element As SuperscriptTextInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderSuperscriptRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderSuperscriptRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.SuperscriptTextInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a superscript element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTable">
+      <MemberSignature Language="C#" Value="protected override void RenderTable (CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderTable(class CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderTable(CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderTable (element As TableBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderTable : CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderTable (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.TableBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a table element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderTextRun">
+      <MemberSignature Language="C#" Value="protected override void RenderTextRun (CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderTextRun(class CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderTextRun(CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderTextRun (element As TextRunInline, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderTextRun : CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderTextRun (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Inlines.TextRunInline" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element"> The parsed inline element to render. </param>
+        <param name="context"> Persistent state. </param>
+        <summary>
+            Renders a text run element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RenderYamlHeader">
+      <MemberSignature Language="C#" Value="protected override void RenderYamlHeader (CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock element, CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderYamlHeader(class CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock element, class CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext context) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.RenderYamlHeader(CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock,CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderYamlHeader (element As YamlHeaderBlock, context As IRenderContext)" />
+      <MemberSignature Language="F#" Value="override this.RenderYamlHeader : CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock * CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext -&gt; unit" Usage="markdownRenderer.RenderYamlHeader (element, context)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="CommunityToolkit.Common.Parsers.Markdown.Blocks.YamlHeaderBlock" />
+        <Parameter Name="context" Type="CommunityToolkit.Common.Parsers.Markdown.Render.IRenderContext" />
+      </Parameters>
+      <Docs>
+        <param name="element">To be added.</param>
+        <param name="context">To be added.</param>
+        <summary>
+            Renders a yaml header element.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableBorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush TableBorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush TableBorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.TableBorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableBorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render table borders.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableBorderThickness">
+      <MemberSignature Language="C#" Value="public double TableBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 TableBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableBorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableBorderThickness As Double" />
+      <MemberSignature Language="F#" Value="member this.TableBorderThickness : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of any table borders.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableCellPadding">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness TableCellPadding { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness TableCellPadding" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableCellPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableCellPadding As Thickness" />
+      <MemberSignature Language="F#" Value="member this.TableCellPadding : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableCellPadding" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the padding inside each cell.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TableMargin">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Thickness TableMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Thickness TableMargin" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property TableMargin As Thickness" />
+      <MemberSignature Language="F#" Value="member this.TableMargin : Microsoft.UI.Xaml.Thickness with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TableMargin" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the margin used by tables.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextWrapping">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.TextWrapping TextWrapping { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.TextWrapping TextWrapping" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TextWrapping" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextWrapping As TextWrapping" />
+      <MemberSignature Language="F#" Value="member this.TextWrapping : Microsoft.UI.Xaml.TextWrapping with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.TextWrapping" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.TextWrapping</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the word wrapping behavior.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WrapCodeBlock">
+      <MemberSignature Language="C#" Value="public bool WrapCodeBlock { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool WrapCodeBlock" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.WrapCodeBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapCodeBlock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WrapCodeBlock : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.WrapCodeBlock" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether to wrap text in the Code Block, or use Horizontal Scroll.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YamlBorderBrush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush YamlBorderBrush { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush YamlBorderBrush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.YamlBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property YamlBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.YamlBorderBrush : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.YamlBorderBrush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the brush used to render table borders.  If this is <c>null</c>, then
+            <see cref="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.Foreground" /> is used.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="YamlBorderThickness">
+      <MemberSignature Language="C#" Value="public double YamlBorderThickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 YamlBorderThickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.YamlBorderThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property YamlBorderThickness As Double" />
+      <MemberSignature Language="F#" Value="member this.YamlBorderThickness : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.Markdown.Render.MarkdownRenderer.YamlBorderThickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Markdown</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of any yaml header borders.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

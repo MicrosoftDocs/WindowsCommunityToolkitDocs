@@ -1,0 +1,915 @@
+<Type Name="ApplicationDataStorageHelper" FullName="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper">
+  <TypeSignature Language="C#" Value="public class ApplicationDataStorageHelper : Microsoft.Toolkit.Helpers.IFileStorageHelper, Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationDataStorageHelper extends System.Object implements class Microsoft.Toolkit.Helpers.IFileStorageHelper, class Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1&lt;string&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationDataStorageHelper&#xA;Implements IFileStorageHelper, ISettingsStorageHelper(Of String)" />
+  <TypeSignature Language="F#" Value="type ApplicationDataStorageHelper = class&#xA;    interface IFileStorageHelper&#xA;    interface ISettingsStorageHelper&lt;string&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Helpers.IFileStorageHelper</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;System.String&gt;</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            An extension of ApplicationDataStorageHelper with additional features for interop with the LocalCacheFolder.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ApplicationDataStorageHelper (Windows.Storage.ApplicationData appData, Microsoft.Toolkit.Helpers.IObjectSerializer? objectSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Windows.Storage.ApplicationData appData, class Microsoft.Toolkit.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.#ctor(Windows.Storage.ApplicationData,Microsoft.Toolkit.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appData As ApplicationData, Optional objectSerializer As IObjectSerializer = Nothing)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper : Windows.Storage.ApplicationData * Microsoft.Toolkit.Helpers.IObjectSerializer -&gt; Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper" Usage="new Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper (appData, objectSerializer)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="appData" Type="Windows.Storage.ApplicationData" />
+        <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="appData">The data store to interact with.</param>
+        <param name="objectSerializer">Serializer for converting stored values. Defaults to <see cref="T:Microsoft.Toolkit.Helpers.SystemSerializer" />.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppData">
+      <MemberSignature Language="C#" Value="protected Windows.Storage.ApplicationData AppData { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Storage.ApplicationData AppData" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.AppData" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property AppData As ApplicationData" />
+      <MemberSignature Language="F#" Value="member this.AppData : Windows.Storage.ApplicationData" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.AppData" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.ApplicationData</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the storage host.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CacheFolder">
+      <MemberSignature Language="C#" Value="public Windows.Storage.StorageFolder CacheFolder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Storage.StorageFolder CacheFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CacheFolder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheFolder As StorageFolder" />
+      <MemberSignature Language="F#" Value="member this.CacheFolder : Windows.Storage.StorageFolder" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CacheFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.StorageFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets the local cache folder.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="applicationDataStorageHelper.Clear " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.Clear</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCacheFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateCacheFileAsync&lt;T&gt; (string filePath, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CreateCacheFileAsync&lt;T&gt;(string filePath, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CreateCacheFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCacheFileAsync(Of T) (filePath As String, value As T) As Task" />
+      <MemberSignature Language="F#" Value="member this.CreateCacheFileAsync : string * 'T -&gt; System.Threading.Tasks.Task" Usage="applicationDataStorageHelper.CreateCacheFileAsync (filePath, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="filePath">Path to the file that will contain the object.</param>
+        <param name="value">Object to save.</param>
+        <summary>
+            Saves an object inside a file in the LocalCacheFolder.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateCacheFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateCacheFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CreateCacheFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CreateCacheFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCacheFolderAsync (folderPath As String) As Task" />
+      <MemberSignature Language="F#" Value="member this.CreateCacheFolderAsync : string -&gt; System.Threading.Tasks.Task" Usage="applicationDataStorageHelper.CreateCacheFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path and name of the target folder.</param>
+        <summary>
+            Ensure a folder exists at the folder path specified in the LocalCacheFolder.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateFileAsync&lt;T&gt; (string filePath, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateFileAsync&lt;T&gt;(string filePath, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CreateFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFileAsync(Of T) (filePath As String, value As T) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&#xA;override this.CreateFileAsync : string * 'T -&gt; System.Threading.Tasks.Task" Usage="applicationDataStorageHelper.CreateFileAsync (filePath, value)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.CreateFileAsync``1(System.String,``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="filePath">Path to the file that will contain the object.</param>
+        <param name="value">Object to save.</param>
+        <summary>
+            Saves an object inside a file.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.CreateFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFolderAsync (folderPath As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateFolderAsync : string -&gt; System.Threading.Tasks.Task&#xA;override this.CreateFolderAsync : string -&gt; System.Threading.Tasks.Task" Usage="applicationDataStorageHelper.CreateFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.CreateFolderAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path and name of the target folder.</param>
+        <summary>
+            Ensure a folder exists at the folder path specified.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Folder">
+      <MemberSignature Language="C#" Value="public Windows.Storage.StorageFolder Folder { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Storage.StorageFolder Folder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Folder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Folder As StorageFolder" />
+      <MemberSignature Language="F#" Value="member this.Folder : Windows.Storage.StorageFolder" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Folder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.StorageFolder</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+             Gets the storage folder.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetCurrent">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper GetCurrent (Microsoft.Toolkit.Helpers.IObjectSerializer? objectSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper GetCurrent(class Microsoft.Toolkit.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.GetCurrent(Microsoft.Toolkit.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrent (Optional objectSerializer As IObjectSerializer = Nothing) As ApplicationDataStorageHelper" />
+      <MemberSignature Language="F#" Value="static member GetCurrent : Microsoft.Toolkit.Helpers.IObjectSerializer -&gt; Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.GetCurrent objectSerializer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="objectSerializer">Serializer for converting stored values. Defaults to <see cref="T:Microsoft.Toolkit.Helpers.SystemSerializer" />.</param>
+        <summary>
+            Get a new instance using ApplicationData.Current and the provided serializer.
+            </summary>
+        <returns>A new instance of ApplicationDataStorageHelper.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetForUserAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper&gt; GetForUserAsync (Windows.System.User user, Microsoft.Toolkit.Helpers.IObjectSerializer? objectSerializer = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper&gt; GetForUserAsync(class Windows.System.User user, class Microsoft.Toolkit.Helpers.IObjectSerializer objectSerializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.GetForUserAsync(Windows.System.User,Microsoft.Toolkit.Helpers.IObjectSerializer)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetForUserAsync (user As User, Optional objectSerializer As IObjectSerializer = Nothing) As Task(Of ApplicationDataStorageHelper)" />
+      <MemberSignature Language="F#" Value="static member GetForUserAsync : Windows.System.User * Microsoft.Toolkit.Helpers.IObjectSerializer -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper&gt;" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.GetForUserAsync (user, objectSerializer)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="user" Type="Windows.System.User" />
+        <Parameter Name="objectSerializer" Type="Microsoft.Toolkit.Helpers.IObjectSerializer" />
+      </Parameters>
+      <Docs>
+        <param name="user">App data user owner.</param>
+        <param name="objectSerializer">Serializer for converting stored values. Defaults to <see cref="T:Microsoft.Toolkit.Helpers.SystemSerializer" />.</param>
+        <summary>
+            Get a new instance using the ApplicationData for the provided user and serializer.
+            </summary>
+        <returns>A new instance of ApplicationDataStorageHelper.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyExists">
+      <MemberSignature Language="C#" Value="public bool KeyExists (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool KeyExists(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.KeyExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function KeyExists (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeyExists : string -&gt; bool" Usage="applicationDataStorageHelper.KeyExists key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key of the setting (that contains object).</param>
+        <summary>
+            Determines whether a setting already exists.
+            </summary>
+        <returns>True if a value exists.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="KeyExists">
+      <MemberSignature Language="C#" Value="public bool KeyExists (string compositeKey, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool KeyExists(string compositeKey, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.KeyExists(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function KeyExists (compositeKey As String, key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeyExists : string * string -&gt; bool" Usage="applicationDataStorageHelper.KeyExists (compositeKey, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compositeKey" Type="System.String" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the setting (that contains object).</param>
+        <summary>
+            Determines whether a setting already exists in composite.
+            </summary>
+        <returns>True if a value exists.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T? Read&lt;T&gt; (string key, T? default = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Read&lt;T&gt;(string key, !!T default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Read``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (key As String, Optional default As T = Nothing) As T" />
+      <MemberSignature Language="F#" Value="member this.Read : string * 'T -&gt; 'T" Usage="applicationDataStorageHelper.Read (key, default)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="default" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="key">Key of the object.</param>
+        <param name="default">Default value of the object.</param>
+        <summary>
+            Retrieves a single item by its key.
+            </summary>
+        <returns>The TValue object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Read&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T? Read&lt;T&gt; (string compositeKey, string key, T? default = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Read&lt;T&gt;(string compositeKey, string key, !!T default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Read``1(System.String,System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Read(Of T) (compositeKey As String, key As String, Optional default As T = Nothing) As T" />
+      <MemberSignature Language="F#" Value="member this.Read : string * string * 'T -&gt; 'T" Usage="applicationDataStorageHelper.Read (compositeKey, key, default)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="compositeKey" Type="System.String" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="default" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the object.</param>
+        <param name="default">Default value of the object.</param>
+        <summary>
+            Retrieves a single item by its key in composite.
+            </summary>
+        <returns>The T object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCacheFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; ReadCacheFileAsync&lt;T&gt; (string filePath, T default = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; ReadCacheFileAsync&lt;T&gt;(string filePath, !!T default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.ReadCacheFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadCacheFileAsync(Of T) (filePath As String, Optional default As T = Nothing) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="member this.ReadCacheFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="applicationDataStorageHelper.ReadCacheFileAsync (filePath, default)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="default" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="filePath">Path to the file that contains the object.</param>
+        <param name="default">Default value of the object.</param>
+        <summary>
+            Retrieves an object from a file in the LocalCacheFolder.
+            </summary>
+        <returns>Waiting task until completion with the object in the file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadCacheFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;(Microsoft.Toolkit.Helpers.DirectoryItemType,string)&gt;&gt; ReadCacheFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.ValueTuple`2&lt;valuetype Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt; ReadCacheFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.ReadCacheFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadCacheFolderAsync (folderPath As String) As Task(Of IEnumerable(Of ValueTuple(Of DirectoryItemType, String)))" />
+      <MemberSignature Language="F#" Value="member this.ReadCacheFolderAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt;" Usage="applicationDataStorageHelper.ReadCacheFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType,System.String&gt;&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path to the target folder.</param>
+        <summary>
+            Retrieves the listings for a folder and the item types in the LocalCacheFolder.
+            </summary>
+        <returns>A list of file types and names in the target folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T?&gt; ReadFileAsync&lt;T&gt; (string filePath, T? default = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; ReadFileAsync&lt;T&gt;(string filePath, !!T default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.ReadFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadFileAsync(Of T) (filePath As String, Optional default As T = Nothing) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member ReadFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;'T&gt;&#xA;override this.ReadFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="applicationDataStorageHelper.ReadFileAsync (filePath, default)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.ReadFileAsync``1(System.String,``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="default" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="filePath">Path to the file that contains the object.</param>
+        <param name="default">Default value of the object.</param>
+        <summary>
+            Retrieves an object from a file.
+            </summary>
+        <returns>Waiting task until completion with the object in the file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;(Microsoft.Toolkit.Helpers.DirectoryItemType,string)&gt;&gt; ReadFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.ValueTuple`2&lt;valuetype Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt; ReadFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.ReadFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadFolderAsync (folderPath As String) As Task(Of IEnumerable(Of ValueTuple(Of DirectoryItemType, String)))" />
+      <MemberSignature Language="F#" Value="abstract member ReadFolderAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt;&#xA;override this.ReadFolderAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt;" Usage="applicationDataStorageHelper.ReadFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.ReadFolderAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType,System.String&gt;&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path to the target folder.</param>
+        <summary>
+            Retrieves the listings for a folder and the item types.
+            </summary>
+        <returns>A list of item types and names in the target folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Save&lt;T&gt; (string compositeKey, System.Collections.Generic.IDictionary&lt;string,T&gt; values);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save&lt;T&gt;(string compositeKey, class System.Collections.Generic.IDictionary`2&lt;string, !!T&gt; values) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Save``1(System.String,System.Collections.Generic.IDictionary{System.String,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (compositeKey As String, values As IDictionary(Of String, T))" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Collections.Generic.IDictionary&lt;string, 'T&gt; -&gt; unit" Usage="applicationDataStorageHelper.Save (compositeKey, values)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="compositeKey" Type="System.String" />
+        <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="values">Objects to save.</param>
+        <summary>
+            Saves a group of items by its key in a composite.
+            This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
+            and for groups of settings which need to be treated in an atomic way.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public void Save&lt;T&gt; (string key, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save&lt;T&gt;(string key, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Save``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save(Of T) (key As String, value As T)" />
+      <MemberSignature Language="F#" Value="abstract member Save : string * 'T -&gt; unit&#xA;override this.Save : string * 'T -&gt; unit" Usage="applicationDataStorageHelper.Save (key, value)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.Save``1(`0,``0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Serializer">
+      <MemberSignature Language="C#" Value="protected Microsoft.Toolkit.Helpers.IObjectSerializer Serializer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Helpers.IObjectSerializer Serializer" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Serializer" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Serializer As IObjectSerializer" />
+      <MemberSignature Language="F#" Value="member this.Serializer : Microsoft.Toolkit.Helpers.IObjectSerializer" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Serializer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Helpers.IObjectSerializer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the serializer for converting stored values.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Settings">
+      <MemberSignature Language="C#" Value="public Windows.Storage.ApplicationDataContainer Settings { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.Storage.ApplicationDataContainer Settings" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As ApplicationDataContainer" />
+      <MemberSignature Language="F#" Value="member this.Settings : Windows.Storage.ApplicationDataContainer" Usage="Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.Settings" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Storage.ApplicationDataContainer</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the settings container.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDelete">
+      <MemberSignature Language="C#" Value="public bool TryDelete (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryDelete(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryDelete(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDelete (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryDelete : string -&gt; bool&#xA;override this.TryDelete : string -&gt; bool" Usage="applicationDataStorageHelper.TryDelete key" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.TryDelete(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDelete">
+      <MemberSignature Language="C#" Value="public bool TryDelete (string compositeKey, string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryDelete(string compositeKey, string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryDelete(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDelete (compositeKey As String, key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryDelete : string * string -&gt; bool" Usage="applicationDataStorageHelper.TryDelete (compositeKey, key)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="compositeKey" Type="System.String" />
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the object.</param>
+        <summary>
+            Deletes a single item by its key in composite.
+            </summary>
+        <returns>A boolean indicator of success.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDeleteCacheItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryDeleteCacheItemAsync (string itemPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryDeleteCacheItemAsync(string itemPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryDeleteCacheItemAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDeleteCacheItemAsync (itemPath As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.TryDeleteCacheItemAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="applicationDataStorageHelper.TryDeleteCacheItemAsync itemPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the item for deletion.</param>
+        <summary>
+            Deletes a file or folder item in the LocalCacheFolder.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDeleteItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryDeleteItemAsync (string itemPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryDeleteItemAsync(string itemPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryDeleteItemAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDeleteItemAsync (itemPath As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TryDeleteItemAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.TryDeleteItemAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="applicationDataStorageHelper.TryDeleteItemAsync itemPath" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.TryDeleteItemAsync(System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the item for deletion.</param>
+        <summary>
+            Deletes a file or folder item.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool TryRead&lt;T&gt; (string key, out T? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryRead&lt;T&gt;(string key, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryRead``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRead(Of T) (key As String, ByRef value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryRead : string * 'T -&gt; bool&#xA;override this.TryRead : string * 'T -&gt; bool" Usage="applicationDataStorageHelper.TryRead (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="key">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool TryRead&lt;T&gt; (string compositeKey, string key, out T? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryRead&lt;T&gt;(string compositeKey, string key, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryRead``1(System.String,System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRead(Of T) (compositeKey As String, key As String, ByRef value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryRead : string * string * 'T -&gt; bool" Usage="applicationDataStorageHelper.TryRead (compositeKey, key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="compositeKey" Type="System.String" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="value" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the object.</param>
+        <param name="value">The value of the object retrieved.</param>
+        <summary>
+            Attempts to retrieve a single item by its key in composite.
+            </summary>
+        <returns>The T object.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRenameCacheItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryRenameCacheItemAsync (string itemPath, string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryRenameCacheItemAsync(string itemPath, string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryRenameCacheItemAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRenameCacheItemAsync (itemPath As String, newName As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.TryRenameCacheItemAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="applicationDataStorageHelper.TryRenameCacheItemAsync (itemPath, newName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the target item.</param>
+        <param name="newName">The new nam for the target item.</param>
+        <summary>
+            Rename an item in the LocalCacheFolder.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRenameItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryRenameItemAsync (string itemPath, string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryRenameItemAsync(string itemPath, string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Helpers.ApplicationDataStorageHelper.TryRenameItemAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRenameItemAsync (itemPath As String, newName As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TryRenameItemAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.TryRenameItemAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="applicationDataStorageHelper.TryRenameItemAsync (itemPath, newName)" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Toolkit.Helpers.IFileStorageHelper.TryRenameItemAsync(System.String,System.String)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the target item.</param>
+        <param name="newName">The new nam for the target item.</param>
+        <summary>
+            Rename an item.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,335 @@
+<Type Name="AnimationSet" FullName="CommunityToolkit.WinUI.UI.Animations.AnimationSet">
+  <TypeSignature Language="C#" Value="public sealed class AnimationSet : Microsoft.UI.Xaml.DependencyObjectCollection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnimationSet extends Microsoft.UI.Xaml.DependencyObjectCollection" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Animations.AnimationSet" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnimationSet&#xA;Inherits DependencyObjectCollection" />
+  <TypeSignature Language="F#" Value="type AnimationSet = class&#xA;    inherit DependencyObjectCollection" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.UI.Xaml.DependencyObjectCollection</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A collection of animations that can be grouped together. This type represents a composite animation
+            (such as <see cref="T:Microsoft.UI.Xaml.Media.Animation.Storyboard" />) that can be executed on a given element.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AnimationSet ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Completed">
+      <MemberSignature Language="C#" Value="public event EventHandler? Completed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Completed" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Event Completed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Completed : EventHandler " Usage="member this.Completed : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised whenever the current animation completes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSequential">
+      <MemberSignature Language="C#" Value="public bool IsSequential { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSequential" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Animations.AnimationSet.IsSequential" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSequential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSequential : bool with get, set" Usage="CommunityToolkit.WinUI.UI.Animations.AnimationSet.IsSequential" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value indicating whether top level animation nodes in this collection are invoked
+            sequentially. This applies to both <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationScope" /> nodes (which will still trigger
+            contained animations at the same time), and other top level animation nodes. The default value
+            is <see langword="false" />, which means that all contained animations will start at the same time.
+            <para>
+            Note that this property will also cause a change in behavior for the animation. With the default
+            configuration, with all animations starting at the same time, it's not possible to use multiple
+            animations targeting the same property (as they'll cause a conflict and be ignored when on the
+            composition layer, or cause a crash when on the XAML layer). When animations are started sequentially
+            instead, each sequential block will be able to share target properties with animations from other
+            sequential blocks, without issues. Note that especially for simple scenarios (eg. an opacity animation
+            that just transitions to a state and then back, or between two states), it is recommended to use a single
+            keyframe animation instead, which will result in less overhead when creating and starting the animation.
+            </para></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="animationSet.Start " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (Microsoft.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(class Microsoft.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Start(Microsoft.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (element As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.Start : Microsoft.UI.Xaml.UIElement -&gt; unit" Usage="animationSet.Start element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Microsoft.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Start">
+      <MemberSignature Language="C#" Value="public void Start (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Start(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start (token As CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.Start : System.Threading.CancellationToken -&gt; unit" Usage="animationSet.Start token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.StartAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : unit -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (Microsoft.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(class Microsoft.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.StartAsync(Microsoft.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (element As UIElement) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : Microsoft.UI.Xaml.UIElement -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Microsoft.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.StartAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync token" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="StartAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task StartAsync (Microsoft.UI.Xaml.UIElement element, System.Threading.CancellationToken token);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task StartAsync(class Microsoft.UI.Xaml.UIElement element, valuetype System.Threading.CancellationToken token) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.StartAsync(Microsoft.UI.Xaml.UIElement,System.Threading.CancellationToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAsync (element As UIElement, token As CancellationToken) As Task" />
+      <MemberSignature Language="F#" Value="member this.StartAsync : Microsoft.UI.Xaml.UIElement * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="animationSet.StartAsync (element, token)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.UIElement" />
+        <Parameter Name="token" Type="System.Threading.CancellationToken" />
+      </Parameters>
+      <Docs>
+        <param name="token">To be added.</param>
+        <param name="element">The target <see cref="T:Microsoft.UI.Xaml.UIElement" /> to animate.</param>
+        <summary>
+            Starts the animations present in the current <see cref="T:CommunityToolkit.WinUI.UI.Animations.AnimationBuilder" /> instance.
+            </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Started">
+      <MemberSignature Language="C#" Value="public event EventHandler? Started;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Started" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Started" />
+      <MemberSignature Language="VB.NET" Value="Public Event Started As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Started : EventHandler " Usage="member this.Started : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Raised whenever the current animation is started.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="animationSet.Stop " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Cancels the current animation on the attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.InvalidOperationException">Thrown when there is no attached <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Stop">
+      <MemberSignature Language="C#" Value="public void Stop (Microsoft.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop(class Microsoft.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Animations.AnimationSet.Stop(Microsoft.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop (element As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.Stop : Microsoft.UI.Xaml.UIElement -&gt; unit" Usage="animationSet.Stop element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Animations</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance to stop the animation for.</param>
+        <summary>
+             Cancels the current animation for a target <see cref="T:Microsoft.UI.Xaml.UIElement" /> instance.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

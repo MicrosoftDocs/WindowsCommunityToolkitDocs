@@ -1,0 +1,86 @@
+<Type Name="IRelayCommand&lt;T&gt;" FullName="CommunityToolkit.Mvvm.Input.IRelayCommand&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public interface IRelayCommand&lt;in T&gt; : CommunityToolkit.Mvvm.Input.IRelayCommand, System.Windows.Input.ICommand" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRelayCommand`1&lt;- T&gt; implements class CommunityToolkit.Mvvm.Input.IRelayCommand, class System.Windows.Input.ICommand" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRelayCommand(Of In T)&#xA;Implements ICommand, IRelayCommand" />
+  <TypeSignature Language="F#" Value="type IRelayCommand&lt;'T&gt; = interface&#xA;    interface IRelayCommand&#xA;    interface ICommand" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>CommunityToolkit.Mvvm.Input.IRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommand</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type used as argument for the interface methods.</typeparam>
+    <summary>
+            A generic interface representing a more specific version of <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public bool CanExecute (T? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecute(!T parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.IRelayCommand`1.CanExecute(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : 'T -&gt; bool" Usage="iRelayCommand.CanExecute parameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The input parameter.</param>
+        <summary>
+            Provides a strongly-typed variant of <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" />.
+            </summary>
+        <returns>Whether or not the current command can be executed.</returns>
+        <remarks>Use this overload to avoid boxing, if <typeparamref name="T" /> is a value type.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (T? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute(!T parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.IRelayCommand`1.Execute(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As T)" />
+      <MemberSignature Language="F#" Value="abstract member Execute : 'T -&gt; unit" Usage="iRelayCommand.Execute parameter" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">The input parameter.</param>
+        <summary>
+            Provides a strongly-typed variant of <see cref="M:System.Windows.Input.ICommand.Execute(System.Object)" />.
+            </summary>
+        <remarks>Use this overload to avoid boxing, if <typeparamref name="T" /> is a value type.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

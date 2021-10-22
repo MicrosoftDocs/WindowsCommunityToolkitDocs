@@ -1,0 +1,201 @@
+<Type Name="DesktopNotificationManagerCompat" FullName="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat">
+  <TypeSignature Language="C#" Value="public class DesktopNotificationManagerCompat" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesktopNotificationManagerCompat extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesktopNotificationManagerCompat" />
+  <TypeSignature Language="F#" Value="type DesktopNotificationManagerCompat = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("We recommend switching to the new ToastNotificationManagerCompat. For Win32 apps, it no longer requires a Start menu shortcut, and activation now uses a straightforward event handler (no NotificationActivator class and COM GUIDs needed)!")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("We recommend switching to the new ToastNotificationManagerCompat. For Win32 apps, it no longer requires a Start menu shortcut, and activation now uses a straightforward event handler (no NotificationActivator class and COM GUIDs needed)!")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Helper for .NET Framework applications to display toast notifications and respond to toast events
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DesktopNotificationManagerCompat ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanUseHttpImages">
+      <MemberSignature Language="C#" Value="public static bool CanUseHttpImages { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property bool CanUseHttpImages" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.CanUseHttpImages" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CanUseHttpImages As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUseHttpImages : bool" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.CanUseHttpImages" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether http images can be used within toasts. This is true if running with package identity (MSIX or sparse package).
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateToastNotifier">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Notifications.ToastNotifier CreateToastNotifier ();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Windows.UI.Notifications.ToastNotifier CreateToastNotifier() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.CreateToastNotifier" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateToastNotifier () As ToastNotifier" />
+      <MemberSignature Language="F#" Value="static member CreateToastNotifier : unit -&gt; Windows.UI.Notifications.ToastNotifier" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.CreateToastNotifier " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Notifications.ToastNotifier</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates a toast notifier. You must have called <see cref="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterActivator``1" /> first (and also <see cref="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterAumidAndComServer``1(System.String)" /> if you're a classic Win32 app), or this will throw an exception.
+            </summary>
+        <returns>
+          <see cref="T:Windows.UI.Notifications.ToastNotifier" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="History">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat History { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat History" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.History" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property History As DesktopNotificationHistoryCompat" />
+      <MemberSignature Language="F#" Value="member this.History : CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.History" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:CommunityToolkit.WinUI.Notifications.DesktopNotificationHistoryCompat" /> object. You must have called <see cref="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterActivator``1" /> first (and also <see cref="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterAumidAndComServer``1(System.String)" /> if you're a classic Win32 app), or this will throw an exception.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterActivator&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void RegisterActivator&lt;T&gt; () where T : CommunityToolkit.WinUI.Notifications.NotificationActivator, new();" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterActivator&lt;.ctor (class CommunityToolkit.WinUI.Notifications.NotificationActivator) T&gt;() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterActivator``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterActivator(Of T As {NotificationActivatorNew}) ()" />
+      <MemberSignature Language="F#" Value="static member RegisterActivator : unit -&gt; unit (requires 'T :&gt; CommunityToolkit.WinUI.Notifications.NotificationActivator and 'T : (new : unit -&gt; 'T))" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterActivator " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <BaseTypeName>CommunityToolkit.WinUI.Notifications.NotificationActivator</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters />
+      <Docs>
+        <typeparam name="T">Your implementation of NotificationActivator. Must have GUID and ComVisible attributes on class.</typeparam>
+        <summary>
+            Registers the activator type as a COM server client so that Windows can launch your activator.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegisterAumidAndComServer&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void RegisterAumidAndComServer&lt;T&gt; (string aumid) where T : CommunityToolkit.WinUI.Notifications.NotificationActivator;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAumidAndComServer&lt;(class CommunityToolkit.WinUI.Notifications.NotificationActivator) T&gt;(string aumid) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterAumidAndComServer``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAumidAndComServer(Of T As NotificationActivator) (aumid As String)" />
+      <MemberSignature Language="F#" Value="static member RegisterAumidAndComServer : string -&gt; unit (requires 'T :&gt; CommunityToolkit.WinUI.Notifications.NotificationActivator)" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.RegisterAumidAndComServer aumid" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <BaseTypeName>CommunityToolkit.WinUI.Notifications.NotificationActivator</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="aumid" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Your implementation of NotificationActivator. Must have GUID and ComVisible attributes on class.</typeparam>
+        <param name="aumid">An AUMID that uniquely identifies your application.</param>
+        <summary>
+            If you're not using MSIX or sparse packages, you must call this method to register your AUMID with the Compat library and to
+            register your COM CLSID and EXE in LocalServer32 registry. Feel free to call this regardless, and we will no-op if running
+            under Desktop Bridge. Call this upon application startup, before calling any other APIs.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToastActivatedLaunchArg">
+      <MemberSignature Language="C#" Value="public const string ToastActivatedLaunchArg;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string ToastActivatedLaunchArg" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.ToastActivatedLaunchArg" />
+      <MemberSignature Language="VB.NET" Value="Public Const ToastActivatedLaunchArg As String " />
+      <MemberSignature Language="F#" Value="val mutable ToastActivatedLaunchArg : string" Usage="CommunityToolkit.WinUI.Notifications.DesktopNotificationManagerCompat.ToastActivatedLaunchArg" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.Notifications</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A constant that is used as the launch arg when your EXE is launched from a toast notification.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

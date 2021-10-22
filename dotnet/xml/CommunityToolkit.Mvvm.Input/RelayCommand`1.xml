@@ -1,0 +1,243 @@
+<Type Name="RelayCommand&lt;T&gt;" FullName="CommunityToolkit.Mvvm.Input.RelayCommand&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class RelayCommand&lt;T&gt; : CommunityToolkit.Mvvm.Input.IRelayCommand&lt;T&gt;, System.Windows.Input.ICommand" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RelayCommand`1&lt;T&gt; extends System.Object implements class CommunityToolkit.Mvvm.Input.IRelayCommand, class CommunityToolkit.Mvvm.Input.IRelayCommand`1&lt;!T&gt;, class System.Windows.Input.ICommand" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Input.RelayCommand`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RelayCommand(Of T)&#xA;Implements ICommand, IRelayCommand(Of T)" />
+  <TypeSignature Language="F#" Value="type RelayCommand&lt;'T&gt; = class&#xA;    interface IRelayCommand&lt;'T&gt;&#xA;    interface IRelayCommand&#xA;    interface ICommand" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>CommunityToolkit.Mvvm.Input.IRelayCommand</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>CommunityToolkit.Mvvm.Input.IRelayCommand&lt;T&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Windows.Input.ICommand</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <typeparam name="T">The type of parameter being passed as input to the callbacks.</typeparam>
+    <summary>
+            A generic command whose sole purpose is to relay its functionality to other
+            objects by invoking delegates. The default return value for the CanExecute
+            method is <see langword="true" />. This class allows you to accept command parameters
+            in the <see cref="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.Execute(`0)" /> and <see cref="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.CanExecute(`0)" /> callback methods.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelayCommand (Action&lt;T?&gt; execute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;!T&gt; execute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.#ctor(System.Action{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (execute As Action(Of T))" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt; : Action&lt;'T&gt; -&gt; CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt;" Usage="new CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt; execute" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="execute" Type="System.Action&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="execute">The execution logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Mvvm.Input.RelayCommand`1" /> class that can always execute.
+            </summary>
+        <remarks>
+            Due to the fact that the <see cref="T:System.Windows.Input.ICommand" /> interface exposes methods that accept a
+            nullable <see cref="T:System.Object" /> parameter, it is recommended that if <typeparamref name="T" /> is a reference type,
+            you should always declare it as nullable, and to always perform checks within <paramref name="execute" />.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RelayCommand (Action&lt;T?&gt; execute, Predicate&lt;T?&gt; canExecute);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;!T&gt; execute, class System.Predicate`1&lt;!T&gt; canExecute) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.#ctor(System.Action{`0},System.Predicate{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (execute As Action(Of T), canExecute As Predicate(Of T))" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt; : Action&lt;'T&gt; * Predicate&lt;'T&gt; -&gt; CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt;" Usage="new CommunityToolkit.Mvvm.Input.RelayCommand&lt;'T&gt; (execute, canExecute)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="execute" Type="System.Action&lt;T&gt;" />
+        <Parameter Name="canExecute" Type="System.Predicate&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="execute">The execution logic.</param>
+        <param name="canExecute">The execution status logic.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Mvvm.Input.RelayCommand`1" /> class.
+            </summary>
+        <remarks>See notes in <see cref="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.#ctor(System.Action{`0})" />.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public bool CanExecute (object? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.CanExecute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : obj -&gt; bool&#xA;override this.CanExecute : obj -&gt; bool" Usage="relayCommand.CanExecute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.CanExecute(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecute">
+      <MemberSignature Language="C#" Value="public bool CanExecute (T? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecute(!T parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.CanExecute(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecute (parameter As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExecute : 'T -&gt; bool&#xA;override this.CanExecute : 'T -&gt; bool" Usage="relayCommand.CanExecute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Input.IRelayCommand`1.CanExecute(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CanExecuteChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler? CanExecuteChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CanExecuteChanged" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.Mvvm.Input.RelayCommand`1.CanExecuteChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CanExecuteChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CanExecuteChanged : EventHandler " Usage="member this.CanExecuteChanged : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Windows.Input.ICommand.CanExecuteChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (object? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute(object parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.Execute(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Execute : obj -&gt; unit&#xA;override this.Execute : obj -&gt; unit" Usage="relayCommand.Execute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Input.ICommand.Execute(System.Object)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Execute">
+      <MemberSignature Language="C#" Value="public void Execute (T? parameter);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Execute(!T parameter) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.Execute(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Execute (parameter As T)" />
+      <MemberSignature Language="F#" Value="abstract member Execute : 'T -&gt; unit&#xA;override this.Execute : 'T -&gt; unit" Usage="relayCommand.Execute parameter" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Input.IRelayCommand`1.Execute(`0)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parameter" Type="T" />
+      </Parameters>
+      <Docs>
+        <param name="parameter">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyCanExecuteChanged">
+      <MemberSignature Language="C#" Value="public void NotifyCanExecuteChanged ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyCanExecuteChanged() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Mvvm.Input.RelayCommand`1.NotifyCanExecuteChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyCanExecuteChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member NotifyCanExecuteChanged : unit -&gt; unit&#xA;override this.NotifyCanExecuteChanged : unit -&gt; unit" Usage="relayCommand.NotifyCanExecuteChanged " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:CommunityToolkit.Mvvm.Input.IRelayCommand.NotifyCanExecuteChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Notifies that the <see cref="M:System.Windows.Input.ICommand.CanExecute(System.Object)" /> property has changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

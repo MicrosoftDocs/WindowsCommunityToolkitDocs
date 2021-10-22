@@ -1,0 +1,1234 @@
+<Type Name="Utils" FullName="CommunityToolkit.WinUI.UI.Media.Geometry.Utils">
+  <TypeSignature Language="C#" Value="public static class Utils" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Utils extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.Geometry.Utils" />
+  <TypeSignature Language="VB.NET" Value="Public Module Utils" />
+  <TypeSignature Language="F#" Value="type Utils = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class containing collection of useful methods for various types
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Collapse">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Collapse (this System.Numerics.Vector4 vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Collapse(valuetype System.Numerics.Vector4 vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Collapse(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Collapse (vector As Vector4) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Collapse : System.Numerics.Vector4 -&gt; System.Numerics.Vector2" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Collapse vector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Numerics.Vector4" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="vector">Vector4</param>
+        <summary>
+            Useful in converting the four components of Thickness or Padding to two components by taking a sum of alternate components (X &amp; Z and Y &amp; W).
+            </summary>
+        <returns>Vector3</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CollapseThickness">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Size CollapseThickness (this Microsoft.UI.Xaml.Thickness thick);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Size CollapseThickness(valuetype Microsoft.UI.Xaml.Thickness thick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.CollapseThickness(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CollapseThickness (thick As Thickness) As Size" />
+      <MemberSignature Language="F#" Value="static member CollapseThickness : Microsoft.UI.Xaml.Thickness -&gt; Windows.Foundation.Size" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.CollapseThickness thick" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thick">Thickness</param>
+        <summary>
+            Method to add up the left and right size as width, as well as the top and bottom size as height.
+            </summary>
+        <returns>Size</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConvertToValidCornerValue">
+      <MemberSignature Language="C#" Value="public static double ConvertToValidCornerValue (double corner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 ConvertToValidCornerValue(float64 corner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ConvertToValidCornerValue(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertToValidCornerValue (corner As Double) As Double" />
+      <MemberSignature Language="F#" Value="static member ConvertToValidCornerValue : double -&gt; double" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ConvertToValidCornerValue corner" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="corner" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="corner">Corner value</param>
+        <summary>
+            Converts the given corner value to a valid positive value. Returns zero if the corner value is Infinity or NaN or 0.
+            </summary>
+        <returns>Valid Corner value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DarkerBy">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Color DarkerBy (this Windows.UI.Color color, float amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Color DarkerBy(valuetype Windows.UI.Color color, float32 amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.DarkerBy(Windows.UI.Color,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DarkerBy (color As Color, amount As Single) As Color" />
+      <MemberSignature Language="F#" Value="static member DarkerBy : Windows.UI.Color * single -&gt; Windows.UI.Color" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.DarkerBy (color, amount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
+        <Parameter Name="amount" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="color">Source color.</param>
+        <param name="amount">Percentage to darken. Value should be between 0 and 1.</param>
+        <summary>
+            Darkens the color by the given percentage.
+            </summary>
+        <returns>Color</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Deflate">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Rect Deflate (this Windows.Foundation.Rect rect, Microsoft.UI.Xaml.Thickness thick);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Rect Deflate(valuetype Windows.Foundation.Rect rect, valuetype Microsoft.UI.Xaml.Thickness thick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Deflate(Windows.Foundation.Rect,Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Deflate (rect As Rect, thick As Thickness) As Rect" />
+      <MemberSignature Language="F#" Value="static member Deflate : Windows.Foundation.Rect * Microsoft.UI.Xaml.Thickness -&gt; Windows.Foundation.Rect" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Deflate (rect, thick)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Windows.Foundation.Rect" RefType="this" />
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="rect">Rectangle</param>
+        <param name="thick">Thickness</param>
+        <summary>
+            Deflates rectangle by given thickness.
+            </summary>
+        <returns>Deflated Rectangle</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOffset">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 GetOffset (this Microsoft.UI.Xaml.Thickness thickness);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 GetOffset(valuetype Microsoft.UI.Xaml.Thickness thickness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.GetOffset(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetOffset (thickness As Thickness) As Vector2" />
+      <MemberSignature Language="F#" Value="static member GetOffset : Microsoft.UI.Xaml.Thickness -&gt; System.Numerics.Vector2" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.GetOffset thickness" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thickness" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thickness">Thickness object</param>
+        <summary>
+            Gets the top left corner of the thickness structure.
+            </summary>
+        <returns>Vector2</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOptimumSize">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Rect GetOptimumSize (double srcWidth, double srcHeight, double destWidth, double destHeight, Microsoft.UI.Xaml.Media.Stretch stretch, Microsoft.UI.Xaml.Media.AlignmentX horizontalAlignment, Microsoft.UI.Xaml.Media.AlignmentY verticalAlignment);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Rect GetOptimumSize(float64 srcWidth, float64 srcHeight, float64 destWidth, float64 destHeight, valuetype Microsoft.UI.Xaml.Media.Stretch stretch, valuetype Microsoft.UI.Xaml.Media.AlignmentX horizontalAlignment, valuetype Microsoft.UI.Xaml.Media.AlignmentY verticalAlignment) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.GetOptimumSize(System.Double,System.Double,System.Double,System.Double,Microsoft.UI.Xaml.Media.Stretch,Microsoft.UI.Xaml.Media.AlignmentX,Microsoft.UI.Xaml.Media.AlignmentY)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOptimumSize (srcWidth As Double, srcHeight As Double, destWidth As Double, destHeight As Double, stretch As Stretch, horizontalAlignment As AlignmentX, verticalAlignment As AlignmentY) As Rect" />
+      <MemberSignature Language="F#" Value="static member GetOptimumSize : double * double * double * double * Microsoft.UI.Xaml.Media.Stretch * Microsoft.UI.Xaml.Media.AlignmentX * Microsoft.UI.Xaml.Media.AlignmentY -&gt; Windows.Foundation.Rect" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.GetOptimumSize (srcWidth, srcHeight, destWidth, destHeight, stretch, horizontalAlignment, verticalAlignment)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="srcWidth" Type="System.Double" />
+        <Parameter Name="srcHeight" Type="System.Double" />
+        <Parameter Name="destWidth" Type="System.Double" />
+        <Parameter Name="destHeight" Type="System.Double" />
+        <Parameter Name="stretch" Type="Microsoft.UI.Xaml.Media.Stretch" />
+        <Parameter Name="horizontalAlignment" Type="Microsoft.UI.Xaml.Media.AlignmentX" />
+        <Parameter Name="verticalAlignment" Type="Microsoft.UI.Xaml.Media.AlignmentY" />
+      </Parameters>
+      <Docs>
+        <param name="srcWidth">Width of the source.</param>
+        <param name="srcHeight">Height of the source.</param>
+        <param name="destWidth">Width of the destination area.</param>
+        <param name="destHeight">Height of the destination area.</param>
+        <param name="stretch">Defines how the source should stretch to fit the destination.</param>
+        <param name="horizontalAlignment">Horizontal Alignment</param>
+        <param name="verticalAlignment">Vertical Alignment</param>
+        <summary>
+            Calculates the best size that can fit in the destination area based on the given stretch and alignment options.
+            </summary>
+        <returns>The best fitting Rectangle in the destination area.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Inflate">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Rect Inflate (this Windows.Foundation.Rect rect, Microsoft.UI.Xaml.Thickness thick);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Rect Inflate(valuetype Windows.Foundation.Rect rect, valuetype Microsoft.UI.Xaml.Thickness thick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Inflate(Windows.Foundation.Rect,Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Inflate (rect As Rect, thick As Thickness) As Rect" />
+      <MemberSignature Language="F#" Value="static member Inflate : Windows.Foundation.Rect * Microsoft.UI.Xaml.Thickness -&gt; Windows.Foundation.Rect" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Inflate (rect, thick)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Rect</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect" Type="Windows.Foundation.Rect" RefType="this" />
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" />
+      </Parameters>
+      <Docs>
+        <param name="rect">Rectangle</param>
+        <param name="thick">Thickness</param>
+        <summary>
+            Inflates rectangle by given thickness.
+            </summary>
+        <returns>Inflated Rectangle</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCloseTo">
+      <MemberSignature Language="C#" Value="public static bool IsCloseTo (this double value1, double value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCloseTo(float64 value1, float64 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCloseTo (value1 As Double, value2 As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCloseTo : double * double -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Double" RefType="this" />
+        <Parameter Name="value2" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first double to compare. </param>
+        <param name="value2"> The second double to compare. </param>
+        <summary>
+            Returns whether or not two doubles are "close".
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCloseTo">
+      <MemberSignature Language="C#" Value="public static bool IsCloseTo (this float value1, float value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCloseTo(float32 value1, float32 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCloseTo (value1 As Single, value2 As Single) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCloseTo : single * single -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Single" RefType="this" />
+        <Parameter Name="value2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first float to compare. </param>
+        <param name="value2"> The second float to compare. </param>
+        <summary>
+            Returns whether or not two floats are "close".
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCloseTo">
+      <MemberSignature Language="C#" Value="public static bool IsCloseTo (this Windows.Foundation.Point point1, Windows.Foundation.Point point2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCloseTo(valuetype Windows.Foundation.Point point1, valuetype Windows.Foundation.Point point2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo(Windows.Foundation.Point,Windows.Foundation.Point)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCloseTo (point1 As Point, point2 As Point) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCloseTo : Windows.Foundation.Point * Windows.Foundation.Point -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo (point1, point2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="point1" Type="Windows.Foundation.Point" RefType="this" />
+        <Parameter Name="point2" Type="Windows.Foundation.Point" />
+      </Parameters>
+      <Docs>
+        <param name="point1">The first point to compare</param>
+        <param name="point2">The second point to compare</param>
+        <summary>
+            Compares two points for fuzzy equality.  This function
+            helps compensate for the fact that double values can
+            acquire error when operated upon
+            </summary>
+        <returns>Whether or not the two points are equal</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCloseTo">
+      <MemberSignature Language="C#" Value="public static bool IsCloseTo (this Windows.Foundation.Rect rect1, Windows.Foundation.Rect rect2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCloseTo(valuetype Windows.Foundation.Rect rect1, valuetype Windows.Foundation.Rect rect2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo(Windows.Foundation.Rect,Windows.Foundation.Rect)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCloseTo (rect1 As Rect, rect2 As Rect) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCloseTo : Windows.Foundation.Rect * Windows.Foundation.Rect -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo (rect1, rect2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="rect1" Type="Windows.Foundation.Rect" RefType="this" />
+        <Parameter Name="rect2" Type="Windows.Foundation.Rect" />
+      </Parameters>
+      <Docs>
+        <param name="rect1">The first rectangle to compare</param>
+        <param name="rect2">The second rectangle to compare</param>
+        <summary>
+            Compares two rectangles for fuzzy equality.  This function
+            helps compensate for the fact that double values can
+            acquire error when operated upon
+            </summary>
+        <returns>Whether or not the two rectangles are equal</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsCloseTo">
+      <MemberSignature Language="C#" Value="public static bool IsCloseTo (this Windows.Foundation.Size size1, Windows.Foundation.Size size2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCloseTo(valuetype Windows.Foundation.Size size1, valuetype Windows.Foundation.Size size2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo(Windows.Foundation.Size,Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsCloseTo (size1 As Size, size2 As Size) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCloseTo : Windows.Foundation.Size * Windows.Foundation.Size -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsCloseTo (size1, size2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="size1" Type="Windows.Foundation.Size" RefType="this" />
+        <Parameter Name="size2" Type="Windows.Foundation.Size" />
+      </Parameters>
+      <Docs>
+        <param name="size1">The first size to compare</param>
+        <param name="size2">The second size to compare</param>
+        <summary>
+            Compares two Size instances for fuzzy equality.  This function
+            helps compensate for the fact that double values can
+            acquire error when operated upon
+            </summary>
+        <returns>Whether or not the two Size instances are equal</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEqualTo">
+      <MemberSignature Language="C#" Value="public static bool IsEqualTo (this Microsoft.UI.Xaml.Media.Brush brush, Microsoft.UI.Xaml.Media.Brush otherBrush);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEqualTo(class Microsoft.UI.Xaml.Media.Brush brush, class Microsoft.UI.Xaml.Media.Brush otherBrush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsEqualTo(Microsoft.UI.Xaml.Media.Brush,Microsoft.UI.Xaml.Media.Brush)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsEqualTo (brush As Brush, otherBrush As Brush) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsEqualTo : Microsoft.UI.Xaml.Media.Brush * Microsoft.UI.Xaml.Media.Brush -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsEqualTo (brush, otherBrush)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="brush" Type="Microsoft.UI.Xaml.Media.Brush" RefType="this" />
+        <Parameter Name="otherBrush" Type="Microsoft.UI.Xaml.Media.Brush" />
+      </Parameters>
+      <Docs>
+        <param name="brush">Given <see cref="T:Microsoft.UI.Xaml.Media.Brush" /></param>
+        <param name="otherBrush">The <see cref="T:Microsoft.UI.Xaml.Media.Brush" /> to match it with</param>
+        <summary>
+            Verifies if the given brush is the same as the otherBrush.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEqualTo">
+      <MemberSignature Language="C#" Value="public static bool IsEqualTo (this Uri uri, Uri otherUri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEqualTo(class System.Uri uri, class System.Uri otherUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsEqualTo(System.Uri,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsEqualTo (uri As Uri, otherUri As Uri) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsEqualTo : Uri * Uri -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsEqualTo (uri, otherUri)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" RefType="this" />
+        <Parameter Name="otherUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">URI to compare with</param>
+        <param name="otherUri">URI to compare</param>
+        <summary>
+            Compares one URI with another URI.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool IsGreaterThan (this double value1, double value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGreaterThan(float64 value1, float64 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsGreaterThan(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsGreaterThan (value1 As Double, value2 As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsGreaterThan : double * double -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsGreaterThan (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Double" RefType="this" />
+        <Parameter Name="value2" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first double to compare. </param>
+        <param name="value2"> The second double to compare. </param>
+        <summary>
+            Returns whether or not the first double is greater than the second double.
+            </summary>
+        <returns>
+            bool - the result of the GreaterThan comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsGreaterThan">
+      <MemberSignature Language="C#" Value="public static bool IsGreaterThan (this float value1, float value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsGreaterThan(float32 value1, float32 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsGreaterThan(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsGreaterThan (value1 As Single, value2 As Single) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsGreaterThan : single * single -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsGreaterThan (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Single" RefType="this" />
+        <Parameter Name="value2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first float to compare. </param>
+        <param name="value2"> The second float to compare. </param>
+        <summary>
+            Returns whether or not the first float is greater than the second float.
+            </summary>
+        <returns>
+            bool - the result of the GreaterThan comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLessThan">
+      <MemberSignature Language="C#" Value="public static bool IsLessThan (this double value1, double value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLessThan(float64 value1, float64 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsLessThan(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsLessThan (value1 As Double, value2 As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsLessThan : double * double -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsLessThan (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Double" RefType="this" />
+        <Parameter Name="value2" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first double to compare. </param>
+        <param name="value2"> The second double to compare. </param>
+        <summary>
+            Returns whether or not the first double is less than the second double.
+            </summary>
+        <returns>
+            bool - the result of the LessThan comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsLessThan">
+      <MemberSignature Language="C#" Value="public static bool IsLessThan (this float value1, float value2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLessThan(float32 value1, float32 value2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsLessThan(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsLessThan (value1 As Single, value2 As Single) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsLessThan : single * single -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsLessThan (value1, value2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value1" Type="System.Single" RefType="this" />
+        <Parameter Name="value2" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="value1"> The first float to compare. </param>
+        <param name="value2"> The second float to compare. </param>
+        <summary>
+            Returns whether or not the first float is less than the second float.
+            </summary>
+        <returns>
+            bool - the result of the LessThan comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOne">
+      <MemberSignature Language="C#" Value="public static bool IsOne (this double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOne(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOne(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOne (value As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsOne : double -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOne value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The double to compare to 1. </param>
+        <summary>
+            Returns whether or not the double is "close" to 1.  Same as AreClose(double, 1),
+            but this is faster.
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOne">
+      <MemberSignature Language="C#" Value="public static bool IsOne (this float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOne(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOne(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOne (value As Single) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsOne : single -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOne value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The float to compare to 1. </param>
+        <summary>
+            Returns whether or not the float is "close" to 1.  Same as AreClose(float, 1),
+            but this is faster.
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOpaqueSolidColorBrush">
+      <MemberSignature Language="C#" Value="public static bool IsOpaqueSolidColorBrush (this Microsoft.UI.Xaml.Media.Brush brush);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOpaqueSolidColorBrush(class Microsoft.UI.Xaml.Media.Brush brush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOpaqueSolidColorBrush(Microsoft.UI.Xaml.Media.Brush)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsOpaqueSolidColorBrush (brush As Brush) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsOpaqueSolidColorBrush : Microsoft.UI.Xaml.Media.Brush -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsOpaqueSolidColorBrush brush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="brush" Type="Microsoft.UI.Xaml.Media.Brush" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="brush">Brush</param>
+        <summary>
+            Verifies if the given brush is a SolidColorBrush and its color does not include transparency.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUniform">
+      <MemberSignature Language="C#" Value="public static bool IsUniform (this Microsoft.UI.Xaml.CornerRadius corner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUniform(valuetype Microsoft.UI.Xaml.CornerRadius corner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsUniform(Microsoft.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsUniform (corner As CornerRadius) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsUniform : Microsoft.UI.Xaml.CornerRadius -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsUniform corner" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="corner" Type="Microsoft.UI.Xaml.CornerRadius" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="corner">CornerRadius</param>
+        <summary>
+            Verifies if the CornerRadius contains same values.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUniform">
+      <MemberSignature Language="C#" Value="public static bool IsUniform (this Microsoft.UI.Xaml.Thickness thick);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsUniform(valuetype Microsoft.UI.Xaml.Thickness thick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsUniform(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsUniform (thick As Thickness) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsUniform : Microsoft.UI.Xaml.Thickness -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsUniform thick" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thick">Thickness</param>
+        <summary>
+            Verifies if all the values in Thickness are same.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public static bool IsValid (this Microsoft.UI.Xaml.Thickness thick, bool allowNegative, bool allowNaN, bool allowPositiveInfinity, bool allowNegativeInfinity);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsValid(valuetype Microsoft.UI.Xaml.Thickness thick, bool allowNegative, bool allowNaN, bool allowPositiveInfinity, bool allowNegativeInfinity) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsValid(Microsoft.UI.Xaml.Thickness,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsValid (thick As Thickness, allowNegative As Boolean, allowNaN As Boolean, allowPositiveInfinity As Boolean, allowNegativeInfinity As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsValid : Microsoft.UI.Xaml.Thickness * bool * bool * bool * bool -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsValid (thick, allowNegative, allowNaN, allowPositiveInfinity, allowNegativeInfinity)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+        <Parameter Name="allowNegative" Type="System.Boolean" />
+        <Parameter Name="allowNaN" Type="System.Boolean" />
+        <Parameter Name="allowPositiveInfinity" Type="System.Boolean" />
+        <Parameter Name="allowNegativeInfinity" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="thick">Thickness value</param>
+        <param name="allowNegative">allows negative values</param>
+        <param name="allowNaN">allows double.NaN</param>
+        <param name="allowPositiveInfinity">allows double.PositiveInfinity</param>
+        <param name="allowNegativeInfinity">allows double.NegativeInfinity</param>
+        <summary>
+            Verifies if this Thickness contains only valid values. The set of validity checks is passed as parameters.
+            </summary>
+        <returns>Whether or not the thickness complies to the range specified</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZero">
+      <MemberSignature Language="C#" Value="public static bool IsZero (this Microsoft.UI.Xaml.CornerRadius corner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsZero(valuetype Microsoft.UI.Xaml.CornerRadius corner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero(Microsoft.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsZero (corner As CornerRadius) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsZero : Microsoft.UI.Xaml.CornerRadius -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero corner" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="corner" Type="Microsoft.UI.Xaml.CornerRadius" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="corner">CornerRadius</param>
+        <summary>
+            Verifies if the CornerRadius contains only zero values.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZero">
+      <MemberSignature Language="C#" Value="public static bool IsZero (this Microsoft.UI.Xaml.Thickness thick);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsZero(valuetype Microsoft.UI.Xaml.Thickness thick) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsZero (thick As Thickness) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsZero : Microsoft.UI.Xaml.Thickness -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero thick" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thick" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thick">Thickness</param>
+        <summary>
+            Verifies if the Thickness contains only zero values.
+            </summary>
+        <returns>Size</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZero">
+      <MemberSignature Language="C#" Value="public static bool IsZero (this double value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsZero(float64 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsZero (value As Double) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsZero : double -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The double to compare to 0. </param>
+        <summary>
+            IsZero - Returns whether or not the double is "close" to 0.  Same as AreClose(double, 0),
+            but this is faster.
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZero">
+      <MemberSignature Language="C#" Value="public static bool IsZero (this System.Numerics.Vector4 vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsZero(valuetype System.Numerics.Vector4 vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsZero (vector As Vector4) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsZero : System.Numerics.Vector4 -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero vector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Numerics.Vector4" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="vector">Vector4</param>
+        <summary>
+            Verifies if the Vector4 contains only zero values.
+            </summary>
+        <returns>true if yes, otherwise false</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZero">
+      <MemberSignature Language="C#" Value="public static bool IsZero (this float value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsZero(float32 value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsZero (value As Single) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsZero : single -&gt; bool" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.IsZero value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Single" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="value"> The float to compare to 0. </param>
+        <summary>
+            IsZero - Returns whether or not the float is "close" to 0.  Same as AreClose(float, 0),
+            but this is faster.
+            </summary>
+        <returns>
+            bool - the result of the AreClose comparison.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lerp">
+      <MemberSignature Language="C#" Value="public static float Lerp (this float start, float end, float amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Lerp(float32 start, float32 end, float32 amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Lerp(System.Single,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Lerp (start As Single, end As Single, amount As Single) As Single" />
+      <MemberSignature Language="F#" Value="static member Lerp : single * single * single -&gt; single" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Lerp (start, end, amount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="start" Type="System.Single" RefType="this" />
+        <Parameter Name="end" Type="System.Single" />
+        <Parameter Name="amount" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="start">Starting value.</param>
+        <param name="end">Ending value.</param>
+        <param name="amount">Weight-age given to the ending value.</param>
+        <summary>
+            Calculates the linear interpolated value based on the given values.
+            </summary>
+        <returns>Linear interpolated value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Lerp">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Color Lerp (this Windows.UI.Color colorFrom, Windows.UI.Color colorTo, float amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Color Lerp(valuetype Windows.UI.Color colorFrom, valuetype Windows.UI.Color colorTo, float32 amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Lerp(Windows.UI.Color,Windows.UI.Color,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Lerp (colorFrom As Color, colorTo As Color, amount As Single) As Color" />
+      <MemberSignature Language="F#" Value="static member Lerp : Windows.UI.Color * Windows.UI.Color * single -&gt; Windows.UI.Color" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Lerp (colorFrom, colorTo, amount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="colorFrom" Type="Windows.UI.Color" RefType="this" />
+        <Parameter Name="colorTo" Type="Windows.UI.Color" />
+        <Parameter Name="amount" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="colorFrom">Source Color.</param>
+        <param name="colorTo">Target Color.</param>
+        <param name="amount">Weightage given to the target color.</param>
+        <summary>
+            Calculates the linear interpolated Color based on the given Color values.
+            </summary>
+        <returns>Linear Interpolated Color.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LighterBy">
+      <MemberSignature Language="C#" Value="public static Windows.UI.Color LighterBy (this Windows.UI.Color color, float amount);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.UI.Color LighterBy(valuetype Windows.UI.Color color, float32 amount) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.LighterBy(Windows.UI.Color,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LighterBy (color As Color, amount As Single) As Color" />
+      <MemberSignature Language="F#" Value="static member LighterBy : Windows.UI.Color * single -&gt; Windows.UI.Color" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.LighterBy (color, amount)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Color</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="color" Type="Windows.UI.Color" RefType="this" />
+        <Parameter Name="amount" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="color">Source color.</param>
+        <param name="amount">Percentage to lighten. Value should be between 0 and 1.</param>
+        <summary>
+            Lightens the color by the given percentage.
+            </summary>
+        <returns>Color</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reflect">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Reflect (System.Numerics.Vector2 a, System.Numerics.Vector2 b);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Reflect(valuetype System.Numerics.Vector2 a, valuetype System.Numerics.Vector2 b) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Reflect(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reflect (a As Vector2, b As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Reflect : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.Reflect (a, b)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector2</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="a" Type="System.Numerics.Vector2" />
+        <Parameter Name="b" Type="System.Numerics.Vector2" />
+      </Parameters>
+      <Docs>
+        <param name="a">Point to be reflected</param>
+        <param name="b">Point of reflection</param>
+        <summary>
+            Reflects point 'a' over point 'b'.
+            </summary>
+        <returns>Reflected point</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RoundLayoutValue">
+      <MemberSignature Language="C#" Value="public static double RoundLayoutValue (double value, double dpiScale);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 RoundLayoutValue(float64 value, float64 dpiScale) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.RoundLayoutValue(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RoundLayoutValue (value As Double, dpiScale As Double) As Double" />
+      <MemberSignature Language="F#" Value="static member RoundLayoutValue : double * double -&gt; double" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.RoundLayoutValue (value, dpiScale)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="value" Type="System.Double" />
+        <Parameter Name="dpiScale" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="value">Value to round</param>
+        <param name="dpiScale">DPI Scale</param>
+        <summary>
+            Rounds the given value based on the DPI scale
+            </summary>
+        <returns>The rounded value</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToAbsVector4">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector4 ToAbsVector4 (this Microsoft.UI.Xaml.Thickness thickness);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector4 ToAbsVector4(valuetype Microsoft.UI.Xaml.Thickness thickness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToAbsVector4(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToAbsVector4 (thickness As Thickness) As Vector4" />
+      <MemberSignature Language="F#" Value="static member ToAbsVector4 : Microsoft.UI.Xaml.Thickness -&gt; System.Numerics.Vector4" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToAbsVector4 thickness" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thickness" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thickness">Thickness object</param>
+        <summary>
+            Converts the Thickness object to Vector4. If the Thickness object contains negative components they will be converted to positive values. If the Thickness object's component have values NaN, PositiveInfinity or NegativeInfinity, then Vector4.Zero will be returned.
+            </summary>
+        <returns>Vector2</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToCornerRadius">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.CornerRadius ToCornerRadius (this System.Numerics.Vector4 vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.CornerRadius ToCornerRadius(valuetype System.Numerics.Vector4 vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToCornerRadius(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToCornerRadius (vector As Vector4) As CornerRadius" />
+      <MemberSignature Language="F#" Value="static member ToCornerRadius : System.Numerics.Vector4 -&gt; Microsoft.UI.Xaml.CornerRadius" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToCornerRadius vector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.CornerRadius</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Numerics.Vector4" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="vector">Vector4</param>
+        <summary>
+            Converts the Vector4 to CornerRadius - TopLeft(X), TopRight(Y), BottomRight(Z), BottomLeft(W).
+            </summary>
+        <returns>CornerRadius</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToSize">
+      <MemberSignature Language="C#" Value="public static Windows.Foundation.Size ToSize (this System.Numerics.Vector4 vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Windows.Foundation.Size ToSize(valuetype System.Numerics.Vector4 vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToSize(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToSize (vector As Vector4) As Size" />
+      <MemberSignature Language="F#" Value="static member ToSize : System.Numerics.Vector4 -&gt; Windows.Foundation.Size" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToSize vector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Numerics.Vector4" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="vector">Vector4</param>
+        <summary>
+            Useful in converting the four components of Thickness or Padding to two components by adding alternate components - (X &amp; Z and Y &amp; W).
+            </summary>
+        <returns>Size</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToThickness">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Thickness ToThickness (this System.Numerics.Vector4 vector);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Thickness ToThickness(valuetype System.Numerics.Vector4 vector) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToThickness(System.Numerics.Vector4)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToThickness (vector As Vector4) As Thickness" />
+      <MemberSignature Language="F#" Value="static member ToThickness : System.Numerics.Vector4 -&gt; Microsoft.UI.Xaml.Thickness" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToThickness vector" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Thickness</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="vector" Type="System.Numerics.Vector4" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="vector">Vector4</param>
+        <summary>
+            Converts the Vector4 to Thickness - Left(X), Top(Y), Right(Z), Bottom(W).
+            </summary>
+        <returns>Thickness</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector3">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 ToVector3 (this System.Numerics.Vector2 v);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector3 ToVector3(valuetype System.Numerics.Vector2 v) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector3(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector3 (v As Vector2) As Vector3" />
+      <MemberSignature Language="F#" Value="static member ToVector3 : System.Numerics.Vector2 -&gt; System.Numerics.Vector3" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector3 v" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="v" Type="System.Numerics.Vector2" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="v">Input Vector2</param>
+        <summary>
+            Converts a Vector2 structure (x,y) to Vector3 structure (x, y, 0).
+            </summary>
+        <returns>Vector3</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector3">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector3 ToVector3 (this Windows.Foundation.Point p);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector3 ToVector3(valuetype Windows.Foundation.Point p) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector3(Windows.Foundation.Point)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector3 (p As Point) As Vector3" />
+      <MemberSignature Language="F#" Value="static member ToVector3 : Windows.Foundation.Point -&gt; System.Numerics.Vector3" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector3 p" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector3</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="p" Type="Windows.Foundation.Point" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="p">Point structure</param>
+        <summary>
+            Converts the Point structure P (X,Y) to Vector3 structure
+            V (P.X, P.Y, 0);
+            </summary>
+        <returns>Vector3</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector4">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector4 ToVector4 (this Microsoft.UI.Xaml.CornerRadius corner);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector4 ToVector4(valuetype Microsoft.UI.Xaml.CornerRadius corner) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector4(Microsoft.UI.Xaml.CornerRadius)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector4 (corner As CornerRadius) As Vector4" />
+      <MemberSignature Language="F#" Value="static member ToVector4 : Microsoft.UI.Xaml.CornerRadius -&gt; System.Numerics.Vector4" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector4 corner" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="corner" Type="Microsoft.UI.Xaml.CornerRadius" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="corner">CornerRadius object</param>
+        <summary>
+            Converts the CornerRadius object to Vector4. If the CornerRadius object's component have values NaN, PositiveInfinity or NegativeInfinity, then Vector4.Zero will be returned.
+            </summary>
+        <returns>Vector4</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVector4">
+      <MemberSignature Language="C#" Value="public static System.Numerics.Vector4 ToVector4 (this Microsoft.UI.Xaml.Thickness thickness);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector4 ToVector4(valuetype Microsoft.UI.Xaml.Thickness thickness) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector4(Microsoft.UI.Xaml.Thickness)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToVector4 (thickness As Thickness) As Vector4" />
+      <MemberSignature Language="F#" Value="static member ToVector4 : Microsoft.UI.Xaml.Thickness -&gt; System.Numerics.Vector4" Usage="CommunityToolkit.WinUI.UI.Media.Geometry.Utils.ToVector4 thickness" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Numerics.Vector4</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="thickness" Type="Microsoft.UI.Xaml.Thickness" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="thickness">Thickness object</param>
+        <summary>
+            Converts the Thickness object to Vector4. If the Thickness object's component have values NaN, PositiveInfinity or NegativeInfinity, then Vector4.Zero will be returned.
+            </summary>
+        <returns>Vector4</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

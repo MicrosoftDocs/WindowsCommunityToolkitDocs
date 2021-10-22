@@ -1,0 +1,361 @@
+<Type Name="PrintHelper" FullName="CommunityToolkit.WinUI.Helpers.PrintHelper">
+  <TypeSignature Language="C#" Value="public class PrintHelper : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintHelper extends System.Object implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Helpers.PrintHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintHelper&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintHelper = class&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>
+            Helper class used to simplify document printing.
+            It allows you to render a framework element per page.
+            </summary>
+    <remarks>Based on https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/Printing/cs/PrintHelper.cs</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PrintHelper (Microsoft.UI.Xaml.Controls.Panel canvasContainer, CommunityToolkit.WinUI.Helpers.PrintHelperOptions defaultPrintHelperOptions = default, Microsoft.UI.Dispatching.DispatcherQueue dispatcherQueue = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.UI.Xaml.Controls.Panel canvasContainer, class CommunityToolkit.WinUI.Helpers.PrintHelperOptions defaultPrintHelperOptions, class Microsoft.UI.Dispatching.DispatcherQueue dispatcherQueue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.#ctor(Microsoft.UI.Xaml.Controls.Panel,CommunityToolkit.WinUI.Helpers.PrintHelperOptions,Microsoft.UI.Dispatching.DispatcherQueue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (canvasContainer As Panel, Optional defaultPrintHelperOptions As PrintHelperOptions = Nothing, Optional dispatcherQueue As DispatcherQueue = Nothing)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.PrintHelper : Microsoft.UI.Xaml.Controls.Panel * CommunityToolkit.WinUI.Helpers.PrintHelperOptions * Microsoft.UI.Dispatching.DispatcherQueue -&gt; CommunityToolkit.WinUI.Helpers.PrintHelper" Usage="new CommunityToolkit.WinUI.Helpers.PrintHelper (canvasContainer, defaultPrintHelperOptions, dispatcherQueue)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="canvasContainer" Type="Microsoft.UI.Xaml.Controls.Panel" />
+        <Parameter Name="defaultPrintHelperOptions" Type="CommunityToolkit.WinUI.Helpers.PrintHelperOptions" />
+        <Parameter Name="dispatcherQueue" Type="Microsoft.UI.Dispatching.DispatcherQueue" />
+      </Parameters>
+      <Docs>
+        <param name="canvasContainer">XAML panel used to attach printing canvas. Can be hidden in your UI with Opacity = 0 for instance</param>
+        <param name="defaultPrintHelperOptions">Default settings for the print tasks</param>
+        <param name="dispatcherQueue">The DispatcherQueue that should be used to dispatch UI updates, or null if this is being called from the UI thread.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.PrintHelper" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddFrameworkElementToPrint">
+      <MemberSignature Language="C#" Value="public void AddFrameworkElementToPrint (Microsoft.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFrameworkElementToPrint(class Microsoft.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.AddFrameworkElementToPrint(Microsoft.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFrameworkElementToPrint (element As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="member this.AddFrameworkElementToPrint : Microsoft.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.AddFrameworkElementToPrint element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">Framework element to print.</param>
+        <summary>
+            Adds an element to the list of elements to print.
+            </summary>
+        <remarks>The element cannot have a parent; It must not be included in any visual tree.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationContentMarginLeft">
+      <MemberSignature Language="C#" Value="public double ApplicationContentMarginLeft { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ApplicationContentMarginLeft" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.PrintHelper.ApplicationContentMarginLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginLeft As Double" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContentMarginLeft : double with get, set" Usage="CommunityToolkit.WinUI.Helpers.PrintHelper.ApplicationContentMarginLeft" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the percentage of the app's margin width.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplicationContentMarginTop">
+      <MemberSignature Language="C#" Value="public double ApplicationContentMarginTop { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 ApplicationContentMarginTop" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.PrintHelper.ApplicationContentMarginTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationContentMarginTop As Double" />
+      <MemberSignature Language="F#" Value="member this.ApplicationContentMarginTop : double with get, set" Usage="CommunityToolkit.WinUI.Helpers.PrintHelper.ApplicationContentMarginTop" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the percentage of the app's margin height.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearListOfPrintableFrameworkElements">
+      <MemberSignature Language="C#" Value="public void ClearListOfPrintableFrameworkElements ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearListOfPrintableFrameworkElements() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.ClearListOfPrintableFrameworkElements" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearListOfPrintableFrameworkElements ()" />
+      <MemberSignature Language="F#" Value="member this.ClearListOfPrintableFrameworkElements : unit -&gt; unit" Usage="printHelper.ClearListOfPrintableFrameworkElements " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Removes all elements from the list of elements to print.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DispatcherQueue">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Dispatching.DispatcherQueue DispatcherQueue" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.PrintHelper.DispatcherQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DispatcherQueue As DispatcherQueue" />
+      <MemberSignature Language="F#" Value="member this.DispatcherQueue : Microsoft.UI.Dispatching.DispatcherQueue with get, set" Usage="CommunityToolkit.WinUI.Helpers.PrintHelper.DispatcherQueue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Dispatching.DispatcherQueue</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets which DispatcherQueue is used to dispatch UI updates.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printHelper.Dispose " />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Release associated resources
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPreviewPagesCreated">
+      <MemberSignature Language="C#" Value="public event Action&lt;System.Collections.Generic.List&lt;Microsoft.UI.Xaml.FrameworkElement&gt;&gt; OnPreviewPagesCreated;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.UI.Xaml.FrameworkElement&gt;&gt; OnPreviewPagesCreated" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.Helpers.PrintHelper.OnPreviewPagesCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPreviewPagesCreated As Action(Of List(Of FrameworkElement)) " />
+      <MemberSignature Language="F#" Value="member this.OnPreviewPagesCreated : Action&lt;System.Collections.Generic.List&lt;Microsoft.UI.Xaml.FrameworkElement&gt;&gt; " Usage="member this.OnPreviewPagesCreated : System.Action&lt;System.Collections.Generic.List&lt;Microsoft.UI.Xaml.FrameworkElement&gt;&gt; " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action&lt;System.Collections.Generic.List&lt;Microsoft.UI.Xaml.FrameworkElement&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs after print preview pages are generated.
+            </summary>
+        <remarks>
+            You can use this event to tweak the final rendering by adding/moving controls in the page.
+            </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintCanceled">
+      <MemberSignature Language="C#" Value="public event Action OnPrintCanceled;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintCanceled" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.Helpers.PrintHelper.OnPrintCanceled" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintCanceled As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintCanceled : Action " Usage="member this.OnPrintCanceled : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when a print is canceled by the user.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintFailed">
+      <MemberSignature Language="C#" Value="public event Action OnPrintFailed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintFailed" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.Helpers.PrintHelper.OnPrintFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintFailed As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintFailed : Action " Usage="member this.OnPrintFailed : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when a print fails.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPrintSucceeded">
+      <MemberSignature Language="C#" Value="public event Action OnPrintSucceeded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.Action OnPrintSucceeded" />
+      <MemberSignature Language="DocId" Value="E:CommunityToolkit.WinUI.Helpers.PrintHelper.OnPrintSucceeded" />
+      <MemberSignature Language="VB.NET" Value="Public Event OnPrintSucceeded As Action " />
+      <MemberSignature Language="F#" Value="member this.OnPrintSucceeded : Action " Usage="member this.OnPrintSucceeded : System.Action " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Action</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Occurs when a print was successful.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveFrameworkElementToPrint">
+      <MemberSignature Language="C#" Value="public void RemoveFrameworkElementToPrint (Microsoft.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFrameworkElementToPrint(class Microsoft.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.RemoveFrameworkElementToPrint(Microsoft.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFrameworkElementToPrint (element As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="member this.RemoveFrameworkElementToPrint : Microsoft.UI.Xaml.FrameworkElement -&gt; unit" Usage="printHelper.RemoveFrameworkElementToPrint element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">Framework element to remove</param>
+        <summary>
+            Removes an element from the list of elements to print.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPrintUIAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ShowPrintUIAsync (string printTaskName, bool directPrint = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ShowPrintUIAsync(string printTaskName, bool directPrint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.ShowPrintUIAsync(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowPrintUIAsync (printTaskName As String, Optional directPrint As Boolean = false) As Task" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintUIAsync : string * bool -&gt; System.Threading.Tasks.Task" Usage="printHelper.ShowPrintUIAsync (printTaskName, directPrint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printTaskName" Type="System.String" />
+        <Parameter Name="directPrint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="printTaskName">Name of the print task to use</param>
+        <param name="directPrint">Directly print the content of the container instead of relying on list built with <see cref="M:CommunityToolkit.WinUI.Helpers.PrintHelper.AddFrameworkElementToPrint(Microsoft.UI.Xaml.FrameworkElement)" /> method</param>
+        <summary>
+            Starts the print task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowPrintUIAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task ShowPrintUIAsync (string printTaskName, CommunityToolkit.WinUI.Helpers.PrintHelperOptions printHelperOptions, bool directPrint = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task ShowPrintUIAsync(string printTaskName, class CommunityToolkit.WinUI.Helpers.PrintHelperOptions printHelperOptions, bool directPrint) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.PrintHelper.ShowPrintUIAsync(System.String,CommunityToolkit.WinUI.Helpers.PrintHelperOptions,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowPrintUIAsync (printTaskName As String, printHelperOptions As PrintHelperOptions, Optional directPrint As Boolean = false) As Task" />
+      <MemberSignature Language="F#" Value="member this.ShowPrintUIAsync : string * CommunityToolkit.WinUI.Helpers.PrintHelperOptions * bool -&gt; System.Threading.Tasks.Task" Usage="printHelper.ShowPrintUIAsync (printTaskName, printHelperOptions, directPrint)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="printTaskName" Type="System.String" />
+        <Parameter Name="printHelperOptions" Type="CommunityToolkit.WinUI.Helpers.PrintHelperOptions" />
+        <Parameter Name="directPrint" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="printTaskName">Name of the print task to use</param>
+        <param name="printHelperOptions">Settings for the print task</param>
+        <param name="directPrint">Directly print the content of the container instead of relying on list built with <see cref="M:CommunityToolkit.WinUI.Helpers.PrintHelper.AddFrameworkElementToPrint(Microsoft.UI.Xaml.FrameworkElement)" /> method</param>
+        <summary>
+            Starts the print task.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

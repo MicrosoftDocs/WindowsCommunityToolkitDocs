@@ -1,0 +1,255 @@
+<Type Name="RadialProgressBar" FullName="CommunityToolkit.WinUI.UI.Controls.RadialProgressBar">
+  <TypeSignature Language="C#" Value="public class RadialProgressBar : Microsoft.UI.Xaml.Controls.ProgressBar" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadialProgressBar extends Microsoft.UI.Xaml.Controls.ProgressBar" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class RadialProgressBar&#xA;Inherits ProgressBar" />
+  <TypeSignature Language="F#" Value="type RadialProgressBar = class&#xA;    inherit ProgressBar" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.UI.Xaml.Controls.ProgressBar</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="OutlineFigurePart", Type=typeof(Microsoft.UI.Xaml.Media.PathFigure))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="OutlineFigurePart", Type=typeof(Microsoft.UI.Xaml.Media.PathFigure))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="OutlineArcPart", Type=typeof(Microsoft.UI.Xaml.Media.ArcSegment))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="OutlineArcPart", Type=typeof(Microsoft.UI.Xaml.Media.ArcSegment))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="BarFigurePart", Type=typeof(Microsoft.UI.Xaml.Media.PathFigure))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="BarFigurePart", Type=typeof(Microsoft.UI.Xaml.Media.PathFigure))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="BarArcPart", Type=typeof(Microsoft.UI.Xaml.Media.ArcSegment))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="BarArcPart", Type=typeof(Microsoft.UI.Xaml.Media.ArcSegment))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("The platform ProgressRing now supports determinate mode and is part of WinUI 2.5, please upgrade to use that control: https://docs.microsoft.com/windows/apps/winui/winui2/release-notes/winui-2.5#determinate-progressring")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("The platform ProgressRing now supports determinate mode and is part of WinUI 2.5, please upgrade to use that control: https://docs.microsoft.com/windows/apps/winui/winui2/release-notes/winui-2.5#determinate-progressring")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            An alternative implementation of a progress bar.
+            Progression is represented by a loop filling up in a clockwise fashion.
+            Like the traditional progress bar, it inherits from RangeBase, so Minimum, Maximum and Value properties work the same way.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RadialProgressBar ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar" /> class.
+            Create a default circular progress bar
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="radialProgressBar.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Update the visual state of the control when its template is changed.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMaximumChanged">
+      <MemberSignature Language="C#" Value="protected override void OnMaximumChanged (double oldMaximum, double newMaximum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMaximumChanged(float64 oldMaximum, float64 newMaximum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OnMaximumChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMaximumChanged (oldMaximum As Double, newMaximum As Double)" />
+      <MemberSignature Language="F#" Value="override this.OnMaximumChanged : double * double -&gt; unit" Usage="radialProgressBar.OnMaximumChanged (oldMaximum, newMaximum)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldMaximum" Type="System.Double" />
+        <Parameter Name="newMaximum" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="oldMaximum">Old value of the Maximum property.</param>
+        <param name="newMaximum">New value of the Maximum property.</param>
+        <summary>
+            Called when the Maximum property changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMinimumChanged">
+      <MemberSignature Language="C#" Value="protected override void OnMinimumChanged (double oldMinimum, double newMinimum);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMinimumChanged(float64 oldMinimum, float64 newMinimum) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OnMinimumChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMinimumChanged (oldMinimum As Double, newMinimum As Double)" />
+      <MemberSignature Language="F#" Value="override this.OnMinimumChanged : double * double -&gt; unit" Usage="radialProgressBar.OnMinimumChanged (oldMinimum, newMinimum)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldMinimum" Type="System.Double" />
+        <Parameter Name="newMinimum" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="oldMinimum">Old value of the Minimum property.</param>
+        <param name="newMinimum">New value of the Minimum property.</param>
+        <summary>
+            Called when the Minimum property changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnValueChanged">
+      <MemberSignature Language="C#" Value="protected override void OnValueChanged (double oldValue, double newValue);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValueChanged(float64 oldValue, float64 newValue) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OnValueChanged(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValueChanged (oldValue As Double, newValue As Double)" />
+      <MemberSignature Language="F#" Value="override this.OnValueChanged : double * double -&gt; unit" Usage="radialProgressBar.OnValueChanged (oldValue, newValue)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oldValue" Type="System.Double" />
+        <Parameter Name="newValue" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="oldValue">Old value of the Value property.</param>
+        <param name="newValue">New value of the Value property.</param>
+        <summary>
+            Called when the Value property changes.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Outline">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Media.Brush Outline { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Media.Brush Outline" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.Outline" />
+      <MemberSignature Language="VB.NET" Value="Public Property Outline As Brush" />
+      <MemberSignature Language="F#" Value="member this.Outline : Microsoft.UI.Xaml.Media.Brush with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.Outline" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Brush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the color of the circular outline on which the segment is drawn
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OutlineProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty OutlineProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty OutlineProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OutlineProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OutlineProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OutlineProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.OutlineProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Outline dependency property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Thickness">
+      <MemberSignature Language="C#" Value="public double Thickness { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float64 Thickness" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.Thickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property Thickness As Double" />
+      <MemberSignature Language="F#" Value="member this.Thickness : double with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.Thickness" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Double</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the thickness of the circular outline and segment
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ThicknessProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty ThicknessProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty ThicknessProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.ThicknessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ThicknessProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ThicknessProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.RadialProgressBar.ThicknessProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.Core</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Thickness dependency property
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

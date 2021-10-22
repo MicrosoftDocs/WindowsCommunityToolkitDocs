@@ -1,0 +1,160 @@
+<Type Name="AlsoNotifyChangeForAttribute" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute">
+  <TypeSignature Language="C#" Value="public sealed class AlsoNotifyChangeForAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AlsoNotifyChangeForAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AlsoNotifyChangeForAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AlsoNotifyChangeForAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=true, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Field, AllowMultiple=true, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+             An attribute that can be used to support <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservablePropertyAttribute" /> in generated properties. When this attribute is
+             used, the generated property setter will also call <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" /> (or the equivalent
+             method in the target class) for the properties specified in the attribute data. This can be useful to keep the code compact when
+             there are one or more dependent properties that should also be reported as updated when the value of the annotated observable
+             property is changed. If this attribute is used in a field without <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservablePropertyAttribute" />, it is ignored.
+             <para>
+             In order to use this attribute, the containing type has to implement the <see cref="T:System.ComponentModel.INotifyPropertyChanged" /> interface
+             and expose a method with the same signature as <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanged(System.String)" />. If the containing
+             type also implements the <see cref="T:System.ComponentModel.INotifyPropertyChanging" /> interface and exposes a method with the same signature as
+             <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject.OnPropertyChanging(System.String)" />, then this method will be invoked as well by the property setter.
+             </para><para>
+             This attribute can be used as follows:
+             <code>
+             partial class MyViewModel : ObservableObject
+             {
+                 [ObservableProperty]
+                 [AlsoNotifyChangeFor(nameof(FullName))]
+                 private string name;
+            
+                 [ObservableProperty]
+                 [AlsoNotifyChangeFor(nameof(FullName))]
+                 private string surname;
+            
+                 public string FullName =&gt; $"{Name} {Surname}";
+             }
+             </code></para>
+             And with this, code analogous to this will be generated:
+             <code>
+             partial class MyViewModel
+             {
+                 public string Name
+                 {
+                     get =&gt; name;
+                     set
+                     {
+                         if (SetProperty(ref name, value))
+                         {
+                             OnPropertyChanged(nameof(FullName));
+                         }
+                     }
+                 }
+            
+                 public string Surname
+                 {
+                     get =&gt; surname;
+                     set
+                     {
+                         if (SetProperty(ref surname, value))
+                         {
+                             OnPropertyChanged(nameof(FullName));
+                         }
+                     }
+                 }
+             }
+             </code></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AlsoNotifyChangeForAttribute (string propertyName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute : string -&gt; Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute" Usage="new Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute propertyName" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to also notify when the annotated property changes.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AlsoNotifyChangeForAttribute (string propertyName, params string[] otherPropertyNames);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, string[] otherPropertyNames) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute.#ctor(System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, ParamArray otherPropertyNames As String())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute : string * string[] -&gt; Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute" Usage="new Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute (propertyName, otherPropertyNames)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="otherPropertyNames" Type="System.String[]">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.ParamArray]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.ParamArray&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+      </Parameters>
+      <Docs>
+        <param name="propertyName">The name of the property to also notify when the annotated property changes.</param>
+        <param name="otherPropertyNames">
+            The other property names to also notify when the annotated property changes. This parameter can optionally
+            be used to indicate a series of dependent properties from the same attribute, to keep the code more compact.
+            </param>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PropertyNames">
+      <MemberSignature Language="C#" Value="public string[] PropertyNames { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] PropertyNames" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute.PropertyNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyNames As String()" />
+      <MemberSignature Language="F#" Value="member this.PropertyNames : string[]" Usage="Microsoft.Toolkit.Mvvm.ComponentModel.AlsoNotifyChangeForAttribute.PropertyNames" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the property names to also notify when the annotated property changes.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,313 @@
+<Type Name="DeepLinkParser" FullName="CommunityToolkit.WinUI.Helpers.DeepLinkParser">
+  <TypeSignature Language="C#" Value="public class DeepLinkParser : System.Collections.Generic.Dictionary&lt;string,string&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeepLinkParser extends System.Collections.Generic.Dictionary`2&lt;string, string&gt;" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeepLinkParser&#xA;Inherits Dictionary(Of String, String)" />
+  <TypeSignature Language="F#" Value="type DeepLinkParser = class&#xA;    inherit Dictionary&lt;string, string&gt;" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Collections.Generic.Dictionary&lt;System.String,System.String&gt;</BaseTypeName>
+    <BaseTypeArguments>
+      <BaseTypeArgument TypeParamName="!0">System.String</BaseTypeArgument>
+      <BaseTypeArgument TypeParamName="!1">System.String</BaseTypeArgument>
+    </BaseTypeArguments>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides assistance with parsing <see cref="T:Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs" /> and its .Arguments property in to a key-value set and target path
+            </summary>
+    <remarks>To be added.</remarks>
+    <example>
+            in OnLaunched of App.xaml.cs:
+            <code lang="c#">
+            if (e.PrelaunchActivated == false)
+            {
+                if (rootFrame.Content == null)
+                {
+                    var parser = DeepLinkParser.Create(args);
+                    if (parser["username"] == "John Doe")
+                    {
+                        // do work here
+                    }
+                    if (parser.Root == "Signup")
+                    {
+                        rootFrame.Navigate(typeof(Signup));
+                    }
+            </code></example>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As String)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.DeepLinkParser : string -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.DeepLinkParser uri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null, empty, or consists only of whitespace characters</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (uri As Uri)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.DeepLinkParser : Uri -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.DeepLinkParser uri" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">Thrown if <paramref name="uri" /> is null</exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected DeepLinkParser (Windows.ApplicationModel.Activation.IActivatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Windows.ApplicationModel.Activation.IActivatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.#ctor(Windows.ApplicationModel.Activation.IActivatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (args As IActivatedEventArgs)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.WinUI.Helpers.DeepLinkParser : Windows.ApplicationModel.Activation.IActivatedEventArgs -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="new CommunityToolkit.WinUI.Helpers.DeepLinkParser args" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /> instance containing the event data.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">'args' is not an instance of ILaunchActivatedEventArgs or IProtocolActivatedEventArgs - args</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.Helpers.DeepLinkParser Create (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.Helpers.DeepLinkParser Create(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (uri As String) As DeepLinkParser" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI to parse.</param>
+        <summary>
+            Creates an instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> for the given <see cref="T:System.Uri" /></summary>
+        <returns>An instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="uri" /> will be tested for null</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.Helpers.DeepLinkParser Create (Uri uri);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.Helpers.DeepLinkParser Create(class System.Uri uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (uri As Uri) As DeepLinkParser" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI to parse.</param>
+        <summary>
+            Creates an instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> for the given <see cref="T:System.Uri" /></summary>
+        <returns>An instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="uri" /> will be tested for null</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.Helpers.DeepLinkParser Create (Windows.ApplicationModel.Activation.IActivatedEventArgs args);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.Helpers.DeepLinkParser Create(class Windows.ApplicationModel.Activation.IActivatedEventArgs args) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create(Windows.ApplicationModel.Activation.IActivatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (args As IActivatedEventArgs) As DeepLinkParser" />
+      <MemberSignature Language="F#" Value="static member Create : Windows.ApplicationModel.Activation.IActivatedEventArgs -&gt; CommunityToolkit.WinUI.Helpers.DeepLinkParser" Usage="CommunityToolkit.WinUI.Helpers.DeepLinkParser.Create args" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.Helpers.DeepLinkParser</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="args" Type="Windows.ApplicationModel.Activation.IActivatedEventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="args">The <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /> instance containing the launch Uri data.</param>
+        <summary>
+            Creates an instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> for the given <see cref="T:Windows.ApplicationModel.Activation.IActivatedEventArgs" /></summary>
+        <returns>An instance of <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /></returns>
+        <remarks>
+          <paramref name="args" /> will be cast to <see cref="T:Windows.ApplicationModel.Activation.ILaunchActivatedEventArgs" /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseUriString">
+      <MemberSignature Language="C#" Value="protected virtual void ParseUriString (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ParseUriString(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.ParseUriString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ParseUriString (uri As String)" />
+      <MemberSignature Language="F#" Value="abstract member ParseUriString : string -&gt; unit&#xA;override this.ParseUriString : string -&gt; unit" Usage="deepLinkParser.ParseUriString uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Parses the URI string in to components.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public string Root { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Root" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.Helpers.DeepLinkParser.Root" />
+      <MemberSignature Language="VB.NET" Value="Public Property Root As String" />
+      <MemberSignature Language="F#" Value="member this.Root : string with get, set" Usage="CommunityToolkit.WinUI.Helpers.DeepLinkParser.Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Gets or sets the root path of the Deep link URI</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+        <example>
+            for "MainPage/Options?option1=value1"
+            Root = "MainPage/Options"
+            </example>
+      </Docs>
+    </Member>
+    <Member MemberName="SetRoot">
+      <MemberSignature Language="C#" Value="protected virtual void SetRoot (Uri validatedUri);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetRoot(class System.Uri validatedUri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.SetRoot(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetRoot (validatedUri As Uri)" />
+      <MemberSignature Language="F#" Value="abstract member SetRoot : Uri -&gt; unit&#xA;override this.SetRoot : Uri -&gt; unit" Usage="deepLinkParser.SetRoot validatedUri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="validatedUri" Type="System.Uri" />
+      </Parameters>
+      <Docs>
+        <param name="validatedUri">The validated URI (from <see cref="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.ValidateSourceUri(System.String)" />).</param>
+        <summary>
+            Sets <see cref="P:CommunityToolkit.WinUI.Helpers.DeepLinkParser.Root" /> on this <see cref="T:CommunityToolkit.WinUI.Helpers.DeepLinkParser" /> instance and computes the query string position
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateSourceUri">
+      <MemberSignature Language="C#" Value="protected static Uri ValidateSourceUri (string uri);" />
+      <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Uri ValidateSourceUri(string uri) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.Helpers.DeepLinkParser.ValidateSourceUri(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function ValidateSourceUri (uri As String) As Uri" />
+      <MemberSignature Language="F#" Value="static member ValidateSourceUri : string -&gt; Uri" Usage="CommunityToolkit.WinUI.Helpers.DeepLinkParser.ValidateSourceUri uri" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Uri</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="uri" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="uri">The URI.</param>
+        <summary>
+            Validates the source URI.
+            </summary>
+        <returns>
+          <paramref name="uri" /> as a <c>System.Uri</c> instance
+            </returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">thrown if <paramref name="uri" /> is null</exception>
+        <exception cref="T:System.ArgumentException">Not a valid URI format</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

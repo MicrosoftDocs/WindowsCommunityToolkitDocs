@@ -1,0 +1,196 @@
+<Type Name="MockProvider" FullName="CommunityToolkit.Authentication.MockProvider">
+  <TypeSignature Language="C#" Value="public class MockProvider : CommunityToolkit.Authentication.BaseProvider" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MockProvider extends CommunityToolkit.Authentication.BaseProvider" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Authentication.MockProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class MockProvider&#xA;Inherits BaseProvider" />
+  <TypeSignature Language="F#" Value="type MockProvider = class&#xA;    inherit BaseProvider" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.Authentication.BaseProvider</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("MockProvider is meant for prototyping and demonstration purposes only. Not for use in production applications.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("MockProvider is meant for prototyping and demonstration purposes only. Not for use in production applications.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Provider to connect to the example data set for Microsoft Graph. Useful for prototyping and samples.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MockProvider (bool signedIn = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool signedIn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Optional signedIn As Boolean = true)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Authentication.MockProvider : bool -&gt; CommunityToolkit.Authentication.MockProvider" Usage="new CommunityToolkit.Authentication.MockProvider signedIn" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="signedIn" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="signedIn">Configuration for the MockProvider.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Authentication.MockProvider" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AuthenticateRequestAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task AuthenticateRequestAsync (System.Net.Http.HttpRequestMessage request);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task AuthenticateRequestAsync(class System.Net.Http.HttpRequestMessage request) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.AuthenticateRequestAsync(System.Net.Http.HttpRequestMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AuthenticateRequestAsync (request As HttpRequestMessage) As Task" />
+      <MemberSignature Language="F#" Value="override this.AuthenticateRequestAsync : System.Net.Http.HttpRequestMessage -&gt; System.Threading.Tasks.Task" Usage="mockProvider.AuthenticateRequestAsync request" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="request" Type="System.Net.Http.HttpRequestMessage" />
+      </Parameters>
+      <Docs>
+        <param name="request">The request to authenticate.</param>
+        <summary>
+            Authenticate an outgoing request.
+            </summary>
+        <returns>A task upon completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CurrentAccountId">
+      <MemberSignature Language="C#" Value="public override string CurrentAccountId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string CurrentAccountId" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Authentication.MockProvider.CurrentAccountId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CurrentAccountId As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentAccountId : string" Usage="CommunityToolkit.Authentication.MockProvider.CurrentAccountId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the id of the currently signed in user account.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;string&gt; GetTokenAsync (bool silentOnly = false);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;string&gt; GetTokenAsync(bool silentOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.GetTokenAsync(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTokenAsync (Optional silentOnly As Boolean = false) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="override this.GetTokenAsync : bool -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="mockProvider.GetTokenAsync silentOnly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="silentOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="silentOnly">Determines if the acquisition should be done without prompts to the user.</param>
+        <summary>
+            Retrieve a token for the authenticated user.
+            </summary>
+        <returns>A token string for the authenticated user.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignInAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task SignInAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task SignInAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.SignInAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SignInAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.SignInAsync : unit -&gt; System.Threading.Tasks.Task" Usage="mockProvider.SignInAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sign in the user.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SignOutAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task SignOutAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task SignOutAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.SignOutAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SignOutAsync () As Task" />
+      <MemberSignature Language="F#" Value="override this.SignOutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="mockProvider.SignOutAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Sign out the user.
+            </summary>
+        <returns>
+          <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TrySilentSignInAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;bool&gt; TrySilentSignInAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TrySilentSignInAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MockProvider.TrySilentSignInAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function TrySilentSignInAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="override this.TrySilentSignInAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="mockProvider.TrySilentSignInAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Tries to check if the user is logged in without prompting to login.
+            </summary>
+        <returns>A boolean indicating success or failure to sign in silently.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
