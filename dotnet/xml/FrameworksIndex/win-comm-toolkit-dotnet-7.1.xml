@@ -68,12 +68,17 @@
       <Member Id="P:CommunityToolkit.Authentication.MockProvider.CurrentAccountId" />
     </Type>
     <Type Name="CommunityToolkit.Authentication.MsalProvider" Id="T:CommunityToolkit.Authentication.MsalProvider">
-      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean)" />
+      <Member Id="F:CommunityToolkit.Authentication.MsalProvider.MSAccountBrokerRedirectUriPrefix" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(Microsoft.Identity.Client.IPublicClientApplication,System.String[],System.Boolean)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean,System.Boolean,System.String)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.AuthenticateRequestAsync(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.CreatePublicClientApplication(System.String,System.String,System.String,System.Boolean)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.GetTokenAsync(System.Boolean)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.GetTokenWithScopesAsync(System.String[],System.Boolean)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.SignInAsync" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.SignOutAsync" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.TrySilentSignInAsync" />
+      <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Account" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Client" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.CurrentAccountId" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Scopes" />
@@ -133,6 +138,9 @@
   <Namespace Name="CommunityToolkit.Authentication.Extensions">
     <Type Name="CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions" Id="T:CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions">
       <Member Id="M:CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions.AuthenticateAsync(System.Net.Http.HttpRequestMessage)" />
+    </Type>
+    <Type Name="CommunityToolkit.Authentication.Extensions.MsalProviderExtensions" Id="T:CommunityToolkit.Authentication.Extensions.MsalProviderExtensions">
+      <Member Id="M:CommunityToolkit.Authentication.Extensions.MsalProviderExtensions.InitTokenCacheAsync(CommunityToolkit.Authentication.MsalProvider,Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource)" />
     </Type>
   </Namespace>
   <Namespace Name="CommunityToolkit.Graph.Extensions">
