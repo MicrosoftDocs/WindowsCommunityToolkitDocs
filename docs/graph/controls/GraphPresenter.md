@@ -9,7 +9,7 @@ dev_langs:
 
 # (Experimental) GraphPresenter XAML Control
 
-The GraphPresenter is a flexible XAML control for visualizing Graph API data. Provide an `IBaseRequestBuilder` implementation and the GraphPresenter will automatically fetch the data from the proper Graph endpoint, ready for visualization. Because every Graph entity is different, this control has no default of UI of it's own. It is up to the developer to decide how the data should be presented by setting the control's `ContentTemplate`. This control is great for prototyping and experimentation purposes, but we suggest creating your own user controls for production scenarios.
+The GraphPresenter is a flexible XAML control for visualizing Graph API data. Provide an `IBaseRequestBuilder` implementation and the GraphPresenter will automatically fetch the data from the proper Graph endpoint, ready for visualization. Because every Graph entity is different, this control has no default UI of it's own. It is up to the developer to decide how the data should be presented by setting the control's `ContentTemplate`. This control is great for prototyping and experimentation purposes, but we suggest creating your own user controls for production scenarios.
 
 Available in the `CommunityToolkit.Graph.Uwp` package.
 
