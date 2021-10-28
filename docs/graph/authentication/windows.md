@@ -59,7 +59,7 @@ using CommunityToolkit.Authentication;
 ProviderManager.Instance.GlobalProvider = new WindowsProvider(new string[] { "User.Read", "Tasks.ReadWrite" });
 ```
 
-The WindowsProvider can also be configured to disabled auto-login or show custom content in the `AccountsSettingsPane`.
+The WindowsProvider can also be configured to disable auto-login or show custom content in the `AccountsSettingsPane`.
 Configuration for specifying supported account types (such as AAD) is available via the `WebAccountProviderConfig` object.
 
 ```CSharp
