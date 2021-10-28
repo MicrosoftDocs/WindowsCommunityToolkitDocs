@@ -26,7 +26,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
             IsCollection="True">
         <controls:GraphPresenter.ContentTemplate>
             <DataTemplate>
-                <!-- Return result is a collection of DriveItem's as we used 'IsCollection', so bind that first. -->
+                <!-- Return result is a collection of DriveItems as we used 'IsCollection', so bind that first. -->
                 <ItemsControl ItemsSource="{Binding}">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate x:DataType="graph:DriveItem">
