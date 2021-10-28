@@ -1,18 +1,15 @@
 ---
-title: Getting started with WCT Graph Helpers and Controls
+title: Getting started with WCT Graph helpers and controls
 author: shweaver-MSFT
-description: Get started using authentication providers and Graph powered helpers from the Windows Community Toolkit.
+description: Get started using authentication providers and Graph powered controls and helpers from the Windows Community Toolkit.
 keywords: uwp, wpf, netstandard, windows, community, toolkit, graph, login, authentication, provider, providers, identity
 dev_langs:
   - csharp
 ---
 
-# Getting Started
+# Getting started
 
 To get started using Graph data in your application, you'll first need to enable authentication.
-
-> [!IMPORTANT]
-> These packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
 
 ## Set the global authentication provider
 
@@ -37,7 +34,7 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
     ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
     ```
 
-> Note: You can use the `Scopes` property to preemptively request permissions from the user of your app for data your app needs to access from Microsoft Graph.
+> Note: Use the `Scopes` property to preemptively request permissions from the user of your app for data your app needs to access from Microsoft Graph.
 
 ### Authenticate with WindowsProvider
 
@@ -90,42 +87,6 @@ ProviderManager.Instance.ProviderStateChanged += (s, e)
     {
         var graphClient = provider.GetClient();
         var me = await graphClient.Me.Request().GetAsync();
-    }
-}
-```
-
-### Use the Beta API
-
-You can use the `ProviderManager.Instance` to listen to changes in authentication status with the `ProviderUpdated` event or get direct access to the [.NET Graph Beta API](https://github.com/microsoftgraph/msgraph-beta-sdk-dotnet) through `ProviderManager.Instance.GlobalProvider.GetBetaClient()`, just be sure to check if the `GlobalProvider` has been set first and its `State` is `SignedIn`:
-
-```csharp
-using CommunityToolkit.Authentication;
-using CommunityToolkit.Graph.Extensions;
-
-public ImageSource GetMyPhoto()
-{
-    IProvider provider = ProviderManager.Instance.GlobalProvider;
-
-    if (provider?.State == ProviderState.SignedIn)
-    {
-        // Get the beta client
-        GraphServiceClient betaGraphClient = provider.GetBetaClient();
-
-        try
-        {
-            // Make a request to the beta endpoint for the current user's photo.
-            var photoStream = await betaGraphClient.Me.Photo.Content.Request().GetAsync();
-
-            using var ras = photoStream.AsRandomAccessStream();
-            var bitmap = new BitmapImage();
-            await bitmap.SetSourceAsync(ras);
-
-            return bitmap;
-        }
-        catch
-        {
-            return null;
-        }
     }
 }
 ```
