@@ -76,7 +76,7 @@ void OnSettingsCommandInvoked(IUICommand command)
     System.Diagnostics.Debug.WriteLine("AccountsSettingsPane command invoked: " + command.Id);
 }
 
-// Configure which types accounts should be available to choose from. The default is MSA, but AAD is also supported.
+// Configure which types of accounts should be available to choose from. The default is MSA, but AAD is also supported.
 var webAccountProviderConfig = new WebAccountProviderConfig(WebAccountProviderType.Msa);
 
 // ClientId is only required for approving admin level consent in AAD tenants or for supporting advanced authentication scenarios like SSO.
