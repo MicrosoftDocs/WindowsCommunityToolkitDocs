@@ -14,7 +14,7 @@ Lottie simplifies the design-to-code workflow for bringing engaging, interactive
 ![Lottie Gif](../resources/images/Animations/Lottie/LottieDocs_Intro.gif)
 
 > [!div class="nextstepaction"]
-> [Try it in the sample app](aka.ms/lottiesamples)
+> [Try it in the sample app](https://aka.ms/lottiesamples)
 
 ## Key Concepts
 
