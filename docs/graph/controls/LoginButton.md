@@ -49,6 +49,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 
 * **Namespace:** CommunityToolkit.Graph.Uwp.Controls
 * **NuGet package:** [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp)
+* **Scope:** `User.Read`
 
 ## API
 
