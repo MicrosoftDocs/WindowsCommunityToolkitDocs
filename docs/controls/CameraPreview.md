@@ -94,7 +94,7 @@ private void CameraPreviewControl_PreviewFailed(object sender, PreviewFailedEven
 Demonstrates using the camera control and camera helper to preview video from a specific media frame source group.
 
 ```csharp
-var availableFrameSourceGroups = = await CameraHelper.GetFrameSourceGroupsAsync();
+var availableFrameSourceGroups = await CameraHelper.GetFrameSourceGroupsAsync();
 if(availableFrameSourceGroups != null)
 {
   CameraHelper cameraHelper = new CameraHelper() { FrameSourceGroup = availableFrameSourceGroups.FirstOrDefault() };
