@@ -11,21 +11,21 @@ Commonly used **converters** that allow the data to be modified as it passes thr
 
 | Converter | Purpose |
 | --- | --- |
-| [BoolNegationConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.boolnegationconverter?view=uwp-toolkit-dotnet) | Converts a boolean to the inverse value (True to False and vice versa) |
-| [BoolToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltoobjectconverter?view=uwp-toolkit-dotnet) | Converts a boolean value into an object. The converted value is selected between the values of TrueValue and FalseValue properties |
-| [BoolToVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltovisibilityconverter?view=uwp-toolkit-dotnet) | Converts a boolean value into a Visibility enumeration |
-| [CollectionVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.collectionvisibilityconverter?view=uwp-toolkit-dotnet) | Converts a collection into a Visibility enumeration (Collapsed if the given collection is empty or null) |
-| [DoubleToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletoobjectconverter?view=uwp-toolkit-dotnet) | Converts a double value into an object based on a value to be greater than, less than, or in-between. |
-| [DoubleToVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletovisibilityconverter?view=uwp-toolkit-dotnet) | Converts a double value into a Visibility enumeration based on a value to be greater than, less than, or in-between. |
-| [EmptyCollectionToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptycollectiontoobjectconverter?view=uwp-toolkit-dotnet) | Converts a collection into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
-| [EmptyObjectToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties |
-| [EmptyStringToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptystringtoobjectconverter?view=uwp-toolkit-dotnet) | Converts a string into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
-| [FormatStringConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.formatstringconverter?view=uwp-toolkit-dotnet) | Converts an [IFormattable](/dotnet/api/system.string.format?view=netframework-4.7) value into a string. The ConverterParameter provides the string format |
-| [ResourceNameToResourceStringConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.resourcenametoresourcestringconverter?view=uwp-toolkit-dotnet) | Converter to look up the source string in the App Resources strings and returns its value, if found |
-| [StringFormatConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.stringformatconverter?view=uwp-toolkit-dotnet) | Converts a source object to the formatted string version using [string.Format](/dotnet/api/system.string.format?view=netframework-4.7). The ConverterParameter provides the string format |
-| [StringVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.stringvisibilityconverter?view=uwp-toolkit-dotnet) | Converts a string value into a Visibility enumeration (if the value is null or empty returns a collapsed value) |
-| [ToolbarFormatActiveConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.toolbarformatactiveconverter?view=uwp-toolkit-dotnet) | Compares if Formats are equal and returns bool |
-| [VisibilityToBoolConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.visibilitytoboolconverter?view=uwp-toolkit-dotnet) | This class converts a Visibility enumeration to a boolean value |
+| [BoolNegationConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.boolnegationconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a boolean to the inverse value (True to False and vice versa) |
+| [BoolToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltoobjectconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a boolean value into an object. The converted value is selected between the values of TrueValue and FalseValue properties |
+| [BoolToVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.booltovisibilityconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a boolean value into a Visibility enumeration |
+| [CollectionVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.collectionvisibilityconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a collection into a Visibility enumeration (Collapsed if the given collection is empty or null) |
+| [DoubleToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletoobjectconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a double value into an object based on a value to be greater than, less than, or in-between. |
+| [DoubleToVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.doubletovisibilityconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a double value into a Visibility enumeration based on a value to be greater than, less than, or in-between. |
+| [EmptyCollectionToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptycollectiontoobjectconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a collection into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
+| [EmptyObjectToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptyobjecttoobjectconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a check on a null value into an object. The converted value is selected between the values of EmptyValue and NonEmptyValue properties |
+| [EmptyStringToObjectConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.emptystringtoobjectconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a string into an object. The converted value is selected between the values of EmptyValue and NotEmptyValue properties |
+| [FormatStringConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.formatstringconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts an [IFormattable](/dotnet/api/system.string.format?view=netframework-4.7&preserve-view=true) value into a string. The ConverterParameter provides the string format |
+| [ResourceNameToResourceStringConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.resourcenametoresourcestringconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converter to look up the source string in the App Resources strings and returns its value, if found |
+| [StringFormatConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.stringformatconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a source object to the formatted string version using [string.Format](/dotnet/api/system.string.format?view=netframework-4.7&preserve-view=true). The ConverterParameter provides the string format |
+| [StringVisibilityConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.stringvisibilityconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Converts a string value into a Visibility enumeration (if the value is null or empty returns a collapsed value) |
+| [ToolbarFormatActiveConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.toolbarformatactiveconverter?view=uwp-toolkit-dotnet&preserve-view=true) | Compares if Formats are equal and returns bool |
+| [VisibilityToBoolConverter](/dotnet/api/microsoft.toolkit.uwp.ui.converters.visibilitytoboolconverter?view=uwp-toolkit-dotnet&preserve-view=true) | This class converts a Visibility enumeration to a boolean value |
 
 ## BoolToObjectConverter Examples
 
@@ -152,7 +152,7 @@ this can be used as follows to hide a list with no items and instead show text t
 
 ## StringFormatConverter Examples
 
-`StringFormatConverter` allows you to format a string property upon binding wrapping [string.Format](/dotnet/api/system.string.format?view=netframework-4.7).  
+`StringFormatConverter` allows you to format a string property upon binding wrapping [string.Format](/dotnet/api/system.string.format?view=netframework-4.7&preserve-view=true).  
 It only allows for a single input value (the binding string), but can be formatted with the regular string.Format
 methods.  First, add it to your page resources:
 
