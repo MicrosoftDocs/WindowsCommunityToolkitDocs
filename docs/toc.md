@@ -365,6 +365,8 @@
 
 ### [WebViewExtensions](extensions/WebViewExtensions.md)
 
+### [GridExtensions](extensions/GridExtensions.md)
+
 ## Collections
 
 ### [Observable Groups](collections/ObservableGroups.md)
