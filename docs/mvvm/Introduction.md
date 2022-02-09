@@ -67,7 +67,7 @@ The included types are:
   - [`IRecipient<TMessage>`](Messenger.md)
   - [`MessageHandler<TRecipient, TMessage>`](Messenger.md)
 - **Microsoft.Toolkit.Mvvm.Messaging.Messages**
-  - [`PropertyChangedMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.RequestMessage-1)
+  - [`PropertyChangedMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.PropertyChangedMessage-1)
   - [`RequestMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.RequestMessage-1)
   - [`AsyncRequestMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.AsyncRequestMessage-1)
   - [`CollectionRequestMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.CollectionRequestMessage-1)
