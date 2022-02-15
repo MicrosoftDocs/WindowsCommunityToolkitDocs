@@ -54,7 +54,7 @@ ProviderManager.Instance.GlobalProvider = new MsalProvider(clientId, scopes);
 
 | Method | Arguments | Returns | Description |
 | -- | -- | -- | -- |
-| GetTokenAsync | bool silentOnly = false, string[] scopes = null | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
+| GetTokenAsync | bool silentOnly = false | Task&lt;string&gt; | Retrieve a token for the authenticated user. |
 | AuthenticateRequestAsync | HttpRequestMessage | Task | Authenticate an outgoing request. |
 | SignInAsync | | Task | Sign in a user. |
 | SignOutAsync | | Task | Sign out the current user. |
