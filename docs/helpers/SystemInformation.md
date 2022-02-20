@@ -8,7 +8,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # SystemInformation
 
-The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformation?view=uwp-toolkit-dotnet) class is a utility class that provides properties with some system, application and device information.
+The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformation?view=uwp-toolkit-dotnet&preserve-view=true) class is a utility class that provides properties with some system, application and device information.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Helpers?sample=SystemInformation)
@@ -51,7 +51,7 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 
 ## Sample Project
 
-[System Information Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[System Information Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/SystemInformation). You can [see this in action](uwpct://Helpers?sample=SystemInformation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -62,4 +62,4 @@ The [SystemInformation](/dotnet/api/microsoft.toolkit.uwp.helpers.systeminformat
 
 ## API
 
-* [SystemInformation source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/SystemInformation.cs)
+* [SystemInformation source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/SystemInformation.cs)

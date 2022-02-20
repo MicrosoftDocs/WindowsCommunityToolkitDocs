@@ -81,4 +81,4 @@ End Using
 
 ## API
 
-* [HttpHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs)
+* [HttpHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs)

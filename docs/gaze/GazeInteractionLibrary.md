@@ -33,7 +33,7 @@ To use the gaze input APIs, you must register the gazeInput capability in the ap
 
 The Gaze Interaction Library currently supports the following features:
 
-* Dwell based activation of XAML controls, like buttons, toggle buttons, check boxes, etc.
+* Dwell based activation of XAML button and toggle button controls
 * Enabling gaze interactions for the entire XAML page or for a portion of it (like a single control)
 * Customizing the dwell times associated with specific controls
 * Controlling repetition of the dwell invocation of controls
@@ -194,7 +194,7 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## Sample Project
 
-[GazeInteractionPage](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[GazeInteractionPage](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GazeInteraction/). You can [see this in action](uwpct://Gaze?sample=GazeInteraction) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -205,7 +205,7 @@ private void OnInvokeProgress(object sender, DwellProgressEventArgs e)
 
 ## API
 
-* [Gaze Interaction Library source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
+* [Gaze Interaction Library source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.Input.GazeInteraction)
 
 ## Related Topics
 

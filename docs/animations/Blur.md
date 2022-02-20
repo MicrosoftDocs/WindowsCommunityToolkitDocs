@@ -113,7 +113,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## Sample Project
 
-[Blur Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Blur). You can [see this in action](uwpct://Animations?sample=Blur) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Blur Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Blur). You can [see this in action](uwpct://Animations?sample=Blur) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -124,7 +124,7 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 ## API
 
-- [Blur source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Animations/BlurEffectAnimation.cs)
+- [Blur source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Animations/BlurEffectAnimation.cs)
 
 ## Related Topics
 

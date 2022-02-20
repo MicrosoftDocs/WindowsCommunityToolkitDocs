@@ -55,7 +55,7 @@ Brush brush = PipelineBuilder.FromBackdropAcrylic(
 
 ## Sample Project
 
-[AcrylicBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[AcrylicBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AcrylicBrush). You can [see this in action](uwpct://Brushes?sample=AcrylicBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -66,8 +66,8 @@ Brush brush = PipelineBuilder.FromBackdropAcrylic(
 
 ## API
 
-* [AcrylicBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/AcrylicBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [AcrylicBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/AcrylicBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 

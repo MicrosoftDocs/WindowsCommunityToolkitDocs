@@ -95,17 +95,17 @@
 
 ### [Microsoft Graph Extensions](graph/helpers/extensions.md)
 
-<!-- ### RoamingSettingsHelper -->
+### [Roaming Settings](graph/helpers/roaming-settings.md)
 
 ## Controls
 
-<!-- ### GraphPresenter -->
+### [GraphPresenter (Experimental)](graph/controls/GraphPresenter.md)
 
-### [LoginButton (Preview)](graph/controls/LoginButton.md)
+### [LoginButton](graph/controls/LoginButton.md)
 
-### [PersonView (Preview)](graph/controls/PersonView.md)
+### [PeoplePicker](graph/controls/PeoplePicker.md)
 
-### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
+### [PersonView](graph/controls/PersonView.md)
 
 # WinUI 3
 
@@ -126,6 +126,8 @@
 ### [ColorPicker](controls/ColorPicker.md)
 
 ### [ColorPickerButton](controls/ColorPicker.md)
+
+### [ConstrainedBox](controls/ConstrainedBox.md)
 
 ### DataGrid
 
@@ -179,6 +181,8 @@
 
 ### [MasterDetailsView](controls/MasterDetailsView.md)
 
+### [MetadataControl](controls/MetadataControl.md)
+
 ### [OrbitView](controls/OrbitView.md)
 
 ### [RadialGauge](controls/RadialGauge.md)
@@ -186,6 +190,8 @@
 ### [RangeSelector](controls/RangeSelector.md)
 
 ### [RemoteDevicePicker](controls/RemoteDevicePicker.md)
+
+### [RichSuggestBox](controls/RichSuggestBox.md)
 
 ### [RotatorTile](controls/RotatorTile.md)
 
@@ -281,6 +287,8 @@
 
 ### [AdvancedCollectionView](helpers/AdvancedCollectionView.md)
 
+### [Attached Shadows](helpers/AttachedShadows.md)
+
 ### [BackgroundTaskHelper](helpers/BackgroundTaskHelper.md)
 
 ### [BindableValueHolder](helpers/BindableValueHolder.md)
@@ -300,6 +308,8 @@
 ### [Focus Behaviors](behaviors/FocusBehaviors.md)
 
 ### [Header Behaviors](behaviors/HeaderBehaviors.md)
+
+### [Key Down Trigger Behavior](behaviors/KeyDownTriggerBehavior.md)
 
 ### [ImageCache](helpers/ImageCache.md)
 

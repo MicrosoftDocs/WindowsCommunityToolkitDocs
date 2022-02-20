@@ -1,0 +1,492 @@
+<Type Name="DataGridRow" FullName="CommunityToolkit.WinUI.UI.Controls.DataGridRow">
+  <TypeSignature Language="C#" Value="public class DataGridRow : Microsoft.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridRow extends Microsoft.UI.Xaml.Controls.Control" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridRow&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type DataGridRow = class&#xA;    inherit Control" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Microsoft.UI.Xaml.Controls.Control</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.StyleTypedProperty(Property="HeaderStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridRowHeader))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.StyleTypedProperty(Property="HeaderStyle", StyleTargetType=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridRowHeader))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="BottomGridLine", Type=typeof(Microsoft.UI.Xaml.Shapes.Rectangle))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="BottomGridLine", Type=typeof(Microsoft.UI.Xaml.Shapes.Rectangle))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="CellsPresenter", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridCellsPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="CellsPresenter", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridCellsPresenter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="DetailsPresenter", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridDetailsPresenter))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="DetailsPresenter", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridDetailsPresenter))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="RowRoot", Type=typeof(Microsoft.UI.Xaml.Controls.Panel))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="RowRoot", Type=typeof(Microsoft.UI.Xaml.Controls.Panel))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplatePart(Name="RowHeader", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridRowHeader))]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplatePart(Name="RowHeader", Type=typeof(CommunityToolkit.WinUI.UI.Controls.Primitives.DataGridRowHeader))&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Normal")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="Normal")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalAlternatingRow")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalAlternatingRow")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="UnfocusedEditing")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="UnfocusedEditing")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalEditing")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalEditing")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="UnfocusedSelected")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="UnfocusedSelected")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalSelected")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="NormalSelected")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOver")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOver")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverUnfocusedEditing")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverUnfocusedEditing")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverEditing")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverEditing")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverUnfocusedSelected")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverUnfocusedSelected")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverSelected")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="CommonStates", Name="PointerOverSelected")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ValidationStates", Name="Invalid")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ValidationStates", Name="Invalid")&gt;]</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName Language="C#">[Microsoft.UI.Xaml.TemplateVisualState(GroupName="ValidationStates", Name="Valid")]</AttributeName>
+      <AttributeName Language="F#">[&lt;Microsoft.UI.Xaml.TemplateVisualState(GroupName="ValidationStates", Name="Valid")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Represents a <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGrid" /> row.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DataGridRow ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ArrangeOverride">
+      <MemberSignature Language="C#" Value="protected override Windows.Foundation.Size ArrangeOverride (Windows.Foundation.Size finalSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Windows.Foundation.Size ArrangeOverride(valuetype Windows.Foundation.Size finalSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.ArrangeOverride(Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : Windows.Foundation.Size -&gt; Windows.Foundation.Size" Usage="dataGridRow.ArrangeOverride finalSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="finalSize" Type="Windows.Foundation.Size" />
+      </Parameters>
+      <Docs>
+        <param name="finalSize">
+            The final area within the parent that this element should use to arrange itself and its children.
+            </param>
+        <summary>
+            Arranges the content of the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" />.
+            </summary>
+        <returns>
+            The actual size used by the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" />.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsTemplate">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.DataTemplate DetailsTemplate { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.DataTemplate DetailsTemplate" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.DetailsTemplate : Microsoft.UI.Xaml.DataTemplate with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsTemplate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DataTemplate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the template that is used to display the details section of the row.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsTemplateProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty DetailsTemplateProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty DetailsTemplateProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsTemplateProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsTemplateProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the DetailsTemplate dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsVisibility">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Visibility DetailsVisibility { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.UI.Xaml.Visibility DetailsVisibility" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetailsVisibility As Visibility" />
+      <MemberSignature Language="F#" Value="member this.DetailsVisibility : Microsoft.UI.Xaml.Visibility with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsVisibility" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Visibility</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets a value that indicates when the details section of the row is displayed.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DetailsVisibilityProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty DetailsVisibilityProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty DetailsVisibilityProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsVisibilityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DetailsVisibilityProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DetailsVisibilityProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.DetailsVisibilityProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the DetailsTemplate dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetIndex">
+      <MemberSignature Language="C#" Value="public int GetIndex ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetIndex() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.GetIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex () As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : unit -&gt; int" Usage="dataGridRow.GetIndex " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns the index of the current row.
+            </summary>
+        <returns>
+            The index of the current row.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetRowContainingElement">
+      <MemberSignature Language="C#" Value="public static CommunityToolkit.WinUI.UI.Controls.DataGridRow GetRowContainingElement (Microsoft.UI.Xaml.FrameworkElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class CommunityToolkit.WinUI.UI.Controls.DataGridRow GetRowContainingElement(class Microsoft.UI.Xaml.FrameworkElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.GetRowContainingElement(Microsoft.UI.Xaml.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRowContainingElement (element As FrameworkElement) As DataGridRow" />
+      <MemberSignature Language="F#" Value="static member GetRowContainingElement : Microsoft.UI.Xaml.FrameworkElement -&gt; CommunityToolkit.WinUI.UI.Controls.DataGridRow" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.GetRowContainingElement element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Controls.DataGridRow</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.FrameworkElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">element contained in a row</param>
+        <summary>
+            Returns the row which contains the given element
+            </summary>
+        <returns>Row that contains the element, or null if not found
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Header">
+      <MemberSignature Language="C#" Value="public object Header { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Header" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.Header" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.Header" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the row header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty HeaderProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty HeaderProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the Header dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Xaml.Style HeaderStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Xaml.Style HeaderStyle" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : Microsoft.UI.Xaml.Style with get, set" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderStyle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Style</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the style that is used when rendering the row header.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HeaderStyleProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty HeaderStyleProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty HeaderStyleProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderStyleProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderStyleProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the <see cref="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.HeaderStyle" /> dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValid">
+      <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Controls.DataGridRow.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.IsValid" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether the data in a row is valid.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsValidProperty">
+      <MemberSignature Language="C#" Value="public static readonly Microsoft.UI.Xaml.DependencyProperty IsValidProperty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.UI.Xaml.DependencyProperty IsValidProperty" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.WinUI.UI.Controls.DataGridRow.IsValidProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsValidProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsValidProperty : Microsoft.UI.Xaml.DependencyProperty" Usage="CommunityToolkit.WinUI.UI.Controls.DataGridRow.IsValidProperty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.DependencyProperty</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Identifies the IsValid dependency property.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MeasureOverride">
+      <MemberSignature Language="C#" Value="protected override Windows.Foundation.Size MeasureOverride (Windows.Foundation.Size availableSize);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype Windows.Foundation.Size MeasureOverride(valuetype Windows.Foundation.Size availableSize) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.MeasureOverride(Windows.Foundation.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : Windows.Foundation.Size -&gt; Windows.Foundation.Size" Usage="dataGridRow.MeasureOverride availableSize" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.Foundation.Size</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="availableSize" Type="Windows.Foundation.Size" />
+      </Parameters>
+      <Docs>
+        <param name="availableSize">
+            The available size that this element can give to child elements. Indicates an upper limit that child elements should not exceed.
+            </param>
+        <summary>
+            Measures the children of a <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" /> to
+            prepare for arranging them during the <see cref="M:System.Windows.FrameworkElement.ArrangeOverride(System.Windows.Size)" /> pass.
+            </summary>
+        <returns>
+            The size that the <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" /> determines it needs during layout, based on its calculations of child object allocated sizes.
+            </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnApplyTemplate">
+      <MemberSignature Language="C#" Value="protected override void OnApplyTemplate ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyTemplate() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="dataGridRow.OnApplyTemplate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Builds the visual tree for the column header when a new template is applied.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCreateAutomationPeer">
+      <MemberSignature Language="C#" Value="protected override Microsoft.UI.Xaml.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class Microsoft.UI.Xaml.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Controls.DataGridRow.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; Microsoft.UI.Xaml.Automation.Peers.AutomationPeer" Usage="dataGridRow.OnCreateAutomationPeer " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Controls.DataGrid</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Automation.Peers.AutomationPeer</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Creates AutomationPeer (<see cref="M:Microsoft.UI.Xaml.UIElement.OnCreateAutomationPeer" />)
+            </summary>
+        <returns>An automation peer for this <see cref="T:CommunityToolkit.WinUI.UI.Controls.DataGridRow" />.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

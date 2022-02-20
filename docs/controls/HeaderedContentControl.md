@@ -70,11 +70,11 @@ The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.heade
 
 ## Sample Project
 
-[HeaderedContentControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[HeaderedContentControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[HeaderedContentControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
+[HeaderedContentControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -85,4 +85,4 @@ The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.heade
 
 ## API
 
-- [HeaderedContentControl source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl)
+- [HeaderedContentControl source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl)

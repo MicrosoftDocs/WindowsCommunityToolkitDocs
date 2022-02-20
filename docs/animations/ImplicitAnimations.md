@@ -145,7 +145,7 @@ You can [see this in action](uwpct://Animations?sample=Implicit%20Animations) in
 
 ## API
 
-- [Implicit animations source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
+- [Implicit animations source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/Implicit.cs)
 
 ## Related Topics
 

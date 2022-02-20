@@ -1,0 +1,48 @@
+<Type Name="MessageHandler&lt;TRecipient,TMessage&gt;" FullName="CommunityToolkit.Mvvm.Messaging.MessageHandler&lt;TRecipient,TMessage&gt;">
+  <TypeSignature Language="C#" Value="public delegate void MessageHandler&lt;in TRecipient,in TMessage&gt;(TRecipient recipient, TMessage message) where TRecipient : class where TMessage : class;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageHandler`2&lt;class - TRecipient, class - TMessage&gt; extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.Mvvm.Messaging.MessageHandler`2" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub MessageHandler(Of In TRecipient, In TMessage)(recipient As TRecipient, message As TMessage)" />
+  <TypeSignature Language="F#" Value="type MessageHandler&lt;'Recipient, 'Message (requires 'Recipient : null and 'Message : null)&gt; = delegate of 'Recipient * 'Message -&gt; unit" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TRecipient">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+    <TypeParameter Name="TMessage">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+        <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Parameters>
+    <Parameter Name="recipient" Type="TRecipient" />
+    <Parameter Name="message" Type="TMessage" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <typeparam name="TRecipient">The type of recipient for the message.</typeparam>
+    <typeparam name="TMessage">The type of message to receive.</typeparam>
+    <param name="recipient">The recipient that is receiving the message.</param>
+    <param name="message">The message being received.</param>
+    <summary>
+            A <see langword="delegate" /> used to represent actions to invoke when a message is received.
+            The recipient is given as an input argument to allow message registrations to avoid creating
+            closures: if an instance method on a recipient needs to be invoked it is possible to just
+            cast the recipient to the right type and then access the local method from that instance.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>

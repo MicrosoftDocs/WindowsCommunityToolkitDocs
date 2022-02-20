@@ -19,7 +19,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 ### Sample Output
 
-![LiveTile](../resources/images/Notifications/LiveTile.gif)
+![LiveTile Image](../resources/images/Notifications/LiveTile.gif)
 
 ## Toasts
 
@@ -45,7 +45,7 @@ If you're developing a non-UWP C# app for Windows, the Windows Community Toolkit
 
 ## API
 
-* [Notifications source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Notifications/Microsoft.Toolkit.Uwp.Notifications.UWP)
+* [Notifications source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.Notifications)
 
 ## Related Topics
 

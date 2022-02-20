@@ -32,7 +32,7 @@ You probably have a JSON file that was exported from [Adobe AfterEffects](https:
     * Add _LottieLogo1.json_ to the /AnimatedVisuals folder and include by right-clicking > Add > Existing Item.
     * Set its [Build Action](/visualstudio/ide/build-actions) to **Content** in the Properties window.
 
-    <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="300" margin="10"/>
+    <img src="../../resources/images/Animations/Lottie/LottieDocs_BuildAction.png" alt="BuildAction" width="300" />
 
 5. Instantiate the [AnimatedVisualPlayer](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer) element and configure the [LottieVisualSource](/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) to be consumed:
 
@@ -52,7 +52,7 @@ Since the [AutoPlay](/uwp/api/microsoft.ui.xaml.controls.animatedvisualplayer.au
 
 ## Resources
 
-* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.0.0/samples/LottieSamples/Scenarios/JsonPage.xaml) for sample: getting started with a JSON file
+* [Source code](https://github.com/windows-toolkit/Lottie-Windows/blob/rel/7.1.0/samples/LottieSamples/Scenarios/JsonPage.xaml) for sample: getting started with a JSON file
 * The resulting page in the [Lottie Samples application](https://aka.ms/lottiesamples)
 * [LottieVisualSource](/dotnet/api/microsoft.toolkit.uwp.ui.lottie.lottievisualsource) API reference
 * [Lottie Viewer application](https://aka.ms/lottieviewer) for previewing JSON files

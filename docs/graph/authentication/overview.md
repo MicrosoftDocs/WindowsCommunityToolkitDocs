@@ -9,9 +9,6 @@ dev_langs:
 
 # Authentication Providers Overview
 
-> [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
-
 Authentication is always the first step to working with Microsoft Graph. The toolkit providers enable your application to authenticate with Microsoft Identity and access Microsoft Graph in only few lines of code. Each provider handles user authentication and acquiring access tokens to call Microsoft Graph APIs, so that you don't have to write this code yourself.
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the Microsoft Graph .NET SDK.
@@ -22,9 +19,9 @@ The toolkit includes the following providers:
 
 | Providers | Description |
 | -- | -- |
-| [Msal](./msal.md) | Uses MSAL for .NET to sign in users and acquire tokens to use with Microsoft Graph in a NetStandard 2.0 application. |
-| [Windows](./windows.md) | Uses native WebAccountManager (WAM) APIs to sign in users and acquire tokens to use with Microsoft Graph in a UWP application. |
-| [Custom](./custom.md)Custom | Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code. |
+| [Msal](./msal.md) | Uses MSAL for .NET to sign in users and acquire tokens to use with Microsoft Graph in NetStandard 2.0 applications. |
+| [Windows](./windows.md) | Uses native WebAccountManager (WAM) APIs to sign in users and acquire tokens to use with Microsoft Graph in UWP applications. |
+| [Custom](./custom.md) | Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code. |
 
 ## Initializing the GlobalProvider
 
@@ -69,6 +66,8 @@ public enum ProviderState
 }
 ```
 
+## Respond to changes in the GlobalProvider state
+
 In some scenarios, you will want to show certain functionality or perform an action only after a user has successfully signed in. You can access and check the provider state as shown in the following example:
 
 ```csharp
@@ -79,7 +78,7 @@ if (ProviderManager.Instance.GlobalProvider?.State === ProviderState.SignedIn) {
 }
 ```
 
-You can also use the `ProviderUpdated` and `ProviderStateChanged` events to get notified whenever provider is set or changes state.
+Use the `ProviderUpdated` and `ProviderStateChanged` events to get notified whenever provider is set or changes state.
 
 ```csharp
 using CommunityToolkit.Authentication;
@@ -98,6 +97,43 @@ void OnProviderStateChanged(object sender, ProviderUpdatedEventArgs args)
 }
 ```
 
+### ProviderStateTrigger
+
+To respond to provider state changes from XAML, try out the `ProviderStateTrigger` state trigger.
+
+Available in the `CommunityToolkit.Graph.Uwp` package.
+
+```xml
+<VisualStateManager.VisualStateGroups xmlns:uwp="using:CommunityToolkit.Graph.Uwp">
+    <VisualStateGroup>
+        <VisualState>
+            <VisualState.StateTriggers>
+                <uwp:ProviderStateTrigger State="SignedIn" />
+            </VisualState.StateTriggers>
+            <VisualState.Setters>
+                <Setter Target="ContentPivot.Visibility" Value="Visible" />
+            </VisualState.Setters>
+        </VisualState>
+    </VisualStateGroup>
+</VisualStateManager.VisualStateGroups>
+
+<Pivot Name="ContentPivot" Visibility="Collapsed">
+    <!-- The pivot will only be visible when the global provider is in a signed in state, and otherwise collapsed. -->
+</Pivot>
+```
+
+### FrameworkElement.IsVisibleWhen
+
+The `FrameworkElement.IsVisibleWhen` attached property makes it easy to toggle visibility for any `FrameworkElement`.
+
+Available in the `CommunityToolkit.Graph.Uwp` package.
+
+```xml
+<Pivot Name="ContentPivot" uwp:ElementExtensions.IsVisibleWhen="SignedIn">
+    <!-- The pivot will only be visible when the global provider is in a signed in state, and otherwise collapsed. -->
+</Pivot>
+```
+
 ## Getting an access token
 
 Each provider exposes a function called `getTokenAsync` that can retrieve the current access token or retrieve a new access token for the provided scopes. The following example shows how to get a new access token or the currently signed in user:
@@ -113,14 +149,14 @@ string token = await provider.GetTokenAsync(silentOnly: false);
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can now make API calls to Microsoft Graph using the Graph SDK or without.
+Once authenticated, you can now make API calls to Microsoft Graph using the Graph SDK or without. See the [Extensions](../helpers/extensions.md) page for an example of how to authenticate an outbound request directly.
 
 ### Use the Graph SDK
 
-Access APIs using the Graph SDK through a preconfigured `GraphServiceClient` available through an extension method on `IProvider` called, `GetClient()`.
+Access APIs using the Graph SDK through a preconfigured `GraphServiceClient` available through an extension method on `IProvider` called `GetClient()` and `GetBetaClient()`.
 See [Microsoft Graph Extensions](../helpers/extensions.md) for more details.
 
-This is the easiest way to get started because all of the Graph types are available and the `GraphServiceClient` offers a convenient way of building requests.
+It's possible to authenticate and make all Graph requests manually, without the Graph SDK. This can reduce package size significantly. However, using the Graph SDK is certainly the easiest way to work with Graph in .NET because the `GraphServiceClient` offers a convenient way of building requests and includes all of the object types ready to use.
 
 Available in the `CommunityToolkit.Graph` package.
 
@@ -132,51 +168,4 @@ IProvider provider = ProviderManager.Instance.GlobalProvider;
 GraphServiceClient graphClient = provider.GetClient();
 
 var me = await graphClient.Me.Request().GetAsync();
-```
-
-### Handle Graph requests manually
-
-Access APIs by managing requests to Microsoft Graph yourself. This is helpful for projects with existing systems for managing web requests, or for keeping package sizes minimal by excluding the Graph SDK.
-
-To make Graph API calls manually, use the `IProvider.AuthenticateRequestAsync(HttpRequestMessage)` method to authenticate an outgoing request.
-
-```csharp
-using CommunityToolkit.Authentication;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-
-private async Task<IList<TodoTask>> GetDefaultTaskListAsync()
-{
-    return await GetResponseAsync<List<TodoTask>>("https://graph.microsoft.com/v1.0/me/todo/lists/tasks/tasks");
-}
-
-private async Task<T> GetResponseAsync<T>(string requestUri)
-{
-    // Build the request
-    HttpRequestMessage getRequest = new HttpRequestMessage(HttpMethod.Get, requestUri);
-
-    // Authenticate the request
-    await ProviderManager.Instance.GlobalProvider.AuthenticateRequestAsync(getRequest);
-
-    var httpClient = new HttpClient();
-    using (httpClient)
-    {
-        // Send the request
-        var response = await httpClient.SendAsync(getRequest);
-
-        if (response.IsSuccessStatusCode)
-        {
-            // Handle the request response
-            var jsonResponse = await response.Content.ReadAsStringAsync();
-            var jObject = JObject.Parse(jsonResponse);
-            if (jObject.ContainsKey("value"))
-            {
-                var result = JsonConvert.DeserializeObject<T>(jObject["value"].ToString());
-                return result;
-            }
-        }
-    }
-
-    return default;
-}
 ```

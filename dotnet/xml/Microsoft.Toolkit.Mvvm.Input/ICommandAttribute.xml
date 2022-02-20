@@ -1,0 +1,90 @@
+<Type Name="ICommandAttribute" FullName="Microsoft.Toolkit.Mvvm.Input.ICommandAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ICommandAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ICommandAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.Input.ICommandAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ICommandAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ICommandAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+             An attribute that can be used to automatically generate <see cref="T:System.Windows.Input.ICommand" /> properties from declared methods. When this attribute
+             is used to decorate a method, a generator will create a command property with the corresponding <see cref="T:Microsoft.Toolkit.Mvvm.Input.IRelayCommand" /> interface
+             depending on the signature of the method. If an invalid method signature is used, the generator will report an error.
+             <para>
+             In order to use this attribute, the containing type doesn't need to implement any interfaces. The generated properties will be lazily
+             assigned but their value will never change, so there is no need to support property change notifications or other additional functionality.
+             </para><para>
+             This attribute can be used as follows:
+             <code>
+             partial class MyViewModel
+             {
+                 [ICommand]
+                 private void GreetUser(User? user)
+                 {
+                     Console.WriteLine($"Hello {user.Name}!");
+                 }
+             }
+             </code>
+             And with this, code analogous to this will be generated:
+             <code>
+             partial class MyViewModel
+             {
+                 private IRelayCommand? greetUserCommand;
+            
+                 public IRelayCommand GreetUserCommand =&gt; greetUserCommand ??= new RelayCommand(GreetUser);
+             }
+             </code></para><para>
+             The following signatures are supported for annotated methods:
+             <code>
+             void Method();
+             </code>
+             Will generate an <see cref="T:Microsoft.Toolkit.Mvvm.Input.IRelayCommand" /> property (using a <see cref="T:Microsoft.Toolkit.Mvvm.Input.RelayCommand" /> instance).
+             <code>
+             void Method(T?);
+             </code>
+             Will generate an <see cref="T:Microsoft.Toolkit.Mvvm.Input.IRelayCommand`1" /> property (using a <see cref="T:Microsoft.Toolkit.Mvvm.Input.RelayCommand`1" /> instance).
+             <code>
+             Task Method();
+             Task Method(CancellationToken);
+             </code>
+             Will both generate an <see cref="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand" /> property (using an <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1" /> instance).
+             <code>
+             Task Method(T?);
+             Task Method(T?, CancellationToken);
+             </code>
+             Will both generate an <see cref="T:Microsoft.Toolkit.Mvvm.Input.IAsyncRelayCommand`1" /> property (using an <see cref="T:Microsoft.Toolkit.Mvvm.Input.AsyncRelayCommand`1" /> instance).
+             </para></summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ICommandAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.Input.ICommandAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

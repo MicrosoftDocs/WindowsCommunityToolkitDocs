@@ -208,7 +208,7 @@ End Using ' acv.Refresh() gets called here
 
 ## Sample Project
 
-[AdvancedCollectionView sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[AdvancedCollectionView sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AdvancedCollectionView). You can [see this in action](uwpct://Helpers?sample=AdvancedCollectionView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -219,4 +219,4 @@ End Using ' acv.Refresh() gets called here
 
 ## API
 
-* [AdvancedCollectionView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView)
+* [AdvancedCollectionView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/AdvancedCollectionView)

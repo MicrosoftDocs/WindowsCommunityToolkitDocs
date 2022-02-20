@@ -41,7 +41,7 @@ public class LoggedInUserChangedMessage : ValueChangedMessage<User>
 WeakReferenceMessenger.Default.Register<LoggedInUserChangedMessage>(this, (r, m) =>
 {
     // Handle the message here, with r being the recipient and m being the
-    // input messenger. Using the recipient passed as input makes it so that
+    // input message. Using the recipient passed as input makes it so that
     // the lambda expression doesn't capture "this", improving performance.
 });
 
@@ -138,4 +138,4 @@ User user = await WeakReferenceMessenger.Default.Send<LoggedInUserRequestMessage
 ## Examples
 
 - Check out the [sample app](https://github.com/windows-toolkit/MVVM-Samples) (for multiple UI frameworks) to see the MVVM Toolkit in action.
-- You can also find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.Shared/Mvvm).
+- You can also find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.Shared/Mvvm).

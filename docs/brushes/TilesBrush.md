@@ -43,7 +43,7 @@ Brush brush = PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png".T
 
 ## Sample Project
 
-[TilesBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TilesBrush). You can [see this in action](uwpct://Brushes?sample=TilesBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[TilesBrush sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TilesBrush). You can [see this in action](uwpct://Brushes?sample=TilesBrush) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -54,8 +54,8 @@ Brush brush = PipelineBuilder.FromTiles("/Assets/BrushAssets/NoiseTexture.png".T
 
 ## API
 
-* [TilesBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/TilesBrush.cs)
-* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
+* [TilesBrush source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Brushes/TilesBrush.cs)
+* [PipelineBuilder source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Media/Pipelines/PipelineBuilder.cs)
 
 ## Related Topics
 

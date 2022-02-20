@@ -116,7 +116,7 @@ Thus, the ExpressionBuilder classes were created to help alleviate these challen
 
 ## <a name="using-the-expressionbuilder-classes"></a>Using the ExpressionBuilder classes
 
-For full documentation on how to use the ExpressionBuilder classes, please refer to the [Word document](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.0.0/ExpressionBuilder/Docs) from the composition team.
+For full documentation on how to use the ExpressionBuilder classes, please refer to the [Word document](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.1.0/ExpressionBuilder/Docs) from the composition team.
 
 Before we highlight how to use the classes, let's reiterate the core components that make up an Expression:
 
@@ -227,7 +227,7 @@ If you are familiar with how Expressions were built with strings, there are a fe
 
 ## <a name="intro"></a>Intro
 
-### <a name="what-are-expressions">What are Expressions?
+### <a name="what-are-expressions"></a>What are Expressions?
 
 ExpressionAnimations (or Expressions, for short) are a new type of animation introduced to Windows App developers in Windows 10 to provide a more expressive animation model than what is provided from traditional KeyFrameAnimations and
 XAML Storyboards.
@@ -244,7 +244,7 @@ The documentation below assumes you are familiar with the Composition and Compos
 
 - [ExpressionAnimation MSDN Documentation](/uwp/api/Windows.UI.Composition.ExpressionAnimation)
 
-### <a name="why-expressionbuilder">Why ExpressionBuilder?
+### <a name="why-expressionbuilder"></a>Why ExpressionBuilder?
 
 To use ExpressionAnimations today, developers are required to write their mathematical equation/relationship in a string (example shown below).
 
@@ -879,7 +879,7 @@ There is an assumption that the reader has a general understanding of what Expre
 
 ### <a name="parallaxing-listing-items"></a>Parallaxing Listing Items
 
-([Github Link](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.0.0/SampleGallery/Samples/SDK%2010586/ParallaxingListItems))
+([Github Link](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.1.0/SampleGallery/Samples/SDK%2010586/ParallaxingListItems))
 
 The first example we will walk through is the Parallaxing List Item sample found on the Windows UI Dev Labs Github Sample Gallery project. In this sample, we want to create a UI experience such that the background image for each list item parallax as the user scrolls through the list.
 
@@ -985,7 +985,7 @@ visual.StartAnimation("Offset.Y", parallaxExpression);
 
 ## <a name="propertysets"></a>PropertySets
 
-([Github Project](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.0.0/SampleGallery/Samples/SDK%2010586/PropertySets))
+([Github Project](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.1.0/SampleGallery/Samples/SDK%2010586/PropertySets))
 
 The second example we will walk through is the PropertySets sample on the Windows UI Dev Labs Sample Gallery Github project. In this sample, we want to make a UI experience where we want to have a colored ball orbit another that is moving up and down.
 
@@ -1057,7 +1057,7 @@ var orbitExp = visual.GetReference().Offset + centerPointOffset +
 
 ### <a name="curtain"></a>Curtain
 
-([Github Project](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.0.0/SampleGallery/Samples/SDK%2014393/Curtain))
+([Github Project](https://github.com/Microsoft/WindowsUIDevLabs/tree/rel/7.1.0/SampleGallery/Samples/SDK%2014393/Curtain))
 
 The third example we will walk through is the Curtain sample on the Windows UI Dev Labs Sample Gallery Github project. Although there are a few instances where Expressions are used, we will focus on the Expression that defines the Spring motion of the curtain (the function named ActivateSpringForce()).
 
@@ -1146,4 +1146,4 @@ _tracker.ConfigurePositionYInertiaModifiers(
 
 ## <a name="api"></a>API
 
-- [Expressions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)
+- [Expressions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/Expressions)

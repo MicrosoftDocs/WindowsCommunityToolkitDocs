@@ -322,7 +322,7 @@ As a workaround, the recommended path is using _CreateCollisionOption.FailIfExis
 
 ## Sample Project
 
-[OneDrive Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[OneDrive Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OneDrive%20Service). You can [see this in action](uwpct://Services?sample=OneDrive%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -333,4 +333,4 @@ As a workaround, the recommended path is using _CreateCollisionOption.FailIfExis
 
 ## API
 
-* [OneDrive Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Services/Services/OneDrive)
+* [OneDrive Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/OneDrive)

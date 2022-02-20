@@ -101,11 +101,11 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Sample Code
 
-[GridSplitter Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[GridSplitter Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/GridSplitter). You can [see this in action](uwpct://Controls?sample=GridSplitter) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[GridSplitter XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
+[GridSplitter XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -116,4 +116,4 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## API
 
-* [GridSplitter source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter)
+* [GridSplitter source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter)

@@ -1,0 +1,201 @@
+<Type Name="IFileStorageHelper" FullName="Microsoft.Toolkit.Helpers.IFileStorageHelper">
+  <TypeSignature Language="C#" Value="public interface IFileStorageHelper" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFileStorageHelper" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Helpers.IFileStorageHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFileStorageHelper" />
+  <TypeSignature Language="F#" Value="type IFileStorageHelper = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+             Service interface used to store data in a directory/file-system via files and folders.
+            
+             This interface is meant to help abstract file storage operations across platforms in a library,
+             but the actual behavior will be up to the implementer. Such as, we don't provide a sense of a current directory,
+             so an implementor should consider using full paths to support any file operations. Otherwise, a "directory aware"
+             implementation could be achieved with a current directory field and traversal functions, in which case relative paths would be applicable.
+             </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateFileAsync&lt;T&gt; (string filePath, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateFileAsync&lt;T&gt;(string filePath, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.CreateFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFileAsync(Of T) (filePath As String, value As T) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateFileAsync : string * 'T -&gt; System.Threading.Tasks.Task" Usage="iFileStorageHelper.CreateFileAsync (filePath, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="filePath">Path to the file that will contain the object.</param>
+        <param name="value">Object to save.</param>
+        <summary>
+            Saves an object inside a file.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CreateFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CreateFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.CreateFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateFolderAsync (folderPath As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member CreateFolderAsync : string -&gt; System.Threading.Tasks.Task" Usage="iFileStorageHelper.CreateFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path and name of the target folder.</param>
+        <summary>
+            Ensure a folder exists at the folder path specified.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFileAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T?&gt; ReadFileAsync&lt;T&gt; (string filePath, T? default = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; ReadFileAsync&lt;T&gt;(string filePath, !!T default) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.ReadFileAsync``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadFileAsync(Of T) (filePath As String, Optional default As T = Nothing) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member ReadFileAsync : string * 'T -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="iFileStorageHelper.ReadFileAsync (filePath, default)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="filePath" Type="System.String" />
+        <Parameter Name="default" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="filePath">Path to the file that contains the object.</param>
+        <param name="default">Default value of the object.</param>
+        <summary>
+            Retrieves an object from a file.
+            </summary>
+        <returns>Waiting task until completion with the object in the file.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadFolderAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;(Microsoft.Toolkit.Helpers.DirectoryItemType,string)&gt;&gt; ReadFolderAsync (string folderPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.ValueTuple`2&lt;valuetype Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt; ReadFolderAsync(string folderPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.ReadFolderAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadFolderAsync (folderPath As String) As Task(Of IEnumerable(Of ValueTuple(Of DirectoryItemType, String)))" />
+      <MemberSignature Language="F#" Value="abstract member ReadFolderAsync : string -&gt; System.Threading.Tasks.Task&lt;seq&lt;ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType, string&gt;&gt;&gt;" Usage="iFileStorageHelper.ReadFolderAsync folderPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.IEnumerable&lt;System.ValueTuple&lt;Microsoft.Toolkit.Helpers.DirectoryItemType,System.String&gt;&gt;&gt;</ReturnType>
+        <Attributes>
+          <Attribute>
+            <AttributeName Language="C#">[System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })]</AttributeName>
+            <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.TupleElementNames(new System.String[] { "ItemType", "Name" })&gt;]</AttributeName>
+          </Attribute>
+        </Attributes>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="folderPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="folderPath">The path to the target folder.</param>
+        <summary>
+            Retrieves the listings for a folder and the item types.
+            </summary>
+        <returns>A list of item types and names in the target folder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDeleteItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryDeleteItemAsync (string itemPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryDeleteItemAsync(string itemPath) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.TryDeleteItemAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDeleteItemAsync (itemPath As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TryDeleteItemAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iFileStorageHelper.TryDeleteItemAsync itemPath" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the item for deletion.</param>
+        <summary>
+            Deletes a file or folder item.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRenameItemAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; TryRenameItemAsync (string itemPath, string newName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; TryRenameItemAsync(string itemPath, string newName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.IFileStorageHelper.TryRenameItemAsync(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRenameItemAsync (itemPath As String, newName As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TryRenameItemAsync : string * string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="iFileStorageHelper.TryRenameItemAsync (itemPath, newName)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="itemPath" Type="System.String" />
+        <Parameter Name="newName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="itemPath">The path to the target item.</param>
+        <param name="newName">The new nam for the target item.</param>
+        <summary>
+            Rename an item.
+            </summary>
+        <returns>Waiting task until completion.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

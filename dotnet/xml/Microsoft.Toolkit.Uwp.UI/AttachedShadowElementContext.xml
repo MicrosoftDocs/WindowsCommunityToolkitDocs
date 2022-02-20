@@ -1,0 +1,394 @@
+<Type Name="AttachedShadowElementContext" FullName="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext">
+  <TypeSignature Language="C#" Value="public sealed class AttachedShadowElementContext" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttachedShadowElementContext extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachedShadowElementContext" />
+  <TypeSignature Language="F#" Value="type AttachedShadowElementContext = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Class which maintains the context of a <see cref="T:Windows.UI.Composition.DropShadow" /> for a particular <see cref="T:Windows.UI.Xaml.UIElement" /> linked to the definition of that shadow provided by the <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" /> implementation being used.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public AttachedShadowElementContext ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddResource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T AddResource&lt;T&gt; (string key, T resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T AddResource&lt;T&gt;(string key, !!T resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.AddResource``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddResource(Of T) (key As String, resource As T) As T" />
+      <MemberSignature Language="F#" Value="member this.AddResource : string * 'T -&gt; 'T" Usage="attachedShadowElementContext.AddResource (key, resource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="resource" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resource being added.</typeparam>
+        <param name="key">Key to use to lookup the resource later.</param>
+        <param name="resource">Object to store within the resource dictionary.</param>
+        <summary>
+            Adds a resource to this instance's resource dictionary with the specified key
+            </summary>
+        <returns>The added resource</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearAndDisposeResources">
+      <MemberSignature Language="C#" Value="public void ClearAndDisposeResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearAndDisposeResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.ClearAndDisposeResources" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearAndDisposeResources ()" />
+      <MemberSignature Language="F#" Value="member this.ClearAndDisposeResources : unit -&gt; unit" Usage="attachedShadowElementContext.ClearAndDisposeResources " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Disposes of any resources that implement <see cref="T:System.IDisposable" /> and then clears all resources
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Compositor">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.Compositor Compositor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.Compositor Compositor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Compositor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compositor As Compositor" />
+      <MemberSignature Language="F#" Value="member this.Compositor : Windows.UI.Composition.Compositor" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Compositor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.Compositor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Windows.UI.Composition.Compositor" /> for this instance.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateResources">
+      <MemberSignature Language="C#" Value="public void CreateResources ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateResources() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.CreateResources" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CreateResources ()" />
+      <MemberSignature Language="F#" Value="member this.CreateResources : unit -&gt; unit" Usage="attachedShadowElementContext.CreateResources " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Force early creation of this instance's resources, otherwise they will be created automatically when <see cref="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Element" /> is loaded.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Element">
+      <MemberSignature Language="C#" Value="public Windows.UI.Xaml.FrameworkElement Element { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Xaml.FrameworkElement Element" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Element" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Element As FrameworkElement" />
+      <MemberSignature Language="F#" Value="member this.Element : Windows.UI.Xaml.FrameworkElement" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Element" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Xaml.FrameworkElement</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Windows.UI.Xaml.FrameworkElement" /> this instance is attached to
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ElementVisual">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.Visual ElementVisual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.Visual ElementVisual" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.ElementVisual" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementVisual As Visual" />
+      <MemberSignature Language="F#" Value="member this.ElementVisual : Windows.UI.Composition.Visual" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.ElementVisual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.Visual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Windows.UI.Composition.Visual" /> for the <see cref="T:Windows.UI.Xaml.FrameworkElement" /> this instance is attached to.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetResource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T GetResource&lt;T&gt; (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetResource&lt;T&gt;(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.GetResource``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResource(Of T) (key As String) As T" />
+      <MemberSignature Language="F#" Value="member this.GetResource : string -&gt; 'T" Usage="attachedShadowElementContext.GetResource key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resource being retrieved.</typeparam>
+        <param name="key">Key to use to lookup the resource.</param>
+        <summary>
+            Retries a resource with the specified key and type
+            </summary>
+        <returns>The resource if available, otherwise default value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInitialized">
+      <MemberSignature Language="C#" Value="public bool IsInitialized { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.IsInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.IsInitialized" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a value indicating whether or not this <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" /> has been initialized.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Microsoft.Toolkit.Uwp.UI.AttachedShadowBase Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Toolkit.Uwp.UI.AttachedShadowBase Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As AttachedShadowBase" />
+      <MemberSignature Language="F#" Value="member this.Parent : Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.UI.AttachedShadowBase</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowBase" /> that contains this <see cref="T:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext" />.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveAndDisposeResource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T RemoveAndDisposeResource&lt;T&gt; (string key) where T : IDisposable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T RemoveAndDisposeResource&lt;(class System.IDisposable) T&gt;(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.RemoveAndDisposeResource``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAndDisposeResource(Of T As IDisposable) (key As String) As T" />
+      <MemberSignature Language="F#" Value="member this.RemoveAndDisposeResource : string -&gt; 'T (requires 'T :&gt; IDisposable)" Usage="attachedShadowElementContext.RemoveAndDisposeResource key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IDisposable</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resource being removed.</typeparam>
+        <param name="key">Key to use to lookup the resource.</param>
+        <summary>
+            Removes an existing resource with the specified key and type, and <see cref="M:System.IDisposable.Dispose">disposes</see> it
+            </summary>
+        <returns>The resource that was removed, if any</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveResource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public T RemoveResource&lt;T&gt; (string key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T RemoveResource&lt;T&gt;(string key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.RemoveResource``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveResource(Of T) (key As String) As T" />
+      <MemberSignature Language="F#" Value="member this.RemoveResource : string -&gt; 'T" Usage="attachedShadowElementContext.RemoveResource key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resource being removed.</typeparam>
+        <param name="key">Key to use to lookup the resource.</param>
+        <summary>
+            Removes an existing resource with the specified key and type
+            </summary>
+        <returns>The resource that was removed, if any</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Shadow">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.DropShadow Shadow { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.DropShadow Shadow" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Shadow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Shadow As DropShadow" />
+      <MemberSignature Language="F#" Value="member this.Shadow : Windows.UI.Composition.DropShadow" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Shadow" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.DropShadow</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="T:Windows.UI.Composition.DropShadow" /> that is rendered on this instance's <see cref="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.Element" /></summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SpriteVisual">
+      <MemberSignature Language="C#" Value="public Windows.UI.Composition.SpriteVisual SpriteVisual { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Windows.UI.Composition.SpriteVisual SpriteVisual" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.SpriteVisual" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpriteVisual As SpriteVisual" />
+      <MemberSignature Language="F#" Value="member this.SpriteVisual : Windows.UI.Composition.SpriteVisual" Usage="Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.SpriteVisual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Windows.UI.Composition.SpriteVisual</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the <see cref="P:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.SpriteVisual" /> that contains the <see cref="T:Windows.UI.Composition.DropShadow">shadow</see> for this instance
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryGetResource&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public bool TryGetResource&lt;T&gt; (string key, out T resource);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetResource&lt;T&gt;(string key, [out] !!T&amp; resource) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext.TryGetResource``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetResource(Of T) (key As String, ByRef resource As T) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetResource : string * 'T -&gt; bool" Usage="attachedShadowElementContext.TryGetResource (key, resource)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="resource" Type="T" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The type of the resource being retrieved.</typeparam>
+        <param name="key">Key to use to lookup the resource.</param>
+        <param name="resource">Object to retrieved from the resource dictionary or default value.</param>
+        <summary>
+            Retrieves a resource with the specified key and type if it exists
+            </summary>
+        <returns>True if the resource exists, false otherwise</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

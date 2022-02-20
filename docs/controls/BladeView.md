@@ -10,7 +10,7 @@ dev_langs:
 
 # BladeView
 
-The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control provides a container to host [BladeItem](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) as extra detail pages in, for example, a master-detail scenario. The control is based on how the Azure Portal works.
+The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control provides a horizontal collection of [BladeItems](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeitem) for drilling into detailed scenarios.  The control is based on how the Azure Portal works.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Controls?sample=BladeView)
@@ -95,11 +95,11 @@ The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control
 
 ## Sample Project
 
-[BladeView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[BladeView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BladeView). You can [see this in action](uwpct://Controls?sample=BladeView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[BladeView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
+[BladeView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -110,4 +110,4 @@ The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control
 
 ## API
 
-- [BladeView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView)
+- [BladeView source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView)

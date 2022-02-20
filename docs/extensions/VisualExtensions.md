@@ -27,7 +27,7 @@ Here is an example of how the `VisualExtensions` type can be used to directly se
     ui:VisualExtensions.Opacity="0.5"
     ui:VisualExtensions.RotationAngleInDegrees="80"
     ui:VisualExtensions.Scale="2, 0.5, 1"
-    ui:VisualExtensions.NormalizedCenterPoint="0.5, 0.5, 0" />
+    ui:VisualExtensions.NormalizedCenterPoint="0.5, 0.5" />
 ```
 
 > [!NOTE]
@@ -35,4 +35,4 @@ Here is an example of how the `VisualExtensions` type can be used to directly se
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/UnitTests).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).

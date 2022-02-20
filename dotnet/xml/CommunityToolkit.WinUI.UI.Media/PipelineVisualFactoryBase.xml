@@ -1,0 +1,88 @@
+<Type Name="PipelineVisualFactoryBase" FullName="CommunityToolkit.WinUI.UI.Media.PipelineVisualFactoryBase">
+  <TypeSignature Language="C#" Value="public abstract class PipelineVisualFactoryBase : CommunityToolkit.WinUI.UI.Media.AttachedVisualFactoryBase" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipelineVisualFactoryBase extends CommunityToolkit.WinUI.UI.Media.AttachedVisualFactoryBase" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.PipelineVisualFactoryBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipelineVisualFactoryBase&#xA;Inherits AttachedVisualFactoryBase" />
+  <TypeSignature Language="F#" Value="type PipelineVisualFactoryBase = class&#xA;    inherit AttachedVisualFactoryBase" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>CommunityToolkit.WinUI.UI.Media.AttachedVisualFactoryBase</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            A base class that extends <see cref="T:CommunityToolkit.WinUI.UI.Media.AttachedVisualFactoryBase" /> by leveraging the <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> APIs.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected PipelineVisualFactoryBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.PipelineVisualFactoryBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetAttachedVisualAsync">
+      <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;Microsoft.UI.Composition.Visual&gt; GetAttachedVisualAsync (Microsoft.UI.Xaml.UIElement element);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;class Microsoft.UI.Composition.Visual&gt; GetAttachedVisualAsync(class Microsoft.UI.Xaml.UIElement element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.PipelineVisualFactoryBase.GetAttachedVisualAsync(Microsoft.UI.Xaml.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAttachedVisualAsync (element As UIElement) As ValueTask(Of Visual)" />
+      <MemberSignature Language="F#" Value="override this.GetAttachedVisualAsync : Microsoft.UI.Xaml.UIElement -&gt; System.Threading.Tasks.ValueTask&lt;Microsoft.UI.Composition.Visual&gt;" Usage="pipelineVisualFactoryBase.GetAttachedVisualAsync element" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.ValueTask&lt;Microsoft.UI.Composition.Visual&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="element" Type="Microsoft.UI.Xaml.UIElement" />
+      </Parameters>
+      <Docs>
+        <param name="element">The target <see cref="T:Microsoft.UI.Xaml.UIElement" /> the visual will be attached to.</param>
+        <summary>
+            Creates a <see cref="T:Microsoft.UI.Composition.Visual" /> to attach to the target element.
+            </summary>
+        <returns>A <see cref="T:Microsoft.UI.Composition.Visual" /> instance that the caller will attach to the target element.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnPipelineRequested">
+      <MemberSignature Language="C#" Value="protected abstract CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder OnPipelineRequested ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder OnPipelineRequested() cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.PipelineVisualFactoryBase.OnPipelineRequested" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnPipelineRequested () As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="abstract member OnPipelineRequested : unit -&gt; CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" Usage="pipelineVisualFactoryBase.OnPipelineRequested " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            A method that builds and returns the <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> pipeline to use in the current instance.
+            </summary>
+        <returns>A <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> instance to create the <see cref="T:Microsoft.UI.Composition.Visual" /> to display.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

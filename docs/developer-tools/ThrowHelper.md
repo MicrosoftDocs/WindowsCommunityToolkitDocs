@@ -35,11 +35,11 @@ int result = text switch
 {
     "cat" => 0,
     "dog" => 1,
-    _ => ThrowHelper.ThrowArgumentException<string>(nameof(text))
+    _ => ThrowHelper.ThrowArgumentException<int>(nameof(text))
 };
 ```
 
-Here we're using `ThrowHelper` within an expression that requires a return type of type `string`, so we can use the generic overload of `ThrowArgumentException` to make this possible. This also works with patterns such as ternary operators (`x ? a : b`), null-coalescing operators (`x = a ?? b`) null-coalescing assignment operators (`x ??= y`), and more.
+Here we're using `ThrowHelper` within an expression that requires a return type of type `int`, so we can use the generic overload of `ThrowArgumentException` to make this possible. This also works with patterns such as ternary operators (`x ? a : b`), null-coalescing operators (`x = a ?? b`) null-coalescing assignment operators (`x ??= y`), and more.
 
 ## Methods
 
@@ -158,7 +158,7 @@ The ThrowHelper class supports .NET Standard
 
 ## API
 
-- [ThrowHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Diagnostics/ThrowHelper.cs)
+- [ThrowHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Diagnostics/ThrowHelper.cs)
 
 ## Related Topics
 

@@ -180,7 +180,7 @@ End Sub
 
 ## Sample Project
 
-[Background Task Helper](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can [see this in action](uwpct://Helpers?sample=BackgroundTaskHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Background Task Helper](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/BackgroundTaskHelper). You can [see this in action](uwpct://Helpers?sample=BackgroundTaskHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -191,4 +191,4 @@ End Sub
 
 ## API
 
-* [Background Task source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/BackgroundTaskHelper.cs)
+* [Background Task source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/BackgroundTaskHelper.cs)

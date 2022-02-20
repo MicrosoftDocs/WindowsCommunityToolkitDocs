@@ -10,8 +10,15 @@
     <AssemblyVersion>6.0.0.0</AssemblyVersion>
     <AssemblyVersion>6.1.0.0</AssemblyVersion>
     <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.1">
+      <AttributeName Language="C#">[System.Obsolete("IObjectStorageHelper is deprecated. Please use ISettingsStorageHelper and IFileStorageHelper interfaces instead.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("IObjectStorageHelper is deprecated. Please use ISettingsStorageHelper and IFileStorageHelper interfaces instead.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>
             Service used to store data.
@@ -32,6 +39,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
@@ -40,11 +48,11 @@
         <Parameter Name="filePath" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="filePath">Key of the file (that contains object)</param>
+        <param name="filePath">Key of the file (that contains object).</param>
         <summary>
             Determines whether a file already exists.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>True if a value exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,6 +69,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -69,11 +78,11 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="key">Key of the setting (that contains object)</param>
+        <param name="key">Key of the setting (that contains object).</param>
         <summary>
             Determines whether a setting already exists.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>True if a value exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -90,6 +99,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -99,12 +109,12 @@
         <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="compositeKey">Key of the composite (that contains settings)</param>
-        <param name="key">Key of the setting (that contains object)</param>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the setting (that contains object).</param>
         <summary>
             Determines whether a setting already exists in composite.
             </summary>
-        <returns>True if a value exists</returns>
+        <returns>True if a value exists.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,6 +131,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -133,13 +144,13 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object retrieved</typeparam>
-        <param name="key">Key of the object</param>
-        <param name="default">Default value of the object</param>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="key">Key of the object.</param>
+        <param name="default">Default value of the object.</param>
         <summary>
             Retrieves a single item by its key.
             </summary>
-        <returns>The T object</returns>
+        <returns>The T object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -156,6 +167,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T</ReturnType>
@@ -169,14 +181,14 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object retrieved</typeparam>
-        <param name="compositeKey">Key of the composite (that contains settings)</param>
-        <param name="key">Key of the object</param>
-        <param name="default">Default value of the object</param>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="key">Key of the object.</param>
+        <param name="default">Default value of the object.</param>
         <summary>
             Retrieves a single item by its key in composite.
             </summary>
-        <returns>The T object</returns>
+        <returns>The T object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -193,6 +205,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
@@ -205,13 +218,13 @@
         <Parameter Name="default" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object retrieved</typeparam>
-        <param name="filePath">Path to the file that contains the object</param>
-        <param name="default">Default value of the object</param>
+        <typeparam name="T">Type of object retrieved.</typeparam>
+        <param name="filePath">Path to the file that contains the object.</param>
+        <param name="default">Default value of the object.</param>
         <summary>
             Retrieves an object from a file.
             </summary>
-        <returns>Waiting task until completion with the object in the file</returns>
+        <returns>Waiting task until completion with the object in the file.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -228,6 +241,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -240,9 +254,9 @@
         <Parameter Name="values" Type="System.Collections.Generic.IDictionary&lt;System.String,T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object saved</typeparam>
-        <param name="compositeKey">Key of the composite (that contains settings)</param>
-        <param name="values">Objects to save</param>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="compositeKey">Key of the composite (that contains settings).</param>
+        <param name="values">Objects to save.</param>
         <summary>
             Saves a group of items by its key in a composite.
             This method should be considered for objects that do not exceed 8k bytes during the lifetime of the application
@@ -265,6 +279,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -277,9 +292,9 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object saved</typeparam>
-        <param name="key">Key of the value saved</param>
-        <param name="value">Object to save</param>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="key">Key of the value saved.</param>
+        <param name="value">Object to save.</param>
         <summary>
             Saves a single item by its key.
             </summary>
@@ -299,6 +314,7 @@
         <AssemblyVersion>6.0.0.0</AssemblyVersion>
         <AssemblyVersion>6.1.0.0</AssemblyVersion>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;Windows.Storage.StorageFile&gt;</ReturnType>
@@ -311,13 +327,13 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">Type of object saved</typeparam>
-        <param name="filePath">Path to the file that will contain the object</param>
-        <param name="value">Object to save</param>
+        <typeparam name="T">Type of object saved.</typeparam>
+        <param name="filePath">Path to the file that will contain the object.</param>
+        <param name="value">Object to save.</param>
         <summary>
             Saves an object inside a file.
             </summary>
-        <returns>Waiting task until completion</returns>
+        <returns>Waiting task until completion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

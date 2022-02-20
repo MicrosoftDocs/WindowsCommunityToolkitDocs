@@ -42,7 +42,7 @@ The [StaggeredLayout](/dotnet/api/microsoft.toolkit.uwp.ui.controls.StaggeredLay
 
 ## Sample Project
 
-[StaggeredLayout Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredLayout). You can [see this in action](uwpct://Controls?sample=StaggeredLayout) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[StaggeredLayout Sample Page](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/StaggeredLayout). You can [see this in action](uwpct://Controls?sample=StaggeredLayout) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -53,4 +53,4 @@ The [StaggeredLayout](/dotnet/api/microsoft.toolkit.uwp.ui.controls.StaggeredLay
 
 ## API
 
-- [StaggeredLayout](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/StaggeredLayout)
+- [StaggeredLayout](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/StaggeredLayout)

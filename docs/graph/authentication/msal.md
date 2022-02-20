@@ -11,10 +11,7 @@ dev_langs:
 
 The MsalProvider is an [IProvider](./custom.md) implementation built on the official Microsoft Authentication Library (MSAL). It is NetStandard 2.0 so it works in both UWP and WPF apps.
 
-> Available in the `CommunityToolkit.Authentication.Msal` package.
-
-> [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
+Available in the `CommunityToolkit.Authentication.Msal` package.
 
 ```csharp
 using CommunityToolkit.Authentication;

@@ -11,7 +11,7 @@ dev_langs:
 
 The [`DispatcherQueueExtensions`](/dotnet/api/microsoft.toolkit.uwp.DispatcherQueueExtensions) type provides a collection of extensions methods for [`DispatcherQueue`](/uwp/api/windows.system.dispatcherqueue) objects that makes it easier to execute code on a specific UI thread. A `DispatcherQueue` instance can be retrieved and cached for later use, and then used through any of the available helper methods to dispatch a delegate invocation on it.
 
-> **Platform APIs:** [`DispatcherQueueExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.DependencyObjectExtensions)
+> **Platform APIs:** [`DispatcherQueueExtensions`](/dotnet/api/microsoft.toolkit.uwp.DispatcherQueueExtensions)
 
 ## Syntax
 
@@ -78,4 +78,4 @@ Task.Run(() =>
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Extensions/Test_DispatcherQueueExtensions.cs).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.UWP/Extensions/Test_DispatcherQueueExtensions.cs).

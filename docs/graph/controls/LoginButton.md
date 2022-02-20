@@ -7,17 +7,14 @@ dev_langs:
   - csharp
 ---
 
-# (Preview) LoginButton XAML Control
+# LoginButton XAML Control
 
 The LoginButton is both a button and flyout control to facilitate Microsoft identity platform authentication. It provides two states:
 
 * When the user is not signed in, the control is a simple button to initiate the sign in process.
 * When the user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
 
-> Available in the `CommunityToolkit.Graph.Uwp` package.
-
-> [!IMPORTANT]
-> Windows Community Toolkit - Graph Controls and Helpers packages are in preview. To get started using WCT preview packages visit the [WCT Preview Packages wiki page](https://aka.ms/wct/wiki/previewpackages).
+Available in the `CommunityToolkit.Graph.Uwp` package.
 
 ## Syntax
 
@@ -50,10 +47,9 @@ The LoginButton is both a button and flyout control to facilitate Microsoft iden
 
 ## Requirements
 
-| Device family | Universal, MinVersion or higher |
-| -- | -- |
-| Namespace | CommunityToolkit.Graph.Uwp.Controls |
-| NuGet package | [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp) |
+* **Namespace:** CommunityToolkit.Graph.Uwp.Controls
+* **NuGet package:** [CommunityToolkit.Graph.Uwp](https://www.nuget.org/packages/CommunityToolkit.Graph.Uwp)
+* **Scope:** `User.Read`
 
 ## API
 

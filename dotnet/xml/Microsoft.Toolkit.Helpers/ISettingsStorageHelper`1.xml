@@ -1,0 +1,139 @@
+<Type Name="ISettingsStorageHelper&lt;TKey&gt;" FullName="Microsoft.Toolkit.Helpers.ISettingsStorageHelper&lt;TKey&gt;">
+  <TypeSignature Language="C#" Value="public interface ISettingsStorageHelper&lt;in TKey&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISettingsStorageHelper`1&lt;- TKey&gt;" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISettingsStorageHelper(Of In TKey)" />
+  <TypeSignature Language="F#" Value="type ISettingsStorageHelper&lt;'Key&gt; = interface" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="TKey">
+      <Constraints>
+        <ParameterAttribute>Contravariant</ParameterAttribute>
+      </Constraints>
+    </TypeParameter>
+  </TypeParameters>
+  <Interfaces />
+  <Docs>
+    <typeparam name="TKey">The type of keys to use for accessing values.</typeparam>
+    <summary>
+            Service interface used to store data using key value pairs.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Clear">
+      <MemberSignature Language="C#" Value="public void Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iSettingsStorageHelper.Clear " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Clear all keys and values from the settings store.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Save&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public void Save&lt;TValue&gt; (TKey key, TValue value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save&lt;TValue&gt;(!TKey key, !!TValue value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.Save``1(`0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save(Of TValue) (key As TKey, value As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member Save : 'Key * 'Value -&gt; unit" Usage="iSettingsStorageHelper.Save (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">Type of object saved.</typeparam>
+        <param name="key">Key of the value saved.</param>
+        <param name="value">Object to save.</param>
+        <summary>
+            Saves a single item by its key.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryDelete">
+      <MemberSignature Language="C#" Value="public bool TryDelete (TKey key);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryDelete(!TKey key) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.TryDelete(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryDelete (key As TKey) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryDelete : 'Key -&gt; bool" Usage="iSettingsStorageHelper.TryDelete key" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+      </Parameters>
+      <Docs>
+        <param name="key">Key of the object.</param>
+        <summary>
+            Deletes a single item by its key.
+            </summary>
+        <returns>A boolean indicator of success.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead&lt;TValue&gt;">
+      <MemberSignature Language="C#" Value="public bool TryRead&lt;TValue&gt; (TKey key, out TValue? value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryRead&lt;TValue&gt;(!TKey key, [out] !!TValue&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Helpers.ISettingsStorageHelper`1.TryRead``1(`0,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryRead(Of TValue) (key As TKey, ByRef value As TValue) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryRead : 'Key * 'Value -&gt; bool" Usage="iSettingsStorageHelper.TryRead (key, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TValue" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="key" Type="TKey" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TValue">Type of object retrieved.</typeparam>
+        <param name="key">Key of the object.</param>
+        <param name="value">The <see typeparamref="TValue" /> object for <see typeparamref="TKey" /> key.</param>
+        <summary>
+            Retrieves a single item by its key.
+            </summary>
+        <returns>A boolean indicator of success.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

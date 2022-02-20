@@ -1,0 +1,93 @@
+<Type Name="IPipelineEffect" FullName="CommunityToolkit.WinUI.UI.Media.IPipelineEffect">
+  <TypeSignature Language="C#" Value="public interface IPipelineEffect" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPipelineEffect" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.Media.IPipelineEffect" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPipelineEffect" />
+  <TypeSignature Language="F#" Value="type IPipelineEffect = interface" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Docs>
+    <summary>
+            The base <see langword="interface" /> for all the builder effects to be used in a <see cref="T:Microsoft.UI.Composition.CompositionBrush" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendToBuilder">
+      <MemberSignature Language="C#" Value="public CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder AppendToBuilder (CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder builder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder AppendToBuilder(class CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder builder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.IPipelineEffect.AppendToBuilder(CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendToBuilder (builder As PipelineBuilder) As PipelineBuilder" />
+      <MemberSignature Language="F#" Value="abstract member AppendToBuilder : CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder -&gt; CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" Usage="iPipelineEffect.AppendToBuilder builder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="builder" Type="CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="builder">The source <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> instance to add the effect to.</param>
+        <summary>
+            Appends the current effect to the input <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> instance.
+            </summary>
+        <returns>A new <see cref="T:CommunityToolkit.WinUI.UI.Media.Pipelines.PipelineBuilder" /> with the new effects added to it.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Brush">
+      <MemberSignature Language="C#" Value="public Microsoft.UI.Composition.CompositionBrush? Brush { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.UI.Composition.CompositionBrush Brush" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.WinUI.UI.Media.IPipelineEffect.Brush" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Brush As CompositionBrush" />
+      <MemberSignature Language="F#" Value="member this.Brush : Microsoft.UI.Composition.CompositionBrush" Usage="CommunityToolkit.WinUI.UI.Media.IPipelineEffect.Brush" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Composition.CompositionBrush</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> instance, if one is in use.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NotifyCompositionBrushInUse">
+      <MemberSignature Language="C#" Value="public void NotifyCompositionBrushInUse (Microsoft.UI.Composition.CompositionBrush brush);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyCompositionBrushInUse(class Microsoft.UI.Composition.CompositionBrush brush) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.Media.IPipelineEffect.NotifyCompositionBrushInUse(Microsoft.UI.Composition.CompositionBrush)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyCompositionBrushInUse (brush As CompositionBrush)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyCompositionBrushInUse : Microsoft.UI.Composition.CompositionBrush -&gt; unit" Usage="iPipelineEffect.NotifyCompositionBrushInUse brush" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI.Media</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="brush" Type="Microsoft.UI.Composition.CompositionBrush" />
+      </Parameters>
+      <Docs>
+        <param name="brush">The <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> in use.</param>
+        <summary>
+            Notifies that a given <see cref="T:Microsoft.UI.Composition.CompositionBrush" /> is now in use.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

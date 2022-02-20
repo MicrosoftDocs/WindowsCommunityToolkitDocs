@@ -66,4 +66,4 @@ The `SpanOwner<T>` instance will internally rent an array, and will take care of
 
 ## Examples
 
-You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.HighPerformance.Shared/Buffers).
+You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.HighPerformance.Shared/Buffers).

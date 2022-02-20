@@ -1,0 +1,72 @@
+<Type Name="ObservableRecipientAttribute" FullName="Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipientAttribute">
+  <TypeSignature Language="C#" Value="public sealed class ObservableRecipientAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObservableRecipientAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipientAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObservableRecipientAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ObservableRecipientAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+    <AssemblyVersion>7.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            An attribute that indicates that a given type should have all the members from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" />
+            generated into it. This can be useful when you want the same functionality from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" /> into
+            a class that already inherits from another one (since C# doesn't support multiple inheritance). This attribute will trigger
+            the source generator to just create the same APIs directly into the decorated class. For instance, this attribute can be
+            used to easily combine the functionality from both <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> and <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" />,
+            by using <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" /> as the base class and adding this attribute to the declared type.
+            <para>
+            This attribute can be used as follows:
+            <code>
+            [ObservableRecipient]
+            partial class MyViewModel : ObservableValidator
+            {
+                // Other members here...
+            }
+            </code></para>
+            And with this, the same APIs from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" /> will be available on this type as well.
+            <para>
+            To avoid conflicts with other APIs in types where the new members are being generated, constructors are only generated when the annotated
+            type doesn't have any explicit constructors being declared. If that is the case, the same constructors from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" />
+            are emitted, with the accessibility adapted to that of the annotated type. Otherwise, they are skipped, so the type being annotated has the
+            respondibility of properly initializing the <see cref="P:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.Messenger" /> property. Additionally, if the annotated type inherits
+            from <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator" />, the <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient.SetProperty``1(``0@,``0,System.Boolean,System.String)" /> overloads will be skipped
+            as well, as they would conflict with the <see cref="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableValidator.SetProperty``1(``0@,``0,System.Boolean,System.String)" /> methods.
+            </para></summary>
+    <remarks>
+            In order to work, <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipientAttribute" /> needs to be applied to a type that inherits from
+            <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObject" /> (either directly or indirectly), or to one decorated with <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableObjectAttribute" />.
+            This is because the <see cref="T:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipient" /> methods rely on some of the inherited members to work.
+            If this condition is not met, the code will fail to build.
+            </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ObservableRecipientAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Mvvm.ComponentModel.ObservableRecipientAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Mvvm</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

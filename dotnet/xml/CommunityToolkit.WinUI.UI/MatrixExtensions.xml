@@ -1,0 +1,289 @@
+<Type Name="MatrixExtensions" FullName="CommunityToolkit.WinUI.UI.MatrixExtensions">
+  <TypeSignature Language="C#" Value="public static class MatrixExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MatrixExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.UI.MatrixExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module MatrixExtensions" />
+  <TypeSignature Language="F#" Value="type MatrixExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Provides a set of extensions to the <see cref="o:Microsoft.UI.Xaml.Media.Matrix" /> struct.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="HasInverse">
+      <MemberSignature Language="C#" Value="public static bool HasInverse (this Microsoft.UI.Xaml.Media.Matrix matrix);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasInverse(valuetype Microsoft.UI.Xaml.Media.Matrix matrix) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.HasInverse(Microsoft.UI.Xaml.Media.Matrix)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasInverse (matrix As Matrix) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasInverse : Microsoft.UI.Xaml.Media.Matrix -&gt; bool" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.HasInverse matrix" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The matrix.</param>
+        <summary>
+            Implements WPF's <c>Matrix.HasInverse</c> logic.
+            </summary>
+        <returns>True if matrix has an inverse.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Multiply">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Multiply (this Microsoft.UI.Xaml.Media.Matrix matrix1, Microsoft.UI.Xaml.Media.Matrix matrix2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Multiply(valuetype Microsoft.UI.Xaml.Media.Matrix matrix1, valuetype Microsoft.UI.Xaml.Media.Matrix matrix2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Multiply(Microsoft.UI.Xaml.Media.Matrix,Microsoft.UI.Xaml.Media.Matrix)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Multiply (matrix1 As Matrix, matrix2 As Matrix) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Multiply : Microsoft.UI.Xaml.Media.Matrix * Microsoft.UI.Xaml.Media.Matrix -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Multiply (matrix1, matrix2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix1" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="matrix2" Type="Microsoft.UI.Xaml.Media.Matrix" />
+      </Parameters>
+      <Docs>
+        <param name="matrix1">Initial matrix.</param>
+        <param name="matrix2">Matrix to multiply by.</param>
+        <summary>
+            Multiply this matrix to the given matrix and return the result.
+            </summary>
+        <returns>Multiplied Matrix</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rotate">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Rotate (this Microsoft.UI.Xaml.Media.Matrix matrix, double angle);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Rotate(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 angle) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Rotate(Microsoft.UI.Xaml.Media.Matrix,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Rotate (matrix As Matrix, angle As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Rotate : Microsoft.UI.Xaml.Media.Matrix * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Rotate (matrix, angle)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="angle" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="angle">The angle of rotation in degrees.</param>
+        <summary>
+            Applies a rotation of the specified angle about the origin of this Matrix structure and returns the result.
+            </summary>
+        <returns>Rotated Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RotateAt">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix RotateAt (this Microsoft.UI.Xaml.Media.Matrix matrix, double angle, double centerX, double centerY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix RotateAt(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 angle, float64 centerX, float64 centerY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.RotateAt(Microsoft.UI.Xaml.Media.Matrix,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function RotateAt (matrix As Matrix, angle As Double, centerX As Double, centerY As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member RotateAt : Microsoft.UI.Xaml.Media.Matrix * double * double * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.RotateAt (matrix, angle, centerX, centerY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="angle" Type="System.Double" />
+        <Parameter Name="centerX" Type="System.Double" />
+        <Parameter Name="centerY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="angle">The angle of rotation in degrees.</param>
+        <param name="centerX">The x-coordinate of the point about which to rotate this matrix.</param>
+        <param name="centerY">The y-coordinate of the point about which to rotate this matrix.</param>
+        <summary>
+            Rotates this matrix about the specified point and returns the new result.
+            </summary>
+        <returns>Rotated Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Round">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Round (this Microsoft.UI.Xaml.Media.Matrix matrix, int decimalsAfterRound);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Round(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, int32 decimalsAfterRound) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Round(Microsoft.UI.Xaml.Media.Matrix,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Round (matrix As Matrix, decimalsAfterRound As Integer) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Round : Microsoft.UI.Xaml.Media.Matrix * int -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Round (matrix, decimalsAfterRound)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="decimalsAfterRound" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">The matrix to round.</param>
+        <param name="decimalsAfterRound">The number of decimals after the round.</param>
+        <summary>
+            Rounds the non-offset elements of a matrix to avoid issues due to floating point imprecision and returns the result.
+            </summary>
+        <returns>The rounded matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Scale">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Scale (this Microsoft.UI.Xaml.Media.Matrix matrix, double scaleX, double scaleY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Scale(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 scaleX, float64 scaleY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Scale(Microsoft.UI.Xaml.Media.Matrix,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Scale (matrix As Matrix, scaleX As Double, scaleY As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Scale : Microsoft.UI.Xaml.Media.Matrix * double * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Scale (matrix, scaleX, scaleY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="scaleX" Type="System.Double" />
+        <Parameter Name="scaleY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="scaleX">The value by which to scale this Matrix along the x-axis.</param>
+        <param name="scaleY">The value by which to scale this Matrix along the y-axis.</param>
+        <summary>
+            Appends the specified scale vector to this Matrix structure and returns the result.
+            </summary>
+        <returns>Scaled Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ScaleAt">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix ScaleAt (this Microsoft.UI.Xaml.Media.Matrix matrix, double scaleX, double scaleY, double centerX, double centerY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix ScaleAt(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 scaleX, float64 scaleY, float64 centerX, float64 centerY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.ScaleAt(Microsoft.UI.Xaml.Media.Matrix,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ScaleAt (matrix As Matrix, scaleX As Double, scaleY As Double, centerX As Double, centerY As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member ScaleAt : Microsoft.UI.Xaml.Media.Matrix * double * double * double * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.ScaleAt (matrix, scaleX, scaleY, centerX, centerY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="scaleX" Type="System.Double" />
+        <Parameter Name="scaleY" Type="System.Double" />
+        <Parameter Name="centerX" Type="System.Double" />
+        <Parameter Name="centerY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="scaleX">The value by which to scale this Matrix along the x-axis.</param>
+        <param name="scaleY">The value by which to scale this Matrix along the y-axis.</param>
+        <param name="centerX">The x-coordinate of the scale operation's center point.</param>
+        <param name="centerY">The y-coordinate of the scale operation's center point.</param>
+        <summary>
+            Scales this Matrix by the specified amount about the specified point and returns the result.
+            </summary>
+        <returns>Scaled Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Skew">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Skew (this Microsoft.UI.Xaml.Media.Matrix matrix, double skewX, double skewY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Skew(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 skewX, float64 skewY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Skew(Microsoft.UI.Xaml.Media.Matrix,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Skew (matrix As Matrix, skewX As Double, skewY As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Skew : Microsoft.UI.Xaml.Media.Matrix * double * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Skew (matrix, skewX, skewY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="skewX" Type="System.Double" />
+        <Parameter Name="skewY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="skewX">The angle in the x dimension by which to skew this Matrix.</param>
+        <param name="skewY">The angle in the y dimension by which to skew this Matrix.</param>
+        <summary>
+            Appends a skew of the specified degrees in the x and y dimensions to this Matrix structure and returns the result.
+            </summary>
+        <returns>Skewed Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Translate">
+      <MemberSignature Language="C#" Value="public static Microsoft.UI.Xaml.Media.Matrix Translate (this Microsoft.UI.Xaml.Media.Matrix matrix, double offsetX, double offsetY);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.UI.Xaml.Media.Matrix Translate(valuetype Microsoft.UI.Xaml.Media.Matrix matrix, float64 offsetX, float64 offsetY) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.UI.MatrixExtensions.Translate(Microsoft.UI.Xaml.Media.Matrix,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Translate (matrix As Matrix, offsetX As Double, offsetY As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="static member Translate : Microsoft.UI.Xaml.Media.Matrix * double * double -&gt; Microsoft.UI.Xaml.Media.Matrix" Usage="CommunityToolkit.WinUI.UI.MatrixExtensions.Translate (matrix, offsetX, offsetY)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI.UI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.UI.Xaml.Media.Matrix</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="matrix" Type="Microsoft.UI.Xaml.Media.Matrix" RefType="this" />
+        <Parameter Name="offsetX" Type="System.Double" />
+        <Parameter Name="offsetY" Type="System.Double" />
+      </Parameters>
+      <Docs>
+        <param name="matrix">Matrix to extend.</param>
+        <param name="offsetX">The offset in the x dimension.</param>
+        <param name="offsetY">The offset in the y dimension.</param>
+        <summary>
+            Translates the matrix by the given amount and returns the result.
+            </summary>
+        <returns>Translated Matrix.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

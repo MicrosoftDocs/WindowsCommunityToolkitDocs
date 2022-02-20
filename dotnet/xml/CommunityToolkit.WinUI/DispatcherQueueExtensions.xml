@@ -1,0 +1,155 @@
+<Type Name="DispatcherQueueExtensions" FullName="CommunityToolkit.WinUI.DispatcherQueueExtensions">
+  <TypeSignature Language="C#" Value="public static class DispatcherQueueExtensions" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DispatcherQueueExtensions extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:CommunityToolkit.WinUI.DispatcherQueueExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DispatcherQueueExtensions" />
+  <TypeSignature Language="F#" Value="type DispatcherQueueExtensions = class" />
+  <AssemblyInfo>
+    <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>
+            Helpers for executing code in a <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" />.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="EnqueueAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task EnqueueAsync (this Microsoft.UI.Dispatching.DispatcherQueue dispatcher, Action function, Microsoft.UI.Dispatching.DispatcherQueuePriority priority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task EnqueueAsync(class Microsoft.UI.Dispatching.DispatcherQueue dispatcher, class System.Action function, valuetype Microsoft.UI.Dispatching.DispatcherQueuePriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync(Microsoft.UI.Dispatching.DispatcherQueue,System.Action,Microsoft.UI.Dispatching.DispatcherQueuePriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EnqueueAsync (dispatcher As DispatcherQueue, function As Action, Optional priority As DispatcherQueuePriority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member EnqueueAsync : Microsoft.UI.Dispatching.DispatcherQueue * Action * Microsoft.UI.Dispatching.DispatcherQueuePriority -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.UI.Dispatching.DispatcherQueue" RefType="this" />
+        <Parameter Name="function" Type="System.Action" />
+        <Parameter Name="priority" Type="Microsoft.UI.Dispatching.DispatcherQueuePriority" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">The target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> to invoke the code on.</param>
+        <param name="function">The <see cref="T:System.Action" /> to invoke.</param>
+        <param name="priority">The priority level for the function to invoke.</param>
+        <summary>
+            Invokes a given function on the target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> and returns a
+            <see cref="T:System.Threading.Tasks.Task" /> that completes when the invocation of the function is completed.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that completes when the invocation of <paramref name="function" /> is over.</returns>
+        <remarks>If the current thread has access to <paramref name="dispatcher" />, <paramref name="function" /> will be invoked directly.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueAsync">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task EnqueueAsync (this Microsoft.UI.Dispatching.DispatcherQueue dispatcher, Func&lt;System.Threading.Tasks.Task&gt; function, Microsoft.UI.Dispatching.DispatcherQueuePriority priority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task EnqueueAsync(class Microsoft.UI.Dispatching.DispatcherQueue dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task&gt; function, valuetype Microsoft.UI.Dispatching.DispatcherQueuePriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync(Microsoft.UI.Dispatching.DispatcherQueue,System.Func{System.Threading.Tasks.Task},Microsoft.UI.Dispatching.DispatcherQueuePriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EnqueueAsync (dispatcher As DispatcherQueue, function As Func(Of Task), Optional priority As DispatcherQueuePriority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal) As Task" />
+      <MemberSignature Language="F#" Value="static member EnqueueAsync : Microsoft.UI.Dispatching.DispatcherQueue * Func&lt;System.Threading.Tasks.Task&gt; * Microsoft.UI.Dispatching.DispatcherQueuePriority -&gt; System.Threading.Tasks.Task" Usage="CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.UI.Dispatching.DispatcherQueue" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&gt;" />
+        <Parameter Name="priority" Type="Microsoft.UI.Dispatching.DispatcherQueuePriority" />
+      </Parameters>
+      <Docs>
+        <param name="dispatcher">The target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> to invoke the code on.</param>
+        <param name="function">The <see cref="T:System.Func`1" /> to invoke.</param>
+        <param name="priority">The priority level for the function to invoke.</param>
+        <summary>
+            Invokes a given function on the target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> and returns a
+            <see cref="T:System.Threading.Tasks.Task" /> that acts as a proxy for the one returned by the given function.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that acts as a proxy for the one returned by <paramref name="function" />.</returns>
+        <remarks>If the current thread has access to <paramref name="dispatcher" />, <paramref name="function" /> will be invoked directly.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; EnqueueAsync&lt;T&gt; (this Microsoft.UI.Dispatching.DispatcherQueue dispatcher, Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt; function, Microsoft.UI.Dispatching.DispatcherQueuePriority priority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; EnqueueAsync&lt;T&gt;(class Microsoft.UI.Dispatching.DispatcherQueue dispatcher, class System.Func`1&lt;class System.Threading.Tasks.Task`1&lt;!!T&gt;&gt; function, valuetype Microsoft.UI.Dispatching.DispatcherQueuePriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync``1(Microsoft.UI.Dispatching.DispatcherQueue,System.Func{System.Threading.Tasks.Task{``0}},Microsoft.UI.Dispatching.DispatcherQueuePriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EnqueueAsync(Of T) (dispatcher As DispatcherQueue, function As Func(Of Task(Of T)), Optional priority As DispatcherQueuePriority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member EnqueueAsync : Microsoft.UI.Dispatching.DispatcherQueue * Func&lt;System.Threading.Tasks.Task&lt;'T&gt;&gt; * Microsoft.UI.Dispatching.DispatcherQueuePriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.UI.Dispatching.DispatcherQueue" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;System.Threading.Tasks.Task&lt;T&gt;&gt;" />
+        <Parameter Name="priority" Type="Microsoft.UI.Dispatching.DispatcherQueuePriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The return type of <paramref name="function" /> to relay through the returned <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="dispatcher">The target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> to invoke the code on.</param>
+        <param name="function">The <see cref="T:System.Func`1" /> to invoke.</param>
+        <param name="priority">The priority level for the function to invoke.</param>
+        <summary>
+            Invokes a given function on the target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> and returns a
+            <see cref="T:System.Threading.Tasks.Task`1" /> that acts as a proxy for the one returned by the given function.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task`1" /> that relays the one returned by <paramref name="function" />.</returns>
+        <remarks>If the current thread has access to <paramref name="dispatcher" />, <paramref name="function" /> will be invoked directly.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnqueueAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;T&gt; EnqueueAsync&lt;T&gt; (this Microsoft.UI.Dispatching.DispatcherQueue dispatcher, Func&lt;T&gt; function, Microsoft.UI.Dispatching.DispatcherQueuePriority priority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;!!T&gt; EnqueueAsync&lt;T&gt;(class Microsoft.UI.Dispatching.DispatcherQueue dispatcher, class System.Func`1&lt;!!T&gt; function, valuetype Microsoft.UI.Dispatching.DispatcherQueuePriority priority) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync``1(Microsoft.UI.Dispatching.DispatcherQueue,System.Func{``0},Microsoft.UI.Dispatching.DispatcherQueuePriority)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EnqueueAsync(Of T) (dispatcher As DispatcherQueue, function As Func(Of T), Optional priority As DispatcherQueuePriority = Microsoft.UI.Dispatching.DispatcherQueuePriority.Normal) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="static member EnqueueAsync : Microsoft.UI.Dispatching.DispatcherQueue * Func&lt;'T&gt; * Microsoft.UI.Dispatching.DispatcherQueuePriority -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="CommunityToolkit.WinUI.DispatcherQueueExtensions.EnqueueAsync (dispatcher, function, priority)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.WinUI</AssemblyName>
+        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="dispatcher" Type="Microsoft.UI.Dispatching.DispatcherQueue" RefType="this" />
+        <Parameter Name="function" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="priority" Type="Microsoft.UI.Dispatching.DispatcherQueuePriority" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">The return type of <paramref name="function" /> to relay through the returned <see cref="T:System.Threading.Tasks.Task`1" />.</typeparam>
+        <param name="dispatcher">The target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> to invoke the code on.</param>
+        <param name="function">The <see cref="T:System.Func`1" /> to invoke.</param>
+        <param name="priority">The priority level for the function to invoke.</param>
+        <summary>
+            Invokes a given function on the target <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue" /> and returns a
+            <see cref="T:System.Threading.Tasks.Task`1" /> that completes when the invocation of the function is completed.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> that completes when the invocation of <paramref name="function" /> is over.</returns>
+        <remarks>If the current thread has access to <paramref name="dispatcher" />, <paramref name="function" /> will be invoked directly.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

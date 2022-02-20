@@ -33,7 +33,7 @@ The [ProfileCard Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.graph.pr
 | -- | -- | -- |
 | RequiredDelegatedPermissions | String[] | Gets required delegated permissions for Graph API access |
 | UserId | String | Identifier of the user being displayed, this user id can come from the Graph APIs like `/me/people`, `/users`, etc. |
-| DisplayMode | [ViewType](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/ProfileCard/ViewType.cs) | The visual layout of the control. Default is `PictureOnly` |
+| DisplayMode | [ViewType](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/ProfileCard/ViewType.cs) | The visual layout of the control. Default is `PictureOnly` |
 | DefaultImage | BitmapImage | The default image displayed when no user is signed in |
 | LargeProfileTitleDefaultText | String | Default title text in LargeProfilePhotoLeft mode or LargeProfilePhotoRight mode when no user is signed in |
 | LargeProfileMailDefaultText | String | Default secondary mail text in LargeProfilePhotoLeft mode or LargeProfilePhotoRight mode when no user is signed in |
@@ -59,11 +59,11 @@ The sign in will be processed by the [AadLogin](AadLogin.md) control, however, y
 await MicrosoftGraphService.Instance.LoginAsync();
 ```
 
-[ProfileCard Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[ProfileCard Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/ProfileCard). You can [see this in action](uwpct://Controls?sample=ProfileCard) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[ProfileCard XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/ProfileCard/ProfileCard.xaml) is the XAML template used in the toolkit for the default styling.
+[ProfileCard XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Graph/ProfileCard/ProfileCard.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

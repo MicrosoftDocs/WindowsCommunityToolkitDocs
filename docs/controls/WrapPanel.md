@@ -75,7 +75,7 @@ The following example of adding WrapPanel Control.
 
 ## Sample Project
 
-[WrapPanel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can [see this in action](uwpct://Controls?sample=WrapPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[WrapPanel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/WrapPanel). You can [see this in action](uwpct://Controls?sample=WrapPanel) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -86,4 +86,4 @@ The following example of adding WrapPanel Control.
 
 ## API
 
-* [WrapPanel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/WrapPanel)
+* [WrapPanel source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/WrapPanel)

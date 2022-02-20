@@ -194,7 +194,7 @@ In this page, you just need to give the same key.
 
 ## Sample Project
 
-[Connected Animations sample page source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can [see this in action](uwpct://Animations?sample=Connected%20Animations) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Connected Animations sample page source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Connected%20Animations). You can [see this in action](uwpct://Animations?sample=Connected%20Animations) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -205,7 +205,7 @@ In this page, you just need to give the same key.
 
 ## API
 
-* [Connected animations source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.0/Microsoft.Toolkit.Uwp.UI.Animations/ConnectedAnimations)
+* [Connected animations source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/ConnectedAnimations)
 
 ## Related Topics
 

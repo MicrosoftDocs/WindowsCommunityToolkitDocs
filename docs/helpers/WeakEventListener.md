@@ -25,7 +25,7 @@ The [WeakEventListener](/dotnet/api/microsoft.toolkit.uwp.helpers.weakeventliste
 
 ## Sample Code
 
-You can find examples of WeakEventListener in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/UnitTests/UnitTests.UWP/Helpers/Test_WeakEventListener.cs)
+You can find examples of WeakEventListener in our [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/UnitTests/UnitTests.UWP/Helpers/Test_WeakEventListener.cs)
 
 ## Requirements
 
@@ -36,4 +36,4 @@ You can find examples of WeakEventListener in our [unit tests](https://github.co
 
 ## API Source Code
 
-* [WeakEventListener source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.0/Microsoft.Toolkit.Uwp/Helpers/WeakEventListener.cs)
+* [WeakEventListener source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/WeakEventListener.cs)
