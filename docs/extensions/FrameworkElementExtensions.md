@@ -136,7 +136,7 @@ Here is how you can easily set a custom cursor type for a target `FrameworkEleme
 The `CanDragElement` attached property enables repositions the element
 in response to mouse drag gestures on the element.
 
-Here is how you can easily set a this for a target `FrameworkElement` instance:
+Here is how you can easily set this for a target `FrameworkElement` instance:
 ```xaml
 <Page
     x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.CanDragElementPage"
@@ -166,12 +166,12 @@ Not necessary. The default value is false.
 
 ## DragX
 
-The `DragX` attached property allows you get/set the X position of the dragged element,
+The `DragX` attached property allows you to get/set the X position of the dragged element,
 relative to the left of the root element.
 
 ## DragY
 
-The `DragY` attached property allows you get/set the Y position of the dragged element,
+The `DragY` attached property allows you to get/set the Y position of the dragged element,
 relative to the top of the root element.
 
 ## Examples
