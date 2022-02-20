@@ -131,6 +131,49 @@ Here is how you can easily set a custom cursor type for a target `FrameworkEleme
 > [!WARNING]
 > Because the UWP framework does not support metadata on attached properties, specifically the [`FrameworkPropertyMetadata.Inherits`](/dotnet/api/system.windows.frameworkpropertymetadata.-ctor#System_Windows_FrameworkPropertyMetadata__ctor_System_Object_System_Windows_FrameworkPropertyMetadataOptions_System_Windows_PropertyChangedCallback_System_Windows_CoerceValueCallback_) flag, the `Cursor` property might not work properly in some very specific XAML layout scenarios when combining nested `FrameworkElement`-s with different `CoreCursorType` values set on them.
 
+## CanDragElement
+
+The `CanDragElement` attached property enables repositions the element
+in response to mouse drag gestures on the element.
+
+Here is how you can easily set a this for a target `FrameworkElement` instance:
+```xaml
+<Page
+    x:Class="Microsoft.Toolkit.Uwp.SampleApp.SamplePages.CanDragElementPage"
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+    >
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Border
+            ui:FrameworkElementExtensions.CanDragElement="True"
+            ui:FrameworkElementExtensions.ConstrainDragToParentBounds="True"
+            Width="200"
+            Height="200"
+            Background="DeepSkyBlue"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            />
+    </Grid>
+</Page>
+```
+
+## ConstrainDragToParentBounds
+
+The `ConstrainDragToParentBounds` attached property allows you to constrain the dragged element
+to stay within the bounds of its parent container.  
+Not necessary. The default value is false.
+
+## DragX
+
+The `DragX` attached property allows you get/set the X position of the dragged element,
+relative to the left of the root element.
+
+## DragY
+
+The `DragY` attached property allows you get/set the Y position of the dragged element,
+relative to the top of the root element.
+
 ## Examples
 
 You can find more examples in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests).
