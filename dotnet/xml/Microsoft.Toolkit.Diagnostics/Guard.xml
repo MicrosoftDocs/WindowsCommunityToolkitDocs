@@ -3361,7 +3361,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsBetween">
-      <MemberSignature Language="C#" Value="public static void IsBetween (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsBetween (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsBetween(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsBetween (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -3376,9 +3376,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -3597,7 +3618,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsBetween">
-      <MemberSignature Language="C#" Value="public static void IsBetween (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsBetween (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsBetween(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetween(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsBetween (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -3612,9 +3633,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -3961,7 +4003,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsBetweenOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsBetweenOrEqualTo (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsBetweenOrEqualTo (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsBetweenOrEqualTo(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsBetweenOrEqualTo (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -3976,9 +4018,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -4197,7 +4260,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsBetweenOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsBetweenOrEqualTo (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsBetweenOrEqualTo (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsBetweenOrEqualTo(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsBetweenOrEqualTo(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsBetweenOrEqualTo (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -4212,9 +4275,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -4470,7 +4554,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsCloseTo">
-      <MemberSignature Language="C#" Value="public static void IsCloseTo (IntPtr value, IntPtr target, UIntPtr delta, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsCloseTo (nint value, nint target, nuint delta, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsCloseTo(native int value, native int target, native unsigned int delta, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsCloseTo(System.IntPtr,System.IntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsCloseTo (value As IntPtr, target As IntPtr, delta As UIntPtr, name As String)" />
@@ -4485,9 +4569,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="delta" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="delta" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -5224,7 +5329,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsEqualTo (IntPtr value, IntPtr target, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsEqualTo (nint value, nint target, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsEqualTo(native int value, native int target, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsEqualTo (value As IntPtr, target As IntPtr, name As String)" />
@@ -5239,8 +5344,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -5430,7 +5549,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsEqualTo (UIntPtr value, UIntPtr target, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsEqualTo (nuint value, nuint target, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsEqualTo(native unsigned int value, native unsigned int target, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsEqualTo (value As UIntPtr, target As UIntPtr, name As String)" />
@@ -5445,8 +5564,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -5850,7 +5983,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsGreaterThan">
-      <MemberSignature Language="C#" Value="public static void IsGreaterThan (IntPtr value, IntPtr minimum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsGreaterThan (nint value, nint minimum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsGreaterThan(native int value, native int minimum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsGreaterThan (value As IntPtr, minimum As IntPtr, name As String)" />
@@ -5865,8 +5998,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -6056,7 +6203,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsGreaterThan">
-      <MemberSignature Language="C#" Value="public static void IsGreaterThan (UIntPtr value, UIntPtr minimum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsGreaterThan (nuint value, nuint minimum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsGreaterThan(native unsigned int value, native unsigned int minimum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThan(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsGreaterThan (value As UIntPtr, minimum As UIntPtr, name As String)" />
@@ -6071,8 +6218,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -6375,7 +6536,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsGreaterThanOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsGreaterThanOrEqualTo (IntPtr value, IntPtr minimum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsGreaterThanOrEqualTo (nint value, nint minimum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsGreaterThanOrEqualTo(native int value, native int minimum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsGreaterThanOrEqualTo (value As IntPtr, minimum As IntPtr, name As String)" />
@@ -6390,8 +6551,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -6581,7 +6756,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsGreaterThanOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsGreaterThanOrEqualTo (UIntPtr value, UIntPtr minimum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsGreaterThanOrEqualTo (nuint value, nuint minimum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsGreaterThanOrEqualTo(native unsigned int value, native unsigned int minimum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsGreaterThanOrEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsGreaterThanOrEqualTo (value As UIntPtr, minimum As UIntPtr, name As String)" />
@@ -6596,8 +6771,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -6935,7 +7124,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsInRange">
-      <MemberSignature Language="C#" Value="public static void IsInRange (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsInRange (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsInRange(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsInRange (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -6950,9 +7139,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -7171,7 +7381,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsInRange">
-      <MemberSignature Language="C#" Value="public static void IsInRange (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsInRange (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsInRange(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsInRange(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsInRange (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -7186,9 +7396,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -7847,7 +8078,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsLessThan">
-      <MemberSignature Language="C#" Value="public static void IsLessThan (IntPtr value, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsLessThan (nint value, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsLessThan(native int value, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsLessThan (value As IntPtr, maximum As IntPtr, name As String)" />
@@ -7862,8 +8093,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -8053,7 +8298,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsLessThan">
-      <MemberSignature Language="C#" Value="public static void IsLessThan (UIntPtr value, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsLessThan (nuint value, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsLessThan(native unsigned int value, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThan(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsLessThan (value As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -8068,8 +8313,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -8372,7 +8631,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsLessThanOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsLessThanOrEqualTo (IntPtr value, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsLessThanOrEqualTo (nint value, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsLessThanOrEqualTo(native int value, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsLessThanOrEqualTo (value As IntPtr, maximum As IntPtr, name As String)" />
@@ -8387,8 +8646,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -8578,7 +8851,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsLessThanOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsLessThanOrEqualTo (UIntPtr value, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsLessThanOrEqualTo (nuint value, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsLessThanOrEqualTo(native unsigned int value, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsLessThanOrEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsLessThanOrEqualTo (value As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -8593,8 +8866,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -9004,7 +9291,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotBetween">
-      <MemberSignature Language="C#" Value="public static void IsNotBetween (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotBetween (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotBetween(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotBetween (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -9019,9 +9306,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -9240,7 +9548,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotBetween">
-      <MemberSignature Language="C#" Value="public static void IsNotBetween (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotBetween (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotBetween(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetween(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotBetween (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -9255,9 +9563,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -9604,7 +9933,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotBetweenOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsNotBetweenOrEqualTo (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotBetweenOrEqualTo (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotBetweenOrEqualTo(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotBetweenOrEqualTo (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -9619,9 +9948,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -9840,7 +10190,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotBetweenOrEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsNotBetweenOrEqualTo (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotBetweenOrEqualTo (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotBetweenOrEqualTo(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotBetweenOrEqualTo(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotBetweenOrEqualTo (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -9855,9 +10205,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -10068,7 +10439,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotCloseTo">
-      <MemberSignature Language="C#" Value="public static void IsNotCloseTo (IntPtr value, IntPtr target, UIntPtr delta, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotCloseTo (nint value, nint target, nuint delta, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotCloseTo(native int value, native int target, native unsigned int delta, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotCloseTo(System.IntPtr,System.IntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotCloseTo (value As IntPtr, target As IntPtr, delta As UIntPtr, name As String)" />
@@ -10083,9 +10454,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="delta" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="delta" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -10822,7 +11214,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsNotEqualTo (IntPtr value, IntPtr target, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotEqualTo (nint value, nint target, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotEqualTo(native int value, native int target, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotEqualTo (value As IntPtr, target As IntPtr, name As String)" />
@@ -10837,8 +11229,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -11028,7 +11434,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotEqualTo">
-      <MemberSignature Language="C#" Value="public static void IsNotEqualTo (UIntPtr value, UIntPtr target, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotEqualTo (nuint value, nuint target, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotEqualTo(native unsigned int value, native unsigned int target, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotEqualTo(System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotEqualTo (value As UIntPtr, target As UIntPtr, name As String)" />
@@ -11043,8 +11449,22 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="target" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="target" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -11415,7 +11835,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotInRange">
-      <MemberSignature Language="C#" Value="public static void IsNotInRange (IntPtr value, IntPtr minimum, IntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotInRange (nint value, nint minimum, nint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotInRange(native int value, native int minimum, native int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.IntPtr,System.IntPtr,System.IntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotInRange (value As IntPtr, minimum As IntPtr, maximum As IntPtr, name As String)" />
@@ -11430,9 +11850,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.IntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.IntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.IntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>
@@ -11651,7 +12092,7 @@
       </Docs>
     </Member>
     <Member MemberName="IsNotInRange">
-      <MemberSignature Language="C#" Value="public static void IsNotInRange (UIntPtr value, UIntPtr minimum, UIntPtr maximum, string name);" />
+      <MemberSignature Language="C#" Value="public static void IsNotInRange (nuint value, nuint minimum, nuint maximum, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void IsNotInRange(native unsigned int value, native unsigned int minimum, native unsigned int maximum, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Diagnostics.Guard.IsNotInRange(System.UIntPtr,System.UIntPtr,System.UIntPtr,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub IsNotInRange (value As UIntPtr, minimum As UIntPtr, maximum As UIntPtr, name As String)" />
@@ -11666,9 +12107,30 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
-        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
+        <Parameter Name="value" Type="System.UIntPtr" Index="0" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="minimum" Type="System.UIntPtr" Index="1" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="maximum" Type="System.UIntPtr" Index="2" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
         <Parameter Name="name" Type="System.String" Index="3" FrameworkAlternate="win-comm-toolkit-dotnet-stable;win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1" />
       </Parameters>
       <Docs>

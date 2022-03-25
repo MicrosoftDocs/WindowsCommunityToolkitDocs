@@ -39,7 +39,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="T" />
+        <Parameter Name="item" Type="T">
+          <Attributes>
+            <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0;win-comm-toolkit-dotnet-7.1">
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <param name="item">The current item to process.</param>
