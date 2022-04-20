@@ -8,7 +8,7 @@ dev_langs:
   - vb
 ---
 
-# SlidableListItem XAML Control
+# SlidableListItem XAML Control 
 
 > [!WARNING]
 > The SlidableListItem is no longer available in the Windows Community Toolkit. Please use the [SwipeControl](/windows/uwp/controls-and-patterns/swipe). Read the [Moving to SwipeControl](#swipe) section for more info.
