@@ -36,7 +36,7 @@ Developers can place menu specific content, navigation, images, text or custom c
 
 ![HamburgerMenu animation](../resources/images/Controls/HamburgerMenu.gif)
 
-## Properties
+## Properties 
 
 | Property | Type | Description |
 | -- | -- | -- |
