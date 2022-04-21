@@ -32,7 +32,7 @@ Developers can place menu specific content, navigation, images, text or custom c
 </controls:HamburgerMenu>
 ```
 
-## Sample Output 
+## Sample Output.
 
 ![HamburgerMenu animation](../resources/images/Controls/HamburgerMenu.gif)
 
