@@ -17,7 +17,7 @@ The [SlidableListItem Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.sli
 
 This control can be used as a ListView Data Template root to create effects similar to those common in mobile email apps like Outlook.
 
-## Syntax
+## Syntax.
 
 ```xaml
 <controls:SlidableListItem LeftIcon="Favorite" RightIcon="Delete" LeftLabel="Set Favorite"
