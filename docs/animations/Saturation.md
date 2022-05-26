@@ -137,4 +137,4 @@ You can see this in action in the [Windows Community Toolkit Sample App](https:/
 ## Related Topics
 
 - [AnimationSet Class](./animationset.md)
-- [SaturationEffect Class](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
+- [SaturationEffect Class](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
