@@ -99,7 +99,7 @@ The [BladeView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.bladeview) control
 
 ## Default Template
 
-[BladeView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
+[BladeView XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/BladeView/BladeView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

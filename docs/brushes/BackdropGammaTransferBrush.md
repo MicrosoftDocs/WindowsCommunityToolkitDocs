@@ -30,7 +30,7 @@ To apply a red hue:
 
 ## Properties
 
-See the property reference for the [GammaTransferEffect](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GammaTransferEffect.htm).  
+See the property reference for the [GammaTransferEffect](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Effects_GammaTransferEffect.htm).  
 
 All Amplitude, Disable, Exponent, and Offset properties are available for the Alpha, Red, Green, and Blue channels.
 
@@ -51,4 +51,4 @@ All Amplitude, Disable, Exponent, and Offset properties are available for the Al
 
 ## Related Topics
 
-* [Win2D GammaTransferEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GammaTransferEffect.htm)
+* [Win2D GammaTransferEffect reference](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Effects_GammaTransferEffect.htm)
