@@ -69,7 +69,7 @@ The [DropShadowPanel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.dropshadowpa
 
 ## Default Template
 
-[DropShadowPanel XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/63cbb4a51bdef59083ccfc86bbcba41f966d0027/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel/DropShadowPanel.xaml) is the XAML template used in the toolkit for the default styling.
+[DropShadowPanel XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/DropShadowPanel/DropShadowPanel.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
