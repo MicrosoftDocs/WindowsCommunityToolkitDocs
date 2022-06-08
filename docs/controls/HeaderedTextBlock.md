@@ -39,11 +39,11 @@ The [HeaderedTextBlock](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredte
 
 ## Sample Project
 
-[HeaderedTextBlock Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock). You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+HeaderedTextBlock Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedTextBlock)`. You can [see this in action](uwpct://Controls?sample=HeaderedTextBlock) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-[HeaderedTextBlock XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml) is the XAML template used in the toolkit for the default styling.
+HeaderedTextBlock XAML File `(https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock/HeaderedTextBlock.xaml)` is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -54,4 +54,4 @@ The [HeaderedTextBlock](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headeredte
 
 ## API
 
-* [HeaderedTextBlock source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock)
+* HeaderedTextBlock source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedTextBlock)`

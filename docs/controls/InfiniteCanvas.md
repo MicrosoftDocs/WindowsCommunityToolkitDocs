@@ -71,7 +71,7 @@ The following sample demonstrates how to add InfiniteCanvas Control
 
 ## Default Template
 
-[InfiniteCanvas XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/InfiniteCanvas/InfiniteCanvas.xaml) is the XAML template used in the toolkit for the default styling.
+[InfiniteCanvas XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/63cbb4a51bdef59083ccfc86bbcba41f966d0027/Microsoft.Toolkit.Uwp.UI.Controls.Media/InfiniteCanvas/InfiniteCanvas.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
