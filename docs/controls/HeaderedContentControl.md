@@ -70,7 +70,7 @@ The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.heade
 
 ## Sample Project
 
-[HeaderedContentControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can see this in action `(uwpct://Controls?sample=HeaderedContentControl)` in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[HeaderedContentControl Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/HeaderedContentControl). You can [see this in action](uwpct://Controls?sample=HeaderedContentControl) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
