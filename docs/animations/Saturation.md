@@ -121,7 +121,7 @@ ToolkitLogo.Saturation(value:=0, duration:=500, delay:=250)
 
 ## Sample Project
 
-Saturation Behavior Sample Page Source. You can [see this in action](uwpct://Animations?sample=Saturation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Saturation Behavior Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.2/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Animations/Behaviors). You can [see this in action](uwpct://Animations?sample=Saturation) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
