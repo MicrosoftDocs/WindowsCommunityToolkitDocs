@@ -160,7 +160,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Scale source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Media/ScaleTransformExtensions.cs)
+- [Scale source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/ScaleAnimation.cs)
 
 ## Related Topics
 
