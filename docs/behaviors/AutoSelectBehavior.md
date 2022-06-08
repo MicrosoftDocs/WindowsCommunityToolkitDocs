@@ -34,7 +34,7 @@ In this example using the `AutoSelectBehavior` the textbox content will be autom
 
 ## Source Code
 
-- [AutoSelect behavior source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/747497aafbc1f3af1ab17ea48ac526b51528faa2/Microsoft.Toolkit.Uwp.UI.Behaviors/Select/AutoSelectBehavior.cs)
+- [AutoSelect behavior source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Behaviors/Select/AutoSelectBehavior.cs)
 
 ## Related Topics
 
