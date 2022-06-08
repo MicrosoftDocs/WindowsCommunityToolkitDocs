@@ -1,6 +1,6 @@
-<!-- When opening a PR, start by forking this repository. Then, based on the type of change you're making you'll need to create a new branch from either the `master` or `dev` branches:
+<!-- When opening a PR, start by forking this repository. Then, based on the type of change you're making you'll need to create a new branch from either the `main` or `dev` branches:
 
-If you have a typo or existing document improvement to an already shipped feature, please base your change off of the [master branch](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/tree/master). This will allow us to get the change to the published documentation between releases.
+If you have a typo or existing document improvement to an already shipped feature, please base your change off of the [main branch](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/tree/main). This will allow us to get the change to the published documentation between releases.
 
 For documentation regarding any new features, please base your fork off the last updated dev branch. For example: 'dev/7.1.0'.
 
@@ -20,10 +20,10 @@ Documentation Links
 
 Please check if your PR fulfills the following requirements:
 
-- [ ] Correctly picked the right branch to base the change off (`dev` for new features, `master` for typos/improvements)
-- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/.template.md)
-- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/master/docs/toc.md)
-- [ ] Ran against a spell and grammar checker 
+- [ ] Correctly picked the right branch to base the change off (`dev` for new features, `main` for typos/improvements)
+- [ ] For new pages, used the [provided template](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/main/docs/.template.md)
+- [ ] For new features, added an entry in the [Table of Contents](https://github.com/MicrosoftDocs/WindowsCommunityToolkitDocs/blob/main/docs/toc.md)
+- [ ] Ran against a spell and grammar checker
 - [ ] Contains **NO** breaking changes
 
 <!-- If this PR contains a breaking change, please describe the impact and migration path for existing applications below. 
