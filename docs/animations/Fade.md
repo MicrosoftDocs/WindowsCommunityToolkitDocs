@@ -111,7 +111,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Fade Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Fade). You can [see this in action](uwpct://Animations?sample=Fade) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Fade Behavior Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.2/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Animations/Effects). You can [see this in action](uwpct://Animations?sample=Fade) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -122,7 +122,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Fade source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Fade.cs)
+- [Fade source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/OpacityAnimation.cs)
 
 ## Related Topics
 
