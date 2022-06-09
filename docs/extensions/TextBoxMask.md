@@ -151,4 +151,4 @@ The following sample demonstrates how to add TextBoxMask property.
 
 ## API
 
-* [TextBoxMask source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBoxMask)
+* TextBoxMask source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBoxMask)`

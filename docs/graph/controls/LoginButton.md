@@ -53,7 +53,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 
 ## API
 
-* [LoginButton source code](https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/LoginButton)
+* LoginButton source code `(https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/LoginButton)`
 
 ## Related Topics
 
