@@ -52,7 +52,7 @@ The [TileControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.tilecontrol) is 
 
 ## Default Template
 
-[TileControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TileControl/TileControl.xaml) is the XAML template used in the toolkit for the default styling.
+[TileControl XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/main/Microsoft.Toolkit.Uwp.UI.Controls.Core/TileControl/TileControl.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
