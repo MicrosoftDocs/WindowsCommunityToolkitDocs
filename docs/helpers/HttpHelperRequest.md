@@ -14,7 +14,7 @@ dev_langs:
 > (This API is obsolete and has been removed. Please use [System.Net.Http.HttpRequestMessage](/dotnet/api/system.net.http.httprequestmessage)
 > or [Windows.Web.Http.HttpRequestMessage](/uwp/api/windows.web.http.httprequestmessage) directly)
 
-The [HttpHelperRequest](/dotnet/api/microsoft.toolkit.uwp.httphelperrequest) represents an HTTP request message including headers.
+The HttpHelperRequest `(/dotnet/api/microsoft.toolkit.uwp.httphelperrequest)` represents an HTTP request message including headers.
 
 ```csharp
 var request = new HttpHelperRequest(uri, HttpMethod.Get);
@@ -80,4 +80,4 @@ request.Headers.Authorization = New Windows.Web.Http.Headers.HttpCredentialsHead
 
 ## API
 
-* [HttpHelperRequest source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperRequest.cs)
+* `HttpHelperRequest source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperRequest.cs)`

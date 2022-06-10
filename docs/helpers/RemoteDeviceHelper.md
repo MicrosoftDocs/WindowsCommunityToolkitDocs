@@ -99,7 +99,7 @@ DevicesList.DataContext = _remoteDeviceHelper;
 ## Related Topics
 
 * [Project Rome](https://developer.microsoft.com/windows/project-rome)
-* [Remote Systems Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.1.0/Samples/RemoteSystems)
+* [Remote Systems Sample](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples/RemoteSystems)
 * [Connected apps and devices (Project Rome)](/windows/uwp/launch-resume/connected-apps-and-devices)
 * [Communicate with a remote app service](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [AppServices Sample](https://github.com/Microsoft/Windows-universal-samples/tree/rel/7.1.0/Samples/AppServices)
+* [AppServices Sample](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples/AppServices)

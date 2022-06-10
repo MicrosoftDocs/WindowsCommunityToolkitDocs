@@ -17,7 +17,7 @@ The **Twitter Service** allows users to retrieve or publish data to Twitter.
 
 [Twitter Developer Site](https://dev.twitter.com) is the main content site for all Twitter developers.  Visit the [Twitter Apps List](https://apps.twitter.com/) to manage existing apps.
 
-[Create new Twitter App](https://apps.twitter.com/app) can be used to create a new app within the Twitter portal.
+[Create new Twitter App](https://developer.twitter.com/en) can be used to create a new app within the Twitter portal.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Services?sample=Twitter%20Service)
@@ -207,7 +207,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Sample Project
 
-[Twitter Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service). You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+Twitter Service Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Twitter%20Service)`. You can [see this in action](uwpct://Services?sample=Twitter%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -218,4 +218,4 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## API
 
-* [Twitter Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/Twitter)
+* Twitter Service source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/Twitter)`

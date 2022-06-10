@@ -14,7 +14,7 @@ dev_langs:
 > (This API is obsolete and has been removed. Please use [System.Net.Http.HttpResponseMessage](/dotnet/api/system.net.http.httpresponsemessage)
 > or [Windows.Web.Http.HttpResponseMessage](/uwp/api/Windows.Web.Http.HttpResponseMessage) directly)
 
-[HttpHelperResponse](/dotnet/api/microsoft.toolkit.uwp.httphelperresponse) represents an HTTP response message including headers.
+HttpHelperResponse `(/dotnet/api/microsoft.toolkit.uwp.httphelperresponse)` represents an HTTP response message including headers.
 
 ## Sample
 
@@ -91,4 +91,4 @@ End Using
 
 ## API
 
-* [HttpHelperResponse source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)
+* HttpHelperResponse source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelperResponse.cs)`

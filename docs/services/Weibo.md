@@ -97,7 +97,7 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## Sample Project
 
-[Weibo Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service). You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+Weibo Service Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Weibo%20Service)`. You can [see this in action](uwpct://Services?sample=Weibo%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -108,4 +108,4 @@ Await WeiboService.Instance.PostStatusAsync(StatusText.Text, stream)
 
 ## API
 
-* [Weibo Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/Weibo)
+* Weibo Service source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/Weibo)`
