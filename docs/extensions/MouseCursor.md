@@ -65,4 +65,4 @@ Because the UWP framework does not support metadata on Attached Properties, spec
 
 ## API
 
-* Mouse.Cursor source code (https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/6.1.1/Microsoft.Toolkit.Uwp.UI/Extensions/Mouse)
+* [Mouse.Cursor source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/6.1.1/Microsoft.Toolkit.Uwp.UI/Extensions/Mouse)
