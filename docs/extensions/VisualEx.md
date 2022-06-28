@@ -87,4 +87,4 @@ The point about which rotation or scaling occurs, normalized between the values 
 
 ## API
 
-* Visual extensions source code `(https://github.com/Microsoft/UWPCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Visual/VisualEx.cs)`
+* [Visual extensions source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/VisualExtensions.cs)

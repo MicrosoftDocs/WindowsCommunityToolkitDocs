@@ -55,7 +55,7 @@ await new MessageDialog($"You picked {remoteSystems.Count().ToString()} Device(s
 
 ## Default Template
 
-[RemoteDevicePicker XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/63cbb4a51bdef59083ccfc86bbcba41f966d0027/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
+[RemoteDevicePicker XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/RemoteDevicePicker/RemoteDevicePicker.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

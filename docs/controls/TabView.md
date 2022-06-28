@@ -133,11 +133,11 @@ The TabView supports data binding as well.  The following example shows binding 
 
 ## Sample Project
 
-TabView Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView)`. You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+TabView Sample Page Source [TabView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/6.1.1/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TabView). You can [see this in action](uwpct://Controls?sample=TabView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
-TabView XAML File `(https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml)` is the XAML template used in the toolkit for the default styling.
+TabView XAML File [TabView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/6.1.1/Microsoft.Toolkit.Uwp.UI.Controls/TabView/TabView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
@@ -148,7 +148,7 @@ TabView XAML File `(https://github.com/windows-toolkit/WindowsCommunityToolkit/b
 
 ## API
 
-- TabView source code `(https://github.com/microsoft/microsoft-ui-xaml/tree/rel/7.1.0/dev/TabView)`
+- TabView source code [TabView source code](https://github.com/microsoft/microsoft-ui-xaml/tree/main/dev/TabView)
 
 ## Related Topics
 

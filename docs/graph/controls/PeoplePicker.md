@@ -39,7 +39,7 @@ Available in the `CommunityToolkit.Graph.Uwp` package.
 
 ## API
 
-* PeoplePicker source code `(https://github.com/windows-toolkit/Graph-Controls/tree/dev/7.1.0/CommunityToolkit.Graph.Uwp/Controls/PeoplePicker)`
+* [PeoplePicker source code](https://github.com/CommunityToolkit/Graph-Controls/tree/rel/7.1.0/CommunityToolkit.Graph.Uwp/Controls/PeoplePicker)
 
 ## Related Topics
 
