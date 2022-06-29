@@ -53,4 +53,4 @@ The [StaggeredLayout](/dotnet/api/microsoft.toolkit.uwp.ui.controls.StaggeredLay
 
 ## API
 
-- [StaggeredLayout](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/StaggeredLayout)
+- [StaggeredLayout](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Primitives/StaggeredLayout)

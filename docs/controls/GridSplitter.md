@@ -105,7 +105,7 @@ The following sample demonstrates how to add Grid Splitter Control
 
 ## Default Template
 
-[GridSplitter XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/f62a60bf2aec5a09c9bbbb480ead2b78224000d1/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
+[GridSplitter XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/GridSplitter/GridSplitter.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

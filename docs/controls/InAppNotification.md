@@ -238,7 +238,7 @@ You can change this behavior with one of these values:
 
 If you want to add styles to the Toolkit, please follow these steps :
 
-1. Create a `ResourceDictionary` file in Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/ `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles)` folder
+1. Create a `ResourceDictionary` file in [Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles/](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.UI.Controls/InAppNotification/Styles) folder
 2. Create a new `Style` with `TargetType="local:InAppNotification"`
 3. Create a new `ControlTemplate` with `TargetType="local:InAppNotification"` and add a `ContentPresenter` inside the Template
 4. Do not forget to set the `Template` property inside your `Style` resource

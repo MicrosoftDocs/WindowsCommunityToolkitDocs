@@ -99,7 +99,7 @@ For instance to remove the header entirely from the Expander:
 
 ## Default Template
 
-[Expander XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander/Expander.xaml) is the XAML template used in the toolkit for the default styling.
+[Expander XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Expander/Expander.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
