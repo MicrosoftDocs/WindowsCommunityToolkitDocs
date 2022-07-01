@@ -281,7 +281,7 @@ Class for connecting to Facebook
 
 ## Sample Project
 
-Facebook Service Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service)`. You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Facebook Service Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Facebook%20Service). You can [see this in action](uwpct://Services?sample=Facebook%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -292,4 +292,4 @@ Facebook Service Sample Page Source `(https://github.com/windows-toolkit/Windows
 
 ## API
 
-* Facebook Service source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.Services/Services/Facebook)`
+* [Facebook Service source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.Services/Services/Facebook)

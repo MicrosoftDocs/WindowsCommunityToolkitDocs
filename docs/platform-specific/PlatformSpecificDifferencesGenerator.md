@@ -46,7 +46,7 @@ For a type that has additions, the additions are listed alongside
 
 ## API Source Code
 
-- DifferencesGen `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.PlatformDifferencesGen/Program.cs)`
+- [DifferencesGen](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/6.1.0/Microsoft.Toolkit.Uwp.PlatformDifferencesGen/Program.cs)
 
 ## Related Topics
 

@@ -88,7 +88,7 @@ If you don't have one, you need to create an Office 365 Developer Site. There ar
 * [An MSDN subscription](https://msdn.microsoft.com/subscriptions/manage/default.aspx) - This is available to MSDN subscribers with Visual Studio Ultimate and Visual Studio Premium.
 * [An existing Office 365 subscription](/sharepoint/dev/sp-add-ins/create-a-developer-site-on-an-existing-office-365-subscription) - You can use an existing Office 365 subscription, which can be any of the following: Office 365 Midsize Business, Office 365 Enterprise, Office 365 Education, Office 365 Government.
 * [Free O365 trial](https://portal.office.com/Signup?OfferId=6881A1CB-F4EB-4db3-9F18-388898DAF510&DL=DEVELOPERPACK&ali=1) - You can start with a free 30-day trial, or buy an Office 365 developer subscription.
-* [Free O365 Developer](https://developer.microsoft.com/en-us/microsoft-365/dev-program) - Or Get a One year free Office 365 Developer account
+* [Free O365 Developer](https://developer.microsoft.com/microsoft-365/dev-program) - Or Get a One year free Office 365 Developer account
 
 ## Syntax
 
@@ -360,7 +360,7 @@ End If
 
 ## Sample Project
 
-MicrosoftGraph Service Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service)`. You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[MicrosoftGraph Service Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/5.1.1/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Microsoft%20Graph%20Service). You can [see this in action](uwpct://Services?sample=Microsoft%20Graph%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -371,4 +371,4 @@ MicrosoftGraph Service Sample Page Source `(https://github.com/windows-toolkit/W
 
 ## API
 
-* MicrosoftGraph Service source code `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph)`
+* [MicrosoftGraph Service source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.0.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph)

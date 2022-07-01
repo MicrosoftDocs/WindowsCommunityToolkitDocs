@@ -107,7 +107,7 @@ End Function)
 
 ## Sample Project
 
-DispatcherHelper Sample Page Source `(https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DispatcherHelper)`. You can [see this in action](uwpct://Helpers?sample=DispatcherHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[DispatcherHelper Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DispatcherHelper). You can [see this in action](uwpct://Helpers?sample=DispatcherHelper) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
