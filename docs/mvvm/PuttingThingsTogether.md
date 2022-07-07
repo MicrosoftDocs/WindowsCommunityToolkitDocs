@@ -290,7 +290,7 @@ public interface IRedditService
 }
 ```
 
-That `PostsQueryResponse` is a model we wrote that maps the JSON response for that API. The exact structure of that class is not important - suffice to say that it contains a collection of `Post` items, which are simple models representing our posts, that like like this:
+That `PostsQueryResponse` is a model we wrote that maps the JSON response for that API. The exact structure of that class is not important - suffice to say that it contains a collection of `Post` items, which are simple models representing our posts, like this:
 
 ```csharp
 public class Post
@@ -312,7 +312,7 @@ public class Post
 }
 ```
 
-Once we have our service and our models, can plug them into our viewmodels to complete our backend. While doing so, we can also replace those `object` placeholders with the `Post` type we've defined:
+Once we have our service and our models, we can plug them into our viewmodels to complete our backend. While doing so, we can also replace those `object` placeholders with the `Post` type we've defined:
 
 ```csharp
 public sealed class SubredditWidgetViewModel : ObservableRecipient
