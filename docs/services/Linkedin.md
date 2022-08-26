@@ -63,7 +63,7 @@ Await LinkedInService.Instance.GetUserProfileAsync()
 Await LinkedInService.Instance.ShareActivityAsync(ShareText.Text)
 ```
 
-[LinkedIn Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
+[LinkedIn Service Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can see this in action in [Windows Community Toolkit Sample App](https://www.microsoft.com/store/apps/9NBLGGH4TLCQ).
 
 ## Using the service on non-UWP platforms
 
@@ -95,7 +95,7 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## Sample Project
 
-[LinkedIn Service Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[LinkedIn Service Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/LinkedIn%20Service). You can [see this in action](uwpct://Services?sample=LinkedIn%20Service) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -106,4 +106,4 @@ The toolkit has implementations of each of them for UWP. You can find them as Uw
 
 ## API
 
-* [LinkedIn Service source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/LinkedIn)
+* [LinkedIn Service source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Services/Services/LinkedIn)

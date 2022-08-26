@@ -123,4 +123,4 @@ End Sub
 
 ## API Source Code
 
-- [WinForms.GraphLogin](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph/WinForms)
+- [WinForms.GraphLogin](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.0.0/Microsoft.Toolkit.Services/Services/MicrosoftGraph/WinForms)
