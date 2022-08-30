@@ -17,7 +17,7 @@ We will merge updates from the current main branch to the latest dev branch to k
 ## Documentation Links
 
 - [Staging review from 'master' branch](https://review.docs.microsoft.com/windows/uwpcommunitytoolkit/?branch=master)
-- [Live site from 'live' branch](/windows/uwpcommunitytoolkit)
+- [Live site from 'live' branch](https://docs.microsoft.com/windows/uwpcommunitytoolkit)
 
 ## Microsoft Open Source Code of Conduct
 
