@@ -88,11 +88,11 @@ public class RegistrationForm : ObservableValidator
 }
 ```
 
-In this case we have a static `ValidateName` method that will perform validation on the `Name` property through a service that is injected into our viewmodel. This method receives the name property value and the `ValidationContext` instance in use, which contains things such as the viewmodel instance, the name of the property being validated, and optionally a service provider and some custom flags we can use or set. In this case, we are retrieving the `RegistrationForm` instance from the validation context, and from there we are using the injected service to validate the property. Note that this validation will be executed next to the ones specified in the other attributes, so we are free to combine custom validation methods and existing validation attributes however we like.
+In this case we have a static `ValidateName` method that will perform validation on the `Name` property through a service that is injected into our viewmodel. This method receives the `name` property value and the `ValidationContext` instance in use, which contains things such as the viewmodel instance, the name of the property being validated, and optionally a service provider and some custom flags we can use or set. In this case, we are retrieving the `RegistrationForm` instance from the validation context, and from there we are using the injected service to validate the property. Note that this validation will be executed next to the ones specified in the other attributes, so we are free to combine custom validation methods and existing validation attributes however we like.
 
 ## Custom validation attributes
 
-Another way of doing custom validation is by implementing a custom `[ValidationAttribute]`. and then inserting the validation logic into the overridden `IsValid` method. This enables extra flexibility compared to the approach described above, as it makes it very easy to just reuse the same attribute in multiple places.
+Another way of doing custom validation is by implementing a custom `[ValidationAttribute]` and then inserting the validation logic into the overridden `IsValid` method. This enables extra flexibility compared to the approach described above, as it makes it very easy to just reuse the same attribute in multiple places.
 
 Suppose we wanted to validate a property based on its relative value with respect to another property in the same viewmodel. The first step would be to define a custom `[GreaterThanAttribute]`, like so:
 
