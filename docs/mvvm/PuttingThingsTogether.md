@@ -290,7 +290,7 @@ public interface IRedditService
 }
 ```
 
-That `PostsQueryResponse` is a model we wrote that maps the JSON response for that API. The exact structure of that class is not important - suffice to say that it contains a collection of `Post` items, which are simple models representing our posts, that like like this:
+That `PostsQueryResponse` is a model we wrote that maps the JSON response for that API. The exact structure of that class is not important - suffice to say that it contains a collection of `Post` items, which are simple models representing our posts, that like this:
 
 ```csharp
 public class Post
