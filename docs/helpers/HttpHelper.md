@@ -13,7 +13,7 @@ dev_langs:
 > [!WARNING]
 > (This API is obsolete and has been removed. Please use [System.Net.Http.HttpClient](/dotnet/api/system.net.http.httpclient) or [Windows.Web.Http.HttpClient](/uwp/api/Windows.Web.Http.HttpClient) directly)
 
-The [HttpHelper](/dotnet/api/microsoft.toolkit.uwp.httphelper) represents an HTTP request message including headers.
+The HttpHelper (`/dotnet/api/microsoft.toolkit.uwp.httphelper`) represents an HTTP request message including headers.
 
 ## Syntax
 
@@ -81,4 +81,4 @@ End Using
 
 ## API
 
-* [HttpHelper source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs)
+* HttpHelper source code (`https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp/Helpers/HttpHelper/HttpHelper.cs`)

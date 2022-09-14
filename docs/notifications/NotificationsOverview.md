@@ -19,7 +19,7 @@ Instead of having to deal with XML, you can now use Windows Community toolkit an
 
 ### Sample Output
 
-![LiveTile](../resources/images/Notifications/LiveTile.gif)
+![LiveTile Image](../resources/images/Notifications/LiveTile.gif)
 
 ## Toasts
 

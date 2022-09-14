@@ -72,7 +72,7 @@ Here is another example, this time using the `For` API to initialize all the ite
 ```csharp
 public readonly struct ArrayInitializer : IAction
 {
-    private int[] array;
+    private readonly int[] array;
 
     public ArrayInitializer(int[] array)
     {

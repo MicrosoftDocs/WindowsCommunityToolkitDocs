@@ -95,17 +95,17 @@
 
 ### [Microsoft Graph Extensions](graph/helpers/extensions.md)
 
-<!-- ### RoamingSettingsHelper -->
+### [Roaming Settings](graph/helpers/roaming-settings.md)
 
 ## Controls
 
-<!-- ### GraphPresenter -->
+### [GraphPresenter (Experimental)](graph/controls/GraphPresenter.md)
 
-### [LoginButton (Preview)](graph/controls/LoginButton.md)
+### [LoginButton](graph/controls/LoginButton.md)
 
-### [PersonView (Preview)](graph/controls/PersonView.md)
+### [PeoplePicker](graph/controls/PeoplePicker.md)
 
-### [PeoplePicker (Preview)](graph/controls/PeoplePicker.md)
+### [PersonView](graph/controls/PersonView.md)
 
 # WinUI 3
 

@@ -149,7 +149,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## Sample Project
 
-[Scale Behavior Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Scale). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[Scale Behavior Sample Page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.2/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/Animations/Behaviors). You can [see this in action](uwpct://Animations?sample=Scale) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Requirements
 
@@ -160,7 +160,7 @@ You can change the way how the animation interpolates between keyframes by defin
 
 ## API
 
-- [Scale source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Animations/Behaviors/Scale.cs)
+- [Scale source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.2/Microsoft.Toolkit.Uwp.UI.Animations/Xaml/Default/ScaleAnimation.cs)
 
 ## Related Topics
 

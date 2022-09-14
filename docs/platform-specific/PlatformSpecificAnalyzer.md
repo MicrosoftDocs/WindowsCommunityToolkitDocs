@@ -52,7 +52,7 @@ You can [see this in action](uwpct://Helpers?sample=PlatformSpecificAnalyzer) in
 
 ## API
 
-* [Platform Specific Analyzer](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
+* [Platform Specific Analyzer](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.PlatformSpecificAnalyzer)
 
 ## Related Topics
 

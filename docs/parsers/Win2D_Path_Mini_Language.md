@@ -376,7 +376,7 @@ Denotes the opacity of the brush. The `opacity` parameter should have a value in
 | --------- |
 | `A` [012] |
 
-Specifies the way in which an alpha channel affects color channels. This attribute corresponds to the [CanvasAlphaMode](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasAlphaMode.htm) enumeration. Default is `0` ( `Premultiplied` ).
+Specifies the way in which an alpha channel affects color channels. This attribute corresponds to the [CanvasAlphaMode](https://microsoft.github.io/Win2D/WinUI3/html/T_Microsoft_Graphics_Canvas_CanvasAlphaMode.htm) enumeration. Default is `0` ( `Premultiplied` ).
 
 | Member          |     | Description                                                                                                                                                                                                                                                     |
 | --------------- | --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -391,7 +391,7 @@ Specifies the way in which an alpha channel affects color channels. This attribu
 | `B` [01234] |
 
 Specifies the bit depth used for graphical computations. This attribute corresponds to the
-[CanvasBufferPrecision](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasBufferPrecision.htm|) | enumeration |. Default is `0` ( |`Precision8UIntNormalized` ).
+[CanvasBufferPrecision](https://microsoft.github.io/Win2D/WinUI3/html/T_Microsoft_Graphics_Canvas_CanvasBufferPrecision.htm) | enumeration |. Default is `0` ( |`Precision8UIntNormalized` ).
 
 | Value                          | Member | Description                                                 |
 | ------------------------------ | ------ | ----------------------------------------------------------- |
@@ -407,7 +407,7 @@ Specifies the bit depth used for graphical computations. This attribute correspo
 | --------- |
 | `E` [012] |
 
-Specifies the behavior for pixels which fall outside of the gradient's typical rendering area. This attribute corresponds to the [CanvasEdgeBehavior](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_CanvasEdgeBehavior.htm) enumeration. Default is `0` ( `Clamp` ).
+Specifies the behavior for pixels which fall outside of the gradient's typical rendering area. This attribute corresponds to the [CanvasEdgeBehavior](https://microsoft.github.io/Win2D/WinUI3/html/T_Microsoft_Graphics_Canvas_CanvasEdgeBehavior.htm) enumeration. Default is `0` ( `Clamp` ).
 
 | Member | Value | Description                                                 |
 | ------ | ----- | ----------------------------------------------------------- |
@@ -658,7 +658,7 @@ This section describes the various stroke attributes that are used to define and
 | `DS` [01234] |
 
 Describes the sequence of dashes, dots, and gaps in a stroke style. This attribute is ignored if the
-`CustomDashStyle` attribute is set. This attribute corresponds to the [CanvasDashStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasDashStyle.htm) enumeration. Default
+`CustomDashStyle` attribute is set. This attribute corresponds to the [CanvasDashStyle](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasDashStyle.htm) enumeration. Default
 value is `0` ( `Solid` ).
 
 | Member     | Value | Description                                                                                                                                                                      |
@@ -675,7 +675,7 @@ value is `0` ( `Solid` ).
 | ----------- |
 | `LJ` [0123] |
 
-Describes the shape that joins two lines or segments. This attribute corresponds to the [CanvasLineJoin](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasLineJoin.htm)
+Describes the shape that joins two lines or segments. This attribute corresponds to the [CanvasLineJoin](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasLineJoin.htm)
 enumeration. Default value is `0` (`Miter`).
 
 | Member       | Value | Description                                                                                                |
@@ -708,7 +708,7 @@ Describes how far into the dash sequence the stroke will start.
 | `SC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
 
 | Member   | Value | Description                                                                                   |
 | -------- | ----- | --------------------------------------------------------------------------------------------- |
@@ -724,7 +724,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | `EC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` (`Flat`).
 
 | Member   | Value | Description                                                                                   |
 | -------- | ----- | --------------------------------------------------------------------------------------------- |
@@ -740,7 +740,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | `DC` [0123] |
 
 Describes the type of shape used at the beginning of a stroke. This attribute corresponds to the
-[CanvasCapStyle](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` ( `Flat` ).
+[CanvasCapStyle](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasCapStyle.htm) enumeration. Default value is `0` ( `Flat` ).
 
 | Member   | Value | Description                                                                                                                                    |
 | -------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -755,7 +755,7 @@ Describes the type of shape used at the beginning of a stroke. This attribute co
 | ---------- |
 | `TB` [012] |
 
-Describes how the world transforms, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
+Describes how the world transforms, dots per inch (DPI), and stroke width affect the shape of the pen. This attribute corresponds to the [CanvasStrokeTransformBehavior](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Geometry_CanvasStrokeTransformBehavior.htm) enumeration. Default value is `0` (`Normal`).
 
 | Member   | Value | Description                                                                                                                   |
 | -------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
