@@ -25,13 +25,13 @@ public static string GetHost(string url)
     // We assume the input might start either with eg. https:// (or other prefix),
     // or directly with the host name. Furthermore, we also assume that the input
     // URL will always have a '/' character right after the host name.
-    // For instance: "https://docs.microsoft.com/dotnet/api/system.string.intern".
+    // For instance: "https://learn.microsoft.com/dotnet/api/system.string.intern".
     int
         prefixOffset = url.AsSpan().IndexOf(stackalloc char[] { ':', '/', '/' }),
         startIndex = prefixOffset == -1 ? 0 : prefixOffset + 3,
         endIndex = url.AsSpan(startIndex).IndexOf('/');
 
-    // In this example, it would be "docs.microsoft.com"
+    // In this example, it would be "learn.microsoft.com"
     ReadOnlySpan<char> span = url.AsSpan(startIndex, endIndex);
 
     return StringPool.Shared.GetOrAdd(span);
