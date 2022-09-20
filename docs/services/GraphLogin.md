@@ -104,7 +104,7 @@ End Sub
 | Photo | System.Drawing.Image | Profile picture for the logged on user from the Microsoft Graph |
 | GraphServiceClient | Microsoft.Graph.GraphServiceClient | The GraphServiceClient instance for the logged on user from the Microsoft Graph |
 
-<!-- Use <remarks> tag in C# to give more info about a propertie. For more info - https://docs.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks -->
+<!-- Use <remarks> tag in C# to give more info about a propertie. For more info - https://learn.microsoft.com/dotnet/csharp/programming-guide/xmldoc/remarks -->
 
 ## Methods
 
