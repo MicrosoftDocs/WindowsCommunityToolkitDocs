@@ -10,7 +10,7 @@ dev_langs:
 
 # Introduction to the MVVM Toolkit
 
-The `Microsoft.Toolkit.Mvvm` package (aka MVVM Toolkit) is a modern, fast, and modular MVVM library. It is part of the Windows Community Toolkit and is built around the following principles:
+The `CommunityToolkit.Mvvm` package (aka MVVM Toolkit) is a modern, fast, and modular MVVM library. It is part of the Windows Community Toolkit and is built around the following principles:
 
 - **Platform and Runtime Independent** - **.NET Standard 2.0** and **.NET 5** 🚀 (UI Framework Agnostic)
 - **Simple to pick-up and use** - No strict requirements on Application structure or coding-paradigms (outside of 'MVVM'ness), i.e., flexible usage.
@@ -23,18 +23,18 @@ Additionally, the MVVM Toolkit also has a **.NET 5** target, which is used to en
 
 To install the package from within Visual Studio:
 
-1. In Solution Explorer, right-click on the project and select **Manage NuGet Packages**. Search for **Microsoft.Toolkit.Mvvm** and install it.
+1. In Solution Explorer, right-click on the project and select **Manage NuGet Packages**. Search for **CommunityToolkit.Mvvm** and install it.
 
     ![NuGet Packages](../resources/images/ManageNugetPackages.png "Manage NuGet Packages Image")
 
 2. Add a using or Imports directive to use the new APIs:
 
     ```c#
-    using Microsoft.Toolkit.Mvvm;
+    using CommunityToolkit.Mvvm;
     ```
 
     ```vb
-    Imports Microsoft.Toolkit.Mvvm
+    Imports CommunityToolkit.Mvvm
     ```
 
 3. Code samples are available in the other docs pages for the MVVM Toolkit, and in the [unit tests](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/UnitTests/UnitTests.Shared/Mvvm) for the project.
@@ -45,13 +45,13 @@ Use this package for access to a collection of standard, self-contained, lightwe
 
 The included types are:
 
-- **Microsoft.Toolkit.Mvvm.ComponentModel**
+- **CommunityToolkit.Mvvm.ComponentModel**
   - [`ObservableObject`](ObservableObject.md)
   - [`ObservableRecipient`](ObservableRecipient.md)
   - [`ObservableValidator`](ObservableValidator.md)
-- **Microsoft.Toolkit.Mvvm.DependencyInjection**
+- **CommunityToolkit.Mvvm.DependencyInjection**
   - [`Ioc`](Ioc.md)
-- **Microsoft.Toolkit.Mvvm.Input**
+- **CommunityToolkit.Mvvm.Input**
   - [`RelayCommand`](RelayCommand.md)
   - [`RelayCommand<T>`](RelayCommand.md)
   - [`AsyncRelayCommand`](AsyncRelayCommand.md)
@@ -60,13 +60,13 @@ The included types are:
   - [`IRelayCommand<in T>`](RelayCommand.md)
   - [`IAsyncRelayCommand`](AsyncRelayCommand.md)
   - [`IAsyncRelayCommand<in T>`](AsyncRelayCommand.md)
-- **Microsoft.Toolkit.Mvvm.Messaging**
+- **CommunityToolkit.Mvvm.Messaging**
   - [`IMessenger`](Messenger.md)
   - [`WeakReferenceMessenger`](Messenger.md)
   - [`StrongReferenceMessenger`](Messenger.md)
   - [`IRecipient<TMessage>`](Messenger.md)
   - [`MessageHandler<TRecipient, TMessage>`](Messenger.md)
-- **Microsoft.Toolkit.Mvvm.Messaging.Messages**
+- **CommunityToolkit.Mvvm.Messaging.Messages**
   - [`PropertyChangedMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.PropertyChangedMessage-1)
   - [`RequestMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.RequestMessage-1)
   - [`AsyncRequestMessage<T>`](/dotnet/api/microsoft.toolkit.mvvm.Messaging.Messages.AsyncRequestMessage-1)
