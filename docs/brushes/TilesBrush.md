@@ -7,7 +7,7 @@ keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp
 
 # TilesBrush
 
-The [TilesBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.tilesbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that that displays a tiled image.
+The [TilesBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.tilesbrush) is a [Brush](/uwp/api/windows.ui.xaml.media.brush) that displays a tiled image.
 
 > [!div class="nextstepaction"]
 > [Try it in the sample app](uwpct://Brushes?sample=TilesBrush)
