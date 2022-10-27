@@ -1,0 +1,630 @@
+<Type Name="FacebookService" FullName="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService">
+  <TypeSignature Language="C#" Value="public class FacebookService" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FacebookService extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService" />
+  <TypeSignature Language="VB.NET" Value="Public Class FacebookService" />
+  <TypeSignature Language="F#" Value="type FacebookService = class" />
+  <AssemblyInfo>
+    <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+    <AssemblyVersion>6.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName Language="C#">[System.Obsolete("The underlying library, winsdkfb, which the FacebookService relies on is not currently maintained.")]</AttributeName>
+      <AttributeName Language="F#">[&lt;System.Obsolete("The underlying library, winsdkfb, which the FacebookService relies on is not currently maintained.")&gt;]</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+            Class for connecting to Facebook.
+            </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public FacebookService ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService" /> class.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPhotoByPhotoIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt; GetPhotoByPhotoIdAsync (string photoId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt; GetPhotoByPhotoIdAsync(string photoId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetPhotoByPhotoIdAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhotoByPhotoIdAsync (photoId As String) As Task(Of FacebookPhoto)" />
+      <MemberSignature Language="F#" Value="member this.GetPhotoByPhotoIdAsync : string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;" Usage="facebookService.GetPhotoByPhotoIdAsync photoId" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="photoId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="photoId">Photo Id for the photo.</param>
+        <summary>
+            Retrieves a photo by id.
+            </summary>
+        <returns>A single photo.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserAlbumsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int maxRecords = 20, string fields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync(int32 maxRecords, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (Optional maxRecords As Integer = 20, Optional fields As String = Nothing) As Task(Of List(Of FacebookAlbum))" />
+      <MemberSignature Language="F#" Value="member this.GetUserAlbumsAsync : int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;" Usage="facebookService.GetUserAlbumsAsync (maxRecords, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="maxRecords" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="maxRecords">Upper limit of records to return.</param>
+        <param name="fields">Custom list of Album fields to retrieve.</param>
+        <summary>
+            Retrieves list of user photo albums.
+            </summary>
+        <returns>List of User Photo Albums.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserAlbumsAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync (int pageSize, int maxPages, string fields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;, class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt; GetUserAlbumsAsync(int32 pageSize, int32 maxPages, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserAlbumsAsync(System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserAlbumsAsync (pageSize As Integer, maxPages As Integer, Optional fields As String = Nothing) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookAlbum), FacebookAlbum))" />
+      <MemberSignature Language="F#" Value="member this.GetUserAlbumsAsync : int * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;" Usage="facebookService.GetUserAlbumsAsync (pageSize, maxPages, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookAlbum&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="maxPages" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="pageSize">Number of records to retrieve per page.</param>
+        <param name="maxPages">Upper limit of pages to return.</param>
+        <param name="fields">Custom list of Album fields to retrieve.</param>
+        <summary>
+            Retrieves list of user photo albums.
+            </summary>
+        <returns>List of User Photo Albums.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserPhotosByAlbumIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int maxRecords = 20, string fields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync(string albumId, int32 maxRecords, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, Optional maxRecords As Integer = 20, Optional fields As String = Nothing) As Task(Of List(Of FacebookPhoto))" />
+      <MemberSignature Language="F#" Value="member this.GetUserPhotosByAlbumIdAsync : string * int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;" Usage="facebookService.GetUserPhotosByAlbumIdAsync (albumId, maxRecords, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="albumId" Type="System.String" />
+        <Parameter Name="maxRecords" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="albumId">Albums Id for photos.</param>
+        <param name="maxRecords">Upper limit of records to return</param>
+        <param name="fields">Custom list of Photo fields to retrieve.</param>
+        <summary>
+            Retrieves list of user photos by album id.
+            </summary>
+        <returns>List of User Photos.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserPhotosByAlbumIdAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync (string albumId, int pageSize, int maxPages, string fields = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;, class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt; GetUserPhotosByAlbumIdAsync(string albumId, int32 pageSize, int32 maxPages, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPhotosByAlbumIdAsync(System.String,System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserPhotosByAlbumIdAsync (albumId As String, pageSize As Integer, maxPages As Integer, Optional fields As String = Nothing) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookPhoto), FacebookPhoto))" />
+      <MemberSignature Language="F#" Value="member this.GetUserPhotosByAlbumIdAsync : string * int * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;" Usage="facebookService.GetUserPhotosByAlbumIdAsync (albumId, pageSize, maxPages, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPhoto&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="albumId" Type="System.String" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="maxPages" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="albumId">Albums Id for photos.</param>
+        <param name="pageSize">Number of records to retrieve per page.</param>
+        <param name="maxPages">Upper limit of pages to return.</param>
+        <param name="fields">Custom list of Photo fields to retrieve.</param>
+        <summary>
+            Retrieves list of user photos by album id.
+            </summary>
+        <returns>List of User Photos.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUserPictureInfoAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture&gt; GetUserPictureInfoAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture&gt; GetUserPictureInfoAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.GetUserPictureInfoAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUserPictureInfoAsync () As Task(Of FacebookPicture)" />
+      <MemberSignature Language="F#" Value="member this.GetUserPictureInfoAsync : unit -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture&gt;" Usage="facebookService.GetUserPictureInfoAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Returns the <see cref="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture" /> object associated with the logged user
+            </summary>
+        <returns>A <see cref="T:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPicture" /> object</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens oAuthTokens, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens oAuthTokens, valuetype Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Initialize(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (oAuthTokens As FacebookOAuthTokens, Optional requiredPermissions As FacebookPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens * Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions -&gt; bool" Usage="facebookService.Initialize (oAuthTokens, requiredPermissions)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="oAuthTokens" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookOAuthTokens" />
+        <Parameter Name="requiredPermissions" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions" />
+      </Parameters>
+      <Docs>
+        <param name="oAuthTokens">Token instance.</param>
+        <param name="requiredPermissions">List of required required permissions. public_profile and user_posts permissions will be used by default.</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize">
+      <MemberSignature Language="C#" Value="public bool Initialize (string appId, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, string windowsStoreId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Initialize(string appId, valuetype Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions requiredPermissions, string windowsStoreId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Initialize(System.String,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Initialize (appId As String, Optional requiredPermissions As FacebookPermissions = Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.PublicProfile | Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions.UserPosts, Optional windowsStoreId As String = Nothing) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Initialize : string * Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions * string -&gt; bool" Usage="facebookService.Initialize (appId, requiredPermissions, windowsStoreId)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="appId" Type="System.String" />
+        <Parameter Name="requiredPermissions" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPermissions" />
+        <Parameter Name="windowsStoreId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="appId">Application ID (Provided by Facebook developer site)</param>
+        <param name="requiredPermissions">List of required required permissions. public_profile and user_posts permissions will be used by default.</param>
+        <param name="windowsStoreId">Windows Store SID</param>
+        <summary>
+            Initialize underlying provider with relevent token information.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Instance">
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService Instance { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService Instance" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Instance As FacebookService" />
+      <MemberSignature Language="F#" Value="static member Instance : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService" Usage="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Instance" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets public singleton property.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoggedUser">
+      <MemberSignature Language="C#" Value="public string LoggedUser { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string LoggedUser" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LoggedUser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoggedUser As String" />
+      <MemberSignature Language="F#" Value="member this.LoggedUser : string" Usage="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LoggedUser" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets the current logged user name.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoginAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; LoginAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; LoginAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LoginAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.LoginAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookService.LoginAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Login with set of required requiredPermissions.
+            </summary>
+        <returns>Success or failure.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LogoutAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task LogoutAsync ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task LogoutAsync() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.LogoutAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoutAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.LogoutAsync : unit -&gt; System.Threading.Tasks.Task" Usage="facebookService.LogoutAsync " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+            Log out of the underlying service instance.
+            </summary>
+        <returns>Task to support await of async call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostPictureToFeedAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;string&gt; PostPictureToFeedAsync (string title, string pictureName, Windows.Storage.Streams.IRandomAccessStreamWithContentType pictureStream);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; PostPictureToFeedAsync(string title, string pictureName, class Windows.Storage.Streams.IRandomAccessStreamWithContentType pictureStream) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostPictureToFeedAsync(System.String,System.String,Windows.Storage.Streams.IRandomAccessStreamWithContentType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostPictureToFeedAsync (title As String, pictureName As String, pictureStream As IRandomAccessStreamWithContentType) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PostPictureToFeedAsync : string * string * Windows.Storage.Streams.IRandomAccessStreamWithContentType -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="facebookService.PostPictureToFeedAsync (title, pictureName, pictureStream)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="title" Type="System.String" />
+        <Parameter Name="pictureName" Type="System.String" />
+        <Parameter Name="pictureStream" Type="Windows.Storage.Streams.IRandomAccessStreamWithContentType" />
+      </Parameters>
+      <Docs>
+        <param name="title">Title of the post.</param>
+        <param name="pictureName">Picture name.</param>
+        <param name="pictureStream">Picture stream to upload.</param>
+        <summary>
+            Enables posting a picture to the timeline
+            </summary>
+        <returns>Return ID of the picture</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostToFeedAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; PostToFeedAsync (string link);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; PostToFeedAsync(string link) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostToFeedAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostToFeedAsync (link As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.PostToFeedAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookService.PostToFeedAsync link" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)]</AttributeName>
+          <AttributeName Language="F#">[&lt;Windows.Foundation.Metadata.Deprecated("The underlying publish_action permission is no longer supported by Facebook. Please see https://developers.facebook.com/blog/post/2018/04/24/new-facebook-platform-product-changes-policy-updates/ for details.", Windows.Foundation.Metadata.DeprecationType.Deprecate, 4)&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="link" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="link">Link contained as part of the post. Cannot be null.</param>
+        <summary>
+            Enables direct posting data to the timeline.
+            </summary>
+        <returns>Task to support await of async call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PostToFeedWithDialogAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; PostToFeedWithDialogAsync (string link);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; PostToFeedWithDialogAsync(string link) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.PostToFeedWithDialogAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PostToFeedWithDialogAsync (link As String) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.PostToFeedWithDialogAsync : string -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="facebookService.PostToFeedWithDialogAsync link" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Boolean&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="link" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="link">Link contained as part of the post. Cannot be null.</param>
+        <summary>
+            Enables posting data to the timeline using Facebook dialog.
+            </summary>
+        <returns>Task to support await of async call.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Provider">
+      <MemberSignature Language="C#" Value="public winsdkfb.FBSession Provider { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class winsdkfb.FBSession Provider" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Provider As FBSession" />
+      <MemberSignature Language="F#" Value="member this.Provider : winsdkfb.FBSession" Usage="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.Provider" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>winsdkfb.FBSession</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a reference to an instance of the underlying data provider.
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt; RequestAsync (Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int maxRecords = 20);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt; RequestAsync(class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int32 maxRecords) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync (config As FacebookDataConfig, Optional maxRecords As Integer = 20) As Task(Of List(Of FacebookPost))" />
+      <MemberSignature Language="F#" Value="member this.RequestAsync : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig * int -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;" Usage="facebookService.RequestAsync (config, maxRecords)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig" />
+        <Parameter Name="maxRecords" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="config">FacebookDataConfig instance.</param>
+        <param name="maxRecords">Upper limit of records to return.</param>
+        <summary>
+            Request list data from service provider based upon a given config / query.
+            </summary>
+        <returns>Strongly typed list of data returned from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt; RequestAsync (Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int pageSize, int maxPages);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;, class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt; RequestAsync(class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int32 pageSize, int32 maxPages) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync (config As FacebookDataConfig, pageSize As Integer, maxPages As Integer) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of FacebookPost), FacebookPost))" />
+      <MemberSignature Language="F#" Value="member this.RequestAsync : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig * int * int -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;, Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;" Usage="facebookService.RequestAsync (config, pageSize, maxPages)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;,Microsoft.Toolkit.Uwp.Services.Facebook.FacebookPost&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="maxPages" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="config">FacebookDataConfig instance.</param>
+        <param name="pageSize">Upper limit of records to return.</param>
+        <param name="maxPages">Upper limit of pages to return.</param>
+        <summary>
+            Request list data from service provider based upon a given config / query.
+            </summary>
+        <returns>Strongly typed list of data returned from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt; RequestAsync&lt;T&gt; (Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int maxRecords = 20, string fields = &quot;id,message,from,created_time,link,full_picture&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class System.Collections.Generic.List`1&lt;!!T&gt;&gt; RequestAsync&lt;T&gt;(class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int32 maxRecords, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync``1(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync(Of T) (config As FacebookDataConfig, Optional maxRecords As Integer = 20, Optional fields As String = &quot;id,message,from,created_time,link,full_picture&quot;) As Task(Of List(Of T))" />
+      <MemberSignature Language="F#" Value="member this.RequestAsync : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig * int * string -&gt; System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;'T&gt;&gt;" Usage="facebookService.RequestAsync (config, maxRecords, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.Collections.Generic.List&lt;T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig" />
+        <Parameter Name="maxRecords" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Strong type of model.</typeparam>
+        <param name="config">FacebookDataConfig instance.</param>
+        <param name="maxRecords">Upper limit of records to return.</param>
+        <param name="fields">A comma seperated string of required fields, which will have strongly typed representation in the model passed in.</param>
+        <summary>
+            Request list data from service provider based upon a given config / query.
+            </summary>
+        <returns>Strongly typed list of data returned from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RequestAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;T&gt;,T&gt;&gt; RequestAsync&lt;T&gt; (Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int pageSize, int maxPages, string fields = &quot;id,message,from,created_time,link,full_picture&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;class Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2&lt;class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource`1&lt;!!T&gt;, !!T&gt;&gt; RequestAsync&lt;T&gt;(class Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig config, int32 pageSize, int32 maxPages, string fields) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.RequestAsync``1(Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig,System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RequestAsync(Of T) (config As FacebookDataConfig, pageSize As Integer, maxPages As Integer, Optional fields As String = &quot;id,message,from,created_time,link,full_picture&quot;) As Task(Of IncrementalLoadingCollection(Of FacebookRequestSource(Of T), T))" />
+      <MemberSignature Language="F#" Value="member this.RequestAsync : Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig * int * int * string -&gt; System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;'T&gt;, 'T&gt;&gt;" Usage="facebookService.RequestAsync (config, pageSize, maxPages, fields)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;Microsoft.Toolkit.Uwp.IncrementalLoadingCollection&lt;Microsoft.Toolkit.Uwp.Services.Facebook.FacebookRequestSource&lt;T&gt;,T&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="config" Type="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookDataConfig" />
+        <Parameter Name="pageSize" Type="System.Int32" />
+        <Parameter Name="maxPages" Type="System.Int32" />
+        <Parameter Name="fields" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">Strong type of model.</typeparam>
+        <param name="config">FacebookDataConfig instance.</param>
+        <param name="pageSize">Upper limit of records to return.</param>
+        <param name="maxPages">Upper limit of pages to return.</param>
+        <param name="fields">A comma seperated string of required fields, which will have strongly typed representation in the model passed in.</param>
+        <summary>
+            Request generic list data from service provider based upon a given config / query.
+            </summary>
+        <returns>Strongly typed list of data returned from the service.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WindowsStoreId">
+      <MemberSignature Language="C#" Value="public string WindowsStoreId { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WindowsStoreId" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.WindowsStoreId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowsStoreId As String" />
+      <MemberSignature Language="F#" Value="member this.WindowsStoreId : string" Usage="Microsoft.Toolkit.Uwp.Services.Facebook.FacebookService.WindowsStoreId" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Toolkit.Uwp.Services</AssemblyName>
+        <AssemblyVersion>6.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets a Windows Store ID associated with the current app
+            </summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
