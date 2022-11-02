@@ -1,12 +1,11 @@
-<Type Name="TaskResultConverter" FullName="Microsoft.Toolkit.Uwp.UI.Converters.TaskResultConverter">
-  <TypeSignature Language="C#" Value="public sealed class TaskResultConverter : Windows.UI.Xaml.Data.IValueConverter" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TaskResultConverter extends System.Object implements class Windows.UI.Xaml.Data.IValueConverter" />
-  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Converters.TaskResultConverter" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TaskResultConverter&#xA;Implements IValueConverter" />
-  <TypeSignature Language="F#" Value="type TaskResultConverter = class&#xA;    interface IValueConverter" />
+<Type Name="ColorToSelectedValueConverter" FullName="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter">
+  <TypeSignature Language="C#" Value="public class ColorToSelectedValueConverter : Windows.UI.Xaml.Data.IValueConverter" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorToSelectedValueConverter extends System.Object implements class Windows.UI.Xaml.Data.IValueConverter" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ColorToSelectedValueConverter&#xA;Implements IValueConverter" />
+  <TypeSignature Language="F#" Value="type ColorToSelectedValueConverter = class&#xA;    interface IValueConverter" />
   <AssemblyInfo>
-    <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
     <AssemblyVersion>7.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,25 +18,19 @@
   </Interfaces>
   <Docs>
     <summary>
-            A converter that can be used to safely retrieve results from <see cref="T:System.Threading.Tasks.Task`1" /> instances.
-            This is needed because accessing <see cref="P:System.Threading.Tasks.Task`1.Result" /> when the task has not
-            completed yet will block the current thread and might cause a deadlock (eg. if the task was
-            scheduled on the same synchronization context where the result is being retrieved from).
-            The methods in this converter will safely return <see langword="null" /> if the input
-            task is not set yet, still running, has faulted, or has been canceled.
+            Ignores null target values for TwoWay binding.
             </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public TaskResultConverter ();" />
+      <MemberSignature Language="C#" Value="public ColorToSelectedValueConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.TaskResultConverter.#ctor" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.#ctor" />
       <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
         <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -49,13 +42,12 @@
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public object Convert (object value, Type targetType, object parameter, string language);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type targetType, object parameter, string language) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.TaskResultConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Convert (value As Object, targetType As Type, parameter As Object, language As String) As Object" />
-      <MemberSignature Language="F#" Value="abstract member Convert : obj * Type * obj * string -&gt; obj&#xA;override this.Convert : obj * Type * obj * string -&gt; obj" Usage="taskResultConverter.Convert (value, targetType, parameter, language)" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj * Type * obj * string -&gt; obj&#xA;override this.Convert : obj * Type * obj * string -&gt; obj" Usage="colorToSelectedValueConverter.Convert (value, targetType, parameter, language)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
         <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -75,18 +67,18 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="ConvertBack">
       <MemberSignature Language="C#" Value="public object ConvertBack (object value, Type targetType, object parameter, string language);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertBack(object value, class System.Type targetType, object parameter, string language) cil managed" />
-      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Converters.TaskResultConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ConvertBack (value As Object, targetType As Type, parameter As Object, language As String) As Object" />
-      <MemberSignature Language="F#" Value="abstract member ConvertBack : obj * Type * obj * string -&gt; obj&#xA;override this.ConvertBack : obj * Type * obj * string -&gt; obj" Usage="taskResultConverter.ConvertBack (value, targetType, parameter, language)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertBack : obj * Type * obj * string -&gt; obj&#xA;override this.ConvertBack : obj * Type * obj * string -&gt; obj" Usage="colorToSelectedValueConverter.ConvertBack (value, targetType, parameter, language)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
-        <AssemblyName>Microsoft.Toolkit.Uwp.UI</AssemblyName>
-        <AssemblyVersion>7.0.0.0</AssemblyVersion>
+        <AssemblyName>Microsoft.Toolkit.Uwp.UI.Controls.Input</AssemblyName>
         <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +98,7 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>
