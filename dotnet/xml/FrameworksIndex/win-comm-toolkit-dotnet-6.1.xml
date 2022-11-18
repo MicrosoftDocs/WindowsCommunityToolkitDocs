@@ -13,17 +13,22 @@
     <Assembly Name="Microsoft.Toolkit.Uwp.Connectivity" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.DeveloperTools" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction" Version="255.255.255.255" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Notifications" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.Services" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Animations" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph" Version="6.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Controls.Layout" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Lottie" Version="0.0.0.0" />
     <Assembly Name="Microsoft.Toolkit.Uwp.UI.Media" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost.Managed" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Win32.UI.XamlHost" Version="255.255.255.255" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls" Version="6.1.0.0" />
     <Assembly Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Version="6.1.0.0" />
+    <Assembly Name="Microsoft.Toolkit.Wpf.UI.XamlHost" Version="6.1.0.0" />
   </Assemblies>
   <Namespace Name="Microsoft.Toolkit.Collections">
     <Type Name="Microsoft.Toolkit.Collections.IIncrementalSource`1" Id="T:Microsoft.Toolkit.Collections.IIncrementalSource`1">
@@ -2931,6 +2936,191 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.IncrementalLoadingCollection`2.Source" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellInvokedRoutedEventArgs.Handled" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.Progress" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressEventArgs.State" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Complete" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Fixating" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Idle" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.DwellProgressState.Progressing" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.DwellProgressFeedback" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.Invoked" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.StateChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement.#ctor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Set(Windows.Foundation.Point,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Handled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Location" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeEventArgs.Timestamp" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_CalibratedScreenWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Capabilities" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Configuration" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_ConfigurationStatus" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Control" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DeviceModeRequest" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerDate" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayManufacturerId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplayProductId" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_DisplaySerialNumber" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_EyeTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_GazePoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadDirectionPoint" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadPosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_HeadTracker" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_LeftEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneHeight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumScreenPlaneWidth" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MaximumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_MinimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_OptimumTrackingDistance" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_PositionZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RightEyePosition" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationX" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationY" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_RotationZ" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_SamplingFrequency" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Status" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_Timestamp" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackerQuality" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.Usage_TrackingData" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidUsages.UsagePage_EyeHeadTracker" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailableChanged" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetCursorRadius(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetDwellRepeatDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetFixationDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazeElement(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetGazePointer(Windows.UI.Xaml.Controls.Page)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetInteraction(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsCursorVisible(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetIsSwitchEnabled(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetRepeatDelayDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GetThresholdDuration(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Invoke(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetCursorRadius(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetDwellRepeatDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetFixationDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetGazeElement(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetInteraction(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsCursorVisible(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetIsSwitchEnabled(Windows.UI.Xaml.UIElement,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetMaxDwellRepeatCount(Windows.UI.Xaml.UIElement,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetRepeatDelayDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.SetThresholdDuration(Windows.UI.Xaml.UIElement,Windows.Foundation.TimeSpan)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadius" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.CursorRadiusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDuration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackCompleteBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackEnterBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellFeedbackProgressBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDuration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellRepeatDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.DwellStrokeThickness" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDuration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.FixationDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.GazeElementProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.Interaction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.InteractionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisible" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsCursorVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsDeviceAvailable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.IsSwitchEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.MaxDwellRepeatCountProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDuration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.RepeatDelayDurationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDuration" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeInput.ThresholdDurationProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer">
+      <Member Id="E:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.GazeEvent" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Click" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.Close" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.LoadSettings(Windows.Foundation.Collections.ValueSet)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.RequestCalibrationAsync" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.CursorElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazePointer.IsAlwaysActivated" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeSettingsHelper.RetrieveSharedSettings(Windows.Foundation.Collections.ValueSet)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.#ctor(System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Reset" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Update(System.Single,System.Single)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.Mean" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeStats.StandardDeviation" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Enabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.Interaction.Inherited" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState">
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Dwell" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.DwellRepeat" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Enter" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Exit" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.Fixation" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.Input.GazeInteraction.PointerState.PreEnter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.ElapsedTime" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.StateChangedEventArgs.PointerState" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers">
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.X" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Y" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPosition.Z" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionParser.GetPosition(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadPosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.HeadRotation" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.LeftEyePosition" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositions.RightEyePosition" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidPositionsParser.GetGazeHidPositions(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser" Id="T:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser">
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.#ctor(Windows.Devices.Input.Preview.GazeDevicePreview,System.UInt16)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.Input.GazeInteraction.GazeHidParsers.GazeHidRotationParser.GetRotation(Windows.Devices.HumanInterfaceDevice.HidInputReport)" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.Notifications">
     <Type Name="Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup" Id="T:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup">
       <Member Id="M:Microsoft.Toolkit.Uwp.Notifications.AdaptiveGroup.#ctor" />
@@ -4643,6 +4833,186 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Animations.Expressions.VisualReferenceNode.Translation" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGrid)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.GetChildrenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#Scroll(Windows.UI.Xaml.Automation.ScrollAmount,Windows.UI.Xaml.Automation.ScrollAmount)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#SetScrollPercent(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#GetSelection" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITableProvider#GetColumnHeaders" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITableProvider#GetRowHeaders" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#ColumnCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#RowCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#HorizontallyScrollable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#HorizontalScrollPercent" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#HorizontalViewSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#VerticallyScrollable" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#VerticalScrollPercent" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollProvider#VerticalViewSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITableProvider#RowOrColumnMajor" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.IsKeyboardFocusableCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IInvokeProvider#Invoke" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#AddToSelection" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#Select" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITableItemProvider#GetColumnHeaderItems" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITableItemProvider#GetRowHeaderItems" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridItemProvider#Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridItemProvider#ColumnSpan" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridItemProvider#ContainingGrid" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridItemProvider#Row" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridItemProvider#RowSpan" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#IsSelected" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridCellAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.GetHelpTextCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.IsContentElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#IInvokeProvider#Invoke" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#Move(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#Resize(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#Rotate(System.Double)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#CanMove" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#CanResize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeaderAutomationPeer.Windows#UI#Xaml#Automation#Provider#ITransformProvider#CanRotate" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridColumnHeadersPresenterAutomationPeer.IsContentElementCore" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer.IsContentElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridDetailsPresenterAutomationPeer.IsControlElementCore" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.#ctor(Windows.UI.Xaml.Data.ICollectionViewGroup,Microsoft.Toolkit.Uwp.UI.Controls.DataGrid)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetAcceleratorKeyCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetAccessKeyCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetAutomationIdCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetBoundingRectangleCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetChildrenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetClickablePointCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetHelpTextCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetItemStatusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetItemTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetLabeledByCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetLocalizedControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetOrientationCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.HasKeyboardFocusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsContentElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsControlElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsEnabledCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsKeyboardFocusableCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsOffscreenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsPasswordCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.IsRequiredForFormCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.SetFocusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IExpandCollapseProvider#Collapse" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IExpandCollapseProvider#Expand" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#GetItem(System.Int32,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#GetSelection" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#ColumnCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IGridProvider#RowCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridGroupItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.#ctor(System.Object,Microsoft.Toolkit.Uwp.UI.Controls.DataGrid)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetAcceleratorKeyCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetAccessKeyCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetAutomationIdCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetBoundingRectangleCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetChildrenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetClickablePointCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetHelpTextCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetItemStatusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetItemTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetLabeledByCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetLocalizedControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetOrientationCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.GetPatternCore(Windows.UI.Xaml.Automation.Peers.PatternInterface)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.HasKeyboardFocusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsContentElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsControlElementCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsEnabledCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsKeyboardFocusableCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsOffscreenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsPasswordCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.IsRequiredForFormCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.SetFocusCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IInvokeProvider#Invoke" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#IScrollItemProvider#ScrollIntoView" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#AddToSelection" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#RemoveFromSelection" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#Select" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#GetSelection" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#IsSelected" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionItemProvider#SelectionContainer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#CanSelectMultiple" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridItemAutomationPeer.Windows#UI#Xaml#Automation#Provider#ISelectionProvider#IsSelectionRequired" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowAutomationPeer.GetItemTypeCore" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowGroupHeaderAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowGroupHeaderAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowGroupHeaderAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowGroupHeaderAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowGroupHeaderAutomationPeer.GetClassNameCore" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer.GetNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowHeaderAutomationPeer.IsContentElementCore" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer" Id="T:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer.GetAutomationControlTypeCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer.GetChildrenCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer.GetClassNameCore" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Automation.Peers.DataGridRowsPresenterAutomationPeer.IsContentElementCore" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Behaviors">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1" Id="T:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Behaviors.BehaviorBase`1.#ctor" />
@@ -4802,6 +5172,450 @@
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.CropShape" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.CropShape">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Circular" />
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.CropShape.Rectangular" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AutoGeneratingColumn" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.BeginningEdit" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CellEditEnded" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CellEditEnding" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnDisplayIndexChanged" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderDragCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderDragDelta" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderDragStarted" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnReordered" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnReordering" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CopyingRowClipboardContent" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CurrentCellChanged" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.LoadingRow" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.LoadingRowDetails" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.LoadingRowGroup" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.PreparingCellForEdit" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowDetailsVisibilityChanged" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowEditEnded" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowEditEnding" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectionChanged" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.Sorting" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.UnloadingRow" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.UnloadingRowDetails" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.UnloadingRowGroup" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AlternatingRowBackgroundProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AlternatingRowForegroundProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AreRowDetailsFrozenProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AreRowGroupHeadersFrozenProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AutoGenerateColumnsProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserReorderColumnsProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserResizeColumnsProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserSortColumnsProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CellStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ClipboardCopyModeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderHeightProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnWidthProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DataFetchSizeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DragIndicatorStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DropLocationIndicatorStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.FrozenColumnCountProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.GridLinesVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HeadersVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalGridLinesBrushProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalScrollBarVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingThresholdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingTriggerProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsReadOnlyProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsValidProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ItemsSourceProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.MaxColumnWidthProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.MinColumnWidthProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowBackgroundProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowDetailsTemplateProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowDetailsVisibilityModeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowForegroundProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeaderStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeaderWidthProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeightProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectedIndexProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectedItemProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectionModeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.VerticalGridLinesBrushProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.VerticalScrollBarVisibilityProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.BeginEdit" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.BeginEdit(Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CancelEdit" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CancelEdit(Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CollapseRowGroup(Windows.UI.Xaml.Data.ICollectionViewGroup,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CommitEdit" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CommitEdit(Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ExpandRowGroup(Windows.UI.Xaml.Data.ICollectionViewGroup,System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.GetGroupFromItem(System.Object,System.Int32)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnAutoGeneratingColumn(Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnBeginningEdit(Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnCellEditEnded(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnCellEditEnding(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnColumnDisplayIndexChanged(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnColumnReordered(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnColumnReordering(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnColumnSorting(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnCopyingRowClipboardContent(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnCreateAutomationPeer" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnCurrentCellChanged(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnLoadingRow(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnLoadingRowDetails(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnLoadingRowGroup(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnPointerWheelChanged(Windows.UI.Xaml.Input.PointerRoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnPreparingCellForEdit(Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnRowDetailsVisibilityChanged(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnRowEditEnded(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnRowEditEnding(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnSelectionChanged(Windows.UI.Xaml.Controls.SelectionChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnUnloadingRow(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnUnloadingRowDetails(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.OnUnloadingRowGroup(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ScrollIntoView(System.Object,Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AlternatingRowBackground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AlternatingRowForeground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AreRowDetailsFrozen" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AreRowGroupHeadersFrozen" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.AutoGenerateColumns" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserReorderColumns" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserResizeColumns" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CanUserSortColumns" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CellStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ClipboardCopyMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderHeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnHeaderStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.Columns" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ColumnWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CurrentColumn" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.CurrentItem" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DataFetchSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DragIndicatorStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DropLocationIndicatorStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.FrozenColumnCount" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.GridLinesVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HeadersVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalGridLinesBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.HorizontalScrollBarVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingThreshold" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IncrementalLoadingTrigger" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsReadOnly" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.IsValid" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.ItemsSource" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.MaxColumnWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.MinColumnWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowBackground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowDetailsTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowDetailsVisibilityMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowForeground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowGroupHeaderPropertyNameAlternative" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowGroupHeaderStyles" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeaderStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeaderWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowHeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.RowStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectedIndex" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectedItem" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectedItems" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.SelectionMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.VerticalGridLinesBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.VerticalScrollBarVisibility" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGrid/DisplayIndexComparer" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DisplayIndexComparer">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DisplayIndexComparer.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGrid.DisplayIndexComparer.System#Collections#Generic#IComparer&lt;Microsoft#Toolkit#Uwp#UI#Controls#DataGridColumn&gt;#Compare(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs.#ctor(System.String,System.Type,Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs.PropertyName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridAutoGeneratingColumnEventArgs.PropertyType" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs.EditingEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBeginningEditEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.#ctor" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.Binding" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.ClipboardContentBinding" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.EditingElementStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridBoundColumn.ElementStyle" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell.IsValidProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell.IsValid" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs.EditAction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndedEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Windows.UI.Xaml.FrameworkElement,Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs.EditAction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs.EditingElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCellEditEndingEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.RefreshCellContent(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.RefreshForeground(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridCheckBoxColumn.IsThreeState" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.#ctor(System.Object,Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.GetHashCode" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.op_Equality(Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent,Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.op_Inequality(Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent,Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.Content" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCellContent.Item" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode.ExcludeHeader" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode.IncludeHeader" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridClipboardCopyMode.None" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.GetCellContent(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.GetCellContent(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.GetColumnContainingElement(Windows.UI.Xaml.FrameworkElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.NotifyPropertyChanged(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.RefreshCellContent(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.RefreshForeground(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.ActualWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.CanUserReorder" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.CanUserResize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.CanUserSort" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.CellStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.ClipboardContentBinding" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.DisplayIndex" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.DragIndicatorStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.Header" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.HeaderStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.IsAutoGenerated" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.IsFrozen" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.IsReadOnly" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.MaxWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.MinWidth" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.SortDirection" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.Tag" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.Visibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn.Width" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnEventArgs.Column" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs.DragIndicator" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumnReorderingEventArgs.DropLocationIndicator" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPathProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamilyProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSourceProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.RefreshCellContent(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.RefreshForeground(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.DisplayMemberPath" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontFamily" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.FontWeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.Foreground" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridComboBoxColumn.ItemsSource" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction.Cancel" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction.Commit" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit.Cell" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditingUnit.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.All" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.Horizontal" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.None" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridGridLinesVisibility.Vertical" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.All" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.Column" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.None" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridHeadersVisibility.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.#ctor(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.#ctor(System.Double,Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.#ctor(System.Double,Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType,System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.ConvertFrom(System.Globalization.CultureInfo,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.ConvertFromString(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.ConvertToString(System.Globalization.CultureInfo,Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.Equals(Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.Equals(System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.GetHashCode" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.op_Equality(Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength,Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.op_Inequality(Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength,Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.Auto" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.DesiredValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.DisplayValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.IsAbsolute" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.IsAuto" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.IsSizeToCells" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.IsSizeToHeader" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.IsStar" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.SizeToCells" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.SizeToHeader" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.UnitType" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLength.Value" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType.Auto" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType.Pixel" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType.SizeToCells" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType.SizeToHeader" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridLengthUnitType.Star" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridColumn,Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Windows.UI.Xaml.RoutedEventArgs,Windows.UI.Xaml.FrameworkElement)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs.Column" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs.EditingElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs.EditingEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridPreparingCellForEditEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.DetailsTemplateProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.DetailsVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.HeaderProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.HeaderStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.IsValidProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.GetIndex" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.GetRowContainingElement(Windows.UI.Xaml.FrameworkElement)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.DetailsTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.DetailsVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.Header" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.HeaderStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow.IsValid" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs.ClipboardRowContent" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs.IsColumnHeadersRow" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowClipboardEventArgs.Item" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Windows.UI.Xaml.FrameworkElement)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs.DetailsElement" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode.Collapsed" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode.Visible" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowDetailsVisibilityMode.VisibleWhenSelected" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs.EditAction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndedEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow,Microsoft.Toolkit.Uwp.UI.Controls.DataGridEditAction)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs.EditAction" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEditEndingEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRow)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowEventArgs.Row" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.HeaderStyleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.ItemCountVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.LevelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyNameProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyNameVisibilityProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyValueProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.SublevelIndentProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.CollectionViewGroup" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.HeaderStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.ItemCountVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.Level" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyName" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyNameVisibility" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.PropertyValue" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader.SublevelIndent" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs.#ctor(Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeader)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridRowGroupHeaderEventArgs.RowGroupHeader" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode.Extended" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSelectionMode.Single" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection.Ascending" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridSortDirection.Descending" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.CellEditingTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTemplateColumn.CellTemplate" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.FontFamilyProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.CancelCellEdit(Windows.UI.Xaml.FrameworkElement,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.GenerateEditingElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.GenerateElement(Microsoft.Toolkit.Uwp.UI.Controls.DataGridCell,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.PrepareCellForEdit(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.RefreshCellContent(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.RefreshForeground(Windows.UI.Xaml.FrameworkElement,Windows.UI.Xaml.Media.Brush)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.FontFamily" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.FontSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.FontStyle" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.FontWeight" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.DataGridTextColumn.Foreground" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Dock" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Dock">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Dock.Bottom" />
@@ -6000,6 +6814,157 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.WrapPanel.VerticalSpacing" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInCompleted" />
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignOutCompleted" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.AllowSignInAsDifferentUserProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.CurrentUserIdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.DefaultImageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInAnotherUserDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignOutDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.ViewProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInAsync" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignOutAsync" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.AllowSignInAsDifferentUser" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.CurrentUserId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.DefaultImage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.GraphService" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.RequiredDelegatedPermissions" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInAnotherUserDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignInDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.SignOutDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.AadLogin.View" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode.Bottom" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode.Disabled" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode.Full" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.DetailPaneDisplayMode.Side" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.FileSelectedEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.FileSelectedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.FileSelectedEventArgs.FileSelected" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.SelectionChanged" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.AllowMultipleProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.GroupIdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.PlaceholderTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.SearchResultLimitProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.SelectionsProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.AllowMultiple" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.GroupId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.PlaceholderText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.RequiredDelegatedPermissions" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.SearchResultLimit" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeoplePicker.Selections" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeopleSelectionChangedEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeopleSelectionChangedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PeopleSelectionChangedEventArgs.Selections" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.AllTasksLabelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.ClosedTasksLabelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogNoLabelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogYesLabelProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DisplayBucketListProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DisplayPlanListProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.PlanIdProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.AllTasksLabel" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.ClosedTasksLabel" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogNoLabel" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DeleteConfirmDialogYesLabel" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DisplayBucketList" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.DisplayPlanList" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.PlanId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PlannerTaskList.RequiredDelegatedPermissions" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.ClientIdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.EmbedUrlProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.GroupIdProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.ShowFilterProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.ClientId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.EmbedUrl" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.GroupId" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.PowerBIEmbedded.ShowFilter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.DefaultImageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.DisplayModeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.LargeProfileMailDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.LargeProfileTitleDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.NormalMailDefaultTextProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.UserIdProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.DefaultImage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.DisplayMode" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.LargeProfileMailDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.LargeProfileTitleDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.NormalMailDefaultText" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.RequiredDelegatedPermissions" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ProfileCard.UserId" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList">
+      <Member Id="E:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.FileSelected" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.AllFilesMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmCancelMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmOkMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DetailPaneProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DriveUrlProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.PageSizeProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.ShareLinkCopiedMessageProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.UploadingFilesMessageTemplateProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.GetDriveUrlFromSharePointUrlAsync(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.OnApplyTemplate" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.AllFilesMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmCancelMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DeleteConfirmOkMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DetailPane" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.DriveUrl" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.PageSize" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.RequiredDelegatedPermissions" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.ShareLinkCopiedMessage" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SharePointFileList.UploadingFilesMessageTemplate" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInEventArgs.GraphClient" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInFailedEventArgs" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInFailedEventArgs">
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Graph.SignInFailedEventArgs.Exception" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.EmailOnly" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.LargeProfilePhotoLeft" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.LargeProfilePhotoRight" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.PictureOnly" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.SmallProfilePhotoLeft" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Graph.ViewType.SmallProfilePhotoRight" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Graph.Microsoft_Toolkit_Uwp_UI_Controls_Graph_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.ICodeBlockResolver.ParseSyntax(Windows.UI.Xaml.Documents.InlineCollection,System.String,System.String)" />
@@ -6139,12 +7104,74 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Markdown.Render.UIElementCollectionRenderContext.BlockUIElementCollection" />
     </Type>
   </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_DataGrid_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo">
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Microsoft_Toolkit_Uwp_UI_Controls_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives">
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridCellsPresenter.MeasureOverride(Windows.Foundation.Size)" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.SeparatorBrushProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.SeparatorVisibilityProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.OnContentChanged(System.Object,System.Object)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.SeparatorBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeader.SeparatorVisibility" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridColumnHeadersPresenter.OnCreateAutomationPeer" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.ContentHeightProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridDetailsPresenter.ContentHeight" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.IsFrozenProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.GetIsFrozen(Windows.UI.Xaml.DependencyObject)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.SetIsFrozen(Windows.UI.Xaml.DependencyObject,System.Boolean)" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridFrozenGrid.IsFrozen" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.SeparatorBrushProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.SeparatorVisibilityProperty" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.OnApplyTemplate" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.OnCreateAutomationPeer" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.SeparatorBrush" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowHeader.SeparatorVisibility" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter.ArrangeOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter.MeasureOverride(Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.Primitives.DataGridRowsPresenter.OnCreateAutomationPeer" />
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Uwp.UI.Controls.TextToolbarButtons">
@@ -8622,9 +9649,268 @@
     </Type>
   </Namespace>
   <Namespace Name="Microsoft.Toolkit.Wpf.UI.Controls">
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.OnInitialized(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkCanvas.InkPresenter" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveToolChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.EraseAllClicked" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributesChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonCheckedChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonCheckedChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetMenuButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarMenuKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetToggleButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarToggle)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.GetToolButton(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.InkToolbarTool)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.OnInitialized(System.EventArgs)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveTool" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ActiveToolProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ButtonFlyoutPlacement" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.ButtonFlyoutPlacementProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.Children" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InitialControls" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InitialControlsProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributes" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.InkDrawingAttributesProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsRulerButtonCheckedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonChecked" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.IsStencilButtonCheckedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.Orientation" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.OrientationProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.TargetInkCanvas" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbar.TargetInkCanvasProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.ConfigurationContentProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.CustomPen" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomPenButton.CustomPenProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.ConfigurationContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarCustomToolButton.ConfigurationContentProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.FromInkToolbarIsStencilButtonCheckedChangedEventArgs(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.op_Implicit(Windows.UI.Xaml.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs)~Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilButton" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarIsStencilButtonCheckedChangedEventArgs.StencilKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.IsExtensionGlyphShownProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarMenuButton.MenuKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MaxStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MaxStrokeWidthProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MinStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.MinStrokeWidthProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.Palette" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.PaletteProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrush" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushIndex" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushIndexProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedBrushProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedStrokeWidth" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarPenButton.SelectedStrokeWidthProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsProtractorItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsProtractorItemVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsRulerItemVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.IsRulerItemVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.Protractor" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.ProtractorProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.Ruler" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.RulerProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SelectedStencil" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarStencilButton.SelectedStencilProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToggleButton.ToggleKind" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.SetContent" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.IsExtensionGlyphShown" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.IsExtensionGlyphShownProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.InkToolbarToolButton.ToolKind" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter">
       <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter.Initialize" />
       <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.IWebViewCompatibleAdapter.View" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.MapControl" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.MapControl">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCameraChanging" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CenterChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CustomExperienceChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.HeadingChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatusChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapContextRequested" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapDoubleTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementClick" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementPointerEntered" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElementPointerExited" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapHolding" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapRightTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapTapped" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PitchChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TargetCameraChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOriginChanged" />
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevelChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.FindMapElementsAtOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetOffsetFromLocation(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.GetVisibleRegion(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapVisibleRegionKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsLocationInView(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Boolean@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousPan(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousRotate(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousTilt(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StartContinuousZoom(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousPan" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousRotate" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousTilt" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StopContinuousZoom" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.AltitudeReferenceSystem,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryGetLocationFromOffset(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Point,Windows.Devices.Geolocation.Geopoint@)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryPanAsync(System.Double,System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryPanToAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryRotateAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryRotateToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetSceneAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapScene,Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrySetViewAsync(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.Geopoint,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double},Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MapAnimationKind)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryTiltAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryTiltToAsync(System.Double)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomInAsync" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomOutAsync" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TryZoomToAsync(System.Double)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ActualCamera" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.BusinessLandmarksVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Center" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CenterProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Children" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ColorScheme" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ColorSchemeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.CustomExperience" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.DesiredPitch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.DesiredPitchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Heading" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.HeadingProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Is3DSupported" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Is3DSupportedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsStreetsideSupported" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.IsStreetsideSupportedProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LandmarksVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LandmarksVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Layers" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatus" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.LoadingStatusProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapElements" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapProjection" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapProjectionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapServiceToken" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MapServiceTokenProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MaxZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.MinZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PanInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PanInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PedestrianFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PedestrianFeaturesVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Pitch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.PitchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Region" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RegionProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RotateInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.RotateInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Routes" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Scene" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.SceneProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.Style" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleSheet" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.StyleSheetProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TargetCamera" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TileSources" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TiltInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TiltInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrafficFlowVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TrafficFlowVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOrigin" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransformOriginProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesVisible" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.TransitFeaturesVisibleProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.WatermarkMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.WatermarkModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomInteractionMode" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomInteractionModeProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevel" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MapControl.ZoomLevelProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.SetMediaPlayer(Microsoft.Toolkit.Win32.UI.Controls.Interop.WinRT.MediaPlayer)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AreTransportControlsEnabled" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AreTransportControlsEnabledProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AutoPlay" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.AutoPlayProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.IsFullWindow" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.IsFullWindowProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.MediaPlayer" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.PosterSource" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.PosterSourceProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.Source" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.SourceProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.Stretch" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.StretchProperty" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.MediaPlayerElement.TransportControls" />
     </Type>
     <Type Name="Microsoft.Toolkit.Wpf.UI.Controls.WebView" Id="T:Microsoft.Toolkit.Wpf.UI.Controls.WebView">
       <Member Id="E:Microsoft.Toolkit.Wpf.UI.Controls.WebView.AcceleratorKeyPressed" />
@@ -8729,6 +10015,50 @@
       <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.DpiScale" />
       <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.IsScalingRequired" />
       <Member Id="P:Microsoft.Toolkit.Wpf.UI.Controls.WebViewHost.ParentHandle" />
+    </Type>
+  </Namespace>
+  <Namespace Name="Microsoft.Toolkit.Wpf.UI.XamlHost">
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.GetWrapper(Windows.UI.Xaml.UIElement)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.SetWrapper(Windows.UI.Xaml.UIElement,Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.UwpUIElementExtensions.Wrapper" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.OnChildChanged" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.Child" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.InitialTypeName" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHost.InitialTypeNameProperty" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase">
+      <Member Id="E:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ChildChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.#ctor(System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ArrangeOverride(System.Windows.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.Bind(System.String,System.Windows.DependencyProperty,Windows.UI.Xaml.DependencyProperty,System.Object,System.ComponentModel.BindingDirection)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.BuildWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.DestroyWindowCore(System.Runtime.InteropServices.HandleRef)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.Dispose(System.Boolean)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.GetUwpInternalObject" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.HasFocusWithinCore" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.MeasureOverride(System.Windows.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.OnChildChanged" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.OnGotFocus(System.Windows.RoutedEventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.OnInitialized(System.EventArgs)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.SetContent" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.TabIntoCore(System.Windows.Input.TraversalRequest)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.WndProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr,System.Boolean@)" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.ChildInternal" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.IsDisposed" />
+      <Member Id="P:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostBase.MetadataContainer" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter" Id="T:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter">
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)" />
+      <Member Id="M:Microsoft.Toolkit.Wpf.UI.XamlHost.WindowsXamlHostWrapperConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
     </Type>
   </Namespace>
 </Framework>
