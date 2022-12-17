@@ -23,7 +23,7 @@ The [HeaderedItemsControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headere
 
 <controls:HeaderedItemsControl>
     <!-- Header content or HeaderTemplate content -->
-</<controls:HeaderedItemsControl>
+</controls:HeaderedItemsControl>
 ```
 
 ## Sample Output
@@ -53,7 +53,7 @@ The [HeaderedItemsControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headere
                 <TextBlock Text="This is the header!" FontSize="16">
             </Border>
         </controls:HeaderedItemsControl.Header>
-    </<controls:HeaderedItemsControl>
+    </controls:HeaderedItemsControl>
     ```
 
 - Used to control the look of the header. The default value for the `HeaderTemplate` will display the string representation of the `Header`. Set this property if you need to bind the `Header` to an object.
@@ -67,7 +67,7 @@ The [HeaderedItemsControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.headere
                 <TextBlock Text="{Binding Title}">
             </DataTemplate>
         </controls:HeaderedItemsControl.HeaderTemplate>
-    </<controls:HeaderedItemsControl>
+    </controls:HeaderedItemsControl>
     ```
 
 ## Sample Project
