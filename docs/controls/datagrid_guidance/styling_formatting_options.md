@@ -69,7 +69,7 @@ All individual parts of the DataGrid control are customizable through simple Sty
 xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
 
 // This will display the column headers as one cell with the heading text
-<controls:DataGrid.ColumnHeaderStyle>
+<controls:DataGrid.RowHeaderStyle>
    <Style TargetType="wctprimitives:DataGridRowHeader">
       <Setter Property="Template">
            <Setter.Value>
@@ -81,9 +81,11 @@ xmlns:wctprimitives="using:Microsoft.Toolkit.Uwp.UI.Controls.Primitives"
            </Setter.Value>
       </Setter>
    </Style>
-</controls:DataGrid.ColumnHeaderStyle>
+</controls:DataGrid.RowHeaderStyle>
 ```
+
 OR
+
 ```xaml
 // This will display the individual column headers if defined
 <controls:DataGrid.ColumnHeaderStyle>
