@@ -5,25 +5,30 @@ description: The Windows Community Toolkit is updated regularly with new control
 keywords: windows 10, uwp, windows community toolkit, uwp community toolkit, uwp toolkit, nuget, visual studio
 ---
 
-# Windows Community Toolkit NuGet Packages
+# Community Toolkit NuGet Packages
 
 NuGet is a standard package manager for .Net applications that is built into Visual Studio. From your open solution choose the *Tools* menu, *NuGet Package Manager*, *Manage NuGet packages for solution...* to open the UI.  Enter one of the package names below to search for it online.
 
 | NuGet Package Name | Description |
 | --- | --- |
-| Microsoft.Toolkit | .NET Standard NuGet package containing common code |
-| Microsoft.Toolkit.HighPerformance | .NET Standard and .NET Core NuGet package with performance oriented helpers, extensions, etc. |
-| Microsoft.Toolkit.Parsers | .NET Standard NuGet package containing cross-platform parsers, such as Markdown and RSS |
-| Microsoft.Toolkit.Services | .NET Standard NuGet package containing cross-platform services |
-| Microsoft.Toolkit.Uwp | Main NuGet package includes code only helpers such as Colors conversion tool, Storage file handling, a Stream helper class, etc. |
-| Microsoft.Toolkit.Uwp.Notifications | Notifications Package - Generate tile, toast, and badge notifications for Windows 10 via code.  Includes intellisense support to avoid having to use the XML syntax |
-| Microsoft.Toolkit.Uwp.Notifications.Javascript | Notification Packages for JavaScript |
-| Microsoft.Toolkit.Uwp.Services | Services Package - This NuGet package includes the service helpers for Facebook, LinkedIn, Microsoft Graph, Twitter and more |
+| CommunityToolkit.Common | .NET Standard NuGet package containing common code |
+| CommunityToolkit.Diagnostics | .NET Standard code helpers |
+| CommunityToolkit.HighPerformance | .NET Standard and .NET Core NuGet package with performance oriented helpers, extensions, etc. |
+| CommunityToolkit.Mvvm | [MVVM Toolkit](/dotnet/communitytoolkit/mvvm/) a modern, fast, and modular MVVM library for .NET Standard, platform and runtime agnostic |
+| CommunityToolkit.Maui | [MAUI Community Toolkit](/dotnet/communitytoolkit/maui) for .NET MAUI |
+| CommunityToolkit.WinUI.* | [WindowsAppSDK](/windows/apps/windows-app-sdk)/[WinUI 3](/windows/apps/winui/winui3) versions of the toolkit packages below. |
+| Microsoft.Toolkit.Uwp | Includes code only helpers such as Colors conversion tool, Storage file handling, a Stream helper class, etc. |
 | Microsoft.Toolkit.Uwp.UI | UI Packages - XAML converters, Visual tree extensions, and other extensions and helpers for your XAML UI |
 | Microsoft.Toolkit.Uwp.UI.Animations | Animations and Composition behaviors such as Blur, Fade, Rotate, etc. |
-| Microsoft.Toolkit.Uwp.UI.Controls | XAML Controls such as RadialGauge, RangeSelector, etc. |
+| Microsoft.Toolkit.Uwp.UI.Behaviors | Extra behaviors built on top of the [XAML Behaviors](https://github.com/microsoft/XamlBehaviors/wiki) library. |
+| Microsoft.Toolkit.Uwp.UI.Controls | Wrapping package of all controls, for best disk footprint, use individual packages. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Core | Common controls useful for a variety of applications. |
 | Microsoft.Toolkit.Uwp.UI.Controls.DataGrid | XAML DataGrid control |
-| Microsoft.Toolkit.Uwp.UI.Controls.Layout | XAML layout controls such as WrapLayout, StaggeredLayout, etc. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Input | Controls related to retrieving information or values. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Layout | Controls for various application layout scenarios. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Markdown | Markdown renderer control. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Media | Controls that depend on Win2D. |
+| Microsoft.Toolkit.Uwp.UI.Controls.Primitives | Panels and simple layout controls without stlyes |
 | Microsoft.Toolkit.Uwp.UI.Lottie | Library for rendering Adobe AfterEffects animations natively in Windows apps |
 | Microsoft.Toolkit.Uwp.UI.Media | Brushes, Win2D/Composition effects, and helpers to create visual effects  |
 | Microsoft.Toolkit.Uwp.Connectivity | API helpers such as BluetoothLEHelper and Networking |
