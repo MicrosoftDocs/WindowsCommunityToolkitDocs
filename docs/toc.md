@@ -11,7 +11,9 @@
 
 ## [Known Issues](knownissues.md)
 
-# [.NET](/dotnet/communitytoolkit)
+# .NET
+
+## [Community Toolkit Documentation](/dotnet/communitytoolkit)
 
 ## MVVM
 
