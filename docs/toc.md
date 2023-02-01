@@ -5,13 +5,13 @@
 
 ## [Getting Started with the Windows Community Toolkit](Getting-Started.md)
 
-## [Windows Community Toolkit NuGet Packages](Nuget-Packages.md)
+## [Community Toolkit NuGet Packages](Nuget-Packages.md)
 
 ## [Adding the Windows Community Toolkit to your Visual Studio Toolbox](Toolbox-Support.md)
 
 ## [Known Issues](knownissues.md)
 
-# .NET
+# [.NET](/dotnet/communitytoolkit)
 
 ## MVVM
 
@@ -107,11 +107,9 @@
 
 ### [PersonView](graph/controls/PersonView.md)
 
-# WinUI 3
+# Universal Windows Platform (UWP) / WinUI 3
 
-## [Windows Community Toolkit for Project Reunion 0.5](https://devblogs.microsoft.com/ifdef-windows/windows-community-toolkit-for-project-reunion-0-5/)
-
-# Universal Windows Platform (UWP)
+## [Notes on using the Toolkit with WindowsAppSDK / WinUI 3](https://devblogs.microsoft.com/ifdef-windows/windows-community-toolkit-for-project-reunion-0-5/)
 
 ## Controls
 
