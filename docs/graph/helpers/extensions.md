@@ -13,7 +13,7 @@ Use toolkit extensions to help you make calls to Graph APIs using the global aut
 
 ## Call Microsoft Graph APIs
 
-Once authenticated, you can make API calls to Microsoft Graph using a preconfigured `GraphServiceClient` instance. Access to the client is enabled through an extension method on [IProvider](../authentication/custom.md) called, `GetClient()`.
+Once authenticated, you can make API calls to Microsoft Graph using a preconfigured `GraphServiceClient` instance. Access to the client is enabled through an extension method on [IProvider](/graph/authentication/iprovider) called, `GetClient()`.
 
 ```csharp
 using CommunityToolkit.Authentication;

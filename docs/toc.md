@@ -87,11 +87,11 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [MSAL provider](graph/authentication/msal.md)
+### [MSAL provider](/graph/authentication/msalprovider)
 
-### [Windows provider](graph/authentication/windows.md)
+### [Windows provider](/graph/authentication/windowsprovider)
 
-### [Custom provider](graph/authentication/custom.md)
+### [Custom provider](/graph/authentication/iprovider)
 
 ## Helpers
 
@@ -503,9 +503,9 @@
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
 
-### [InteractiveProviderBehavior](archive/graph/providers/InteractiveProviderBehavior.md)
+### [InteractiveProviderBehavior](/graph/providers/interactiveproviderbehavior)
 
-### [MockProviderBehavior](archive/graph/providers/MockProviderBehavior.md)
+### [MockProviderBehavior](/graph/providers/mockproviderbehavior)
 
 ## Parsers
 

@@ -13,19 +13,19 @@ Authentication is always the first step to working with Microsoft Graph. The too
 
 You can use the providers on their own, without components, to quickly implement authentication for your app and make calls to Microsoft Graph via the Microsoft Graph .NET SDK.
 
-The providers are required when using the Microsoft Graph Toolkit helpers and controls so they can access Microsoft Graph APIs. If you already have your own authentication and want to use the helpers and controls, you can use a [custom provider](./custom.md) instead.
+The providers are required when using the Microsoft Graph Toolkit helpers and controls so they can access Microsoft Graph APIs. If you already have your own authentication and want to use the helpers and controls, you can use a [custom provider](/graph/authentication/iprovider) instead.
 
 The toolkit includes the following providers:
 
 | Providers | Description |
 | -- | -- |
-| [Msal](./msal.md) | Uses MSAL for .NET to sign in users and acquire tokens to use with Microsoft Graph in NetStandard 2.0 applications. |
-| [Windows](./windows.md) | Uses native WebAccountManager (WAM) APIs to sign in users and acquire tokens to use with Microsoft Graph in UWP applications. |
-| [Custom](./custom.md) | Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code. |
+| [Msal](/graph/authentication/msalprovider) | Uses MSAL for .NET to sign in users and acquire tokens to use with Microsoft Graph in NetStandard 2.0 applications. |
+| [Windows](/graph/authentication/windowsprovider) | Uses native WebAccountManager (WAM) APIs to sign in users and acquire tokens to use with Microsoft Graph in UWP applications. |
+| [Custom](/graph/authentication/iprovider) | Create a custom provider to enable authentication and access to Microsoft Graph with your application's existing authentication code. |
 
 ## Initializing the GlobalProvider
 
-To use an authentication provider in your app, you need to set it as the global provider. The [ProviderManager](./ProviderManager.md) is the singleton that stores the globally accessible [IProvider](./custom.md) implementation and signals events in response to authentication state changes.
+To use an authentication provider in your app, you need to set it as the global provider. The [ProviderManager](./ProviderManager.md) is the singleton that stores the globally accessible [IProvider](/graph/authentication/iprovider) implementation and signals events in response to authentication state changes.
 Set the `GlobalProvider` property at app startup and any other Graph based code will respond to any changes as users sign in and out.
 
 ```csharp

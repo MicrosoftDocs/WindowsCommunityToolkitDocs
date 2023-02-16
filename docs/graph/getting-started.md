@@ -15,7 +15,7 @@ To get started using Graph data in your application, you'll first need to enable
 
 ### Authenticate with MSAL
 
-Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in NetStandard 2.0 applications using [MsalProvider](./authentication/msal.md).
+Leverage the official Microsoft Authentication Library (MSAL) to enable authentication in NetStandard 2.0 applications using [MsalProvider](/graph/authentication/msalprovider).
 
 1. Register your app in Azure AAD
 
@@ -23,7 +23,7 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
 
     > After finishing the initial registration page, you will also need to add an additional redirect URI. Click on "Add a Redirect URI", then "Add a platform", and then on "Mobile and desktop applications". Check the `https://login.microsoftonline.com/common/oauth2/nativeclient` checkbox on that page. Then click "Configure".
 1. Install the `CommunityToolkit.Authentication.Msal` package.
-1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [MsalProvider](./authentication/msal.md) with clientId and pre-configured scopes:
+1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [MsalProvider](/graph/authentication/msalprovider) with clientId and pre-configured scopes:
 
     ```csharp
     using CommunityToolkit.Authentication;
@@ -38,11 +38,11 @@ Leverage the official Microsoft Authentication Library (MSAL) to enable authenti
 
 ### Authenticate with WindowsProvider
 
-Try out the [WindowsProvider](./authentication/windows.md) to enable authentication based on the native Windows Account Manager (WAM) APIs in your UWP apps, without requiring a dependency on MSAL.
+Try out the [WindowsProvider](/graph/authentication/windowsprovider) to enable authentication based on the native Windows Account Manager (WAM) APIs in your UWP apps, without requiring a dependency on MSAL.
 
-1. Associate your app with the Microsoft Store. The app association will act as our minimal app registration for authenticating consumer MSAs. See [WindowsProvider](./authentication/windows.md) for more details.
+1. Associate your app with the Microsoft Store. The app association will act as our minimal app registration for authenticating consumer MSAs. See [WindowsProvider](/graph/authentication/windowsprovider) for more details.
 1. Install the `CommunityToolkit.Authentication.Uwp` package
-1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [WindowsProvider](./authentication/windows.md) with pre-configured scopes:
+1. Set the [ProviderManager](./authentication/ProviderManager.md).GlobalProvider to a new instance of [WindowsProvider](/graph/authentication/windowsprovider) with pre-configured scopes:
 
     ```csharp
     using CommunityToolkit.Authentication;
