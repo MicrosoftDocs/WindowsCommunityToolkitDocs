@@ -17,63 +17,63 @@
 
 ## MVVM
 
-### [Introduction](mvvm/Introduction.md)
+### [Introduction](/dotnet/communitytoolkit/mvvm/)
 
 ### ComponentModel
 
-#### [ObservableObject](mvvm/ObservableObject.md)
+#### [ObservableObject](/dotnet/communitytoolkit/mvvm/observableobject)
 
-#### [ObservableRecipient](mvvm/ObservableRecipient.md)
+#### [ObservableRecipient](/dotnet/communitytoolkit/mvvm/observablerecipient)
 
-#### [ObservableValidator](mvvm/ObservableValidator.md)
+#### [ObservableValidator](/dotnet/communitytoolkit/mvvm/observablevalidator)
 
 ### Input
 
-#### [RelayCommand and RelayCommand\<T>](mvvm/RelayCommand.md)
+#### [RelayCommand and RelayCommand\<T>](/dotnet/communitytoolkit/mvvm/relaycommand)
 
-#### [AsyncRelayCommand and AsyncRelayCommand\<T>](mvvm/AsyncRelayCommand.md)
+#### [AsyncRelayCommand and AsyncRelayCommand\<T>](/dotnet/communitytoolkit/mvvm/asyncrelaycommand)
 
-### [Messenger](mvvm/Messenger.md)
+### [Messenger](/dotnet/communitytoolkit/mvvm/messenger)
 
-### [Ioc](mvvm/Ioc.md)
+### [Ioc](/dotnet/communitytoolkit/mvvm/ioc)
 
-### [Putting things together](mvvm/PuttingThingsTogether.md)
+### [Putting things together](/dotnet/communitytoolkit/mvvm/puttingthingstogether)
 
 ### Migrating to the MVVM Toolkit
 
-#### [Migrating from MvvmLight](mvvm/MigratingFromMvvmLight.md)
+#### [Migrating from MvvmLight](/dotnet/communitytoolkit/mvvm/migratingfrommvvmlight)
 
-#### [Migrating from MvvmBasic](mvvm/MigratingFromMvvmBasic.md)
+#### [Migrating from MvvmBasic](/dotnet/communitytoolkit/mvvm/migratingfrommvvmbasic)
 
 ## High performance
 
-### [Introduction](high-performance/Introduction.md)
+### [Introduction](/dotnet/communitytoolkit/high-performance/introduction)
 
 ### Buffers
 
-#### [MemoryOwner\<T>](high-performance/MemoryOwner.md)
+#### [MemoryOwner\<T>](/dotnet/communitytoolkit/high-performance/memoryowner)
 
-#### [SpanOwner\<T>](high-performance/SpanOwner.md)
+#### [SpanOwner\<T>](/dotnet/communitytoolkit/high-performance/spanowner)
 
-#### [StringPool](high-performance/StringPool.md)
+#### [StringPool](/dotnet/communitytoolkit/high-performance/stringpool)
 
 ### Memory
 
-#### [Memory2D\<T>](high-performance/Memory2D.md)
+#### [Memory2D\<T>](/dotnet/communitytoolkit/high-performance/memory2d)
 
-#### [Span2D\<T>](high-performance/Span2D.md)
+#### [Span2D\<T>](/dotnet/communitytoolkit/high-performance/span2d)
 
-### [ParallelHelper](high-performance/ParallelHelper.md)
+### [ParallelHelper](/dotnet/communitytoolkit/high-performance/parallelhelper)
 
-### [Ref\<T> and ReadOnlyRef\<T>](high-performance/Ref.md)
+### [Ref\<T> and ReadOnlyRef\<T>](/dotnet/communitytoolkit/high-performance/ref)
 
 ## Diagnostics
 
-### [Introduction](diagnostics/Introduction.md)
+### [Introduction](/dotnet/communitytoolkit/diagnostics/introduction)
 
-### [Guard](developer-tools/Guard.md)
+### [Guard](/dotnet/communitytoolkit/diagnostics/guard)
 
-### [ThrowHelper](developer-tools/ThrowHelper.md)
+### [ThrowHelper](/dotnet/communitytoolkit/diagnostics/throwhelper)
 
 # Microsoft Graph
 
@@ -87,11 +87,11 @@
 
 ### [ProviderManager](graph/authentication/ProviderManager.md)
 
-### [MSAL provider](graph/authentication/msal.md)
+### [MSAL provider](/graph/authentication/msalprovider)
 
-### [Windows provider](graph/authentication/windows.md)
+### [Windows provider](/graph/authentication/windowsprovider)
 
-### [Custom provider](graph/authentication/custom.md)
+### [Custom provider](/graph/authentication/iprovider)
 
 ## Helpers
 
@@ -503,9 +503,9 @@
 
 ### [SharePointFileList](archive/graph/SharePointFileList.md)
 
-### [InteractiveProviderBehavior](archive/graph/providers/InteractiveProviderBehavior.md)
+### [InteractiveProviderBehavior](/graph/providers/interactiveproviderbehavior)
 
-### [MockProviderBehavior](archive/graph/providers/MockProviderBehavior.md)
+### [MockProviderBehavior](/graph/providers/mockproviderbehavior)
 
 ## Parsers
 
