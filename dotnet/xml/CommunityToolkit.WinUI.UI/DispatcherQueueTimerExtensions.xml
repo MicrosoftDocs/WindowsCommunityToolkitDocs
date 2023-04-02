@@ -53,9 +53,7 @@
         <remarks>To be added.</remarks>
         <example>
           <code>
-             private DispatcherQueueController _queueController = DispatcherQueueController.CreateOnDedicatedThread();
-             private DispatcherQueue _queue = _queueController.DispatcherQueue;
-             private DispatcherQueueTimer _typeTimer = _queue.CreateTimer();
+             private DispatcherQueueTimer _typeTimer = DispatcherQueue.GetForCurrentThread().CreateTimer();
             
              _typeTimer.Debounce(async () =&gt;
                  {
