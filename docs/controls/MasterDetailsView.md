@@ -31,14 +31,14 @@ The [ListDetailsView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.listdetailsv
 
 ## Multi Screen Devices
 
-This control is spanning-aware and adapts it self for multi screen devices.
+This control is spanning-aware and adapts itself for multi screen devices.
 For this internally the [Two-pane view](/windows/uwp/design/controls-and-patterns/two-pane-view) is used.
 
 ## BackButtonBehavior
 
 When in compact mode, the `ListDetailsView` will either show the List or the Details view, not both. If an item is selected, the control will *navigate* forward to the Details view. If the CurrentItem is set to `null`, the control will navigate *back* to the List view.
 
-If there is a Frame in the parent visual tree, the ListDetailsView control will use the Frame navigation events to transition from the Details view to the List view. If the host Frame is attempting back navigation while the Details view state is active, the ListDetailsView will transition to the the List view and cancel the back navigation.
+If there is a Frame in the parent visual tree, the ListDetailsView control will use the Frame navigation events to transition from the Details view to the List view. If the host Frame is attempting back navigation while the Details view state is active, the ListDetailsView will transition to the List view and cancel the back navigation.
 
 To help with back navigation, The ListDetailsView can handle back button visibility of the SystemNavigationManager back button, a parent NavigationView back button, or an inline back button. Use the `BackButtonBehavior` property to control the behavior:
 

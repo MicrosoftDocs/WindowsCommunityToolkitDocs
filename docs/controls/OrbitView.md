@@ -70,7 +70,7 @@ The [OrbitView](/dotnet/api/microsoft.toolkit.uwp.ui.controls.orbitview) control
 
 | Property | Type | Description |
 | -- | -- | -- |
-| Diameter | double | Gets or sets a value indicating the diameter of the item. Expected value betweeen 0 and 1 |
+| Diameter | double | Gets or sets a value indicating the diameter of the item. Expected value between 0 and 1 |
 | Distance | double | Gets or sets a value indicating the distance from the center. Expected value betweeen 0 and 1 |
 | Image | ImageSource | Gets or sets a value indicating the image of the item |
 | Item | object | Gets or sets a value of an object that can be used to store model data |

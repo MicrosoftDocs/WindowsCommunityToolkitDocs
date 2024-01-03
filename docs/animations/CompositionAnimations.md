@@ -117,7 +117,7 @@ Let's create some plain animation first. Theses animation will run when the `Tar
     <animations:Vector3Animation Target="CenterPoint" Duration="0:0:1" From="0, 0, 0" To="50, 50, 50"/>
     ```
 
-- Creating a animation that takes final value as `To` value. If you didn't set From/To value or any KeyFrames then in this case, an ExpressionKeyFrame will be added of `Value="this.FinalValue"`.
+- Creating an animation that takes final value as `To` value. If you didn't set From/To value or any KeyFrames then in this case, an ExpressionKeyFrame will be added of `Value="this.FinalValue"`.
 
     ```xaml
     <animations:OffsetAnimations Duration="0:0:1"/>
