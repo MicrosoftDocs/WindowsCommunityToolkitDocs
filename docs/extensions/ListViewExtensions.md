@@ -144,8 +144,8 @@ Await MyGridView.SmoothScrollIntoViewWithItemAsync(item:=Object, itemPlacement:=
 
 | Properties | Type | Description |
 |------------|------|-------------|
-| intex      | int  | Intex of the item to be scrolled. Index can be negative |
-| item      | int  | Intex of the item to be scrolled |
+| index      | int  | Index of the item to be scrolled. Index can be negative |
+| item      | int  | Index of the item to be scrolled |
 | itemPosition | ScrollItemPlacement | Specify the position of the Item after scrolling |
 | disableAnimation | bool | To disable the scrolling animation |
 | scrollIfVisibile | bool | Set `true` to scroll even if the scroll to item is visible so that the item will be aligned depend upon `itemPosition` |

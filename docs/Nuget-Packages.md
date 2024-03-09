@@ -28,7 +28,7 @@ NuGet is a standard package manager for .Net applications that is built into Vis
 | Microsoft.Toolkit.Uwp.UI.Controls.Layout | Controls for various application layout scenarios. |
 | Microsoft.Toolkit.Uwp.UI.Controls.Markdown | Markdown renderer control. |
 | Microsoft.Toolkit.Uwp.UI.Controls.Media | Controls that depend on Win2D. |
-| Microsoft.Toolkit.Uwp.UI.Controls.Primitives | Panels and simple layout controls without stlyes |
+| Microsoft.Toolkit.Uwp.UI.Controls.Primitives | Panels and simple layout controls without styles |
 | Microsoft.Toolkit.Uwp.UI.Lottie | Library for rendering Adobe AfterEffects animations natively in Windows apps |
 | Microsoft.Toolkit.Uwp.UI.Media | Brushes, Win2D/Composition effects, and helpers to create visual effects  |
 | Microsoft.Toolkit.Uwp.Connectivity | API helpers such as BluetoothLEHelper and Networking |

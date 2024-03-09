@@ -63,7 +63,7 @@ and using it like that :
 <Border Background="{x:Bind Path=MyBoolValue, Converter={StaticResource BoolToBrushConverter}}" />
 ```
 
-An other example is to switch between two images by specifying their source :
+Another example is to switch between two images by specifying their source :
 
 ```xaml
 <Page.Resources>

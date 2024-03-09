@@ -75,7 +75,7 @@ ListView.ItemsSource = Await BingService.Instance.RequestAsync(searchConfig, 50)
 
 ## BingResult Class
 
-**BingResult** is a implementation of the Bing result class.
+**BingResult** is an implementation of the Bing result class.
 
 ### Properties
 

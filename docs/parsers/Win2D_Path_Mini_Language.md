@@ -413,7 +413,7 @@ Specifies the behavior for pixels which fall outside of the gradient's typical r
 | ------ | ----- | ----------------------------------------------------------- |
 | Clamp  | 0     | Repeat the edge pixels of the brush's content.              |
 | Wrap   | 1     | Tile the brush's content.                                   |
-| Mirror | 2     | Tile the the brush's content, and flip each alternate tile. |
+| Mirror | 2     | Tile the brush's content, and flip each alternate tile. |
 
 #### Pre Interpolation Color Space
 
@@ -761,7 +761,7 @@ Describes how the world transforms, dots per inch (DPI), and stroke width affect
 | -------- | ----- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Normal   | 0     | The stroke respects the width. currently set world transform, the DPI, and the stroke                                         |
 | Fixed    | 1     | The stroke does not respect the world transform but it does respect the DPI and stroke width.                                 |
-| Hairline | 2     | The stroke is forced to 1 pixel wide (in device space) and does not respect theworld transform, the DPI, or the stroke width. |
+| Hairline | 2     | The stroke is forced to 1 pixel wide (in device space) and does not respect the world transform, the DPI, or the stroke width. |
 
 #### Custom Dash Style
 
