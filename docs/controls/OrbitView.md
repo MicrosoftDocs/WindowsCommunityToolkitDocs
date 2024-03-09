@@ -137,7 +137,7 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## Default Template
 
-[OrbitView XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/OrbitView/OrbitView.xaml) is the XAML template used in the toolkit for the default styling.
+[OrbitView XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/OrbitView/OrbitView.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

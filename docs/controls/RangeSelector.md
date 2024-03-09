@@ -77,7 +77,7 @@ End Sub
 
 ## Default Template
 
-[RangeSelector XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
+[RangeSelector XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Input/RangeSelector/RangeSelector.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Source code
 
