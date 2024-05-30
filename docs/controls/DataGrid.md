@@ -11,14 +11,14 @@ The DataGrid control provides a flexible way to display a collection of data in 
 
 ![DataGrid control](../resources/images/Controls/DataGrid/DataGrid.gif)
 
+> [!NOTE]
+> The DataGrid control is not part of the WinUI 3 controls available in the Windows Community Toolkit version 8.0 and later yet. The control is available for UWP and Uno Platform apps in Windows Community Toolkit version 7.1.0.
+
 The built-in column types include a text column, a check box column, a combobox column and a template column for hosting custom content. The built-in row type includes a drop-down details section that you can use to display additional content below the cell values.
 
 The DataGrid control supports common table formatting options, such as alternating row backgrounds and foregrounds and the ability to show or hide headers, grid lines, and scroll bars. Additionally, the control provides several style and template properties that you can use to completely change the appearance of the control and its rows, columns, cells, and row or column headers.
 
 The DataGrid has built-in support for Narrator and Touch Narrator to help blind users to navigate and interact easily with the control. Additionally, the control has built-in support for extensive keyboard navigation through cells, headers, rows and columns.
-
-> [!div class="nextstepaction"]
-> [Try it in the sample app](uwpct://Controls?sample=DataGrid)
 
 ## How-Tos
 
@@ -35,13 +35,13 @@ The following guidance sections describe the additional concepts and techniques 
 
 ## Sample Project
 
-See the [DataGrid in action](uwpct://Controls?sample=DataGrid) from the **[Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp)**.
-
 Here's the [DataGrid sample source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/DataGrid).
 
-If you have the **XAML Controls Gallery** app installed, [open the app and see the DataGrid in action](xamlcontrolsgallery:/item/DataGrid).
+If you have the **WinUI 2 Gallery** app installed, you can use the app to see the DataGrid in action.
 
-* [Get the XAML Controls Gallery app (Microsoft Store)](https://www.microsoft.com/store/productId/9MSVH128X2ZT)
+* [Get the WinUI 2 Gallery app (Microsoft Store)](https://apps.microsoft.com/detail/9msvh128x2zt)
+
+See the other controls available in the **[Windows Community Toolkit Gallery app](https://apps.microsoft.com/detail/9nblggh4tlcq)**.
 
 ## Requirements
 
