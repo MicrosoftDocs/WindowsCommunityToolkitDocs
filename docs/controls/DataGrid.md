@@ -41,7 +41,7 @@ If you have the **WinUI 2 Gallery** app installed, you can use the app to see th
 
 * [Get the WinUI 2 Gallery app (Microsoft Store)](https://apps.microsoft.com/detail/9msvh128x2zt)
 
-See the other controls available in the **[Windows Community Toolkit Gallery app](https://apps.microsoft.com/detail/9nblggh4tlcq)**.
+See the other controls available in the **[Windows Community Toolkit Gallery app](https://apps.microsoft.com/detail/9nblggh4tlcq)** or try them with the gallery app [in your browser](https://toolkitlabs.dev/).
 
 ## Requirements
 
