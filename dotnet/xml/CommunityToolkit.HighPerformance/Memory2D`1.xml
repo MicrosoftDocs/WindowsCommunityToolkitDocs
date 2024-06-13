@@ -1,5 +1,5 @@
 <Type Name="Memory2D&lt;T&gt;" FullName="CommunityToolkit.HighPerformance.Memory2D&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct Memory2D&lt;T&gt; : IEquatable&lt;CommunityToolkit.HighPerformance.Memory2D&lt;T&gt;&gt;" />
+  <TypeSignature Language="C#" Value="public readonly struct Memory2D&lt;T&gt; : IEquatable&lt;CommunityToolkit.HighPerformance.Memory2D&lt;T&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Memory2D`1&lt;T&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype CommunityToolkit.HighPerformance.Memory2D`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:CommunityToolkit.HighPerformance.Memory2D`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure Memory2D(Of T)&#xA;Implements IEquatable(Of Memory2D(Of T))" />
@@ -336,7 +336,7 @@
       <MemberSignature Language="ILAsm" Value=".property valuetype CommunityToolkit.HighPerformance.Memory2D`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Memory2D`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Memory2D(Of T)" />
-      <MemberSignature Language="F#" Value="member this.Empty : CommunityToolkit.HighPerformance.Memory2D&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Memory2D&lt;'T&gt;.Empty" />
+      <MemberSignature Language="F#" Value="static member Empty : CommunityToolkit.HighPerformance.Memory2D&lt;'T&gt;" Usage="CommunityToolkit.HighPerformance.Memory2D&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
@@ -484,7 +484,7 @@
       </Docs>
     </Member>
     <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public IntPtr Length { get; }" />
+      <MemberSignature Language="C#" Value="public nint Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Length" />
       <MemberSignature Language="DocId" Value="P:CommunityToolkit.HighPerformance.Memory2D`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As IntPtr" />
@@ -494,6 +494,12 @@
         <AssemblyName>CommunityToolkit.HighPerformance</AssemblyName>
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>

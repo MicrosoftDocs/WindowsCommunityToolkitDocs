@@ -1,5 +1,5 @@
 <Type Name="ReadOnlyMemory2D&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct ReadOnlyMemory2D&lt;T&gt; : IEquatable&lt;Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;&gt;" />
+  <TypeSignature Language="C#" Value="public readonly struct ReadOnlyMemory2D&lt;T&gt; : IEquatable&lt;Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;T&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlyMemory2D`1&lt;T&gt; extends System.ValueType implements class System.IEquatable`1&lt;valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlyMemory2D(Of T)&#xA;Implements IEquatable(Of ReadOnlyMemory2D(Of T))" />
@@ -463,7 +463,7 @@
       <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ReadOnlyMemory2D(Of T)" />
-      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Empty" />
+      <MemberSignature Language="F#" Value="static member Empty : Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
@@ -649,7 +649,7 @@
       </Docs>
     </Member>
     <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public IntPtr Length { get; }" />
+      <MemberSignature Language="C#" Value="public nint Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlyMemory2D`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As IntPtr" />
@@ -660,6 +660,12 @@
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>

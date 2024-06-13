@@ -330,7 +330,7 @@
       </Docs>
     </Member>
     <Member MemberName="DangerousGetReferenceAt&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static ref T DangerousGetReferenceAt&lt;T&gt; (this Span&lt;T&gt; span, IntPtr i);" />
+      <MemberSignature Language="C#" Value="public static ref T DangerousGetReferenceAt&lt;T&gt; (this Span&lt;T&gt; span, nint i);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T DangerousGetReferenceAt&lt;T&gt;(valuetype System.Span`1&lt;!!T&gt; span, native int i) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.SpanExtensions.DangerousGetReferenceAt``1(System.Span{``0},System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DangerousGetReferenceAt(Of T) (span As Span(Of T), i As IntPtr) As T" />
@@ -349,7 +349,14 @@
       </TypeParameters>
       <Parameters>
         <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
-        <Parameter Name="i" Type="System.IntPtr" />
+        <Parameter Name="i" Type="System.IntPtr">
+          <Attributes>
+            <Attribute>
+              <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+              <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
       </Parameters>
       <Docs>
         <typeparam name="T">The type of elements in the input <see cref="T:System.Span`1" /> instance.</typeparam>
