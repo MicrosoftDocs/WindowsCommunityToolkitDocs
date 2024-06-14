@@ -80,8 +80,8 @@ You can change the way how the animation interpolates between keyframes by defin
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| Fade(AnimationSet, Single, Double, Double, EasingType) | AnimationSet | Animates the opacity of the the UIElement |
-| Fade(UIElement, Single, Double, Double, EasingType) | AnimationSet | Animates the opacity of the the UIElement |
+| Fade(AnimationSet, Single, Double, Double, EasingType) | AnimationSet | Animates the opacity of the UIElement |
+| Fade(UIElement, Single, Double, Double, EasingType) | AnimationSet | Animates the opacity of the UIElement |
 
 ## Examples
 

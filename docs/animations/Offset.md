@@ -82,8 +82,8 @@ You can change the way how the animation interpolates between keyframes by defin
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| Offset(AnimationSet, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the offset of the the UIElement |
-| Offset(UIElement, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the offset of the the UIElement |
+| Offset(AnimationSet, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the offset of the UIElement |
+| Offset(UIElement, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the offset of the UIElement |
 
 ## Examples
 
