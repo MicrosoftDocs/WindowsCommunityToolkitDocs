@@ -20,11 +20,37 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public MsalProvider (string clientId, string[] scopes = default, string redirectUri = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, bool autoSignIn = true);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string clientId, string[] scopes, string redirectUri, bool autoSignIn) cil managed" />
-      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean)" />
-      <MemberSignature Language="VB.NET" Value="Public Sub New (clientId As String, Optional scopes As String() = Nothing, Optional redirectUri As String = &quot;https://login.microsoftonline.com/common/oauth2/nativeclient&quot;, Optional autoSignIn As Boolean = true)" />
-      <MemberSignature Language="F#" Value="new CommunityToolkit.Authentication.MsalProvider : string * string[] * string * bool -&gt; CommunityToolkit.Authentication.MsalProvider" Usage="new CommunityToolkit.Authentication.MsalProvider (clientId, scopes, redirectUri, autoSignIn)" />
+      <MemberSignature Language="C#" Value="public MsalProvider (Microsoft.Identity.Client.IPublicClientApplication client, string[] scopes = default, bool autoSignIn = true);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Identity.Client.IPublicClientApplication client, string[] scopes, bool autoSignIn) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MsalProvider.#ctor(Microsoft.Identity.Client.IPublicClientApplication,System.String[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (client As IPublicClientApplication, Optional scopes As String() = Nothing, Optional autoSignIn As Boolean = true)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Authentication.MsalProvider : Microsoft.Identity.Client.IPublicClientApplication * string[] * bool -&gt; CommunityToolkit.Authentication.MsalProvider" Usage="new CommunityToolkit.Authentication.MsalProvider (client, scopes, autoSignIn)" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="client" Type="Microsoft.Identity.Client.IPublicClientApplication" />
+        <Parameter Name="scopes" Type="System.String[]" />
+        <Parameter Name="autoSignIn" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="client">Registered ClientId in Azure Acitve Directory.</param>
+        <param name="scopes">List of Scopes to initially request.</param>
+        <param name="autoSignIn">Determines whether the provider attempts to silently log in upon creation.</param>
+        <summary>
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Authentication.MsalProvider" /> class using a configuration object.
+            </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public MsalProvider (string clientId, string[] scopes = default, string redirectUri = default, bool autoSignIn = true, bool listWindowsWorkAndSchoolAccounts = true, string tenantId = default);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string clientId, string[] scopes, string redirectUri, bool autoSignIn, bool listWindowsWorkAndSchoolAccounts, string tenantId) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clientId As String, Optional scopes As String() = Nothing, Optional redirectUri As String = Nothing, Optional autoSignIn As Boolean = true, Optional listWindowsWorkAndSchoolAccounts As Boolean = true, Optional tenantId As String = Nothing)" />
+      <MemberSignature Language="F#" Value="new CommunityToolkit.Authentication.MsalProvider : string * string[] * string * bool * bool * string -&gt; CommunityToolkit.Authentication.MsalProvider" Usage="new CommunityToolkit.Authentication.MsalProvider (clientId, scopes, redirectUri, autoSignIn, listWindowsWorkAndSchoolAccounts, tenantId)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
@@ -35,15 +61,41 @@
         <Parameter Name="scopes" Type="System.String[]" />
         <Parameter Name="redirectUri" Type="System.String" />
         <Parameter Name="autoSignIn" Type="System.Boolean" />
+        <Parameter Name="listWindowsWorkAndSchoolAccounts" Type="System.Boolean" />
+        <Parameter Name="tenantId" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="clientId">Registered ClientId.</param>
+        <param name="clientId">Registered client id in Azure Acitve Directory.</param>
         <param name="redirectUri">RedirectUri for auth response.</param>
         <param name="scopes">List of Scopes to initially request.</param>
-        <param name="autoSignIn">Determines whether the provider attempts to silently log in upon instantionation.</param>
+        <param name="autoSignIn">Determines whether the provider attempts to silently log in upon creation.</param>
+        <param name="listWindowsWorkAndSchoolAccounts">Determines if organizational accounts should be enabled/disabled.</param>
+        <param name="tenantId">Registered tenant id in Azure Active Directory.</param>
         <summary>
-            Initializes a new instance of the <see cref="T:CommunityToolkit.Authentication.MsalProvider" /> class.
+            Initializes a new instance of the <see cref="T:CommunityToolkit.Authentication.MsalProvider" /> class with default configuration values.
             </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Account">
+      <MemberSignature Language="C#" Value="public Microsoft.Identity.Client.IAccount Account { get; protected set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Identity.Client.IAccount Account" />
+      <MemberSignature Language="DocId" Value="P:CommunityToolkit.Authentication.MsalProvider.Account" />
+      <MemberSignature Language="VB.NET" Value="Public Property Account As IAccount" />
+      <MemberSignature Language="F#" Value="member this.Account : Microsoft.Identity.Client.IAccount with get, set" Usage="CommunityToolkit.Authentication.MsalProvider.Account" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Identity.Client.IAccount</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            Gets or sets the currently authenticated user account.
+            </summary>
+        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,14 +123,15 @@
             </summary>
         <returns>A task upon completion.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="Client">
-      <MemberSignature Language="C#" Value="protected Microsoft.Identity.Client.IPublicClientApplication Client { get; }" />
+      <MemberSignature Language="C#" Value="public Microsoft.Identity.Client.IPublicClientApplication Client { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Identity.Client.IPublicClientApplication Client" />
       <MemberSignature Language="DocId" Value="P:CommunityToolkit.Authentication.MsalProvider.Client" />
-      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Client As IPublicClientApplication" />
-      <MemberSignature Language="F#" Value="member this.Client : Microsoft.Identity.Client.IPublicClientApplication" Usage="CommunityToolkit.Authentication.MsalProvider.Client" />
+      <MemberSignature Language="VB.NET" Value="Public Property Client As IPublicClientApplication" />
+      <MemberSignature Language="F#" Value="member this.Client : Microsoft.Identity.Client.IPublicClientApplication with get, set" Usage="CommunityToolkit.Authentication.MsalProvider.Client" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
@@ -89,9 +142,41 @@
       </ReturnValue>
       <Docs>
         <summary>
-            Gets the MSAL.NET Client used to authenticate the user.
+            Gets or sets the MSAL.NET Client used to authenticate the user.
             </summary>
         <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreatePublicClientApplication">
+      <MemberSignature Language="C#" Value="protected Microsoft.Identity.Client.IPublicClientApplication CreatePublicClientApplication (string clientId, string tenantId, string redirectUri, bool listWindowsWorkAndSchoolAccounts);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class Microsoft.Identity.Client.IPublicClientApplication CreatePublicClientApplication(string clientId, string tenantId, string redirectUri, bool listWindowsWorkAndSchoolAccounts) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MsalProvider.CreatePublicClientApplication(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function CreatePublicClientApplication (clientId As String, tenantId As String, redirectUri As String, listWindowsWorkAndSchoolAccounts As Boolean) As IPublicClientApplication" />
+      <MemberSignature Language="F#" Value="member this.CreatePublicClientApplication : string * string * string * bool -&gt; Microsoft.Identity.Client.IPublicClientApplication" Usage="msalProvider.CreatePublicClientApplication (clientId, tenantId, redirectUri, listWindowsWorkAndSchoolAccounts)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Identity.Client.IPublicClientApplication</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="clientId" Type="System.String" />
+        <Parameter Name="tenantId" Type="System.String" />
+        <Parameter Name="redirectUri" Type="System.String" />
+        <Parameter Name="listWindowsWorkAndSchoolAccounts" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="clientId">Registered ClientId.</param>
+        <param name="tenantId">An optional tenant id.</param>
+        <param name="redirectUri">Redirect uri for auth response.</param>
+        <param name="listWindowsWorkAndSchoolAccounts">Determines if organizational accounts should be supported.</param>
+        <summary>
+            Create an instance of <see cref="T:Microsoft.Identity.Client.PublicClientApplication" /> using the provided config and some default values.
+            </summary>
+        <returns>A new instance of <see cref="T:Microsoft.Identity.Client.PublicClientApplication" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -115,6 +200,7 @@
             </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="GetTokenAsync">
@@ -140,6 +226,56 @@
             Retrieve a token for the authenticated user.
             </summary>
         <returns>A token string for the authenticated user.</returns>
+        <remarks>To be added.</remarks>
+        <inheritdoc />
+      </Docs>
+    </Member>
+    <Member MemberName="GetTokenWithScopesAsync">
+      <MemberSignature Language="C#" Value="protected System.Threading.Tasks.Task&lt;string&gt; GetTokenWithScopesAsync (string[] scopes, bool silentOnly = false);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Threading.Tasks.Task`1&lt;string&gt; GetTokenWithScopesAsync(string[] scopes, bool silentOnly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:CommunityToolkit.Authentication.MsalProvider.GetTokenWithScopesAsync(System.String[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetTokenWithScopesAsync (scopes As String(), Optional silentOnly As Boolean = false) As Task(Of String)" />
+      <MemberSignature Language="F#" Value="member this.GetTokenWithScopesAsync : string[] * bool -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="msalProvider.GetTokenWithScopesAsync (scopes, silentOnly)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Threading.Tasks.Task&lt;System.String&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="scopes" Type="System.String[]" />
+        <Parameter Name="silentOnly" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="scopes">An array of scopes to pass along with the Graph request.</param>
+        <param name="silentOnly">A value to determine whether account broker UI should be shown, if required by MSAL.</param>
+        <summary>
+            Retrieve an authorization token using the provided scopes.
+            </summary>
+        <returns>A <see cref="T:System.Threading.Tasks.Task" /> representing the result of the asynchronous operation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MSAccountBrokerRedirectUriPrefix">
+      <MemberSignature Language="C#" Value="public static readonly string MSAccountBrokerRedirectUriPrefix;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly string MSAccountBrokerRedirectUriPrefix" />
+      <MemberSignature Language="DocId" Value="F:CommunityToolkit.Authentication.MsalProvider.MSAccountBrokerRedirectUriPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MSAccountBrokerRedirectUriPrefix As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MSAccountBrokerRedirectUriPrefix : string" Usage="CommunityToolkit.Authentication.MsalProvider.MSAccountBrokerRedirectUriPrefix" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>CommunityToolkit.Authentication.Msal</AssemblyName>
+        <AssemblyVersion>7.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+            A prefix value used to create the redirect URI value for use in AAD.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,6 +323,7 @@
         <returns>
           <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="SignOutAsync">
@@ -211,6 +348,7 @@
         <returns>
           <see cref="T:System.Threading.Tasks.Task" />.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
     <Member MemberName="TrySilentSignInAsync">
@@ -234,6 +372,7 @@
             </summary>
         <returns>A boolean indicating success or failure to sign in silently.</returns>
         <remarks>To be added.</remarks>
+        <inheritdoc />
       </Docs>
     </Member>
   </Members>

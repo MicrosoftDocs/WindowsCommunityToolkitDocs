@@ -68,12 +68,17 @@
       <Member Id="P:CommunityToolkit.Authentication.MockProvider.CurrentAccountId" />
     </Type>
     <Type Name="CommunityToolkit.Authentication.MsalProvider" Id="T:CommunityToolkit.Authentication.MsalProvider">
-      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean)" />
+      <Member Id="F:CommunityToolkit.Authentication.MsalProvider.MSAccountBrokerRedirectUriPrefix" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(Microsoft.Identity.Client.IPublicClientApplication,System.String[],System.Boolean)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.#ctor(System.String,System.String[],System.String,System.Boolean,System.Boolean,System.String)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.AuthenticateRequestAsync(System.Net.Http.HttpRequestMessage)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.CreatePublicClientApplication(System.String,System.String,System.String,System.Boolean)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.GetTokenAsync(System.Boolean)" />
+      <Member Id="M:CommunityToolkit.Authentication.MsalProvider.GetTokenWithScopesAsync(System.String[],System.Boolean)" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.SignInAsync" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.SignOutAsync" />
       <Member Id="M:CommunityToolkit.Authentication.MsalProvider.TrySilentSignInAsync" />
+      <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Account" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Client" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.CurrentAccountId" />
       <Member Id="P:CommunityToolkit.Authentication.MsalProvider.Scopes" />
@@ -104,7 +109,9 @@
     </Type>
     <Type Name="CommunityToolkit.Authentication.WebAccountProviderConfig" Id="T:CommunityToolkit.Authentication.WebAccountProviderConfig">
       <Member Id="M:CommunityToolkit.Authentication.WebAccountProviderConfig.#ctor(CommunityToolkit.Authentication.WebAccountProviderType,System.String)" />
+      <Member Id="P:CommunityToolkit.Authentication.WebAccountProviderConfig.AADTokenRequestProperties" />
       <Member Id="P:CommunityToolkit.Authentication.WebAccountProviderConfig.ClientId" />
+      <Member Id="P:CommunityToolkit.Authentication.WebAccountProviderConfig.MSATokenRequestProperties" />
       <Member Id="P:CommunityToolkit.Authentication.WebAccountProviderConfig.WebAccountProviderType" />
     </Type>
     <Type Name="CommunityToolkit.Authentication.WebAccountProviderType" Id="T:CommunityToolkit.Authentication.WebAccountProviderType">
@@ -133,6 +140,9 @@
   <Namespace Name="CommunityToolkit.Authentication.Extensions">
     <Type Name="CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions" Id="T:CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions">
       <Member Id="M:CommunityToolkit.Authentication.Extensions.HttpRequestMessageExtensions.AuthenticateAsync(System.Net.Http.HttpRequestMessage)" />
+    </Type>
+    <Type Name="CommunityToolkit.Authentication.Extensions.MsalProviderExtensions" Id="T:CommunityToolkit.Authentication.Extensions.MsalProviderExtensions">
+      <Member Id="M:CommunityToolkit.Authentication.Extensions.MsalProviderExtensions.InitTokenCacheAsync(CommunityToolkit.Authentication.MsalProvider,Microsoft.Identity.Client.Extensions.Msal.StorageCreationProperties,System.Diagnostics.TraceSource)" />
     </Type>
   </Namespace>
   <Namespace Name="CommunityToolkit.Graph.Extensions">
@@ -4054,7 +4064,7 @@
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.TextIconExtension.Foreground" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.TextIconExtension.IsTextScaleFactorEnabled" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.TextIconExtension.MirroredWhenRightToLeft" />
-      <Member Id="P:Microsoft.Toolkit.Uwp.UI.TextIconExtension.SegoeMDL2AssetsFontFamily" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.TextIconExtension.SymbolThemeFontFamily" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.TitleBarExtensions" Id="T:Microsoft.Toolkit.Uwp.UI.TitleBarExtensions">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.TitleBarExtensions.GetBackgroundColor(Windows.UI.Xaml.Controls.Page)" />
@@ -7536,6 +7546,11 @@
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToHexConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
     </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter">
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.#ctor" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ColorToSelectedValueConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)" />
+    </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter" Id="T:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Controls.ColorPickerConverters.ContrastBrushConverter.Convert(System.Object,System.Type,System.Object,System.String)" />
@@ -8170,12 +8185,16 @@
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow" Id="T:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow">
       <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadiusProperty" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.InnerContentClipModeProperty" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.GetShadowClip(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.GetShadowMask(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.OnElementContextInitialized(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.OnPropertyChanged(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext,Windows.UI.Xaml.DependencyProperty,System.Object,System.Object)" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.OnSizeChanged(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext,Windows.Foundation.Size,Windows.Foundation.Size)" />
+      <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.SetElementChildVisual(Microsoft.Toolkit.Uwp.UI.AttachedShadowElementContext)" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.CornerRadius" />
+      <Member Id="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.InnerContentClipMode" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.IsSupported" />
       <Member Id="P:Microsoft.Toolkit.Uwp.UI.Media.AttachedCardShadow.SupportsOnSizeChangedEvent" />
     </Type>
@@ -8349,6 +8368,11 @@
     <Type Name="Microsoft.Toolkit.Uwp.UI.Media.ImageSourceExtension" Id="T:Microsoft.Toolkit.Uwp.UI.Media.ImageSourceExtension">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.ImageSourceExtension.#ctor" />
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.ImageSourceExtension.ProvideValue" />
+    </Type>
+    <Type Name="Microsoft.Toolkit.Uwp.UI.Media.InnerContentClipMode" Id="T:Microsoft.Toolkit.Uwp.UI.Media.InnerContentClipMode">
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.InnerContentClipMode.CompositionGeometricClip" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.InnerContentClipMode.CompositionMaskBrush" />
+      <Member Id="F:Microsoft.Toolkit.Uwp.UI.Media.InnerContentClipMode.None" />
     </Type>
     <Type Name="Microsoft.Toolkit.Uwp.UI.Media.InvertEffect" Id="T:Microsoft.Toolkit.Uwp.UI.Media.InvertEffect">
       <Member Id="M:Microsoft.Toolkit.Uwp.UI.Media.InvertEffect.#ctor" />

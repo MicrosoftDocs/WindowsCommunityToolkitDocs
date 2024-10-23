@@ -1,5 +1,5 @@
 <Type Name="ReadOnlySpan2D&lt;T&gt;" FullName="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt;">
-  <TypeSignature Language="C#" Value="public struct ReadOnlySpan2D&lt;T&gt;" />
+  <TypeSignature Language="C#" Value="public readonly ref struct ReadOnlySpan2D&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReadOnlySpan2D`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1" />
   <TypeSignature Language="VB.NET" Value="Public Structure ReadOnlySpan2D(Of T)" />
@@ -314,7 +314,7 @@
       </Docs>
     </Member>
     <Member MemberName="DangerousCreate">
-      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; DangerousCreate (ref T value, int height, int width, int pitch);" />
+      <MemberSignature Language="C#" Value="public static Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;T&gt; DangerousCreate (in T value, int height, int width, int pitch);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; DangerousCreate([in]!T&amp; value, int32 height, int32 width, int32 pitch) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.DangerousCreate(`0@,System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DangerousCreate (ByRef value As T, height As Integer, width As Integer, pitch As Integer) As ReadOnlySpan2D(Of T)" />
@@ -331,7 +331,7 @@
       <Parameters>
         <Parameter Name="value" Type="T" RefType="ref">
           <Attributes>
-            <Attribute FrameworkAlternate="win-comm-toolkit-dotnet-7.0">
+            <Attribute>
               <AttributeName Language="C#">[System.Runtime.CompilerServices.IsReadOnly]</AttributeName>
               <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.IsReadOnly&gt;]</AttributeName>
             </Attribute>
@@ -412,7 +412,7 @@
       <MemberSignature Language="ILAsm" Value=".property valuetype Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As ReadOnlySpan2D(Of T)" />
-      <MemberSignature Language="F#" Value="member this.Empty : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Empty" />
+      <MemberSignature Language="F#" Value="static member Empty : Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;" Usage="Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Toolkit.HighPerformance</AssemblyName>
@@ -686,7 +686,7 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public T this[Index row, Index column] { get; }" />
+      <MemberSignature Language="C#" Value="public ref readonly T this[Index row, Index column] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(valuetype System.Index, valuetype System.Index)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Item(System.Index,System.Index)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(row As Index, column As Index) As T" />
@@ -724,7 +724,7 @@
       </Docs>
     </Member>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public T this[int row, int column] { get; }" />
+      <MemberSignature Language="C#" Value="public ref readonly T this[int row, int column] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32, int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Item(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(row As Integer, column As Integer) As T" />
@@ -794,7 +794,7 @@
       </Docs>
     </Member>
     <Member MemberName="Length">
-      <MemberSignature Language="C#" Value="public IntPtr Length { get; }" />
+      <MemberSignature Language="C#" Value="public nint Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Toolkit.HighPerformance.ReadOnlySpan2D`1.Length" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As IntPtr" />
@@ -805,6 +805,12 @@
         <AssemblyVersion>7.0.0.0</AssemblyVersion>
         <AssemblyVersion>7.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName Language="C#">[System.Runtime.CompilerServices.NativeInteger]</AttributeName>
+          <AttributeName Language="F#">[&lt;System.Runtime.CompilerServices.NativeInteger&gt;]</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
