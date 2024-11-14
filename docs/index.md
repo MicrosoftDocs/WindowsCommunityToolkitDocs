@@ -8,7 +8,7 @@ description: The Windows Community Toolkit is a collection of helper functions, 
 # Windows Community Toolkit Documentation
 
 > [!IMPORTANT]
-> This Windows Community Toolkit is moving to an archived state. See the updated [Windows Community Toolkit documentation](/dotnet/communitytoolkit/windows/) in the .NET guidance.
+> This Windows Community Toolkit documentation is moving to an archived state. See the updated [Windows Community Toolkit documentation](/dotnet/communitytoolkit/windows/) in the .NET guidance.
 
 The Windows Community Toolkit is a collection of helper functions, custom controls, and app services. It simplifies and demonstrates common developer tasks building UWP apps for Windows 10.
 
