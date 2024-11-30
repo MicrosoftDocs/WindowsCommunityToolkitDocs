@@ -125,7 +125,7 @@ ImageCropper.AspectRatio = Nothing
 
 ## Default Template
 
-[ImageCropper XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
+[ImageCropper XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Media/ImageCropper/ImageCropper.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
