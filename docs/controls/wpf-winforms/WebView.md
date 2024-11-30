@@ -138,7 +138,7 @@ You can use the [InvokeScriptAsync](/uwp/api/windows.web.ui.interop.webviewcontr
 
 The **WebView** control has several APIs for basic navigation:  [GoBack](/uwp/api/windows.web.ui.interop.webviewcontrol.goback), [GoForward](/uwp/api/windows.web.ui.interop.webviewcontrol.goforward), [Stop](/uwp/api/windows.web.ui.interop.webviewcontrol.stop), [Refresh](/uwp/api/windows.web.ui.interop.webviewcontrol.refresh), [CanGoBack](/uwp/api/windows.web.ui.interop.webviewcontrol.cangoback), and [CanGoForward](/uwp/api/windows.web.ui.interop.webviewcontrol.cangoforward). You can use these to add typical web browsing capabilities to your app.
 
-To set the initial content of the the **WebView** control, you can set the [Source](/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
+To set the initial content of the **WebView** control, you can set the [Source](/uwp/api/windows.web.ui.interop.webviewcontrol.source) property in code, XAML, or in the **Properties** window. You can also use the **Navigate** methods to load content in code. Here's an example.
 
 ```csharp
 private void WebView_Loaded(object sender, RoutedEventArgs e)

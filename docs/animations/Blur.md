@@ -61,8 +61,8 @@ Await MyUIElement.Blur(value:=5, duration:=2500, delay:=250).StartAsync()    ' B
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| Blur(AnimationSet, Double, Double, Double) | AnimationSet | Animates the gaussian blur of the the UIElement |
-| Blur(FrameworkElement, Double, Double, Double) | AnimationSet | Animates the gaussian blur of the the UIElement |
+| Blur(AnimationSet, Double, Double, Double) | AnimationSet | Animates the gaussian blur of the UIElement |
+| Blur(FrameworkElement, Double, Double, Double) | AnimationSet | Animates the gaussian blur of the UIElement |
 
 ## Examples
 

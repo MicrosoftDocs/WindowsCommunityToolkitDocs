@@ -80,8 +80,8 @@ You can change the way how the animation interpolates between keyframes by defin
 
 | Methods | Return Type | Description |
 | -- | -- | -- |
-| Scale(AnimationSet, Single, Single, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the scale of the the specified UIElement |
-| Scale(UIElement, Single, Single, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the scale of the the specified UIElement |
+| Scale(AnimationSet, Single, Single, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the scale of the specified UIElement |
+| Scale(UIElement, Single, Single, Single, Single, Double, Double, EasingType) | AnimationSet | Animates the scale of the specified UIElement |
 
 ## Examples
 

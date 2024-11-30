@@ -173,7 +173,7 @@ The following walk-through shows how to implement sorting in the DataGrid contro
 3. Set the SortDirection property to the appropriate value for showing the built-in ascending sort icon in column header
 
     ```csharp
-    //Show the ascending icon when acending sort is done
+    //Show the ascending icon when ascending sort is done
     e.Column.SortDirection = DataGridSortDirection.Ascending;
 
     //Show the descending icon when descending sort is done

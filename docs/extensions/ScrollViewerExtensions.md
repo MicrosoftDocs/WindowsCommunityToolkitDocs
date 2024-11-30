@@ -85,14 +85,14 @@ public class DoubleTopThicknessConverter : IValueConverter
 Here is how this property can be used in XAML:
 
 ```xaml
-<!-- Setting MiddleClickScrolling directely for ScrollViewer -->
+<!-- Setting MiddleClickScrolling directly for ScrollViewer -->
 <ScrollViewer
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     ui:ScrollViewerExtensions.EnableMiddleClickScrolling="True">
     <!-- ScrollViewer items -->
 </ScrollViewer>
 
-<!-- Setting MiddleClickScrolling fot the ancestor of ScrollViewer -->
+<!-- Setting MiddleClickScrolling for the ancestor of ScrollViewer -->
 <ListView
     xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
     ui:ScrollViewerExtensions.EnableMiddleClickScrolling="True">

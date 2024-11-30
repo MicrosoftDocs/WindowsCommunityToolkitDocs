@@ -48,7 +48,7 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 | Property | Type | Description |
 | -- | -- | -- |
 | EasingFunction | EasingFunctionBase | Gets or sets easing function to apply for each Transition |
-| InvertPositive | bool | Gets or sets a value indicating whether the items rendered transformations should be opposite compared to the selected item If false, all the items (except the selected item) will have the exact same transformations If true, all the items where index > selected index will have an opposite tranformation (Rotation X Y and Z will be multiply by -1) |
+| InvertPositive | bool | Gets or sets a value indicating whether the items rendered transformations should be opposite compared to the selected item If false, all the items (except the selected item) will have the exact same transformations If true, all the items where index > selected index will have an opposite transformation (Rotation X Y and Z will be multiply by -1) |
 | ItemDepth | int | Gets or sets depth of non Selected Index Items |
 | ItemMargin | int | Gets or sets the item margin |
 | ItemRotationX | double | Gets or sets rotation angle on X |
