@@ -49,7 +49,7 @@ The control uses the same dependency properties as the standard Progress Bar, wi
 
 ## Default Template
 
-[RadialProgressBar XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/RadialProgressBar/RadialProgressBar.xaml) is the XAML template used in the toolkit for the default styling.
+[RadialProgressBar XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/RadialProgressBar/RadialProgressBar.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
