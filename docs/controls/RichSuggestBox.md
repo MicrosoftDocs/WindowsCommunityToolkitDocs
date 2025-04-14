@@ -33,7 +33,7 @@ RichSuggestBox resembles text controls commonly found in social applications whe
 
 ## Remarks
 
-When a suggestion is selected, `RichSuggestBox` assigns the selected item a unique [Guid](/dotnet/api/system.guid) and a display text (provided by the developer) to make up a token. The display text is then padded with [Zero Width Space](https://unicode-table.com/200B/)s (ZWSP) and inserted into the document as a hyperlink using the identifier as the link address. These hyperlinks are tracked and validated on every text change.
+When a suggestion is selected, `RichSuggestBox` assigns the selected item a unique [Guid](/dotnet/api/system.guid) and a display text (provided by the developer) to make up a token. The display text is then padded with [Zero Width Space](https://symbl.cc/200B/)s (ZWSP) and inserted into the document as a hyperlink using the identifier as the link address. These hyperlinks are tracked and validated on every text change.
 
 The token text inserted into the document has the following layout: ZWSP - Prefix character - Display text - ZWSP.
 
@@ -44,7 +44,7 @@ For example, a token with "@" as the prefix and "John Doe" as the display text i
 ```
 
 > [!IMPORTANT]
-> Token text contains [Zero Width Space](https://unicode-table.com/200B/)s, which are Unicode characters.
+> Token text contains [Zero Width Space](https://symbl.cc/200B/)s, which are Unicode characters.
 
 > [!NOTE]
 > To support Undo/Redo function, `RichSuggestBox` keeps all the tokens in an internal collection even when the token text is deleted from the document. These token are marked as inactive and are not included in the `Tokens` collection. Use `ClearUndoRedoSuggestionHistory()` method to clear inactive tokens or `Clear()` method to clear all tokens.
