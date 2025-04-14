@@ -133,7 +133,7 @@ The following sample demonstrates how to add OrbitView Control.
 
 ## Sample Project
 
-[Carousel Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[OrbitView Sample Page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/OrbitView).You can [see this in action](uwpct://Controls?sample=OrbitView) in the [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Default Template
 
