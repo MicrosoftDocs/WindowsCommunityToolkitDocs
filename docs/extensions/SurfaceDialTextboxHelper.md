@@ -75,4 +75,4 @@ The [SurfaceDialTextbox XAML Property](/dotnet/api/microsoft.toolkit.uwp.ui.exte
 
 ## API
 
-* [SurfaceDialTextbox source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/SurfaceDialTextbox)
+* [SurfaceDialTextbox source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBox/TextBoxExtensions.SurfaceDial.cs)

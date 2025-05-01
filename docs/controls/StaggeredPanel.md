@@ -48,7 +48,7 @@ The [StaggeredPanel](/dotnet/api/microsoft.toolkit.uwp.ui.controls.staggeredpane
 
 ## Default Template
 
-[StaggeredPanel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel/StaggeredPanel.xaml) is the XAML template used in the toolkit for the default styling.
+StaggeredPanel XAML File `(https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/StaggeredPanel/StaggeredPanel.xaml)` is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

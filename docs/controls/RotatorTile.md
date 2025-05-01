@@ -47,7 +47,7 @@ The [Rotator Tile Control](/dotnet/api/microsoft.toolkit.uwp.ui.controls.rotator
 
 ## Default Template
 
-[RotatorTile XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/RotatorTile/RotatorTile.xaml) is the XAML template used in the toolkit for the default styling.
+[RotatorTile XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/RotatorTile/RotatorTile.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 
