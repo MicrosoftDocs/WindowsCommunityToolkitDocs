@@ -74,7 +74,7 @@ The [HeaderedContentControl](/dotnet/api/microsoft.toolkit.uwp.ui.controls.heade
 
 ## Default Template
 
-[HeaderedContentControl XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
+[HeaderedContentControl XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/HeaderedContentControl/HeaderedContentControl.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

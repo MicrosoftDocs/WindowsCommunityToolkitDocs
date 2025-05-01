@@ -99,4 +99,4 @@ The following example of adding the WrapLayout layout panel.
 
 ## API
 
-* [WrapLayout source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/WrapLayout)
+* [WrapLayout source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/6.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/WrapLayout)
