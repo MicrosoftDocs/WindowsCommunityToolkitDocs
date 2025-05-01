@@ -7,7 +7,9 @@ keywords: lottie, lottie-windows, animatedvisualplayer, bodymovin, aftereffects,
 
 # Lottie
 
-Lottie-Windows is a library for rendering [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) animations natively in your applications. This project adds Windows to the [Lottie](https://airbnb.io/lottie/) family of tools also targeting [Android](https://github.com/airbnb/lottie-android), [iOS](https://github.com/airbnb/lottie-ios), and [Web](https://github.com/airbnb/lottie-web).
+Lottie-Windows is a library for rendering [Adobe AfterEffects](https://www.adobe.com/products/aftereffects.html) animations natively in your applications. This project adds Windows to the [Lottie](https://airbnb.io/lottie/) family of tools also targeting [Android](https://github.com/airbnb/lottie-android), [iOS](https://github.com/airbnb/lottie-ios), and [Web](https://github.com/airbnb/lottie-web). 
+
+Alternatively, [Blender](https://www.blender.org/download/) is a free open-source community project with similar attributions. Feel free to experiment with both software, as they have different features available to create the perfect design in your animation. With Adobe [AfterEffects](https://www.adobe.com/products/aftereffects.html) you will get a 7 days trial to get up to speed, and be able to begin working on your project almost instantly!   
 
 Lottie simplifies the design-to-code workflow for bringing engaging, interactive vector animations to your Windows applications, with significant improvements in terms of performance, quality, and engineering efficiency over traditional approaches such as gifs, manually coded animations, etc. Lottie-Windows uses the [Windows.UI.Composition APIs](/windows/uwp/composition/visual-layer) to provide smooth, 60 fps animations and resolution-independent vector graphics.
 
