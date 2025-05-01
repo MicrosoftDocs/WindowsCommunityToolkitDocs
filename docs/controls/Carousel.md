@@ -71,7 +71,7 @@ The `Carousel` control works fine with mouse, touch, mouse and keyboard as well.
 
 ## Default Template
 
-[Carousel XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/Carousel/Carousel.xaml) is the XAML template used in the toolkit for the default styling.
+[Carousel XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Layout/Carousel/Carousel.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

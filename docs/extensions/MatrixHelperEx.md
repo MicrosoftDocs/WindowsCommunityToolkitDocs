@@ -10,7 +10,7 @@ dev_langs:
 # MatrixHelperEx
 
 > [!WARNING]
-> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](/dotnet/api/microsoft.toolkit.uwp.ui.media.MatrixExtensions) type instead.
+> This type has been removed from the Windows Community Toolkit, please use the [`MatrixExtensions`](/windows/communitytoolkit/extensions/matrixextensions) type instead.
 
 [MatrixHelperEx](/dotnet/api/microsoft.toolkit.uwp.ui.extensions.matrixhelperex) provides extra methods for various matrix operations.
 
@@ -31,7 +31,7 @@ dev_langs:
 
 ## API Source Code
 
-- [MatrixHelperEx source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/MatrixHelperEx.cs)
+- [MatrixHelperEx source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/6.1.1/Microsoft.Toolkit.Uwp.UI/Extensions/Media/MatrixHelperEx.cs)
 
 ## Related Topics
 

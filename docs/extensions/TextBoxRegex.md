@@ -179,4 +179,4 @@ The following sample demonstrates how to add TextBoxRegex property.
 
 ## API
 
-* [TextBoxRegex source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBoxRegEx)
+* [TextBoxRegex source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/TextBox)

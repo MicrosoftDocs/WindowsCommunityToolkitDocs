@@ -39,7 +39,6 @@ You can also Remove Default Buttons from any format, or Add Custom buttons to an
 | Editor | RichEditBox | Gets or sets the RichEditBox to Attach to, this is required for any formatting to work |
 | Format | [Format](/dotnet/api/microsoft.toolkit.uwp.ui.controls.texttoolbarformats.format) | Gets or sets which formatter to use, and which buttons to provide |
 | Formatter | [Formatter](/dotnet/api/microsoft.toolkit.uwp.ui.controls.texttoolbarformats.formatter) | Gets or sets the formatter which is used to format the text from the buttons |
-| Labels | [TextToolbarStrings](/dotnet/api/microsoft.toolkit.uwp.ui.controls.texttoolbarstrings) | Gets or sets the default string Labels |
 | LastKeyPress | [VirtualKey](/uwp/api/Windows.System.VirtualKey) | Gets the last key pressed using the Editor |
 | ShiftKeyDown | bool | Gets a value indicating whether Shift is pressed down |
 | UseURIChecker | bool | Gets or sets a value indicating whether to enable use of URI Checker for Link Creator. This allows you to verify Absolute URIs, before creating the Link |
@@ -53,13 +52,13 @@ When you create the Class, you will need to override the `DefaultButtons` Proper
 If you want to use a Common Button Template, such as Bold, Italics, etc. You can get those by Instantiating a `CommonButtons` Instance in your Formatter Class, however, you will need to implement the **ButtonActions** Class, and Instantiate it in your Formatter's `ButtonActions` property, or replace the `Action`/`Shift Action` Property on each button you use.
 
 _See the MarkDownFormatter Class for reference on how to create a Formatter:_
-[MarkDownFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/Formats/MarkDown)
+[MarkDownFormatter Code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Markdown/TextToolbar/Formats/MarkDown/MarkDownFormatter.cs)
 
 _See the Sample Formatter Class from the Sample App:_
 [SampleFormatter Code](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/TextToolbar/SampleFormatter.cs)
 
 _Available CommonButtons:_
-[CommonButton Definitions](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/TextToolbar/ToolbarItems/Common)
+[CommonButton Definitions](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/TextToolbar/ToolbarItems/Common/CommonButtons.cs)
 
 ## Examples
 
