@@ -39,7 +39,7 @@ Before you can use this control, you must follow [these instructions](/windows/a
 ...>
 
 <controls:MediaPlayerElement x:Name="mediaPlayerElement"
-    Source="https://mediaplatstorage1.blob.core.windows.net/windows-universal-samples-media/elephantsdream-clip-h264_sd-aac_eng-aac_spa-aac_eng_commentary-srt_eng-srt_por-srt_swe.mkv"
+    Source="https://sampleassets.z5.web.core.windows.net/windows-universal-samples-media/elephantsdream-clip-h264_sd-aac_eng-aac_spa-aac_eng_commentary-srt_eng-srt_por-srt_swe.mkv"
     AutoPlay="True" Margin="5" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" AreTransportControlsEnabled="True" />
 ```
 
