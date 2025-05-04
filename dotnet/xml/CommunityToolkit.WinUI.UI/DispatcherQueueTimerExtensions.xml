@@ -53,7 +53,7 @@
         <remarks>To be added.</remarks>
         <example>
           <code>
-             private DispatcherQueueTimer _typeTimer = new DispatcherQueueTimer();
+             private DispatcherQueueTimer _typeTimer = DispatcherQueue.GetForCurrentThread().CreateTimer();
             
              _typeTimer.Debounce(async () =&gt;
                  {
