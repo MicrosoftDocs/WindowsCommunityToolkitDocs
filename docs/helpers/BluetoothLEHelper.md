@@ -143,7 +143,7 @@ If BluetoothLEHelper.IsBluetoothLESupported Then
     ' creating a ListView and binding the bluetoothLEHelper collection to it. Once a device is found, 
     ' the Connect() method can be called to connect to the device and start interacting with its services
 
-    ' Connect to a device if your choice
+    ' Connect to a device of your choice
     Dim device As ObservableBluetoothLEDevice = bluetoothLEHelper.BluetoothLeDevices(<Device you choose>)
     Await device.ConnectAsync()
 
