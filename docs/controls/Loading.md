@@ -72,7 +72,7 @@ LoadingControl.IsLoading = true
 
 ## Default Template
 
-[Loading XAML File](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls/Loading/Loading.xaml) is the XAML template used in the toolkit for the default styling.
+[Loading XAML File](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Controls.Core/Loading/Loading.xaml) is the XAML template used in the toolkit for the default styling.
 
 ## Requirements
 

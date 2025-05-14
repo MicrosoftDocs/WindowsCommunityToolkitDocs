@@ -49,4 +49,4 @@ The [BackdropSaturationBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdro
 
 ## Related Topics
 
-* [Win2D SaturationEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)
+* [Win2D SaturationEffect reference](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Effects_SaturationEffect.htm)

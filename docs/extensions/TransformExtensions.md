@@ -26,10 +26,10 @@ The Transform Extensions ([RotateTransformExtensions](/dotnet/api/microsoft.tool
 
 ## API Source Code
 
-- [RotateTransformExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/RotateTransformExtensions.cs)
-- [ScaleTransformExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/ScaleTransformExtensions.cs)
-- [SkewTransformExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/SkewTransformExtensions.cs)
-- [TranslateTransformExtensions source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit/Extensions/Media/TranslateTransformExtensions.cs)
+- [RotateTransformExtensions source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Media/RotateTransformExtensions.cs)
+- [ScaleTransformExtensions source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Media/ScaleTransformExtensions.cs)
+- [SkewTransformExtensions source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Media/SkewTransformExtensions.cs)
+- [TranslateTransformExtensions source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI/Extensions/Media/TranslateTransformExtensions.cs)
 
 ## Related Topics
 

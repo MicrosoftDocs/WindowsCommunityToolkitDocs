@@ -49,5 +49,5 @@ The [BackdropBlurBrush](/dotnet/api/microsoft.toolkit.uwp.ui.media.backdropblurb
 
 ## Related Topics
 
-* [Win2D GaussianBlurEffect reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
+* [Win2D GaussianBlurEffect reference](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Effects_GaussianBlurEffect.htm)
 * [XamlCompositionBrushBase Examples](/uwp/api/windows.ui.xaml.media.xamlcompositionbrushbase#examples)

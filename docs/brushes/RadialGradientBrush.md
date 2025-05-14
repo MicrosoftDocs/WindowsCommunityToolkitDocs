@@ -84,4 +84,4 @@ The Animation or Binding of *GradientStop* `Offset` and `Color` properties is no
 
 - [Brush](/uwp/api/windows.ui.xaml.media.brush)
 - [System.Windows.Media.RadialGradientBrush](/dotnet/api/system.windows.media.radialgradientbrush)
-- [Win2D CanvasRadialGradientBrush reference](https://microsoft.github.io/Win2D/html/T_Microsoft_Graphics_Canvas_Brushes_CanvasRadialGradientBrush.htm)
+- [Win2D CanvasRadialGradientBrush reference](https://microsoft.github.io/Win2D/WinUI2/html/T_Microsoft_Graphics_Canvas_Brushes_CanvasRadialGradientBrush.htm)

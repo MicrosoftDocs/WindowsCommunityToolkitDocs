@@ -30,11 +30,11 @@ In this example using the `AutoSelectBehavior` the textbox content will be autom
 
 ## Sample Project
 
-[AutoSelect behavior sample page Source](https://github.com/windows-toolkit/WindowsCommunityToolkit/tree/rel/7.0.1/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AutoSelectBehavior). You can [see this in action](uwpct://Helpers?sample=AutoSelectBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
+[AutoSelect behavior sample page Source](https://github.com/CommunityToolkit/WindowsCommunityToolkit/tree/rel/7.1.0/Microsoft.Toolkit.Uwp.SampleApp/SamplePages/AutoSelectBehavior). You can [see this in action](uwpct://Helpers?sample=AutoSelectBehavior) in [Windows Community Toolkit Sample App](https://aka.ms/windowstoolkitapp).
 
 ## Source Code
 
-- [AutoSelect behavior source code](https://github.com/windows-toolkit/WindowsCommunityToolkit/blob/rel/7.0.1/Microsoft.Toolkit.Uwp.UI.Behaviors/Select/AutoSelectBehavior.cs)
+- [AutoSelect behavior source code](https://github.com/CommunityToolkit/WindowsCommunityToolkit/blob/rel/7.1.0/Microsoft.Toolkit.Uwp.UI.Behaviors/Select/AutoSelectBehavior.cs)
 
 ## Related Topics
 
